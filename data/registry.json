@@ -3840,7 +3840,7 @@
     "kind": "guard",
     "size": 6,
     "orbitRadius": 17,
-    "burst": 72,
+    "burst": 86,
     "soak": 30,
     "onHit": {
      "kind": "freeze",
@@ -4836,7 +4836,7 @@
     "kind": "guard",
     "size": 6,
     "orbitRadius": 17,
-    "burst": 72,
+    "burst": 86,
     "soak": 30,
     "onHit": {
      "kind": "freeze",
@@ -6102,7 +6102,7 @@
    "tier": "base",
    "rarity": 1,
    "mods": {
-    "healOnKill": 0.15
+    "healOnKill": 0.05
    },
    "weight": 8
   },
@@ -6676,7 +6676,7 @@
    "tier": "base",
    "rarity": 1,
    "mods": {
-    "healOnKill": 0.15
+    "healOnKill": 0.05
    },
    "weight": 8
   },
@@ -6938,6 +6938,23 @@
      "bursts": 1,
      "interval": 0.3,
      "telegraph": 0.6
+    },
+    "sharpPattern": {
+     "kind": "ring",
+     "count": 6,
+     "speed": 50,
+     "radius": 3,
+     "damage": 7,
+     "bursts": 1,
+     "interval": 0.3,
+     "telegraph": 0.6,
+     "motion": {
+      "weave": {
+       "px": 6,
+       "hz": 1
+      },
+      "mirror": "alternate"
+     }
     }
    },
    "hp": 40,
@@ -7212,6 +7229,25 @@
      "bursts": 1,
      "interval": 0.3,
      "telegraph": 0.5
+    },
+    "sharpPattern": {
+     "kind": "fan",
+     "count": 3,
+     "arc": 0.5,
+     "speed": 85,
+     "radius": 2.5,
+     "damage": 10,
+     "bursts": 1,
+     "interval": 0.3,
+     "telegraph": 0.5,
+     "motion": {
+      "turn": {
+       "kind": "curve",
+       "rate": 0.6,
+       "until": 0.6
+      },
+      "mirror": "inward"
+     }
     }
    },
    "hp": 90,
@@ -7553,6 +7589,64 @@
      "telegraph": 0.8
     }
    ],
+   "sharpPatterns": [
+    {
+     "kind": "fan",
+     "count": 5,
+     "arc": 1,
+     "speed": 70,
+     "radius": 3,
+     "damage": 6,
+     "bursts": 2,
+     "interval": 0.4,
+     "telegraph": 0.8
+    },
+    {
+     "kind": "ring",
+     "count": 12,
+     "speed": 55,
+     "radius": 3.5,
+     "damage": 6,
+     "bursts": 2,
+     "interval": 0.6,
+     "telegraph": 0.9,
+     "motion": {
+      "speed": [
+       {
+        "at": 0.35,
+        "to": 0.3
+       },
+       {
+        "at": 0.8,
+        "to": 0.3
+       },
+       {
+        "at": 1.1,
+        "to": 1.5
+       }
+      ]
+     }
+    },
+    {
+     "kind": "spiral",
+     "count": 2,
+     "spin": 2.6,
+     "speed": 45,
+     "radius": 2.5,
+     "damage": 4,
+     "bursts": 12,
+     "interval": 0.12,
+     "telegraph": 0.8,
+     "motion": {
+      "speed": [
+       {
+        "at": 0.8,
+        "to": 1.7
+       }
+      ]
+     }
+    }
+   ],
    "xp": 40
   },
   {
@@ -7580,6 +7674,26 @@
      "bursts": 3,
      "interval": 0.25,
      "telegraph": 0.6
+    }
+   ],
+   "sharpPatterns": [
+    {
+     "kind": "aimed",
+     "count": 2,
+     "speed": 100,
+     "radius": 2.5,
+     "damage": 7,
+     "bursts": 3,
+     "interval": 0.25,
+     "telegraph": 0.6,
+     "motion": {
+      "speed": [
+       {
+        "at": 0.7,
+        "to": 0.5
+       }
+      ]
+     }
     }
    ],
    "xp": 40
@@ -7692,6 +7806,34 @@
      "bursts": 2,
      "interval": 0.35,
      "telegraph": 0.9
+    }
+   ],
+   "sharpPatterns": [
+    {
+     "kind": "ring",
+     "count": 18,
+     "speed": 95,
+     "radius": 3,
+     "damage": 16,
+     "bursts": 2,
+     "interval": 0.35,
+     "telegraph": 0.9,
+     "motion": {
+      "speed": [
+       {
+        "at": 0.4,
+        "to": 0.25
+       },
+       {
+        "at": 0.85,
+        "to": 0.25
+       },
+       {
+        "at": 1.15,
+        "to": 1.5
+       }
+      ]
+     }
     }
    ],
    "xp": 100
@@ -7906,6 +8048,26 @@
      "telegraph": 0.9
     }
    ],
+   "sharpPatterns": [
+    {
+     "kind": "spiral",
+     "count": 3,
+     "spin": 1.6,
+     "speed": 45,
+     "radius": 3.5,
+     "damage": 7,
+     "bursts": 10,
+     "interval": 0.2,
+     "telegraph": 0.9,
+     "motion": {
+      "turn": {
+       "kind": "swirl",
+       "rate": 1.2,
+       "until": 1.4
+      }
+     }
+    }
+   ],
    "xp": 80
   },
   {
@@ -7934,6 +8096,27 @@
      "bursts": 1,
      "interval": 0.3,
      "telegraph": 0.8
+    }
+   ],
+   "sharpPatterns": [
+    {
+     "kind": "fan",
+     "count": 7,
+     "arc": 1.1,
+     "speed": 120,
+     "radius": 2.5,
+     "damage": 14,
+     "bursts": 1,
+     "interval": 0.3,
+     "telegraph": 0.8,
+     "motion": {
+      "turn": {
+       "kind": "curve",
+       "rate": 0.5,
+       "until": 0.8
+      },
+      "mirror": "inward"
+     }
     }
    ],
    "xp": 90
@@ -8002,6 +8185,25 @@
      "telegraph": 0.7
     }
    ],
+   "sharpPatterns": [
+    {
+     "kind": "ring",
+     "count": 10,
+     "speed": 70,
+     "radius": 2.5,
+     "damage": 9,
+     "bursts": 1,
+     "interval": 0.3,
+     "telegraph": 0.7,
+     "motion": {
+      "weave": {
+       "px": 9,
+       "hz": 1.1
+      },
+      "mirror": "alternate"
+     }
+    }
+   ],
    "xp": 60
   }
  ],
@@ -8054,6 +8256,64 @@
      "telegraph": 0.8
     }
    ],
+   "sharpPatterns": [
+    {
+     "kind": "fan",
+     "count": 5,
+     "arc": 1,
+     "speed": 70,
+     "radius": 3,
+     "damage": 6,
+     "bursts": 2,
+     "interval": 0.4,
+     "telegraph": 0.8
+    },
+    {
+     "kind": "ring",
+     "count": 12,
+     "speed": 55,
+     "radius": 3.5,
+     "damage": 6,
+     "bursts": 2,
+     "interval": 0.6,
+     "telegraph": 0.9,
+     "motion": {
+      "speed": [
+       {
+        "at": 0.35,
+        "to": 0.3
+       },
+       {
+        "at": 0.8,
+        "to": 0.3
+       },
+       {
+        "at": 1.1,
+        "to": 1.5
+       }
+      ]
+     }
+    },
+    {
+     "kind": "spiral",
+     "count": 2,
+     "spin": 2.6,
+     "speed": 45,
+     "radius": 2.5,
+     "damage": 4,
+     "bursts": 12,
+     "interval": 0.12,
+     "telegraph": 0.8,
+     "motion": {
+      "speed": [
+       {
+        "at": 0.8,
+        "to": 1.7
+       }
+      ]
+     }
+    }
+   ],
    "xp": 40
   },
   {
@@ -8083,6 +8343,26 @@
      "telegraph": 0.6
     }
    ],
+   "sharpPatterns": [
+    {
+     "kind": "aimed",
+     "count": 2,
+     "speed": 100,
+     "radius": 2.5,
+     "damage": 7,
+     "bursts": 3,
+     "interval": 0.25,
+     "telegraph": 0.6,
+     "motion": {
+      "speed": [
+       {
+        "at": 0.7,
+        "to": 0.5
+       }
+      ]
+     }
+    }
+   ],
    "xp": 40
   },
   {
@@ -8109,6 +8389,25 @@
      "bursts": 1,
      "interval": 0.3,
      "telegraph": 0.7
+    }
+   ],
+   "sharpPatterns": [
+    {
+     "kind": "ring",
+     "count": 10,
+     "speed": 70,
+     "radius": 2.5,
+     "damage": 9,
+     "bursts": 1,
+     "interval": 0.3,
+     "telegraph": 0.7,
+     "motion": {
+      "weave": {
+       "px": 9,
+       "hz": 1.1
+      },
+      "mirror": "alternate"
+     }
     }
    ],
    "xp": 60
@@ -8144,6 +8443,26 @@
      "telegraph": 0.9
     }
    ],
+   "sharpPatterns": [
+    {
+     "kind": "spiral",
+     "count": 3,
+     "spin": 1.6,
+     "speed": 45,
+     "radius": 3.5,
+     "damage": 7,
+     "bursts": 10,
+     "interval": 0.2,
+     "telegraph": 0.9,
+     "motion": {
+      "turn": {
+       "kind": "swirl",
+       "rate": 1.2,
+       "until": 1.4
+      }
+     }
+    }
+   ],
    "xp": 80
   },
   {
@@ -8172,6 +8491,27 @@
      "bursts": 1,
      "interval": 0.3,
      "telegraph": 0.8
+    }
+   ],
+   "sharpPatterns": [
+    {
+     "kind": "fan",
+     "count": 7,
+     "arc": 1.1,
+     "speed": 120,
+     "radius": 2.5,
+     "damage": 14,
+     "bursts": 1,
+     "interval": 0.3,
+     "telegraph": 0.8,
+     "motion": {
+      "turn": {
+       "kind": "curve",
+       "rate": 0.5,
+       "until": 0.8
+      },
+      "mirror": "inward"
+     }
     }
    ],
    "xp": 90
@@ -8204,6 +8544,34 @@
      "bursts": 2,
      "interval": 0.35,
      "telegraph": 0.9
+    }
+   ],
+   "sharpPatterns": [
+    {
+     "kind": "ring",
+     "count": 18,
+     "speed": 95,
+     "radius": 3,
+     "damage": 16,
+     "bursts": 2,
+     "interval": 0.35,
+     "telegraph": 0.9,
+     "motion": {
+      "speed": [
+       {
+        "at": 0.4,
+        "to": 0.25
+       },
+       {
+        "at": 0.85,
+        "to": 0.25
+       },
+       {
+        "at": 1.15,
+        "to": 1.5
+       }
+      ]
+     }
     }
    ],
    "xp": 100

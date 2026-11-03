@@ -1,10 +1,12 @@
 {
- "_source": "sim-UxJfMuuX.js: difficulty defaults (used by normal) and per-level overrides",
+ "_source": "sim-D7a25DGD.js: difficulty defaults (used by normal) and per-level overrides",
  "defaults": {
   "alive": 1,
   "floorShare": 0,
   "earlyRamp": 1,
   "earlyRampTime": 1,
+  "lateRamp": 1,
+  "lateRampTime": 1,
   "crowdRamp": {
    "kind": "normal"
   },
@@ -15,12 +17,14 @@
   "eliteHp": 1,
   "maxHp": 1,
   "xp": 1,
+  "healDrops": 1,
   "addedRevives": 0,
   "allowRevives": true,
   "startCurses": 0,
   "tierLag": 0,
   "wallPests": 1,
   "overtimeHoldSec": 0,
+  "sharpPatterns": false,
   "promises": []
  },
  "easy": {
@@ -37,14 +41,9 @@
   "overtimeHoldSec": 60,
   "promises": [
    {
-    "kind": "medianDeath",
-    "skill": "novice",
-    "minSec": 720
-   },
-   {
-    "kind": "reach",
-    "skill": "casual",
-    "min": 0.6
+    "kind": "mixReach",
+    "min": 0.65,
+    "max": 0.75
    }
   ]
  },
@@ -58,7 +57,14 @@
   "xp": 1.3,
   "addedRevives": 1,
   "tierLag": 2,
-  "wallPests": 0.3
+  "wallPests": 0.3,
+  "promises": [
+   {
+    "kind": "mixReach",
+    "min": 0.4,
+    "max": 0.5
+   }
+  ]
  },
  "hard": {
   "alive": 0.75,
@@ -90,10 +96,9 @@
   "wallPests": 0.3,
   "promises": [
    {
-    "kind": "reach",
-    "skill": "expert",
+    "kind": "mixReach",
     "min": 0.25,
-    "max": 0.5
+    "max": 0.35
    }
   ]
  },
@@ -102,6 +107,8 @@
   "floorShare": 0.65,
   "earlyRamp": 1,
   "earlyRampTime": 0.45,
+  "lateRamp": 0.32,
+  "lateRampTime": 0.3333333333333333,
   "crowdRamp": {
    "kind": "own",
    "points": [
@@ -130,15 +137,16 @@
   "eliteHp": 1.3,
   "maxHp": 1.2,
   "xp": 1.5,
+  "healDrops": 0.8,
   "allowRevives": false,
   "startCurses": 1,
   "tierLag": 2,
   "wallPests": 0.6,
+  "sharpPatterns": true,
   "promises": [
    {
-    "kind": "reach",
-    "skill": "expert",
-    "min": 0.05,
+    "kind": "mixReach",
+    "min": 0.03,
     "max": 0.15
    }
   ]

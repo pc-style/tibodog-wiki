@@ -130,5 +130,15 @@
   "status": "reviewed",
   "updated": "2026-11-03T17:29:46Z",
   "changes": "The main game config, story script and a few tables moved from the sim chunk to the boot chunk; the wiki now finds them in either. Revives outside Story play the same knocked-down scene as Story, then Tibo gets up with 50% HP and 2 s of invulnerability; level-ups earned while down wait until then. Screen clears (`nuke` weapons such as Reset Button) now take only 5% from bosses (was 25%). Armor, dodge and crit item and passive descriptions no longer show point values. Game data otherwise unchanged."
+ },
+ {
+  "seen": "2026-11-03",
+  "main": "main-OiDXGRXk.js",
+  "boot": "boot-CyXYlW39.js",
+  "sim": "sim-D7a25DGD.js",
+  "commit": "24a9122f0f4d",
+  "status": "reviewed",
+  "updated": "2026-11-03T20:20:00Z",
+  "changes": "Nightmare's late damage ramp now starts at 5:00 instead of 15:00, adding 0.064 per minute instead of 0.2. Snacks drop 20% less often on Nightmare (normal pests 0.32%, Crop Patches 28%); their healing is unchanged. Nightmare adds alternate bullet patterns for amusing, Colorado Queen, The Masher, Late Blight, Sir Strawman, The Fryer King, Blight Spore and Ice Imp. Vampire Tot heals 0.05 HP per kill (was 0.15); Hash Bulwark's guard burst rises from 72 to 86. Meteor Russet delays its triggering hit by 0.4 s; the area blast lands at the original trigger position (see its item page for target and capacity rules). Story's starting-kit offer now waits for the current line's reading time. Adds an Update game button on the title and pause screens when a newer build is available, with confirmation during a run; pause also shows the game commit. Refreshes meteor, projectile-trail, landmark, ground and evolution visuals. The difficulty table changes its internal balance targets to `mixReach`; these are not measured survival rates. Icons are unchanged."
  }
 ]

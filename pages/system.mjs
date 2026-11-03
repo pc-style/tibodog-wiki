@@ -5,9 +5,9 @@ import { SITE } from '../lib/render.mjs';
 import { MECH } from './mechanics.mjs';
 import { readFileSync } from 'node:fs';
 
-const SRC_CFG = 'Game config object exported by `sim-UxJfMuuX.js` (`view`, `player`, `dash`, `difficulty`, `win`, `scaling`, … keys)';
+const SRC_CFG = 'Game config object exported by `boot-CyXYlW39.js` (`view`, `player`, `dash`, `difficulty`, `win`, `scaling`, … keys)';
 const SRC_ABOUT = '[About tibo.dog](https://tibo.dog/about/) and [tibo.dog llms.txt](https://tibo.dog/llms.txt), read 2026-11-02';
-const SRC_UI = 'Inline English UI strings in `boot-gj7twfpU.js`';
+const SRC_UI = 'Inline English UI strings in `boot-CyXYlW39.js`';
 
 const guide = (p) => ({ crumbs: [], ...p });
 
@@ -85,7 +85,7 @@ export function systemPages(entityPages) {
     path: '/mechanics-reference',
     title: 'Mechanics reference',
     description: 'Full research notes on tibo.dog mechanics with a verbatim code quote for every claim: formulas, level-ups, evolutions, points of interest, schedules and dogs.',
-    lead: 'These are the complete research notes behind the guide pages. Every claim quotes the minified game code it came from and is labelled **Verified** or **Inferred**. The notes were compiled against build `boot-DIJlLGwy.js` / `sim-DQNACfZS.js`; the current build (`boot-gj7twfpU.js` / `sim-UxJfMuuX.js`) has identical game data, but minified function names in the quotes (such as `Ee` or `Rr`) may differ. See [Versions & updates](/versions).',
+    lead: 'These are the original research notes behind the guide pages, preserved against build `boot-DIJlLGwy.js` / `sim-DQNACfZS.js`. **They describe that historical build, not the current game.** Use the individual guide and entity pages for current values. The notes and their **Verified** or **Inferred** labels are unchanged; the original source bundles were unavailable for rechecking in this update. See [Versions & updates](/versions).',
     body: raw,
     sources: ['Deployed tibo.dog JavaScript, quoted inline'],
     search: 'mechanics reference formulas code citations research notes',
