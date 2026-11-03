@@ -59,7 +59,7 @@ node tools/check-quotes.mjs .cache/<new main>/assets
 
 ## 4. Write the history
 
-For each unreviewed build, set `status: "reviewed"` and replace `changes` with a short, player-facing summary. Before you attribute a change to a build, check that build's `.cache/<main>/data`, because a cumulative diff hides which build introduced what. Write the file with `JSON.stringify(a, null, 1)` to keep the existing format. Rebuild and confirm that `dist/sources.md` has no "Not reviewed yet".
+For each unreviewed build, set `status: "reviewed"` and replace `changes` with a short, player-facing summary. Before you attribute a change to a build, check that build's `.cache/<main>/data`, because a cumulative diff hides which build introduced what. Write the file with `JSON.stringify(a, null, 1)` to keep the existing format. Right before you deploy, set `updated` to the current UTC time (`new Date().toISOString()`, seconds precision) on the newest build's entry and in `data/build.json`; the site shows it as "data synced" and in the Wiki updated column on `/versions`. Rebuild and confirm that `dist/versions.md` has no "Not reviewed yet".
 
 ## 5. Sync back, deploy, verify
 
@@ -72,7 +72,7 @@ For each unreviewed build, set `status: "reviewed"` and replace `changes` with a
    ssh pcstyle.exe.xyz 'cd /home/exedev/tibodog-wiki && export PATH="$HOME/.bun/bin:$HOME/.local/bin:$PATH"; PATH="$(dirname "$(readlink -f "$(command -v node)")"):$PATH"; node build.mjs | tail -1'
    ```
 3. A production deploy needs Adam's explicit approval for this run. Then run `vcx exec -p pc-style -- deploy --prod --yes`. On 2026-11-03 pcstyle's Vercel login returned "Not authorized" and the Mac worked. If one machine fails, try the other and tell Adam the timer cannot auto-deploy.
-4. Verify on the live site: `/sources` shows the new `main-*.js` with no "Not reviewed yet", and spot-check one changed page with `curl`.
+4. Verify on the live site: `/versions` shows the new `main-*.js` as current with no "Not reviewed yet", `curl -s https://tibodog-wiki.vercel.app/api/live-build` returns `"status": "up-to-date"`, and spot-check one changed page with `curl`.
 5. `vercel promote` or a rollback turns off automatic production aliasing. Promote the next good deploy explicitly.
 
 ## 6. Commit

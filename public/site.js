@@ -4,6 +4,51 @@
   const menu = document.querySelector('.side-menu');
   if (menu && window.matchMedia('(max-width: 860px)').matches) menu.open = false;
 
+  // Show exact UTC times also in the reader's time zone, with how long ago they were.
+  const ago = (ms) => {
+    const m = Math.round(ms / 60000);
+    if (m < 1) return 'just now';
+    if (m < 60) return `${m} min ago`;
+    const h = Math.round(m / 60);
+    if (h < 48) return `${h} h ago`;
+    return `${Math.round(h / 24)} days ago`;
+  };
+  const local = (d) => d.toLocaleString(undefined, { day: 'numeric', month: 'short', year: 'numeric', hour: '2-digit', minute: '2-digit', timeZoneName: 'short' });
+  for (const el of document.querySelectorAll('time[data-local]')) {
+    const d = new Date(el.dateTime);
+    if (isNaN(d)) continue;
+    el.title = `${el.textContent} (${d.toISOString()})`;
+    el.textContent = local(d);
+    el.insertAdjacentHTML('afterend', ` <span class="vb-ago">(${ago(Date.now() - d)})</span>`);
+  }
+
+  // Live check: does tibo.dog still serve the game build this wiki documents?
+  const check = document.getElementById('live-check');
+  const result = document.getElementById('live-result');
+  if (check && result) {
+    check.hidden = false;
+    check.addEventListener('click', async () => {
+      check.setAttribute('aria-busy', 'true');
+      check.disabled = true;
+      result.dataset.status = '';
+      result.textContent = 'Checking tibo.dog…';
+      try {
+        const res = await fetch('/api/live-build', { cache: 'no-store' });
+        const body = await res.json();
+        result.dataset.status = res.ok ? body.status : 'error';
+        const icon = { 'up-to-date': '✓', 'game-updated': '⚠', 'wiki-ahead': '⚠' }[body.status] ?? '✕';
+        const msg = res.ok ? body.message : body.error?.message ?? `Check failed (HTTP ${res.status}).`;
+        result.textContent = `${icon} ${msg} Checked ${new Date(body.checkedAt ?? Date.now()).toLocaleTimeString(undefined, { hour: '2-digit', minute: '2-digit', second: '2-digit' })}.`;
+      } catch {
+        result.dataset.status = 'error';
+        result.textContent = '✕ Could not reach the live check. Try again.';
+      }
+      check.disabled = false;
+      check.removeAttribute('aria-busy');
+      check.textContent = 'Check again';
+    });
+  }
+
   // Sortable tables.
   const num = (s) => {
     const m = s.replace(/,/g, '').match(/^[-+]?\d*\.?\d+/);

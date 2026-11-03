@@ -87,6 +87,29 @@ pre code { background: none; padding: 0; }
 .sresults small { color: var(--muted); margin-left: auto; font-size: 12px; }
 .play { color: var(--head-text) !important; white-space: nowrap; font-size: 14px; opacity: .9; }
 
+.verbar {
+  display: flex; flex-wrap: wrap; align-items: center; gap: 6px 18px;
+  padding: 7px 20px; background: var(--panel-2); border-bottom: 1px solid var(--line);
+  font-size: 13px; color: var(--text);
+}
+.vb-k { color: var(--muted); }
+.verbar time { font-weight: 600; font-variant-numeric: tabular-nums; }
+.vb-ago { color: var(--muted); font-weight: 400; }
+.vb-warn { color: #a33a1a !important; font-weight: 600; }
+.vb-live { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-left: auto; }
+.vb-live button {
+  font: inherit; font-weight: 600; padding: 3px 10px; cursor: pointer; color: var(--text);
+  background: var(--panel); border: 1px solid var(--line); border-radius: 5px;
+}
+.vb-live button:hover { border-color: var(--accent); }
+.vb-live button[aria-busy="true"] { cursor: progress; opacity: .7; }
+#live-result:empty { display: none; }
+#live-result { padding: 2px 8px; border-radius: 4px; border: 1px solid transparent; }
+#live-result[data-status="up-to-date"] { background: #2f7d3a1f; border-color: #2f7d3a66; }
+#live-result[data-status="game-updated"], #live-result[data-status="wiki-ahead"] { background: #c0761a24; border-color: #c0761a88; }
+#live-result[data-status="error"] { background: #a33a1a1f; border-color: #a33a1a66; }
+@media (max-width: 860px) { .vb-live { margin-left: 0; } }
+
 .layout { display: grid; grid-template-columns: 200px minmax(0, 1fr); max-width: 1320px; margin: 0 auto; }
 .side { padding: 16px 12px 16px 20px; font-size: 14px; }
 .side summary { display: none; }

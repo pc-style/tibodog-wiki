@@ -1,6 +1,6 @@
 // Markdown content negotiation, Markdown/JSON 404 bodies and Vary headers for the static wiki.
 import { next, rewrite } from '@vercel/functions';
-import PATHS, { API as API_PATHS } from './paths.js';
+import PATHS, { API as API_PATHS, DOCUMENTED, KNOWN } from './paths.js';
 
 const PAGES = new Set(PATHS);
 const API = new Set(API_PATHS);
@@ -25,12 +25,38 @@ function wantsMarkdown(accept) {
 const mdNotFound = (path) =>
   `# 404 Not Found\n\nThere is no page at \`${path}\` on the tibo.dog Wiki.\n\n- Main page: /index.md\n- Every page: /all-pages.md\n- Index for agents: /llms.txt\n- Data API: /api/index.json\n`;
 
+const json = (body, status = 200) =>
+  new Response(JSON.stringify(body, null, 1), { status, headers: { 'content-type': 'application/json; charset=utf-8', 'cache-control': 'no-store', 'access-control-allow-origin': '*' } });
+
+// Loads tibo.dog now and compares the entry script it serves with the build the wiki documents.
+async function liveBuild() {
+  const checkedAt = new Date().toISOString().replace(/\.\d+Z$/, 'Z');
+  let main;
+  try {
+    const res = await fetch('https://tibo.dog/', { cache: 'no-store', headers: { 'user-agent': 'tibodog-wiki live build check (+https://tibodog-wiki.vercel.app/versions)' }, signal: AbortSignal.timeout(8000) });
+    if (!res.ok) throw new Error(`tibo.dog answered HTTP ${res.status}`);
+    main = (await res.text()).match(/assets\/(main-[A-Za-z0-9_-]{8}\.js)/)?.[1];
+    if (!main) throw new Error('no main-*.js script found in the tibo.dog page');
+  } catch (e) {
+    return json({ error: { code: 'live_check_failed', status: 502, message: `Could not read the live game: ${e.message}`, hint: 'Try again in a minute.' }, checkedAt, documented: DOCUMENTED }, 502);
+  }
+  const version = KNOWN.find((b) => b.main === main)?.version ?? null;
+  const status = main === DOCUMENTED.main ? 'up-to-date' : version && version < DOCUMENTED.version ? 'wiki-ahead' : 'game-updated';
+  const message = {
+    'up-to-date': `The wiki matches the live game: tibo.dog serves game version ${DOCUMENTED.version} (${main}).`,
+    'game-updated': `tibo.dog has a newer build than this wiki: it serves ${main}${version ? ` (game version ${version}, not on the wiki yet)` : ', which the wiki has not documented yet'}. The wiki documents game version ${DOCUMENTED.version} (${DOCUMENTED.main}).`,
+    'wiki-ahead': `tibo.dog serves an older build, game version ${version} (${main}); this wiki documents version ${DOCUMENTED.version}. The game may have been rolled back.`,
+  }[status];
+  return json({ status, message, checkedAt, live: { main, version }, documented: DOCUMENTED });
+}
+
 export default function middleware(request) {
   const url = new URL(request.url);
   const p = url.pathname.length > 1 ? url.pathname.replace(/\/$/, '') : '/';
   const accept = request.headers.get('accept') ?? '';
 
   if (p.startsWith('/api/')) {
+    if (p === '/api/live-build' || p === '/api/v1/live-build') return liveBuild();
     if (API.has(p)) return next();
     return new Response(
       JSON.stringify({ error: { code: 'not_found', status: 404, message: `No API endpoint at ${p}.`, hint: 'GET /api/v1/index.json lists every endpoint; /openapi.json describes them.' } }, null, 1),

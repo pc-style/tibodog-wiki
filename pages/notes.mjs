@@ -98,7 +98,7 @@ If the game closed unexpectedly, it restarts on Low quality: “The game closed 
       `- **Leaderboards and shared runs.** Shared run links live under \`/r/\`; no public leaderboard page was found.\n` +
       `- **Other languages.** English text only; the game has 27 languages.\n` +
       `- **Hands-on testing.** Values come from code, not from measuring play.\n` +
-      `- **Future updates.** The game changes often (it shipped two new builds on the research day). The wiki checks the live site for new builds; compare the build names on [Sources & method](/sources) with the live site.\n`;
+      `- **Future updates.** The game changes often (it shipped two new builds on the research day). The wiki checks the live site for new builds every 30 minutes; use **Check live game for updates** at the top of any page, or see [Versions & updates](/versions).\n`;
   },
 };
 
@@ -110,7 +110,7 @@ export function historyPage() {
     ['2026-11-01', 'Launch: “Day 28/ tibo\'s game has landed … i had a blast making it with grok bot and cursor! i hope you enjoy it and find all the easter eggs … you should be able to play it inside of X too”.', LAUNCH],
     ['2026-11-01', 'Build trivia thread (see below). Says the game supports 10 languages.', TRIVIA],
     ['2026-11-02', 'First known post-launch fix: “this was a bug, fixed it :D”, replying to a player report about the dialogue box and Grok Bot link. Which behaviour was the bug is not stated.', 'https://x.com/poteto/status/2117119937907192161'],
-    ...BUILDS.slice(1).map((b) => [b.seen, `New game build (\`${b.boot}\`, \`${b.sim}\`${b.commit ? `, commit \`${b.commit}\`` : ''}). ${b.changes} No announcement found.`, '/sources#build-changes-tracked']),
+    ...BUILDS.slice(1).map((b) => [b.seen, `New game build: game version ${b.version} (\`${b.boot}\`, \`${b.sim}\`${b.commit ? `, commit \`${b.commit}\`` : ''}). ${b.changes} No announcement found.`, '/versions#version-history']),
     ['by 2026-11-02', 'The game lists 27 languages on its About page and llms.txt (up from 10 in the trivia thread). No announcement found; exact date unknown.', 'https://tibo.dog/about/'],
   ];
   const body = `tibo.dog was made by [poteto](https://x.com/poteto) with Grok Bot and Cursor and launched on 2026-11-01. There are no official patch notes; this timeline uses the developer's own posts.\n\n## Timeline\n\n` +

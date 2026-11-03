@@ -24,6 +24,7 @@
   "sim": "sim-Cy57yi5h.js",
   "commit": "6dcf252e92c4",
   "status": "reviewed",
+  "updated": "2026-11-02T18:55:28Z",
   "changes": "Content, English text, game config values, difficulty table and icons are identical. Removed: the drop relocation rule from the previous build; the step that nudged points of interest apart when the world is generated; and the step that moved a Root Tunnel exit off other points of interest. Added: when a Spud Freezer only catches bosses, its message says how many bosses were slowed; shared run pages show the difficulty level; a new whirlpool look for the Stand Mixer."
  },
  {
@@ -33,6 +34,7 @@
   "sim": "sim-BfRHgfLr.js",
   "commit": "9564ddd5533c",
   "status": "reviewed",
+  "updated": "2026-11-02T21:47:03Z",
   "changes": "Content, English text, game logic, difficulty table and icons are identical. Added: a link such as `https://tibo.dog/?difficulty=hard` starts a run on that level straight from the title screen; Auto quality can now step back up when the game runs smoothly (Apple GPUs on touch devices start on Medium); weapons got element-coloured hit sparks; analytics waits up to 20 s instead of 3 s to learn the player's region before asking for consent."
  },
  {
@@ -42,6 +44,7 @@
   "sim": "sim-Cw0f1Sho.js",
   "commit": "5cf50114d795",
   "status": "reviewed",
+  "updated": "2026-11-02T23:00:53Z",
   "changes": "Content, English text, game logic, difficulty table and icons are identical. The only change: while the screen is fully dark during story mode's knock-down sequence, the on-screen banners are hidden."
  },
  {
@@ -51,6 +54,7 @@
   "sim": "sim-DtpAETtC.js",
   "commit": "7924b2fb8101",
   "status": "reviewed",
+  "updated": "2026-11-02T23:02:34Z",
   "changes": "Content, English text, game logic, difficulty table and icons are identical. The only change: the renderer no longer prepares the intro cutscene when the intro will be skipped (a `?difficulty=` link or skip-intro start), which shortens loading."
  },
  {
@@ -78,6 +82,7 @@
   "sim": "sim-H1RjVhZc.js",
   "commit": "a511ea70ce57",
   "status": "reviewed",
+  "updated": "2026-11-03T00:30:11Z",
   "changes": "Game data, English text, difficulty table, icons and game logic are identical (renamed code only)."
  },
  {
@@ -123,6 +128,7 @@
   "sim": "sim-UxJfMuuX.js",
   "commit": "10e6e7589a11",
   "status": "reviewed",
+  "updated": "2026-11-03T17:29:46Z",
   "changes": "The main game config, story script and a few tables moved from the sim chunk to the boot chunk; the wiki now finds them in either. Revives outside Story play the same knocked-down scene as Story, then Tibo gets up with 50% HP and 2 s of invulnerability; level-ups earned while down wait until then. Screen clears (`nuke` weapons such as Reset Button) now take only 5% from bosses (was 25%). Armor, dodge and crit item and passive descriptions no longer show point values. Game data otherwise unchanged."
  }
 ]

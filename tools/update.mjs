@@ -31,6 +31,7 @@ const tryRun = (cmd, args) => {
 };
 const base = (f) => f.replace(/-[A-Za-z0-9_-]{8}\.js$/, '');
 const today = new Date().toISOString().slice(0, 10);
+const now = new Date().toISOString().replace(/\.\d+Z$/, 'Z');
 
 const build = JSON.parse(readFileSync('data/build.json', 'utf8'));
 const live = await mirror();
@@ -122,7 +123,7 @@ if (!apply) {
   const renames = Object.fromEntries(
     Object.entries(prev?.chunks ?? {}).filter(([b, f]) => C[b] && C[b] !== f).map(([, f]) => [f, C[base(f)]]),
   );
-  writeFileSync('data/build.json', JSON.stringify({ researched: today, site: build.site, commit, main: live.main, boot: C.boot, sim: C.sim, content: C['i18n-en-content'] }, null, 1) + '\n');
+  writeFileSync('data/build.json', JSON.stringify({ researched: today, updated: now, site: build.site, commit, main: live.main, boot: C.boot, sim: C.sim, content: C['i18n-en-content'] }, null, 1) + '\n');
 
   // 6. Chunk names in page sources. Text about past builds lives in data/builds.json and is not touched.
   let renamed = 0;
@@ -157,6 +158,7 @@ if (apply) {
     builds.push({
       seen: today, main: live.main, boot: C.boot, sim: C.sim, commit,
       status: status === 'clean' ? 'reviewed' : 'unreviewed',
+      updated: now,
       changes: status === 'clean'
         ? 'Game data, English text, difficulty table, icons and game logic are identical (renamed code only).'
         : `Detected: ${review.join('; ')}.`,

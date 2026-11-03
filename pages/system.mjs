@@ -1,5 +1,5 @@
 // Guide, mechanics and meta pages.
-import { R, GAME, STORY, FORMULA, DIFF, BUILD, t, name, link, ilink, icon, fmt, pct, RARITY, slug, statLabel } from '../lib/data.mjs';
+import { R, GAME, STORY, FORMULA, DIFF, BUILD, BUILT_AT, utc, t, name, link, ilink, icon, fmt, pct, RARITY, slug, statLabel } from '../lib/data.mjs';
 import { table, flatRows, json, SRC_REG, SRC_TEXT } from './entities.mjs';
 import { SITE } from '../lib/render.mjs';
 import { MECH } from './mechanics.mjs';
@@ -46,7 +46,7 @@ export function systemPages(entityPages) {
         ['Weapon / passive slots', `${GAME.player.weaponSlots} / ${GAME.player.passiveSlots}`],
         ['Dog pack', `Up to ${GAME.dogs.maxPack}`],
         ['Languages', '27'],
-        ['Build documented', `\`${BUILD.boot}\`, researched ${BUILD.researched}`],
+        ['Game version documented', `[${BUILD.version}](/versions) (\`${BUILD.main}\`), wiki updated ${utc(BUILT_AT)}`],
       ]) +
       `\n## About this wiki\n\nEvery number on this wiki comes from the game's own deployed code and content tables, not from memory or guesswork. Pages separate **verified** values (read from the code) from **inference** (our interpretation). See [Sources & method](/sources) and the list of [coverage gaps](/coverage).\n\nFor agents: every page has a Markdown version at the same URL plus \`.md\` (this page: [/index.md](/index.md)), and requests with \`Accept: text/markdown\` get Markdown directly. See [/llms.txt](/llms.txt) and the [data API](/api).\n`,
     sources: [SRC_ABOUT, SRC_REG, SRC_CFG],
@@ -85,7 +85,7 @@ export function systemPages(entityPages) {
     path: '/mechanics-reference',
     title: 'Mechanics reference',
     description: 'Full research notes on tibo.dog mechanics with a verbatim code quote for every claim: formulas, level-ups, evolutions, points of interest, schedules and dogs.',
-    lead: 'These are the complete research notes behind the guide pages. Every claim quotes the minified game code it came from and is labelled **Verified** or **Inferred**. The notes were compiled against build `boot-DIJlLGwy.js` / `sim-DQNACfZS.js`; the current build (`boot-gj7twfpU.js` / `sim-UxJfMuuX.js`) has identical game data, but minified function names in the quotes (such as `Ee` or `Rr`) may differ. See [Sources & method](/sources#build-changes-tracked).',
+    lead: 'These are the complete research notes behind the guide pages. Every claim quotes the minified game code it came from and is labelled **Verified** or **Inferred**. The notes were compiled against build `boot-DIJlLGwy.js` / `sim-DQNACfZS.js`; the current build (`boot-gj7twfpU.js` / `sim-UxJfMuuX.js`) has identical game data, but minified function names in the quotes (such as `Ee` or `Rr`) may differ. See [Versions & updates](/versions).',
     body: raw,
     sources: ['Deployed tibo.dog JavaScript, quoted inline'],
     search: 'mechanics reference formulas code citations research notes',
@@ -123,6 +123,14 @@ export function systemPages(entityPages) {
     body: MECH.sources(),
     sources: [],
     search: 'sources citations method research version',
+  });
+  add({
+    path: '/versions',
+    title: 'Versions & updates',
+    description: 'Exactly when the tibo.dog Wiki was last updated, which game version it documents, every game build it has tracked, and a live check against tibo.dog.',
+    body: MECH.versions(),
+    sources: [],
+    search: 'version versions update updated changelog patch build live check date',
   });
   add({
     path: '/coverage',

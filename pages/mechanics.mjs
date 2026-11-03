@@ -1,5 +1,5 @@
 // Mechanics and guide content. Every claim cites the game code; interpretation is labelled.
-import { R, GAME, STORY, FORMULA, DIFF, BUILD, BUILDS, t, name, link, ilink, fmt, pct, RARITY, statLabel } from '../lib/data.mjs';
+import { R, GAME, STORY, FORMULA, DIFF, BUILD, BUILDS, BUILT_AT, utc, t, name, link, ilink, fmt, pct, RARITY, statLabel } from '../lib/data.mjs';
 import { table, json } from './entities.mjs';
 import { NOTES, historyPage } from './notes.mjs';
 
@@ -291,13 +291,13 @@ function strategy() {
 }
 
 function sources() {
-  return `## Game version\n\ntibo.dog shows no version number on screen. The end-of-run screen code carries a short commit id, \`${BUILD.commit}\` for this build. This wiki identifies the build by that id and its file names, as served by https://tibo.dog/ on ${BUILD.researched}:\n\n` + table(['File', 'Role'], [
+  return `## Game version\n\ntibo.dog shows no version number on screen. The end-of-run screen code carries a short commit id, \`${BUILD.commit}\` for this build. This wiki identifies the build by that id and its file names, and numbers builds in the order it saw them: this is game version ${BUILD.version} ([all versions](/versions)). Files as served by https://tibo.dog/ on ${BUILD.researched}:\n\n` + table(['File', 'Role'], [
     [`\`${BUILD.main}\``, 'Entry script referenced by index.html'],
     [`\`${BUILD.boot}\``, 'Boot module: content registry (weapons, items, enemies…), UI and English UI text'],
     [`\`${BUILD.sim}\``, 'Simulation: game config, formulas, difficulty table, story script'],
     [`\`${BUILD.content}\``, 'English content names and descriptions'],
     ['`atlas-*.png`, `atlas-late-*.png`', 'Sprite atlases used for icons'],
-  ]) + `\n## Method\n\n1. Downloaded the deployed HTML and every JavaScript chunk it references.\n2. Loaded the boot and simulation modules in Node with stubbed browser globals and serialised the exported content registry and config objects. Nothing was simulated or guessed; values are the objects the game itself uses.\n3. Took names and descriptions from the English content bundle.\n4. Cropped icons from the game's sprite atlases using the atlas frame tables (first frame of the icon or idle animation, nearest-neighbour ×4).\n5. Read formulas directly from the minified code; each formula on the wiki quotes the code it came from.\n6. Read the official [About page](https://tibo.dog/about/), [llms.txt](https://tibo.dog/llms.txt) and [privacy page](https://tibo.dog/privacy). ${NOTES.officialSources ?? ''}\n\n## Verified vs inference\n\n- **Verified**: numbers and recipes read from the game's data objects, and formulas quoted from code.\n- **In-game text**: quoted names and descriptions.\n- **Inference**: our reading of what an internal field means (for example behaviour parameter names), or strategy advice. These are labelled on the page.\n\nThe game may change at any time. If the live game disagrees with this wiki, the game is right; please [report it](/contact).\n\n## Build changes tracked\n\nThe wiki compares every new build with the previous one: game data, English text, the difficulty table, icons, and the simulation and boot code with renamed minified identifiers ignored. Every code quote on this wiki is rechecked against the new build. Builds seen:\n\n` + table(['First seen', 'Files', 'Commit', 'Changes'], BUILDS.map((b) => [b.seen, `\`${b.boot}\`<br>\`${b.sim}\``, b.commit ? `\`${b.commit}\`` : '', b.status === 'reviewed' ? b.changes : `Not reviewed yet. ${b.changes}`])) + `\n\n## Live encyclopedia\n\nThe game has an in-game encyclopedia with shelves for weapons, passives, items, evolutions, enemies, bosses, biomes and dogs (\`encyclopedia-screen-Bi4wPEoA.js\`). Entries show as “???” until found in play. This wiki's categories mirror those shelves.\n`;
+  ]) + `\n## Method\n\n1. Downloaded the deployed HTML and every JavaScript chunk it references.\n2. Loaded the boot and simulation modules in Node with stubbed browser globals and serialised the exported content registry and config objects. Nothing was simulated or guessed; values are the objects the game itself uses.\n3. Took names and descriptions from the English content bundle.\n4. Cropped icons from the game's sprite atlases using the atlas frame tables (first frame of the icon or idle animation, nearest-neighbour ×4).\n5. Read formulas directly from the minified code; each formula on the wiki quotes the code it came from.\n6. Read the official [About page](https://tibo.dog/about/), [llms.txt](https://tibo.dog/llms.txt) and [privacy page](https://tibo.dog/privacy). ${NOTES.officialSources ?? ''}\n\n## Verified vs inference\n\n- **Verified**: numbers and recipes read from the game's data objects, and formulas quoted from code.\n- **In-game text**: quoted names and descriptions.\n- **Inference**: our reading of what an internal field means (for example behaviour parameter names), or strategy advice. These are labelled on the page.\n\nThe game may change at any time. If the live game disagrees with this wiki, the game is right; please [report it](/contact).\n\n## Build changes tracked\n\nThe wiki compares every new build with the previous one: game data, English text, the difficulty table, icons, and the simulation and boot code with renamed minified identifiers ignored. Every code quote on this wiki is rechecked against the new build. Every build seen so far, with what changed and exactly when the wiki was updated, is on [Versions & updates](/versions).\n\n## Live encyclopedia\n\nThe game has an in-game encyclopedia with shelves for weapons, passives, items, evolutions, enemies, bosses, biomes and dogs (\`encyclopedia-screen-Bi4wPEoA.js\`). Entries show as “???” until found in play. This wiki's categories mirror those shelves.\n`;
 }
 
 function coverage() {
@@ -325,4 +325,25 @@ function guides() {
   ];
 }
 
-export const MECH = { pois, gettingStarted, guides, sources, coverage, bossSchedule };
+function versions() {
+  const pending = BUILDS.filter((b) => b.status !== 'reviewed');
+  return `## Current version\n\n` + table(['', ''], [
+    ['Wiki last updated', `**${utc(BUILT_AT)}** (when the version you are reading was deployed)`],
+    ['Game version documented', `**${BUILD.version}** of ${BUILDS.length} seen`],
+    ['Game commit', BUILD.commit ? `\`${BUILD.commit}\`` : 'unknown'],
+    ['Game files', `\`${BUILD.main}\`, \`${BUILD.boot}\`, \`${BUILD.sim}\``],
+    ['Game data synced to the wiki', BUILD.updated ? utc(BUILD.updated) : `${BUILD.researched} (exact time not recorded)`],
+    ['Builds waiting for review', pending.length ? pending.map((b) => `version ${b.version}`).join(', ') : 'None'],
+  ]) +
+    `\n## Is the wiki behind the game?\n\nPress **Check live game for updates** in the bar at the top of any page. It asks [/api/live-build](/api/live-build) to load https://tibo.dog/ right now and compare the build it serves with the one this wiki documents. The answer says either that the wiki matches the live game, or that tibo.dog has shipped a build the wiki has not caught up with yet.\n\nThe maintainer's checker looks for new builds every 30 minutes. A build that only renames code is applied automatically; one that changes game data or logic is reviewed first, and the pages are updated before it is deployed.\n\n## How versions are numbered\n\ntibo.dog has no visible version number. The wiki identifies each build by the file name of its entry script (\`main-….js\`) and the short commit id in the game code, and numbers builds 1, 2, 3… in the order it first saw them. Times are in UTC; with JavaScript on, the bar at the top also shows them in your time zone.\n\n- **First seen**: the day the wiki first found the build on tibo.dog.\n- **Wiki updated**: when the wiki was deployed with that build's data. A dash means the build was folded into a later update without a deploy of its own, or predates exact deploy records.\n\n## Version history\n\nNewest first.\n\n` +
+    table(['Version', 'First seen', 'Wiki updated', 'Game commit', 'Entry file', 'Changes'], [...BUILDS].reverse().map((b) => [
+      b.main === BUILD.main ? `**${b.version}** (current)` : String(b.version),
+      b.seen,
+      b.updated ? utc(b.updated) : '—',
+      b.commit ? `\`${b.commit}\`` : '—',
+      `\`${b.main}\``,
+      b.status === 'reviewed' ? b.changes : `**Not reviewed yet.** ${b.changes}`,
+    ])) + '\n';
+}
+
+export const MECH = { pois, gettingStarted, guides, sources, versions, coverage, bossSchedule };
