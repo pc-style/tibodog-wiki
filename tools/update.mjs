@@ -4,15 +4,15 @@
 //   (no flag)  mirror the live build, report what changed, change nothing
 //   --apply    also write data/, icons and build.json, rename chunk names and quotes in pages/,
 //              then rebuild and recheck every quote
-//   --force    run even if the live build is the one the wiki documents
+//   --force    recheck a reviewed build; pending reviews always resume without overwriting evidence
 //
 // Writes .cache/<main>/report.md. Last stdout line is "status: <s>", where s is
-//   up-to-date    live build is the documented one
+//   up-to-date    live build is the documented one and every history entry is reviewed
 //   clean         only renames, art or translations changed; safe to deploy unreviewed
 //   needs-review  game data, sim/boot logic or quoted code changed; a person or agent must
 //                 update the affected pages (see report) before deploying
 import { execFileSync } from 'node:child_process';
-import { readFileSync, writeFileSync, readdirSync, cpSync, mkdirSync } from 'node:fs';
+import { readFileSync, writeFileSync, readdirSync, cpSync, mkdirSync, existsSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { mirror } from './fetch-build.mjs';
@@ -34,17 +34,25 @@ const today = new Date().toISOString().slice(0, 10);
 const now = new Date().toISOString().replace(/\.\d+Z$/, 'Z');
 
 const build = JSON.parse(readFileSync('data/build.json', 'utf8'));
+const builds = JSON.parse(readFileSync('data/builds.json', 'utf8'));
+const pending = builds.filter((b) => b.status === 'unreviewed');
 const live = await mirror();
 console.log(`documented: ${build.main}  live: ${live.main}`);
-if (live.main === build.main && !force) {
-  console.log('status: up-to-date');
+if (live.main === build.main && (!force || pending.length)) {
+  // Reapplying would compare the updated data to itself and erase the original review report.
+  for (const b of pending) {
+    console.log(`review required: ${b.main}`);
+    const report = join(ROOT, '.cache', b.main.replace(/\.js$/, ''), 'report.md');
+    if (existsSync(report)) console.log(`report: ${report}`);
+  }
+  console.log(`status: ${pending.length ? 'needs-review' : 'up-to-date'}`);
   process.exit(0);
 }
 const cache = dirname(live.dir);
 const report = [`# tibo.dog build ${live.main}`, '', `Checked ${new Date().toISOString()}. Wiki documented \`${build.main}\`.`, ''];
-let review = [];
+let review = pending.map((b) => `unreviewed build ${b.main}`);
 
-// 1. Previous build (for code diffs). Hashed assets usually stay on the CDN.
+// 1. Previous build (for code diffs). Prefer the local mirror; old CDN assets may be deleted.
 let prev = null;
 try {
   prev = await mirror(undefined, build.main);
@@ -151,9 +159,8 @@ if (!apply) {
 
 const status = review.length ? 'needs-review' : 'clean';
 if (apply) {
-  // 8. Log the build. An unreviewed entry shows as "Not reviewed yet" on /sources until someone
+  // 8. Log the build. An unreviewed entry shows as "Not reviewed yet" on /versions until someone
   // updates the affected pages, writes the change summary and sets status to "reviewed".
-  const builds = JSON.parse(readFileSync('data/builds.json', 'utf8'));
   if (!builds.some((b) => b.main === live.main)) {
     builds.push({
       seen: today, main: live.main, boot: C.boot, sim: C.sim, commit,

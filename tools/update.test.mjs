@@ -1,0 +1,44 @@
+import { test } from 'node:test';
+import assert from 'node:assert/strict';
+import { mkdtempSync, mkdirSync, copyFileSync, writeFileSync, readFileSync, rmSync } from 'node:fs';
+import { tmpdir } from 'node:os';
+import { join } from 'node:path';
+import { execFileSync } from 'node:child_process';
+
+for (const scenario of [
+  { name: 'resumes review of the documented build', pending: 'main-current1.js' },
+  { name: 'does not erase an interrupted review with --force', pending: 'main-current1.js', force: true },
+  { name: 'keeps older unreviewed builds visible', pending: 'main-previous.js' },
+  { name: 'reports up-to-date only when all builds are reviewed' },
+]) {
+  test(scenario.name, () => {
+    const root = mkdtempSync(join(tmpdir(), 'wiki-update-'));
+    try {
+      mkdirSync(join(root, 'tools'));
+      mkdirSync(join(root, 'data'));
+      const cache = join(root, '.cache', 'main-current1');
+      mkdirSync(join(cache, 'assets'), { recursive: true });
+      copyFileSync(new URL('./update.mjs', import.meta.url), join(root, 'tools', 'update.mjs'));
+      writeFileSync(join(root, 'tools', 'fetch-build.mjs'), `export async function mirror() {
+        return { main: 'main-current1.js', dir: ${JSON.stringify(join(cache, 'assets'))} };
+      }`);
+      writeFileSync(join(root, 'data', 'build.json'), JSON.stringify({ main: 'main-current1.js' }));
+      const history = scenario.pending
+        ? [{ main: scenario.pending, status: 'unreviewed' }]
+        : [{ main: 'main-current1.js', status: 'reviewed' }];
+      if (scenario.pending && scenario.pending !== 'main-current1.js') {
+        history.push({ main: 'main-current1.js', status: 'reviewed' });
+      }
+      writeFileSync(join(root, 'data', 'builds.json'), JSON.stringify(history));
+      const report = '# Original review\nDiff against the last reviewed build.\n';
+      writeFileSync(join(cache, 'report.md'), report);
+      const output = execFileSync(process.execPath, [join(root, 'tools', 'update.mjs'), '--apply', ...(scenario.force ? ['--force'] : [])], { encoding: 'utf8' });
+      assert.match(output, new RegExp(`status: ${scenario.pending ? 'needs-review' : 'up-to-date'}\\n$`));
+      if (scenario.pending) assert.ok(output.includes(scenario.pending));
+      assert.equal(readFileSync(join(cache, 'report.md'), 'utf8'), report);
+      assert.deepEqual(JSON.parse(readFileSync(join(root, 'data', 'builds.json'), 'utf8')), history);
+    } finally {
+      rmSync(root, { recursive: true, force: true });
+    }
+  });
+}
