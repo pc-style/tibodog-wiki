@@ -9490,7 +9490,7 @@
     "bramble",
     "mushroom"
    ],
-   "propsPerChunk": 20,
+   "propsPerChunk": 12,
    "poiWeights": {
     "dog": 2.2,
     "paidChest": 4,

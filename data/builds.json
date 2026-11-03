@@ -140,5 +140,15 @@
   "status": "reviewed",
   "updated": "2026-11-03T20:20:00Z",
   "changes": "Nightmare's late damage ramp now starts at 5:00 instead of 15:00, adding 0.064 per minute instead of 0.2. Snacks drop 20% less often on Nightmare (normal pests 0.32%, Crop Patches 28%); their healing is unchanged. Nightmare adds alternate bullet patterns for amusing, Colorado Queen, The Masher, Late Blight, Sir Strawman, The Fryer King, Blight Spore and Ice Imp. Vampire Tot heals 0.05 HP per kill (was 0.15); Hash Bulwark's guard burst rises from 72 to 86. Meteor Russet delays its triggering hit by 0.4 s; the area blast lands at the original trigger position (see its item page for target and capacity rules). Story's starting-kit offer now waits for the current line's reading time. Adds an Update game button on the title and pause screens when a newer build is available, with confirmation during a run; pause also shows the game commit. Refreshes meteor, projectile-trail, landmark, ground and evolution visuals. The difficulty table changes its internal balance targets to `mixReach`; these are not measured survival rates. Icons are unchanged."
+ },
+ {
+  "seen": "2026-11-03",
+  "main": "main-h7eBU7cE.js",
+  "boot": "boot-EnyBXiJd.js",
+  "sim": "sim-Pm5bDZYj.js",
+  "commit": "76dd9d6b9d3d",
+  "status": "reviewed",
+  "updated": "2026-11-03T21:53:44Z",
+  "changes": "Cursed extra bosses now use floor(curses taken × 0.25), down from ×0.5: the first extra boss needs four curses taken (four Moldy Shrines, or three on Nightmare with its starting curse). Nightmare no longer shows enemy shot-path markers; Easy, Normal and Hard keep them. Peel Forest props per chunk drop from 20 to 12, and frozen-crate sprites shrink to 85% scale. Missed amusing spawns are replayed when its entrance finishes loading, without repeating the spawn sound. Phone dialogue now replaces an older pending conversation instead of queuing it, removes typing delays, and shows Alex's join line after he joins. Improves sprite texture packing and updates the in-game changelog. Other content values, English content descriptions, difficulty multipliers, simulation logic and wiki icons are unchanged."
  }
 ]

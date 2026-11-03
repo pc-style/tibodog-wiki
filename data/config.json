@@ -1488,6 +1488,14 @@
    "heldFlickPxPerSec": 900,
    "flickArrowSec": 0.35
   },
+  "telegraph": {
+   "pathMarks": {
+    "easy": true,
+    "normal": true,
+    "hard": true,
+    "nightmare": false
+   }
+  },
   "rowScroll": {
    "dragPx": 5
   },
@@ -2106,7 +2114,7 @@
    "globalCurse": 0,
    "firstRunSpikeOnlyOnce": false,
    "extraElitesPerCurse": 1,
-   "extraBossesPerCurse": 0.5,
+   "extraBossesPerCurse": 0.25,
    "chestsPerCursedExtra": 1
   },
   "win": {
