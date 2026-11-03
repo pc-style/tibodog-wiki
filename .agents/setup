@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+cd "$(dirname "${BASH_SOURCE[0]}")/.."
+
+# Node, pnpm, Python and uv are provided by the Amp orb image.
+echo 'Checking the orb toolchain'
+node --version
+pnpm --version
+python3 --version
+node -e 'if (Number(process.versions.node.split(".")[0]) < 20) throw new Error("Node.js 20+ is required")'
+
+echo 'Installing locked Node dependencies'
+time pnpm install --frozen-lockfile
+
+# The updater uses python3 -I, which cannot see user-site packages or PYTHONPATH.
+# Install into the selected interpreter, not a separate virtual environment.
+echo 'Checking Pillow for the game-update tools'
+if ! python3 -I -c 'from PIL import Image, ImageChops' 2>/dev/null; then
+  time uv pip install --python "$(command -v python3)" 'Pillow==12.0.0'
+fi
+python3 -I -c 'from PIL import Image, ImageChops; print("Pillow", Image.__version__)'
