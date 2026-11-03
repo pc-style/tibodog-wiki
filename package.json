@@ -1,0 +1,14 @@
+{
+  "name": "tibodog-wiki",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs",
+    "game:check": "node tools/update.mjs",
+    "game:update": "node tools/update.mjs --apply"
+  },
+  "dependencies": {
+    "@vercel/functions": "^3.10.5",
+    "marked": "^15.0.0"
+  }
+}

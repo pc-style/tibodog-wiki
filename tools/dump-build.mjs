@@ -1,0 +1,82 @@
+// Loads a mirrored build's boot and sim modules in Node and writes registry.json,
+// config.json and en-content.json next to it, in the same shape as data/.
+// Usage: node tools/dump-build.mjs <assets dir> <boot file> <sim file> <content file> <out dir>
+import { writeFileSync, mkdirSync, readFileSync } from 'node:fs';
+
+const [dir, bootF, simF, contentF, out] = process.argv.slice(2);
+const P = new Proxy(function () {}, {
+  get: (_, k) => (k === Symbol.toPrimitive ? () => 0 : k === 'then' ? undefined : P),
+  apply: () => P,
+  construct: () => P,
+});
+for (const k of ['window', 'document', 'navigator', 'localStorage', 'sessionStorage', 'location', 'matchMedia', 'requestAnimationFrame', 'HTMLElement', 'HTMLCanvasElement', 'Image', 'AudioContext', 'addEventListener', 'CSS', 'OffscreenCanvas', 'Worker', 'screen', 'devicePixelRatio', 'indexedDB', 'ResizeObserver', 'PerformanceObserver', 'FontFace', 'history'])
+  if (!(k in globalThis)) try { globalThis[k] = P; } catch {}
+
+const sim = await import(`${dir}/${simF}`);
+const boot = await import(`${dir}/${bootF}`);
+const content = await import(`${dir}/${contentF}`);
+
+const seen = new WeakSet();
+const ser = (v, d, max) => {
+  if (typeof v === 'function') return '[fn]';
+  if (v === null || typeof v !== 'object') return v;
+  if (v instanceof Map) return { __map: [...v].map(([k, x]) => [k, ser(x, d + 1, max)]) };
+  if (v instanceof Set) return { __set: [...v].map((x) => ser(x, d + 1, max)) };
+  if (ArrayBuffer.isView(v)) return { __typed: v.constructor.name, len: v.length };
+  if (seen.has(v)) return '[ref]';
+  if (d > max) return '[deep]';
+  seen.add(v);
+  const o = Array.isArray(v) ? v.map((x) => ser(x, d + 1, max)) : Object.fromEntries(Object.entries(v).map(([k, x]) => [k, ser(x, d + 1, max)]));
+  seen.delete(v);
+  return o;
+};
+
+const reg = Object.values(boot).find((v) => v && typeof v === 'object' && typeof v.weapon === 'function' && Array.isArray(v.allWeapons));
+if (!reg) throw new Error('registry not found in boot');
+const registry = {};
+for (const [k, v] of Object.entries(reg)) registry[k] = ser(v, 0, 14);
+
+const config = {};
+for (const [src, m] of [['sim', sim], ['boot', boot]])
+  for (const [k, v] of Object.entries(m))
+    if (v && typeof v === 'object' && typeof v.weapon !== 'function') {
+      try {
+        const j = JSON.stringify(ser(v, 0, 10));
+        if (j.length > 40) config[`${src}.${k}`] = JSON.parse(j);
+      } catch {}
+    }
+
+const text = Object.values(content).find((v) => v && typeof v === 'object' && Object.keys(v).some((k) => k.startsWith('content.')));
+if (!text) throw new Error('content strings not found');
+
+// Difficulty table: not exported, so read the two object literals from the sim source:
+// a defaults object (used as-is by normal) and a per-level table that spreads it.
+function difficulty() {
+  const code = readFileSync(`${dir}/${simF}`, 'utf8');
+  const m = code.match(/([\w$]+)=\{alive:1,floorShare:0,/);
+  if (!m) throw new Error('difficulty defaults not found');
+  const literal = (start) => {
+    let depth = 0;
+    for (let i = start; i < code.length; i++) {
+      if (code[i] === '{') depth++;
+      else if (code[i] === '}' && --depth === 0) return code.slice(start, i + 1);
+    }
+    throw new Error('unbalanced literal');
+  };
+  const defStart = m.index + m[1].length + 1;
+  const defaults = literal(defStart);
+  const t = code.slice(defStart + defaults.length).match(/^,([\w$]+)=\{easy:\{/);
+  if (!t) throw new Error('difficulty table not found after defaults');
+  const table = literal(defStart + defaults.length + t[1].length + 2);
+  const spread = new RegExp(`\\.\\.\\.${m[1].replace(/\$/g, '\\$')},?`, 'g');
+  const D = new Function(`return ${defaults}`)();
+  const overrides = new Function(m[1], `return ${table.replace(spread, '')}`)({});
+  return { _source: `${simF}: difficulty defaults (used by normal) and per-level overrides`, defaults: D, ...overrides };
+}
+
+mkdirSync(out, { recursive: true });
+writeFileSync(`${out}/difficulty.json`, JSON.stringify(difficulty(), null, 1));
+writeFileSync(`${out}/registry.json`, JSON.stringify(registry, null, 1));
+writeFileSync(`${out}/config.json`, JSON.stringify(config, null, 1));
+writeFileSync(`${out}/en-content.json`, JSON.stringify(Object.fromEntries(Object.entries(text).sort(([a], [b]) => a.localeCompare(b))), null, 1));
+console.log(JSON.stringify({ registry: Object.keys(registry).length, config: Object.keys(config), content: Object.keys(text).length }));

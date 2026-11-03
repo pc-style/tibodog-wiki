@@ -1,0 +1,328 @@
+// Mechanics and guide content. Every claim cites the game code; interpretation is labelled.
+import { R, GAME, STORY, FORMULA, DIFF, BUILD, BUILDS, t, name, link, ilink, fmt, pct, RARITY, statLabel } from '../lib/data.mjs';
+import { table, json } from './entities.mjs';
+import { NOTES, historyPage } from './notes.mjs';
+
+const V = '**Verified**';
+const INF = '**Inference**';
+const SIM = 'sim-UxJfMuuX.js';
+const BOOT = 'boot-gj7twfpU.js';
+const cite = (file, quote) => ` <small>[${file}: \`${quote}\`]</small>`;
+
+const DIFFS = ['easy', 'normal', 'hard', 'nightmare'];
+const dval = (d, k) => (DIFF[d][k] !== undefined ? DIFF[d][k] : DIFF.defaults[k]);
+
+function pois() {
+  const A = GAME.activation.seconds;
+  const extra = {
+    paidChest: `Pay the crate price and get one random item (rarity rolled with luck).${cite(SIM, 'r.gold-=i,e.run.goldSpent+=i,e.paidChestsBought++')} Price of the *n*-th crate (n from 0) is \`round(30 + 41.5n + 0.5n² + 0.898·max(0, n−3)³) × purchase price multiplier\`.${cite(SIM, 'n.chestPriceBase+n.chestPriceLinear*t+n.chestPriceQuad*t*t+n.chestPriceCubic*g(Math.max(0,t-n.chestPriceKnee),3)')} Base prices: ${[0, 1, 2, 3, 4, 5, 6, 7, 8, 9].map(crate).join(', ')} gold.`,
+    chargeShrine: `Offers 3 random stats, each with a random rarity; value = base × rarity multiplier ${json(GAME.economy.rarityMult)}.${cite(SIM, 'value:(i=n.stat,a=n.base*e.cfg.economy.rarityMult[r]')} Bases: Damage 0.06, Area 0.06, Cooldown 0.03, Move speed 0.05, Max HP 12, Armor 10, Luck 0.06, Gold gain 0.1, XP gain 0.06, Crit 0.04, Duration 0.06, Pickup range 0.15.`,
+    goldenShrine: `Like the Spud Shrine, but every offer is Epic, or Legendary with ${pct(GAME.goldenShrine.legendaryChance)} chance.${cite(SIM, 'function Fi(e){return e.lootRng.chance(e.cfg.goldenShrine.legendaryChance)?4:3}')}`,
+    curseShrine: `Accept to gain \`round((45 + 9 × minutes) × gold gain)\` gold, +0.1 curse and +1 curse taken.${cite(SIM, 'gold:Math.round((45+e.runClock/60*9)*e.loadout.stats.greedMult),curse:.1')} See [Curse](/curse).`,
+    vendor: `Stocks 3 items; the third gets a rarity bump (Common→Uncommon, Uncommon→Rare, Rare→Epic, Epic→Legendary). Price = \`vendorPrice[rarity] × (1 + 0.06 × minutes) × purchase price multiplier\` with vendorPrice ${GAME.economy.vendorPrice.map((p, i) => `${RARITY[i]} ${p}`).join(', ')}. One purchase per cart.${cite(SIM, 'Math.round(e.cfg.economy.vendorPrice[s.rarity]*(1+.06*n)*e.loadout.stats.chestPriceMult)')}`,
+    microwave: `Copies one of your base items. The cost mode is \`melt\`: another base item of the same rarity (the one you hold fewest of) loses one copy. In-game: “Copy an item. Another of its rarity melts.”${cite(SIM, 'i.id!==e.id&&i.rarity===e.rarity&&(t===void 0||n.itemCount(i.id)<n.itemCount(t.id))')} The config also defines \`gold\` and \`curse\` cost values, which are not used while the mode is \`melt\` (inference).`,
+    crops: `Drops 3–7 coins (× biome gold multiplier) and has a 35% chance of a 30 HP snack.${cite(SIM, 'e.lootRng.chance(.35)&&q(e,`heal`,t.x,t.y-8,30)')}`,
+    eliteNest: `Spawns an elite with tier bonus \`floor(tier / ${GAME.elites.nestTierEvery})\` and HP × \`(1 + ${GAME.elites.nestHpPerTier} × tier)\`; it drops a chest.${cite(SIM, 'tierBonus:Math.floor(t.tier/n.nestTierEvery),hpMult:1+t.tier*n.nestHpPerTier')} How a POI's tier is set is not traced here (likely distance; inference).`,
+    bossLair: `Wakes a boss from the boss order at index \`clamp(floor(minutes / 2) + floor(tier / 2), 1, 11)\`, HP × \`(0.8 + 0.1 × tier)\`. It guards a big chest.${cite(SIM, 'n[Math.max(1,Math.min(n.length-2,Math.floor(e.runClock/120)+Math.floor(t.tier/2)))]')}`,
+    dog: `Walk onto a stray to recruit it. The first stray is placed ${GAME.dogs.firstDogDistance} units from the start. See [Dogs](/dogs#getting-dogs).`,
+    botDock: `Calls a Grok Bot swarm (same as a Bot Beacon). See [Grok Bots](/grok-bots).`,
+    whetstone: `Offers up to 3 of your non-max base weapons; picking one levels it up. Only chargeable if a weapon can still level.${cite(SIM, 'case`whetstone`:r.used=!0,e.choiceQueue.push({kind:`whetstone`,offers:aa(e)})')}`,
+    dinnerBell: `Spawns ${GAME.dinnerBell.count} pests in a ring of radius ${GAME.dinnerBell.radius}; they give ×${GAME.dinnerBell.xpMult} XP, always drop gold and despawn after ${GAME.dinnerBell.lifeSec} s.${cite(SIM, 'r.xp[a]=(r.xp[a]??0)*n.xpMult,r.goldChance[a]=1')}`,
+    taterSlots: `Costs half a crate price (rounded up). Three reels of ${GAME.taterSlots.symbols} symbols: three of a kind gives a 1-reward chest, two of a kind gives a random item, otherwise nothing.${cite(SIM, 'let r=ho(n.reels,e.cfg.taterSlots.symbols);if(r!==3){if(r===2){let t=Ai(e)')}`,
+    seedVault: `+${GAME.seedVault.rerolls} rerolls, +${GAME.seedVault.skips} skip, +${GAME.seedVault.banishes} banish.${cite(SIM, 'r.rerolls+=n.rerolls,r.skips+=n.skips,r.banishes+=n.banishes')}`,
+    taterMagnet: `Pulls every gem and coin on the map to Tibo; only chargeable if any exist.`,
+    rootTunnel: `Tunnels Tibo to a POI at least ${GAME.rootTunnel.minDistance} units away. Tibo is invulnerable while digging and rising (1.5 s).${cite(SIM, 'c=(2*r.digTicks+r.riseTicks)/60;e.player.invuln[s]=Math.max(e.player.invuln[s]??0,c)')}`,
+    taterLantern: `Breaks into one token tossed just past your pickup range: ${GAME.taterLantern.tokens.map((k) => `${k.kind === 'beacon' ? 'Bot Beacon' : k.kind} (weight ${k.weight})`).join(', ')}.`,
+    spudFreezer: `Freezes ${GAME.spudFreezer.reach.kind === 'map' ? 'every pest on the map' : `pests within ${GAME.spudFreezer.reach.radius} units`} for ${GAME.spudFreezer.freezeSec} s; bosses are slowed by ${pct(1 - GAME.spudFreezer.bossSlow)} instead. It is only used up if it catches something. If it catches only bosses, the message counts the bosses slowed (“… bosses slowed for ${GAME.spudFreezer.freezeSec} s!”).${cite(BOOT, 'r=e.slowed,i=pa(e.seconds);return n===0?')}`,
+    frenzyFryer: `${GAME.frenzyFryer.durationSec} s frenzy: weapon timers run ×${GAME.frenzyFryer.fireRateMult} faster and move speed ×${GAME.frenzyFryer.moveSpeedMult}.${cite(SIM, 'function Ha(e){return Va(e)?e.cfg.frenzyFryer.fireRateMult:1}')}`,
+    dogKennel: `Buy levels for a pack dog at ${GAME.dogs.kennelPrices.join(' / ')} gold (by the dog's current level) × purchase price multiplier, up to ${GAME.dogs.kennelBuys} buys per kennel. In-game: “Train up to # more levels here, then the kennel closes”.`,
+  };
+  const biomeWeights = (k) => R.biomes.filter((b) => b.poiWeights[k]).map((b) => `${link('biome', b.id)} ${b.poiWeights[k]}`).join(', ');
+  let body = `Points of interest (POIs) are scattered across the world, placed per ${GAME.world.chunkSize}-unit chunk using each biome's weights.\n\n## Activation\n\n${V}: stand inside a POI's radius. Its charge goes up 1 per tick (60 ticks per second) while you are inside and the POI can be used, and drops ${GAME.activation.drainRate} per tick otherwise, including while you stand on a POI you cannot use (for example without enough gold). After it fires, a POI stays disarmed until you step out. It fires when the charge reaches \`activation.seconds × 60\`.${cite(SIM, 'function nc(e,t,n){return t?e+1:Math.max(0,e-n)}')} So stepping out briefly costs twice the time you were away. After 20:00 (21:00 on Easy), newly generated chunks get fewer POIs: the share drops by ${pct(GAME.world.poiTaperPerMinute)} per minute of overtime, down to ${pct(GAME.world.poiTaperFloor)}. Chunks already generated keep theirs, and Story turns the taper off.\n\n`;
+  body += table(['Point of interest', 'In-game description', 'Activation (s)'], R.pois.map((p) => [`[${name.poi(p.kind)}](#${slugPoi(p.kind)})`, t(`poi.${p.kind}.desc`), A[p.kind] ?? '—'])) + '\n';
+  for (const p of R.pois) {
+    body += `## ${name.poi(p.kind)}\n\n“${t(`poi.${p.kind}.desc`)}”\n\n`;
+    body += `- Internal kind \`${p.kind}\`, radius ${p.radius}${A[p.kind] ? `, activation ${A[p.kind]} s` : ''}.\n`;
+    if (extra[p.kind]) body += `- ${extra[p.kind]}\n`;
+    const bw = biomeWeights(p.kind);
+    if (bw) body += `- Biome weights: ${bw}.\n`;
+    body += '\n';
+  }
+  return body;
+}
+function crate(n) {
+  const e = GAME.economy;
+  return Math.round(e.chestPriceBase + e.chestPriceLinear * n + e.chestPriceQuad * n * n + e.chestPriceCubic * Math.pow(Math.max(0, n - e.chestPriceKnee), 3));
+}
+const slugPoi = (k) => name.poi(k).toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+
+function gettingStarted() {
+  return `## The goal\n\nSurvive ${GAME.win.timeSec / 60} minutes. At 20:00, ${ilink('boss', GAME.win.finalBoss)} arrives. There is no win screen: a “You survived 20:00!” banner shows for a few seconds and the run keeps going, with enemies getting much stronger every minute. The run counts as survived, so when Tibo is finally reset the end screen says “Tibo survived …” instead of “Tibo was reset after …”.${cite(BOOT, `win:{timeSec:${GAME.win.timeSec},mode:\`${GAME.win.mode}\`,finalBoss:\`${GAME.win.finalBoss}\`}`)}\n\n` +
+    `## Moving and dashing\n\nMove with W A S D or the arrow keys (drag on touch). Space dashes (flick on touch). A dash covers ${GAME.dash.distance} units, Tibo starts with ${GAME.dash.charges} dash charge and the cooldown is ${GAME.dash.cooldownSec} s.${cite(BOOT, `dash:{distance:${GAME.dash.distance},ticks:${GAME.dash.ticks},cooldownSec:${GAME.dash.cooldownSec},charges:${GAME.dash.charges}`)} See [Controls](/controls).\n\n` +
+    `## Weapons fire on their own\n\nTibo carries up to ${GAME.player.weaponSlots} [weapons](/weapons) and ${GAME.player.passiveSlots} [passives](/passives). Weapons attack automatically; a few (${R.allWeapons.filter((w) => w.on === 'dash').map((w) => ilink('weapon', w.id)).join(', ')}) trigger on dash.\n\n` +
+    `## Level-ups\n\nEnemies drop XP gems. Each level-up offers ${GAME.levelUp.baseChoices} cards (a 4th with enough luck). Pick a new weapon, a new passive, or a level for one you own. R rerolls, X skips and B banishes while you have charges. See [Level-up](/level-up).\n\n` +
+    `## Chests and evolutions\n\nElites and some POIs drop chests. A chest can evolve a maxed weapon whose catalyst you own. See [Chests](/chests) and [Evolutions](/evolutions).\n\n` +
+    `## Dogs\n\nStray dogs wait around the map. Walk up to one to add it to your pack (up to ${GAME.dogs.maxPack}). Each dog has an ability and an aura. See [Dogs](/dogs).\n\n` +
+    `## Gold and points of interest\n\nGold buys items from the Fry Cart, opens Potato Crates, spins Tater Slots and trains dogs at the Dog Kennel. See [Points of interest](/points-of-interest).\n\n` +
+    `## First run\n\nThe level picker recommends [Story mode](/story-mode) first (“A short first game. Play this first.”). Levels from Easy to Nightmare follow; see [Modes](/modes) and [Unlocks](/unlocks).\n`;
+}
+
+function modes() {
+  const rows = [
+    ['Enemy count (`alive`)', 'alive'],
+    ['Pest HP ×', 'pestHp'],
+    ['Enemy damage ×', 'damage'],
+    ['Boss HP ×', 'bossHp'],
+    ['Elite HP ×', 'eliteHp'],
+    ['Tibo max HP ×', 'maxHp'],
+    ['XP ×', 'xp'],
+    ['Added revives', 'addedRevives'],
+    ['Revives allowed', 'allowRevives'],
+    ['Starting curses', 'startCurses'],
+    ['Enemy tier lag', 'tierLag'],
+    ['Wall pests ×', 'wallPests'],
+    ['Overtime hold (s)', 'overtimeHoldSec'],
+    ['Crowd floor share', 'floorShare'],
+    ['Opening', 'opening'],
+  ];
+  const v = (x) => (typeof x === 'boolean' ? (x ? 'Yes' : 'No') : fmt(x));
+  let body = `tibo.dog has a **Story** mode and four **levels** (difficulties). The level picker captions come from the game's UI text.\n\n`;
+  body += table(['Mode', 'In-game caption'], NOTES.modeCaptions.map(([m, c]) => [m, c ? `“${c}”` : '—'])) + '\n';
+  body += `## Difficulty multipliers\n\n${V} values from the difficulty table in \`${SIM}\` (object \`$e\`, defaults \`Qe\`). Each level starts from the defaults and overrides some of them; the Normal column shows Normal's own values.\n\n`;
+  body += table(['Setting', 'Easy', 'Normal', 'Hard', 'Nightmare'], rows.map(([l, k]) => [l, ...DIFFS.map((d) => v(dval(d, k)))])) + '\n';
+  body += `Hard and Nightmare also use their own early crowd ramp (\`crowdRamp\`):\n\n`;
+  body += table(['Level', 'Alive enemies cap over the opening'], ['hard', 'nightmare'].map((d) => [d[0].toUpperCase() + d.slice(1), DIFF[d].crowdRamp.points.map((p) => `${p.alive} at ${p.atSec} s`).join(', ')])) + '\n';
+  body += `## Design targets\n\nThe difficulty table includes \`promises\`, which read as the developer's balance targets (${INF}: the field name and values suggest intended outcomes, not mechanics):\n\n`;
+  body += table(['Level', 'Promise data'], DIFFS.filter((d) => dval(d, 'promises').length).map((d) => [d, dval(d, 'promises').map((p) => json(p)).join('<br>')])) + '\n';
+  body += `For example Hard's \`{"kind":"reach","skill":"expert","min":0.25,"max":0.5}\` would mean 25–50% of expert players reach the goal. This interpretation is not confirmed by the developer.\n\n`;
+  body += `## Story\n\n“${NOTES.storyCaption ?? 'A short first game.'}” See [Story mode](/story-mode).\n\n`;
+  body += NOTES.modesExtra ?? '';
+  return body;
+}
+
+function stats() {
+  const k = FORMULA;
+  let body = `Tibo's stats are the sum of all passives, items, dog auras, shrine blessings and other bonuses, then converted into multipliers. The conversion below is ${V} from the stat function in \`${SIM}\`. Constants: ${json(k)}.\n\n`;
+  body += `## Diminishing returns\n\nSeveral stats use the curve \`f(x) = x / (k + x)\` with \`k = 1\` (function \`Ee\`):${cite(SIM, 'function Je(e,t){return e<=0?0:e/(t+e)}')} so 1 point gives 50%, 0.25 gives 20%, and the result never reaches 100%. This is why the game's descriptions say “The higher your crit chance, the less it adds.”\n\n`;
+  body += table(['Points', 'Effective chance'], [0.05, 0.1, 0.25, 0.5, 1, 2, 3].map((x) => [fmt(x), pct(x / (1 + x))])) + '\n';
+  body += `## Stat conversion\n\n` + table(
+    ['Stat', 'Formula (sum of bonuses = x)', 'Notes'],
+    [
+      ['Damage (`might`)', '`max(0.1, 1 + x)`', 'Multiplies weapon damage'],
+      ['Area', '`max(0.2, 1 + x)`', ''],
+      ['Cooldown', '`1 − clamp(x, −1, 0.6)`', `Cooldown reduction is capped at ${pct(k.cooldownCap)} (\`cooldownCap\`)`],
+      ['Amount (projectiles)', `\`floor(x) + ${GAME.player.baseAmount}\``, '`player.baseAmount`'],
+      ['Duration', `\`max(0.2, 1 + x + ${GAME.player.baseDuration})\``, `Includes a base +${pct(GAME.player.baseDuration)} (\`player.baseDuration\`)`],
+      ['Projectile speed', '`max(0.2, 1 + x)`', ''],
+      ['Move speed', '`max(0.3, 1 + x)`', `Base speed ${GAME.player.baseSpeed}`],
+      ['Max HP', `\`max(1, (${GAME.player.baseMaxHp} + flat) × (1 + percent) × difficulty maxHp)\``, 'Flat from items, percent from Gravy Heart'],
+      ['Recovery', '`x` HP per second', ''],
+      ['Armor', '`max(0, x)`', 'See Armor below'],
+      ['Pickup range', `\`${GAME.player.baseMagnet} × max(0.2, 1 + x)\``, '`player.baseMagnet`'],
+      ['Luck', '`max(0, x)`', 'Affects the 4th card and other rolls'],
+      ['XP gain', `\`(1 + growth) × (1 + ${k.curseRewardShare} × curse) × difficulty xp\``, 'Curse raises XP gain'],
+      ['Gold gain', `\`(1 + greed) × (1 + ${k.curseRewardShare} × curse)\``, 'Curse raises gold gain'],
+      ['Curse', '`max(0, x) + difficulty.globalCurse`', 'See [Curse](/curse)'],
+      ['Crit chance', '`x / (1 + x)`', 'Hot Sauce, Hot Pepper'],
+      ['Crit damage', `\`${k.baseCritMult} + x\``, `Base crit multiplier ×${k.baseCritMult}`],
+      ['Dodge (evasion)', '`x / (1 + x)`', 'Thick Skin, Ghost Skin'],
+      ['Knockback', '`max(0, 1 + x)`', ''],
+      ['Pierce bonus', '`floor(x)`', ''],
+      ['Revivals', '`floor(x) + difficulty addedRevives`, or 0 if the difficulty disallows revives', `Nightmare: no revives. A revive plays the knocked-down scene, then Tibo gets up with ${pct(GAME.player.reviveHp)} max HP and ${GAME.story.invulnSec} s of invulnerability; level-ups earned while down wait until then.${cite(SIM, 'n.hp[r]=e.loadout.stats.maxHp*(i?t.reviveHp:e.cfg.player.reviveHp)')}`],
+      ['Elite/boss damage', '`1 + x`', ''],
+      ['Explode on kill', '`x / (1 + x)`', ''],
+      ['Purchase price', '`1 − x / (1 + x)`', 'Coupon Book'],
+      ['Dash charges', '`floor(x)` extra', 'Butter Socks'],
+      ['Dash cooldown', '`1 − clamp(x, −1, 0.6)`', 'Same cap as weapon cooldown'],
+      ['Dash grace', '`max(0, x)` seconds', 'Ghost Pepper'],
+    ],
+  ) + `\nSource: function \`bt\` in \`${SIM}\`, e.g.${cite(SIM, 'i[r.cooldownMult]=1-Ke(e.cooldown,-1,n.cooldownCap)')}\n\n`;
+  body += NOTES.statsExtra ?? '';
+  body += `## Player base values\n\n` + table(['Value', 'Base'], [
+    ['Max HP (`baseMaxHp`)', GAME.player.baseMaxHp],
+    ['Move speed (`baseSpeed`)', GAME.player.baseSpeed],
+    ['Pickup range (`baseMagnet`)', GAME.player.baseMagnet],
+    ['Projectile amount bonus (`baseAmount`)', GAME.player.baseAmount],
+    ['Duration bonus (`baseDuration`)', GAME.player.baseDuration],
+    ['Weapon slots', GAME.player.weaponSlots],
+    ['Passive slots', GAME.player.passiveSlots],
+    ['Contact damage cooldown (s)', GAME.player.contactCooldown],
+    ['Hit radius', GAME.player.hitRadius],
+  ]) + '\n';
+  body += `## Stat sources\n\nPassives that raise each stat:\n\n` + table(['Stat', 'Passives', 'Items'], Object.keys(statLabelsUsed()).map((s) => [statLabel(s), R.passives.filter((p) => p.stat === s || p.extra?.stat === s).map((p) => ilink('passive', p.id)).join(', '), R.allItems.filter((i) => i.mods?.[s] !== undefined).map((i) => ilink('item', i.id)).join(', ')])) + '\n';
+  return body;
+}
+function statLabelsUsed() {
+  const s = {};
+  for (const p of R.passives) { s[p.stat] = 1; if (p.extra) s[p.extra.stat] = 1; }
+  for (const i of R.allItems) for (const k of Object.keys(i.mods ?? {})) s[k] = 1;
+  return s;
+}
+
+function enemyScaling() {
+  const S = GAME.scaling;
+  let body = `Enemies get tougher as the run goes on. ${V}: these values come from \`scaling\` in the game config and the scaling function in \`${SIM}\`.\n\n`;
+  const ot = (sec, d = 'normal') => Math.max(0, (sec - GAME.win.timeSec - dval(d, 'overtimeHoldSec')) / 60);
+  const scale = (sec, d = 'normal') => {
+    const a = Math.min(sec / 60, GAME.win.timeSec / 60), o = ot(sec, d);
+    const hp = (1 + S.hpLinearPerMin * a + S.hpQuadraticPerMin * a * a) * Math.pow(S.hpPerMin, o) * dval(d, 'pestHp');
+    const early = sec < S.earlyDamageFullAtSec ? S.earlyDamageStart + (1 - S.earlyDamageStart) * sec / S.earlyDamageFullAtSec : 1;
+    const late = 1 + S.lateDamagePerMin * Math.max(0, a - S.lateDamageFromMin);
+    const dmg = (1 + S.damageLinearPerMin * a + S.damageQuadraticPerMin * a * a) * Math.pow(S.damagePerMin, o) * early * late * dval(d, 'damage');
+    return { hp, dmg, speed: Math.min(S.maxSpeedMult, Math.pow(S.speedPerMin, o)), count: Math.pow(S.countPerMin, o) };
+  };
+  body += `## Formula\n\nLet *s* be the run time in seconds, *a* = min(*s*/60, ${GAME.win.timeSec / 60}) the minutes up to 20:00, and *o* = max(0, (*s* − ${GAME.win.timeSec} − overtime hold) / 60) the minutes of **overtime** after 20:00. The overtime hold is ${DIFF.easy.overtimeHoldSec} s on Easy and 0 on other levels.${cite(SIM, 'function Lr(e,t){return Math.max(0,(t-e.win.timeSec-e.level.overtimeHoldSec)/60)}')}\n\n`;
+  body += `- **Pest HP** ×= \`(1 + ${S.hpLinearPerMin}·a + ${S.hpQuadraticPerMin}·a²) × ${S.hpPerMin}^o × difficulty pestHp\`\n`;
+  body += `- **Enemy damage** ×= \`(1 + ${S.damageQuadraticPerMin}·a²) × ${S.damagePerMin}^o × early × late × difficulty damage\`, where early rises linearly from ${S.earlyDamageStart} at 0 s to 1 at ${S.earlyDamageFullAtSec} s, and late = \`1 + ${S.lateDamagePerMin} × max(0, a − ${S.lateDamageFromMin})\`\n`;
+  body += `- **Speed** ×= \`min(${S.maxSpeedMult}, ${S.speedPerMin}^o)\`; **count** and **spawn rate** ×= \`${S.countPerMin}^o\` and \`${S.spawnRatePerMin}^o\`\n\n`;
+  body += `${cite(SIM, 'e.hp=(1+r.hpLinearPerMin*a+r.hpQuadraticPerMin*a*a)*s*t.level.pestHp')} \`xe\` is a deterministic power function (\`x^y\`) exported by \`boot-gj7twfpU.js\`.\n\n`;
+  body += `So before 20:00 enemies grow polynomially; after 20:00 their HP and damage multiply by ${S.hpPerMin}× for every extra minute, which is what ends long runs.\n\n`;
+  body += `### Computed multipliers (Normal)\n\n` + table(['Time', 'Pest HP ×', 'Enemy damage ×', 'Speed ×', 'Count ×'], [0, 60, 300, 600, 900, 1200, 1260, 1320, 1380, 1500].map((sec) => { const x = scale(sec); return [`${Math.floor(sec / 60)}:${String(sec % 60).padStart(2, '0')}`, fmt(x.hp, 2), fmt(x.dmg, 2), fmt(x.speed, 2), fmt(x.count, 2)]; })) + `\nComputed with the formula above; difficulty multiplies HP and damage further (see [Modes](/modes)).\n\n`;
+  body += `## Enemy bullets\n\n` + table(['Setting', 'Value'], [
+    ['Bullet count +/min', S.bulletCountLinearPerMin], ['Max bullet count ×', S.maxBulletCountMult], ['Fire rate +/min', S.bulletRateLinearPerMin], ['Max fire rate ×', S.maxBulletRateMult], ['Bullet speed +/min', S.bulletSpeedLinearPerMin], ['Max bullet speed ×', S.maxBulletSpeedMult], ['Bullet cap', GAME.bullets.cap], ['Bullet life (s)', GAME.bullets.lifeSec],
+  ]) + '\n';
+  body += `## Elites\n\nElites follow a fixed curve (\`elites.curve\`). HP is the elite's HP at that minute; damage and speed are multipliers.\n\n` + table(['Minute', 'Tier', 'HP', 'Damage ×', 'Speed ×'], GAME.elites.curve.map((e) => [e.minute, e.tier, e.hp, e.damage, e.speed])) + '\n';
+  body += `## Bosses\n\nBoss HP is multiplied by ${GAME.bosses.hpSteps.map((s) => `×${s.hpScale} from minute ${s.minute}`).join(', ')} (\`bosses.hpSteps\`). See the [boss schedule](/bosses#wave-schedule) for which boss arrives when.\n\n`;
+  body += `## Enemy level and armor\n\n${V}: every enemy has a level used against Tibo's armor: \`${GAME.armor.firstLevel} + floor(minutes × ${GAME.armor.levelsPerMinute})\`, +${GAME.armor.eliteLevels} for elites and +${GAME.armor.bossLevels} for bosses.${cite(SIM, 'function Fr(e,t){let n=e.armor;return n.firstLevel+Math.floor(t/60*n.levelsPerMinute)}')} See [Stats](/stats#armor).\n\n`;
+  body += `## Crowd limits\n\n` + table(['Setting', 'Value'], [
+    ['Max enemies (`maxEnemies`)', GAME.spawns.maxEnemies], ['Hard cap (`hardCap`)', GAME.spawns.hardCap], ['Max shooters', GAME.spawns.maxShooters], ['Opening (s)', GAME.spawns.openingSec], ['Opening density', GAME.spawns.openingDensity], ['Early ceiling (Normal)', GAME.spawns.earlyCeiling.map((c) => `${c.alive} alive at ${c.atSec} s`).join(', ')], ['Max XP gems on the ground', GAME.pickups.maxGems],
+  ]) + '\n';
+  return body;
+}
+
+function controls() {
+  return `## Keyboard\n\n` + table(['Action', 'Keys'], [
+    ['Move', 'W A S D or arrow keys'], ['Dash', 'Space'], ['Pause', 'P or Escape'], ['Pick a level-up card', 'Number keys'], ['Reroll / Skip / Banish', 'R / X / B (while you have charges)'],
+  ]) + `\n## Touch\n\n` + table(['Action', 'Gesture'], [
+    ['Move', 'Drag anywhere'], ['Dash', 'Flick'], ['Pause', 'Tap the pause button'], ['Pick a card', 'Tap it, or Reroll, Skip, Banish'],
+  ]) + `\nSource: [About tibo.dog](https://tibo.dog/about/) and [llms.txt](https://tibo.dog/llms.txt).\n\n` + (NOTES.controlsExtra ?? '') +
+    `## Settings\n\n${NOTES.settings ?? ''}\n\n## Languages\n\n27 languages: English, Simplified Chinese, Traditional Chinese (Taiwan), Japanese, Korean, Spanish, Hindi, German, French, Brazilian Portuguese, Turkish, Indonesian, Russian, Malay, Filipino, Marathi, Vietnamese, Telugu, Tamil, Bengali, Thai, Hausa, Nigerian Pidgin, Arabic, Persian, Hebrew and Urdu. The game follows the browser language; Settings switches it.\n`;
+}
+
+function storyMode() {
+  const s = STORY;
+  return `Story mode is the short first game. ${V}: the script below is the story configuration in \`${SIM}\`.\n\n## Start\n\nA starting chest sits next to Tibo. It contains ${s.startChest.contents.weapons.map((w) => `${ilink('weapon', w.id)} level ${w.level}`).join(', ')} and ${s.startChest.contents.passives.map((p) => `${ilink('passive', p.id)} level ${p.level}`).join(', ')}. If you do not open it, nudges appear after ${s.startChest.nudges.lines.map((l) => l.afterSec + ' s').join(', ')}, and after ${s.startChest.nudges.jail.afterSec} s you are held next to it.\n\n## Rushes and boss\n\nTimes below count from the moment you open the starting chest, which starts the first rush.${cite(BOOT, 'e.tick-e.story.since>=Tr.landTicks')}
+
+1. **First rush** from tick ${s.firstRush.startTicks}: alive pests grow from ${s.firstRush.alive.from} to ${s.firstRush.alive.to}. Story pests have ×${GAME.story.firstRushHp} HP in the first rush.\n2. **Boss**: ${ilink('boss', s.boss.id)} lands at tick ${s.boss.landTicks} (${fmt(s.boss.landTicks / 60)} s at 60 ticks/s, ${INF} on tick rate), or earlier if Tibo drops to ${pct(GAME.story.rescueHp)} HP or less during the first rush.${cite(BOOT, '<=e.loadout.stats.maxHp*e.cfg.story.rescueHp')} Story boss multipliers: HP ×${GAME.story.bossHp}, damage ×${GAME.story.bossDamage}, speed ×${GAME.story.bossSpeed}.\n3. **Second rush**: alive pests from ${s.secondRush.alive.from} to ${s.secondRush.alive.to}.\n4. Story waves use ${ilink('enemy', 'reset-zombie')}.\n\n${V} story rules: Tibo's first hit on a non-elite always kills and the first kill grants level 2; HP cannot drop below 1 during the first rush (and during the second rush once poteto's visit is due); in other phases a knock-out is revived by the story with a growing boost. Second-rush pests have ×${GAME.story.secondRushHp} HP and give no XP. After the story the Grok Bot panel shows “Now play the real game.” with a “Play Easy” button.\n\n## Ending\n\nThe ending is scripted: poteto visits, speaks a series of lines and knocks Tibo out (\`knockOut\`), with Alex appearing. The final line key is \`realDifficulty\`. ${NOTES.storyEnding ?? ''}\n\n## Story-only settings\n\n${json(s.config)}\n\nIn Story mode Alex always appears (\`alex.chance: 1\`), poteto's random visit is off, and the randomly placed POIs are limited to: ${s.config.world.onlyPois.map((k) => `[${name.poi(k)}](/points-of-interest#${slugPoi(k)})`).join(', ')}. The first stray dog is placed separately and still appears.\n\n${NOTES.storyExtra ?? ''}`;
+}
+
+function grokBots() {
+  const G = GAME.grokBots;
+  return `Grok Bots are friendly robots that wander the map and help Tibo. ${V} from \`grokBots\` in the config and \`botHelps\` in the registry.\n\n` + table(['Bot', 'What it does', 'Parameters', 'Weight'], R.botHelps.map((b) => [t(`botHelp.${b.id}.name`), t(`botHelp.${b.id}.desc`), json(b.help), b.weight])) +
+    `\n## Spawning\n\n- First bot after ${G.firstSec} s, then every ${G.everySec} s, at most ${G.maxOut} out at once.\n- They spawn ${G.spawnDistance} units away and notice Tibo within ${G.noticeRadius}.\n- The [Bot Dock](/points-of-interest#bot-dock) calls a swarm of ${G.swarmSize} bots for ${G.swarmSec} s; the swarm zaps every ${G.swarmZapEvery} s within ${G.swarmRange} units, taking ${pct(G.swarmEliteHpFraction)} of an elite's HP.\n\n${NOTES.grok ?? ''}`;
+}
+
+function levelUp() {
+  const L = GAME.levelUp;
+  const xp = (lv) => { const n = Math.max(0, lv - 1); return Math.round(L.xpFirst + L.xpLinear * n + L.xpCurve * Math.pow(n, L.xpExponent)); };
+  let body = `## XP per level\n\n${V}: going from level *L* to *L*+1 needs \`round(${L.xpFirst} + ${L.xpLinear}·(L−1) + (L−1)^${L.xpExponent})\` XP.${cite(SIM, 'return Math.round(e.xpFirst+e.xpLinear*n+e.xpCurve*Ne(n,e.xpExponent))')} \`xe\` is a deterministic power function exported by \`boot-gj7twfpU.js\`. Picked-up XP is multiplied by XP gain (\`growthMult\`); extra levels queue up.${cite(SIM, 'n.xp-=n.xpNext,n.level++,n.xpNext=Tt(e.cfg.levelUp,n.level),n.pendingLevels++')}\n\n`;
+  body += table(['Level', 'XP to next level', 'Total XP to reach'], (() => { const out = []; let tot = 0; for (let lv = 1; lv <= 70; lv++) { if ([1, 2, 3, 4, 5, 10, 15, 20, 25, 30, 40, 50, 60, 70].includes(lv)) out.push([lv, xp(lv), tot]); tot += xp(lv); } return out; })()) + `\nComputed from the formula.\n\n`;
+  body += `## Cards\n\n- ${V}: ${L.baseChoices} cards, plus a 4th with chance \`min(1, luck)\`.${cite(SIM, 'Math.min(1,e.loadout.stats.luck/t.luckForFourthChoice)')}\n- ${V}: Tibo has ${GAME.player.weaponSlots} weapon and ${GAME.player.passiveSlots} passive slots. Base weapons reach level 8, passives level 5. Evolutions and unions stay at level 1.${cite(SIM, 'function X(e){return e.tier===`base`?Math.min(8,e.levels.length+1):1}')}\n- ${V}: cards are drawn by weight without replacement.\n\n`;
+  body += `### Offer weights\n\n${V} (function \`da\` in \`${SIM}\`):\n\n` + table(['Card', 'Weight'], [
+    ['Level up an owned base weapon', '`max(30, weight) × 3`'],
+    ['New base weapon (needs a free slot)', `\`weight × 0.35 × min(1, ${L.newWeaponWeightTotal} / total base weight)\`, ×${L.unionPartnerWeight} if it is a union partner of a weapon you hold`],
+    ['Level up an owned passive', `\`weight × 3 × 0.8\`, ×${L.itemCatalystWeight} if it is the catalyst of an item you hold`],
+    ['New passive (needs a free slot)', `\`weight × 0.35 × min(1, ${L.newPassiveWeightTotal} / total passive weight)\`, ×${L.itemCatalystWeight} if it is an item catalyst`],
+  ]) + `\nSo owned weapons and passives are offered far more often than new ones.\n\n`;
+  body += `### Catalyst guarantee\n\n${V}: if you have a free passive slot and own a base weapon at level ${L.catalystGuaranteeLevel} or higher whose evolution catalyst you do not own (and have not banished), the last card is replaced by that catalyst (level 6 in Story mode).${cite(SIM, 'if(e.def.tier!==`base`||e.level<n)continue;let r=E.evolutionOf(e.def.id)?.catalyst')}\n\n`;
+  body += `### When nothing is left\n\n${V}: if the pool is empty you get “Sack of Gold” (+25 gold) and “Baked Potato” (heal 30). At full HP the gold is taken automatically.${cite(SIM, 'name:`Sack of Gold`,desc:`+25 gold.`,amount:25')}\n\n`;
+  body += `## Reroll, skip and banish\n\nKeys R, X and B (or the buttons) while you have charges. In-game: “reroll redraws, skip passes, banish bans a card for the run.”\n\n- **Reroll** spends 1 and draws a new set.\n- **Skip** spends 1 and closes the level-up with nothing.\n- **Banish** spends 1, removes that weapon or passive from offers for the rest of the run, then redraws. Owned equipment stays equipped.${cite(SIM, 'r.banishes--,r.banished.add(t.id)')}\n\n`;
+  body += `Charges start at 0 (${INF}: no starting grant in the config; the loadout starts \`rerolls=0;skips=0;banishes=0\`). They come from [pickups](/pickups), the [Seed Vault](/points-of-interest#seed-vault), [Tater Lanterns](/points-of-interest#tater-lantern), elite kills and the ${ilink('dog', 'dachshund')}.\n\n`;
+  body += `## Auto-pick in Story mode\n\nIn Story mode the recommended card is picked for you after 8 seconds without input; any key press or tap restarts the timer, as do rerolls and banishes (developer's [Story state chart](https://x.com/poteto/status/2117043478140276847)). **Verified**: only Story auto-picks.${cite('levelup-lesson-run-ijH0vS2L.js', 'if(e.state.mode!==`story`||t?.kind!==`levelUp`)return-1')}\n\n`;
+  body += `## Recommended picks\n\nSettings has a **Recommended picks** option, on by default, that marks one card as recommended. The heuristic (from the game's picks code) favours levelling a weapon whose catalyst you own, catalyst passives for weapons close to max level, a small bonus for Peeler, Mash Wave and Tot Toss, and healing below 50% HP. Details are in the [mechanics reference](/mechanics-reference#8-controls-and-settings). It is a hint, not the only good pick.\n\n## Spud Whetstone\n\nThe [Spud Whetstone](/points-of-interest#spud-whetstone) offers up to 3 of your non-max base weapons to level up, outside the normal level-up.\n`;
+  return body;
+}
+
+function chests() {
+  const C = GAME.chests;
+  let body = `Chests are the only way to evolve weapons and items.\n\n## Chest size\n\n${V}: 5 rewards if a roll is below \`${C.chanceFive} × (1 + luck)\`, 3 rewards if below \`${C.chanceFive + C.chanceThree} × (1 + luck)\`, otherwise 1.${cite(SIM, 'return r<t.chanceFive*n?5:r<(t.chanceFive+t.chanceThree)*n?3:1')} A 5-reward chest is announced as “Jackpot chest!”.\n\n`;
+  body += table(['Luck', '1 reward', '3 rewards', '5 rewards'], [0, 0.1, 0.3, 0.5, 1].map((l) => { const f = Math.min(1, C.chanceFive * (1 + l)), th = Math.min(1, (C.chanceFive + C.chanceThree) * (1 + l)); return [fmt(l), pct(1 - th), pct(th - f), pct(f)]; })) + '\nComputed from the formula.\n\n';
+  body += `## What each reward is\n\n${V}: each reward slot is, in order of priority:${cite(SIM, 'function va(e,t){if(e.runClock>=e.cfg.chests.evolutionGateSec){let n=xa(e,t.pending)')}\n\n1. An **evolution or union**, if one is ready (see [Evolutions](/evolutions)). If a weapon can both evolve and unite, you choose: “Evolve or unite?”.\n2. Otherwise a **level-up of your highest-level non-max base weapon** (ties go to the one that dealt more damage).\n3. Otherwise a **random non-max passive level**.\n4. Otherwise **gold**: \`20 × gold gain × gold scale\`.\n\nThere is no time gate (\`evolutionGateSec\` = ${C.evolutionGateSec}).\n\nItem evolutions that are ready happen on top of these slots when the chest opens; they do not use up a slot (see [Evolutions](/evolutions)).${cite(SIM, 'bi(e,o.rewards)')}\n\n`;
+  body += `## Gold in chests\n\n${V}: chest gold is \`random(12–30) × rewards × gold gain × gold scale\`, where gold scale = \`min(${C.goldCap}, 1 + ${C.goldPerMinute} × minutes)\` for boss and elite chests and 1 otherwise.${cite(SIM, 'return Math.min(n.goldCap,1+n.goldPerMinute*(e.runClock/60))')}\n\n`;
+  body += `## Where chests come from\n\n- **Elites** always drop a chest (plus gold, 50% reroll, 25% banish, 10% Bot Beacon). See [Pickups](/pickups).\n- **Bosses** drop a chest, an XP gem and 25 gold.\n- **Cursed extra** elites and bosses drop ${GAME.difficulty.chestsPerCursedExtra} chest each.\n- [Beetle Nests](/points-of-interest#beetle-nest) spawn an elite; [Boss Lairs](/points-of-interest#boss-lair) wake a boss.\n- [Tater Slots](/points-of-interest#tater-slots): three of a kind gives a 1-reward chest.\n- [poteto's gift](/visitors) is a 5-reward chest.\n\nPotato Crates, the Fry Cart and the Microwave give **items**, not chest rolls, so they never evolve anything.\n\n`;
+  body += `## Item rarity\n\n${V}: rarity weights are ${json(GAME.economy.rarityWeights)} (Common to Legendary), and the weight of rarity *n* is multiplied by \`(1 + luck)^n\`.${cite(SIM, 'e.cfg.economy.rarityWeights.map((e,n)=>e*g(1+t,n))')}\n\n` + table(['Rarity', 'Weight', 'Chance (luck 0)', 'Chance (luck 0.5)', 'Chance (luck 1)'], RARITY.map((r, i) => { const ch = (l) => { const w = GAME.economy.rarityWeights.map((x, n) => x * Math.pow(1 + l, n)); return pct(w[i] / w.reduce((a, b) => a + b)); }; return [r, GAME.economy.rarityWeights[i], ch(0), ch(0.5), ch(1)]; })) + '\nComputed from the formula. Second Spud is removed from the item pool on difficulties without revives.\n';
+  return body;
+}
+
+function curse() {
+  const Dd = GAME.difficulty;
+  return `In-game: “Curse makes enemies tougher, faster and more numerous, and raises XP and gold.”${cite('choices-CWqSgdcI.js', 'Curse makes enemies tougher, faster and more numerous, and raises XP and gold.')}\n\n## The curse stat\n\n${V}:\n\n- Pest HP × \`(1 + curse)\` and pest speed × \`(1 + 0.3 × curse)\`.${cite(SIM, 'e.scratch.hp=t.hp*(1+n)')}\n- Elite and boss HP × \`(1 + curse)\`.\n- The alive-enemy ceiling, the minimum crowd and the spawn rate × \`(1 + curse)\` (ceiling still capped at ${GAME.spawns.maxEnemies}).\n- XP gain and gold gain × \`(1 + ${FORMULA.curseRewardShare} × curse)\`.${cite(SIM, '(1+n.curseRewardShare*Math.max(0,e.curse))')}\n\n## Curses taken\n\n${V}: separately from the stat, the game counts **curses taken** (+1 per Moldy Shrine accepted, +1 for Nightmare's starting curse). Every elite spawn adds \`floor(cursesTaken × ${Dd.extraElitesPerCurse})\` extra elites and every boss spawn adds \`floor(cursesTaken × ${Dd.extraBossesPerCurse})\` extra bosses. Each cursed extra drops ${Dd.chestsPerCursedExtra} chest.${cite(SIM, 'function Ma(e,t){return Math.floor(t*e.extraElitesPerCurse)}function Na(e,t){return Math.floor(t*e.extraBossesPerCurse)}')}\n\nSo two Moldy Shrines mean an extra boss with every boss wave, and each extra boss is an extra chest.\n\n## Sources of curse\n\n- ${ilink('passive', 'rotten-spud')}: +0.1 curse per level (the curse stat only). It is also the catalyst for ${ilink('weapon', 'landmine-harvest')}, ${ilink('weapon', 'moon-cleaver')} and ${ilink('item', 'kaboom-spud')}.\n- ${ilink('item', 'cursed-crown')}: +0.25 curse, +0.3 damage, +0.2 luck.\n- [Moldy Shrine](/points-of-interest#moldy-shrine): +0.1 curse, +1 curse taken and \`round((45 + 9 × minutes) × gold gain)\` gold.\n- Nightmare: starts with ${DIFF.nightmare.startCurses} curse taken, which works like accepting a Moldy Shrine: +0.1 curse and +1 curse taken (no gold).${cite(SIM, 'shrineTotals.curse+=.1*t,n.cursesTaken+=t')}\n`;
+}
+
+function visitors() {
+  const Pt = GAME.poteto, A = GAME.alex;
+  return `## poteto\n\npoteto, the game's developer, appears as a character.\n\n- ${V}: one visit per run (chance ${pct(Pt.visitChance)}) at a random time between ${Pt.windowSec[0] / 60}:00 and ${Pt.windowSec[1] / 60}:00.${cite(BOOT, 'function cr(e,t){let n=e.next()<t.visitChance,r=e.range(t.windowSec[0],t.windowSec[1])')}\n- ${V}: poteto walks up and bonks Tibo, stunning for ${Pt.stunSec} s. With ${pct(Pt.giftChance)} chance a gift chest drops too.\n- ${V}: the gift chest has ${Pt.giftCount} rewards. ${Pt.goldGifts} of them are always gold (${Pt.giftGold} each × gold gain). The other ${Pt.giftCount - Pt.goldGifts} are: first up to ${Pt.maxEvolutions} evolution or union if one is ready, then gifts from this list, each kind at most once when possible: the missing **catalyst** for a max-level base weapon; **+1 level** to a non-max base weapon (preferring ones with an evolution); a **new weapon** (the first you lack from ${Pt.newWeapons.map((w) => ilink('weapon', w)).join(', ')}); **+1 level** to a non-max passive. A slot with nothing to give becomes gold too.${cite(SIM, 'r=Math.max(0,n.giftCount-n.goldGifts)')}\n- In Story mode the random visit is off; poteto's scripted visit ends the story. See [Story mode](/story-mode).\n\n## Alex\n\n- ${V}: Alex is revealed when the boss ${ilink('boss', 'amusing')} dies and joins with ${pct(A.chance)} chance in normal runs (always in Story); otherwise Alex stays “asleep”.${cite(BOOT, 'function Kt(e){return e.revealedTick===-1?`pending`:e.due?`joined`:`asleep`}')}\n- ${V}: Alex follows Tibo. Alex rests 9 s, then throws its head ${A.throwBack} units behind Tibo; after a 0.35 s flight, for 4 s pests within ${A.lureRadius} are lured to it, then it bursts for \`${A.burstDamage} × damage\` in radius ${fmt(A.lureRadius * A.burstRadiusShare)} with knockback. The rest starts again after the burst, so throws come about every 13.35 s.${cite(SIM, 'J(e,n.burstDamage*e.loadout.stats.damageMult,r,-1,n.burstKnockback)')}\n`;
+}
+
+function pickups() {
+  return `Pickups drop from enemies and points of interest. ${V} effects on collection:${cite(SIM, 'o===C.magnet?ss(e):o===C.reroll?r.rerolls++:o===C.skip?r.skips++:o===C.banish?r.banishes++')}\n\n` + table(['Pickup', 'Effect'], [
+    ['XP gem', 'Value × XP gain. Gems inside pickup range fly to Tibo. At most ' + GAME.pickups.maxGems + ' gems; extra gems merge.'],
+    ['Gold coin', 'Value × gold gain (×2 during a gold rush event)'],
+    ['Snack (heal)', 'Restores 30 HP from drops'],
+    ['Magnet', 'Pulls every gem and coin to Tibo'],
+    ['Reroll / Skip / Banish', '+1 charge each'],
+    ['Bot Beacon', 'Calls a Grok Bot swarm'],
+    ['Chest', 'Stand on it to open (1 s; boss and poteto chests 1.5 s). See [Chests](/chests)'],
+    ['Item', 'Stand on it to take it (0.75 s)'],
+  ]) + `\n\nPickup range is \`${GAME.player.baseMagnet} × max(0.2, 1 + magnet)\`; gems and coins inside it fly to Tibo at 300 units/s. Chests and items are never pulled.\n\n## Drop chances\n\n${V}:${cite(SIM, 'let r=e.lootRng.next(),i=.004;r<i?q(e,`heal`,t,n,30)')}\n\n` + table(['Source', 'Drops'], [
+    ['Normal pest', `XP gem; gold with the enemy's gold chance; and one of: snack 0.4%, magnet 0.12%, reroll 0.18%, skip 0.12%, banish 0.08%`],
+    ['Elite', 'Gold coin worth 10 × the biome gold multiplier (always dropped), a chest, 50% reroll, 25% banish, 10% Bot Beacon. Elites give 12× XP'],
+    ['Boss', 'XP gem, 25 gold (× biome) and a chest'],
+    ['Loot runner (Golden Scarab, Lost Saucer)', 'An item'],
+    ['Crop Patch', '3–7 coins and a 35% chance of a snack'],
+  ]) + '\n';
+}
+
+function bossSchedule() {
+  const rows = [
+    [1, '', 'yes', ''], [2, 'amusing', '', 'fly-swarm'], [3, 'beetle-queen', 'yes', 'golden-scarab'], [4, 'the-masher', '', ''], [5, '', 'yes', 'fly-swarm'], [6, 'late-blight', '', 'bale-ring'], [7, 'sir-strawman', 'yes', 'golden-scarab'], [8, 'fryer-king', '', 'fly-swarm, harvest-moon'], [9, '', 'yes', 'bale-ring'], [10, 'great-wireworm', '', 'golden-scarab'], [11, '', 'yes', 'fly-swarm'], [12, 'the-mandoline', '', ''], [13, '', 'yes', 'bale-ring'], [14, 'deep-freezer', '', 'golden-scarab'], [15, '', 'yes', 'fly-swarm, harvest-moon'], [16, 'grater-golem', '', 'bale-ring'], [17, 'compost-titan', 'yes', 'golden-scarab'], [18, 'ketchup-kraken', '', 'fly-swarm'], [19, '', 'yes', 'bale-ring'], [20, 'harvester', '', 'fly-swarm'],
+  ];
+  return `## Wave schedule\n\n${V}: the wave table (rows per minute in \`${BOOT}\`) spawns bosses, elites and events at the start of each minute.${cite(BOOT, '{minute:20,minEnemies:480,maxEnemies:500,interval:.14,batch:14,tiers:[0,0,0,0,1],boss:`harvester`,events:[`fly-swarm`]}')}\n\n` + table(['Minute', 'Boss', 'Elite', 'Events'], rows.map(([m, b, e, ev]) => [`${m}:00`, b ? ilink('boss', b) : '', e ? 'Yes' : '', ev ? ev.split(', ').map((x) => link('event', x)).join(', ') : ''])) +
+    `\nBosses spawn in a random direction about half a screen away. Landmark biomes add their own event once when you reach them.\n\n## After 20:00\n\n${V}: at 20:00 the game marks the run as survived and keeps going (\`win.mode: continue\`). There is no win screen or pause: a “You survived 20:00!” banner shows for 2.5 s, the music switches to a victory track, and on the four difficulty levels a teasing line for that level pops up on a phone (for example “20 mins on normal. i'll allow it”). When Tibo is finally reset, the end screen and the share text say “Tibo survived …” instead of “Tibo was reset after …”.${cite(SIM, 'e.run.won=!0,e.run.wonAt=e.runClock')} From minute 21 every minute brings an elite, a boss cycling ${['fryer-king', 'the-mandoline', 'the-masher', 'grater-golem', 'compost-titan', 'ketchup-kraken', 'harvester'].map((b) => link('boss', b)).join(' → ')}, and alternately ${link('event', 'fly-swarm')} or ${link('event', 'bale-ring')}.${cite(BOOT, '_t=[`fryer-king`,`the-mandoline`,`the-masher`,`grater-golem`,`compost-titan`,`ketchup-kraken`,`harvester`]')} Enemy HP and damage then multiply by 4 every minute (see [Enemy scaling](/enemy-scaling)).\n\nThe config names ${link('boss', 'harvester')} as \`win.finalBoss\`, but that field is only used by an alternative win mode not selected in this build; the Harvester arrives as the normal minute-20 boss (${INF} that the alternative mode is unused).\n\n## Boss HP\n\n${V}: boss HP = \`base HP × (1 + curse) × 4^overtime × HP step × difficulty boss HP\`, with HP step ×1 before 16:00, ×3 from 16:00, ×4 from 18:00, ×6 from 20:00.\n\n## Elites\n\n${V}: elite HP follows the curve below (interpolated between points), × \`(1 + curse)\` × overtime × difficulty elite HP. Elites deal ×1.6 damage, are 1.7× larger, give 12× XP and always drop gold and a chest.${cite(SIM, 'a.xp[n]=12*(a.xp[n]??0),a.goldChance[n]=1')}\n\n` + table(['Minute', 'Enemy tier', 'Elite HP', 'Speed ×'], GAME.elites.curve.map((e) => [e.minute, e.tier, e.hp, e.speed])) +
+    `\nEnemy tiers follow the wave row from \`tierLag\` minutes earlier: ${DIFFS.map((d) => `${d[0].toUpperCase() + d.slice(1)} ${dval(d, 'tierLag')}`).join(', ')}.${cite(SIM, 'return rs(e,Math.max(0,t-e.cfg.level.tierLag))')} Nightmare uses the denser \`classic\` opening for minutes 0–2.\n`;
+}
+
+function unlocks() {
+  return NOTES.unlocks ?? 'Unlock rules are being verified.';
+}
+
+function strategy() {
+  return NOTES.strategy();
+}
+
+function sources() {
+  return `## Game version\n\ntibo.dog shows no version number on screen. The end-of-run screen code carries a short commit id, \`${BUILD.commit}\` for this build. This wiki identifies the build by that id and its file names, as served by https://tibo.dog/ on ${BUILD.researched}:\n\n` + table(['File', 'Role'], [
+    [`\`${BUILD.main}\``, 'Entry script referenced by index.html'],
+    [`\`${BUILD.boot}\``, 'Boot module: content registry (weapons, items, enemies…), UI and English UI text'],
+    [`\`${BUILD.sim}\``, 'Simulation: game config, formulas, difficulty table, story script'],
+    [`\`${BUILD.content}\``, 'English content names and descriptions'],
+    ['`atlas-*.png`, `atlas-late-*.png`', 'Sprite atlases used for icons'],
+  ]) + `\n## Method\n\n1. Downloaded the deployed HTML and every JavaScript chunk it references.\n2. Loaded the boot and simulation modules in Node with stubbed browser globals and serialised the exported content registry and config objects. Nothing was simulated or guessed; values are the objects the game itself uses.\n3. Took names and descriptions from the English content bundle.\n4. Cropped icons from the game's sprite atlases using the atlas frame tables (first frame of the icon or idle animation, nearest-neighbour ×4).\n5. Read formulas directly from the minified code; each formula on the wiki quotes the code it came from.\n6. Read the official [About page](https://tibo.dog/about/), [llms.txt](https://tibo.dog/llms.txt) and [privacy page](https://tibo.dog/privacy). ${NOTES.officialSources ?? ''}\n\n## Verified vs inference\n\n- **Verified**: numbers and recipes read from the game's data objects, and formulas quoted from code.\n- **In-game text**: quoted names and descriptions.\n- **Inference**: our reading of what an internal field means (for example behaviour parameter names), or strategy advice. These are labelled on the page.\n\nThe game may change at any time. If the live game disagrees with this wiki, the game is right; please [report it](/contact).\n\n## Build changes tracked\n\nThe wiki compares every new build with the previous one: game data, English text, the difficulty table, icons, and the simulation and boot code with renamed minified identifiers ignored. Every code quote on this wiki is rechecked against the new build. Builds seen:\n\n` + table(['First seen', 'Files', 'Commit', 'Changes'], BUILDS.map((b) => [b.seen, `\`${b.boot}\`<br>\`${b.sim}\``, b.commit ? `\`${b.commit}\`` : '', b.status === 'reviewed' ? b.changes : `Not reviewed yet. ${b.changes}`])) + `\n\n## Live encyclopedia\n\nThe game has an in-game encyclopedia with shelves for weapons, passives, items, evolutions, enemies, bosses, biomes and dogs (\`encyclopedia-screen-Bi4wPEoA.js\`). Entries show as “???” until found in play. This wiki's categories mirror those shelves.\n`;
+}
+
+function coverage() {
+  return NOTES.coverage();
+}
+
+function guides() {
+  const g = (path, title, description, body, search, sources = []) => ({ path, title, description, body, search, sources });
+  const S1 = 'Game config and formulas in `sim-UxJfMuuX.js`';
+  return [
+    g('/modes', 'Modes', 'Story mode and the Easy, Normal, Hard and Nightmare levels of tibo.dog, with every difficulty multiplier.', modes(), 'difficulty easy normal hard nightmare story levels', ['Difficulty table `Ne`/`Me` in `sim-UxJfMuuX.js`', 'UI captions in `boot-gj7twfpU.js`']),
+    g('/stats', 'Stats', 'How tibo.dog turns passives and items into stats: damage, cooldown cap, crit and dodge diminishing returns, curse, luck and more.', stats(), 'stats formulas crit dodge evasion cooldown cap armor luck magnet', [S1]),
+    g('/level-up', 'Level-up', 'XP curve, level-up cards, rerolls, skips, banishes and offer weights in tibo.dog.', levelUp(), 'xp level up cards reroll skip banish', [S1]),
+    g('/chests', 'Chests', 'Chest sizes, evolutions from chests, item rarity weights and where chests come from in tibo.dog.', chests(), 'chests evolution rarity loot', [S1]),
+    g('/curse', 'Curse', 'What curse does in tibo.dog: extra elites and bosses, more XP and gold, and where curse comes from.', curse(), 'curse rotten spud cursed crown moldy shrine', [S1]),
+    g('/enemy-scaling', 'Enemy scaling', 'How enemy HP, damage, speed, numbers, elites and bosses scale over a tibo.dog run.', enemyScaling(), 'scaling hp damage elites bosses time', [S1]),
+    g('/controls', 'Controls', 'Keyboard and touch controls, settings and languages of tibo.dog.', controls(), 'controls keys keyboard touch settings', ['[About tibo.dog](https://tibo.dog/about/)', 'Settings UI in `boot-gj7twfpU.js`']),
+    g('/story-mode', 'Story mode', 'The scripted first game of tibo.dog: starting chest, rushes, the amusing boss and the ending.', storyMode(), 'story tutorial first game', ['Story script `sim-UxJfMuuX.js`']),
+    g('/grok-bots', 'Grok Bots', 'Grok Bots in tibo.dog: Bubble, Gift, Tidy and Zapper bots and the Bot Dock.', grokBots(), 'grok bots bubbler gifter tidier zapper', [S1, 'Registry `botHelps`']),
+    g('/visitors', 'Visitors', 'poteto and Alex, the visitors who appear in tibo.dog runs.', visitors(), 'poteto alex visit gift', [S1]),
+    g('/unlocks', 'Unlocks', 'What is unlocked from the start in tibo.dog and how new modes and content open up.', unlocks(), 'unlocks progression encyclopedia', ['`boot-gj7twfpU.js` unlock and progression code']),
+    historyPage(),
+    g('/pickups', 'Pickups', 'Every pickup in tibo.dog and what drops it: XP gems, gold, snacks, magnets, rerolls, skips, banishes, Bot Beacons, chests and items.', pickups(), 'pickups drops gems gold magnet reroll skip banish beacon', [S1]),
+    g('/strategy', 'Strategy', 'Build advice for tibo.dog grounded in the game data, with every tip labelled as verified data or inference.', strategy(), 'strategy tips builds guide', [S1]),
+  ];
+}
+
+export const MECH = { pois, gettingStarted, guides, sources, coverage, bossSchedule };

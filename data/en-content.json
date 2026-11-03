@@ -1,0 +1,1499 @@
+{
+ "content.biome.chip-canyons.desc": [
+  "Cliffs of stacked potato chips. Crabs scuttle in the cracks."
+ ],
+ "content.biome.chip-canyons.name": [
+  "Chip Canyons"
+ ],
+ "content.biome.coin-laundromat.desc": [
+  "Rows of washers hum in an empty field. Nobody knows who pays the power bill."
+ ],
+ "content.biome.coin-laundromat.name": [
+  "Coin Laundromat"
+ ],
+ "content.biome.compost-caves.desc": [
+  "Damp tunnels under the compost heap. Spore vents sting."
+ ],
+ "content.biome.compost-caves.name": [
+  "Compost Caves"
+ ],
+ "content.biome.crop-circle.desc": [
+  "Wheat pressed flat in perfect rings. Something landed here and left its crew behind."
+ ],
+ "content.biome.crop-circle.name": [
+  "Crop Circle"
+ ],
+ "content.biome.frozen-tundra.desc": [
+  "A frozen plain of fries. Frost patches chill Tibo."
+ ],
+ "content.biome.frozen-tundra.name": [
+  "Frozen-Fries Tundra"
+ ],
+ "content.biome.fry-oil-desert.desc": [
+  "Hot sand and pools of fryer oil that burn."
+ ],
+ "content.biome.fry-oil-desert.name": [
+  "Fry-Oil Desert"
+ ],
+ "content.biome.fry-palace.desc": [
+  "A drive-thru alone in the wild, still open. Gulls and raccoons rule the parking lot."
+ ],
+ "content.biome.fry-palace.name": [
+  "Fry Palace Drive-Thru"
+ ],
+ "content.biome.gutterball-lanes.desc": [
+  "A bowling alley with no walls and no roof. The lanes are still oiled and the pins still stand."
+ ],
+ "content.biome.gutterball-lanes.name": [
+  "Gutterball Lanes"
+ ],
+ "content.biome.ketchup-bog.desc": [
+  "A hot red marsh. Puddles of ketchup burn and slow."
+ ],
+ "content.biome.ketchup-bog.name": [
+  "Ketchup Bog"
+ ],
+ "content.biome.mash-swamp.desc": [
+  "Knee-deep mashed potato. It slows Tibo down."
+ ],
+ "content.biome.mash-swamp.name": [
+  "Mash Swamp"
+ ],
+ "content.biome.peel-forest.desc": [
+  "Trees with bark like potato peel. Thorny brambles scratch."
+ ],
+ "content.biome.peel-forest.name": [
+  "Peel Forest"
+ ],
+ "content.biome.potato-field.desc": [
+  "Neat rows of potato plants. Where every run starts."
+ ],
+ "content.biome.potato-field.name": [
+  "Potato Field"
+ ],
+ "content.boss.amusing.desc": [
+  "The potato festival's fluffy pink mascot. He waves hello, throws hearts and stuffing, then leaps in for a hug that squeezes the starch out of you."
+ ],
+ "content.boss.amusing.name": [
+  "amusing"
+ ],
+ "content.boss.amusing.title": [
+  "The Festival Mascot"
+ ],
+ "content.boss.beetle-queen.desc": [
+  "The striped potato beetle queen. Her brood hatches in a ring around Tibo."
+ ],
+ "content.boss.beetle-queen.name": [
+  "Colorado Queen"
+ ],
+ "content.boss.beetle-queen.title": [
+  "Mother of Beetles"
+ ],
+ "content.boss.compost-titan.desc": [
+  "A heap of rotting leaves and mulch. Maggots pour out of it."
+ ],
+ "content.boss.compost-titan.name": [
+  "Compost Titan"
+ ],
+ "content.boss.compost-titan.title": [
+  "The Rot Heap"
+ ],
+ "content.boss.deep-freezer.desc": [
+  "A walking chest freezer. It fires ice shards that slow."
+ ],
+ "content.boss.deep-freezer.name": [
+  "The Deep Freezer"
+ ],
+ "content.boss.deep-freezer.title": [
+  "Keeper of Frozen Fries"
+ ],
+ "content.boss.fryer-king.desc": [
+  "A crowned deep fryer. It spits rings of boiling oil."
+ ],
+ "content.boss.fryer-king.name": [
+  "The Fryer King"
+ ],
+ "content.boss.fryer-king.title": [
+  "Lord of the Hot Oil"
+ ],
+ "content.boss.grater-golem.desc": [
+  "A box grater on legs. It charges along a marked line."
+ ],
+ "content.boss.grater-golem.name": [
+  "Grater Golem"
+ ],
+ "content.boss.grater-golem.title": [
+  "The Shredder"
+ ],
+ "content.boss.great-wireworm.desc": [
+  "A huge wireworm. It burrows and bursts up under Tibo."
+ ],
+ "content.boss.great-wireworm.name": [
+  "The Great Wireworm"
+ ],
+ "content.boss.great-wireworm.title": [
+  "Borer of Tubers"
+ ],
+ "content.boss.harvester.desc": [
+  "A combine harvester. It charges down long lanes. Every potato's last fear."
+ ],
+ "content.boss.harvester.name": [
+  "The Harvester"
+ ],
+ "content.boss.harvester.title": [
+  "End of the Season"
+ ],
+ "content.boss.ketchup-kraken.desc": [
+  "A kraken of ketchup. Its tentacles slam down in a pattern."
+ ],
+ "content.boss.ketchup-kraken.name": [
+  "Ketchup Kraken"
+ ],
+ "content.boss.ketchup-kraken.title": [
+  "Terror of the Bog"
+ ],
+ "content.boss.late-blight.desc": [
+  "A creeping cloud of blight. Spore clouds bloom where it points."
+ ],
+ "content.boss.late-blight.name": [
+  "Late Blight"
+ ],
+ "content.boss.late-blight.title": [
+  "The Famine Fog"
+ ],
+ "content.boss.sir-strawman.desc": [
+  "A scarecrow knight. It throws fans of sharp straw."
+ ],
+ "content.boss.sir-strawman.name": [
+  "Sir Strawman"
+ ],
+ "content.boss.sir-strawman.title": [
+  "Guardian of the Rows"
+ ],
+ "content.boss.the-mandoline.desc": [
+  "A living mandoline slicer. Its blade sweeps across in lanes."
+ ],
+ "content.boss.the-mandoline.name": [
+  "The Mandoline"
+ ],
+ "content.boss.the-mandoline.title": [
+  "Slicer of Fries"
+ ],
+ "content.boss.the-masher.desc": [
+  "A giant potato masher. It slams where Tibo stands."
+ ],
+ "content.boss.the-masher.name": [
+  "The Masher"
+ ],
+ "content.boss.the-masher.title": [
+  "Kitchen Enforcer"
+ ],
+ "content.botHelp.bubbler.desc": [
+  "Wraps Tibo in a bubble for a moment and patches him up."
+ ],
+ "content.botHelp.bubbler.name": [
+  "Bubble Bot"
+ ],
+ "content.botHelp.gifter.desc": [
+  "Drops a handful of coins, a gem worth part of a level, and now and then a Bot Beacon."
+ ],
+ "content.botHelp.gifter.name": [
+  "Gift Bot"
+ ],
+ "content.botHelp.tidier.desc": [
+  "Sweeps every nearby gem and coin over to Tibo."
+ ],
+ "content.botHelp.tidier.name": [
+  "Tidy Bot"
+ ],
+ "content.botHelp.zapper.desc": [
+  "Zaps the closest bugs. Elites only get a jolt, and bosses are too big to zap."
+ ],
+ "content.botHelp.zapper.name": [
+  "Zapper Bot"
+ ],
+ "content.dog.beagle.breed": [
+  "Beagle"
+ ],
+ "content.dog.beagle.desc": [
+  "Points to the nearest crate, shrine or dog, and finds loose gold."
+ ],
+ "content.dog.beagle.name": [
+  "Scout"
+ ],
+ "content.dog.collie.breed": [
+  "Border Collie"
+ ],
+ "content.dog.collie.desc": [
+  "Every few seconds, shoves the enemies around you back."
+ ],
+ "content.dog.collie.name": [
+  "Moss"
+ ],
+ "content.dog.corgi.breed": [
+  "Corgi"
+ ],
+ "content.dog.corgi.desc": [
+  "Barks every few seconds and freezes nearby enemies (not bosses)."
+ ],
+ "content.dog.corgi.name": [
+  "Waffles"
+ ],
+ "content.dog.dachshund.breed": [
+  "Dachshund"
+ ],
+ "content.dog.dachshund.desc": [
+  "Digs up gold every few seconds, and sometimes a snack or a reroll."
+ ],
+ "content.dog.dachshund.name": [
+  "Frank"
+ ],
+ "content.dog.greyhound.breed": [
+  "Greyhound"
+ ],
+ "content.dog.greyhound.desc": [
+  "Every few seconds, sprints through a line of enemies and hurts them all."
+ ],
+ "content.dog.greyhound.name": [
+  "Zoom"
+ ],
+ "content.dog.pomchi.breed": [
+  "Chihuahua-Pomeranian"
+ ],
+ "content.dog.pomchi.desc": [
+  "Marks the nearest elite or loot runner so it takes more damage."
+ ],
+ "content.dog.pomchi.name": [
+  "Zelda"
+ ],
+ "content.dog.pomeranian.breed": [
+  "Pomeranian"
+ ],
+ "content.dog.pomeranian.desc": [
+  "His fluff takes the next hit on you, then he sneezes pests away."
+ ],
+ "content.dog.pomeranian.name": [
+  "Link"
+ ],
+ "content.dog.retriever.breed": [
+  "Golden Retriever"
+ ],
+ "content.dog.retriever.desc": [
+  "Every few seconds, brings gems, gold and snacks to you from far away."
+ ],
+ "content.dog.retriever.name": [
+  "Biscuit"
+ ],
+ "content.dog.saint-bernard.breed": [
+  "Saint Bernard"
+ ],
+ "content.dog.saint-bernard.desc": [
+  "When your health drops low, runs to you and heals you."
+ ],
+ "content.dog.saint-bernard.name": [
+  "Barrel"
+ ],
+ "content.dog.terrier.breed": [
+  "Jack Russell Terrier"
+ ],
+ "content.dog.terrier.desc": [
+  "Darts at the nearest enemy and bites it, about once a second."
+ ],
+ "content.dog.terrier.name": [
+  "Pip"
+ ],
+ "content.dog.zelda-and-link.breed": [
+  "Pomeranian and Chihuahua-Pomeranian"
+ ],
+ "content.dog.zelda-and-link.desc": [
+  "Link's fluff and Zelda's marks, plus an eclipse that shields you and marks every pest near you."
+ ],
+ "content.dog.zelda-and-link.name": [
+  "Zelda & Link"
+ ],
+ "content.enemy.aphid.name": [
+  "Aphid"
+ ],
+ "content.enemy.beetle-brood.name": [
+  "Beetle Brood"
+ ],
+ "content.enemy.blight-spore.name": [
+  "Blight Spore"
+ ],
+ "content.enemy.bog-slime.name": [
+  "Bog Slime"
+ ],
+ "content.enemy.bog-toad.name": [
+  "Bog Toad"
+ ],
+ "content.enemy.bowling-ball.name": [
+  "Bowling Ball"
+ ],
+ "content.enemy.bowling-pin.name": [
+  "Bowling Pin"
+ ],
+ "content.enemy.cave-grub.name": [
+  "Cave Grub"
+ ],
+ "content.enemy.compost-maggot.name": [
+  "Compost Maggot"
+ ],
+ "content.enemy.crumb-ant.name": [
+  "Crumb Ant"
+ ],
+ "content.enemy.dumpster-raccoon.name": [
+  "Dumpster Raccoon"
+ ],
+ "content.enemy.field-crow.name": [
+  "Field Crow"
+ ],
+ "content.enemy.field-rat.name": [
+  "Field Rat"
+ ],
+ "content.enemy.frost-flea.name": [
+  "Frost Flea"
+ ],
+ "content.enemy.fry-fly.name": [
+  "Fry Fly"
+ ],
+ "content.enemy.garden-slug.name": [
+  "Garden Slug"
+ ],
+ "content.enemy.golden-scarab.name": [
+  "Golden Scarab"
+ ],
+ "content.enemy.grease-fiend.name": [
+  "Grease Fiend"
+ ],
+ "content.enemy.gull-flock.name": [
+  "Gull Flock"
+ ],
+ "content.enemy.harvest-mouse.name": [
+  "Harvest Mouse"
+ ],
+ "content.enemy.hay-bale.name": [
+  "Hay Bale"
+ ],
+ "content.enemy.ice-imp.name": [
+  "Ice Imp"
+ ],
+ "content.enemy.ketchup-drop.name": [
+  "Ketchup Drop"
+ ],
+ "content.enemy.lint-bunny.name": [
+  "Lint Bunny"
+ ],
+ "content.enemy.little-grey.name": [
+  "Little Grey"
+ ],
+ "content.enemy.lost-saucer.name": [
+  "Lost Saucer"
+ ],
+ "content.enemy.maggot-swarm.name": [
+  "Maggot"
+ ],
+ "content.enemy.mole.name": [
+  "Mole"
+ ],
+ "content.enemy.mud-golem.name": [
+  "Mud Golem"
+ ],
+ "content.enemy.oil-drip.name": [
+  "Oil Drip"
+ ],
+ "content.enemy.parking-gull.name": [
+  "Parking Lot Gull"
+ ],
+ "content.enemy.potato-beetle.name": [
+  "Potato Beetle"
+ ],
+ "content.enemy.reset-zombie.name": [
+  "Reset Zombie"
+ ],
+ "content.enemy.sand-crab.name": [
+  "Sand Crab"
+ ],
+ "content.enemy.sizzle-imp.name": [
+  "Sizzle Imp"
+ ],
+ "content.enemy.snow-mold.name": [
+  "Snow Mold"
+ ],
+ "content.enemy.sock-pile.name": [
+  "Sock Pile"
+ ],
+ "content.enemy.spittlebug.name": [
+  "Spittlebug"
+ ],
+ "content.enemy.sprout-mite.name": [
+  "Sprout Mite"
+ ],
+ "content.enemy.swarm-fly.name": [
+  "Fry Fly Swarm"
+ ],
+ "content.enemy.tomato-leech.name": [
+  "Tomato Leech"
+ ],
+ "content.enemy.wireworm-larva.name": [
+  "Wireworm Larva"
+ ],
+ "content.event.bale-ring.announce": [
+  "Hay bales close in!"
+ ],
+ "content.event.bale-ring.name": [
+  "Ring of Hay Bales"
+ ],
+ "content.event.fly-swarm.announce": [
+  "A swarm of fry flies!"
+ ],
+ "content.event.fly-swarm.name": [
+  "Fry Fly Swarm"
+ ],
+ "content.event.golden-scarab.announce": [
+  "A Golden Scarab! Catch it!"
+ ],
+ "content.event.golden-scarab.name": [
+  "Golden Scarab"
+ ],
+ "content.event.harvest-moon.announce": [
+  "Harvest Moon: double gold for 30 s"
+ ],
+ "content.event.harvest-moon.name": [
+  "Harvest Moon"
+ ],
+ "content.event.loose-change.announce": [
+  "Loose change in the dryers: double gold for 20 s"
+ ],
+ "content.event.loose-change.name": [
+  "Loose Change"
+ ],
+ "content.event.lost-saucer.announce": [
+  "A lost saucer! Shoot it down for gold!"
+ ],
+ "content.event.lost-saucer.name": [
+  "Lost Saucer"
+ ],
+ "content.event.lunch-rush.announce": [
+  "Lunch rush! Gulls dive across the lot!"
+ ],
+ "content.event.lunch-rush.name": [
+  "Lunch Rush"
+ ],
+ "content.event.strike.announce": [
+  "Strike! Bowling balls roll in from every side!"
+ ],
+ "content.event.strike.name": [
+  "Strike"
+ ],
+ "content.item.all-seeing-spud.desc": [
+  "35% of kills send 4 potato eyes that pierce through enemies."
+ ],
+ "content.item.all-seeing-spud.name": [
+  "All-Seeing Spud"
+ ],
+ "content.item.baked-buckler.desc": [
+  "Cuts the damage of each hit. Stronger enemies get through more."
+ ],
+ "content.item.baked-buckler.name": [
+  "Baked Buckler"
+ ],
+ "content.item.bonfire-spud.desc": [
+  "25% of hits set enemies on fire, and the fire spreads to the enemies around them."
+ ],
+ "content.item.bonfire-spud.name": [
+  "Bonfire Spud"
+ ],
+ "content.item.boom-spud.desc": [
+  "Killed enemies may explode."
+ ],
+ "content.item.boom-spud.name": [
+  "Boom Spud"
+ ],
+ "content.item.boss-buster.desc": [
+  "+15% damage to elites and bosses."
+ ],
+ "content.item.boss-buster.name": [
+  "Boss Buster"
+ ],
+ "content.item.chive-charm.desc": [
+  "-3% cooldown."
+ ],
+ "content.item.chive-charm.name": [
+  "Chive Charm"
+ ],
+ "content.item.coal-baked-spud.desc": [
+  "15% of hits set enemies on fire."
+ ],
+ "content.item.coal-baked-spud.name": [
+  "Coal-Baked Spud"
+ ],
+ "content.item.compost-tea.desc": [
+  "+6% XP gain."
+ ],
+ "content.item.compost-tea.name": [
+  "Compost Tea"
+ ],
+ "content.item.copper-spoon.desc": [
+  "+10% pickup range."
+ ],
+ "content.item.copper-spoon.name": [
+  "Copper Spoon"
+ ],
+ "content.item.coupon-book.desc": [
+  "Everything you buy costs less."
+ ],
+ "content.item.coupon-book.name": [
+  "Coupon Book"
+ ],
+ "content.item.crit-chip.desc": [
+  "+25% crit damage."
+ ],
+ "content.item.crit-chip.name": [
+  "Crit Chip"
+ ],
+ "content.item.cursed-crown.desc": [
+  "+25% curse, +30% damage, +20% luck."
+ ],
+ "content.item.cursed-crown.name": [
+  "Cursed Crown"
+ ],
+ "content.item.extra-eye.desc": [
+  "+1 projectile."
+ ],
+ "content.item.extra-eye.name": [
+  "Extra Eye"
+ ],
+ "content.item.freezer-burn.desc": [
+  "Frozen enemies shatter when they die and freeze enemies nearby."
+ ],
+ "content.item.freezer-burn.name": [
+  "Freezer Burn"
+ ],
+ "content.item.fry-volcano.desc": [
+  "When Tibo is hit, he erupts in a blast and fires 24 fries that pierce through enemies."
+ ],
+ "content.item.fry-volcano.name": [
+  "Fry Volcano"
+ ],
+ "content.item.ghost-pepper.desc": [
+  "Tibo stays untouchable for 0.15 s after each dash ends."
+ ],
+ "content.item.ghost-pepper.name": [
+  "Ghost Pepper"
+ ],
+ "content.item.ghost-skin.desc": [
+  "Raises the chance to dodge a hit. The higher your dodge chance, the less it adds."
+ ],
+ "content.item.ghost-skin.name": [
+  "Ghost Skin"
+ ],
+ "content.item.glacier-spud.desc": [
+  "30% of kills shatter, freezing nearby enemies and slowing the enemies around them."
+ ],
+ "content.item.glacier-spud.name": [
+  "Glacier Spud"
+ ],
+ "content.item.golden-gravy.desc": [
+  "+15% damage and +15% gold gain."
+ ],
+ "content.item.golden-gravy.name": [
+  "Golden Gravy"
+ ],
+ "content.item.heavy-russet.desc": [
+  "2% of hits BONK for 15× damage."
+ ],
+ "content.item.heavy-russet.name": [
+  "Heavy Russet"
+ ],
+ "content.item.hot-pepper.desc": [
+  "Raises crit chance. The higher your crit chance, the less it adds."
+ ],
+ "content.item.hot-pepper.name": [
+  "Hot Pepper"
+ ],
+ "content.item.kaboom-spud.desc": [
+  "25% of kills explode, hitting nearby enemies for half the dead enemy's max HP."
+ ],
+ "content.item.kaboom-spud.name": [
+  "Kaboom Spud"
+ ],
+ "content.item.lucky-peel.desc": [
+  "+5% luck."
+ ],
+ "content.item.lucky-peel.name": [
+  "Lucky Peel"
+ ],
+ "content.item.magma-croquette.desc": [
+  "20% of hits erupt in a huge blast that sets enemies on fire."
+ ],
+ "content.item.magma-croquette.name": [
+  "Magma Croquette"
+ ],
+ "content.item.meteor-russet.desc": [
+  "3% of hits call down a meteor for 20× damage that also craters enemies around it."
+ ],
+ "content.item.meteor-russet.name": [
+  "Meteor Russet"
+ ],
+ "content.item.penny-spud.desc": [
+  "+8% gold gain."
+ ],
+ "content.item.penny-spud.name": [
+  "Penny Spud"
+ ],
+ "content.item.philosophers-potato.desc": [
+  "+10% to damage, area, speed and duration."
+ ],
+ "content.item.philosophers-potato.name": [
+  "Philosopher's Potato"
+ ],
+ "content.item.pickle-jar.desc": [
+  "+0.1 HP per second."
+ ],
+ "content.item.pickle-jar.name": [
+  "Pickle Jar"
+ ],
+ "content.item.porcupine-spud.desc": [
+  "When Tibo is hit, he fires 10 fries outward."
+ ],
+ "content.item.porcupine-spud.name": [
+  "Porcupine Spud"
+ ],
+ "content.item.salt-crystal.desc": [
+  "+4% damage."
+ ],
+ "content.item.salt-crystal.name": [
+  "Salt Crystal"
+ ],
+ "content.item.second-spud.desc": [
+  "Revive once with half HP."
+ ],
+ "content.item.second-spud.name": [
+  "Second Spud"
+ ],
+ "content.item.sharp-peeler.desc": [
+  "+1 pierce for projectiles."
+ ],
+ "content.item.sharp-peeler.name": [
+  "Sharp Peeler"
+ ],
+ "content.item.spicy-croquette.desc": [
+  "12% of hits burst in a fiery blast."
+ ],
+ "content.item.spicy-croquette.name": [
+  "Spicy Croquette"
+ ],
+ "content.item.spud-muffin.desc": [
+  "+10 max HP."
+ ],
+ "content.item.spud-muffin.name": [
+  "Spud Muffin"
+ ],
+ "content.item.starch-sock.desc": [
+  "+4% move speed."
+ ],
+ "content.item.starch-sock.name": [
+  "Starch Sock"
+ ],
+ "content.item.static-tot.desc": [
+  "10% of hits arc lightning to 3 more enemies."
+ ],
+ "content.item.static-tot.name": [
+  "Static Tot"
+ ],
+ "content.item.storm-tot.desc": [
+  "15% of hits arc lightning to 6 more enemies, with a thunderclap at each one."
+ ],
+ "content.item.storm-tot.name": [
+  "Storm Tot"
+ ],
+ "content.item.thorny-jacket.desc": [
+  "Enemies that hit Tibo take 8 damage."
+ ],
+ "content.item.thorny-jacket.name": [
+  "Thorny Jacket"
+ ],
+ "content.item.time-tuber.desc": [
+  "+15% duration and +8% projectile speed."
+ ],
+ "content.item.time-tuber.name": [
+  "Time Tuber"
+ ],
+ "content.item.vampire-tot.desc": [
+  "Heal 0.15 HP per kill."
+ ],
+ "content.item.vampire-tot.name": [
+  "Vampire Tot"
+ ],
+ "content.item.wandering-eyes.desc": [
+  "20% of kills send 2 potato eyes after other enemies."
+ ],
+ "content.item.wandering-eyes.name": [
+  "Wandering Eyes"
+ ],
+ "content.item.wide-ladle.desc": [
+  "+6% area."
+ ],
+ "content.item.wide-ladle.name": [
+  "Wide Ladle"
+ ],
+ "content.passive.bacon-bits.desc": [
+  "+12% damage to elites and bosses per level."
+ ],
+ "content.passive.bacon-bits.name": [
+  "Bacon Bits"
+ ],
+ "content.passive.big-bowl.desc": [
+  "+10% area per level."
+ ],
+ "content.passive.big-bowl.name": [
+  "Big Bowl"
+ ],
+ "content.passive.butter-pat.desc": [
+  "+10% damage per level."
+ ],
+ "content.passive.butter-pat.name": [
+  "Butter Pat"
+ ],
+ "content.passive.butter-socks.desc": [
+  "+1 dash charge at levels 1, 3 and 5. Each level cuts the dash cooldown by 6%."
+ ],
+ "content.passive.butter-socks.name": [
+  "Butter Socks"
+ ],
+ "content.passive.chives.desc": [
+  "-7% weapon cooldown per level."
+ ],
+ "content.passive.chives.name": [
+  "Chives"
+ ],
+ "content.passive.fertilizer.desc": [
+  "+8% XP gain per level."
+ ],
+ "content.passive.fertilizer.name": [
+  "Fertilizer"
+ ],
+ "content.passive.four-eyed-spud.desc": [
+  "+10% luck per level."
+ ],
+ "content.passive.four-eyed-spud.name": [
+  "Four-Eyed Spud"
+ ],
+ "content.passive.golden-fry.desc": [
+  "+12% gold gain per level."
+ ],
+ "content.passive.golden-fry.name": [
+  "Golden Fry"
+ ],
+ "content.passive.gpu.desc": [
+  "+1 projectile. Firing builds heat. At full heat, weapons fire at half speed for 3s. Each level adds fire rate and cooling."
+ ],
+ "content.passive.gpu.name": [
+  "GPU"
+ ],
+ "content.passive.gravy-heart.desc": [
+  "+12% max HP per level."
+ ],
+ "content.passive.gravy-heart.name": [
+  "Gravy Heart"
+ ],
+ "content.passive.hot-sauce.desc": [
+  "Raises crit chance with each level. The higher your crit chance, the less each level adds."
+ ],
+ "content.passive.hot-sauce.name": [
+  "Hot Sauce"
+ ],
+ "content.passive.masher-grip.desc": [
+  "+25% knockback per level."
+ ],
+ "content.passive.masher-grip.name": [
+  "Masher Grip"
+ ],
+ "content.passive.potato-magnet.desc": [
+  "+25% pickup range per level."
+ ],
+ "content.passive.potato-magnet.name": [
+  "Potato Magnet"
+ ],
+ "content.passive.root-network.desc": [
+  "+0.25 HP per second per level."
+ ],
+ "content.passive.root-network.name": [
+  "Root Network"
+ ],
+ "content.passive.rotten-spud.desc": [
+  "+10% curse per level: stronger, faster, more enemies, but more XP and gold."
+ ],
+ "content.passive.rotten-spud.name": [
+  "Rotten Spud"
+ ],
+ "content.passive.salt-shaker.desc": [
+  "+10% projectile speed per level."
+ ],
+ "content.passive.salt-shaker.name": [
+  "Salt Shaker"
+ ],
+ "content.passive.slow-cooker.desc": [
+  "+10% weapon duration per level."
+ ],
+ "content.passive.slow-cooker.name": [
+  "Slow Cooker"
+ ],
+ "content.passive.sour-cream.desc": [
+  "+20% crit damage per level."
+ ],
+ "content.passive.sour-cream.name": [
+  "Sour Cream"
+ ],
+ "content.passive.sprouting-eyes.desc": [
+  "+1 projectile at levels 1, 3 and 5."
+ ],
+ "content.passive.sprouting-eyes.name": [
+  "Sprouting Eyes"
+ ],
+ "content.passive.spud-sneakers.desc": [
+  "+8% move speed per level."
+ ],
+ "content.passive.spud-sneakers.name": [
+  "Spud Sneakers"
+ ],
+ "content.passive.starch-plating.desc": [
+  "Cuts the damage of each hit, more with each level. Stronger enemies get through more."
+ ],
+ "content.passive.starch-plating.name": [
+  "Starch Plating"
+ ],
+ "content.passive.thick-skin.desc": [
+  "Raises the chance to dodge a hit with each level. The higher your dodge chance, the less each level adds."
+ ],
+ "content.passive.thick-skin.name": [
+  "Thick Skin"
+ ],
+ "content.poi.bossLair.desc": [
+  "A boss sleeps here. It guards a big chest."
+ ],
+ "content.poi.bossLair.name": [
+  "Boss Lair"
+ ],
+ "content.poi.botDock.desc": [
+  "Stand by it to call a swarm of Grok Bots."
+ ],
+ "content.poi.botDock.name": [
+  "Bot Dock"
+ ],
+ "content.poi.chargeShrine.desc": [
+  "Stand inside to charge it, then pick a stat."
+ ],
+ "content.poi.chargeShrine.name": [
+  "Spud Shrine"
+ ],
+ "content.poi.crops.desc": [
+  "Break it for gold and a snack."
+ ],
+ "content.poi.crops.name": [
+  "Crop Patch"
+ ],
+ "content.poi.curseShrine.desc": [
+  "Take curse for a pile of gold. Curses bring extra elites and bosses."
+ ],
+ "content.poi.curseShrine.name": [
+  "Moldy Shrine"
+ ],
+ "content.poi.dinnerBell.desc": [
+  "Ring it to call a ring of pests. They drop triple XP."
+ ],
+ "content.poi.dinnerBell.name": [
+  "Dinner Bell"
+ ],
+ "content.poi.dog.desc": [
+  "A good dog looking for a friend. Walk up to it."
+ ],
+ "content.poi.dog.name": [
+  "Stray Dog"
+ ],
+ "content.poi.dogKennel.desc": [
+  "Stand by it to buy up to three levels for your dogs."
+ ],
+ "content.poi.dogKennel.name": [
+  "Dog Kennel"
+ ],
+ "content.poi.eliteNest.desc": [
+  "An elite waits here. It drops a chest."
+ ],
+ "content.poi.eliteNest.name": [
+  "Beetle Nest"
+ ],
+ "content.poi.frenzyFryer.desc": [
+  "Stand by it for a 20 s frenzy."
+ ],
+ "content.poi.frenzyFryer.name": [
+  "Frenzy Fryer"
+ ],
+ "content.poi.goldenShrine.desc": [
+  "Stand by it to charge it, then pick a big blessing."
+ ],
+ "content.poi.goldenShrine.name": [
+  "Golden Spud Shrine"
+ ],
+ "content.poi.microwave.desc": [
+  "Stand by it to charge it, then copy one of your items. The copy melts another item of the same rarity."
+ ],
+ "content.poi.microwave.name": [
+  "Microwave"
+ ],
+ "content.poi.paidChest.desc": [
+  "Costs gold. Holds an item. Each crate costs more than the last."
+ ],
+ "content.poi.paidChest.name": [
+  "Potato Crate"
+ ],
+ "content.poi.rootTunnel.desc": [
+  "Stand by it to tunnel to a far place."
+ ],
+ "content.poi.rootTunnel.name": [
+  "Root Tunnel"
+ ],
+ "content.poi.seedVault.desc": [
+  "Stand by it to charge it for rerolls, a skip and a banish."
+ ],
+ "content.poi.seedVault.name": [
+  "Seed Vault"
+ ],
+ "content.poi.spudFreezer.desc": [
+  "Stand by it to freeze every enemy on the map for 7.5 s. Bosses only slow down."
+ ],
+ "content.poi.spudFreezer.name": [
+  "Spud Freezer"
+ ],
+ "content.poi.taterLantern.desc": [
+  "Break it for a surprise."
+ ],
+ "content.poi.taterLantern.name": [
+  "Tater Lantern"
+ ],
+ "content.poi.taterMagnet.desc": [
+  "Stand by it to pull in every gem and coin."
+ ],
+ "content.poi.taterMagnet.name": [
+  "Tater Magnet"
+ ],
+ "content.poi.taterSlots.desc": [
+  "Pay gold to spin. Match two for an item."
+ ],
+ "content.poi.taterSlots.name": [
+  "Tater Slots"
+ ],
+ "content.poi.vendor.desc": [
+  "Sells items for gold."
+ ],
+ "content.poi.vendor.name": [
+  "Fry Cart"
+ ],
+ "content.poi.whetstone.desc": [
+  "Stand by it to charge it, then level up one of your weapons."
+ ],
+ "content.poi.whetstone.name": [
+  "Spud Whetstone"
+ ],
+ "content.rarity.0.name": [
+  "Common"
+ ],
+ "content.rarity.1.name": [
+  "Uncommon"
+ ],
+ "content.rarity.2.name": [
+  "Rare"
+ ],
+ "content.rarity.3.name": [
+  "Epic"
+ ],
+ "content.rarity.4.name": [
+  "Legendary"
+ ],
+ "content.shrine.area.label": [
+  "Area"
+ ],
+ "content.shrine.armor.label": [
+  "Armor"
+ ],
+ "content.shrine.cooldown.label": [
+  "Cooldown"
+ ],
+ "content.shrine.critChance.label": [
+  "Crit"
+ ],
+ "content.shrine.duration.label": [
+  "Duration"
+ ],
+ "content.shrine.greed.label": [
+  "Gold gain"
+ ],
+ "content.shrine.growth.label": [
+  "XP gain"
+ ],
+ "content.shrine.luck.label": [
+  "Luck"
+ ],
+ "content.shrine.magnet.label": [
+  "Pickup range"
+ ],
+ "content.shrine.maxHp.label": [
+  "Max HP"
+ ],
+ "content.shrine.might.label": [
+  "Damage"
+ ],
+ "content.shrine.moveSpeed.label": [
+  "Move speed"
+ ],
+ "content.weapon.big-fry.desc": [
+  "The fry pierces everything and grows bigger as it grows stronger."
+ ],
+ "content.weapon.big-fry.name": [
+  "Big Fry"
+ ],
+ "content.weapon.bottomless-sack.desc": [
+  "Pulls two snacks at a time, and they come out evolved."
+ ],
+ "content.weapon.bottomless-sack.name": [
+  "Bottomless Sack"
+ ],
+ "content.weapon.butter-streak.desc": [
+  "Each dash leaves a strip of melted butter that slows pests and burns them for 2 s. Between dashes, it also leaves one on the path Tibo just walked."
+ ],
+ "content.weapon.butter-streak.name": [
+  "Butter Streak"
+ ],
+ "content.weapon.cast-iron.desc": [
+  "Swings both ways. Swatted bullets hit harder, pierce, and home in on pests. Each elite kill charges the next swing."
+ ],
+ "content.weapon.cast-iron.name": [
+  "Cast Iron"
+ ],
+ "content.weapon.chip-shuriken.desc": [
+  "Spinning chips that spiral outward."
+ ],
+ "content.weapon.chip-shuriken.name": [
+  "Chip Shuriken"
+ ],
+ "content.weapon.cold-storage.desc": [
+  "A wider, colder ring. Pests freeze longer and take harder frostbite."
+ ],
+ "content.weapon.cold-storage.name": [
+  "Cold Storage"
+ ],
+ "content.weapon.deep-fryer.desc": [
+  "Sprays hot oil in a cone."
+ ],
+ "content.weapon.deep-fryer.name": [
+  "Deep Fryer"
+ ],
+ "content.weapon.eternal-sprouts.desc": [
+  "Sprouts circle Tibo forever."
+ ],
+ "content.weapon.eternal-sprouts.name": [
+  "Eternal Sprouts"
+ ],
+ "content.weapon.factory-reset.desc": [
+  "A full reset. Clears the screen, keeps the drops, heals Tibo."
+ ],
+ "content.weapon.factory-reset.name": [
+  "Factory Reset"
+ ],
+ "content.weapon.frozen-fries.desc": [
+  "Shoots frozen fries that freeze enemies in place."
+ ],
+ "content.weapon.frozen-fries.name": [
+  "Frozen Fries"
+ ],
+ "content.weapon.fry-brigade.desc": [
+  "Tot pups in fry-cook hats follow Tibo, shoot, and plant fry turrets as they go. Frees a weapon slot."
+ ],
+ "content.weapon.fry-brigade.name": [
+  "Fry Brigade"
+ ],
+ "content.weapon.fry-knives.desc": [
+  "Fires sharp fries in the direction Tibo faces."
+ ],
+ "content.weapon.fry-knives.name": [
+  "Fry Knives"
+ ],
+ "content.weapon.fry-lance.desc": [
+  "One very long fry that pierces a whole line."
+ ],
+ "content.weapon.fry-lance.name": [
+  "Fry Lance"
+ ],
+ "content.weapon.fry-sentry.desc": [
+  "Drops a fry-cook turret that shoots nearby enemies."
+ ],
+ "content.weapon.fry-sentry.name": [
+  "Fry Cook Sentry"
+ ],
+ "content.weapon.frying-pan.desc": [
+  "Swings a pan in front of Tibo. Enemy bullets it swats fly back at whoever shot them. Each elite Tibo kills charges the next swing bigger and harder."
+ ],
+ "content.weapon.frying-pan.name": [
+  "Frying Pan"
+ ],
+ "content.weapon.ghee-glide.desc": [
+  "Each dash leaves a strip of hot ghee that slows and burns pests. Between dashes, it also leaves one on the path Tibo just walked. Tibo walks 15% faster on the ghee."
+ ],
+ "content.weapon.ghee-glide.name": [
+  "Ghee Glide"
+ ],
+ "content.weapon.golden-harvest.desc": [
+  "A downpour of golden potatoes. Kills can drop gold."
+ ],
+ "content.weapon.golden-harvest.name": [
+  "Golden Harvest"
+ ],
+ "content.weapon.grab-bag.desc": [
+  "Reaches into a sack and fires a different weapon's attack every time."
+ ],
+ "content.weapon.grab-bag.name": [
+  "Grab Bag"
+ ],
+ "content.weapon.gratin-arc.desc": [
+  "A cheesy arc that chains far and crits often."
+ ],
+ "content.weapon.gratin-arc.name": [
+  "Gratin Arc"
+ ],
+ "content.weapon.gravy-boat.desc": [
+  "Pours scalding gravy pools on enemies."
+ ],
+ "content.weapon.gravy-boat.name": [
+  "Gravy Boat"
+ ],
+ "content.weapon.gravy-flood.desc": [
+  "Gravy pools grow and drift after Tibo."
+ ],
+ "content.weapon.gravy-flood.name": [
+  "Gravy Flood"
+ ],
+ "content.weapon.hash-boomerang.desc": [
+  "A crispy hash brown that flies out and comes back."
+ ],
+ "content.weapon.hash-boomerang.name": [
+  "Hash Boomerang"
+ ],
+ "content.weapon.hash-brown-shield.desc": [
+  "Hash browns circle Tibo. Each takes up to 20 damage of one hit or bullet, then bursts into shards that hurt nearby enemies. Thorns add to shard damage. Broken ones re-crisp one at a time."
+ ],
+ "content.weapon.hash-brown-shield.name": [
+  "Hash Brown Shield"
+ ],
+ "content.weapon.hash-bulwark.desc": [
+  "More hash browns that re-crisp faster and take up to 30 damage of a hit. Their shards hit harder and freeze enemies."
+ ],
+ "content.weapon.hash-bulwark.name": [
+  "Hash Bulwark"
+ ],
+ "content.weapon.hashnado.desc": [
+  "Hash browns spin out in a crispy storm and return."
+ ],
+ "content.weapon.hashnado.name": [
+  "Hashnado"
+ ],
+ "content.weapon.hot-potato.desc": [
+  "Hops from pest to pest and blows up on the last one when its count runs out."
+ ],
+ "content.weapon.hot-potato.name": [
+  "Hot Potato"
+ ],
+ "content.weapon.inferno-basket.desc": [
+  "A long blast of fryer oil. Double damage to elites and bosses."
+ ],
+ "content.weapon.inferno-basket.name": [
+  "Inferno Basket"
+ ],
+ "content.weapon.julienne-dash.desc": [
+  "Each dash slices every pest along Tibo's path. Between dashes, it also slices along the path he just walked."
+ ],
+ "content.weapon.julienne-dash.name": [
+  "Julienne Dash"
+ ],
+ "content.weapon.kettle-cyclone.desc": [
+  "A cyclone of kettle chips."
+ ],
+ "content.weapon.kettle-cyclone.name": [
+  "Kettle Cyclone"
+ ],
+ "content.weapon.landmine-harvest.desc": [
+  "Rotten mines. Enemies they kill drop extra gold."
+ ],
+ "content.weapon.landmine-harvest.name": [
+  "Landmine Harvest"
+ ],
+ "content.weapon.loaded-dice.desc": [
+  "Rolls two dice and keeps the higher. A pair doubles the throw."
+ ],
+ "content.weapon.loaded-dice.name": [
+  "Loaded Dice"
+ ],
+ "content.weapon.mandoline-fury.desc": [
+  "Slices both ways at once and flings potato slices through the crowd. Each slash hit heals Tibo a little."
+ ],
+ "content.weapon.mandoline-fury.name": [
+  "Mandoline Fury"
+ ],
+ "content.weapon.mash-wave.desc": [
+  "A ring of mashed potato rolls out from Tibo."
+ ],
+ "content.weapon.mash-wave.name": [
+  "Mash Wave"
+ ],
+ "content.weapon.mashquake.desc": [
+  "Mash rolls out in waves that slow what they hit. Each wave flings clumps of mash across the field."
+ ],
+ "content.weapon.mashquake.name": [
+  "Mashquake"
+ ],
+ "content.weapon.mezzaluna.desc": [
+  "Chops in front of Tibo and behind him. The more HP Tibo is missing, the harder it hits."
+ ],
+ "content.weapon.mezzaluna.name": [
+  "Mezzaluna"
+ ],
+ "content.weapon.moon-cleaver.desc": [
+  "Chops twice in front and once behind, and flicks hash shreds back through the crowd. The more HP Tibo is missing, the harder it hits."
+ ],
+ "content.weapon.moon-cleaver.name": [
+  "Moon Cleaver"
+ ],
+ "content.weapon.overgrowth.desc": [
+  "Seeker sprouts that split when they hit."
+ ],
+ "content.weapon.overgrowth.name": [
+  "Overgrowth"
+ ],
+ "content.weapon.peeler.desc": [
+  "Slashes sideways. From level 4 it flings potato peels through the crowd, one more each level. Tibo's trusty kitchen tool."
+ ],
+ "content.weapon.peeler.name": [
+  "Peeler"
+ ],
+ "content.weapon.permafrost-fries.desc": [
+  "Freezes longer. Frozen enemies take double damage."
+ ],
+ "content.weapon.permafrost-fries.name": [
+  "Permafrost Fries"
+ ],
+ "content.weapon.potato-battery.desc": [
+  "Clips a live wire onto a pest. The wire zaps and slows every pest it touches. The clipped pest can't die until the wire lets go."
+ ],
+ "content.weapon.potato-battery.name": [
+  "Potato Battery"
+ ],
+ "content.weapon.potato-rain.desc": [
+  "Calls down a shower of potatoes around Tibo."
+ ],
+ "content.weapon.potato-rain.name": [
+  "Potato Rain"
+ ],
+ "content.weapon.pressure-cooker.desc": [
+  "A huge steam cloud. Each enemy it burns heals Tibo."
+ ],
+ "content.weapon.pressure-cooker.name": [
+  "Pressure Cooker"
+ ],
+ "content.weapon.railfry.desc": [
+  "Three lances that cross the whole view."
+ ],
+ "content.weapon.railfry.name": [
+  "Railfry"
+ ],
+ "content.weapon.reset-button.desc": [
+  "We reset the limits. Clears every enemy on screen. Bosses only flinch."
+ ],
+ "content.weapon.reset-button.name": [
+  "Reset Button"
+ ],
+ "content.weapon.root-cellar.desc": [
+  "A ring of cellar cold around Tibo. Pests that cross it take frostbite and freeze for a moment. Bosses only slow."
+ ],
+ "content.weapon.root-cellar.name": [
+  "Root Cellar"
+ ],
+ "content.weapon.root-spikes.desc": [
+  "Roots burst out of the ground under enemies."
+ ],
+ "content.weapon.root-spikes.name": [
+  "Root Spikes"
+ ],
+ "content.weapon.rosti-disc.desc": [
+  "A flat rösti that bounces off the edges of the view."
+ ],
+ "content.weapon.rosti-disc.name": [
+  "Rösti Disc"
+ ],
+ "content.weapon.rosti-storm.desc": [
+  "Bouncing röstis that burst at every bounce."
+ ],
+ "content.weapon.rosti-storm.name": [
+  "Rösti Storm"
+ ],
+ "content.weapon.sack-of-russets.desc": [
+  "A whole sack of heavy potatoes, all at once."
+ ],
+ "content.weapon.sack-of-russets.name": [
+  "Sack of Russets"
+ ],
+ "content.weapon.salt-flats.desc": [
+  "A wider salt trail that slows pests harder and pushes them out of Tibo's path."
+ ],
+ "content.weapon.salt-flats.name": [
+  "Salt Flats"
+ ],
+ "content.weapon.salt-line.desc": [
+  "Tibo trails salt while he walks. Pests on the salt are slowed and stung."
+ ],
+ "content.weapon.salt-line.name": [
+  "Salt Line"
+ ],
+ "content.weapon.seeker-sprouts.desc": [
+  "Sprouts that steer toward enemies."
+ ],
+ "content.weapon.seeker-sprouts.name": [
+  "Seeker Sprouts"
+ ],
+ "content.weapon.small-fry.desc": [
+  "A tiny fry that starts weak and gains damage with every kill it makes, for the rest of the run."
+ ],
+ "content.weapon.small-fry.name": [
+  "Small Fry"
+ ],
+ "content.weapon.spicy-hot-potato.desc": [
+  "Hops further, and its blast throws two fresh hot potatoes."
+ ],
+ "content.weapon.spicy-hot-potato.name": [
+  "Spicy Hot Potato"
+ ],
+ "content.weapon.sprout-satellites.desc": [
+  "Potato sprouts circle Tibo for a while."
+ ],
+ "content.weapon.sprout-satellites.name": [
+  "Sprout Satellites"
+ ],
+ "content.weapon.spud-artillery.desc": [
+  "A barrage of lobbed potatoes that explode. Frees a weapon slot."
+ ],
+ "content.weapon.spud-artillery.name": [
+  "Spud Artillery"
+ ],
+ "content.weapon.spud-cannon.desc": [
+  "A classic potato gun. Shots burst on impact."
+ ],
+ "content.weapon.spud-cannon.name": [
+  "Spud Cannon"
+ ],
+ "content.weapon.spud-dice.desc": [
+  "Throws a potato die. 1 is a dud, 2 freezes, 3 burns, 4 splits, 5 pays gold, 6 blows up big."
+ ],
+ "content.weapon.spud-dice.name": [
+  "Spud Dice"
+ ],
+ "content.weapon.spud-grid.desc": [
+  "Clips three live wires at once. Each wire zaps harder and bursts when it lets go."
+ ],
+ "content.weapon.spud-grid.name": [
+  "Spud Grid"
+ ],
+ "content.weapon.spud-lob.desc": [
+  "Lobs heavy potatoes high. They crash down through crowds."
+ ],
+ "content.weapon.spud-lob.name": [
+  "Spud Lob"
+ ],
+ "content.weapon.spudzooka.desc": [
+  "Big potato rockets that split into cluster bursts."
+ ],
+ "content.weapon.spudzooka.name": [
+  "Spudzooka"
+ ],
+ "content.weapon.stand-mixer.desc": [
+  "Two whirlpools pull harder. When one ends, it slams its catch together."
+ ],
+ "content.weapon.stand-mixer.name": [
+  "Stand Mixer"
+ ],
+ "content.weapon.starch-bolt.desc": [
+  "Static from a pile of starch strikes random enemies."
+ ],
+ "content.weapon.starch-bolt.name": [
+  "Starch Bolt"
+ ],
+ "content.weapon.starch-chain.desc": [
+  "A spark that jumps from enemy to enemy."
+ ],
+ "content.weapon.starch-chain.name": [
+  "Starch Chain"
+ ],
+ "content.weapon.starch-supercell.desc": [
+  "Lightning that chains between enemies. Frees a weapon slot."
+ ],
+ "content.weapon.starch-supercell.name": [
+  "Starch Supercell"
+ ],
+ "content.weapon.steam-vent.desc": [
+  "Hot steam from a baked potato hurts everything close."
+ ],
+ "content.weapon.steam-vent.name": [
+  "Steam Vent"
+ ],
+ "content.weapon.taproot-eruption.desc": [
+  "Giant roots erupt and throw enemies back."
+ ],
+ "content.weapon.taproot-eruption.name": [
+  "Taproot Eruption"
+ ],
+ "content.weapon.tater-mines.desc": [
+  "Buries spuds that burst when enemies step close."
+ ],
+ "content.weapon.tater-mines.name": [
+  "Tater Mines"
+ ],
+ "content.weapon.tater-pup.desc": [
+  "A loyal tot that follows Tibo and shoots."
+ ],
+ "content.weapon.tater-pup.name": [
+  "Tater Tot Pup"
+ ],
+ "content.weapon.thousand-fries.desc": [
+  "Fries without end."
+ ],
+ "content.weapon.thousand-fries.name": [
+  "Thousand Fries"
+ ],
+ "content.weapon.thunder-tuber.desc": [
+  "A storm of starch lightning."
+ ],
+ "content.weapon.thunder-tuber.name": [
+  "Thunder Tuber"
+ ],
+ "content.weapon.tot-gatling.desc": [
+  "A nonstop stream of tater tots."
+ ],
+ "content.weapon.tot-gatling.name": [
+  "Tot Gatling"
+ ],
+ "content.weapon.tot-toss.desc": [
+  "Throws tater tots at the nearest enemy."
+ ],
+ "content.weapon.tot-toss.name": [
+  "Tot Toss"
+ ],
+ "content.weapon.waffle-cut.desc": [
+  "Each dash cuts a cross through every pest along Tibo's path, then cuts it twice more, 0.5 s apart. Between dashes, it also cuts along the path he just walked."
+ ],
+ "content.weapon.waffle-cut.name": [
+  "Waffle Cut"
+ ],
+ "content.weapon.whisk-vortex.desc": [
+  "Spins a whisk whirlpool under the biggest crowd and drags pests into it."
+ ],
+ "content.weapon.whisk-vortex.name": [
+  "Whisk Vortex"
+ ]
+}

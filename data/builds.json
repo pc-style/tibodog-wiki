@@ -1,0 +1,128 @@
+[
+ {
+  "seen": "2026-11-02",
+  "main": "main-D3tdcOXz.js",
+  "boot": "boot-DIJlLGwy.js",
+  "sim": "sim-DQNACfZS.js",
+  "commit": null,
+  "status": "reviewed",
+  "changes": "First build researched for this wiki (the research notes on the [Mechanics reference](/mechanics-reference) quote this build)."
+ },
+ {
+  "seen": "2026-11-02",
+  "main": "main-CuMpfPPt.js",
+  "boot": "boot-CWJFFEaU.js",
+  "sim": "sim-BN9mlaYu.js",
+  "commit": "1b186194bfdd",
+  "status": "reviewed",
+  "changes": "Every weapon, passive, item, enemy, boss, biome, event, dog and recipe is identical, as are the difficulty table, wave table and UI text. The only gameplay change: a drop that would land on an unused point of interest is moved off it, staying on screen if it dropped on screen (`pickups.movedDropInView` 120)."
+ },
+ {
+  "seen": "2026-11-02",
+  "main": "main-CJ9piIja.js",
+  "boot": "boot-DTZB9p1e.js",
+  "sim": "sim-Cy57yi5h.js",
+  "commit": "6dcf252e92c4",
+  "status": "reviewed",
+  "changes": "Content, English text, game config values, difficulty table and icons are identical. Removed: the drop relocation rule from the previous build; the step that nudged points of interest apart when the world is generated; and the step that moved a Root Tunnel exit off other points of interest. Added: when a Spud Freezer only catches bosses, its message says how many bosses were slowed; shared run pages show the difficulty level; a new whirlpool look for the Stand Mixer."
+ },
+ {
+  "seen": "2026-11-02",
+  "main": "main-Ch-KgvWc.js",
+  "boot": "boot-C0MfoFhh.js",
+  "sim": "sim-BfRHgfLr.js",
+  "commit": "9564ddd5533c",
+  "status": "reviewed",
+  "changes": "Content, English text, game logic, difficulty table and icons are identical. Added: a link such as `https://tibo.dog/?difficulty=hard` starts a run on that level straight from the title screen; Auto quality can now step back up when the game runs smoothly (Apple GPUs on touch devices start on Medium); weapons got element-coloured hit sparks; analytics waits up to 20 s instead of 3 s to learn the player's region before asking for consent."
+ },
+ {
+  "seen": "2026-11-02",
+  "main": "main-fqSfLoGZ.js",
+  "boot": "boot-D7RnsGlA.js",
+  "sim": "sim-Cw0f1Sho.js",
+  "commit": "5cf50114d795",
+  "status": "reviewed",
+  "changes": "Content, English text, game logic, difficulty table and icons are identical. The only change: while the screen is fully dark during story mode's knock-down sequence, the on-screen banners are hidden."
+ },
+ {
+  "seen": "2026-11-02",
+  "main": "main-BnqQtoRt.js",
+  "boot": "boot-BcxQcatw.js",
+  "sim": "sim-DtpAETtC.js",
+  "commit": "7924b2fb8101",
+  "status": "reviewed",
+  "changes": "Content, English text, game logic, difficulty table and icons are identical. The only change: the renderer no longer prepares the intro cutscene when the intro will be skipped (a `?difficulty=` link or skip-intro start), which shortens loading."
+ },
+ {
+  "seen": "2026-11-02",
+  "main": "main-DAjbSyXX.js",
+  "boot": "boot-BX5JdyKV.js",
+  "sim": "sim-sqx5f1ic.js",
+  "commit": "93305328e91a",
+  "status": "reviewed",
+  "changes": "Touch dash flicks are detected differently: a stroke of at least 30 px over the last 120 ms, moving at least 400 px/s on release or 900 px/s while held (was 22 px within 260 ms). Adds a season schedule to the config. Game data and difficulty are unchanged."
+ },
+ {
+  "seen": "2026-11-03",
+  "main": "main-CSzwFuB5.js",
+  "boot": "boot-Ja5hQN6G.js",
+  "sim": "sim-BLUVPZFx.js",
+  "commit": "d3d9b50b50d1",
+  "status": "reviewed",
+  "changes": "Normal is no longer the plain defaults: fewer pests (×0.7), pest HP ×0.65, enemy damage ×0.55, boss and elite HP ×0.65, Tibo max HP ×1.5, XP ×1.3, 1 extra revive, enemy tiers lag 2 minutes and fewer wall pests (×0.3). POI charge sounds can overlap (up to 4 voices)."
+ },
+ {
+  "seen": "2026-11-03",
+  "main": "main-BeLo0XA2.js",
+  "boot": "boot-Da1-Ems9.js",
+  "sim": "sim-H1RjVhZc.js",
+  "commit": "a511ea70ce57",
+  "status": "reviewed",
+  "changes": "Game data, English text, difficulty table, icons and game logic are identical (renamed code only)."
+ },
+ {
+  "seen": "2026-11-03",
+  "main": "main-nM99N6qX.js",
+  "boot": "boot-u7Z813F8.js",
+  "sim": "sim-_OBiHpkk.js",
+  "commit": "ef553af3c33e",
+  "status": "reviewed",
+  "changes": "Adds a server clock check (`/api/time`). No gameplay changes."
+ },
+ {
+  "seen": "2026-11-03",
+  "main": "main-usFqtSYB.js",
+  "boot": "boot-BBu-8zMV.js",
+  "sim": "sim-BWA0X6Nb.js",
+  "commit": "8fa93e6d85e6",
+  "status": "reviewed",
+  "changes": "Balance pass. Base weapons hit harder at several levels (Deep Fryer, Hash Brown Shield, Julienne Dash, Mezzaluna, Potato Battery, Potato Rain, Root Cellar, Root Spikes) and Butter Streak cooldown drops from 3.5 s to 2.5 s. Every evolution gets more damage, most also shorter cooldowns or more projectiles; Spud Grid wires can now latch onto bosses (`clipsBosses`). Proc items are roughly doubled (Heavy Russet, Spicy Croquette, Static Tot, Wandering Eyes, Coal-Baked Spud, Porcupine Spud) and Boom Spud kill explosions rise from 8% to 12%. The Spud Freezer now freezes every enemy on the map for 7.5 s (was pests within 200 units for 5 s)."
+ },
+ {
+  "seen": "2026-11-03",
+  "main": "main-CRG7Ndrb.js",
+  "boot": "boot-D1lhtqF1.js",
+  "sim": "sim-DofVIqM4.js",
+  "commit": "1901d1f1021e",
+  "status": "reviewed",
+  "changes": "Analytics only. No gameplay changes."
+ },
+ {
+  "seen": "2026-11-03",
+  "main": "main-YH-6cU2J.js",
+  "boot": "boot-Csa8U7iE.js",
+  "sim": "sim-Bc-wUuAO.js",
+  "commit": "e568b1012609",
+  "status": "reviewed",
+  "changes": "Hard and Nightmare are much easier. Hard now nearly matches Normal (pests ×0.75, pest HP ×0.65, damage ×0.6, boss HP ×0.7, max HP ×1.5, XP ×1.3); Nightmare drops to pests ×1.05, pest HP ×1.2, damage ×0.95, boss HP ×0.95, elite HP ×1.3 and gains max HP ×1.2. Both now lag enemy tiers by 2 minutes and their opening crowds ramp up later. Dogs are Legendary twice as often (1/3, was 1/6). Adds a P key to pause."
+ },
+ {
+  "seen": "2026-11-03",
+  "main": "main-DolwWK1a.js",
+  "boot": "boot-gj7twfpU.js",
+  "sim": "sim-UxJfMuuX.js",
+  "commit": "10e6e7589a11",
+  "status": "reviewed",
+  "changes": "The main game config, story script and a few tables moved from the sim chunk to the boot chunk; the wiki now finds them in either. Revives outside Story play the same knocked-down scene as Story, then Tibo gets up with 50% HP and 2 s of invulnerability; level-ups earned while down wait until then. Screen clears (`nuke` weapons such as Reset Button) now take only 5% from bosses (was 25%). Armor, dodge and crit item and passive descriptions no longer show point values. Game data otherwise unchanged."
+ }
+]
