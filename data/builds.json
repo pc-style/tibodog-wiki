@@ -150,5 +150,15 @@
   "status": "reviewed",
   "updated": "2026-11-03T21:53:44Z",
   "changes": "Cursed extra bosses now use floor(curses taken × 0.25), down from ×0.5: the first extra boss needs four curses taken (four Moldy Shrines, or three on Nightmare with its starting curse). Nightmare no longer shows enemy shot-path markers; Easy, Normal and Hard keep them. Peel Forest props per chunk drop from 20 to 12, and frozen-crate sprites shrink to 85% scale. Missed amusing spawns are replayed when its entrance finishes loading, without repeating the spawn sound. Phone dialogue now replaces an older pending conversation instead of queuing it, removes typing delays, and shows Alex's join line after he joins. Improves sprite texture packing and updates the in-game changelog. Other content values, English content descriptions, difficulty multipliers, simulation logic and wiki icons are unchanged."
+ },
+ {
+  "seen": "2026-11-03",
+  "main": "main-C-BKh7XA.js",
+  "boot": "boot-BLQD1bvu.js",
+  "sim": "sim-BBdf8neg.js",
+  "commit": "c7a474f9ab96",
+  "status": "reviewed",
+  "updated": "2026-11-03T23:29:20Z",
+  "changes": "Outside Story, revives now grant 4 s of invulnerability (was 2), push nearby visible pests and bosses with strength 900 in a 160-unit radius plus their body radius (was pests only, strength 400 within 120), freeze pests and elites for 5 s, slow bosses to 50% speed for 5 s and delay their next pattern, and clear shots within 160 units. Story keeps its previous revive rules. Ice Imp's Nightmare fan bullet speed rises from 85 to 130. Enemy shots get animated orbs and shooter-specific shapes, including oil drops, grinder comets and maggots; Low quality omits shot smears. Main-thread effect loading now prioritizes important sheets and budgets work to the viewport and frame time. Game config, story configuration, Alex/phone controllers and live scoring move from boot to sim; scoring rules and other balance values are unchanged. Expands the in-game changelog, including notes for older releases. English content descriptions, difficulty multipliers and wiki icons are unchanged."
  }
 ]

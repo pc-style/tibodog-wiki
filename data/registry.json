@@ -7234,7 +7234,7 @@
      "kind": "fan",
      "count": 3,
      "arc": 0.5,
-     "speed": 85,
+     "speed": 130,
      "radius": 2.5,
      "damage": 10,
      "bursts": 1,
