@@ -98,6 +98,22 @@
   "rearm": 4,
   "recall": 5
  },
+ "sim._n": {
+  "shape": "box",
+  "color": "#ff9800",
+  "sprite": "fryer-king",
+  "puddle": {
+   "body": "#0e0805",
+   "edge": "#3f2a19",
+   "fleck": "#6c7189",
+   "bubble": "#55331c",
+   "boil": {
+    "period": 1.2,
+    "density": 4.5,
+    "glow": 0.6
+   }
+  }
+ },
  "sim.an": {
   "startChest": {
    "offset": {
@@ -330,6 +346,3252 @@
    }
   ]
  },
+ "sim.bn": {
+  "shape": "round",
+  "color": "#fbc02d",
+  "sprite": "beetle-queen"
+ },
+ "sim.cn": {
+  "boss": "[fn]",
+  "bossAt": "[fn]",
+  "bosses": [
+   {
+    "id": "amusing",
+    "hp": 650,
+    "speed": 32,
+    "damage": 24,
+    "radius": 16,
+    "attack": {
+     "kind": "hug",
+     "radius": 40,
+     "leapTime": 0.55
+    },
+    "attackEvery": 3.6,
+    "telegraph": 1.1,
+    "patternEvery": 2.2,
+    "patterns": [
+     {
+      "kind": "fan",
+      "count": 5,
+      "arc": 1,
+      "speed": 70,
+      "radius": 3,
+      "damage": 6,
+      "bursts": 2,
+      "interval": 0.4,
+      "telegraph": 0.8
+     },
+     {
+      "kind": "ring",
+      "count": 12,
+      "speed": 55,
+      "radius": 3.5,
+      "damage": 6,
+      "bursts": 2,
+      "interval": 0.6,
+      "telegraph": 0.9
+     },
+     {
+      "kind": "spiral",
+      "count": 2,
+      "spin": 2.6,
+      "speed": 65,
+      "radius": 2.5,
+      "damage": 4,
+      "bursts": 12,
+      "interval": 0.12,
+      "telegraph": 0.8
+     }
+    ],
+    "sharpPatterns": [
+     {
+      "kind": "fan",
+      "count": 5,
+      "arc": 1,
+      "speed": 70,
+      "radius": 3,
+      "damage": 6,
+      "bursts": 2,
+      "interval": 0.4,
+      "telegraph": 0.8
+     },
+     {
+      "kind": "ring",
+      "count": 12,
+      "speed": 55,
+      "radius": 3.5,
+      "damage": 6,
+      "bursts": 2,
+      "interval": 0.6,
+      "telegraph": 0.9,
+      "motion": {
+       "speed": [
+        {
+         "at": 0.35,
+         "to": 0.3
+        },
+        {
+         "at": 0.8,
+         "to": 0.3
+        },
+        {
+         "at": 1.1,
+         "to": 1.5
+        }
+       ]
+      }
+     },
+     {
+      "kind": "spiral",
+      "count": 2,
+      "spin": 2.6,
+      "speed": 45,
+      "radius": 2.5,
+      "damage": 4,
+      "bursts": 12,
+      "interval": 0.12,
+      "telegraph": 0.8,
+      "motion": {
+       "speed": [
+        {
+         "at": 0.8,
+         "to": 1.7
+        }
+       ]
+      }
+     }
+    ],
+    "xp": 40
+   },
+   {
+    "id": "beetle-queen",
+    "hp": 700,
+    "speed": 30,
+    "damage": 14,
+    "radius": 16,
+    "attackEvery": 5,
+    "telegraph": 1,
+    "attack": {
+     "kind": "summon",
+     "count": 8,
+     "ringRadius": 36,
+     "minion": "beetle-brood"
+    },
+    "patternEvery": 2.8,
+    "patterns": [
+     {
+      "kind": "aimed",
+      "count": 2,
+      "speed": 80,
+      "radius": 2.5,
+      "damage": 7,
+      "bursts": 3,
+      "interval": 0.25,
+      "telegraph": 0.6
+     }
+    ],
+    "sharpPatterns": [
+     {
+      "kind": "aimed",
+      "count": 2,
+      "speed": 100,
+      "radius": 2.5,
+      "damage": 7,
+      "bursts": 3,
+      "interval": 0.25,
+      "telegraph": 0.6,
+      "motion": {
+       "speed": [
+        {
+         "at": 0.7,
+         "to": 0.5
+        }
+       ]
+      }
+     }
+    ],
+    "xp": 40
+   },
+   {
+    "id": "compost-titan",
+    "hp": 9000,
+    "speed": 24,
+    "damage": 30,
+    "radius": 22,
+    "attackEvery": 4,
+    "telegraph": 1,
+    "attack": {
+     "kind": "summon",
+     "count": 14,
+     "ringRadius": 44,
+     "minion": "maggot-swarm"
+    },
+    "patternEvery": 3.6,
+    "patterns": [
+     {
+      "kind": "spiral",
+      "count": 4,
+      "spin": 1.2,
+      "speed": 55,
+      "radius": 3.5,
+      "damage": 12,
+      "bursts": 12,
+      "interval": 0.18,
+      "telegraph": 1,
+      "motion": {
+       "home": {
+        "rate": 0.8,
+        "after": 0.4,
+        "until": 1.4
+       }
+      }
+     }
+    ],
+    "xp": 200
+   },
+   {
+    "id": "deep-freezer",
+    "hp": 6200,
+    "speed": 28,
+    "damage": 24,
+    "radius": 18,
+    "attackEvery": 3.4,
+    "telegraph": 0.9,
+    "attack": {
+     "kind": "slam",
+     "radius": 40,
+     "count": 3,
+     "spread": 70
+    },
+    "patternEvery": 2.4,
+    "patterns": [
+     {
+      "kind": "fan",
+      "count": 9,
+      "arc": 1.4,
+      "speed": 110,
+      "radius": 2.5,
+      "damage": 16,
+      "bursts": 1,
+      "interval": 0.3,
+      "telegraph": 0.8,
+      "onHit": {
+       "kind": "slow",
+       "factor": 0.5,
+       "seconds": 1.5
+      },
+      "motion": {
+       "turn": {
+        "kind": "curve",
+        "rate": 1,
+        "until": 1
+       },
+       "mirror": "inward"
+      }
+     }
+    ],
+    "xp": 150
+   },
+   {
+    "id": "fryer-king",
+    "hp": 3300,
+    "speed": 30,
+    "damage": 22,
+    "radius": 17,
+    "attackEvery": 3,
+    "telegraph": 0.9,
+    "attack": {
+     "kind": "pools",
+     "shape": "splat",
+     "count": 4,
+     "radius": 24,
+     "spread": 80,
+     "poolTime": 4,
+     "poolDps": 12
+    },
+    "sharpAttack": {
+     "kind": "pools",
+     "shape": "splat",
+     "count": 4,
+     "radius": 24,
+     "spread": 80,
+     "poolTime": 4,
+     "poolDps": 12,
+     "layout": {
+      "kind": "wedges",
+      "count": 6,
+      "radius": 55,
+      "wave": 0.5,
+      "puddle": 11
+     }
+    },
+    "patternEvery": 3,
+    "patterns": [
+     {
+      "kind": "ring",
+      "count": 18,
+      "speed": 95,
+      "radius": 3,
+      "damage": 16,
+      "bursts": 2,
+      "interval": 0.35,
+      "telegraph": 0.9
+     }
+    ],
+    "sharpPatterns": [
+     {
+      "kind": "ring",
+      "count": 18,
+      "speed": 95,
+      "radius": 3,
+      "damage": 16,
+      "bursts": 2,
+      "interval": 0.35,
+      "telegraph": 0.9,
+      "motion": {
+       "speed": [
+        {
+         "at": 0.4,
+         "to": 0.25
+        },
+        {
+         "at": 0.85,
+         "to": 0.25
+        },
+        {
+         "at": 1.15,
+         "to": 1.5
+        }
+       ]
+      }
+     }
+    ],
+    "xp": 100
+   },
+   {
+    "id": "grater-golem",
+    "hp": 7400,
+    "speed": 34,
+    "damage": 40,
+    "radius": 16,
+    "attackEvery": 3,
+    "telegraph": 1,
+    "attack": {
+     "kind": "charge",
+     "dashSpeed": 320,
+     "dashTime": 0.9,
+     "width": 26
+    },
+    "patternEvery": 3,
+    "patterns": [
+     {
+      "kind": "ring",
+      "count": 14,
+      "speed": 90,
+      "radius": 2.5,
+      "damage": 14,
+      "bursts": 1,
+      "interval": 0.3,
+      "telegraph": 0.8,
+      "motion": {
+       "weave": {
+        "px": 10,
+        "hz": 1.2
+       },
+       "mirror": "alternate"
+      }
+     }
+    ],
+    "xp": 170
+   },
+   {
+    "id": "great-wireworm",
+    "hp": 4200,
+    "speed": 40,
+    "damage": 26,
+    "radius": 14,
+    "attackEvery": 4,
+    "telegraph": 1,
+    "attack": {
+     "kind": "burrow",
+     "radius": 40,
+     "under": 1.2
+    },
+    "patternEvery": 3,
+    "patterns": [
+     {
+      "kind": "fan",
+      "count": 5,
+      "arc": 1.3,
+      "speed": 90,
+      "radius": 3,
+      "damage": 12,
+      "bursts": 1,
+      "interval": 0.3,
+      "telegraph": 0.7,
+      "motion": {
+       "speed": [
+        {
+         "at": 0.35,
+         "to": 1
+        },
+        {
+         "at": 0.5,
+         "to": 0.12
+        },
+        {
+         "at": 0.9,
+         "to": 0.12
+        },
+        {
+         "at": 1,
+         "to": 1.55
+        }
+       ],
+       "retarget": {
+        "at": 0.9
+       }
+      }
+     }
+    ],
+    "sharpPatterns": [
+     {
+      "kind": "fan",
+      "count": 5,
+      "arc": 1.3,
+      "speed": 90,
+      "radius": 3,
+      "damage": 12,
+      "bursts": 1,
+      "interval": 0.3,
+      "telegraph": 0.7,
+      "motion": {
+       "speed": [
+        {
+         "at": 0.3,
+         "to": 1
+        },
+        {
+         "at": 0.42,
+         "to": 0.12
+        },
+        {
+         "at": 0.72,
+         "to": 0.12
+        },
+        {
+         "at": 0.8,
+         "to": 1.9
+        }
+       ],
+       "retarget": {
+        "at": 0.72
+       }
+      }
+     }
+    ],
+    "xp": 120
+   },
+   {
+    "id": "harvester",
+    "hp": 16000,
+    "speed": 36,
+    "damage": 60,
+    "radius": 22,
+    "attackEvery": 2.6,
+    "telegraph": 1,
+    "attack": {
+     "kind": "charge",
+     "dashSpeed": 380,
+     "dashTime": 1.1,
+     "width": 70
+    },
+    "patternEvery": 2.4,
+    "patterns": [
+     {
+      "kind": "aimed",
+      "count": 4,
+      "speed": 140,
+      "radius": 2.5,
+      "damage": 16,
+      "bursts": 3,
+      "interval": 0.25,
+      "telegraph": 0.7,
+      "motion": {
+       "home": {
+        "rate": 1.6,
+        "after": 0.1,
+        "until": 0.6
+       }
+      }
+     },
+     {
+      "kind": "ring",
+      "count": 24,
+      "speed": 85,
+      "radius": 2.5,
+      "damage": 12,
+      "bursts": 2,
+      "interval": 0.4,
+      "telegraph": 0.9,
+      "motion": {
+       "speed": [
+        {
+         "at": 0.4,
+         "to": 0.2
+        },
+        {
+         "at": 0.9,
+         "to": 0.2
+        },
+        {
+         "at": 1.2,
+         "to": 1.6
+        }
+       ]
+      }
+     }
+    ],
+    "xp": 300
+   },
+   {
+    "id": "ketchup-kraken",
+    "hp": 11000,
+    "speed": 22,
+    "damage": 34,
+    "radius": 20,
+    "attackEvery": 3,
+    "telegraph": 1.1,
+    "attack": {
+     "kind": "slam",
+     "radius": 32,
+     "count": 5,
+     "spread": 80
+    },
+    "patternEvery": 2.8,
+    "patterns": [
+     {
+      "kind": "fan",
+      "count": 5,
+      "arc": 1.2,
+      "speed": 95,
+      "radius": 3,
+      "damage": 14,
+      "bursts": 1,
+      "interval": 0.4,
+      "telegraph": 0.8,
+      "motion": {
+       "speed": [
+        {
+         "at": 0.55,
+         "to": 1
+        },
+        {
+         "at": 0.95,
+         "to": 0.15
+        }
+       ],
+       "puddle": {
+        "at": 0.95,
+        "radius": 9,
+        "sec": 1.8,
+        "dpsShare": 2.8
+       }
+      }
+     }
+    ],
+    "xp": 230
+   },
+   {
+    "id": "late-blight",
+    "hp": 2000,
+    "speed": 26,
+    "damage": 16,
+    "radius": 18,
+    "attackEvery": 4,
+    "telegraph": 1.2,
+    "attack": {
+     "kind": "pools",
+     "shape": "clover",
+     "count": 5,
+     "radius": 26,
+     "spread": 90,
+     "poolTime": 5,
+     "poolDps": 9
+    },
+    "sharpAttack": {
+     "kind": "pools",
+     "shape": "clover",
+     "count": 5,
+     "radius": 26,
+     "spread": 90,
+     "poolTime": 5,
+     "poolDps": 9,
+     "layout": {
+      "kind": "cropCircle",
+      "core": 21,
+      "orbit": 55,
+      "satellites": 6,
+      "satellite": 12.5
+     }
+    },
+    "patternEvery": 3.5,
+    "patterns": [
+     {
+      "kind": "spiral",
+      "count": 3,
+      "spin": 1.6,
+      "speed": 45,
+      "radius": 3.5,
+      "damage": 7,
+      "bursts": 10,
+      "interval": 0.2,
+      "telegraph": 0.9
+     }
+    ],
+    "sharpPatterns": [
+     {
+      "kind": "spiral",
+      "count": 3,
+      "spin": 1.6,
+      "speed": 45,
+      "radius": 3.5,
+      "damage": 7,
+      "bursts": 10,
+      "interval": 0.2,
+      "telegraph": 0.9,
+      "motion": {
+       "turn": {
+        "kind": "swirl",
+        "rate": 1.2,
+        "until": 1.4
+       }
+      }
+     }
+    ],
+    "xp": 80
+   },
+   {
+    "id": "sir-strawman",
+    "hp": 2600,
+    "speed": 36,
+    "damage": 18,
+    "radius": 15,
+    "attackEvery": 2.6,
+    "telegraph": 0.8,
+    "attack": {
+     "kind": "charge",
+     "dashSpeed": 280,
+     "dashTime": 0.7,
+     "width": 22
+    },
+    "patternEvery": 2.6,
+    "patterns": [
+     {
+      "kind": "fan",
+      "count": 7,
+      "arc": 1.1,
+      "speed": 120,
+      "radius": 2.5,
+      "damage": 14,
+      "bursts": 1,
+      "interval": 0.3,
+      "telegraph": 0.8,
+      "motion": {
+       "speed": [
+        {
+         "at": 0.8,
+         "to": 1
+        },
+        {
+         "at": 1.05,
+         "to": 0.1
+        },
+        {
+         "at": 1.5,
+         "to": -1.15
+        }
+       ]
+      }
+     }
+    ],
+    "sharpPatterns": [
+     {
+      "kind": "fan",
+      "count": 7,
+      "arc": 1.1,
+      "speed": 130,
+      "radius": 2.5,
+      "damage": 14,
+      "bursts": 1,
+      "interval": 0.3,
+      "telegraph": 0.8,
+      "motion": {
+       "speed": [
+        {
+         "at": 0.85,
+         "to": 1
+        },
+        {
+         "at": 1.1,
+         "to": 0.1
+        },
+        {
+         "at": 1.55,
+         "to": -1.05
+        }
+       ]
+      }
+     }
+    ],
+    "xp": 90
+   },
+   {
+    "id": "the-mandoline",
+    "hp": 5200,
+    "speed": 32,
+    "damage": 34,
+    "radius": 16,
+    "attackEvery": 3.4,
+    "telegraph": 1.1,
+    "attack": {
+     "kind": "sweep",
+     "lanes": 3,
+     "width": 22,
+     "length": 360
+    },
+    "patternEvery": 3.4,
+    "patterns": [
+     {
+      "kind": "spiral",
+      "count": 3,
+      "spin": -2.2,
+      "speed": 55,
+      "radius": 2,
+      "damage": 10,
+      "bursts": 14,
+      "interval": 0.1,
+      "telegraph": 0.8,
+      "motion": {
+       "speed": [
+        {
+         "at": 0.9,
+         "to": 1.8
+        }
+       ]
+      }
+     }
+    ],
+    "xp": 140
+   },
+   {
+    "id": "the-masher",
+    "hp": 1300,
+    "speed": 34,
+    "damage": 15,
+    "radius": 15,
+    "attackEvery": 3.2,
+    "telegraph": 1.2,
+    "attack": {
+     "kind": "slam",
+     "radius": 38,
+     "count": 1
+    },
+    "sharpAttack": {
+     "kind": "slam",
+     "radius": 38,
+     "count": 1,
+     "layout": {
+      "kind": "rings",
+      "bands": [
+       {
+        "inner": 0,
+        "outer": 19
+       },
+       {
+        "inner": 35,
+        "outer": 46
+       },
+       {
+        "inner": 62,
+        "outer": 72
+       }
+      ],
+      "wave": 0.35
+     }
+    },
+    "patternEvery": 3,
+    "patterns": [
+     {
+      "kind": "ring",
+      "count": 10,
+      "speed": 70,
+      "radius": 2.5,
+      "damage": 9,
+      "bursts": 1,
+      "interval": 0.3,
+      "telegraph": 0.7
+     }
+    ],
+    "sharpPatterns": [
+     {
+      "kind": "ring",
+      "count": 10,
+      "speed": 70,
+      "radius": 2.5,
+      "damage": 9,
+      "bursts": 1,
+      "interval": 0.3,
+      "telegraph": 0.7,
+      "motion": {
+       "weave": {
+        "px": 9,
+        "hz": 1.1
+       },
+       "mirror": "alternate"
+      }
+     }
+    ],
+    "xp": 60
+   }
+  ],
+  "bossOrder": [
+   {
+    "id": "amusing",
+    "hp": 650,
+    "speed": 32,
+    "damage": 24,
+    "radius": 16,
+    "attack": {
+     "kind": "hug",
+     "radius": 40,
+     "leapTime": 0.55
+    },
+    "attackEvery": 3.6,
+    "telegraph": 1.1,
+    "patternEvery": 2.2,
+    "patterns": [
+     {
+      "kind": "fan",
+      "count": 5,
+      "arc": 1,
+      "speed": 70,
+      "radius": 3,
+      "damage": 6,
+      "bursts": 2,
+      "interval": 0.4,
+      "telegraph": 0.8
+     },
+     {
+      "kind": "ring",
+      "count": 12,
+      "speed": 55,
+      "radius": 3.5,
+      "damage": 6,
+      "bursts": 2,
+      "interval": 0.6,
+      "telegraph": 0.9
+     },
+     {
+      "kind": "spiral",
+      "count": 2,
+      "spin": 2.6,
+      "speed": 65,
+      "radius": 2.5,
+      "damage": 4,
+      "bursts": 12,
+      "interval": 0.12,
+      "telegraph": 0.8
+     }
+    ],
+    "sharpPatterns": [
+     {
+      "kind": "fan",
+      "count": 5,
+      "arc": 1,
+      "speed": 70,
+      "radius": 3,
+      "damage": 6,
+      "bursts": 2,
+      "interval": 0.4,
+      "telegraph": 0.8
+     },
+     {
+      "kind": "ring",
+      "count": 12,
+      "speed": 55,
+      "radius": 3.5,
+      "damage": 6,
+      "bursts": 2,
+      "interval": 0.6,
+      "telegraph": 0.9,
+      "motion": {
+       "speed": [
+        {
+         "at": 0.35,
+         "to": 0.3
+        },
+        {
+         "at": 0.8,
+         "to": 0.3
+        },
+        {
+         "at": 1.1,
+         "to": 1.5
+        }
+       ]
+      }
+     },
+     {
+      "kind": "spiral",
+      "count": 2,
+      "spin": 2.6,
+      "speed": 45,
+      "radius": 2.5,
+      "damage": 4,
+      "bursts": 12,
+      "interval": 0.12,
+      "telegraph": 0.8,
+      "motion": {
+       "speed": [
+        {
+         "at": 0.8,
+         "to": 1.7
+        }
+       ]
+      }
+     }
+    ],
+    "xp": 40
+   },
+   {
+    "id": "beetle-queen",
+    "hp": 700,
+    "speed": 30,
+    "damage": 14,
+    "radius": 16,
+    "attackEvery": 5,
+    "telegraph": 1,
+    "attack": {
+     "kind": "summon",
+     "count": 8,
+     "ringRadius": 36,
+     "minion": "beetle-brood"
+    },
+    "patternEvery": 2.8,
+    "patterns": [
+     {
+      "kind": "aimed",
+      "count": 2,
+      "speed": 80,
+      "radius": 2.5,
+      "damage": 7,
+      "bursts": 3,
+      "interval": 0.25,
+      "telegraph": 0.6
+     }
+    ],
+    "sharpPatterns": [
+     {
+      "kind": "aimed",
+      "count": 2,
+      "speed": 100,
+      "radius": 2.5,
+      "damage": 7,
+      "bursts": 3,
+      "interval": 0.25,
+      "telegraph": 0.6,
+      "motion": {
+       "speed": [
+        {
+         "at": 0.7,
+         "to": 0.5
+        }
+       ]
+      }
+     }
+    ],
+    "xp": 40
+   },
+   {
+    "id": "the-masher",
+    "hp": 1300,
+    "speed": 34,
+    "damage": 15,
+    "radius": 15,
+    "attackEvery": 3.2,
+    "telegraph": 1.2,
+    "attack": {
+     "kind": "slam",
+     "radius": 38,
+     "count": 1
+    },
+    "sharpAttack": {
+     "kind": "slam",
+     "radius": 38,
+     "count": 1,
+     "layout": {
+      "kind": "rings",
+      "bands": [
+       {
+        "inner": 0,
+        "outer": 19
+       },
+       {
+        "inner": 35,
+        "outer": 46
+       },
+       {
+        "inner": 62,
+        "outer": 72
+       }
+      ],
+      "wave": 0.35
+     }
+    },
+    "patternEvery": 3,
+    "patterns": [
+     {
+      "kind": "ring",
+      "count": 10,
+      "speed": 70,
+      "radius": 2.5,
+      "damage": 9,
+      "bursts": 1,
+      "interval": 0.3,
+      "telegraph": 0.7
+     }
+    ],
+    "sharpPatterns": [
+     {
+      "kind": "ring",
+      "count": 10,
+      "speed": 70,
+      "radius": 2.5,
+      "damage": 9,
+      "bursts": 1,
+      "interval": 0.3,
+      "telegraph": 0.7,
+      "motion": {
+       "weave": {
+        "px": 9,
+        "hz": 1.1
+       },
+       "mirror": "alternate"
+      }
+     }
+    ],
+    "xp": 60
+   },
+   {
+    "id": "late-blight",
+    "hp": 2000,
+    "speed": 26,
+    "damage": 16,
+    "radius": 18,
+    "attackEvery": 4,
+    "telegraph": 1.2,
+    "attack": {
+     "kind": "pools",
+     "shape": "clover",
+     "count": 5,
+     "radius": 26,
+     "spread": 90,
+     "poolTime": 5,
+     "poolDps": 9
+    },
+    "sharpAttack": {
+     "kind": "pools",
+     "shape": "clover",
+     "count": 5,
+     "radius": 26,
+     "spread": 90,
+     "poolTime": 5,
+     "poolDps": 9,
+     "layout": {
+      "kind": "cropCircle",
+      "core": 21,
+      "orbit": 55,
+      "satellites": 6,
+      "satellite": 12.5
+     }
+    },
+    "patternEvery": 3.5,
+    "patterns": [
+     {
+      "kind": "spiral",
+      "count": 3,
+      "spin": 1.6,
+      "speed": 45,
+      "radius": 3.5,
+      "damage": 7,
+      "bursts": 10,
+      "interval": 0.2,
+      "telegraph": 0.9
+     }
+    ],
+    "sharpPatterns": [
+     {
+      "kind": "spiral",
+      "count": 3,
+      "spin": 1.6,
+      "speed": 45,
+      "radius": 3.5,
+      "damage": 7,
+      "bursts": 10,
+      "interval": 0.2,
+      "telegraph": 0.9,
+      "motion": {
+       "turn": {
+        "kind": "swirl",
+        "rate": 1.2,
+        "until": 1.4
+       }
+      }
+     }
+    ],
+    "xp": 80
+   },
+   {
+    "id": "sir-strawman",
+    "hp": 2600,
+    "speed": 36,
+    "damage": 18,
+    "radius": 15,
+    "attackEvery": 2.6,
+    "telegraph": 0.8,
+    "attack": {
+     "kind": "charge",
+     "dashSpeed": 280,
+     "dashTime": 0.7,
+     "width": 22
+    },
+    "patternEvery": 2.6,
+    "patterns": [
+     {
+      "kind": "fan",
+      "count": 7,
+      "arc": 1.1,
+      "speed": 120,
+      "radius": 2.5,
+      "damage": 14,
+      "bursts": 1,
+      "interval": 0.3,
+      "telegraph": 0.8,
+      "motion": {
+       "speed": [
+        {
+         "at": 0.8,
+         "to": 1
+        },
+        {
+         "at": 1.05,
+         "to": 0.1
+        },
+        {
+         "at": 1.5,
+         "to": -1.15
+        }
+       ]
+      }
+     }
+    ],
+    "sharpPatterns": [
+     {
+      "kind": "fan",
+      "count": 7,
+      "arc": 1.1,
+      "speed": 130,
+      "radius": 2.5,
+      "damage": 14,
+      "bursts": 1,
+      "interval": 0.3,
+      "telegraph": 0.8,
+      "motion": {
+       "speed": [
+        {
+         "at": 0.85,
+         "to": 1
+        },
+        {
+         "at": 1.1,
+         "to": 0.1
+        },
+        {
+         "at": 1.55,
+         "to": -1.05
+        }
+       ]
+      }
+     }
+    ],
+    "xp": 90
+   },
+   {
+    "id": "fryer-king",
+    "hp": 3300,
+    "speed": 30,
+    "damage": 22,
+    "radius": 17,
+    "attackEvery": 3,
+    "telegraph": 0.9,
+    "attack": {
+     "kind": "pools",
+     "shape": "splat",
+     "count": 4,
+     "radius": 24,
+     "spread": 80,
+     "poolTime": 4,
+     "poolDps": 12
+    },
+    "sharpAttack": {
+     "kind": "pools",
+     "shape": "splat",
+     "count": 4,
+     "radius": 24,
+     "spread": 80,
+     "poolTime": 4,
+     "poolDps": 12,
+     "layout": {
+      "kind": "wedges",
+      "count": 6,
+      "radius": 55,
+      "wave": 0.5,
+      "puddle": 11
+     }
+    },
+    "patternEvery": 3,
+    "patterns": [
+     {
+      "kind": "ring",
+      "count": 18,
+      "speed": 95,
+      "radius": 3,
+      "damage": 16,
+      "bursts": 2,
+      "interval": 0.35,
+      "telegraph": 0.9
+     }
+    ],
+    "sharpPatterns": [
+     {
+      "kind": "ring",
+      "count": 18,
+      "speed": 95,
+      "radius": 3,
+      "damage": 16,
+      "bursts": 2,
+      "interval": 0.35,
+      "telegraph": 0.9,
+      "motion": {
+       "speed": [
+        {
+         "at": 0.4,
+         "to": 0.25
+        },
+        {
+         "at": 0.85,
+         "to": 0.25
+        },
+        {
+         "at": 1.15,
+         "to": 1.5
+        }
+       ]
+      }
+     }
+    ],
+    "xp": 100
+   },
+   {
+    "id": "great-wireworm",
+    "hp": 4200,
+    "speed": 40,
+    "damage": 26,
+    "radius": 14,
+    "attackEvery": 4,
+    "telegraph": 1,
+    "attack": {
+     "kind": "burrow",
+     "radius": 40,
+     "under": 1.2
+    },
+    "patternEvery": 3,
+    "patterns": [
+     {
+      "kind": "fan",
+      "count": 5,
+      "arc": 1.3,
+      "speed": 90,
+      "radius": 3,
+      "damage": 12,
+      "bursts": 1,
+      "interval": 0.3,
+      "telegraph": 0.7,
+      "motion": {
+       "speed": [
+        {
+         "at": 0.35,
+         "to": 1
+        },
+        {
+         "at": 0.5,
+         "to": 0.12
+        },
+        {
+         "at": 0.9,
+         "to": 0.12
+        },
+        {
+         "at": 1,
+         "to": 1.55
+        }
+       ],
+       "retarget": {
+        "at": 0.9
+       }
+      }
+     }
+    ],
+    "sharpPatterns": [
+     {
+      "kind": "fan",
+      "count": 5,
+      "arc": 1.3,
+      "speed": 90,
+      "radius": 3,
+      "damage": 12,
+      "bursts": 1,
+      "interval": 0.3,
+      "telegraph": 0.7,
+      "motion": {
+       "speed": [
+        {
+         "at": 0.3,
+         "to": 1
+        },
+        {
+         "at": 0.42,
+         "to": 0.12
+        },
+        {
+         "at": 0.72,
+         "to": 0.12
+        },
+        {
+         "at": 0.8,
+         "to": 1.9
+        }
+       ],
+       "retarget": {
+        "at": 0.72
+       }
+      }
+     }
+    ],
+    "xp": 120
+   },
+   {
+    "id": "the-mandoline",
+    "hp": 5200,
+    "speed": 32,
+    "damage": 34,
+    "radius": 16,
+    "attackEvery": 3.4,
+    "telegraph": 1.1,
+    "attack": {
+     "kind": "sweep",
+     "lanes": 3,
+     "width": 22,
+     "length": 360
+    },
+    "patternEvery": 3.4,
+    "patterns": [
+     {
+      "kind": "spiral",
+      "count": 3,
+      "spin": -2.2,
+      "speed": 55,
+      "radius": 2,
+      "damage": 10,
+      "bursts": 14,
+      "interval": 0.1,
+      "telegraph": 0.8,
+      "motion": {
+       "speed": [
+        {
+         "at": 0.9,
+         "to": 1.8
+        }
+       ]
+      }
+     }
+    ],
+    "xp": 140
+   },
+   {
+    "id": "deep-freezer",
+    "hp": 6200,
+    "speed": 28,
+    "damage": 24,
+    "radius": 18,
+    "attackEvery": 3.4,
+    "telegraph": 0.9,
+    "attack": {
+     "kind": "slam",
+     "radius": 40,
+     "count": 3,
+     "spread": 70
+    },
+    "patternEvery": 2.4,
+    "patterns": [
+     {
+      "kind": "fan",
+      "count": 9,
+      "arc": 1.4,
+      "speed": 110,
+      "radius": 2.5,
+      "damage": 16,
+      "bursts": 1,
+      "interval": 0.3,
+      "telegraph": 0.8,
+      "onHit": {
+       "kind": "slow",
+       "factor": 0.5,
+       "seconds": 1.5
+      },
+      "motion": {
+       "turn": {
+        "kind": "curve",
+        "rate": 1,
+        "until": 1
+       },
+       "mirror": "inward"
+      }
+     }
+    ],
+    "xp": 150
+   },
+   {
+    "id": "grater-golem",
+    "hp": 7400,
+    "speed": 34,
+    "damage": 40,
+    "radius": 16,
+    "attackEvery": 3,
+    "telegraph": 1,
+    "attack": {
+     "kind": "charge",
+     "dashSpeed": 320,
+     "dashTime": 0.9,
+     "width": 26
+    },
+    "patternEvery": 3,
+    "patterns": [
+     {
+      "kind": "ring",
+      "count": 14,
+      "speed": 90,
+      "radius": 2.5,
+      "damage": 14,
+      "bursts": 1,
+      "interval": 0.3,
+      "telegraph": 0.8,
+      "motion": {
+       "weave": {
+        "px": 10,
+        "hz": 1.2
+       },
+       "mirror": "alternate"
+      }
+     }
+    ],
+    "xp": 170
+   },
+   {
+    "id": "compost-titan",
+    "hp": 9000,
+    "speed": 24,
+    "damage": 30,
+    "radius": 22,
+    "attackEvery": 4,
+    "telegraph": 1,
+    "attack": {
+     "kind": "summon",
+     "count": 14,
+     "ringRadius": 44,
+     "minion": "maggot-swarm"
+    },
+    "patternEvery": 3.6,
+    "patterns": [
+     {
+      "kind": "spiral",
+      "count": 4,
+      "spin": 1.2,
+      "speed": 55,
+      "radius": 3.5,
+      "damage": 12,
+      "bursts": 12,
+      "interval": 0.18,
+      "telegraph": 1,
+      "motion": {
+       "home": {
+        "rate": 0.8,
+        "after": 0.4,
+        "until": 1.4
+       }
+      }
+     }
+    ],
+    "xp": 200
+   },
+   {
+    "id": "ketchup-kraken",
+    "hp": 11000,
+    "speed": 22,
+    "damage": 34,
+    "radius": 20,
+    "attackEvery": 3,
+    "telegraph": 1.1,
+    "attack": {
+     "kind": "slam",
+     "radius": 32,
+     "count": 5,
+     "spread": 80
+    },
+    "patternEvery": 2.8,
+    "patterns": [
+     {
+      "kind": "fan",
+      "count": 5,
+      "arc": 1.2,
+      "speed": 95,
+      "radius": 3,
+      "damage": 14,
+      "bursts": 1,
+      "interval": 0.4,
+      "telegraph": 0.8,
+      "motion": {
+       "speed": [
+        {
+         "at": 0.55,
+         "to": 1
+        },
+        {
+         "at": 0.95,
+         "to": 0.15
+        }
+       ],
+       "puddle": {
+        "at": 0.95,
+        "radius": 9,
+        "sec": 1.8,
+        "dpsShare": 2.8
+       }
+      }
+     }
+    ],
+    "xp": 230
+   },
+   {
+    "id": "harvester",
+    "hp": 16000,
+    "speed": 36,
+    "damage": 60,
+    "radius": 22,
+    "attackEvery": 2.6,
+    "telegraph": 1,
+    "attack": {
+     "kind": "charge",
+     "dashSpeed": 380,
+     "dashTime": 1.1,
+     "width": 70
+    },
+    "patternEvery": 2.4,
+    "patterns": [
+     {
+      "kind": "aimed",
+      "count": 4,
+      "speed": 140,
+      "radius": 2.5,
+      "damage": 16,
+      "bursts": 3,
+      "interval": 0.25,
+      "telegraph": 0.7,
+      "motion": {
+       "home": {
+        "rate": 1.6,
+        "after": 0.1,
+        "until": 0.6
+       }
+      }
+     },
+     {
+      "kind": "ring",
+      "count": 24,
+      "speed": 85,
+      "radius": 2.5,
+      "damage": 12,
+      "bursts": 2,
+      "interval": 0.4,
+      "telegraph": 0.9,
+      "motion": {
+       "speed": [
+        {
+         "at": 0.4,
+         "to": 0.2
+        },
+        {
+         "at": 0.9,
+         "to": 0.2
+        },
+        {
+         "at": 1.2,
+         "to": 1.6
+        }
+       ]
+      }
+     }
+    ],
+    "xp": 300
+   }
+  ],
+  "live": [
+   {
+    "id": "amusing",
+    "hp": 650,
+    "speed": 32,
+    "damage": 24,
+    "radius": 16,
+    "attack": {
+     "kind": "hug",
+     "radius": 40,
+     "leapTime": 0.55
+    },
+    "attackEvery": 3.6,
+    "telegraph": 1.1,
+    "patternEvery": 2.2,
+    "patterns": [
+     {
+      "kind": "fan",
+      "count": 5,
+      "arc": 1,
+      "speed": 70,
+      "radius": 3,
+      "damage": 6,
+      "bursts": 2,
+      "interval": 0.4,
+      "telegraph": 0.8
+     },
+     {
+      "kind": "ring",
+      "count": 12,
+      "speed": 55,
+      "radius": 3.5,
+      "damage": 6,
+      "bursts": 2,
+      "interval": 0.6,
+      "telegraph": 0.9
+     },
+     {
+      "kind": "spiral",
+      "count": 2,
+      "spin": 2.6,
+      "speed": 65,
+      "radius": 2.5,
+      "damage": 4,
+      "bursts": 12,
+      "interval": 0.12,
+      "telegraph": 0.8
+     }
+    ],
+    "sharpPatterns": [
+     {
+      "kind": "fan",
+      "count": 5,
+      "arc": 1,
+      "speed": 70,
+      "radius": 3,
+      "damage": 6,
+      "bursts": 2,
+      "interval": 0.4,
+      "telegraph": 0.8
+     },
+     {
+      "kind": "ring",
+      "count": 12,
+      "speed": 55,
+      "radius": 3.5,
+      "damage": 6,
+      "bursts": 2,
+      "interval": 0.6,
+      "telegraph": 0.9,
+      "motion": {
+       "speed": [
+        {
+         "at": 0.35,
+         "to": 0.3
+        },
+        {
+         "at": 0.8,
+         "to": 0.3
+        },
+        {
+         "at": 1.1,
+         "to": 1.5
+        }
+       ]
+      }
+     },
+     {
+      "kind": "spiral",
+      "count": 2,
+      "spin": 2.6,
+      "speed": 45,
+      "radius": 2.5,
+      "damage": 4,
+      "bursts": 12,
+      "interval": 0.12,
+      "telegraph": 0.8,
+      "motion": {
+       "speed": [
+        {
+         "at": 0.8,
+         "to": 1.7
+        }
+       ]
+      }
+     }
+    ],
+    "xp": 40
+   },
+   {
+    "id": "beetle-queen",
+    "hp": 700,
+    "speed": 30,
+    "damage": 14,
+    "radius": 16,
+    "attackEvery": 5,
+    "telegraph": 1,
+    "attack": {
+     "kind": "summon",
+     "count": 8,
+     "ringRadius": 36,
+     "minion": "beetle-brood"
+    },
+    "patternEvery": 2.8,
+    "patterns": [
+     {
+      "kind": "aimed",
+      "count": 2,
+      "speed": 80,
+      "radius": 2.5,
+      "damage": 7,
+      "bursts": 3,
+      "interval": 0.25,
+      "telegraph": 0.6
+     }
+    ],
+    "sharpPatterns": [
+     {
+      "kind": "aimed",
+      "count": 2,
+      "speed": 100,
+      "radius": 2.5,
+      "damage": 7,
+      "bursts": 3,
+      "interval": 0.25,
+      "telegraph": 0.6,
+      "motion": {
+       "speed": [
+        {
+         "at": 0.7,
+         "to": 0.5
+        }
+       ]
+      }
+     }
+    ],
+    "xp": 40
+   },
+   {
+    "id": "compost-titan",
+    "hp": 9000,
+    "speed": 24,
+    "damage": 30,
+    "radius": 22,
+    "attackEvery": 4,
+    "telegraph": 1,
+    "attack": {
+     "kind": "summon",
+     "count": 14,
+     "ringRadius": 44,
+     "minion": "maggot-swarm"
+    },
+    "patternEvery": 3.6,
+    "patterns": [
+     {
+      "kind": "spiral",
+      "count": 4,
+      "spin": 1.2,
+      "speed": 55,
+      "radius": 3.5,
+      "damage": 12,
+      "bursts": 12,
+      "interval": 0.18,
+      "telegraph": 1,
+      "motion": {
+       "home": {
+        "rate": 0.8,
+        "after": 0.4,
+        "until": 1.4
+       }
+      }
+     }
+    ],
+    "xp": 200
+   },
+   {
+    "id": "deep-freezer",
+    "hp": 6200,
+    "speed": 28,
+    "damage": 24,
+    "radius": 18,
+    "attackEvery": 3.4,
+    "telegraph": 0.9,
+    "attack": {
+     "kind": "slam",
+     "radius": 40,
+     "count": 3,
+     "spread": 70
+    },
+    "patternEvery": 2.4,
+    "patterns": [
+     {
+      "kind": "fan",
+      "count": 9,
+      "arc": 1.4,
+      "speed": 110,
+      "radius": 2.5,
+      "damage": 16,
+      "bursts": 1,
+      "interval": 0.3,
+      "telegraph": 0.8,
+      "onHit": {
+       "kind": "slow",
+       "factor": 0.5,
+       "seconds": 1.5
+      },
+      "motion": {
+       "turn": {
+        "kind": "curve",
+        "rate": 1,
+        "until": 1
+       },
+       "mirror": "inward"
+      }
+     }
+    ],
+    "xp": 150
+   },
+   {
+    "id": "fryer-king",
+    "hp": 3300,
+    "speed": 30,
+    "damage": 22,
+    "radius": 17,
+    "attackEvery": 3,
+    "telegraph": 0.9,
+    "attack": {
+     "kind": "pools",
+     "shape": "splat",
+     "count": 4,
+     "radius": 24,
+     "spread": 80,
+     "poolTime": 4,
+     "poolDps": 12
+    },
+    "sharpAttack": {
+     "kind": "pools",
+     "shape": "splat",
+     "count": 4,
+     "radius": 24,
+     "spread": 80,
+     "poolTime": 4,
+     "poolDps": 12,
+     "layout": {
+      "kind": "wedges",
+      "count": 6,
+      "radius": 55,
+      "wave": 0.5,
+      "puddle": 11
+     }
+    },
+    "patternEvery": 3,
+    "patterns": [
+     {
+      "kind": "ring",
+      "count": 18,
+      "speed": 95,
+      "radius": 3,
+      "damage": 16,
+      "bursts": 2,
+      "interval": 0.35,
+      "telegraph": 0.9
+     }
+    ],
+    "sharpPatterns": [
+     {
+      "kind": "ring",
+      "count": 18,
+      "speed": 95,
+      "radius": 3,
+      "damage": 16,
+      "bursts": 2,
+      "interval": 0.35,
+      "telegraph": 0.9,
+      "motion": {
+       "speed": [
+        {
+         "at": 0.4,
+         "to": 0.25
+        },
+        {
+         "at": 0.85,
+         "to": 0.25
+        },
+        {
+         "at": 1.15,
+         "to": 1.5
+        }
+       ]
+      }
+     }
+    ],
+    "xp": 100
+   },
+   {
+    "id": "grater-golem",
+    "hp": 7400,
+    "speed": 34,
+    "damage": 40,
+    "radius": 16,
+    "attackEvery": 3,
+    "telegraph": 1,
+    "attack": {
+     "kind": "charge",
+     "dashSpeed": 320,
+     "dashTime": 0.9,
+     "width": 26
+    },
+    "patternEvery": 3,
+    "patterns": [
+     {
+      "kind": "ring",
+      "count": 14,
+      "speed": 90,
+      "radius": 2.5,
+      "damage": 14,
+      "bursts": 1,
+      "interval": 0.3,
+      "telegraph": 0.8,
+      "motion": {
+       "weave": {
+        "px": 10,
+        "hz": 1.2
+       },
+       "mirror": "alternate"
+      }
+     }
+    ],
+    "xp": 170
+   },
+   {
+    "id": "great-wireworm",
+    "hp": 4200,
+    "speed": 40,
+    "damage": 26,
+    "radius": 14,
+    "attackEvery": 4,
+    "telegraph": 1,
+    "attack": {
+     "kind": "burrow",
+     "radius": 40,
+     "under": 1.2
+    },
+    "patternEvery": 3,
+    "patterns": [
+     {
+      "kind": "fan",
+      "count": 5,
+      "arc": 1.3,
+      "speed": 90,
+      "radius": 3,
+      "damage": 12,
+      "bursts": 1,
+      "interval": 0.3,
+      "telegraph": 0.7,
+      "motion": {
+       "speed": [
+        {
+         "at": 0.35,
+         "to": 1
+        },
+        {
+         "at": 0.5,
+         "to": 0.12
+        },
+        {
+         "at": 0.9,
+         "to": 0.12
+        },
+        {
+         "at": 1,
+         "to": 1.55
+        }
+       ],
+       "retarget": {
+        "at": 0.9
+       }
+      }
+     }
+    ],
+    "sharpPatterns": [
+     {
+      "kind": "fan",
+      "count": 5,
+      "arc": 1.3,
+      "speed": 90,
+      "radius": 3,
+      "damage": 12,
+      "bursts": 1,
+      "interval": 0.3,
+      "telegraph": 0.7,
+      "motion": {
+       "speed": [
+        {
+         "at": 0.3,
+         "to": 1
+        },
+        {
+         "at": 0.42,
+         "to": 0.12
+        },
+        {
+         "at": 0.72,
+         "to": 0.12
+        },
+        {
+         "at": 0.8,
+         "to": 1.9
+        }
+       ],
+       "retarget": {
+        "at": 0.72
+       }
+      }
+     }
+    ],
+    "xp": 120
+   },
+   {
+    "id": "harvester",
+    "hp": 16000,
+    "speed": 36,
+    "damage": 60,
+    "radius": 22,
+    "attackEvery": 2.6,
+    "telegraph": 1,
+    "attack": {
+     "kind": "charge",
+     "dashSpeed": 380,
+     "dashTime": 1.1,
+     "width": 70
+    },
+    "patternEvery": 2.4,
+    "patterns": [
+     {
+      "kind": "aimed",
+      "count": 4,
+      "speed": 140,
+      "radius": 2.5,
+      "damage": 16,
+      "bursts": 3,
+      "interval": 0.25,
+      "telegraph": 0.7,
+      "motion": {
+       "home": {
+        "rate": 1.6,
+        "after": 0.1,
+        "until": 0.6
+       }
+      }
+     },
+     {
+      "kind": "ring",
+      "count": 24,
+      "speed": 85,
+      "radius": 2.5,
+      "damage": 12,
+      "bursts": 2,
+      "interval": 0.4,
+      "telegraph": 0.9,
+      "motion": {
+       "speed": [
+        {
+         "at": 0.4,
+         "to": 0.2
+        },
+        {
+         "at": 0.9,
+         "to": 0.2
+        },
+        {
+         "at": 1.2,
+         "to": 1.6
+        }
+       ]
+      }
+     }
+    ],
+    "xp": 300
+   },
+   {
+    "id": "ketchup-kraken",
+    "hp": 11000,
+    "speed": 22,
+    "damage": 34,
+    "radius": 20,
+    "attackEvery": 3,
+    "telegraph": 1.1,
+    "attack": {
+     "kind": "slam",
+     "radius": 32,
+     "count": 5,
+     "spread": 80
+    },
+    "patternEvery": 2.8,
+    "patterns": [
+     {
+      "kind": "fan",
+      "count": 5,
+      "arc": 1.2,
+      "speed": 95,
+      "radius": 3,
+      "damage": 14,
+      "bursts": 1,
+      "interval": 0.4,
+      "telegraph": 0.8,
+      "motion": {
+       "speed": [
+        {
+         "at": 0.55,
+         "to": 1
+        },
+        {
+         "at": 0.95,
+         "to": 0.15
+        }
+       ],
+       "puddle": {
+        "at": 0.95,
+        "radius": 9,
+        "sec": 1.8,
+        "dpsShare": 2.8
+       }
+      }
+     }
+    ],
+    "xp": 230
+   },
+   {
+    "id": "late-blight",
+    "hp": 2000,
+    "speed": 26,
+    "damage": 16,
+    "radius": 18,
+    "attackEvery": 4,
+    "telegraph": 1.2,
+    "attack": {
+     "kind": "pools",
+     "shape": "clover",
+     "count": 5,
+     "radius": 26,
+     "spread": 90,
+     "poolTime": 5,
+     "poolDps": 9
+    },
+    "sharpAttack": {
+     "kind": "pools",
+     "shape": "clover",
+     "count": 5,
+     "radius": 26,
+     "spread": 90,
+     "poolTime": 5,
+     "poolDps": 9,
+     "layout": {
+      "kind": "cropCircle",
+      "core": 21,
+      "orbit": 55,
+      "satellites": 6,
+      "satellite": 12.5
+     }
+    },
+    "patternEvery": 3.5,
+    "patterns": [
+     {
+      "kind": "spiral",
+      "count": 3,
+      "spin": 1.6,
+      "speed": 45,
+      "radius": 3.5,
+      "damage": 7,
+      "bursts": 10,
+      "interval": 0.2,
+      "telegraph": 0.9
+     }
+    ],
+    "sharpPatterns": [
+     {
+      "kind": "spiral",
+      "count": 3,
+      "spin": 1.6,
+      "speed": 45,
+      "radius": 3.5,
+      "damage": 7,
+      "bursts": 10,
+      "interval": 0.2,
+      "telegraph": 0.9,
+      "motion": {
+       "turn": {
+        "kind": "swirl",
+        "rate": 1.2,
+        "until": 1.4
+       }
+      }
+     }
+    ],
+    "xp": 80
+   },
+   {
+    "id": "sir-strawman",
+    "hp": 2600,
+    "speed": 36,
+    "damage": 18,
+    "radius": 15,
+    "attackEvery": 2.6,
+    "telegraph": 0.8,
+    "attack": {
+     "kind": "charge",
+     "dashSpeed": 280,
+     "dashTime": 0.7,
+     "width": 22
+    },
+    "patternEvery": 2.6,
+    "patterns": [
+     {
+      "kind": "fan",
+      "count": 7,
+      "arc": 1.1,
+      "speed": 120,
+      "radius": 2.5,
+      "damage": 14,
+      "bursts": 1,
+      "interval": 0.3,
+      "telegraph": 0.8,
+      "motion": {
+       "speed": [
+        {
+         "at": 0.8,
+         "to": 1
+        },
+        {
+         "at": 1.05,
+         "to": 0.1
+        },
+        {
+         "at": 1.5,
+         "to": -1.15
+        }
+       ]
+      }
+     }
+    ],
+    "sharpPatterns": [
+     {
+      "kind": "fan",
+      "count": 7,
+      "arc": 1.1,
+      "speed": 130,
+      "radius": 2.5,
+      "damage": 14,
+      "bursts": 1,
+      "interval": 0.3,
+      "telegraph": 0.8,
+      "motion": {
+       "speed": [
+        {
+         "at": 0.85,
+         "to": 1
+        },
+        {
+         "at": 1.1,
+         "to": 0.1
+        },
+        {
+         "at": 1.55,
+         "to": -1.05
+        }
+       ]
+      }
+     }
+    ],
+    "xp": 90
+   },
+   {
+    "id": "the-mandoline",
+    "hp": 5200,
+    "speed": 32,
+    "damage": 34,
+    "radius": 16,
+    "attackEvery": 3.4,
+    "telegraph": 1.1,
+    "attack": {
+     "kind": "sweep",
+     "lanes": 3,
+     "width": 22,
+     "length": 360
+    },
+    "patternEvery": 3.4,
+    "patterns": [
+     {
+      "kind": "spiral",
+      "count": 3,
+      "spin": -2.2,
+      "speed": 55,
+      "radius": 2,
+      "damage": 10,
+      "bursts": 14,
+      "interval": 0.1,
+      "telegraph": 0.8,
+      "motion": {
+       "speed": [
+        {
+         "at": 0.9,
+         "to": 1.8
+        }
+       ]
+      }
+     }
+    ],
+    "xp": 140
+   },
+   {
+    "id": "the-masher",
+    "hp": 1300,
+    "speed": 34,
+    "damage": 15,
+    "radius": 15,
+    "attackEvery": 3.2,
+    "telegraph": 1.2,
+    "attack": {
+     "kind": "slam",
+     "radius": 38,
+     "count": 1
+    },
+    "sharpAttack": {
+     "kind": "slam",
+     "radius": 38,
+     "count": 1,
+     "layout": {
+      "kind": "rings",
+      "bands": [
+       {
+        "inner": 0,
+        "outer": 19
+       },
+       {
+        "inner": 35,
+        "outer": 46
+       },
+       {
+        "inner": 62,
+        "outer": 72
+       }
+      ],
+      "wave": 0.35
+     }
+    },
+    "patternEvery": 3,
+    "patterns": [
+     {
+      "kind": "ring",
+      "count": 10,
+      "speed": 70,
+      "radius": 2.5,
+      "damage": 9,
+      "bursts": 1,
+      "interval": 0.3,
+      "telegraph": 0.7
+     }
+    ],
+    "sharpPatterns": [
+     {
+      "kind": "ring",
+      "count": 10,
+      "speed": 70,
+      "radius": 2.5,
+      "damage": 9,
+      "bursts": 1,
+      "interval": 0.3,
+      "telegraph": 0.7,
+      "motion": {
+       "weave": {
+        "px": 9,
+        "hz": 1.1
+       },
+       "mirror": "alternate"
+      }
+     }
+    ],
+    "xp": 60
+   }
+  ],
+  "liveOrder": [
+   {
+    "id": "amusing",
+    "hp": 650,
+    "speed": 32,
+    "damage": 24,
+    "radius": 16,
+    "attack": {
+     "kind": "hug",
+     "radius": 40,
+     "leapTime": 0.55
+    },
+    "attackEvery": 3.6,
+    "telegraph": 1.1,
+    "patternEvery": 2.2,
+    "patterns": [
+     {
+      "kind": "fan",
+      "count": 5,
+      "arc": 1,
+      "speed": 70,
+      "radius": 3,
+      "damage": 6,
+      "bursts": 2,
+      "interval": 0.4,
+      "telegraph": 0.8
+     },
+     {
+      "kind": "ring",
+      "count": 12,
+      "speed": 55,
+      "radius": 3.5,
+      "damage": 6,
+      "bursts": 2,
+      "interval": 0.6,
+      "telegraph": 0.9
+     },
+     {
+      "kind": "spiral",
+      "count": 2,
+      "spin": 2.6,
+      "speed": 65,
+      "radius": 2.5,
+      "damage": 4,
+      "bursts": 12,
+      "interval": 0.12,
+      "telegraph": 0.8
+     }
+    ],
+    "sharpPatterns": [
+     {
+      "kind": "fan",
+      "count": 5,
+      "arc": 1,
+      "speed": 70,
+      "radius": 3,
+      "damage": 6,
+      "bursts": 2,
+      "interval": 0.4,
+      "telegraph": 0.8
+     },
+     {
+      "kind": "ring",
+      "count": 12,
+      "speed": 55,
+      "radius": 3.5,
+      "damage": 6,
+      "bursts": 2,
+      "interval": 0.6,
+      "telegraph": 0.9,
+      "motion": {
+       "speed": [
+        {
+         "at": 0.35,
+         "to": 0.3
+        },
+        {
+         "at": 0.8,
+         "to": 0.3
+        },
+        {
+         "at": 1.1,
+         "to": 1.5
+        }
+       ]
+      }
+     },
+     {
+      "kind": "spiral",
+      "count": 2,
+      "spin": 2.6,
+      "speed": 45,
+      "radius": 2.5,
+      "damage": 4,
+      "bursts": 12,
+      "interval": 0.12,
+      "telegraph": 0.8,
+      "motion": {
+       "speed": [
+        {
+         "at": 0.8,
+         "to": 1.7
+        }
+       ]
+      }
+     }
+    ],
+    "xp": 40
+   },
+   {
+    "id": "beetle-queen",
+    "hp": 700,
+    "speed": 30,
+    "damage": 14,
+    "radius": 16,
+    "attackEvery": 5,
+    "telegraph": 1,
+    "attack": {
+     "kind": "summon",
+     "count": 8,
+     "ringRadius": 36,
+     "minion": "beetle-brood"
+    },
+    "patternEvery": 2.8,
+    "patterns": [
+     {
+      "kind": "aimed",
+      "count": 2,
+      "speed": 80,
+      "radius": 2.5,
+      "damage": 7,
+      "bursts": 3,
+      "interval": 0.25,
+      "telegraph": 0.6
+     }
+    ],
+    "sharpPatterns": [
+     {
+      "kind": "aimed",
+      "count": 2,
+      "speed": 100,
+      "radius": 2.5,
+      "damage": 7,
+      "bursts": 3,
+      "interval": 0.25,
+      "telegraph": 0.6,
+      "motion": {
+       "speed": [
+        {
+         "at": 0.7,
+         "to": 0.5
+        }
+       ]
+      }
+     }
+    ],
+    "xp": 40
+   },
+   {
+    "id": "the-masher",
+    "hp": 1300,
+    "speed": 34,
+    "damage": 15,
+    "radius": 15,
+    "attackEvery": 3.2,
+    "telegraph": 1.2,
+    "attack": {
+     "kind": "slam",
+     "radius": 38,
+     "count": 1
+    },
+    "sharpAttack": {
+     "kind": "slam",
+     "radius": 38,
+     "count": 1,
+     "layout": {
+      "kind": "rings",
+      "bands": [
+       {
+        "inner": 0,
+        "outer": 19
+       },
+       {
+        "inner": 35,
+        "outer": 46
+       },
+       {
+        "inner": 62,
+        "outer": 72
+       }
+      ],
+      "wave": 0.35
+     }
+    },
+    "patternEvery": 3,
+    "patterns": [
+     {
+      "kind": "ring",
+      "count": 10,
+      "speed": 70,
+      "radius": 2.5,
+      "damage": 9,
+      "bursts": 1,
+      "interval": 0.3,
+      "telegraph": 0.7
+     }
+    ],
+    "sharpPatterns": [
+     {
+      "kind": "ring",
+      "count": 10,
+      "speed": 70,
+      "radius": 2.5,
+      "damage": 9,
+      "bursts": 1,
+      "interval": 0.3,
+      "telegraph": 0.7,
+      "motion": {
+       "weave": {
+        "px": 9,
+        "hz": 1.1
+       },
+       "mirror": "alternate"
+      }
+     }
+    ],
+    "xp": 60
+   },
+   {
+    "id": "late-blight",
+    "hp": 2000,
+    "speed": 26,
+    "damage": 16,
+    "radius": 18,
+    "attackEvery": 4,
+    "telegraph": 1.2,
+    "attack": {
+     "kind": "pools",
+     "shape": "clover",
+     "count": 5,
+     "radius": 26,
+     "spread": 90,
+     "poolTime": 5,
+     "poolDps": 9
+    },
+    "sharpAttack": {
+     "kind": "pools",
+     "shape": "clover",
+     "count": 5,
+     "radius": 26,
+     "spread": 90,
+     "poolTime": 5,
+     "poolDps": 9,
+     "layout": {
+      "kind": "cropCircle",
+      "core": 21,
+      "orbit": 55,
+      "satellites": 6,
+      "satellite": 12.5
+     }
+    },
+    "patternEvery": 3.5,
+    "patterns": [
+     {
+      "kind": "spiral",
+      "count": 3,
+      "spin": 1.6,
+      "speed": 45,
+      "radius": 3.5,
+      "damage": 7,
+      "bursts": 10,
+      "interval": 0.2,
+      "telegraph": 0.9
+     }
+    ],
+    "sharpPatterns": [
+     {
+      "kind": "spiral",
+      "count": 3,
+      "spin": 1.6,
+      "speed": 45,
+      "radius": 3.5,
+      "damage": 7,
+      "bursts": 10,
+      "interval": 0.2,
+      "telegraph": 0.9,
+      "motion": {
+       "turn": {
+        "kind": "swirl",
+        "rate": 1.2,
+        "until": 1.4
+       }
+      }
+     }
+    ],
+    "xp": 80
+   },
+   {
+    "id": "sir-strawman",
+    "hp": 2600,
+    "speed": 36,
+    "damage": 18,
+    "radius": 15,
+    "attackEvery": 2.6,
+    "telegraph": 0.8,
+    "attack": {
+     "kind": "charge",
+     "dashSpeed": 280,
+     "dashTime": 0.7,
+     "width": 22
+    },
+    "patternEvery": 2.6,
+    "patterns": [
+     {
+      "kind": "fan",
+      "count": 7,
+      "arc": 1.1,
+      "speed": 120,
+      "radius": 2.5,
+      "damage": 14,
+      "bursts": 1,
+      "interval": 0.3,
+      "telegraph": 0.8,
+      "motion": {
+       "speed": [
+        {
+         "at": 0.8,
+         "to": 1
+        },
+        {
+         "at": 1.05,
+         "to": 0.1
+        },
+        {
+         "at": 1.5,
+         "to": -1.15
+        }
+       ]
+      }
+     }
+    ],
+    "sharpPatterns": [
+     {
+      "kind": "fan",
+      "count": 7,
+      "arc": 1.1,
+      "speed": 130,
+      "radius": 2.5,
+      "damage": 14,
+      "bursts": 1,
+      "interval": 0.3,
+      "telegraph": 0.8,
+      "motion": {
+       "speed": [
+        {
+         "at": 0.85,
+         "to": 1
+        },
+        {
+         "at": 1.1,
+         "to": 0.1
+        },
+        {
+         "at": 1.55,
+         "to": -1.05
+        }
+       ]
+      }
+     }
+    ],
+    "xp": 90
+   },
+   {
+    "id": "fryer-king",
+    "hp": 3300,
+    "speed": 30,
+    "damage": 22,
+    "radius": 17,
+    "attackEvery": 3,
+    "telegraph": 0.9,
+    "attack": {
+     "kind": "pools",
+     "shape": "splat",
+     "count": 4,
+     "radius": 24,
+     "spread": 80,
+     "poolTime": 4,
+     "poolDps": 12
+    },
+    "sharpAttack": {
+     "kind": "pools",
+     "shape": "splat",
+     "count": 4,
+     "radius": 24,
+     "spread": 80,
+     "poolTime": 4,
+     "poolDps": 12,
+     "layout": {
+      "kind": "wedges",
+      "count": 6,
+      "radius": 55,
+      "wave": 0.5,
+      "puddle": 11
+     }
+    },
+    "patternEvery": 3,
+    "patterns": [
+     {
+      "kind": "ring",
+      "count": 18,
+      "speed": 95,
+      "radius": 3,
+      "damage": 16,
+      "bursts": 2,
+      "interval": 0.35,
+      "telegraph": 0.9
+     }
+    ],
+    "sharpPatterns": [
+     {
+      "kind": "ring",
+      "count": 18,
+      "speed": 95,
+      "radius": 3,
+      "damage": 16,
+      "bursts": 2,
+      "interval": 0.35,
+      "telegraph": 0.9,
+      "motion": {
+       "speed": [
+        {
+         "at": 0.4,
+         "to": 0.25
+        },
+        {
+         "at": 0.85,
+         "to": 0.25
+        },
+        {
+         "at": 1.15,
+         "to": 1.5
+        }
+       ]
+      }
+     }
+    ],
+    "xp": 100
+   },
+   {
+    "id": "great-wireworm",
+    "hp": 4200,
+    "speed": 40,
+    "damage": 26,
+    "radius": 14,
+    "attackEvery": 4,
+    "telegraph": 1,
+    "attack": {
+     "kind": "burrow",
+     "radius": 40,
+     "under": 1.2
+    },
+    "patternEvery": 3,
+    "patterns": [
+     {
+      "kind": "fan",
+      "count": 5,
+      "arc": 1.3,
+      "speed": 90,
+      "radius": 3,
+      "damage": 12,
+      "bursts": 1,
+      "interval": 0.3,
+      "telegraph": 0.7,
+      "motion": {
+       "speed": [
+        {
+         "at": 0.35,
+         "to": 1
+        },
+        {
+         "at": 0.5,
+         "to": 0.12
+        },
+        {
+         "at": 0.9,
+         "to": 0.12
+        },
+        {
+         "at": 1,
+         "to": 1.55
+        }
+       ],
+       "retarget": {
+        "at": 0.9
+       }
+      }
+     }
+    ],
+    "sharpPatterns": [
+     {
+      "kind": "fan",
+      "count": 5,
+      "arc": 1.3,
+      "speed": 90,
+      "radius": 3,
+      "damage": 12,
+      "bursts": 1,
+      "interval": 0.3,
+      "telegraph": 0.7,
+      "motion": {
+       "speed": [
+        {
+         "at": 0.3,
+         "to": 1
+        },
+        {
+         "at": 0.42,
+         "to": 0.12
+        },
+        {
+         "at": 0.72,
+         "to": 0.12
+        },
+        {
+         "at": 0.8,
+         "to": 1.9
+        }
+       ],
+       "retarget": {
+        "at": 0.72
+       }
+      }
+     }
+    ],
+    "xp": 120
+   },
+   {
+    "id": "the-mandoline",
+    "hp": 5200,
+    "speed": 32,
+    "damage": 34,
+    "radius": 16,
+    "attackEvery": 3.4,
+    "telegraph": 1.1,
+    "attack": {
+     "kind": "sweep",
+     "lanes": 3,
+     "width": 22,
+     "length": 360
+    },
+    "patternEvery": 3.4,
+    "patterns": [
+     {
+      "kind": "spiral",
+      "count": 3,
+      "spin": -2.2,
+      "speed": 55,
+      "radius": 2,
+      "damage": 10,
+      "bursts": 14,
+      "interval": 0.1,
+      "telegraph": 0.8,
+      "motion": {
+       "speed": [
+        {
+         "at": 0.9,
+         "to": 1.8
+        }
+       ]
+      }
+     }
+    ],
+    "xp": 140
+   },
+   {
+    "id": "deep-freezer",
+    "hp": 6200,
+    "speed": 28,
+    "damage": 24,
+    "radius": 18,
+    "attackEvery": 3.4,
+    "telegraph": 0.9,
+    "attack": {
+     "kind": "slam",
+     "radius": 40,
+     "count": 3,
+     "spread": 70
+    },
+    "patternEvery": 2.4,
+    "patterns": [
+     {
+      "kind": "fan",
+      "count": 9,
+      "arc": 1.4,
+      "speed": 110,
+      "radius": 2.5,
+      "damage": 16,
+      "bursts": 1,
+      "interval": 0.3,
+      "telegraph": 0.8,
+      "onHit": {
+       "kind": "slow",
+       "factor": 0.5,
+       "seconds": 1.5
+      },
+      "motion": {
+       "turn": {
+        "kind": "curve",
+        "rate": 1,
+        "until": 1
+       },
+       "mirror": "inward"
+      }
+     }
+    ],
+    "xp": 150
+   },
+   {
+    "id": "grater-golem",
+    "hp": 7400,
+    "speed": 34,
+    "damage": 40,
+    "radius": 16,
+    "attackEvery": 3,
+    "telegraph": 1,
+    "attack": {
+     "kind": "charge",
+     "dashSpeed": 320,
+     "dashTime": 0.9,
+     "width": 26
+    },
+    "patternEvery": 3,
+    "patterns": [
+     {
+      "kind": "ring",
+      "count": 14,
+      "speed": 90,
+      "radius": 2.5,
+      "damage": 14,
+      "bursts": 1,
+      "interval": 0.3,
+      "telegraph": 0.8,
+      "motion": {
+       "weave": {
+        "px": 10,
+        "hz": 1.2
+       },
+       "mirror": "alternate"
+      }
+     }
+    ],
+    "xp": 170
+   },
+   {
+    "id": "compost-titan",
+    "hp": 9000,
+    "speed": 24,
+    "damage": 30,
+    "radius": 22,
+    "attackEvery": 4,
+    "telegraph": 1,
+    "attack": {
+     "kind": "summon",
+     "count": 14,
+     "ringRadius": 44,
+     "minion": "maggot-swarm"
+    },
+    "patternEvery": 3.6,
+    "patterns": [
+     {
+      "kind": "spiral",
+      "count": 4,
+      "spin": 1.2,
+      "speed": 55,
+      "radius": 3.5,
+      "damage": 12,
+      "bursts": 12,
+      "interval": 0.18,
+      "telegraph": 1,
+      "motion": {
+       "home": {
+        "rate": 0.8,
+        "after": 0.4,
+        "until": 1.4
+       }
+      }
+     }
+    ],
+    "xp": 200
+   },
+   {
+    "id": "ketchup-kraken",
+    "hp": 11000,
+    "speed": 22,
+    "damage": 34,
+    "radius": 20,
+    "attackEvery": 3,
+    "telegraph": 1.1,
+    "attack": {
+     "kind": "slam",
+     "radius": 32,
+     "count": 5,
+     "spread": 80
+    },
+    "patternEvery": 2.8,
+    "patterns": [
+     {
+      "kind": "fan",
+      "count": 5,
+      "arc": 1.2,
+      "speed": 95,
+      "radius": 3,
+      "damage": 14,
+      "bursts": 1,
+      "interval": 0.4,
+      "telegraph": 0.8,
+      "motion": {
+       "speed": [
+        {
+         "at": 0.55,
+         "to": 1
+        },
+        {
+         "at": 0.95,
+         "to": 0.15
+        }
+       ],
+       "puddle": {
+        "at": 0.95,
+        "radius": 9,
+        "sec": 1.8,
+        "dpsShare": 2.8
+       }
+      }
+     }
+    ],
+    "xp": 230
+   },
+   {
+    "id": "harvester",
+    "hp": 16000,
+    "speed": 36,
+    "damage": 60,
+    "radius": 22,
+    "attackEvery": 2.6,
+    "telegraph": 1,
+    "attack": {
+     "kind": "charge",
+     "dashSpeed": 380,
+     "dashTime": 1.1,
+     "width": 70
+    },
+    "patternEvery": 2.4,
+    "patterns": [
+     {
+      "kind": "aimed",
+      "count": 4,
+      "speed": 140,
+      "radius": 2.5,
+      "damage": 16,
+      "bursts": 3,
+      "interval": 0.25,
+      "telegraph": 0.7,
+      "motion": {
+       "home": {
+        "rate": 1.6,
+        "after": 0.1,
+        "until": 0.6
+       }
+      }
+     },
+     {
+      "kind": "ring",
+      "count": 24,
+      "speed": 85,
+      "radius": 2.5,
+      "damage": 12,
+      "bursts": 2,
+      "interval": 0.4,
+      "telegraph": 0.9,
+      "motion": {
+       "speed": [
+        {
+         "at": 0.4,
+         "to": 0.2
+        },
+        {
+         "at": 0.9,
+         "to": 0.2
+        },
+        {
+         "at": 1.2,
+         "to": 1.6
+        }
+       ]
+      }
+     }
+    ],
+    "xp": 300
+   }
+  ],
+  "run": "[fn]",
+  "runOrder": "[fn]"
+ },
+ "sim.dn": {
+  "shape": "tall",
+  "color": "#d7b46a",
+  "sprite": "sir-strawman"
+ },
+ "sim.fn": {
+  "shape": "blob",
+  "color": "#689f38",
+  "sprite": "late-blight",
+  "puddle": {
+   "body": "#3d1b58",
+   "edge": "#050506",
+   "fleck": "#6c7189",
+   "bubble": "#9258a2",
+   "boil": {
+    "period": 2,
+    "density": 4,
+    "glow": 0.4
+   }
+  }
+ },
+ "sim.gn": {
+  "shape": "box",
+  "color": "#90a4ae",
+  "sprite": "grater-golem"
+ },
+ "sim.hn": {
+  "shape": "segmented",
+  "color": "#ff8f00",
+  "sprite": "great-wireworm"
+ },
  "sim.jt": [
   "dog:beagle",
   "dog:collie",
@@ -358,9 +3620,24 @@
   "boss:the-mandoline",
   "boss:the-masher"
  ],
+ "sim.ln": {
+  "shape": "tall",
+  "color": "#b0bec5",
+  "sprite": "the-masher"
+ },
+ "sim.mn": {
+  "shape": "wide",
+  "color": "#c62828",
+  "sprite": "harvester"
+ },
  "sim.on": {
   "fries": "fries-carton",
   "knockedOut": "tibo-down"
+ },
+ "sim.pn": {
+  "shape": "tentacled",
+  "color": "#d32f2f",
+  "sprite": "ketchup-kraken"
  },
  "sim.rt": [
   {
@@ -1024,6 +4301,16 @@
   "SwatSound": "[fn]",
   "measureHudSpace": "[fn]"
  },
+ "sim.un": {
+  "shape": "wide",
+  "color": "#cfd8dc",
+  "sprite": "the-mandoline"
+ },
+ "sim.vn": {
+  "shape": "box",
+  "color": "#81d4fa",
+  "sprite": "deep-freezer"
+ },
  "sim.x": {
   "rimWidth": 2,
   "rim": {
@@ -1064,380 +4351,15 @@
    "lemon"
   ]
  },
- "boot.$a": {
-  "rows": [
-   {
-    "minute": 0,
-    "minEnemies": 34,
-    "maxEnemies": 35,
-    "interval": 0.75,
-    "batch": 3,
-    "tiers": [
-     8,
-     1,
-     0,
-     0,
-     0
-    ]
-   },
-   {
-    "minute": 1,
-    "minEnemies": 75,
-    "maxEnemies": 100,
-    "interval": 0.6,
-    "batch": 5,
-    "tiers": [
-     2,
-     2,
-     0,
-     0,
-     0
-    ],
-    "elite": true
-   },
-   {
-    "minute": 2,
-    "minEnemies": 75,
-    "maxEnemies": 100,
-    "interval": 0.65,
-    "batch": 4,
-    "tiers": [
-     2,
-     1,
-     0,
-     0,
-     0
-    ],
-    "boss": "amusing",
-    "events": [
-     "fly-swarm"
-    ]
-   },
-   {
-    "minute": 3,
-    "minEnemies": 90,
-    "maxEnemies": 150,
-    "interval": 0.6,
-    "batch": 5,
-    "tiers": [
-     1,
-     2,
-     0,
-     0,
-     0
-    ],
-    "elite": true,
-    "boss": "beetle-queen",
-    "events": [
-     "golden-scarab"
-    ]
-   },
-   {
-    "minute": 4,
-    "minEnemies": 85,
-    "maxEnemies": 150,
-    "interval": 0.6,
-    "batch": 4,
-    "tiers": [
-     1,
-     2,
-     1,
-     0,
-     0
-    ],
-    "boss": "the-masher"
-   },
-   {
-    "minute": 5,
-    "minEnemies": 105,
-    "maxEnemies": 165,
-    "interval": 0.55,
-    "batch": 5,
-    "tiers": [
-     1,
-     2,
-     1,
-     0,
-     0
-    ],
-    "elite": true,
-    "events": [
-     "fly-swarm"
-    ]
-   },
-   {
-    "minute": 6,
-    "minEnemies": 125,
-    "maxEnemies": 180,
-    "interval": 0.5,
-    "batch": 5,
-    "tiers": [
-     1,
-     1,
-     2,
-     0,
-     0
-    ],
-    "boss": "late-blight",
-    "events": [
-     "bale-ring"
-    ]
-   },
-   {
-    "minute": 7,
-    "minEnemies": 145,
-    "maxEnemies": 240,
-    "interval": 0.45,
-    "batch": 6,
-    "tiers": [
-     0,
-     1,
-     2,
-     1,
-     0
-    ],
-    "elite": true,
-    "boss": "sir-strawman",
-    "events": [
-     "golden-scarab"
-    ]
-   },
-   {
-    "minute": 8,
-    "minEnemies": 165,
-    "maxEnemies": 250,
-    "interval": 0.42,
-    "batch": 6,
-    "tiers": [
-     0,
-     1,
-     2,
-     1,
-     0
-    ],
-    "boss": "fryer-king",
-    "events": [
-     "fly-swarm",
-     "harvest-moon"
-    ]
-   },
-   {
-    "minute": 9,
-    "minEnemies": 185,
-    "maxEnemies": 260,
-    "interval": 0.38,
-    "batch": 7,
-    "tiers": [
-     0,
-     1,
-     1,
-     2,
-     0
-    ],
-    "elite": true,
-    "events": [
-     "bale-ring"
-    ]
-   },
-   {
-    "minute": 10,
-    "minEnemies": 210,
-    "maxEnemies": 270,
-    "interval": 0.35,
-    "batch": 7,
-    "tiers": [
-     0,
-     0,
-     2,
-     2,
-     0
-    ],
-    "boss": "great-wireworm",
-    "events": [
-     "golden-scarab"
-    ]
-   },
-   {
-    "minute": 11,
-    "minEnemies": 235,
-    "maxEnemies": 280,
-    "interval": 0.32,
-    "batch": 8,
-    "tiers": [
-     0,
-     0,
-     1,
-     2,
-     0
-    ],
-    "elite": true,
-    "events": [
-     "fly-swarm"
-    ]
-   },
-   {
-    "minute": 12,
-    "minEnemies": 260,
-    "maxEnemies": 290,
-    "interval": 0.3,
-    "batch": 8,
-    "tiers": [
-     0,
-     0,
-     1,
-     2,
-     0
-    ],
-    "boss": "the-mandoline"
-   },
-   {
-    "minute": 13,
-    "minEnemies": 285,
-    "maxEnemies": 300,
-    "interval": 0.28,
-    "batch": 9,
-    "tiers": [
-     0,
-     0,
-     1,
-     2,
-     0
-    ],
-    "elite": true,
-    "events": [
-     "bale-ring"
-    ]
-   },
-   {
-    "minute": 14,
-    "minEnemies": 305,
-    "maxEnemies": 320,
-    "interval": 0.26,
-    "batch": 9,
-    "tiers": [
-     0,
-     0,
-     1,
-     4,
-     1
-    ],
-    "boss": "deep-freezer",
-    "events": [
-     "golden-scarab"
-    ]
-   },
-   {
-    "minute": 15,
-    "minEnemies": 330,
-    "maxEnemies": 350,
-    "interval": 0.24,
-    "batch": 10,
-    "tiers": [
-     0,
-     0,
-     0,
-     2,
-     1
-    ],
-    "elite": true,
-    "events": [
-     "fly-swarm",
-     "harvest-moon"
-    ]
-   },
-   {
-    "minute": 16,
-    "minEnemies": 360,
-    "maxEnemies": 380,
-    "interval": 0.22,
-    "batch": 10,
-    "tiers": [
-     0,
-     0,
-     0,
-     1,
-     1
-    ],
-    "boss": "grater-golem",
-    "events": [
-     "bale-ring"
-    ]
-   },
-   {
-    "minute": 17,
-    "minEnemies": 390,
-    "maxEnemies": 420,
-    "interval": 0.2,
-    "batch": 11,
-    "tiers": [
-     0,
-     0,
-     0,
-     1,
-     2
-    ],
-    "elite": true,
-    "boss": "compost-titan",
-    "events": [
-     "golden-scarab"
-    ]
-   },
-   {
-    "minute": 18,
-    "minEnemies": 420,
-    "maxEnemies": 450,
-    "interval": 0.18,
-    "batch": 12,
-    "tiers": [
-     0,
-     0,
-     0,
-     1,
-     3
-    ],
-    "boss": "ketchup-kraken",
-    "events": [
-     "fly-swarm"
-    ]
-   },
-   {
-    "minute": 19,
-    "minEnemies": 450,
-    "maxEnemies": 480,
-    "interval": 0.16,
-    "batch": 12,
-    "tiers": [
-     0,
-     0,
-     0,
-     0,
-     1
-    ],
-    "elite": true,
-    "events": [
-     "bale-ring"
-    ]
-   },
-   {
-    "minute": 20,
-    "minEnemies": 480,
-    "maxEnemies": 500,
-    "interval": 0.14,
-    "batch": 14,
-    "tiers": [
-     0,
-     0,
-     0,
-     0,
-     1
-    ],
-    "boss": "harvester",
-    "events": [
-     "fly-swarm"
-    ]
-   }
-  ],
-  "afterLast": "postWin"
+ "sim.xn": {
+  "shape": "plush",
+  "color": "#f3c6c3",
+  "sprite": "amusing"
+ },
+ "sim.yn": {
+  "shape": "blob",
+  "color": "#5d4037",
+  "sprite": "compost-titan"
  },
  "boot.$r": {
   "Elite": 1,
@@ -1937,51 +4859,6 @@
   "deuteranopia",
   "tritanopia"
  ],
- "boot.Qa": {
-  "graceSec": 30,
-  "graceDensity": 0.8,
-  "rows": [
-   {
-    "minEnemies": 34,
-    "maxEnemies": 35,
-    "interval": 0.75,
-    "batch": 3,
-    "tiers": [
-     8,
-     1,
-     0,
-     0,
-     0
-    ]
-   },
-   {
-    "minEnemies": 75,
-    "maxEnemies": 100,
-    "interval": 0.6,
-    "batch": 5,
-    "tiers": [
-     2,
-     2,
-     0,
-     0,
-     0
-    ]
-   },
-   {
-    "minEnemies": 75,
-    "maxEnemies": 100,
-    "interval": 0.65,
-    "batch": 4,
-    "tiers": [
-     2,
-     1,
-     0,
-     0,
-     0
-    ]
-   }
-  ]
- },
  "boot.Qr": {
   "none": 0,
   "rings": 1,
@@ -2085,381 +4962,15 @@
   "poteto",
   "story"
  ],
- "boot.eo": {
-  "rows": [
-   {
-    "minute": 0,
-    "minEnemies": 22,
-    "maxEnemies": 35,
-    "interval": 0.75,
-    "batch": 3,
-    "tiers": [
-     8,
-     1,
-     0,
-     0,
-     0
-    ]
-   },
-   {
-    "minute": 1,
-    "minEnemies": 32,
-    "maxEnemies": 35,
-    "interval": 0.7,
-    "batch": 3,
-    "tiers": [
-     8,
-     1,
-     0,
-     0,
-     0
-    ],
-    "elite": true
-   },
-   {
-    "minute": 2,
-    "minEnemies": 45,
-    "maxEnemies": 100,
-    "interval": 0.65,
-    "batch": 4,
-    "tiers": [
-     5,
-     1,
-     0,
-     0,
-     0
-    ],
-    "boss": "amusing",
-    "events": [
-     "fly-swarm"
-    ]
-   },
-   {
-    "minute": 3,
-    "minEnemies": 90,
-    "maxEnemies": 150,
-    "interval": 0.6,
-    "batch": 5,
-    "tiers": [
-     1,
-     2,
-     0,
-     0,
-     0
-    ],
-    "elite": true,
-    "boss": "beetle-queen",
-    "events": [
-     "golden-scarab"
-    ]
-   },
-   {
-    "minute": 4,
-    "minEnemies": 85,
-    "maxEnemies": 150,
-    "interval": 0.6,
-    "batch": 4,
-    "tiers": [
-     1,
-     2,
-     1,
-     0,
-     0
-    ],
-    "boss": "the-masher"
-   },
-   {
-    "minute": 5,
-    "minEnemies": 105,
-    "maxEnemies": 165,
-    "interval": 0.55,
-    "batch": 5,
-    "tiers": [
-     1,
-     2,
-     1,
-     0,
-     0
-    ],
-    "elite": true,
-    "events": [
-     "fly-swarm"
-    ]
-   },
-   {
-    "minute": 6,
-    "minEnemies": 125,
-    "maxEnemies": 180,
-    "interval": 0.5,
-    "batch": 5,
-    "tiers": [
-     1,
-     1,
-     2,
-     0,
-     0
-    ],
-    "boss": "late-blight",
-    "events": [
-     "bale-ring"
-    ]
-   },
-   {
-    "minute": 7,
-    "minEnemies": 145,
-    "maxEnemies": 240,
-    "interval": 0.45,
-    "batch": 6,
-    "tiers": [
-     0,
-     1,
-     2,
-     1,
-     0
-    ],
-    "elite": true,
-    "boss": "sir-strawman",
-    "events": [
-     "golden-scarab"
-    ]
-   },
-   {
-    "minute": 8,
-    "minEnemies": 165,
-    "maxEnemies": 250,
-    "interval": 0.42,
-    "batch": 6,
-    "tiers": [
-     0,
-     1,
-     2,
-     1,
-     0
-    ],
-    "boss": "fryer-king",
-    "events": [
-     "fly-swarm",
-     "harvest-moon"
-    ]
-   },
-   {
-    "minute": 9,
-    "minEnemies": 185,
-    "maxEnemies": 260,
-    "interval": 0.38,
-    "batch": 7,
-    "tiers": [
-     0,
-     1,
-     1,
-     2,
-     0
-    ],
-    "elite": true,
-    "events": [
-     "bale-ring"
-    ]
-   },
-   {
-    "minute": 10,
-    "minEnemies": 210,
-    "maxEnemies": 270,
-    "interval": 0.35,
-    "batch": 7,
-    "tiers": [
-     0,
-     0,
-     2,
-     2,
-     0
-    ],
-    "boss": "great-wireworm",
-    "events": [
-     "golden-scarab"
-    ]
-   },
-   {
-    "minute": 11,
-    "minEnemies": 235,
-    "maxEnemies": 280,
-    "interval": 0.32,
-    "batch": 8,
-    "tiers": [
-     0,
-     0,
-     1,
-     2,
-     0
-    ],
-    "elite": true,
-    "events": [
-     "fly-swarm"
-    ]
-   },
-   {
-    "minute": 12,
-    "minEnemies": 260,
-    "maxEnemies": 290,
-    "interval": 0.3,
-    "batch": 8,
-    "tiers": [
-     0,
-     0,
-     1,
-     2,
-     0
-    ],
-    "boss": "the-mandoline"
-   },
-   {
-    "minute": 13,
-    "minEnemies": 285,
-    "maxEnemies": 300,
-    "interval": 0.28,
-    "batch": 9,
-    "tiers": [
-     0,
-     0,
-     1,
-     2,
-     0
-    ],
-    "elite": true,
-    "events": [
-     "bale-ring"
-    ]
-   },
-   {
-    "minute": 14,
-    "minEnemies": 305,
-    "maxEnemies": 320,
-    "interval": 0.26,
-    "batch": 9,
-    "tiers": [
-     0,
-     0,
-     1,
-     4,
-     1
-    ],
-    "boss": "deep-freezer",
-    "events": [
-     "golden-scarab"
-    ]
-   },
-   {
-    "minute": 15,
-    "minEnemies": 330,
-    "maxEnemies": 350,
-    "interval": 0.24,
-    "batch": 10,
-    "tiers": [
-     0,
-     0,
-     0,
-     2,
-     1
-    ],
-    "elite": true,
-    "events": [
-     "fly-swarm",
-     "harvest-moon"
-    ]
-   },
-   {
-    "minute": 16,
-    "minEnemies": 360,
-    "maxEnemies": 380,
-    "interval": 0.22,
-    "batch": 10,
-    "tiers": [
-     0,
-     0,
-     0,
-     1,
-     1
-    ],
-    "boss": "grater-golem",
-    "events": [
-     "bale-ring"
-    ]
-   },
-   {
-    "minute": 17,
-    "minEnemies": 390,
-    "maxEnemies": 420,
-    "interval": 0.2,
-    "batch": 11,
-    "tiers": [
-     0,
-     0,
-     0,
-     1,
-     2
-    ],
-    "elite": true,
-    "boss": "compost-titan",
-    "events": [
-     "golden-scarab"
-    ]
-   },
-   {
-    "minute": 18,
-    "minEnemies": 420,
-    "maxEnemies": 450,
-    "interval": 0.18,
-    "batch": 12,
-    "tiers": [
-     0,
-     0,
-     0,
-     1,
-     3
-    ],
-    "boss": "ketchup-kraken",
-    "events": [
-     "fly-swarm"
-    ]
-   },
-   {
-    "minute": 19,
-    "minEnemies": 450,
-    "maxEnemies": 480,
-    "interval": 0.16,
-    "batch": 12,
-    "tiers": [
-     0,
-     0,
-     0,
-     0,
-     1
-    ],
-    "elite": true,
-    "events": [
-     "bale-ring"
-    ]
-   },
-   {
-    "minute": 20,
-    "minEnemies": 480,
-    "maxEnemies": 500,
-    "interval": 0.14,
-    "batch": 14,
-    "tiers": [
-     0,
-     0,
-     0,
-     0,
-     1
-    ],
-    "boss": "harvester",
-    "events": [
-     "fly-swarm"
-    ]
-   }
-  ],
-  "afterLast": "postWin"
- },
+ "boot.eo": [
+  {
+   "parts": [
+    "pomeranian",
+    "pomchi"
+   ],
+   "into": "zelda-and-link"
+  }
+ ],
  "boot.fi": {
   "off": 0,
   "free": 1,
@@ -2506,33 +5017,6 @@
   "shards",
   "discharge"
  ],
- "boot.io": {
-  "alexReveal": {
-   "playing": false,
-   "live": false,
-   "ready": "[fn]",
-   "frame": "[fn]",
-   "view": "[fn]",
-   "skip": "[fn]",
-   "probe": "[fn]",
-   "relabel": "[fn]"
-  },
-  "storyLines": {
-   "holds": false,
-   "speaking": false,
-   "grokTabOwed": false,
-   "readyForDeathPanel": "[fn]",
-   "frame": "[fn]",
-   "relabel": "[fn]"
-  },
-  "friesLines": {
-   "holds": false,
-   "speaking": false,
-   "frame": "[fn]",
-   "sample": "[fn]",
-   "relabel": "[fn]"
-  }
- },
  "boot.ja": {
   "hold": 0,
   "shrink": 1,
@@ -2724,6 +5208,33 @@
   "gold": 5,
   "blast": 6
  },
+ "boot.no": {
+  "alexReveal": {
+   "playing": false,
+   "live": false,
+   "ready": "[fn]",
+   "frame": "[fn]",
+   "view": "[fn]",
+   "skip": "[fn]",
+   "probe": "[fn]",
+   "relabel": "[fn]"
+  },
+  "storyLines": {
+   "holds": false,
+   "speaking": false,
+   "grokTabOwed": false,
+   "readyForDeathPanel": "[fn]",
+   "frame": "[fn]",
+   "relabel": "[fn]"
+  },
+  "friesLines": {
+   "holds": false,
+   "speaking": false,
+   "frame": "[fn]",
+   "sample": "[fn]",
+   "relabel": "[fn]"
+  }
+ },
  "boot.or": [
   {
    "phase": "weapons",
@@ -2779,15 +5290,6 @@
   "drop": 6,
   "dawn": 7
  },
- "boot.ro": [
-  {
-   "parts": [
-    "pomeranian",
-    "pomchi"
-   ],
-   "into": "zelda-and-link"
-  }
- ],
  "boot.si": {
   "slash": 0,
   "beam": 1,
@@ -2815,15 +5317,6 @@
   "poteto": 4,
   "story": 5
  },
- "boot.to": [
-  "fryer-king",
-  "the-mandoline",
-  "the-masher",
-  "grater-golem",
-  "compost-titan",
-  "ketchup-kraken",
-  "harvester"
- ],
  "boot.ui": {
   "wander": 0,
   "hop": 1,

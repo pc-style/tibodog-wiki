@@ -35,6 +35,13 @@ const reg = Object.values(boot).find((v) => v && typeof v === 'object' && typeof
 if (!reg) throw new Error('registry not found in boot');
 const registry = {};
 for (const [k, v] of Object.entries(reg)) registry[k] = ser(v, 0, 14);
+// Newer builds keep only boss IDs in boot; simulation owns the full definitions and order.
+if (!Array.isArray(reg.bosses)) {
+  const bosses = Object.values(sim).find((v) => v && typeof v.boss === 'function' && Array.isArray(v.bosses) && Array.isArray(v.bossOrder));
+  if (!bosses) throw new Error('boss definitions not found in sim');
+  registry.bosses = ser(bosses.bosses, 0, 14);
+  registry.bossOrder = ser(bosses.bossOrder, 0, 14);
+}
 
 const config = {};
 for (const [src, m] of [['sim', sim], ['boot', boot]])

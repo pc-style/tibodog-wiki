@@ -3,7 +3,6 @@
  "passive": "[fn]",
  "item": "[fn]",
  "enemy": "[fn]",
- "boss": "[fn]",
  "biome": "[fn]",
  "event": "[fn]",
  "dog": "[fn]",
@@ -14,7 +13,7 @@
  "findBossIndex": "[fn]",
  "dogIndex": "[fn]",
  "enemyAt": "[fn]",
- "bossAt": "[fn]",
+ "bossIdAt": "[fn]",
  "dogAt": "[fn]",
  "botHelpAt": "[fn]",
  "botShapeAt": "[fn]",
@@ -9088,6 +9087,1517 @@
    "mass": 0.1
   }
  ],
+ "bossIds": [
+  "amusing",
+  "beetle-queen",
+  "compost-titan",
+  "deep-freezer",
+  "fryer-king",
+  "grater-golem",
+  "great-wireworm",
+  "harvester",
+  "ketchup-kraken",
+  "late-blight",
+  "sir-strawman",
+  "the-mandoline",
+  "the-masher"
+ ],
+ "biomes": [
+  {
+   "id": "chip-canyons",
+   "placement": {
+    "kind": "climate",
+    "temperature": 2,
+    "moisture": 0
+   },
+   "enemies": [
+    [
+     "crumb-ant",
+     "oil-drip"
+    ],
+    [
+     "sand-crab"
+    ],
+    [
+     "field-crow",
+     "sizzle-imp"
+    ],
+    [
+     "harvest-mouse"
+    ],
+    [
+     "grease-fiend"
+    ]
+   ],
+   "hazard": null,
+   "props": [
+    "chip-stack",
+    "boulder",
+    "dry-bush"
+   ],
+   "propsPerChunk": 12,
+   "poiWeights": {
+    "dog": 2.2,
+    "paidChest": 4,
+    "chargeShrine": 3,
+    "crops": 1,
+    "vendor": 3,
+    "microwave": 1,
+    "curseShrine": 1,
+    "eliteNest": 2,
+    "bossLair": 0.5,
+    "botDock": 1,
+    "whetstone": 1,
+    "dinnerBell": 1,
+    "taterSlots": 1,
+    "seedVault": 0.5,
+    "taterMagnet": 1,
+    "rootTunnel": 0.4,
+    "taterLantern": 3,
+    "spudFreezer": 1,
+    "frenzyFryer": 1,
+    "goldenShrine": 0.4,
+    "dogKennel": 0.5
+   },
+   "poisPerChunk": 2,
+   "goldMult": 1.1,
+   "xpMult": 1.05
+  },
+  {
+   "id": "coin-laundromat",
+   "placement": {
+    "kind": "landmark",
+    "radius": 400,
+    "event": "loose-change"
+   },
+   "enemies": [
+    [
+     "lint-bunny"
+    ],
+    [
+     "sock-pile"
+    ],
+    [
+     "field-rat",
+     "blight-spore"
+    ],
+    [
+     "ice-imp"
+    ],
+    [
+     "mud-golem"
+    ]
+   ],
+   "hazard": null,
+   "props": [
+    "washer",
+    "dryer",
+    "laundry-cart"
+   ],
+   "propsPerChunk": 14,
+   "poiWeights": {
+    "dog": 2.2,
+    "microwave": 6,
+    "paidChest": 3,
+    "vendor": 1,
+    "chargeShrine": 1
+   },
+   "poisPerChunk": 2,
+   "goldMult": 1.4,
+   "xpMult": 1.05
+  },
+  {
+   "id": "compost-caves",
+   "placement": {
+    "kind": "climate",
+    "temperature": 0,
+    "moisture": 1
+   },
+   "enemies": [
+    [
+     "compost-maggot"
+    ],
+    [
+     "cave-grub"
+    ],
+    [
+     "field-rat",
+     "blight-spore"
+    ],
+    [
+     "mole"
+    ],
+    [
+     "mud-golem"
+    ]
+   ],
+   "hazard": {
+    "kind": "spores",
+    "shape": "clover",
+    "perChunk": 3,
+    "radius": 20,
+    "strength": 8
+   },
+   "props": [
+    "stalagmite",
+    "rot-pile",
+    "glow-shroom"
+   ],
+   "propsPerChunk": 14,
+   "poiWeights": {
+    "dog": 2.2,
+    "paidChest": 5,
+    "chargeShrine": 2,
+    "crops": 1,
+    "vendor": 1,
+    "microwave": 2,
+    "curseShrine": 3,
+    "eliteNest": 2,
+    "bossLair": 0.6,
+    "botDock": 1,
+    "whetstone": 1,
+    "dinnerBell": 1,
+    "taterSlots": 1,
+    "seedVault": 0.5,
+    "taterMagnet": 1,
+    "rootTunnel": 0.4,
+    "taterLantern": 3,
+    "spudFreezer": 1,
+    "frenzyFryer": 1,
+    "goldenShrine": 0.4,
+    "dogKennel": 0.5
+   },
+   "poisPerChunk": 2,
+   "goldMult": 1.15,
+   "xpMult": 1.15
+  },
+  {
+   "id": "crop-circle",
+   "placement": {
+    "kind": "landmark",
+    "radius": 460,
+    "event": "lost-saucer"
+   },
+   "enemies": [
+    [
+     "little-grey",
+     "aphid"
+    ],
+    [
+     "spittlebug"
+    ],
+    [
+     "field-crow",
+     "blight-spore"
+    ],
+    [
+     "mole"
+    ],
+    [
+     "mud-golem"
+    ]
+   ],
+   "hazard": null,
+   "props": [
+    "flattened-wheat",
+    "scorch-ring",
+    "probe-beacon"
+   ],
+   "propsPerChunk": 10,
+   "poiWeights": {
+    "dog": 2.2,
+    "crops": 6,
+    "chargeShrine": 4,
+    "paidChest": 2,
+    "curseShrine": 1
+   },
+   "poisPerChunk": 2,
+   "goldMult": 1.1,
+   "xpMult": 1.2
+  },
+  {
+   "id": "frozen-tundra",
+   "placement": {
+    "kind": "climate",
+    "temperature": 0,
+    "moisture": 0
+   },
+   "enemies": [
+    [
+     "frost-flea"
+    ],
+    [
+     "snow-mold"
+    ],
+    [
+     "field-rat",
+     "field-crow"
+    ],
+    [
+     "ice-imp"
+    ],
+    [
+     "mud-golem"
+    ]
+   ],
+   "hazard": {
+    "kind": "chill",
+    "shape": "slab",
+    "perChunk": 4,
+    "radius": 28,
+    "strength": 0.3
+   },
+   "props": [
+    "ice-fry",
+    "snow-drift",
+    "frozen-crate"
+   ],
+   "propsPerChunk": 10,
+   "poiWeights": {
+    "dog": 2.2,
+    "paidChest": 4,
+    "chargeShrine": 3,
+    "crops": 1,
+    "vendor": 2,
+    "microwave": 2,
+    "curseShrine": 1,
+    "eliteNest": 1,
+    "bossLair": 0.4,
+    "botDock": 1,
+    "whetstone": 1,
+    "dinnerBell": 1,
+    "taterSlots": 1,
+    "seedVault": 0.5,
+    "taterMagnet": 1,
+    "rootTunnel": 0.4,
+    "taterLantern": 3,
+    "spudFreezer": 1,
+    "frenzyFryer": 1,
+    "goldenShrine": 0.4,
+    "dogKennel": 0.5
+   },
+   "poisPerChunk": 2,
+   "goldMult": 1,
+   "xpMult": 1.15
+  },
+  {
+   "id": "fry-oil-desert",
+   "placement": {
+    "kind": "climate",
+    "temperature": 3,
+    "moisture": 0
+   },
+   "enemies": [
+    [
+     "oil-drip",
+     "crumb-ant"
+    ],
+    [
+     "fry-fly"
+    ],
+    [
+     "sizzle-imp"
+    ],
+    [
+     "harvest-mouse"
+    ],
+    [
+     "grease-fiend"
+    ]
+   ],
+   "hazard": {
+    "kind": "burn",
+    "shape": "oval",
+    "perChunk": 3,
+    "radius": 22,
+    "strength": 10
+   },
+   "props": [
+    "cactus-fry",
+    "dune",
+    "oil-can"
+   ],
+   "propsPerChunk": 8,
+   "poiWeights": {
+    "dog": 2.2,
+    "paidChest": 5,
+    "chargeShrine": 2,
+    "crops": 1,
+    "vendor": 3,
+    "microwave": 1,
+    "curseShrine": 2,
+    "eliteNest": 1,
+    "bossLair": 0.5,
+    "botDock": 1,
+    "whetstone": 1,
+    "dinnerBell": 1,
+    "taterSlots": 1,
+    "seedVault": 0.5,
+    "taterMagnet": 1,
+    "rootTunnel": 0.4,
+    "taterLantern": 3,
+    "spudFreezer": 1,
+    "frenzyFryer": 1,
+    "goldenShrine": 0.4,
+    "dogKennel": 0.5
+   },
+   "poisPerChunk": 2,
+   "goldMult": 1.25,
+   "xpMult": 1
+  },
+  {
+   "id": "fry-palace",
+   "placement": {
+    "kind": "landmark",
+    "radius": 420,
+    "event": "lunch-rush"
+   },
+   "enemies": [
+    [
+     "parking-gull",
+     "crumb-ant"
+    ],
+    [
+     "dumpster-raccoon",
+     "fry-fly"
+    ],
+    [
+     "field-rat",
+     "sizzle-imp"
+    ],
+    [
+     "harvest-mouse"
+    ],
+    [
+     "grease-fiend"
+    ]
+   ],
+   "hazard": {
+    "kind": "burn",
+    "shape": "slab",
+    "perChunk": 2,
+    "radius": 18,
+    "strength": 8
+   },
+   "props": [
+    "neon-sign",
+    "parking-cone",
+    "dumpster",
+    "drive-thru-menu"
+   ],
+   "propsPerChunk": 12,
+   "poiWeights": {
+    "dog": 2.2,
+    "vendor": 2.3,
+    "microwave": 3,
+    "paidChest": 2,
+    "chargeShrine": 1,
+    "curseShrine": 1
+   },
+   "poisPerChunk": 2,
+   "goldMult": 1.2,
+   "xpMult": 1.15
+  },
+  {
+   "id": "gutterball-lanes",
+   "placement": {
+    "kind": "landmark",
+    "radius": 400,
+    "event": "strike"
+   },
+   "enemies": [
+    [
+     "bowling-pin",
+     "crumb-ant"
+    ],
+    [
+     "bowling-ball"
+    ],
+    [
+     "field-rat",
+     "field-crow"
+    ],
+    [
+     "harvest-mouse"
+    ],
+    [
+     "mud-golem"
+    ]
+   ],
+   "hazard": {
+    "kind": "slow",
+    "shape": "slab",
+    "perChunk": 3,
+    "radius": 26,
+    "strength": 0.4
+   },
+   "props": [
+    "lane-arrow",
+    "ball-return",
+    "pin-deck"
+   ],
+   "propsPerChunk": 12,
+   "poiWeights": {
+    "dog": 2.2,
+    "paidChest": 5,
+    "curseShrine": 2,
+    "vendor": 2,
+    "chargeShrine": 1
+   },
+   "poisPerChunk": 2,
+   "goldMult": 1.2,
+   "xpMult": 1.1
+  },
+  {
+   "id": "ketchup-bog",
+   "placement": {
+    "kind": "climate",
+    "temperature": 3,
+    "moisture": 1
+   },
+   "enemies": [
+    [
+     "ketchup-drop",
+     "bog-slime"
+    ],
+    [
+     "tomato-leech"
+    ],
+    [
+     "bog-toad",
+     "sizzle-imp"
+    ],
+    [
+     "ice-imp"
+    ],
+    [
+     "grease-fiend"
+    ]
+   ],
+   "hazard": {
+    "kind": "burn",
+    "shape": "drop",
+    "perChunk": 4,
+    "radius": 24,
+    "strength": 8
+   },
+   "props": [
+    "tomato-vine",
+    "bubble",
+    "bottle"
+   ],
+   "propsPerChunk": 12,
+   "poiWeights": {
+    "dog": 2.2,
+    "paidChest": 5,
+    "chargeShrine": 2,
+    "crops": 1,
+    "vendor": 2,
+    "microwave": 2,
+    "curseShrine": 2,
+    "eliteNest": 2,
+    "bossLair": 0.6,
+    "botDock": 1,
+    "whetstone": 1,
+    "dinnerBell": 1,
+    "taterSlots": 1,
+    "seedVault": 0.5,
+    "taterMagnet": 1,
+    "rootTunnel": 0.4,
+    "taterLantern": 3,
+    "spudFreezer": 1,
+    "frenzyFryer": 1,
+    "goldenShrine": 0.4,
+    "dogKennel": 0.5
+   },
+   "poisPerChunk": 2,
+   "goldMult": 1.3,
+   "xpMult": 1.1
+  },
+  {
+   "id": "mash-swamp",
+   "placement": {
+    "kind": "climate",
+    "temperature": 2,
+    "moisture": 1
+   },
+   "enemies": [
+    [
+     "bog-slime",
+     "ketchup-drop"
+    ],
+    [
+     "garden-slug"
+    ],
+    [
+     "bog-toad"
+    ],
+    [
+     "mole"
+    ],
+    [
+     "mud-golem"
+    ]
+   ],
+   "hazard": {
+    "kind": "slow",
+    "shape": "oval",
+    "perChunk": 4,
+    "radius": 30,
+    "strength": 0.45
+   },
+   "props": [
+    "reed",
+    "mash-mound",
+    "log"
+   ],
+   "propsPerChunk": 12,
+   "poiWeights": {
+    "dog": 2.2,
+    "paidChest": 4,
+    "chargeShrine": 2,
+    "crops": 2,
+    "vendor": 2,
+    "microwave": 2,
+    "curseShrine": 2,
+    "eliteNest": 1,
+    "bossLair": 0.4,
+    "botDock": 1,
+    "whetstone": 1,
+    "dinnerBell": 1,
+    "taterSlots": 1,
+    "seedVault": 0.5,
+    "taterMagnet": 1,
+    "rootTunnel": 0.4,
+    "taterLantern": 3,
+    "spudFreezer": 1,
+    "frenzyFryer": 1,
+    "goldenShrine": 0.4,
+    "dogKennel": 0.5
+   },
+   "poisPerChunk": 2,
+   "goldMult": 1.1,
+   "xpMult": 1.05
+  },
+  {
+   "id": "peel-forest",
+   "placement": {
+    "kind": "climate",
+    "temperature": 1,
+    "moisture": 1
+   },
+   "enemies": [
+    [
+     "aphid",
+     "sprout-mite"
+    ],
+    [
+     "wireworm-larva",
+     "potato-beetle"
+    ],
+    [
+     "blight-spore",
+     "field-rat"
+    ],
+    [
+     "harvest-mouse"
+    ],
+    [
+     "mud-golem"
+    ]
+   ],
+   "hazard": {
+    "kind": "thorns",
+    "shape": "splat",
+    "perChunk": 3,
+    "radius": 18,
+    "strength": 6
+   },
+   "props": [
+    "peel-tree",
+    "bramble",
+    "mushroom"
+   ],
+   "propsPerChunk": 12,
+   "poiWeights": {
+    "dog": 2.2,
+    "paidChest": 4,
+    "chargeShrine": 3,
+    "crops": 2,
+    "vendor": 2,
+    "microwave": 1,
+    "curseShrine": 1,
+    "eliteNest": 2,
+    "bossLair": 0.4,
+    "botDock": 1,
+    "whetstone": 1,
+    "dinnerBell": 1,
+    "taterSlots": 1,
+    "seedVault": 0.5,
+    "taterMagnet": 1,
+    "rootTunnel": 0.4,
+    "taterLantern": 3,
+    "spudFreezer": 1,
+    "frenzyFryer": 1,
+    "goldenShrine": 0.4,
+    "dogKennel": 0.5
+   },
+   "poisPerChunk": 2,
+   "goldMult": 1,
+   "xpMult": 1.05
+  },
+  {
+   "id": "potato-field",
+   "placement": {
+    "kind": "climate",
+    "temperature": 1,
+    "moisture": 0
+   },
+   "enemies": [
+    [
+     "sprout-mite",
+     "aphid"
+    ],
+    [
+     "potato-beetle"
+    ],
+    [
+     "field-crow",
+     "blight-spore",
+     "reset-zombie"
+    ],
+    [
+     "mole"
+    ],
+    [
+     "mud-golem"
+    ]
+   ],
+   "hazard": null,
+   "props": [
+    "potato-plant",
+    "fence",
+    "hay-bale"
+   ],
+   "propsPerChunk": 14,
+   "poiWeights": {
+    "dog": 2.2,
+    "paidChest": 4,
+    "chargeShrine": 3,
+    "crops": 4,
+    "vendor": 2,
+    "microwave": 1,
+    "curseShrine": 1,
+    "eliteNest": 1,
+    "bossLair": 0.3,
+    "botDock": 1,
+    "whetstone": 1,
+    "dinnerBell": 1,
+    "taterSlots": 1,
+    "seedVault": 0.5,
+    "taterMagnet": 1,
+    "rootTunnel": 0.4,
+    "taterLantern": 3,
+    "spudFreezer": 1,
+    "frenzyFryer": 1,
+    "goldenShrine": 0.4,
+    "dogKennel": 0.5
+   },
+   "poisPerChunk": 2,
+   "goldMult": 1,
+   "xpMult": 1
+  }
+ ],
+ "events": [
+  {
+   "id": "bale-ring",
+   "effect": {
+    "kind": "wall",
+    "enemy": "hay-bale",
+    "count": 36,
+    "radius": 170,
+    "life": 22
+   }
+  },
+  {
+   "id": "fly-swarm",
+   "effect": {
+    "kind": "swarm",
+    "enemy": "swarm-fly",
+    "count": 26,
+    "width": 120
+   }
+  },
+  {
+   "id": "golden-scarab",
+   "effect": {
+    "kind": "lootRunner",
+    "enemy": "golden-scarab"
+   }
+  },
+  {
+   "id": "harvest-moon",
+   "effect": {
+    "kind": "goldRush",
+    "duration": 30,
+    "goldMult": 2
+   }
+  },
+  {
+   "id": "loose-change",
+   "effect": {
+    "kind": "goldRush",
+    "duration": 20,
+    "goldMult": 2
+   }
+  },
+  {
+   "id": "lost-saucer",
+   "effect": {
+    "kind": "lootRunner",
+    "enemy": "lost-saucer"
+   }
+  },
+  {
+   "id": "lunch-rush",
+   "effect": {
+    "kind": "swarm",
+    "enemy": "gull-flock",
+    "count": 24,
+    "width": 140
+   }
+  },
+  {
+   "id": "strike",
+   "effect": {
+    "kind": "wall",
+    "enemy": "bowling-ball",
+    "count": 10,
+    "radius": 200,
+    "life": 16
+   }
+  }
+ ],
+ "dogs": [
+  {
+   "id": "beagle",
+   "ability": {
+    "kind": "sniff",
+    "every": 8,
+    "gold": 3
+   },
+   "aura": {
+    "luck": 0.1
+   },
+   "levelUps": [
+    {
+     "every": 0.8,
+     "power": 1.4,
+     "aura": 1
+    },
+    {
+     "every": 0.8,
+     "power": 1.4,
+     "aura": 1
+    },
+    {
+     "every": 0.9,
+     "power": 1.2,
+     "aura": 0.5
+    },
+    {
+     "every": 0.9,
+     "power": 1.2,
+     "aura": 0.5
+    }
+   ],
+   "weight": 10,
+   "speed": 100,
+   "size": 5
+  },
+  {
+   "id": "collie",
+   "ability": {
+    "kind": "herd",
+    "radius": 46,
+    "push": 260,
+    "every": 2.5
+   },
+   "aura": {
+    "moveSpeed": 0.03
+   },
+   "levelUps": [
+    {
+     "every": 0.8,
+     "power": 1.3,
+     "aura": 1
+    },
+    {
+     "every": 0.8,
+     "power": 1.3,
+     "aura": 1
+    },
+    {
+     "every": 0.9,
+     "power": 1.2,
+     "aura": 0.5
+    },
+    {
+     "every": 0.9,
+     "power": 1.2,
+     "aura": 0.5
+    }
+   ],
+   "weight": 10,
+   "speed": 120,
+   "size": 6
+  },
+  {
+   "id": "corgi",
+   "ability": {
+    "kind": "bark",
+    "radius": 60,
+    "stun": 1,
+    "every": 5
+   },
+   "aura": {
+    "armor": 6
+   },
+   "levelUps": [
+    {
+     "every": 0.8,
+     "power": 1.3,
+     "aura": 1
+    },
+    {
+     "every": 0.8,
+     "power": 1.3,
+     "aura": 1
+    },
+    {
+     "every": 0.9,
+     "power": 1.2,
+     "aura": 0.5
+    },
+    {
+     "every": 0.9,
+     "power": 1.2,
+     "aura": 0.5
+    }
+   ],
+   "weight": 10,
+   "speed": 90,
+   "size": 5
+  },
+  {
+   "id": "dachshund",
+   "ability": {
+    "kind": "dig",
+    "every": 6,
+    "gold": 6,
+    "bonusChance": 0.2
+   },
+   "aura": {
+    "greed": 0.08
+   },
+   "levelUps": [
+    {
+     "every": 0.8,
+     "power": 1.4,
+     "aura": 1
+    },
+    {
+     "every": 0.8,
+     "power": 1.4,
+     "aura": 1
+    },
+    {
+     "every": 0.9,
+     "power": 1.2,
+     "aura": 0.5
+    },
+    {
+     "every": 0.9,
+     "power": 1.2,
+     "aura": 0.5
+    }
+   ],
+   "weight": 10,
+   "speed": 80,
+   "size": 5
+  },
+  {
+   "id": "greyhound",
+   "ability": {
+    "kind": "zoomies",
+    "damage": 30,
+    "every": 4,
+    "length": 150
+   },
+   "aura": {
+    "moveSpeed": 0.06
+   },
+   "levelUps": [
+    {
+     "every": 0.8,
+     "power": 1.5,
+     "aura": 1
+    },
+    {
+     "every": 0.8,
+     "power": 1.5,
+     "aura": 1
+    },
+    {
+     "every": 0.95,
+     "power": 1.25,
+     "aura": 0.5
+    },
+    {
+     "every": 0.95,
+     "power": 1.25,
+     "aura": 0.5
+    }
+   ],
+   "weight": 8,
+   "speed": 170,
+   "size": 6
+  },
+  {
+   "id": "pomchi",
+   "ability": {
+    "kind": "listen",
+    "every": 5,
+    "range": 600,
+    "marks": [
+     1,
+     1,
+     2,
+     2,
+     3
+    ],
+    "bonus": 0.25,
+    "seconds": 8
+   },
+   "aura": {
+    "luck": 0.06
+   },
+   "levelUps": [
+    {
+     "every": 0.88,
+     "power": 1.25,
+     "aura": 1
+    },
+    {
+     "every": 0.88,
+     "power": 1.25,
+     "aura": 1
+    },
+    {
+     "every": 0.88,
+     "power": 1.25,
+     "aura": 0.5
+    },
+    {
+     "every": 0.88,
+     "power": 1.25,
+     "aura": 0.5
+    }
+   ],
+   "weight": 0,
+   "legendary": true,
+   "speed": 105,
+   "size": 5
+  },
+  {
+   "id": "pomeranian",
+   "ability": {
+    "kind": "puff",
+    "every": 10,
+    "charges": 1,
+    "moreChargesAt": 3,
+    "radius": 50,
+    "push": 220,
+    "stun": 0.5,
+    "stunAt": 5
+   },
+   "aura": {
+    "recovery": 0.15
+   },
+   "levelUps": [
+    {
+     "every": 0.88,
+     "power": 1.25,
+     "aura": 1
+    },
+    {
+     "every": 0.88,
+     "power": 1.25,
+     "aura": 1
+    },
+    {
+     "every": 0.88,
+     "power": 1.25,
+     "aura": 0.5
+    },
+    {
+     "every": 0.88,
+     "power": 1.25,
+     "aura": 0.5
+    }
+   ],
+   "weight": 0,
+   "legendary": true,
+   "speed": 95,
+   "size": 5
+  },
+  {
+   "id": "retriever",
+   "ability": {
+    "kind": "fetch",
+    "radius": 120,
+    "every": 3
+   },
+   "aura": {
+    "magnet": 0.1
+   },
+   "levelUps": [
+    {
+     "every": 0.8,
+     "power": 1.3,
+     "aura": 1
+    },
+    {
+     "every": 0.8,
+     "power": 1.3,
+     "aura": 1
+    },
+    {
+     "every": 0.9,
+     "power": 1.3,
+     "aura": 0.5
+    },
+    {
+     "every": 0.9,
+     "power": 1.3,
+     "aura": 0.5
+    }
+   ],
+   "weight": 12,
+   "speed": 95,
+   "size": 6
+  },
+  {
+   "id": "saint-bernard",
+   "ability": {
+    "kind": "rescue",
+    "heal": 25,
+    "threshold": 0.4,
+    "every": 20
+   },
+   "aura": {
+    "recovery": 0.2
+   },
+   "levelUps": [
+    {
+     "every": 0.8,
+     "power": 1.4,
+     "aura": 1
+    },
+    {
+     "every": 0.8,
+     "power": 1.4,
+     "aura": 1
+    },
+    {
+     "every": 0.85,
+     "power": 1.2,
+     "aura": 0.5
+    },
+    {
+     "every": 0.85,
+     "power": 1.2,
+     "aura": 0.5
+    }
+   ],
+   "weight": 8,
+   "speed": 75,
+   "size": 8
+  },
+  {
+   "id": "terrier",
+   "ability": {
+    "kind": "bite",
+    "damage": 22,
+    "every": 0.9,
+    "range": 110
+   },
+   "aura": {
+    "might": 0.03
+   },
+   "levelUps": [
+    {
+     "every": 0.8,
+     "power": 1.5,
+     "aura": 1
+    },
+    {
+     "every": 0.8,
+     "power": 1.5,
+     "aura": 1
+    },
+    {
+     "every": 1,
+     "power": 1.25,
+     "aura": 0.5
+    },
+    {
+     "every": 1,
+     "power": 1.25,
+     "aura": 0.5
+    }
+   ],
+   "weight": 12,
+   "speed": 140,
+   "size": 5
+  },
+  {
+   "id": "zelda-and-link",
+   "ability": {
+    "kind": "eclipse",
+    "every": 5,
+    "puff": {
+     "charges": 1,
+     "moreChargesAt": 3,
+     "radius": 50,
+     "push": 220,
+     "stun": 0.5,
+     "stunAt": 5
+    },
+    "puffBeats": 2,
+    "listen": {
+     "range": 600,
+     "marks": [
+      1,
+      1,
+      2,
+      2,
+      3
+     ],
+     "bonus": 0.25,
+     "seconds": 8
+    },
+    "corona": {
+     "every": 50,
+     "radius": 110,
+     "bonus": 0.1,
+     "seconds": 1,
+     "charges": 1
+    }
+   },
+   "aura": {
+    "recovery": 0.15,
+    "luck": 0.06
+   },
+   "levelUps": [
+    {
+     "every": 0.88,
+     "power": 1.25,
+     "aura": 1
+    },
+    {
+     "every": 0.88,
+     "power": 1.25,
+     "aura": 1
+    },
+    {
+     "every": 0.88,
+     "power": 1.25,
+     "aura": 0.5
+    },
+    {
+     "every": 0.88,
+     "power": 1.25,
+     "aura": 0.5
+    }
+   ],
+   "weight": 0,
+   "legendary": true,
+   "speed": 100,
+   "size": 10
+  }
+ ],
+ "pois": [
+  {
+   "kind": "paidChest",
+   "radius": 12
+  },
+  {
+   "kind": "chargeShrine",
+   "radius": 26
+  },
+  {
+   "kind": "curseShrine",
+   "radius": 18
+  },
+  {
+   "kind": "vendor",
+   "radius": 18
+  },
+  {
+   "kind": "microwave",
+   "radius": 20
+  },
+  {
+   "kind": "crops",
+   "radius": 10
+  },
+  {
+   "kind": "eliteNest",
+   "radius": 60
+  },
+  {
+   "kind": "bossLair",
+   "radius": 110
+  },
+  {
+   "kind": "dog",
+   "radius": 16
+  },
+  {
+   "kind": "botDock",
+   "radius": 18
+  },
+  {
+   "kind": "whetstone",
+   "radius": 20
+  },
+  {
+   "kind": "dinnerBell",
+   "radius": 14
+  },
+  {
+   "kind": "taterSlots",
+   "radius": 22
+  },
+  {
+   "kind": "seedVault",
+   "radius": 24
+  },
+  {
+   "kind": "taterMagnet",
+   "radius": 20
+  },
+  {
+   "kind": "rootTunnel",
+   "radius": 20
+  },
+  {
+   "kind": "taterLantern",
+   "radius": 12
+  },
+  {
+   "kind": "spudFreezer",
+   "radius": 18
+  },
+  {
+   "kind": "frenzyFryer",
+   "radius": 18
+  },
+  {
+   "kind": "goldenShrine",
+   "radius": 26
+  },
+  {
+   "kind": "dogKennel",
+   "radius": 20
+  }
+ ],
+ "botHelps": [
+  {
+   "id": "bubbler",
+   "help": {
+    "kind": "shield",
+    "seconds": 3,
+    "healFraction": 0.2
+   },
+   "weight": 2
+  },
+  {
+   "id": "gifter",
+   "help": {
+    "kind": "gift",
+    "coins": 6,
+    "coinsPerMin": 1.5,
+    "levelFraction": 0.4,
+    "beaconChance": 0.05
+   },
+   "weight": 3
+  },
+  {
+   "id": "tidier",
+   "help": {
+    "kind": "tidy",
+    "radius": 600
+   },
+   "weight": 2
+  },
+  {
+   "id": "zapper",
+   "help": {
+    "kind": "zap",
+    "targets": 6,
+    "radius": 120,
+    "eliteHpFraction": 0.15
+   },
+   "weight": 3
+  }
+ ],
+ "botShapes": [
+  {
+   "id": "blob",
+   "weight": 1
+  },
+  {
+   "id": "pebble",
+   "weight": 1
+  },
+  {
+   "id": "bean",
+   "weight": 1
+  },
+  {
+   "id": "egg",
+   "weight": 1
+  },
+  {
+   "id": "squircle",
+   "weight": 1
+  },
+  {
+   "id": "tablet",
+   "weight": 1
+  },
+  {
+   "id": "capsule",
+   "weight": 1
+  },
+  {
+   "id": "cylinder",
+   "weight": 1
+  },
+  {
+   "id": "hex",
+   "weight": 1
+  },
+  {
+   "id": "gem",
+   "weight": 1
+  },
+  {
+   "id": "crystal",
+   "weight": 1
+  },
+  {
+   "id": "wedge",
+   "weight": 1
+  },
+  {
+   "id": "shield",
+   "weight": 1
+  },
+  {
+   "id": "dome",
+   "weight": 1
+  },
+  {
+   "id": "arch",
+   "weight": 1
+  },
+  {
+   "id": "cloud",
+   "weight": 1
+  },
+  {
+   "id": "teardrop",
+   "weight": 1
+  },
+  {
+   "id": "leaf",
+   "weight": 1
+  },
+  {
+   "id": "square",
+   "weight": 1
+  },
+  {
+   "id": "sparkle",
+   "weight": 1
+  },
+  {
+   "id": "clover",
+   "weight": 1
+  },
+  {
+   "id": "flower",
+   "weight": 1
+  },
+  {
+   "id": "heart",
+   "weight": 1
+  },
+  {
+   "id": "house",
+   "weight": 1
+  },
+  {
+   "id": "star",
+   "weight": 1
+  },
+  {
+   "id": "pumpkin",
+   "weight": 0.5,
+   "colors": [
+    "orange"
+   ]
+  }
+ ],
+ "botColors": [
+  {
+   "id": "black"
+  },
+  {
+   "id": "brown"
+  },
+  {
+   "id": "red"
+  },
+  {
+   "id": "orange"
+  },
+  {
+   "id": "yellow"
+  },
+  {
+   "id": "green"
+  },
+  {
+   "id": "cyan"
+  },
+  {
+   "id": "blue"
+  },
+  {
+   "id": "violet"
+  },
+  {
+   "id": "magenta"
+  },
+  {
+   "id": "gray"
+  }
+ ],
+ "botLineCount": 6,
  "bosses": [
   {
    "id": "amusing",
@@ -10689,1501 +12199,5 @@
    ],
    "xp": 300
   }
- ],
- "biomes": [
-  {
-   "id": "chip-canyons",
-   "placement": {
-    "kind": "climate",
-    "temperature": 2,
-    "moisture": 0
-   },
-   "enemies": [
-    [
-     "crumb-ant",
-     "oil-drip"
-    ],
-    [
-     "sand-crab"
-    ],
-    [
-     "field-crow",
-     "sizzle-imp"
-    ],
-    [
-     "harvest-mouse"
-    ],
-    [
-     "grease-fiend"
-    ]
-   ],
-   "hazard": null,
-   "props": [
-    "chip-stack",
-    "boulder",
-    "dry-bush"
-   ],
-   "propsPerChunk": 12,
-   "poiWeights": {
-    "dog": 2.2,
-    "paidChest": 4,
-    "chargeShrine": 3,
-    "crops": 1,
-    "vendor": 3,
-    "microwave": 1,
-    "curseShrine": 1,
-    "eliteNest": 2,
-    "bossLair": 0.5,
-    "botDock": 1,
-    "whetstone": 1,
-    "dinnerBell": 1,
-    "taterSlots": 1,
-    "seedVault": 0.5,
-    "taterMagnet": 1,
-    "rootTunnel": 0.4,
-    "taterLantern": 3,
-    "spudFreezer": 1,
-    "frenzyFryer": 1,
-    "goldenShrine": 0.4,
-    "dogKennel": 0.5
-   },
-   "poisPerChunk": 2,
-   "goldMult": 1.1,
-   "xpMult": 1.05
-  },
-  {
-   "id": "coin-laundromat",
-   "placement": {
-    "kind": "landmark",
-    "radius": 400,
-    "event": "loose-change"
-   },
-   "enemies": [
-    [
-     "lint-bunny"
-    ],
-    [
-     "sock-pile"
-    ],
-    [
-     "field-rat",
-     "blight-spore"
-    ],
-    [
-     "ice-imp"
-    ],
-    [
-     "mud-golem"
-    ]
-   ],
-   "hazard": null,
-   "props": [
-    "washer",
-    "dryer",
-    "laundry-cart"
-   ],
-   "propsPerChunk": 14,
-   "poiWeights": {
-    "dog": 2.2,
-    "microwave": 6,
-    "paidChest": 3,
-    "vendor": 1,
-    "chargeShrine": 1
-   },
-   "poisPerChunk": 2,
-   "goldMult": 1.4,
-   "xpMult": 1.05
-  },
-  {
-   "id": "compost-caves",
-   "placement": {
-    "kind": "climate",
-    "temperature": 0,
-    "moisture": 1
-   },
-   "enemies": [
-    [
-     "compost-maggot"
-    ],
-    [
-     "cave-grub"
-    ],
-    [
-     "field-rat",
-     "blight-spore"
-    ],
-    [
-     "mole"
-    ],
-    [
-     "mud-golem"
-    ]
-   ],
-   "hazard": {
-    "kind": "spores",
-    "shape": "clover",
-    "perChunk": 3,
-    "radius": 20,
-    "strength": 8
-   },
-   "props": [
-    "stalagmite",
-    "rot-pile",
-    "glow-shroom"
-   ],
-   "propsPerChunk": 14,
-   "poiWeights": {
-    "dog": 2.2,
-    "paidChest": 5,
-    "chargeShrine": 2,
-    "crops": 1,
-    "vendor": 1,
-    "microwave": 2,
-    "curseShrine": 3,
-    "eliteNest": 2,
-    "bossLair": 0.6,
-    "botDock": 1,
-    "whetstone": 1,
-    "dinnerBell": 1,
-    "taterSlots": 1,
-    "seedVault": 0.5,
-    "taterMagnet": 1,
-    "rootTunnel": 0.4,
-    "taterLantern": 3,
-    "spudFreezer": 1,
-    "frenzyFryer": 1,
-    "goldenShrine": 0.4,
-    "dogKennel": 0.5
-   },
-   "poisPerChunk": 2,
-   "goldMult": 1.15,
-   "xpMult": 1.15
-  },
-  {
-   "id": "crop-circle",
-   "placement": {
-    "kind": "landmark",
-    "radius": 460,
-    "event": "lost-saucer"
-   },
-   "enemies": [
-    [
-     "little-grey",
-     "aphid"
-    ],
-    [
-     "spittlebug"
-    ],
-    [
-     "field-crow",
-     "blight-spore"
-    ],
-    [
-     "mole"
-    ],
-    [
-     "mud-golem"
-    ]
-   ],
-   "hazard": null,
-   "props": [
-    "flattened-wheat",
-    "scorch-ring",
-    "probe-beacon"
-   ],
-   "propsPerChunk": 10,
-   "poiWeights": {
-    "dog": 2.2,
-    "crops": 6,
-    "chargeShrine": 4,
-    "paidChest": 2,
-    "curseShrine": 1
-   },
-   "poisPerChunk": 2,
-   "goldMult": 1.1,
-   "xpMult": 1.2
-  },
-  {
-   "id": "frozen-tundra",
-   "placement": {
-    "kind": "climate",
-    "temperature": 0,
-    "moisture": 0
-   },
-   "enemies": [
-    [
-     "frost-flea"
-    ],
-    [
-     "snow-mold"
-    ],
-    [
-     "field-rat",
-     "field-crow"
-    ],
-    [
-     "ice-imp"
-    ],
-    [
-     "mud-golem"
-    ]
-   ],
-   "hazard": {
-    "kind": "chill",
-    "shape": "slab",
-    "perChunk": 4,
-    "radius": 28,
-    "strength": 0.3
-   },
-   "props": [
-    "ice-fry",
-    "snow-drift",
-    "frozen-crate"
-   ],
-   "propsPerChunk": 10,
-   "poiWeights": {
-    "dog": 2.2,
-    "paidChest": 4,
-    "chargeShrine": 3,
-    "crops": 1,
-    "vendor": 2,
-    "microwave": 2,
-    "curseShrine": 1,
-    "eliteNest": 1,
-    "bossLair": 0.4,
-    "botDock": 1,
-    "whetstone": 1,
-    "dinnerBell": 1,
-    "taterSlots": 1,
-    "seedVault": 0.5,
-    "taterMagnet": 1,
-    "rootTunnel": 0.4,
-    "taterLantern": 3,
-    "spudFreezer": 1,
-    "frenzyFryer": 1,
-    "goldenShrine": 0.4,
-    "dogKennel": 0.5
-   },
-   "poisPerChunk": 2,
-   "goldMult": 1,
-   "xpMult": 1.15
-  },
-  {
-   "id": "fry-oil-desert",
-   "placement": {
-    "kind": "climate",
-    "temperature": 3,
-    "moisture": 0
-   },
-   "enemies": [
-    [
-     "oil-drip",
-     "crumb-ant"
-    ],
-    [
-     "fry-fly"
-    ],
-    [
-     "sizzle-imp"
-    ],
-    [
-     "harvest-mouse"
-    ],
-    [
-     "grease-fiend"
-    ]
-   ],
-   "hazard": {
-    "kind": "burn",
-    "shape": "oval",
-    "perChunk": 3,
-    "radius": 22,
-    "strength": 10
-   },
-   "props": [
-    "cactus-fry",
-    "dune",
-    "oil-can"
-   ],
-   "propsPerChunk": 8,
-   "poiWeights": {
-    "dog": 2.2,
-    "paidChest": 5,
-    "chargeShrine": 2,
-    "crops": 1,
-    "vendor": 3,
-    "microwave": 1,
-    "curseShrine": 2,
-    "eliteNest": 1,
-    "bossLair": 0.5,
-    "botDock": 1,
-    "whetstone": 1,
-    "dinnerBell": 1,
-    "taterSlots": 1,
-    "seedVault": 0.5,
-    "taterMagnet": 1,
-    "rootTunnel": 0.4,
-    "taterLantern": 3,
-    "spudFreezer": 1,
-    "frenzyFryer": 1,
-    "goldenShrine": 0.4,
-    "dogKennel": 0.5
-   },
-   "poisPerChunk": 2,
-   "goldMult": 1.25,
-   "xpMult": 1
-  },
-  {
-   "id": "fry-palace",
-   "placement": {
-    "kind": "landmark",
-    "radius": 420,
-    "event": "lunch-rush"
-   },
-   "enemies": [
-    [
-     "parking-gull",
-     "crumb-ant"
-    ],
-    [
-     "dumpster-raccoon",
-     "fry-fly"
-    ],
-    [
-     "field-rat",
-     "sizzle-imp"
-    ],
-    [
-     "harvest-mouse"
-    ],
-    [
-     "grease-fiend"
-    ]
-   ],
-   "hazard": {
-    "kind": "burn",
-    "shape": "slab",
-    "perChunk": 2,
-    "radius": 18,
-    "strength": 8
-   },
-   "props": [
-    "neon-sign",
-    "parking-cone",
-    "dumpster",
-    "drive-thru-menu"
-   ],
-   "propsPerChunk": 12,
-   "poiWeights": {
-    "dog": 2.2,
-    "vendor": 2.3,
-    "microwave": 3,
-    "paidChest": 2,
-    "chargeShrine": 1,
-    "curseShrine": 1
-   },
-   "poisPerChunk": 2,
-   "goldMult": 1.2,
-   "xpMult": 1.15
-  },
-  {
-   "id": "gutterball-lanes",
-   "placement": {
-    "kind": "landmark",
-    "radius": 400,
-    "event": "strike"
-   },
-   "enemies": [
-    [
-     "bowling-pin",
-     "crumb-ant"
-    ],
-    [
-     "bowling-ball"
-    ],
-    [
-     "field-rat",
-     "field-crow"
-    ],
-    [
-     "harvest-mouse"
-    ],
-    [
-     "mud-golem"
-    ]
-   ],
-   "hazard": {
-    "kind": "slow",
-    "shape": "slab",
-    "perChunk": 3,
-    "radius": 26,
-    "strength": 0.4
-   },
-   "props": [
-    "lane-arrow",
-    "ball-return",
-    "pin-deck"
-   ],
-   "propsPerChunk": 12,
-   "poiWeights": {
-    "dog": 2.2,
-    "paidChest": 5,
-    "curseShrine": 2,
-    "vendor": 2,
-    "chargeShrine": 1
-   },
-   "poisPerChunk": 2,
-   "goldMult": 1.2,
-   "xpMult": 1.1
-  },
-  {
-   "id": "ketchup-bog",
-   "placement": {
-    "kind": "climate",
-    "temperature": 3,
-    "moisture": 1
-   },
-   "enemies": [
-    [
-     "ketchup-drop",
-     "bog-slime"
-    ],
-    [
-     "tomato-leech"
-    ],
-    [
-     "bog-toad",
-     "sizzle-imp"
-    ],
-    [
-     "ice-imp"
-    ],
-    [
-     "grease-fiend"
-    ]
-   ],
-   "hazard": {
-    "kind": "burn",
-    "shape": "drop",
-    "perChunk": 4,
-    "radius": 24,
-    "strength": 8
-   },
-   "props": [
-    "tomato-vine",
-    "bubble",
-    "bottle"
-   ],
-   "propsPerChunk": 12,
-   "poiWeights": {
-    "dog": 2.2,
-    "paidChest": 5,
-    "chargeShrine": 2,
-    "crops": 1,
-    "vendor": 2,
-    "microwave": 2,
-    "curseShrine": 2,
-    "eliteNest": 2,
-    "bossLair": 0.6,
-    "botDock": 1,
-    "whetstone": 1,
-    "dinnerBell": 1,
-    "taterSlots": 1,
-    "seedVault": 0.5,
-    "taterMagnet": 1,
-    "rootTunnel": 0.4,
-    "taterLantern": 3,
-    "spudFreezer": 1,
-    "frenzyFryer": 1,
-    "goldenShrine": 0.4,
-    "dogKennel": 0.5
-   },
-   "poisPerChunk": 2,
-   "goldMult": 1.3,
-   "xpMult": 1.1
-  },
-  {
-   "id": "mash-swamp",
-   "placement": {
-    "kind": "climate",
-    "temperature": 2,
-    "moisture": 1
-   },
-   "enemies": [
-    [
-     "bog-slime",
-     "ketchup-drop"
-    ],
-    [
-     "garden-slug"
-    ],
-    [
-     "bog-toad"
-    ],
-    [
-     "mole"
-    ],
-    [
-     "mud-golem"
-    ]
-   ],
-   "hazard": {
-    "kind": "slow",
-    "shape": "oval",
-    "perChunk": 4,
-    "radius": 30,
-    "strength": 0.45
-   },
-   "props": [
-    "reed",
-    "mash-mound",
-    "log"
-   ],
-   "propsPerChunk": 12,
-   "poiWeights": {
-    "dog": 2.2,
-    "paidChest": 4,
-    "chargeShrine": 2,
-    "crops": 2,
-    "vendor": 2,
-    "microwave": 2,
-    "curseShrine": 2,
-    "eliteNest": 1,
-    "bossLair": 0.4,
-    "botDock": 1,
-    "whetstone": 1,
-    "dinnerBell": 1,
-    "taterSlots": 1,
-    "seedVault": 0.5,
-    "taterMagnet": 1,
-    "rootTunnel": 0.4,
-    "taterLantern": 3,
-    "spudFreezer": 1,
-    "frenzyFryer": 1,
-    "goldenShrine": 0.4,
-    "dogKennel": 0.5
-   },
-   "poisPerChunk": 2,
-   "goldMult": 1.1,
-   "xpMult": 1.05
-  },
-  {
-   "id": "peel-forest",
-   "placement": {
-    "kind": "climate",
-    "temperature": 1,
-    "moisture": 1
-   },
-   "enemies": [
-    [
-     "aphid",
-     "sprout-mite"
-    ],
-    [
-     "wireworm-larva",
-     "potato-beetle"
-    ],
-    [
-     "blight-spore",
-     "field-rat"
-    ],
-    [
-     "harvest-mouse"
-    ],
-    [
-     "mud-golem"
-    ]
-   ],
-   "hazard": {
-    "kind": "thorns",
-    "shape": "splat",
-    "perChunk": 3,
-    "radius": 18,
-    "strength": 6
-   },
-   "props": [
-    "peel-tree",
-    "bramble",
-    "mushroom"
-   ],
-   "propsPerChunk": 12,
-   "poiWeights": {
-    "dog": 2.2,
-    "paidChest": 4,
-    "chargeShrine": 3,
-    "crops": 2,
-    "vendor": 2,
-    "microwave": 1,
-    "curseShrine": 1,
-    "eliteNest": 2,
-    "bossLair": 0.4,
-    "botDock": 1,
-    "whetstone": 1,
-    "dinnerBell": 1,
-    "taterSlots": 1,
-    "seedVault": 0.5,
-    "taterMagnet": 1,
-    "rootTunnel": 0.4,
-    "taterLantern": 3,
-    "spudFreezer": 1,
-    "frenzyFryer": 1,
-    "goldenShrine": 0.4,
-    "dogKennel": 0.5
-   },
-   "poisPerChunk": 2,
-   "goldMult": 1,
-   "xpMult": 1.05
-  },
-  {
-   "id": "potato-field",
-   "placement": {
-    "kind": "climate",
-    "temperature": 1,
-    "moisture": 0
-   },
-   "enemies": [
-    [
-     "sprout-mite",
-     "aphid"
-    ],
-    [
-     "potato-beetle"
-    ],
-    [
-     "field-crow",
-     "blight-spore",
-     "reset-zombie"
-    ],
-    [
-     "mole"
-    ],
-    [
-     "mud-golem"
-    ]
-   ],
-   "hazard": null,
-   "props": [
-    "potato-plant",
-    "fence",
-    "hay-bale"
-   ],
-   "propsPerChunk": 14,
-   "poiWeights": {
-    "dog": 2.2,
-    "paidChest": 4,
-    "chargeShrine": 3,
-    "crops": 4,
-    "vendor": 2,
-    "microwave": 1,
-    "curseShrine": 1,
-    "eliteNest": 1,
-    "bossLair": 0.3,
-    "botDock": 1,
-    "whetstone": 1,
-    "dinnerBell": 1,
-    "taterSlots": 1,
-    "seedVault": 0.5,
-    "taterMagnet": 1,
-    "rootTunnel": 0.4,
-    "taterLantern": 3,
-    "spudFreezer": 1,
-    "frenzyFryer": 1,
-    "goldenShrine": 0.4,
-    "dogKennel": 0.5
-   },
-   "poisPerChunk": 2,
-   "goldMult": 1,
-   "xpMult": 1
-  }
- ],
- "events": [
-  {
-   "id": "bale-ring",
-   "effect": {
-    "kind": "wall",
-    "enemy": "hay-bale",
-    "count": 36,
-    "radius": 170,
-    "life": 22
-   }
-  },
-  {
-   "id": "fly-swarm",
-   "effect": {
-    "kind": "swarm",
-    "enemy": "swarm-fly",
-    "count": 26,
-    "width": 120
-   }
-  },
-  {
-   "id": "golden-scarab",
-   "effect": {
-    "kind": "lootRunner",
-    "enemy": "golden-scarab"
-   }
-  },
-  {
-   "id": "harvest-moon",
-   "effect": {
-    "kind": "goldRush",
-    "duration": 30,
-    "goldMult": 2
-   }
-  },
-  {
-   "id": "loose-change",
-   "effect": {
-    "kind": "goldRush",
-    "duration": 20,
-    "goldMult": 2
-   }
-  },
-  {
-   "id": "lost-saucer",
-   "effect": {
-    "kind": "lootRunner",
-    "enemy": "lost-saucer"
-   }
-  },
-  {
-   "id": "lunch-rush",
-   "effect": {
-    "kind": "swarm",
-    "enemy": "gull-flock",
-    "count": 24,
-    "width": 140
-   }
-  },
-  {
-   "id": "strike",
-   "effect": {
-    "kind": "wall",
-    "enemy": "bowling-ball",
-    "count": 10,
-    "radius": 200,
-    "life": 16
-   }
-  }
- ],
- "dogs": [
-  {
-   "id": "beagle",
-   "ability": {
-    "kind": "sniff",
-    "every": 8,
-    "gold": 3
-   },
-   "aura": {
-    "luck": 0.1
-   },
-   "levelUps": [
-    {
-     "every": 0.8,
-     "power": 1.4,
-     "aura": 1
-    },
-    {
-     "every": 0.8,
-     "power": 1.4,
-     "aura": 1
-    },
-    {
-     "every": 0.9,
-     "power": 1.2,
-     "aura": 0.5
-    },
-    {
-     "every": 0.9,
-     "power": 1.2,
-     "aura": 0.5
-    }
-   ],
-   "weight": 10,
-   "speed": 100,
-   "size": 5
-  },
-  {
-   "id": "collie",
-   "ability": {
-    "kind": "herd",
-    "radius": 46,
-    "push": 260,
-    "every": 2.5
-   },
-   "aura": {
-    "moveSpeed": 0.03
-   },
-   "levelUps": [
-    {
-     "every": 0.8,
-     "power": 1.3,
-     "aura": 1
-    },
-    {
-     "every": 0.8,
-     "power": 1.3,
-     "aura": 1
-    },
-    {
-     "every": 0.9,
-     "power": 1.2,
-     "aura": 0.5
-    },
-    {
-     "every": 0.9,
-     "power": 1.2,
-     "aura": 0.5
-    }
-   ],
-   "weight": 10,
-   "speed": 120,
-   "size": 6
-  },
-  {
-   "id": "corgi",
-   "ability": {
-    "kind": "bark",
-    "radius": 60,
-    "stun": 1,
-    "every": 5
-   },
-   "aura": {
-    "armor": 6
-   },
-   "levelUps": [
-    {
-     "every": 0.8,
-     "power": 1.3,
-     "aura": 1
-    },
-    {
-     "every": 0.8,
-     "power": 1.3,
-     "aura": 1
-    },
-    {
-     "every": 0.9,
-     "power": 1.2,
-     "aura": 0.5
-    },
-    {
-     "every": 0.9,
-     "power": 1.2,
-     "aura": 0.5
-    }
-   ],
-   "weight": 10,
-   "speed": 90,
-   "size": 5
-  },
-  {
-   "id": "dachshund",
-   "ability": {
-    "kind": "dig",
-    "every": 6,
-    "gold": 6,
-    "bonusChance": 0.2
-   },
-   "aura": {
-    "greed": 0.08
-   },
-   "levelUps": [
-    {
-     "every": 0.8,
-     "power": 1.4,
-     "aura": 1
-    },
-    {
-     "every": 0.8,
-     "power": 1.4,
-     "aura": 1
-    },
-    {
-     "every": 0.9,
-     "power": 1.2,
-     "aura": 0.5
-    },
-    {
-     "every": 0.9,
-     "power": 1.2,
-     "aura": 0.5
-    }
-   ],
-   "weight": 10,
-   "speed": 80,
-   "size": 5
-  },
-  {
-   "id": "greyhound",
-   "ability": {
-    "kind": "zoomies",
-    "damage": 30,
-    "every": 4,
-    "length": 150
-   },
-   "aura": {
-    "moveSpeed": 0.06
-   },
-   "levelUps": [
-    {
-     "every": 0.8,
-     "power": 1.5,
-     "aura": 1
-    },
-    {
-     "every": 0.8,
-     "power": 1.5,
-     "aura": 1
-    },
-    {
-     "every": 0.95,
-     "power": 1.25,
-     "aura": 0.5
-    },
-    {
-     "every": 0.95,
-     "power": 1.25,
-     "aura": 0.5
-    }
-   ],
-   "weight": 8,
-   "speed": 170,
-   "size": 6
-  },
-  {
-   "id": "pomchi",
-   "ability": {
-    "kind": "listen",
-    "every": 5,
-    "range": 600,
-    "marks": [
-     1,
-     1,
-     2,
-     2,
-     3
-    ],
-    "bonus": 0.25,
-    "seconds": 8
-   },
-   "aura": {
-    "luck": 0.06
-   },
-   "levelUps": [
-    {
-     "every": 0.88,
-     "power": 1.25,
-     "aura": 1
-    },
-    {
-     "every": 0.88,
-     "power": 1.25,
-     "aura": 1
-    },
-    {
-     "every": 0.88,
-     "power": 1.25,
-     "aura": 0.5
-    },
-    {
-     "every": 0.88,
-     "power": 1.25,
-     "aura": 0.5
-    }
-   ],
-   "weight": 0,
-   "legendary": true,
-   "speed": 105,
-   "size": 5
-  },
-  {
-   "id": "pomeranian",
-   "ability": {
-    "kind": "puff",
-    "every": 10,
-    "charges": 1,
-    "moreChargesAt": 3,
-    "radius": 50,
-    "push": 220,
-    "stun": 0.5,
-    "stunAt": 5
-   },
-   "aura": {
-    "recovery": 0.15
-   },
-   "levelUps": [
-    {
-     "every": 0.88,
-     "power": 1.25,
-     "aura": 1
-    },
-    {
-     "every": 0.88,
-     "power": 1.25,
-     "aura": 1
-    },
-    {
-     "every": 0.88,
-     "power": 1.25,
-     "aura": 0.5
-    },
-    {
-     "every": 0.88,
-     "power": 1.25,
-     "aura": 0.5
-    }
-   ],
-   "weight": 0,
-   "legendary": true,
-   "speed": 95,
-   "size": 5
-  },
-  {
-   "id": "retriever",
-   "ability": {
-    "kind": "fetch",
-    "radius": 120,
-    "every": 3
-   },
-   "aura": {
-    "magnet": 0.1
-   },
-   "levelUps": [
-    {
-     "every": 0.8,
-     "power": 1.3,
-     "aura": 1
-    },
-    {
-     "every": 0.8,
-     "power": 1.3,
-     "aura": 1
-    },
-    {
-     "every": 0.9,
-     "power": 1.3,
-     "aura": 0.5
-    },
-    {
-     "every": 0.9,
-     "power": 1.3,
-     "aura": 0.5
-    }
-   ],
-   "weight": 12,
-   "speed": 95,
-   "size": 6
-  },
-  {
-   "id": "saint-bernard",
-   "ability": {
-    "kind": "rescue",
-    "heal": 25,
-    "threshold": 0.4,
-    "every": 20
-   },
-   "aura": {
-    "recovery": 0.2
-   },
-   "levelUps": [
-    {
-     "every": 0.8,
-     "power": 1.4,
-     "aura": 1
-    },
-    {
-     "every": 0.8,
-     "power": 1.4,
-     "aura": 1
-    },
-    {
-     "every": 0.85,
-     "power": 1.2,
-     "aura": 0.5
-    },
-    {
-     "every": 0.85,
-     "power": 1.2,
-     "aura": 0.5
-    }
-   ],
-   "weight": 8,
-   "speed": 75,
-   "size": 8
-  },
-  {
-   "id": "terrier",
-   "ability": {
-    "kind": "bite",
-    "damage": 22,
-    "every": 0.9,
-    "range": 110
-   },
-   "aura": {
-    "might": 0.03
-   },
-   "levelUps": [
-    {
-     "every": 0.8,
-     "power": 1.5,
-     "aura": 1
-    },
-    {
-     "every": 0.8,
-     "power": 1.5,
-     "aura": 1
-    },
-    {
-     "every": 1,
-     "power": 1.25,
-     "aura": 0.5
-    },
-    {
-     "every": 1,
-     "power": 1.25,
-     "aura": 0.5
-    }
-   ],
-   "weight": 12,
-   "speed": 140,
-   "size": 5
-  },
-  {
-   "id": "zelda-and-link",
-   "ability": {
-    "kind": "eclipse",
-    "every": 5,
-    "puff": {
-     "charges": 1,
-     "moreChargesAt": 3,
-     "radius": 50,
-     "push": 220,
-     "stun": 0.5,
-     "stunAt": 5
-    },
-    "puffBeats": 2,
-    "listen": {
-     "range": 600,
-     "marks": [
-      1,
-      1,
-      2,
-      2,
-      3
-     ],
-     "bonus": 0.25,
-     "seconds": 8
-    },
-    "corona": {
-     "every": 50,
-     "radius": 110,
-     "bonus": 0.1,
-     "seconds": 1,
-     "charges": 1
-    }
-   },
-   "aura": {
-    "recovery": 0.15,
-    "luck": 0.06
-   },
-   "levelUps": [
-    {
-     "every": 0.88,
-     "power": 1.25,
-     "aura": 1
-    },
-    {
-     "every": 0.88,
-     "power": 1.25,
-     "aura": 1
-    },
-    {
-     "every": 0.88,
-     "power": 1.25,
-     "aura": 0.5
-    },
-    {
-     "every": 0.88,
-     "power": 1.25,
-     "aura": 0.5
-    }
-   ],
-   "weight": 0,
-   "legendary": true,
-   "speed": 100,
-   "size": 10
-  }
- ],
- "pois": [
-  {
-   "kind": "paidChest",
-   "radius": 12
-  },
-  {
-   "kind": "chargeShrine",
-   "radius": 26
-  },
-  {
-   "kind": "curseShrine",
-   "radius": 18
-  },
-  {
-   "kind": "vendor",
-   "radius": 18
-  },
-  {
-   "kind": "microwave",
-   "radius": 20
-  },
-  {
-   "kind": "crops",
-   "radius": 10
-  },
-  {
-   "kind": "eliteNest",
-   "radius": 60
-  },
-  {
-   "kind": "bossLair",
-   "radius": 110
-  },
-  {
-   "kind": "dog",
-   "radius": 16
-  },
-  {
-   "kind": "botDock",
-   "radius": 18
-  },
-  {
-   "kind": "whetstone",
-   "radius": 20
-  },
-  {
-   "kind": "dinnerBell",
-   "radius": 14
-  },
-  {
-   "kind": "taterSlots",
-   "radius": 22
-  },
-  {
-   "kind": "seedVault",
-   "radius": 24
-  },
-  {
-   "kind": "taterMagnet",
-   "radius": 20
-  },
-  {
-   "kind": "rootTunnel",
-   "radius": 20
-  },
-  {
-   "kind": "taterLantern",
-   "radius": 12
-  },
-  {
-   "kind": "spudFreezer",
-   "radius": 18
-  },
-  {
-   "kind": "frenzyFryer",
-   "radius": 18
-  },
-  {
-   "kind": "goldenShrine",
-   "radius": 26
-  },
-  {
-   "kind": "dogKennel",
-   "radius": 20
-  }
- ],
- "botHelps": [
-  {
-   "id": "bubbler",
-   "help": {
-    "kind": "shield",
-    "seconds": 3,
-    "healFraction": 0.2
-   },
-   "weight": 2
-  },
-  {
-   "id": "gifter",
-   "help": {
-    "kind": "gift",
-    "coins": 6,
-    "coinsPerMin": 1.5,
-    "levelFraction": 0.4,
-    "beaconChance": 0.05
-   },
-   "weight": 3
-  },
-  {
-   "id": "tidier",
-   "help": {
-    "kind": "tidy",
-    "radius": 600
-   },
-   "weight": 2
-  },
-  {
-   "id": "zapper",
-   "help": {
-    "kind": "zap",
-    "targets": 6,
-    "radius": 120,
-    "eliteHpFraction": 0.15
-   },
-   "weight": 3
-  }
- ],
- "botShapes": [
-  {
-   "id": "blob",
-   "weight": 1
-  },
-  {
-   "id": "pebble",
-   "weight": 1
-  },
-  {
-   "id": "bean",
-   "weight": 1
-  },
-  {
-   "id": "egg",
-   "weight": 1
-  },
-  {
-   "id": "squircle",
-   "weight": 1
-  },
-  {
-   "id": "tablet",
-   "weight": 1
-  },
-  {
-   "id": "capsule",
-   "weight": 1
-  },
-  {
-   "id": "cylinder",
-   "weight": 1
-  },
-  {
-   "id": "hex",
-   "weight": 1
-  },
-  {
-   "id": "gem",
-   "weight": 1
-  },
-  {
-   "id": "crystal",
-   "weight": 1
-  },
-  {
-   "id": "wedge",
-   "weight": 1
-  },
-  {
-   "id": "shield",
-   "weight": 1
-  },
-  {
-   "id": "dome",
-   "weight": 1
-  },
-  {
-   "id": "arch",
-   "weight": 1
-  },
-  {
-   "id": "cloud",
-   "weight": 1
-  },
-  {
-   "id": "teardrop",
-   "weight": 1
-  },
-  {
-   "id": "leaf",
-   "weight": 1
-  },
-  {
-   "id": "square",
-   "weight": 1
-  },
-  {
-   "id": "sparkle",
-   "weight": 1
-  },
-  {
-   "id": "clover",
-   "weight": 1
-  },
-  {
-   "id": "flower",
-   "weight": 1
-  },
-  {
-   "id": "heart",
-   "weight": 1
-  },
-  {
-   "id": "house",
-   "weight": 1
-  },
-  {
-   "id": "star",
-   "weight": 1
-  },
-  {
-   "id": "pumpkin",
-   "weight": 0.5,
-   "colors": [
-    "orange"
-   ]
-  }
- ],
- "botColors": [
-  {
-   "id": "black"
-  },
-  {
-   "id": "brown"
-  },
-  {
-   "id": "red"
-  },
-  {
-   "id": "orange"
-  },
-  {
-   "id": "yellow"
-  },
-  {
-   "id": "green"
-  },
-  {
-   "id": "cyan"
-  },
-  {
-   "id": "blue"
-  },
-  {
-   "id": "violet"
-  },
-  {
-   "id": "magenta"
-  },
-  {
-   "id": "gray"
-  }
- ],
- "botLineCount": 6
+ ]
 }

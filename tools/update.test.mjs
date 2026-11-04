@@ -5,6 +5,26 @@ import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { execFileSync } from 'node:child_process';
 
+test('extracts boss definitions and encounter order from either registry layout', () => {
+  const root = mkdtempSync(join(tmpdir(), 'wiki-dump-'));
+  try {
+    writeFileSync(join(root, 'package.json'), '{"type":"module"}');
+    writeFileSync(join(root, 'content.js'), 'export default {"content.boss.first.name":["First"]}');
+    for (const split of [false, true]) {
+      const defs = '[{id:"first",hp:650},{id:"second",hp:9000}]';
+      const bosses = `{boss:()=>{},bosses:${defs},bossOrder:[${defs}[1],${defs}[0]]}`;
+      writeFileSync(join(root, 'boot.js'), `export default {weapon:()=>{},allWeapons:[],${split ? 'bossIds:["first","second"]' : `...${bosses}`}}`);
+      writeFileSync(join(root, 'sim.js'), `const defaults={alive:1,floorShare:0,shotPuddleSec:1},levels={easy:{...defaults,alive:.8}}; export default ${split ? bosses : '{}'};`);
+      execFileSync(process.execPath, [new URL('./dump-build.mjs', import.meta.url).pathname, root, 'boot.js', 'sim.js', 'content.js', join(root, 'out')]);
+      const registry = JSON.parse(readFileSync(join(root, 'out', 'registry.json')));
+      assert.deepEqual(registry.bosses, [{ id: 'first', hp: 650 }, { id: 'second', hp: 9000 }]);
+      assert.deepEqual(registry.bossOrder.map((b) => b.id), ['second', 'first']);
+    }
+  } finally {
+    rmSync(root, { recursive: true, force: true });
+  }
+});
+
 for (const scenario of [
   { name: 'resumes review of the documented build', pending: 'main-current1.js' },
   { name: 'does not erase an interrupted review with --force', pending: 'main-current1.js', force: true },

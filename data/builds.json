@@ -390,5 +390,15 @@
   "status": "reviewed",
   "updated": "2026-11-04T23:38:40Z",
   "changes": "The HUD shows base icons before expansion icons finish loading, then refreshes newly available weapon/passive icons and loot banners. Projectile rendering now gathers visible shots once and reuses their interpolated positions and remaining lifetimes for trails, smears and sprites; simulation and damage are unchanged. Settings moves its scroll-down arrow outside the scrolling list and shows it only while more content remains below. The in-game changelog groups Andrew and the new weapons/buffs under their earlier release versions; those features remain. All extracted gameplay data, English content descriptions, difficulty values, atlas tables/pixels and wiki icons are unchanged, including Ketchup Kraken's five-blob fan and puddles, Andrew and all 93 weapons. Reviewed all 195 JavaScript modules, including both mount chunks, duplicate-name choices, workers, worklets and localizations; other differences only rename identifiers/assets or update build metadata."
+ },
+ {
+  "seen": "2026-11-04",
+  "main": "main-B2gf34bA.js",
+  "boot": "boot-C7O7Aize.js",
+  "sim": "sim-CrpXuTSY.js",
+  "commit": "6f02b53732ba",
+  "status": "reviewed",
+  "updated": "2026-11-04T23:58:38Z",
+  "changes": "Boss definitions, wave schedules and base boss visuals move from the boot module into the simulation, with a separate boss-looks lookup for rendering and a boss-ID-only boot registry. The encyclopedia builds its boss shelf from base bosses plus enabled flagged phases; boss lairs explicitly select the base-game order. All 13 boss definitions, attacks, visuals and order, normal/classic wave tables and overtime cycle are unchanged. All other extracted gameplay values, English content, difficulty values, atlas tables/pixels and wiki icons are unchanged, including Ketchup Kraken, Andrew and all 93 weapons. Reviewed all 196 JavaScript modules, including both mount and choices variants, workers, worklets and all localizations; remaining changes are identifier/asset renames and build metadata. Current citations and the extraction method now follow the moved code."
  }
 ]
