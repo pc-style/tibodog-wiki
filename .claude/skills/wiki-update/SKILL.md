@@ -33,6 +33,14 @@ Config objects can move between the sim and boot chunks. `diff-data` then report
 
 If `bun run build` fails with `config object with keys ... not found`, look at `cfgBy` in `lib/data.mjs` first.
 
+### Play the new build
+
+Load the `playing-tibo` skill and play the new build, not just its diff:
+
+- Smoke test: `node tools/play.mjs --build <new main> --minutes 5` must finish and report damage from several weapons. If it cannot find `Game`, the stat enum or the recompute function, fix the lookup in `tools/play.mjs` as part of this update.
+- For every changed weapon, item, boss, event or formula the diff shows, write a short scenario that measures the change on the old and new builds with the same seed and inputs. Keep the numbers in your report. A change you cannot reproduce in a run is not explained yet.
+- When a run settles an open question on `/coverage`, update that page in the same change (see the skill).
+
 ## 3. Fix the pages
 
 - Tables built from `data/` update on their own. Check prose that hard-codes numbers or names: difficulty notes, POI text, controls, revive and stat notes in `pages/*.mjs`.

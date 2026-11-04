@@ -5,7 +5,8 @@
   "scripts": {
     "build": "node build.mjs",
     "game:check": "node tools/update.mjs",
-    "game:update": "node tools/update.mjs --apply"
+    "game:update": "node tools/update.mjs --apply",
+    "play": "node tools/play.mjs"
   },
   "dependencies": {
     "@vercel/functions": "^3.10.5",
