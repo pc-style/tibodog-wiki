@@ -270,5 +270,15 @@
   "status": "reviewed",
   "updated": "2026-11-04T14:23:09Z",
   "changes": "Dog abilities gain ground marks and sparkles: bite impact rings, herd dust rings, bark echoes, fetch stars, dig holes and rescue dust puffs. Herd gusts glow more brightly, add glints and spread more dust; gusts and dust fade behind Tibo to keep him visible. These effects respect reduced-motion, flashes and effects-opacity settings. Simulation logic, content values, English content descriptions, difficulty settings and wiki icons are unchanged."
+ },
+ {
+  "seen": "2026-11-04",
+  "main": "main-CImxOYfs.js",
+  "boot": "boot-DXrmljff.js",
+  "sim": "sim-C5GWJNAe.js",
+  "commit": "68b1393536fb",
+  "status": "reviewed",
+  "updated": "2026-11-04T14:40:04Z",
+  "changes": "Item bags and healing snacks get new sprites, coloured glow halos and sparkles. Item bags hop while idle and shake as they charge; snacks pulse. Opening a bag throws confetti, while collecting a snack scatters leaves; both add brief sparkles and a fading halo. Reduced motion uses still poses, and disabling flashes dims burst light and skips the brightest bag-flare frames. The sprite atlas is repacked; other sprite frames and wiki icons are unchanged. Simulation logic, content values, English content descriptions and difficulty settings are unchanged."
  }
 ]
