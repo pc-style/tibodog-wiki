@@ -9,6 +9,14 @@
   const side = current?.closest('.side');
   if (side && side.scrollHeight > side.clientHeight) side.scrollTop = current.offsetTop - side.clientHeight / 3;
 
+  // Keep the infobox in view while scrolling, but only when all of it fits on screen.
+  const box = document.querySelector('.infobox');
+  if (box) {
+    const fit = () => box.classList.toggle('fits', box.offsetHeight + 96 <= window.innerHeight);
+    fit();
+    window.addEventListener('resize', fit);
+  }
+
   // Show exact UTC times also in the reader's time zone, with how long ago they were.
   const ago = (ms) => {
     const m = Math.round(ms / 60000);

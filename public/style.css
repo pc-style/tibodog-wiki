@@ -82,6 +82,8 @@ pre {
   font-size: 13px; line-height: 1.55; max-height: 420px; margin: 16px 0;
 }
 code.nw { white-space: nowrap; }
+/* Long unbroken values (JSON constants) get their own wrapping block instead of splitting a sentence. */
+code.long { display: block; margin: 8px 0; padding: 8px 12px; border-radius: var(--radius-sm); white-space: normal; overflow-wrap: anywhere; line-height: 1.55; }
 pre code { background: none; padding: 0; font-size: inherit; overflow-wrap: normal; }
 img { max-width: 100%; }
 .sr, .skip:not(:focus) { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
@@ -202,7 +204,7 @@ strong { font-weight: 650; }
 hr { border: 0; border-top: 1px solid var(--line); margin: 32px 0; }
 
 /* Source citations in running text: keep them, but quiet. */
-article small { font-size: 12px; color: var(--muted); }
+article small { display: inline-block; max-width: 100%; font-size: 12px; color: var(--muted); }
 article small code { background: none; padding: 0; color: inherit; font-size: 11px; }
 
 /* ---------- On this page ---------- */
@@ -235,8 +237,7 @@ article small code { background: none; padding: 0; color: inherit; font-size: 11
 .with-ib > .ib-body { grid-column: 1; grid-row: 2; min-width: 0; }
 .with-ib > .ib-body > :first-child, .with-ib > .ib-body > .toc:first-child + * { margin-top: 0; }
 .infobox {
-  grid-column: 2; grid-row: 1 / span 2; position: sticky; top: calc(var(--header-h) + 24px);
-  max-height: calc(100vh - var(--header-h) - 48px); overflow-y: auto; scrollbar-width: thin;
+  grid-column: 2; grid-row: 1 / span 2;
   border: 1px solid var(--line); border-radius: var(--radius); background: var(--panel); font-size: 13.5px;
   box-shadow: var(--shadow);
 }
@@ -253,16 +254,15 @@ article small code { background: none; padding: 0; color: inherit; font-size: 11
 .infobox td { color: var(--text); font-variant-numeric: tabular-nums; }
 .infobox td .ico { height: 22px; margin-right: 4px; }
 
-/* Sticky only when the whole infobox fits on screen; otherwise it would need its own scrollbar. */
-@media (max-height: 859px) { .infobox { position: static; max-height: none; overflow: visible; } }
+/* site.js adds .fits when the whole card fits on screen; taller cards scroll with the page. */
+.infobox.fits { position: sticky; top: calc(var(--header-h) + 24px); }
 
 /* ---------- Tables ---------- */
 .table-wrap {
-  overflow-x: auto; margin: 16px 0 24px; width: fit-content; max-width: 100%;
+  overflow-x: auto; margin: 16px 0 24px; width: fit-content; min-width: min(100%, 26rem); max-width: 100%;
   border: 1px solid var(--line); border-radius: var(--radius);
 }
-.table-wrap > .wikitable { min-width: min(100%, 26rem); }
-.wikitable { border-collapse: collapse; font-size: 14px; line-height: 1.45; font-variant-numeric: tabular-nums; }
+.wikitable { width: 100%; border-collapse: collapse; font-size: 14px; line-height: 1.45; font-variant-numeric: tabular-nums; }
 .wikitable th, .wikitable td { padding: 9px 12px; vertical-align: middle; text-align: left; border-bottom: 1px solid var(--line-2); }
 .wikitable tbody tr:last-child td { border-bottom: 0; }
 .wikitable th {
@@ -352,7 +352,8 @@ blockquote p { margin: 6px 0; }
   h2 { font-size: 21px; margin-top: 40px; }
   .lead { font-size: 17px; }
   .with-ib { display: block; }
-  .infobox { position: static; max-height: none; width: auto; margin: 0 0 28px; }
+  code.nw { white-space: normal; overflow-wrap: anywhere; }
+  .infobox, .infobox.fits { position: static; width: auto; margin: 0 0 28px; }
   .toc-in > ol:has(> li:nth-child(6)) { columns: auto; }
   .anchor { display: none; }
   .toc-in { max-width: none; }
