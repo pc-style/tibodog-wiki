@@ -220,5 +220,15 @@
   "status": "reviewed",
   "updated": "2026-11-04T08:11:00Z",
   "changes": "Sprite rendering switches to power-of-two texture-sheet heights and sprite-local texture coordinates, with sampling snapped to a 1/8192-texel grid. Outlines, shadows, projectile sprites and ghost dithering use the local coordinates too. Bright interiors of ground effects are darker and their added glow is slightly reduced. The debug sheetrows URL option now accepts only positive powers of two. The in-game changelog adds a note about notices, such as a dog joining the pack, being centred with the controls hint. Simulation logic, content values, English content descriptions, difficulty settings and wiki icons are unchanged."
+ },
+ {
+  "seen": "2026-11-04",
+  "main": "main-_GgnqVWu.js",
+  "boot": "boot-CaTIXMl1.js",
+  "sim": "sim-B6PzHpYI.js",
+  "commit": "0e25ad680874",
+  "status": "reviewed",
+  "updated": "2026-11-04T08:38:15Z",
+  "changes": "The in-game changelog moves seven existing notes from its next section into release ec984b0, dated 2026-11-03: world effects, Sir Strawman's returning sickles, slow-connection Story reveals, font-loading card refits, Chinese/Japanese/Korean text fit, Moldy Shrine menu fit, and Indic/Thai card marks. These are older notes being grouped, not new gameplay changes in this build. Game data, English content descriptions, difficulty settings, simulation and rendering logic, and wiki icons are unchanged."
  }
 ]
