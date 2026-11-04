@@ -130,13 +130,6 @@
     `<li role="option"><a href="${e.u}">${e.i ? `<img class="ico" src="/icons/${e.i}.png" alt="" height="22">` : ''}<span>${esc(e.t)}</span><small>${esc(e.s)}</small></a></li>`;
   let sel = -1;
   if (input && list) {
-    // "/" jumps to search from anywhere outside a text field.
-    document.addEventListener('keydown', (e) => {
-      if (e.key !== '/' || e.ctrlKey || e.metaKey || e.altKey) return;
-      if (e.target.closest?.('input, textarea, select, [contenteditable]')) return;
-      e.preventDefault();
-      input.focus();
-    });
     input.addEventListener('focus', load, { once: true });
     input.addEventListener('input', async () => {
       await load();
