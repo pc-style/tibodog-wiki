@@ -75,12 +75,13 @@ a.ext::after { content: "↗"; font-size: .7em; margin-left: 2px; opacity: .7; }
 ::selection { background: var(--accent-soft); }
 code {
   font-family: var(--mono); font-size: .84em; color: var(--code-text);
-  background: var(--code); padding: .12em .38em; border-radius: 5px; overflow-wrap: anywhere;
+  background: var(--code); padding: .12em .38em; border-radius: 5px; overflow-wrap: break-word;
 }
 pre {
   background: var(--code); padding: 14px 16px; border-radius: var(--radius); overflow: auto;
   font-size: 13px; line-height: 1.55; max-height: 420px; margin: 16px 0;
 }
+code.nw { white-space: nowrap; }
 pre code { background: none; padding: 0; font-size: inherit; overflow-wrap: normal; }
 img { max-width: 100%; }
 .sr, .skip:not(:focus) { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
@@ -192,6 +193,7 @@ h2:hover .anchor, h3:hover .anchor, .anchor:focus { opacity: 1; text-decoration:
 /* Keep running text at a readable measure; tables and cards may use the full width. */
 article > p, article > ul, article > ol, article > blockquote, article > h2, article > h3,
 .ib-body > p, .ib-body > ul, .ib-body > ol, .ib-body > blockquote { max-width: 76ch; }
+.with-ib > .lead { max-width: none; }
 p { margin: 0 0 16px; }
 ul, ol { padding-left: 24px; margin: 0 0 16px; }
 li { margin: 4px 0; }
@@ -229,10 +231,11 @@ article small code { background: none; padding: 0; color: inherit; font-size: 11
 
 /* ---------- Infobox ---------- */
 .with-ib { display: grid; grid-template-columns: minmax(0, 1fr) 320px; column-gap: 40px; align-items: start; }
-.with-ib > .ib-body { grid-column: 1; grid-row: 1; min-width: 0; }
+.with-ib > .lead { grid-column: 1; grid-row: 1; }
+.with-ib > .ib-body { grid-column: 1; grid-row: 2; min-width: 0; }
 .with-ib > .ib-body > :first-child, .with-ib > .ib-body > .toc:first-child + * { margin-top: 0; }
 .infobox {
-  grid-column: 2; grid-row: 1; position: sticky; top: calc(var(--header-h) + 24px);
+  grid-column: 2; grid-row: 1 / span 2; position: sticky; top: calc(var(--header-h) + 24px);
   max-height: calc(100vh - var(--header-h) - 48px); overflow-y: auto; scrollbar-width: thin;
   border: 1px solid var(--line); border-radius: var(--radius); background: var(--panel); font-size: 13.5px;
   box-shadow: var(--shadow);
@@ -249,6 +252,9 @@ article small code { background: none; padding: 0; color: inherit; font-size: 11
 .infobox th { width: 36%; font-weight: 500; color: var(--muted); padding-right: 8px; }
 .infobox td { color: var(--text); font-variant-numeric: tabular-nums; }
 .infobox td .ico { height: 22px; margin-right: 4px; }
+
+/* Sticky only when the whole infobox fits on screen; otherwise it would need its own scrollbar. */
+@media (max-height: 859px) { .infobox { position: static; max-height: none; overflow: visible; } }
 
 /* ---------- Tables ---------- */
 .table-wrap {
