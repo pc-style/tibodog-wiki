@@ -320,5 +320,15 @@
   "status": "reviewed",
   "updated": "2026-11-04T16:59:21Z",
   "changes": "Charging pests kick up dust and bouncing grit when they launch and stop, and leave a dust trail during a charge, in both the main and debug renderers; reduced motion hides these effects. Wandering Eyes and All-Seeing Spud shots gain directional turning poses, glancing eyes, trails, glow and impact pops in the main renderer. Reduced motion suppresses their trails and holds impact poses; disabling flashes skips the brightest impact frame. The early sprite atlas adds those animations and repacks unchanged frames; All-Seeing Spud's dot sprite is redrawn. The atlas-band worker can queue 16 unacknowledged bands instead of 4, without changing its pixel painting. Combat simulation is byte-identical after asset-name changes; content values, extracted gameplay settings, English text, difficulty settings, late-atlas frames and wiki icons are unchanged."
+ },
+ {
+  "seen": "2026-11-04",
+  "main": "main-SzYkMvQy.js",
+  "boot": "boot-CiKm-RaL.js",
+  "sim": "sim-DTIB8Y1f.js",
+  "commit": "d28115289cab",
+  "status": "reviewed",
+  "updated": "2026-11-04T17:23:43Z",
+  "changes": "Link and Zelda & Link show stored fluff as orbiting tufts, with a pop and outward wisps when a charge is spent. Zelda's ordinary pest marks gain moons, remaining-time clocks and rising stars, separate from eclipse marks. Reduced motion holds the fluff and moons still and hides mark stars; disabling flashes suppresses the mark pop and blinking. Both renderers replace the frenzy ring sprite with a gold ring, rotating chevrons and streaks that accelerate in the final 6 seconds and fade in the final second; reduced motion freezes the ring. The late atlas adds 11 companion-effect clips; the early atlas drops the old frenzy ring and shrinks from 1664 to 1536 pixels high. All retained atlas clips and wiki icons are pixel-identical. The in-game changelog moves an existing graphics-recovery note into a versioned wave and defers older entries. Combat simulation is identical after asset-name changes; gameplay data, English content, difficulty values, workers and audio worklets are unchanged."
  }
 ]
