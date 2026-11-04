@@ -30,11 +30,11 @@ export function systemPages(entityPages) {
       card('/dogs', 'Dogs', `${R.dogs.length} dogs for Tibo's pack`, 'dog/corgi'),
       card('/enemies', 'Enemies', `${R.enemies.length} pests`, 'enemy/aphid'),
       card('/bosses', 'Bosses', `${R.bosses.length} bosses in order`, 'boss/harvester'),
-      card('/biomes', 'Biomes', `${R.biomes.length} biomes and hazards`, ''),
-      card('/points-of-interest', 'Points of interest', `${R.pois.length} shrines, shops and machines`, ''),
-      card('/modes', 'Modes', 'Story, Easy, Normal, Hard, Nightmare', ''),
-      card('/stats', 'Stats & formulas', 'How every stat is calculated', ''),
-      card('/strategy', 'Strategy', 'Build advice, labelled by evidence', ''),
+      card('/biomes', 'Biomes', `${R.biomes.length} biomes and hazards`, 'enemy/sand-crab'),
+      card('/points-of-interest', 'Points of interest', `${R.pois.length} shrines, shops and machines`, 'item/coupon-book'),
+      card('/modes', 'Modes', 'Story, Easy, Normal, Hard, Nightmare', 'item/cursed-crown'),
+      card('/stats', 'Stats & formulas', 'How every stat is calculated', 'item/crit-chip'),
+      card('/strategy', 'Strategy', 'Build advice, labelled by evidence', 'passive/four-eyed-spud'),
     ].join('\n')}\n</div>\n\n` +
       `## Quick facts\n\n` + table(['', ''], [
         ['Developer', '[poteto](https://x.com/poteto)'],
