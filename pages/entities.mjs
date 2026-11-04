@@ -4,7 +4,7 @@ import {
   RARITY, recipes, enemyBiomes, statLabel, slug,
 } from '../lib/data.mjs';
 
-const SRC_REG = '`registry` object exported by `boot-RWP2n-aG.js` (the game\'s content definitions)';
+const SRC_REG = '`registry` object exported by `boot-CmO-02yi.js` (the game\'s content definitions)';
 const SRC_TEXT = 'English names and descriptions from `i18n-en-content-D4gK8lyk.js`';
 const RAW_NOTE =
   'Values are the raw numbers from the game\'s definitions, before Tibo\'s global stat multipliers, difficulty and time scaling. Field names in `code` are the game\'s internal names. Attack descriptions such as “Melee slash” are this wiki\'s summary of the internal attack `kind`.';
@@ -195,7 +195,7 @@ export function weaponIndex() {
 
 export function evolutionPage() {
   let body = `Evolutions turn a maxed base weapon into a stronger weapon. Unions merge two weapons into one. Item evolutions upgrade an item once a passive reaches max level. All recipes below come straight from the game's recipe tables.\n\n`;
-  body += `## How evolving works\n\n**Verified** from the game code (\`sim-Dn-LiQMp.js\`):\n\n- **Evolutions, unions and item evolutions only happen when a chest is opened** (elite, boss, cursed-extra and poteto gift chests, and the Tater Slots jackpot). Potato Crates, the Fry Cart and the Microwave give items, not chest rolls. See [Chests](/chests).\n- **Weapon evolution**: the base weapon is at max level (8) and you own the catalyst at any level.\n- **Union**: you own both partner weapons (or the evolution of one); each is max-level base or evolved, and at least one is a max-level base weapon. The union takes the first weapon's slot and removes the second, freeing a slot. The game's text simplifies this to “Unites with X into Y when both reach LV 8”.\n- **Choice**: if a weapon can both evolve and unite, the chest asks “Evolve or unite?”.\n- **Item evolution**: you hold the base item and the catalyst passive is at **max level (5)**. On the next chest, every copy of the item turns into the evolved item, and the base item stops dropping.\n- There is no time gate (\`chests.evolutionGateSec\` = ${GAME.chests.evolutionGateSec}).\n- From level ${GAME.levelUp.catalystGuaranteeLevel} of a base weapon, the level-up guarantees its missing catalyst passive as the last card if you have a free passive slot (see [Level-up](/level-up#catalyst-guarantee)).\n\n`;
+  body += `## How evolving works\n\n**Verified** from the game code (\`sim-CL04g-iZ.js\`):\n\n- **Evolutions, unions and item evolutions only happen when a chest is opened** (elite, boss, cursed-extra and poteto gift chests, and the Tater Slots jackpot). Potato Crates, the Fry Cart and the Microwave give items, not chest rolls. See [Chests](/chests).\n- **Weapon evolution**: the base weapon is at max level (8) and you own the catalyst at any level.\n- **Union**: you own both partner weapons (or the evolution of one); each is max-level base or evolved, and at least one is a max-level base weapon. The union takes the first weapon's slot and removes the second, freeing a slot. The game's text simplifies this to “Unites with X into Y when both reach LV 8”.\n- **Choice**: if a weapon can both evolve and unite, the chest asks “Evolve or unite?”.\n- **Item evolution**: you hold the base item and the catalyst passive is at **max level (5)**. On the next chest, every copy of the item turns into the evolved item, and the base item stops dropping.\n- There is no time gate (\`chests.evolutionGateSec\` = ${GAME.chests.evolutionGateSec}).\n- From level ${GAME.levelUp.catalystGuaranteeLevel} of a base weapon, the level-up guarantees its missing catalyst passive as the last card if you have a free passive slot (see [Level-up](/level-up#catalyst-guarantee)).\n\n`;
   body += `## Weapon evolutions\n\n` + table(
     ['Result', 'Base weapon', 'Catalyst', 'Catalyst type'],
     R.evolutions.map((e) => [ilink('weapon', e.id), ilink('weapon', e.from), ilink(kindOf(e.catalyst), e.catalyst), kindOf(e.catalyst) === 'passive' ? 'Passive' : 'Item']),
@@ -223,7 +223,7 @@ export function evolutionPage() {
     title: 'Evolutions',
     description: `Every weapon evolution (${R.evolutions.length}), union (${R.unions.length}) and item evolution (${R.evolvedItems.length}) recipe in tibo.dog.`,
     body,
-    sources: [SRC_REG, 'Recipe definitions in `boot-RWP2n-aG.js`; chest evolution code in `sim-Dn-LiQMp.js`'],
+    sources: [SRC_REG, 'Recipe definitions in `boot-CmO-02yi.js`; chest evolution code in `sim-CL04g-iZ.js`'],
     search: 'evolutions recipes unions catalysts',
   };
 }
@@ -343,7 +343,7 @@ export function itemPages() {
     if (it.effect) {
       body += `## Effect\n\nTrigger: \`${it.effect.kind}\`${{ onHit: ' (when a weapon hits an enemy)', onKill: ' (when an enemy dies)', onHurt: ' (when Tibo is hit)' }[it.effect.kind] ?? ''}. Raw parameters:\n\n`;
       body += table(['Parameter', 'Value'], effectRows(it.effect)) + '\n';
-      if (it.effect.proc.meteor) body += `### Meteor impact\n\n**Verified**: when this effect procs, the triggering hit waits ${GAME.items.meteorFallSec} s for the meteor to land, then receives the effect's damage multiplier if the original target still exists. The area blast lands at the position where the meteor was triggered, not the target's new position. At most 16 meteors can be pending; if all slots are occupied, the hit and blast happen immediately. <small>[sim-Dn-LiQMp.js: \`if(n>=0)return tc(e,n,i),nc(e,n,l,u,o,a),t.mult[n]=c.proc.mult,t.itemSrc[n]=s.src,t.paint[n]=s.paint,0\`]</small> <small>[sim-Dn-LiQMp.js: \`s=Math.max(1,me(e.cfg.items.meteorFallSec))\`]</small>\n\n`;
+      if (it.effect.proc.meteor) body += `### Meteor impact\n\n**Verified**: when this effect procs, the triggering hit waits ${GAME.items.meteorFallSec} s for the meteor to land, then receives the effect's damage multiplier if the original target still exists. The area blast lands at the position where the meteor was triggered, not the target's new position. At most 16 meteors can be pending; if all slots are occupied, the hit and blast happen immediately. <small>[sim-CL04g-iZ.js: \`if(n>=0)return nc(e,n,i),rc(e,n,l,u,o,a),t.mult[n]=c.proc.mult,t.itemSrc[n]=s.src,t.paint[n]=s.paint,0\`]</small> <small>[sim-CL04g-iZ.js: \`s=Math.max(1,Te(e.cfg.items.meteorFallSec))\`]</small>\n\n`;
     }
     body += `## Obtaining\n\n`;
     if (it.tier === 'evolved') body += `- Hold ${ilink('item', it.from)} with ${ilink('passive', it.catalyst)} at level 5, then open a chest. See [Evolutions](/evolutions#item-evolutions).\n\n`;
@@ -430,7 +430,7 @@ export function dogPages() {
       ['Spawn weight', d.weight],
       ['Speed', d.speed],
     ];
-    let body = `## Ability\n\n**Verified** (dog ability code in \`sim-Dn-LiQMp.js\` and \`run-extras-B4vJzvO0.js\`): ${DOG_DETAIL[d.id] ?? ''} \`power\` is the training multiplier below; damage is Tibo's damage multiplier.\n\n` + table(['Parameter', 'Value'], flatRows(d.ability)) + '\n';
+    let body = `## Ability\n\n**Verified** (dog ability code in \`sim-CL04g-iZ.js\` and \`run-extras-BcgoMP9m.js\`): ${DOG_DETAIL[d.id] ?? ''} \`power\` is the training multiplier below; damage is Tibo's damage multiplier.\n\n` + table(['Parameter', 'Value'], flatRows(d.ability)) + '\n';
     body += `## Aura\n\nWhile in Tibo's pack, ${n} adds: ${modsText(d.aura)}.\n\n`;
     body += `## Training levels\n\nEach level multiplies the ability. \`every\` multiplies the time between uses (lower is faster), \`power\` multiplies its strength and \`aura\` scales the aura bonus. The multipliers below are copied from the game data.\n\n`;
     let every = 1, power = 1;
@@ -441,7 +441,7 @@ export function dogPages() {
       lr.push([i + 2, fmt(l.every), fmt(l.power), fmt(l.aura), d.ability.every ? fmt(d.ability.every * every) : '—', fmt(power)]);
     });
     body += table(['Level', '`every` ×', '`power` ×', '`aura`', 'Ability interval (s)', 'Total power ×'], lr) + '\n';
-    body += `**Verified**: ability power is the product of \`power\` multipliers, the interval is \`ability.every\` × the product of \`every\` multipliers, and the aura is multiplied by \`1 + sum of aura\` values.${' '}<small>[sim-Dn-LiQMp.js: \`function zt(e,t){let n=e.levelUps,r=1;for(let e=0;e<t-1;e++)r+=n[e]?.aura??0;return r}\`]</small>\n\n` + table(['Level', 'Aura at this level'], Array.from({ length: d.levelUps.length + 1 }, (_, i) => { const m = 1 + d.levelUps.slice(0, i).reduce((a, l) => a + (l.aura ?? 0), 0); return [i + 1, modsText(Object.fromEntries(Object.entries(d.aura).map(([k, v]) => [k, +(v * m).toFixed(4)])))]; })) + '\n';
+    body += `**Verified**: ability power is the product of \`power\` multipliers, the interval is \`ability.every\` × the product of \`every\` multipliers, and the aura is multiplied by \`1 + sum of aura\` values.${' '}<small>[sim-CL04g-iZ.js: \`function Bt(e,t){let n=e.levelUps,r=1;for(let e=0;e<t-1;e++)r+=n[e]?.aura??0;return r}\`]</small>\n\n` + table(['Level', 'Aura at this level'], Array.from({ length: d.levelUps.length + 1 }, (_, i) => { const m = 1 + d.levelUps.slice(0, i).reduce((a, l) => a + (l.aura ?? 0), 0); return [i + 1, modsText(Object.fromEntries(Object.entries(d.aura).map(([k, v]) => [k, +(v * m).toFixed(4)])))]; })) + '\n';
     body += `## Obtaining\n\n${d.id === 'zelda-and-link' ? 'Hold both [Link](/dogs/pomeranian) and [Zelda](/dogs/pomchi): they fuse into Zelda & Link, keeping the higher level.' : d.legendary ? `${n} is a legendary dog (weight 0 in the normal pool). Each run, each of Link and Zelda is in the run with ${pct(GAME.dogs.legendaryChance)} chance; stray dogs at least 1200 units from the start take them from that queue.` : `Stray dogs appear as [Stray Dog](/points-of-interest#stray-dog) points of interest; walk onto one to recruit it. ${n}'s breed weight is ${d.weight}.`} See [Dogs](/dogs#getting-dogs).\n\n`;
     body += `## Data\n\n\`\`\`json\n${JSON.stringify(d, null, 2)}\n\`\`\`\n`;
     pages.push({
@@ -471,8 +471,8 @@ export function dogIndex() {
     ['Legendary chance (`legendaryChance`)', pct(GAME.dogs.legendaryChance)],
     ['Dog Kennel level prices (`kennelPrices`)', GAME.dogs.kennelPrices.join(', ') + ' gold'],
     ['Kennel purchases (`kennelBuys`)', GAME.dogs.kennelBuys],
-  ]) + `\n**Verified** (\`sim-Dn-LiQMp.js\`, \`run-extras-B4vJzvO0.js\`):\n\n- The first stray is placed ${GAME.dogs.firstDogDistance} units from the start, or at the nearest free spot if another POI is there. Other strays appear as [Stray Dog](/points-of-interest#stray-dog) points of interest; the breed is weighted ${R.dogs.filter((d) => d.weight).sort((a, b) => b.weight - a.weight).map((d) => `${t(`dog.${d.id}.breed`)} ${d.weight}`).join(', ')}.\n- Walking onto a stray of a breed you already have **levels that dog up**. Otherwise it joins if the pack has room; with a full pack you choose “Swap out …” or “Keep my pack”.\n- **Legendary dogs**: each run, Link and Zelda are each in the run with ${pct(GAME.dogs.legendaryChance)} chance; strays in chunks whose centre is at least 1200 units from the start take them from that queue. Holding both fuses them into ${link('dog', 'zelda-and-link')}.\n- Dogs level up to 5. The [Dog Kennel](/points-of-interest#dog-kennel) sells levels at ${GAME.dogs.kennelPrices.join(' / ')} gold (× purchase price), up to ${GAME.dogs.kennelBuys} per kennel.\n- Every dog's aura is added to Tibo's stats like an item.\n`;
-  return { path: '/dogs', title: 'Dogs', description: `All ${R.dogs.length} dogs in tibo.dog: abilities, auras, training and legendary dogs.`, body, sources: [SRC_REG, SRC_TEXT, 'Game config `dogs` from `sim-Dn-LiQMp.js`'], search: 'dogs pack breeds' };
+  ]) + `\n**Verified** (\`sim-CL04g-iZ.js\`, \`run-extras-BcgoMP9m.js\`):\n\n- The first stray is placed ${GAME.dogs.firstDogDistance} units from the start, or at the nearest free spot if another POI is there. Other strays appear as [Stray Dog](/points-of-interest#stray-dog) points of interest; the breed is weighted ${R.dogs.filter((d) => d.weight).sort((a, b) => b.weight - a.weight).map((d) => `${t(`dog.${d.id}.breed`)} ${d.weight}`).join(', ')}.\n- Walking onto a stray of a breed you already have **levels that dog up**. Otherwise it joins if the pack has room; with a full pack you choose “Swap out …” or “Keep my pack”.\n- **Legendary dogs**: each run, Link and Zelda are each in the run with ${pct(GAME.dogs.legendaryChance)} chance; strays in chunks whose centre is at least 1200 units from the start take them from that queue. Holding both fuses them into ${link('dog', 'zelda-and-link')}.\n- Dogs level up to 5. The [Dog Kennel](/points-of-interest#dog-kennel) sells levels at ${GAME.dogs.kennelPrices.join(' / ')} gold (× purchase price), up to ${GAME.dogs.kennelBuys} per kennel.\n- Every dog's aura is added to Tibo's stats like an item.\n`;
+  return { path: '/dogs', title: 'Dogs', description: `All ${R.dogs.length} dogs in tibo.dog: abilities, auras, training and legendary dogs.`, body, sources: [SRC_REG, SRC_TEXT, 'Game config `dogs` from `sim-CL04g-iZ.js`'], search: 'dogs pack breeds' };
 }
 
 const ENEMY_BEH = {
@@ -507,7 +507,7 @@ export function enemyPages() {
     ];
     let body = `## Stats\n\nBase values before [time scaling](/enemy-scaling) and [difficulty](/modes).\n\n` + table(['Stat', 'Value'], rows.map(([k, v]) => [k, v])) + '\n';
     if (Object.keys(e.behavior).length > 1) body += `## Behaviour parameters\n\n` + table(['Parameter', 'Value'], flatRows(e.behavior)) + '\n';
-    if (e.behavior.sharpPattern) body += `### Nightmare bullets\n\n**Verified**: Nightmare uses \`sharpPattern\` instead of \`pattern\`; other levels use the ordinary pattern. <small>[sim-Dn-LiQMp.js: \`return e.level.sharpPatterns&&n!==void 0?n:t.pattern\`]</small>\n\n` + table(['Parameter', 'Nightmare value'], flatRows(e.behavior.sharpPattern)) + '\n';
+    if (e.behavior.sharpPattern) body += `### Nightmare bullets\n\n**Verified**: Nightmare uses \`sharpPattern\` instead of \`pattern\`; other levels use the ordinary pattern. <small>[sim-CL04g-iZ.js: \`return e.level.sharpPatterns&&n!==void 0?n:t.pattern\`]</small>\n\n` + table(['Parameter', 'Nightmare value'], flatRows(e.behavior.sharpPattern)) + '\n';
     body += `## Where it appears\n\n`;
     const where = [];
     for (const b of biomes) where.push(`${link('biome', b.biome)}, enemy tier ${b.tier}`);
@@ -583,11 +583,11 @@ export function bossPages() {
       const layoutRows = flatRows(layout).flatMap(([key, value]) => key === '`bands`'
         ? layout.bands.map((band, i) => [`Band ${i + 1} inner–outer`, `${band.inner}–${band.outer}`])
         : [[key, value]]);
-      body += `## Nightmare ground attack\n\n**Verified**: Nightmare replaces the ordinary main attack with the layout below; other levels keep the ordinary attack. The layout is centred on Tibo's position when the attack is placed, not a position that follows him. ${layouts[layout.kind]} All layout distances (radii, band edges and satellite orbit) are multiplied by Nightmare's \`areaScale\` of 1.45; counts, angles and times are not. This does not enlarge every enemy attack. <small>[sim-Dn-LiQMp.js: \`return e.level.sharpAttacks&&n!==void 0?n:t.attack\`]</small> <small>[sim-Dn-LiQMp.js: \`Q.cx=e.player.x[e.me]\`]</small> <small>[sim-Dn-LiQMp.js: \`Q.cy=e.player.y[e.me]\`]</small> <small>[sim-Dn-LiQMp.js: \`Q.scale=e.cfg.level.areaScale\`]</small>\n\nRaw layout values before distance scaling:\n\n` + table(['Layout parameter', 'Raw value'], layoutRows) + '\n';
+      body += `## Nightmare ground attack\n\n**Verified**: Nightmare replaces the ordinary main attack with the layout below; other levels keep the ordinary attack. The layout is centred on Tibo's position when the attack is placed, not a position that follows him. ${layouts[layout.kind]} All layout distances (radii, band edges and satellite orbit) are multiplied by Nightmare's \`areaScale\` of 1.45; counts, angles and times are not. This does not enlarge every enemy attack. <small>[sim-CL04g-iZ.js: \`return e.level.sharpAttacks&&n!==void 0?n:t.attack\`]</small> <small>[sim-CL04g-iZ.js: \`Q.cx=e.player.x[e.me]\`]</small> <small>[sim-CL04g-iZ.js: \`Q.cy=e.player.y[e.me]\`]</small> <small>[sim-CL04g-iZ.js: \`Q.scale=e.cfg.level.areaScale\`]</small>\n\nRaw layout values before distance scaling:\n\n` + table(['Layout parameter', 'Raw value'], layoutRows) + '\n';
     }
     for (const [heading, patterns] of [['Bullet patterns', b.patterns], ...(b.sharpPatterns ? [['Nightmare bullet patterns', b.sharpPatterns]] : [])]) {
       body += `## ${heading}\n\n`;
-      if (heading === 'Nightmare bullet patterns') body += `**Verified**: on Nightmare these replace the ordinary patterns above; they use the same pattern interval. Other levels use the ordinary list. <small>[sim-Dn-LiQMp.js: \`return e.level.sharpPatterns&&n!==void 0?n:t.patterns\`]</small>\n\n`;
+      if (heading === 'Nightmare bullet patterns') body += `**Verified**: on Nightmare these replace the ordinary patterns above; they use the same pattern interval. Other levels use the ordinary list. <small>[sim-CL04g-iZ.js: \`return e.level.sharpPatterns&&n!==void 0?n:t.patterns\`]</small>\n\n`;
       body += table(
         ['Pattern', 'Count', 'Bursts', 'Bullet damage', 'Speed', 'Telegraph (s)', 'Extra'],
         patterns.map((p) => [`\`${p.kind}\``, p.count, p.bursts, p.damage, p.speed, p.telegraph, [p.onHit ? `on hit: ${json(p.onHit)}` : '', p.motion ? `motion: ${json(p.motion)}` : '', p.arc ? `arc ${p.arc}` : '', p.spin ? `spin ${p.spin}` : ''].filter(Boolean).join('; ')]),
@@ -606,7 +606,7 @@ export function bossPages() {
       lead: `**${n}**, *${title}*, is a boss in tibo.dog. In-game description: “${desc}”`,
       infobox: { title: n, icon: `boss/${b.id}`, iconSize: 96, caption: title, rows },
       body,
-      sources: [SRC_REG, SRC_TEXT, 'Game config `bosses.hpSteps` and `win.finalBoss` from `sim-Dn-LiQMp.js`'],
+      sources: [SRC_REG, SRC_TEXT, 'Game config `bosses.hpSteps` and `win.finalBoss` from `sim-CL04g-iZ.js`'],
       search: `${n} ${title} ${b.id} boss`,
     });
   });
@@ -664,7 +664,7 @@ export function biomeIndex() {
     ['Biome', 'Placement', 'Hazard', 'Gold ×', 'XP ×', 'Description'],
     R.biomes.map((b) => [link('biome', b.id), b.placement.kind, b.hazard?.kind ?? '—', fmt(b.goldMult), fmt(b.xpMult), t(`biome.${b.id}.desc`)]),
   );
-  return { path: '/biomes', title: 'Biomes', description: `All ${R.biomes.length} biomes in tibo.dog with hazards, enemies, gold and XP multipliers.`, body, sources: [SRC_REG, SRC_TEXT, 'Game config `world` from `sim-Dn-LiQMp.js`'], search: 'biomes map world' };
+  return { path: '/biomes', title: 'Biomes', description: `All ${R.biomes.length} biomes in tibo.dog with hazards, enemies, gold and XP multipliers.`, body, sources: [SRC_REG, SRC_TEXT, 'Game config `world` from `sim-CL04g-iZ.js`'], search: 'biomes map world' };
 }
 
 export function eventPages() {

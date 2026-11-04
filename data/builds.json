@@ -170,5 +170,15 @@
   "status": "reviewed",
   "updated": "2026-11-04T02:29:00Z",
   "changes": "Nightmare adds larger ground attacks centred on Tibo's position: the Masher strikes a disk and two rings 0.35 s apart, Late Blight places a central pool plus six satellite pools, and the Fryer King strikes six wedges in alternating sets 0.5 s apart, leaving oil puddles after the second set. These layouts use distances ×1.45; ordinary attacks on other levels are unchanged. Outside Story, items and chests without a choice can show icon loot notices while the run continues; choice chests keep panels. Notices arriving within 1.5 s merge and last 3 s. Evolutions get icon banners too. The Harvester's shots now look like tumbling grain kernels, with flashing tied to the flashes setting. Improves ground-warning and ring rendering. One Story lasso line now suggests asking a Grok Bot for directions. Other balance values, English content descriptions and wiki icons are unchanged."
+ },
+ {
+  "seen": "2026-11-04",
+  "main": "main-Ba2DSNUp.js",
+  "boot": "boot-CmO-02yi.js",
+  "sim": "sim-CL04g-iZ.js",
+  "commit": "670a29991282",
+  "status": "reviewed",
+  "updated": "2026-11-04T02:46:19Z",
+  "changes": "Tater Slots now adds gold to both winning outcomes: three of a kind gives a 1-reward chest plus four current spin prices of bonus gold; a pair gives a random item plus half a spin price, rounded to the nearest gold. The bonus is calculated at payout and is not multiplied by gold gain. Adds glints to held weapons, trails and launch flashes to on-hurt item shots, firing flashes/sparks/casings for Fry Sentry, Fry Brigade and Tater Pup, and sparkle/shatter effects for Hash Brown Shield and Hash Bulwark. Healing, pickup and reward rings use sharper pixel-sized bands. Shared-run pages withhold reconstructed scores for capped kill totals, peak enemy counts above 550 or capped source damage in runs shorter than 90 minutes. Startup, retry and shared-run loading code moves between chunks without changing those rules. Other balance values, English content descriptions, difficulty settings and wiki icons are unchanged."
  }
 ]
