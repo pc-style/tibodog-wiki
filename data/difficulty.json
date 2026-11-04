@@ -1,8 +1,9 @@
 {
- "_source": "sim-DlD_Fm_8.js: difficulty defaults (used by normal) and per-level overrides",
+ "_source": "sim-Dm9D8XUu.js: difficulty defaults (used by normal) and per-level overrides",
  "defaults": {
   "alive": 1,
   "floorShare": 0,
+  "shooterCap": 1,
   "earlyRamp": 1,
   "earlyRampTime": 1,
   "lateRamp": 1,

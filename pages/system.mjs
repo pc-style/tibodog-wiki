@@ -5,9 +5,9 @@ import { SITE } from '../lib/render.mjs';
 import { MECH } from './mechanics.mjs';
 import { readFileSync } from 'node:fs';
 
-const SRC_CFG = 'Game config object exported by `sim-DlD_Fm_8.js` (`view`, `player`, `dash`, `difficulty`, `win`, `scaling`, … keys)';
+const SRC_CFG = 'Game config object exported by `sim-Dm9D8XUu.js` (`view`, `player`, `dash`, `difficulty`, `win`, `scaling`, … keys)';
 const SRC_ABOUT = '[About tibo.dog](https://tibo.dog/about/) and [tibo.dog llms.txt](https://tibo.dog/llms.txt), read 2026-11-02';
-const SRC_UI = 'Inline English UI strings in `boot-D97Ucyt5.js`';
+const SRC_UI = 'Inline English UI strings in `boot-dnWRDp33.js`';
 
 const guide = (p) => ({ crumbs: [], ...p });
 
