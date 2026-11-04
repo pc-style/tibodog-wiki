@@ -380,5 +380,15 @@
   "status": "reviewed",
   "updated": "2026-11-04T22:40:50Z",
   "changes": "Ketchup Kraken fires one straight five-blob fan across 1.2 radians instead of two swirling nine-shot fans across 1.6. Blobs keep speed 95 through 0.55 s, then slow towards 15% speed at 0.95 s; surviving, in-range blobs turn into damaging puddles at the first tick reaching 0.95 s. Puddles have base radius 9 and lifetime 1.8 s, multiplied by difficulty: radius ×1.3/1.45/1.5/1.6 and lifetime ×1.5/1.65/1.65/1.65 on Easy/Normal/Hard/Nightmare (Story ×1). Their damage rate is 2.8 times the shot's scaled damage per second, applied every 0.5 s. Adds animated ketchup-blob art and a translated changelog note. All other content definitions, English content descriptions, existing difficulty values, atlas tables/pixels and wiki icons are unchanged; Andrew and all 93 weapons remain. Both mount chunks, workers and audio worklets are unchanged after asset filename changes; other changed metadata identifies the new build."
+ },
+ {
+  "seen": "2026-11-04",
+  "main": "main-DDlDqxns.js",
+  "boot": "boot-Dfrrayih.js",
+  "sim": "sim-C9aykakM.js",
+  "commit": "82ac0d1ef331",
+  "status": "reviewed",
+  "updated": "2026-11-04T23:38:40Z",
+  "changes": "The HUD shows base icons before expansion icons finish loading, then refreshes newly available weapon/passive icons and loot banners. Projectile rendering now gathers visible shots once and reuses their interpolated positions and remaining lifetimes for trails, smears and sprites; simulation and damage are unchanged. Settings moves its scroll-down arrow outside the scrolling list and shows it only while more content remains below. The in-game changelog groups Andrew and the new weapons/buffs under their earlier release versions; those features remain. All extracted gameplay data, English content descriptions, difficulty values, atlas tables/pixels and wiki icons are unchanged, including Ketchup Kraken's five-blob fan and puddles, Andrew and all 93 weapons. Reviewed all 195 JavaScript modules, including both mount chunks, duplicate-name choices, workers, worklets and localizations; other differences only rename identifiers/assets or update build metadata."
  }
 ]
