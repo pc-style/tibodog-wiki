@@ -180,5 +180,15 @@
   "status": "reviewed",
   "updated": "2026-11-04T02:46:19Z",
   "changes": "Tater Slots now adds gold to both winning outcomes: three of a kind gives a 1-reward chest plus four current spin prices of bonus gold; a pair gives a random item plus half a spin price, rounded to the nearest gold. The bonus is calculated at payout and is not multiplied by gold gain. Adds glints to held weapons, trails and launch flashes to on-hurt item shots, firing flashes/sparks/casings for Fry Sentry, Fry Brigade and Tater Pup, and sparkle/shatter effects for Hash Brown Shield and Hash Bulwark. Healing, pickup and reward rings use sharper pixel-sized bands. Shared-run pages withhold reconstructed scores for capped kill totals, peak enemy counts above 550 or capped source damage in runs shorter than 90 minutes. Startup, retry and shared-run loading code moves between chunks without changing those rules. Other balance values, English content descriptions, difficulty settings and wiki icons are unchanged."
+ },
+ {
+  "seen": "2026-11-04",
+  "main": "main-C31KwVnF.js",
+  "boot": "boot-DMgY2fH7.js",
+  "sim": "sim-937lpaUl.js",
+  "commit": "7055bef761f1",
+  "status": "reviewed",
+  "updated": "2026-11-04T03:55:40Z",
+  "changes": "Japanese labels now use Japanese fonts installed on the device, with adjusted vertical alignment to centre text on buttons. Tilt-shift rendering now mixes the original scene back into low-alpha pixels to keep those details sharp. Enemy shots use the post-processing blend mode whenever the scene renders to an offscreen target, including tilt-shift without bloom. Game data, English content descriptions, difficulty settings and wiki icons are unchanged. Simulation functions are reordered and renamed without changing their formulas. The Tater Slots jackpot change belongs to game version 19, despite its position in the in-game changelog."
  }
 ]
