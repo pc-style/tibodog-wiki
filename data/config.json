@@ -1326,40 +1326,425 @@
   "evolvedBy": "[fn]",
   "itemsEvolvedBy": "[fn]"
  },
- "boot.$i": {
-  "_events": {},
-  "_locale": "",
-  "_messages": {},
-  "_variables": {},
-  "t": "[fn]"
+ "boot.$r": {
+  "straight": 0,
+  "lob": 1,
+  "boomerang": 2,
+  "bounce": 3,
+  "homing": 4,
+  "spiral": 5
  },
- "boot.$r": [
-  "xp",
-  "gold",
-  "heal",
-  "magnet",
-  "chest",
-  "reroll",
-  "skip",
-  "banish",
-  "item",
-  "beacon"
+ "boot.Br": [
+  "none",
+  "boss",
+  "elite",
+  "lootRunner",
+  "poteto",
+  "story"
  ],
- "boot.Br": {
-  "none": 0,
-  "boss": 1,
-  "elite": 2,
-  "lootRunner": 3,
-  "poteto": 4,
-  "story": 5
+ "boot.Fa": {
+  "rows": [
+   {
+    "minute": 0,
+    "minEnemies": 22,
+    "maxEnemies": 35,
+    "interval": 0.75,
+    "batch": 3,
+    "tiers": [
+     8,
+     1,
+     0,
+     0,
+     0
+    ]
+   },
+   {
+    "minute": 1,
+    "minEnemies": 32,
+    "maxEnemies": 35,
+    "interval": 0.7,
+    "batch": 3,
+    "tiers": [
+     8,
+     1,
+     0,
+     0,
+     0
+    ],
+    "elite": true
+   },
+   {
+    "minute": 2,
+    "minEnemies": 45,
+    "maxEnemies": 100,
+    "interval": 0.65,
+    "batch": 4,
+    "tiers": [
+     5,
+     1,
+     0,
+     0,
+     0
+    ],
+    "boss": "amusing",
+    "events": [
+     "fly-swarm"
+    ]
+   },
+   {
+    "minute": 3,
+    "minEnemies": 90,
+    "maxEnemies": 150,
+    "interval": 0.6,
+    "batch": 5,
+    "tiers": [
+     1,
+     2,
+     0,
+     0,
+     0
+    ],
+    "elite": true,
+    "boss": "beetle-queen",
+    "events": [
+     "golden-scarab"
+    ]
+   },
+   {
+    "minute": 4,
+    "minEnemies": 85,
+    "maxEnemies": 150,
+    "interval": 0.6,
+    "batch": 4,
+    "tiers": [
+     1,
+     2,
+     1,
+     0,
+     0
+    ],
+    "boss": "the-masher"
+   },
+   {
+    "minute": 5,
+    "minEnemies": 105,
+    "maxEnemies": 165,
+    "interval": 0.55,
+    "batch": 5,
+    "tiers": [
+     1,
+     2,
+     1,
+     0,
+     0
+    ],
+    "elite": true,
+    "events": [
+     "fly-swarm"
+    ]
+   },
+   {
+    "minute": 6,
+    "minEnemies": 125,
+    "maxEnemies": 180,
+    "interval": 0.5,
+    "batch": 5,
+    "tiers": [
+     1,
+     1,
+     2,
+     0,
+     0
+    ],
+    "boss": "late-blight",
+    "events": [
+     "bale-ring"
+    ]
+   },
+   {
+    "minute": 7,
+    "minEnemies": 145,
+    "maxEnemies": 240,
+    "interval": 0.45,
+    "batch": 6,
+    "tiers": [
+     0,
+     1,
+     2,
+     1,
+     0
+    ],
+    "elite": true,
+    "boss": "sir-strawman",
+    "events": [
+     "golden-scarab"
+    ]
+   },
+   {
+    "minute": 8,
+    "minEnemies": 165,
+    "maxEnemies": 250,
+    "interval": 0.42,
+    "batch": 6,
+    "tiers": [
+     0,
+     1,
+     2,
+     1,
+     0
+    ],
+    "boss": "fryer-king",
+    "events": [
+     "fly-swarm",
+     "harvest-moon"
+    ]
+   },
+   {
+    "minute": 9,
+    "minEnemies": 185,
+    "maxEnemies": 260,
+    "interval": 0.38,
+    "batch": 7,
+    "tiers": [
+     0,
+     1,
+     1,
+     2,
+     0
+    ],
+    "elite": true,
+    "events": [
+     "bale-ring"
+    ]
+   },
+   {
+    "minute": 10,
+    "minEnemies": 210,
+    "maxEnemies": 270,
+    "interval": 0.35,
+    "batch": 7,
+    "tiers": [
+     0,
+     0,
+     2,
+     2,
+     0
+    ],
+    "boss": "great-wireworm",
+    "events": [
+     "golden-scarab"
+    ]
+   },
+   {
+    "minute": 11,
+    "minEnemies": 235,
+    "maxEnemies": 280,
+    "interval": 0.32,
+    "batch": 8,
+    "tiers": [
+     0,
+     0,
+     1,
+     2,
+     0
+    ],
+    "elite": true,
+    "events": [
+     "fly-swarm"
+    ]
+   },
+   {
+    "minute": 12,
+    "minEnemies": 260,
+    "maxEnemies": 290,
+    "interval": 0.3,
+    "batch": 8,
+    "tiers": [
+     0,
+     0,
+     1,
+     2,
+     0
+    ],
+    "boss": "the-mandoline"
+   },
+   {
+    "minute": 13,
+    "minEnemies": 285,
+    "maxEnemies": 300,
+    "interval": 0.28,
+    "batch": 9,
+    "tiers": [
+     0,
+     0,
+     1,
+     2,
+     0
+    ],
+    "elite": true,
+    "events": [
+     "bale-ring"
+    ]
+   },
+   {
+    "minute": 14,
+    "minEnemies": 305,
+    "maxEnemies": 320,
+    "interval": 0.26,
+    "batch": 9,
+    "tiers": [
+     0,
+     0,
+     1,
+     4,
+     1
+    ],
+    "boss": "deep-freezer",
+    "events": [
+     "golden-scarab"
+    ]
+   },
+   {
+    "minute": 15,
+    "minEnemies": 330,
+    "maxEnemies": 350,
+    "interval": 0.24,
+    "batch": 10,
+    "tiers": [
+     0,
+     0,
+     0,
+     2,
+     1
+    ],
+    "elite": true,
+    "events": [
+     "fly-swarm",
+     "harvest-moon"
+    ]
+   },
+   {
+    "minute": 16,
+    "minEnemies": 360,
+    "maxEnemies": 380,
+    "interval": 0.22,
+    "batch": 10,
+    "tiers": [
+     0,
+     0,
+     0,
+     1,
+     1
+    ],
+    "boss": "grater-golem",
+    "events": [
+     "bale-ring"
+    ]
+   },
+   {
+    "minute": 17,
+    "minEnemies": 390,
+    "maxEnemies": 420,
+    "interval": 0.2,
+    "batch": 11,
+    "tiers": [
+     0,
+     0,
+     0,
+     1,
+     2
+    ],
+    "elite": true,
+    "boss": "compost-titan",
+    "events": [
+     "golden-scarab"
+    ]
+   },
+   {
+    "minute": 18,
+    "minEnemies": 420,
+    "maxEnemies": 450,
+    "interval": 0.18,
+    "batch": 12,
+    "tiers": [
+     0,
+     0,
+     0,
+     1,
+     3
+    ],
+    "boss": "ketchup-kraken",
+    "events": [
+     "fly-swarm"
+    ]
+   },
+   {
+    "minute": 19,
+    "minEnemies": 450,
+    "maxEnemies": 480,
+    "interval": 0.16,
+    "batch": 12,
+    "tiers": [
+     0,
+     0,
+     0,
+     0,
+     1
+    ],
+    "elite": true,
+    "events": [
+     "bale-ring"
+    ]
+   },
+   {
+    "minute": 20,
+    "minEnemies": 480,
+    "maxEnemies": 500,
+    "interval": 0.14,
+    "batch": 14,
+    "tiers": [
+     0,
+     0,
+     0,
+     0,
+     1
+    ],
+    "boss": "harvester",
+    "events": [
+     "fly-swarm"
+    ]
+   }
+  ],
+  "afterLast": "postWin"
  },
- "boot.Dt": [
-  "off",
-  "protanopia",
-  "deuteranopia",
-  "tritanopia"
- ],
- "boot.Fa": [
+ "boot.Gr": {
+  "slash": 0.15,
+  "beam": 0.2,
+  "explosion": 0.3,
+  "strike": 0.25,
+  "cone": 0.17,
+  "reset": 0.9,
+  "spawn": 0.25,
+  "death": 0.3,
+  "shockwave": 0.35,
+  "chain": 0.15,
+  "heal": 0.4,
+  "pickup": 0.3,
+  "bark": 0.35,
+  "bite": 0.2,
+  "gpuSteam": 0.9,
+  "shards": 0.4,
+  "discharge": 0.3
+ },
+ "boot.Hr": {
+  "dud": 1,
+  "freeze": 2,
+  "burn": 3,
+  "split": 4,
+  "gold": 5,
+  "blast": 6
+ },
+ "boot.Ia": [
   "fryer-king",
   "the-mandoline",
   "the-masher",
@@ -1368,51 +1753,7 @@
   "ketchup-kraken",
   "harvester"
  ],
- "boot.Hr": {
-  "alive": 0,
-  "revived": 1,
-  "knocked": 2,
-  "fading": 3,
-  "dark": 4,
-  "beam": 5,
-  "drop": 6,
-  "dawn": 7
- },
- "boot.Kr": {
-  "slash": 0,
-  "beam": 1,
-  "explosion": 2,
-  "strike": 3,
-  "cone": 4,
-  "reset": 5,
-  "spawn": 6,
-  "death": 7,
-  "shockwave": 8,
-  "chain": 9,
-  "heal": 10,
-  "pickup": 11,
-  "bark": 12,
-  "bite": 13,
-  "gpuSteam": 14,
-  "shards": 15,
-  "discharge": 16
- },
- "boot.La": [
-  {
-   "parts": [
-    "pomeranian",
-    "pomchi"
-   ],
-   "into": "zelda-and-link"
-  }
- ],
- "boot.Lr": {
-  "none": 0,
-  "rings": 1,
-  "cropCircle": 2,
-  "wedges": 3
- },
- "boot.Ma": {
+ "boot.Na": {
   "graceSec": 30,
   "graceDensity": 0.8,
   "rows": [
@@ -1457,7 +1798,13 @@
    }
   ]
  },
- "boot.Na": {
+ "boot.Ot": [
+  "off",
+  "protanopia",
+  "deuteranopia",
+  "tritanopia"
+ ],
+ "boot.Pa": {
   "rows": [
    {
     "minute": 0,
@@ -1832,7 +2179,321 @@
   ],
   "afterLast": "postWin"
  },
- "boot.Oa": {
+ "boot.Qi": [
+  {
+   "tag": "en",
+   "endonym": "English",
+   "englishName": "English",
+   "dir": "ltr"
+  },
+  {
+   "tag": "zh-CN",
+   "endonym": "简体中文",
+   "englishName": "Simplified Chinese",
+   "dir": "ltr"
+  },
+  {
+   "tag": "zh-TW",
+   "endonym": "繁體中文",
+   "englishName": "Traditional Chinese (Taiwan)",
+   "dir": "ltr"
+  },
+  {
+   "tag": "ja",
+   "endonym": "日本語",
+   "englishName": "Japanese",
+   "dir": "ltr"
+  },
+  {
+   "tag": "ko",
+   "endonym": "한국어",
+   "englishName": "Korean",
+   "dir": "ltr"
+  },
+  {
+   "tag": "es",
+   "endonym": "Español",
+   "englishName": "Spanish",
+   "dir": "ltr"
+  },
+  {
+   "tag": "hi",
+   "endonym": "हिन्दी",
+   "englishName": "Hindi",
+   "dir": "ltr"
+  },
+  {
+   "tag": "de",
+   "endonym": "Deutsch",
+   "englishName": "German",
+   "dir": "ltr"
+  },
+  {
+   "tag": "fr",
+   "endonym": "Français",
+   "englishName": "French",
+   "dir": "ltr"
+  },
+  {
+   "tag": "pt",
+   "endonym": "Português (Brasil)",
+   "englishName": "Brazilian Portuguese",
+   "dir": "ltr"
+  },
+  {
+   "tag": "tr",
+   "endonym": "Türkçe",
+   "englishName": "Turkish",
+   "dir": "ltr"
+  },
+  {
+   "tag": "id",
+   "endonym": "Bahasa Indonesia",
+   "englishName": "Indonesian",
+   "dir": "ltr"
+  },
+  {
+   "tag": "ru",
+   "endonym": "Русский",
+   "englishName": "Russian",
+   "dir": "ltr"
+  },
+  {
+   "tag": "ms",
+   "endonym": "Bahasa Melayu",
+   "englishName": "Malay",
+   "dir": "ltr"
+  },
+  {
+   "tag": "fil",
+   "endonym": "Filipino",
+   "englishName": "Filipino",
+   "dir": "ltr"
+  },
+  {
+   "tag": "mr",
+   "endonym": "मराठी",
+   "englishName": "Marathi",
+   "dir": "ltr"
+  },
+  {
+   "tag": "vi",
+   "endonym": "Tiếng Việt",
+   "englishName": "Vietnamese",
+   "dir": "ltr"
+  },
+  {
+   "tag": "te",
+   "endonym": "తెలుగు",
+   "englishName": "Telugu",
+   "dir": "ltr"
+  },
+  {
+   "tag": "ta",
+   "endonym": "தமிழ்",
+   "englishName": "Tamil",
+   "dir": "ltr"
+  },
+  {
+   "tag": "bn",
+   "endonym": "বাংলা",
+   "englishName": "Bengali",
+   "dir": "ltr"
+  },
+  {
+   "tag": "th",
+   "endonym": "ไทย",
+   "englishName": "Thai",
+   "dir": "ltr"
+  },
+  {
+   "tag": "ha",
+   "endonym": "Hausa",
+   "englishName": "Hausa",
+   "dir": "ltr"
+  },
+  {
+   "tag": "pcm",
+   "endonym": "Naijá",
+   "englishName": "Nigerian Pidgin",
+   "dir": "ltr"
+  },
+  {
+   "tag": "ar",
+   "endonym": "العربية",
+   "englishName": "Arabic",
+   "dir": "rtl"
+  },
+  {
+   "tag": "fa",
+   "endonym": "فارسی",
+   "englishName": "Persian",
+   "dir": "rtl"
+  },
+  {
+   "tag": "he",
+   "endonym": "עברית",
+   "englishName": "Hebrew",
+   "dir": "rtl"
+  },
+  {
+   "tag": "ur",
+   "endonym": "اردو",
+   "englishName": "Urdu",
+   "dir": "rtl"
+  }
+ ],
+ "boot.Qr": {
+  "off": 0,
+  "free": 1,
+  "jailed": 2,
+  "strayed": 3,
+  "lassoed": 4,
+  "pulling": 5
+ },
+ "boot.R": {
+  "tier": "low",
+  "scale": 0.5,
+  "adaptive": false,
+  "climb": false
+ },
+ "boot.Ra": [
+  {
+   "parts": [
+    "pomeranian",
+    "pomchi"
+   ],
+   "into": "zelda-and-link"
+  }
+ ],
+ "boot.Rr": {
+  "none": 0,
+  "rings": 1,
+  "cropCircle": 2,
+  "wedges": 3
+ },
+ "boot.Ur": {
+  "alive": 0,
+  "revived": 1,
+  "knocked": 2,
+  "fading": 3,
+  "dark": 4,
+  "beam": 5,
+  "drop": 6,
+  "dawn": 7
+ },
+ "boot.Vr": {
+  "none": 0,
+  "boss": 1,
+  "elite": 2,
+  "lootRunner": 3,
+  "poteto": 4,
+  "story": 5
+ },
+ "boot.Wr": [
+  "slash",
+  "beam",
+  "explosion",
+  "strike",
+  "cone",
+  "reset",
+  "spawn",
+  "death",
+  "shockwave",
+  "chain",
+  "heal",
+  "pickup",
+  "bark",
+  "bite",
+  "gpuSteam",
+  "shards",
+  "discharge"
+ ],
+ "boot.Xr": {
+  "wander": 0,
+  "hop": 1,
+  "cheer": 2,
+  "beam": 3,
+  "swarm": 4
+ },
+ "boot.Zi": [
+  "en",
+  "zh-CN",
+  "zh-TW",
+  "ja",
+  "ko",
+  "es",
+  "hi",
+  "de",
+  "fr",
+  "pt",
+  "tr",
+  "id",
+  "ru",
+  "ms",
+  "fil",
+  "mr",
+  "vi",
+  "te",
+  "ta",
+  "bn",
+  "th",
+  "ha",
+  "pcm",
+  "ar",
+  "fa",
+  "he",
+  "ur"
+ ],
+ "boot.Zr": {
+  "NoDrops": 1,
+  "BossShare": 2,
+  "Kill": 4,
+  "Reset": 8,
+  "Meteor": 16
+ },
+ "boot.ai": {
+  "circle": 0,
+  "line": 1,
+  "cone": 2,
+  "ring": 3,
+  "wedge": 4
+ },
+ "boot.ea": {
+  "_events": {},
+  "_locale": "",
+  "_messages": {},
+  "_variables": {},
+  "t": "[fn]"
+ },
+ "boot.ei": [
+  "xp",
+  "gold",
+  "heal",
+  "magnet",
+  "chest",
+  "reroll",
+  "skip",
+  "banish",
+  "item",
+  "beacon"
+ ],
+ "boot.fr": [
+  "round",
+  "oval",
+  "clover",
+  "splat",
+  "slab",
+  "drop"
+ ],
+ "boot.ha": {
+  "hold": 0,
+  "shrink": 1,
+  "grow": 2,
+  "dropTier": 3,
+  "raiseTier": 4
+ },
+ "boot.ka": {
   "game": {
    "title": "tibo.dog",
    "url": "https://tibo.dog/"
@@ -2208,7 +2869,7 @@
    "skipLines": "Space"
   }
  },
- "boot.Ot": {
+ "boot.kt": {
   "effectsOpacity": 1,
   "shake": "full",
   "flashes": true,
@@ -2225,695 +2886,7 @@
   "autoAdvance": true,
   "skipIntro": false
  },
- "boot.Pa": {
-  "rows": [
-   {
-    "minute": 0,
-    "minEnemies": 22,
-    "maxEnemies": 35,
-    "interval": 0.75,
-    "batch": 3,
-    "tiers": [
-     8,
-     1,
-     0,
-     0,
-     0
-    ]
-   },
-   {
-    "minute": 1,
-    "minEnemies": 32,
-    "maxEnemies": 35,
-    "interval": 0.7,
-    "batch": 3,
-    "tiers": [
-     8,
-     1,
-     0,
-     0,
-     0
-    ],
-    "elite": true
-   },
-   {
-    "minute": 2,
-    "minEnemies": 45,
-    "maxEnemies": 100,
-    "interval": 0.65,
-    "batch": 4,
-    "tiers": [
-     5,
-     1,
-     0,
-     0,
-     0
-    ],
-    "boss": "amusing",
-    "events": [
-     "fly-swarm"
-    ]
-   },
-   {
-    "minute": 3,
-    "minEnemies": 90,
-    "maxEnemies": 150,
-    "interval": 0.6,
-    "batch": 5,
-    "tiers": [
-     1,
-     2,
-     0,
-     0,
-     0
-    ],
-    "elite": true,
-    "boss": "beetle-queen",
-    "events": [
-     "golden-scarab"
-    ]
-   },
-   {
-    "minute": 4,
-    "minEnemies": 85,
-    "maxEnemies": 150,
-    "interval": 0.6,
-    "batch": 4,
-    "tiers": [
-     1,
-     2,
-     1,
-     0,
-     0
-    ],
-    "boss": "the-masher"
-   },
-   {
-    "minute": 5,
-    "minEnemies": 105,
-    "maxEnemies": 165,
-    "interval": 0.55,
-    "batch": 5,
-    "tiers": [
-     1,
-     2,
-     1,
-     0,
-     0
-    ],
-    "elite": true,
-    "events": [
-     "fly-swarm"
-    ]
-   },
-   {
-    "minute": 6,
-    "minEnemies": 125,
-    "maxEnemies": 180,
-    "interval": 0.5,
-    "batch": 5,
-    "tiers": [
-     1,
-     1,
-     2,
-     0,
-     0
-    ],
-    "boss": "late-blight",
-    "events": [
-     "bale-ring"
-    ]
-   },
-   {
-    "minute": 7,
-    "minEnemies": 145,
-    "maxEnemies": 240,
-    "interval": 0.45,
-    "batch": 6,
-    "tiers": [
-     0,
-     1,
-     2,
-     1,
-     0
-    ],
-    "elite": true,
-    "boss": "sir-strawman",
-    "events": [
-     "golden-scarab"
-    ]
-   },
-   {
-    "minute": 8,
-    "minEnemies": 165,
-    "maxEnemies": 250,
-    "interval": 0.42,
-    "batch": 6,
-    "tiers": [
-     0,
-     1,
-     2,
-     1,
-     0
-    ],
-    "boss": "fryer-king",
-    "events": [
-     "fly-swarm",
-     "harvest-moon"
-    ]
-   },
-   {
-    "minute": 9,
-    "minEnemies": 185,
-    "maxEnemies": 260,
-    "interval": 0.38,
-    "batch": 7,
-    "tiers": [
-     0,
-     1,
-     1,
-     2,
-     0
-    ],
-    "elite": true,
-    "events": [
-     "bale-ring"
-    ]
-   },
-   {
-    "minute": 10,
-    "minEnemies": 210,
-    "maxEnemies": 270,
-    "interval": 0.35,
-    "batch": 7,
-    "tiers": [
-     0,
-     0,
-     2,
-     2,
-     0
-    ],
-    "boss": "great-wireworm",
-    "events": [
-     "golden-scarab"
-    ]
-   },
-   {
-    "minute": 11,
-    "minEnemies": 235,
-    "maxEnemies": 280,
-    "interval": 0.32,
-    "batch": 8,
-    "tiers": [
-     0,
-     0,
-     1,
-     2,
-     0
-    ],
-    "elite": true,
-    "events": [
-     "fly-swarm"
-    ]
-   },
-   {
-    "minute": 12,
-    "minEnemies": 260,
-    "maxEnemies": 290,
-    "interval": 0.3,
-    "batch": 8,
-    "tiers": [
-     0,
-     0,
-     1,
-     2,
-     0
-    ],
-    "boss": "the-mandoline"
-   },
-   {
-    "minute": 13,
-    "minEnemies": 285,
-    "maxEnemies": 300,
-    "interval": 0.28,
-    "batch": 9,
-    "tiers": [
-     0,
-     0,
-     1,
-     2,
-     0
-    ],
-    "elite": true,
-    "events": [
-     "bale-ring"
-    ]
-   },
-   {
-    "minute": 14,
-    "minEnemies": 305,
-    "maxEnemies": 320,
-    "interval": 0.26,
-    "batch": 9,
-    "tiers": [
-     0,
-     0,
-     1,
-     4,
-     1
-    ],
-    "boss": "deep-freezer",
-    "events": [
-     "golden-scarab"
-    ]
-   },
-   {
-    "minute": 15,
-    "minEnemies": 330,
-    "maxEnemies": 350,
-    "interval": 0.24,
-    "batch": 10,
-    "tiers": [
-     0,
-     0,
-     0,
-     2,
-     1
-    ],
-    "elite": true,
-    "events": [
-     "fly-swarm",
-     "harvest-moon"
-    ]
-   },
-   {
-    "minute": 16,
-    "minEnemies": 360,
-    "maxEnemies": 380,
-    "interval": 0.22,
-    "batch": 10,
-    "tiers": [
-     0,
-     0,
-     0,
-     1,
-     1
-    ],
-    "boss": "grater-golem",
-    "events": [
-     "bale-ring"
-    ]
-   },
-   {
-    "minute": 17,
-    "minEnemies": 390,
-    "maxEnemies": 420,
-    "interval": 0.2,
-    "batch": 11,
-    "tiers": [
-     0,
-     0,
-     0,
-     1,
-     2
-    ],
-    "elite": true,
-    "boss": "compost-titan",
-    "events": [
-     "golden-scarab"
-    ]
-   },
-   {
-    "minute": 18,
-    "minEnemies": 420,
-    "maxEnemies": 450,
-    "interval": 0.18,
-    "batch": 12,
-    "tiers": [
-     0,
-     0,
-     0,
-     1,
-     3
-    ],
-    "boss": "ketchup-kraken",
-    "events": [
-     "fly-swarm"
-    ]
-   },
-   {
-    "minute": 19,
-    "minEnemies": 450,
-    "maxEnemies": 480,
-    "interval": 0.16,
-    "batch": 12,
-    "tiers": [
-     0,
-     0,
-     0,
-     0,
-     1
-    ],
-    "elite": true,
-    "events": [
-     "bale-ring"
-    ]
-   },
-   {
-    "minute": 20,
-    "minEnemies": 480,
-    "maxEnemies": 500,
-    "interval": 0.14,
-    "batch": 14,
-    "tiers": [
-     0,
-     0,
-     0,
-     0,
-     1
-    ],
-    "boss": "harvester",
-    "events": [
-     "fly-swarm"
-    ]
-   }
-  ],
-  "afterLast": "postWin"
- },
- "boot.Qr": {
-  "straight": 0,
-  "lob": 1,
-  "boomerang": 2,
-  "bounce": 3,
-  "homing": 4,
-  "spiral": 5
- },
- "boot.Ra": {
-  "alexReveal": {
-   "playing": false,
-   "live": false,
-   "ready": "[fn]",
-   "frame": "[fn]",
-   "view": "[fn]",
-   "skip": "[fn]",
-   "probe": "[fn]",
-   "relabel": "[fn]"
-  },
-  "storyLines": {
-   "holds": false,
-   "speaking": false,
-   "grokTabOwed": false,
-   "readyForDeathPanel": "[fn]",
-   "frame": "[fn]",
-   "relabel": "[fn]"
-  },
-  "friesLines": {
-   "holds": false,
-   "speaking": false,
-   "frame": "[fn]",
-   "sample": "[fn]",
-   "relabel": "[fn]"
-  }
- },
- "boot.Rr": {
-  "Elite": 1,
-  "Chest": 2,
-  "NoSplit": 4,
-  "Down": 8,
-  "NoDrops": 16,
-  "Invincible": 32,
-  "Hidden": 64,
-  "CursedExtra": 128
- },
- "boot.Ur": [
-  "slash",
-  "beam",
-  "explosion",
-  "strike",
-  "cone",
-  "reset",
-  "spawn",
-  "death",
-  "shockwave",
-  "chain",
-  "heal",
-  "pickup",
-  "bark",
-  "bite",
-  "gpuSteam",
-  "shards",
-  "discharge"
- ],
- "boot.Vr": {
-  "dud": 1,
-  "freeze": 2,
-  "burn": 3,
-  "split": 4,
-  "gold": 5,
-  "blast": 6
- },
- "boot.Wr": {
-  "slash": 0.15,
-  "beam": 0.2,
-  "explosion": 0.3,
-  "strike": 0.25,
-  "cone": 0.17,
-  "reset": 0.9,
-  "spawn": 0.25,
-  "death": 0.3,
-  "shockwave": 0.35,
-  "chain": 0.15,
-  "heal": 0.4,
-  "pickup": 0.3,
-  "bark": 0.35,
-  "bite": 0.2,
-  "gpuSteam": 0.9,
-  "shards": 0.4,
-  "discharge": 0.3
- },
- "boot.Xi": [
-  "en",
-  "zh-CN",
-  "zh-TW",
-  "ja",
-  "ko",
-  "es",
-  "hi",
-  "de",
-  "fr",
-  "pt",
-  "tr",
-  "id",
-  "ru",
-  "ms",
-  "fil",
-  "mr",
-  "vi",
-  "te",
-  "ta",
-  "bn",
-  "th",
-  "ha",
-  "pcm",
-  "ar",
-  "fa",
-  "he",
-  "ur"
- ],
- "boot.Xr": {
-  "NoDrops": 1,
-  "BossShare": 2,
-  "Kill": 4,
-  "Reset": 8,
-  "Meteor": 16
- },
- "boot.Yr": {
-  "wander": 0,
-  "hop": 1,
-  "cheer": 2,
-  "beam": 3,
-  "swarm": 4
- },
- "boot.Zi": [
-  {
-   "tag": "en",
-   "endonym": "English",
-   "englishName": "English",
-   "dir": "ltr"
-  },
-  {
-   "tag": "zh-CN",
-   "endonym": "简体中文",
-   "englishName": "Simplified Chinese",
-   "dir": "ltr"
-  },
-  {
-   "tag": "zh-TW",
-   "endonym": "繁體中文",
-   "englishName": "Traditional Chinese (Taiwan)",
-   "dir": "ltr"
-  },
-  {
-   "tag": "ja",
-   "endonym": "日本語",
-   "englishName": "Japanese",
-   "dir": "ltr"
-  },
-  {
-   "tag": "ko",
-   "endonym": "한국어",
-   "englishName": "Korean",
-   "dir": "ltr"
-  },
-  {
-   "tag": "es",
-   "endonym": "Español",
-   "englishName": "Spanish",
-   "dir": "ltr"
-  },
-  {
-   "tag": "hi",
-   "endonym": "हिन्दी",
-   "englishName": "Hindi",
-   "dir": "ltr"
-  },
-  {
-   "tag": "de",
-   "endonym": "Deutsch",
-   "englishName": "German",
-   "dir": "ltr"
-  },
-  {
-   "tag": "fr",
-   "endonym": "Français",
-   "englishName": "French",
-   "dir": "ltr"
-  },
-  {
-   "tag": "pt",
-   "endonym": "Português (Brasil)",
-   "englishName": "Brazilian Portuguese",
-   "dir": "ltr"
-  },
-  {
-   "tag": "tr",
-   "endonym": "Türkçe",
-   "englishName": "Turkish",
-   "dir": "ltr"
-  },
-  {
-   "tag": "id",
-   "endonym": "Bahasa Indonesia",
-   "englishName": "Indonesian",
-   "dir": "ltr"
-  },
-  {
-   "tag": "ru",
-   "endonym": "Русский",
-   "englishName": "Russian",
-   "dir": "ltr"
-  },
-  {
-   "tag": "ms",
-   "endonym": "Bahasa Melayu",
-   "englishName": "Malay",
-   "dir": "ltr"
-  },
-  {
-   "tag": "fil",
-   "endonym": "Filipino",
-   "englishName": "Filipino",
-   "dir": "ltr"
-  },
-  {
-   "tag": "mr",
-   "endonym": "मराठी",
-   "englishName": "Marathi",
-   "dir": "ltr"
-  },
-  {
-   "tag": "vi",
-   "endonym": "Tiếng Việt",
-   "englishName": "Vietnamese",
-   "dir": "ltr"
-  },
-  {
-   "tag": "te",
-   "endonym": "తెలుగు",
-   "englishName": "Telugu",
-   "dir": "ltr"
-  },
-  {
-   "tag": "ta",
-   "endonym": "தமிழ்",
-   "englishName": "Tamil",
-   "dir": "ltr"
-  },
-  {
-   "tag": "bn",
-   "endonym": "বাংলা",
-   "englishName": "Bengali",
-   "dir": "ltr"
-  },
-  {
-   "tag": "th",
-   "endonym": "ไทย",
-   "englishName": "Thai",
-   "dir": "ltr"
-  },
-  {
-   "tag": "ha",
-   "endonym": "Hausa",
-   "englishName": "Hausa",
-   "dir": "ltr"
-  },
-  {
-   "tag": "pcm",
-   "endonym": "Naijá",
-   "englishName": "Nigerian Pidgin",
-   "dir": "ltr"
-  },
-  {
-   "tag": "ar",
-   "endonym": "العربية",
-   "englishName": "Arabic",
-   "dir": "rtl"
-  },
-  {
-   "tag": "fa",
-   "endonym": "فارسی",
-   "englishName": "Persian",
-   "dir": "rtl"
-  },
-  {
-   "tag": "he",
-   "endonym": "עברית",
-   "englishName": "Hebrew",
-   "dir": "rtl"
-  },
-  {
-   "tag": "ur",
-   "endonym": "اردو",
-   "englishName": "Urdu",
-   "dir": "rtl"
-  }
- ],
- "boot.Zr": {
-  "off": 0,
-  "free": 1,
-  "jailed": 2,
-  "strayed": 3,
-  "lassoed": 4,
-  "pulling": 5
- },
- "boot._i": [
-  "story",
-  "easy",
-  "normal",
-  "hard",
-  "nightmare"
- ],
- "boot.ci": {
+ "boot.li": {
   "aura": 0,
   "pool": 1,
   "mine": 2,
@@ -2922,29 +2895,54 @@
   "telegraph": 5,
   "hazardPool": 6
  },
- "boot.dr": [
-  "round",
-  "oval",
-  "clover",
-  "splat",
-  "slab",
-  "drop"
- ],
- "boot.ii": {
-  "circle": 0,
-  "line": 1,
-  "cone": 2,
-  "ring": 3,
-  "wedge": 4
- },
  "boot.ma": {
-  "hold": 0,
-  "shrink": 1,
-  "grow": 2,
-  "dropTier": 3,
-  "raiseTier": 4
+  "warmupSeconds": 2,
+  "windowSeconds": 0.5,
+  "slowMs": 18.5,
+  "fastMs": 17.2,
+  "ignoreAboveMs": 100,
+  "minScale": 0.5,
+  "step": 0.85,
+  "slowWindowsToShrink": 2,
+  "floorWindowsToDrop": 4,
+  "fastWindowsToGrow": 8,
+  "raiseWorkMs": 1.5,
+  "raiseWindows": 20,
+  "quietSeconds": 0.5,
+  "trialWindows": 8
  },
  "boot.ni": {
+  "xp": 0,
+  "gold": 1,
+  "heal": 2,
+  "magnet": 3,
+  "chest": 4,
+  "reroll": 5,
+  "skip": 6,
+  "banish": 7,
+  "item": 8,
+  "beacon": 9
+ },
+ "boot.qr": {
+  "slash": 0,
+  "beam": 1,
+  "explosion": 2,
+  "strike": 3,
+  "cone": 4,
+  "reset": 5,
+  "spawn": 6,
+  "death": 7,
+  "shockwave": 8,
+  "chain": 9,
+  "heal": 10,
+  "pickup": 11,
+  "bark": 12,
+  "bite": 13,
+  "gpuSteam": 14,
+  "shards": 15,
+  "discharge": 16
+ },
+ "boot.ri": {
   "slash": 0,
   "targetShot": 1,
   "facingShot": 2,
@@ -2971,35 +2969,14 @@
   "tether": 23,
   "ring": 24
  },
- "boot.pa": {
-  "warmupSeconds": 2,
-  "windowSeconds": 0.5,
-  "slowMs": 18.5,
-  "fastMs": 17.2,
-  "ignoreAboveMs": 100,
-  "minScale": 0.5,
-  "step": 0.85,
-  "slowWindowsToShrink": 2,
-  "floorWindowsToDrop": 4,
-  "fastWindowsToGrow": 8,
-  "raiseWorkMs": 1.5,
-  "raiseWindows": 20,
-  "quietSeconds": 0.5,
-  "trialWindows": 8
- },
- "boot.ti": {
-  "xp": 0,
-  "gold": 1,
-  "heal": 2,
-  "magnet": 3,
-  "chest": 4,
-  "reroll": 5,
-  "skip": 6,
-  "banish": 7,
-  "item": 8,
-  "beacon": 9
- },
- "boot.vt": {
+ "boot.vi": [
+  "story",
+  "easy",
+  "normal",
+  "hard",
+  "nightmare"
+ ],
+ "boot.yt": {
   "width": 256,
   "height": 64,
   "pixelSize": {
@@ -3044,12 +3021,41 @@
    }
   }
  },
- "boot.zr": [
-  "none",
-  "boss",
-  "elite",
-  "lootRunner",
-  "poteto",
-  "story"
- ]
+ "boot.za": {
+  "alexReveal": {
+   "playing": false,
+   "live": false,
+   "ready": "[fn]",
+   "frame": "[fn]",
+   "view": "[fn]",
+   "skip": "[fn]",
+   "probe": "[fn]",
+   "relabel": "[fn]"
+  },
+  "storyLines": {
+   "holds": false,
+   "speaking": false,
+   "grokTabOwed": false,
+   "readyForDeathPanel": "[fn]",
+   "frame": "[fn]",
+   "relabel": "[fn]"
+  },
+  "friesLines": {
+   "holds": false,
+   "speaking": false,
+   "frame": "[fn]",
+   "sample": "[fn]",
+   "relabel": "[fn]"
+  }
+ },
+ "boot.zr": {
+  "Elite": 1,
+  "Chest": 2,
+  "NoSplit": 4,
+  "Down": 8,
+  "NoDrops": 16,
+  "Invincible": 32,
+  "Hidden": 64,
+  "CursedExtra": 128
+ }
 }

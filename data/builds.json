@@ -290,5 +290,15 @@
   "status": "reviewed",
   "updated": "2026-11-04T15:14:56Z",
   "changes": "Railgun beams now use direction-matched pixel tiles instead of rotated strips, with a bright pulse travelling along the beam; reduced motion skips the pulse. The main renderer compensates for perspective, and the debug renderer snaps the tiles to its pixel grid. Beam scorch marks glow slightly brighter. The sprite atlas is repacked; only the railgun core frames change, and wiki icons are unchanged. The in-game changelog groups eleven existing notes under the older game commit 445c881 rather than treating them as new changes. Simulation logic, content values, English content descriptions and difficulty settings are unchanged."
+ },
+ {
+  "seen": "2026-11-04",
+  "main": "main-B_23C7XX.js",
+  "boot": "boot-DEjVumeO.js",
+  "sim": "sim-BRTnhyg2.js",
+  "commit": "f65418f606ed",
+  "status": "reviewed",
+  "updated": "2026-11-04T15:53:17Z",
+  "changes": "Interrupted 3D scene downloads now pause play and retry with delays growing from 1 to 8 s; failed early sprite-page downloads can retry too. After a graphics reset, the renderer waits up to 5 s for restoration, then tries a fresh context before falling back. A scene-construction failure retries 3D once on Low at half resolution without adaptive quality; a second construction failure still uses the 2D fallback. Active intro/landing cutscenes end as skipped if the renderer stops being ready. Chest evolution halos use layered gold ground rings with eight rotating dashes instead of three size-specific sprite animations; reduced motion keeps the ring still. The late atlas drops those three clips and repacks the remaining unchanged frames. Adds a translated graphics-recovery changelog note. Combat simulation, existing content/config values, English content descriptions, difficulty settings and wiki icons are unchanged."
  }
 ]
