@@ -127,10 +127,10 @@ export function systemPages(entityPages) {
   add({
     path: '/versions',
     title: 'Versions & updates',
-    description: 'Exactly when the tibo.dog Wiki was last updated, which game version it documents, every game build it has tracked, and a live check against tibo.dog.',
+    description: 'Average updates per day and week, version history, when the wiki was last updated, and a live check against tibo.dog.',
     body: MECH.versions(),
     sources: [],
-    search: 'version versions update updated changelog patch build live check date',
+    search: 'version versions update updated changelog patch build live check date frequency average daily weekly',
   });
   add({
     path: '/coverage',

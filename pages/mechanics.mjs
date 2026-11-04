@@ -2,6 +2,7 @@
 import { R, GAME, STORY, FORMULA, DIFF, BUILD, BUILDS, BUILT_AT, utc, t, name, link, ilink, fmt, pct, RARITY, statLabel } from '../lib/data.mjs';
 import { table, json } from './entities.mjs';
 import { NOTES, historyPage } from './notes.mjs';
+import { updateStats } from './update-stats.mjs';
 
 const V = '**Verified**';
 const INF = '**Inference**';
@@ -352,7 +353,7 @@ function guides() {
 
 function versions() {
   const pending = BUILDS.filter((b) => b.status !== 'reviewed');
-  return `## Current version\n\n` + table(['', ''], [
+  return updateStats(BUILDS) + `## Current version\n\n` + table(['', ''], [
     ['Wiki last updated', `**${utc(BUILT_AT)}** (when the version you are reading was deployed)`],
     ['Game version documented', `**${BUILD.version}** of ${BUILDS.length} seen`],
     ['Game commit', BUILD.commit ? `\`${BUILD.commit}\`` : 'unknown'],
