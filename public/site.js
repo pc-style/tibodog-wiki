@@ -7,7 +7,7 @@
   // Sidebar groups remember being folded; the group holding the current page always stays open.
   const KEY = 'tibo-wiki.nav-closed';
   let closed = [];
-  try { closed = JSON.parse(localStorage.getItem(KEY)) || []; } catch {}
+  try { const saved = JSON.parse(localStorage.getItem(KEY)); if (Array.isArray(saved)) closed = saved; } catch {}
   for (const g of document.querySelectorAll('.nav-group')) {
     const here = g.querySelector('[aria-current]');
     if (!here && closed.includes(g.dataset.group)) g.open = false;
