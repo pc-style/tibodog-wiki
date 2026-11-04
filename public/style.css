@@ -84,7 +84,8 @@ pre {
 code.nw { white-space: nowrap; }
 /* Long unbroken values (JSON constants) get their own wrapping block instead of splitting a sentence. */
 /* Long unbroken values (JSON constants) wrap anywhere, keeping their padding on each line. */
-code.long { white-space: normal; overflow-wrap: anywhere; -webkit-box-decoration-break: clone; box-decoration-break: clone; }
+/* break-all still follows Unicode line breaking, so a closing ] or . never starts a line. */
+code.long { white-space: normal; overflow-wrap: normal; word-break: break-all; -webkit-box-decoration-break: clone; box-decoration-break: clone; }
 pre code { background: none; padding: 0; font-size: inherit; overflow-wrap: normal; }
 img { max-width: 100%; }
 .sr, .skip:not(:focus) { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
