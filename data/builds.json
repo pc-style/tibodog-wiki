@@ -210,5 +210,15 @@
   "status": "reviewed",
   "updated": "2026-11-04T07:50:07Z",
   "changes": "Tibo's enemy-shot hit circle grows from 2.5 to 4 units in radius and moves 2.72 units down towards his feet. Near-miss and bullet-culling distances use the shifted centre too; homing still aims at his unshifted position. Contact and pickup radii are unchanged. The displayed hit circle follows the new position. Adds fuse sparks and heat flashes to Hot Potato and Spicy Hot Potato, distinct pixel-art arcs for Starch Chain, Gratin Arc, Starch Supercell and Grok Bots, sharper Steam Vent and Pressure Cooker rings, and a new revive burst. The in-game changelog adds the hit-circle change and a note about earlier boss/enemy art. Other content values, English content descriptions, difficulty settings and wiki icons are unchanged."
+ },
+ {
+  "seen": "2026-11-04",
+  "main": "main-BbIPq8Ys.js",
+  "boot": "boot-DOeQj7wU.js",
+  "sim": "sim-CnXUlSN-.js",
+  "commit": "62522d20f8b5",
+  "status": "reviewed",
+  "updated": "2026-11-04T08:11:00Z",
+  "changes": "Sprite rendering switches to power-of-two texture-sheet heights and sprite-local texture coordinates, with sampling snapped to a 1/8192-texel grid. Outlines, shadows, projectile sprites and ghost dithering use the local coordinates too. Bright interiors of ground effects are darker and their added glow is slightly reduced. The debug sheetrows URL option now accepts only positive powers of two. The in-game changelog adds a note about notices, such as a dog joining the pack, being centred with the controls hint. Simulation logic, content values, English content descriptions, difficulty settings and wiki icons are unchanged."
  }
 ]
