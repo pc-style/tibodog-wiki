@@ -17,9 +17,13 @@
   for (const el of document.querySelectorAll('time[data-local]')) {
     const d = new Date(el.dateTime);
     if (isNaN(d)) continue;
-    el.title = `${el.textContent} (${d.toISOString()})`;
-    el.textContent = local(d);
-    el.insertAdjacentHTML('afterend', ` <span class="vb-ago">(${ago(Date.now() - d)})</span>`);
+    el.title = `${local(d)} (${d.toISOString()})`;
+    if (el.dataset.local === 'ago') {
+      el.textContent = ago(Date.now() - d);
+    } else {
+      el.textContent = local(d);
+      el.insertAdjacentHTML('afterend', ` <span class="ago">(${ago(Date.now() - d)})</span>`);
+    }
   }
 
   // Live check: does tibo.dog still serve the game build this wiki documents?
@@ -121,6 +125,13 @@
     `<li role="option"><a href="${e.u}">${e.i ? `<img class="ico" src="/icons/${e.i}.png" alt="" height="22">` : ''}<span>${esc(e.t)}</span><small>${esc(e.s)}</small></a></li>`;
   let sel = -1;
   if (input && list) {
+    // "/" jumps to search from anywhere outside a text field.
+    document.addEventListener('keydown', (e) => {
+      if (e.key !== '/' || e.ctrlKey || e.metaKey || e.altKey) return;
+      if (e.target.closest?.('input, textarea, select, [contenteditable]')) return;
+      e.preventDefault();
+      input.focus();
+    });
     input.addEventListener('focus', load, { once: true });
     input.addEventListener('input', async () => {
       await load();
