@@ -101,7 +101,12 @@ run('node', ['--input-type=module', '-e', `
   const l = await import(${JSON.stringify(join(live.dir, pick(/^atlas-late\.generated-.{8}\.js$/)))});
   fs.writeFileSync(${JSON.stringify(join(atlasDir, 'atlas-early.json'))}, JSON.stringify(Object.values(e)[0]));
   fs.writeFileSync(${JSON.stringify(join(atlasDir, 'atlas-late.json'))}, JSON.stringify(Object.values(l)[0]));`]);
-writeFileSync(join(atlasDir, 'pages.json'), JSON.stringify({ early: pick(/^atlas-[A-Za-z0-9_-]{8}\.png$/), late: pick(/^atlas-late-[A-Za-z0-9_-]{8}\.png$/) }));
+const flagged = pick(/^flagged-atlas\.generated-.{8}\.js$/);
+if (flagged) run('node', ['--input-type=module', '-e', `
+  import fs from 'node:fs';
+  const { FLAGGED_ATLAS } = await import(${JSON.stringify(join(live.dir, flagged))});
+  fs.writeFileSync(${JSON.stringify(join(atlasDir, 'atlas-flagged.json'))}, JSON.stringify(FLAGGED_ATLAS));`]);
+writeFileSync(join(atlasDir, 'pages.json'), JSON.stringify({ early: pick(/^atlas-[A-Za-z0-9_-]{8}\.png$/), late: pick(/^atlas-late-[A-Za-z0-9_-]{8}\.png$/), ...(flagged ? { flagged: pick(/^flagged-atlas-[A-Za-z0-9_-]{8}\.png$/) } : {}) }));
 run('python3', ['tools/icons.py', live.dir, atlasDir, join(cache, 'data', 'registry.json'), join(cache, 'icons')]);
 const iconDiff = run('python3', ['-I', '-c', `
 import json,os,sys

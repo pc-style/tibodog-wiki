@@ -1136,6 +1136,18 @@
  "content.weapon.frying-pan.name": [
   "Frying Pan"
  ],
+ "content.weapon.gem-catapult.desc": [
+  "Each XP gem Tibo picks up flings a potato wedge along his heading, with each wedge hitting far harder. More amount flings more wedges in a fan."
+ ],
+ "content.weapon.gem-catapult.name": [
+  "Gem Catapult"
+ ],
+ "content.weapon.gem-sling.desc": [
+  "Each XP gem Tibo picks up flings a potato wedge along his heading. More amount flings more wedges in a fan."
+ ],
+ "content.weapon.gem-sling.name": [
+  "Gem Sling"
+ ],
  "content.weapon.ghee-glide.desc": [
   "Each dash leaves a strip of hot ghee that slows and burns pests. Between dashes, it also leaves one on the path Tibo just walked. Tibo walks 15% faster on the ghee."
  ],
@@ -1202,6 +1214,12 @@
  "content.weapon.hot-potato.name": [
   "Hot Potato"
  ],
+ "content.weapon.hot-streak.desc": [
+  "A fry-oil slash sweeps the pests around Tibo. Every second that Tibo keeps moving without being hit lights a flame at his feet, up to five, and each flame makes the slash reach farther and come faster. A hit puts out two flames, and a stop puts them all out."
+ ],
+ "content.weapon.hot-streak.name": [
+  "Hot Streak"
+ ],
  "content.weapon.inferno-basket.desc": [
   "A long blast of fryer oil. Double damage to elites and bosses."
  ],
@@ -1232,11 +1250,29 @@
  "content.weapon.loaded-dice.name": [
   "Loaded Dice"
  ],
+ "content.weapon.locked-gatling.desc": [
+  "Each 2 second burst locks onto the nearest pest's angle and keeps firing tots that way while Tibo moves. More amount fires more lanes side by side."
+ ],
+ "content.weapon.locked-gatling.name": [
+  "Locked Gatling"
+ ],
  "content.weapon.mandoline-fury.desc": [
   "Slices both ways at once and flings potato slices through the crowd. Each slash hit heals Tibo a little."
  ],
  "content.weapon.mandoline-fury.name": [
   "Mandoline Fury"
+ ],
+ "content.weapon.mash-avalanche.desc": [
+  "The mash ball hits harder, and on its first hit it breaks into three smaller balls that fan out along its heading and splatter pests by their size."
+ ],
+ "content.weapon.mash-avalanche.name": [
+  "Mash Avalanche"
+ ],
+ "content.weapon.mash-snowball.desc": [
+  "A ball of mash rolls behind Tibo and grows with every step he runs. When he stops or turns hard, it surges ahead along his last heading and splatters pests by its size. A full ball lets go on its own."
+ ],
+ "content.weapon.mash-snowball.name": [
+  "Mash Snowball"
  ],
  "content.weapon.mash-wave.desc": [
   "A ring of mashed potato rolls out from Tibo."
@@ -1285,6 +1321,12 @@
  ],
  "content.weapon.potato-battery.name": [
   "Potato Battery"
+ ],
+ "content.weapon.potato-patch.desc": [
+  "Tibo tosses three fertilized seed potatoes at a time, and up to six grow at once. Their zaps and harvest bursts hit much harder. Walk over a plant to harvest it and throw again."
+ ],
+ "content.weapon.potato-patch.name": [
+  "Potato Patch"
  ],
  "content.weapon.potato-rain.desc": [
   "Calls down a shower of potatoes around Tibo."
@@ -1352,6 +1394,12 @@
  "content.weapon.salt-line.name": [
   "Salt Line"
  ],
+ "content.weapon.seed-potato.desc": [
+  "Tibo tosses a seed potato onto the nearest crowd. It sprouts in three stages and zaps pests around it every second. Walk over it to harvest a burst that grows with the stage and catch the potato to throw again. Left alone, it bursts weakly after 8 s."
+ ],
+ "content.weapon.seed-potato.name": [
+  "Seed Potato"
+ ],
  "content.weapon.seeker-sprouts.desc": [
   "Sprouts that steer toward enemies."
  ],
@@ -1363,6 +1411,12 @@
  ],
  "content.weapon.small-fry.name": [
   "Small Fry"
+ ],
+ "content.weapon.spark-corral.desc": [
+  "Every 60 units Tibo walks, he plants a charged starch post. A braided arc twice as wide runs between the posts and zaps pests much harder. More posts stand, and each lasts 9 s."
+ ],
+ "content.weapon.spark-corral.name": [
+  "Spark Corral"
  ],
  "content.weapon.spicy-hot-potato.desc": [
   "Hops further, and its blast throws two fresh hot potatoes."
@@ -1393,6 +1447,12 @@
  ],
  "content.weapon.spud-dice.name": [
   "Spud Dice"
+ ],
+ "content.weapon.spud-fence.desc": [
+  "Every 60 units Tibo walks, he plants a starch post. A live arc runs from each post to the one before and zaps pests that cross it. At most four posts stand, and a still Tibo plants none."
+ ],
+ "content.weapon.spud-fence.name": [
+  "Spud Fence"
  ],
  "content.weapon.spud-grid.desc": [
   "Clips three live wires at once. Each wire zaps harder and bursts when it lets go."
@@ -1442,6 +1502,18 @@
  "content.weapon.steam-vent.name": [
   "Steam Vent"
  ],
+ "content.weapon.tailgate-fries.desc": [
+  "While Tibo runs, fries spray out behind him into whatever is chasing him. Standing still, he drips one fry behind him."
+ ],
+ "content.weapon.tailgate-fries.name": [
+  "Tailgate Fries"
+ ],
+ "content.weapon.tailgate-party.desc": [
+  "Buttered fries spray out behind Tibo while he runs and hit much harder. Standing still, he drips one behind him."
+ ],
+ "content.weapon.tailgate-party.name": [
+  "Tailgate Party"
+ ],
  "content.weapon.taproot-eruption.desc": [
   "Giant roots erupt and throw enemies back."
  ],
@@ -1454,11 +1526,29 @@
  "content.weapon.tater-mines.name": [
   "Tater Mines"
  ],
+ "content.weapon.tater-minigun.desc": [
+  "The same locked 2 second bursts, one lane per amount, with each tot hitting far harder."
+ ],
+ "content.weapon.tater-minigun.name": [
+  "Tater Minigun"
+ ],
  "content.weapon.tater-pup.desc": [
   "A loyal tot that follows Tibo and shoots."
  ],
  "content.weapon.tater-pup.name": [
   "Tater Tot Pup"
+ ],
+ "content.weapon.tater-twirl.desc": [
+  "Hash-brown wheels circle Tibo, spinning and hitting as fast as he runs. When he stands still they slow to a crawl."
+ ],
+ "content.weapon.tater-twirl.name": [
+  "Tater Twirl"
+ ],
+ "content.weapon.tater-twister.desc": [
+  "More hash-brown wheels circle Tibo on a wider orbit and hit harder, spinning as fast as he runs. When he stands still they slow to a crawl."
+ ],
+ "content.weapon.tater-twister.name": [
+  "Tater Twister"
  ],
  "content.weapon.thousand-fries.desc": [
   "Fries without end."
@@ -1472,11 +1562,23 @@
  "content.weapon.thunder-tuber.name": [
   "Thunder Tuber"
  ],
+ "content.weapon.tot-cavalry.desc": [
+  "Every 40 units Tibo walks, a squad of buttered tater tots charges out behind him and rams through two pests each. A still Tibo makes no tots."
+ ],
+ "content.weapon.tot-cavalry.name": [
+  "Tot Cavalry"
+ ],
  "content.weapon.tot-gatling.desc": [
   "A nonstop stream of tater tots."
  ],
  "content.weapon.tot-gatling.name": [
   "Tot Gatling"
+ ],
+ "content.weapon.tot-stampede.desc": [
+  "Every 40 units Tibo walks, a tater tot hops out behind him and charges the nearest pest, popping on contact. A still Tibo makes no tots."
+ ],
+ "content.weapon.tot-stampede.name": [
+  "Tot Stampede"
  ],
  "content.weapon.tot-toss.desc": [
   "Throws tater tots at the nearest enemy."
@@ -1495,5 +1597,11 @@
  ],
  "content.weapon.whisk-vortex.name": [
   "Whisk Vortex"
+ ],
+ "content.weapon.wildfire-roast.desc": [
+  "Hot Streak's slash burns white-hot. Each flame Tibo keeps lit makes the sweep reach much farther, up to five. A hit puts out two flames, and a stop puts them all out."
+ ],
+ "content.weapon.wildfire-roast.name": [
+  "Wildfire Roast"
  ]
 }

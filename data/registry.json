@@ -1788,6 +1788,492 @@
      "radius": 60
     }
    }
+  },
+  {
+   "id": "gem-sling",
+   "tier": "base",
+   "base": {
+    "damage": 8,
+    "cooldown": 0,
+    "amount": 1,
+    "area": 1,
+    "speed": 210,
+    "duration": 0.9,
+    "pierce": 1,
+    "knockback": 0.6,
+    "interval": 0.1
+   },
+   "levels": [
+    {
+     "damage": 2
+    },
+    {
+     "pierce": 1
+    },
+    {
+     "damage": 2
+    },
+    {
+     "speed": 30
+    },
+    {
+     "damage": 3
+    },
+    {
+     "pierce": 1
+    },
+    {
+     "damage": 3
+    }
+   ],
+   "weight": 75,
+   "behavior": {
+    "kind": "bigUpdate",
+    "variant": {
+     "kind": "sling",
+     "fan": 0.16,
+     "spread": 0.05,
+     "size": 4,
+     "perTick": 2,
+     "maxQueue": 40
+    }
+   }
+  },
+  {
+   "id": "hot-streak",
+   "tier": "base",
+   "base": {
+    "damage": 45,
+    "cooldown": 0,
+    "amount": 1,
+    "area": 1,
+    "speed": 0,
+    "duration": 0,
+    "pierce": 99,
+    "knockback": 1,
+    "interval": 0
+   },
+   "levels": [
+    {
+     "damage": 14
+    },
+    {
+     "area": 0.1
+    },
+    {
+     "damage": 14
+    },
+    {
+     "damage": 14
+    },
+    {
+     "area": 0.1
+    },
+    {
+     "damage": 18
+    },
+    {
+     "damage": 18
+    }
+   ],
+   "weight": 75,
+   "behavior": {
+    "kind": "bigUpdate",
+    "variant": {
+     "kind": "hotStreak",
+     "size": 34,
+     "hitInterval": 1,
+     "streak": {
+      "steps": 5,
+      "stepSec": 1,
+      "hitLoss": 2,
+      "stopSec": 0,
+      "area": 0.24,
+      "rate": 0.24,
+      "firstStep": 0
+     }
+    }
+   }
+  },
+  {
+   "id": "locked-gatling",
+   "tier": "base",
+   "base": {
+    "damage": 6,
+    "cooldown": 0.14,
+    "amount": 1,
+    "area": 1,
+    "speed": 220,
+    "duration": 1.2,
+    "pierce": 1,
+    "knockback": 0.4,
+    "interval": 0
+   },
+   "levels": [
+    {
+     "damage": 1
+    },
+    {
+     "cooldown": -0.02
+    },
+    {
+     "damage": 1
+    },
+    {
+     "pierce": 1
+    },
+    {
+     "damage": 2
+    },
+    {
+     "cooldown": -0.02
+    },
+    {
+     "damage": 2
+    }
+   ],
+   "weight": 75,
+   "behavior": {
+    "kind": "bigUpdate",
+    "variant": {
+     "kind": "gatling",
+     "burstSec": 2,
+     "gapSec": 0.35,
+     "retrySec": 0.1,
+     "reach": 220,
+     "lane": 7,
+     "spread": 0.03,
+     "size": 4,
+     "shot": "tot-toss"
+    }
+   }
+  },
+  {
+   "id": "mash-snowball",
+   "tier": "base",
+   "base": {
+    "damage": 35,
+    "cooldown": 0,
+    "amount": 1,
+    "area": 1,
+    "speed": 0,
+    "duration": 1,
+    "pierce": 99,
+    "knockback": 1.5,
+    "interval": 0.1
+   },
+   "levels": [
+    {
+     "damage": 10
+    },
+    {
+     "area": 0.1
+    },
+    {
+     "damage": 10
+    },
+    {
+     "damage": 10
+    },
+    {
+     "area": 0.1
+    },
+    {
+     "damage": 10
+    },
+    {
+     "damage": 15
+    }
+   ],
+   "weight": 75,
+   "behavior": {
+    "kind": "bigUpdate",
+    "variant": {
+     "kind": "snowball",
+     "turnDeg": 120,
+     "stopTicks": 4,
+     "minR": 4,
+     "maxR": 14,
+     "growPerUnit": 0.22,
+     "minRelease": 9,
+     "fullSec": 0.25,
+     "surgeSpeed": 220,
+     "surgeBase": 70,
+     "surgePerR": 9,
+     "splatK": 2.5,
+     "trailBase": 8,
+     "trailPerR": 6,
+     "sweepK": 1.4
+    }
+   }
+  },
+  {
+   "id": "seed-potato",
+   "tier": "base",
+   "base": {
+    "damage": 30,
+    "cooldown": 0,
+    "amount": 1,
+    "area": 1,
+    "speed": 0,
+    "duration": 1,
+    "pierce": 99,
+    "knockback": 1,
+    "interval": 0.1
+   },
+   "levels": [
+    {
+     "damage": 6
+    },
+    {
+     "damage": 6
+    },
+    {
+     "damage": 6,
+     "area": 0.1
+    },
+    {
+     "damage": 6
+    },
+    {
+     "damage": 6
+    },
+    {
+     "damage": 6,
+     "area": 0.1
+    },
+    {
+     "damage": 6
+    }
+   ],
+   "weight": 80,
+   "behavior": {
+    "kind": "bigUpdate",
+    "variant": {
+     "kind": "seedPotato",
+     "rule": {
+      "throwSec": 0.25,
+      "minThrow": 30,
+      "maxThrow": 90,
+      "flightSec": 0.35,
+      "stageSec": 1.2,
+      "selfSec": 8,
+      "zapSec": 1,
+      "zapR": 30,
+      "zapK": 0.3,
+      "reach": 24,
+      "reachK": 0.25,
+      "maxReach": 34,
+      "burstR": 30,
+      "stageR": 8,
+      "burstK": 1.5,
+      "selfK": 0.6,
+      "leashR": 160,
+      "maxPlants": 4,
+      "luckK": 0.5,
+      "goldCoins": 4
+     }
+    }
+   }
+  },
+  {
+   "id": "spud-fence",
+   "tier": "base",
+   "base": {
+    "damage": 20,
+    "cooldown": 0,
+    "amount": 1,
+    "area": 1,
+    "speed": 0,
+    "duration": 4,
+    "pierce": 99,
+    "knockback": 1,
+    "interval": 0.1
+   },
+   "levels": [
+    {
+     "damage": 8
+    },
+    {
+     "duration": 1
+    },
+    {
+     "area": 0.25
+    },
+    {
+     "damage": 10
+    },
+    {
+     "duration": 1
+    },
+    {
+     "damage": 12
+    },
+    {
+     "amount": 1
+    }
+   ],
+   "weight": 75,
+   "behavior": {
+    "kind": "bigUpdate",
+    "variant": {
+     "kind": "spudFence",
+     "rule": {
+      "every": 60,
+      "live": 4,
+      "arcWidth": 24,
+      "zapSec": 0.2,
+      "maxSpan": 90,
+      "minLife": 0.5
+     }
+    }
+   }
+  },
+  {
+   "id": "tailgate-fries",
+   "tier": "base",
+   "base": {
+    "damage": 8,
+    "cooldown": 0.7,
+    "amount": 2,
+    "area": 1,
+    "speed": 200,
+    "duration": 0.8,
+    "pierce": 1,
+    "knockback": 1.2,
+    "interval": 0.06
+   },
+   "levels": [
+    {
+     "amount": 1
+    },
+    {
+     "damage": 5
+    },
+    {
+     "amount": 1
+    },
+    {
+     "pierce": 1,
+     "damage": 4
+    },
+    {
+     "amount": 1
+    },
+    {
+     "damage": 6
+    },
+    {
+     "damage": 5,
+     "cooldown": -0.1
+    }
+   ],
+   "weight": 75,
+   "behavior": {
+    "kind": "bigUpdate",
+    "variant": {
+     "kind": "tailgate",
+     "size": 3,
+     "spread": 0.25,
+     "dripSpeed": 0.35
+    }
+   }
+  },
+  {
+   "id": "tater-twirl",
+   "tier": "base",
+   "base": {
+    "damage": 48,
+    "cooldown": 0,
+    "amount": 1,
+    "area": 1,
+    "speed": 5,
+    "duration": 0.5,
+    "pierce": 99,
+    "knockback": 1,
+    "interval": 0.1
+   },
+   "levels": [
+    {
+     "damage": 16
+    },
+    {
+     "speed": 0.6
+    },
+    {
+     "area": 0.15
+    },
+    {
+     "damage": 24
+    },
+    {
+     "amount": 1
+    },
+    {
+     "damage": 32
+    },
+    {
+     "area": 0.15
+    }
+   ],
+   "weight": 75,
+   "behavior": {
+    "kind": "bigUpdate",
+    "variant": {
+     "kind": "twirl",
+     "size": 8,
+     "orbitRadius": 30,
+     "hitInterval": 0.2,
+     "crawl": 0.12,
+     "maxPace": 2,
+     "riseSec": 0.12
+    }
+   }
+  },
+  {
+   "id": "tot-stampede",
+   "tier": "base",
+   "base": {
+    "damage": 16,
+    "cooldown": 0,
+    "amount": 1,
+    "area": 1,
+    "speed": 120,
+    "duration": 3,
+    "pierce": 0,
+    "knockback": 1,
+    "interval": 0.08
+   },
+   "levels": [
+    {
+     "damage": 6
+    },
+    {
+     "amount": 1
+    },
+    {
+     "duration": 1,
+     "speed": 20
+    },
+    {
+     "damage": 8
+    },
+    {
+     "amount": 1
+    },
+    {
+     "damage": 10
+    },
+    {
+     "amount": 1
+    }
+   ],
+   "weight": 75,
+   "behavior": {
+    "kind": "homing",
+    "size": 4,
+    "turn": 7
+   }
   }
  ],
  "allWeapons": [
@@ -4549,6 +5035,780 @@
     "starch-bolt",
     "starch-chain"
    ]
+  },
+  {
+   "id": "gem-sling",
+   "tier": "base",
+   "base": {
+    "damage": 8,
+    "cooldown": 0,
+    "amount": 1,
+    "area": 1,
+    "speed": 210,
+    "duration": 0.9,
+    "pierce": 1,
+    "knockback": 0.6,
+    "interval": 0.1
+   },
+   "levels": [
+    {
+     "damage": 2
+    },
+    {
+     "pierce": 1
+    },
+    {
+     "damage": 2
+    },
+    {
+     "speed": 30
+    },
+    {
+     "damage": 3
+    },
+    {
+     "pierce": 1
+    },
+    {
+     "damage": 3
+    }
+   ],
+   "weight": 75,
+   "behavior": {
+    "kind": "bigUpdate",
+    "variant": {
+     "kind": "sling",
+     "fan": 0.16,
+     "spread": 0.05,
+     "size": 4,
+     "perTick": 2,
+     "maxQueue": 40
+    }
+   }
+  },
+  {
+   "id": "hot-streak",
+   "tier": "base",
+   "base": {
+    "damage": 45,
+    "cooldown": 0,
+    "amount": 1,
+    "area": 1,
+    "speed": 0,
+    "duration": 0,
+    "pierce": 99,
+    "knockback": 1,
+    "interval": 0
+   },
+   "levels": [
+    {
+     "damage": 14
+    },
+    {
+     "area": 0.1
+    },
+    {
+     "damage": 14
+    },
+    {
+     "damage": 14
+    },
+    {
+     "area": 0.1
+    },
+    {
+     "damage": 18
+    },
+    {
+     "damage": 18
+    }
+   ],
+   "weight": 75,
+   "behavior": {
+    "kind": "bigUpdate",
+    "variant": {
+     "kind": "hotStreak",
+     "size": 34,
+     "hitInterval": 1,
+     "streak": {
+      "steps": 5,
+      "stepSec": 1,
+      "hitLoss": 2,
+      "stopSec": 0,
+      "area": 0.24,
+      "rate": 0.24,
+      "firstStep": 0
+     }
+    }
+   }
+  },
+  {
+   "id": "locked-gatling",
+   "tier": "base",
+   "base": {
+    "damage": 6,
+    "cooldown": 0.14,
+    "amount": 1,
+    "area": 1,
+    "speed": 220,
+    "duration": 1.2,
+    "pierce": 1,
+    "knockback": 0.4,
+    "interval": 0
+   },
+   "levels": [
+    {
+     "damage": 1
+    },
+    {
+     "cooldown": -0.02
+    },
+    {
+     "damage": 1
+    },
+    {
+     "pierce": 1
+    },
+    {
+     "damage": 2
+    },
+    {
+     "cooldown": -0.02
+    },
+    {
+     "damage": 2
+    }
+   ],
+   "weight": 75,
+   "behavior": {
+    "kind": "bigUpdate",
+    "variant": {
+     "kind": "gatling",
+     "burstSec": 2,
+     "gapSec": 0.35,
+     "retrySec": 0.1,
+     "reach": 220,
+     "lane": 7,
+     "spread": 0.03,
+     "size": 4,
+     "shot": "tot-toss"
+    }
+   }
+  },
+  {
+   "id": "mash-snowball",
+   "tier": "base",
+   "base": {
+    "damage": 35,
+    "cooldown": 0,
+    "amount": 1,
+    "area": 1,
+    "speed": 0,
+    "duration": 1,
+    "pierce": 99,
+    "knockback": 1.5,
+    "interval": 0.1
+   },
+   "levels": [
+    {
+     "damage": 10
+    },
+    {
+     "area": 0.1
+    },
+    {
+     "damage": 10
+    },
+    {
+     "damage": 10
+    },
+    {
+     "area": 0.1
+    },
+    {
+     "damage": 10
+    },
+    {
+     "damage": 15
+    }
+   ],
+   "weight": 75,
+   "behavior": {
+    "kind": "bigUpdate",
+    "variant": {
+     "kind": "snowball",
+     "turnDeg": 120,
+     "stopTicks": 4,
+     "minR": 4,
+     "maxR": 14,
+     "growPerUnit": 0.22,
+     "minRelease": 9,
+     "fullSec": 0.25,
+     "surgeSpeed": 220,
+     "surgeBase": 70,
+     "surgePerR": 9,
+     "splatK": 2.5,
+     "trailBase": 8,
+     "trailPerR": 6,
+     "sweepK": 1.4
+    }
+   }
+  },
+  {
+   "id": "seed-potato",
+   "tier": "base",
+   "base": {
+    "damage": 30,
+    "cooldown": 0,
+    "amount": 1,
+    "area": 1,
+    "speed": 0,
+    "duration": 1,
+    "pierce": 99,
+    "knockback": 1,
+    "interval": 0.1
+   },
+   "levels": [
+    {
+     "damage": 6
+    },
+    {
+     "damage": 6
+    },
+    {
+     "damage": 6,
+     "area": 0.1
+    },
+    {
+     "damage": 6
+    },
+    {
+     "damage": 6
+    },
+    {
+     "damage": 6,
+     "area": 0.1
+    },
+    {
+     "damage": 6
+    }
+   ],
+   "weight": 80,
+   "behavior": {
+    "kind": "bigUpdate",
+    "variant": {
+     "kind": "seedPotato",
+     "rule": {
+      "throwSec": 0.25,
+      "minThrow": 30,
+      "maxThrow": 90,
+      "flightSec": 0.35,
+      "stageSec": 1.2,
+      "selfSec": 8,
+      "zapSec": 1,
+      "zapR": 30,
+      "zapK": 0.3,
+      "reach": 24,
+      "reachK": 0.25,
+      "maxReach": 34,
+      "burstR": 30,
+      "stageR": 8,
+      "burstK": 1.5,
+      "selfK": 0.6,
+      "leashR": 160,
+      "maxPlants": 4,
+      "luckK": 0.5,
+      "goldCoins": 4
+     }
+    }
+   }
+  },
+  {
+   "id": "spud-fence",
+   "tier": "base",
+   "base": {
+    "damage": 20,
+    "cooldown": 0,
+    "amount": 1,
+    "area": 1,
+    "speed": 0,
+    "duration": 4,
+    "pierce": 99,
+    "knockback": 1,
+    "interval": 0.1
+   },
+   "levels": [
+    {
+     "damage": 8
+    },
+    {
+     "duration": 1
+    },
+    {
+     "area": 0.25
+    },
+    {
+     "damage": 10
+    },
+    {
+     "duration": 1
+    },
+    {
+     "damage": 12
+    },
+    {
+     "amount": 1
+    }
+   ],
+   "weight": 75,
+   "behavior": {
+    "kind": "bigUpdate",
+    "variant": {
+     "kind": "spudFence",
+     "rule": {
+      "every": 60,
+      "live": 4,
+      "arcWidth": 24,
+      "zapSec": 0.2,
+      "maxSpan": 90,
+      "minLife": 0.5
+     }
+    }
+   }
+  },
+  {
+   "id": "tailgate-fries",
+   "tier": "base",
+   "base": {
+    "damage": 8,
+    "cooldown": 0.7,
+    "amount": 2,
+    "area": 1,
+    "speed": 200,
+    "duration": 0.8,
+    "pierce": 1,
+    "knockback": 1.2,
+    "interval": 0.06
+   },
+   "levels": [
+    {
+     "amount": 1
+    },
+    {
+     "damage": 5
+    },
+    {
+     "amount": 1
+    },
+    {
+     "pierce": 1,
+     "damage": 4
+    },
+    {
+     "amount": 1
+    },
+    {
+     "damage": 6
+    },
+    {
+     "damage": 5,
+     "cooldown": -0.1
+    }
+   ],
+   "weight": 75,
+   "behavior": {
+    "kind": "bigUpdate",
+    "variant": {
+     "kind": "tailgate",
+     "size": 3,
+     "spread": 0.25,
+     "dripSpeed": 0.35
+    }
+   }
+  },
+  {
+   "id": "tater-twirl",
+   "tier": "base",
+   "base": {
+    "damage": 48,
+    "cooldown": 0,
+    "amount": 1,
+    "area": 1,
+    "speed": 5,
+    "duration": 0.5,
+    "pierce": 99,
+    "knockback": 1,
+    "interval": 0.1
+   },
+   "levels": [
+    {
+     "damage": 16
+    },
+    {
+     "speed": 0.6
+    },
+    {
+     "area": 0.15
+    },
+    {
+     "damage": 24
+    },
+    {
+     "amount": 1
+    },
+    {
+     "damage": 32
+    },
+    {
+     "area": 0.15
+    }
+   ],
+   "weight": 75,
+   "behavior": {
+    "kind": "bigUpdate",
+    "variant": {
+     "kind": "twirl",
+     "size": 8,
+     "orbitRadius": 30,
+     "hitInterval": 0.2,
+     "crawl": 0.12,
+     "maxPace": 2,
+     "riseSec": 0.12
+    }
+   }
+  },
+  {
+   "id": "tot-stampede",
+   "tier": "base",
+   "base": {
+    "damage": 16,
+    "cooldown": 0,
+    "amount": 1,
+    "area": 1,
+    "speed": 120,
+    "duration": 3,
+    "pierce": 0,
+    "knockback": 1,
+    "interval": 0.08
+   },
+   "levels": [
+    {
+     "damage": 6
+    },
+    {
+     "amount": 1
+    },
+    {
+     "duration": 1,
+     "speed": 20
+    },
+    {
+     "damage": 8
+    },
+    {
+     "amount": 1
+    },
+    {
+     "damage": 10
+    },
+    {
+     "amount": 1
+    }
+   ],
+   "weight": 75,
+   "behavior": {
+    "kind": "homing",
+    "size": 4,
+    "turn": 7
+   }
+  },
+  {
+   "id": "gem-catapult",
+   "tier": "evolved",
+   "base": {
+    "damage": 30.6,
+    "cooldown": 0,
+    "amount": 1,
+    "area": 1,
+    "speed": 240,
+    "duration": 0.9,
+    "pierce": 3,
+    "knockback": 0.6,
+    "interval": 0.1
+   },
+   "behavior": {
+    "kind": "bigUpdate",
+    "variant": {
+     "kind": "sling",
+     "fan": 0.16,
+     "spread": 0.05,
+     "size": 4,
+     "perTick": 2,
+     "maxQueue": 40
+    }
+   },
+   "from": "gem-sling",
+   "catalyst": "potato-magnet"
+  },
+  {
+   "id": "mash-avalanche",
+   "tier": "evolved",
+   "base": {
+    "damage": 152,
+    "cooldown": 0,
+    "amount": 1,
+    "area": 1.2,
+    "speed": 0,
+    "duration": 1,
+    "pierce": 99,
+    "knockback": 1.5,
+    "interval": 0.1
+   },
+   "behavior": {
+    "kind": "bigUpdate",
+    "variant": {
+     "kind": "snowball",
+     "turnDeg": 120,
+     "stopTicks": 4,
+     "minR": 4,
+     "maxR": 14,
+     "growPerUnit": 0.22,
+     "minRelease": 9,
+     "fullSec": 0.25,
+     "surgeSpeed": 220,
+     "surgeBase": 70,
+     "surgePerR": 9,
+     "splatK": 2.5,
+     "trailBase": 8,
+     "trailPerR": 6,
+     "sweepK": 1.4,
+     "split": {
+      "count": 3,
+      "size": 0.7,
+      "fanDeg": 30
+     }
+    }
+   },
+   "from": "mash-snowball",
+   "catalyst": "masher-grip"
+  },
+  {
+   "id": "potato-patch",
+   "tier": "evolved",
+   "base": {
+    "damage": 123,
+    "cooldown": 0,
+    "amount": 3,
+    "area": 1.2,
+    "speed": 0,
+    "duration": 1,
+    "pierce": 99,
+    "knockback": 1,
+    "interval": 0.1
+   },
+   "behavior": {
+    "kind": "bigUpdate",
+    "variant": {
+     "kind": "seedPotato",
+     "rule": {
+      "throwSec": 0.25,
+      "minThrow": 30,
+      "maxThrow": 90,
+      "flightSec": 0.35,
+      "stageSec": 1.2,
+      "selfSec": 8,
+      "zapSec": 1,
+      "zapR": 30,
+      "zapK": 0.3,
+      "reach": 24,
+      "reachK": 0.25,
+      "maxReach": 34,
+      "burstR": 30,
+      "stageR": 8,
+      "burstK": 1.5,
+      "selfK": 0.6,
+      "leashR": 160,
+      "maxPlants": 6,
+      "luckK": 0.5,
+      "goldCoins": 4
+     }
+    }
+   },
+   "from": "seed-potato",
+   "catalyst": "fertilizer"
+  },
+  {
+   "id": "spark-corral",
+   "tier": "evolved",
+   "base": {
+    "damage": 85,
+    "cooldown": 0,
+    "amount": 4,
+    "area": 2.25,
+    "speed": 0,
+    "duration": 9,
+    "pierce": 99,
+    "knockback": 1,
+    "interval": 0.1
+   },
+   "behavior": {
+    "kind": "bigUpdate",
+    "variant": {
+     "kind": "spudFence",
+     "rule": {
+      "every": 60,
+      "live": 4,
+      "arcWidth": 24,
+      "zapSec": 0.2,
+      "maxSpan": 90,
+      "minLife": 0.5
+     }
+    }
+   },
+   "from": "spud-fence",
+   "catalyst": "gpu"
+  },
+  {
+   "id": "tailgate-party",
+   "tier": "evolved",
+   "base": {
+    "damage": 47.6,
+    "cooldown": 0.6,
+    "amount": 5,
+    "area": 1,
+    "speed": 200,
+    "duration": 0.8,
+    "pierce": 2,
+    "knockback": 1.2,
+    "interval": 0.06
+   },
+   "behavior": {
+    "kind": "bigUpdate",
+    "variant": {
+     "kind": "tailgate",
+     "size": 3,
+     "spread": 0.25,
+     "dripSpeed": 0.35
+    }
+   },
+   "from": "tailgate-fries",
+   "catalyst": "butter-pat"
+  },
+  {
+   "id": "tater-minigun",
+   "tier": "evolved",
+   "base": {
+    "damage": 20.4,
+    "cooldown": 0.1,
+    "amount": 1,
+    "area": 1,
+    "speed": 220,
+    "duration": 1.2,
+    "pierce": 2,
+    "knockback": 0.4,
+    "interval": 0
+   },
+   "behavior": {
+    "kind": "bigUpdate",
+    "variant": {
+     "kind": "gatling",
+     "burstSec": 2,
+     "gapSec": 0.35,
+     "retrySec": 0.1,
+     "reach": 220,
+     "lane": 7,
+     "spread": 0.03,
+     "size": 4,
+     "shot": "tot-toss"
+    }
+   },
+   "from": "locked-gatling",
+   "catalyst": "masher-grip"
+  },
+  {
+   "id": "tater-twister",
+   "tier": "evolved",
+   "base": {
+    "damage": 204,
+    "cooldown": 0,
+    "amount": 4,
+    "area": 1.3,
+    "speed": 5.6,
+    "duration": 0.5,
+    "pierce": 99,
+    "knockback": 1,
+    "interval": 0.1
+   },
+   "behavior": {
+    "kind": "bigUpdate",
+    "variant": {
+     "kind": "twirl",
+     "size": 8,
+     "orbitRadius": 36,
+     "hitInterval": 0.2,
+     "crawl": 0.12,
+     "maxPace": 2,
+     "riseSec": 0.12
+    }
+   },
+   "from": "tater-twirl",
+   "catalyst": "salt-shaker"
+  },
+  {
+   "id": "tot-cavalry",
+   "tier": "evolved",
+   "base": {
+    "damage": 68,
+    "cooldown": 0,
+    "amount": 4,
+    "area": 1,
+    "speed": 140,
+    "duration": 4,
+    "pierce": 1,
+    "knockback": 1,
+    "interval": 0.08
+   },
+   "behavior": {
+    "kind": "homing",
+    "size": 4,
+    "turn": 7
+   },
+   "from": "tot-stampede",
+   "catalyst": "butter-socks"
+  },
+  {
+   "id": "wildfire-roast",
+   "tier": "evolved",
+   "base": {
+    "damage": 122,
+    "cooldown": 0,
+    "amount": 1,
+    "area": 1.2,
+    "speed": 0,
+    "duration": 0,
+    "pierce": 99,
+    "knockback": 1,
+    "interval": 0
+   },
+   "behavior": {
+    "kind": "bigUpdate",
+    "variant": {
+     "kind": "hotStreak",
+     "size": 34,
+     "hitInterval": 1,
+     "streak": {
+      "steps": 5,
+      "stepSec": 1,
+      "hitLoss": 2,
+      "stopSec": 0,
+      "area": 0.48,
+      "rate": 0.24,
+      "firstStep": 0
+     }
+    }
+   },
+   "from": "hot-streak",
+   "catalyst": "thick-skin"
   }
  ],
  "evolutions": [
@@ -5465,6 +6725,294 @@
    },
    "from": "julienne-dash",
    "catalyst": "butter-socks"
+  },
+  {
+   "id": "gem-catapult",
+   "tier": "evolved",
+   "base": {
+    "damage": 30.6,
+    "cooldown": 0,
+    "amount": 1,
+    "area": 1,
+    "speed": 240,
+    "duration": 0.9,
+    "pierce": 3,
+    "knockback": 0.6,
+    "interval": 0.1
+   },
+   "behavior": {
+    "kind": "bigUpdate",
+    "variant": {
+     "kind": "sling",
+     "fan": 0.16,
+     "spread": 0.05,
+     "size": 4,
+     "perTick": 2,
+     "maxQueue": 40
+    }
+   },
+   "from": "gem-sling",
+   "catalyst": "potato-magnet"
+  },
+  {
+   "id": "mash-avalanche",
+   "tier": "evolved",
+   "base": {
+    "damage": 152,
+    "cooldown": 0,
+    "amount": 1,
+    "area": 1.2,
+    "speed": 0,
+    "duration": 1,
+    "pierce": 99,
+    "knockback": 1.5,
+    "interval": 0.1
+   },
+   "behavior": {
+    "kind": "bigUpdate",
+    "variant": {
+     "kind": "snowball",
+     "turnDeg": 120,
+     "stopTicks": 4,
+     "minR": 4,
+     "maxR": 14,
+     "growPerUnit": 0.22,
+     "minRelease": 9,
+     "fullSec": 0.25,
+     "surgeSpeed": 220,
+     "surgeBase": 70,
+     "surgePerR": 9,
+     "splatK": 2.5,
+     "trailBase": 8,
+     "trailPerR": 6,
+     "sweepK": 1.4,
+     "split": {
+      "count": 3,
+      "size": 0.7,
+      "fanDeg": 30
+     }
+    }
+   },
+   "from": "mash-snowball",
+   "catalyst": "masher-grip"
+  },
+  {
+   "id": "potato-patch",
+   "tier": "evolved",
+   "base": {
+    "damage": 123,
+    "cooldown": 0,
+    "amount": 3,
+    "area": 1.2,
+    "speed": 0,
+    "duration": 1,
+    "pierce": 99,
+    "knockback": 1,
+    "interval": 0.1
+   },
+   "behavior": {
+    "kind": "bigUpdate",
+    "variant": {
+     "kind": "seedPotato",
+     "rule": {
+      "throwSec": 0.25,
+      "minThrow": 30,
+      "maxThrow": 90,
+      "flightSec": 0.35,
+      "stageSec": 1.2,
+      "selfSec": 8,
+      "zapSec": 1,
+      "zapR": 30,
+      "zapK": 0.3,
+      "reach": 24,
+      "reachK": 0.25,
+      "maxReach": 34,
+      "burstR": 30,
+      "stageR": 8,
+      "burstK": 1.5,
+      "selfK": 0.6,
+      "leashR": 160,
+      "maxPlants": 6,
+      "luckK": 0.5,
+      "goldCoins": 4
+     }
+    }
+   },
+   "from": "seed-potato",
+   "catalyst": "fertilizer"
+  },
+  {
+   "id": "spark-corral",
+   "tier": "evolved",
+   "base": {
+    "damage": 85,
+    "cooldown": 0,
+    "amount": 4,
+    "area": 2.25,
+    "speed": 0,
+    "duration": 9,
+    "pierce": 99,
+    "knockback": 1,
+    "interval": 0.1
+   },
+   "behavior": {
+    "kind": "bigUpdate",
+    "variant": {
+     "kind": "spudFence",
+     "rule": {
+      "every": 60,
+      "live": 4,
+      "arcWidth": 24,
+      "zapSec": 0.2,
+      "maxSpan": 90,
+      "minLife": 0.5
+     }
+    }
+   },
+   "from": "spud-fence",
+   "catalyst": "gpu"
+  },
+  {
+   "id": "tailgate-party",
+   "tier": "evolved",
+   "base": {
+    "damage": 47.6,
+    "cooldown": 0.6,
+    "amount": 5,
+    "area": 1,
+    "speed": 200,
+    "duration": 0.8,
+    "pierce": 2,
+    "knockback": 1.2,
+    "interval": 0.06
+   },
+   "behavior": {
+    "kind": "bigUpdate",
+    "variant": {
+     "kind": "tailgate",
+     "size": 3,
+     "spread": 0.25,
+     "dripSpeed": 0.35
+    }
+   },
+   "from": "tailgate-fries",
+   "catalyst": "butter-pat"
+  },
+  {
+   "id": "tater-minigun",
+   "tier": "evolved",
+   "base": {
+    "damage": 20.4,
+    "cooldown": 0.1,
+    "amount": 1,
+    "area": 1,
+    "speed": 220,
+    "duration": 1.2,
+    "pierce": 2,
+    "knockback": 0.4,
+    "interval": 0
+   },
+   "behavior": {
+    "kind": "bigUpdate",
+    "variant": {
+     "kind": "gatling",
+     "burstSec": 2,
+     "gapSec": 0.35,
+     "retrySec": 0.1,
+     "reach": 220,
+     "lane": 7,
+     "spread": 0.03,
+     "size": 4,
+     "shot": "tot-toss"
+    }
+   },
+   "from": "locked-gatling",
+   "catalyst": "masher-grip"
+  },
+  {
+   "id": "tater-twister",
+   "tier": "evolved",
+   "base": {
+    "damage": 204,
+    "cooldown": 0,
+    "amount": 4,
+    "area": 1.3,
+    "speed": 5.6,
+    "duration": 0.5,
+    "pierce": 99,
+    "knockback": 1,
+    "interval": 0.1
+   },
+   "behavior": {
+    "kind": "bigUpdate",
+    "variant": {
+     "kind": "twirl",
+     "size": 8,
+     "orbitRadius": 36,
+     "hitInterval": 0.2,
+     "crawl": 0.12,
+     "maxPace": 2,
+     "riseSec": 0.12
+    }
+   },
+   "from": "tater-twirl",
+   "catalyst": "salt-shaker"
+  },
+  {
+   "id": "tot-cavalry",
+   "tier": "evolved",
+   "base": {
+    "damage": 68,
+    "cooldown": 0,
+    "amount": 4,
+    "area": 1,
+    "speed": 140,
+    "duration": 4,
+    "pierce": 1,
+    "knockback": 1,
+    "interval": 0.08
+   },
+   "behavior": {
+    "kind": "homing",
+    "size": 4,
+    "turn": 7
+   },
+   "from": "tot-stampede",
+   "catalyst": "butter-socks"
+  },
+  {
+   "id": "wildfire-roast",
+   "tier": "evolved",
+   "base": {
+    "damage": 122,
+    "cooldown": 0,
+    "amount": 1,
+    "area": 1.2,
+    "speed": 0,
+    "duration": 0,
+    "pierce": 99,
+    "knockback": 1,
+    "interval": 0
+   },
+   "behavior": {
+    "kind": "bigUpdate",
+    "variant": {
+     "kind": "hotStreak",
+     "size": 34,
+     "hitInterval": 1,
+     "streak": {
+      "steps": 5,
+      "stepSec": 1,
+      "hitLoss": 2,
+      "stopSec": 0,
+      "area": 0.48,
+      "rate": 0.24,
+      "firstStep": 0
+     }
+    }
+   },
+   "from": "hot-streak",
+   "catalyst": "thick-skin"
   }
  ],
  "unions": [

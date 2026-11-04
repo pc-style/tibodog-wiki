@@ -48,8 +48,8 @@ export async function mirror(site = SITE, main) {
   }
   const files = [...seen].filter((f) => existsSync(join(dir, f)));
   // Sprite atlas images, needed for the icon crops.
-  for (const f of files.filter((f) => /^atlas(-late)?-[A-Za-z0-9_-]{8}\.js$/.test(f))) {
-    for (const png of readFileSync(join(dir, f), 'utf8').match(/atlas(-late)?-[A-Za-z0-9_-]{8}\.png/g) ?? []) {
+  for (const f of files.filter((f) => /^(atlas(-late)?|flagged-atlas)-[A-Za-z0-9_-]{8}\.js$/.test(f))) {
+    for (const png of readFileSync(join(dir, f), 'utf8').match(/(?:atlas(-late)?|flagged-atlas)-[A-Za-z0-9_-]{8}\.png/g) ?? []) {
       if (existsSync(join(dir, png))) continue;
       const r = await fetch(new URL(`assets/${png}`, site));
       if (!r.ok) throw new Error(`${r.status} ${png}`);

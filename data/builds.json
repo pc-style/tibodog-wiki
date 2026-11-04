@@ -350,5 +350,15 @@
   "status": "reviewed",
   "updated": "2026-11-04T20:14:52Z",
   "changes": "Build identifiers change in session/update metadata, shared-run links and analytics. All 187 JavaScript modules otherwise match the preceding build exactly after asset filename changes, including both mount chunks, workers and audio worklets. Gameplay data, English text, difficulty values, atlas tables, atlas pixels and wiki icons are unchanged. The hitbox, lean-3D recovery, replay submission and mine-visual changes remain attributed to the preceding main-CR4fqbK8.js build."
+ },
+ {
+  "seen": "2026-11-04",
+  "main": "main-DsSI3jqO.js",
+  "boot": "boot-gYJIoD2C.js",
+  "sim": "sim-s0IFOj9I.js",
+  "commit": "fb8cda84116e",
+  "status": "reviewed",
+  "updated": "2026-11-04T21:54:25Z",
+  "changes": "Adds nine base weapons—Gem Sling, Hot Streak, Locked Gatling, Mash Snowball, Seed Potato, Spud Fence, Tailgate Fries, Tater Twirl and Tot Stampede—and one evolution for each (93 weapons total). Their attacks respond to movement, pickups, planting/harvest or locked-angle bursts; recipes, catalyst guarantees, discovery and art support the new weapons. Map tips explain nearby unused places once per kind and can be disabled in Settings → Comfort; read-tip history stays in this browser. Existing weapon definitions, difficulty multipliers and other matched config values are unchanged. The in-game changelog calls out six new-weapon buffs, but these weapons first appear in this wiki’s comparison here, so no earlier buff values are inferred. Renderer support adds their effects and separate sprite atlas; shared-run/recipe UI and analytics gain content-aware plumbing while inactive future-update branches remain off."
  }
 ]

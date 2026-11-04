@@ -42,3 +42,49 @@ for (const scenario of [
     }
   });
 }
+
+test('crops additional weapon icons from the flagged atlas without replacing early icons', () => {
+  const root = mkdtempSync(join(tmpdir(), 'wiki-icons-'));
+  try {
+    const frame = { x: 0, y: 0, w: 2, h: 1 };
+    const sprite = { icon: { frames: [frame] } };
+    const early = { sprites: { 'icon-old': sprite }, pixelSize: {} };
+    const flagged = { sprites: { 'icon-old': sprite, 'icon-new': sprite }, pixelSize: { 'icon-new': 0.5 } };
+    writeFileSync(join(root, 'atlas-early.json'), JSON.stringify(early));
+    writeFileSync(join(root, 'atlas-late.json'), JSON.stringify({ sprites: {}, pixelSize: {} }));
+    writeFileSync(join(root, 'atlas-flagged.json'), JSON.stringify(flagged));
+    const registry = { allWeapons: [{ id: 'old' }, { id: 'new' }], passives: [], allItems: [], enemies: [], bosses: [], dogs: [] };
+    writeFileSync(join(root, 'registry.json'), JSON.stringify(registry));
+    execFileSync('python3', ['-I', '-c', `
+from PIL import Image
+import sys
+Image.new('RGBA', (2, 1), (255, 0, 0, 255)).save(sys.argv[1]+'/early.png')
+Image.new('RGBA', (2, 1), (0, 0, 0, 0)).save(sys.argv[1]+'/late.png')
+Image.new('RGBA', (2, 1), (0, 255, 0, 255)).save(sys.argv[1]+'/flagged.png')
+`, root]);
+    const pages = { early: 'early.png', late: 'late.png' };
+    const crop = () => {
+      writeFileSync(join(root, 'pages.json'), JSON.stringify(pages));
+      execFileSync('python3', [new URL('./icons.py', import.meta.url).pathname, root, root, join(root, 'registry.json'), join(root, 'out')]);
+      return JSON.parse(readFileSync(join(root, 'out', 'manifest.json')));
+    };
+    const before = crop();
+    assert.deepEqual(Object.keys(before.weapon), ['old']);
+    assert.equal(before.missing[0].id, 'new');
+    pages.flagged = 'flagged.png';
+    const after = crop();
+    assert.deepEqual(after.missing, []);
+    assert.deepEqual(Object.keys(after.weapon), ['old', 'new']);
+    assert.equal(after.weapon.old.w, 8);
+    assert.equal(after.weapon.new.w, 4);
+    assert.equal(after.weapon.new.h, 2);
+    execFileSync('python3', ['-I', '-c', `
+from PIL import Image
+import sys
+assert Image.open(sys.argv[1]+'/out/weapon/old.png').getpixel((0,0)) == (255,0,0,255)
+assert Image.open(sys.argv[1]+'/out/weapon/new.png').getpixel((0,0)) == (0,255,0,255)
+`, root]);
+  } finally {
+    rmSync(root, { recursive: true, force: true });
+  }
+});

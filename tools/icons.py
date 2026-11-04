@@ -5,6 +5,7 @@ Usage: python3 tools/icons.py <assets dir> <atlas dir with atlas-early.json, atl
 Icons mirror the game's own lookups: weapons, passives and items use the early atlas sprite
 "icon-<id>" (anim "icon", frame 0); enemies, bosses and dogs use the first sprite found in the
 early then late atlas with an "idle-front", "idle" or "walk" anim, frame 0.
+The optional flagged atlas supplies additional icons without replacing existing ones.
 """
 import json, os, sys
 from PIL import Image
@@ -16,13 +17,16 @@ pages = [
     (names['early'], json.load(open(os.path.join(ATLAS, 'atlas-early.json')))),
     (names['late'], json.load(open(os.path.join(ATLAS, 'atlas-late.json')))),
 ]
+if 'flagged' in names:
+    pages.append((names['flagged'], json.load(open(os.path.join(ATLAS, 'atlas-flagged.json')))))
 imgs = {name: Image.open(os.path.join(A, name)).convert('RGBA') for name, _ in pages}
 early_name, early = pages[0]
 
 icons = {}
-for k, anims in early['sprites'].items():
-    if k.startswith('icon-') and 'icon' in anims and anims['icon']['frames']:
-        icons[k[5:]] = (early_name, k, 'icon', anims['icon']['frames'][0], early['pixelSize'].get(k, 1))
+for name, page in [pages[0], *pages[2:]]:
+    for k, anims in page['sprites'].items():
+        if k.startswith('icon-') and k[5:] not in icons and 'icon' in anims and anims['icon']['frames']:
+            icons[k[5:]] = (name, k, 'icon', anims['icon']['frames'][0], page['pixelSize'].get(k, 1))
 
 PRIO = ['idle-front', 'idle', 'walk']
 sprites = {}

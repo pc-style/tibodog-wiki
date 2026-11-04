@@ -4,8 +4,8 @@ import {
   RARITY, recipes, enemyBiomes, statLabel, slug,
 } from '../lib/data.mjs';
 
-const SRC_REG = '`registry` object exported by `boot-CbHq_lQ3.js` (the game\'s content definitions)';
-const SRC_TEXT = 'English names and descriptions from `i18n-en-content-D4gK8lyk.js`';
+const SRC_REG = '`registry` object exported by `boot-gYJIoD2C.js` (the game\'s content definitions)';
+const SRC_TEXT = 'English names and descriptions from `i18n-en-content-Cd1imSlh.js`';
 const RAW_NOTE =
   'Values are the raw numbers from the game\'s definitions, before Tibo\'s global stat multipliers, difficulty and time scaling. Field names in `code` are the game\'s internal names. Attack descriptions such as “Melee slash” are this wiki\'s summary of the internal attack `kind`.';
 
@@ -66,7 +66,25 @@ const BEHAVIOR = {
   mine: 'Places mines',
   familiar: 'Summons a helper',
 };
-const behaviorText = (k) => (BEHAVIOR[k] ? `${BEHAVIOR[k]} (\`${k}\`)` : `\`${k}\``);
+const SPECIAL_ATTACK = {
+  sling: ['XP gem pickups', 'Fires wedges along Tibo’s heading'],
+  hotStreak: ['Automatic; movement builds flames', 'Nearby sweep with movement streak bonuses'],
+  gatling: ['Locked-angle bursts', 'Locks onto a pest’s angle for a 2 s burst'],
+  snowball: ['Movement, then stop or hard turn', 'Grows a trailing mash ball and releases it forward'],
+  seedPotato: ['Automatic planting and manual harvest', 'Plants seeds that zap; walking over them harvests a burst'],
+  spudFence: ['Every 60 units walked', 'Plants posts with damaging arcs between them'],
+  tailgate: ['Cooldown; one fry while still', 'Fires behind Tibo, with a slower drip while still'],
+  twirl: ['Continuous; movement sets pace', 'Orbiting wheels spin and hit faster while moving'],
+};
+const attackKind = (w) => w.behavior.kind === 'bigUpdate' ? w.behavior.variant.kind : w.behavior.kind;
+const triggerText = (w) => w.on === 'dash' ? 'When Tibo dashes'
+  : ['tot-stampede', 'tot-cavalry'].includes(w.id) ? 'Every 40 units walked'
+  : SPECIAL_ATTACK[attackKind(w)]?.[0] ?? 'Automatic (cooldown)';
+const behaviorText = (w) => {
+  const k = attackKind(w);
+  const text = SPECIAL_ATTACK[k]?.[1] ?? BEHAVIOR[k];
+  return text ? `${text} (\`${k}\`)` : `\`${k}\``;
+};
 
 const ONHIT = { slow: 'Slows', freeze: 'Freezes', burn: 'Burns' };
 
@@ -86,8 +104,8 @@ export function weaponPages() {
 
     const rows = [
       ['Type', tierLabel[w.tier]],
-      ['Trigger', w.on === 'dash' ? 'When Tibo dashes' : 'Automatic (cooldown)'],
-      ['Attack', behaviorText(w.behavior.kind)],
+      ['Trigger', triggerText(w)],
+      ['Attack', behaviorText(w)],
       ['On hit', onHit ? `${ONHIT[onHit.kind] ?? onHit.kind}${onHit.factor ? ` (×${fmt(onHit.factor)} speed` : ''}${onHit.seconds ? `${onHit.factor ? ', ' : ' ('}${fmt(onHit.seconds)} s)` : onHit.factor ? ')' : ''}` : ''],
       ...WSTATS.map(([k, l]) => [l, fmt(w.base[k])]),
       ['Max level', maxLevel],
@@ -163,10 +181,11 @@ export function weaponPages() {
 }
 
 function weaponRow(w) {
+  const trigger = triggerText(w);
   return [
     `${icon('weapon', w.id)}${link('weapon', w.id)}`,
-    w.on === 'dash' ? 'Dash' : 'Auto',
-    `\`${w.behavior.kind}\``,
+    trigger === 'Automatic (cooldown)' ? 'Auto' : trigger === 'When Tibo dashes' ? 'Dash' : trigger,
+    `<code style="white-space:nowrap">${attackKind(w)}</code>`,
     fmt(w.base.damage),
     fmt(w.base.cooldown),
     fmt(w.base.amount),
@@ -178,6 +197,7 @@ export function weaponIndex() {
   const base = R.baseWeapons;
   let body = `tibo.dog has **${R.allWeapons.length} weapons**: ${base.length} base weapons, ${R.evolutions.length} evolutions and ${R.unions.length} unions. Weapons fire on their own; Tibo holds up to ${GAME.player.weaponSlots} at once. Base weapons level up to level 8 from level-up cards; evolutions and unions replace them (see [Evolutions](/evolutions)).\n\n`;
   body += `${RAW_NOTE}\n\n`;
+  body += `## Movement and pickup triggers\n\nNot every weapon fires on a cooldown. **Gem Sling / Gem Catapult** fire on XP gem pickups; **Tot Stampede / Tot Cavalry** spawn tots every 40 units walked; **Spud Fence / Spark Corral** plant posts every 60 units. Standing still stops those movement triggers. **Tater Twirl / Tater Twister** slow to a crawl while still. **Tailgate Fries / Tailgate Party** keep a one-fry drip while still. **Hot Streak / Wildfire Roast** gain up to five flames while moving, lose two per hit and lose all on stopping. **Mash Snowball / Mash Avalanche** grow while moving and release on a hard turn, a stop, or after remaining full. **Seed Potato / Potato Patch** plant automatically; walk over a plant to harvest it. **Locked Gatling / Tater Minigun** hold a firing angle through each 2 s burst.\n\nThese summaries follow the current simulation, not just the raw cooldown column. <small>[sim-s0IFOj9I.js: \`var ff={every:40,live:12}\`]</small> <small>[sim-s0IFOj9I.js: \`let o=Math.min(n.perTick,a.queue);if(o<=0)return!1;\`]</small>\n\n`;
   const head = ['Weapon', 'Trigger', 'Attack', 'Damage', 'Cooldown (s)', 'Amount', 'On hit'];
   body += `## Base weapons\n\n` + table([...head, 'Evolves into'], base.map((w) => [...weaponRow(w), recipes.evolutionOf(w.id).map((e) => ilink('weapon', e.id)).join(', ')])) + '\n';
   body += `## Evolutions\n\n` + table([...head, 'From'], R.evolutions.map((w) => [...weaponRow(w), `${ilink('weapon', w.from)} + ${ilink(kindOf(w.catalyst), w.catalyst)}`])) + '\n';
@@ -195,7 +215,7 @@ export function weaponIndex() {
 
 export function evolutionPage() {
   let body = `Evolutions turn a maxed base weapon into a stronger weapon. Unions merge two weapons into one. Item evolutions upgrade an item once a passive reaches max level. All recipes below come straight from the game's recipe tables.\n\n`;
-  body += `## How evolving works\n\n**Verified** from the game code (\`sim-CxcpxDAj.js\`):\n\n- **Evolutions, unions and item evolutions only happen when a chest is opened** (elite, boss, cursed-extra and poteto gift chests, and the Tater Slots jackpot). Potato Crates, the Fry Cart and the Microwave give items, not chest rolls. See [Chests](/chests).\n- **Weapon evolution**: the base weapon is at max level (8) and you own the catalyst at any level.\n- **Union**: you own both partner weapons (or the evolution of one); each is max-level base or evolved, and at least one is a max-level base weapon. The union takes the first weapon's slot and removes the second, freeing a slot. The game's text simplifies this to “Unites with X into Y when both reach LV 8”.\n- **Choice**: if a weapon can both evolve and unite, the chest asks “Evolve or unite?”.\n- **Item evolution**: you hold the base item and the catalyst passive is at **max level (5)**. On the next chest, every copy of the item turns into the evolved item, and the base item stops dropping.\n- There is no time gate (\`chests.evolutionGateSec\` = ${GAME.chests.evolutionGateSec}).\n- From level ${GAME.levelUp.catalystGuaranteeLevel} of a base weapon, the level-up guarantees its missing catalyst passive as the last card if you have a free passive slot (see [Level-up](/level-up#catalyst-guarantee)).\n\n`;
+  body += `## How evolving works\n\n**Verified** from the game code (\`sim-s0IFOj9I.js\`):\n\n- **Evolutions, unions and item evolutions only happen when a chest is opened** (elite, boss, cursed-extra and poteto gift chests, and the Tater Slots jackpot). Potato Crates, the Fry Cart and the Microwave give items, not chest rolls. See [Chests](/chests).\n- **Weapon evolution**: the base weapon is at max level (8) and you own the catalyst at any level.\n- **Union**: you own both partner weapons (or the evolution of one); each is max-level base or evolved, and at least one is a max-level base weapon. The union takes the first weapon's slot and removes the second, freeing a slot. The game's text simplifies this to “Unites with X into Y when both reach LV 8”.\n- **Choice**: if a weapon can both evolve and unite, the chest asks “Evolve or unite?”.\n- **Item evolution**: you hold the base item and the catalyst passive is at **max level (5)**. On the next chest, every copy of the item turns into the evolved item, and the base item stops dropping.\n- There is no time gate (\`chests.evolutionGateSec\` = ${GAME.chests.evolutionGateSec}).\n- From level ${GAME.levelUp.catalystGuaranteeLevel} of a base weapon, the level-up guarantees its missing catalyst passive as the last card if you have a free passive slot (see [Level-up](/level-up#catalyst-guarantee)).\n\n`;
   body += `## Weapon evolutions\n\n` + table(
     ['Result', 'Base weapon', 'Catalyst', 'Catalyst type'],
     R.evolutions.map((e) => [ilink('weapon', e.id), ilink('weapon', e.from), ilink(kindOf(e.catalyst), e.catalyst), kindOf(e.catalyst) === 'passive' ? 'Passive' : 'Item']),
@@ -223,7 +243,7 @@ export function evolutionPage() {
     title: 'Evolutions',
     description: `Every weapon evolution (${R.evolutions.length}), union (${R.unions.length}) and item evolution (${R.evolvedItems.length}) recipe in tibo.dog.`,
     body,
-    sources: [SRC_REG, 'Recipe definitions in `boot-CbHq_lQ3.js`; chest evolution code in `sim-CxcpxDAj.js`'],
+    sources: [SRC_REG, 'Recipe definitions in `boot-gYJIoD2C.js`; chest evolution code in `sim-s0IFOj9I.js`'],
     search: 'evolutions recipes unions catalysts',
   };
 }
@@ -343,8 +363,8 @@ export function itemPages() {
     if (it.effect) {
       body += `## Effect\n\nTrigger: \`${it.effect.kind}\`${{ onHit: ' (when a weapon hits an enemy)', onKill: ' (when an enemy dies)', onHurt: ' (when Tibo is hit)' }[it.effect.kind] ?? ''}. Raw parameters:\n\n`;
       body += table(['Parameter', 'Value'], effectRows(it.effect)) + '\n';
-      if (it.effect.proc.meteor) body += `### Meteor impact\n\n**Verified**: when this effect procs, the triggering hit waits ${GAME.items.meteorFallSec} s for the meteor to land, then receives the effect's damage multiplier if the original target still exists. The area blast lands at the position where the meteor was triggered, not the target's new position. At most 16 meteors can be pending; if all slots are occupied, the hit and blast happen immediately. <small>[sim-CxcpxDAj.js: \`if(n>=0)return lc(e,n,i),uc(e,n,l,u,o,a),t.mult[n]=c.proc.mult,t.itemSrc[n]=s.src,t.paint[n]=s.paint,0\`]</small> <small>[sim-CxcpxDAj.js: \`s=Math.max(1,Te(e.cfg.items.meteorFallSec))\`]</small>\n\n`;
-      if (it.effect.kind === 'onKill' && it.effect.proc.kind === 'seekers') body += `### Projectile visuals\n\n**Verified**: the main renderer gives these projectiles direction-specific turning poses, glancing eyes, trails, glow and impact pops. Reduced motion suppresses trails and holds each impact pop on a still frame; disabling flashes skips its brightest first frame. These are visual effects, not changes to the proc parameters above. <small>[scene-BJmulJpI.js: \`\` glances:vte.map(e=>s([e])),pop:s([\`pop\`]) \`\`]</small> <small>[scene-BJmulJpI.js: \`r.still&&(p=Math.min(f-1,2))\`]</small>\n\n`;
+      if (it.effect.proc.meteor) body += `### Meteor impact\n\n**Verified**: when this effect procs, the triggering hit waits ${GAME.items.meteorFallSec} s for the meteor to land, then receives the effect's damage multiplier if the original target still exists. The area blast lands at the position where the meteor was triggered, not the target's new position. At most 16 meteors can be pending; if all slots are occupied, the hit and blast happen immediately. <small>[sim-s0IFOj9I.js: \`if(n>=0)return Bc(e,n,i),Vc(e,n,l,u,o,a),t.mult[n]=c.proc.mult,t.itemSrc[n]=s.src,t.paint[n]=s.paint,0\`]</small> <small>[sim-s0IFOj9I.js: \`c=Math.max(1,i(e.cfg.items.meteorFallSec))\`]</small>\n\n`;
+      if (it.effect.kind === 'onKill' && it.effect.proc.kind === 'seekers') body += `### Projectile visuals\n\n**Verified**: the main renderer gives these projectiles direction-specific turning poses, glancing eyes, trails, glow and impact pops. Reduced motion suppresses trails and holds each impact pop on a still frame; disabling flashes skips its brightest first frame. These are visual effects, not changes to the proc parameters above. <small>[scene-DTDh8TCc.js: \`\` glances:jte.map(e=>s([e])),pop:s([\`pop\`]) \`\`]</small> <small>[scene-DTDh8TCc.js: \`r.still&&(p=Math.min(f-1,2))\`]</small>\n\n`;
     }
     body += `## Obtaining\n\n`;
     if (it.tier === 'evolved') body += `- Hold ${ilink('item', it.from)} with ${ilink('passive', it.catalyst)} at level 5, then open a chest. See [Evolutions](/evolutions#item-evolutions).\n\n`;
@@ -431,9 +451,9 @@ export function dogPages() {
       ['Spawn weight', d.weight],
       ['Speed', d.speed],
     ];
-    let body = `## Ability\n\n**Verified** (dog ability code in \`sim-CxcpxDAj.js\` and \`run-extras-DH3WRlg2.js\`): ${DOG_DETAIL[d.id] ?? ''} \`power\` is the training multiplier below; damage is Tibo's damage multiplier.\n\n` + table(['Parameter', 'Value'], flatRows(d.ability)) + '\n';
-    if (d.ability.kind === 'puff' || d.ability.kind === 'eclipse') body += `### Fluff visuals\n\n**Verified**: stored fluff charges appear as tufts orbiting Link or Zelda & Link. Spending a charge pops a tuft and sends wisps outward with the sneeze. Reduced motion holds the tufts and wisps still. These visuals do not change the shield or knockback values. <small>[scene-BJmulJpI.js: \`function KH(e){return Math.min(4,e.legend.fluff)}\`]</small> <small>[scene-BJmulJpI.js: \`function JH(e,t,n,r){return WH+(r?0:.22*n*D)+e/Math.max(1,t)*D}\`]</small>\n\n`;
-    if (d.ability.kind === 'listen' || d.ability.kind === 'eclipse') body += `### Mark visuals\n\n**Verified**: Zelda's ordinary marks appear as moons above pests, with a clock showing remaining time and rising stars. The renderer shows at most 24 of these marks. Reduced motion holds the moon still and hides its stars; disabling flashes suppresses the opening pop and blinking. Eclipse marks use their separate effect. Mark duration and damage bonuses are unchanged. <small>[scene-BJmulJpI.js: \`for(let r=0;r<l.pool.count&&u<24;r++)\`]</small> <small>[scene-BJmulJpI.js: \`!n.still&&pU.left>lU&&CU(e,o)\`]</small>\n\n`;
+    let body = `## Ability\n\n**Verified** (dog ability code in \`sim-s0IFOj9I.js\` and \`run-extras-CccbDLsP.js\`): ${DOG_DETAIL[d.id] ?? ''} \`power\` is the training multiplier below; damage is Tibo's damage multiplier.\n\n` + table(['Parameter', 'Value'], flatRows(d.ability)) + '\n';
+    if (d.ability.kind === 'puff' || d.ability.kind === 'eclipse') body += `### Fluff visuals\n\n**Verified**: stored fluff charges appear as tufts orbiting Link or Zelda & Link. Spending a charge pops a tuft and sends wisps outward with the sneeze. Reduced motion holds the tufts and wisps still. These visuals do not change the shield or knockback values. <small>[scene-DTDh8TCc.js: \`function UV(e){return Math.min(4,e.legend.fluff)}\`]</small> <small>[scene-DTDh8TCc.js: \`function GV(e,t,n,r){return VV+(r?0:.22*n*D)+e/Math.max(1,t)*D}\`]</small>\n\n`;
+    if (d.ability.kind === 'listen' || d.ability.kind === 'eclipse') body += `### Mark visuals\n\n**Verified**: Zelda's ordinary marks appear as moons above pests, with a clock showing remaining time and rising stars. The renderer shows at most 24 of these marks. Reduced motion holds the moon still and hides its stars; disabling flashes suppresses the opening pop and blinking. Eclipse marks use their separate effect. Mark duration and damage bonuses are unchanged. <small>[scene-DTDh8TCc.js: \`for(let r=0;r<s.pool.count&&c<24;r++)\`]</small> <small>[scene-DTDh8TCc.js: \`!n.still&&uH.left>oH&&bH(e,i)\`]</small>\n\n`;
     body += `## Aura\n\nWhile in Tibo's pack, ${n} adds: ${modsText(d.aura)}.\n\n`;
     body += `## Training levels\n\nEach level multiplies the ability. \`every\` multiplies the time between uses (lower is faster), \`power\` multiplies its strength and \`aura\` scales the aura bonus. The multipliers below are copied from the game data.\n\n`;
     let every = 1, power = 1;
@@ -444,7 +464,7 @@ export function dogPages() {
       lr.push([i + 2, fmt(l.every), fmt(l.power), fmt(l.aura), d.ability.every ? fmt(d.ability.every * every) : '—', fmt(power)]);
     });
     body += table(['Level', '`every` ×', '`power` ×', '`aura`', 'Ability interval (s)', 'Total power ×'], lr) + '\n';
-    body += `**Verified**: ability power is the product of \`power\` multipliers, the interval is \`ability.every\` × the product of \`every\` multipliers, and the aura is multiplied by \`1 + sum of aura\` values.${' '}<small>[sim-CxcpxDAj.js: \`function Ht(e,t){let n=e.levelUps,r=1;for(let e=0;e<t-1;e++)r+=n[e]?.aura??0;return r}\`]</small>\n\n` + table(['Level', 'Aura at this level'], Array.from({ length: d.levelUps.length + 1 }, (_, i) => { const m = 1 + d.levelUps.slice(0, i).reduce((a, l) => a + (l.aura ?? 0), 0); return [i + 1, modsText(Object.fromEntries(Object.entries(d.aura).map(([k, v]) => [k, +(v * m).toFixed(4)])))]; })) + '\n';
+    body += `**Verified**: ability power is the product of \`power\` multipliers, the interval is \`ability.every\` × the product of \`every\` multipliers, and the aura is multiplied by \`1 + sum of aura\` values.${' '}<small>[sim-s0IFOj9I.js: \`function an(e,t){let n=e.levelUps,r=1;for(let e=0;e<t-1;e++)r+=n[e]?.aura??0;return r}\`]</small>\n\n` + table(['Level', 'Aura at this level'], Array.from({ length: d.levelUps.length + 1 }, (_, i) => { const m = 1 + d.levelUps.slice(0, i).reduce((a, l) => a + (l.aura ?? 0), 0); return [i + 1, modsText(Object.fromEntries(Object.entries(d.aura).map(([k, v]) => [k, +(v * m).toFixed(4)])))]; })) + '\n';
     body += `## Obtaining\n\n${d.id === 'zelda-and-link' ? 'Hold both [Link](/dogs/pomeranian) and [Zelda](/dogs/pomchi): they fuse into Zelda & Link, keeping the higher level.' : d.legendary ? `${n} is a legendary dog (weight 0 in the normal pool). Each run, each of Link and Zelda is in the run with ${pct(GAME.dogs.legendaryChance)} chance; stray dogs at least 1200 units from the start take them from that queue.` : `Stray dogs appear as [Stray Dog](/points-of-interest#stray-dog) points of interest; walk onto one to recruit it. ${n}'s breed weight is ${d.weight}.`} See [Dogs](/dogs#getting-dogs).\n\n`;
     body += `## Data\n\n\`\`\`json\n${JSON.stringify(d, null, 2)}\n\`\`\`\n`;
     pages.push({
@@ -474,8 +494,8 @@ export function dogIndex() {
     ['Legendary chance (`legendaryChance`)', pct(GAME.dogs.legendaryChance)],
     ['Dog Kennel level prices (`kennelPrices`)', GAME.dogs.kennelPrices.join(', ') + ' gold'],
     ['Kennel purchases (`kennelBuys`)', GAME.dogs.kennelBuys],
-  ]) + `\n**Verified** (\`sim-CxcpxDAj.js\`, \`run-extras-DH3WRlg2.js\`):\n\n- The first stray is placed ${GAME.dogs.firstDogDistance} units from the start, or at the nearest free spot if another POI is there. Other strays appear as [Stray Dog](/points-of-interest#stray-dog) points of interest; the breed is weighted ${R.dogs.filter((d) => d.weight).sort((a, b) => b.weight - a.weight).map((d) => `${t(`dog.${d.id}.breed`)} ${d.weight}`).join(', ')}.\n- Walking onto a stray of a breed you already have **levels that dog up**. Otherwise it joins if the pack has room; with a full pack you choose “Swap out …” or “Keep my pack”.\n- **Legendary dogs**: each run, Link and Zelda are each in the run with ${pct(GAME.dogs.legendaryChance)} chance; strays in chunks whose centre is at least 1200 units from the start take them from that queue. Holding both fuses them into ${link('dog', 'zelda-and-link')}.\n- Dogs level up to 5. The [Dog Kennel](/points-of-interest#dog-kennel) sells levels at ${GAME.dogs.kennelPrices.join(' / ')} gold (× purchase price), up to ${GAME.dogs.kennelBuys} per kennel.\n- Every dog's aura is added to Tibo's stats like an item.\n`;
-  return { path: '/dogs', title: 'Dogs', description: `All ${R.dogs.length} dogs in tibo.dog: abilities, auras, training and legendary dogs.`, body, sources: [SRC_REG, SRC_TEXT, 'Game config `dogs` from `sim-CxcpxDAj.js`'], search: 'dogs pack breeds' };
+  ]) + `\n**Verified** (\`sim-s0IFOj9I.js\`, \`run-extras-CccbDLsP.js\`):\n\n- The first stray is placed ${GAME.dogs.firstDogDistance} units from the start, or at the nearest free spot if another POI is there. Other strays appear as [Stray Dog](/points-of-interest#stray-dog) points of interest; the breed is weighted ${R.dogs.filter((d) => d.weight).sort((a, b) => b.weight - a.weight).map((d) => `${t(`dog.${d.id}.breed`)} ${d.weight}`).join(', ')}.\n- Walking onto a stray of a breed you already have **levels that dog up**. Otherwise it joins if the pack has room; with a full pack you choose “Swap out …” or “Keep my pack”.\n- **Legendary dogs**: each run, Link and Zelda are each in the run with ${pct(GAME.dogs.legendaryChance)} chance; strays in chunks whose centre is at least 1200 units from the start take them from that queue. Holding both fuses them into ${link('dog', 'zelda-and-link')}.\n- Dogs level up to 5. The [Dog Kennel](/points-of-interest#dog-kennel) sells levels at ${GAME.dogs.kennelPrices.join(' / ')} gold (× purchase price), up to ${GAME.dogs.kennelBuys} per kennel.\n- Every dog's aura is added to Tibo's stats like an item.\n`;
+  return { path: '/dogs', title: 'Dogs', description: `All ${R.dogs.length} dogs in tibo.dog: abilities, auras, training and legendary dogs.`, body, sources: [SRC_REG, SRC_TEXT, 'Game config `dogs` from `sim-s0IFOj9I.js`'], search: 'dogs pack breeds' };
 }
 
 const ENEMY_BEH = {
@@ -510,7 +530,7 @@ export function enemyPages() {
     ];
     let body = `## Stats\n\nBase values before [time scaling](/enemy-scaling) and [difficulty](/modes).\n\n` + table(['Stat', 'Value'], rows.map(([k, v]) => [k, v])) + '\n';
     if (Object.keys(e.behavior).length > 1) body += `## Behaviour parameters\n\n` + table(['Parameter', 'Value'], flatRows(e.behavior)) + '\n';
-    if (e.behavior.sharpPattern) body += `### Nightmare bullets\n\n**Verified**: Nightmare uses \`sharpPattern\` instead of \`pattern\`; other levels use the ordinary pattern. <small>[sim-CxcpxDAj.js: \`return e.level.sharpPatterns&&n!==void 0?n:t.pattern\`]</small>\n\n` + table(['Parameter', 'Nightmare value'], flatRows(e.behavior.sharpPattern)) + '\n';
+    if (e.behavior.sharpPattern) body += `### Nightmare bullets\n\n**Verified**: Nightmare uses \`sharpPattern\` instead of \`pattern\`; other levels use the ordinary pattern. <small>[sim-s0IFOj9I.js: \`return e.level.sharpPatterns&&n!==void 0?n:t.pattern\`]</small>\n\n` + table(['Parameter', 'Nightmare value'], flatRows(e.behavior.sharpPattern)) + '\n';
     body += `## Where it appears\n\n`;
     const where = [];
     for (const b of biomes) where.push(`${link('biome', b.biome)}, enemy tier ${b.tier}`);
@@ -586,18 +606,18 @@ export function bossPages() {
       const layoutRows = flatRows(layout).flatMap(([key, value]) => key === '`bands`'
         ? layout.bands.map((band, i) => [`Band ${i + 1} inner–outer`, `${band.inner}–${band.outer}`])
         : [[key, value]]);
-      body += `## Nightmare ground attack\n\n**Verified**: Nightmare replaces the ordinary main attack with the layout below; other levels keep the ordinary attack. The layout is centred on Tibo's position when the attack is placed, not a position that follows him. ${layouts[layout.kind]} All layout distances (radii, band edges and satellite orbit) are multiplied by Nightmare's \`areaScale\` of 1.45; counts, angles and times are not. This does not enlarge every enemy attack. <small>[sim-CxcpxDAj.js: \`return e.level.sharpAttacks&&n!==void 0?n:t.attack\`]</small> <small>[sim-CxcpxDAj.js: \`Q.cx=e.player.x[e.me]\`]</small> <small>[sim-CxcpxDAj.js: \`Q.cy=e.player.y[e.me]\`]</small> <small>[sim-CxcpxDAj.js: \`Q.scale=e.cfg.level.areaScale\`]</small>\n\nRaw layout values before distance scaling:\n\n` + table(['Layout parameter', 'Raw value'], layoutRows) + '\n';
+      body += `## Nightmare ground attack\n\n**Verified**: Nightmare replaces the ordinary main attack with the layout below; other levels keep the ordinary attack. The layout is centred on Tibo's position when the attack is placed, not a position that follows him. ${layouts[layout.kind]} All layout distances (radii, band edges and satellite orbit) are multiplied by Nightmare's \`areaScale\` of 1.45; counts, angles and times are not. This does not enlarge every enemy attack. <small>[sim-s0IFOj9I.js: \`return e.level.sharpAttacks&&n!==void 0?n:t.attack\`]</small> <small>[sim-s0IFOj9I.js: \`Z.cx=e.player.x[e.me]\`]</small> <small>[sim-s0IFOj9I.js: \`Z.cy=e.player.y[e.me]\`]</small> <small>[sim-s0IFOj9I.js: \`Z.scale=e.cfg.level.areaScale\`]</small>\n\nRaw layout values before distance scaling:\n\n` + table(['Layout parameter', 'Raw value'], layoutRows) + '\n';
     }
     for (const [heading, patterns] of [['Bullet patterns', b.patterns], ...(b.sharpPatterns ? [['Nightmare bullet patterns', b.sharpPatterns]] : [])]) {
       body += `## ${heading}\n\n`;
-      if (heading === 'Nightmare bullet patterns') body += `**Verified**: on Nightmare these replace the ordinary patterns above; they use the same pattern interval. Other levels use the ordinary list. <small>[sim-CxcpxDAj.js: \`return e.level.sharpPatterns&&n!==void 0?n:t.patterns\`]</small>\n\n`;
+      if (heading === 'Nightmare bullet patterns') body += `**Verified**: on Nightmare these replace the ordinary patterns above; they use the same pattern interval. Other levels use the ordinary list. <small>[sim-s0IFOj9I.js: \`return e.level.sharpPatterns&&n!==void 0?n:t.patterns\`]</small>\n\n`;
       body += table(
         ['Pattern', 'Count', 'Bursts', 'Bullet damage', 'Speed', 'Telegraph (s)', 'Extra'],
         patterns.map((p) => [`\`${p.kind}\``, p.count, p.bursts, p.damage, p.speed, p.telegraph, [p.onHit ? `on hit: ${json(p.onHit)}` : '', p.motion ? `motion: ${json(p.motion)}` : '', p.arc ? `arc ${p.arc}` : '', p.spin ? `spin ${p.spin}` : ''].filter(Boolean).join('; ')]),
       ) + '\n';
     }
-    if (b.id === 'sir-strawman') body += `## Returning sickles\n\n**Verified**: the seven-shot fan flies outward, slows, then reverses along the same heading. The ordinary fan launches at speed 120: its speed multiplier stays at 1 through 0.8 s, falls to 0.1 at 1.05 s, then to −1.15 at 1.5 s. Nightmare launches at 130, with multipliers 1 at 0.85 s, 0.1 at 1.1 s and −1.05 at 1.55 s. Speeds interpolate between these points, so reversal happens between the last two points, not at the final timestamp. <small>[sim-CxcpxDAj.js: \`return r+(a.to-r)*i\`]</small>\n\nThe negative-speed portion also uses the [difficulty's return multiplier](/modes): ×0.7 on Easy and ×1.05 on Normal, Hard and Nightmare. This does not change the outward speed or the timing of the reversal. Nightmare uses the returning fan rather than an inward-curving fan. <small>[sim-CxcpxDAj.js: \`o=t.launch[n]*(a<0?a*Al.back:a)\`]</small>\n\n`;
-    if (b.id === 'great-wireworm') body += `## Click-beetle shots\n\n**Verified**: one five-shot fan spans 1.3 radians and launches at speed 90. On Easy, Normal and Hard, the shots keep full speed through 0.35 s, slow to ×0.12 at 0.5 s, hold that speed until 0.9 s, then accelerate to ×1.55 by 1 s. At 0.9 s each shot aims once at Tibo's current position from its own position; it does not keep homing. <small>[sim-CxcpxDAj.js: \`c!==void 0&&r>=c.at&&t.retargeted[n]===0\`]</small> <small>[sim-CxcpxDAj.js: \`let n=Al.x-e.x[t],r=Al.y-e.y[t]\`]</small>\n\nNightmare keeps the same fan and launch speed, but slows earlier: ×1 at 0.3 s, ×0.12 at 0.42 s and 0.72 s, then ×1.9 at 0.8 s. It retargets once at 0.72 s. Speeds interpolate between the listed points; these are seconds since the shot launched, not fractions of its lifetime. <small>[sim-CxcpxDAj.js: \`return r+(a.to-r)*i\`]</small> The shots look like click beetles and flash while moving slowly.\n\n`;
+    if (b.id === 'sir-strawman') body += `## Returning sickles\n\n**Verified**: the seven-shot fan flies outward, slows, then reverses along the same heading. The ordinary fan launches at speed 120: its speed multiplier stays at 1 through 0.8 s, falls to 0.1 at 1.05 s, then to −1.15 at 1.5 s. Nightmare launches at 130, with multipliers 1 at 0.85 s, 0.1 at 1.1 s and −1.05 at 1.55 s. Speeds interpolate between these points, so reversal happens between the last two points, not at the final timestamp. <small>[sim-s0IFOj9I.js: \`return r+(a.to-r)*i\`]</small>\n\nThe negative-speed portion also uses the [difficulty's return multiplier](/modes): ×0.7 on Easy and ×1.05 on Normal, Hard and Nightmare. This does not change the outward speed or the timing of the reversal. Nightmare uses the returning fan rather than an inward-curving fan. <small>[sim-s0IFOj9I.js: \`s=t.launch[n]*(o<0?o*su.back:o)\`]</small>\n\n`;
+    if (b.id === 'great-wireworm') body += `## Click-beetle shots\n\n**Verified**: one five-shot fan spans 1.3 radians and launches at speed 90. On Easy, Normal and Hard, the shots keep full speed through 0.35 s, slow to ×0.12 at 0.5 s, hold that speed until 0.9 s, then accelerate to ×1.55 by 1 s. At 0.9 s each shot aims once at Tibo's current position from its own position; it does not keep homing. <small>[sim-s0IFOj9I.js: \`u!==void 0&&i>=u.at&&t.retargeted[n]===0\`]</small> <small>[sim-s0IFOj9I.js: \`let n=su.x-e.x[t],r=su.y-e.y[t]\`]</small>\n\nNightmare keeps the same fan and launch speed, but slows earlier: ×1 at 0.3 s, ×0.12 at 0.42 s and 0.72 s, then ×1.9 at 0.8 s. It retargets once at 0.72 s. Speeds interpolate between the listed points; these are seconds since the shot launched, not fractions of its lifetime. <small>[sim-s0IFOj9I.js: \`return r+(a.to-r)*i\`]</small> The shots look like click beetles and flash while moving slowly.\n\n`;
     body += `## HP scaling\n\nBoss HP is multiplied by a step factor depending on the run time (\`bosses.hpSteps\`), and by the difficulty's boss HP multiplier (see [Modes](/modes)).\n\n` + table(
       ['From minute', 'HP ×', `${n} HP (Normal)`],
       GAME.bosses.hpSteps.map((s) => [s.minute, s.hpScale, fmt(b.hp * s.hpScale)]),
@@ -611,7 +631,7 @@ export function bossPages() {
       lead: `**${n}**, *${title}*, is a boss in tibo.dog. In-game description: “${desc}”`,
       infobox: { title: n, icon: `boss/${b.id}`, iconSize: 96, caption: title, rows },
       body,
-      sources: [SRC_REG, SRC_TEXT, 'Game config `bosses.hpSteps` and `win.finalBoss` from `sim-CxcpxDAj.js`'],
+      sources: [SRC_REG, SRC_TEXT, 'Game config `bosses.hpSteps` and `win.finalBoss` from `sim-s0IFOj9I.js`'],
       search: `${n} ${title} ${b.id} boss`,
     });
   });
@@ -669,7 +689,7 @@ export function biomeIndex() {
     ['Biome', 'Placement', 'Hazard', 'Gold ×', 'XP ×', 'Description'],
     R.biomes.map((b) => [link('biome', b.id), b.placement.kind, b.hazard?.kind ?? '—', fmt(b.goldMult), fmt(b.xpMult), t(`biome.${b.id}.desc`)]),
   );
-  return { path: '/biomes', title: 'Biomes', description: `All ${R.biomes.length} biomes in tibo.dog with hazards, enemies, gold and XP multipliers.`, body, sources: [SRC_REG, SRC_TEXT, 'Game config `world` from `sim-CxcpxDAj.js`'], search: 'biomes map world' };
+  return { path: '/biomes', title: 'Biomes', description: `All ${R.biomes.length} biomes in tibo.dog with hazards, enemies, gold and XP multipliers.`, body, sources: [SRC_REG, SRC_TEXT, 'Game config `world` from `sim-s0IFOj9I.js`'], search: 'biomes map world' };
 }
 
 export function eventPages() {
