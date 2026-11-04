@@ -310,5 +310,15 @@
   "status": "reviewed",
   "updated": "2026-11-04T16:34:35Z",
   "changes": "Elite pests now break apart in pixel-art death animations with detached gold-rim fragments, in both the main and debug renderers. The main renderer loads separate elite-death and glint sheets through the effects worker, with a main-thread fallback; missing art keeps the ordinary death animation. Fryer King and Late Blight puddles have redrawn, slower surfaces and new boiling bubbles; reduced motion holds the surface and bubble poses still. Root Tunnel gains a closing exit hole and animated clods that bounce and fall back in, with simpler reduced-motion poses; Tibo's outline is hidden while sinking. Shared effects helpers move into separate or consuming chunks, and effect sprites gain horizontal-flip support. Adds a translated elite-death changelog note. Combat simulation is byte-identical after asset-name changes; registry values, extracted gameplay settings, English content descriptions, difficulty settings and wiki icons are unchanged."
+ },
+ {
+  "seen": "2026-11-04",
+  "main": "main-D4sszisV.js",
+  "boot": "boot-_THj2ukE.js",
+  "sim": "sim-CQySaEYD.js",
+  "commit": "40139b5e40f0",
+  "status": "reviewed",
+  "updated": "2026-11-04T16:59:21Z",
+  "changes": "Charging pests kick up dust and bouncing grit when they launch and stop, and leave a dust trail during a charge, in both the main and debug renderers; reduced motion hides these effects. Wandering Eyes and All-Seeing Spud shots gain directional turning poses, glancing eyes, trails, glow and impact pops in the main renderer. Reduced motion suppresses their trails and holds impact poses; disabling flashes skips the brightest impact frame. The early sprite atlas adds those animations and repacks unchanged frames; All-Seeing Spud's dot sprite is redrawn. The atlas-band worker can queue 16 unacknowledged bands instead of 4, without changing its pixel painting. Combat simulation is byte-identical after asset-name changes; content values, extracted gameplay settings, English text, difficulty settings, late-atlas frames and wiki icons are unchanged."
  }
 ]
