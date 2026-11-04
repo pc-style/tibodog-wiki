@@ -4,6 +4,11 @@
   const menu = document.querySelector('.side-menu');
   if (menu && window.matchMedia('(max-width: 860px)').matches) menu.open = false;
 
+  // Keep the current page's sidebar link in view on long menus.
+  const current = document.querySelector('.side [aria-current="page"]');
+  const side = current?.closest('.side');
+  if (side && side.scrollHeight > side.clientHeight) side.scrollTop = current.offsetTop - side.clientHeight / 3;
+
   // Show exact UTC times also in the reader's time zone, with how long ago they were.
   const ago = (ms) => {
     const m = Math.round(ms / 60000);
