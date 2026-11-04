@@ -280,5 +280,15 @@
   "status": "reviewed",
   "updated": "2026-11-04T14:40:04Z",
   "changes": "Item bags and healing snacks get new sprites, coloured glow halos and sparkles. Item bags hop while idle and shake as they charge; snacks pulse. Opening a bag throws confetti, while collecting a snack scatters leaves; both add brief sparkles and a fading halo. Reduced motion uses still poses, and disabling flashes dims burst light and skips the brightest bag-flare frames. The sprite atlas is repacked; other sprite frames and wiki icons are unchanged. Simulation logic, content values, English content descriptions and difficulty settings are unchanged."
+ },
+ {
+  "seen": "2026-11-04",
+  "main": "main-Brx0rwGi.js",
+  "boot": "boot-BcpPF-1U.js",
+  "sim": "sim-DCElRT5M.js",
+  "commit": "d9e21c9b046e",
+  "status": "reviewed",
+  "updated": "2026-11-04T15:14:56Z",
+  "changes": "Railgun beams now use direction-matched pixel tiles instead of rotated strips, with a bright pulse travelling along the beam; reduced motion skips the pulse. The main renderer compensates for perspective, and the debug renderer snaps the tiles to its pixel grid. Beam scorch marks glow slightly brighter. The sprite atlas is repacked; only the railgun core frames change, and wiki icons are unchanged. The in-game changelog groups eleven existing notes under the older game commit 445c881 rather than treating them as new changes. Simulation logic, content values, English content descriptions and difficulty settings are unchanged."
  }
 ]
