@@ -230,5 +230,15 @@
   "status": "reviewed",
   "updated": "2026-11-04T08:38:15Z",
   "changes": "The in-game changelog moves seven existing notes from its next section into release ec984b0, dated 2026-11-03: world effects, Sir Strawman's returning sickles, slow-connection Story reveals, font-loading card refits, Chinese/Japanese/Korean text fit, Moldy Shrine menu fit, and Indic/Thai card marks. These are older notes being grouped, not new gameplay changes in this build. Game data, English content descriptions, difficulty settings, simulation and rendering logic, and wiki icons are unchanged."
+ },
+ {
+  "seen": "2026-11-04",
+  "main": "main-DGHE4WZt.js",
+  "boot": "boot-C56D1UxK.js",
+  "sim": "sim-Do1wD8Sk.js",
+  "commit": "18beea6da6e6",
+  "status": "reviewed",
+  "updated": "2026-11-04T09:22:23Z",
+  "changes": "New game versions can load automatically on the idle Reset screen and before starting another non-Story run from the end screen, preserving the selected difficulty for up to 60 s. A session-storage guard prevents repeated automatic reloads into the same offered build; shared-run parameters are cleared on reload. Update checks also run on the stats screen and use /version.json. Boss death blasts now use two pixel-scaled sprite tiers, sparkles and a separate ground ring; small effect strokes remain visible when downscaled. Rendering caches unchanged overlapping-pool outlines and terrain sample indices, preserves the sharp image when blur is zero, and reports more specific graphics-fallback causes and browser/device categories. The changelog adds the automatic-update note, groups four older notes under earlier releases, and adjusts its narrow layout. Combat data, English content descriptions, difficulty settings, simulation logic and wiki icons are unchanged."
  }
 ]
