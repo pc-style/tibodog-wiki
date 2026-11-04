@@ -102,15 +102,13 @@ An active intro or landing cutscene ends as skipped if its renderer stops report
 
   coverage() {
     return `What this wiki could not cover or verify as of ${BUILD.researched} (build \`${BUILD.boot}\`):\n\n` +
-      `- **Exact meaning of some raw parameters.** Weapon, boss, item and event pages list raw parameters (\`hitInterval\`, \`fling\`, \`snap\`, pattern \`motion\` …) under the game's internal names. Their precise in-game effect was not traced for every weapon.\n` +
-      `- **Per-weapon attack code.** Damage, cooldown, amount and level values are verified; how each attack kind uses area, speed, duration and interval was not traced weapon by weapon.\n` +
+      `- **Raw parameters and per-weapon attack code.** Every weapon, item, boss, event, dog and biome page now explains its raw parameters (\`hitInterval\`, \`fling\`, \`snap\`, pattern \`motion\` …) in plain language, read from the sim code. Most of those readings are not yet confirmed by measured play.\n` +
       `- **Story replay.** After the Story ending, Story leaves the level picker; whether it can be replayed from another screen is not verified.\n` +
-      `- **Point-of-interest tiers.** Beetle Nests and Boss Lairs scale with a POI tier; how the tier is assigned (likely distance) was not traced.\n` +
       `- **Hidden or easter-egg content.** The developer says the game has easter eggs (“i hope you enjoy it and find all the easter eggs”, [launch post](${LAUNCH})). Content outside the data tables is not covered.\n` +
       `- **Patch history.** The game has an in-game changelog (\`changelog-panel-CQQYTst6.js\`), but its summaries do not list every code change. The [History](/history) page combines first-party posts with this wiki's reviewed build comparisons. X search was rate-limited during the original research on 2026-11-02, so some developer replies may be missing.\n` +
       `- **Leaderboards and shared runs.** Shared run links live under \`/r/\`; no public leaderboard page was found.\n` +
       `- **Other languages.** English text only; the game has 27 languages.\n` +
-      `- **Hands-on testing.** Values come from code, not from measuring play.\n` +
+      `- **Hands-on testing.** Most values come from code. Agents can now play the real game headlessly (\`tools/play.mjs\`) to measure them, and measured results are being added page by page; the boss HP tables were the first to be checked this way.\n` +
       `- **Future updates.** The game changes often. Use **Check live game for updates** at the top of any page to compare the live game with this wiki, or see [Versions & updates](/versions). Detected builds still need review before deployment.\n`;
   },
 };

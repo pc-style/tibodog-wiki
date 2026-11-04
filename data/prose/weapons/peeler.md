@@ -1,0 +1,18 @@
+## Overview
+
+The Peeler is Tibo's kitchen tool and one of the most common weapons: its level-up offer weight of 100 is the highest of any base weapon, shared with [Fry Knives](/weapons/fry-knives) and [Tot Toss](/weapons/tot-toss). It is in the pool of starting weapons, one of which is picked from the run seed in Standard runs, and [Story mode](/story-mode)'s starting chest holds a level-4 Peeler. [poteto's gift chest](/visitors) can also hand it out.
+
+Every 1 s it slashes sideways. At level 1 that is 2 slashes (1 plus Tibo's built-in +1 amount, see [Stats](/stats)), 0.1 s apart: one on the side Tibo faces, one on the other side. Level 2 adds a third slash, back on the facing side and one row lower. Each slash hits every pest in a 64 × 20 box (× Area) next to Tibo. From level 4, every slash also flings potato peels outward: 2 at level 4, one more per level, 6 at level 8.
+
+At level 8, with [Gravy Heart](/passives/gravy-heart) at any level, the next [chest](/chests) evolves it into [Mandoline Fury](/weapons/mandoline-fury).
+
+## How it works
+
+- **Slashes.** Swings alternate sides, starting on the side Tibo faces (left or right). The 3rd and 4th swings sit 10 units lower than the first two. A slash damages everything in its box at once and has no pierce limit.
+- **Peels.** The number of peels is `count + countPerLevel × (level − fromLevel)` from level 4 on, and zero before that. <small>[sim-CrpXuTSY.js: `return t<n?0:e.count+(e.countPerLevel??0)*(t-n)`]</small> They fan out over ±0.6 rad on the slash's side, move slowly (40 units/s) for 2.2 s × Duration, pass through pests and deal 0.45× the slash damage.
+- **Peel hit limit.** The `rehit` timer for peels is kept per pest and per weapon slot, not per peel. A pest hit by one of this Peeler's peels cannot be hit by any of its peels for the next 6 s. <small>[sim-CrpXuTSY.js: `i=8*z(n)+Math.max(0,e.projectiles.slot[t]);return!(e.tick-r.hitStamp[i]<e.projectiles.rehit[t]`]</small>
+
+## Tips
+
+- The peels mostly add reach: they deal a little damage once to pests outside the slash boxes. Most of the damage comes from the slashes.
+- The slash boxes are wide but short (20 units tall at level 1), so pests directly above or below Tibo are easy to miss. Area upgrades (levels 4 and 6) make the boxes taller as well as wider.

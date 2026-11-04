@@ -1,0 +1,16 @@
+## Overview
+
+Cold Storage is the evolution of [Root Cellar](/weapons/root-cellar). A chest can evolve it once Root Cellar is at max level and Tibo owns [Slow Cooker](/passives/slow-cooker) (see [Evolutions](/evolutions)). The cold ring now runs from 42 to 60 units around Tibo (area 1.5). A pest touching it takes 110 damage and freezes for 1.1 s, and it can be hit again after 1 s. Bosses are slowed by 50% for 1.5 s instead of being frozen.
+
+Compared with a max-level Root Cellar (38 damage, re-hit every 1.6 s), it hits almost three times as hard, re-hits more often and holds pests longer.
+
+## How it works
+
+- The ring works the same way as Root Cellar's. It is always active, hits pests touching the band between the inner and outer edge, and skips pests fully inside. Its 1 s cooldown is the wait before the same pest can be hit again.
+- **Freeze outlasts the re-hit.** Freeze and slow durations are multiplied by Tibo's duration stat, so with the base +25% duration a pest stays frozen for about 1.4 s. That is longer than the 1 s re-hit time, so a pest frozen inside the band is hit and frozen again before it thaws. It stays locked in the band until it dies or something else knocks it out. Slow Cooker levels lengthen the freeze further. <small>[sim-CrpXuTSY.js: `e.slowF[t]=Math.max(e.slowF[t],n.factor),e.slowT[t]=Math.max(e.slowT[t],n.seconds*i)`]</small>
+- Bosses get the slow (`factor` 0.5, so half speed) because they cannot be frozen.
+
+## Tips
+
+- A pest walking in towards Tibo takes a 110-damage hit and a freeze as soon as it touches the band, unless the ring hit it within the last second. This makes Cold Storage a strong defence against swarms.
+- Weapons with high knockback can push frozen pests out of the band and out of the freeze lock.

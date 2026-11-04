@@ -1,5 +1,5 @@
 // Builds the static wiki into dist/: HTML pages, Markdown twins, sitemap, llms.txt, search index and data API.
-import { mkdirSync, writeFileSync, rmSync, cpSync, readFileSync } from 'node:fs';
+import { mkdirSync, writeFileSync, rmSync, cpSync, readFileSync, existsSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { renderHtml, renderMd, SITE, SITE_NAME } from './lib/render.mjs';
 import { R, BUILD, BUILDS, BUILT_AT, WIKI_COMMIT, GAME, DIFF, TEXT } from './lib/data.mjs';
@@ -29,6 +29,11 @@ const pages = [
   ent.eventIndex(), ...ent.eventPages(),
 ];
 pages.find((p) => p.path === '/bosses').body += '\n' + MECH.bossSchedule();
+// Hand-written prose: data/prose/<page path>.md goes above the generated tables.
+for (const p of pages) {
+  const f = new URL(`./data/prose${p.path}.md`, import.meta.url);
+  if (existsSync(f)) p.body = `${readFileSync(f, 'utf8').trim()}\n\n${p.body}`;
+}
 pages.push(...systemPages(pages));
 
 // Sanity checks: unique paths, every internal link resolves.

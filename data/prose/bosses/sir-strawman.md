@@ -1,0 +1,31 @@
+## Overview
+
+Sir Strawman is the fifth boss in the boss order and the 7:00 boss on the [wave schedule](/bosses#wave-schedule), arriving together with that minute's elite. It is not part of the overtime cycle after 20:00, but a [Boss Lair](/points-of-interest#boss-lair) can wake it.
+
+It has 2600 base HP, which is 1690 HP on Normal (boss HP ×0.65, see [Modes](/modes)), plus [curse](/curse). Contact damage is 18 before time scaling. At speed 36 it ties with [The Harvester](/bosses/harvester) as the second-fastest boss after [The Great Wireworm](/bosses/great-wireworm) (40), though still well short of Tibo's base speed of 62.
+
+It drops a [chest](/chests), an XP gem worth 90 XP and a 25-gold coin (both multiplied by the biome's XP and gold multipliers).
+
+## Fight
+
+Sir Strawman is a smaller version of the Harvester's fight: a short charge and a single fan of straw that comes back. Every 2.6 s of walking it charges. A full walk, warning and charge cycle takes 4.1 s.
+
+### Lance charge
+
+When the attack is ready, Sir Strawman stops and locks onto the direction Tibo is in at that moment. <small>[sim-CrpXuTSY.js: `l.state[t]=1,l.timer[t]=i.telegraph,l.timer2[t]=i.telegraph,l.tx[t]=a/u,l.ty[t]=o/u`]</small> A 22-unit-wide lane shows its path for 0.8 s, then it rushes along it at speed 280 for 0.7 s, covering about 196 units. The hit comes from touching it during the rush, and contact damage is ×1.5 while charging (27 before time scaling). Its hitbox stays at its normal radius of 15, because the lane is narrower than its body.
+
+### Straw fan
+
+Every 2.6 s of walking, after a 0.8 s warning, it throws a fan of 7 straw shots spread over 1.1 radians (about 63°), aimed at where Tibo was when the warning began. Each shot deals 14 damage before scaling. The shots fly out at speed 120, stop about 113 units out, and then fly back along the same lines, through the point they were thrown from and out the other side. The exact speeds and the per-difficulty return speed are on this page under [Returning sickles](/bosses/sir-strawman#returning-sickles).
+
+Bullet count, fire rate and speed grow with run time (see [Enemy bullets](/enemy-scaling#enemy-bullets)). At its 7:00 arrival the fan has 9 shots at about speed 133, and comes every 2.15 s of walking.
+
+On [Nightmare](/modes#nightmare-rules) the fan is slightly faster (130 base) and turns back a little later. The charge is the same on every level.
+
+## Tips
+
+- **Step sideways off the lane.** The direction is locked when the lane appears, so about 20 units to the side (its body radius plus Tibo's size) is enough. At base speed that takes about a third of a second, well inside the 0.8 s warning.
+- **Get out of the fan's wedge, not just its range.** The returning shots come back through the point they were thrown from and keep going, so the area behind Sir Strawman is not safe either. The safest place is to the side of the 63° wedge, in either direction.
+- **Keep track of the shots on their way back.** On Normal and harder they come back faster than they went out (on Easy, slower). Walking into the wedge right after the shots stop can be how a hit happens.
+- **A dash through the fan works if timed.** The dash makes Tibo immune to hits for 0.15 s (more with [Ghost Pepper](/items/ghost-pepper)), but with only one charge and a 5 s recharge it is usually better kept for the charge. See [dash details](/controls#dash-details).
+- **Boss damage bonuses** such as [Bacon Bits](/passives/bacon-bits) and [Boss Buster](/items/boss-buster) shorten the fight. The 7:00 elite arrives at the same time, so area weapons that hit both are useful.

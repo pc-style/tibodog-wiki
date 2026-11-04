@@ -3,7 +3,7 @@
 // is searched again with its short minified names as wildcards; a unique match is a rename.
 //
 // Usage: node tools/check-quotes.mjs <assets dir> [--write]
-//   --write  replaces renamed quotes in pages/*.mjs (only where the old quote appears verbatim).
+//   --write  replaces renamed quotes in pages/*.mjs and data/prose/**/*.md (only where the old quote appears verbatim).
 // Exit code 1 if any quote is unresolved.
 import { readFileSync, writeFileSync, readdirSync, existsSync } from 'node:fs';
 import { join } from 'node:path';
@@ -80,6 +80,7 @@ for (const r of results.moved) console.log(`MOVED ${show(r)}`);
 
 if (write) {
   const sources = readdirSync('pages').filter((f) => f.endsWith('.mjs')).map((f) => join('pages', f));
+  if (existsSync('data/prose')) sources.push(...readdirSync('data/prose', { recursive: true }).filter((f) => f.endsWith('.md')).map((f) => join('data/prose', f)));
   let edits = 0;
   const missed = [];
   for (const r of [...results.renamed, ...results.moved]) {
@@ -100,7 +101,7 @@ if (write) {
     }
     if (!found) missed.push(r);
   }
-  console.log(`rewrote ${edits} quote(s) in pages/`);
+  console.log(`rewrote ${edits} quote(s) in pages/ and data/prose/`);
   for (const r of missed) console.log(`NOT IN SOURCE VERBATIM (fix by hand): ${show(r)}`);
   if (missed.length) process.exitCode = 1;
 }

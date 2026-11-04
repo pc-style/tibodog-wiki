@@ -1,0 +1,13 @@
+## Overview
+
+Gravy Flood is the evolution of [Gravy Boat](/weapons/gravy-boat). You get it by opening a [chest](/chests) with a max-level Gravy Boat and [Potato Magnet](/passives/potato-magnet) at any level. It pours more and larger gravy pools, picks targets from a wider range, and its pools grow and slowly slide after Tibo instead of staying where they landed.
+
+## How it works
+
+- **Casting.** The flood fires when a pest is within 150 units (Gravy Boat: 100). It drops each pool on a random pest in that range. Its own Amount of 4 plus Tibo's built-in +1 (see [Stats](/stats#stat-conversion)) gives 5 pools per cast, 0.1 s apart, every 3 s before cooldown bonuses.
+- **Pools.** A pool starts with a radius of 22 × Area (35 units at the base 1.6 area) and deals the weapon's damage to every pest inside it every 0.35 s. With no bonuses, it lasts 4 s × 1.25 = 5 s.
+- **Grow and follow.** While a pool lives, its radius grows by 5 units per second, and it moves toward Tibo at 18 units per second.<small>[sim-CrpXuTSY.js: `r.x[t]=r.x[t]+a/s*i*n,r.y[t]=r.y[t]+o/s*i*n}let a=r.grow[t];a>0&&(r.radius[t]=r.radius[t]+a*n*10)`]</small> Area bonuses scale the starting size, but the growth rate is fixed, so a 5 s pool ends about 25 units wider than it started.
+
+## Tips
+
+- Tibo's base move speed is 62, so the pools trail well behind him when he runs. If you circle around a spot, the pools gather under him and the pests chasing him.

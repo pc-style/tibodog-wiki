@@ -1,0 +1,14 @@
+## Overview
+
+Tot Cavalry is the evolution of [Tot Stampede](/weapons/tot-stampede), made by opening a [chest](/chests) with Tot Stampede at level 8 and [Butter Socks](/passives/butter-socks) owned. It keeps the walking trigger: every 40 units Tibo moves, a batch of homing tots charges out behind him. Each tot now hits for 68 instead of 40 and has Pierce 1, so it rams through one pest and bursts on the second.
+
+A batch is 5 tots (raw Amount 4 plus Tibo's base +1 projectile), released 0.08 s apart. They fly at 140 units per second for 5 s (Duration 4 plus Tibo's base +25%, see [Stats](/stats)). A still Tibo makes no tots.
+
+## How it works
+
+All the rules of [Tot Stampede](/weapons/tot-stampede#how-it-works) apply unchanged, including the limit of 12 tots on the field at once. <small>[sim-CrpXuTSY.js: `var ap={every:40,live:12}`]</small> At base move speed a full batch of 5 comes every 0.65 s or so, which fills the limit within two seconds if the tots do not find targets; after that a new batch only gets as many tots as there is room for.
+
+## Tips
+
+- The catalyst fits the weapon: [Butter Socks](/passives/butter-socks) gives extra dash charges and a shorter dash cooldown, and each 48-unit dash counts towards the 40-unit walk trigger like normal movement.
+- Each point of Pierce bonus lets every tot hit one more pest before it bursts.

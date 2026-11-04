@@ -7,7 +7,7 @@ import {
 const SRC_REG = 'Content registry exported by `boot-C7O7Aize.js`; boss definitions and order exported by `sim-CrpXuTSY.js`';
 const SRC_TEXT = 'English names and descriptions from `i18n-en-content-Cd1imSlh.js`';
 const RAW_NOTE =
-  'Values are the raw numbers from the game\'s definitions, before Tibo\'s global stat multipliers, difficulty and time scaling. Field names in `code` are the game\'s internal names. Attack descriptions such as “Melee slash” are this wiki\'s summary of the internal attack `kind`.';
+  'Values are the raw numbers from the game\'s definitions, before Tibo\'s global stat multipliers, difficulty and time scaling. In play, Tibo\'s base stats add **+1 amount** to every weapon except aura, cone, nuke and ring weapons, and make every duration **×1.25** (see [Stats](/stats)). Field names in `code` are the game\'s internal names. Attack descriptions such as “Melee slash” are this wiki\'s summary of the internal attack `kind`.';
 
 const table = (head, rows) =>
   `| ${head.join(' | ')} |\n|${head.map(() => '---').join('|')}|\n${rows
@@ -106,7 +106,7 @@ export function weaponPages() {
       ['Type', tierLabel[w.tier]],
       ['Trigger', triggerText(w)],
       ['Attack', behaviorText(w)],
-      ['On hit', onHit ? `${ONHIT[onHit.kind] ?? onHit.kind}${onHit.factor ? ` (×${fmt(onHit.factor)} speed` : ''}${onHit.seconds ? `${onHit.factor ? ', ' : ' ('}${fmt(onHit.seconds)} s)` : onHit.factor ? ')' : ''}` : ''],
+      ['On hit', onHit ? `${ONHIT[onHit.kind] ?? onHit.kind}${onHit.factor ? ` (−${pct(onHit.factor)} speed` : ''}${onHit.seconds ? `${onHit.factor ? ', ' : ' ('}${fmt(onHit.seconds)} s)` : onHit.factor ? ')' : ''}` : ''],
       ...WSTATS.map(([k, l]) => [l, fmt(w.base[k])]),
       ['Max level', maxLevel],
       ['Offer weight', w.weight],
@@ -136,7 +136,7 @@ export function weaponPages() {
       body += `${tierLabel[w.tier]}s have no level-ups in the game data; they use these fixed raw values.\n\n`;
       body += table(['Stat', 'Value'], WSTATS.map(([k, l]) => [l, fmt(w.base[k])])) + '\n';
     }
-    body += `### Behaviour parameters\n\nRaw parameters of the attack (\`behavior\`), copied from the game definition. Their exact in-game effect is not documented by the game; names are descriptive only.\n\n`;
+    body += `### Behaviour parameters\n\nRaw parameters of the attack (\`behavior\`), copied from the game definition. What they do in play is explained under [How it works](#how-it-works) above.\n\n`;
     body += table(['Parameter', 'Value'], flatRows(w.behavior)) + '\n';
 
     body += `## Obtaining\n\n`;
@@ -169,8 +169,8 @@ export function weaponPages() {
       title: n,
       section: 'Weapons',
       crumbs: [['Weapons', '/weapons']],
-      description: `${n} is ${/^[aeiou]/i.test(tierLabel[w.tier]) ? 'an' : 'a'} ${tierLabel[w.tier].toLowerCase()} in tibo.dog. ${desc}`.trim(),
-      lead: `**${n}** is ${/^[aeiou]/i.test(tierLabel[w.tier]) ? 'an' : 'a'} ${tierLabel[w.tier].toLowerCase()} in tibo.dog. In-game description: “${desc}”`,
+      description: `${n} is ${/^(?!uni)[aeiou]/i.test(tierLabel[w.tier]) ? 'an' : 'a'} ${tierLabel[w.tier].toLowerCase()} in tibo.dog. ${desc}`.trim(),
+      lead: `**${n}** is ${/^(?!uni)[aeiou]/i.test(tierLabel[w.tier]) ? 'an' : 'a'} ${tierLabel[w.tier].toLowerCase()} in tibo.dog. In-game description: “${desc}”`,
       infobox: { title: n, icon: `weapon/${w.id}`, caption: tierLabel[w.tier], rows },
       body,
       sources: [SRC_REG, SRC_TEXT],
@@ -413,7 +413,7 @@ const DOG_DETAIL = {
   retriever: 'Pulls gems, coins and snacks within `120 × √power` to Tibo (not chests or items).',
   collie: 'Pushes enemies within `46 × √power` away from Tibo.',
   dachshund: 'Digs up `round(6 × power)` coins; 20% chance of an extra find (70% a 30 HP snack, otherwise a reroll).',
-  beagle: 'Points to the nearest unused POI within 900 units of the dog that Tibo can use (crates, shrines, shops, machines and strays) and drops `round(3 × power)` coins.',
+  beagle: 'Points to the nearest unused crate, shrine (not Moldy Shrines), shop, machine or stray within 900 units of the dog and drops `round(3 × power)` coins. Only strays are checked for whether Tibo can take them; a crate Tibo cannot afford still counts.',
   corgi: 'Freezes nearby enemies within `60 × √power` for `√power` seconds. Bosses are not frozen (in-game text).',
   pomeranian: 'Holds fluff charges (1, or 2 from level 3) that cancel the next hit on Tibo; spending one sneezes pests away (push 220, plus a 0.5 s stun from level 5).',
   pomchi: 'Marks the nearest elite or loot runner within 600 for `8 × power` seconds: it takes +25% damage. Marks at once by level: 1/1/2/2/3.',
@@ -465,7 +465,7 @@ export function dogPages() {
     });
     body += table(['Level', '`every` ×', '`power` ×', '`aura`', 'Ability interval (s)', 'Total power ×'], lr) + '\n';
     body += `**Verified**: ability power is the product of \`power\` multipliers, the interval is \`ability.every\` × the product of \`every\` multipliers, and the aura is multiplied by \`1 + sum of aura\` values.${' '}<small>[sim-CrpXuTSY.js: \`function Un(e,t){let n=e.levelUps,r=1;for(let e=0;e<t-1;e++)r+=n[e]?.aura??0;return r}\`]</small>\n\n` + table(['Level', 'Aura at this level'], Array.from({ length: d.levelUps.length + 1 }, (_, i) => { const m = 1 + d.levelUps.slice(0, i).reduce((a, l) => a + (l.aura ?? 0), 0); return [i + 1, modsText(Object.fromEntries(Object.entries(d.aura).map(([k, v]) => [k, +(v * m).toFixed(4)])))]; })) + '\n';
-    body += `## Obtaining\n\n${d.id === 'zelda-and-link' ? 'Hold both [Link](/dogs/pomeranian) and [Zelda](/dogs/pomchi): they fuse into Zelda & Link, keeping the higher level.' : d.legendary ? `${n} is a legendary dog (weight 0 in the normal pool). Each run, each of Link and Zelda is in the run with ${pct(GAME.dogs.legendaryChance)} chance; stray dogs at least 1200 units from the start take them from that queue.` : `Stray dogs appear as [Stray Dog](/points-of-interest#stray-dog) points of interest; walk onto one to recruit it. ${n}'s breed weight is ${d.weight}.`} See [Dogs](/dogs#getting-dogs).\n\n`;
+    body += `## Obtaining\n\n${d.id === 'zelda-and-link' ? 'Hold both [Link](/dogs/pomeranian) and [Zelda](/dogs/pomchi): they fuse into Zelda & Link, keeping the level of the partner already in the pack (a new stray joins at level 1).' : d.legendary ? `${n} is a legendary dog (weight 0 in the normal pool). Each run, each of Link and Zelda is in the run with ${pct(GAME.dogs.legendaryChance)} chance; stray dogs at least 1200 units from the start take them from that queue.` : `Stray dogs appear as [Stray Dog](/points-of-interest#stray-dog) points of interest; walk onto one to recruit it. ${n}'s breed weight is ${d.weight}.`} See [Dogs](/dogs#getting-dogs).\n\n`;
     body += `## Data\n\n\`\`\`json\n${JSON.stringify(d, null, 2)}\n\`\`\`\n`;
     pages.push({
       path: path.dog(d.id),
@@ -500,9 +500,9 @@ export function dogIndex() {
 
 const ENEMY_BEH = {
   chase: 'Walks toward Tibo',
-  ranged: 'Keeps distance and shoots',
+  ranged: 'Stops short of Tibo, strafes and shoots',
   charger: 'Charges in a line',
-  tank: 'Slow and tough',
+  tank: 'Chases like a basic pest; heavier stats',
   flee: 'Runs away (loot runner)',
   swarm: 'Moves in a swarm',
   splitter: 'Splits when killed',
@@ -625,8 +625,8 @@ export function bossPages() {
     if (b.id === 'great-wireworm') body += `## Click-beetle shots\n\n**Verified**: one five-shot fan spans 1.3 radians and launches at speed 90. On Easy, Normal and Hard, the shots keep full speed through 0.35 s, slow to ×0.12 at 0.5 s, hold that speed until 0.9 s, then accelerate to ×1.55 by 1 s. At 0.9 s each shot aims once at Tibo's current position from its own position; it does not keep homing. <small>[sim-CrpXuTSY.js: \`l!==void 0&&i>=l.at&&t.retargeted[n]===0\`]</small> <small>[sim-CrpXuTSY.js: \`let n=$u.x-e.x[t],r=$u.y-e.y[t]\`]</small>\n\nNightmare keeps the same fan and launch speed, but slows earlier: ×1 at 0.3 s, ×0.12 at 0.42 s and 0.72 s, then ×1.9 at 0.8 s. It retargets once at 0.72 s. Speeds interpolate between the listed points; these are seconds since the shot launched, not fractions of its lifetime. <small>[sim-CrpXuTSY.js: \`return r+(a.to-r)*i\`]</small> The shots look like click beetles and flash while moving slowly.\n\n`;
     body += `## HP scaling\n\nBoss HP is multiplied by a step factor depending on the run time (\`bosses.hpSteps\`), and by the difficulty's boss HP multiplier (see [Modes](/modes)).\n\n` + table(
       ['From minute', 'HP ×', `${n} HP (Normal)`],
-      GAME.bosses.hpSteps.map((s) => [s.minute, s.hpScale, fmt(b.hp * s.hpScale)]),
-    ) + '\nOther time scaling may also apply; see [Enemy scaling](/enemy-scaling).\n\n';
+      GAME.bosses.hpSteps.map((s) => [s.minute, s.hpScale, fmt(b.hp * s.hpScale * DIFF.normal.bossHp)]),
+    ) + `\nThe Normal column includes Normal's boss HP ×${fmt(DIFF.normal.bossHp)}, without curse. Other time scaling may also apply; see [Enemy scaling](/enemy-scaling).\n\n`;
     body += `## Data\n\n\`\`\`json\n${JSON.stringify(b, null, 2)}\n\`\`\`\n`;
     pages.push({
       path: path.boss(b.id),

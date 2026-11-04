@@ -1,0 +1,20 @@
+## Overview
+
+Golden Scarab is a scheduled loot-runner event. The [wave table](/bosses) fires it at 3:00, 7:00, 10:00, 14:00 and 17:00. It is not part of the rotation after 20:00. After the announcement, a [Golden Scarab](/enemies/golden-scarab) appears 40 units from Tibo in a random direction and tries to get away.
+
+The scarab is harmless (0 damage). It escapes after 25 seconds. Hitting it can shake loose gold, and killing it drops an **item** pickup (see [Pickups](/pickups)), plus 10 XP and a gold coin. The [Lost Saucer](/events/lost-saucer) at [Crop Circle](/biomes/crop-circle) works the same way.
+
+## How it works
+
+- **HP.** 300 × the current pest HP multiplier from [enemy scaling](/enemy-scaling) (curse is not applied). On Normal that is about 230 HP at 3:00 and about 800 at 17:00. <small>[sim-CrpXuTSY.js: `e.scratch.hp=ma(e.scale,e.cfg,e.runClock).hp,e.scratch.dmg=1,e.scratch.speed=1`]</small>
+- **Movement.** It runs directly away from Tibo. Within 70 units it sprints at its full speed of 40. Farther out it slows to 30% (12 units/s). Tibo's base speed is 62, so it cannot outrun him. <small>[sim-CrpXuTSY.js: `let n=r>e.cfg.lootRunners.sprintRadius?.3:1;i.vx[t]=-i.vx[t]*n,i.vy[t]=-i.vy[t]*n`]</small>
+- **Gold per hit.** Each hit has a 50% chance to drop a coin worth 2. Like all coins, it is multiplied by gold gain when picked up. <small>[sim-CrpXuTSY.js: ``n>0&&e.lootRng.chance(.5)&&G(e,`gold`,e.enemies.x[t],e.enemies.y[t],n)``]</small>
+- **Kill reward.** The item pickup drops on top of the usual kill drops. <small>[sim-CrpXuTSY.js: ``Wl[r.def[t]]===1&&Ra(e,`item`,a,o,1,`lootRunner`)``]</small>
+- **Escape.** The scarab vanishes 25 seconds after it appears, or as soon as it is about 460 units from Tibo, and leaves no item. <small>[sim-CrpXuTSY.js: ``r.despawnAt[d]=e.time+(o.behavior.kind===`flee`?o.behavior.escapeAfter:25)``]</small>
+- **Full field.** If the enemy pool is at its cap of 550, the event is skipped with no announcement.
+
+## Tips
+
+- Chase it right away. It always starts close, and it only slows down once it is more than 70 units ahead, so Tibo catches up quickly.
+- Weapons that hit often roll the 50% coin chance more times before the kill, so they may be worth keeping on it.
+- Every Golden Scarab minute also brings a boss (the [Colorado Queen](/bosses/beetle-queen) at 3:00), and 3:00, 7:00 and 17:00 add an elite. Weigh the item against the risk of chasing the scarab with those around.

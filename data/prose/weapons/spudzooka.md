@@ -1,0 +1,17 @@
+## Overview
+
+Spudzooka is the evolution of [Spud Cannon](/weapons/spud-cannon). To get it, have Spud Cannon at level 8 and own [Hot Sauce](/passives/hot-sauce), then open a [chest](/chests). See [Evolutions](/evolutions).
+
+Every 1.4 s it fires 2 potato rockets at the nearest pest, 0.12 s apart. Each rocket bursts like a Spud Cannon shell, for 50 raw damage. Base area 1.8 gives a main blast radius of about 40 units. After the main blast, four smaller **cluster bursts** go off around it at random angles.
+
+## How it works
+
+- **Main blast.** As with Spud Cannon, the rocket hits the first pest it touches, then explodes. It also explodes if it reaches the end of its 2 s flight. The struck pest takes the impact and the blast.
+- **Cluster bursts.** After the main blast, the rocket triggers `cluster` (4) extra explosions. Each one is centred 1.1 × the blast radius from the impact point in a random direction, has 0.6 × the blast radius, and deals half damage with half knockback. <small>[sim-CrpXuTSY.js: `e.attack.damage=.5*o,e.attack.kb=.5;for(let t=0;t<c;t++){let t=e.rng.angle();Za(e,r+D(t)*a*1.1,i+s(t)*a*1.1,.6*a)}`]</small> At area 1.8 that means four 25-damage bursts of about 24-unit radius, centred about 44 units out. They reach from roughly 20 to 67 units from the impact.
+- **Overlap.** The bursts overlap the edge of the main blast and can overlap each other, since the angles are random. A pest in an overlap is hit by each explosion that covers it.
+- **Scaling.** [Area](/stats) bonuses enlarge the main blast, the cluster bursts and their distance from the centre together.
+
+## Tips
+
+- The cluster ring makes the danger zone about 1.7 times as wide as the main blast, so it is at its best against large spread-out crowds.
+- Spudzooka still counts as Spud Cannon for the [Spud Artillery](/weapons/spud-artillery) union. Uniting it with a level 8 [Spud Lob](/weapons/spud-lob) replaces it with Spud Artillery and frees a weapon slot.

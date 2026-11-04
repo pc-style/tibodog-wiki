@@ -1,0 +1,16 @@
+## Overview
+
+Spud Artillery is the union of [Spud Lob](/weapons/spud-lob) and [Spud Cannon](/weapons/spud-cannon). Opening a [chest](/chests) when both qualify replaces them with this one weapon and frees a weapon slot (see [Evolutions](/evolutions#unions)). It throws potatoes in the high arc of Spud Lob, and like Spud Cannon's shells they explode.
+
+Every 1.8 s it lobs 6 potatoes (raw Amount 5 plus Tibo's base +1 projectile, see [Stats](/stats)), 0.1 s apart. A potato bursts on the first pest it touches, dealing 84 damage to every pest within about 51 units (explosion radius 32 × Area 1.6) with knockback 2.
+
+## How it works
+
+- **Throw.** Each potato is thrown straight up the screen at 85–110% of its Speed (230), with a random sideways drift of up to 140 × (0.6 + 0.4 × Area) units per second, about 174 at its base Area. Gravity (420) then pulls it back down past Tibo, so potatoes rise roughly 45–75 units above him and fall back through the height they were thrown from about 1.1 s later. <small>[sim-CrpXuTSY.js: `l.vx[n]=e.rng.range(-i.spreadX,i.spreadX)*(.6+.4*o.area),l.vy[n]=-o.speed*e.rng.range(.85,1.1)`]</small>
+- **Hitting.** A potato hits anything it passes over on the way up or down. On its first hit it explodes and is removed, so its Pierce never comes into play. The pest it touched takes the direct hit and is also inside the blast. <small>[sim-CrpXuTSY.js: `if(n.split[t]>0&&tf(e,t,a),n.explodeRadius[t]>0)ef(e,t),n.pool.kill(t);`]</small>
+- **Misses.** A potato that touches nothing explodes wherever it is when its Duration runs out.
+- **No target needed.** The weapon fires on its cooldown even when no pest is around.
+
+## Tips
+
+- Area raises both the sideways spread and the blast radius; projectile speed raises the arc.

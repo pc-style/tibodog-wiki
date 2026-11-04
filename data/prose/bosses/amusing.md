@@ -1,0 +1,42 @@
+## Overview
+
+amusing is the first boss of a run. It arrives at 2:00 on the [wave schedule](/bosses#wave-schedule), a minute after the first elite. It is the weakest boss: 650 base HP, which is about 423 on Normal after the [difficulty's](/modes) ×0.65 boss HP multiplier, and 618 on Nightmare (×0.95). A higher curse stat raises this further ([Curse](/curse)). It walks at speed 32, about half of Tibo's base move speed of 62, so Tibo can always walk away from it.
+
+It is not in the post-20:00 boss rotation ([After 20:00](/bosses#after-20-00)), and a [Boss Lair](/points-of-interest#boss-lair) never wakes it, because lairs pick from the second boss in the order onwards. In a normal run you meet it once, unless cursed extra bosses add copies.
+
+On death it drops an XP gem worth 40 (times the biome's XP multiplier), a 25-gold coin and a chest ([Chests](/chests)). Killing it also reveals [Alex](/visitors#alex), who joins in 25% of normal runs and always in Story. <small>[sim-CrpXuTSY.js: `` n.def[t]===bl&&Ze(e.alex)===`pending` ``]</small> amusing is also the scripted boss of [Story mode](/story-mode), where it has extra HP, damage and speed.
+
+## Fight
+
+amusing walks straight at Tibo. Every 3.6 s it stops for its hug, and between hugs it cycles through three bullet patterns in a fixed order: fan, ring, spiral, then the fan again. A new pattern starts every 2.2 s at base. The bullet-pattern clock only runs while the boss is walking, so it pauses during the hug. <small>[sim-CrpXuTSY.js: `d===0?(Uu(e,o,s,c,l,u),Hu(e,o,s,t)):d===1?Wu(e,o,s,t):Gu(e,o,s,t)`]</small> The first hug comes about 2.2 s after it spawns, and the first pattern about 1.1 s after.
+
+Enemy bullets scale with run time ([Enemy scaling](/enemy-scaling#enemy-bullets)): count +4% per minute, fire rate +3% and speed +1.5%. At 2:00 that only changes the ring, which grows from 12 to 13 shots, and shortens the pattern interval to about 2.1 s. <small>[sim-CrpXuTSY.js: `o.count[s]=Math.max(1,Math.round(t.count*f.bulletCount))`]</small>
+
+### Hug
+
+When the hug starts, the game marks a circle of radius 40 where Tibo is standing. amusing stands still for 1.1 s, then leaps onto the marked spot over 0.55 s. The circle deals the boss's contact damage (24 base, scaled with run time) when amusing lands, 1.65 s after it was marked. <small>[sim-CrpXuTSY.js: `Fa(e,n,r,c.radius,i.telegraph+c.leapTime,a.damage[t])`]</small> The circle does not follow Tibo.
+
+### Fan
+
+Five shots spread over 1 radian (about 57°), aimed at Tibo, fired twice 0.4 s apart at speed 70, 6 damage each. The aim is fixed when the pattern starts, and the first shots leave 0.8 s later. <small>[sim-CrpXuTSY.js: `return r(e.player.y[e.me]-n,e.player.x[e.me]-t)}(e,u,d)`]</small>
+
+### Ring
+
+Twelve shots (13 at 2:00) in a full circle at speed 55, 6 damage each, after a 0.9 s warning. A second ring follows 0.6 s later, rotated by half a gap so its shots fly between the first ring's. <small>[sim-CrpXuTSY.js: `X.angle=s+r%2*Math.PI/o+j*n/o`]</small>
+
+### Spiral
+
+Two opposite streams of shots at speed 65, 4 damage each. After 0.8 s of warning, the boss fires 12 pairs 0.12 s apart, and each pair is rotated about 0.3 radians (17°) from the last. That makes 24 shots sweeping a bit more than half a turn on each side.
+
+### Nightmare changes
+
+On Nightmare the fan is unchanged. The ring shots slow to 30% speed by 0.35 s, hang there until 0.8 s, then speed up to 150% by 1.1 s. The spiral launches slower, at 45, and speeds up to ×1.7 by 0.8 s. The exact curves are in the Nightmare table on this page.
+
+## Tips
+
+- To avoid the hug, keep moving: walking 46 units (the circle's radius plus Tibo's body) takes Tibo about 0.75 s, well inside the 1.65 s before it lands. Dashing is not needed.
+- Patterns are aimed where Tibo stood when they started, so walking steadily sideways makes the fan miss. Avoid turning back into the fan's second burst.
+- For the double ring, step through a gap in the first ring early. Standing still between the rings tends to put Tibo in the path of the second, offset ring.
+- The spiral's shots are weak (4 damage), but there are 24 of them. The shots in each stream spread apart as they travel, so the gaps are widest far from amusing; backing off before the spiral starts makes it easier to slip through.
+- On Nightmare the ring stalls near the boss before it speeds up. Leave the stall zone before the shots accelerate instead of trying to weave through them.
+- With about 423 HP on Normal, amusing rarely needs a special build. Spending the fight dodging rather than chasing it is usually fine, because it keeps walking towards Tibo.

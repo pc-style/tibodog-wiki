@@ -1,0 +1,17 @@
+## Overview
+
+Tater Tot Pup gives Tibo tot companions that circle him and shoot at nearby pests. Each pup fires a tot at the nearest enemy within 150 units of itself every second, for 9 damage. You start with 2 pups: the raw amount of 1 plus the +1 base amount bonus every non-aura weapon gets (see [Stats](/stats)). Levels add a third and fourth pup, cut the shot cooldown to 0.8 s, raise damage to 28 and let each shot pierce one extra enemy.
+
+It is one of the 17 weapons a standard run can start with, and it is offered on level-up. It has no evolution. Instead, once both it and [Fry Cook Sentry](/weapons/fry-sentry) are maxed, a chest can unite them into [Fry Brigade](/weapons/fry-brigade), which frees a weapon slot. See [Evolutions](/evolutions).
+
+## How it works
+
+- **One pup per amount.** The weapon keeps exactly as many pups alive as its amount, spawning new ones at Tibo's position or removing extras whenever the amount changes. Extra amount from passives such as [Sprouting Eyes](/passives/sprouting-eyes) therefore adds pups. <small>[sim-CrpXuTSY.js: `i.pool.isAlive(n)&&i.slot[n]===t.slot&&i.kind[n]===pe.familiar&&(a>=r.amount?i.pool.kill(n)`]</small>
+- **Movement.** Pups circle Tibo on a small oval, 18 units out to the sides and 14 above and below, spaced evenly and slowly rotating. They follow him closely, so in practice they shoot from where Tibo stands.
+- **Shooting.** Each pup has its own timer. When it is ready, it targets the nearest enemy within 150 units of the pup; with no target in range it checks again every 0.1 s. Newly spawned pups start 0.15 s apart so their shots are staggered. <small>[sim-CrpXuTSY.js: `let u=n.x[a],d=n.y[a],f=Zi(e,u,d,s.range);if(f===void 0){n.t[a]=kp;continue}`]</small>
+- **Shots.** Tots travel at speed 200 for 1.875 s (1.5 s raw, plus Tibo's base +25% duration) and stop at the first enemy unless the weapon has pierce. Projectile speed, duration, area and pierce bonuses apply to them as usual.
+
+## Tips
+
+- Pups never need aiming and never run out, which makes Tater Tot Pup a steady single-target weapon. Its short 150-unit range means it does little against enemies that keep their distance.
+- Amount is especially valuable here: every extra projectile is a whole extra pup with its own fire timer.
