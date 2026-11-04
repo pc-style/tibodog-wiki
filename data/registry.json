@@ -8127,7 +8127,23 @@
      "damage": 14,
      "bursts": 1,
      "interval": 0.3,
-     "telegraph": 0.8
+     "telegraph": 0.8,
+     "motion": {
+      "speed": [
+       {
+        "at": 0.8,
+        "to": 1
+       },
+       {
+        "at": 1.05,
+        "to": 0.1
+       },
+       {
+        "at": 1.5,
+        "to": -1.15
+       }
+      ]
+     }
     }
    ],
    "sharpPatterns": [
@@ -8135,19 +8151,27 @@
      "kind": "fan",
      "count": 7,
      "arc": 1.1,
-     "speed": 120,
+     "speed": 130,
      "radius": 2.5,
      "damage": 14,
      "bursts": 1,
      "interval": 0.3,
      "telegraph": 0.8,
      "motion": {
-      "turn": {
-       "kind": "curve",
-       "rate": 0.5,
-       "until": 0.8
-      },
-      "mirror": "inward"
+      "speed": [
+       {
+        "at": 0.85,
+        "to": 1
+       },
+       {
+        "at": 1.1,
+        "to": 0.1
+       },
+       {
+        "at": 1.55,
+        "to": -1.05
+       }
+      ]
      }
     }
    ],
@@ -8584,7 +8608,23 @@
      "damage": 14,
      "bursts": 1,
      "interval": 0.3,
-     "telegraph": 0.8
+     "telegraph": 0.8,
+     "motion": {
+      "speed": [
+       {
+        "at": 0.8,
+        "to": 1
+       },
+       {
+        "at": 1.05,
+        "to": 0.1
+       },
+       {
+        "at": 1.5,
+        "to": -1.15
+       }
+      ]
+     }
     }
    ],
    "sharpPatterns": [
@@ -8592,19 +8632,27 @@
      "kind": "fan",
      "count": 7,
      "arc": 1.1,
-     "speed": 120,
+     "speed": 130,
      "radius": 2.5,
      "damage": 14,
      "bursts": 1,
      "interval": 0.3,
      "telegraph": 0.8,
      "motion": {
-      "turn": {
-       "kind": "curve",
-       "rate": 0.5,
-       "until": 0.8
-      },
-      "mirror": "inward"
+      "speed": [
+       {
+        "at": 0.85,
+        "to": 1
+       },
+       {
+        "at": 1.1,
+        "to": 0.1
+       },
+       {
+        "at": 1.55,
+        "to": -1.05
+       }
+      ]
      }
     }
    ],

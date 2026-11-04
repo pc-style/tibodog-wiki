@@ -190,5 +190,15 @@
   "status": "reviewed",
   "updated": "2026-11-04T03:55:40Z",
   "changes": "Japanese labels now use Japanese fonts installed on the device, with adjusted vertical alignment to centre text on buttons. Tilt-shift rendering now mixes the original scene back into low-alpha pixels to keep those details sharp. Enemy shots use the post-processing blend mode whenever the scene renders to an offscreen target, including tilt-shift without bloom. Game data, English content descriptions, difficulty settings and wiki icons are unchanged. Simulation functions are reordered and renamed without changing their formulas. The Tater Slots jackpot change belongs to game version 19, despite its position in the in-game changelog."
+ },
+ {
+  "seen": "2026-11-04",
+  "main": "main-D6JcjxH0.js",
+  "boot": "boot-CYS_DzKi.js",
+  "sim": "sim-2b5LMSrP.js",
+  "commit": "ec984b05bbe9",
+  "status": "reviewed",
+  "updated": "2026-11-04T07:37:46Z",
+  "changes": "Sir Strawman's seven sickles now slow and return along their heading; Nightmare's fan launches at 130 instead of 120 and no longer curves inward. Returning bullet speed is ×0.7 on Easy, ×1.05 on Normal, Hard and Nightmare (Story ×1); outward speed is unaffected. More effects use crisp pixel art: boss attacks, warning rings, lasso trails, Grok Bots, visitor stun/landing effects, pickups, pools, buildings and ambient dust. Late-loaded poteto and Alex cutscenes now play on slow connections. Cards refit after language fonts load, multilingual text has more room, and the Moldy Shrine menu is shorter with a corrected extra-boss forecast; curse rewards and spawn rules are unchanged. World generation checks nearby cells first and computes sin/cos together without changing the sampled output. Performance telemetry adds median frame work time. Other content tables, English content descriptions and wiki icons are unchanged."
  }
 ]
