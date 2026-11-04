@@ -300,5 +300,15 @@
   "status": "reviewed",
   "updated": "2026-11-04T15:53:17Z",
   "changes": "Interrupted 3D scene downloads now pause play and retry with delays growing from 1 to 8 s; failed early sprite-page downloads can retry too. After a graphics reset, the renderer waits up to 5 s for restoration, then tries a fresh context before falling back. A scene-construction failure retries 3D once on Low at half resolution without adaptive quality; a second construction failure still uses the 2D fallback. Active intro/landing cutscenes end as skipped if the renderer stops being ready. Chest evolution halos use layered gold ground rings with eight rotating dashes instead of three size-specific sprite animations; reduced motion keeps the ring still. The late atlas drops those three clips and repacks the remaining unchanged frames. Adds a translated graphics-recovery changelog note. Combat simulation, existing content/config values, English content descriptions, difficulty settings and wiki icons are unchanged."
+ },
+ {
+  "seen": "2026-11-04",
+  "main": "main-C5UiHqkX.js",
+  "boot": "boot-CqAYtYsO.js",
+  "sim": "sim-piPwrBfn.js",
+  "commit": "72c678cc4d11",
+  "status": "reviewed",
+  "updated": "2026-11-04T16:34:35Z",
+  "changes": "Elite pests now break apart in pixel-art death animations with detached gold-rim fragments, in both the main and debug renderers. The main renderer loads separate elite-death and glint sheets through the effects worker, with a main-thread fallback; missing art keeps the ordinary death animation. Fryer King and Late Blight puddles have redrawn, slower surfaces and new boiling bubbles; reduced motion holds the surface and bubble poses still. Root Tunnel gains a closing exit hole and animated clods that bounce and fall back in, with simpler reduced-motion poses; Tibo's outline is hidden while sinking. Shared effects helpers move into separate or consuming chunks, and effect sprites gain horizontal-flip support. Adds a translated elite-death changelog note. Combat simulation is byte-identical after asset-name changes; registry values, extracted gameplay settings, English content descriptions, difficulty settings and wiki icons are unchanged."
  }
 ]
