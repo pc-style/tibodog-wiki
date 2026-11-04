@@ -4,6 +4,19 @@
   const menu = document.querySelector('.side-menu');
   if (menu && window.matchMedia('(max-width: 860px)').matches) menu.open = false;
 
+  // Keep the current page's sidebar link in view on long menus.
+  const current = document.querySelector('.side [aria-current="page"]');
+  const side = current?.closest('.side');
+  if (side && side.scrollHeight > side.clientHeight) side.scrollTop = current.offsetTop - side.clientHeight / 3;
+
+  // Keep the infobox in view while scrolling, but only when all of it fits on screen.
+  const box = document.querySelector('.infobox');
+  if (box) {
+    const fit = () => box.classList.toggle('fits', box.offsetHeight + 96 <= window.innerHeight);
+    fit();
+    window.addEventListener('resize', fit);
+  }
+
   // Show exact UTC times also in the reader's time zone, with how long ago they were.
   const ago = (ms) => {
     const m = Math.round(ms / 60000);
@@ -17,9 +30,13 @@
   for (const el of document.querySelectorAll('time[data-local]')) {
     const d = new Date(el.dateTime);
     if (isNaN(d)) continue;
-    el.title = `${el.textContent} (${d.toISOString()})`;
-    el.textContent = local(d);
-    el.insertAdjacentHTML('afterend', ` <span class="vb-ago">(${ago(Date.now() - d)})</span>`);
+    el.title = `${local(d)} (${d.toISOString()})`;
+    if (el.dataset.local === 'ago') {
+      el.textContent = ago(Date.now() - d);
+    } else {
+      el.textContent = local(d);
+      el.insertAdjacentHTML('afterend', ` <span class="ago">(${ago(Date.now() - d)})</span>`);
+    }
   }
 
   // Live check: does tibo.dog still serve the game build this wiki documents?

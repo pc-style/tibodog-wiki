@@ -1,7 +1,7 @@
 // Builds the static wiki into dist/: HTML pages, Markdown twins, sitemap, llms.txt, search index and data API.
 import { mkdirSync, writeFileSync, rmSync, cpSync, readFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
-import { renderHtml, renderMd, SITE, SITE_NAME, NAV, NAV2 } from './lib/render.mjs';
+import { renderHtml, renderMd, SITE, SITE_NAME } from './lib/render.mjs';
 import { R, BUILD, BUILDS, BUILT_AT, WIKI_COMMIT, GAME, DIFF, TEXT } from './lib/data.mjs';
 import * as ent from './pages/entities.mjs';
 import { systemPages } from './pages/system.mjs';
