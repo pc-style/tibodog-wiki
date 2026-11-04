@@ -240,5 +240,15 @@
   "status": "reviewed",
   "updated": "2026-11-04T09:22:23Z",
   "changes": "New game versions can load automatically on the idle Reset screen and before starting another non-Story run from the end screen, preserving the selected difficulty for up to 60 s. A session-storage guard prevents repeated automatic reloads into the same offered build; shared-run parameters are cleared on reload. Update checks also run on the stats screen and use /version.json. Boss death blasts now use two pixel-scaled sprite tiers, sparkles and a separate ground ring; small effect strokes remain visible when downscaled. Rendering caches unchanged overlapping-pool outlines and terrain sample indices, preserves the sharp image when blur is zero, and reports more specific graphics-fallback causes and browser/device categories. The changelog adds the automatic-update note, groups four older notes under earlier releases, and adjusts its narrow layout. Combat data, English content descriptions, difficulty settings, simulation logic and wiki icons are unchanged."
+ },
+ {
+  "seen": "2026-11-04",
+  "main": "main-BwySlPcw.js",
+  "boot": "boot-D97Ucyt5.js",
+  "sim": "sim-DlD_Fm_8.js",
+  "commit": "177e57972d9a",
+  "status": "reviewed",
+  "updated": "2026-11-04T09:41:24Z",
+  "changes": "HUD safe-space measurements now subtract sliding banners' CSS translations, including translated ancestors, so layout uses their resting positions instead of their animated positions. This applies to both fresh and cached measurements. The renderer adds an optional half-rate sun-shadow update path, but it defaults off and this build has no caller enabling it; normal shadow updates are unchanged. Shared-run encoding only renames local variables; analytics and the end screen record the new game commit. Combat logic, content values, English content descriptions, difficulty settings and wiki icons are unchanged."
  }
 ]
