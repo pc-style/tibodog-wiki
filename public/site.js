@@ -138,6 +138,17 @@
     `<li role="option"><a href="${e.u}">${e.i ? `<img class="ico" src="/icons/${e.i}.png" alt="" height="22">` : ''}<span>${esc(e.t)}</span><small>${esc(e.s)}</small></a></li>`;
   let sel = -1;
   if (input && list) {
+    // Ctrl+K / Cmd+K focuses search (a modifier shortcut, so it can't fire while typing).
+    const mac = /Mac|iP(hone|ad)/.test(navigator.platform);
+    const key = document.querySelector('.search-key');
+    if (key) { key.textContent = mac ? '⌘K' : 'Ctrl K'; key.hidden = false; }
+    document.addEventListener('keydown', (e) => {
+      if (e.key.toLowerCase() === 'k' && (mac ? e.metaKey : e.ctrlKey) && !e.altKey && !e.shiftKey) {
+        e.preventDefault();
+        input.focus();
+        input.select();
+      }
+    });
     input.addEventListener('focus', load, { once: true });
     input.addEventListener('input', async () => {
       await load();
