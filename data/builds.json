@@ -360,5 +360,15 @@
   "status": "reviewed",
   "updated": "2026-11-04T21:54:25Z",
   "changes": "Adds nine base weapons—Gem Sling, Hot Streak, Locked Gatling, Mash Snowball, Seed Potato, Spud Fence, Tailgate Fries, Tater Twirl and Tot Stampede—and one evolution for each (93 weapons total). Their attacks respond to movement, pickups, planting/harvest or locked-angle bursts; recipes, catalyst guarantees, discovery and art support the new weapons. Map tips explain nearby unused places once per kind and can be disabled in Settings → Comfort; read-tip history stays in this browser. Existing weapon definitions, difficulty multipliers and other matched config values are unchanged. The in-game changelog calls out six new-weapon buffs, but these weapons first appear in this wiki’s comparison here, so no earlier buff values are inferred. Renderer support adds their effects and separate sprite atlas; shared-run/recipe UI and analytics gain content-aware plumbing while inactive future-update branches remain off."
+ },
+ {
+  "seen": "2026-11-04",
+  "main": "main-Bl5PB0rL.js",
+  "boot": "boot-C0BPqx77.js",
+  "sim": "sim-4YlHCUgo.js",
+  "commit": "e811cc2753f4",
+  "status": "reviewed",
+  "updated": "2026-11-04T22:25:00Z",
+  "changes": "Adds Andrew, a visitor scheduled once per run between 18:00 and 22:00. He pairs for 20 seconds: standing inside his gold ring gives 15% faster weapon timers, multiplying with Frenzy Fryer to ×1.61. The ring shrinks from radius 96 to 24 with squared progress (78 halfway through); stepping out removes the bonus and stepping back in restores it until pairing ends. Adds Andrew's sprite animations, ring, cheers, pairing HUD label and translated messages. Existing content definitions, English content text, difficulty multipliers and matched config values are unchanged; all 93 weapons and their icons remain. The late sprite atlas is repacked, but every existing sprite crop is pixel-identical. Other modules only rename bindings/assets or update build metadata."
  }
 ]
