@@ -200,5 +200,15 @@
   "status": "reviewed",
   "updated": "2026-11-04T07:37:46Z",
   "changes": "Sir Strawman's seven sickles now slow and return along their heading; Nightmare's fan launches at 130 instead of 120 and no longer curves inward. Returning bullet speed is ×0.7 on Easy, ×1.05 on Normal, Hard and Nightmare (Story ×1); outward speed is unaffected. More effects use crisp pixel art: boss attacks, warning rings, lasso trails, Grok Bots, visitor stun/landing effects, pickups, pools, buildings and ambient dust. Late-loaded poteto and Alex cutscenes now play on slow connections. Cards refit after language fonts load, multilingual text has more room, and the Moldy Shrine menu is shorter with a corrected extra-boss forecast; curse rewards and spawn rules are unchanged. World generation checks nearby cells first and computes sin/cos together without changing the sampled output. Performance telemetry adds median frame work time. Other content tables, English content descriptions and wiki icons are unchanged."
+ },
+ {
+  "seen": "2026-11-04",
+  "main": "main-B-KVLwMS.js",
+  "boot": "boot-4zwFhpts.js",
+  "sim": "sim-B4OFbNua.js",
+  "commit": "8a4b97fc9bb1",
+  "status": "reviewed",
+  "updated": "2026-11-04T07:50:07Z",
+  "changes": "Tibo's enemy-shot hit circle grows from 2.5 to 4 units in radius and moves 2.72 units down towards his feet. Near-miss and bullet-culling distances use the shifted centre too; homing still aims at his unshifted position. Contact and pickup radii are unchanged. The displayed hit circle follows the new position. Adds fuse sparks and heat flashes to Hot Potato and Spicy Hot Potato, distinct pixel-art arcs for Starch Chain, Gratin Arc, Starch Supercell and Grok Bots, sharper Steam Vent and Pressure Cooker rings, and a new revive burst. The in-game changelog adds the hit-circle change and a note about earlier boss/enemy art. Other content values, English content descriptions, difficulty settings and wiki icons are unchanged."
  }
 ]
