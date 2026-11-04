@@ -1,5 +1,5 @@
 {
- "_source": "sim-BBdf8neg.js: difficulty defaults (used by normal) and per-level overrides",
+ "_source": "sim-Dn-LiQMp.js: difficulty defaults (used by normal) and per-level overrides",
  "defaults": {
   "alive": 1,
   "floorShare": 0,
@@ -25,6 +25,8 @@
   "wallPests": 1,
   "overtimeHoldSec": 0,
   "sharpPatterns": false,
+  "sharpAttacks": false,
+  "areaScale": 1,
   "promises": []
  },
  "easy": {
@@ -143,6 +145,8 @@
   "tierLag": 2,
   "wallPests": 0.6,
   "sharpPatterns": true,
+  "sharpAttacks": true,
+  "areaScale": 1.45,
   "promises": [
    {
     "kind": "mixReach",

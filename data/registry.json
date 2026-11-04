@@ -7795,6 +7795,22 @@
     "poolTime": 4,
     "poolDps": 12
    },
+   "sharpAttack": {
+    "kind": "pools",
+    "shape": "splat",
+    "count": 4,
+    "radius": 24,
+    "spread": 80,
+    "poolTime": 4,
+    "poolDps": 12,
+    "layout": {
+     "kind": "wedges",
+     "count": 6,
+     "radius": 55,
+     "wave": 0.5,
+     "puddle": 11
+    }
+   },
    "patternEvery": 3,
    "patterns": [
     {
@@ -8034,6 +8050,22 @@
     "poolTime": 5,
     "poolDps": 9
    },
+   "sharpAttack": {
+    "kind": "pools",
+    "shape": "clover",
+    "count": 5,
+    "radius": 26,
+    "spread": 90,
+    "poolTime": 5,
+    "poolDps": 9,
+    "layout": {
+     "kind": "cropCircle",
+     "core": 21,
+     "orbit": 55,
+     "satellites": 6,
+     "satellite": 12.5
+    }
+   },
    "patternEvery": 3.5,
    "patterns": [
     {
@@ -8171,6 +8203,29 @@
     "kind": "slam",
     "radius": 38,
     "count": 1
+   },
+   "sharpAttack": {
+    "kind": "slam",
+    "radius": 38,
+    "count": 1,
+    "layout": {
+     "kind": "rings",
+     "bands": [
+      {
+       "inner": 0,
+       "outer": 19
+      },
+      {
+       "inner": 35,
+       "outer": 46
+      },
+      {
+       "inner": 62,
+       "outer": 72
+      }
+     ],
+     "wave": 0.35
+    }
    },
    "patternEvery": 3,
    "patterns": [
@@ -8378,6 +8433,29 @@
     "radius": 38,
     "count": 1
    },
+   "sharpAttack": {
+    "kind": "slam",
+    "radius": 38,
+    "count": 1,
+    "layout": {
+     "kind": "rings",
+     "bands": [
+      {
+       "inner": 0,
+       "outer": 19
+      },
+      {
+       "inner": 35,
+       "outer": 46
+      },
+      {
+       "inner": 62,
+       "outer": 72
+      }
+     ],
+     "wave": 0.35
+    }
+   },
    "patternEvery": 3,
    "patterns": [
     {
@@ -8428,6 +8506,22 @@
     "spread": 90,
     "poolTime": 5,
     "poolDps": 9
+   },
+   "sharpAttack": {
+    "kind": "pools",
+    "shape": "clover",
+    "count": 5,
+    "radius": 26,
+    "spread": 90,
+    "poolTime": 5,
+    "poolDps": 9,
+    "layout": {
+     "kind": "cropCircle",
+     "core": 21,
+     "orbit": 55,
+     "satellites": 6,
+     "satellite": 12.5
+    }
    },
    "patternEvery": 3.5,
    "patterns": [
@@ -8532,6 +8626,22 @@
     "spread": 80,
     "poolTime": 4,
     "poolDps": 12
+   },
+   "sharpAttack": {
+    "kind": "pools",
+    "shape": "splat",
+    "count": 4,
+    "radius": 24,
+    "spread": 80,
+    "poolTime": 4,
+    "poolDps": 12,
+    "layout": {
+     "kind": "wedges",
+     "count": 6,
+     "radius": 55,
+     "wave": 0.5,
+     "puddle": 11
+    }
    },
    "patternEvery": 3,
    "patterns": [
