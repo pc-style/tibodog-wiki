@@ -83,8 +83,8 @@ pre {
 }
 code.nw { white-space: nowrap; }
 /* Long unbroken values (JSON constants) get their own wrapping block instead of splitting a sentence. */
-.long { display: block; margin: 8px 0; padding: 8px 12px; border-radius: var(--radius-sm); background: var(--code); color: var(--code-text); font-family: var(--mono); font-size: .84em; overflow-wrap: anywhere; line-height: 1.55; }
-.long code { padding: 0; background: none; font-size: inherit; }
+/* Long unbroken values (JSON constants) wrap anywhere, keeping their padding on each line. */
+code.long { white-space: normal; overflow-wrap: anywhere; -webkit-box-decoration-break: clone; box-decoration-break: clone; }
 pre code { background: none; padding: 0; font-size: inherit; overflow-wrap: normal; }
 img { max-width: 100%; }
 .sr, .skip:not(:focus) { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
