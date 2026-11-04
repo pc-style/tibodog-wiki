@@ -1007,6 +1007,8 @@
    "overtimeHoldSec": 0,
    "opening": "main",
    "sharpPatterns": false,
+   "shotPuddleRadius": 1,
+   "shotPuddleSec": 1,
    "returnSpeed": 1,
    "sharpAttacks": false,
    "areaScale": 1

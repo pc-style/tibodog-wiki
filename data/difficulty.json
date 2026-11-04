@@ -1,5 +1,5 @@
 {
- "_source": "sim-4YlHCUgo.js: difficulty defaults (used by normal) and per-level overrides",
+ "_source": "sim-ov--uToP.js: difficulty defaults (used by normal) and per-level overrides",
  "defaults": {
   "alive": 1,
   "floorShare": 0,
@@ -26,6 +26,8 @@
   "wallPests": 1,
   "overtimeHoldSec": 0,
   "sharpPatterns": false,
+  "shotPuddleRadius": 1,
+  "shotPuddleSec": 1,
   "returnSpeed": 1,
   "sharpAttacks": false,
   "areaScale": 1,
@@ -43,6 +45,8 @@
   "tierLag": 3,
   "wallPests": 0.15,
   "overtimeHoldSec": 60,
+  "shotPuddleRadius": 1.3,
+  "shotPuddleSec": 1.5,
   "returnSpeed": 0.7,
   "promises": [
    {
@@ -63,6 +67,8 @@
   "addedRevives": 1,
   "tierLag": 2,
   "wallPests": 0.3,
+  "shotPuddleRadius": 1.45,
+  "shotPuddleSec": 1.65,
   "returnSpeed": 1.05,
   "promises": [
    {
@@ -100,6 +106,8 @@
   "xp": 1.3,
   "tierLag": 2,
   "wallPests": 0.3,
+  "shotPuddleRadius": 1.5,
+  "shotPuddleSec": 1.65,
   "returnSpeed": 1.05,
   "promises": [
    {
@@ -150,6 +158,8 @@
   "tierLag": 2,
   "wallPests": 0.6,
   "sharpPatterns": true,
+  "shotPuddleRadius": 1.6,
+  "shotPuddleSec": 1.65,
   "returnSpeed": 1.05,
   "sharpAttacks": true,
   "areaScale": 1.45,

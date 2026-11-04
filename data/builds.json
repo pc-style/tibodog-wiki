@@ -370,5 +370,15 @@
   "status": "reviewed",
   "updated": "2026-11-04T22:25:00Z",
   "changes": "Adds Andrew, a visitor scheduled once per run between 18:00 and 22:00. He pairs for 20 seconds: standing inside his gold ring gives 15% faster weapon timers, multiplying with Frenzy Fryer to ×1.61. The ring shrinks from radius 96 to 24 with squared progress (78 halfway through); stepping out removes the bonus and stepping back in restores it until pairing ends. Adds Andrew's sprite animations, ring, cheers, pairing HUD label and translated messages. Existing content definitions, English content text, difficulty multipliers and matched config values are unchanged; all 93 weapons and their icons remain. The late sprite atlas is repacked, but every existing sprite crop is pixel-identical. Other modules only rename bindings/assets or update build metadata."
+ },
+ {
+  "seen": "2026-11-04",
+  "main": "main-KjXYgz9O.js",
+  "boot": "boot-DMw-qSNN.js",
+  "sim": "sim-ov--uToP.js",
+  "commit": "ff7cc24aab87",
+  "status": "reviewed",
+  "updated": "2026-11-04T22:40:50Z",
+  "changes": "Ketchup Kraken fires one straight five-blob fan across 1.2 radians instead of two swirling nine-shot fans across 1.6. Blobs keep speed 95 through 0.55 s, then slow towards 15% speed at 0.95 s; surviving, in-range blobs turn into damaging puddles at the first tick reaching 0.95 s. Puddles have base radius 9 and lifetime 1.8 s, multiplied by difficulty: radius ×1.3/1.45/1.5/1.6 and lifetime ×1.5/1.65/1.65/1.65 on Easy/Normal/Hard/Nightmare (Story ×1). Their damage rate is 2.8 times the shot's scaled damage per second, applied every 0.5 s. Adds animated ketchup-blob art and a translated changelog note. All other content definitions, English content descriptions, existing difficulty values, atlas tables/pixels and wiki icons are unchanged; Andrew and all 93 weapons remain. Both mount chunks, workers and audio worklets are unchanged after asset filename changes; other changed metadata identifies the new build."
  }
 ]
