@@ -260,5 +260,15 @@
   "status": "reviewed",
   "updated": "2026-11-04T14:03:09Z",
   "changes": "Ordinary pest spawns allow at most two shooters before 3:00 and four before 6:00, then return to the cap of 30. Great Wireworm fires one wider five-shot fan instead of two bursts; its click-beetle shots slow, aim once at Tibo after 0.9 s and accelerate, with earlier retargeting at 0.72 s and a faster finish on Nightmare. Moldy Shrine gold becomes round((45 + 20 × minutes + 2 × minutes²) × gold gain), up from 45 + 9 × minutes before gold gain. Unused Spud Whetstones vanish when weapon slots are full, no eligible weapon can level and no union is currently available; newly generated chunks omit them until that condition clears. Dogs stop pointing at vanished whetstones. Adds Game updated changelog notices after update reloads, a pausing HUD changelog button for relaunched runs, and collapsible older changelog dates. Browsers without WebGL 2 get an explanatory screen with a copyable link instead of the low-detail game. Story reading time excludes pauses and overlays, and reduced-motion lesson panels refit around the cards. Overlapping pools of the same kind share outlines; shot-path previews use thin rose arrows (still hidden on Nightmare). Adds crisp weapon/item effects, dog dash and scent trails, pickup trails/sparkles and revised landing/frost rings. Analytics adds average enemy counts; clipboard, browser detection and card helpers move between chunks. Other content values, English content descriptions, difficulty multipliers and wiki icons are unchanged."
+ },
+ {
+  "seen": "2026-11-04",
+  "main": "main-B7eUC3kA.js",
+  "boot": "boot-CWr1pZRc.js",
+  "sim": "sim-CBcKjrLH.js",
+  "commit": "02bba0b02237",
+  "status": "reviewed",
+  "updated": "2026-11-04T14:23:09Z",
+  "changes": "Dog abilities gain ground marks and sparkles: bite impact rings, herd dust rings, bark echoes, fetch stars, dig holes and rescue dust puffs. Herd gusts glow more brightly, add glints and spread more dust; gusts and dust fade behind Tibo to keep him visible. These effects respect reduced-motion, flashes and effects-opacity settings. Simulation logic, content values, English content descriptions, difficulty settings and wiki icons are unchanged."
  }
 ]
