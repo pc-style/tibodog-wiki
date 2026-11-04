@@ -3,3 +3,5 @@ node_modules
 dist
 .cache/
 .amp/portals/*
+.amp/detector/
+.amp/in/

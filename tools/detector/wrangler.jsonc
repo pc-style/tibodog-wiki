@@ -1,0 +1,13 @@
+{
+  "name": "tibodog-game-detector",
+  "main": "worker.mjs",
+  "compatibility_date": "2026-11-04",
+  "account_id": "aa42f3106c86a8ecf22ce639f61343c7",
+  "workers_dev": true,
+  "observability": { "enabled": true },
+  "durable_objects": {
+    "bindings": [{ "name": "DETECTOR", "class_name": "Detector" }]
+  },
+  "migrations": [{ "tag": "v1", "new_sqlite_classes": ["Detector"] }],
+  "triggers": { "crons": ["* * * * *"] }
+}
