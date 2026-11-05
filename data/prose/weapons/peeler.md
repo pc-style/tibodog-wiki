@@ -9,8 +9,8 @@ At level 8, with [Gravy Heart](/passives/gravy-heart) at any level, the next [ch
 ## How it works
 
 - **Slashes.** Swings alternate sides, starting on the side Tibo faces (left or right). The 3rd and 4th swings sit 10 units lower than the first two. A slash damages everything in its box at once and has no pierce limit.
-- **Peels.** The number of peels is `count + countPerLevel × (level − fromLevel)` from level 4 on, and zero before that. <small>[sim-CrpXuTSY.js: `return t<n?0:e.count+(e.countPerLevel??0)*(t-n)`]</small> They fan out over ±0.6 rad on the slash's side, move slowly (40 units/s) for 2.2 s × Duration, pass through pests and deal 0.45× the slash damage.
-- **Peel hit limit.** The `rehit` timer for peels is kept per pest and per weapon slot, not per peel. A pest hit by one of this Peeler's peels cannot be hit by any of its peels for the next 6 s. <small>[sim-CrpXuTSY.js: `i=8*z(n)+Math.max(0,e.projectiles.slot[t]);return!(e.tick-r.hitStamp[i]<e.projectiles.rehit[t]`]</small>
+- **Peels.** The number of peels is `count + countPerLevel × (level − fromLevel)` from level 4 on, and zero before that. <small>[sim-HQr6OS1G.js: `return t<n?0:e.count+(e.countPerLevel??0)*(t-n)`]</small> They fan out over ±0.6 rad on the slash's side, move slowly (40 units/s) for 2.2 s × Duration, pass through pests and deal 0.45× the slash damage.
+- **Peel hit limit.** The `rehit` timer for peels is kept per pest and per weapon slot, not per peel. A pest hit by one of this Peeler's peels cannot be hit by any of its peels for the next 6 s. <small>[sim-HQr6OS1G.js: `i=8*z(n)+Math.max(0,e.projectiles.slot[t]);return!(e.tick-r.hitStamp[i]<e.projectiles.rehit[t]`]</small>
 
 ## Tips
 

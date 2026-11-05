@@ -8,10 +8,10 @@ If Tibo holds Zelda and finds [Link](/dogs/pomeranian), the two fuse into [Zelda
 
 ## How it works
 
-- Targets are chosen by distance from Tibo, not from Zelda. Only elites and pests that flee (the loot runners) qualify, and a pest that is already marked is skipped. <small>[run-extras-WdUSXZiZ.js: `(r&M)===0&&j[n.def[t]??0]!==1`]</small>
-- Marks at once by level are 1, 1, 2, 2 and 3. If fewer targets are in range, Zelda marks as many as there are. <small>[run-extras-WdUSXZiZ.js: `return n.marks[Math.min(r,n.marks.length)-1]??1`]</small>
+- Targets are chosen by distance from Tibo, not from Zelda. Only elites and pests that flee (the loot runners) qualify, and a pest that is already marked is skipped. <small>[run-extras-BO-3xLRW.js: `(r&M)===0&&j[n.def[t]??0]!==1`]</small>
+- Marks at once by level are 1, 1, 2, 2 and 3. If fewer targets are in range, Zelda marks as many as there are. <small>[run-extras-BO-3xLRW.js: `return n.marks[Math.min(r,n.marks.length)-1]??1`]</small>
 - With no target in range, Zelda checks again every 0.25 s and the interval does not start. An elite that comes within 600 units is marked almost immediately.
-- The mark multiplies damage after elite damage and before crits, so it stacks multiplicatively with both. It applies to every source, including the [Jack Russell Terrier's](/dogs/terrier) bites and the [Greyhound's](/dogs/greyhound) sprint. <small>[sim-CrpXuTSY.js: `return t.markT[n]>e.time?1+t.markB[n]:1`]</small>
+- The mark multiplies damage after elite damage and before crits, so it stacks multiplicatively with both. It applies to every source, including the [Jack Russell Terrier's](/dogs/terrier) bites and the [Greyhound's](/dogs/greyhound) sprint. <small>[sim-HQr6OS1G.js: `return t.markT[n]>e.time?1+t.markB[n]:1`]</small>
 
 ## Tips
 

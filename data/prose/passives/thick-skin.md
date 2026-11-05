@@ -6,9 +6,9 @@ It is the catalyst for [Permafrost Fries](/weapons/permafrost-fries) (from [Froz
 
 ## How it works
 
-Dodge points are converted with `x / (1 + x)` (see [Stats](/stats#diminishing-returns)): 4.8%, 9.1%, 13.0%, 16.7% and 20.0% for levels 1 to 5. When a hit would damage Tibo, the dodge roll comes right after the invulnerability checks, and a success cancels the hit entirely.<small>[sim-CrpXuTSY.js: `if(!r&&s.evasion>0&&e.rng.chance(s.evasion))`]</small> Damage from biome terrain and hazard pools cannot be dodged (see [Stats](/stats#dodge)).
+Dodge points are converted with `x / (1 + x)` (see [Stats](/stats#diminishing-returns)): 4.8%, 9.1%, 13.0%, 16.7% and 20.0% for levels 1 to 5. When a hit would damage Tibo, the dodge roll comes right after the invulnerability checks, and a success cancels the hit entirely.<small>[sim-HQr6OS1G.js: `if(!r&&s.evasion>0&&e.rng.chance(s.evasion))`]</small> Damage from biome terrain and hazard pools cannot be dodged (see [Stats](/stats#dodge)).
 
-A dodged hit never counts as Tibo being hit. Effects that react to hits, such as Hot Streak losing flames, do not trigger.<small>[sim-CrpXuTSY.js: `e.bigUpdate.weapons&&function(e){e.hotStreak.hurts++}(e)`]</small>
+A dodged hit never counts as Tibo being hit. Effects that react to hits, such as Hot Streak losing flames, do not trigger.<small>[sim-HQr6OS1G.js: `e.bigUpdate.weapons&&function(e){e.hotStreak.hurts++}(e)`]</small>
 
 The other dodge source is [Ghost Skin](/items/ghost-skin). Its points add to Thick Skin's before the curve, so both together at full value (0.30) give 23.1%.
 

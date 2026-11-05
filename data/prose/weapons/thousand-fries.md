@@ -7,7 +7,7 @@ It is made by opening a chest with Fry Knives at level 8 and [Salt Shaker](/pass
 ## How it works
 
 - Aiming works as on [Fry Knives](/weapons/fry-knives): along Tibo's facing, first knife ±0.25 rad, later knives ±0.5 rad, no target needed.
-- **Volley length can limit fire rate.** A new volley starts only when the cooldown is over and the previous volley has finished. <small>[sim-CrpXuTSY.js: `t.cd<=0&&t.volleyLeft<=0`]</small> Each extra knife adds 0.03 s to a volley, so from about 5 knives per volley the volley itself takes longer than the 0.1 s cooldown and extra projectiles mostly lengthen the stream rather than adding knives per second.
+- **Volley length can limit fire rate.** A new volley starts only when the cooldown is over and the previous volley has finished. <small>[sim-HQr6OS1G.js: `t.cd<=0&&t.volleyLeft<=0`]</small> Each extra knife adds 0.03 s to a volley, so from about 5 knives per volley the volley itself takes longer than the 0.1 s cooldown and extra projectiles mostly lengthen the stream rather than adding knives per second.
 - Cooldown reduction is capped at 60%, and the weapon cooldown floor is 0.05 s (see [Stats](/stats)).
 
 ## Tips

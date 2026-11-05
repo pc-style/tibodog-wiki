@@ -5,6 +5,29 @@ import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { execFileSync } from 'node:child_process';
 
+test('quote repair updates prose source labels even when the quoted code is unchanged', () => {
+  const root = mkdtempSync(join(tmpdir(), 'wiki-quotes-'));
+  try {
+    for (const dir of ['dist', 'pages', 'data/prose/weapons', 'assets']) mkdirSync(join(root, dir), { recursive: true });
+    const old = '[sim-previous.js: `damage:22`]';
+    const current = '[sim-current1.js: `damage:22`]';
+    writeFileSync(join(root, 'assets/sim-current1.js'), 'export default {damage:22}');
+    writeFileSync(join(root, 'dist/lance.md'), old);
+    writeFileSync(join(root, 'data/prose/weapons/lance.md'), old);
+    writeFileSync(join(root, 'data/mechanics-notes.md'), old);
+    execFileSync(process.execPath, [new URL('./check-quotes.mjs', import.meta.url).pathname, join(root, 'assets'), '--write'], { cwd: root });
+    assert.equal(readFileSync(join(root, 'data/prose/weapons/lance.md'), 'utf8'), current);
+    assert.equal(readFileSync(join(root, 'data/mechanics-notes.md'), 'utf8'), old);
+    writeFileSync(join(root, 'dist/lance.md'), current);
+    // Another chunk with the same prefix must not override the exact named source.
+    writeFileSync(join(root, 'assets/sim-wrapper1.js'), 'export default "wrapper"');
+    const result = execFileSync(process.execPath, [new URL('./check-quotes.mjs', import.meta.url).pathname, join(root, 'assets')], { cwd: root, encoding: 'utf8' });
+    assert.match(result, /unchanged: 1, renamed: 0, moved: 0, unresolved: 0/);
+  } finally {
+    rmSync(root, { recursive: true, force: true });
+  }
+});
+
 test('extracts boss definitions and encounter order from either registry layout', () => {
   const root = mkdtempSync(join(tmpdir(), 'wiki-dump-'));
   try {

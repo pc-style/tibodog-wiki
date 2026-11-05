@@ -400,5 +400,15 @@
   "status": "reviewed",
   "updated": "2026-11-04T23:58:38Z",
   "changes": "Boss definitions, wave schedules and base boss visuals move from the boot module into the simulation, with a separate boss-looks lookup for rendering and a boss-ID-only boot registry. The encyclopedia builds its boss shelf from base bosses plus enabled flagged phases; boss lairs explicitly select the base-game order. All 13 boss definitions, attacks, visuals and order, normal/classic wave tables and overtime cycle are unchanged. All other extracted gameplay values, English content, difficulty values, atlas tables/pixels and wiki icons are unchanged, including Ketchup Kraken, Andrew and all 93 weapons. Reviewed all 196 JavaScript modules, including both mount and choices variants, workers, worklets and all localizations; remaining changes are identifier/asset renames and build metadata. Current citations and the extraction method now follow the moved code."
+ },
+ {
+  "seen": "2026-11-05",
+  "main": "main-BnCKpQy_.js",
+  "boot": "boot-B6Ty3kl1.js",
+  "sim": "sim-HQr6OS1G.js",
+  "commit": "df20ba3d1e6a",
+  "status": "reviewed",
+  "updated": "2026-11-05T00:12:51Z",
+  "changes": "Update checks now run every 180 seconds during active play too, without reloading the run. Finding a different build warms same-origin assets and the selected language in the background at low priority; Save-Data and slow 2G connections skip downloads. The first audio-unlocking gesture after an update can fade music in over 0.6 seconds instead of cutting in. Adds a translated changelog note; preload dependency lists are trimmed. Reviewed all 197 JavaScript modules against the previous build's 196, pairing both mount/choices variants and worklet wrappers by role, including workers and all localizations. Combat logic, extracted gameplay data, English content, difficulty values, atlas tables/pixels and wiki icons are unchanged; Ketchup Kraken, Andrew and all 93 weapons remain. Same-seed five-minute Normal runs both finished with 1,322 kills and identical damage: Fry Sentry 6,387.99, Hash Brown Shield 1,072.59, Spud Cannon 2,573.88 and Fry Lance 602.48. Current citations, including hand-written entity prose, now name the exact current source."
  }
 ]

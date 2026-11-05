@@ -6,7 +6,7 @@ It walks towards Tibo at speed 34, the fastest of the tier-2 chargers, and lunge
 
 ## How it works
 
-Its charge works like every charger's. It stops for a 0.5 s windup aimed at Tibo's position when the windup starts, then dashes in a straight line at 170 for about 0.76 s (1.3 × its 100-unit `dashRange`, so about 130 units). After that it walks normally for 1.6 s before it can charge again. <small>[sim-CrpXuTSY.js: `i.state[t]=2,i.timer[t]=1.3*n/r,i.windup[t]=0`]</small> The dash deals ordinary contact damage, no more.
+Its charge works like every charger's. It stops for a 0.5 s windup aimed at Tibo's position when the windup starts, then dashes in a straight line at 170 for about 0.76 s (1.3 × its 100-unit `dashRange`, so about 130 units). After that it walks normally for 1.6 s before it can charge again. <small>[sim-HQr6OS1G.js: `i.state[t]=2,i.timer[t]=1.3*n/r,i.windup[t]=0`]</small> The dash deals ordinary contact damage, no more.
 
 It uses the same charge numbers as the tier-3 [Bog Toad](/enemies/bog-toad), with about half its HP and a little over half its damage.
 

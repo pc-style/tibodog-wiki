@@ -6,10 +6,10 @@ By level 8 it deals 57 damage, fires every 2.1 s, throws 2 lances 0.15 s apart, 
 
 ## How it works
 
-- **Trigger and aim**: it fires only when a pest is within 224 units (0.7 × the 320-unit play field), and aims at the nearest pest within 1.2 × the lance length. <small>[sim-CrpXuTSY.js: `hp(e,1.2*n.length)+(i>0?c*Math.ceil(i/2)*.35:0)`]</small> If no pest is that close, it points the way Tibo faces.
+- **Trigger and aim**: it fires only when a pest is within 224 units (0.7 × the 320-unit play field), and aims at the nearest pest within 1.2 × the lance length. <small>[sim-HQr6OS1G.js: `hp(e,1.2*n.length)+(i>0?s*Math.ceil(i/2)*.35:0)`]</small> If no pest is that close, it points the way Tibo faces.
 - **Extra lances fan out**: the second lance of a volley is turned 0.35 rad (about 20°) to one side, the third 0.35 rad to the other, and so on, each re-aimed at the nearest pest when it fires.
-- **Size**: length is `length × √area` and width is `size × area`, so area bonuses widen the lance faster than they lengthen it. <small>[sim-CrpXuTSY.js: `u=n.length*Math.sqrt(r.area)`]</small> At level 8 (area 1.5) the lance is about 208 units long and 9 wide.
-- **Hits**: every pest whose body touches the line takes one hit; pierce is not used. `duration` (0.25 s) only sets how long the lance is drawn. <small>[sim-CrpXuTSY.js: `Math.max(.12,r.duration)`]</small>
+- **Size**: length is `length × √area` and width is `size × area`, so area bonuses widen the lance faster than they lengthen it. <small>[sim-HQr6OS1G.js: `l=n.length*Math.sqrt(r.area),d=n.size*r.area`]</small> At level 8 (area 1.5) the lance is about 208 units long and 9 wide.
+- **Hits**: every pest whose body touches the line takes one hit; pierce is not used. `duration` (0.25 s) only sets how long the lance is drawn. <small>[sim-HQr6OS1G.js: `Math.max(.12,r.duration)`]</small>
 
 ## Tips
 

@@ -4,25 +4,25 @@ amusing is the first boss of a run. It arrives at 2:00 on the [wave schedule](/b
 
 It is not in the post-20:00 boss rotation ([After 20:00](/bosses#after-20-00)), and a [Boss Lair](/points-of-interest#boss-lair) never wakes it, because lairs pick from the second boss in the order onwards. In a normal run you meet it once, unless cursed extra bosses add copies.
 
-On death it drops an XP gem worth 40 (times the biome's XP multiplier), a 25-gold coin and a chest ([Chests](/chests)). Killing it also reveals [Alex](/visitors#alex), who joins in 25% of normal runs and always in Story. <small>[sim-CrpXuTSY.js: `` n.def[t]===bl&&Ze(e.alex)===`pending` ``]</small> amusing is also the scripted boss of [Story mode](/story-mode), where it has extra HP, damage and speed.
+On death it drops an XP gem worth 40 (times the biome's XP multiplier), a 25-gold coin and a chest ([Chests](/chests)). Killing it also reveals [Alex](/visitors#alex), who joins in 25% of normal runs and always in Story. <small>[sim-HQr6OS1G.js: `` n.def[t]===bl&&Ze(e.alex)===`pending` ``]</small> amusing is also the scripted boss of [Story mode](/story-mode), where it has extra HP, damage and speed.
 
 ## Fight
 
-amusing walks straight at Tibo. Every 3.6 s it stops for its hug, and between hugs it cycles through three bullet patterns in a fixed order: fan, ring, spiral, then the fan again. A new pattern starts every 2.2 s at base. The bullet-pattern clock only runs while the boss is walking, so it pauses during the hug. <small>[sim-CrpXuTSY.js: `d===0?(Uu(e,o,s,c,l,u),Hu(e,o,s,t)):d===1?Wu(e,o,s,t):Gu(e,o,s,t)`]</small> The first hug comes about 2.2 s after it spawns, and the first pattern about 1.1 s after.
+amusing walks straight at Tibo. Every 3.6 s it stops for its hug, and between hugs it cycles through three bullet patterns in a fixed order: fan, ring, spiral, then the fan again. A new pattern starts every 2.2 s at base. The bullet-pattern clock only runs while the boss is walking, so it pauses during the hug. <small>[sim-HQr6OS1G.js: `d===0?(Uu(e,o,s,c,l,u),Hu(e,o,s,t)):d===1?Wu(e,o,s,t):Gu(e,o,s,t)`]</small> The first hug comes about 2.2 s after it spawns, and the first pattern about 1.1 s after.
 
-Enemy bullets scale with run time ([Enemy scaling](/enemy-scaling#enemy-bullets)): count +4% per minute, fire rate +3% and speed +1.5%. At 2:00 that only changes the ring, which grows from 12 to 13 shots, and shortens the pattern interval to about 2.1 s. <small>[sim-CrpXuTSY.js: `o.count[s]=Math.max(1,Math.round(t.count*f.bulletCount))`]</small>
+Enemy bullets scale with run time ([Enemy scaling](/enemy-scaling#enemy-bullets)): count +4% per minute, fire rate +3% and speed +1.5%. At 2:00 that only changes the ring, which grows from 12 to 13 shots, and shortens the pattern interval to about 2.1 s. <small>[sim-HQr6OS1G.js: `a.count[o]=Math.max(1,Math.round(t.count*d.bulletCount))`]</small>
 
 ### Hug
 
-When the hug starts, the game marks a circle of radius 40 where Tibo is standing. amusing stands still for 1.1 s, then leaps onto the marked spot over 0.55 s. The circle deals the boss's contact damage (24 base, scaled with run time) when amusing lands, 1.65 s after it was marked. <small>[sim-CrpXuTSY.js: `Fa(e,n,r,c.radius,i.telegraph+c.leapTime,a.damage[t])`]</small> The circle does not follow Tibo.
+When the hug starts, the game marks a circle of radius 40 where Tibo is standing. amusing stands still for 1.1 s, then leaps onto the marked spot over 0.55 s. The circle deals the boss's contact damage (24 base, scaled with run time) when amusing lands, 1.65 s after it was marked. <small>[sim-HQr6OS1G.js: `Fa(e,i,o,s.radius,n.telegraph+s.leapTime,r.damage[t])`]</small> The circle does not follow Tibo.
 
 ### Fan
 
-Five shots spread over 1 radian (about 57°), aimed at Tibo, fired twice 0.4 s apart at speed 70, 6 damage each. The aim is fixed when the pattern starts, and the first shots leave 0.8 s later. <small>[sim-CrpXuTSY.js: `return r(e.player.y[e.me]-n,e.player.x[e.me]-t)}(e,u,d)`]</small>
+Five shots spread over 1 radian (about 57°), aimed at Tibo, fired twice 0.4 s apart at speed 70, 6 damage each. The aim is fixed when the pattern starts, and the first shots leave 0.8 s later. <small>[sim-HQr6OS1G.js: `return k(e.player.y[e.me]-n,e.player.x[e.me]-t)}(e,l,u)`]</small>
 
 ### Ring
 
-Twelve shots (13 at 2:00) in a full circle at speed 55, 6 damage each, after a 0.9 s warning. A second ring follows 0.6 s later, rotated by half a gap so its shots fly between the first ring's. <small>[sim-CrpXuTSY.js: `X.angle=s+r%2*Math.PI/o+j*n/o`]</small>
+Twelve shots (13 at 2:00) in a full circle at speed 55, 6 damage each, after a 0.9 s warning. A second ring follows 0.6 s later, rotated by half a gap so its shots fly between the first ring's. <small>[sim-HQr6OS1G.js: `X.angle=s+r%2*Math.PI/o+j*n/o`]</small>
 
 ### Spiral
 

@@ -6,7 +6,7 @@ It is a charger with a quick approach. It moves at speed 40 between charges, whi
 
 ## How it works
 
-The charge cycle is the standard one. The crow stops for a 0.5 s windup aimed at Tibo's position when the windup starts, then dashes in a straight line at 190 for 1.3 × 110 / 190 ≈ 0.75 s, about 143 units. It then walks normally for 1.6 s before it can charge again. <small>[sim-CrpXuTSY.js: `i.state[t]=2,i.timer[t]=1.3*n/r,i.windup[t]=0`]</small> The dash only deals ordinary contact damage, and a newly spawned crow waits 0.5–2 s before its first charge can begin.
+The charge cycle is the standard one. The crow stops for a 0.5 s windup aimed at Tibo's position when the windup starts, then dashes in a straight line at 190 for 1.3 × 110 / 190 ≈ 0.75 s, about 143 units. It then walks normally for 1.6 s before it can charge again. <small>[sim-HQr6OS1G.js: `i.state[t]=2,i.timer[t]=1.3*n/r,i.windup[t]=0`]</small> The dash only deals ordinary contact damage, and a newly spawned crow waits 0.5–2 s before its first charge can begin.
 
 ## Tips
 

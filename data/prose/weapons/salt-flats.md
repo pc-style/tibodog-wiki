@@ -5,7 +5,7 @@ Salt Flats is the evolution of [Salt Line](/weapons/salt-line). A chest can evol
 ## How it works
 
 - Like Salt Line, it lays salt only while Tibo is moving. A pest takes damage from the trail at most once per `hitInterval` (0.25 s), however many patches overlap.
-- **Push.** Each time a patch ticks, every pest on it gets a knockback push of 60 away from the patch centre. The push is reduced by the pest's mass, and bosses are not pushed. Patches drop just behind Tibo, so pests that step onto his trail are shoved off it. <small>[sim-CrpXuTSY.js: `a.push[t]=n.trail.push??0`]</small>
+- **Push.** Each time a patch ticks, every pest on it gets a knockback push of 60 away from the patch centre. The push is reduced by the pest's mass, and bosses are not pushed. Patches drop just behind Tibo, so pests that step onto his trail are shoved off it. <small>[sim-HQr6OS1G.js: `a.push[t]=n.trail.push??0`]</small>
 - **Slow.** `factor` 0.55 means slowed pests and bosses move at 45% speed.
 
 ## Tips

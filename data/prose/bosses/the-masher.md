@@ -12,7 +12,7 @@ The Masher walks towards Tibo, fires a single bullet ring, and every 3.2 s of wa
 
 ### Mash slam
 
-The Masher marks a circle of radius 38 centred exactly where Tibo is standing when the attack starts. 1.2 s later the circle strikes once for the Masher's contact damage. The circle does not follow Tibo, and the boss stands still while it is marked. <small>[sim-CrpXuTSY.js: `let a=e.player.x[e.me],o=e.player.y[e.me];for(let c=0;c<i.count;c++){let l=c===0?0:(i.spread??60)*e.rng.next()`]</small> If the Masher dies before the strike, the marked circle is removed. <small>[sim-CrpXuTSY.js: `function Vp(e,t){let n=e.zones.ownerBoss[t];return n>=0&&!e.bosses.pool.has(n)}`]</small>
+The Masher marks a circle of radius 38 centred exactly where Tibo is standing when the attack starts. 1.2 s later the circle strikes once for the Masher's contact damage. The circle does not follow Tibo, and the boss stands still while it is marked. <small>[sim-HQr6OS1G.js: `let a=e.player.x[e.me],o=e.player.y[e.me];for(let s=0;s<i.count;s++){let c=s===0?0:(i.spread??60)*e.rng.next()`]</small> If the Masher dies before the strike, the marked circle is removed. <small>[sim-HQr6OS1G.js: `function Vp(e,t){let n=e.zones.ownerBoss[t];return n>=0&&!e.bosses.pool.has(n)}`]</small>
 
 ### Potato ring
 
@@ -28,7 +28,7 @@ Every 3 s of walking it fires one ring of 10 bullets after a 0.7 s warning, at s
 | Inner ring | 50.8–66.7 units | 1.55 s |
 | Outer ring | 89.9–104.4 units | 1.9 s |
 
-<small>[sim-CrpXuTSY.js: `let a=t[i],o=Ju(e,Z.cx,Z.cy,a.outer*r,Z.delay+i*n)`]</small>
+<small>[sim-HQr6OS1G.js: `let a=t[i],o=Ju(e,Z.cx,Z.cy,a.outer*r,Z.delay+i*n)`]</small>
 
 The ring bullets also weave from side to side by up to 9 units at 1.1 waves per second, with neighbouring bullets weaving in opposite directions, so the gaps open and close as the ring expands.
 

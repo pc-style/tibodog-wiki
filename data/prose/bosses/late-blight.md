@@ -12,15 +12,15 @@ Late Blight drifts towards Tibo, fires slow spirals, and every 4 s of walking st
 
 ### Spore pools
 
-Five clover-shaped pools of radius 26 are marked at once: one centred on Tibo and four at random spots 20–90 units from him. After 1.2 s each pool strikes for half of Late Blight's contact damage. It then stays on the ground for 5 s, hurting Tibo for 9 damage per second before scaling, in ticks every 0.5 s. <small>[sim-CrpXuTSY.js: `p=qu(e,Fa(e,a+D(d)*f,o+s(d)*f,i.radius,n.telegraph,.5*c),t)`]</small> <small>[sim-CrpXuTSY.js: `e.zones.afterLife[p]=i.poolTime,e.zones.afterDps[p]=i.poolDps*(c/n.damage)`]</small>
+Five clover-shaped pools of radius 26 are marked at once: one centred on Tibo and four at random spots 20–90 units from him. After 1.2 s each pool strikes for half of Late Blight's contact damage. It then stays on the ground for 5 s, hurting Tibo for 9 damage per second before scaling, in ticks every 0.5 s. <small>[sim-HQr6OS1G.js: `m=qu(e,Fa(e,s+g(f)*p,c+u(f)*p,a.radius,n.telegraph,.5*l),t)`]</small> <small>[sim-HQr6OS1G.js: `e.zones.afterLife[m]=a.poolTime,e.zones.afterDps[m]=a.poolDps*(l/n.damage)`]</small>
 
 Pools last 5 s and a new set strikes every 5.2 s, so the old set fades only just before the new one lands.
 
-Pool damage counts as ground-hazard damage. It ignores the dash's protection and cannot be dodged, though [armor](/stats#armor) still reduces it. <small>[sim-CrpXuTSY.js: `if(a.invuln[o]>0||a.stunTicks[o]>0||e.over||!r&&Ka(e))return!1;if(!r&&s.evasion>0&&e.rng.chance(s.evasion))`]</small> The strike itself is an ordinary hit that a dash or dodge can avoid.
+Pool damage counts as ground-hazard damage. It ignores the dash's protection and cannot be dodged, though [armor](/stats#armor) still reduces it. <small>[sim-HQr6OS1G.js: `if(a.invuln[o]>0||a.stunTicks[o]>0||e.over||!r&&Ka(e))return!1;if(!r&&s.evasion>0&&e.rng.chance(s.evasion))`]</small> The strike itself is an ordinary hit that a dash or dodge can avoid.
 
 ### Blight spiral
 
-Every 3.5 s of walking, after a 0.9 s warning, Late Blight fires a three-armed spiral: 10 bursts, 0.2 s apart, with each burst rotated further so the arms turn at 1.6 radians (about 92°) per second. The bullets are large (radius 3.5) but slow (speed 45) and deal 7 damage each before scaling. <small>[sim-CrpXuTSY.js: ``case`spiral`:return X.angle=s+a.spin*i.interval[t]*r+j*n/o``]</small> Bullet count grows with run time (see [Enemy bullets](/enemy-scaling#enemy-bullets)). At its 6:00 arrival the count multiplier rounds up to four arms, with bursts about 0.17 s apart and a new spiral every 3 s of walking.
+Every 3.5 s of walking, after a 0.9 s warning, Late Blight fires a three-armed spiral: 10 bursts, 0.2 s apart, with each burst rotated further so the arms turn at 1.6 radians (about 92°) per second. The bullets are large (radius 3.5) but slow (speed 45) and deal 7 damage each before scaling. <small>[sim-HQr6OS1G.js: ``case`spiral`:return X.angle=s+a.spin*i.interval[t]*r+j*n/o``]</small> Bullet count grows with run time (see [Enemy bullets](/enemy-scaling#enemy-bullets)). At its 6:00 arrival the count multiplier rounds up to four arms, with bursts about 0.17 s apart and a new spiral every 3 s of walking.
 
 ### On Nightmare
 

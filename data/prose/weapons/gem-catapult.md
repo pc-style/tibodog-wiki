@@ -6,7 +6,7 @@ The only change from a max-level Gem Sling is damage. Each wedge deals 30.6 inst
 
 ## How it works
 
-Firing is the same as on [Gem Sling](/weapons/gem-sling#how-it-works). Only XP gem pickups count. Gems wait in a queue of at most 40, and up to 2 are fired per tick. Each gem fires one wedge per point of amount, two with no amount bonuses, fanned about 9° apart. <small>[sim-CrpXuTSY.js: `for(let r=0;r<i.amount;r++)If(e,t,i,s+(r-.5*(i.amount-1))*n.fan+e.rng.range(-n.spread,n.spread),n.size)`]</small>
+Firing is the same as on [Gem Sling](/weapons/gem-sling#how-it-works). Only XP gem pickups count. Gems wait in a queue of at most 40, and up to 2 are fired per tick. Each gem fires one wedge per point of amount, two with no amount bonuses, fanned about 9° apart. <small>[sim-HQr6OS1G.js: `for(let i=0;i<r.amount;i++)If(e,t,r,o+(i-.5*(r.amount-1))*n.fan+e.rng.range(-n.spread,n.spread),n.size)`]</small>
 
 ## Tips
 

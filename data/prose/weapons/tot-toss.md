@@ -6,8 +6,8 @@ Tot Toss is one of the 17 weapons a standard run can start with, it is offered o
 
 ## How it works
 
-- **Targeting.** Each tot is aimed at the nearest enemy at the moment it is thrown. The weapon only fires when some enemy is within 70% of the larger screen dimension, so in practice it never wastes a throw on an empty screen. <small>[sim-CrpXuTSY.js: `function pp(e){return .7*Math.max(e.field.width,e.field.height)}`]</small>
-- **Volleys.** Tots in one throw leave 0.1 s apart. The first flies straight at the target; each later tot gets a random spread that grows with its position in the volley (±0.08 radians for the second, up to ±0.32 for the fifth). <small>[sim-CrpXuTSY.js: `hp(e,pp(e))+e.rng.range(-.08,.08)*c`]</small>
+- **Targeting.** Each tot is aimed at the nearest enemy at the moment it is thrown. The weapon only fires when some enemy is within 70% of the larger screen dimension, so in practice it never wastes a throw on an empty screen. <small>[sim-HQr6OS1G.js: `function pp(e){return .7*Math.max(e.field.width,e.field.height)}`]</small>
+- **Volleys.** Tots in one throw leave 0.1 s apart. The first flies straight at the target; each later tot gets a random spread that grows with its position in the volley (±0.08 radians for the second, up to ±0.32 for the fifth). <small>[sim-HQr6OS1G.js: `hp(e,pp(e))+e.rng.range(-.08,.08)*i`]</small>
 - **Pierce.** A tot is removed after hitting one more enemy than its pierce value, and it cannot hit the same enemy twice.
 
 ## Tips

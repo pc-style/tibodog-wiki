@@ -10,7 +10,7 @@ The pace, hit-rate and spin rules are the same as [Tater Twirl](/weapons/tater-t
 
 - **Orbit.** 36 units × √Area, about 41 units at its Area of 1.3 (Tater Twirl at level 8: about 34).
 - **Wheel size.** Hit circle of 8 × Area, about 10.4 units.
-- **Spin.** 5.6 rad/s (about 0.9 turns per second) at walking pace, up to twice that at maximum pace. Salt Shaker's projectile speed counts at half strength for the spin. <small>[sim-CrpXuTSY.js: `return t.raw.speed*(1+.5*(e.loadout.stats.projSpeedMult-1))}(e,t)*a.pace`]</small>
+- **Spin.** 5.6 rad/s (about 0.9 turns per second) at walking pace, up to twice that at maximum pace. Salt Shaker's projectile speed counts at half strength for the spin. <small>[sim-HQr6OS1G.js: `return t.raw.speed*(1+.5*(e.loadout.stats.projSpeedMult-1))}(e,t)*a.pace`]</small>
 - **Hit rate.** Still shared across all wheels: five wheels sweep more ground, but each pest is limited to one hit per `hitInterval` ÷ pace.
 
 ## Tips

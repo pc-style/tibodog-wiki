@@ -6,11 +6,11 @@ The scarab is harmless (0 damage). It escapes after 25 seconds. Hitting it can s
 
 ## How it works
 
-- **HP.** 300 × the current pest HP multiplier from [enemy scaling](/enemy-scaling) (curse is not applied). On Normal that is about 230 HP at 3:00 and about 800 at 17:00. <small>[sim-CrpXuTSY.js: `e.scratch.hp=ma(e.scale,e.cfg,e.runClock).hp,e.scratch.dmg=1,e.scratch.speed=1`]</small>
-- **Movement.** It runs directly away from Tibo. Within 70 units it sprints at its full speed of 40. Farther out it slows to 30% (12 units/s). Tibo's base speed is 62, so it cannot outrun him. <small>[sim-CrpXuTSY.js: `let n=r>e.cfg.lootRunners.sprintRadius?.3:1;i.vx[t]=-i.vx[t]*n,i.vy[t]=-i.vy[t]*n`]</small>
-- **Gold per hit.** Each hit has a 50% chance to drop a coin worth 2. Like all coins, it is multiplied by gold gain when picked up. <small>[sim-CrpXuTSY.js: ``n>0&&e.lootRng.chance(.5)&&G(e,`gold`,e.enemies.x[t],e.enemies.y[t],n)``]</small>
-- **Kill reward.** The item pickup drops on top of the usual kill drops. <small>[sim-CrpXuTSY.js: ``Wl[r.def[t]]===1&&Ra(e,`item`,a,o,1,`lootRunner`)``]</small>
-- **Escape.** The scarab vanishes 25 seconds after it appears, or as soon as it is about 460 units from Tibo, and leaves no item. <small>[sim-CrpXuTSY.js: ``r.despawnAt[d]=e.time+(o.behavior.kind===`flee`?o.behavior.escapeAfter:25)``]</small>
+- **HP.** 300 × the current pest HP multiplier from [enemy scaling](/enemy-scaling) (curse is not applied). On Normal that is about 230 HP at 3:00 and about 800 at 17:00. <small>[sim-HQr6OS1G.js: `e.scratch.hp=ma(e.scale,e.cfg,e.runClock).hp,e.scratch.dmg=1,e.scratch.speed=1`]</small>
+- **Movement.** It runs directly away from Tibo. Within 70 units it sprints at its full speed of 40. Farther out it slows to 30% (12 units/s). Tibo's base speed is 62, so it cannot outrun him. <small>[sim-HQr6OS1G.js: `let n=r>e.cfg.lootRunners.sprintRadius?.3:1;i.vx[t]=-i.vx[t]*n,i.vy[t]=-i.vy[t]*n`]</small>
+- **Gold per hit.** Each hit has a 50% chance to drop a coin worth 2. Like all coins, it is multiplied by gold gain when picked up. <small>[sim-HQr6OS1G.js: ``n>0&&e.lootRng.chance(.5)&&G(e,`gold`,e.enemies.x[t],e.enemies.y[t],n)``]</small>
+- **Kill reward.** The item pickup drops on top of the usual kill drops. <small>[sim-HQr6OS1G.js: ``Wl[n.def[t]]===1&&Ra(e,`item`,i,a,1,`lootRunner`)``]</small>
+- **Escape.** The scarab vanishes 25 seconds after it appears, or as soon as it is about 460 units from Tibo, and leaves no item. <small>[sim-HQr6OS1G.js: ``r.despawnAt[d]=e.time+(o.behavior.kind===`flee`?o.behavior.escapeAfter:25)``]</small>
 - **Full field.** If the enemy pool is at its cap of 550, the event is skipped with no announcement.
 
 ## Tips

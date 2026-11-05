@@ -12,7 +12,7 @@ The Mandoline walks towards Tibo, fires a fast-spinning spiral, and every 3.4 s 
 
 ### Three-lane slice
 
-When the attack starts, the Mandoline locks the direction from itself to Tibo and marks three parallel lines across that direction, each 360 units long and 22 units wide. The middle line runs through Tibo's position; the other two run 57.2 units nearer to the boss and 57.2 units further away. <small>[sim-CrpXuTSY.js: `let p=(r-(a.lanes-1)/2)*a.width*2.6`]</small> The lines strike one after another, starting with the one nearest the boss: at 1.1 s, 1.25 s and 1.4 s. Each deals the Mandoline's contact damage. <small>[sim-CrpXuTSY.js: `a.width/2,n.telegraph+.15*r,o.damage[t]`]</small>
+When the attack starts, the Mandoline locks the direction from itself to Tibo and marks three parallel lines across that direction, each 360 units long and 22 units wide. The middle line runs through Tibo's position; the other two run 57.2 units nearer to the boss and 57.2 units further away. <small>[sim-HQr6OS1G.js: `let p=(f-(i.lanes-1)/2)*i.width*2.6`]</small> The lines strike one after another, starting with the one nearest the boss: at 1.1 s, 1.25 s and 1.4 s. Each deals the Mandoline's contact damage. <small>[sim-HQr6OS1G.js: `i.width/2,n.telegraph+.15*f,a.damage[t]`]</small>
 
 ### Slicer spiral
 

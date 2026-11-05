@@ -8,7 +8,7 @@ New with the evolution, Tibo moves 15% faster while standing in his own ghee. It
 
 - Placement, hit timing (every 0.3 s, one shared re-hit timer per pest across all strips) and the slow are the same as on [Butter Streak](/weapons/butter-streak).
 - With area 1.5 each pool has radius 13.5, so a strip is 5 pools along the 48-unit dash path.
-- **Speed boost**: while Tibo is inside any zone with a haste value, his move speed is multiplied by `1 + haste`, using the largest haste of the zones he is in. Ghee pools have haste 0.15. <small>[sim-CrpXuTSY.js: `haste[i]=n.trail?.haste??0`]</small> Overlapping strips do not stack the bonus.
+- **Speed boost**: while Tibo is inside any zone with a haste value, his move speed is multiplied by `1 + haste`, using the largest haste of the zones he is in. Ghee pools have haste 0.15. <small>[sim-HQr6OS1G.js: `haste[a]=n.trail?.haste??0`]</small> Overlapping strips do not stack the bonus.
 - As on Butter Streak, the "burns" in the description is the pool damage itself; there is no burn status in the weapon's data.
 
 ## Tips

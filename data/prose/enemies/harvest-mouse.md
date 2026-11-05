@@ -6,7 +6,7 @@ It runs straight at Tibo at speed 44 and hurts on contact for 14, with 95 base H
 
 ## How it works
 
-When a mouse dies, three Field Rats appear in a small ring around the spot and are pushed outward. <small>[sim-CrpXuTSY.js: `r.kx[p]=60*D(f),r.ky[p]=60*s(f)`]</small> They are ordinary Field Rats with their full base stats, scaled by the same HP, damage and speed multipliers as the mouse that spawned them. This differs from splitters without a `child` (the [Snow Mold](/enemies/snow-mold) and [Sock Pile](/enemies/sock-pile)), whose copies get only 35% HP, a smaller body and half XP, and cannot split again. <small>[sim-CrpXuTSY.js: `e.scratch.hp=r.maxHp[t]/a.hp*(c?.35:1)`]</small>
+When a mouse dies, three Field Rats appear in a small ring around the spot and are pushed outward. <small>[sim-HQr6OS1G.js: `n.kx[f]=60*g(d),n.ky[f]=60*u(d)`]</small> They are ordinary Field Rats with their full base stats, scaled by the same HP, damage and speed multipliers as the mouse that spawned them. This differs from splitters without a `child` (the [Snow Mold](/enemies/snow-mold) and [Sock Pile](/enemies/sock-pile)), whose copies get only 35% HP, a smaller body and half XP, and cannot split again. <small>[sim-HQr6OS1G.js: `e.scratch.hp=n.maxHp[t]/i.hp*(o?.35:1)`]</small>
 
 An elite Harvest Mouse still releases three rats, but they are not elites. They get the normal scaling for the current time instead of the elite's stats.
 

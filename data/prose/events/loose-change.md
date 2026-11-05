@@ -9,7 +9,7 @@ It is the same gold rush as the scheduled [Harvest Moon](/events/harvest-moon), 
 - **Instant trigger.** A gold rush needs no free enemy slot, so it starts on the first tick Tibo is inside the laundromat. That laundromat is then used up.
 - **Applied on pickup.** Coins are doubled when collected, after gold gain. Coins already on the ground count if you pick them up within the 20 seconds.
 - **No stacking.** If Harvest Moon is already running, Loose Change only extends the window if it would end later. The multiplier stays ×2.
-- **Laundromat gold.** A pest's coin is valued by the biome it dies in, and the laundromat's gold multiplier is 1.4. A pest killed inside therefore drops a coin worth 1.4, or 2.8 when collected during the rush (before gold gain). <small>[sim-CrpXuTSY.js: ``i.next()<r.goldChance[t]+r.killGold[t]&&G(e,`gold`,a+i.range(-4,4),o+i.range(-4,4),(s?10:1)*c.goldMult)``]</small>
+- **Laundromat gold.** A pest's coin is valued by the biome it dies in, and the laundromat's gold multiplier is 1.4. A pest killed inside therefore drops a coin worth 1.4, or 2.8 when collected during the rush (before gold gain). <small>[sim-HQr6OS1G.js: ``r.next()<n.goldChance[t]+n.killGold[t]&&G(e,`gold`,i+r.range(-4,4),a+r.range(-4,4),(o?10:1)*s.goldMult)``]</small>
 
 ## Tips
 

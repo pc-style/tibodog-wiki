@@ -6,7 +6,7 @@ The change is reach. Each flame adds 48% to the slash radius instead of 24%. Wit
 
 ## How it works
 
-Flames, hits and slashes work as described on [Hot Streak](/weapons/hot-streak#how-it-works). The radius is 34 × area × (1 + 0.48 × flames). <small>[sim-CrpXuTSY.js: `return t.size*n.area*(1+t.streak.area*r)`]</small> Dodged hits and hits that a shield soaks fully do not cost flames.
+Flames, hits and slashes work as described on [Hot Streak](/weapons/hot-streak#how-it-works). The radius is 34 × area × (1 + 0.48 × flames). <small>[sim-HQr6OS1G.js: `return t.size*n.area*(1+t.streak.area*r)`]</small> Dodged hits and hits that a shield soaks fully do not cost flames.
 
 ## Tips
 

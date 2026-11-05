@@ -6,9 +6,9 @@ At level 1 it fires every 0.14 s during a burst, about 14 shots per burst. Each 
 
 ## How it works
 
-- **Locking on.** A burst starts only if a pest is within 220 units. If none is, the gatling checks again every 0.1 s. When it locks, it stores the angle from Tibo to that pest and starts a 2 s burst. The first tot fires immediately. <small>[sim-CrpXuTSY.js: `o.angle=r(o.lockY-i,o.lockX-n),o.lockAt=e.tick,o.left=C(t.burstSec)`]</small>
+- **Locking on.** A burst starts only if a pest is within 220 units. If none is, the gatling checks again every 0.1 s. When it locks, it stores the angle from Tibo to that pest and starts a 2 s burst. The first tot fires immediately. <small>[sim-HQr6OS1G.js: `a.angle=k(a.lockY-r,a.lockX-n),a.lockAt=e.tick,a.left=l(t.burstSec)`]</small>
 - **During the burst.** Tots fire at the weapon's cooldown from Tibo's current position, along the locked angle with up to ±0.03 rad of random spread. Moving Tibo moves the line of fire sideways but does not change its angle.
-- **Lanes.** Each point of amount fires one more tot per shot, so two lanes with no amount bonuses. The tots fly side by side in parallel lanes 7 units apart instead of fanning out. <small>[sim-CrpXuTSY.js: `l=(i-.5*(r.amount-1))*n.lane`]</small>
+- **Lanes.** Each point of amount fires one more tot per shot, so two lanes with no amount bonuses. The tots fly side by side in parallel lanes 7 units apart instead of fanning out. <small>[sim-HQr6OS1G.js: `c=(i-.5*(r.amount-1))*n.lane`]</small>
 - The tots look like [Tot Toss](/weapons/tot-toss) shots. Their damage, speed and pierce come from this weapon.
 
 ## Tips

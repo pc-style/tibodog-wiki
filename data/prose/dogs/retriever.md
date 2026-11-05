@@ -7,8 +7,8 @@ Every 3 seconds Biscuit fetches. Every loose pickup within 120 units of Tibo sta
 ## How it works
 
 - The circle is centred on Tibo. Its radius grows with the square root of power (`120 × √power`).
-- Everything except chests and items is fetched: XP gems, coins, snacks, magnets, rerolls, skips, banishes and Bot Beacons. <small>[sim-CrpXuTSY.js: `n===E.chest||n===E.item)continue`]</small>
-- Fetched pickups fly to Tibo at 300 units per second and are collected on arrival. <small>[sim-CrpXuTSY.js: `n.x[o]=l+p/e*300*t`]</small>
+- Everything except chests and items is fetched: XP gems, coins, snacks, magnets, rerolls, skips, banishes and Bot Beacons. <small>[sim-HQr6OS1G.js: `n===E.chest||n===E.item)continue`]</small>
+- Fetched pickups fly to Tibo at 300 units per second and are collected on arrival. <small>[sim-HQr6OS1G.js: `n.x[o]=l+p/e*300*t`]</small>
 - A fetch only counts if it moved at least one pickup. Otherwise Biscuit checks again every 0.25 s, so a new drop inside the circle is pulled in almost immediately once the interval has passed.
 
 ## Tips

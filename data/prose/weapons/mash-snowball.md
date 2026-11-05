@@ -9,7 +9,7 @@ A ball starts with radius 4 and grows by 0.22 per unit Tibo moves, up to a radiu
 - **Release triggers.** The ball surges when Tibo stops for 4 ticks (about 0.07 s), when he turns more than 120° away from his recent heading, or once Tibo has kept moving with a full ball for 0.25 s × duration. A ball smaller than radius 9 is dropped without a surge.
 - **Direction.** After a sharp turn the ball keeps going the way Tibo was running before the turn. After a stop or a full-ball release it goes along his smoothed recent heading.
 - **The surge.** The ball starts from its spot behind Tibo, 8 + 6 × radius units back along his path. It rolls 70 + 9 × radius units at 220 units/s and hits each pest it touches. When it stops, it splatters everything within 2.5 × radius. Each pest is hit at most once per ball.
-- **Damage scales with size.** Each ball deals damage × radius ÷ 14. A ball released at the minimum radius 9 deals about 64% of the weapon's damage. The size cap is 14 × area but the divisor stays at 14, so with area above 1 a full ball deals more than 100%. <small>[sim-CrpXuTSY.js: `t.surgeLeft[u]=r.surgeBase+r.surgePerR*o,t.surgeR[u]=o,t.surgeDamage[u]=i.damage*o/r.maxR`]</small>
+- **Damage scales with size.** Each ball deals damage × radius ÷ 14. A ball released at the minimum radius 9 deals about 64% of the weapon's damage. The size cap is 14 × area but the divisor stays at 14, so with area above 1 a full ball deals more than 100%. <small>[sim-HQr6OS1G.js: `t.surgeLeft[u]=r.surgeBase+r.surgePerR*o,t.surgeR[u]=o,t.surgeDamage[u]=i.damage*o/r.maxR`]</small>
 - Amount, cooldown, speed and pierce have no effect on this weapon. Duration only extends how long a full ball can roll before it releases on its own.
 
 ## Tips

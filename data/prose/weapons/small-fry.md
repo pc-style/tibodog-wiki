@@ -6,9 +6,9 @@ It is only offered on level-up cards and is not in the starting-weapon pool. Lev
 
 ## How it works
 
-- **Kill bonus.** The bonus is `min(12, 0.05 × kills)`. It is added to the fry's raw damage before Tibo's damage multiplier, so [might](/stats) multiplies it too. <small>[sim-CrpXuTSY.js: `function Df(e,t){return Math.min(e.cap,t*e.perKill)}function Of(e,t){return!0===e.size?Math.min(3,1+t/600):1}`]</small> A fully grown level 8 Small Fry deals 20 raw damage per fry.
-- **Which kills count.** A kill counts for the weapon that dealt the killing blow. Damage from other weapons does not add to the count. <small>[sim-CrpXuTSY.js: `for(let e=0;e<r.length;e++)r[e].src===t&&r[e].kills++`]</small>
-- **Aim.** Each fry targets the nearest pest within 224 units: 70% of the larger side of the 320 × 320 play area. With no pest that close, the weapon holds its shot. <small>[sim-CrpXuTSY.js: `function pp(e){return .7*Math.max(e.field.width,e.field.height)}`]</small> Later fries in a volley get a little random spread: up to ±0.08 radians times the fry's position in the volley.
+- **Kill bonus.** The bonus is `min(12, 0.05 × kills)`. It is added to the fry's raw damage before Tibo's damage multiplier, so [might](/stats) multiplies it too. <small>[sim-HQr6OS1G.js: `function Df(e,t){return Math.min(e.cap,t*e.perKill)}function Of(e,t){return!0===e.size?Math.min(3,1+t/600):1}`]</small> A fully grown level 8 Small Fry deals 20 raw damage per fry.
+- **Which kills count.** A kill counts for the weapon that dealt the killing blow. Damage from other weapons does not add to the count. <small>[sim-HQr6OS1G.js: `for(let e=0;e<r.length;e++)r[e].src===t&&r[e].kills++`]</small>
+- **Aim.** Each fry targets the nearest pest within 224 units: 70% of the larger side of the 320 × 320 play area. With no pest that close, the weapon holds its shot. <small>[sim-HQr6OS1G.js: `function pp(e){return .7*Math.max(e.field.width,e.field.height)}`]</small> Later fries in a volley get a little random spread: up to ±0.08 radians times the fry's position in the volley.
 - **Size.** Small Fry's hit size does not change. Only Big Fry grows with kills.
 
 ## Tips

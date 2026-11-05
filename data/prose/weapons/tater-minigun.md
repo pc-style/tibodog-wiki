@@ -6,7 +6,7 @@ The only change from a max-level Locked Gatling is damage. Each tot deals 20.4 i
 
 ## How it works
 
-Bursts lock onto the nearest pest within 220 units as described on [Locked Gatling](/weapons/locked-gatling#how-it-works). Every tot in a burst flies along the angle taken at the start, from wherever Tibo is when it fires. Each point of amount is one lane, 7 units from the next. With Tibo's base +1 amount that is two lanes before any amount bonuses. <small>[sim-CrpXuTSY.js: `l=(i-.5*(r.amount-1))*n.lane`]</small>
+Bursts lock onto the nearest pest within 220 units as described on [Locked Gatling](/weapons/locked-gatling#how-it-works). Every tot in a burst flies along the angle taken at the start, from wherever Tibo is when it fires. Each point of amount is one lane, 7 units from the next. With Tibo's base +1 amount that is two lanes before any amount bonuses. <small>[sim-HQr6OS1G.js: `c=(i-.5*(r.amount-1))*n.lane`]</small>
 
 ## Tips
 

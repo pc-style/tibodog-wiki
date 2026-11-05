@@ -6,9 +6,9 @@ It is one of the 17 weapons a standard run can start with, and it is offered on 
 
 ## How it works
 
-- **One pup per amount.** The weapon keeps exactly as many pups alive as its amount, spawning new ones at Tibo's position or removing extras whenever the amount changes. Extra amount from passives such as [Sprouting Eyes](/passives/sprouting-eyes) therefore adds pups. <small>[sim-CrpXuTSY.js: `i.pool.isAlive(n)&&i.slot[n]===t.slot&&i.kind[n]===pe.familiar&&(a>=r.amount?i.pool.kill(n)`]</small>
+- **One pup per amount.** The weapon keeps exactly as many pups alive as its amount, spawning new ones at Tibo's position or removing extras whenever the amount changes. Extra amount from passives such as [Sprouting Eyes](/passives/sprouting-eyes) therefore adds pups. <small>[sim-HQr6OS1G.js: `i.pool.isAlive(n)&&i.slot[n]===t.slot&&i.kind[n]===ze.familiar&&(a>=r.amount?i.pool.kill(n)`]</small>
 - **Movement.** Pups circle Tibo on a small oval, 18 units out to the sides and 14 above and below, spaced evenly and slowly rotating. They follow him closely, so in practice they shoot from where Tibo stands.
-- **Shooting.** Each pup has its own timer. When it is ready, it targets the nearest enemy within 150 units of the pup; with no target in range it checks again every 0.1 s. Newly spawned pups start 0.15 s apart so their shots are staggered. <small>[sim-CrpXuTSY.js: `let u=n.x[a],d=n.y[a],f=Zi(e,u,d,s.range);if(f===void 0){n.t[a]=kp;continue}`]</small>
+- **Shooting.** Each pup has its own timer. When it is ready, it targets the nearest enemy within 150 units of the pup; with no target in range it checks again every 0.1 s. Newly spawned pups start 0.15 s apart so their shots are staggered. <small>[sim-HQr6OS1G.js: `let u=n.x[i],d=n.y[i],f=Zi(e,u,d,o.range);if(f===void 0){n.t[i]=kp;continue}`]</small>
 - **Shots.** Tots travel at speed 200 for 1.875 s (1.5 s raw, plus Tibo's base +25% duration) and stop at the first enemy unless the weapon has pierce. Projectile speed, duration, area and pierce bonuses apply to them as usual.
 
 ## Tips

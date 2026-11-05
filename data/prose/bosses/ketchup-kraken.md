@@ -12,7 +12,7 @@ The Kraken crawls towards Tibo, throws fans of ketchup that turn into puddles, a
 
 ### Tentacle slams
 
-Five circles of radius 32 are marked around Tibo's position: the first centred on him, the other four at random spots up to 80 units away. They strike in turn, 0.12 s apart, at 1.1 s, 1.22 s, 1.34 s, 1.46 s and 1.58 s. Each deals the Kraken's contact damage. <small>[sim-CrpXuTSY.js: `d=qu(e,Fa(e,a+D(u)*l,o+s(u)*l,i.radius,n.telegraph+.12*c,e.bosses.damage[t]),t)`]</small>
+Five circles of radius 32 are marked around Tibo's position: the first centred on him, the other four at random spots up to 80 units away. They strike in turn, 0.12 s apart, at 1.1 s, 1.22 s, 1.34 s, 1.46 s and 1.58 s. Each deals the Kraken's contact damage. <small>[sim-HQr6OS1G.js: `d=qu(e,Fa(e,a+g(l)*c,o+u(l)*c,i.radius,n.telegraph+.12*s,e.bosses.damage[t]),t)`]</small>
 
 ### Ketchup fan
 

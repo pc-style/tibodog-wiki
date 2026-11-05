@@ -16,7 +16,7 @@ Crit points are converted with `x / (1 + x)` (see [Stats](/stats#diminishing-ret
 | 4 | 0.24 | 19.4% |
 | 5 | 0.30 | 23.1% |
 
-Each hit then rolls against that chance plus the weapon's own crit bonus.<small>[sim-CrpXuTSY.js: `let l=s.critChance+o.critBonus[i];l>0&&e.rng.next()<l&&(u*=s.critMult,d=!0)`]</small> The weapon bonus is added after the curve, so it is not reduced. Gratin Arc has a crit bonus of 0.25 (“crits often”), so with Hot Sauce at level 5 its hits crit 48.1% of the time.
+Each hit then rolls against that chance plus the weapon's own crit bonus.<small>[sim-HQr6OS1G.js: `let c=o.critChance+a.critBonus[r];c>0&&e.rng.next()<c&&(l*=o.critMult,u=!0)`]</small> The weapon bonus is added after the curve, so it is not reduced. Gratin Arc has a crit bonus of 0.25 (“crits often”), so with Hot Sauce at level 5 its hits crit 48.1% of the time.
 
 Other crit sources are [Hot Pepper](/items/hot-pepper) and [Spud Shrine](/points-of-interest#spud-shrine) blessings. Their points are added to Hot Sauce's before the curve.
 

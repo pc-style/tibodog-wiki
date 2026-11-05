@@ -6,7 +6,7 @@ Legendary items share the smallest rarity weight, and Heavy Russet has weight 1 
 
 ## How it works
 
-- The bonk multiplies the hit after the elite/boss bonus and before the crit roll, so a bonk can also crit for 15 × 2 = 30× or more. <small>[sim-CrpXuTSY.js: `u*=n}let l=s.critChance+o.critBonus[i]`]</small>
+- The bonk multiplies the hit after the elite/boss bonus and before the crit roll, so a bonk can also crit for 15 × 2 = 30× or more. <small>[sim-HQr6OS1G.js: `l*=i}let c=o.critChance+a.critBonus[r]`]</small>
 - Only weapon hits can bonk. Dog bites, burn ticks and item blasts cannot.
 - The limit is 8 bonks per second per copy. At a 2% chance that only matters for very fast-hitting builds.
 - On average, one copy adds about 28% to weapon hit damage (2% × 14 extra), and five copies about 134%. Actual results are swingy, because the damage comes in rare big hits and anything beyond the target's remaining HP is wasted.

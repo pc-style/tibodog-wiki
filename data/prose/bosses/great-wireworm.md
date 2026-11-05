@@ -6,13 +6,13 @@ It is not in the post-20:00 rotation; a [Boss Lair](/points-of-interest#boss-lai
 
 ## Fight
 
-The Wireworm crawls towards Tibo and fires a beetle-shaped fan between dives. Every 4 s it burrows and bursts up under where Tibo was. Its fan timer is paused for the whole dive. <small>[sim-CrpXuTSY.js: `d===0?(Uu(e,o,s,c,l,u),Hu(e,o,s,t)):d===1?Wu(e,o,s,t):Gu(e,o,s,t)`]</small> Its first dive comes about 2.4 s after it appears.
+The Wireworm crawls towards Tibo and fires a beetle-shaped fan between dives. Every 4 s it burrows and bursts up under where Tibo was. Its fan timer is paused for the whole dive. <small>[sim-HQr6OS1G.js: `d===0?(Uu(e,o,s,c,l,u),Hu(e,o,s,t)):d===1?Wu(e,o,s,t):Gu(e,o,s,t)`]</small> Its first dive comes about 2.4 s after it appears.
 
 ### Burrow
 
-When the dive starts, the game marks a circle of radius 40 on Tibo's position, and the Wireworm goes underground at once. It travels under the ground to the mark and erupts 2.2 s later (1 s warning plus 1.2 s underground), dealing its contact damage to Tibo if he is inside the circle. <small>[sim-CrpXuTSY.js: `let r=i.telegraph+c.under`]</small>
+When the dive starts, the game marks a circle of radius 40 on Tibo's position, and the Wireworm goes underground at once. It travels under the ground to the mark and erupts 2.2 s later (1 s warning plus 1.2 s underground), dealing its contact damage to Tibo if he is inside the circle. <small>[sim-HQr6OS1G.js: `let i=n.telegraph+s.under`]</small>
 
-While it is underground, the Wireworm is out of reach: it is left out of the lookup weapons use to find targets, it deals no contact damage, and any bullet pattern it was still winding up is cancelled. <small>[sim-CrpXuTSY.js: `i.pool.isAlive(r)&&!i.has(r,n.Hidden)&&Fi(t,zi+r,i.x[r],i.y[r])`]</small> A full cycle is 6.2 s, so it spends about a third of the fight underground.
+While it is underground, the Wireworm is out of reach: it is left out of the lookup weapons use to find targets, it deals no contact damage, and any bullet pattern it was still winding up is cancelled. <small>[sim-HQr6OS1G.js: `r.pool.isAlive(n)&&!r.has(n,D.Hidden)&&Fi(t,zi+n,r.x[n],r.y[n])`]</small> A full cycle is 6.2 s, so it spends about a third of the fight underground.
 
 ### Click-beetle fan
 

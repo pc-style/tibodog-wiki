@@ -9,7 +9,7 @@ Its amount is 2, the same as a max-level Whisk Vortex. With Tibo's base +1 amoun
 Placement, damage ticks and pull work as described on [Whisk Vortex](/weapons/whisk-vortex#how-it-works). The differences:
 
 - **Stronger pull.** The pull strength is 130 instead of 100, with a base radius of 70 instead of 60 (both radii scale with area). Bosses are still not pulled.
-- **Slam.** When a whirlpool's lifetime runs out, it deals 3 × its damage to every pest within 1.2 × its radius. <small>[sim-CrpXuTSY.js: `e.attack.damage=n.damage[t]*n.slam[t],Za(e,n.x[t],n.y[t],1.2*n.radius[t])`]</small> The slam is an explosion, so unlike the pull it also hits bosses in range.
+- **Slam.** When a whirlpool's lifetime runs out, it deals 3 × its damage to every pest within 1.2 × its radius. <small>[sim-HQr6OS1G.js: `e.attack.damage=n.damage[t]*n.slam[t],Za(e,n.x[t],n.y[t],1.2*n.radius[t])`]</small> The slam is an explosion, so unlike the pull it also hits bosses in range.
 
 ## Tips
 

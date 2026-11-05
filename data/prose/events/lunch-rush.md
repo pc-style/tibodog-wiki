@@ -6,7 +6,7 @@ It is a swarm event, like the scheduled [Fry Fly Swarm](/events/fly-swarm), with
 
 ## How it works
 
-- **Geometry.** The gulls start beyond the edge of the view on one side, in a block 280 units wide (140 to each side of Tibo's position) and up to 60 deep. They fly in a fixed direction and never turn towards Tibo. <small>[sim-CrpXuTSY.js: `let s=n.range(-t.width,t.width),c=n.range(0,60),f=Ma(e,o,i-l*(d+c)-u*s,a-u*(d+c)+l*s)`]</small>
+- **Geometry.** The gulls start beyond the edge of the view on one side, in a block 280 units wide (140 to each side of Tibo's position) and up to 60 deep. They fly in a fixed direction and never turn towards Tibo. <small>[sim-HQr6OS1G.js: `let s=n.range(-t.width,t.width),u=n.range(0,60),f=Ma(e,o,i-c*(d+u)-l*s,a-l*(d+u)+c*s)`]</small>
 - **Count.** 24 × the enemy-count multiplier, capped at 2×. Before overtime the multiplier is 1 (see [Enemy scaling](/enemy-scaling)), so a drive-thru found before 20:00 always sends 24 gulls.
 - **Trigger.** If the enemy pool is full (550), the drive-thru stays unused and the event tries again while Tibo is inside.
 - **Despawn.** Gulls are removed after 14 seconds or once they are about 460 units from Tibo, and drop nothing.

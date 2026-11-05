@@ -7,7 +7,7 @@ Every 6 seconds Frank digs and scatters 6 coins around itself. Each dig also has
 ## How it works
 
 - The coin count is `round(6 × power)`: 6, 8, 12, 14 and 17 at levels 1 to 5. Each coin is a normal gold pickup worth 1 gold before gold gain. That is 1 gold per second at level 1 and about 5.5 per second at level 5.
-- The 20% bonus chance does not grow with training, but faster digging means more rolls. At level 1 that is about 1.4 snacks and 0.6 rerolls a minute; at level 5 about 2.7 snacks and 1.2 rerolls. <small>[sim-CrpXuTSY.js: `` e.lootRng.chance(i.bonusChance)&&(G(e,e.lootRng.chance(.7)?`heal`:`reroll`,c,l-6,30) ``]</small>
+- The 20% bonus chance does not grow with training, but faster digging means more rolls. At level 1 that is about 1.4 snacks and 0.6 rerolls a minute; at level 5 about 2.7 snacks and 1.2 rerolls. <small>[sim-HQr6OS1G.js: `` e.lootRng.chance(n.bonusChance)&&(G(e,e.lootRng.chance(.7)?`heal`:`reroll`,a,o-6,30) ``]</small>
 - A dig always succeeds, so Frank's timer never stalls.
 
 ## Tips

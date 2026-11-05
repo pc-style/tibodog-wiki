@@ -6,17 +6,17 @@ It is part of the post-20:00 rotation, so a long run meets it again at 24:00, 31
 
 ## Fight
 
-The Golem walks towards Tibo and fires weaving rings. Every 3 s it stops and charges along a marked line. One charge cycle is 4.9 s: 3 s of walking, 1 s of warning and a 0.9 s dash. The ring timer is paused during the warning and the dash. <small>[sim-CrpXuTSY.js: `d===0?(Uu(e,o,s,c,l,u),Hu(e,o,s,t)):d===1?Wu(e,o,s,t):Gu(e,o,s,t)`]</small>
+The Golem walks towards Tibo and fires weaving rings. Every 3 s it stops and charges along a marked line. One charge cycle is 4.9 s: 3 s of walking, 1 s of warning and a 0.9 s dash. The ring timer is paused during the warning and the dash. <small>[sim-HQr6OS1G.js: `d===0?(Uu(e,o,s,c,l,u),Hu(e,o,s,t)):d===1?Wu(e,o,s,t):Gu(e,o,s,t)`]</small>
 
 ### Charge
 
-When the charge starts, a line 26 units wide is drawn from the Golem in Tibo's direction. It is 288 units long, the distance of the dash (speed 320 for 0.9 s). <small>[sim-CrpXuTSY.js: `e.zones.length[n]=c.dashSpeed*c.dashTime`]</small> The Golem stands still for 1 s, then dashes along the line. The direction is fixed when the line appears and does not follow Tibo.
+When the charge starts, a line 26 units wide is drawn from the Golem in Tibo's direction. It is 288 units long, the distance of the dash (speed 320 for 0.9 s). <small>[sim-HQr6OS1G.js: `e.zones.length[i]=s.dashSpeed*s.dashTime`]</small> The Golem stands still for 1 s, then dashes along the line. The direction is fixed when the line appears and does not follow Tibo.
 
-The line itself deals no damage; the Golem's body does. During the dash its contact damage is multiplied by 1.5, so 60 at base before time scaling. <small>[sim-CrpXuTSY.js: `` return e.bosses.state[t]===2&&r.attack.kind===`charge`?1.5:1 ``]</small> Its body is wider than the line (radius 16 against a half-width of 13), so with Tibo's own size the danger reaches about 21 units from the centre of the line.
+The line itself deals no damage; the Golem's body does. During the dash its contact damage is multiplied by 1.5, so 60 at base before time scaling. <small>[sim-HQr6OS1G.js: `` return e.bosses.state[t]===2&&r.attack.kind===`charge`?1.5:1 ``]</small> Its body is wider than the line (radius 16 against a half-width of 13), so with Tibo's own size the danger reaches about 21 units from the centre of the line.
 
 ### Weaving ring
 
-Every 3 s at base, the Golem fires one ring of 14 shots at speed 90, 14 damage each, after a 0.8 s warning. Each shot sways from side to side as it flies, about 10 units either way, 1.2 times a second. Neighbouring shots sway in opposite directions, so the gaps between them keep opening and closing. <small>[sim-CrpXuTSY.js: `let n=j*e.hz;return e.px*n*D(n*t)`]</small>
+Every 3 s at base, the Golem fires one ring of 14 shots at speed 90, 14 damage each, after a 0.8 s warning. Each shot sways from side to side as it flies, about 10 units either way, 1.2 times a second. Neighbouring shots sway in opposite directions, so the gaps between them keep opening and closing. <small>[sim-HQr6OS1G.js: `let n=j*e.hz;return e.px*n*g(n*t)`]</small>
 
 Enemy bullets scale with time ([Enemy scaling](/enemy-scaling#enemy-bullets)). At 16:00 each ring has 23 shots (14 × 1.64, rounded), they fly at about 112, and a ring comes about every 2 s.
 

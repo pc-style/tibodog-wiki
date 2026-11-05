@@ -8,7 +8,7 @@ In Standard runs it is one of the weapons Tibo can start with: when no starting 
 
 - **Drop.** Every cooldown, the sentry places Amount turrets at once, each 18 units from Tibo in a random direction. Unlike most weapons, Amount here means turrets per drop, not shots. The drop happens even when no pest is nearby. Tibo's built-in +1 amount (see [Stats](/stats#stat-conversion)) means 2 turrets per drop at level 1, rising to 4 at level 8.
 - **Lifetime.** Each turret lasts the weapon's Duration multiplied by Tibo's duration stat, which includes a base +25%. With no duration bonuses, at level 1 that is 6.25 s against a 7 s cooldown, so there is a short gap before the next drop. At level 8 it is 6.875 s against 5.8 s, so the old and new turrets overlap.
-- **Shooting.** A turret fires one bolt at the nearest pest within 150 units every Interval (0.35 s). The bolt has 0 base pierce, so it stops at the first pest unless Tibo has pierce bonuses, and it always lives 1.2 s, whatever the weapon's Duration. With no pest in range, the turret holds its fire and keeps checking.<small>[sim-CrpXuTSY.js: `let p=c?Math.max(.1*_u(e),Op.interval):Op.cooldown`]</small>
+- **Shooting.** A turret fires one bolt at the nearest pest within 150 units every Interval (0.35 s). The bolt has 0 base pierce, so it stops at the first pest unless Tibo has pierce bonuses, and it always lives 1.2 s, whatever the weapon's Duration. With no pest in range, the turret holds its fire and keeps checking.<small>[sim-HQr6OS1G.js: `let p=s?Math.max(.1*_u(e),Op.interval):Op.cooldown`]</small>
 - Turrets read the weapon's current stats each time they fire, so a level-up or a new passive also affects turrets that are already on the ground.
 
 ## Tips

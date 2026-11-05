@@ -53,6 +53,10 @@ function fuzzy(q) {
 
 const results = { ok: 0, renamed: [], moved: [], unresolved: [] };
 for (const q of quotes.values()) {
+  if (src[q.file]?.includes(q.quote)) {
+    results.ok++;
+    continue;
+  }
   const base = q.file.replace(/-[A-Za-z0-9_-]{8}\.js$/, '');
   const cur = byBase[base];
   if (cur && src[cur].includes(q.quote)) {
@@ -84,7 +88,18 @@ if (write) {
   let edits = 0;
   const missed = [];
   for (const r of [...results.renamed, ...results.moved]) {
-    if (r.newQuote === r.quote) continue; // file renames are handled by update.mjs
+    // update.mjs renames page chunks, but hand-written prose can still name the old build.
+    if (r.newFile !== r.file && results.renamed.includes(r)) {
+      for (const p of sources) {
+        const s = readFileSync(p, 'utf8');
+        const from = `[${r.file}:`;
+        if (s.includes(from)) {
+          writeFileSync(p, s.split(from).join(`[${r.newFile}:`));
+          edits++;
+        }
+      }
+    }
+    if (r.newQuote === r.quote) continue;
     let found = false;
     // Quotes inside template literals have their backticks escaped in the source.
     const forms = [[r.quote, r.newQuote], [r.quote.replaceAll('`', '\\`'), r.newQuote.replaceAll('`', '\\`')]];

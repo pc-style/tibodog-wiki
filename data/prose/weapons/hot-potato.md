@@ -7,9 +7,9 @@ It is offered as a level-up card. At level 8, with [Hot Sauce](/passives/hot-sau
 ## How it works
 
 - **Launch.** Potatoes leave Tibo roughly in the direction he faces (up to ±1.2 rad off) and steer toward a target at up to 7 rad/s. With no target they look for the nearest pest within 200 units that they have not hit yet.
-- **Hops.** On each hit the potato deals its normal damage, uses up one point of pierce and turns toward the nearest pest within 90 units (`hopRange`) that it has not hit before. Each hop also tops its remaining flight time up to at least 1.2 s. <small>[sim-CrpXuTSY.js: `if(a<=0)return Wd(e,t),void i.pool.kill(t);i.pierce[t]=a-1,Gd(i,t),i.life[t]=Math.max(i.life[t],1.2)`]</small>
+- **Hops.** On each hit the potato deals its normal damage, uses up one point of pierce and turns toward the nearest pest within 90 units (`hopRange`) that it has not hit before. Each hop also tops its remaining flight time up to at least 1.2 s. <small>[sim-HQr6OS1G.js: `if(i<=0)return Wd(e,t),void r.pool.kill(t);r.pierce[t]=i-1,Gd(r,t),r.life[t]=Math.max(r.life[t],1.2)`]</small>
 - **Blast.** When a potato hits with no pierce left, it explodes: every pest within `fuse.radius` × Area takes `fuse.blast` × damage (2.5×). The last pest takes both the hit and the blast.
-- **Fizzling out.** A potato that runs out of flight time (3 s × Duration) also explodes where it is, so the blast is never lost. <small>[sim-CrpXuTSY.js: `n.fuseBlast[r]>0&&Wd(e,r)`]</small>
+- **Fizzling out.** A potato that runs out of flight time (3 s × Duration) also explodes where it is, so the blast is never lost. <small>[sim-HQr6OS1G.js: `n.fuseBlast[r]>0&&Wd(e,r)`]</small>
 - Pierce bonuses from items and passives add hops, because the hop count is the potato's pierce. The hop range is not scaled by Area.
 
 ## Tips

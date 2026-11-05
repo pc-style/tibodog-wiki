@@ -7,8 +7,8 @@ Every 2.2 s it sends 3 rings (2 plus Tibo's built-in +1 amount, see [Stats](/sta
 ## How it works
 
 - The rings work like [Mash Wave](/weapons/mash-wave)'s: each stays centred where Tibo was when it was released, its edge band is 12 × √Area + 6 units deep, and it hits each pest once.
-- The slow uses the game's `slow` status, which multiplies speed by 1 − `factor`. A factor of 0.4 is a 40% slow. <small>[sim-CrpXuTSY.js: `let l=t.slowT[i]>0?1-t.slowF[i]:1`]</small>
-- **Clumps.** The 6 clumps start at Tibo and fly outward in a full circle (`spread` π on each side), starting from a different angle each time. Each deals the full wave damage (`damageMult` 1), passes through every pest, and flies at 90 units/s for 1.4 s × Duration. Clumps that hit one pest share a 0.3 s cooldown per weapon (`rehit`). <small>[sim-CrpXuTSY.js: `return!(e.tick-r.hitStamp[i]<e.projectiles.rehit[t]||(r.hitStamp[i]=e.tick,0))`]</small>
+- The slow uses the game's `slow` status, which multiplies speed by 1 − `factor`. A factor of 0.4 is a 40% slow. <small>[sim-HQr6OS1G.js: `let l=t.slowT[i]>0?1-t.slowF[i]:1`]</small>
+- **Clumps.** The 6 clumps start at Tibo and fly outward in a full circle (`spread` π on each side), starting from a different angle each time. Each deals the full wave damage (`damageMult` 1), passes through every pest, and flies at 90 units/s for 1.4 s × Duration. Clumps that hit one pest share a 0.3 s cooldown per weapon (`rehit`). <small>[sim-HQr6OS1G.js: `return!(e.tick-r.hitStamp[i]<e.projectiles.rehit[t]||(r.hitStamp[i]=e.tick,0))`]</small>
 
 ## Tips
 

@@ -8,7 +8,7 @@ You get it by opening a chest while Steam Vent is level 8 and you own [Root Netw
 
 The damage pulse works exactly like Steam Vent's, on its own 0.3 s timer, so cooldown and amount bonuses still do nothing for it, while area and damage bonuses do (see [Steam Vent](/weapons/steam-vent#how-it-works)).
 
-The heal is counted per pulse: 0.12 HP for each enemy inside the cloud, capped at 2 HP. <small>[sim-CrpXuTSY.js: `n.heal!==void 0&&a>0&&to(e,Math.min(n.heal*a,n.healCap??2))`]</small> The cap is reached at 17 enemies, which works out to at most about 6.7 HP per second. The heal is added directly to Tibo's HP, up to max HP, and no stat modifies it.
+The heal is counted per pulse: 0.12 HP for each enemy inside the cloud, capped at 2 HP. <small>[sim-HQr6OS1G.js: `n.heal!==void 0&&a>0&&to(e,Math.min(n.heal*a,n.healCap??2))`]</small> The cap is reached at 17 enemies, which works out to at most about 6.7 HP per second. The heal is added directly to Tibo's HP, up to max HP, and no stat modifies it.
 
 ## Tips
 

@@ -6,8 +6,8 @@ You get it from a level-up card. At level 8 it deals 24 damage per tick, patches
 
 ## How it works
 
-- **Only while moving.** It drops patches only while Tibo is moving. Standing still stops new salt, though patches already on the ground keep working until they expire. <small>[sim-CrpXuTSY.js: `return t.trail===void 0?Zi(e,n,r,t.range)!==void 0:e.player.moving[e.me]===1`]</small>
-- **Patches do not stack.** Patches overlap, but a pest can take damage from this trail at most once per `hitInterval` (0.3 s), however many patches it stands on. Standing in thick salt is no worse than standing in one patch. <small>[sim-CrpXuTSY.js: `s.rehit[i]=n.trail===void 0?0:u(n.hitInterval)`]</small>
+- **Only while moving.** It drops patches only while Tibo is moving. Standing still stops new salt, though patches already on the ground keep working until they expire. <small>[sim-HQr6OS1G.js: `return t.trail===void 0?Zi(e,n,r,t.range)!==void 0:e.player.moving[e.me]===1`]</small>
+- **Patches do not stack.** Patches overlap, but a pest can take damage from this trail at most once per `hitInterval` (0.3 s), however many patches it stands on. Standing in thick salt is no worse than standing in one patch. <small>[sim-HQr6OS1G.js: `c.rehit[a]=n.trail===void 0?0:C(n.hitInterval)`]</small>
 - **Slow.** `factor` 0.45 means a slowed pest moves at 55% speed. Duration bonuses lengthen both the patches and the slow.
 - The trail has no knockback. Amount bonuses do not add extra trails.
 

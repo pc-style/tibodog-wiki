@@ -1,6 +1,6 @@
 ## Overview
 
-Coupon Book is an Uncommon item that lowers the price of everything Tibo buys with gold. Each copy adds 0.12 to the purchase discount stat. Prices are multiplied by `1 − x / (1 + x)` ([Stats](/stats#diminishing-returns)), so one copy takes 10.7% off, two take 19.4% off and three take 26.5% off. Discounts from more copies keep shrinking but never reach 100%. <small>[sim-CrpXuTSY.js: `i[r.chestPriceMult]=1-He(e.chestDiscount,n.discountK)`]</small>
+Coupon Book is an Uncommon item that lowers the price of everything Tibo buys with gold. Each copy adds 0.12 to the purchase discount stat. Prices are multiplied by `1 − x / (1 + x)` ([Stats](/stats#diminishing-returns)), so one copy takes 10.7% off, two take 19.4% off and three take 26.5% off. Discounts from more copies keep shrinking but never reach 100%. <small>[sim-HQr6OS1G.js: `i[r.chestPriceMult]=1-He(e.chestDiscount,n.discountK)`]</small>
 
 It has weight 6 out of 78 among Uncommon items, about 1.9% of item rolls at luck 0, which makes it the rarest Uncommon item. It has no evolution.
 
@@ -10,7 +10,7 @@ The discount applies to:
 
 - [Potato Crates](/points-of-interest#potato-crate), whose price rises with every crate bought.
 - [Fry Cart](/points-of-interest#fry-cart) items.
-- [Tater Slots](/points-of-interest#tater-slots) spins, which cost half the current crate price, rounded up. <small>[sim-CrpXuTSY.js: `Math.ceil(_o(e)*e.cfg.taterSlots.priceFraction)`]</small>
+- [Tater Slots](/points-of-interest#tater-slots) spins, which cost half the current crate price, rounded up. <small>[sim-HQr6OS1G.js: `Math.ceil(_o(e)*e.cfg.taterSlots.priceFraction)`]</small>
 - Dog level training at the [Dog Kennel](/points-of-interest#dog-kennel).
 
 It does not change [chest](/chests) rewards. The [Microwave](/points-of-interest#microwave) currently costs an item rather than gold, so the discount does not matter there.

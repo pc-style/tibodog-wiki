@@ -6,7 +6,7 @@ You get it by opening a chest while Starch Bolt is level 8 and you own [Sproutin
 
 ## How it works
 
-The targeting rules are the same as Starch Bolt's: the weapon waits until an enemy is within range, then picks distinct random targets inside that circle, and all strikes land in the same instant. If fewer than 9 enemies are in range, the remaining strikes are skipped. <small>[sim-CrpXuTSY.js: `for(let o=0;o<r.amount;o++){let o=Qi(e,n.range,i);if(o===void 0)return;`]</small> Its catalyst also keeps paying off: every extra projectile from Sprouting Eyes is one more strike per cast. Since you need Sprouting Eyes to evolve, which gives +1 projectile from its first level, a fresh Thunder Tuber normally strikes at least 10 enemies per cast when that many are in range.
+The targeting rules are the same as Starch Bolt's: the weapon waits until an enemy is within range, then picks distinct random targets inside that circle, and all strikes land in the same instant. If fewer than 9 enemies are in range, the remaining strikes are skipped. <small>[sim-HQr6OS1G.js: `for(let o=0;o<r.amount;o++){let o=Qi(e,n.range,i);if(o===void 0)return;`]</small> Its catalyst also keeps paying off: every extra projectile from Sprouting Eyes is one more strike per cast. Since you need Sprouting Eyes to evolve, which gives +1 projectile from its first level, a fresh Thunder Tuber normally strikes at least 10 enemies per cast when that many are in range.
 
 ## Tips
 

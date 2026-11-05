@@ -7,7 +7,7 @@ Compared with a max-level Potato Rain (14 potatoes, 54 damage, every 4.1 s), it 
 ## How it works
 
 - Potatoes land the same way as Potato Rain's: random points around Tibo, each after 0.4 s plus a random time of up to the weapon's duration (2 s, or 2.5 s with Tibo's base +25% duration).
-- **Gold on kill.** Each potato hit tags the pest with `goldOnKill` 0.1. When the pest dies, that value is added to its normal gold-drop chance, so a golden potato kill has a 10-percentage-point higher chance to drop a gold coin. <small>[sim-CrpXuTSY.js: `i.next()<r.goldChance[t]+r.killGold[t]`]</small>
+- **Gold on kill.** Each potato hit tags the pest with `goldOnKill` 0.1. When the pest dies, that value is added to its normal gold-drop chance, so a golden potato kill has a 10-percentage-point higher chance to drop a gold coin. <small>[sim-HQr6OS1G.js: `r.next()<n.goldChance[t]+n.killGold[t]`]</small>
 - The tag is overwritten by each later hit, so only the last hit before the pest dies decides whether the bonus applies. A pest that a golden potato damages but another weapon finishes off does not get it.
 
 ## Tips

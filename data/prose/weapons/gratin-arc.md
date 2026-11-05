@@ -8,7 +8,7 @@ You get it by opening a chest while Starch Chain is level 8 and you own [Hot Sau
 
 The chaining follows the same rules as Starch Chain: pierce is the number of jumps (capped at 60), each jump goes to the nearest enemy not yet hit by that arc, and jump distance scales with the square root of area.
 
-The crit bonus is added straight to the hit's crit chance, after Tibo's crit points have been converted into a chance (see [Stats](/stats#crit)). It is not subject to the diminishing returns that apply to crit points. <small>[sim-CrpXuTSY.js: `let l=s.critChance+o.critBonus[i];l>0&&e.rng.next()<l&&(u*=s.critMult,d=!0)`]</small> For example, with no other crit sources, Hot Sauce at level 5 gives 0.3 crit points, about a 23% crit chance, so Gratin Arc hits crit about 48% of the time. A crit multiplies damage by 2 plus Tibo's crit damage.
+The crit bonus is added straight to the hit's crit chance, after Tibo's crit points have been converted into a chance (see [Stats](/stats#crit)). It is not subject to the diminishing returns that apply to crit points. <small>[sim-HQr6OS1G.js: `let c=o.critChance+a.critBonus[r];c>0&&e.rng.next()<c&&(l*=o.critMult,u=!0)`]</small> For example, with no other crit sources, Hot Sauce at level 5 gives 0.3 crit points, about a 23% crit chance, so Gratin Arc hits crit about 48% of the time. A crit multiplies damage by 2 plus Tibo's crit damage.
 
 ## Tips
 

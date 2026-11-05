@@ -7,9 +7,9 @@ After the announcement, 26 [Fry Fly Swarm](/enemies/swarm-fly) pests enter from 
 ## How it works
 
 - **Geometry.** The game picks a random direction. The flies spawn at the normal spawn distance on the opposite side, in a block 240 units wide (120 to each side of Tibo's position) and up to 60 units deep, and all fly the same way.
-- **No homing.** Each fly keeps flying in a straight line at its own speed and never turns towards Tibo. <small>[sim-CrpXuTSY.js: ``case`swarm`:i.vx[t]=i.tx[t]*i.speed[t],i.vy[t]=i.ty[t]*i.speed[t]``]</small>
-- **Count.** 26 × the enemy-count multiplier, capped at 2×. That multiplier stays 1 until overtime (after 20:00, or 21:00 on Easy; see [Enemy scaling](/enemy-scaling)). The swarm is therefore 26 flies for most of a run, 39 in the first overtime minute and 52 after that. <small>[sim-CrpXuTSY.js: `f=Math.round(t.count*Math.min(2,ma(e.scale,e.cfg,e.runClock).count))`]</small>
-- **Despawn.** A fly is removed 14 seconds after it spawns, or as soon as it is about 460 units from Tibo, and drops nothing. <small>[sim-CrpXuTSY.js: `r.tx[f]=l,r.ty[f]=u,r.despawnAt[f]=e.time+14`]</small>
+- **No homing.** Each fly keeps flying in a straight line at its own speed and never turns towards Tibo. <small>[sim-HQr6OS1G.js: ``case`swarm`:i.vx[t]=i.tx[t]*i.speed[t],i.vy[t]=i.ty[t]*i.speed[t]``]</small>
+- **Count.** 26 × the enemy-count multiplier, capped at 2×. That multiplier stays 1 until overtime (after 20:00, or 21:00 on Easy; see [Enemy scaling](/enemy-scaling)). The swarm is therefore 26 flies for most of a run, 39 in the first overtime minute and 52 after that. <small>[sim-HQr6OS1G.js: `f=Math.round(t.count*Math.min(2,ma(e.scale,e.cfg,e.runClock).count))`]</small>
+- **Despawn.** A fly is removed 14 seconds after it spawns, or as soon as it is about 460 units from Tibo, and drops nothing. <small>[sim-HQr6OS1G.js: `r.tx[f]=c,r.ty[f]=l,r.despawnAt[f]=e.time+14`]</small>
 - **Full field.** The event is skipped (with no announcement) if the enemy pool is at its cap of 550. If the cap is reached partway through, fewer flies spawn.
 
 ## Tips

@@ -8,7 +8,7 @@ Its base cooldown is 45 s, compared with 59.9 s for a max-level Reset Button. Th
 
 - **Kills with drops.** `keepDrops` turns off both drawbacks of Reset Button. Pests it kills drop their XP, gold and other loot normally, and the pickup-erasing step is skipped.
 - **Boss hit.** `bossHitMult` 1.6 multiplies the 5% boss hit (`reset.bossHitFraction`) to 8% of each boss's max HP. As with Reset Button, this hit cannot bring a boss below 1 HP.
-- **Heal.** Each activation restores 30 HP, capped at Tibo's max HP. <small>[sim-CrpXuTSY.js: `r.heal!==void 0&&to(e,r.heal)`]</small>
+- **Heal.** Each activation restores 30 HP, capped at Tibo's max HP. <small>[sim-HQr6OS1G.js: `n.heal!==void 0&&to(e,n.heal)`]</small>
 - Like Reset Button, it only affects things overlapping the 320 × 320 play area centred on Tibo. It fires whenever it is off cooldown and any pest or boss is alive.
 
 ## Tips

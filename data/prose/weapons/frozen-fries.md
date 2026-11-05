@@ -6,9 +6,9 @@ Frozen Fries is one of the possible starting weapons of a standard run (see [Lev
 
 ## How it works
 
-- **Targeting**: it fires only when a pest is within 0.7 × the larger side of the play field (224 units on the 320 × 320 field) and aims at the nearest one. <small>[sim-CrpXuTSY.js: `function pp(e){return .7*Math.max(e.field.width,e.field.height)}`]</small>
-- **Volley spread**: the first fry of a volley flies straight at the target; each later fry gets a random angle offset that grows with its place in the volley (up to ±0.08 rad × its index), so bigger volleys fan out. <small>[sim-CrpXuTSY.js: `hp(e,pp(e))+e.rng.range(-.08,.08)*c`]</small>
-- **Freeze**: a frozen pest stops moving. The freeze lasts 1 s times Tibo's duration stat, and a new freeze never shortens one already running. **Bosses cannot be frozen**: the freeze status is skipped for them. <small>[sim-CrpXuTSY.js: ``case`freeze`:r||(e.freezeT[t]=Math.max(e.freezeT[t],n.seconds*i))``]</small>
+- **Targeting**: it fires only when a pest is within 0.7 × the larger side of the play field (224 units on the 320 × 320 field) and aims at the nearest one. <small>[sim-HQr6OS1G.js: `function pp(e){return .7*Math.max(e.field.width,e.field.height)}`]</small>
+- **Volley spread**: the first fry of a volley flies straight at the target; each later fry gets a random angle offset that grows with its place in the volley (up to ±0.08 rad × its index), so bigger volleys fan out. <small>[sim-HQr6OS1G.js: `hp(e,pp(e))+e.rng.range(-.08,.08)*i`]</small>
+- **Freeze**: a frozen pest stops moving. The freeze lasts 1 s times Tibo's duration stat, and a new freeze never shortens one already running. **Bosses cannot be frozen**: the freeze status is skipped for them. <small>[sim-HQr6OS1G.js: ``case`freeze`:r||(e.freezeT[t]=Math.max(e.freezeT[t],n.seconds*i))``]</small>
 - **Pierce**: a fry with pierce N hits N + 1 pests, as with other projectiles.
 
 ## Tips

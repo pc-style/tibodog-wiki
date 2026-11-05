@@ -6,7 +6,7 @@ Every 0.6 s, a moving Tibo sprays 6 fries (raw Amount 5 plus his base +1 project
 
 ## How it works
 
-The volley rules are the same as [Tailgate Fries](/weapons/tailgate-fries#how-it-works). Whether a volley is a full spray or a drip is decided when it starts: if Tibo is still at that moment, only one fry is fired. <small>[sim-CrpXuTSY.js: `t.volleyLeft=Jf(e)?1:r.amount`]</small>
+The volley rules are the same as [Tailgate Fries](/weapons/tailgate-fries#how-it-works). Whether a volley is a full spray or a drip is decided when it starts: if Tibo is still at that moment, only one fry is fired. <small>[sim-HQr6OS1G.js: `t.volleyLeft=Jf(e)?1:r.amount`]</small>
 
 ## Tips
 

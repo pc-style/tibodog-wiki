@@ -7,7 +7,7 @@ Compared with a max-level Root Cellar (38 damage, re-hit every 1.6 s), it hits a
 ## How it works
 
 - The ring works the same way as Root Cellar's. It is always active, hits pests touching the band between the inner and outer edge, and skips pests fully inside. Its 1 s cooldown is the wait before the same pest can be hit again.
-- **Freeze outlasts the re-hit.** Freeze and slow durations are multiplied by Tibo's duration stat, so with the base +25% duration a pest stays frozen for about 1.4 s. That is longer than the 1 s re-hit time, so a pest frozen inside the band is hit and frozen again before it thaws. It stays locked in the band until it dies or something else knocks it out. Slow Cooker levels lengthen the freeze further. <small>[sim-CrpXuTSY.js: `e.slowF[t]=Math.max(e.slowF[t],n.factor),e.slowT[t]=Math.max(e.slowT[t],n.seconds*i)`]</small>
+- **Freeze outlasts the re-hit.** Freeze and slow durations are multiplied by Tibo's duration stat, so with the base +25% duration a pest stays frozen for about 1.4 s. That is longer than the 1 s re-hit time, so a pest frozen inside the band is hit and frozen again before it thaws. It stays locked in the band until it dies or something else knocks it out. Slow Cooker levels lengthen the freeze further. <small>[sim-HQr6OS1G.js: `e.slowF[t]=Math.max(e.slowF[t],n.factor),e.slowT[t]=Math.max(e.slowT[t],n.seconds*i)`]</small>
 - Bosses get the slow (`factor` 0.5, so half speed) because they cannot be frozen.
 
 ## Tips

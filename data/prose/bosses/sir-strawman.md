@@ -12,7 +12,7 @@ Sir Strawman is a smaller version of the Harvester's fight: a short charge and a
 
 ### Lance charge
 
-When the attack is ready, Sir Strawman stops and locks onto the direction Tibo is in at that moment. <small>[sim-CrpXuTSY.js: `l.state[t]=1,l.timer[t]=i.telegraph,l.timer2[t]=i.telegraph,l.tx[t]=a/u,l.ty[t]=o/u`]</small> A 22-unit-wide lane shows its path for 0.8 s, then it rushes along it at speed 280 for 0.7 s, covering about 196 units. The hit comes from touching it during the rush, and contact damage is ×1.5 while charging (27 before time scaling). Its hitbox stays at its normal radius of 15, because the lane is narrower than its body.
+When the attack is ready, Sir Strawman stops and locks onto the direction Tibo is in at that moment. <small>[sim-HQr6OS1G.js: `c.state[t]=1,c.timer[t]=n.telegraph,c.timer2[t]=n.telegraph,c.tx[t]=r/l,c.ty[t]=a/l`]</small> A 22-unit-wide lane shows its path for 0.8 s, then it rushes along it at speed 280 for 0.7 s, covering about 196 units. The hit comes from touching it during the rush, and contact damage is ×1.5 while charging (27 before time scaling). Its hitbox stays at its normal radius of 15, because the lane is narrower than its body.
 
 ### Straw fan
 
