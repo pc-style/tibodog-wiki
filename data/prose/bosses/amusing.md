@@ -1,16 +1,20 @@
 ## Overview
 
-amusing is the first boss of a run. It arrives at 2:00 on the [wave schedule](/bosses#wave-schedule), a minute after the first elite. It is the weakest boss: 650 base HP, which is about 423 on Normal after the [difficulty's](/modes) ×0.65 boss HP multiplier, and 618 on Nightmare (×0.95). A higher curse stat raises this further ([Curse](/curse)). It walks at speed 32, about half of Tibo's base move speed of 62, so Tibo can always walk away from it.
+amusing is the first boss of a run. It arrives at 2:00 on the [wave schedule](/bosses#wave-schedule), a minute after the first elite. It is the weakest boss: 650 base HP, which is about 423 on Normal after the [difficulty's](/modes) ×0.65 boss HP multiplier, and 618 on Nightmare (×0.95) before curse. Nightmare starts every run with one curse, which adds 10% to boss HP, so on Nightmare amusing actually has about 679. A higher curse stat raises this further ([Curse](/curse)). It walks at speed 32, about half of Tibo's base move speed of 62, so Tibo can always walk away from it.
 
 It is not in the post-20:00 boss rotation ([After 20:00](/bosses#after-20-00)), and a [Boss Lair](/points-of-interest#boss-lair) never wakes it, because lairs pick from the second boss in the order onwards. In a normal run you meet it once, unless cursed extra bosses add copies.
 
 On death it drops an XP gem worth 40 (times the biome's XP multiplier), a 25-gold coin and a chest ([Chests](/chests)). Killing it also reveals [Alex](/visitors#alex), who joins in 25% of normal runs and always in Story. <small>[sim-HQr6OS1G.js: `` n.def[t]===bl&&Ze(e.alex)===`pending` ``]</small> amusing is also the scripted boss of [Story mode](/story-mode), where it has extra HP, damage and speed.
+
+**Measured** (headless `tools/play.mjs`, build `main-B2gf34bA`, seed `wiki`, standard mode, `--god`; the clock warped to 2 s before each minute and stepped across it; level-up offers taken first-in-order except Rotten Spud, so curse stays at the difficulty's start value): it spawned at exactly 2:00 on all four difficulties, with 325 HP on Easy, 422.5 on Normal, 455 on Hard and 679.25 on Nightmare. The Nightmare figure is 10% above base HP × the difficulty multiplier because Nightmare starts every run with one curse, and boss HP is multiplied by 1 + curse. <small>[sim-HQr6OS1G.js: `startCurses:1,tierLag:2,wallPests:.6`]</small> <small>[sim-HQr6OS1G.js: `n.maxHp[r]=i.hp*t.hpMult*(1+e.loadout.stats.curse)`]</small> Seeds `s1` to `s4` gave the same Normal times and HP.
 
 ## Fight
 
 amusing walks straight at Tibo. Every 3.6 s it stops for its hug, and between hugs it cycles through three bullet patterns in a fixed order: fan, ring, spiral, then the fan again. A new pattern starts every 2.2 s at base. The bullet-pattern clock only runs while the boss is walking, so it pauses during the hug. <small>[sim-HQr6OS1G.js: `d===0?(Uu(e,o,s,c,l,u),Hu(e,o,s,t)):d===1?Wu(e,o,s,t):Gu(e,o,s,t)`]</small> The first hug comes about 2.2 s after it spawns, and the first pattern about 1.1 s after.
 
 Enemy bullets scale with run time ([Enemy scaling](/enemy-scaling#enemy-bullets)): count +4% per minute, fire rate +3% and speed +1.5%. At 2:00 that only changes the ring, which grows from 12 to 13 shots, and shortens the pattern interval to about 2.1 s. <small>[sim-HQr6OS1G.js: `a.count[o]=Math.max(1,Math.round(t.count*d.bulletCount))`]</small>
+
+**Measured** (headless `tools/play.mjs`, build `main-B2gf34bA`, seed `wiki`, standard mode, `--god`, Normal; the clock warped to just before 2:00; every other boss and every pest removed each tick, so the sim's hostile-shot counter only counts this boss): 5-shot fans 1.85 s and 2.22 s after it spawned, two 13-shot rings at 5.68 s and 6.23 s, then 12 two-shot spiral bursts from 7.67 s to 8.90 s (about 0.11 s apart), and the next fan at 11.40 s. Easy and Nightmare gave the same counts and timings, and so did seed `s2`.
 
 ### Hug
 

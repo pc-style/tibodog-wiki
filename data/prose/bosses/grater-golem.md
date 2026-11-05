@@ -1,8 +1,10 @@
 ## Overview
 
-Grater Golem is the tenth boss. It arrives at 16:00 on the [wave schedule](/bosses#wave-schedule), with a [Ring of Hay Bales](/events/bale-ring). It is the first boss after the ×3 boss HP step at minute 16, so its 7400 base HP becomes 22,200. That is about 14,430 on Normal (boss HP ×0.65, see [Modes](/modes)) and 21,090 on Nightmare, before any [curse](/curse). Its contact damage of 40 is the second highest of any boss, after [The Harvester](/bosses/harvester). It walks at speed 34.
+Grater Golem is the tenth boss. It arrives at 16:00 on the [wave schedule](/bosses#wave-schedule), with a [Ring of Hay Bales](/events/bale-ring). It is the first boss after the ×3 boss HP step at minute 16, so its 7400 base HP becomes 22,200. That is about 14,430 on Normal (boss HP ×0.65, see [Modes](/modes)) and 21,090 on Nightmare before [curse](/curse). Nightmare starts every run with one curse, which adds 10% to boss HP, so there it actually has about 23,199. <small>[sim-HQr6OS1G.js: `startCurses:1,tierLag:2,wallPests:.6`]</small> <small>[sim-HQr6OS1G.js: `n.maxHp[r]=i.hp*t.hpMult*(1+e.loadout.stats.curse)`]</small> Its contact damage of 40 is the second highest of any boss, after [The Harvester](/bosses/harvester). It walks at speed 34.
 
 It is part of the post-20:00 rotation, so a long run meets it again at 24:00, 31:00 and every 7 minutes after that ([After 20:00](/bosses#after-20-00)). A [Boss Lair](/points-of-interest#boss-lair) can also wake it. It drops an XP gem worth 170, a 25-gold coin and a chest ([Chests](/chests)). It has no Nightmare variants.
+
+**Measured** (headless `tools/play.mjs`, build `main-B2gf34bA`, seed `wiki`, standard mode, `--god`; the clock warped to 2 s before each minute and stepped across it; level-up offers taken first-in-order except Rotten Spud, so curse stays at the difficulty's start value): it spawned at exactly 16:00 on all four difficulties, with 11,100 HP on Easy, 14,430 on Normal, 15,540 on Hard and 23,199 on Nightmare. Seeds `s1` to `s4` gave the same Normal times and HP.
 
 ## Fight
 
@@ -19,6 +21,8 @@ The line itself deals no damage; the Golem's body does. During the dash its cont
 Every 3 s at base, the Golem fires one ring of 14 shots at speed 90, 14 damage each, after a 0.8 s warning. Each shot sways from side to side as it flies, about 10 units either way, 1.2 times a second. Neighbouring shots sway in opposite directions, so the gaps between them keep opening and closing. <small>[sim-HQr6OS1G.js: `let n=j*e.hz;return e.px*n*g(n*t)`]</small>
 
 Enemy bullets scale with time ([Enemy scaling](/enemy-scaling#enemy-bullets)). At 16:00 each ring has 23 shots (14 × 1.64, rounded), they fly at about 112, and a ring comes about every 2 s.
+
+**Measured** (headless `tools/play.mjs`, build `main-B2gf34bA`, seed `wiki`, standard mode, `--god`, Normal; the clock warped to just before 16:00; every other boss and every pest removed each tick, so the sim's hostile-shot counter only counts this boss): 23-shot rings 2.25 s, 6.18 s, 10.12 s and 12.15 s after it spawned. Easy and Nightmare also gave 23-shot rings.
 
 ## Tips
 

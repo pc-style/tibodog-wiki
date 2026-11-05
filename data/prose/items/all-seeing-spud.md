@@ -7,6 +7,7 @@ Each eye still deals 40% of the max HP of the enemy that died, as with Wandering
 ## How it works
 
 - **Trigger and stacking** work as for Wandering Eyes: any kill can trigger it, including kills by the eyes. It fires at most 8 times per second per copy, and with *n* copies the chance is `1 − 0.65^n`.
+- **Measured** (build 41 `main-B2gf34bA.js`, headless `tools/play.mjs`, standard mode, normal difficulty; copies added directly with `giveItem`, skipping the evolution; Peeler, Small Fry, Tot Toss, Chip Shuriken, Starch Chain and Seeker Sprouts each given 5 times with `give`; `warp(240)`; HP refilled every tick; Tibo walking a slow circle; later level-ups taking the first offer; 180 s per seed). With one copy, 34.6% of 60,501 kill rolls fired on seeds `s1`–`s15` (expected 35%; about two standard errors low). With three copies, 72.7% of 29,152 fired on seeds `s1`–`s5` (expected 72.5%). With the chance set to 100% in the scenario (120 s, seeds `s1`–`s3`), one copy fired 7.75–7.90 times per second and two copies 15.49–15.76.
 - **Pierce** is fixed at 2. Pierce bonuses from [Sharp Peeler](/items/sharp-peeler) do not apply, and the eyes' lifetime ignores duration.
 - One trigger can now deal up to 4 eyes × 3 hits × 40% of the dead enemy's max HP, 4.8× that HP in total, if every eye finds three targets.
 

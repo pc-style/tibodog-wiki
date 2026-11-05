@@ -12,6 +12,8 @@ Hay bales are tanky and very slow: 400 base HP, 14 contact damage and a speed of
 - **Despawn.** A bale is removed at 22 seconds, or earlier if it ends up more than about 460 units from Tibo. A removed bale gives nothing. <small>[sim-HQr6OS1G.js: `if(s>0&&e.time>=s){i.pool.kill(o);continue}`]</small>
 - **Full field.** Like other non-gold events, the ring is skipped (with no announcement) if the enemy pool is already at its cap of 550.
 
+**Measured** (headless `tools/play.mjs`, build `main-B2gf34bA`, standard mode, `--god`, seed `wiki`; the clock warped to 2 s before each minute with pests removed first): the ring fired at 6:00, 9:00, 13:00 and 16:00, and on Normal also at 19:00, 21:00, 23:00 and 25:00. Each ring had 5 bales on Easy, 11 on Normal and Hard, and 22 on Nightmare.
+
 ## Tips
 
 - The ring closes on a fixed point, so walking out through a gap takes it out of play. On Normal, neighbouring bales start about 97 units apart, centre to centre (about 49 on Nightmare). The gaps shrink as the ring closes, so leaving early is easiest.

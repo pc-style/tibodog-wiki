@@ -12,6 +12,8 @@ It uses the same ring spawn as [Ring of Hay Bales](/events/bale-ring), but these
 - **Despawn.** Balls are removed after 16 seconds, or once they are about 460 units from Tibo.
 - **Trigger.** If the enemy pool is full (550), the alley stays unused and the event tries again while Tibo is inside.
 
+**Measured** (headless `tools/play.mjs`, build `main-B2gf34bA`, standard mode, `--god`, Tibo teleported into the first Gutterball Lanes alley found at 1:00 with pests removed first): the ring had 2 bowling balls on Easy, 3 on Normal and Hard, and 6 on Nightmare, each set to vanish 16 s later. Seeds `wiki` and `s1` to `s4` gave 3 on Normal and 6 on Nightmare every time. With `--mode story`, entering the alley fired no event.
+
 ## Tips
 
 - Because the dash direction is fixed when the windup starts, a step sideways during the 0.5-second pause makes the ball miss. A [dash](/controls) also works, since Tibo ignores normal damage while dashing.

@@ -11,6 +11,8 @@ Every 5 seconds Waffles barks and freezes every pest within 60 units of itself f
 - If no pest is in range, Waffles checks again every 0.25 s, and the interval only restarts after a bark that froze something.
 - At level 5 a pest that stays in range is frozen for about 1.56 s of every 2.6 s, roughly 60% of the time.
 
+**Measured** (build 41 `main-B2gf34bA.js`, headless `tools/play.mjs`, seed `wiki`, standard mode, normal difficulty; Waffles added at Tibo's side and trained with the sim's own dog-join and dog-level-up functions; HP refilled every tick; Tibo standing still; level-ups taking the first offer; 150 s; barks timed from the game's `dogAbility` events): the shortest gap between barks was 5 s at level 1 and 2.6 s at level 5, which was also the most common gap (32 of 43). The longer gaps are likely Waffles waiting for a pest to come in range (inference; the run did not log pest distances).
+
 ## Tips
 
 - Frozen pests take double damage from [Permafrost Fries](/weapons/permafrost-fries) (`shatter` 2), and the check only asks whether the pest is frozen, not who froze it. A Corgi therefore feeds that evolution. <small>[sim-HQr6OS1G.js: `a.shatter[r]>0&&t.freezeT[n]>0&&(l*=a.shatter[r])`]</small>

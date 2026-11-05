@@ -14,6 +14,8 @@ If Tibo holds Link and finds [Zelda](/dogs/pomchi), the two fuse into [Zelda & L
 - While Link is full, he checks every 0.25 s for a free slot, and the regrowth interval only starts once a charge has grown. So after a quiet spell, a spent charge comes back within a quarter of a second; the interval only limits hits that come close together. <small>[sim-HQr6OS1G.js: `zd(e,o,s.ability,c)?(n.cd[o]=l(Hn(s,n.level[o])),Sn(e,n.breed[o])):n.cd[o]=Md`]</small>
 - The sneeze hits pests within 50 units of Tibo; this radius does not grow with training. Push is `220 × power`, scaled down by each pest's mass as with the [Border Collie](/dogs/collie). Bosses are not pushed, and the 0.5 s freeze applies from level 5 only. <small>[run-extras-BO-3xLRW.js: `stun:l>=o.stunAt?o.stun:0`]</small>
 
+**Measured** (build 41 `main-B2gf34bA.js`, headless `tools/play.mjs`, seed `wiki`, standard mode, normal difficulty; legendary dogs enabled with the game's own `installLegendary` hook from the run-extras chunk; Link added at Tibo's side and trained with the sim's own dog-join and dog-level-up functions; HP refilled every tick, so hits still spent charges; Tibo standing still; level-ups taking the first offer; 150 s; charges timed from the game's `dogAbility` events): charges grew at least 10 s apart at level 1 and at least 6 s apart at level 5, where 6 of 8 gaps were exactly 6 s.
+
 ## Tips
 
 - Fluff blocks a hit regardless of its size, so it is worth most against boss attacks and other heavy hits. Armor, by contrast, loses value as enemy levels rise (see [Armor](/stats#armor)).

@@ -1,8 +1,10 @@
 ## Overview
 
-The Deep Freezer is the ninth boss. It arrives at 14:00 on the [wave schedule](/bosses#wave-schedule), alongside a [Golden Scarab](/events/golden-scarab). It has 6200 base HP: about 4030 on Normal (boss HP ×0.65, see [Modes](/modes)) and 5890 on Nightmare, before any [curse](/curse). It is the last boss before the ×3 boss HP step at 16:00. It moves slowly (speed 28) and deals 24 contact damage.
+The Deep Freezer is the ninth boss. It arrives at 14:00 on the [wave schedule](/bosses#wave-schedule), alongside a [Golden Scarab](/events/golden-scarab). It has 6200 base HP: about 4030 on Normal (boss HP ×0.65, see [Modes](/modes)) and 5890 on Nightmare before [curse](/curse). Nightmare starts every run with one curse, which adds 10% to boss HP, so there it actually has about 6479. <small>[sim-HQr6OS1G.js: `startCurses:1,tierLag:2,wallPests:.6`]</small> <small>[sim-HQr6OS1G.js: `n.maxHp[r]=i.hp*t.hpMult*(1+e.loadout.stats.curse)`]</small> It is the last boss before the ×3 boss HP step at 16:00. It moves slowly (speed 28) and deals 24 contact damage.
 
 It is not in the post-20:00 rotation; a [Boss Lair](/points-of-interest#boss-lair) can wake it. It drops an XP gem worth 150, a 25-gold coin and a chest ([Chests](/chests)). It has no Nightmare variants: its slam and shard fan are the same on every difficulty.
+
+**Measured** (headless `tools/play.mjs`, build `main-B2gf34bA`, seed `wiki`, standard mode, `--god`; the clock warped to 2 s before each minute and stepped across it; level-up offers taken first-in-order except Rotten Spud, so curse stays at the difficulty's start value): it spawned at exactly 14:00 on all four difficulties, with 3100 HP on Easy, 4030 on Normal, 4340 on Hard and 6479 on Nightmare. Seeds `s1` to `s4` gave the same Normal times and HP.
 
 ## Fight
 
@@ -19,6 +21,8 @@ Every 2.4 s at base, the Freezer aims at Tibo. After 0.8 s it fires nine shards 
 A shard that hits Tibo also slows him to half move speed for 1.5 s. Further hits refresh the slow but do not stack it. The slow is applied even when the hit's damage is dodged or blocked. During a dash, shards pass through Tibo without hitting at all. <small>[sim-HQr6OS1G.js: `eo(e,n.damage[t],Cr(e,n.src[t]),!1,n.level[t])&&e.counters.hostileHits++;let r=e.statuses[n.status[t]]`]</small>
 
 Enemy bullets scale with time ([Enemy scaling](/enemy-scaling#enemy-bullets)). At 14:00 the fan has 14 shards (9 × 1.56, rounded), so there is no centre shard. They launch at about 133 and a new fan starts about every 1.7 s.
+
+**Measured** (headless `tools/play.mjs`, build `main-B2gf34bA`, seed `wiki`, standard mode, `--god`, Normal; the clock warped to just before 14:00; every other boss and every pest removed each tick, so the sim's hostile-shot counter only counts this boss): 14-shard fans 1.95 s, 4.55 s, 6.25 s, 8.85 s, 10.55 s and 13.15 s after it spawned.
 
 ## Tips
 

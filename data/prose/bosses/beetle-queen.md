@@ -1,8 +1,10 @@
 ## Overview
 
-The Colorado Queen is the second boss. She arrives at 3:00 on the [wave schedule](/bosses#wave-schedule), in the same minute as an elite and a [Golden Scarab](/events/golden-scarab). She has 700 base HP: about 455 on Normal (boss HP ×0.65, see [Modes](/modes)) and 665 on Nightmare, before any [curse](/curse). She is slow (speed 30, against Tibo's base 62) and has the lowest contact damage of any boss, 14. Her danger is the brood she hatches, not her body.
+The Colorado Queen is the second boss. She arrives at 3:00 on the [wave schedule](/bosses#wave-schedule), in the same minute as an elite and a [Golden Scarab](/events/golden-scarab). She has 700 base HP: about 455 on Normal (boss HP ×0.65, see [Modes](/modes)) and 665 on Nightmare before [curse](/curse). Nightmare starts every run with one curse, which adds 10% to boss HP, so there she actually has about 732. <small>[sim-HQr6OS1G.js: `startCurses:1,tierLag:2,wallPests:.6`]</small> <small>[sim-HQr6OS1G.js: `n.maxHp[r]=i.hp*t.hpMult*(1+e.loadout.stats.curse)`]</small> She is slow (speed 30, against Tibo's base 62) and has the lowest contact damage of any boss, 14. Her danger is the brood she hatches, not her body.
 
 She is not in the post-20:00 rotation. As the second entry in the boss order, she is one of the bosses a [Boss Lair](/points-of-interest#boss-lair) can wake, early in a run. She drops an XP gem worth 40, a 25-gold coin and a chest ([Chests](/chests)).
+
+**Measured** (headless `tools/play.mjs`, build `main-B2gf34bA`, seed `wiki`, standard mode, `--god`; the clock warped to 2 s before each minute and stepped across it; level-up offers taken first-in-order except Rotten Spud, so curse stays at the difficulty's start value): it spawned at exactly 3:00 on all four difficulties, with 350 HP on Easy, 455 on Normal, 490 on Hard and 731.5 on Nightmare. Seeds `s1` to `s4` gave the same Normal times and HP.
 
 ## Fight
 
@@ -17,6 +19,8 @@ If the Queen dies during the 1 s hatch, the marks vanish and nothing hatches. <s
 ### Aimed stream
 
 Every 2.8 s at base (about 2.6 s at 3:00, because enemy fire rate rises with time; see [Enemy scaling](/enemy-scaling#enemy-bullets)), the Queen aims at Tibo. After 0.6 s she fires three bursts 0.25 s apart. Each burst is two shots in the same direction, the second slightly slower (speed 80, then about 70), so the six shots arrive as a short stream. Each deals 7 damage. The direction is fixed when the pattern starts, before the 0.6 s warning. <small>[sim-HQr6OS1G.js: `` case`aimed`:return X.angle=s,X.speed=c/(1+.15*n),X ``]</small>
+
+**Measured** (headless `tools/play.mjs`, build `main-B2gf34bA`, seed `wiki`, standard mode, `--god`, Normal; the clock warped to just before 3:00; every other boss and every pest removed each tick, so the sim's hostile-shot counter only counts this boss): streams of three 2-shot bursts about 0.22 s apart, starting 1.95 s, 5.53 s, 8.10 s and 11.67 s after she spawned.
 
 ### Nightmare changes
 

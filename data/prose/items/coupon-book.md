@@ -13,6 +13,8 @@ The discount applies to:
 - [Tater Slots](/points-of-interest#tater-slots) spins, which cost half the current crate price, rounded up. <small>[sim-HQr6OS1G.js: `Math.ceil(_o(e)*e.cfg.taterSlots.priceFraction)`]</small>
 - Dog level training at the [Dog Kennel](/points-of-interest#dog-kennel).
 
+**Measured** (build 41 `main-B2gf34bA.js`, headless `tools/play.mjs`, seed `wiki`, standard mode, normal difficulty; copies added with `giveItem`): the game's `chestPriceMult` stat read 0.8929, 0.8065 and 0.7353 for 1 to 3 copies, which is 10.7%, 19.4% and 26.5% off.
+
 It does not change [chest](/chests) rewards. The [Microwave](/points-of-interest#microwave) currently costs an item rather than gold, so the discount does not matter there.
 
 ## Tips

@@ -6,6 +6,8 @@ It has 5200 base HP, which is 3380 HP on Normal (boss HP ×0.65, see [Modes](/mo
 
 It drops a [chest](/chests), an XP gem worth 140 XP and a 25-gold coin (both multiplied by the biome's XP and gold multipliers).
 
+**Measured** (headless `tools/play.mjs`, build `main-B2gf34bA`, seed `wiki`, standard mode, `--god`; the clock warped to 2 s before each minute and stepped across it; level-up offers taken first-in-order except Rotten Spud, so curse stays at the difficulty's start value): it spawned at exactly 12:00 on all four difficulties, with 2600 HP on Easy, 3380 on Normal, 3640 on Hard and 5434 on Nightmare. The Nightmare figure is 10% above base HP × the difficulty multiplier because Nightmare starts every run with one curse, and boss HP is multiplied by 1 + curse. <small>[sim-HQr6OS1G.js: `startCurses:1,tierLag:2,wallPests:.6`]</small> <small>[sim-HQr6OS1G.js: `n.maxHp[r]=i.hp*t.hpMult*(1+e.loadout.stats.curse)`]</small> Seeds `s1` to `s4` gave the same Normal times and HP.
+
 ## Fight
 
 The Mandoline walks towards Tibo, fires a fast-spinning spiral, and every 3.4 s of walking stops to slice the ground in three lanes. A full cycle takes 4.5 s, and its first slice comes about 2 s after it spawns. It is the same on every difficulty: it has no Nightmare variants.
@@ -19,6 +21,8 @@ When the attack starts, the Mandoline locks the direction from itself to Tibo an
 Every 3.4 s of walking, after a 0.8 s warning, it fires a three-armed spiral: 14 bursts 0.1 s apart, turning at 2.2 radians per second in the opposite direction to [Late Blight](/bosses/late-blight)'s spiral. The bullets are small (radius 2) and deal 10 damage each before scaling. They leave at speed 55 and speed up steadily to 1.8× (99) by 0.9 s.
 
 Bullet count, fire rate and speed grow with run time (see [Enemy bullets](/enemy-scaling#enemy-bullets)). At its 12:00 arrival the spiral has four arms, bursts about 0.07 s apart and a top speed of about 117, and comes every 2.5 s of walking. Because the bursts come faster, the arms turn less in total (about 120° instead of 164°) and sit closer together.
+
+**Measured** (headless `tools/play.mjs`, build `main-B2gf34bA`, seed `wiki`, standard mode, `--god`, Normal; the clock warped to just before 12:00; every other boss and every pest removed each tick, so the sim's hostile-shot counter only counts this boss): spirals of 14 four-bullet bursts about 0.07 s apart, starting 2.45 s, 6.05 s, 9.65 s and 13.25 s after it spawned.
 
 ## Tips
 

@@ -7,6 +7,7 @@ Each of Tibo's weapon hits has a 3% chance to call down a meteor. The hit is hel
 ## How it works
 
 - Copies stack: with *N* copies the chance is `1 − 0.97^N`, and the limit is 3 × *N* meteors per second. That is much lower than Heavy Russet's 8 per copy: a build landing more than about 100 weapon hits per second per copy reaches it. Procs over the limit are skipped until the token bucket refills.
+- **Measured** (build 41 `main-B2gf34bA.js`, headless `tools/play.mjs`, standard mode, normal difficulty; copies added directly with `giveItem`, skipping the evolution; Peeler, Small Fry, Tot Toss, Chip Shuriken, Starch Chain and Seeker Sprouts each given 5 times with `give`; `warp(240)`; HP refilled every tick; Tibo walking a slow circle; later level-ups taking the first offer): over 180 s on seeds `s1`–`s5`, 3.04% of 21,996 rolls called a meteor with one copy (expected 3%), and 8.52% of 21,391 with three (expected 8.73%). With the chance set to 100% in the scenario (120 s, seeds `s1`–`s3`), one copy called 2.96–2.99 meteors per second and two copies 5.90–5.97.
 - The delayed hit keeps the same rules as a bonk: the 20× applies before the crit roll, so it can crit.
 - The crater is a separate hit. It can also crit, gets the elite/boss bonus, and knocks enemies back (scaled by your knockback stat).
 - The crater lands where the meteor was called. If the original target is still standing there, it takes the 20× hit and is caught in the crater too.

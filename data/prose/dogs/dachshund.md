@@ -10,6 +10,8 @@ Every 6 seconds Frank digs and scatters 6 coins around itself. Each dig also has
 - The 20% bonus chance does not grow with training, but faster digging means more rolls. At level 1 that is about 1.4 snacks and 0.6 rerolls a minute; at level 5 about 2.7 snacks and 1.2 rerolls. <small>[sim-HQr6OS1G.js: `` e.lootRng.chance(n.bonusChance)&&(G(e,e.lootRng.chance(.7)?`heal`:`reroll`,a,o-6,30) ``]</small>
 - A dig always succeeds, so Frank's timer never stalls.
 
+**Measured** (build 41 `main-B2gf34bA.js`, headless `tools/play.mjs`, seed `wiki`, standard mode, normal difficulty; Frank added at Tibo's side and trained with the sim's own dog-join and dog-level-up functions; HP refilled every tick; Tibo standing still; level-ups taking the first offer; 150 s; digs timed from the game's `dogAbility` events): the first dig came 1 s after joining, then one every 6 s at level 1 (24 of 24 gaps) and every 3.11–3.12 s at level 5 (47 of 47). The level 5 interval is 3.11 s rounded to whole 1/60 s ticks. The timer never stalled.
+
 ## Tips
 
 - Frank is the only dog that produces rerolls. The other sources are pickups, elite kills, the [Seed Vault](/points-of-interest#seed-vault) and [Tater Lanterns](/points-of-interest#tater-lantern). See [Reroll, skip and banish](/level-up#reroll-skip-and-banish).

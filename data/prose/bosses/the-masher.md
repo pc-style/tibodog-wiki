@@ -6,6 +6,8 @@ With 1300 base HP it is the weakest of the scheduled bosses after the first two:
 
 It drops a [chest](/chests), an XP gem worth 60 XP and a 25-gold coin (both multiplied by the biome's XP and gold multipliers).
 
+**Measured** (headless `tools/play.mjs`, build `main-B2gf34bA`, seed `wiki`, standard mode, `--god`; the clock warped to 2 s before each minute and stepped across it; level-up offers taken first-in-order except Rotten Spud, so curse stays at the difficulty's start value): it spawned at exactly 4:00 on all four difficulties, with 650 HP on Easy, 845 on Normal, 910 on Hard and 1358.5 on Nightmare. The Nightmare figure is 10% above base HP × the difficulty multiplier because Nightmare starts every run with one curse, and boss HP is multiplied by 1 + curse. <small>[sim-HQr6OS1G.js: `startCurses:1,tierLag:2,wallPests:.6`]</small> <small>[sim-HQr6OS1G.js: `n.maxHp[r]=i.hp*t.hpMult*(1+e.loadout.stats.curse)`]</small> Seeds `s1` to `s4` gave the same Normal times and HP.
+
 ## Fight
 
 The Masher walks towards Tibo, fires a single bullet ring, and every 3.2 s of walking stops to slam. A full walk-and-slam cycle takes 4.4 s. Its first slam comes about 1.9 s after it spawns.
@@ -17,6 +19,8 @@ The Masher marks a circle of radius 38 centred exactly where Tibo is standing wh
 ### Potato ring
 
 Every 3 s of walking it fires one ring of 10 bullets after a 0.7 s warning, at speed 70 with 9 damage each before scaling. Bullet count, fire rate and speed grow with run time (see [Enemy bullets](/enemy-scaling#enemy-bullets)), so at its 4:00 arrival this is a ring of 12 bullets at about speed 74, every 2.7 s of walking.
+
+**Measured** (headless `tools/play.mjs`, build `main-B2gf34bA`, seed `wiki`, standard mode, `--god`, Normal; the clock warped to just before 4:00; every other boss and every pest removed each tick, so the sim's hostile-shot counter only counts this boss): 12-bullet rings 2.15 s, 6.03 s, 9.92 s and 13.80 s after it spawned. Easy and Nightmare also gave 12-bullet rings.
 
 ### On Nightmare
 

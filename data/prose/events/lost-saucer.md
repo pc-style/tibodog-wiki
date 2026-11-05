@@ -13,6 +13,8 @@ It is a loot runner, like the scheduled [Golden Scarab](/events/golden-scarab): 
 - **Escape.** It vanishes 20 seconds after appearing, or once it is about 460 units from Tibo, without dropping its item.
 - **Coin value.** Coins from pests killed inside the circle use Crop Circle's own gold and XP multipliers (×1.1 gold, ×1.2 XP), which also apply to the saucer's kill coin and XP gem.
 
+**Measured** (headless `tools/play.mjs`, build `main-B2gf34bA`, standard mode, `--god`, Tibo teleported into the first crop circle found at about 1:06 with pests removed first): one saucer spawned, set to vanish 20 s later, on all four difficulties. With `--mode story`, entering the circle fired no event.
+
 ## Tips
 
 - The event starts as soon as Tibo crosses the edge, so the clock is running from the moment you enter. Chase right away: the saucer starts only 40 units off and is slower than Tibo.

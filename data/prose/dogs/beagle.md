@@ -12,6 +12,8 @@ After a sniff, a short scent trail runs from its nose towards the target. The ta
 
 Each coin is a normal gold pickup worth 1 gold, multiplied by Tibo's gold gain, so Tibo still has to collect it. Coin counts are `round(3 × power)`: 3, 4, 6, 7 and 8 at levels 1 to 5. That works out to about 0.4 gold per second at level 1 and 1.9 at level 5 before gold gain.
 
+**Measured** (build 41 `main-B2gf34bA.js`, headless `tools/play.mjs`, seed `wiki`, standard mode, normal difficulty; Scout added at Tibo's side and trained with the sim's own dog-join and dog-level-up functions; HP refilled every tick; Tibo standing still; level-ups taking the first offer; 150 s; sniffs timed from the game's `dogAbility` events): the first sniff came 1 s after joining, then one every 8 s at level 1 (18 of 18 gaps) and every 4.15 s at level 5 (35 of 35). 4.15 s is the 4.147 s interval rounded to whole 1/60 s ticks.
+
 ## Tips
 
 - Treat Scout as a luck dog that also scouts, not as a gold dog. The [Dachshund](/dogs/dachshund) drops 6 coins every 6 s at level 1, more than twice Scout's 3 coins every 8 s, and adds gold gain on top.

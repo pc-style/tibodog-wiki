@@ -8,6 +8,8 @@ It has weight 6 out of 53 among Rare items, about 1.1% of item rolls at luck 0. 
 
 Crit chance and crit damage both apply to every damage instance, not just weapon hits. Burn ticks, item blasts and Boom Spud explosions can crit too. Tibo starts with no crit chance. It comes from [Hot Sauce](/passives/hot-sauce), [Hot Pepper](/items/hot-pepper) and weapons with their own crit bonus, such as [Gratin Arc](/weapons/gratin-arc) ([Stats](/stats#crit)).
 
+**Measured** (build 41 `main-B2gf34bA.js`, headless `tools/play.mjs`, seed `wiki`, standard mode, normal difficulty; copies added with `giveItem`): the game's `critMult` stat read 2.25, 2.5 and 2.75 for 1 to 3 copies. Each copy adds the same 0.25.
+
 ## Tips
 
 - Crit Chip does nothing without crit chance. Each chip raises average damage by crit chance × 0.25 of a normal hit. With maxed Hot Sauce (23.1% crit) that is +5.8% of a normal hit, or about 4.7% more than Tibo dealt before.

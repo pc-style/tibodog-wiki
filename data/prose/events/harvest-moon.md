@@ -11,6 +11,8 @@ Harvest Moon is a scheduled gold rush. The [wave table](/bosses) fires it at 8:0
 - **Always fires.** Other events are skipped when the enemy pool is full, but gold rushes skip that check. <small>[sim-HQr6OS1G.js: ``t.effect.kind!==`goldRush`&&!Aa(e)``]</small>
 - Coin values at drop time are on [Pickups](/pickups): pests drop 1 × the biome's gold multiplier, elites 10 ×, bosses 25 ×.
 
+**Measured** (headless `tools/play.mjs`, build `main-B2gf34bA`, standard mode, `--god`, seed `wiki`; the clock warped to 2 s before each minute): Harvest Moon was announced at 8:00 and 15:00 on all four difficulties, on the same tick as a Fry Fly Swarm, and at no other minute up to 25:00 on Normal. The only pests spawned on that tick were the swarm's 26 flies and ordinary wave pests.
+
 ## Tips
 
 - The window is a good moment to collect coins you left lying around. A Magnet pickup, a [Tater Magnet](/points-of-interest#tater-magnet) or a Tidy [Grok Bot](/grok-bots) pulls them in quickly.

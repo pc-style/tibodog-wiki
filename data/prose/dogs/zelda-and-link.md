@@ -23,6 +23,8 @@ The fused dog does both jobs on one shared timer. Every 5 seconds it marks elite
 
 The shared beat always counts as used, even when there is nothing to mark and the fluff is full. So the fused dog loses one small edge each dog has alone. Link alone regrows a spent charge within 0.25 s after a quiet spell; Zelda alone marks a new elite as soon as it comes in range. The fused dog waits for its next beat for both.
 
+**Measured** (build 41 `main-B2gf34bA.js`, headless `tools/play.mjs`, standard mode, normal difficulty; legendary dogs enabled with the game's own `installLegendary` hook from the run-extras chunk; the fused dog added directly at Tibo's side with the sim's own dog-join and dog-level-up functions, without a fusion; HP refilled every tick; level-ups taking the first offer; beats timed from the game's `dogAbility` events). At level 1, with Tibo walking a slow circle for 240 s on seeds `s1`–`s3`, the beat came every 5 s (47 of 47 gaps on each seed). Eclipses fell on the beats at 51, 101, 151 and 201 s, the first beat at least 50 s after the last. At level 5, with Tibo standing still for 150 s on seed `wiki`, the beat came every 3 s (49 of 49).
+
 ## Tips
 
 - One pack slot for both legendaries is the main gain: it leaves two slots for other dogs.

@@ -12,6 +12,8 @@ Every 4 seconds, if an enemy is within 150 units, Zoom sprints 150 units straigh
 - The damage is `30 × power × Tibo's damage multiplier`, so [Butter Pat](/passives/butter-pat) and other damage bonuses raise it. Each hit then goes through the normal hit rules: elite damage, [Zelda's](/dogs/pomchi) marks and crits all apply.
 - If nothing is within 150 units, Zoom checks again every 0.25 s.
 
+**Measured** (build 41 `main-B2gf34bA.js`, headless `tools/play.mjs`, seed `wiki`, standard mode, normal difficulty; Zoom added at Tibo's side and trained with the sim's own dog-join and dog-level-up functions; HP refilled every tick; Tibo standing still; level-ups taking the first offer; 150 s; sprints timed from the game's `dogAbility` events): once enemies were around, Zoom sprinted every 4 s at level 1 (36 of 36 gaps) and at least 2.31 s apart at level 5, which is the 2.31 s interval rounded to whole ticks.
+
 ## Tips
 
 - Zoom averages 7.5 damage per second at level 1 and about 46 at level 5, before Tibo's damage multiplier. Every enemy on the line takes the full hit, so Zoom is best against dense crowds and lines of pests walking at Tibo.

@@ -6,9 +6,11 @@ It runs straight at Tibo at speed 44 and hurts on contact for 14, with 95 base H
 
 ## How it works
 
-When a mouse dies, three Field Rats appear in a small ring around the spot and are pushed outward. <small>[sim-HQr6OS1G.js: `n.kx[f]=60*g(d),n.ky[f]=60*u(d)`]</small> They are ordinary Field Rats with their full base stats, scaled by the same HP, damage and speed multipliers as the mouse that spawned them. This differs from splitters without a `child` (the [Snow Mold](/enemies/snow-mold) and [Sock Pile](/enemies/sock-pile)), whose copies get only 35% HP, a smaller body and half XP, and cannot split again. <small>[sim-HQr6OS1G.js: `e.scratch.hp=n.maxHp[t]/i.hp*(o?.35:1)`]</small>
+When a mouse dies, three Field Rats appear in a small ring around the spot and are pushed outward. <small>[sim-HQr6OS1G.js: `n.kx[f]=60*g(d),n.ky[f]=60*u(d)`]</small> They are ordinary Field Rats with their full base stats, scaled by the same HP, damage and speed multipliers as the mouse that spawned them. This differs from a splitter without a `child` (the [Snow Mold](/enemies/snow-mold); the [Sock Pile](/enemies/sock-pile) has one and releases full [Lint Bunnies](/enemies/lint-bunny)), whose copies get only 35% HP, a smaller body and half XP, and cannot split again. <small>[sim-HQr6OS1G.js: `e.scratch.hp=n.maxHp[t]/i.hp*(o?.35:1)`]</small> <small>[boot-B6Ty3kl1.js: `` child:`lint-bunny` ``]</small>
 
 An elite Harvest Mouse still releases three rats, but they are not elites. They get the normal scaling for the current time instead of the elite's stats.
+
+**Measured** (headless `tools/play.mjs`, build `main-B2gf34bA`, standard mode, Normal, `--god`, seed `wiki`; Tibo teleported deep into Peel Forest at 10:00 and left standing for 240 s): 124 Harvest Mice died and 372 Field Rats appeared at their death spots, three per mouse. Each new pest was matched to the nearest death on the same tick, within 30 units; a few mice died close together on the same tick, so the per-mouse split could not be told apart there, but the total is exactly 3 × 124. The rats had 4 XP each, and none of the 367 rats that died spawned anything. No elite mouse died in that window, so the elite case is not measured.
 
 ## Tips
 

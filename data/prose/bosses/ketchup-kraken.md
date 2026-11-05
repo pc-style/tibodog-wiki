@@ -6,6 +6,8 @@ It arrives just as the ×4 boss HP step starts at 18:00, so its 11000 base HP be
 
 It drops a [chest](/chests), an XP gem worth 230 XP and a 25-gold coin (both multiplied by the biome's XP and gold multipliers).
 
+**Measured** (headless `tools/play.mjs`, build `main-B2gf34bA`, seed `wiki`, standard mode, `--god`; the clock warped to 2 s before each minute and stepped across it; level-up offers taken first-in-order except Rotten Spud, so curse stays at the difficulty's start value): it spawned at exactly 18:00 on all four difficulties, with 22,000 HP on Easy, 28,600 on Normal, 30,800 on Hard and 45,980 on Nightmare. The Nightmare figure is 10% above base HP × the difficulty multiplier because Nightmare starts every run with one curse, and boss HP is multiplied by 1 + curse. <small>[sim-HQr6OS1G.js: `startCurses:1,tierLag:2,wallPests:.6`]</small> <small>[sim-HQr6OS1G.js: `n.maxHp[r]=i.hp*t.hpMult*(1+e.loadout.stats.curse)`]</small> Seeds `s1` to `s4` gave the same Normal times and HP. The Nightmare value comes from a run where each earlier boss was removed on arrival, because a stationary god-mode Tibo was killed by stacked boss hits at 17:59 otherwise.
+
 ## Fight
 
 The Kraken crawls towards Tibo, throws fans of ketchup that turn into puddles, and every 3 s of walking stops for a round of tentacle slams. A full cycle takes 4.1 s, and its first slams start about 1.8 s after it spawns. It is the same on every difficulty: it has no Nightmare variants.
@@ -19,6 +21,8 @@ Five circles of radius 32 are marked around Tibo's position: the first centred o
 Every 2.8 s of walking, after a 0.8 s warning, it throws a fan of 5 blobs spread over 1.2 radians (about 69°), aimed at Tibo. Each blob deals 14 damage before scaling. The blobs slow to a crawl and, 0.95 s after launch, turn into short-lived puddles about 74 units from where they were thrown. Blobs that hit Tibo don't leave a puddle. The puddle size, lifetime and damage on each difficulty are under [Ketchup blobs](/bosses/ketchup-kraken#ketchup-blobs).
 
 Bullet count, fire rate and speed grow with run time (see [Enemy bullets](/enemy-scaling#enemy-bullets)). At its 18:00 arrival the fan has 9 blobs at about speed 121, landing about 94 units out, and comes every 1.8 s of walking. Puddles last about 3 s on Normal, so one or two sets are on the ground most of the time.
+
+**Measured** (headless `tools/play.mjs`, build `main-B2gf34bA`, seed `wiki`, standard mode, `--god`, Normal; the clock warped to just before 18:00; every other boss and every pest removed each tick, so the sim's hostile-shot counter only counts this boss): 9-blob fans 2.15 s, 5.08 s, 8.00 s, 9.82 s and 12.73 s after it spawned.
 
 ## Tips
 

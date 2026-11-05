@@ -19,6 +19,8 @@ These values are computed from the crit formula.
 
 The other crit damage source is [Crit Chip](/items/crit-chip) (+0.25).
 
+**Measured** (build 41 `main-B2gf34bA.js`, headless `tools/play.mjs`, seed `wiki`, standard mode, normal difficulty; Sour Cream given 1 to 5 times with `give`): the game's `critMult` stat read 2.2, 2.4, 2.6, 2.8 and 3.0. Each level adds the same 0.2.
+
 ## Tips
 
 - Take Sour Cream after you have a real crit chance, usually from Hot Sauce. Before that it mainly serves as the catalyst for Hashnado.

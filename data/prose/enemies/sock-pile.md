@@ -10,6 +10,8 @@ On death the pile spawns three Lint Bunnies in a ring around the spot, pushed ou
 
 An elite Sock Pile (tier 2 is the elite tier from 1:00 to 4:59) releases ordinary Lint Bunnies, not elite ones. No bunnies are made once the enemy limit (550) is reached.
 
+**Measured** (headless `tools/play.mjs`, build `main-B2gf34bA`, standard mode, Normal, `--god`, seeds `wiki` and `s2`; Tibo teleported into the first Coin Laundromat found at 0:58 and left standing for 150 s): every Sock Pile that died released three Lint Bunnies. Each new pest was matched to the nearest death on the same tick, within 30 units. Each bunny had a third of the pile's max HP (16.18 → 5.39, the ratio of their base HP, 8 to 24), radius 4 and 1 XP. Over 400 bunnies died across the two runs, and none of them spawned anything. The 1:00 and 3:00 elites were Sock Piles (195 and 253.5 HP), and each released three ordinary bunnies of about 5.5 and 6.2 HP.
+
 ## Tips
 
 - Each pile turns into three more pests, so killing piles at a distance gives the bunnies time to be caught by area weapons before they reach Tibo.

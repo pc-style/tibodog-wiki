@@ -8,6 +8,8 @@ It is by far the toughest boss. Its 16000 base HP is multiplied by the ×6 boss 
 
 Like every boss, it drops a [chest](/chests), an XP gem worth its 300 XP and a 25-gold coin (both multiplied by the biome's XP and gold multipliers).
 
+**Measured** (headless `tools/play.mjs`, build `main-B2gf34bA`, seed `wiki`, standard mode, `--god`; the clock warped to 2 s before each minute and stepped across it; level-up offers taken first-in-order except Rotten Spud, so curse stays at the difficulty's start value): it spawned at exactly 20:00 on all four difficulties, with 48,000 HP on Easy, 62,400 on Normal, 67,200 on Hard and 100,320 on Nightmare. The Nightmare figure is 10% above base HP × the difficulty multiplier because Nightmare starts every run with one curse, and boss HP is multiplied by 1 + curse. <small>[sim-HQr6OS1G.js: `startCurses:1,tierLag:2,wallPests:.6`]</small> <small>[sim-HQr6OS1G.js: `n.maxHp[r]=i.hp*t.hpMult*(1+e.loadout.stats.curse)`]</small> Seeds `s1` to `s4` gave the same Normal times and HP. The Nightmare value comes from a run where each earlier boss was removed on arrival, because a stationary god-mode Tibo was killed by stacked boss hits at 17:59 otherwise.
+
 ## Fight
 
 The Harvester walks towards Tibo and alternates two bullet patterns while walking. Every 2.6 s of walking it stops to charge. The pattern timer pauses during the warning and the charge, and the 2.6 s countdown restarts only once the charge ends. Its first charge comes 1.56 s after it spawns and its first pattern 1.2 s after. <small>[sim-HQr6OS1G.js: `n.timer[r]=.6*i.attackEvery,n.patternT[r]=.5*i.patternEvery`]</small>
@@ -33,6 +35,8 @@ Enemy bullet counts, fire rates and bullet speeds all grow with run time (see [E
 - Homing volleys: 7 bullets per line instead of 4, lead bullet at speed 182, volleys 0.16 s apart.
 - Stalling rings: 43 bullets per ring instead of 24, rings 0.25 s apart, bursting out at about 177.
 - A new pattern every 1.5 s of walking instead of 2.4 s, so it usually fires one or two patterns between charges.
+
+**Measured** (headless `tools/play.mjs`, build `main-B2gf34bA`, seed `wiki`, standard mode, `--god`, Normal; the clock warped to just before 20:00; every other boss and every pest removed each tick, so the sim's hostile-shot counter only counts this boss): three 7-bullet volleys 0.15 s apart at 1.85 s, two 43-bullet rings 0.23 s apart at 5.65 s, the volleys again at 9.05 s and the rings at 10.75 s after it spawned.
 
 The charge is not affected: its timing and speed are fixed.
 

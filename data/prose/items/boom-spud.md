@@ -8,6 +8,7 @@ Boom Spud has weight 6 out of 53 among Rare items, about 1.1% of item rolls at l
 
 ## How it works
 
+- **Measured** (build 41 `main-B2gf34bA.js`, headless `tools/play.mjs`, seed `wiki`, standard mode, normal difficulty; copies added with `giveItem`): the game's `explodeOnKillChance` stat read 0.1071, 0.1935 and 0.2647 for 1 to 3 copies.
 - The explosion radius is fixed at 22 units. Unlike most item blasts it does not grow with area.
 - The damage scales only with the damage (`might`) stat. It does not grow with enemy HP or with run time.
 - An enemy killed by an explosion dies like any other enemy, so it can roll its own explosion. This explosion is a plain stat roll with no per-second limit, unlike the procs of [Kaboom Spud](/items/kaboom-spud).

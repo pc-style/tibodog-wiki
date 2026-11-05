@@ -10,6 +10,7 @@ When one of Tibo's weapons hits, there is a 25% chance to ignite the target and 
 - Burn rules are the same as for Coal-Baked Spud: an enemy keeps only its strongest burn and longest timer, and the 0.5 s burn ticks can crit.
 - Only weapon hits trigger it, not burn ticks or other item effects, so fires do not chain into more fires.
 - Copies stack: with *N* copies the chance is `1 − 0.75^N`, limited to 20 × *N* procs per second.
+- **Measured** (build 41 `main-B2gf34bA.js`, headless `tools/play.mjs`, standard mode, normal difficulty; copies added directly with `giveItem`, skipping the evolution; Peeler, Small Fry, Tot Toss, Chip Shuriken, Starch Chain and Seeker Sprouts each given 5 times with `give`; `warp(240)`; HP refilled every tick; Tibo walking a slow circle; later level-ups taking the first offer; 180 s on seeds `s1`–`s5`): 25.2% of 21,033 rolls ignited with one copy (expected 25%), and 57.3% of 19,201 with three (expected 57.8%). The 20-per-second limit was not reached: even with the chance set to 100% in the scenario, these weapons and a second set (Steam Vent, Whisk Vortex, Sprout Satellites, Gravy Boat, Salt Line, Butter Streak) gave only 15–18 procs per second. For a measurement of burns not stacking, see [Coal-Baked Spud](/items/coal-baked-spud#how-it-works).
 
 ## Tips
 

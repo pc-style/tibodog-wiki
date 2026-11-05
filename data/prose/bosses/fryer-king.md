@@ -1,8 +1,10 @@
 ## Overview
 
-The Fryer King is the sixth boss. It arrives at 8:00 on the [wave schedule](/bosses#wave-schedule), together with a [Fry Fly Swarm](/events/fly-swarm) and a [Harvest Moon](/events/harvest-moon). It has 3300 base HP: about 2145 on Normal (boss HP ×0.65, see [Modes](/modes)) and 3135 on Nightmare, before any [curse](/curse). It walks at speed 30 and deals 22 contact damage.
+The Fryer King is the sixth boss. It arrives at 8:00 on the [wave schedule](/bosses#wave-schedule), together with a [Fry Fly Swarm](/events/fly-swarm) and a [Harvest Moon](/events/harvest-moon). It has 3300 base HP: about 2145 on Normal (boss HP ×0.65, see [Modes](/modes)) and 3135 on Nightmare before [curse](/curse). Nightmare starts every run with one curse, which adds 10% to boss HP, so there it actually has about 3449. <small>[sim-HQr6OS1G.js: `startCurses:1,tierLag:2,wallPests:.6`]</small> <small>[sim-HQr6OS1G.js: `n.maxHp[r]=i.hp*t.hpMult*(1+e.loadout.stats.curse)`]</small> It walks at speed 30 and deals 22 contact damage.
 
 It opens the post-20:00 rotation, so a long run meets it again at 21:00, 28:00 and every 7 minutes after that ([After 20:00](/bosses#after-20-00)), each time with much more HP. A [Boss Lair](/points-of-interest#boss-lair) can also wake it. It drops an XP gem worth 100, a 25-gold coin and a chest ([Chests](/chests)).
+
+**Measured** (headless `tools/play.mjs`, build `main-B2gf34bA`, seed `wiki`, standard mode, `--god`; the clock warped to 2 s before each minute and stepped across it; level-up offers taken first-in-order except Rotten Spud, so curse stays at the difficulty's start value): it spawned at exactly 8:00 on all four difficulties, with 1650 HP on Easy, 2145 on Normal, 2310 on Hard and 3448.5 on Nightmare. Seeds `s1` to `s4` gave the same Normal times and HP.
 
 ## Fight
 
@@ -17,6 +19,8 @@ Puddle ticks are ground damage, and Tibo's dash does not block them. The game sk
 ### Oil rings
 
 After a 0.9 s warning, the King fires a full ring of 18 drops at speed 95, 16 damage each, then a second ring 0.35 s later, rotated by half a gap. Enemy bullets scale with time ([Enemy scaling](/enemy-scaling#enemy-bullets)). At 8:00 each ring has 24 drops (18 × 1.32, rounded) moving at about 106, a new ring pair starts about every 2.4 s instead of every 3 s, and the two rings come about 0.28 s apart. <small>[sim-HQr6OS1G.js: `a.count[o]=Math.max(1,Math.round(t.count*d.bulletCount))`]</small>
+
+**Measured** (headless `tools/play.mjs`, build `main-B2gf34bA`, seed `wiki`, standard mode, `--god`, Normal; the clock warped to just before 8:00; every other boss and every pest removed each tick, so the sim's hostile-shot counter only counts this boss): pairs of 24-drop rings 0.27 s apart, starting 2.35 s, 5.68 s, 9.00 s and 12.32 s after it spawned. Easy and Nightmare gave the same counts.
 
 ### Nightmare changes
 

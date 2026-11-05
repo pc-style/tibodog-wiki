@@ -10,6 +10,7 @@ Glacier Spud no longer needs frozen enemies. Any kill has a 30% chance to shatte
 - Bosses are immune to the freeze, but the frost ring slows them too.
 - Boss deaths also roll for a shatter, which deals 40% of the boss's max HP to everything nearby.
 - Copies stack: with *N* copies the chance per kill is `1 − 0.7^N`, limited to 10 × *N* shatters per second.
+- **Measured** (build 41 `main-B2gf34bA.js`, headless `tools/play.mjs`, standard mode, normal difficulty; copies added directly with `giveItem`, skipping the evolution; Peeler, Small Fry, Tot Toss, Chip Shuriken, Starch Chain and Seeker Sprouts each given 5 times with `give`; `warp(240)`; HP refilled every tick; Tibo walking a slow circle; later level-ups taking the first offer). Over 180 s on seeds `s1`–`s5`, 29.7% of 16,145 kill rolls shattered with one copy (expected 30%), and 65.7% of 15,952 with three (expected 65.7%). With the chance set to 100% in the scenario (120 s, seeds `s1`–`s3`), one copy shattered 9.57–9.72 times per second.
 - Shatter damage scales with enemy max HP rather than Tibo's damage stat. It still gets the elite/boss bonus and can crit.
 
 ## Tips

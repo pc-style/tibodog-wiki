@@ -13,6 +13,8 @@ The scarab is harmless (0 damage). It escapes after 25 seconds. Hitting it can s
 - **Escape.** The scarab vanishes 25 seconds after it appears, or as soon as it is about 460 units from Tibo, and leaves no item. <small>[sim-HQr6OS1G.js: ``r.despawnAt[d]=e.time+(o.behavior.kind===`flee`?o.behavior.escapeAfter:25)``]</small>
 - **Full field.** If the enemy pool is at its cap of 550, the event is skipped with no announcement.
 
+**Measured** (headless `tools/play.mjs`, build `main-B2gf34bA`, standard mode, `--god`, seed `wiki`; the clock warped to 1 s before each minute with pests removed first): the scarab appeared at 3:00, 7:00, 10:00, 14:00 and 17:00 with 228.3, 321.9, 429, 620.9 and 801.6 HP on Normal. Easy gave 175.7 to 616.7 and Nightmare 421.6 to 1480. The Nightmare values match the pest HP multiplier alone, without Nightmare's starting curse.
+
 ## Tips
 
 - Chase it right away. It always starts close, and it only slows down once it is more than 70 units ahead, so Tibo catches up quickly.

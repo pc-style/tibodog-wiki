@@ -12,6 +12,7 @@ It evolves into [Storm Tot](/items/storm-tot) when [Root Network](/passives/root
 - **What can trigger it.** Only hits from Tibo's weapons. Item effects, thorns and dogs cannot trigger it, so arcs do not set off further arcs or [Spicy Croquette](/items/spicy-croquette) blasts.
 - **Rate limit.** Besides the 10% roll, it can fire at most 16 times per second. The limit refills continuously and holds at most one second's worth.
 - **Stacking.** With *n* copies the chance is `1 − 0.9^n` and the cap is 16 × *n* per second: 19% with two, 27.1% with three. Jumps, range and damage do not change.
+- **Measured** (build 41 `main-B2gf34bA.js`, headless `tools/play.mjs`, standard mode, normal difficulty; copies added with `giveItem`; Peeler, Small Fry, Tot Toss, Chip Shuriken, Starch Chain and Seeker Sprouts each given 5 times with `give`; `warp(240)`; HP refilled every tick; Tibo walking a slow circle; later level-ups taking the first offer; 180 s on seeds `s1`–`s5`): 9.8% of 21,863 rolls fired an arc with one copy (expected 10%), and 27.2% of 19,143 with three (expected 27.1%). The 16-per-second limit was not reached: even with the chance set to 100% in the scenario, these weapons and a second set (Steam Vent, Whisk Vortex, Sprout Satellites, Gravy Boat, Salt Line, Butter Streak) triggered only 9–13 arcs per second.
 - **Range** grows with the square root of Tibo's area multiplier. Arc hits cause no knockback and can crit on their own.
 
 ## Tips

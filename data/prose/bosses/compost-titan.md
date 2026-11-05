@@ -1,8 +1,10 @@
 ## Overview
 
-Compost Titan is the eleventh boss. It arrives at 17:00 on the [wave schedule](/bosses#wave-schedule), in the same minute as an elite and a [Golden Scarab](/events/golden-scarab), and only a minute after [Grater Golem](/bosses/grater-golem). The ×3 boss HP step from minute 16 applies, so its 9000 base HP becomes 27,000. That is about 17,550 on Normal (boss HP ×0.65, see [Modes](/modes)) and 25,650 on Nightmare, before any [curse](/curse). It is large (body radius 22) and slow (speed 24, against Tibo's base 62), and deals 30 contact damage.
+Compost Titan is the eleventh boss. It arrives at 17:00 on the [wave schedule](/bosses#wave-schedule), in the same minute as an elite and a [Golden Scarab](/events/golden-scarab), and only a minute after [Grater Golem](/bosses/grater-golem). The ×3 boss HP step from minute 16 applies, so its 9000 base HP becomes 27,000. That is about 17,550 on Normal (boss HP ×0.65, see [Modes](/modes)) and 25,650 on Nightmare before [curse](/curse). Nightmare starts every run with one curse, which adds 10% to boss HP, so there it actually has about 28,215. <small>[sim-HQr6OS1G.js: `startCurses:1,tierLag:2,wallPests:.6`]</small> <small>[sim-HQr6OS1G.js: `n.maxHp[r]=i.hp*t.hpMult*(1+e.loadout.stats.curse)`]</small> It is large (body radius 22) and slow (speed 24, against Tibo's base 62), and deals 30 contact damage.
 
 It is part of the post-20:00 rotation, so a long run meets it again at 25:00, 32:00 and every 7 minutes after that ([After 20:00](/bosses#after-20-00)). A [Boss Lair](/points-of-interest#boss-lair) can also wake it. It drops an XP gem worth 200, a 25-gold coin and a chest ([Chests](/chests)). It has no Nightmare variants.
+
+**Measured** (headless `tools/play.mjs`, build `main-B2gf34bA`, seed `wiki`, standard mode, `--god`; the clock warped to 2 s before each minute and stepped across it; level-up offers taken first-in-order except Rotten Spud, so curse stays at the difficulty's start value): it spawned at exactly 17:00 on all four difficulties, with 13,500 HP on Easy, 17,550 on Normal, 18,900 on Hard and 28,215 on Nightmare. Seeds `s1` to `s4` gave the same Normal times and HP.
 
 ## Fight
 
@@ -21,6 +23,8 @@ Every 3.6 s at base, after a 1 s warning, the Titan fires four streams of shots 
 From 0.4 s to 1.4 s after launch, each shot steers towards Tibo, turning up to 0.8 radians per second. It only steers while Tibo is ahead of it, and it stops steering for good once Tibo dashes. <small>[sim-HQr6OS1G.js: `s!==void 0&&r>=s.after&&r<s.until&&$u.dashAgo>Math.round(r/i)`]</small>
 
 Enemy bullets scale with time ([Enemy scaling](/enemy-scaling#enemy-bullets)). At 17:00 the spiral has seven streams instead of four (4 × 1.68, rounded), the shots fly at about 69, faster than Tibo walks, volleys come about 0.12 s apart and a new spiral starts about every 2.4 s.
+
+**Measured** (headless `tools/play.mjs`, build `main-B2gf34bA`, seed `wiki`, standard mode, `--god`, Normal; the clock warped to just before 17:00; every other boss and every pest removed each tick, so the sim's hostile-shot counter only counts this boss): spirals of 12 seven-shot volleys about 0.12 s apart, starting 2.75 s, 6.13 s, 9.52 s and 11.90 s after it spawned.
 
 ## Tips
 
