@@ -6,12 +6,12 @@ Most of the time it waddles towards Tibo at speed 28. When Tibo comes within 100
 
 ## How it works
 
-The timings below are before 20:00. In Standard from 20:00, the windup is 0.6 s instead of 0.5 s; the dash and cooldown do not change. <small>[sim-CDZ7ikGI.js: `return!An(e)||e.runClock<Tn?t:Math.max(t,.6)`]</small>
+The timings below are before 20:00. In Standard from 20:00, the windup is 0.6 s instead of 0.5 s; the dash and cooldown do not change. <small>[sim-B7N2RusS.js: `return!An(e)||e.runClock<Tn?t:Math.max(t,.6)`]</small>
 
 The toad's charge has three phases:
 
 1. **Windup**: once Tibo is within `dashRange` (100) and the charge is off cooldown, it stands still for 0.5 s. It aims at where Tibo is when the windup starts and does not re-aim.
-2. **Dash**: it moves at `dashSpeed` 170 for 1.3 × 100 / 170 ≈ 0.76 s, covering about 130 units, and since the charge starts within 100 units it carries on at least 30 units past Tibo's old position. <small>[sim-CDZ7ikGI.js: `i.state[t]=2,i.timer[t]=1.3*n/r,i.windup[t]=0`]</small>
+2. **Dash**: it moves at `dashSpeed` 170 for 1.3 × 100 / 170 ≈ 0.76 s, covering about 130 units, and since the charge starts within 100 units it carries on at least 30 units past Tibo's old position. <small>[sim-B7N2RusS.js: `i.state[t]=2,i.timer[t]=1.3*n/r,i.windup[t]=0`]</small>
 3. **Cooldown**: for 1.6 s it walks normally and cannot charge again.
 
 A freshly spawned toad waits 0.5–2 s before its first charge can start. The dash does no extra damage: it hurts only by touching Tibo, like walking pests, at most once every 0.5 s. The dash throws up dust when it starts and stops (see [charging pest effects](/enemy-scaling#charging-pest-effects)).

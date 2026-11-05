@@ -6,7 +6,7 @@ It throws 4 dice (raw amount 3 plus Tibo's base +1, see [Stats](/stats)) every 1
 
 ## How it works
 
-- **Roll.** Each die rolls two d6 and keeps the higher. If the two rolls match, the throw's damage is doubled on top of the face effect. <small>[sim-CDZ7ikGI.js: `let t=e.rng.int(1,6);t===i&&(a=!0),i=Math.max(i,t)`]</small> <small>[sim-CDZ7ikGI.js: `a&&(r.damage[t]=2*r.damage[t])`]</small> The doubling applies to damage only, not to the blast radius.
+- **Roll.** Each die rolls two d6 and keeps the higher. If the two rolls match, the throw's damage is doubled on top of the face effect. <small>[sim-B7N2RusS.js: `let t=e.rng.int(1,6);t===i&&(a=!0),i=Math.max(i,t)`]</small> <small>[sim-B7N2RusS.js: `a&&(r.damage[t]=2*r.damage[t])`]</small> The doubling applies to damage only, not to the blast radius.
 - **Split dice.** A split face fires two extra dice with the weapon's normal damage. They are not doubled by a pair and have no face effect.
 - **Luck.** Despite the [Four-Eyed Spud](/passives/four-eyed-spud) catalyst, the roll is plain random; [luck](/stats) does not change it.
 

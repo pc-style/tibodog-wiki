@@ -45,6 +45,8 @@ The updater's sim/boot report is a starting point, not a complete review or perm
 
 Follow moved responsibilities into new/lazy modules. Separate consistent identifier/asset/build-metadata renames from statement changes, and inspect changed executable code in context. Compare each build with its **own** sprite tables and PNGs: using the new table against an old PNG gives false art differences. Check retained frame crops and wiki icons, not just repacked atlas hashes; distinguish changed pixels, packing and sampling/rendering behavior. Verify dormant flags and their actual callers before describing inactive code as gameplay. Never infer “no gameplay change” from identical registry/config alone.
 
+For a metadata-only candidate, strengthen generic hash-normalized diffs with an exact **mapped-dependency** check: replace each old asset filename with its paired new filename and only the known own-commit literals, then compare complete modules. Generic `CHUNK` placeholders can hide a swapped dependency. Prefer statement-level diffs to expensive character-level SequenceMatcher runs on large minified chunks. `fetch-build.mjs` mirrors JS/atlas PNGs, not all CSS: collect stylesheet references from each build's own index and modules, fetch those exact named files, record their digests and compare them explicitly. A missing local stylesheet is a mirror limitation, not evidence the game removed it.
+
 ### Play the new build
 
 Load the `playing-tibo` skill and play the new build, not just its diff:

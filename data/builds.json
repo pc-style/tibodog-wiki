@@ -470,5 +470,15 @@
   "status": "reviewed",
   "updated": "2026-11-05T04:13:16Z",
   "changes": "Limit-broken weapon and passive level labels now show a cyan star and break count before the ordinary level. The renderer compares sprite-table values at Float32 precision before marking them changed, avoiding repeat updates for an unchanged rounded value. Reviewed all 210 JavaScript modules, including duplicate roles, workers, worklets, localizations and each build's own atlases. Gameplay definitions, sim logic, difficulty, English content, patch notes, entity names in all 27 languages, atlas pixels and wiki icons are unchanged. Same-seed five-minute Standard/Normal runs matched at 1,322 kills, level 13 and four-weapon damage of 6,387.99 / 1,072.59 / 2,573.88 / 602.48. Actual-code probes confirmed the new star/count label and reduced repeated sprite-table dirty flags from three to one for input 0.1, with the same stored Float32 value; exact input 0.5 remains one."
+ },
+ {
+  "seen": "2026-11-05",
+  "main": "main-Cw6snbEQ.js",
+  "boot": "boot-DNQimF_M.js",
+  "sim": "sim-B7N2RusS.js",
+  "commit": "fa645173f6f6",
+  "status": "reviewed",
+  "updated": "2026-11-05T04:39:29Z",
+  "changes": "Metadata-only rebuild relative to build 48: all 210 JavaScript modules across 204 roles, including six duplicate-role pairs, workers, worklets, all 27 localizations and the journal, are identical after exact mapped dependency filenames and own-commit literals; no added or removed roles. All 15 CSS files and four atlas PNGs are byte-identical. Game data, translated names and current prose quotes are unchanged apart from source filenames. Actual five-minute Standard/Normal simulations on both builds (seed wiki, no give/warp/god) match: level 13, 1,322 kills, 150 HP; Fry Sentry 6,387.99 damage, Hash Brown Shield 1,072.59, Spud Cannon 2,573.88 and Fry Lance 602.48. No changed mechanics were found requiring separate old/new probes. This review does not reverify deleted historical assets or physical device performance."
  }
 ]
