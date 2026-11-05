@@ -138,11 +138,13 @@ for (const scenario of [
       mkdirSync(join(cache, 'assets'), { recursive: true });
       copyFileSync(new URL('./update.mjs', import.meta.url), join(root, 'tools', 'update.mjs'));
       copyFileSync(new URL('./dump-changelog.mjs', import.meta.url), join(root, 'tools', 'dump-changelog.mjs'));
+      copyFileSync(new URL('./same-build.mjs', import.meta.url), join(root, 'tools', 'same-build.mjs'));
       writeFileSync(join(cache, 'assets', 'changelog-panel-fixture1.js'), journalSource);
       const journal = extractChangelog(join(cache, 'assets'), 'main-current1.js');
       if (scenario.drift) journal.unreleased.pop();
       writeFileSync(join(root, 'data', 'changelog.json'), JSON.stringify(journal));
-      writeFileSync(join(root, 'tools', 'fetch-build.mjs'), `export async function mirror() {
+      writeFileSync(join(root, 'tools', 'fetch-build.mjs'), `export const ASSET = /[A-Za-z0-9_.-]+-[A-Za-z0-9_-]{8}\\.js/g;
+      export async function mirror() {
         return { main: 'main-current1.js', dir: ${JSON.stringify(join(cache, 'assets'))} };
       }`);
       writeFileSync(join(root, 'data', 'build.json'), JSON.stringify({ main: 'main-current1.js' }));

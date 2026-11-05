@@ -8,7 +8,9 @@
 //
 // Writes .cache/<main>/report.md. Last stdout line is "status: <s>", where s is
 //   up-to-date    live build is the documented one and every history entry is reviewed
-//   clean         only renames, art or translations changed; safe to deploy unreviewed
+//   identical     the whole build matches the documented one apart from file hashes and its own
+//                 commit id (tools/same-build.mjs); --apply records it as reviewed, so it ships
+//                 without an agent review
 //   needs-review  game data, sim/boot logic or quoted code changed; a person or agent must
 //                 update the affected pages (see report) before deploying
 import { execFileSync } from 'node:child_process';
@@ -17,6 +19,7 @@ import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { mirror } from './fetch-build.mjs';
 import { compareChangelog, extractChangelog } from './dump-changelog.mjs';
+import { sameBuild } from './same-build.mjs';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 process.chdir(ROOT);
@@ -65,6 +68,15 @@ try {
 } catch (e) {
   report.push(`Previous build ${build.main} could not be fetched (${e.message}); code diff skipped.`, '');
   review.push('previous build unavailable, code not diffed');
+}
+
+// Whole-build comparison decides whether this is only a rebuild of the documented game.
+const same = prev ? sameBuild(dirname(prev.dir), dirname(live.dir)) : null;
+if (same) {
+  report.push('## Whole-build comparison', '', same.identical
+    ? `All ${same.files[1]} files reachable from the ${same.roots} match \`${build.main}\` after mapping file hashes and the build's own commit id.`
+    : `Changed files (${same.files[0]} → ${same.files[1]} reachable from the ${same.roots}):\n\n${same.changed.map((c) => `- \`${c}\``).join('\n')}`, '');
+  if (!same.identical) review.push(`${same.changed.length} changed file(s)`);
 }
 
 // 2. Dump game data.
@@ -200,18 +212,20 @@ if (!apply) {
   }
 }
 
-const status = review.length ? 'needs-review' : 'clean';
+const status = review.length || !same?.identical ? 'needs-review' : 'identical';
 if (apply) {
   // 8. Log the build. An unreviewed entry shows as "Not reviewed yet" on /versions until someone
   // updates the affected pages, writes the change summary and sets status to "reviewed".
   if (!builds.some((b) => b.main === live.main)) {
+    // build.mjs rejects `changes` over 280 chars; a long detection list goes to `evidence` instead.
+    const detected = `Detected: ${review.join('; ')}.`;
     builds.push({
       seen: today, main: live.main, boot: C.boot, sim: C.sim, commit,
-      status: status === 'clean' ? 'reviewed' : 'unreviewed',
+      status: status === 'identical' ? 'reviewed' : 'unreviewed',
       updated: now,
-      changes: status === 'clean'
-        ? 'Game data, English text, difficulty table, icons and game logic are identical (renamed code only).'
-        : `Detected: ${review.join('; ')}.`,
+      ...(status === 'identical'
+        ? { changes: 'No gameplay changes; a rebuild of the same game.', evidence: `Automatic whole-build comparison (tools/same-build.mjs): all ${same.files[1]} files reachable from the ${same.roots} match ${build.main} after mapping file hashes and the build's own commit id.` }
+        : detected.length <= 280 ? { changes: detected } : { changes: 'Detected changes; see review evidence.', evidence: detected }),
     });
     writeFileSync('data/builds.json', JSON.stringify(builds, null, 1) + '\n');
     tryRun('node', ['build.mjs']);
