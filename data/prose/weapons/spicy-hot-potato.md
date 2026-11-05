@@ -11,6 +11,8 @@ Every 2 s it throws 3 potatoes (2 plus Tibo's built-in +1 amount, see [Stats](/s
 - The copies do not respawn again: a new projectile starts with no respawn value and the copy does not inherit it. So each thrown potato makes at most three blasts: its own and one per copy.
 - The copies start with an empty hit list, so they can hit pests the first potato already hit.
 
+**Measured** in the headless sim (`tools/play.mjs`, build 41 `main-B2gf34bA.js`, Standard, Normal, god mode, seeds `s1`, `s2` and `s3`; the seeded starting weapon removed, the weapon given with `give`, spawning stopped after 4 s of play and the pests already on the field held at fixed spots with 10⁹ HP; pests held 40 to 110 units to Tibo's right): it threw 3 potatoes 0.3 s apart every 2 s, each spawned with a 3.75 s lifetime and pierce 5; respawned copies appeared away from Tibo. All three seeds gave the same figures.
+
 ## Tips
 
 - One volley can produce up to 9 blasts (3 potatoes plus 2 copies each). That makes the weapon best in dense waves, where the copies find new pests to hop to right away.

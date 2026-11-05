@@ -2,7 +2,7 @@
 
 Mash Snowball has no timer. Movement drives it. While Tibo runs, a ball of mash rolls along his path behind him and grows with every step. When he stops, turns sharply or keeps running with a full ball, the ball surges forward along his heading, flattens pests in its path and splatters at the end of its roll.
 
-A ball starts with radius 4 and grows by 0.22 per unit Tibo moves, up to a radius of 14 × area. At base move speed (62 units/s) it is big enough to release (radius 9) after about 0.4 s of running and full after about 0.75 s. A full ball deals the weapon's full damage, 35 at level 1 and 100 at max level, where area is 1.2. It is a base weapon offered on level-up. At max level, with [Masher Grip](/passives/masher-grip) owned, a chest evolves it into [Mash Avalanche](/weapons/mash-avalanche) (see [Evolutions](/evolutions)).
+A ball starts with radius 4 and grows by 0.22 per unit Tibo moves, up to a radius of 14 × area. At base move speed (62 units/s) it is big enough to release (radius 9) after about 0.4 s of running and full after about 0.75 s. A full ball deals the weapon's full damage, 35 at level 1. At max level the weapon's damage is 90 and its area 1.2, so a full ball deals 90 × 16.8 ÷ 14 = 108. It is a base weapon offered on level-up. At max level, with [Masher Grip](/passives/masher-grip) owned, a chest evolves it into [Mash Avalanche](/weapons/mash-avalanche) (see [Evolutions](/evolutions)).
 
 ## How it works
 
@@ -11,6 +11,8 @@ A ball starts with radius 4 and grows by 0.22 per unit Tibo moves, up to a radiu
 - **The surge.** The ball starts from its spot behind Tibo, 8 + 6 × radius units back along his path. It rolls 70 + 9 × radius units at 220 units/s and hits each pest it touches. When it stops, it splatters everything within 2.5 × radius. Each pest is hit at most once per ball.
 - **Damage scales with size.** Each ball deals damage × radius ÷ 14. A ball released at the minimum radius 9 deals about 64% of the weapon's damage. The size cap is 14 × area but the divisor stays at 14, so with area above 1 a full ball deals more than 100%. <small>[sim-HQr6OS1G.js: `t.surgeLeft[u]=r.surgeBase+r.surgePerR*o,t.surgeR[u]=o,t.surgeDamage[u]=i.damage*o/r.maxR`]</small>
 - Amount, cooldown, speed and pierce have no effect on this weapon. Duration only extends how long a full ball can roll before it releases on its own.
+
+**Measured** in the headless sim (`tools/play.mjs`, build 41 `main-B2gf34bA.js`, Standard, Normal, god mode, seeds `s1`, `s2` and `s3`; the seeded starting weapon removed, the weapon given with `give`, spawning stopped after 4 s of play and the pests already on the field held at fixed spots with 10⁹ HP; Tibo walking right for 8 s past 12 pests held at fixed points on his path): every hit at level 1 dealt 35, and every hit at level 8 dealt 108 (90 × 1.2), so each released ball was full size. All three seeds gave the same figures.
 
 ## Tips
 

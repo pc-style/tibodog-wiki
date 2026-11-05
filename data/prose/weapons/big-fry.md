@@ -2,7 +2,7 @@
 
 Big Fry is the evolution of [Small Fry](/weapons/small-fry). To get it, have Small Fry at level 8 and own [Fertilizer](/passives/fertilizer), then open a [chest](/chests). See [Evolutions](/evolutions).
 
-Every 0.45 s it fires 3 fries at the nearest pest, 0.06 s apart. The fries pierce without limit. Like Small Fry, it gains damage from its kills, now +0.08 raw damage per kill up to +25. The fries also get bigger as the kill count rises, up to three times their starting size.
+Every 0.45 s it fires 4 fries (raw amount 3 plus Tibo's base +1, see [Stats](/stats)) at the nearest pest, 0.06 s apart. The fries pierce without limit. Like Small Fry, it gains damage from its kills, now +0.08 raw damage per kill up to +25. The fries also get bigger as the kill count rises, up to three times their starting size.
 
 ## How it works
 
@@ -11,6 +11,8 @@ Every 0.45 s it fires 3 fries at the nearest pest, 0.06 s apart. The fries pierc
 - **Size bonus.** The fry's radius is multiplied by `min(3, 1 + kills / 600)`: double size at 600 kills, triple at 1200. <small>[sim-HQr6OS1G.js: `function Df(e,t){return Math.min(e.cap,t*e.perKill)}function Of(e,t){return!0===e.size?Math.min(3,1+t/600):1}`]</small>
 - **Unlimited pierce and re-hits.** Weapons with 99 pierce get unlimited pierce, and pierce bonuses do not change that. <small>[sim-HQr6OS1G.js: `n.pierce=i.pierce>=99?-1:i.pierce+r.pierceBonus`]</small> In exchange, a pest can only be hit by this weapon once every 30 ticks (0.5 s). That timer is shared by all of Big Fry's fries. <small>[sim-HQr6OS1G.js: `i=8*z(n)+Math.max(0,e.projectiles.slot[t]);return!(e.tick-r.hitStamp[i]<e.projectiles.rehit[t]`]</small> If two fries reach the same pest within 0.5 s, only the first one damages it.
 - **Aim.** It targets the same way as Small Fry: the nearest pest within 224 units, and it holds fire when none is in range.
+
+**Measured** in the headless sim (`tools/play.mjs`, build 41 `main-B2gf34bA.js`, Standard, Normal, god mode, seeds `s1`, `s2` and `s3`; the seeded starting weapon removed, the weapon given with `give`, spawning stopped after 4 s of play and the pests already on the field held at fixed spots with 10⁹ HP; Tibo standing still, facing right, with 8 pests in a line 20 to 90 units to his right): it fired 4 fries every 0.45 s, each spawned with a 1.875 s lifetime; all 8 pests in the line were hit, and no pest was ever hit twice within 0.5 s (the shortest gap between two hits on one pest was 30 ticks). All three seeds gave the same figures.
 
 ## Tips
 

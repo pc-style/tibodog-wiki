@@ -11,6 +11,8 @@ Its direct hit (26) is lower than a max-level Rösti Disc's 30. It makes up for 
 - Bounces happen at the play-area edges, so the explosions go off around the edges of the area around Tibo, not near Tibo himself.
 - Faster discs reach the edges more often, so projectile speed from [Salt Shaker](/passives/salt-shaker) means more bounces and more explosions over each disc's life.
 
+**Measured** in the headless sim (`tools/play.mjs`, build 41 `main-B2gf34bA.js`, Standard, Normal, god mode, seeds `s1`, `s2` and `s3`; the seeded starting weapon removed, the weapon given with `give`, spawning stopped after 4 s of play and the pests already on the field held at fixed spots with 10⁹ HP; Tibo standing still, facing right, with 8 pests in a line 20 to 90 units to his right): it launched 5 discs 0.15 s apart every 2 s, each spawned with a 5 s lifetime. All three seeds gave the same figures.
+
 ## Tips
 
 - The explosions hit pests at the edge of the play area as they walk in towards Tibo. Pair Rösti Storm with a weapon that covers the space close to him.

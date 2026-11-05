@@ -13,6 +13,8 @@ At base move speed (62 units per second, see [Stats](/stats)) Tibo plants about 
 - **Arc width.** An arc hits pests within half of `arcWidth` × Area of the line (12 units at Area 1), plus the pest's own radius.
 - **Hit rate.** A pest touching an arc is zapped at most once every 0.2 s (`zapSec`). The timer is shared by all arcs of the weapon, so a pest touching two arcs at once is not hit twice as often. <small>[sim-HQr6OS1G.js: `if(e.tick-h.hitStamp[g]<o)continue;h.hitStamp[g]=e.tick;`]</small> At level 1 that is 20 damage five times a second for as long as the pest stays on the wire.
 
+**Measured** in the headless sim (`tools/play.mjs`, build 41 `main-B2gf34bA.js`, Standard, Normal, god mode, seeds `s1`, `s2` and `s3`; the seeded starting weapon removed, the weapon given with `give`, spawning stopped after 4 s of play and the pests already on the field held at fixed spots with 10⁹ HP; Tibo walking right for 8 s past 12 pests held at fixed points on his path): a pest touching the wire was zapped every 0.2 s (12 ticks), for 20 at level 1 and 50 at level 8. All three seeds gave the same figures.
+
 ## Tips
 
 - Walk circles or zig-zags around a crowd instead of running straight away from it; a straight line leaves the fence behind the pests chasing you, while loops drag arcs back through them.

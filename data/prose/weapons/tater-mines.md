@@ -11,6 +11,8 @@ It is offered on level-up. At level 8 a chest evolves it into [Landmine Harvest]
 - **Expiry.** A mine that is never triggered disappears quietly when its duration runs out. Further duration bonuses keep mines armed longer.
 - Mines are dropped on cooldown whether or not enemies are around, and extra amount adds mines to each drop.
 
+**Measured** in the headless sim (`tools/play.mjs`, build 41 `main-B2gf34bA.js`, Standard, Normal, god mode, seeds `s1`, `s2` and `s3`; the seeded starting weapon removed, the weapon given with `give`, spawning stopped after 4 s of play and the pests already on the field held at fixed spots with 10⁹ HP; one pest held 250 units away so no mine triggered): at level 1 it dropped 2 mines 0.1 s apart every 2.5 s, each lasting 15 s with a 26-unit blast; at level 8 it dropped 5 every 2.1 s with a 31.2-unit blast. All three seeds gave the same figures.
+
 ## Tips
 
 - Mines only work where pests walk. Kiting in a loop, so that the crowd following Tibo crosses the spots where mines were dropped, gets the most out of them.

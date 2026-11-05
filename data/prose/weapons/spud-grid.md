@@ -11,6 +11,8 @@ It clips 3 wires at once (2 plus Tibo's built-in +1 amount, see [Stats](/stats))
 - A clipped boss is not pinned and gets no HP floor, so it can still die while wired. The zaps still apply their 0.3 s slow to it. <small>[sim-HQr6OS1G.js: `Gi(s)||Lp(e,s,n.pin[o])`]</small>
 - Each wire is 12 units wide (8 × its 1.5 Area).
 
+**Measured** in the headless sim (`tools/play.mjs`, build 41 `main-B2gf34bA.js`, Standard, Normal, god mode, seeds `s1`, `s2` and `s3`; the seeded starting weapon removed, the weapon given with `give`, spawning stopped after 4 s of play and the pests already on the field held at fixed spots with 10⁹ HP; pests held 60 to 90 units from Tibo): it clipped 3 wires at once; each lasted 6.25 s (5 s plus the base +25% duration), new wires followed 7.75 s apart, zaps came every 0.2 s for 80 and each release dealt 1,120. All three seeds gave the same figures.
+
 ## Tips
 
 - In boss fights, one wire stays on the boss and zaps every pest between it and Tibo. Keeping the boss within 200 units keeps the wire up for the full duration.

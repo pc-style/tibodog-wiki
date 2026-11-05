@@ -2,7 +2,7 @@
 
 Loaded Dice is the evolution of [Spud Dice](/weapons/spud-dice). To get it, have Spud Dice at level 8 and own [Four-Eyed Spud](/passives/four-eyed-spud), then open a [chest](/chests). See [Evolutions](/evolutions).
 
-It throws 3 dice every 1.4 s, 0.08 s apart, each dealing 26 raw damage. Base area 1.4 gives a blast radius of about 34 units. The faces have the same effects as on Spud Dice (dud, freeze, burn, split, gold, blast). The difference is the roll: in the game's words, “Rolls two dice and keeps the higher. A pair doubles the throw.”
+It throws 4 dice (raw amount 3 plus Tibo's base +1, see [Stats](/stats)) every 1.4 s, 0.08 s apart, each dealing 26 raw damage. Base area 1.4 gives a blast radius of about 34 units. The faces have the same effects as on Spud Dice (dud, freeze, burn, split, gold, blast). The difference is the roll: in the game's words, “Rolls two dice and keeps the higher. A pair doubles the throw.”
 
 ## How it works
 
@@ -24,6 +24,8 @@ Keeping the higher of two rolls shifts the odds toward high faces:
 | 6 (blast) | 11/36 (30.6%) |
 
 A pair comes up 1 time in 6. The best result, double sixes (1/36), deals 6× damage over a 1.6× radius. Double ones still give a dud, at half damage instead of a quarter.
+
+**Measured** in the headless sim (`tools/play.mjs`, build 41 `main-B2gf34bA.js`, Standard, Normal, god mode, seeds `s1`, `s2` and `s3`; the seeded starting weapon removed, the weapon given with `give`, spawning stopped after 4 s of play and the pests already on the field held at fixed spots with 10⁹ HP; pests held 40 to 110 units to Tibo's right): it threw 4 dice every 1.4 s, each spawned with a 2.5 s lifetime, plus 2 more for every die that rolled a split. All three seeds gave the same figures.
 
 ## Tips
 

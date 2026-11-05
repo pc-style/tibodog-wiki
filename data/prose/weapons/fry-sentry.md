@@ -11,6 +11,8 @@ In Standard runs it is one of the weapons Tibo can start with: when no starting 
 - **Shooting.** A turret fires one bolt at the nearest pest within 150 units every Interval (0.35 s). The bolt has 0 base pierce, so it stops at the first pest unless Tibo has pierce bonuses, and it always lives 1.2 s, whatever the weapon's Duration. With no pest in range, the turret holds its fire and keeps checking.<small>[sim-HQr6OS1G.js: `let p=s?Math.max(.1*_u(e),Op.interval):Op.cooldown`]</small>
 - Turrets read the weapon's current stats each time they fire, so a level-up or a new passive also affects turrets that are already on the ground.
 
+**Measured** in the headless sim (`tools/play.mjs`, build 41 `main-B2gf34bA.js`, Standard, Normal, god mode, seeds `s1`, `s2` and `s3`; the seeded starting weapon removed, the weapon given with `give`, spawning stopped after 4 s of play and the pests already on the field held at fixed spots with 10⁹ HP; one pest held 60 units to Tibo's right): at level 1 every 7 s it placed 2 turrets at once; one of each pair lasted 375 ticks (6.25 s) and the other 359. At level 8 it placed 4 every 5.8 s, lasting 412 ticks (6.875 s). Turret bolts spawned with a 1.2 s lifetime. All three seeds gave the same figures.
+
 ## Tips
 
 - Turrets do not follow Tibo. They work best when you fight near one spot, for example while you hold a chokepoint or wait out a boss. When you kite in long lines, you leave them behind.

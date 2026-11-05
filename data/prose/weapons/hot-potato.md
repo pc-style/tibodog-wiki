@@ -12,6 +12,8 @@ It is offered as a level-up card. At level 8, with [Hot Sauce](/passives/hot-sau
 - **Fizzling out.** A potato that runs out of flight time (3 s × Duration) also explodes where it is, so the blast is never lost. <small>[sim-HQr6OS1G.js: `n.fuseBlast[r]>0&&Wd(e,r)`]</small>
 - Pierce bonuses from items and passives add hops, because the hop count is the potato's pierce. The hop range is not scaled by Area.
 
+**Measured** in the headless sim (`tools/play.mjs`, build 41 `main-B2gf34bA.js`, Standard, Normal, god mode, seeds `s1`, `s2` and `s3`; the seeded starting weapon removed, the weapon given with `give`, spawning stopped after 4 s of play and the pests already on the field held at fixed spots with 10⁹ HP; pests held 40 to 110 units to Tibo's right): at level 1 it threw 2 potatoes 0.3 s apart every 2.6 s, each spawned with a 3.75 s lifetime and pierce 3; at level 8 it threw 4 every 2.3 s with pierce 7. All three seeds gave the same figures.
+
 ## Tips
 
 - Level 3 and level 7 each add a potato, and four levels add pierce, so most upgrades raise the number of pests each volley touches.

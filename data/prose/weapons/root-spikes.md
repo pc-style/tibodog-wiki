@@ -10,6 +10,8 @@ You get it from a level-up card. At level 8 it targets 9 pests (8 + 1) for 44 da
 - **Delay.** The spike lands where the pest was when it was targeted, `delay` (0.3 s) later. A fast pest can walk out of the 10-unit blast before it erupts. Any other pest standing on the spot is hit as well.
 - Each blast's radius is `size` × area. Amount bonuses from [GPU](/passives/gpu) and [Sprouting Eyes](/passives/sprouting-eyes) add more spikes per volley.
 
+**Measured** in the headless sim (`tools/play.mjs`, build 41 `main-B2gf34bA.js`, Standard, Normal, god mode, seeds `s1`, `s2` and `s3`; the seeded starting weapon removed, the weapon given with `give`, spawning stopped after 4 s of play and the pests already on the field held at fixed spots with 10⁹ HP; 12 pests held on a ring 60 units from Tibo): at level 1 every 2.8 s exactly 4 pests were hit on the same tick; at level 8 exactly 9, every 2.2 s. All three seeds gave the same figures.
+
 ## Tips
 
 - Extra spikes are only useful when enough pests are close to Tibo. It does nothing against pests that are far away.

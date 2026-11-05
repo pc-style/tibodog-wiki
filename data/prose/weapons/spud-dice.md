@@ -1,8 +1,8 @@
 ## Overview
 
-Spud Dice throws a potato die at the nearest pest every 2 s. The die explodes like a [Spud Cannon](/weapons/spud-cannon) shell: it hits the first pest it touches, or bursts at the end of its 2 s flight, for 14 raw damage in a 20-unit radius. Before each throw it rolls a six-sided die, and the face changes the shot, as the in-game text says: “1 is a dud, 2 freezes, 3 burns, 4 splits, 5 pays gold, 6 blows up big.”
+Spud Dice throws 2 potato dice (its raw amount of 1 plus Tibo's base +1 amount, see [Stats](/stats)), 0.2 s apart, at the nearest pest every 2 s. The die explodes like a [Spud Cannon](/weapons/spud-cannon) shell: it hits the first pest it touches, or bursts at the end of its flight (2 s, 2.5 s with Tibo's base +25% duration), for 14 raw damage in a 20-unit radius. Before each throw it rolls a six-sided die, and the face changes the shot, as the in-game text says: “1 is a dud, 2 freezes, 3 burns, 4 splits, 5 pays gold, 6 blows up big.”
 
-It is only offered on level-up cards and is not in the starting-weapon pool. At level 8 it throws 3 dice every 1.6 s for 25 raw damage, with area 1.2 (24-unit blast). With [Four-Eyed Spud](/passives/four-eyed-spud) owned, a [chest](/chests) evolves it into [Loaded Dice](/weapons/loaded-dice).
+It is only offered on level-up cards and is not in the starting-weapon pool. At level 8 it throws 4 dice (raw amount 3 plus 1) every 1.6 s for 25 raw damage, with area 1.2 (24-unit blast). With [Four-Eyed Spud](/passives/four-eyed-spud) owned, a [chest](/chests) evolves it into [Loaded Dice](/weapons/loaded-dice).
 
 ## How it works
 
@@ -18,6 +18,8 @@ Each die rolls a uniform 1–6 when thrown. [Luck](/stats) is not used in the ro
 | 6 (blast) | Damage × 3 and blast radius × 1.6. <small>[sim-HQr6OS1G.js: `r.damage[t]=3*r.damage[t],r.explodeRadius[t]=1.6*r.explodeRadius[t]`]</small> |
 
 Freeze and burn durations are multiplied by Tibo's [duration](/stats) stat. The gold bonus is stored on the pest by the last hit it took, so it only pays out if no other hit lands before the pest dies.
+
+**Measured** in the headless sim (`tools/play.mjs`, build 41 `main-B2gf34bA.js`, Standard, Normal, god mode, seeds `s1`, `s2` and `s3`; the seeded starting weapon removed, the weapon given with `give`, spawning stopped after 4 s of play and the pests already on the field held at fixed spots with 10⁹ HP; pests held 40 to 110 units to Tibo's right): at level 1 it threw 2 dice every 2 s, each spawned with a 2.5 s lifetime, and volleys that rolled a split had 2 extra dice; at level 8 it threw 4 dice every 1.6 s. All three seeds gave the same figures.
 
 ## Tips
 

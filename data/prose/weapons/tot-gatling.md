@@ -21,6 +21,8 @@ Targeting and spread follow [Tot Toss](/weapons/tot-toss#how-it-works): every to
 
 With more tots per volley the rate keeps falling toward 10 per second. With 2 tots per volley, cooldown reduction stops adding anything once the cooldown rounds to 7 frames or less (below 0.125 s, about 4% reduction). These figures are this wiki's calculation from the code above, not numbers the game shows.
 
+**Measured** in the headless sim (`tools/play.mjs`, build 41 `main-B2gf34bA.js`, Standard, Normal, god mode, seeds `s1`, `s2` and `s3`; the seeded starting weapon removed, the weapon given with `give`, spawning stopped after 4 s of play and the pests already on the field held at fixed spots with 10⁹ HP; one pest held 60 units to Tibo's right; amount raised with 1–3 [Extra Eye](/items/extra-eye) items and cooldown cut with [Chives](/passives/chives) level 5, plus 9 Chive Charm items for the 60% cap, all granted directly): tots per second, counted over 10 s, were 15.0 / 17.1 / 17.1 with 2 tots per volley (base cooldown / Chives 5 / cap), 13.9 with 3, 12.6 with 4 and 12.0 with 5 in every cooldown column. That matches the table: 3 tots per volley is 3 tots every 13 frames, 13.85 per second. Each tot spawned with a 2.5 s lifetime and pierce 2, and in a line of 8 pests only the nearest 3 were ever hit. All three seeds gave the same figures.
+
 ## Tips
 
 - Extra amount from [Sprouting Eyes](/passives/sprouting-eyes), [GPU](/passives/gpu) or [Extra Eye](/items/extra-eye) lowers Tot Gatling's damage. If it is your main weapon, think twice before taking amount for another weapon.

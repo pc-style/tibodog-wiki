@@ -10,6 +10,8 @@ From level 5 the chop behind Tibo also flicks shreds back through the crowd: 1 a
 - **Sides.** Slash weapons alternate sides within a volley: the 1st and 3rd swings go to the side Tibo faces, the 2nd and 4th to the other side. Only left or right counts here, so "front" is whichever side Tibo faces horizontally. <small>[sim-HQr6OS1G.js: `c=i%2==0?s:-s`]</small>
 - **Shreds.** With `fling.back`, only the rear chop flings. The shreds fly backwards, fanned over ±0.3 rad, at 150 units/s for 0.7 s × Duration, pass through pests and deal 0.4× the chop's damage. A pest can be hit by this weapon's shreds once per second. <small>[sim-HQr6OS1G.js: `n.fling===void 0||!0===n.fling.back&&c===s||vf(`]</small>
 
+**Measured** in the headless sim (`tools/play.mjs`, build 41 `main-B2gf34bA.js`, Standard, Normal, god mode, seeds `s1`, `s2` and `s3`; the seeded starting weapon removed, the weapon given with `give`, spawning stopped after 4 s of play and the pests already on the field held at fixed spots with 10⁹ HP; pests held 28 units to each side of Tibo): at level 1 it chopped right, then left 0.12 s later, every 1.5 s, for 14.4 (0.8 × 18, Tibo at full HP). At level 8 it chopped every 1.35 s for 48 and the rear chop flung 4 shreds with a 0.875 s lifetime. All three seeds gave the same figures.
+
 ## Tips
 
 - At full HP Mezzaluna does 20% less than its listed damage. It only beats the listed number once Tibo is below about 86% HP.

@@ -11,6 +11,8 @@ You get it from a level-up card. At level 8 it drops 14 potatoes for 54 damage e
 - The landing spots are fixed when the shower is called and do not follow Tibo, so the potatoes stay where he was standing.
 - Amount bonuses from [GPU](/passives/gpu) and [Sprouting Eyes](/passives/sprouting-eyes) each add another potato.
 
+**Measured** in the headless sim (`tools/play.mjs`, build 41 `main-B2gf34bA.js`, Standard, Normal, god mode, seeds `s1`, `s2` and `s3`; the seeded starting weapon removed, the weapon given with `give`, spawning stopped after 4 s of play and the pests already on the field held at fixed spots with 10⁹ HP; Tibo standing still, facing right, with 8 pests in a line 20 to 90 units to his right): at level 1 it called 7 potatoes on the same tick every 5 s, each landing in a blast of radius 18; at level 8 it called 14 every 4.1 s with radius 20.7. All three seeds gave the same figures.
+
 ## Tips
 
 - Potatoes fall around where Tibo was standing when the shower was called. It works best when pests are closing in on you, and you should not expect it to hit pests that are chasing you from far behind.

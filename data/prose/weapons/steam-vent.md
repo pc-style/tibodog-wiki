@@ -15,6 +15,8 @@ Because it is an `aura` weapon, two common stats do nothing for it:
 
 Area and damage do help: the radius is 32 × area, and damage bonuses apply to every pulse.
 
+**Measured** in the headless sim (`tools/play.mjs`, build 41 `main-B2gf34bA.js`, Standard, Normal, god mode, seeds `s1`, `s2` and `s3`; the seeded starting weapon removed, the weapon given with `give`, spawning stopped after 4 s of play and the pests already on the field held at fixed spots with 10⁹ HP; Tibo standing still, facing right, with 8 pests in a line 20 to 90 units to his right): at level 1 it pulsed every 0.5 s and hit the pests at 20 and 30 units but never the one at 40; at level 8 it pulsed every 0.5 s and hit every pest out to 70 units but not the one at 80. All three seeds gave the same figures.
+
 ## Tips
 
 - Steam Vent rewards staying close to enemies, so defensive passives such as [Starch Plating](/passives/starch-plating) (armor) or [Thick Skin](/passives/thick-skin) (dodge) help it, since you will be taking contact hits while it works.

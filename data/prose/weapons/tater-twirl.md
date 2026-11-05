@@ -12,6 +12,8 @@ Tibo starts with 2 wheels (raw Amount 1 plus his base +1 projectile, see [Stats]
 - **Spin.** The wheels turn at the weapon's raw Speed in radians per second times the pace: 5 rad/s (about 0.8 turns per second) at walking pace, 5.6 rad/s from level 3. Projectile speed bonuses count only half for the spin. <small>[sim-HQr6OS1G.js: `return t.raw.speed*(1+.5*(e.loadout.stats.projSpeedMult-1))}(e,t)*a.pace`]</small>
 - **Size.** The orbit radius is 30 units × √Area, and each wheel's hit circle has a radius of 8 units × Area.
 
+**Measured** in the headless sim (`tools/play.mjs`, build 41 `main-B2gf34bA.js`, Standard, Normal, god mode, seeds `s1`, `s2` and `s3`; the seeded starting weapon removed, the weapon given with `give`, spawning stopped after 4 s of play and the pests already on the field held at fixed spots with 10⁹ HP): 2 wheels at level 1 to 5 and 3 from level 6, on a 30-unit orbit at level 1. A pest moved along with a wheel every tick was hit every 12 ticks (0.2 s) while Tibo walked and every 100 ticks (1.67 s) while he stood still. All three seeds gave the same figures.
+
 ## Tips
 
 - Keep moving. A still Tibo gets about an eighth of the hits, and move-speed bonuses raise both spin and hit rate up to double.

@@ -11,6 +11,8 @@ There are 5 pups (raw Amount 4 plus Tibo's base +1 projectile, see [Stats](/stat
 - **Turret lifetime.** 5 s (`plant.lifeSec`) times Tibo's Duration multiplier, so 6.25 s with the base +25%. With 5 pups that means about 6 turrets standing at a time. <small>[sim-HQr6OS1G.js: `i.life[o]=n.lifeSec*e.loadout.stats.durationMult`]</small>
 - **Turret fire.** Turrets shoot the nearest pest within 170 units every 0.4 s (the weapon's Interval), which cooldown reduction does not change. Turret shots use the same damage, speed and pierce as the pups' but disappear after 1.2 s. <small>[sim-HQr6OS1G.js: `let p=s?Math.max(.1*_u(e),Op.interval):Op.cooldown;`]</small>
 
+**Measured** in the headless sim (`tools/play.mjs`, build 41 `main-B2gf34bA.js`, Standard, Normal, god mode, seeds `s1`, `s2` and `s3`; the seeded starting weapon removed, the weapon given with `give`, spawning stopped after 4 s of play and the pests already on the field held at fixed spots with 10⁹ HP; Tibo standing still, facing right, with 8 pests in a line 20 to 90 units to his right): 5 pups existed; after the first pup's turret, a turret was planted about every 1 s, each lasting 375 ticks (6.25 s); in the line of 8 pests only the 3 nearest were hit (pierce 2). All three seeds gave the same figures.
+
 ## Tips
 
 - Turrets stay where they were planted, so moving around a lot spreads them over a wide area, while staying near one spot stacks them.

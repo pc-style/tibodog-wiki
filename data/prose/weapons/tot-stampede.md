@@ -13,6 +13,8 @@ A batch has as many tots as the weapon's Amount, which includes Tibo's base +1 p
 - **Lifetime.** A tot that hits nothing disappears after its Duration, 3.75 s at level 1 and 5 s from level 4 (both include Tibo's base +25%). Tots fly at 120 units per second, 140 from level 4.
 - **Pierce 0.** A tot bursts on the first pest it hits. Pierce bonuses let it carry on through more.
 
+**Measured** in the headless sim (`tools/play.mjs`, build 41 `main-B2gf34bA.js`, Standard, Normal, god mode, seeds `s1`, `s2` and `s3`; the seeded starting weapon removed, the weapon given with `give`, spawning stopped after 4 s of play and the pests already on the field held at fixed spots with 10⁹ HP; Tibo walking right for 8 s past 12 pests held at fixed points on his path): a batch appeared about every 39 ticks (0.65 s): 2 tots about 0.07 s apart at level 1, each spawned with a 3.75 s lifetime, and up to 5 at level 8 with a 5 s lifetime. All three seeds gave the same figures.
+
 ## Tips
 
 - The tots come out behind Tibo, so pests chasing him are the closest targets. Running away from a crowd sends the tots straight into it.

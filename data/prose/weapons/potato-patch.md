@@ -10,6 +10,8 @@ Throwing, growing, zaps, harvests and the 8 s self-burst follow the rules on [Se
 
 When Seed Potato evolves, any of its plants still in the ground are recalled to Tibo's hand.
 
+**Measured** in the headless sim (`tools/play.mjs`, build 41 `main-B2gf34bA.js`, Standard, Normal, god mode, seeds `s1`, `s2` and `s3`; the seeded starting weapon removed, the weapon given with `give`, spawning stopped after 4 s of play and the pests already on the field held at fixed spots with 10⁹ HP; Tibo standing still, facing right, with 8 pests in a line 20 to 90 units to his right): zaps dealt 36.9, 73.8 and 110.7, that is 0.3, 0.6 and 0.9 × 123 for stages 1 to 3. All three seeds gave the same figures.
+
 ## Tips
 
 - With three or more plants out, a good rhythm is to toss them, move on while they ripen for 2.4 s, then walk back over them for stage 3 harvests.

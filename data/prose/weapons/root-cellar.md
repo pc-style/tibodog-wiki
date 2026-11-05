@@ -11,6 +11,8 @@ You get it from a level-up card. At level 8 it deals 38 damage, the band runs to
 - **Freeze and slow.** `onHit` freezes a normal pest, which stops it moving. `bossOnHit` slows a boss instead: `factor` 0.4 means the boss moves at 60% speed. Both durations are multiplied by Tibo's duration stat, so with the base +25% duration the freeze lasts 0.875 s and the boss slow 1.25 s.
 - The ring has no knockback, and amount bonuses do not affect it.
 
+**Measured** in the headless sim (`tools/play.mjs`, build 41 `main-B2gf34bA.js`, Standard, Normal, god mode, seeds `s1`, `s2` and `s3`; the seeded starting weapon removed, the weapon given with `give`, spawning stopped after 4 s of play and the pests already on the field held at fixed spots with 10⁹ HP; Tibo standing still, facing right, with 8 pests in a line 20 to 90 units to his right, then one pest held 32 units away (48 at level 8)): in the line only the pests at 30 and 40 units were hit at level 1, each every 2.4 s, and at level 8 those at 40 to 60 units, each every 1.6 s; the single pest's freeze timer was set to 0.875 s by each hit. With the clock warped to 9:58 and the Great Wireworm boss held 40 units away, the boss was hit 7–9 times in 21 s, its freeze timer never left 0, and each hit slowed it by 40% for 1.25 s. All three seeds gave the same figures.
+
 ## Tips
 
 - The ring catches pests as they walk in towards Tibo, and the freeze holds them at the band's edge for a moment. That gives other area weapons time to hit them before they reach you.

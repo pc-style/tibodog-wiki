@@ -12,6 +12,8 @@ By level 8 it deals 21 per hit, sprays for 1.1 s, reaches 91 units (area 1.3) an
 - **Amount does nothing**: cone weapons ignore the projectile-count bonus (see [Stats](/stats)).
 - The cone has no pierce limit; every pest inside it is hit.
 
+**Measured** in the headless sim (`tools/play.mjs`, build 41 `main-B2gf34bA.js`, Standard, Normal, god mode, seeds `s1`, `s2` and `s3`; the seeded starting weapon removed, the weapon given with `give`, spawning stopped after 4 s of play and the pests already on the field held at fixed spots with 10⁹ HP; one pest held 40 units to Tibo's right): at level 1 each spray hit the pest 8 times, 0.15 s apart, and a new spray began every 3.53 s (about 1.13 s of spray plus the 2.4 s cooldown); at level 8 each spray hit 10 times and the cycle was 3.38 s. All three seeds gave the same figures.
+
 ## Tips
 
 - Area adds both reach and width of coverage, and duration lengthens every spray, so those stats help Deep Fryer more than projectile count.

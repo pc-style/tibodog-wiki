@@ -11,6 +11,8 @@ It is one of the 17 weapons a standard run can start with, and it is offered on 
 - **Shooting.** Each pup has its own timer. When it is ready, it targets the nearest enemy within 150 units of the pup; with no target in range it checks again every 0.1 s. Newly spawned pups start 0.15 s apart so their shots are staggered. <small>[sim-HQr6OS1G.js: `let u=n.x[i],d=n.y[i],f=Zi(e,u,d,o.range);if(f===void 0){n.t[i]=kp;continue}`]</small>
 - **Shots.** Tots travel at speed 200 for 1.875 s (1.5 s raw, plus Tibo's base +25% duration) and stop at the first enemy unless the weapon has pierce. Projectile speed, duration, area and pierce bonuses apply to them as usual.
 
+**Measured** in the headless sim (`tools/play.mjs`, build 41 `main-B2gf34bA.js`, Standard, Normal, god mode, seeds `s1`, `s2` and `s3`; the seeded starting weapon removed, the weapon given with `give`, spawning stopped after 4 s of play and the pests already on the field held at fixed spots with 10⁹ HP; one pest held 60 units to Tibo's right): 2 pups existed at level 1 and 4 at level 8. All three seeds gave the same figures.
+
 ## Tips
 
 - Pups never need aiming and never run out, which makes Tater Tot Pup a steady single-target weapon. Its short 150-unit range means it does little against enemies that keep their distance.

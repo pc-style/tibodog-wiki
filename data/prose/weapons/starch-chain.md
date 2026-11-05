@@ -12,6 +12,8 @@ It is offered on level-up and can be given by [poteto's](/visitors#poteto) gift 
 - **Arcs are separate.** The arcs of one cast fire 0.2 s apart and each starts again from the nearest enemy, so later arcs can hit the same pests as the first.
 - Like [Starch Bolt](/weapons/starch-bolt), the weapon only fires when an enemy is within its 150-unit range.
 
+**Measured** in the headless sim (`tools/play.mjs`, build 41 `main-B2gf34bA.js`, Standard, Normal, god mode, seeds `s1`, `s2` and `s3`; the seeded starting weapon removed, the weapon given with `give`, spawning stopped after 4 s of play and the pests already on the field held at fixed spots with 10⁹ HP; 14 pests held in a line, 30 units apart, from 30 units to Tibo's right): at level 1 two arcs 0.2 s apart every 1.8 s each hit the 4 nearest pests; at level 8 three arcs each hit the 8 nearest pests. All three seeds gave the same figures.
+
 ## Tips
 
 - Starch Chain does most of its work when pests are packed within 70 units of each other. Against spread-out enemies the chain ends early.

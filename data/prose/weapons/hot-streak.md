@@ -13,6 +13,8 @@ With no flames the slash covers a radius of 34 and fires once per second. With f
 - **No target, no slash.** If no pest is inside the circle the slash waits and the timer does not restart. The next slash fires as soon as a pest enters.
 - Amount, speed, duration and pierce have no effect on this weapon.
 
+**Measured** in the headless sim (`tools/play.mjs`, build 41 `main-B2gf34bA.js`, Standard, Normal, god mode, seeds `s1`, `s2` and `s3`; the seeded starting weapon removed, the weapon given with `give`, spawning stopped after 4 s of play and the pests already on the field held at fixed spots with 10⁹ HP; Tibo walking right the whole time, with pests held at fixed distances to his right): with no flames the slash reached the pest at 30 units but not the one at 40, and fired once per second; after 5 s of walking it fired every 27 ticks (0.45 s) and reached the pest at 78 units but not the one at 85 (pests have a radius of about 5). At level 8 (area 1.2) it reached 45 units with no flames and 95 with five. All three seeds gave the same figures.
+
 ## Tips
 
 - Keep moving. Stopping for a single tick costs every flame, while a hit costs only two.

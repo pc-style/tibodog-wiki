@@ -1,6 +1,6 @@
 ## Overview
 
-Fry Knives fires sharp fries straight ahead in the direction Tibo is facing. It does not aim: every 0.9 s it throws its knives along Tibo's last movement direction, whether or not a pest is there. At level 1 it throws one knife for 8 damage that hits 2 pests; by level 8 it throws 7 knives per volley (0.07 s apart), each dealing 35 damage and hitting up to 4 pests.
+Fry Knives fires sharp fries straight ahead in the direction Tibo is facing. It does not aim: every 0.9 s it throws its knives along Tibo's last movement direction, whether or not a pest is there. At level 1 it throws 2 knives (its raw amount of 1 plus Tibo's base +1 amount, see [Stats](/stats)), 0.07 s apart, for 8 damage each, and each knife hits 2 pests; by level 8 it throws 8 knives per volley (raw amount 7 plus 1), each dealing 35 damage and hitting up to 4 pests.
 
 Fry Knives has the highest offer weight of this group of weapons (100), so it shows up on level-up cards often, and it is one of the possible starting weapons of a standard run (see [Level-up](/level-up)). At level 8, a chest opened while Tibo holds [Salt Shaker](/passives/salt-shaker) evolves it into [Thousand Fries](/weapons/thousand-fries).
 
@@ -10,6 +10,8 @@ Fry Knives has the highest offer weight of this group of weapons (100), so it sh
 - **Always fires**: facing-shot weapons do not wait for a target in range.
 - **Pierce**: a knife with pierce N hits N + 1 pests.
 - **Range**: with speed 260 and duration 1.2 s (times Tibo's duration stat, base +25%), a knife travels about 390 units before disappearing (see [Stats](/stats)).
+
+**Measured** in the headless sim (`tools/play.mjs`, build 41 `main-B2gf34bA.js`, Standard, Normal, god mode, seeds `s1`, `s2` and `s3`; the seeded starting weapon removed, the weapon given with `give`, spawning stopped after 4 s of play and the pests already on the field held at fixed spots with 10⁹ HP; Tibo standing still, facing right, with 8 pests in a line 20 to 90 units to his right): at level 1 it threw 2 knives about 0.07 s apart every 0.9 s, each spawned with a 1.5 s lifetime, and the hits landed on the 2 nearest pests (one stray hit on the third in one seed, from a knife that missed the second); at level 8 it threw 8 knives every 0.9 s and the 4 nearest pests took the hits. All three seeds gave the same figures.
 
 ## Tips
 

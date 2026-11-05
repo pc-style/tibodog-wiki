@@ -11,6 +11,8 @@ It is offered as a level-up card. At max level, with [Sour Cream](/passives/sour
 - **Speed.** Projectile speed bonuses scale the return push by the same factor, so the turnaround time stays the same and the reach grows with the speed bonus. The level-6 +40 speed raises reach to about 73 units.
 - **Pierce.** Pierce 99 means unlimited. A hash brown can hit the same pest again after a short re-hit delay, which is how it hits pests once on the way out and again on the way back.
 
+**Measured** in the headless sim (`tools/play.mjs`, build 41 `main-B2gf34bA.js`, Standard, Normal, god mode, seeds `s1`, `s2` and `s3`; the seeded starting weapon removed, the weapon given with `give`, spawning stopped after 4 s of play and the pests already on the field held at fixed spots with 10⁹ HP; Tibo standing still, facing right, with 8 pests in a line 20 to 90 units to his right): at level 1 it threw 2 hash browns 0.15 s apart every 2 s, each spawned with a 3.25 s lifetime; no pest was hit twice by them within 0.5 s, and pests out to 60 units were hit. At level 8 it threw 4 every 1.8 s, and pests out to 80 units were hit. All three seeds gave the same figures.
+
 ## Tips
 
 - Its reach is short, so it hits hardest close to Tibo. Pests that crowd him get hit on both passes.

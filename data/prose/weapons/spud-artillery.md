@@ -11,6 +11,8 @@ Every 1.8 s it lobs 6 potatoes (raw Amount 5 plus Tibo's base +1 projectile, see
 - **Misses.** A potato that touches nothing explodes wherever it is when its Duration runs out.
 - **No target needed.** The weapon fires on its cooldown even when no pest is around.
 
+**Measured** in the headless sim (`tools/play.mjs`, build 41 `main-B2gf34bA.js`, Standard, Normal, god mode, seeds `s1`, `s2` and `s3`; the seeded starting weapon removed, the weapon given with `give`, spawning stopped after 4 s of play and the pests already on the field held at fixed spots with 10⁹ HP; Tibo standing still, facing right, with 8 pests in a line 20 to 90 units to his right): it lobbed 6 potatoes 0.1 s apart every 1.8 s, each spawned with a 3.75 s lifetime. All three seeds gave the same figures.
+
 ## Tips
 
 - Area raises both the sideways spread and the blast radius; projectile speed raises the arc.

@@ -14,6 +14,8 @@ At level 1 Tibo can have one plant out at a time and the weapon's damage is 30. 
 - **Golden harvest.** A stage 3 harvest has a 0.5 × luck chance to also drop 4 gold coins. Each coin is worth 1 × (1 + [curses taken](/curse)).
 - **Left alone.** After 8 s an unharvested plant bursts by itself for 0.6 × damage in a radius of 38 × area, with no knockback, and leaves a spent potato. Walk over it to catch it. It returns to Tibo's hand on its own once he is more than 160 units away.
 
+**Measured** in the headless sim (`tools/play.mjs`, build 41 `main-B2gf34bA.js`, Standard, Normal, god mode, seeds `s1`, `s2` and `s3`; the seeded starting weapon removed, the weapon given with `give`, spawning stopped after 4 s of play and the pests already on the field held at fixed spots with 10⁹ HP; Tibo standing still, facing right, with 8 pests in a line 20 to 90 units to his right): zaps came once per second (59–60 ticks) and dealt 9, 18 or 27 at level 1, that is 0.3, 0.6 and 0.9 × 30 for stages 1 to 3. All three seeds gave the same figures.
+
 ## Tips
 
 - Wait for stage 3 (2.4 s after landing) before walking over a plant. A stage 3 harvest deals 4 times the damage of a stage 1 harvest over a larger radius. The plant also zaps harder while it grows.

@@ -11,6 +11,8 @@ The rules are the same as [Spud Fence](/weapons/spud-fence#how-it-works); here i
 - **Width.** Area 2.25 makes each arc 54 units wide (27 on each side of the line), against 30 for a level 8 Spud Fence.
 - **Hit rate.** Unchanged: a pest touching any arc is zapped at most once every 0.2 s, so 85 damage up to five times a second.
 
+**Measured** in the headless sim (`tools/play.mjs`, build 41 `main-B2gf34bA.js`, Standard, Normal, god mode, seeds `s1`, `s2` and `s3`; the seeded starting weapon removed, the weapon given with `give`, spawning stopped after 4 s of play and the pests already on the field held at fixed spots with 10⁹ HP; Tibo walking right for 8 s past 12 pests held at fixed points on his path): a pest touching the wire was zapped every 0.2 s (12 ticks) for 85. All three seeds gave the same figures.
+
 ## Tips
 
 - With up to 8 posts you can walk a full loop around a group and close the fence on them; pests inside then cross an arc whichever way they move.

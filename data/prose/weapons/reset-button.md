@@ -13,6 +13,8 @@ You get it from a level-up card. Every level only lowers the cooldown, from 90 s
 - **Bullets.** All enemy bullets are removed.
 - **Timing.** It fires as soon as it is off cooldown while any pest or boss is alive. Gaining a level resets its cooldown to zero, so it fires straight away after each level-up. Cooldown reduction cannot take it below 15 s (`reset.minCooldownSec`), and amount bonuses do not affect it.
 
+**Measured** in the headless sim (`tools/play.mjs`, build 41 `main-B2gf34bA.js`, Standard, Normal, god mode, seeds `s1`, `s2` and `s3`; the seeded starting weapon removed, the weapon given with `give`, spawning stopped after 4 s of play and the pests already on the field held at fixed spots with 10⁹ HP; 17 pests held at offsets from Tibo between 140 and 180 units along each axis and on the diagonal): every pest whose body reached 160 units or less from Tibo along either axis was killed, including one at (160, 160) on the diagonal, 226 units away, and every pest whose nearest edge was beyond 160 survived. For example a pest of radius 5 at 165 units died and one at 166 survived. The area is the 320 × 320 square, not a circle. All three seeds gave the same figures.
+
 ## Tips
 
 - Every level-up of Reset Button is an immediate screen clear, which can get you out of a swarm. The kills give no XP, though, and gems on the ground are likely to be erased, so it slows your levelling.

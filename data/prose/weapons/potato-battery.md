@@ -12,6 +12,8 @@ Its listed amount is 0, so it clips 1 wire at level 1 (Tibo's built-in +1 amount
 - **HP floor.** Any hit that would bring a clipped pest below 1 HP leaves it at 1 HP. Bosses are exempt. <small>[sim-HQr6OS1G.js: `!i&&(s&_e.Reset)===0&&Go(e,n))&&(v=1)`]</small>
 - **Cooldown.** The 2.5 s cooldown only starts counting once all of this weapon's wires are gone. A full cycle is wire time plus cooldown, about 7.5 s at level 1 with the base Duration bonus. <small>[sim-HQr6OS1G.js: `n.pool.isAlive(i)&&n.slot[i]===t&&r++}return r})(e,t.slot)>0||(t.cd=uf(e,t.cd)`]</small> With no pest in range it checks again every 0.1 s.
 
+**Measured** in the headless sim (`tools/play.mjs`, build 41 `main-B2gf34bA.js`, Standard, Normal, god mode, seeds `s1`, `s2` and `s3`; the seeded starting weapon removed, the weapon given with `give`, spawning stopped after 4 s of play and the pests already on the field held at fixed spots with 10⁹ HP; pests held 60 to 90 units from Tibo): at level 1 one wire lasted 5 s (4 s plus the base +25% duration) and a new one clipped 7.5 s after the previous, zapping every 0.25 s for 5 and bursting for 25 on release; from level 5 two wires clipped at once. All three seeds gave the same figures.
+
 ## Tips
 
 - The pinned pest stops where it is clipped, at least 50 units away when possible. Moving so that other pests walk across the wire gets more out of each zap.

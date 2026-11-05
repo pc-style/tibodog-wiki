@@ -12,6 +12,8 @@ It is one of the 17 weapons a standard run can start with (the game picks one fr
 - **Blast size.** The blast radius is the `size` of 12 times area. Range is not scaled by area, so area makes each blast bigger but does not let the weapon reach further.
 - Extra amount from [Sprouting Eyes](/passives/sprouting-eyes) and other sources adds strikes.
 
+**Measured** in the headless sim (`tools/play.mjs`, build 41 `main-B2gf34bA.js`, Standard, Normal, god mode, seeds `s1`, `s2` and `s3`; the seeded starting weapon removed, the weapon given with `give`, spawning stopped after 4 s of play and the pests already on the field held at fixed spots with 10⁹ HP; 12 pests held on a ring 75 units from Tibo): at level 1 every 2 s exactly 3 pests were struck on the same tick, and at level 8 exactly 7, every 2 s, each for the weapon's full damage. All three seeds gave the same figures.
+
 ## Tips
 
 - Because targets are random, Starch Bolt is better at thinning a crowd than at focusing a boss. With a single enemy in range only one strike lands per cast.
