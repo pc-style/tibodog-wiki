@@ -32,7 +32,7 @@ The Cloudflare detector (`tools/detector/`) checks tibo.dog every minute, archiv
 
 1. Checks, as separate commands: `node build.mjs`; `node tools/check-quotes.mjs .cache/<main>/assets` (0 unresolved; `--write` fixes quotes that moved verbatim); `node check-middleware.mjs`; `node --test tools/*.test.mjs pages/*.test.mjs tools/detector/*.test.mjs`; `git diff --check`.
 2. Commit, `git fetch`, rebase your own commits onto `origin/main`, rerun the checks, push.
-3. Production deploy of the pushed SHA, one owner at a time. If the push already created a Vercel deployment for that SHA (Git integration), wait for it; otherwise create one production deployment for exactly that SHA (team `team_ceF7ek1jhDCXPvwYHv5HrsGM`, project `prj_ezw3MZfNGIIQlXJSKRbpzexA2qtp`).
+3. The push deploys production through Vercel's Git integration; do not create another deployment. Find the deployment for your SHA (team `team_ceF7ek1jhDCXPvwYHv5HrsGM`, project `prj_ezw3MZfNGIIQlXJSKRbpzexA2qtp`). Only if none appears within 2 minutes, create one production deployment for exactly that SHA.
 4. Done means live: wait for READY, then check `https://tibodog-wiki.vercel.app/api/index.json` `meta.wiki.commit` equals the latest `origin/main`, `/versions` shows no "Not reviewed yet", and each changed page shows the change. Inspect a screenshot of any changed layout.
 
 ## Keeping this skill small
