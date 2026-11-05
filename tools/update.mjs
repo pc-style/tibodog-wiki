@@ -156,7 +156,9 @@ if (!apply) {
   ];
   for (const p of sources) {
     const s = readFileSync(p, 'utf8');
-    writeFileSync(p, s.replace(/[a-z0-9.-]+-[A-Za-z0-9_-]{8}\.js/g, (f) => (renames[f] ? (renamed++, renames[f]) : f)));
+    // In prose, main-*.js names the build a "Measured" run used; that stays true after an update.
+    const keep = (f) => p.startsWith('data/prose') && f.startsWith('main-');
+    writeFileSync(p, s.replace(/[a-z0-9.-]+-[A-Za-z0-9_-]{8}\.js/g, (f) => (renames[f] && !keep(f) ? (renamed++, renames[f]) : f)));
   }
   report.push(`## Applied`, '', `Renamed ${renamed} chunk reference(s) in pages/ and data/prose/.`, '');
 
