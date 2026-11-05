@@ -6,7 +6,7 @@ It has weight 6 out of 53 among Rare items, about 1.1% of item rolls at luck 0. 
 
 ## How it works
 
-The multiplier applies to every damage instance that hits an elite or a boss, before crit. That includes item procs, burn ticks and blasts as well as weapon hits. <small>[sim-B7N2RusS.js: `if((a||t.has(n,C.Elite))&&(u*=s.eliteMult*o.eliteMult[i])`]</small>
+The multiplier applies to every damage instance that hits an elite or a boss, before crit. That includes item procs, burn ticks and blasts as well as weapon hits. <small>[sim-C2-5Mjkx.js: `if((a||t.has(n,C.Elite))&&(u*=s.eliteMult*o.eliteMult[i])`]</small>
 
 ## Tips
 
