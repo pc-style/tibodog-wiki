@@ -42,7 +42,7 @@ Settings, the analytics choice, the picker state and discoveries are kept in the
 |---|---|---|
 | Music volume | slider | full |
 | Sound volume | slider | full |
-| Language | 27 languages | browser language |
+| Language | 27 languages | browser language, unless the address has \`?lang=\` (see [Languages](/controls#languages)) |
 | Color-blind mode | Off, Protanopia, Deuteranopia, Tritanopia (with a Danger / XP / Health colour preview) | Off |
 | Weapon effects | slider | full |
 | Screen shake | Off, Low, Full | Full |
@@ -107,7 +107,7 @@ An active intro or landing cutscene ends as skipped if its renderer stops report
       `- **Hidden or easter-egg content.** The scripted jokes and reveals found in the code are on [Secrets](/secrets), most of them seen in play. Not yet seen on screen: poteto's 20:00 taunt, Andrew's cheers, the fries lines after the second knock-out, and Alex's join text outside Story. Content drawn only into sprite art was not searched.\n` +
       `- **Patch history.** Every entry of the in-game **What's new** panel is now on [History](/history#official-patch-notes). Still open: the panel does not explain changes it leaves out, so smaller code changes are known only from the wiki's own build comparisons; and X search was rate-limited during the original research on 2026-11-02, so some developer replies may be missing from the timeline.\n` +
       `- **Server-side score checks.** The game posts top-scoring runs to \`/replay\`, and the server replays them to check the score. The game and tibo.dog have no leaderboard (see [Leaderboards](/modes#leaderboards)). The client never shows the verdict, and the privacy page says only “The check keeps only its result.”, so what that result is used for cannot be seen from outside.\n` +
-      `- **Other languages.** English text only; the game has 27 languages.\n` +
+      `- **Other languages.** How the game picks its 27 languages, and every entity's name in each of them, are on [Controls](/controls#languages). Descriptions, interface text and the translated in-game changelogs are not mirrored; the wiki itself is English only.\n` +
       `- **Hands-on testing.** Most values come from code. The five-minute smoke run (seed \`wiki\`, Standard, Normal, no grants or clock jumps) completed with 1,322 kills and damage from Fry Sentry (6,387.99), Hash Brown Shield (1,072.59), Spud Cannon (2,573.88) and Fry Lance (602.48). Same-input comparisons against the preceding build measured late-game scaling, charger windups (0.5 → 0.6 s after 20:00), a boss kill creating a forge (0 → 1), its 2,500-gold purchase, weapon/passive breaks and long-run score arithmetic. These checks settle those specific behaviors, not every weapon parameter, random outcome, repeated-forge route or music transition.\n` +
       `- **Future updates.** The game changes often. Use **Check live game for updates** at the top of any page to compare the live game with this wiki, or see [Versions & updates](/versions). Detected builds still need review before deployment.\n`;
   },

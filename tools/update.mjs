@@ -82,6 +82,22 @@ if (newNotes.length) {
   for (const k of newNotes) report.push(`- ${k.slice(k.indexOf('|') + 1)}`);
 } else report.push('None.');
 report.push('');
+// Entity names in the other languages (pages/entities.mjs, /controls#languages). Changed translations are
+// safe to deploy; a changed language list changes the /controls table and its prose, so it needs review.
+run('node', ['tools/i18n-names.mjs', live.dir, C.boot, live.main, join(cache, 'data', 'i18n-names.json')]);
+const l10n = (f) => existsSync(f) ? JSON.parse(readFileSync(f, 'utf8')) : { languages: [], names: {} };
+const [oldL10n, newL10n] = [l10n('data/i18n-names.json'), l10n(join(cache, 'data', 'i18n-names.json'))];
+const langList = (d) => d.languages.map((l) => `${l.tag} ${l.endonym} ${l.dir}`).join(', ');
+const nameRows = (d) => Object.entries(d.names).flatMap(([kind, ids]) => Object.entries(ids).flatMap(([id, e]) =>
+  Object.entries(e).filter(([f]) => f !== 'cite').map(([f, row]) => [`${kind}.${id}.${f}`, JSON.stringify(row)])));
+const oldRows = new Map(nameRows(oldL10n));
+const changedNames = nameRows(newL10n).filter(([k, v]) => oldRows.get(k) !== v).map(([k]) => k);
+report.push('## Names in other languages', '');
+if (langList(oldL10n) !== langList(newL10n)) {
+  review.push('language list changed');
+  report.push(`Language list changed: ${langList(oldL10n)} → ${langList(newL10n)}`, '');
+}
+report.push(changedNames.length ? changedNames.map((k) => `- \`${k}\` new or retranslated`).join('\n') : 'No name changes.', '');
 
 // 3. Code diff of the simulation and boot modules.
 if (prev) {
@@ -143,7 +159,7 @@ if (!apply) {
   if (!q.ok) review.push('quoted code no longer found');
 } else {
   // 5. Write data, icons and build info.
-  for (const f of ['registry.json', 'config.json', 'en-content.json', 'difficulty.json', 'changelog.json']) cpSync(join(cache, 'data', f), join('data', f));
+  for (const f of ['registry.json', 'config.json', 'en-content.json', 'difficulty.json', 'changelog.json', 'i18n-names.json']) cpSync(join(cache, 'data', f), join('data', f));
   if (iconDiff) cpSync(join(cache, 'icons'), 'public/icons', { recursive: true });
   const renames = Object.fromEntries(
     Object.entries(prev?.chunks ?? {}).filter(([b, f]) => C[b] && C[b] !== f).map(([, f]) => [f, C[base(f)]]),
