@@ -43,6 +43,7 @@ Load the `playing-tibo` skill and play the new build, not just its diff:
 
 ## 3. Fix the pages
 
+- `bun run game:update` also refreshes `data/changelog.json` (the in-game patch notes on /history) with `tools/dump-changelog.mjs`; the report lists new notes under "New in-game patch notes". If the extractor throws, fix its code-shape lookups rather than editing the JSON by hand.
 - Tables built from `data/` update on their own. Check prose that hard-codes numbers or names: difficulty notes, POI text, controls, revive and stat notes in `pages/*.mjs`.
 - Every quote has to point at the file that contains it. Use `cite(SIM, ...)` or `cite(BOOT, ...)` accordingly.
 - Verify all current/changed citations against the matching mirrored build. `data/mechanics-notes.md` is an archival snapshot of the original build, intentionally excluded by `check-quotes.mjs`; preserve it unchanged during routine updates. Do not relabel its quotes as current or claim its game data is still identical. If its deleted original assets cannot be recovered, disclose that historical quotes were not reverified; this alone does not block an otherwise verified current-build update. Changes to archival claims require their own evidence.

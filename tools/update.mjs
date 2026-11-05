@@ -65,12 +65,22 @@ try {
 const C = live.chunks;
 const commit = readFileSync(join(live.dir, C['death-flow'] ?? ''), 'utf8').match(/commit:[\w$]+\(`([0-9a-f]{7,40})`\)/)?.[1] ?? null;
 run('node', ['tools/dump-build.mjs', live.dir, C.boot, C.sim, C['i18n-en-content'], join(cache, 'data')]);
+run('node', ['tools/dump-changelog.mjs', live.dir, live.main, join(cache, 'data', 'changelog.json')]);
+const notes = (f) => existsSync(f) ? JSON.parse(readFileSync(f, 'utf8')) : { unreleased: [], days: [] };
+const noteIds = (c) => new Set([...c.unreleased, ...c.days.flatMap((d) => d.waves.flatMap((w) => w.lines))].map((l) => `${l.msgId}|${l.text}`));
+const oldNotes = noteIds(notes('data/changelog.json'));
+const newNotes = [...noteIds(notes(join(cache, 'data', 'changelog.json')))].filter((k) => !oldNotes.has(k));
 const diff = JSON.parse(run('node', ['tools/diff-data.mjs', 'data', join(cache, 'data'), '--json']));
 report.push(`Game commit: \`${commit ?? 'not found'}\` (was \`${build.commit}\`).`, '', '## Data changes', '');
 if (diff.changes.length) {
   review.push(`${diff.changes.length} data change(s)`);
   for (const c of diff.changes) report.push(`- \`${c.path}\`: \`${JSON.stringify(c.old)}\` → \`${JSON.stringify(c.new)}\``);
 } else report.push('None. Registry, English text and config values are identical.');
+report.push('', '## New in-game patch notes', '');
+if (newNotes.length) {
+  review.push(`${newNotes.length} new patch note(s)`);
+  for (const k of newNotes) report.push(`- ${k.slice(k.indexOf('|') + 1)}`);
+} else report.push('None.');
 report.push('');
 
 // 3. Code diff of the simulation and boot modules.
@@ -131,7 +141,7 @@ if (!apply) {
   if (!q.ok) review.push('quoted code no longer found');
 } else {
   // 5. Write data, icons and build info.
-  for (const f of ['registry.json', 'config.json', 'en-content.json', 'difficulty.json']) cpSync(join(cache, 'data', f), join('data', f));
+  for (const f of ['registry.json', 'config.json', 'en-content.json', 'difficulty.json', 'changelog.json']) cpSync(join(cache, 'data', f), join('data', f));
   if (iconDiff) cpSync(join(cache, 'icons'), 'public/icons', { recursive: true });
   const renames = Object.fromEntries(
     Object.entries(prev?.chunks ?? {}).filter(([b, f]) => C[b] && C[b] !== f).map(([, f]) => [f, C[base(f)]]),
@@ -140,11 +150,15 @@ if (!apply) {
 
   // 6. Chunk names in page sources. Text about past builds lives in data/builds.json and is not touched.
   let renamed = 0;
-  for (const p of readdirSync('pages').filter((f) => f.endsWith('.mjs')).map((f) => join('pages', f))) {
+  const sources = [
+    ...readdirSync('pages').filter((f) => f.endsWith('.mjs')).map((f) => join('pages', f)),
+    ...(existsSync('data/prose') ? readdirSync('data/prose', { recursive: true }).filter((f) => f.endsWith('.md')).map((f) => join('data/prose', f)) : []),
+  ];
+  for (const p of sources) {
     const s = readFileSync(p, 'utf8');
     writeFileSync(p, s.replace(/[a-z0-9.-]+-[A-Za-z0-9_-]{8}\.js/g, (f) => (renames[f] ? (renamed++, renames[f]) : f)));
   }
-  report.push(`## Applied`, '', `Renamed ${renamed} chunk reference(s) in pages/.`, '');
+  report.push(`## Applied`, '', `Renamed ${renamed} chunk reference(s) in pages/ and data/prose/.`, '');
 
   // 7. Rebuild, fix renamed quotes, rebuild, recheck.
   const b1 = tryRun('node', ['build.mjs']);
