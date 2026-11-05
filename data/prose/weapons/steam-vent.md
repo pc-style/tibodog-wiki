@@ -6,12 +6,12 @@ It is one of the 17 weapons a standard run can start with, and it is offered on 
 
 ## How it works
 
-Each pulse hits everything inside the circle, then waits `hitInterval` (0.5 s) for the next one. <small>[sim-04-ude95.js: `t.cd=E(n.hitInterval),J(e,r.damage,t.src,t.slot,r.knockback);let i=e.buf.weapon,a=G(e,e.player.x[e.me],e.player.y[e.me],n.size*r.area,i);`]</small>
+Each pulse hits everything inside the circle, then waits `hitInterval` (0.5 s) for the next one. <small>[sim-D6eyfxy3.js: `t.cd=r(n.hitInterval),J(e,i.damage,t.src,t.slot,i.knockback);let a=e.buf.weapon,o=G(e,e.player.x[e.me],e.player.y[e.me],n.size*i.area,a);`]</small>
 
 Because it is an `aura` weapon, two common stats do nothing for it:
 
 - **Cooldown** reduction does not speed up the pulses; the pulse timer uses `hitInterval` directly, and the weapon's cooldown is 0 (see [Stats](/stats)).
-- **Amount** bonuses are ignored for aura weapons. <small>[sim-04-ude95.js: ``return e!==`aura`&&e!==`cone`&&e!==`nuke`&&e!==`ring` ``]</small>
+- **Amount** bonuses are ignored for aura weapons. <small>[sim-D6eyfxy3.js: ``return e!==`aura`&&e!==`cone`&&e!==`nuke`&&e!==`ring` ``]</small>
 
 Area and damage do help: the radius is 32 × area, and damage bonuses apply to every pulse.
 

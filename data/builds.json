@@ -692,5 +692,16 @@
   "updated": "2026-11-05T10:58:45Z",
   "changes": "Hard and Nightmare allow bigger crowds (650 and 800). Pest XP drops grow from 25:00 (×1.4, then ×2 at 30:00). Boss ground warnings draw on top; busy fights show fewer death puffs.",
   "evidence": "Hard and Nightmare ordinary spawn limits rise to 650 and 800, with a ceiling floor ramp from 16:00 to 17:00; hard caps are 700 and 850. Standard pest XP drops gain the HP phase step from 25:00 (×1.4, then ×2 at 30:00), without within-phase growth. Boss ground warnings render above other floor effects; busy fights suppress small death puffs and merge/reposition damage numbers. Shared-run score checks accept peak crowds through 850. Reviewed all 210 JS modules, own indexes/warm lists, 15 CSS, own atlases/PNGs/crops and all 27 locales; four new journal notes match all 167 ordered live records. Original old/new spawn, death, renderer and score-boundary probes confirm these changes. Same-input original-rule five-minute Standard/Normal smoke matches: 1322 kills, level 13, HP 150 and damage from four weapons. Forced late probes are not natural-play or physical-device performance evidence; historical limits preserved."
+ },
+ {
+  "seen": "2026-11-05",
+  "main": "main-CsVeYSDu.js",
+  "boot": "boot-xpKLpkq3.js",
+  "sim": "sim-D6eyfxy3.js",
+  "commit": "8928d1221fd1",
+  "status": "reviewed",
+  "updated": "2026-11-05T11:20:27Z",
+  "changes": "Controls hints, boss bars and event banners move into the run module. No gameplay, balance, art, translated-name or journal-note changes found.",
+  "evidence": "Reviewed all 210 JavaScript modules with exact mapped dependencies, retaining failures and binding-aware AST residuals. Twenty-three declarations and ControlsHint/eventBanner/addUp move from boot into HUD_PARTS in sim; their bindings resolve to the same producers. Boss HUD state/rendering now receives views, fill scales and HP formatting; original old/new probes agree on grouped HP/counts, overflow, death holds, replacement, empty pools, banner text and gold aggregation. Boot mounts the hint once both sources and sim parts arrive and fits it immediately; optional parts guard pre-sim notifications. Four consumers gain a sim import for moved helpers; executable bodies and used producer identities match, and the added sim HUD object has no eager DOM construction. Registry, difficulty and core simulation are unchanged; five-minute seed wiki Standard/Normal runs with each original controller rule set match at 1322 kills, level 13, HP 150 and four weapon damage sources (no give/warp/god). Own indexes/warm lists map exactly, 15 CSS files and four PNGs match, own atlas tables and 223 RGBA icon crops match; all 27 locale names match. All 167 ordered live journal records, date/code groups and kind icons match (33/41/47/46), with only the current code changing. Current quotes are repaired against matching sources, including the Spud Freezer banner moved from boot to sim. Isolated HUD probes use view targets, not device/FPS evidence; original historical/D3 evidence and missing-source limits are preserved."
  }
 ]
