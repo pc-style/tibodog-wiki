@@ -1,0 +1,1233 @@
+{
+ "build": "main-BnCKpQy_.js",
+ "chunk": "changelog-panel-Dc7yoawc.js",
+ "extracted": "2026-11-05",
+ "note": "Every English entry of the in-game What's new panel, in the panel's order (newest first). English is the source text inside the chunk; the i18n-*-changelog-*.js chunks hold translations only. unreleased: notes not yet given a version; the panel lists them first under the player's own version.",
+ "unreleased": [
+  {
+   "id": "ketchup-kraken-splat",
+   "kind": "boss",
+   "text": "The Ketchup Kraken now flings ketchup blobs that splat into puddles. Don't stand in them.",
+   "msgId": "ivZ0kU",
+   "about": {
+    "kind": "boss",
+    "id": "ketchup-kraken"
+   },
+   "added": "2026-11-04T06:11:31Z"
+  },
+  {
+   "id": "new-version-warms-in-run",
+   "kind": "ui",
+   "text": "A new version found during your run downloads in the background, so your next run starts on it fast, and your first tap fades the music back in.",
+   "msgId": "ejxxPv",
+   "added": "2026-11-04T07:30:00Z"
+  }
+ ],
+ "days": [
+  {
+   "date": "2026-11-04",
+   "waves": [
+    {
+     "version": "e811cc2",
+     "lines": [
+      {
+       "id": "andrew-pairs",
+       "kind": "story",
+       "text": "Andrew, Tibo's coworker, now drops by once a run between 18:00 and 22:00. Stand in his gold ring for 20 seconds and your weapons fire 15% faster.",
+       "msgId": "3Ii5Ba"
+      }
+     ]
+    },
+    {
+     "version": "fb8cda8",
+     "lines": [
+      {
+       "id": "weapons-map-tips",
+       "kind": "weapon",
+       "text": "Nine new weapons arrive, each with its own evolution, plus map tips that explain each new place once.",
+       "msgId": "X93UQx"
+      },
+      {
+       "id": "r1-weapon-buffs",
+       "kind": "balance",
+       "text": "Hot Streak, Tater Twirl, Mash Snowball, Seed Potato, Spud Fence and Tot Stampede now hit harder.",
+       "msgId": "86bT-N"
+      }
+     ]
+    },
+    {
+     "version": "4925ce4",
+     "lines": [
+      {
+       "id": "no-flat-2d-view",
+       "kind": "art",
+       "text": "The flat 2D view is gone. After a second browser crash, the game now restarts with simpler 3D graphics.",
+       "msgId": "Mkk0Q1"
+      },
+      {
+       "id": "hitbox-on-by-default",
+       "kind": "ui",
+       "text": "Tibo's hit circle now shows by default, in lime, bigger and at his feet. You can turn it off in Settings.",
+       "msgId": "jVSbAn"
+      },
+      {
+       "id": "top-runs-replayed",
+       "kind": "ui",
+       "text": "Top-scoring runs are now checked by replaying them, so faked scores don't count.",
+       "msgId": "vpOJTU"
+      },
+      {
+       "id": "effects-polish-more",
+       "kind": "art",
+       "text": "Many more weapon, item, dog, pest and boss effects now draw in crisp pixels.",
+       "msgId": "5vRMQy"
+      }
+     ]
+    },
+    {
+     "version": "72c678c",
+     "lines": [
+      {
+       "id": "effects-elite-deaths",
+       "kind": "art",
+       "text": "Elite pests fall apart in crisp pixels when they die, and their gold rim breaks off as they go.",
+       "msgId": "F6PHBk"
+      }
+     ]
+    },
+    {
+     "version": "f65418f",
+     "lines": [
+      {
+       "id": "hd2d-recovers",
+       "kind": "fix",
+       "text": "A dropped download or a graphics reset no longer switches the game to low-res: it pauses, reloads the 3D scene and plays on.",
+       "msgId": "XfC0qC"
+      }
+     ]
+    },
+    {
+     "version": "445c881",
+     "lines": [
+      {
+       "id": "no-webgl2-screen",
+       "kind": "ui",
+       "text": "A browser without WebGL 2 now shows a screen that says tibo.dog can't run there, with a link to copy, instead of a plain low-detail game.",
+       "msgId": "5nKkAK"
+      },
+      {
+       "id": "rose-shot-arrows",
+       "kind": "art",
+       "text": "Enemy shots now show one thin rose arrow along their path instead of a row of pink ones, and still none on Nightmare.",
+       "msgId": "n3im5t"
+      },
+      {
+       "id": "moldy-shrine-gold",
+       "kind": "balance",
+       "text": "A Moldy Shrine now pays about a minute's worth of gold, more as the run goes on.",
+       "msgId": "IJYAr-"
+      },
+      {
+       "id": "reduced-motion-lesson-box",
+       "kind": "fix",
+       "text": "With reduced motion on, poteto's box no longer covers the level-up cards.",
+       "msgId": "U_VAIY"
+      },
+      {
+       "id": "survivor-card-standing",
+       "kind": "fix",
+       "text": "A run that survived 20:00 now shows Tibo standing on its shared card.",
+       "msgId": "UJw7eH"
+      },
+      {
+       "id": "new-version-loads-itself",
+       "kind": "ui",
+       "text": "A new version now loads on its own on the Reset screen, and when you press Reset after a run.",
+       "msgId": "4yrYMn"
+      },
+      {
+       "id": "spent-pois-vanish",
+       "kind": "ui",
+       "text": "Points of interest you can never use again now vanish from the map.",
+       "msgId": "J53Z_D"
+      },
+      {
+       "id": "fewer-early-shooters",
+       "kind": "balance",
+       "text": "The first minutes of a run now bring fewer shooters at once.",
+       "msgId": "jqgX8R"
+      },
+      {
+       "id": "wireworm-click-beetles",
+       "kind": "boss",
+       "text": "The Great Wireworm's shots are now click beetles that hover, flash and snap at Tibo, faster on Nightmare.",
+       "msgId": "XxAszx",
+       "about": {
+        "kind": "boss",
+        "id": "great-wireworm"
+       }
+      },
+      {
+       "id": "whats-new-older-days-fold",
+       "kind": "ui",
+       "text": "What's new now opens on the newest day. Earlier days fold under their dates until you open them.",
+       "msgId": "YcvLRc"
+      },
+      {
+       "id": "effects-merged-pools",
+       "kind": "art",
+       "text": "Overlapping pools of the same kind now melt into one puddle with a single outline.",
+       "msgId": "IlkdKo"
+      }
+     ]
+    },
+    {
+     "version": "18beea6",
+     "lines": [
+      {
+       "id": "effects-bosses-enemies-more",
+       "kind": "art",
+       "text": "More bosses and enemies have crisper charges, deaths, puddles and halos, drawn at the game's own pixel size.",
+       "msgId": "XBBk2B"
+      }
+     ]
+    },
+    {
+     "version": "62522d2",
+     "lines": [
+      {
+       "id": "effects-weapons-items-more",
+       "kind": "art",
+       "text": "More of Tibo's weapons, items, dogs, pickups and rings have crisper effects, drawn at the game's own pixel size.",
+       "msgId": "04dNsm"
+      },
+      {
+       "id": "hud-banners-centered",
+       "kind": "fix",
+       "text": "Fixed notices, such as a dog joining your pack, sitting off center from the controls hint.",
+       "msgId": "sBcVyu"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "date": "2026-11-03",
+   "waves": [
+    {
+     "version": "8a4b97f",
+     "lines": [
+      {
+       "id": "tibo-hit-circle-feet",
+       "kind": "balance",
+       "text": "Tibo's hitbox for enemy shots is a little wider and now reaches down to his feet.",
+       "msgId": "aLkDYX"
+      }
+     ]
+    },
+    {
+     "version": "ec984b0",
+     "lines": [
+      {
+       "id": "effects-world",
+       "kind": "art",
+       "text": "Landmarks, buildings, Grok Bots and Story scenes have crisper effects, and the drifting dust and building light are drawn in pixels.",
+       "msgId": "xvQj4L"
+      },
+      {
+       "id": "sir-strawman-sickles",
+       "kind": "balance",
+       "text": "Sir Strawman throws sickles that fly out, stop and come back.",
+       "msgId": "WdR0Ee",
+       "about": {
+        "kind": "boss",
+        "id": "sir-strawman"
+       }
+      },
+      {
+       "id": "late-cut-in-reveal",
+       "kind": "fix",
+       "text": "poteto's cut-in and Alex's reveal now play even on slow connections.",
+       "msgId": "G2824H"
+      },
+      {
+       "id": "card-refit-font-load",
+       "kind": "fix",
+       "text": "Fixed level-up, Fry Cart and chest text staying cut off or too small after your language's font loads.",
+       "msgId": "7EwJlO"
+      },
+      {
+       "id": "cjk-ink-whole",
+       "kind": "fix",
+       "text": "Fixed Chinese, Japanese and Korean text crowding the dog swap and getting cut off on the stats card.",
+       "msgId": "4lCU82"
+      },
+      {
+       "id": "moldy-shrine-menu-fit",
+       "kind": "ui",
+       "text": "The Moldy Shrine's menu is shorter and now fits small screens in every language.",
+       "msgId": "Fedwgf"
+      },
+      {
+       "id": "indic-thai-card-marks",
+       "kind": "fix",
+       "text": "Card text in Hindi, Marathi, Bengali, Tamil, Telugu and Thai no longer crowds its lines or clips its marks.",
+       "msgId": "uxMNl0"
+      }
+     ]
+    },
+    {
+     "version": "7055bef",
+     "lines": [
+      {
+       "id": "effects-bosses-enemies",
+       "kind": "art",
+       "text": "Bosses and enemies have sharper windups, entrances and defeats, and enemy shots stay readable through explosions.",
+       "msgId": "C_dXhp"
+      },
+      {
+       "id": "ja-gothic-labels",
+       "kind": "language",
+       "text": "Japanese labels now use your device's own Japanese font and sit centered on their buttons.",
+       "msgId": "Ra2Yqc"
+      }
+     ]
+    },
+    {
+     "version": "670a299",
+     "lines": [
+      {
+       "id": "effects-weapons-items",
+       "kind": "art",
+       "text": "Tibo's weapons, items, pickups and dogs have crisper, livelier effects, drawn at the game's own pixel size.",
+       "msgId": "_F9LHR"
+      },
+      {
+       "id": "tater-slots-jackpot",
+       "kind": "balance",
+       "text": "Three of a kind on the Tater Slots now pays a real jackpot, and a pair adds some gold.",
+       "msgId": "zv776w"
+      }
+     ]
+    },
+    {
+     "version": "3e78ec0",
+     "lines": [
+      {
+       "id": "harvester-kernels",
+       "kind": "art",
+       "text": "The Harvester's shots are now tumbling grain kernels.",
+       "msgId": "6XhDQ3",
+       "about": {
+        "kind": "boss",
+        "id": "harvester"
+       }
+      },
+      {
+       "id": "no-choice-loot-notice",
+       "kind": "ui",
+       "text": "Outside Story, a chest or item with nothing to choose shows its loot in a notice with icons, and the run keeps going.",
+       "msgId": "9c1F_j"
+      },
+      {
+       "id": "nightmare-boss-slams",
+       "kind": "balance",
+       "text": "On Nightmare, three bosses now slam the ground in bigger shapes: rings, a crop circle and wedges.",
+       "msgId": "dPEfzW"
+      },
+      {
+       "id": "lasso-ask-grok-bot",
+       "kind": "story",
+       "text": "In Story mode, one of poteto's lasso lines now tells a wandering Tibo to ask a Grok Bot the way.",
+       "msgId": "YW0ehp"
+      }
+     ]
+    },
+    {
+     "version": "c7a474f",
+     "lines": [
+      {
+       "id": "revive-burst",
+       "kind": "balance",
+       "text": "A revive now knocks back and freezes nearby enemies and bosses for 5 seconds, clears nearby shots, and keeps Tibo safe for 4 seconds.",
+       "msgId": "YYHuEn"
+      },
+      {
+       "id": "enemy-shot-orbs",
+       "kind": "art",
+       "text": "Enemy shots now glow as orbs drawn at their real size, and some shooters fire spit globs, ice shards or spores.",
+       "msgId": "HOALFa"
+      },
+      {
+       "id": "fryer-king-oil-drops",
+       "kind": "art",
+       "text": "The Fryer King's ring shots are now boiling oil drops that bubble and pop.",
+       "msgId": "-Km5Uj",
+       "about": {
+        "kind": "boss",
+        "id": "fryer-king"
+       }
+      },
+      {
+       "id": "grater-golem-comets",
+       "kind": "art",
+       "text": "The Grater Golem's ring shots are now sparking grinder comets.",
+       "msgId": "LmbRJr",
+       "about": {
+        "kind": "boss",
+        "id": "grater-golem"
+       }
+      },
+      {
+       "id": "compost-titan-maggots",
+       "kind": "art",
+       "text": "The Compost Titan's spiral shots now wriggle like maggots.",
+       "msgId": "SJDm96",
+       "about": {
+        "kind": "boss",
+        "id": "compost-titan"
+       }
+      },
+      {
+       "id": "amusing-hearts-and-stuffing",
+       "kind": "art",
+       "text": "amusing throws beating hearts and tumbling stuffing.",
+       "msgId": "qjDZHF",
+       "about": {
+        "kind": "boss",
+        "id": "amusing"
+       }
+      },
+      {
+       "id": "nightmare-ice-imp-fan",
+       "kind": "balance",
+       "text": "On Nightmare, the Ice Imp's inward fan of shots now flies faster.",
+       "msgId": "KmE3Gk"
+      }
+     ]
+    },
+    {
+     "version": "76dd9d6",
+     "lines": [
+      {
+       "kind": "balance",
+       "text": "The first extra boss from Moldy Shrine curses now comes with the 4th curse, not the 2nd.",
+       "msgId": "mhybX1"
+      },
+      {
+       "kind": "balance",
+       "text": "Nightmare no longer marks where enemy shots will fly.",
+       "msgId": "dJbNp4"
+      },
+      {
+       "kind": "art",
+       "text": "Peel Forest has fewer props in the way, and its frozen crates are smaller.",
+       "msgId": "tfRB2w"
+      },
+      {
+       "kind": "story",
+       "text": "amusing's entrance and boast always play, and Alex's first line shows as soon as he joins.",
+       "msgId": "edDCCR"
+      }
+     ]
+    },
+    {
+     "version": "24a9122",
+     "lines": [
+      {
+       "kind": "balance",
+       "text": "Nightmare ramps up from 5:00, drops fewer heals, and its early shooters fire moving shots.",
+       "msgId": "a-udh8"
+      },
+      {
+       "kind": "balance",
+       "text": "Vampire Tot heals less per kill, and Hash Bulwark's shard burst spreads wider.",
+       "msgId": "cJfbWK"
+      },
+      {
+       "kind": "item",
+       "text": "Meteor Russet now crashes down from the sky, and Heavy Russet throws hot, bursting clods.",
+       "msgId": "JIFL2r",
+       "about": {
+        "kind": "item",
+        "id": "meteor-russet"
+       }
+      },
+      {
+       "kind": "art",
+       "text": "Evolutions, Coal-Baked Spud, Grab Bag, treasure, landmarks and swarms got new effects.",
+       "msgId": "xPezq3"
+      },
+      {
+       "kind": "art",
+       "text": "Tibo's attacks softly light the ground, and loot glow no longer hides enemy shots.",
+       "msgId": "KFtVTZ"
+      },
+      {
+       "kind": "ui",
+       "text": "An Update game button appears when a new version is out, and the pause menu shows your version.",
+       "msgId": "MYo8pl"
+      },
+      {
+       "kind": "fix",
+       "text": "Pausing now freezes the camera and effects, and every chest opens with its full show.",
+       "msgId": "AnTb8q"
+      },
+      {
+       "kind": "fix",
+       "text": "Tall props, kill poofs and map pins stay out of your way, and text fits small frames better.",
+       "msgId": "rGJY31"
+      }
+     ]
+    },
+    {
+     "version": "10e6e75",
+     "lines": [
+      {
+       "kind": "story",
+       "text": "Outside Story, amusing and Alex text poteto's phone while you keep playing, and every revive plays her fries.",
+       "msgId": "H1Df1T"
+      },
+      {
+       "kind": "ui",
+       "text": "What's new is now a traveler's journal on the Reset screen, with every update by date.",
+       "msgId": "6EnBY6"
+      },
+      {
+       "kind": "ui",
+       "text": "The HUD shows your score as it climbs, and level-up cards show each stat before and after.",
+       "msgId": "Mkf3gI"
+      },
+      {
+       "kind": "balance",
+       "text": "Reset now takes 5% of a boss's health, or 8% with Factory Reset.",
+       "msgId": "5RLBga"
+      },
+      {
+       "kind": "art",
+       "text": "The Reset curtain, oil cones, chain lightning, swatted shots, walls and shockwaves got new effects.",
+       "msgId": "QupI1A"
+      },
+      {
+       "kind": "fix",
+       "text": "No more iOS double-tap zoom or accidental card picks, and shortcuts work on more keyboard layouts.",
+       "msgId": "bqIvMR"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "date": "2026-11-02",
+   "waves": [
+    {
+     "version": "e568b10",
+     "lines": [
+      {
+       "kind": "balance",
+       "text": "Hard is much gentler, and Nightmare is a little gentler.",
+       "msgId": "Mem99s"
+      },
+      {
+       "kind": "ui",
+       "text": "Your score now rewards skill, the late game and curses, earns points for dodging, and never drops.",
+       "msgId": "Pu4HYd"
+      },
+      {
+       "kind": "dog",
+       "text": "Link and Zelda show up twice as often, and Zelda & Link's eclipse got new art.",
+       "msgId": "3eVY5N"
+      },
+      {
+       "kind": "art",
+       "text": "Lightning, ice, croquette, Potato Rain and Mash Wave hits, 13 weapon shots and Tibo's dash got new art.",
+       "msgId": "uIYA7Y"
+      },
+      {
+       "kind": "story",
+       "text": "poteto's lines can be read with a tap on the field, and show again after a language switch.",
+       "msgId": "6qXxLS"
+      },
+      {
+       "kind": "fix",
+       "text": "P pauses cut-ins, a second finger can tap pause, more keyboards work, and Safari reloads keep 3D.",
+       "msgId": "KciYqr"
+      }
+     ]
+    },
+    {
+     "version": "1901d1f",
+     "lines": [
+      {
+       "kind": "art",
+       "text": "Activation rings, biome hazards and pest spawns got new art.",
+       "msgId": "O0Wfrl"
+      },
+      {
+       "kind": "art",
+       "text": "Frying Pan and Cast Iron charges, and the steam when Tibo's GPU overheats, got new art.",
+       "msgId": "ZHhkKQ"
+      }
+     ]
+    },
+    {
+     "version": "8fa93e6",
+     "lines": [
+      {
+       "kind": "balance",
+       "text": "Sixteen weak evolutions and nine weak weapons hit harder, and proc items trigger more often.",
+       "msgId": "N_07TJ"
+      },
+      {
+       "kind": "weapon",
+       "text": "Spud Grid's wires now reach bosses, and Whisk Vortex got a new swirling pool.",
+       "msgId": "FcxzWY"
+      },
+      {
+       "kind": "balance",
+       "text": "The Spud Freezer now freezes every enemy on the map for 7.5 seconds.",
+       "msgId": "Xz9and"
+      }
+     ]
+    },
+    {
+     "version": "ef553af",
+     "lines": [
+      {
+       "kind": "balance",
+       "text": "Normal is gentler, so the step up from Easy is no longer a cliff.",
+       "msgId": "3UTVR0"
+      },
+      {
+       "kind": "fix",
+       "text": "On touch screens, only a quick stroke dashes, so slow drags and turns no longer dash.",
+       "msgId": "5BgCmx"
+      },
+      {
+       "kind": "art",
+       "text": "The Sizzle Imp's blast got new art, and every charging activation ring hums.",
+       "msgId": "krqIQp"
+      }
+     ]
+    },
+    {
+     "version": "e206c1b",
+     "lines": [
+      {
+       "kind": "fix",
+       "text": "Fixed the Stand Mixer's whirlpool looking flat inside the post.",
+       "msgId": "0EiRU4",
+       "about": {
+        "kind": "weapon",
+        "id": "stand-mixer"
+       }
+      }
+     ]
+    },
+    {
+     "version": "9564ddd",
+     "lines": [
+      {
+       "kind": "art",
+       "text": "Hits now spark in each weapon's color, with bolder crits.",
+       "msgId": "kjdBeR"
+      },
+      {
+       "kind": "art",
+       "text": "Frying Pan, Cast Iron, Julienne Dash and Waffle Cut got new art.",
+       "msgId": "5j7lJF"
+      }
+     ]
+    },
+    {
+     "version": "9cf49a1",
+     "lines": [
+      {
+       "kind": "ui",
+       "text": "The Reset screen lays out better in small frames.",
+       "msgId": "qGPnZ3"
+      }
+     ]
+    },
+    {
+     "version": "1a68458",
+     "lines": [
+      {
+       "kind": "ui",
+       "text": "A link can now open a run straight at a chosen difficulty.",
+       "msgId": "RvOI2d"
+      }
+     ]
+    },
+    {
+     "version": "b7d1f6e",
+     "lines": [
+      {
+       "kind": "ui",
+       "text": "Auto graphics quality adapts better, and iPhones start at Medium.",
+       "msgId": "nbB37U"
+      }
+     ]
+    },
+    {
+     "version": "a6ca0d8",
+     "lines": [
+      {
+       "kind": "art",
+       "text": "Gravy pools, Root Spikes, pickup rings and boss defeats got new art.",
+       "msgId": "7P_XWm"
+      },
+      {
+       "kind": "fix",
+       "text": "Activation rings now charge exactly where they are drawn.",
+       "msgId": "o84rlE"
+      },
+      {
+       "kind": "ui",
+       "text": "You can drag or wheel-scroll encyclopedia shelves with a mouse.",
+       "msgId": "GzZn_q"
+      }
+     ]
+    },
+    {
+     "version": "82bdf8c",
+     "lines": [
+      {
+       "kind": "art",
+       "text": "Burning, frozen and slowed bosses now look crisp, with licking flames.",
+       "msgId": "pcUIH8"
+      },
+      {
+       "kind": "art",
+       "text": "Potato Battery and Spud Grid wires now sag and crackle.",
+       "msgId": "zNdoYS",
+       "about": {
+        "kind": "weapon",
+        "id": "potato-battery"
+       }
+      }
+     ]
+    },
+    {
+     "version": "6dcf252",
+     "lines": [
+      {
+       "kind": "fix",
+       "text": "Fixed Urdu names covering numbers on the stats card.",
+       "msgId": "js9nz6"
+      }
+     ]
+    },
+    {
+     "version": "454878b",
+     "lines": [
+      {
+       "kind": "ui",
+       "text": "Shared run cards now show the run's difficulty.",
+       "msgId": "AFZLYv"
+      }
+     ]
+    },
+    {
+     "version": "bd52bae",
+     "lines": [
+      {
+       "kind": "art",
+       "text": "Tibo's slashes got new art.",
+       "msgId": "2_pAbi"
+      },
+      {
+       "kind": "art",
+       "text": "The Stand Mixer's whirlpool looks sharper, and its slam shows one fireball.",
+       "msgId": "ClOhTT",
+       "about": {
+        "kind": "weapon",
+        "id": "stand-mixer"
+       }
+      },
+      {
+       "kind": "fix",
+       "text": "The Spud Freezer banner now counts slowed bosses, not \"0 pests frozen\".",
+       "msgId": "eYtJmC"
+      }
+     ]
+    },
+    {
+     "version": "1b18619",
+     "lines": [
+      {
+       "kind": "fix",
+       "text": "Fixed Urdu text overflowing chests and the Fry Cart.",
+       "msgId": "NTO76F"
+      }
+     ]
+    },
+    {
+     "version": "eb0d483",
+     "lines": [
+      {
+       "kind": "ui",
+       "text": "The stats card is easier to browse with a keyboard.",
+       "msgId": "GGe4we"
+      }
+     ]
+    },
+    {
+     "version": "0c6155b",
+     "lines": [
+      {
+       "kind": "fix",
+       "text": "Fixed false \"Jackpot chest!\" titles, and crowded chests now fit on screen.",
+       "msgId": "vz7N03"
+      },
+      {
+       "kind": "art",
+       "text": "The Stand Mixer's whirlpool is gentler on sensitive eyes.",
+       "msgId": "YjtwlL",
+       "about": {
+        "kind": "weapon",
+        "id": "stand-mixer"
+       }
+      },
+      {
+       "kind": "fix",
+       "text": "Fixed Urdu text getting cut off.",
+       "msgId": "aLR-fY"
+      }
+     ]
+    },
+    {
+     "version": "a5e0254",
+     "lines": [
+      {
+       "kind": "language",
+       "text": "Now in Urdu.",
+       "msgId": "Z5LIw2"
+      },
+      {
+       "kind": "balance",
+       "text": "poteto's gift chest can now give catalysts and new weapons.",
+       "msgId": "ZLMqC5"
+      },
+      {
+       "kind": "ui",
+       "text": "Every row and number on the stats screen now explains itself.",
+       "msgId": "DIv2pT"
+      }
+     ]
+    },
+    {
+     "version": "e380f93",
+     "lines": [
+      {
+       "kind": "language",
+       "text": "Now in Hebrew.",
+       "msgId": "s9wQcs"
+      },
+      {
+       "kind": "ui",
+       "text": "The dog swap panel now fits small screens in every language.",
+       "msgId": "VlbGDz"
+      }
+     ]
+    },
+    {
+     "version": "aa791ec",
+     "lines": [
+      {
+       "kind": "language",
+       "text": "Now in Arabic and Persian, written right to left.",
+       "msgId": "QLlX6l"
+      },
+      {
+       "kind": "balance",
+       "text": "The Reset Button, legendary items, unions and item evolutions appear more often.",
+       "msgId": "GSXK2S"
+      },
+      {
+       "kind": "art",
+       "text": "Railfry, Fry Lance, Cold Storage and big blasts got new art.",
+       "msgId": "eTrQcM"
+      }
+     ]
+    },
+    {
+     "version": "b6a4514",
+     "lines": [
+      {
+       "kind": "ui",
+       "text": "Shared run links now open straight to the run's card.",
+       "msgId": "RiFcKZ"
+      }
+     ]
+    },
+    {
+     "version": "e40c3fe",
+     "lines": [
+      {
+       "kind": "item",
+       "text": "New item evolutions: Glacier Spud, Bonfire Spud, Fry Volcano and Kaboom Spud.",
+       "msgId": "aL7ftb"
+      },
+      {
+       "kind": "ui",
+       "text": "Color-blind modes now recolor more of the screen, with a preview.",
+       "msgId": "fCKjKV"
+      },
+      {
+       "kind": "balance",
+       "text": "Start weapons got another buff, and hits now land where pests appear.",
+       "msgId": "9cbvwo"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "date": "2026-11-01",
+   "waves": [
+    {
+     "version": "dc1ab02",
+     "lines": [
+      {
+       "kind": "item",
+       "text": "Items now evolve at a chest once their catalyst passive is maxed.",
+       "msgId": "cqV5Fs"
+      },
+      {
+       "kind": "item",
+       "text": "New item evolutions: Storm Tot, Magma Croquette, Meteor Russet and All-Seeing Spud.",
+       "msgId": "6cVF9u"
+      }
+     ]
+    },
+    {
+     "version": "f79dcd2",
+     "lines": [
+      {
+       "kind": "language",
+       "text": "Now in Hausa and Nigerian Pidgin.",
+       "msgId": "Tfzntn"
+      },
+      {
+       "kind": "balance",
+       "text": "Peeler, Steam Vent, Fry Cook Sentry, Sprout Satellites and Hash Brown Shield got stronger.",
+       "msgId": "zRPsZ5"
+      },
+      {
+       "kind": "fix",
+       "text": "After a browser crash, the game restarts on safer graphics settings.",
+       "msgId": "Ux20bZ"
+      }
+     ]
+    },
+    {
+     "version": "81ca743",
+     "lines": [
+      {
+       "kind": "language",
+       "text": "Now in Bengali and Thai.",
+       "msgId": "NFfRFf"
+      },
+      {
+       "kind": "ui",
+       "text": "Shared run links now open in the viewer's language.",
+       "msgId": "Hg-2BJ"
+      },
+      {
+       "kind": "fix",
+       "text": "Holding Enter no longer presses through the next offer.",
+       "msgId": "j8ECyS"
+      }
+     ]
+    },
+    {
+     "version": "a650e23",
+     "lines": [
+      {
+       "kind": "language",
+       "text": "Now in Tamil.",
+       "msgId": "QEGmWN"
+      },
+      {
+       "kind": "balance",
+       "text": "Coupon Book now discounts Dog Kennel levels too.",
+       "msgId": "a0BrtZ",
+       "about": {
+        "kind": "item",
+        "id": "coupon-book"
+       }
+      },
+      {
+       "kind": "fix",
+       "text": "Scenes with amusing and Alex no longer freeze on slow connections.",
+       "msgId": "-062d8"
+      }
+     ]
+    },
+    {
+     "version": "2b16424",
+     "lines": [
+      {
+       "kind": "weapon",
+       "text": "Dash weapons now also cut along the path Tibo walks.",
+       "msgId": "L2g8NP"
+      },
+      {
+       "kind": "balance",
+       "text": "Ten weak evolutions and unions got stronger.",
+       "msgId": "CHLgzy"
+      },
+      {
+       "kind": "ui",
+       "text": "Menus fit phone screens better, and shortcuts follow your keyboard layout.",
+       "msgId": "bSZYHy"
+      }
+     ]
+    },
+    {
+     "version": "4475f84",
+     "lines": [
+      {
+       "kind": "language",
+       "text": "Now in Vietnamese and Telugu.",
+       "msgId": "WjXEOZ"
+      },
+      {
+       "kind": "balance",
+       "text": "Hard starts gentler, Nightmare gives more XP, and chests upgrade your best weapon.",
+       "msgId": "k1EATZ"
+      },
+      {
+       "kind": "ui",
+       "text": "The stats screen and share card now show damage from items.",
+       "msgId": "IdgVzQ"
+      }
+     ]
+    },
+    {
+     "version": "95c52c2",
+     "lines": [
+      {
+       "kind": "language",
+       "text": "Now in Marathi.",
+       "msgId": "1b4dpA"
+      },
+      {
+       "kind": "fix",
+       "text": "Accidental taps no longer open the Grok Bot link.",
+       "msgId": "W3hNQz"
+      },
+      {
+       "kind": "fix",
+       "text": "Fixed long banners covering Tibo's health in some languages.",
+       "msgId": "36AqEY"
+      }
+     ]
+    },
+    {
+     "version": "f28c3b3",
+     "lines": [
+      {
+       "kind": "fix",
+       "text": "Flicking with the finger that steers Tibo now dashes reliably.",
+       "msgId": "g_H4Th"
+      }
+     ]
+    },
+    {
+     "version": "74fe5d5",
+     "lines": [
+      {
+       "kind": "language",
+       "text": "Now in Filipino.",
+       "msgId": "2PisbD"
+      }
+     ]
+    },
+    {
+     "version": "9a8f818",
+     "lines": [
+      {
+       "kind": "language",
+       "text": "Now in Malay.",
+       "msgId": "PWjIRi"
+      },
+      {
+       "kind": "fix",
+       "text": "Fixed a burn damage bug with Spud Dice.",
+       "msgId": "b38Wwb",
+       "about": {
+        "kind": "weapon",
+        "id": "spud-dice"
+       }
+      }
+     ]
+    },
+    {
+     "version": "67c47c1",
+     "lines": [
+      {
+       "kind": "item",
+       "text": "Seven new items: Static Tot, Coal-Baked Spud, Porcupine Spud, Spicy Croquette, Wandering Eyes, Freezer Burn and Heavy Russet.",
+       "msgId": "TEFBBs"
+      },
+      {
+       "kind": "item",
+       "text": "These items trigger effects when Tibo hits, kills or gets hurt.",
+       "msgId": "h7NBoT"
+      }
+     ]
+    },
+    {
+     "version": "6c5e2b9",
+     "lines": [
+      {
+       "kind": "language",
+       "text": "Now in Russian.",
+       "msgId": "t6CAOs"
+      },
+      {
+       "kind": "fix",
+       "text": "Fixed jackpot chests sometimes skipping their reveal.",
+       "msgId": "ijTpZA"
+      }
+     ]
+    },
+    {
+     "version": "334a285",
+     "lines": [
+      {
+       "kind": "language",
+       "text": "Now in Turkish and Indonesian.",
+       "msgId": "nAJhC3"
+      },
+      {
+       "kind": "fix",
+       "text": "Fixed a few dog and language-switch bugs.",
+       "msgId": "Zvlcab"
+      }
+     ]
+    },
+    {
+     "version": "d5f7994",
+     "lines": [
+      {
+       "kind": "ui",
+       "text": "Chest and item panels now continue on their own after a second.",
+       "msgId": "nYQ9oO"
+      }
+     ]
+    },
+    {
+     "version": "c75fdfb",
+     "lines": [
+      {
+       "kind": "ui",
+       "text": "The encyclopedia now opens from the pause menu.",
+       "msgId": "hj97UB"
+      },
+      {
+       "kind": "story",
+       "text": "Characters now talk casually in every language.",
+       "msgId": "X26D5y"
+      },
+      {
+       "kind": "story",
+       "text": "The intro starts sooner on slow connections.",
+       "msgId": "2ip_QF"
+      }
+     ]
+    },
+    {
+     "version": "3aedb6b",
+     "lines": [
+      {
+       "kind": "dog",
+       "text": "New legendary dogs Link and Zelda fuse into Zelda & Link.",
+       "msgId": "LQRVjJ",
+       "about": {
+        "kind": "dog",
+        "id": "zelda-and-link"
+       }
+      },
+      {
+       "kind": "dog",
+       "text": "The new Dog Kennel sells levels for your dogs.",
+       "msgId": "HFh3Ap"
+      },
+      {
+       "kind": "balance",
+       "text": "Nightmare now builds up to full strength over three minutes.",
+       "msgId": "yJppW4"
+      }
+     ]
+    },
+    {
+     "version": "0bfefd4",
+     "lines": [
+      {
+       "kind": "story",
+       "text": "poteto's fries now revive Tibo at full health in Story mode.",
+       "msgId": "6yqy16"
+      },
+      {
+       "kind": "boss",
+       "text": "amusing has less health in Story mode.",
+       "msgId": "M7QQt7",
+       "about": {
+        "kind": "boss",
+        "id": "amusing"
+       }
+      },
+      {
+       "kind": "fix",
+       "text": "Fixed several Story mode dialogue and level-up bugs.",
+       "msgId": "BcaA_1"
+      }
+     ]
+    },
+    {
+     "version": "5e18e96",
+     "lines": [
+      {
+       "kind": "ui",
+       "text": "New: an encyclopedia of everything in the game.",
+       "msgId": "6x5GtK"
+      },
+      {
+       "kind": "story",
+       "text": "Story mode is smoother, with a shorter amusing fight and guided level-ups.",
+       "msgId": "pM_sED"
+      },
+      {
+       "kind": "balance",
+       "text": "Later chests hold more gold, and poteto taunts you at 20:00.",
+       "msgId": "bGp8pp"
+      }
+     ]
+    },
+    {
+     "version": "860cc15",
+     "lines": [
+      {
+       "kind": "story",
+       "text": "tibo.dog is now open to everyone!",
+       "msgId": "Miw8Bu"
+      },
+      {
+       "kind": "balance",
+       "text": "Boss and elite chests now stay until opened, marked by a gold pin.",
+       "msgId": "vJiky8"
+      },
+      {
+       "kind": "dog",
+       "text": "Dogs now level up to 5.",
+       "msgId": "w46oyE"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

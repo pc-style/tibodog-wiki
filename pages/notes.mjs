@@ -1,6 +1,7 @@
 // Verified facts gathered from code reading and official sources that are not plain data tables.
 // Each note cites its source. Keep inference explicitly labelled.
-import { R, GAME, BUILD, BUILDS, ilink, link, name, fmt, pct, t } from '../lib/data.mjs';
+import { readFileSync } from 'node:fs';
+import { R, GAME, BUILD, BUILDS, ilink, link, name, fmt, pct, t, utc } from '../lib/data.mjs';
 
 const tbl = (head, rows) =>
   `| ${head.join(' | ')} |\n|${head.map(() => '---').join('|')}|\n${rows.map((r) => `| ${r.join(' | ')} |`).join('\n')}\n`;
@@ -105,13 +106,52 @@ An active intro or landing cutscene ends as skipped if its renderer stops report
       `- **Raw parameters and per-weapon attack code.** Every weapon, item, boss, event, dog and biome page now explains its raw parameters (\`hitInterval\`, \`fling\`, \`snap\`, pattern \`motion\` …) in plain language, read from the sim code. Most of those readings are not yet confirmed by measured play.\n` +
       `- **Story replay.** After the Story ending, Story leaves the level picker; whether it can be replayed from another screen is not verified.\n` +
       `- **Hidden or easter-egg content.** The developer says the game has easter eggs (“i hope you enjoy it and find all the easter eggs”, [launch post](${LAUNCH})). Content outside the data tables is not covered.\n` +
-      `- **Patch history.** The game has an in-game changelog (\`changelog-panel-Dc7yoawc.js\`), but its summaries do not list every code change. The [History](/history) page combines first-party posts with this wiki's reviewed build comparisons. X search was rate-limited during the original research on 2026-11-02, so some developer replies may be missing.\n` +
+      `- **Patch history.** Every entry of the in-game **What's new** panel is now on [History](/history#official-patch-notes). Still open: the panel does not explain changes it leaves out, so smaller code changes are known only from the wiki's own build comparisons; and X search was rate-limited during the original research on 2026-11-02, so some developer replies may be missing from the timeline.\n` +
       `- **Leaderboards and shared runs.** Shared run links live under \`/r/\`; no public leaderboard page was found.\n` +
       `- **Other languages.** English text only; the game has 27 languages.\n` +
       `- **Hands-on testing.** Most values come from code. The current build and its predecessor completed matching five-minute headless runs (seed \`wiki\`, standard mode, Normal, no grants or clock jumps): 1,322 kills, with damage from Fry Sentry (6,387.99), Hash Brown Shield (1,072.59), Spud Cannon (2,573.88) and Fry Lance (602.48). This checks that these builds play identically for those inputs, not every weapon parameter or random outcome. Boss HP tables have separate measured checks.\n` +
       `- **Future updates.** The game changes often. Use **Check live game for updates** at the top of any page to compare the live game with this wiki, or see [Versions & updates](/versions). Detected builds still need review before deployment.\n`;
   },
 };
+
+// Every English entry of the in-game What's new panel, extracted from the documented build.
+const CHANGELOG = JSON.parse(readFileSync(new URL('../data/changelog.json', import.meta.url), 'utf8'));
+
+function patchNotes() {
+  const C = CHANGELOG.chunk;
+  const cite = (q, file = C) => `<small>[${file}: \`\` ${q} \`\`]</small>`;
+  // The panel shows each kind as an icon only; these words are the wiki's names for the icons.
+  const KIND = { weapon: 'Weapon', item: 'Item', dog: 'Dog', boss: 'Boss', story: 'Story', balance: 'Balance', fix: 'Fix', ui: 'Interface', language: 'Language', art: 'Art' };
+  const byCommit = new Map(BUILDS.filter((b) => b.commit).map((b) => [b.commit.slice(0, 7), b]));
+  const own = BUILD.commit.slice(0, 7);
+  const days = CHANGELOG.days;
+  const waves = days.flatMap((d) => d.waves);
+  const count = CHANGELOG.unreleased.length + waves.reduce((n, w) => n + w.lines.length, 0);
+  const matched = waves.filter((w) => byCommit.has(w.version)).length;
+  const line = (l) => `- **${KIND[l.kind]}** · ${l.text}${l.about ? ` (${link(l.about.kind, l.about.id)})` : ''} ${cite(`id:\`${l.msgId}\``)}`;
+  const wave = (w) => {
+    const b = byCommit.get(w.version);
+    return `**\`${w.version}\`**${b ? ` · same commit as [wiki build ${b.version}](/versions#version-history)` : ''} ${cite(`version:\`${w.version}\``)}\n\n${w.lines.map(line).join('\n')}\n`;
+  };
+  const day = (d, i) => {
+    const n = d.waves.reduce((k, w) => k + w.lines.length, 0) + (i === 0 ? CHANGELOG.unreleased.length : 0);
+    const next = i === 0 && CHANGELOG.unreleased.length
+      ? `**\`${own}\`** · listed under your version: notes not yet given a version of their own ${cite('return e.version===`next`?t.listed?void 0:t.version:e.version')}\n\n${CHANGELOG.unreleased.map(line).join('\n')}\n\n`
+      : '';
+    return `### ${utc(d.date)}\n\n${n} changes, newest first. ${cite(`date:\`${d.date}\``)}\n\n${next}${d.waves.map(wave).join('\n')}`;
+  };
+  return `## Official patch notes\n\n` +
+    `These are all ${count} entries in the game's **What's new** panel in build ${BUILD.version} (\`${CHANGELOG.build}\`), copied word for word in the panel's order, newest first. The panel opens from the **What's new** button on the Reset screen; when a newer version is out, that button is replaced by **Update game**. ${cite('e.update()?Us(e.reload):Qd({onOpen:e.openLog,swapIn:e.news()})', BUILD.boot)}\n\n` +
+    `- **Verified**: the English text is written inside \`${C}\` itself; the \`i18n-*-changelog-*.js\` chunks hold the other languages' translations. ${cite('case`en`:return{}')}\n` +
+    `- **Verified**: the panel groups notes by date (${days.length} dates), and each date by short commit codes (${waves.length} codes). Each note has an icon for its kind; the bold kind names below are the wiki's words for those icons. ${cite('case`balance`:e.setAttribute(`d`,')}\n` +
+    `- **Verified**: notes not yet given a code of their own are listed first, under the code of the version you are playing, tagged **Your version**. In build ${BUILD.version} that is one note, added ${utc(CHANGELOG.unreleased[0].added)}, shown under \`${own}\`.\n` +
+    `- **Verified**: ${matched} codes equal the commit of a build this wiki compared, and are linked to it. The other codes match no build the wiki compared.\n` +
+    `- **Inference**: a code is a commit in the game's own repository, and a deployed build includes every note under earlier codes. For example, the wiki first saw the Spud Freezer banner fix and the shared-run difficulty in wiki build 3 (\`6dcf252\`), but the panel files them under \`bd52bae\` and \`454878b\`, which it lists between wiki builds 2 and 3.\n` +
+    `- **Inference**: the date labels seem to follow US Pacific time, not UTC. \`8a4b97f\` is dated 3 Nov although the wiki deployed its build at 07:50 UTC on 4 Nov, and the next code, \`62522d2\`, is dated 4 Nov and was deployed at 08:11 UTC; midnight in US Pacific time is 08:00 UTC.\n` +
+    `- **Inference**: the panel summarises changes players notice. It does not list every code change: no entry mentions wiki build 5's change, which hides banners while the screen is fully dark during Story's knock-down sequence.\n\n` +
+    `Checked in the browser: build ${BUILD.version} (\`${CHANGELOG.build}\`, mirrored from tibo.dog and served locally, with its own commit as the latest version so **What's new** shows instead of **Update game**) showed the same ${count} entries, codes and kinds in the same order, with \`${own}\` tagged **Your version** on 4 Nov.\n\n` +
+    days.map(day).join('\n');
+}
 
 export function historyPage() {
   const rows = [
@@ -124,7 +164,9 @@ export function historyPage() {
     ...BUILDS.slice(1).map((b) => [b.seen, `New game build: game version ${b.version} (\`${b.boot}\`, \`${b.sim}\`${b.commit ? `, commit \`${b.commit}\`` : ''}). ${b.changes} No announcement found.`, '/versions#version-history']),
     ['by 2026-11-02', 'The game lists 27 languages on its About page and llms.txt (up from 10 in the trivia thread). No announcement found; exact date unknown.', 'https://tibo.dog/about/'],
   ];
-  const body = `tibo.dog was made by [poteto](https://x.com/poteto) with Grok Bot and Cursor and launched on 2026-11-01. This timeline combines the developer's posts with this wiki's reviewed build comparisons. The game also has an in-game changelog (\`changelog-panel-Dc7yoawc.js\`); build comparisons distinguish newly changed code from notes added later about older releases.\n\n## Timeline\n\n` +
+  const body = `tibo.dog was made by [poteto](https://x.com/poteto) with Grok Bot and Cursor and launched on 2026-11-01. This page has two separate parts: the game's own [patch notes](#official-patch-notes), copied from its in-game **What's new** panel, and a [timeline](#timeline) of the developer's posts and this wiki's build comparisons.\n\n` +
+    patchNotes() +
+    `\n## Timeline\n\nThe developer's posts and the builds this wiki compared. Build descriptions are the wiki's own reading of the code, not official notes.\n\n` +
     tbl(['Date (UTC)', 'Event', 'Source'], rows.map(([d, e, u]) => [d, e, u.startsWith('/') ? `[details](${u})` : `[post](${u})`])) +
     `\n## How it was made\n\nFrom the developer's [build trivia thread](${TRIVIA}) (quotes):\n\n` +
     [
@@ -142,9 +184,9 @@ export function historyPage() {
   return {
     path: '/history',
     title: 'History',
-    description: 'Development and release history of tibo.dog from the developer\'s own posts: launch on 2026-11-01, build trivia and fixes.',
+    description: 'Every official tibo.dog patch note from the in-game What\'s new panel, plus the development and release history from the developer\'s own posts.',
     body,
-    sources: [`[Launch post](${LAUNCH})`, `[Build trivia thread](${TRIVIA})`, '[About tibo.dog](https://tibo.dog/about/)'],
-    search: 'history release launch patch notes changelog',
+    sources: [`In-game What's new panel (\`${CHANGELOG.chunk}\`, build \`${CHANGELOG.build}\`)`, `[Launch post](${LAUNCH})`, `[Build trivia thread](${TRIVIA})`, '[About tibo.dog](https://tibo.dog/about/)'],
+    search: 'history release launch patch notes changelog what\'s new updates fixes',
   };
 }
