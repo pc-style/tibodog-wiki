@@ -530,5 +530,15 @@
   "status": "reviewed",
   "updated": "2026-11-05T07:11:26Z",
   "changes": "The What's new panel now merges adjacent groups with the same date, keeping their version and note order. Its current four dates and all 162 notes are unchanged; the live browser check on 5 November 2026 matches every ordered date/code/kind/text record (28/41/47/46), with existing current notes labeled 2ed5c5f. This is a journal display change, not a gameplay or metadata-only update. All 210 JavaScript modules across 204 roles were reviewed, including duplicate mounts, workers/worklets, wrappers, choices and all 27 locales: 129 are byte-identical, 209 match exact mapped dependencies/own-commit literals, and the sole residual is the inspected journal grouping function. All 15 referenced CSS files, four own atlas PNGs/tables and extracted icon pixels are unchanged. Registry, balance, difficulty, English text and translated entity names are unchanged. Same-input five-minute Standard/Normal runs (seed wiki, no give/warp/god) match apart from build: level 13, 1,322 kills, 150 HP; Fry Sentry 6,387.99 damage, Hash Brown Shield 1,072.59, Spud Cannon 2,573.88 and Fry Lance 602.48. Actual grouping-code probes distinguish adjacent equal dates from different/nonadjacent dates, preserve wave order and inputs, and cover empty input. These are isolated display probes, not performance measurements. Repaired journal extraction for a dated array passed into a grouping function; refreshed current page/prose citations without replacing historical measurements or the D3 snapshot. No existing gameplay coverage question was newly settled; unavailable historical sources were not reverified."
+ },
+ {
+  "seen": "2026-11-05",
+  "main": "main-Dlc1jU0Y.js",
+  "boot": "boot-DNWP0DqM.js",
+  "sim": "sim-8NBhUDBM.js",
+  "commit": "79169e1437a3",
+  "status": "reviewed",
+  "updated": "2026-11-05T08:08:34Z",
+  "changes": "Source/metadata refresh only: all 210 JavaScript modules across 204 roles match exactly after pairing dependency filenames and own-commit literals (129 byte-identical), including duplicate mounts, workers/worklets, wrappers, choices and 27 locales. No added/removed roles or executable residuals. All 15 referenced CSS files, four own atlas PNGs/tables and icon pixels are unchanged, as are registry, balance, difficulty, English text and translated entity names. Same-input five-minute Standard/Normal runs (seed wiki, no give/warp/god) match apart from build: level 13, 1,322 kills, 150 HP; Fry Sentry 6,387.99 damage, Hash Brown Shield 1,072.59, Spud Cannon 2,573.88 and Fry Lance 602.48. The live journal browser check on 5 November 2026 matches all 162 ordered date/code/kind/text records across four expanded days (28/41/47/46), with existing current notes labeled 79169e1; no note additions, omissions, revisions or regrouping. Refreshed current citations and source provenance; prior numeric history and the D3 snapshot remain unchanged. No changed mechanic branch or newly settled coverage question; unavailable historical sources were not reverified."
  }
 ]

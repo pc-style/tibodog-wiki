@@ -7,7 +7,7 @@ About once a second, Pip darts at the nearest enemy within 110 units of itself a
 ## How it works
 
 - Pip picks a target and runs at twice its speed (280 units per second) to where the target stood, for at most 0.6 s.
-- On arrival it bites the enemy nearest to itself within 16 units. If the target has moved away and nothing else is that close, the bite misses. <small>[sim-JoUvrIFk.js: `let n=Po(e,i,a,16);if(n===void 0)return;J(e,c.damage*o*e.loadout.stats.damageMult,s,7,1.5)`]</small>
+- On arrival it bites the enemy nearest to itself within 16 units. If the target has moved away and nothing else is that close, the bite misses. <small>[sim-8NBhUDBM.js: `let n=Po(e,i,a,16);if(n===void 0)return;J(e,c.damage*o*e.loadout.stats.damageMult,s,7,1.5)`]</small>
 - The bite counts as a normal hit with knockback: elite damage, [Zelda's](/dogs/pomchi) marks and crits all apply.
 - The interval timer keeps running during the dash. Once Pip has bitten, it can start the next dash from where it stands. Like every dog, it is put back at Tibo's side if it ends up more than 260 units away.
 - Training: power ×1.5, ×1.5, ×1.25, ×1.25 gives 22, 33, 49.5, 62 and 77 damage per bite. The interval goes 0.9, 0.72, then 0.576 s from level 3; levels 4 and 5 have an `every` multiplier of 1.
