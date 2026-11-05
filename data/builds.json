@@ -610,5 +610,15 @@
   "status": "reviewed",
   "updated": "2026-11-05T10:18:04Z",
   "changes": "Complete exact mapped-dependency comparison of all 210 JavaScript modules (including duplicate roles, workers, worklets and all 27 locales) found only dependency/build-ID renames. Own index and warm list map exactly; all 15 CSS files, atlas tables/PNGs and 223 icon crops are unchanged. No gameplay/data/name/journal changes since build 61; all 163 ordered live journal records and kind icons match. Same-input five-minute wiki Standard/Normal smoke with original run-extras rules matches build 61: 1322 kills, level 13, HP 150 and damage from four weapons. The Colorado Queen eggs remain a build-61 change; historical evidence and limits preserved."
+ },
+ {
+  "seen": "2026-11-05",
+  "main": "main-Dzy5S9za.js",
+  "boot": "boot-DvftYhfv.js",
+  "sim": "sim-34F7B_ih.js",
+  "commit": "aaf6769fd6b8",
+  "status": "reviewed",
+  "updated": "2026-11-05T10:28:09Z",
+  "changes": "Complete exact mapped-dependency comparison of all 210 JavaScript modules, including duplicate roles, workers, worklets and all 27 locales, found only dependency/build-ID renames. Own index and warm list map exactly; all 15 CSS files, own atlas tables/PNGs and 223 icon RGBA crops are unchanged. No gameplay/data/name/journal changes since build 62; all 163 ordered live journal records and kind icons match. Same-input five-minute wiki Standard/Normal smoke with original run-extras rules matches build 62: 1322 kills, level 13, HP 150 and damage from four weapons. The Queen eggs remain a build-61 change; historical evidence and limits preserved."
  }
 ]

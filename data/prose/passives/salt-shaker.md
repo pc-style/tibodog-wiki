@@ -6,7 +6,7 @@ It is the catalyst for [Thousand Fries](/weapons/thousand-fries) (from [Fry Kniv
 
 ## How it works
 
-The projectile speed multiplier is `max(0.2, 1 + total)` (see [Stats](/stats)). For `orbit` weapons the game uses `1 + 0.5 × (multiplier − 1)` instead, so their spin speed is ×1.05 at level 1 and ×1.25 at level 5.<small>[sim-BTjtt0jt.js: ``n.speed=i.speed*(a===`orbit`?1+.5*(r.projSpeedMult-1):r.projSpeedMult)``]</small> Tater Twirl's wheels use the same half bonus for their spin.
+The projectile speed multiplier is `max(0.2, 1 + total)` (see [Stats](/stats)). For `orbit` weapons the game uses `1 + 0.5 × (multiplier − 1)` instead, so their spin speed is ×1.05 at level 1 and ×1.25 at level 5.<small>[sim-34F7B_ih.js: ``n.speed=i.speed*(a===`orbit`?1+.5*(r.projSpeedMult-1):r.projSpeedMult)``]</small> Tater Twirl's wheels use the same half bonus for their spin.
 
 The multiplier also speeds up projectiles fired by items, such as the fries from [Porcupine Spud](/items/porcupine-spud).
 
