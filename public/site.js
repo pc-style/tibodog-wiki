@@ -4,6 +4,21 @@
   const menu = document.querySelector('.side-menu');
   if (menu && window.matchMedia('(max-width: 860px)').matches) menu.open = false;
 
+  // Sidebar groups remember being folded; the group holding the current page always stays open.
+  const KEY = 'tibo-wiki.nav-closed';
+  let closed = [];
+  try { const saved = JSON.parse(localStorage.getItem(KEY)); if (Array.isArray(saved)) closed = saved; } catch {}
+  for (const g of document.querySelectorAll('.nav-group')) {
+    const here = g.querySelector('[aria-current]');
+    if (!here && closed.includes(g.dataset.group)) g.open = false;
+    g.addEventListener('toggle', () => {
+      const set = new Set(closed);
+      g.open ? set.delete(g.dataset.group) : set.add(g.dataset.group);
+      closed = [...set];
+      try { localStorage.setItem(KEY, JSON.stringify(closed)); } catch {}
+    });
+  }
+
   // Keep the current page's sidebar link in view on long menus.
   const current = document.querySelector('.side [aria-current="page"]');
   const side = current?.closest('.side');
