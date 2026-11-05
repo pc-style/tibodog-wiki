@@ -7,8 +7,8 @@ Each fry flies at 200 units per second for 1 s (Duration 0.8 plus Tibo's base +2
 ## How it works
 
 - **Volley size.** While Tibo moves, a volley has as many fries as the weapon's Amount, which includes Tibo's base +1 projectile: 3 fries at level 1 and 6 at level 8. They leave 0.06 s apart.
-- **Standing still.** If Tibo is not moving when the cooldown comes up, the volley is a single fry that travels at 35% speed (`dripSpeed`), about 70 units per second. <small>[sim-D8sW_hhq.js: `let l=Am(e)?r.speed*n.dripSpeed:r.speed`]</small>
-- **Direction.** Fries go straight back from Tibo's facing. The first fry of a volley deviates by up to 0.25 rad (about 14°, `spread`); later fries deviate by up to twice that, so a volley fans out into a cone about 60° wide. <small>[sim-D8sW_hhq.js: `s=D(-e.player.fy[o],-e.player.fx[o])+e.rng.range(-n.spread,n.spread)*(i>0?2:1)`]</small>
+- **Standing still.** If Tibo is not moving when the cooldown comes up, the volley is a single fry that travels at 35% speed (`dripSpeed`), about 70 units per second. <small>[sim-ByXinCYv.js: `let l=Am(e)?r.speed*n.dripSpeed:r.speed`]</small>
+- **Direction.** Fries go straight back from Tibo's facing. The first fry of a volley deviates by up to 0.25 rad (about 14°, `spread`); later fries deviate by up to twice that, so a volley fans out into a cone about 60° wide. <small>[sim-ByXinCYv.js: `s=D(-e.player.fy[o],-e.player.fx[o])+e.rng.range(-n.spread,n.spread)*(i>0?2:1)`]</small>
 - **Pierce.** A fry with Pierce 1 passes through one pest and stops at the second; each point of Pierce adds one more pest.
 
 **Measured** in the headless sim (`tools/play.mjs`, build 41 `main-B2gf34bA.js`, Standard, Normal, god mode, seeds `s1`, `s2` and `s3`; the seeded starting weapon removed, the weapon given with `give`, spawning stopped after 4 s of play and the pests already on the field held at fixed spots with 10⁹ HP; Tibo walking right for 8 s past 12 pests held at fixed points on his path): at level 1 it fired 3 fries 0.06 s apart every 0.7 s, each spawned with a 1 s lifetime; at level 8 it fired 6 every 0.6 s. All three seeds gave the same figures.

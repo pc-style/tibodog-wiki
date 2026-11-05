@@ -6,7 +6,7 @@ Fry Knives has the highest offer weight of this group of weapons (100), so it sh
 
 ## How it works
 
-- **Direction**: knives follow Tibo's facing, which is updated whenever he moves and kept when he stops. The first knife of a volley gets a random spread of ±`spread` (0.08 rad); later knives get twice that. <small>[sim-D8sW_hhq.js: `Qm(e)+e.rng.range(-r.spread,r.spread)*(a>0?2:1)`]</small> Each knife also starts up to 4 units to the side of Tibo, so a volley forms a narrow stream.
+- **Direction**: knives follow Tibo's facing, which is updated whenever he moves and kept when he stops. The first knife of a volley gets a random spread of ±`spread` (0.08 rad); later knives get twice that. <small>[sim-ByXinCYv.js: `Qm(e)+e.rng.range(-r.spread,r.spread)*(a>0?2:1)`]</small> Each knife also starts up to 4 units to the side of Tibo, so a volley forms a narrow stream.
 - **Always fires**: facing-shot weapons do not wait for a target in range.
 - **Pierce**: a knife with pierce N hits N + 1 pests.
 - **Range**: with speed 260 and duration 1.2 s (times Tibo's duration stat, base +25%), a knife travels about 390 units before disappearing (see [Stats](/stats)).

@@ -351,6 +351,7 @@
    "distance": 48,
    "ticks": 9,
    "cooldownSec": 5,
+   "minCooldownSec": 0.75,
    "charges": 1,
    "bufferTicks": 6
   },
