@@ -17,6 +17,7 @@ Edge cases behind the steps in SKILL.md. Each section says what goes wrong and w
 - Before describing dormant code as gameplay, find its caller and check its flag.
 - If `node build.mjs` fails with `config object with keys … not found`, look at `cfgBy` in `lib/data.mjs`.
 - Difficulty overrides can reference config or helper functions. `dump-build.mjs` evaluates the table in a temporary sibling copy of its module so real dependencies resolve; keep its regression with asymmetric values and a helper-derived target, and never substitute guessed constants.
+- Endgame catalogs are lazy registrations, not unused data simply because the boot registry initially lacks them. `load-endgame.mjs` invokes the original registration and chunk loader, including registry refresh callbacks and the endgame sim. Family spawn rules can replace catalog HP (including placeholder HP 1); keep raw definitions separate from measured encounter stats. Hydra forms are not extra scheduled phases. Icon extraction includes each phase's own manifest/image and alpha-only sprites, while preserving earlier sheet priority.
 
 ## Playing
 

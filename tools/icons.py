@@ -19,6 +19,8 @@ pages = [
 ]
 if 'flagged' in names:
     pages.append((names['flagged'], json.load(open(os.path.join(ATLAS, 'atlas-flagged.json')))))
+for page in names.get('endgame', []):
+    pages.append((page['image'], json.load(open(os.path.join(ATLAS, 'atlas-' + page['phase'] + '.json')))))
 imgs = {name: Image.open(os.path.join(A, name)).convert('RGBA') for name, _ in pages}
 early_name, early = pages[0]
 
@@ -28,7 +30,7 @@ for name, page in [pages[0], *pages[2:]]:
         if k.startswith('icon-') and k[5:] not in icons and 'icon' in anims and anims['icon']['frames']:
             icons[k[5:]] = (name, k, 'icon', anims['icon']['frames'][0], page['pixelSize'].get(k, 1))
 
-PRIO = ['idle-front', 'idle', 'walk']
+PRIO = ['idle-front', 'idle', 'walk', 'alpha']
 sprites = {}
 for name, page in pages:
     for k, anims in page['sprites'].items():

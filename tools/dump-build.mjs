@@ -4,6 +4,7 @@
 import { writeFileSync, mkdirSync, readFileSync, unlinkSync } from 'node:fs';
 import { randomUUID } from 'node:crypto';
 import { pathToFileURL } from 'node:url';
+import { loadEndgame } from './load-endgame.mjs';
 
 const [dir, bootF, simF, contentF, out] = process.argv.slice(2);
 const P = new Proxy(function () {}, {
@@ -17,6 +18,7 @@ for (const k of ['window', 'document', 'navigator', 'localStorage', 'sessionStor
 const sim = await import(`${dir}/${simF}`);
 const boot = await import(`${dir}/${bootF}`);
 const content = await import(`${dir}/${contentF}`);
+await loadEndgame(boot);
 
 const seen = new WeakSet();
 const ser = (v, d, max) => {

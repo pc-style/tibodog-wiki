@@ -14,6 +14,7 @@ import { readFileSync, existsSync, readdirSync } from 'node:fs';
 import { join, resolve } from 'node:path';
 import { pathToFileURL } from 'node:url';
 import { mirror } from './fetch-build.mjs';
+import { loadEndgame } from './load-endgame.mjs';
 
 const ROOT = new URL('..', import.meta.url).pathname;
 const TPS = 60;
@@ -32,6 +33,7 @@ export async function loadGame(main = JSON.parse(readFileSync(join(ROOT, 'data/b
   const file = (re) => readdirSync(dir).find((f) => re.test(f));
   const sim = await import(pathToFileURL(join(dir, file(/^sim-[A-Za-z0-9_-]{8}\.js$/))).href);
   const boot = await import(pathToFileURL(join(dir, file(/^boot-[A-Za-z0-9_-]{8}\.js$/))).href);
+  await loadEndgame(boot);
   const Game = Object.values(sim).find((v) => v && typeof v === 'object' && typeof v.Game === 'function')?.Game;
   if (!Game) throw new Error(`no Game class in the sim chunk of ${main}`);
   const registry = Object.values(boot).find((v) => v && typeof v === 'object' && typeof v.weapon === 'function' && Array.isArray(v.allWeapons));

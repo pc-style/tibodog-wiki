@@ -122,6 +122,33 @@ test('extracts boss definitions and encounter order from either registry layout'
   }
 });
 
+test('dump includes content registered by the lazy endgame loader', () => {
+  const root = mkdtempSync(join(tmpdir(), 'wiki-endgame-'));
+  try {
+    writeFileSync(join(root, 'package.json'), '{"type":"module"}');
+    writeFileSync(join(root, 'content.js'), 'export default {"content.boss.late.name":["Late"]}');
+    writeFileSync(join(root, 'catalog.json'), JSON.stringify({ id: 'late', hp: 24000 }));
+    writeFileSync(join(root, 'boot.js'), `
+      const registry={weapon:()=>{},allWeapons:[],enemies:[],bosses:[],bossOrder:[]};
+      export default registry;
+      export function register(){const e={beforeSim:true};e.beforeSim&&true}
+      class Loader{want(){this.chunks.slot(async()=>{
+        const reply=await fetch(new URL('./catalog.json',import.meta.url));
+        const boss=JSON.parse(new TextDecoder().decode(await reply.arrayBuffer()));
+        registry.bosses.push(boss);registry.bossOrder.push(boss);
+      }).want()}constructor(e){this.chunks=e.chunks}}
+      export function load(q){return new Loader({chunks:q.chunks,view:new Object})}
+    `);
+    writeFileSync(join(root, 'sim.js'), 'const a={alive:1,floorShare:0,shotPuddleSec:1},b={easy:{...a,alive:.8}};export default {}');
+    execFileSync(process.execPath, [new URL('./dump-build.mjs', import.meta.url).pathname, root, 'boot.js', 'sim.js', 'content.js', join(root, 'out')]);
+    const registry = JSON.parse(readFileSync(join(root, 'out', 'registry.json')));
+    assert.deepEqual(registry.bosses, [{ id: 'late', hp: 24000 }]);
+    assert.deepEqual(registry.bossOrder, registry.bosses);
+  } finally {
+    rmSync(root, { recursive: true, force: true });
+  }
+});
+
 for (const scenario of [
   { name: 'resumes review of the documented build', pending: 'main-current1.js' },
   { name: 'does not erase an interrupted review with --force', pending: 'main-current1.js', force: true },
@@ -178,7 +205,8 @@ test('crops additional weapon icons from the flagged atlas without replacing ear
     writeFileSync(join(root, 'atlas-early.json'), JSON.stringify(early));
     writeFileSync(join(root, 'atlas-late.json'), JSON.stringify({ sprites: {}, pixelSize: {} }));
     writeFileSync(join(root, 'atlas-flagged.json'), JSON.stringify(flagged));
-    const registry = { allWeapons: [{ id: 'old' }, { id: 'new' }], passives: [], allItems: [], enemies: [], bosses: [], dogs: [] };
+    writeFileSync(join(root, 'atlas-endgameCourt.json'), JSON.stringify({ sprites: { attendant: { alpha: { frames: [frame] } } }, pixelSize: { attendant: 0.5 } }));
+    const registry = { allWeapons: [{ id: 'old' }, { id: 'new' }], passives: [], allItems: [], enemies: [{ id: 'attendant' }], bosses: [], dogs: [] };
     writeFileSync(join(root, 'registry.json'), JSON.stringify(registry));
     execFileSync('python3', ['-I', '-c', `
 from PIL import Image
@@ -197,9 +225,12 @@ Image.new('RGBA', (2, 1), (0, 255, 0, 255)).save(sys.argv[1]+'/flagged.png')
     assert.deepEqual(Object.keys(before.weapon), ['old']);
     assert.equal(before.missing[0].id, 'new');
     pages.flagged = 'flagged.png';
+    pages.endgame = [{ phase: 'endgameCourt', image: 'flagged.png' }];
     const after = crop();
     assert.deepEqual(after.missing, []);
     assert.deepEqual(Object.keys(after.weapon), ['old', 'new']);
+    assert.equal(after.enemy.attendant.w, 4);
+    assert.equal(after.enemy.attendant.h, 2);
     assert.equal(after.weapon.old.w, 8);
     assert.equal(after.weapon.new.w, 4);
     assert.equal(after.weapon.new.h, 2);
@@ -208,6 +239,7 @@ from PIL import Image
 import sys
 assert Image.open(sys.argv[1]+'/out/weapon/old.png').getpixel((0,0)) == (255,0,0,255)
 assert Image.open(sys.argv[1]+'/out/weapon/new.png').getpixel((0,0)) == (0,255,0,255)
+assert Image.open(sys.argv[1]+'/out/enemy/attendant.png').getpixel((0,0)) == (0,255,0,255)
 `, root]);
   } finally {
     rmSync(root, { recursive: true, force: true });

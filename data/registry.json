@@ -9093,6 +9093,450 @@
    "xp": 2,
    "goldChance": 0.05,
    "mass": 0.1
+  },
+  {
+   "id": "alley-raccoon",
+   "behavior": {
+    "kind": "bigUpdate",
+    "variant": {
+     "kind": "packLunge",
+     "lunge": {
+      "range": 95,
+      "crouch": 0.6,
+      "distance": 115,
+      "speed": 200,
+      "recover": 0.6,
+      "damage": 12
+     }
+    }
+   },
+   "hp": 54,
+   "speed": 86,
+   "damage": 1,
+   "radius": 6,
+   "xp": 7,
+   "goldChance": 0.02,
+   "mass": 0.25
+  },
+  {
+   "id": "crow-elder",
+   "behavior": {
+    "kind": "bigUpdate",
+    "variant": {
+     "kind": "packLunge",
+     "lunge": {
+      "range": 75,
+      "crouch": 0.8,
+      "distance": 110,
+      "speed": 200,
+      "recover": 0.8,
+      "damage": 16
+     }
+    }
+   },
+   "hp": 189,
+   "speed": 58,
+   "damage": 2,
+   "radius": 7,
+   "xp": 16,
+   "goldChance": 0.2,
+   "mass": 0.4
+  },
+  {
+   "id": "hunt-crow",
+   "behavior": {
+    "kind": "bigUpdate",
+    "variant": {
+     "kind": "packLunge",
+     "lunge": {
+      "range": 100,
+      "crouch": 0.6,
+      "distance": 120,
+      "speed": 220,
+      "recover": 0.6,
+      "damage": 12
+     }
+    }
+   },
+   "hp": 27,
+   "speed": 92,
+   "damage": 1,
+   "radius": 7,
+   "xp": 4,
+   "goldChance": 0.02,
+   "mass": 0.15
+  },
+  {
+   "id": "pack-rat",
+   "behavior": {
+    "kind": "bigUpdate",
+    "variant": {
+     "kind": "packLunge",
+     "lunge": {
+      "range": 100,
+      "crouch": 0.6,
+      "distance": 120,
+      "speed": 210,
+      "recover": 0.6,
+      "damage": 12
+     }
+    }
+   },
+   "hp": 54,
+   "speed": 88,
+   "damage": 1,
+   "radius": 6,
+   "xp": 7,
+   "goldChance": 0.02,
+   "mass": 0.2
+  },
+  {
+   "id": "raccoon-boss",
+   "behavior": {
+    "kind": "bigUpdate",
+    "variant": {
+     "kind": "packLunge",
+     "lunge": {
+      "range": 75,
+      "crouch": 0.8,
+      "distance": 110,
+      "speed": 200,
+      "recover": 0.8,
+      "damage": 16
+     }
+    }
+   },
+   "hp": 378,
+   "speed": 38,
+   "damage": 2,
+   "radius": 6,
+   "xp": 28,
+   "goldChance": 0.2,
+   "mass": 0.6
+  },
+  {
+   "id": "rat-chief",
+   "behavior": {
+    "kind": "bigUpdate",
+    "variant": {
+     "kind": "packLunge",
+     "lunge": {
+      "range": 75,
+      "crouch": 0.8,
+      "distance": 110,
+      "speed": 200,
+      "recover": 0.8,
+      "damage": 16
+     }
+    }
+   },
+   "hp": 378,
+   "speed": 46,
+   "damage": 2,
+   "radius": 6,
+   "xp": 28,
+   "goldChance": 0.2,
+   "mass": 0.6
+  },
+  {
+   "id": "stag-beetle",
+   "behavior": {
+    "kind": "bigUpdate",
+    "variant": {
+     "kind": "packLunge",
+     "lunge": {
+      "range": 90,
+      "crouch": 0.6,
+      "distance": 110,
+      "speed": 180,
+      "recover": 0.6,
+      "damage": 12
+     }
+    }
+   },
+   "hp": 27,
+   "speed": 82,
+   "damage": 1,
+   "radius": 4,
+   "xp": 3,
+   "goldChance": 0.02,
+   "mass": 0.15
+  },
+  {
+   "id": "barnacle-troll",
+   "behavior": {
+    "kind": "chase"
+   },
+   "hp": 1,
+   "speed": 28,
+   "damage": 6,
+   "radius": 12,
+   "xp": 60,
+   "goldChance": 0.08,
+   "mass": 0.8
+  },
+  {
+   "id": "basilisk",
+   "behavior": {
+    "kind": "chase"
+   },
+   "hp": 1,
+   "speed": 35,
+   "damage": 5,
+   "radius": 9,
+   "xp": 18,
+   "goldChance": 0.03,
+   "mass": 0.6
+  },
+  {
+   "id": "coral-golem",
+   "behavior": {
+    "kind": "chase"
+   },
+   "hp": 1,
+   "speed": 27,
+   "damage": 7,
+   "radius": 13,
+   "xp": 60,
+   "goldChance": 0.08,
+   "mass": 1
+  },
+  {
+   "id": "dune-manticore",
+   "behavior": {
+    "kind": "chase"
+   },
+   "hp": 1,
+   "speed": 38,
+   "damage": 5,
+   "radius": 9,
+   "xp": 18,
+   "goldChance": 0.03,
+   "mass": 0.55
+  },
+  {
+   "id": "jelly-wraith",
+   "behavior": {
+    "kind": "chase"
+   },
+   "hp": 1,
+   "speed": 34,
+   "damage": 4,
+   "radius": 8,
+   "xp": 18,
+   "goldChance": 0.03,
+   "mass": 0.2
+  },
+  {
+   "id": "mangrove-treant",
+   "behavior": {
+    "kind": "chase"
+   },
+   "hp": 1,
+   "speed": 26,
+   "damage": 7,
+   "radius": 14,
+   "xp": 60,
+   "goldChance": 0.08,
+   "mass": 1
+  },
+  {
+   "id": "queen-herald",
+   "behavior": {
+    "kind": "chase"
+   },
+   "hp": 1,
+   "speed": 34,
+   "damage": 10,
+   "radius": 10,
+   "xp": 120,
+   "goldChance": 0.1,
+   "mass": 0.7
+  },
+  {
+   "id": "queen-seer",
+   "behavior": {
+    "kind": "chase"
+   },
+   "hp": 1,
+   "speed": 34,
+   "damage": 10,
+   "radius": 10,
+   "xp": 120,
+   "goldChance": 0.1,
+   "mass": 0.7
+  },
+  {
+   "id": "queen-warden",
+   "behavior": {
+    "kind": "chase"
+   },
+   "hp": 1,
+   "speed": 34,
+   "damage": 10,
+   "radius": 11,
+   "xp": 120,
+   "goldChance": 0.1,
+   "mass": 0.8
+  },
+  {
+   "id": "sea-serpent",
+   "behavior": {
+    "kind": "chase"
+   },
+   "hp": 1,
+   "speed": 36,
+   "damage": 4,
+   "radius": 8,
+   "xp": 18,
+   "goldChance": 0.03,
+   "mass": 0.4
+  },
+  {
+   "id": "siren-harpy",
+   "behavior": {
+    "kind": "chase"
+   },
+   "hp": 1,
+   "speed": 32,
+   "damage": 6,
+   "radius": 10,
+   "xp": 60,
+   "goldChance": 0.08,
+   "mass": 0.5
+  },
+  {
+   "id": "armoured-barnacle-troll",
+   "behavior": {
+    "kind": "charger",
+    "dashSpeed": 150,
+    "dashRange": 90
+   },
+   "hp": 170,
+   "speed": 28,
+   "damage": 18,
+   "radius": 14,
+   "xp": 14,
+   "goldChance": 0.18,
+   "mass": 1
+  },
+  {
+   "id": "armoured-basilisk",
+   "behavior": {
+    "kind": "charger",
+    "dashSpeed": 190,
+    "dashRange": 105
+   },
+   "hp": 150,
+   "speed": 32,
+   "damage": 16,
+   "radius": 14,
+   "xp": 12,
+   "goldChance": 0.16,
+   "mass": 1
+  },
+  {
+   "id": "armoured-coral-golem",
+   "behavior": {
+    "kind": "charger",
+    "dashSpeed": 145,
+    "dashRange": 90
+   },
+   "hp": 190,
+   "speed": 26,
+   "damage": 20,
+   "radius": 14,
+   "xp": 16,
+   "goldChance": 0.2,
+   "mass": 1
+  },
+  {
+   "id": "armoured-dune-manticore",
+   "behavior": {
+    "kind": "charger",
+    "dashSpeed": 210,
+    "dashRange": 120
+   },
+   "hp": 140,
+   "speed": 36,
+   "damage": 16,
+   "radius": 14,
+   "xp": 12,
+   "goldChance": 0.16,
+   "mass": 1
+  },
+  {
+   "id": "armoured-jelly-wraith",
+   "behavior": {
+    "kind": "charger",
+    "dashSpeed": 170,
+    "dashRange": 110
+   },
+   "hp": 70,
+   "speed": 46,
+   "damage": 10,
+   "radius": 10,
+   "xp": 6,
+   "goldChance": 0.08,
+   "mass": 0.2
+  },
+  {
+   "id": "armoured-mangrove-treant",
+   "behavior": {
+    "kind": "charger",
+    "dashSpeed": 140,
+    "dashRange": 90
+   },
+   "hp": 210,
+   "speed": 24,
+   "damage": 22,
+   "radius": 14,
+   "xp": 18,
+   "goldChance": 0.2,
+   "mass": 1
+  },
+  {
+   "id": "armoured-sea-serpent",
+   "behavior": {
+    "kind": "charger",
+    "dashSpeed": 180,
+    "dashRange": 105
+   },
+   "hp": 90,
+   "speed": 34,
+   "damage": 12,
+   "radius": 12,
+   "xp": 8,
+   "goldChance": 0.1,
+   "mass": 0.5
+  },
+  {
+   "id": "armoured-siren-harpy",
+   "behavior": {
+    "kind": "charger",
+    "dashSpeed": 200,
+    "dashRange": 115
+   },
+   "hp": 78,
+   "speed": 42,
+   "damage": 12,
+   "radius": 11,
+   "xp": 7,
+   "goldChance": 0.1,
+   "mass": 0.3
+  },
+  {
+   "id": "fuse-totem",
+   "behavior": {
+    "kind": "tank"
+   },
+   "hp": 1500,
+   "speed": 0,
+   "damage": 38,
+   "radius": 12,
+   "xp": 10,
+   "goldChance": 0.12,
+   "mass": 1
   }
  ],
  "bossIds": [
@@ -9108,7 +9552,15 @@
   "late-blight",
   "sir-strawman",
   "the-mandoline",
-  "the-masher"
+  "the-masher",
+  "pack-lord",
+  "root-hydra",
+  "root-hydra-frenzy",
+  "root-hydra-head",
+  "root-hydra-mire",
+  "root-hydra-stump",
+  "queen",
+  "shell-titan"
  ],
  "biomes": [
   {
@@ -9814,6 +10266,351 @@
    "poisPerChunk": 2,
    "goldMult": 1,
    "xpMult": 1
+  },
+  {
+   "id": "russet-moor",
+   "placement": {
+    "kind": "bigUpdate",
+    "variant": {
+     "kind": "phase",
+     "phase": "endgameHunt",
+     "land": {
+      "height": {
+       "kind": "ridges",
+       "amp": 30,
+       "scale": 420
+      },
+      "blend": 48,
+      "landmarks": [
+       {
+        "type": "windmill-ruin",
+        "chance": 0.2
+       }
+      ]
+     }
+    }
+   },
+   "enemies": [
+    [
+     "field-rat",
+     "aphid"
+    ],
+    [
+     "field-crow"
+    ],
+    [
+     "dumpster-raccoon",
+     "harvest-mouse"
+    ],
+    [
+     "mole"
+    ],
+    [
+     "mud-golem"
+    ]
+   ],
+   "hazard": {
+    "kind": "slow",
+    "shape": "splat",
+    "perChunk": 3,
+    "radius": 22,
+    "strength": 0.15
+   },
+   "props": [
+    "heather",
+    "heather",
+    "heather",
+    "heather",
+    "heather",
+    "standing-stone",
+    "standing-stone",
+    "stone-wall",
+    "stone-wall",
+    "boulder",
+    "bracken"
+   ],
+   "propsPerChunk": 14,
+   "poiWeights": {
+    "dog": 2.2,
+    "paidChest": 4,
+    "chargeShrine": 3,
+    "crops": 1,
+    "vendor": 2,
+    "microwave": 1,
+    "curseShrine": 1,
+    "eliteNest": 2,
+    "bossLair": 0.4,
+    "botDock": 1,
+    "whetstone": 1,
+    "dinnerBell": 1,
+    "taterSlots": 1,
+    "seedVault": 0.5,
+    "taterMagnet": 1,
+    "rootTunnel": 0.4,
+    "taterLantern": 3,
+    "spudFreezer": 1,
+    "frenzyFryer": 1,
+    "goldenShrine": 0.4,
+    "dogKennel": 0.5
+   },
+   "poisPerChunk": 2,
+   "goldMult": 1.2,
+   "xpMult": 1.2
+  },
+  {
+   "id": "vinegar-shoals",
+   "placement": {
+    "kind": "bigUpdate",
+    "variant": {
+     "kind": "phase",
+     "phase": "endgameBurrow",
+     "land": {
+      "height": {
+       "kind": "basins",
+       "amp": 16,
+       "scale": 360
+      },
+      "blend": 48,
+      "landmarks": [
+       {
+        "type": "shipwreck",
+        "chance": 0.28
+       }
+      ]
+     }
+    }
+   },
+   "enemies": [
+    [
+     "bog-slime",
+     "oil-drip"
+    ],
+    [
+     "sand-crab"
+    ],
+    [
+     "spittlebug",
+     "blight-spore"
+    ],
+    [
+     "mole"
+    ],
+    [
+     "mud-golem"
+    ]
+   ],
+   "hazard": {
+    "kind": "slow",
+    "shape": "oval",
+    "perChunk": 2,
+    "radius": 28,
+    "strength": 0.4
+   },
+   "props": [
+    "shell-pile",
+    "shell-pile",
+    "shell-pile",
+    "sea-grass",
+    "sea-grass",
+    "log",
+    "pier-posts"
+   ],
+   "propsPerChunk": 9,
+   "poiWeights": {
+    "dog": 2.2,
+    "paidChest": 4,
+    "chargeShrine": 2,
+    "crops": 1,
+    "vendor": 2,
+    "microwave": 2,
+    "curseShrine": 2,
+    "eliteNest": 2,
+    "bossLair": 0.6,
+    "botDock": 1,
+    "whetstone": 1,
+    "dinnerBell": 1,
+    "taterSlots": 1,
+    "seedVault": 0.5,
+    "taterMagnet": 1,
+    "rootTunnel": 0.4,
+    "taterLantern": 3,
+    "spudFreezer": 1,
+    "frenzyFryer": 1,
+    "goldenShrine": 0.4,
+    "dogKennel": 0.5
+   },
+   "poisPerChunk": 2,
+   "goldMult": 1.25,
+   "xpMult": 1.2
+  },
+  {
+   "id": "duchess-gardens",
+   "placement": {
+    "kind": "bigUpdate",
+    "variant": {
+     "kind": "phase",
+     "phase": "endgameCourt",
+     "land": {
+      "height": {
+       "kind": "flat",
+       "level": 0
+      },
+      "blend": 48,
+      "landmarks": [
+       {
+        "type": "fountain",
+        "chance": 0.28
+       }
+      ]
+     }
+    }
+   },
+   "enemies": [
+    [
+     "aphid",
+     "sprout-mite"
+    ],
+    [
+     "potato-beetle"
+    ],
+    [
+     "field-crow",
+     "blight-spore"
+    ],
+    [
+     "harvest-mouse"
+    ],
+    [
+     "mud-golem"
+    ]
+   ],
+   "hazard": {
+    "kind": "thorns",
+    "shape": "clover",
+    "perChunk": 3,
+    "radius": 20,
+    "strength": 6
+   },
+   "props": [
+    "topiary",
+    "topiary",
+    "hedge-block",
+    "hedge-block",
+    "garden-bramble",
+    "statue"
+   ],
+   "propsPerChunk": 9,
+   "poiWeights": {
+    "dog": 2.2,
+    "paidChest": 4,
+    "chargeShrine": 2,
+    "crops": 1,
+    "vendor": 2,
+    "microwave": 2,
+    "curseShrine": 2,
+    "eliteNest": 2,
+    "bossLair": 0.6,
+    "botDock": 1,
+    "whetstone": 1,
+    "dinnerBell": 1,
+    "taterSlots": 1,
+    "seedVault": 0.5,
+    "taterMagnet": 1,
+    "rootTunnel": 0.4,
+    "taterLantern": 3,
+    "spudFreezer": 1,
+    "frenzyFryer": 1,
+    "goldenShrine": 0.4,
+    "dogKennel": 0.5
+   },
+   "poisPerChunk": 2,
+   "goldMult": 1.25,
+   "xpMult": 1.2
+  },
+  {
+   "id": "roast-caldera",
+   "placement": {
+    "kind": "bigUpdate",
+    "variant": {
+     "kind": "phase",
+     "phase": "endgameShell",
+     "land": {
+      "height": {
+       "kind": "channels",
+       "depth": 6,
+       "width": 0.07,
+       "scale": 320
+      },
+      "blend": 48,
+      "landmarks": [
+       {
+        "type": "caldera-cone",
+        "chance": 0.28
+       }
+      ]
+     }
+    }
+   },
+   "enemies": [
+    [
+     "oil-drip",
+     "crumb-ant"
+    ],
+    [
+     "fry-fly"
+    ],
+    [
+     "sizzle-imp"
+    ],
+    [
+     "harvest-mouse"
+    ],
+    [
+     "mud-golem"
+    ]
+   ],
+   "hazard": {
+    "kind": "burn",
+    "shape": "oval",
+    "perChunk": 3,
+    "radius": 22,
+    "strength": 10
+   },
+   "props": [
+    "lava-cone",
+    "lava-cone",
+    "basalt-spire",
+    "basalt-spire",
+    "obsidian-shards",
+    "obsidian-shards"
+   ],
+   "propsPerChunk": 9,
+   "poiWeights": {
+    "dog": 2.2,
+    "paidChest": 4,
+    "chargeShrine": 2,
+    "crops": 1,
+    "vendor": 2,
+    "microwave": 2,
+    "curseShrine": 2,
+    "eliteNest": 2,
+    "bossLair": 0.6,
+    "botDock": 1,
+    "whetstone": 1,
+    "dinnerBell": 1,
+    "taterSlots": 1,
+    "seedVault": 0.5,
+    "taterMagnet": 1,
+    "rootTunnel": 0.4,
+    "taterLantern": 3,
+    "spudFreezer": 1,
+    "frenzyFryer": 1,
+    "goldenShrine": 0.4,
+    "dogKennel": 0.5
+   },
+   "poisPerChunk": 2,
+   "goldMult": 1.25,
+   "xpMult": 1.2
   }
  ],
  "events": [
@@ -11434,6 +12231,316 @@
     }
    ],
    "xp": 60
+  },
+  {
+   "id": "pack-lord",
+   "hp": 26000,
+   "speed": 40,
+   "damage": 20,
+   "radius": 18,
+   "attackEvery": 3.4,
+   "telegraph": 0.9,
+   "attack": {
+    "kind": "charge",
+    "dashSpeed": 230,
+    "dashTime": 0.55,
+    "width": 24
+   },
+   "patternEvery": 5,
+   "patterns": [
+    {
+     "kind": "ring",
+     "count": 14,
+     "speed": 64,
+     "radius": 3,
+     "damage": 8,
+     "bursts": 1,
+     "interval": 0.5,
+     "telegraph": 1
+    }
+   ],
+   "xp": 400
+  },
+  {
+   "id": "root-hydra",
+   "hp": 24000,
+   "damage": 32,
+   "radius": 22,
+   "xp": 600,
+   "speed": 24,
+   "attackEvery": 4.5,
+   "telegraph": 1.2,
+   "attack": {
+    "kind": "sweep",
+    "lanes": 3,
+    "width": 44,
+    "length": 340
+   },
+   "patternEvery": 2.6,
+   "patterns": [
+    {
+     "kind": "fan",
+     "count": 7,
+     "arc": 1.4,
+     "speed": 80,
+     "radius": 3,
+     "damage": 8,
+     "bursts": 2,
+     "interval": 0.3,
+     "telegraph": 0.8
+    },
+    {
+     "kind": "aimed",
+     "count": 3,
+     "speed": 135,
+     "radius": 3,
+     "damage": 8,
+     "bursts": 3,
+     "interval": 0.22,
+     "telegraph": 0.8
+    },
+    {
+     "kind": "ring",
+     "count": 20,
+     "speed": 70,
+     "radius": 3,
+     "damage": 8,
+     "bursts": 1,
+     "interval": 0.5,
+     "telegraph": 0.9
+    }
+   ]
+  },
+  {
+   "id": "root-hydra-frenzy",
+   "hp": 900000,
+   "damage": 38,
+   "radius": 22,
+   "xp": 600,
+   "speed": 34,
+   "attackEvery": 2.6,
+   "telegraph": 0.9,
+   "attack": {
+    "kind": "charge",
+    "dashSpeed": 330,
+    "dashTime": 0.9,
+    "width": 70
+   },
+   "patternEvery": 1.8,
+   "patterns": [
+    {
+     "kind": "aimed",
+     "count": 3,
+     "speed": 135,
+     "radius": 3,
+     "damage": 8,
+     "bursts": 3,
+     "interval": 0.22,
+     "telegraph": 0.8
+    },
+    {
+     "kind": "ring",
+     "count": 16,
+     "speed": 90,
+     "radius": 3,
+     "damage": 8,
+     "bursts": 1,
+     "interval": 0.4,
+     "telegraph": 0.8
+    },
+    {
+     "kind": "fan",
+     "count": 7,
+     "arc": 1.4,
+     "speed": 85,
+     "radius": 3,
+     "damage": 8,
+     "bursts": 2,
+     "interval": 0.3,
+     "telegraph": 0.8
+    }
+   ]
+  },
+  {
+   "id": "root-hydra-head",
+   "hp": 2000,
+   "damage": 8,
+   "radius": 22,
+   "xp": 0,
+   "speed": 0,
+   "attackEvery": 4,
+   "telegraph": 1.2,
+   "attack": {
+    "kind": "sweep",
+    "lanes": 1,
+    "width": 36,
+    "length": 320
+   },
+   "patternEvery": 3,
+   "patterns": [
+    {
+     "kind": "ring",
+     "count": 14,
+     "speed": 62,
+     "radius": 3,
+     "damage": 8,
+     "bursts": 1,
+     "interval": 0.6,
+     "telegraph": 1
+    }
+   ]
+  },
+  {
+   "id": "root-hydra-mire",
+   "hp": 900000,
+   "damage": 32,
+   "radius": 22,
+   "xp": 600,
+   "speed": 22,
+   "attackEvery": 5,
+   "telegraph": 1.2,
+   "attack": {
+    "kind": "pools",
+    "shape": "splat",
+    "count": 6,
+    "radius": 34,
+    "spread": 200,
+    "poolTime": 7,
+    "poolDps": 14
+   },
+   "patternEvery": 3.4,
+   "patterns": [
+    {
+     "kind": "fan",
+     "count": 7,
+     "arc": 1.4,
+     "speed": 80,
+     "radius": 3,
+     "damage": 8,
+     "bursts": 2,
+     "interval": 0.3,
+     "telegraph": 0.8
+    }
+   ]
+  },
+  {
+   "id": "root-hydra-stump",
+   "hp": 900000,
+   "damage": 32,
+   "radius": 22,
+   "xp": 600,
+   "speed": 22,
+   "attackEvery": 7,
+   "telegraph": 1.2,
+   "attack": {
+    "kind": "summon",
+    "count": 2,
+    "ringRadius": 80,
+    "minion": "mud-golem"
+   },
+   "patternEvery": 3,
+   "patterns": [
+    {
+     "kind": "spiral",
+     "count": 4,
+     "spin": 1.4,
+     "speed": 55,
+     "radius": 3,
+     "damage": 8,
+     "bursts": 8,
+     "interval": 0.18,
+     "telegraph": 0.9
+    },
+    {
+     "kind": "ring",
+     "count": 18,
+     "speed": 75,
+     "radius": 3,
+     "damage": 8,
+     "bursts": 2,
+     "interval": 0.5,
+     "telegraph": 0.9
+    }
+   ]
+  },
+  {
+   "id": "queen",
+   "hp": 30000,
+   "speed": 20,
+   "damage": 36,
+   "radius": 22,
+   "xp": 900,
+   "attackEvery": 4,
+   "telegraph": 0.8,
+   "attack": {
+    "kind": "sweep",
+    "lanes": 3,
+    "width": 42,
+    "length": 320
+   },
+   "patternEvery": 3.4,
+   "patterns": [
+    {
+     "kind": "ring",
+     "count": 15,
+     "speed": 76,
+     "radius": 3,
+     "damage": 9,
+     "bursts": 2,
+     "interval": 0.5,
+     "telegraph": 0.8
+    }
+   ]
+  },
+  {
+   "id": "shell-titan",
+   "hp": 32000,
+   "damage": 36,
+   "radius": 24,
+   "xp": 800,
+   "speed": 22,
+   "attackEvery": 4.2,
+   "telegraph": 1,
+   "attack": {
+    "kind": "charge",
+    "dashSpeed": 210,
+    "dashTime": 0.8,
+    "width": 54
+   },
+   "patternEvery": 4.6,
+   "patterns": [
+    {
+     "kind": "fan",
+     "count": 7,
+     "arc": 1.5,
+     "speed": 85,
+     "radius": 3,
+     "damage": 9,
+     "bursts": 1,
+     "interval": 0.3,
+     "telegraph": 0.8
+    },
+    {
+     "kind": "aimed",
+     "count": 5,
+     "speed": 125,
+     "radius": 3,
+     "damage": 9,
+     "bursts": 1,
+     "interval": 0.25,
+     "telegraph": 0.8
+    },
+    {
+     "kind": "ring",
+     "count": 10,
+     "speed": 72,
+     "radius": 3,
+     "damage": 9,
+     "bursts": 1,
+     "interval": 0.4,
+     "telegraph": 0.9
+    }
+   ]
   }
  ],
  "bossOrder": [
@@ -12264,6 +13371,316 @@
     }
    ],
    "xp": 300
+  },
+  {
+   "id": "pack-lord",
+   "hp": 26000,
+   "speed": 40,
+   "damage": 20,
+   "radius": 18,
+   "attackEvery": 3.4,
+   "telegraph": 0.9,
+   "attack": {
+    "kind": "charge",
+    "dashSpeed": 230,
+    "dashTime": 0.55,
+    "width": 24
+   },
+   "patternEvery": 5,
+   "patterns": [
+    {
+     "kind": "ring",
+     "count": 14,
+     "speed": 64,
+     "radius": 3,
+     "damage": 8,
+     "bursts": 1,
+     "interval": 0.5,
+     "telegraph": 1
+    }
+   ],
+   "xp": 400
+  },
+  {
+   "id": "root-hydra",
+   "hp": 24000,
+   "damage": 32,
+   "radius": 22,
+   "xp": 600,
+   "speed": 24,
+   "attackEvery": 4.5,
+   "telegraph": 1.2,
+   "attack": {
+    "kind": "sweep",
+    "lanes": 3,
+    "width": 44,
+    "length": 340
+   },
+   "patternEvery": 2.6,
+   "patterns": [
+    {
+     "kind": "fan",
+     "count": 7,
+     "arc": 1.4,
+     "speed": 80,
+     "radius": 3,
+     "damage": 8,
+     "bursts": 2,
+     "interval": 0.3,
+     "telegraph": 0.8
+    },
+    {
+     "kind": "aimed",
+     "count": 3,
+     "speed": 135,
+     "radius": 3,
+     "damage": 8,
+     "bursts": 3,
+     "interval": 0.22,
+     "telegraph": 0.8
+    },
+    {
+     "kind": "ring",
+     "count": 20,
+     "speed": 70,
+     "radius": 3,
+     "damage": 8,
+     "bursts": 1,
+     "interval": 0.5,
+     "telegraph": 0.9
+    }
+   ]
+  },
+  {
+   "id": "root-hydra-frenzy",
+   "hp": 900000,
+   "damage": 38,
+   "radius": 22,
+   "xp": 600,
+   "speed": 34,
+   "attackEvery": 2.6,
+   "telegraph": 0.9,
+   "attack": {
+    "kind": "charge",
+    "dashSpeed": 330,
+    "dashTime": 0.9,
+    "width": 70
+   },
+   "patternEvery": 1.8,
+   "patterns": [
+    {
+     "kind": "aimed",
+     "count": 3,
+     "speed": 135,
+     "radius": 3,
+     "damage": 8,
+     "bursts": 3,
+     "interval": 0.22,
+     "telegraph": 0.8
+    },
+    {
+     "kind": "ring",
+     "count": 16,
+     "speed": 90,
+     "radius": 3,
+     "damage": 8,
+     "bursts": 1,
+     "interval": 0.4,
+     "telegraph": 0.8
+    },
+    {
+     "kind": "fan",
+     "count": 7,
+     "arc": 1.4,
+     "speed": 85,
+     "radius": 3,
+     "damage": 8,
+     "bursts": 2,
+     "interval": 0.3,
+     "telegraph": 0.8
+    }
+   ]
+  },
+  {
+   "id": "root-hydra-head",
+   "hp": 2000,
+   "damage": 8,
+   "radius": 22,
+   "xp": 0,
+   "speed": 0,
+   "attackEvery": 4,
+   "telegraph": 1.2,
+   "attack": {
+    "kind": "sweep",
+    "lanes": 1,
+    "width": 36,
+    "length": 320
+   },
+   "patternEvery": 3,
+   "patterns": [
+    {
+     "kind": "ring",
+     "count": 14,
+     "speed": 62,
+     "radius": 3,
+     "damage": 8,
+     "bursts": 1,
+     "interval": 0.6,
+     "telegraph": 1
+    }
+   ]
+  },
+  {
+   "id": "root-hydra-mire",
+   "hp": 900000,
+   "damage": 32,
+   "radius": 22,
+   "xp": 600,
+   "speed": 22,
+   "attackEvery": 5,
+   "telegraph": 1.2,
+   "attack": {
+    "kind": "pools",
+    "shape": "splat",
+    "count": 6,
+    "radius": 34,
+    "spread": 200,
+    "poolTime": 7,
+    "poolDps": 14
+   },
+   "patternEvery": 3.4,
+   "patterns": [
+    {
+     "kind": "fan",
+     "count": 7,
+     "arc": 1.4,
+     "speed": 80,
+     "radius": 3,
+     "damage": 8,
+     "bursts": 2,
+     "interval": 0.3,
+     "telegraph": 0.8
+    }
+   ]
+  },
+  {
+   "id": "root-hydra-stump",
+   "hp": 900000,
+   "damage": 32,
+   "radius": 22,
+   "xp": 600,
+   "speed": 22,
+   "attackEvery": 7,
+   "telegraph": 1.2,
+   "attack": {
+    "kind": "summon",
+    "count": 2,
+    "ringRadius": 80,
+    "minion": "mud-golem"
+   },
+   "patternEvery": 3,
+   "patterns": [
+    {
+     "kind": "spiral",
+     "count": 4,
+     "spin": 1.4,
+     "speed": 55,
+     "radius": 3,
+     "damage": 8,
+     "bursts": 8,
+     "interval": 0.18,
+     "telegraph": 0.9
+    },
+    {
+     "kind": "ring",
+     "count": 18,
+     "speed": 75,
+     "radius": 3,
+     "damage": 8,
+     "bursts": 2,
+     "interval": 0.5,
+     "telegraph": 0.9
+    }
+   ]
+  },
+  {
+   "id": "queen",
+   "hp": 30000,
+   "speed": 20,
+   "damage": 36,
+   "radius": 22,
+   "xp": 900,
+   "attackEvery": 4,
+   "telegraph": 0.8,
+   "attack": {
+    "kind": "sweep",
+    "lanes": 3,
+    "width": 42,
+    "length": 320
+   },
+   "patternEvery": 3.4,
+   "patterns": [
+    {
+     "kind": "ring",
+     "count": 15,
+     "speed": 76,
+     "radius": 3,
+     "damage": 9,
+     "bursts": 2,
+     "interval": 0.5,
+     "telegraph": 0.8
+    }
+   ]
+  },
+  {
+   "id": "shell-titan",
+   "hp": 32000,
+   "damage": 36,
+   "radius": 24,
+   "xp": 800,
+   "speed": 22,
+   "attackEvery": 4.2,
+   "telegraph": 1,
+   "attack": {
+    "kind": "charge",
+    "dashSpeed": 210,
+    "dashTime": 0.8,
+    "width": 54
+   },
+   "patternEvery": 4.6,
+   "patterns": [
+    {
+     "kind": "fan",
+     "count": 7,
+     "arc": 1.5,
+     "speed": 85,
+     "radius": 3,
+     "damage": 9,
+     "bursts": 1,
+     "interval": 0.3,
+     "telegraph": 0.8
+    },
+    {
+     "kind": "aimed",
+     "count": 5,
+     "speed": 125,
+     "radius": 3,
+     "damage": 9,
+     "bursts": 1,
+     "interval": 0.25,
+     "telegraph": 0.8
+    },
+    {
+     "kind": "ring",
+     "count": 10,
+     "speed": 72,
+     "radius": 3,
+     "damage": 9,
+     "bursts": 1,
+     "interval": 0.4,
+     "telegraph": 0.9
+    }
+   ]
   }
  ]
 }

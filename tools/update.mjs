@@ -151,6 +151,19 @@ if (flagged) run('node', ['--input-type=module', '-e', `
   const { FLAGGED_ATLAS } = await import(${JSON.stringify(join(live.dir, flagged))});
   fs.writeFileSync(${JSON.stringify(join(atlasDir, 'atlas-flagged.json'))}, JSON.stringify(FLAGGED_ATLAS));`]);
 writeFileSync(join(atlasDir, 'pages.json'), JSON.stringify({ early: pick(/^atlas-[A-Za-z0-9_-]{8}\.png$/), late: pick(/^atlas-late-[A-Za-z0-9_-]{8}\.png$/), ...(flagged ? { flagged: pick(/^flagged-atlas-[A-Za-z0-9_-]{8}\.png$/) } : {}) }));
+const endgamePages = pick(/^flagged-endgame-pages\.generated-.{8}\.js$/);
+if (endgamePages) run('node', ['--input-type=module', '-e', `
+  import fs from 'node:fs';
+  import { basename } from 'node:path';
+  const { ENDGAME_PAGES } = await import(${JSON.stringify(join(live.dir, endgamePages))});
+  const file = ${JSON.stringify(join(atlasDir, 'pages.json'))};
+  const pages = JSON.parse(fs.readFileSync(file));
+  pages.endgame = [];
+  for (const page of ENDGAME_PAGES) {
+    fs.writeFileSync(${JSON.stringify(atlasDir)} + '/atlas-' + page.phase + '.json', JSON.stringify(await page.manifest()));
+    pages.endgame.push({ phase: page.phase, image: basename(await page.url()) });
+  }
+  fs.writeFileSync(file, JSON.stringify(pages));`]);
 run('python3', ['tools/icons.py', live.dir, atlasDir, join(cache, 'data', 'registry.json'), join(cache, 'icons')]);
 const iconDiff = run('python3', ['-I', '-c', `
 import json,os,sys

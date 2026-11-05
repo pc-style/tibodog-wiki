@@ -23,6 +23,12 @@
  "content.biome.crop-circle.name": [
   "Crop Circle"
  ],
+ "content.biome.duchess-gardens.desc": [
+  "A clipped hedge maze of jade lawns and grey gravel walks. The Court holds its audience here."
+ ],
+ "content.biome.duchess-gardens.name": [
+  "Duchess Gardens"
+ ],
  "content.biome.frozen-tundra.desc": [
   "A frozen plain of fries. Frost patches chill Tibo."
  ],
@@ -70,6 +76,24 @@
  ],
  "content.biome.potato-field.name": [
   "Potato Field"
+ ],
+ "content.biome.roast-caldera.desc": [
+  "Pale ash over a cooling caldera, cut by narrow channels of slow lava. The Shell's armoured beasts wade through it."
+ ],
+ "content.biome.roast-caldera.name": [
+  "Roast Caldera"
+ ],
+ "content.biome.russet-moor.desc": [
+  "A misty moor of heather, standing stones and a ruined windmill. The packs hunt here."
+ ],
+ "content.biome.russet-moor.name": [
+  "Russet Moor"
+ ],
+ "content.biome.vinegar-shoals.desc": [
+  "Golden tidal flats of wet sand and sour pools. Things burrow under the shallows."
+ ],
+ "content.biome.vinegar-shoals.name": [
+  "Vinegar Shoals"
  ],
  "content.boss.amusing.desc": [
   "The potato festival's fluffy pink mascot. He waves hello, throws hearts and stuffing, then leaps in for a hug that squeezes the starch out of you."
@@ -160,6 +184,78 @@
  ],
  "content.boss.late-blight.title": [
   "The Famine Fog"
+ ],
+ "content.boss.pack-lord.desc": [
+  "A giant alpha that runs the packs. It leaps in chained lunges and calls its hunters, and every pack scatters when it falls."
+ ],
+ "content.boss.pack-lord.name": [
+  "Pack Lord"
+ ],
+ "content.boss.pack-lord.title": [
+  "Leader of the Hunt"
+ ],
+ "content.boss.queen.desc": [
+  "Her three attendants guard her from every blow, and return when left fallen."
+ ],
+ "content.boss.queen.name": [
+  "The Queen"
+ ],
+ "content.boss.queen.title": [
+  "The Island Court"
+ ],
+ "content.boss.root-hydra-frenzy.desc": [
+  "Five heads, red-eyed and wounded. It lunges."
+ ],
+ "content.boss.root-hydra-frenzy.name": [
+  "The Root Hydra"
+ ],
+ "content.boss.root-hydra-frenzy.title": [
+  "Five Heads"
+ ],
+ "content.boss.root-hydra-head.desc": [
+  "One of the Hydra's heads bursts from the ground, spits mud and sinks again. Every hit it takes now weakens the Hydra at 29:00."
+ ],
+ "content.boss.root-hydra-head.name": [
+  "Root Hydra Head"
+ ],
+ "content.boss.root-hydra-head.title": [
+  "Burrowing"
+ ],
+ "content.boss.root-hydra-mire.desc": [
+  "Two heads dive into the ground and spit mud pools across the field."
+ ],
+ "content.boss.root-hydra-mire.name": [
+  "The Root Hydra"
+ ],
+ "content.boss.root-hydra-mire.title": [
+  "Pools"
+ ],
+ "content.boss.root-hydra-stump.desc": [
+  "Its middle head falls. Mud Golems crawl out of the ground."
+ ],
+ "content.boss.root-hydra-stump.name": [
+  "The Root Hydra"
+ ],
+ "content.boss.root-hydra-stump.title": [
+  "Stump"
+ ],
+ "content.boss.root-hydra.desc": [
+  "A root-crusted hydra that bursts from the ground. Its three heads bite down in lanes."
+ ],
+ "content.boss.root-hydra.name": [
+  "The Root Hydra"
+ ],
+ "content.boss.root-hydra.title": [
+  "Three Heads"
+ ],
+ "content.boss.shell-titan.desc": [
+  "Its three plates open in order after each charge. Break through while one is exposed."
+ ],
+ "content.boss.shell-titan.name": [
+  "The Shell Titan"
+ ],
+ "content.boss.shell-titan.title": [
+  "Three Plates"
  ],
  "content.boss.sir-strawman.desc": [
   "A scarecrow knight. It throws fans of sharp straw."
@@ -311,8 +407,41 @@
  "content.dog.zelda-and-link.name": [
   "Zelda & Link"
  ],
+ "content.enemy.alley-raccoon.name": [
+  "Alley Raccoon"
+ ],
  "content.enemy.aphid.name": [
   "Aphid"
+ ],
+ "content.enemy.armoured-barnacle-troll.name": [
+  "Armoured Barnacle Troll"
+ ],
+ "content.enemy.armoured-basilisk.name": [
+  "Armoured Basilisk"
+ ],
+ "content.enemy.armoured-coral-golem.name": [
+  "Armoured Coral Golem"
+ ],
+ "content.enemy.armoured-dune-manticore.name": [
+  "Armoured Dune Manticore"
+ ],
+ "content.enemy.armoured-jelly-wraith.name": [
+  "Armoured Jelly Wraith"
+ ],
+ "content.enemy.armoured-mangrove-treant.name": [
+  "Armoured Mangrove Treant"
+ ],
+ "content.enemy.armoured-sea-serpent.name": [
+  "Armoured Sea Serpent"
+ ],
+ "content.enemy.armoured-siren-harpy.name": [
+  "Armoured Siren Harpy"
+ ],
+ "content.enemy.barnacle-troll.name": [
+  "Barnacle Troll"
+ ],
+ "content.enemy.basilisk.name": [
+  "Basilisk"
  ],
  "content.enemy.beetle-brood.name": [
   "Beetle Brood"
@@ -338,11 +467,20 @@
  "content.enemy.compost-maggot.name": [
   "Compost Maggot"
  ],
+ "content.enemy.coral-golem.name": [
+  "Coral Golem"
+ ],
+ "content.enemy.crow-elder.name": [
+  "Crow Elder"
+ ],
  "content.enemy.crumb-ant.name": [
   "Crumb Ant"
  ],
  "content.enemy.dumpster-raccoon.name": [
   "Dumpster Raccoon"
+ ],
+ "content.enemy.dune-manticore.name": [
+  "Dune Manticore"
  ],
  "content.enemy.field-crow.name": [
   "Field Crow"
@@ -355,6 +493,9 @@
  ],
  "content.enemy.fry-fly.name": [
   "Fry Fly"
+ ],
+ "content.enemy.fuse-totem.name": [
+  "Fuse Totem"
  ],
  "content.enemy.garden-slug.name": [
   "Garden Slug"
@@ -374,8 +515,14 @@
  "content.enemy.hay-bale.name": [
   "Hay Bale"
  ],
+ "content.enemy.hunt-crow.name": [
+  "Hunting Crow"
+ ],
  "content.enemy.ice-imp.name": [
   "Ice Imp"
+ ],
+ "content.enemy.jelly-wraith.name": [
+  "Jelly Wraith"
  ],
  "content.enemy.ketchup-drop.name": [
   "Ketchup Drop"
@@ -392,6 +539,9 @@
  "content.enemy.maggot-swarm.name": [
   "Maggot"
  ],
+ "content.enemy.mangrove-treant.name": [
+  "Mangrove Treant"
+ ],
  "content.enemy.mole.name": [
   "Mole"
  ],
@@ -401,17 +551,41 @@
  "content.enemy.oil-drip.name": [
   "Oil Drip"
  ],
+ "content.enemy.pack-rat.name": [
+  "Pack Rat"
+ ],
  "content.enemy.parking-gull.name": [
   "Parking Lot Gull"
  ],
  "content.enemy.potato-beetle.name": [
   "Potato Beetle"
  ],
+ "content.enemy.queen-herald.name": [
+  "Queen's Herald"
+ ],
+ "content.enemy.queen-seer.name": [
+  "Queen's Seer"
+ ],
+ "content.enemy.queen-warden.name": [
+  "Queen's Warden"
+ ],
+ "content.enemy.raccoon-boss.name": [
+  "Raccoon Boss"
+ ],
+ "content.enemy.rat-chief.name": [
+  "Rat Chief"
+ ],
  "content.enemy.reset-zombie.name": [
   "Reset Zombie"
  ],
  "content.enemy.sand-crab.name": [
   "Sand Crab"
+ ],
+ "content.enemy.sea-serpent.name": [
+  "Sea Serpent"
+ ],
+ "content.enemy.siren-harpy.name": [
+  "Siren Harpy"
  ],
  "content.enemy.sizzle-imp.name": [
   "Sizzle Imp"
@@ -427,6 +601,9 @@
  ],
  "content.enemy.sprout-mite.name": [
   "Sprout Mite"
+ ],
+ "content.enemy.stag-beetle.name": [
+  "Stag Beetle"
  ],
  "content.enemy.swarm-fly.name": [
   "Fry Fly Swarm"

@@ -1,7 +1,7 @@
 {
  "build": {
-  "main": "main-DqZq-boy.js",
-  "boot": "boot-O2kAd1J1.js"
+  "main": "main-BOuPM9t4.js",
+  "boot": "boot-5JbyZiEr.js"
  },
  "languages": [
   {
@@ -9,189 +9,189 @@
    "endonym": "English",
    "englishName": "English",
    "dir": "ltr",
-   "chunk": "i18n-en-content-HWD3gQYj.js"
+   "chunk": "i18n-en-content--0ALgcKX.js"
   },
   {
    "tag": "zh-CN",
    "endonym": "简体中文",
    "englishName": "Simplified Chinese",
    "dir": "ltr",
-   "chunk": "i18n-zh-CN-content-DgKr1kK_.js"
+   "chunk": "i18n-zh-CN-content-FbOc-f2j.js"
   },
   {
    "tag": "zh-TW",
    "endonym": "繁體中文",
    "englishName": "Traditional Chinese (Taiwan)",
    "dir": "ltr",
-   "chunk": "i18n-zh-TW-content-CePCx6Ri.js"
+   "chunk": "i18n-zh-TW-content-DhtzSct3.js"
   },
   {
    "tag": "ja",
    "endonym": "日本語",
    "englishName": "Japanese",
    "dir": "ltr",
-   "chunk": "i18n-ja-content-BnBvCdVt.js"
+   "chunk": "i18n-ja-content-DO6GrqHt.js"
   },
   {
    "tag": "ko",
    "endonym": "한국어",
    "englishName": "Korean",
    "dir": "ltr",
-   "chunk": "i18n-ko-content-CG1oe9fV.js"
+   "chunk": "i18n-ko-content-hvDM7Sxm.js"
   },
   {
    "tag": "es",
    "endonym": "Español",
    "englishName": "Spanish",
    "dir": "ltr",
-   "chunk": "i18n-es-content-uSqV_jw5.js"
+   "chunk": "i18n-es-content-G1CUKfjq.js"
   },
   {
    "tag": "hi",
    "endonym": "हिन्दी",
    "englishName": "Hindi",
    "dir": "ltr",
-   "chunk": "i18n-hi-content-Cc1Lr7Db.js"
+   "chunk": "i18n-hi-content-CCGk1ELH.js"
   },
   {
    "tag": "de",
    "endonym": "Deutsch",
    "englishName": "German",
    "dir": "ltr",
-   "chunk": "i18n-de-content-C5dfhxWK.js"
+   "chunk": "i18n-de-content-DrGPHvmw.js"
   },
   {
    "tag": "fr",
    "endonym": "Français",
    "englishName": "French",
    "dir": "ltr",
-   "chunk": "i18n-fr-content-DeAIF_9D.js"
+   "chunk": "i18n-fr-content-Q4dBJLgx.js"
   },
   {
    "tag": "pt",
    "endonym": "Português (Brasil)",
    "englishName": "Brazilian Portuguese",
    "dir": "ltr",
-   "chunk": "i18n-pt-content-D5rlwOs-.js"
+   "chunk": "i18n-pt-content-CTFK_Y6o.js"
   },
   {
    "tag": "tr",
    "endonym": "Türkçe",
    "englishName": "Turkish",
    "dir": "ltr",
-   "chunk": "i18n-tr-content-B07R2vMl.js"
+   "chunk": "i18n-tr-content-CaVJQJNQ.js"
   },
   {
    "tag": "id",
    "endonym": "Bahasa Indonesia",
    "englishName": "Indonesian",
    "dir": "ltr",
-   "chunk": "i18n-id-content-DEdoShGl.js"
+   "chunk": "i18n-id-content-C80KDnT9.js"
   },
   {
    "tag": "ru",
    "endonym": "Русский",
    "englishName": "Russian",
    "dir": "ltr",
-   "chunk": "i18n-ru-content-DX46cfl7.js"
+   "chunk": "i18n-ru-content-CtbKPrzw.js"
   },
   {
    "tag": "ms",
    "endonym": "Bahasa Melayu",
    "englishName": "Malay",
    "dir": "ltr",
-   "chunk": "i18n-ms-content-BU_JkUD9.js"
+   "chunk": "i18n-ms-content-CUV8yXNe.js"
   },
   {
    "tag": "fil",
    "endonym": "Filipino",
    "englishName": "Filipino",
    "dir": "ltr",
-   "chunk": "i18n-fil-content-DxQ_PSw6.js"
+   "chunk": "i18n-fil-content-Vfyf3FEE.js"
   },
   {
    "tag": "mr",
    "endonym": "मराठी",
    "englishName": "Marathi",
    "dir": "ltr",
-   "chunk": "i18n-mr-content-Dx_Zjo1I.js"
+   "chunk": "i18n-mr-content-YLm-97Ki.js"
   },
   {
    "tag": "vi",
    "endonym": "Tiếng Việt",
    "englishName": "Vietnamese",
    "dir": "ltr",
-   "chunk": "i18n-vi-content-r3KPaWdc.js"
+   "chunk": "i18n-vi-content-r94z-nTk.js"
   },
   {
    "tag": "te",
    "endonym": "తెలుగు",
    "englishName": "Telugu",
    "dir": "ltr",
-   "chunk": "i18n-te-content-ORTYLNun.js"
+   "chunk": "i18n-te-content-GGCQ4I6v.js"
   },
   {
    "tag": "ta",
    "endonym": "தமிழ்",
    "englishName": "Tamil",
    "dir": "ltr",
-   "chunk": "i18n-ta-content-aASvGTKH.js"
+   "chunk": "i18n-ta-content-CXcXEP25.js"
   },
   {
    "tag": "bn",
    "endonym": "বাংলা",
    "englishName": "Bengali",
    "dir": "ltr",
-   "chunk": "i18n-bn-content-DZOvpC1m.js"
+   "chunk": "i18n-bn-content-D9XMT074.js"
   },
   {
    "tag": "th",
    "endonym": "ไทย",
    "englishName": "Thai",
    "dir": "ltr",
-   "chunk": "i18n-th-content-BEiRt4gj.js"
+   "chunk": "i18n-th-content-BVVPxc2n.js"
   },
   {
    "tag": "ha",
    "endonym": "Hausa",
    "englishName": "Hausa",
    "dir": "ltr",
-   "chunk": "i18n-ha-content-CsdEs1IV.js"
+   "chunk": "i18n-ha-content-Dt23scdH.js"
   },
   {
    "tag": "pcm",
    "endonym": "Naijá",
    "englishName": "Nigerian Pidgin",
    "dir": "ltr",
-   "chunk": "i18n-pcm-content-B_E9h8PQ.js"
+   "chunk": "i18n-pcm-content-Cq_wkwbB.js"
   },
   {
    "tag": "ar",
    "endonym": "العربية",
    "englishName": "Arabic",
    "dir": "rtl",
-   "chunk": "i18n-ar-content-ww6GrL7E.js"
+   "chunk": "i18n-ar-content-D7gTx3ZG.js"
   },
   {
    "tag": "fa",
    "endonym": "فارسی",
    "englishName": "Persian",
    "dir": "rtl",
-   "chunk": "i18n-fa-content-CT5frSzV.js"
+   "chunk": "i18n-fa-content-CCdHYcDO.js"
   },
   {
    "tag": "he",
    "endonym": "עברית",
    "englishName": "Hebrew",
    "dir": "rtl",
-   "chunk": "i18n-he-content-DdFVvu6b.js"
+   "chunk": "i18n-he-content-DKRcLmRm.js"
   },
   {
    "tag": "ur",
    "endonym": "اردو",
    "englishName": "Urdu",
    "dir": "rtl",
-   "chunk": "i18n-ur-content-B3Uv3tJl.js"
+   "chunk": "i18n-ur-content-BmMDSfWv.js"
   }
  ],
  "alwaysEnglish": [
@@ -258,7 +258,7 @@
      "ur": "چپس کی گھاٹیاں"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.biome.chip-canyons.name\":[\"チップス峡谷\"]"
     }
    },
@@ -293,7 +293,7 @@
      "ur": "سکوں والی لانڈری"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.biome.coin-laundromat.name\":[\"コインランドリー\"]"
     }
    },
@@ -328,7 +328,7 @@
      "ur": "کھاد کے غار"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.biome.compost-caves.name\":[\"堆肥洞窟\"]"
     }
    },
@@ -363,8 +363,43 @@
      "ur": "فصلی دائرہ"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.biome.crop-circle.name\":[\"ミステリーサークル\"]"
+    }
+   },
+   "duchess-gardens": {
+    "name": {
+     "en": "Duchess Gardens",
+     "zh-CN": "公爵夫人花园",
+     "zh-TW": "公爵夫人花園",
+     "ja": "公爵夫人の庭園",
+     "ko": "공작부인의 정원",
+     "es": "Jardines de la duquesa",
+     "hi": "डचेस के बगीचे",
+     "de": "Gärten der Herzogin",
+     "fr": "Jardins de la duchesse",
+     "pt": "Jardins da duquesa",
+     "tr": "Düşes Bahçeleri",
+     "id": "Taman Duses",
+     "ru": "Сады герцогини",
+     "ms": "Taman Duses",
+     "fil": "Hardin ng Dukesa",
+     "mr": "डचेसच्या बागा",
+     "vi": "Vườn Nữ Công Tước",
+     "te": "డచెస్ తోటలు",
+     "ta": "டச்சஸ் தோட்டங்கள்",
+     "bn": "ডাচেসের বাগান",
+     "th": "สวนของดัชเชส",
+     "ha": "Lambunan Basarakiya",
+     "pcm": "Duchess Gardens",
+     "ar": "حدائق الدوقة",
+     "fa": "باغ‌های دوشس",
+     "he": "גני הדוכסית",
+     "ur": "ڈچز کے باغات"
+    },
+    "cite": {
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
+     "quote": "\"content.biome.duchess-gardens.name\":[\"公爵夫人の庭園\"]"
     }
    },
    "frozen-tundra": {
@@ -398,7 +433,7 @@
      "ur": "جمے فرائز کا برفستان"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.biome.frozen-tundra.name\":[\"冷凍ポテト凍原\"]"
     }
    },
@@ -433,7 +468,7 @@
      "ur": "فرائز تیل کا صحرا"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.biome.fry-oil-desert.name\":[\"フライ油砂漠\"]"
     }
    },
@@ -468,7 +503,7 @@
      "ur": "فرائز محل ڈرائیو تھرو"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.biome.fry-palace.name\":[\"フライ宮殿ドライブスルー\"]"
     }
    },
@@ -503,7 +538,7 @@
      "ur": "گٹربال گلیاں"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.biome.gutterball-lanes.name\":[\"ガターレーン\"]"
     }
    },
@@ -538,7 +573,7 @@
      "ur": "کیچپ دلدل"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.biome.ketchup-bog.name\":[\"ケチャップ沼\"]"
     }
    },
@@ -573,7 +608,7 @@
      "ur": "بھرتے کی دلدل"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.biome.mash-swamp.name\":[\"マッシュ沼\"]"
     }
    },
@@ -608,7 +643,7 @@
      "ur": "چھلکوں کا جنگل"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.biome.peel-forest.name\":[\"皮むき森\"]"
     }
    },
@@ -643,8 +678,113 @@
      "ur": "آلو کا کھیت"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.biome.potato-field.name\":[\"ジャガイモ畑\"]"
+    }
+   },
+   "roast-caldera": {
+    "name": {
+     "en": "Roast Caldera",
+     "zh-CN": "烘烤火山口",
+     "zh-TW": "烘烤火山口",
+     "ja": "ローストカルデラ",
+     "ko": "구이 칼데라",
+     "es": "Caldera tostada",
+     "hi": "भुना काल्डेरा",
+     "de": "Röstcaldera",
+     "fr": "Caldeira rôtie",
+     "pt": "Caldeira assada",
+     "tr": "Kızarmış Kaldera",
+     "id": "Kaldera Panggang",
+     "ru": "Жаровая кальдера",
+     "ms": "Kaldera Panggang",
+     "fil": "Inihaw na Kaldera",
+     "mr": "भाजलेले काल्डेरा",
+     "vi": "Miệng Núi Lửa Nướng",
+     "te": "వేపుడు అగ్నిబిలం",
+     "ta": "வறுவல் எரிமலைவாய்",
+     "bn": "ঝলসানো জ্বালামুখ",
+     "th": "แอ่งภูเขาไฟย่าง",
+     "ha": "Ramin Gasa",
+     "pcm": "Roast Caldera",
+     "ar": "كالديرا الشواء",
+     "fa": "کالدرای برشته",
+     "he": "לוע הצלייה",
+     "ur": "بھنا ہوا کالڈیرا"
+    },
+    "cite": {
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
+     "quote": "\"content.biome.roast-caldera.name\":[\"ローストカルデラ\"]"
+    }
+   },
+   "russet-moor": {
+    "name": {
+     "en": "Russet Moor",
+     "zh-CN": "赤薯荒原",
+     "zh-TW": "赤薯荒原",
+     "ja": "赤芋ヶ原",
+     "ko": "붉은감자 황야",
+     "es": "Páramo papero",
+     "hi": "लाल आलू बंजर",
+     "de": "Knollenmoor",
+     "fr": "Lande rissolée",
+     "pt": "Charneca batateira",
+     "tr": "Patates Fundalığı",
+     "id": "Padang Kentang",
+     "ru": "Картофельная пустошь",
+     "ms": "Padang Ubi",
+     "fil": "Parang ng Pulang Patatas",
+     "mr": "लाल बटाट्याचे माळरान",
+     "vi": "Đồng Hoang Khoai Đỏ",
+     "te": "ఎర్ర ఆలూ బీడు",
+     "ta": "செவ்வுருளை மேடு",
+     "bn": "লাল আলুর প্রান্তর",
+     "th": "ทุ่งมันแดง",
+     "ha": "Filin Dankalin Ja",
+     "pcm": "Red Potato Bush",
+     "ar": "براري البطاطس الحمراء",
+     "fa": "خلنگزار سیب‌زمینی سرخ",
+     "he": "ערבת התפוד האדום",
+     "ur": "سرخ آلو کا بنجر"
+    },
+    "cite": {
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
+     "quote": "\"content.biome.russet-moor.name\":[\"赤芋ヶ原\"]"
+    }
+   },
+   "vinegar-shoals": {
+    "name": {
+     "en": "Vinegar Shoals",
+     "zh-CN": "醋味浅滩",
+     "zh-TW": "醋味淺灘",
+     "ja": "ビネガー浅瀬",
+     "ko": "식초 여울",
+     "es": "Bajíos de vinagre",
+     "hi": "सिरका तट",
+     "de": "Essigwatt",
+     "fr": "Hauts-fonds vinaigrés",
+     "pt": "Baixios de vinagre",
+     "tr": "Sirke Sığlıkları",
+     "id": "Beting Cuka",
+     "ru": "Уксусные отмели",
+     "ms": "Beting Cuka",
+     "fil": "Babaw ng Suka",
+     "mr": "व्हिनेगर किनारा",
+     "vi": "Bãi Cạn Giấm",
+     "te": "వెనిగర్ తీరం",
+     "ta": "வினிகர் திட்டு",
+     "bn": "ভিনেগার চর",
+     "th": "หาดน้ำส้มสายชู",
+     "ha": "Gaɓar Ruwan Tsami",
+     "pcm": "Vinegar Shore",
+     "ar": "ضحضاح الخل",
+     "fa": "آبگیرهای سرکه",
+     "he": "שרטונות החומץ",
+     "ur": "سرکہ ساحل"
+    },
+    "cite": {
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
+     "quote": "\"content.biome.vinegar-shoals.name\":[\"ビネガー浅瀬\"]"
     }
    }
   },
@@ -740,7 +880,7 @@
      "ur": "کولوراڈو ملکہ"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.boss.beetle-queen.name\":[\"コロラド女王\"]"
     },
     "title": {
@@ -804,7 +944,7 @@
      "ur": "کھاد کا عفریت"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.boss.compost-titan.name\":[\"堆肥タイタン\"]"
     },
     "title": {
@@ -868,7 +1008,7 @@
      "ur": "ڈیپ فریزر"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.boss.deep-freezer.name\":[\"ディープフリーザー\"]"
     },
     "title": {
@@ -932,7 +1072,7 @@
      "ur": "فرائر بادشاہ"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.boss.fryer-king.name\":[\"フライヤー王\"]"
     },
     "title": {
@@ -996,7 +1136,7 @@
      "ur": "کدوکش دیو"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.boss.grater-golem.name\":[\"おろし器ゴーレム\"]"
     },
     "title": {
@@ -1060,7 +1200,7 @@
      "ur": "تار کیڑا اعظم"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.boss.great-wireworm.name\":[\"大ハリガネムシ\"]"
     },
     "title": {
@@ -1124,7 +1264,7 @@
      "ur": "ہارویسٹر"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.boss.harvester.name\":[\"ハーベスター\"]"
     },
     "title": {
@@ -1188,7 +1328,7 @@
      "ur": "کیچپ کریکن"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.boss.ketchup-kraken.name\":[\"ケチャップクラーケン\"]"
     },
     "title": {
@@ -1252,7 +1392,7 @@
      "ur": "پچھیتا جھلساؤ"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.boss.late-blight.name\":[\"疫病雲\"]"
     },
     "title": {
@@ -1283,6 +1423,518 @@
      "fa": "مه قحطی",
      "he": "ערפל הרעב",
      "ur": "قحط کی دھند"
+    }
+   },
+   "pack-lord": {
+    "name": {
+     "en": "Pack Lord",
+     "zh-CN": "兽群之主",
+     "zh-TW": "獸群之王",
+     "ja": "群れの王",
+     "ko": "무리의 군주",
+     "es": "Señor de la manada",
+     "hi": "झुंड का राजा",
+     "de": "Rudelfürst",
+     "fr": "Seigneur de la meute",
+     "pt": "Senhor da matilha",
+     "tr": "Sürü Lordu",
+     "id": "Raja Kawanan",
+     "ru": "Вожак стай",
+     "ms": "Raja Kawanan",
+     "fil": "Hari ng Kawan",
+     "mr": "टोळीचा राजा",
+     "vi": "Chúa Bầy",
+     "te": "గుంపు రాజు",
+     "ta": "கூட்ட அரசன்",
+     "bn": "দলপতি",
+     "th": "จ้าวฝูง",
+     "ha": "Sarkin Garke",
+     "pcm": "Pack Oga",
+     "ar": "سيد القطيع",
+     "fa": "سرور گله",
+     "he": "אדון הלהקה",
+     "ur": "غول کا بادشاہ"
+    },
+    "cite": {
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
+     "quote": "\"content.boss.pack-lord.name\":[\"群れの王\"]"
+    },
+    "title": {
+     "en": "Leader of the Hunt",
+     "zh-CN": "狩猎首领",
+     "zh-TW": "狩獵首領",
+     "ja": "狩りを統べる者",
+     "ko": "사냥의 우두머리",
+     "es": "Líder de la cacería",
+     "hi": "शिकार का अगुआ",
+     "de": "Anführer der Jagd",
+     "fr": "Chef de la traque",
+     "pt": "Líder da caçada",
+     "tr": "Avın Önderi",
+     "id": "Pemimpin Perburuan",
+     "ru": "Глава Охоты",
+     "ms": "Ketua Perburuan",
+     "fil": "Ang Pinuno ng Pangangaso",
+     "mr": "शिकारीचा म्होरक्या",
+     "vi": "Thủ Lĩnh Cuộc Săn",
+     "te": "వేట నాయకుడు",
+     "ta": "வேட்டைத் தலைவன்",
+     "bn": "শিকারের নেতা",
+     "th": "ผู้นำการล่า",
+     "ha": "Jagoran Farauta",
+     "pcm": "Oga of di Hunt",
+     "ar": "قائد الصيد",
+     "fa": "سردسته‌ی شکار",
+     "he": "מנהיג הציד",
+     "ur": "شکار کا رہنما"
+    }
+   },
+   "queen": {
+    "name": {
+     "en": "The Queen",
+     "zh-CN": "女王",
+     "zh-TW": "女王",
+     "ja": "女王",
+     "ko": "여왕",
+     "es": "La reina",
+     "hi": "रानी",
+     "de": "Die Königin",
+     "fr": "La reine",
+     "pt": "A Rainha",
+     "tr": "Kraliçe",
+     "id": "Sang Ratu",
+     "ru": "Королева",
+     "ms": "Sang Ratu",
+     "fil": "Reyna",
+     "mr": "राणी",
+     "vi": "Nữ Hoàng",
+     "te": "రాణి",
+     "ta": "ராணி",
+     "bn": "রানি",
+     "th": "ราชินี",
+     "ha": "Sarauniya",
+     "pcm": "Di Queen",
+     "ar": "الملكة",
+     "fa": "ملکه",
+     "he": "המלכה",
+     "ur": "ملکہ"
+    },
+    "cite": {
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
+     "quote": "\"content.boss.queen.name\":[\"女王\"]"
+    },
+    "title": {
+     "en": "The Island Court",
+     "zh-CN": "海岛宫廷",
+     "zh-TW": "海島宮廷",
+     "ja": "島の宮廷",
+     "ko": "섬의 궁정",
+     "es": "La corte isleña",
+     "hi": "द्वीप का दरबार",
+     "de": "Der Inselhof",
+     "fr": "La cour de l’île",
+     "pt": "A corte da ilha",
+     "tr": "Ada Sarayı",
+     "id": "Istana Pulau",
+     "ru": "Островной двор",
+     "ms": "Istana Pulau",
+     "fil": "Ang Korte ng Isla",
+     "mr": "बेटाचा दरबार",
+     "vi": "Triều Đình Hải Đảo",
+     "te": "దీవి దర్బారు",
+     "ta": "தீவின் அரசவை",
+     "bn": "দ্বীপের দরবার",
+     "th": "ราชสำนักแห่งเกาะ",
+     "ha": "Fadar Tsibiri",
+     "pcm": "Di Island Palace",
+     "ar": "بلاط الجزيرة",
+     "fa": "دربار جزیره",
+     "he": "חצר האי",
+     "ur": "جزیرے کا دربار"
+    }
+   },
+   "root-hydra-frenzy": {
+    "name": {
+     "en": "The Root Hydra",
+     "zh-CN": "根须九头蛇",
+     "zh-TW": "根鬚九頭蛇",
+     "ja": "根のヒドラ",
+     "ko": "뿌리 히드라",
+     "es": "La hidra de raíces",
+     "hi": "जड़ हाइड्रा",
+     "de": "Die Wurzelhydra",
+     "fr": "L’hydre des racines",
+     "pt": "A Hidra de raízes",
+     "tr": "Kök Hidrası",
+     "id": "Hidra Akar",
+     "ru": "Корневая гидра",
+     "ms": "Sang Hidra Akar",
+     "fil": "Hydra ng Ugat",
+     "mr": "मुळांचा हायड्रा",
+     "vi": "Hydra Rễ Cây",
+     "te": "వేరు హైడ్రా",
+     "ta": "வேர் ஹைட்ரா",
+     "bn": "শিকড় হাইড্রা",
+     "th": "ไฮดรารากไม้",
+     "ha": "Dodon Saiwa",
+     "pcm": "Di Root Hydra",
+     "ar": "هيدرا الجذور",
+     "fa": "هیدرای ریشه",
+     "he": "הידרת השורשים",
+     "ur": "جڑوں والا ہائیڈرا"
+    },
+    "cite": {
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
+     "quote": "\"content.boss.root-hydra-frenzy.name\":[\"根のヒドラ\"]"
+    },
+    "title": {
+     "en": "Five Heads",
+     "zh-CN": "五首",
+     "zh-TW": "五首",
+     "ja": "五つ首",
+     "ko": "다섯 머리",
+     "es": "Cinco cabezas",
+     "hi": "पांच सिर",
+     "de": "Fünf Köpfe",
+     "fr": "Cinq têtes",
+     "pt": "Cinco cabeças",
+     "tr": "Beş Baş",
+     "id": "Lima Kepala",
+     "ru": "Пять голов",
+     "ms": "Lima Kepala",
+     "fil": "Ang Limang Ulo",
+     "mr": "पाच डोकी",
+     "vi": "Năm Đầu",
+     "te": "ఐదు తలలు",
+     "ta": "ஐந்து தலைகள்",
+     "bn": "পাঁচ মাথা",
+     "th": "ห้าหัว",
+     "ha": "Kawuna Biyar",
+     "pcm": "Five Heads",
+     "ar": "خمسة رؤوس",
+     "fa": "پنج سر",
+     "he": "חמישה ראשים",
+     "ur": "پانچ سر"
+    }
+   },
+   "root-hydra-head": {
+    "name": {
+     "en": "Root Hydra Head",
+     "zh-CN": "根须九头蛇之首",
+     "zh-TW": "根鬚九頭蛇之首",
+     "ja": "根のヒドラの首",
+     "ko": "뿌리 히드라 머리",
+     "es": "Cabeza de hidra de raíces",
+     "hi": "जड़ हाइड्रा का सिर",
+     "de": "Wurzelhydra-Kopf",
+     "fr": "Tête d’hydre des racines",
+     "pt": "Cabeça da Hidra de raízes",
+     "tr": "Kök Hidrası Başı",
+     "id": "Kepala Hidra Akar",
+     "ru": "Голова корневой гидры",
+     "ms": "Kepala Hidra Akar",
+     "fil": "Ulo ng Hydra ng Ugat",
+     "mr": "मुळांच्या हायड्राचे डोके",
+     "vi": "Đầu Hydra Rễ Cây",
+     "te": "వేరు హైడ్రా తల",
+     "ta": "வேர் ஹைட்ரா தலை",
+     "bn": "শিকড় হাইড্রার মাথা",
+     "th": "หัวไฮดรารากไม้",
+     "ha": "Kan Dodon Saiwa",
+     "pcm": "Root Hydra Head",
+     "ar": "رأس هيدرا الجذور",
+     "fa": "سر هیدرای ریشه",
+     "he": "ראש הידרת השורשים",
+     "ur": "جڑوں والے ہائیڈرا کا سر"
+    },
+    "cite": {
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
+     "quote": "\"content.boss.root-hydra-head.name\":[\"根のヒドラの首\"]"
+    },
+    "title": {
+     "en": "Burrowing",
+     "zh-CN": "潜地",
+     "zh-TW": "潛地",
+     "ja": "潜行",
+     "ko": "땅속",
+     "es": "Bajo tierra",
+     "hi": "खुदाई",
+     "de": "Im Untergrund",
+     "fr": "Enfouie",
+     "pt": "Subterrânea",
+     "tr": "Toprak Altında",
+     "id": "Menggali",
+     "ru": "Под землёй",
+     "ms": "Menggali",
+     "fil": "Ang Paghuhukay",
+     "mr": "जमिनीखाली",
+     "vi": "Đào Đất",
+     "te": "నేల లోపల",
+     "ta": "நிலத்தடி",
+     "bn": "মাটির নিচে",
+     "th": "มุดดิน",
+     "ha": "Haƙa Ƙasa",
+     "pcm": "Under Ground",
+     "ar": "الحفر",
+     "fa": "نقب‌زن",
+     "he": "חפירה",
+     "ur": "کھدائی"
+    }
+   },
+   "root-hydra-mire": {
+    "name": {
+     "en": "The Root Hydra",
+     "zh-CN": "根须九头蛇",
+     "zh-TW": "根鬚九頭蛇",
+     "ja": "根のヒドラ",
+     "ko": "뿌리 히드라",
+     "es": "La hidra de raíces",
+     "hi": "जड़ हाइड्रा",
+     "de": "Die Wurzelhydra",
+     "fr": "L’hydre des racines",
+     "pt": "A Hidra de raízes",
+     "tr": "Kök Hidrası",
+     "id": "Hidra Akar",
+     "ru": "Корневая гидра",
+     "ms": "Sang Hidra Akar",
+     "fil": "Hydra ng Ugat",
+     "mr": "मुळांचा हायड्रा",
+     "vi": "Hydra Rễ Cây",
+     "te": "వేరు హైడ్రా",
+     "ta": "வேர் ஹைட்ரா",
+     "bn": "শিকড় হাইড্রা",
+     "th": "ไฮดรารากไม้",
+     "ha": "Dodon Saiwa",
+     "pcm": "Di Root Hydra",
+     "ar": "هيدرا الجذور",
+     "fa": "هیدرای ریشه",
+     "he": "הידרת השורשים",
+     "ur": "جڑوں والا ہائیڈرا"
+    },
+    "cite": {
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
+     "quote": "\"content.boss.root-hydra-mire.name\":[\"根のヒドラ\"]"
+    },
+    "title": {
+     "en": "Pools",
+     "zh-CN": "泥池",
+     "zh-TW": "泥池",
+     "ja": "泥だまり",
+     "ko": "웅덩이",
+     "es": "Charcos",
+     "hi": "पोखर",
+     "de": "Schlammtümpel",
+     "fr": "Mares",
+     "pt": "Poças",
+     "tr": "Göller",
+     "id": "Kolam",
+     "ru": "Лужи",
+     "ms": "Lopak",
+     "fil": "Ang mga Lawa",
+     "mr": "डबकी",
+     "vi": "Vũng Bùn",
+     "te": "బురద గుంటలు",
+     "ta": "குட்டைகள்",
+     "bn": "কাদাপুকুর",
+     "th": "แอ่งโคลน",
+     "ha": "Tafkuna",
+     "pcm": "Mud Pools",
+     "ar": "البرك",
+     "fa": "گودال‌ها",
+     "he": "שלוליות",
+     "ur": "جوہڑ"
+    }
+   },
+   "root-hydra-stump": {
+    "name": {
+     "en": "The Root Hydra",
+     "zh-CN": "根须九头蛇",
+     "zh-TW": "根鬚九頭蛇",
+     "ja": "根のヒドラ",
+     "ko": "뿌리 히드라",
+     "es": "La hidra de raíces",
+     "hi": "जड़ हाइड्रा",
+     "de": "Die Wurzelhydra",
+     "fr": "L’hydre des racines",
+     "pt": "A Hidra de raízes",
+     "tr": "Kök Hidrası",
+     "id": "Hidra Akar",
+     "ru": "Корневая гидра",
+     "ms": "Sang Hidra Akar",
+     "fil": "Hydra ng Ugat",
+     "mr": "मुळांचा हायड्रा",
+     "vi": "Hydra Rễ Cây",
+     "te": "వేరు హైడ్రా",
+     "ta": "வேர் ஹைட்ரா",
+     "bn": "শিকড় হাইড্রা",
+     "th": "ไฮดรารากไม้",
+     "ha": "Dodon Saiwa",
+     "pcm": "Di Root Hydra",
+     "ar": "هيدرا الجذور",
+     "fa": "هیدرای ریشه",
+     "he": "הידרת השורשים",
+     "ur": "جڑوں والا ہائیڈرا"
+    },
+    "cite": {
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
+     "quote": "\"content.boss.root-hydra-stump.name\":[\"根のヒドラ\"]"
+    },
+    "title": {
+     "en": "Stump",
+     "zh-CN": "残桩",
+     "zh-TW": "殘樁",
+     "ja": "切り株",
+     "ko": "그루터기",
+     "es": "Tocón",
+     "hi": "ठूंठ",
+     "de": "Stumpf",
+     "fr": "Souche",
+     "pt": "Toco",
+     "tr": "Kütük",
+     "id": "Tunggul",
+     "ru": "Пень",
+     "ms": "Tunggul",
+     "fil": "Ang Tuod",
+     "mr": "बुंधा",
+     "vi": "Gốc Cụt",
+     "te": "మోడు",
+     "ta": "அடிமரம்",
+     "bn": "গুঁড়ি",
+     "th": "ตอไม้",
+     "ha": "Kututture",
+     "pcm": "Stump",
+     "ar": "الجذع",
+     "fa": "کنده",
+     "he": "גדם",
+     "ur": "ٹھنٹھ"
+    }
+   },
+   "root-hydra": {
+    "name": {
+     "en": "The Root Hydra",
+     "zh-CN": "根须九头蛇",
+     "zh-TW": "根鬚九頭蛇",
+     "ja": "根のヒドラ",
+     "ko": "뿌리 히드라",
+     "es": "La hidra de raíces",
+     "hi": "जड़ हाइड्रा",
+     "de": "Die Wurzelhydra",
+     "fr": "L’hydre des racines",
+     "pt": "A Hidra de raízes",
+     "tr": "Kök Hidrası",
+     "id": "Hidra Akar",
+     "ru": "Корневая гидра",
+     "ms": "Sang Hidra Akar",
+     "fil": "Hydra ng Ugat",
+     "mr": "मुळांचा हायड्रा",
+     "vi": "Hydra Rễ Cây",
+     "te": "వేరు హైడ్రా",
+     "ta": "வேர் ஹைட்ரா",
+     "bn": "শিকড় হাইড্রা",
+     "th": "ไฮดรารากไม้",
+     "ha": "Dodon Saiwa",
+     "pcm": "Di Root Hydra",
+     "ar": "هيدرا الجذور",
+     "fa": "هیدرای ریشه",
+     "he": "הידרת השורשים",
+     "ur": "جڑوں والا ہائیڈرا"
+    },
+    "cite": {
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
+     "quote": "\"content.boss.root-hydra.name\":[\"根のヒドラ\"]"
+    },
+    "title": {
+     "en": "Three Heads",
+     "zh-CN": "三首",
+     "zh-TW": "三首",
+     "ja": "三つ首",
+     "ko": "세 머리",
+     "es": "Tres cabezas",
+     "hi": "तीन सिर",
+     "de": "Drei Köpfe",
+     "fr": "Trois têtes",
+     "pt": "Três cabeças",
+     "tr": "Üç Baş",
+     "id": "Tiga Kepala",
+     "ru": "Три головы",
+     "ms": "Tiga Kepala",
+     "fil": "Ang Tatlong Ulo",
+     "mr": "तीन डोकी",
+     "vi": "Ba Đầu",
+     "te": "మూడు తలలు",
+     "ta": "மூன்று தலைகள்",
+     "bn": "তিন মাথা",
+     "th": "สามหัว",
+     "ha": "Kawuna Uku",
+     "pcm": "Three Heads",
+     "ar": "ثلاثة رؤوس",
+     "fa": "سه سر",
+     "he": "שלושה ראשים",
+     "ur": "تین سر"
+    }
+   },
+   "shell-titan": {
+    "name": {
+     "en": "The Shell Titan",
+     "zh-CN": "甲壳泰坦",
+     "zh-TW": "甲殼泰坦",
+     "ja": "甲殻タイタン",
+     "ko": "갑각 타이탄",
+     "es": "El titán caparazón",
+     "hi": "खोल टाइटन",
+     "de": "Der Panzertitan",
+     "fr": "Le titan carapace",
+     "pt": "O Titã-carapaça",
+     "tr": "Kabuk Titanı",
+     "id": "Titan Cangkang",
+     "ru": "Панцирный титан",
+     "ms": "Sang Gergasi Cengkerang",
+     "fil": "Titan ng Kabibe",
+     "mr": "कवच दैत्य",
+     "vi": "Titan Vỏ Cứng",
+     "te": "పెంకు దిగ్గజం",
+     "ta": "ஓட்டு ராட்சசன்",
+     "bn": "খোলস দানব",
+     "th": "ไททันกระดอง",
+     "ha": "Ƙaton Kwanso",
+     "pcm": "Di Shell Titan",
+     "ar": "عملاق القوقعة",
+     "fa": "تایتان لاک‌دار",
+     "he": "טיטאן הקונכייה",
+     "ur": "خول کا عفریت"
+    },
+    "cite": {
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
+     "quote": "\"content.boss.shell-titan.name\":[\"甲殻タイタン\"]"
+    },
+    "title": {
+     "en": "Three Plates",
+     "zh-CN": "三块装甲板",
+     "zh-TW": "三塊裝甲板",
+     "ja": "三枚の装甲板",
+     "ko": "세 장갑판",
+     "es": "Tres placas",
+     "hi": "तीन प्लेटें",
+     "de": "Drei Platten",
+     "fr": "Trois plaques",
+     "pt": "Três placas",
+     "tr": "Üç Plaka",
+     "id": "Tiga Pelat",
+     "ru": "Три пластины",
+     "ms": "Tiga Plat",
+     "fil": "Ang Tatlong Armor Plate",
+     "mr": "तीन पत्रे",
+     "vi": "Ba Tấm Giáp",
+     "te": "మూడు పలకలు",
+     "ta": "மூன்று தகடுகள்",
+     "bn": "তিন পাত",
+     "th": "สามแผ่นเกราะ",
+     "ha": "Faranti Uku",
+     "pcm": "Three Plates",
+     "ar": "ثلاث صفائح",
+     "fa": "سه صفحه",
+     "he": "שלושה לוחות",
+     "ur": "تین پلیٹیں"
     }
    },
    "sir-strawman": {
@@ -1316,7 +1968,7 @@
      "ur": "نواب بجوکا"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.boss.sir-strawman.name\":[\"サー・ストローマン\"]"
     },
     "title": {
@@ -1380,7 +2032,7 @@
      "ur": "سلائسر"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.boss.the-mandoline.name\":[\"スライサー\"]"
     },
     "title": {
@@ -1444,7 +2096,7 @@
      "ur": "میشر"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.boss.the-masher.name\":[\"マッシャー\"]"
     },
     "title": {
@@ -1510,7 +2162,7 @@
      "ur": "بلبلہ Bot"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.botHelp.bubbler.name\":[\"バブルBot\"]"
     }
    },
@@ -1545,7 +2197,7 @@
      "ur": "تحفہ Bot"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.botHelp.gifter.name\":[\"ギフトBot\"]"
     }
    },
@@ -1580,7 +2232,7 @@
      "ur": "صفائی Bot"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.botHelp.tidier.name\":[\"お片付けBot\"]"
     }
    },
@@ -1615,7 +2267,7 @@
      "ur": "کرنٹ Bot"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.botHelp.zapper.name\":[\"ビリビリBot\"]"
     }
    }
@@ -1681,7 +2333,7 @@
      "ur": "کھوجی"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.dog.beagle.name\":[\"スカウト\"]"
     }
    },
@@ -1745,7 +2397,7 @@
      "ur": "ماس"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.dog.collie.name\":[\"モス\"]"
     }
    },
@@ -1809,7 +2461,7 @@
      "ur": "وافلز"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.dog.corgi.name\":[\"ワッフル\"]"
     }
    },
@@ -1873,7 +2525,7 @@
      "ur": "فرینک"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.dog.dachshund.name\":[\"フランク\"]"
     }
    },
@@ -1937,7 +2589,7 @@
      "ur": "زوم"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.dog.greyhound.name\":[\"ズーム\"]"
     }
    },
@@ -2001,7 +2653,7 @@
      "ur": "زیلڈا"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.dog.pomchi.name\":[\"Zelda\"]"
     }
    },
@@ -2065,7 +2717,7 @@
      "ur": "لنک"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.dog.pomeranian.name\":[\"Link\"]"
     }
    },
@@ -2129,7 +2781,7 @@
      "ur": "بسکٹ"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.dog.retriever.name\":[\"ビスケット\"]"
     }
    },
@@ -2193,7 +2845,7 @@
      "ur": "پیپا"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.dog.saint-bernard.name\":[\"バレル\"]"
     }
    },
@@ -2257,7 +2909,7 @@
      "ur": "پپ"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.dog.terrier.name\":[\"ピップ\"]"
     }
    },
@@ -2321,12 +2973,47 @@
      "ur": "زیلڈا اور لنک"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.dog.zelda-and-link.name\":[\"Zelda & Link\"]"
     }
    }
   },
   "enemy": {
+   "alley-raccoon": {
+    "name": {
+     "en": "Alley Raccoon",
+     "zh-CN": "小巷浣熊",
+     "zh-TW": "小巷浣熊",
+     "ja": "路地のアライグマ",
+     "ko": "골목 라쿤",
+     "es": "Mapache callejero",
+     "hi": "गली का रैकून",
+     "de": "Gassenwaschbär",
+     "fr": "Raton des ruelles",
+     "pt": "Guaxinim de beco",
+     "tr": "Sokak Rakunu",
+     "id": "Rakun Gang",
+     "ru": "Переулочный енот",
+     "ms": "Rakun Lorong",
+     "fil": "Raccoon ng Eskinita",
+     "mr": "गल्लीतला रॅकून",
+     "vi": "Gấu Mèo Hẻm",
+     "te": "సందు రకూన్",
+     "ta": "சந்து ரக்கூன்",
+     "bn": "গলির র‍্যাকুন",
+     "th": "แรคคูนตรอก",
+     "ha": "Rakun na Lungu",
+     "pcm": "Gutter Raccoon",
+     "ar": "راكون الأزقة",
+     "fa": "راکون کوچه",
+     "he": "דביבון סמטאות",
+     "ur": "گلی کا ریکون"
+    },
+    "cite": {
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
+     "quote": "\"content.enemy.alley-raccoon.name\":[\"路地のアライグマ\"]"
+    }
+   },
    "aphid": {
     "name": {
      "en": "Aphid",
@@ -2358,8 +3045,358 @@
      "ur": "تیلا"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.enemy.aphid.name\":[\"アブラムシ\"]"
+    }
+   },
+   "armoured-barnacle-troll": {
+    "name": {
+     "en": "Armoured Barnacle Troll",
+     "zh-CN": "装甲藤壶巨魔",
+     "zh-TW": "裝甲藤壺巨魔",
+     "ja": "装甲フジツボトロール",
+     "ko": "장갑 따개비 트롤",
+     "es": "Trol percebe acorazado",
+     "hi": "कवचधारी बार्नेकल ट्रोल",
+     "de": "Gepanzerter Seepockentroll",
+     "fr": "Troll à bernacles cuirassé",
+     "pt": "Troll-craca blindado",
+     "tr": "Zırhlı Midyeli Trol",
+     "id": "Troll Teritip Berzirah",
+     "ru": "Бронированный ракушечный тролль",
+     "ms": "Troll Teritip Berzirah",
+     "fil": "Nakabaluting Troll na Sisi",
+     "mr": "चिलखती बार्नेकल ट्रोल",
+     "vi": "Troll Hà Bọc Giáp",
+     "te": "కవచ బార్నకిల్ ట్రోల్",
+     "ta": "கவச சிப்பி பூதம்",
+     "bn": "বর্মধারী বার্নাকল ট্রোল",
+     "th": "โทรลเพรียงหุ้มเกราะ",
+     "ha": "Dodon Kawa Mai Sulke",
+     "pcm": "Armoured Barnacle Troll",
+     "ar": "ترول البرنقيل المدرّع",
+     "fa": "ترول کشتی‌چسب زره‌پوش",
+     "he": "טרול בלוטי ים משוריין",
+     "ur": "بکتر بند بارنیکل ٹرول"
+    },
+    "cite": {
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
+     "quote": "\"content.enemy.armoured-barnacle-troll.name\":[\"装甲フジツボトロール\"]"
+    }
+   },
+   "armoured-basilisk": {
+    "name": {
+     "en": "Armoured Basilisk",
+     "zh-CN": "装甲蛇怪",
+     "zh-TW": "裝甲蛇怪",
+     "ja": "装甲バジリスク",
+     "ko": "장갑 바실리스크",
+     "es": "Basilisco acorazado",
+     "hi": "कवचधारी बेसिलिस्क",
+     "de": "Gepanzerter Basilisk",
+     "fr": "Basilic cuirassé",
+     "pt": "Basilisco blindado",
+     "tr": "Zırhlı Bazilisk",
+     "id": "Basilisk Berzirah",
+     "ru": "Бронированный василиск",
+     "ms": "Basilisk Berzirah",
+     "fil": "Nakabaluting Basilisk",
+     "mr": "चिलखती बॅसिलिस्क",
+     "vi": "Basilisk Bọc Giáp",
+     "te": "కవచ బసిలిస్క్",
+     "ta": "கவச பசிலிஸ்க்",
+     "bn": "বর্মধারী ব্যাসিলিস্ক",
+     "th": "บาซิลิสก์หุ้มเกราะ",
+     "ha": "Basilisk Mai Sulke",
+     "pcm": "Armoured Basilisk",
+     "ar": "باسيليسك مدرّع",
+     "fa": "باسیلیسک زره‌پوش",
+     "he": "בזיליסק משוריין",
+     "ur": "بکتر بند باسلسک"
+    },
+    "cite": {
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
+     "quote": "\"content.enemy.armoured-basilisk.name\":[\"装甲バジリスク\"]"
+    }
+   },
+   "armoured-coral-golem": {
+    "name": {
+     "en": "Armoured Coral Golem",
+     "zh-CN": "装甲珊瑚魔像",
+     "zh-TW": "裝甲珊瑚魔像",
+     "ja": "装甲サンゴゴーレム",
+     "ko": "장갑 산호 골렘",
+     "es": "Gólem de coral acorazado",
+     "hi": "कवचधारी मूंगा गोलेम",
+     "de": "Gepanzerter Korallengolem",
+     "fr": "Golem de corail cuirassé",
+     "pt": "Golem de coral blindado",
+     "tr": "Zırhlı Mercan Golemi",
+     "id": "Golem Karang Berzirah",
+     "ru": "Бронированный коралловый голем",
+     "ms": "Golem Karang Berzirah",
+     "fil": "Nakabaluting Golem na Koral",
+     "mr": "चिलखती प्रवाळ राक्षस",
+     "vi": "Golem San Hô Bọc Giáp",
+     "te": "కవచ పగడపు రాక్షసుడు",
+     "ta": "கவச பவள அரக்கன்",
+     "bn": "বর্মধারী প্রবাল গোলেম",
+     "th": "โกเลมปะการังหุ้มเกราะ",
+     "ha": "Ƙaton Murjani Mai Sulke",
+     "pcm": "Armoured Coral Golem",
+     "ar": "غولم المرجان المدرّع",
+     "fa": "گولم مرجانی زره‌پوش",
+     "he": "גולם אלמוגים משוריין",
+     "ur": "بکتر بند مونگے کا دیو"
+    },
+    "cite": {
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
+     "quote": "\"content.enemy.armoured-coral-golem.name\":[\"装甲サンゴゴーレム\"]"
+    }
+   },
+   "armoured-dune-manticore": {
+    "name": {
+     "en": "Armoured Dune Manticore",
+     "zh-CN": "装甲沙丘蝎尾狮",
+     "zh-TW": "裝甲沙丘蠍尾獅",
+     "ja": "装甲砂丘マンティコア",
+     "ko": "장갑 사구 만티코어",
+     "es": "Mantícora de las dunas acorazada",
+     "hi": "कवचधारी टीले का मैंटीकोर",
+     "de": "Gepanzerter Dünenmantikor",
+     "fr": "Manticore des dunes cuirassée",
+     "pt": "Mantícora das dunas blindada",
+     "tr": "Zırhlı Kum Tepesi Mantikoru",
+     "id": "Manticore Bukit Pasir Berzirah",
+     "ru": "Бронированная дюнная мантикора",
+     "ms": "Manticore Bukit Pasir Berzirah",
+     "fil": "Nakabaluting Manticore ng Buhanginan",
+     "mr": "चिलखती वाळवंटी मँटिकोर",
+     "vi": "Manticore Đồi Cát Bọc Giáp",
+     "te": "కవచ ఇసుకదిబ్బ మాంటికోర్",
+     "ta": "கவச மணல்மேட்டு மேன்டிகோர்",
+     "bn": "বর্মধারী বালিয়াড়ির ম্যান্টিকোর",
+     "th": "แมนติคอร์เนินทรายหุ้มเกราะ",
+     "ha": "Manticore na Tudun Yashi Mai Sulke",
+     "pcm": "Armoured Desert Manticore",
+     "ar": "مانتيكور الكثبان المدرّع",
+     "fa": "مانتیکور تپه‌های شنی زره‌پوش",
+     "he": "מנטיקור דיונות משוריין",
+     "ur": "بکتر بند ٹیلوں کا مینٹیکور"
+    },
+    "cite": {
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
+     "quote": "\"content.enemy.armoured-dune-manticore.name\":[\"装甲砂丘マンティコア\"]"
+    }
+   },
+   "armoured-jelly-wraith": {
+    "name": {
+     "en": "Armoured Jelly Wraith",
+     "zh-CN": "装甲水母幽魂",
+     "zh-TW": "裝甲水母幽魂",
+     "ja": "装甲クラゲ亡霊",
+     "ko": "장갑 해파리 망령",
+     "es": "Espectro medusa acorazado",
+     "hi": "कवचधारी जेली प्रेत",
+     "de": "Gepanzerter Quallengeist",
+     "fr": "Spectre gélatineux cuirassé",
+     "pt": "Espectro-água-viva blindado",
+     "tr": "Zırhlı Denizanası Hayaleti",
+     "id": "Hantu Ubur-Ubur Berzirah",
+     "ru": "Бронированный медузный призрак",
+     "ms": "Hantu Obor-Obor Berzirah",
+     "fil": "Nakabaluting Multong Dikya",
+     "mr": "चिलखती जेली भूत",
+     "vi": "Hồn Ma Sứa Bọc Giáp",
+     "te": "కవచ జెల్లీ దెయ్యం",
+     "ta": "கவச ஜெல்லி ஆவி",
+     "bn": "বর্মধারী জেলি প্রেত",
+     "th": "วิญญาณแมงกะพรุนหุ้มเกราะ",
+     "ha": "Fatalwar Jelly Mai Sulke",
+     "pcm": "Armoured Jelly Ghost",
+     "ar": "شبح القنديل المدرّع",
+     "fa": "شبح ژله‌ای زره‌پوش",
+     "he": "רוח מדוזה משוריינת",
+     "ur": "بکتر بند جیلی بھوت"
+    },
+    "cite": {
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
+     "quote": "\"content.enemy.armoured-jelly-wraith.name\":[\"装甲クラゲ亡霊\"]"
+    }
+   },
+   "armoured-mangrove-treant": {
+    "name": {
+     "en": "Armoured Mangrove Treant",
+     "zh-CN": "装甲红树树人",
+     "zh-TW": "裝甲紅樹林樹人",
+     "ja": "装甲マングローブ樹人",
+     "ko": "장갑 맹그로브 트렌트",
+     "es": "Ent de manglar acorazado",
+     "hi": "कवचधारी मैंग्रोव ट्रीएंट",
+     "de": "Gepanzerter Mangroven-Ent",
+     "fr": "Tréant des mangroves cuirassé",
+     "pt": "Ent do mangue blindado",
+     "tr": "Zırhlı Mangrov Ağaçadamı",
+     "id": "Treant Bakau Berzirah",
+     "ru": "Бронированный мангровый энт",
+     "ms": "Treant Bakau Berzirah",
+     "fil": "Nakabaluting Treant ng Bakawan",
+     "mr": "चिलखती खारफुटी वृक्षराक्षस",
+     "vi": "Người Cây Đước Bọc Giáp",
+     "te": "కవచ మడచెట్టు రాక్షసుడు",
+     "ta": "கவச அலையாத்தி மரமனிதன்",
+     "bn": "বর্মধারী ম্যানগ্রোভ বৃক্ষদানব",
+     "th": "ทรีแอนต์ป่าชายเลนหุ้มเกราะ",
+     "ha": "Rayayyen Itacen Mangrove Mai Sulke",
+     "pcm": "Armoured Mangrove Treant",
+     "ar": "شجرة المانغروف الحية المدرّعة",
+     "fa": "انت حرای زره‌پوش",
+     "he": "אנט מנגרובים משוריין",
+     "ur": "بکتر بند مینگروو درخت دیو"
+    },
+    "cite": {
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
+     "quote": "\"content.enemy.armoured-mangrove-treant.name\":[\"装甲マングローブ樹人\"]"
+    }
+   },
+   "armoured-sea-serpent": {
+    "name": {
+     "en": "Armoured Sea Serpent",
+     "zh-CN": "装甲海蛇",
+     "zh-TW": "裝甲海蛇",
+     "ja": "装甲シーサーペント",
+     "ko": "장갑 바다뱀",
+     "es": "Serpiente marina acorazada",
+     "hi": "कवचधारी समुद्री नाग",
+     "de": "Gepanzerte Seeschlange",
+     "fr": "Serpent de mer cuirassé",
+     "pt": "Serpente marinha blindada",
+     "tr": "Zırhlı Deniz Yılanı",
+     "id": "Ular Laut Berzirah",
+     "ru": "Бронированный морской змей",
+     "ms": "Ular Laut Berzirah",
+     "fil": "Nakabaluting Ahas ng Dagat",
+     "mr": "चिलखती समुद्री सर्प",
+     "vi": "Rắn Biển Bọc Giáp",
+     "te": "కవచ సముద్ర సర్పం",
+     "ta": "கவச கடல் பாம்பு",
+     "bn": "বর্মধারী সমুদ্রসর্প",
+     "th": "งูทะเลหุ้มเกราะ",
+     "ha": "Macijin Teku Mai Sulke",
+     "pcm": "Armoured Sea Snake",
+     "ar": "ثعبان البحر المدرّع",
+     "fa": "مار دریایی زره‌پوش",
+     "he": "נחש ים משוריין",
+     "ur": "بکتر بند سمندری ناگ"
+    },
+    "cite": {
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
+     "quote": "\"content.enemy.armoured-sea-serpent.name\":[\"装甲シーサーペント\"]"
+    }
+   },
+   "armoured-siren-harpy": {
+    "name": {
+     "en": "Armoured Siren Harpy",
+     "zh-CN": "装甲塞壬鹰妖",
+     "zh-TW": "裝甲塞壬鷹妖",
+     "ja": "装甲セイレーンハーピー",
+     "ko": "장갑 세이렌 하피",
+     "es": "Arpía sirena acorazada",
+     "hi": "कवचधारी सायरन हार्पी",
+     "de": "Gepanzerte Sirenenharpyie",
+     "fr": "Harpie sirène cuirassée",
+     "pt": "Harpia-sereia blindada",
+     "tr": "Zırhlı Siren Harpi",
+     "id": "Harpy Siren Berzirah",
+     "ru": "Бронированная гарпия-сирена",
+     "ms": "Harpy Siren Berzirah",
+     "fil": "Nakabaluting Harpy na Sirena",
+     "mr": "चिलखती सायरन हार्पी",
+     "vi": "Harpy Siren Bọc Giáp",
+     "te": "కవచ సైరన్ హార్పీ",
+     "ta": "கவச சைரன் ஹார்பி",
+     "bn": "বর্মধারী সাইরেন হার্পি",
+     "th": "ฮาร์ปีไซเรนหุ้มเกราะ",
+     "ha": "Harpy Mawaƙiya Mai Sulke",
+     "pcm": "Armoured Siren Harpy",
+     "ar": "هاربي السيرين المدرّعة",
+     "fa": "هارپی سیرن زره‌پوش",
+     "he": "הרפיית סירנה משוריינת",
+     "ur": "بکتر بند سائرن ہارپی"
+    },
+    "cite": {
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
+     "quote": "\"content.enemy.armoured-siren-harpy.name\":[\"装甲セイレーンハーピー\"]"
+    }
+   },
+   "barnacle-troll": {
+    "name": {
+     "en": "Barnacle Troll",
+     "zh-CN": "藤壶巨魔",
+     "zh-TW": "藤壺巨魔",
+     "ja": "フジツボトロール",
+     "ko": "따개비 트롤",
+     "es": "Trol percebe",
+     "hi": "बार्नेकल ट्रोल",
+     "de": "Seepockentroll",
+     "fr": "Troll à bernacles",
+     "pt": "Troll-craca",
+     "tr": "Midyeli Trol",
+     "id": "Troll Teritip",
+     "ru": "Ракушечный тролль",
+     "ms": "Troll Teritip",
+     "fil": "Troll na Sisi",
+     "mr": "बार्नेकल ट्रोल",
+     "vi": "Troll Hà",
+     "te": "బార్నకిల్ ట్రోల్",
+     "ta": "சிப்பி பூதம்",
+     "bn": "বার্নাকল ট্রোল",
+     "th": "โทรลเพรียง",
+     "ha": "Dodon Kawa",
+     "pcm": "Barnacle Troll",
+     "ar": "ترول البرنقيل",
+     "fa": "ترول کشتی‌چسب",
+     "he": "טרול בלוטי ים",
+     "ur": "بارنیکل ٹرول"
+    },
+    "cite": {
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
+     "quote": "\"content.enemy.barnacle-troll.name\":[\"フジツボトロール\"]"
+    }
+   },
+   "basilisk": {
+    "name": {
+     "en": "Basilisk",
+     "zh-CN": "蛇怪",
+     "zh-TW": "蛇怪",
+     "ja": "バジリスク",
+     "ko": "바실리스크",
+     "es": "Basilisco",
+     "hi": "बेसिलिस्क",
+     "de": "Basilisk",
+     "fr": "Basilic",
+     "pt": "Basilisco",
+     "tr": "Bazilisk",
+     "id": "Basilisk",
+     "ru": "Василиск",
+     "ms": "Basilisk",
+     "fil": "Basilisk",
+     "mr": "बॅसिलिस्क",
+     "vi": "Basilisk",
+     "te": "బసిలిస్క్",
+     "ta": "பசிலிஸ்க்",
+     "bn": "ব্যাসিলিস্ক",
+     "th": "บาซิลิสก์",
+     "ha": "Basilisk",
+     "pcm": "Basilisk",
+     "ar": "باسيليسك",
+     "fa": "باسیلیسک",
+     "he": "בזיליסק",
+     "ur": "باسلسک"
+    },
+    "cite": {
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
+     "quote": "\"content.enemy.basilisk.name\":[\"バジリスク\"]"
     }
    },
    "beetle-brood": {
@@ -2393,7 +3430,7 @@
      "ur": "بھونروں کے بچے"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.enemy.beetle-brood.name\":[\"甲虫の群れ\"]"
     }
    },
@@ -2428,7 +3465,7 @@
      "ur": "جھلساؤ بیج"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.enemy.blight-spore.name\":[\"疫病胞子\"]"
     }
    },
@@ -2463,7 +3500,7 @@
      "ur": "دلدلی سلائم"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.enemy.bog-slime.name\":[\"沼スライム\"]"
     }
    },
@@ -2498,7 +3535,7 @@
      "ur": "دلدلی مینڈک"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.enemy.bog-toad.name\":[\"沼ガエル\"]"
     }
    },
@@ -2533,7 +3570,7 @@
      "ur": "بولنگ گیند"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.enemy.bowling-ball.name\":[\"ボウリング球\"]"
     }
    },
@@ -2568,7 +3605,7 @@
      "ur": "بولنگ پن"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.enemy.bowling-pin.name\":[\"ボウリングピン\"]"
     }
    },
@@ -2603,7 +3640,7 @@
      "ur": "غار کا لاروا"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.enemy.cave-grub.name\":[\"洞窟の幼虫\"]"
     }
    },
@@ -2638,8 +3675,78 @@
      "ur": "کھاد کی سنڈی"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.enemy.compost-maggot.name\":[\"堆肥ウジ\"]"
+    }
+   },
+   "coral-golem": {
+    "name": {
+     "en": "Coral Golem",
+     "zh-CN": "珊瑚魔像",
+     "zh-TW": "珊瑚魔像",
+     "ja": "サンゴゴーレム",
+     "ko": "산호 골렘",
+     "es": "Gólem de coral",
+     "hi": "मूंगा गोलेम",
+     "de": "Korallengolem",
+     "fr": "Golem de corail",
+     "pt": "Golem de coral",
+     "tr": "Mercan Golemi",
+     "id": "Golem Karang",
+     "ru": "Коралловый голем",
+     "ms": "Golem Karang",
+     "fil": "Golem na Koral",
+     "mr": "प्रवाळ राक्षस",
+     "vi": "Golem San Hô",
+     "te": "పగడపు రాక్షసుడు",
+     "ta": "பவள அரக்கன்",
+     "bn": "প্রবাল গোলেম",
+     "th": "โกเลมปะการัง",
+     "ha": "Ƙaton Murjani",
+     "pcm": "Coral Golem",
+     "ar": "غولم المرجان",
+     "fa": "گولم مرجانی",
+     "he": "גולם אלמוגים",
+     "ur": "مونگے کا دیو"
+    },
+    "cite": {
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
+     "quote": "\"content.enemy.coral-golem.name\":[\"サンゴゴーレム\"]"
+    }
+   },
+   "crow-elder": {
+    "name": {
+     "en": "Crow Elder",
+     "zh-CN": "乌鸦长老",
+     "zh-TW": "烏鴉長老",
+     "ja": "長老ガラス",
+     "ko": "까마귀 장로",
+     "es": "Cuervo anciano",
+     "hi": "बुज़ुर्ग कौआ",
+     "de": "Krähenältester",
+     "fr": "Corneille doyenne",
+     "pt": "Corvo ancião",
+     "tr": "Yaşlı Karga",
+     "id": "Gagak Tetua",
+     "ru": "Ворона-старейшина",
+     "ms": "Gagak Tua",
+     "fil": "Matandang Uwak",
+     "mr": "म्हातारा कावळा",
+     "vi": "Quạ Già",
+     "te": "ముసలి కాకి",
+     "ta": "மூத்த காகம்",
+     "bn": "বুড়ো কাক",
+     "th": "อีกาผู้เฒ่า",
+     "ha": "Dattijon Hankaka",
+     "pcm": "Old Crow",
+     "ar": "شيخ الغربان",
+     "fa": "ریش‌سفید کلاغ‌ها",
+     "he": "זקן העורבים",
+     "ur": "بزرگ کوا"
+    },
+    "cite": {
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
+     "quote": "\"content.enemy.crow-elder.name\":[\"長老ガラス\"]"
     }
    },
    "crumb-ant": {
@@ -2673,7 +3780,7 @@
      "ur": "ٹکڑخور چیونٹی"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.enemy.crumb-ant.name\":[\"パンくずアリ\"]"
     }
    },
@@ -2708,8 +3815,43 @@
      "ur": "کوڑے دان کا ریکون"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.enemy.dumpster-raccoon.name\":[\"ゴミ箱アライグマ\"]"
+    }
+   },
+   "dune-manticore": {
+    "name": {
+     "en": "Dune Manticore",
+     "zh-CN": "沙丘蝎尾狮",
+     "zh-TW": "沙丘蠍尾獅",
+     "ja": "砂丘マンティコア",
+     "ko": "사구 만티코어",
+     "es": "Mantícora de las dunas",
+     "hi": "टीले का मैंटीकोर",
+     "de": "Dünenmantikor",
+     "fr": "Manticore des dunes",
+     "pt": "Mantícora das dunas",
+     "tr": "Kum Tepesi Mantikoru",
+     "id": "Manticore Bukit Pasir",
+     "ru": "Дюнная мантикора",
+     "ms": "Manticore Bukit Pasir",
+     "fil": "Manticore ng Buhanginan",
+     "mr": "वाळवंटी मँटिकोर",
+     "vi": "Manticore Đồi Cát",
+     "te": "ఇసుకదిబ్బ మాంటికోర్",
+     "ta": "மணல்மேட்டு மேன்டிகோர்",
+     "bn": "বালিয়াড়ির ম্যান্টিকোর",
+     "th": "แมนติคอร์เนินทราย",
+     "ha": "Manticore na Tudun Yashi",
+     "pcm": "Desert Manticore",
+     "ar": "مانتيكور الكثبان",
+     "fa": "مانتیکور تپه‌های شنی",
+     "he": "מנטיקור דיונות",
+     "ur": "ٹیلوں کا مینٹیکور"
+    },
+    "cite": {
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
+     "quote": "\"content.enemy.dune-manticore.name\":[\"砂丘マンティコア\"]"
     }
    },
    "field-crow": {
@@ -2743,7 +3885,7 @@
      "ur": "کھیت کا کوا"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.enemy.field-crow.name\":[\"畑のカラス\"]"
     }
    },
@@ -2778,7 +3920,7 @@
      "ur": "کھیت کا چوہا"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.enemy.field-rat.name\":[\"野ネズミ\"]"
     }
    },
@@ -2813,7 +3955,7 @@
      "ur": "پالا پسو"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.enemy.frost-flea.name\":[\"霜ノミ\"]"
     }
    },
@@ -2848,8 +3990,43 @@
      "ur": "فرائز مکھی"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.enemy.fry-fly.name\":[\"フライバエ\"]"
+    }
+   },
+   "fuse-totem": {
+    "name": {
+     "en": "Fuse Totem",
+     "zh-CN": "引信图腾",
+     "zh-TW": "引信圖騰",
+     "ja": "導火線トーテム",
+     "ko": "도화선 토템",
+     "es": "Tótem de mecha",
+     "hi": "फ़्यूज़ टोटेम",
+     "de": "Zündtotem",
+     "fr": "Totem à mèche",
+     "pt": "Totem-pavio",
+     "tr": "Fitilli Totem",
+     "id": "Totem Sumbu",
+     "ru": "Тотем с фитилём",
+     "ms": "Totem Sumbu",
+     "fil": "Totem na Mitsa",
+     "mr": "फ्यूज टोटेम",
+     "vi": "Totem Ngòi Nổ",
+     "te": "ఫ్యూజ్ టోటెమ్",
+     "ta": "திரி டோட்டம்",
+     "bn": "ফিউজ টোটেম",
+     "th": "โทเท็มชนวน",
+     "ha": "Sandar Fiyus",
+     "pcm": "Fuse Totem",
+     "ar": "طوطم الفتيل",
+     "fa": "توتم فتیله‌ای",
+     "he": "טוטם פתיל",
+     "ur": "فیوز ٹوٹم"
+    },
+    "cite": {
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
+     "quote": "\"content.enemy.fuse-totem.name\":[\"導火線トーテム\"]"
     }
    },
    "garden-slug": {
@@ -2883,7 +4060,7 @@
      "ur": "باغ کا گھونگا"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.enemy.garden-slug.name\":[\"ナメクジ\"]"
     }
    },
@@ -2918,7 +4095,7 @@
      "ur": "سنہرا گوبریلا"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.enemy.golden-scarab.name\":[\"黄金スカラベ\"]"
     }
    },
@@ -2953,7 +4130,7 @@
      "ur": "چکنا شیطان"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.enemy.grease-fiend.name\":[\"油の悪鬼\"]"
     }
    },
@@ -2988,7 +4165,7 @@
      "ur": "بگلوں کا جھنڈ"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.enemy.gull-flock.name\":[\"カモメの群れ\"]"
     }
    },
@@ -3023,7 +4200,7 @@
      "ur": "فصلی چوہیا"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.enemy.harvest-mouse.name\":[\"収穫ネズミ\"]"
     }
    },
@@ -3058,8 +4235,43 @@
      "ur": "بھوسے کا گٹھا"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.enemy.hay-bale.name\":[\"干し草の俵\"]"
+    }
+   },
+   "hunt-crow": {
+    "name": {
+     "en": "Hunting Crow",
+     "zh-CN": "猎鸦",
+     "zh-TW": "獵鴉",
+     "ja": "狩りガラス",
+     "ko": "사냥 까마귀",
+     "es": "Cuervo cazador",
+     "hi": "शिकारी कौआ",
+     "de": "Jagdkrähe",
+     "fr": "Corneille de chasse",
+     "pt": "Corvo caçador",
+     "tr": "Avcı Karga",
+     "id": "Gagak Pemburu",
+     "ru": "Охотничья ворона",
+     "ms": "Gagak Pemburu",
+     "fil": "Uwak na Mangangaso",
+     "mr": "शिकारी कावळा",
+     "vi": "Quạ Săn",
+     "te": "వేట కాకి",
+     "ta": "வேட்டைக் காகம்",
+     "bn": "শিকারি কাক",
+     "th": "อีกานักล่า",
+     "ha": "Hankakan Farauta",
+     "pcm": "Hunting Crow",
+     "ar": "غراب الصيد",
+     "fa": "کلاغ شکارچی",
+     "he": "עורב צייד",
+     "ur": "شکاری کوا"
+    },
+    "cite": {
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
+     "quote": "\"content.enemy.hunt-crow.name\":[\"狩りガラス\"]"
     }
    },
    "ice-imp": {
@@ -3093,8 +4305,43 @@
      "ur": "برفانی بھتنا"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.enemy.ice-imp.name\":[\"氷インプ\"]"
+    }
+   },
+   "jelly-wraith": {
+    "name": {
+     "en": "Jelly Wraith",
+     "zh-CN": "水母幽魂",
+     "zh-TW": "水母幽魂",
+     "ja": "クラゲ亡霊",
+     "ko": "해파리 망령",
+     "es": "Espectro medusa",
+     "hi": "जेली प्रेत",
+     "de": "Quallengeist",
+     "fr": "Spectre gélatineux",
+     "pt": "Espectro-água-viva",
+     "tr": "Denizanası Hayaleti",
+     "id": "Hantu Ubur-Ubur",
+     "ru": "Медузный призрак",
+     "ms": "Hantu Obor-Obor",
+     "fil": "Multong Dikya",
+     "mr": "जेली भूत",
+     "vi": "Hồn Ma Sứa",
+     "te": "జెల్లీ దెయ్యం",
+     "ta": "ஜெல்லி ஆவி",
+     "bn": "জেলি প্রেত",
+     "th": "วิญญาณแมงกะพรุน",
+     "ha": "Fatalwar Jelly",
+     "pcm": "Jelly Ghost",
+     "ar": "شبح القنديل",
+     "fa": "شبح ژله‌ای",
+     "he": "רוח מדוזה",
+     "ur": "جیلی بھوت"
+    },
+    "cite": {
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
+     "quote": "\"content.enemy.jelly-wraith.name\":[\"クラゲ亡霊\"]"
     }
    },
    "ketchup-drop": {
@@ -3128,7 +4375,7 @@
      "ur": "کیچپ کا قطرہ"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.enemy.ketchup-drop.name\":[\"ケチャップしずく\"]"
     }
    },
@@ -3163,7 +4410,7 @@
      "ur": "روئی خرگوش"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.enemy.lint-bunny.name\":[\"綿ぼこりウサギ\"]"
     }
    },
@@ -3198,7 +4445,7 @@
      "ur": "ننھا سرمئی"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.enemy.little-grey.name\":[\"リトルグレイ\"]"
     }
    },
@@ -3233,7 +4480,7 @@
      "ur": "بھٹکی طشتری"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.enemy.lost-saucer.name\":[\"迷子の円盤\"]"
     }
    },
@@ -3268,8 +4515,43 @@
      "ur": "سنڈی"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.enemy.maggot-swarm.name\":[\"ウジ\"]"
+    }
+   },
+   "mangrove-treant": {
+    "name": {
+     "en": "Mangrove Treant",
+     "zh-CN": "红树树人",
+     "zh-TW": "紅樹林樹人",
+     "ja": "マングローブ樹人",
+     "ko": "맹그로브 트렌트",
+     "es": "Ent de manglar",
+     "hi": "मैंग्रोव ट्रीएंट",
+     "de": "Mangroven-Ent",
+     "fr": "Tréant des mangroves",
+     "pt": "Ent do mangue",
+     "tr": "Mangrov Ağaçadamı",
+     "id": "Treant Bakau",
+     "ru": "Мангровый энт",
+     "ms": "Treant Bakau",
+     "fil": "Treant ng Bakawan",
+     "mr": "खारफुटी वृक्षराक्षस",
+     "vi": "Người Cây Đước",
+     "te": "మడచెట్టు రాక్షసుడు",
+     "ta": "அலையாத்தி மரமனிதன்",
+     "bn": "ম্যানগ্রোভ বৃক্ষদানব",
+     "th": "ทรีแอนต์ป่าชายเลน",
+     "ha": "Rayayyen Itacen Mangrove",
+     "pcm": "Mangrove Treant",
+     "ar": "شجرة المانغروف الحية",
+     "fa": "انت حرا",
+     "he": "אנט מנגרובים",
+     "ur": "مینگروو درخت دیو"
+    },
+    "cite": {
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
+     "quote": "\"content.enemy.mangrove-treant.name\":[\"マングローブ樹人\"]"
     }
    },
    "mole": {
@@ -3303,7 +4585,7 @@
      "ur": "چھچھوندر"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.enemy.mole.name\":[\"モグラ\"]"
     }
    },
@@ -3338,7 +4620,7 @@
      "ur": "کیچڑ دیو"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.enemy.mud-golem.name\":[\"泥ゴーレム\"]"
     }
    },
@@ -3373,8 +4655,43 @@
      "ur": "تیل کی بوند"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.enemy.oil-drip.name\":[\"油しずく\"]"
+    }
+   },
+   "pack-rat": {
+    "name": {
+     "en": "Pack Rat",
+     "zh-CN": "群鼠",
+     "zh-TW": "群鼠",
+     "ja": "群れネズミ",
+     "ko": "무리 쥐",
+     "es": "Rata de manada",
+     "hi": "झुंड का चूहा",
+     "de": "Rudelratte",
+     "fr": "Rat de meute",
+     "pt": "Rato de matilha",
+     "tr": "Sürü Faresi",
+     "id": "Tikus Kawanan",
+     "ru": "Стайная крыса",
+     "ms": "Tikus Kawanan",
+     "fil": "Daga ng Kawan",
+     "mr": "टोळीतला उंदीर",
+     "vi": "Chuột Bầy",
+     "te": "గుంపు ఎలుక",
+     "ta": "கூட்ட எலி",
+     "bn": "দলের ইঁদুর",
+     "th": "หนูฝูง",
+     "ha": "Ɓeran Garke",
+     "pcm": "Pack Rat",
+     "ar": "جرذ القطيع",
+     "fa": "موش گله",
+     "he": "חולדת להקה",
+     "ur": "غول کا چوہا"
+    },
+    "cite": {
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
+     "quote": "\"content.enemy.pack-rat.name\":[\"群れネズミ\"]"
     }
    },
    "parking-gull": {
@@ -3408,7 +4725,7 @@
      "ur": "پارکنگ کا بگلا"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.enemy.parking-gull.name\":[\"駐車場カモメ\"]"
     }
    },
@@ -3443,8 +4760,183 @@
      "ur": "آلو کا بھونرا"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.enemy.potato-beetle.name\":[\"ジャガイモハムシ\"]"
+    }
+   },
+   "queen-herald": {
+    "name": {
+     "en": "Queen's Herald",
+     "zh-CN": "女王传令官",
+     "zh-TW": "女王傳令官",
+     "ja": "女王の伝令",
+     "ko": "여왕의 전령",
+     "es": "Heraldo de la reina",
+     "hi": "रानी का दूत",
+     "de": "Herold der Königin",
+     "fr": "Héraut de la reine",
+     "pt": "Arauto da Rainha",
+     "tr": "Kraliçenin Habercisi",
+     "id": "Bentara Ratu",
+     "ru": "Глашатай королевы",
+     "ms": "Bentara Ratu",
+     "fil": "Sugo ng Reyna",
+     "mr": "राणीचा दूत",
+     "vi": "Sứ Giả Nữ Hoàng",
+     "te": "రాణి దూత",
+     "ta": "ராணியின் தூதன்",
+     "bn": "রানির দূত",
+     "th": "ทูตราชินี",
+     "ha": "Jakadan Sarauniya",
+     "pcm": "Queen Messenger",
+     "ar": "رسول الملكة",
+     "fa": "جارچی ملکه",
+     "he": "כרוז המלכה",
+     "ur": "ملکہ کا قاصد"
+    },
+    "cite": {
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
+     "quote": "\"content.enemy.queen-herald.name\":[\"女王の伝令\"]"
+    }
+   },
+   "queen-seer": {
+    "name": {
+     "en": "Queen's Seer",
+     "zh-CN": "女王先知",
+     "zh-TW": "女王先知",
+     "ja": "女王の予言者",
+     "ko": "여왕의 예언자",
+     "es": "Vidente de la reina",
+     "hi": "रानी का ज्योतिषी",
+     "de": "Seherin der Königin",
+     "fr": "Voyante de la reine",
+     "pt": "Vidente da Rainha",
+     "tr": "Kraliçenin Kâhini",
+     "id": "Peramal Ratu",
+     "ru": "Провидица королевы",
+     "ms": "Penilik Ratu",
+     "fil": "Manghuhula ng Reyna",
+     "mr": "राणीचा भविष्यवेत्ता",
+     "vi": "Tiên Tri Nữ Hoàng",
+     "te": "రాణి జ్యోతిష్కుడు",
+     "ta": "ராணியின் குறிசொல்லி",
+     "bn": "রানির গণক",
+     "th": "โหรราชินี",
+     "ha": "Mai Duban Sarauniya",
+     "pcm": "Queen Seer",
+     "ar": "عرّاف الملكة",
+     "fa": "پیشگوی ملکه",
+     "he": "חוזה המלכה",
+     "ur": "ملکہ کا نجومی"
+    },
+    "cite": {
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
+     "quote": "\"content.enemy.queen-seer.name\":[\"女王の予言者\"]"
+    }
+   },
+   "queen-warden": {
+    "name": {
+     "en": "Queen's Warden",
+     "zh-CN": "女王守卫",
+     "zh-TW": "女王守衛",
+     "ja": "女王の衛兵",
+     "ko": "여왕의 파수꾼",
+     "es": "Guardián de la reina",
+     "hi": "रानी का पहरेदार",
+     "de": "Wächter der Königin",
+     "fr": "Gardien de la reine",
+     "pt": "Guardião da Rainha",
+     "tr": "Kraliçenin Muhafızı",
+     "id": "Penjaga Ratu",
+     "ru": "Страж королевы",
+     "ms": "Pengawal Ratu",
+     "fil": "Bantay ng Reyna",
+     "mr": "राणीचा पहारेकरी",
+     "vi": "Hộ Vệ Nữ Hoàng",
+     "te": "రాణి కాపలాదారు",
+     "ta": "ராணியின் காவலன்",
+     "bn": "রানির রক্ষী",
+     "th": "ผู้คุมราชินี",
+     "ha": "Mai Gadin Sarauniya",
+     "pcm": "Queen Guard",
+     "ar": "حارس الملكة",
+     "fa": "نگهبان ملکه",
+     "he": "שומר המלכה",
+     "ur": "ملکہ کا پہرے دار"
+    },
+    "cite": {
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
+     "quote": "\"content.enemy.queen-warden.name\":[\"女王の衛兵\"]"
+    }
+   },
+   "raccoon-boss": {
+    "name": {
+     "en": "Raccoon Boss",
+     "zh-CN": "浣熊老大",
+     "zh-TW": "浣熊老大",
+     "ja": "ボスアライグマ",
+     "ko": "라쿤 두목",
+     "es": "Mapache jefe",
+     "hi": "रैकून सरगना",
+     "de": "Waschbärboss",
+     "fr": "Raton caïd",
+     "pt": "Guaxinim chefão",
+     "tr": "Patron Rakun",
+     "id": "Bos Rakun",
+     "ru": "Енот-главарь",
+     "ms": "Bos Rakun",
+     "fil": "Bossing na Raccoon",
+     "mr": "रॅकून दादा",
+     "vi": "Đại Ca Gấu Mèo",
+     "te": "రకూన్ దాదా",
+     "ta": "ரக்கூன் தாதா",
+     "bn": "র‍্যাকুন মাস্তান",
+     "th": "แรคคูนหัวโจก",
+     "ha": "Madugun Rakuna",
+     "pcm": "Raccoon Chairman",
+     "ar": "زعيم الراكونات",
+     "fa": "راکون سردسته",
+     "he": "בוס הדביבונים",
+     "ur": "ریکون سرغنہ"
+    },
+    "cite": {
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
+     "quote": "\"content.enemy.raccoon-boss.name\":[\"ボスアライグマ\"]"
+    }
+   },
+   "rat-chief": {
+    "name": {
+     "en": "Rat Chief",
+     "zh-CN": "鼠头目",
+     "zh-TW": "鼠頭目",
+     "ja": "ネズミの親分",
+     "ko": "쥐 족장",
+     "es": "Rata cabecilla",
+     "hi": "चूहों का सरदार",
+     "de": "Rattenhäuptling",
+     "fr": "Chef rat",
+     "pt": "Rato cacique",
+     "tr": "Fare Reisi",
+     "id": "Kepala Tikus",
+     "ru": "Крысиный вожак",
+     "ms": "Ketua Tikus",
+     "fil": "Pinunong Daga",
+     "mr": "उंदरांचा सरदार",
+     "vi": "Thủ Lĩnh Chuột",
+     "te": "ఎలుకల పెద్ద",
+     "ta": "எலித் தலைவன்",
+     "bn": "ইঁদুর সর্দার",
+     "th": "หัวหน้าหนู",
+     "ha": "Sarkin Ɓeraye",
+     "pcm": "Rat Chief",
+     "ar": "رئيس الجرذان",
+     "fa": "رئیس موش‌ها",
+     "he": "ראש החולדות",
+     "ur": "چوہوں کا سردار"
+    },
+    "cite": {
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
+     "quote": "\"content.enemy.rat-chief.name\":[\"ネズミの親分\"]"
     }
    },
    "reset-zombie": {
@@ -3478,7 +4970,7 @@
      "ur": "Reset زومبی"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.enemy.reset-zombie.name\":[\"Resetゾンビ\"]"
     }
    },
@@ -3513,8 +5005,78 @@
      "ur": "ریتلا کیکڑا"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.enemy.sand-crab.name\":[\"砂ガニ\"]"
+    }
+   },
+   "sea-serpent": {
+    "name": {
+     "en": "Sea Serpent",
+     "zh-CN": "海蛇",
+     "zh-TW": "海蛇",
+     "ja": "シーサーペント",
+     "ko": "바다뱀",
+     "es": "Serpiente marina",
+     "hi": "समुद्री नाग",
+     "de": "Seeschlange",
+     "fr": "Serpent de mer",
+     "pt": "Serpente marinha",
+     "tr": "Deniz Yılanı",
+     "id": "Ular Laut",
+     "ru": "Морской змей",
+     "ms": "Ular Laut",
+     "fil": "Ahas ng Dagat",
+     "mr": "समुद्री सर्प",
+     "vi": "Rắn Biển",
+     "te": "సముద్ర సర్పం",
+     "ta": "கடல் பாம்பு",
+     "bn": "সমুদ্রসর্প",
+     "th": "งูทะเล",
+     "ha": "Macijin Teku",
+     "pcm": "Sea Snake",
+     "ar": "ثعبان البحر",
+     "fa": "مار دریایی",
+     "he": "נחש ים",
+     "ur": "سمندری ناگ"
+    },
+    "cite": {
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
+     "quote": "\"content.enemy.sea-serpent.name\":[\"シーサーペント\"]"
+    }
+   },
+   "siren-harpy": {
+    "name": {
+     "en": "Siren Harpy",
+     "zh-CN": "塞壬鹰妖",
+     "zh-TW": "塞壬鷹妖",
+     "ja": "セイレーンハーピー",
+     "ko": "세이렌 하피",
+     "es": "Arpía sirena",
+     "hi": "सायरन हार्पी",
+     "de": "Sirenenharpyie",
+     "fr": "Harpie sirène",
+     "pt": "Harpia-sereia",
+     "tr": "Siren Harpi",
+     "id": "Harpy Siren",
+     "ru": "Гарпия-сирена",
+     "ms": "Harpy Siren",
+     "fil": "Harpy na Sirena",
+     "mr": "सायरन हार्पी",
+     "vi": "Harpy Siren",
+     "te": "సైరన్ హార్పీ",
+     "ta": "சைரன் ஹார்பி",
+     "bn": "সাইরেন হার্পি",
+     "th": "ฮาร์ปีไซเรน",
+     "ha": "Harpy Mawaƙiya",
+     "pcm": "Siren Harpy",
+     "ar": "هاربي السيرين",
+     "fa": "هارپی سیرن",
+     "he": "הרפיית סירנה",
+     "ur": "سائرن ہارپی"
+    },
+    "cite": {
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
+     "quote": "\"content.enemy.siren-harpy.name\":[\"セイレーンハーピー\"]"
     }
    },
    "sizzle-imp": {
@@ -3548,7 +5110,7 @@
      "ur": "تڑکا بھتنا"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.enemy.sizzle-imp.name\":[\"ジリジリインプ\"]"
     }
    },
@@ -3583,7 +5145,7 @@
      "ur": "برفیلی پھپھوندی"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.enemy.snow-mold.name\":[\"雪カビ\"]"
     }
    },
@@ -3618,7 +5180,7 @@
      "ur": "موزوں کا ڈھیر"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.enemy.sock-pile.name\":[\"靴下の山\"]"
     }
    },
@@ -3653,7 +5215,7 @@
      "ur": "تھوک کیڑا"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.enemy.spittlebug.name\":[\"アワフキムシ\"]"
     }
    },
@@ -3688,8 +5250,43 @@
      "ur": "کونپل چچڑی"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.enemy.sprout-mite.name\":[\"芽ダニ\"]"
+    }
+   },
+   "stag-beetle": {
+    "name": {
+     "en": "Stag Beetle",
+     "zh-CN": "锹甲",
+     "zh-TW": "鍬形蟲",
+     "ja": "クワガタ",
+     "ko": "사슴벌레",
+     "es": "Escarabajo ciervo",
+     "hi": "सींग वाला भृंग",
+     "de": "Hirschkäfer",
+     "fr": "Lucane",
+     "pt": "Besouro-veado",
+     "tr": "Geyik Böceği",
+     "id": "Kumbang Rusa",
+     "ru": "Жук-олень",
+     "ms": "Kumbang Rusa",
+     "fil": "Salagubang na May Sungay",
+     "mr": "हरिणशिंगी भुंगा",
+     "vi": "Bọ Sừng Hươu",
+     "te": "కొమ్ము పెంకుపురుగు",
+     "ta": "கொம்பு வண்டு",
+     "bn": "হরিণ-গুবরে",
+     "th": "ด้วงคีม",
+     "ha": "Ƙwaro Mai Ƙaho",
+     "pcm": "Stag Beetle",
+     "ar": "خنفساء الأيل",
+     "fa": "سوسک گوزنی",
+     "he": "חיפושית אייל",
+     "ur": "سینگ والا بھونرا"
+    },
+    "cite": {
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
+     "quote": "\"content.enemy.stag-beetle.name\":[\"クワガタ\"]"
     }
    },
    "swarm-fly": {
@@ -3723,7 +5320,7 @@
      "ur": "فرائز مکھیوں کا غول"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.enemy.swarm-fly.name\":[\"フライバエの群れ\"]"
     }
    },
@@ -3758,7 +5355,7 @@
      "ur": "ٹماٹر جونک"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.enemy.tomato-leech.name\":[\"トマトヒル\"]"
     }
    },
@@ -3793,7 +5390,7 @@
      "ur": "تار کیڑے کا لاروا"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.enemy.wireworm-larva.name\":[\"ハリガネムシ幼虫\"]"
     }
    }
@@ -3830,7 +5427,7 @@
      "ur": "بھوسے کے گٹھوں کا گھیرا"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.event.bale-ring.name\":[\"干し草俵の輪\"]"
     }
    },
@@ -3865,7 +5462,7 @@
      "ur": "فرائز مکھیوں کا غول"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.event.fly-swarm.name\":[\"フライバエの群れ\"]"
     }
    },
@@ -3900,7 +5497,7 @@
      "ur": "سنہرا گوبریلا"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.event.golden-scarab.name\":[\"黄金スカラベ\"]"
     }
    },
@@ -3935,7 +5532,7 @@
      "ur": "فصلی چاند"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.event.harvest-moon.name\":[\"ハーベストムーン\"]"
     }
    },
@@ -3970,7 +5567,7 @@
      "ur": "ریزگاری"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.event.loose-change.name\":[\"小銭ざくざく\"]"
     }
    },
@@ -4005,7 +5602,7 @@
      "ur": "بھٹکی طشتری"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.event.lost-saucer.name\":[\"迷子の円盤\"]"
     }
    },
@@ -4040,7 +5637,7 @@
      "ur": "لنچ کا رش"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.event.lunch-rush.name\":[\"ランチラッシュ\"]"
     }
    },
@@ -4075,7 +5672,7 @@
      "ur": "اسٹرائیک"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.event.strike.name\":[\"ストライク\"]"
     }
    }
@@ -4112,7 +5709,7 @@
      "ur": "سب دیکھتا آلو"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.item.all-seeing-spud.name\":[\"千里眼ポテト\"]"
     }
    },
@@ -4147,7 +5744,7 @@
      "ur": "بھنی ڈھال"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.item.baked-buckler.name\":[\"焼き芋バックラー\"]"
     }
    },
@@ -4182,7 +5779,7 @@
      "ur": "الاؤ آلو"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.item.bonfire-spud.name\":[\"焚き火ポテト\"]"
     }
    },
@@ -4217,7 +5814,7 @@
      "ur": "دھماکا آلو"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.item.boom-spud.name\":[\"爆裂ポテト\"]"
     }
    },
@@ -4252,7 +5849,7 @@
      "ur": "باس شکن"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.item.boss-buster.name\":[\"ボスバスター\"]"
     }
    },
@@ -4287,7 +5884,7 @@
      "ur": "پیازی تعویذ"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.item.chive-charm.name\":[\"チャイブのお守り\"]"
     }
    },
@@ -4322,7 +5919,7 @@
      "ur": "کوئلے پر بھنا آلو"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.item.coal-baked-spud.name\":[\"炭火焼きポテト\"]"
     }
    },
@@ -4357,7 +5954,7 @@
      "ur": "کھاد کی چائے"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.item.compost-tea.name\":[\"堆肥ティー\"]"
     }
    },
@@ -4392,7 +5989,7 @@
      "ur": "تانبے کا چمچ"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.item.copper-spoon.name\":[\"銅のスプーン\"]"
     }
    },
@@ -4427,7 +6024,7 @@
      "ur": "رعایتی کوپن"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.item.coupon-book.name\":[\"クーポン帳\"]"
     }
    },
@@ -4462,7 +6059,7 @@
      "ur": "کاری چپس"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.item.crit-chip.name\":[\"会心チップス\"]"
     }
    },
@@ -4497,7 +6094,7 @@
      "ur": "منحوس تاج"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.item.cursed-crown.name\":[\"呪いの王冠\"]"
     }
    },
@@ -4532,7 +6129,7 @@
      "ur": "اضافی آنکھ"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.item.extra-eye.name\":[\"芽の目玉\"]"
     }
    },
@@ -4567,7 +6164,7 @@
      "ur": "فریزر کی جلن"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.item.freezer-burn.name\":[\"冷凍焼け\"]"
     }
    },
@@ -4602,7 +6199,7 @@
      "ur": "فرائز آتش فشاں"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.item.fry-volcano.name\":[\"ポテト火山\"]"
     }
    },
@@ -4637,7 +6234,7 @@
      "ur": "بھوت مرچ"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.item.ghost-pepper.name\":[\"ゴーストペッパー\"]"
     }
    },
@@ -4672,7 +6269,7 @@
      "ur": "بھوت چھلکا"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.item.ghost-skin.name\":[\"幽霊の皮\"]"
     }
    },
@@ -4707,7 +6304,7 @@
      "ur": "گلیشیئر آلو"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.item.glacier-spud.name\":[\"氷河ポテト\"]"
     }
    },
@@ -4742,7 +6339,7 @@
      "ur": "سنہرا شوربا"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.item.golden-gravy.name\":[\"黄金グレービー\"]"
     }
    },
@@ -4777,7 +6374,7 @@
      "ur": "بھاری بھرکم آلو"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.item.heavy-russet.name\":[\"ずっしりポテト\"]"
     }
    },
@@ -4812,7 +6409,7 @@
      "ur": "تیکھی مرچ"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.item.hot-pepper.name\":[\"ホットペッパー\"]"
     }
    },
@@ -4847,7 +6444,7 @@
      "ur": "دھڑام آلو"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.item.kaboom-spud.name\":[\"ドカンポテト\"]"
     }
    },
@@ -4882,7 +6479,7 @@
      "ur": "لکی چھلکا"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.item.lucky-peel.name\":[\"幸運の皮\"]"
     }
    },
@@ -4917,7 +6514,7 @@
      "ur": "لاوا کباب"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.item.magma-croquette.name\":[\"マグマコロッケ\"]"
     }
    },
@@ -4952,7 +6549,7 @@
      "ur": "شہابی آلو"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.item.meteor-russet.name\":[\"隕石ポテト\"]"
     }
    },
@@ -4987,7 +6584,7 @@
      "ur": "پیسہ آلو"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.item.penny-spud.name\":[\"小銭ポテト\"]"
     }
    },
@@ -5022,7 +6619,7 @@
      "ur": "پارس آلو"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.item.philosophers-potato.name\":[\"賢者のジャガイモ\"]"
     }
    },
@@ -5057,7 +6654,7 @@
      "ur": "اچار کا مرتبان"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.item.pickle-jar.name\":[\"ピクルス瓶\"]"
     }
    },
@@ -5092,7 +6689,7 @@
      "ur": "سیہی آلو"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.item.porcupine-spud.name\":[\"ヤマアラシポテト\"]"
     }
    },
@@ -5127,7 +6724,7 @@
      "ur": "نمک کی ڈلی"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.item.salt-crystal.name\":[\"塩の結晶\"]"
     }
    },
@@ -5162,7 +6759,7 @@
      "ur": "دوسرا آلو"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.item.second-spud.name\":[\"二度芋\"]"
     }
    },
@@ -5197,7 +6794,7 @@
      "ur": "تیز پیلر"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.item.sharp-peeler.name\":[\"鋭いピーラー\"]"
     }
    },
@@ -5232,7 +6829,7 @@
      "ur": "تیکھا کباب"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.item.spicy-croquette.name\":[\"激辛コロッケ\"]"
     }
    },
@@ -5267,7 +6864,7 @@
      "ur": "آلو مفن"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.item.spud-muffin.name\":[\"ポテトマフィン\"]"
     }
    },
@@ -5302,7 +6899,7 @@
      "ur": "نشاستہ موزہ"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.item.starch-sock.name\":[\"でんぷん靴下\"]"
     }
    },
@@ -5337,7 +6934,7 @@
      "ur": "کرنٹ ٹکی"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.item.static-tot.name\":[\"静電ミニポテト\"]"
     }
    },
@@ -5372,7 +6969,7 @@
      "ur": "طوفانی ٹکی"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.item.storm-tot.name\":[\"嵐のミニポテト\"]"
     }
    },
@@ -5407,7 +7004,7 @@
      "ur": "کانٹے دار جیکٹ"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.item.thorny-jacket.name\":[\"トゲジャケット\"]"
     }
    },
@@ -5442,7 +7039,7 @@
      "ur": "وقت کا آلو"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.item.time-tuber.name\":[\"時の塊茎\"]"
     }
    },
@@ -5477,7 +7074,7 @@
      "ur": "خون آشام ٹکی"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.item.vampire-tot.name\":[\"吸血ミニポテト\"]"
     }
    },
@@ -5512,7 +7109,7 @@
      "ur": "آوارہ آنکھیں"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.item.wandering-eyes.name\":[\"さまよう芽\"]"
     }
    },
@@ -5547,7 +7144,7 @@
      "ur": "چوڑی ڈوئی"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.item.wide-ladle.name\":[\"大きなレードル\"]"
     }
    }
@@ -5584,7 +7181,7 @@
      "ur": "تکہ بوٹی"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.passive.bacon-bits.name\":[\"ベーコンビッツ\"]"
     }
    },
@@ -5619,7 +7216,7 @@
      "ur": "بڑا پیالہ"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.passive.big-bowl.name\":[\"大きなボウル\"]"
     }
    },
@@ -5654,7 +7251,7 @@
      "ur": "مکھن کی ٹکیہ"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.passive.butter-pat.name\":[\"バターひとかけ\"]"
     }
    },
@@ -5689,7 +7286,7 @@
      "ur": "مکھن موزے"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.passive.butter-socks.name\":[\"バターソックス\"]"
     }
    },
@@ -5724,7 +7321,7 @@
      "ur": "ہری پیاز"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.passive.chives.name\":[\"チャイブ\"]"
     }
    },
@@ -5759,7 +7356,7 @@
      "ur": "کھاد"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.passive.fertilizer.name\":[\"肥料\"]"
     }
    },
@@ -5794,7 +7391,7 @@
      "ur": "عینکو آلو"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.passive.four-eyed-spud.name\":[\"四つ目ポテト\"]"
     }
    },
@@ -5829,7 +7426,7 @@
      "ur": "سنہرا فرائز"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.passive.golden-fry.name\":[\"黄金ポテト\"]"
     }
    },
@@ -5864,7 +7461,7 @@
      "ur": "GPU"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.passive.gpu.name\":[\"GPU\"]"
     }
    },
@@ -5899,7 +7496,7 @@
      "ur": "شوربا دل"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.passive.gravy-heart.name\":[\"グレービーハート\"]"
     }
    },
@@ -5934,7 +7531,7 @@
      "ur": "تیکھی چٹنی"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.passive.hot-sauce.name\":[\"ホットソース\"]"
     }
    },
@@ -5969,7 +7566,7 @@
      "ur": "میشر کی گرفت"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.passive.masher-grip.name\":[\"マッシャーグリップ\"]"
     }
    },
@@ -6004,7 +7601,7 @@
      "ur": "آلو مقناطیس"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.passive.potato-magnet.name\":[\"ポテト磁石\"]"
     }
    },
@@ -6039,7 +7636,7 @@
      "ur": "جڑوں کا جال"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.passive.root-network.name\":[\"芋づるネット\"]"
     }
    },
@@ -6074,7 +7671,7 @@
      "ur": "سڑا آلو"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.passive.rotten-spud.name\":[\"腐れポテト\"]"
     }
    },
@@ -6109,7 +7706,7 @@
      "ur": "نمک دانی"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.passive.salt-shaker.name\":[\"ソルトシェイカー\"]"
     }
    },
@@ -6144,7 +7741,7 @@
      "ur": "دھیمی آنچ"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.passive.slow-cooker.name\":[\"スロークッカー\"]"
     }
    },
@@ -6179,7 +7776,7 @@
      "ur": "کھٹی ملائی"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.passive.sour-cream.name\":[\"サワークリーム\"]"
     }
    },
@@ -6214,7 +7811,7 @@
      "ur": "پھوٹتی آنکھیں"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.passive.sprouting-eyes.name\":[\"芽吹く目\"]"
     }
    },
@@ -6249,7 +7846,7 @@
      "ur": "آلو جوگرز"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.passive.spud-sneakers.name\":[\"ポテトスニーカー\"]"
     }
    },
@@ -6284,7 +7881,7 @@
      "ur": "نشاستہ زرہ"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.passive.starch-plating.name\":[\"でんぷん装甲\"]"
     }
    },
@@ -6319,7 +7916,7 @@
      "ur": "موٹا چھلکا"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.passive.thick-skin.name\":[\"厚い皮\"]"
     }
    }
@@ -6356,7 +7953,7 @@
      "ur": "باس کا ٹھکانا"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.poi.bossLair.name\":[\"ボスの巣\"]"
     }
    },
@@ -6391,7 +7988,7 @@
      "ur": "Bot اڈا"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.poi.botDock.name\":[\"Botドック\"]"
     }
    },
@@ -6426,7 +8023,7 @@
      "ur": "آلو طلسم"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.poi.chargeShrine.name\":[\"ポテト祠\"]"
     }
    },
@@ -6461,7 +8058,7 @@
      "ur": "فصل کی کیاری"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.poi.crops.name\":[\"作物畑\"]"
     }
    },
@@ -6496,7 +8093,7 @@
      "ur": "پھپھوندی طلسم"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.poi.curseShrine.name\":[\"カビた祠\"]"
     }
    },
@@ -6531,7 +8128,7 @@
      "ur": "کھانے کی گھنٹی"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.poi.dinnerBell.name\":[\"ごはんの鐘\"]"
     }
    },
@@ -6566,7 +8163,7 @@
      "ur": "آوارہ کتا"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.poi.dog.name\":[\"野良犬\"]"
     }
    },
@@ -6601,7 +8198,7 @@
      "ur": "کتا گھر"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.poi.dogKennel.name\":[\"犬小屋\"]"
     }
    },
@@ -6636,7 +8233,7 @@
      "ur": "بھونرا گھونسلا"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.poi.eliteNest.name\":[\"甲虫の巣\"]"
     }
    },
@@ -6671,7 +8268,7 @@
      "ur": "جنونی فرائر"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.poi.frenzyFryer.name\":[\"熱狂フライヤー\"]"
     }
    },
@@ -6706,7 +8303,7 @@
      "ur": "سنہرا آلو طلسم"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.poi.goldenShrine.name\":[\"黄金ポテト祠\"]"
     }
    },
@@ -6741,7 +8338,7 @@
      "ur": "مائیکروویو"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.poi.microwave.name\":[\"電子レンジ\"]"
     }
    },
@@ -6776,7 +8373,7 @@
      "ur": "آلو کی پیٹی"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.poi.paidChest.name\":[\"ポテト木箱\"]"
     }
    },
@@ -6811,7 +8408,7 @@
      "ur": "جڑوں کی سرنگ"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.poi.rootTunnel.name\":[\"根っこトンネル\"]"
     }
    },
@@ -6846,7 +8443,7 @@
      "ur": "بیج تجوری"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.poi.seedVault.name\":[\"種いも金庫\"]"
     }
    },
@@ -6881,7 +8478,7 @@
      "ur": "آلو فریزر"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.poi.spudFreezer.name\":[\"ポテト冷凍庫\"]"
     }
    },
@@ -6916,7 +8513,7 @@
      "ur": "آلو لالٹین"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.poi.taterLantern.name\":[\"ポテトランタン\"]"
     }
    },
@@ -6951,7 +8548,7 @@
      "ur": "مقناطیسی آلو"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.poi.taterMagnet.name\":[\"ポテト磁石\"]"
     }
    },
@@ -6986,7 +8583,7 @@
      "ur": "آلو سلاٹ مشین"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.poi.taterSlots.name\":[\"ポテトスロット\"]"
     }
    },
@@ -7021,7 +8618,7 @@
      "ur": "فرائز ٹھیلا"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.poi.vendor.name\":[\"フライ屋台\"]"
     }
    },
@@ -7056,7 +8653,7 @@
      "ur": "آلو سان"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.poi.whetstone.name\":[\"ポテト砥石\"]"
     }
    }
@@ -7093,7 +8690,7 @@
      "ur": "بڑا فرائز"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.weapon.big-fry.name\":[\"大物ポテト\"]"
     }
    },
@@ -7128,7 +8725,7 @@
      "ur": "اتھاہ زنبیل"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.weapon.bottomless-sack.name\":[\"底なし袋\"]"
     }
    },
@@ -7163,7 +8760,7 @@
      "ur": "مکھن کی دھار"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.weapon.butter-streak.name\":[\"バターストリーク\"]"
     }
    },
@@ -7198,7 +8795,7 @@
      "ur": "لوہے کا توا"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.weapon.cast-iron.name\":[\"鋳鉄スキレット\"]"
     }
    },
@@ -7233,7 +8830,7 @@
      "ur": "ننجا چپس"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.weapon.chip-shuriken.name\":[\"チップス手裏剣\"]"
     }
    },
@@ -7268,7 +8865,7 @@
      "ur": "کولڈ اسٹوریج"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.weapon.cold-storage.name\":[\"冷蔵倉庫\"]"
     }
    },
@@ -7303,7 +8900,7 @@
      "ur": "ڈیپ فرائر"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.weapon.deep-fryer.name\":[\"ディープフライヤー\"]"
     }
    },
@@ -7338,7 +8935,7 @@
      "ur": "ابدی کونپلیں"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.weapon.eternal-sprouts.name\":[\"永久の芽\"]"
     }
    },
@@ -7373,7 +8970,7 @@
      "ur": "فیکٹری Reset"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.weapon.factory-reset.name\":[\"Factory Reset\"]"
     }
    },
@@ -7408,7 +9005,7 @@
      "ur": "جمے فرائز"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.weapon.frozen-fries.name\":[\"冷凍ポテト\"]"
     }
    },
@@ -7443,7 +9040,7 @@
      "ur": "فرائز دستہ"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.weapon.fry-brigade.name\":[\"フライ部隊\"]"
     }
    },
@@ -7478,7 +9075,7 @@
      "ur": "فرائز چھریاں"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.weapon.fry-knives.name\":[\"フライナイフ\"]"
     }
    },
@@ -7513,7 +9110,7 @@
      "ur": "فرائز نیزہ"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.weapon.fry-lance.name\":[\"フライランス\"]"
     }
    },
@@ -7548,7 +9145,7 @@
      "ur": "فرائز پہرے دار"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.weapon.fry-sentry.name\":[\"フライ番兵\"]"
     }
    },
@@ -7583,7 +9180,7 @@
      "ur": "فرائی پین"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.weapon.frying-pan.name\":[\"フライパン\"]"
     }
    },
@@ -7618,7 +9215,7 @@
      "ur": "نگینہ منجنیق"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.weapon.gem-catapult.name\":[\"ジェムカタパルト\"]"
     }
    },
@@ -7653,7 +9250,7 @@
      "ur": "نگینہ غلیل"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.weapon.gem-sling.name\":[\"ジェムスリング\"]"
     }
    },
@@ -7688,7 +9285,7 @@
      "ur": "گھی کی پھسلن"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.weapon.ghee-glide.name\":[\"ギーグライド\"]"
     }
    },
@@ -7723,7 +9320,7 @@
      "ur": "سنہری فصل"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.weapon.golden-harvest.name\":[\"黄金収穫\"]"
     }
    },
@@ -7758,7 +9355,7 @@
      "ur": "زنبیل"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.weapon.grab-bag.name\":[\"福袋\"]"
     }
    },
@@ -7793,7 +9390,7 @@
      "ur": "پنیری قوس"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.weapon.gratin-arc.name\":[\"グラタンアーク\"]"
     }
    },
@@ -7828,7 +9425,7 @@
      "ur": "شوربے کا ڈونگا"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.weapon.gravy-boat.name\":[\"グレービーボート\"]"
     }
    },
@@ -7863,7 +9460,7 @@
      "ur": "شوربے کا سیلاب"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.weapon.gravy-flood.name\":[\"グレービー洪水\"]"
     }
    },
@@ -7898,7 +9495,7 @@
      "ur": "ہیش بومرینگ"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.weapon.hash-boomerang.name\":[\"ハッシュブーメラン\"]"
     }
    },
@@ -7933,7 +9530,7 @@
      "ur": "ہیش براؤن ڈھال"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.weapon.hash-brown-shield.name\":[\"ハッシュシールド\"]"
     }
    },
@@ -7968,7 +9565,7 @@
      "ur": "ہیش فصیل"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.weapon.hash-bulwark.name\":[\"ハッシュの砦\"]"
     }
    },
@@ -8003,7 +9600,7 @@
      "ur": "ہیش بگولا"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.weapon.hashnado.name\":[\"ハッシュネード\"]"
     }
    },
@@ -8038,7 +9635,7 @@
      "ur": "گرم آلو"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.weapon.hot-potato.name\":[\"ホットポテト\"]"
     }
    },
@@ -8073,7 +9670,7 @@
      "ur": "گرما گرم"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.weapon.hot-streak.name\":[\"アツアツ連撃\"]"
     }
    },
@@ -8108,7 +9705,7 @@
      "ur": "آتشیں ٹوکری"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.weapon.inferno-basket.name\":[\"業火バスケット\"]"
     }
    },
@@ -8143,7 +9740,7 @@
      "ur": "لچھا ڈیش"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.weapon.julienne-dash.name\":[\"千切りダッシュ\"]"
     }
    },
@@ -8178,7 +9775,7 @@
      "ur": "چپس گردباد"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.weapon.kettle-cyclone.name\":[\"ケトルサイクロン\"]"
     }
    },
@@ -8213,7 +9810,7 @@
      "ur": "بارودی فصل"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.weapon.landmine-harvest.name\":[\"地雷収穫\"]"
     }
    },
@@ -8248,7 +9845,7 @@
      "ur": "کھوٹے پانسے"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.weapon.loaded-dice.name\":[\"イカサマ芋ダイス\"]"
     }
    },
@@ -8283,7 +9880,7 @@
      "ur": "لاک مشین گن"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.weapon.locked-gatling.name\":[\"ロックガトリング\"]"
     }
    },
@@ -8318,7 +9915,7 @@
      "ur": "سلائسر کا قہر"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.weapon.mandoline-fury.name\":[\"スライサーの怒り\"]"
     }
    },
@@ -8353,7 +9950,7 @@
      "ur": "بھرتا تودہ"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.weapon.mash-avalanche.name\":[\"マッシュ雪崩\"]"
     }
    },
@@ -8388,7 +9985,7 @@
      "ur": "بھرتا گولا"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.weapon.mash-snowball.name\":[\"マッシュ雪玉\"]"
     }
    },
@@ -8423,7 +10020,7 @@
      "ur": "بھرتے کی لہر"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.weapon.mash-wave.name\":[\"マッシュ波\"]"
     }
    },
@@ -8458,7 +10055,7 @@
      "ur": "بھرتا بھونچال"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.weapon.mashquake.name\":[\"マッシュクエイク\"]"
     }
    },
@@ -8493,7 +10090,7 @@
      "ur": "ہلالی چھری"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.weapon.mezzaluna.name\":[\"メッツァルーナ\"]"
     }
    },
@@ -8528,7 +10125,7 @@
      "ur": "چاند ٹوکا"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.weapon.moon-cleaver.name\":[\"満月包丁\"]"
     }
    },
@@ -8563,7 +10160,7 @@
      "ur": "جھاڑ جھنکار"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.weapon.overgrowth.name\":[\"大繁茂\"]"
     }
    },
@@ -8598,7 +10195,7 @@
      "ur": "پیلر"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.weapon.peeler.name\":[\"ピーラー\"]"
     }
    },
@@ -8633,7 +10230,7 @@
      "ur": "سدا جمے فرائز"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.weapon.permafrost-fries.name\":[\"永久凍土ポテト\"]"
     }
    },
@@ -8668,7 +10265,7 @@
      "ur": "آلو بیٹری"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.weapon.potato-battery.name\":[\"ポテト電池\"]"
     }
    },
@@ -8703,7 +10300,7 @@
      "ur": "آلو کا کھیت"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.weapon.potato-patch.name\":[\"いも畑\"]"
     }
    },
@@ -8738,7 +10335,7 @@
      "ur": "آلوؤں کی بارش"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.weapon.potato-rain.name\":[\"ポテトの雨\"]"
     }
    },
@@ -8773,7 +10370,7 @@
      "ur": "پریشر ککر"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.weapon.pressure-cooker.name\":[\"圧力鍋\"]"
     }
    },
@@ -8808,7 +10405,7 @@
      "ur": "ریل فرائز"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.weapon.railfry.name\":[\"レールフライ\"]"
     }
    },
@@ -8843,7 +10440,7 @@
      "ur": "Reset بٹن"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.weapon.reset-button.name\":[\"Reset Button\"]"
     }
    },
@@ -8878,7 +10475,7 @@
      "ur": "تہہ خانہ"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.weapon.root-cellar.name\":[\"ポテト貯蔵庫\"]"
     }
    },
@@ -8913,7 +10510,7 @@
      "ur": "نوکیلی جڑیں"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.weapon.root-spikes.name\":[\"根のトゲ\"]"
     }
    },
@@ -8948,7 +10545,7 @@
      "ur": "روسٹی ڈسک"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.weapon.rosti-disc.name\":[\"ロスティディスク\"]"
     }
    },
@@ -8983,7 +10580,7 @@
      "ur": "روسٹی طوفان"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.weapon.rosti-storm.name\":[\"ロスティ嵐\"]"
     }
    },
@@ -9018,7 +10615,7 @@
      "ur": "آلوؤں کی بوری"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.weapon.sack-of-russets.name\":[\"ラセット袋\"]"
     }
    },
@@ -9053,7 +10650,7 @@
      "ur": "نمک کا میدان"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.weapon.salt-flats.name\":[\"大塩原\"]"
     }
    },
@@ -9088,7 +10685,7 @@
      "ur": "نمک کی لکیر"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.weapon.salt-line.name\":[\"塩ライン\"]"
     }
    },
@@ -9123,7 +10720,7 @@
      "ur": "بیج آلو"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.weapon.seed-potato.name\":[\"種いも\"]"
     }
    },
@@ -9158,7 +10755,7 @@
      "ur": "متلاشی کونپلیں"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.weapon.seeker-sprouts.name\":[\"追尾の芽\"]"
     }
    },
@@ -9193,7 +10790,7 @@
      "ur": "چھوٹا فرائز"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.weapon.small-fry.name\":[\"小物ポテト\"]"
     }
    },
@@ -9228,7 +10825,7 @@
      "ur": "چنگاری باڑا"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.weapon.spark-corral.name\":[\"スパーク電柵\"]"
     }
    },
@@ -9263,7 +10860,7 @@
      "ur": "تیکھا گرم آلو"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.weapon.spicy-hot-potato.name\":[\"激辛ホットポテト\"]"
     }
    },
@@ -9298,7 +10895,7 @@
      "ur": "کونپل سیٹلائٹ"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.weapon.sprout-satellites.name\":[\"芽サテライト\"]"
     }
    },
@@ -9333,7 +10930,7 @@
      "ur": "آلو توپ خانہ"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.weapon.spud-artillery.name\":[\"ポテト砲兵\"]"
     }
    },
@@ -9368,7 +10965,7 @@
      "ur": "آلو توپ"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.weapon.spud-cannon.name\":[\"ポテトキャノン\"]"
     }
    },
@@ -9403,7 +11000,7 @@
      "ur": "آلو پانسہ"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.weapon.spud-dice.name\":[\"ポテトダイス\"]"
     }
    },
@@ -9438,7 +11035,7 @@
      "ur": "آلو باڑ"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.weapon.spud-fence.name\":[\"ポテト電柵\"]"
     }
    },
@@ -9473,7 +11070,7 @@
      "ur": "آلو گرڈ"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.weapon.spud-grid.name\":[\"ポテト送電網\"]"
     }
    },
@@ -9508,7 +11105,7 @@
      "ur": "آلو اچھال"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.weapon.spud-lob.name\":[\"ポテト投げ\"]"
     }
    },
@@ -9543,7 +11140,7 @@
      "ur": "آلوزوکا"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.weapon.spudzooka.name\":[\"ポテトズーカ\"]"
     }
    },
@@ -9578,7 +11175,7 @@
      "ur": "اسٹینڈ مکسر"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.weapon.stand-mixer.name\":[\"スタンドミキサー\"]"
     }
    },
@@ -9613,7 +11210,7 @@
      "ur": "نشاستہ بجلی"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.weapon.starch-bolt.name\":[\"でんぷんボルト\"]"
     }
    },
@@ -9648,7 +11245,7 @@
      "ur": "نشاستہ زنجیر"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.weapon.starch-chain.name\":[\"でんぷんチェーン\"]"
     }
    },
@@ -9683,7 +11280,7 @@
      "ur": "نشاستہ گھن گرج"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.weapon.starch-supercell.name\":[\"でんぷんスーパーセル\"]"
     }
    },
@@ -9718,7 +11315,7 @@
      "ur": "بھاپ کا فوارہ"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.weapon.steam-vent.name\":[\"蒸気ベント\"]"
     }
    },
@@ -9753,7 +11350,7 @@
      "ur": "دم دار فرائز"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.weapon.tailgate-fries.name\":[\"しんがりポテト\"]"
     }
    },
@@ -9788,7 +11385,7 @@
      "ur": "دم دار دعوت"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.weapon.tailgate-party.name\":[\"しんがり祭り\"]"
     }
    },
@@ -9823,7 +11420,7 @@
      "ur": "موسلا دھار جڑیں"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.weapon.taproot-eruption.name\":[\"主根噴火\"]"
     }
    },
@@ -9858,7 +11455,7 @@
      "ur": "بارودی آلو"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.weapon.tater-mines.name\":[\"ポテト地雷\"]"
     }
    },
@@ -9893,7 +11490,7 @@
      "ur": "آلو منی گن"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.weapon.tater-minigun.name\":[\"ポテトミニガン\"]"
     }
    },
@@ -9928,7 +11525,7 @@
      "ur": "آلو ٹکی پلا"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.weapon.tater-pup.name\":[\"ミニポテト犬\"]"
     }
    },
@@ -9963,7 +11560,7 @@
      "ur": "آلو لٹو"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.weapon.tater-twirl.name\":[\"ポテトくるくる\"]"
     }
    },
@@ -9998,7 +11595,7 @@
      "ur": "آلو گردباد"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.weapon.tater-twister.name\":[\"ポテト大旋風\"]"
     }
    },
@@ -10033,7 +11630,7 @@
      "ur": "ہزار فرائز"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.weapon.thousand-fries.name\":[\"千本ポテト\"]"
     }
    },
@@ -10068,7 +11665,7 @@
      "ur": "کڑکتا آلو"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.weapon.thunder-tuber.name\":[\"雷塊茎\"]"
     }
    },
@@ -10103,7 +11700,7 @@
      "ur": "ٹکی گھڑسوار"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.weapon.tot-cavalry.name\":[\"ミニポテト騎兵隊\"]"
     }
    },
@@ -10138,7 +11735,7 @@
      "ur": "ٹکی مشین گن"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.weapon.tot-gatling.name\":[\"ミニポテトガトリング\"]"
     }
    },
@@ -10173,7 +11770,7 @@
      "ur": "ٹکی بھگدڑ"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.weapon.tot-stampede.name\":[\"ミニポテト突撃\"]"
     }
    },
@@ -10208,7 +11805,7 @@
      "ur": "ٹکی اچھال"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.weapon.tot-toss.name\":[\"ミニポテト投げ\"]"
     }
    },
@@ -10243,7 +11840,7 @@
      "ur": "جالی کٹ"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.weapon.waffle-cut.name\":[\"ワッフルカット\"]"
     }
    },
@@ -10278,7 +11875,7 @@
      "ur": "مدھانی بھنور"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.weapon.whisk-vortex.name\":[\"泡立て器の渦\"]"
     }
    },
@@ -10313,7 +11910,7 @@
      "ur": "آگ بگولا"
     },
     "cite": {
-     "chunk": "i18n-ja-content-BnBvCdVt.js",
+     "chunk": "i18n-ja-content-DO6GrqHt.js",
      "quote": "\"content.weapon.wildfire-roast.name\":[\"大炎上連撃\"]"
     }
    }
