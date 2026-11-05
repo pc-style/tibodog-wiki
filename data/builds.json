@@ -460,5 +460,15 @@
   "status": "reviewed",
   "updated": "2026-11-05T03:41:14Z",
   "changes": "Map tips now reread their saved On/Off setting after another tab changes it or clears storage, rather than keeping a stale cached value. Run-end screens, loot notices and story text are initialized after the simulation loads instead of on the title screen; visitor state and Story-ending checks move between chunks without changing their rules. Gameplay definitions, difficulty, English content, patch notes, all 27 languages' entity names, stylesheet and atlas pixels are unchanged. Reviewed all 210 JavaScript modules against the previous 212, including duplicate roles, workers, worklets, localizations and each build's own atlases. Same-seed five-minute Normal runs matched at 1,322 kills and four-weapon damage of 6,387.99 / 1,072.59 / 2,573.88 / 602.48. Three same-seed Story comparisons matched at 60.6 / 61.4 / 61.1 seconds with 612 / 431 / 482 kills and identical visitor events. Actual old/new storage-controller probes confirmed that an external Off change stayed On before this build but reads Off now; unrelated keys do not invalidate the cache."
+ },
+ {
+  "seen": "2026-11-05",
+  "main": "main-Dx8UWA13.js",
+  "boot": "boot-DhVtVXA5.js",
+  "sim": "sim-CDZ7ikGI.js",
+  "commit": "c38cf2dd8183",
+  "status": "reviewed",
+  "updated": "2026-11-05T04:13:16Z",
+  "changes": "Limit-broken weapon and passive level labels now show a cyan star and break count before the ordinary level. The renderer compares sprite-table values at Float32 precision before marking them changed, avoiding repeat updates for an unchanged rounded value. Reviewed all 210 JavaScript modules, including duplicate roles, workers, worklets, localizations and each build's own atlases. Gameplay definitions, sim logic, difficulty, English content, patch notes, entity names in all 27 languages, atlas pixels and wiki icons are unchanged. Same-seed five-minute Standard/Normal runs matched at 1,322 kills, level 13 and four-weapon damage of 6,387.99 / 1,072.59 / 2,573.88 / 602.48. Actual-code probes confirmed the new star/count label and reduced repeated sprite-table dirty flags from three to one for input 0.1, with the same stored Float32 value; exact input 0.5 remains one."
  }
 ]
