@@ -6,7 +6,7 @@ It walks straight at Tibo at speed 30, with 24 HP and 6 contact damage. When kil
 
 ## How it works
 
-On death the pile spawns three Lint Bunnies in a ring around the spot, pushed outward. Unlike a [Snow Mold](/enemies/snow-mold), which splits into weaker copies of itself, a splitter with a named child spawns full Lint Bunnies. The bunnies take over the pile's HP, damage and speed scaling, applied to the Lint Bunny's own base stats (8 HP, 3 damage). <small>[sim-CM-5WO9_.js: `eo(e,o?r:a,c+6*w(u),l+6*T(u))`]</small>
+On death the pile spawns three Lint Bunnies in a ring around the spot, pushed outward. Unlike a [Snow Mold](/enemies/snow-mold), which splits into weaker copies of itself, a splitter with a named child spawns full Lint Bunnies. The bunnies take over the pile's HP, damage and speed scaling, applied to the Lint Bunny's own base stats (8 HP, 3 damage). <small>[sim-B_Q9zCqI.js: `eo(e,o?r:a,c+6*w(u),l+6*T(u))`]</small>
 
 An elite Sock Pile (tier 2 is the elite tier from 1:00 to 4:59) releases ordinary Lint Bunnies, not elite ones. No bunnies are made once the enemy limit (550) is reached.
 

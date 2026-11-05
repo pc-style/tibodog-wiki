@@ -6,9 +6,9 @@ It is offered on level-up cards and is in the starting-weapon pool. At level 8 i
 
 ## How it works
 
-- **Impact plus blast.** When the shell touches a pest, that pest takes the hit, and then the shell explodes and is removed. <small>[sim-CM-5WO9_.js: `if(n.split[t]>0&&pp(e,t,a),n.explodeRadius[t]>0)fp(e,t),n.pool.kill(t)`]</small> The struck pest is also inside the blast, so it takes damage twice: once from the impact and once from the explosion. Other pests in the radius take the blast only. Pierce has no effect, since the shell always stops at its first target.
-- **Burst on timeout.** A shell that runs out of flight time explodes in place. <small>[sim-CM-5WO9_.js: `a<=0?(n.explodeRadius[r]>0&&fp(e,r)`]</small> At speed 170 and 2.5 s that is about 425 units away.
-- **Blast size.** The blast radius is `explodeRadius × area`. <small>[sim-CM-5WO9_.js: `o.explodeRadius[i]=n.explodeRadius*r.area,o.cluster[i]=n.cluster??0`]</small> [Area](/stats) bonuses grow it directly.
+- **Impact plus blast.** When the shell touches a pest, that pest takes the hit, and then the shell explodes and is removed. <small>[sim-B_Q9zCqI.js: `if(n.split[t]>0&&pp(e,t,a),n.explodeRadius[t]>0)fp(e,t),n.pool.kill(t)`]</small> The struck pest is also inside the blast, so it takes damage twice: once from the impact and once from the explosion. Other pests in the radius take the blast only. Pierce has no effect, since the shell always stops at its first target.
+- **Burst on timeout.** A shell that runs out of flight time explodes in place. <small>[sim-B_Q9zCqI.js: `a<=0?(n.explodeRadius[r]>0&&fp(e,r)`]</small> At speed 170 and 2.5 s that is about 425 units away.
+- **Blast size.** The blast radius is `explodeRadius × area`. <small>[sim-B_Q9zCqI.js: `o.explodeRadius[i]=n.explodeRadius*r.area,o.cluster[i]=n.cluster??0`]</small> [Area](/stats) bonuses grow it directly.
 - **Aim.** It needs a pest within 224 units (70% of the 320-unit play area) to fire. Shells after the first in a volley get a little random spread.
 
 **Measured** in the headless sim (`tools/play.mjs`, build 41 `main-B2gf34bA.js`, Standard, Normal, god mode, seeds `s1`, `s2` and `s3`; the seeded starting weapon removed, the weapon given with `give`, spawning stopped after 4 s of play and the pests already on the field held at fixed spots with 10⁹ HP; Tibo standing still, facing right, with 8 pests in a line 20 to 90 units to his right): at level 1 it fired 2 shells 0.15 s apart every 2.2 s, each spawned with a 2.5 s lifetime, and the nearest pest took 20 from the impact and 20 from the blast; at level 8 it fired 3 shells every 1.9 s. All three seeds gave the same figures.
@@ -16,4 +16,4 @@ It is offered on level-up cards and is in the starting-weapon pool. At level 8 i
 ## Tips
 
 - The blast covers everything around the target, so the shell does the most against packed groups. The pest closest to Tibo, which is the one it aims at, takes the most damage.
-- Spudzooka and Spud Artillery both build on this weapon. If both are ready at the same chest, the game asks “Evolve or unite?” (see [Chests](/chests)). A union only needs one partner to be a max-level base weapon, so a Spudzooka can still unite later with a level 8 Spud Lob. <small>[sim-CM-5WO9_.js: `return al(n)||al(r)?[n,r]:void 0`]</small>
+- Spudzooka and Spud Artillery both build on this weapon. If both are ready at the same chest, the game asks “Evolve or unite?” (see [Chests](/chests)). A union only needs one partner to be a max-level base weapon, so a Spudzooka can still unite later with a level 8 Spud Lob. <small>[sim-B_Q9zCqI.js: `return al(n)||al(r)?[n,r]:void 0`]</small>

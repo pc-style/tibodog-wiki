@@ -570,5 +570,25 @@
   "status": "reviewed",
   "updated": "2026-11-05T09:10:54Z",
   "changes": "Source-only refresh after build 57: all 210 JavaScript modules across 204 roles match exactly after mapped dependency and own-build commit substitutions, including duplicate mounts, choices, workers/worklets, wrappers and all 27 locales. No added or removed roles or residual executable changes; index and warm-list dependencies also match. All 15 referenced CSS files, four own atlas PNGs/tables, wiki icon pixels, balance data and translated names are unchanged. The complete live journal matches all 162 ordered date/code/kind/text records (28/41/47/46); no additions, omissions, revisions, metadata, ordering or regrouping changes. Same-input five-minute Standard/Normal runs (seed wiki, no give/warp/god) match: level 13, 1,322 kills, 150 HP; Fry Sentry 6,387.99 damage, Hash Brown Shield 1,072.59, Spud Cannon 2,573.88 and Fry Lance 602.48. Current citations refreshed; all previous numeric history and the D3 snapshot preserved. No changed mechanic branch or newly settled coverage question; unavailable historical sources were not reverified."
+ },
+ {
+  "seen": "2026-11-05",
+  "main": "main-T8icT-Fc.js",
+  "boot": "boot-DCNB_l-x.js",
+  "sim": "sim-_o7790rj.js",
+  "commit": "6b5361905159",
+  "status": "reviewed",
+  "updated": "2026-11-05T09:24:16Z",
+  "changes": "The official journal moves the existing Forges note to November 4 under c38cf2d, followed by Spittlebugs under b6c852b; these codes cross-reference already reviewed builds 48 and 45, not new mechanics. Their unversioned added timestamps disappear; no note text, kind, target or identity changed, and none was added or omitted. All 162 ordered live journal records and icon kinds match extraction (28/41/47/46); there are now 63 dated codes and no current-version notes. All 210 JavaScript modules across 204 roles were paired, including duplicate mounts, choices, workers/worklets, wrappers and all 27 locales: 209 match exactly after dependency/build-commit substitutions, with only the reviewed journal data differing in the remaining module. Its executable surroundings and grouping wrapper are unchanged. The original previous-build index was recovered from its checksummed archive, separately extracted and verified against all 214 own CDN JS/PNG files; index and warm-list dependencies also match. All 15 referenced CSS files, four own atlas PNGs/tables, 223 wiki icon crops, balance data and translated names are unchanged. Same-input five-minute Standard/Normal runs (seed wiki, no give/warp/god) match: level 13, 1,322 kills, 150 HP; Fry Sentry 6,387.99 damage, Hash Brown Shield 1,072.59, Spud Cannon 2,573.88 and Fry Lance 602.48. Current citations refreshed; prior numeric history and the D3 snapshot preserved. No changed mechanic branch or newly settled coverage question; unavailable early historical sources were not reverified."
+ },
+ {
+  "seen": "2026-11-05",
+  "main": "main-4ZrEZvZi.js",
+  "boot": "boot-CDlw7rf5.js",
+  "sim": "sim-B_Q9zCqI.js",
+  "commit": "ba13d8633832",
+  "status": "reviewed",
+  "updated": "2026-11-05T09:51:04Z",
+  "changes": "Source-only refresh after build 59: all 210 JavaScript modules across 204 roles match exactly after mapped dependency and own-build commit substitutions, including duplicate mounts, choices, workers/worklets, wrappers and all 27 locales. No added or removed roles or residual executable changes; each build's own index and warm-list dependencies also match. All 15 referenced CSS files, four own atlas PNGs/tables, 223 wiki icon crops, balance data and translated names are unchanged. The complete live journal matches all 162 ordered date/code/kind/text records and icon kinds (28/41/47/46); still 63 dated codes and no current-version notes. No additions, omissions, revisions, metadata, ordering or regrouping changes. Same-input five-minute Standard/Normal runs (seed wiki, no give/warp/god) match: level 13, 1,322 kills, 150 HP; Fry Sentry 6,387.99 damage, Hash Brown Shield 1,072.59, Spud Cannon 2,573.88 and Fry Lance 602.48. Current citations refreshed; earlier reports, numeric history and the D3 snapshot preserved. No changed mechanic branch or newly settled coverage question; unavailable historical sources were not reverified."
  }
 ]

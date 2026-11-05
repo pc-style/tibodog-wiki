@@ -8,7 +8,7 @@ It is the catalyst for [Golden Harvest](/weapons/golden-harvest), the evolution 
 
 The gold gain multiplier is `(1 + gold gain) × (1 + 0.5 × curse)` (see [Stats](/stats)). It applies to:
 
-- every gold coin picked up<small>[sim-CM-5WO9_.js: `let t=1*a*i.greedMult*(e.time<e.goldRushUntil?e.goldRushMult:1)`]</small>
+- every gold coin picked up<small>[sim-B_Q9zCqI.js: `let t=1*a*i.greedMult*(e.time<e.goldRushUntil?e.goldRushMult:1)`]</small>
 - gold inside chests, and the 20-gold fallback reward when a chest has nothing else to give (see [Chests](/chests#gold-in-chests))
 - the gold from accepting a [Moldy Shrine](/points-of-interest#moldy-shrine)
 - the gold in poteto's gift chest (see [Visitors](/visitors#poteto))
