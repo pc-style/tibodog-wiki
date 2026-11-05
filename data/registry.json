@@ -9016,14 +9016,22 @@
     "range": 110,
     "shotEvery": 3.4,
     "pattern": {
-     "kind": "aimed",
-     "count": 1,
-     "speed": 75,
+     "kind": "fan",
+     "count": 2,
+     "arc": 0,
+     "speed": 70,
      "radius": 2,
      "damage": 4,
-     "bursts": 3,
-     "interval": 0.2,
-     "telegraph": 0.5
+     "bursts": 2,
+     "interval": 0.35,
+     "telegraph": 0.5,
+     "motion": {
+      "orbit": {
+       "px": 6,
+       "hz": 1.1,
+       "grow": 0.3
+      }
+     }
     }
    },
    "hp": 18,

@@ -3970,6 +3970,8 @@
    "overtimeHoldSec": 0,
    "opening": "main",
    "sharpPatterns": false,
+   "orbitPx": 1,
+   "orbitHz": 1,
    "shotPuddleRadius": 1,
    "shotPuddleSec": 1,
    "returnSpeed": 1,

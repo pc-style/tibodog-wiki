@@ -430,5 +430,15 @@
   "status": "reviewed",
   "updated": "2026-11-05T02:11:14Z",
   "changes": "Adds Battery saver in Graphics settings, initially Off. On targets 30 drawn frames per second without changing simulation ticks; Auto responds to sustained load, slow frames, low unplugged battery or CPU pressure. Quality adaptation accounts for the slower draw pace; analytics can record the saving cause. Retains all DG mechanics: Spud Forges and breaks, five-minute overtime scaling, the 0.6-second charger floor, score version 3, compact numbers and encounter-aware music. C2's simulation has no identifier-normalised logic changes against DG; base definitions, English content, difficulties, 27-language entity names and atlas pixels remain unchanged, including Ketchup Kraken, Andrew and all 93 weapons. Reviewed all 212 modules against DG's 211, pairing duplicate roles and including workers, worklets and every localization; one inline flagged atlas moves unchanged into a PNG. Same-input B2/C2 probes confirmed the retained mechanics, and C2's five-minute Normal smoke again finished with 1,322 kills and identical four-weapon damage. Actual Battery saver controller probes measured 60 to 30 draws per 60 callbacks, 30 hot windows, the 20% battery boundary and new-run heat reset; physical-device energy/temperature effects remain unmeasured. After DG was reviewed, no-cache observations served build 41 again around 00:43, 01:43 and 01:57 UTC, then C2 from about 02:08 UTC. These observations do not prove a rollback; caching or region differences cannot be ruled out. See History for times, sources and version.json responses."
+ },
+ {
+  "seen": "2026-11-05",
+  "main": "main-BRJMoZXM.js",
+  "boot": "boot-CDwG8kel.js",
+  "sim": "sim-DSrIjmoR.js",
+  "commit": "b6c852b1f94d",
+  "status": "reviewed",
+  "updated": "2026-11-05T02:44:29Z",
+  "changes": "Spittlebugs now fire two pairs of orbiting froth bubbles instead of three single shots. The pair's base forward speed is 70 instead of 75, with 0.35 seconds between pairs instead of 0.2 between singles; each bubble still deals 4 base damage. Orbits grow to radius 6 over 0.3 seconds; measured frequencies are 0.66 turns/s on Easy and Hard, 0.88 on Normal and 1.21 on Nightmare, whose radius is 7.2. Shot-path previews use the same motion and account for the orbit's reach, and the old spit sprite becomes an animated froth bubble. The new patch note is translated in all 26 non-English changelogs; the 27-language list and entity names are unchanged. Reviewed all 212 modules in 205 roles, including duplicate chunks, workers, worklets and each build's own atlases; icons are pixel-identical. Same-seed actual-code probes across all four difficulties measured three singles at ticks 30/41/53 becoming pairs at ticks 30/50, with opposite phases and difficulty-scaled motion. The five-minute Normal smoke again completed with 1,322 kills and damage from four weapons. Other definitions and late-game mechanics are unchanged."
  }
 ]
