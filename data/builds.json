@@ -92,7 +92,7 @@
   "sim": "sim-_OBiHpkk.js",
   "commit": "ef553af3c33e",
   "status": "reviewed",
-  "changes": "Adds a server clock check (`/api/time`). No gameplay changes."
+  "changes": "The original comparison reported a server clock check (`/api/time`) with no gameplay delta from the preceding observed build. The official journal groups Normal and touch-dash changes under this code; the wiki first recorded those in builds 8 and 7 respectively. Grouping is not an independently verified introduction time, and the original source pair was unavailable for the November 5 audit."
  },
  {
   "seen": "2026-11-03",
@@ -101,7 +101,7 @@
   "sim": "sim-BWA0X6Nb.js",
   "commit": "8fa93e6d85e6",
   "status": "reviewed",
-  "changes": "Balance pass. Base weapons hit harder at several levels (Deep Fryer, Hash Brown Shield, Julienne Dash, Mezzaluna, Potato Battery, Potato Rain, Root Cellar, Root Spikes) and Butter Streak cooldown drops from 3.5 s to 2.5 s. Every evolution gets more damage, most also shorter cooldowns or more projectiles; Spud Grid wires can now latch onto bosses (`clipsBosses`). Proc items are roughly doubled (Heavy Russet, Spicy Croquette, Static Tot, Wandering Eyes, Coal-Baked Spud, Porcupine Spud) and Boom Spud kill explosions rise from 8% to 12%. The Spud Freezer now freezes every enemy on the map for 7.5 s (was pests within 200 units for 5 s)."
+  "changes": "Balance pass. Base weapons hit harder at several levels (Deep Fryer, Hash Brown Shield, Julienne Dash, Mezzaluna, Potato Battery, Potato Rain, Root Cellar, Root Spikes) and Butter Streak cooldown drops from 3.5 s to 2.5 s. Evolution damage rises, with shorter cooldowns or more projectiles in the original comparison; the journal describes sixteen weak evolutions, while the original summary said every evolution. The old source pair was unavailable for the November 5 audit, so that broader claim is not reverified. Spud Grid wires can now latch onto bosses (`clipsBosses`). Proc items are roughly doubled (Heavy Russet, Spicy Croquette, Static Tot, Wandering Eyes, Coal-Baked Spud, Porcupine Spud) and Boom Spud kill explosions rise from 8% to 12%. The Spud Freezer now freezes every enemy on the map for 7.5 s (was pests within 200 units for 5 s)."
  },
  {
   "seen": "2026-11-03",
@@ -110,7 +110,7 @@
   "sim": "sim-DofVIqM4.js",
   "commit": "1901d1f1021e",
   "status": "reviewed",
-  "changes": "Analytics only. No gameplay changes."
+  "changes": "The original comparison reported analytics-only changes and no gameplay delta. The official journal groups activation-ring, biome-hazard, pest-spawn, Frying Pan/Cast Iron charge and GPU-steam art under this code. Those notes are retained as official publication history; the original source pair was unavailable for the November 5 audit, so the old review's rendering scope cannot be independently resolved."
  },
  {
   "seen": "2026-11-03",

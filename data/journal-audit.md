@@ -1,0 +1,39 @@
+## Journal audit
+
+Audit snapshot: **5 November 2026**, live game `main-Dx8UWA13.js`, current code `c38cf2d`. This is a historical audit of the journal and the wiki's 48 recorded build observations, not a new gameplay review or a claim to have replayed every historical release.
+
+### Sources and completeness
+
+The complete supplied English export (captured 04:22:51 UTC on 5 November) and the live **What's new** panel agree with the corrected extraction: **162 notes**, **59 dated codes**, four dates, plus four notes under **Your version**. Daily totals, including the current-version group, are **28 / 41 / 47 / 46** for November 4 / 3 / 2 / 1. All note text and ordered date/code groups were compared, not just the newest screen. Earlier days were initially collapsed and were opened individually in the live browser.
+
+The supplied export's SHA-256 is `46aab5c28cf109aa822e4307ec85af58c36a5cbad2faac677ceb12a52d143506`. Its Markdown escaping was removed only for comparison; note wording was not rewritten. The official source chunk URL and SHA-256 are recorded above and in `data/changelog.json`. The chunk's English message literals, kind fields, stable IDs where present, dates and version groups are the extraction source; translated chunks are not the English source.
+
+The original extractor preserved declaration order for the four unversioned notes. The live UI instead sorts them using its comparator: **Battery saver → Spittlebugs → background updates → Forges**. This audit fixes that order without assigning those notes to the current build as new mechanics. Earlier dated notes already matched the full export word for word, with no missing or extra notes.
+
+### Reconciliation with observed builds
+
+Twenty-five journal codes match recorded game commits; the other 34 have no independently compared build in this wiki. A match is a cross-reference, not proof that all notes under that code were introduced together. The following covers every dated group; build numbers refer to [Versions](/versions#version-history).
+
+| Journal date | Codes and corresponding wiki observations |
+| --- | --- |
+| November 4 | `ff7cc24` → 39; `e811cc2` → 38; `fb8cda8` → 37; `4925ce4` → 35; `72c678c` → 32; `f65418f` → 31; `445c881` → 27; `18beea6` → 25; `62522d2` → 23 |
+| November 3 | `8a4b97f` → 22; `ec984b0` → 21; `7055bef` → 20; `670a299` → 19; `3e78ec0` → 18; `c7a474f` → 17; `76dd9d6` → 16; `24a9122` → 15; `10e6e75` → 14 |
+| November 2, matched | `e568b10` → 13; `1901d1f` → 12; `8fa93e6` → 11; `ef553af` → 10; `9564ddd` → 4; `6dcf252` → 3; `1b18619` → 2 |
+| November 2, no compared build | `e206c1b`, `9cf49a1`, `1a68458`, `b7d1f6e`, `a6ca0d8`, `82bdf8c`, `454878b`, `bd52bae`, `eb0d483`, `0c6155b`, `a5e0254`, `e380f93`, `aa791ec`, `b6a4514`, `e40c3fe` |
+| November 1, no compared build | `dc1ab02`, `f79dcd2`, `81ca743`, `a650e23`, `2b16424`, `4475f84`, `95c52c2`, `f28c3b3`, `74fe5d5`, `9a8f818`, `67c47c1`, `6c5e2b9`, `334a285`, `d5f7994`, `c75fdfb`, `3aedb6b`, `0bfefd4`, `5e18e96`, `860cc15` |
+
+### Corrections and limits
+
+- **Publication is not introduction.** The current-version group contains background-update behavior first reviewed in build 42, Forges in 43, Battery saver in 44 and Spittlebugs in 45. Build 48's retained old/new evidence says its journal is unchanged; its changes concern level labels and sprite-table precision. Putting these four notes under `c38cf2d` does not move their introduction to build 48.
+- **Early comparisons are not complete announcements.** The journal groups Normal and touch-dash changes under `ef553af`, while the wiki first recorded them in builds 8 and 7; build 10's original comparison reported a clock check. Likewise, the journal's `1901d1f` art notes are broader than build 12's old “analytics only” summary. That categorical summary is now qualified as the original comparison's scope, not a denial of the official notes. The older source pairs are unavailable in this orb, so these historical rendering boundaries remain unresolved.
+- **Balance breadth is not reverified.** Under `8fa93e6` the journal says sixteen weak evolutions and nine weapons improved. The original build-11 summary said “every evolution.” This audit retains its recorded weapon/proc/freezer values but withdraws that unqualified breadth claim pending recovery of the old source pair. The current journal alone cannot establish every old/new value.
+- **Specific mechanics outrank shorthand.** The official `c7a474f` note says bosses freeze; the build-17 source review distinguishes frozen pests from bosses slowed to 50%, delayed patterns and separate Story rules. Those precise findings remain, rather than being replaced by the journal's shorthand. Build 16 likewise retains its Nightmare starting-curse distinction. Build 35 verifies a replay-submission client path, not server-side replay enforcement; the official replay claim remains labeled as official text.
+- **Regrouping is real.** Builds 24, 25, 30, 34 and 40 already record movement of older notes. Build 19 retains the Tater Slots payout attribution, build 22 the collision-radius change, and build 35 the display-default change. The new-weapons/buffs group in build 37 is not used to invent an unseen earlier weapon baseline. Art notes for `62522d2` and `7055bef` remain separate from the wiki's source-observed rendering deltas. No measured numbers or prior observation sequence were replaced by grouped notes.
+- **Announcements and dates.** The timeline no longer appends “No announcement found” to every build despite containing official notes, or calls a November 2 reply the first known fix despite November 1 journal fixes. Language additions now cite the journal's November 1–2 groups instead of claiming there was no announcement. Journal dates are preserved without asserting a timezone from wiki deployment times, and no longer imply that an earlier feature necessarily survives unchanged in every later build.
+- **Historical assets.** The original `main-D3tdcOXz.js` mechanics archive is preserved unchanged and remains excluded from the current quote checker. Its original assets were not recovered or reverified. Direct CDN checks during this audit also returned 404 for the build-9, build-10 and build-11 entry chunks. Existing reviewed evidence is retained, but neither present-day source nor official notes can replace those missing historical comparisons. Non-journal launch/trivia quotations were not independently re-researched in this audit.
+
+### Future checks
+
+The existing extractor now follows the panel's comparator, records source URL/SHA-256 and rejects duplicate note identities. The updater reports additions, removals, revised text/metadata, ordering, date/code regrouping and moves out of the unversioned group, keeping both before and after values. With an unchanged game build it still checks the saved journal against the mirrored source and reports drift without erasing the original build review. Old notes without stable IDs use their message IDs; a rewritten message ID may therefore appear as a removal plus addition rather than an asserted identity match.
+
+These are review signals, not automatic gameplay conclusions. Future workers must compare the complete current journal, preserve old/new source and measurement evidence, and update the canonical wiki-update skill in the same cycle whenever the method changes.

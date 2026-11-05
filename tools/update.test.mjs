@@ -4,6 +4,50 @@ import { mkdtempSync, mkdirSync, copyFileSync, writeFileSync, readFileSync, rmSy
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { execFileSync } from 'node:child_process';
+import { createHash } from 'node:crypto';
+import { extractChangelog, compareChangelog } from './dump-changelog.mjs';
+
+// Declaration order intentionally differs from render order; ties use the game's own comparator.
+const journalSource = 'function g(a,b){return a.added===b.added?(a.id<b.id?-1:1):(a.added<b.added?-1:1)}function k(kind,text){return{kind,text}}function y(id,n){return{...n,id}}var u=[{id:`z`,added:`2026-11-04`,note:()=>k(`ui`,o._({id:`Z`,message:[`Last`]}))},{id:`b`,added:`2026-11-03`,note:()=>k(`balance`,o._({id:`B`,message:[`Second`]}))},{id:`a`,added:`2026-11-03`,note:()=>k(`fix`,o._({id:`A`,message:[`First`]}))}],h=[function(){return{date:`2026-11-01`,waves:[{version:`123abcd`,lines:[k(`art`,o._({id:`OLD`,message:[`Older`]}))]}]}}];u.toSorted(g).map(n=>y(n.id,n.note()));var d=[{date:`2026-11-04`,waves:[{version:`456abcd`,lines:[y(`new`,k(`weapon`,o._({id:`NEW`,message:[`Newest dated`]})))]}]},...h.map(n=>n())];';
+
+test('journal extraction preserves all days, render sorting, text and source provenance', () => {
+  const root = mkdtempSync(join(tmpdir(), 'wiki-journal-'));
+  try {
+    const chunk = 'changelog-panel-fixture1.js';
+    writeFileSync(join(root, chunk), journalSource);
+    const result = extractChangelog(root, 'main-fixture1.js');
+    assert.deepEqual(result.unreleased.map((l) => l.text), ['First', 'Second', 'Last']);
+    assert.deepEqual(result.days.map((d) => [d.date, d.waves[0].version, d.waves[0].lines[0].text]), [
+      ['2026-11-04', '456abcd', 'Newest dated'], ['2026-11-01', '123abcd', 'Older'],
+    ]);
+    assert.deepEqual(result.source, { url: `https://tibo.dog/assets/${chunk}`, sha256: createHash('sha256').update(journalSource).digest('hex') });
+    writeFileSync(join(root, chunk), journalSource.replace('id:`NEW`', 'id:`OLD`'));
+    assert.throws(() => extractChangelog(root, 'main-fixture1.js'), /duplicate note msgId/);
+  } finally {
+    rmSync(root, { recursive: true, force: true });
+  }
+});
+
+test('journal comparison reports omissions, revisions, metadata, grouping and order, ignoring extraction dates', () => {
+  const before = { unreleased: [{ id: 'a', msgId: 'A', kind: 'ui', text: 'First' }, { msgId: 'B', kind: 'fix', text: 'Second' }], days: [{ date: '2026-11-01', waves: [{ version: '123abcd', lines: [] }] }] };
+  const after = structuredClone(before);
+  after.extracted = 'tomorrow';
+  assert.deepEqual(compareChangelog(before, after), []);
+  after.unreleased.reverse();
+  assert.equal(compareChangelog(before, after).length, 2);
+  after.unreleased = [];
+  after.days[0].waves[0].lines = [{ ...before.unreleased[0], text: 'Revised', kind: 'balance', msgId: 'A2' }];
+  after.days[0].date = '2026-11-02';
+  const changes = compareChangelog(before, after);
+  assert.equal(changes.find((c) => c.id === 'B').type, 'removed');
+  const moved = changes.find((c) => c.id === 'a');
+  assert.equal(moved.before.version, 'next');
+  assert.equal(moved.after.version, '123abcd');
+  assert.equal(moved.after.line.text, 'Revised');
+  assert.equal(moved.after.line.kind, 'balance');
+  assert.ok(changes.some((c) => c.type === 'date/version groups changed'));
+  assert.equal(compareChangelog(after, before).find((c) => c.id === 'B').type, 'added');
+});
 
 test('quote repair updates prose source labels even when the quoted code is unchanged', () => {
   const root = mkdtempSync(join(tmpdir(), 'wiki-quotes-'));
@@ -71,6 +115,7 @@ for (const scenario of [
   { name: 'does not erase an interrupted review with --force', pending: 'main-current1.js', force: true },
   { name: 'keeps older unreviewed builds visible', pending: 'main-previous.js' },
   { name: 'reports up-to-date only when all builds are reviewed' },
+  { name: 'detects a dropped journal note even when the game build is unchanged', drift: true },
 ]) {
   test(scenario.name, () => {
     const root = mkdtempSync(join(tmpdir(), 'wiki-update-'));
@@ -80,6 +125,11 @@ for (const scenario of [
       const cache = join(root, '.cache', 'main-current1');
       mkdirSync(join(cache, 'assets'), { recursive: true });
       copyFileSync(new URL('./update.mjs', import.meta.url), join(root, 'tools', 'update.mjs'));
+      copyFileSync(new URL('./dump-changelog.mjs', import.meta.url), join(root, 'tools', 'dump-changelog.mjs'));
+      writeFileSync(join(cache, 'assets', 'changelog-panel-fixture1.js'), journalSource);
+      const journal = extractChangelog(join(cache, 'assets'), 'main-current1.js');
+      if (scenario.drift) journal.unreleased.pop();
+      writeFileSync(join(root, 'data', 'changelog.json'), JSON.stringify(journal));
       writeFileSync(join(root, 'tools', 'fetch-build.mjs'), `export async function mirror() {
         return { main: 'main-current1.js', dir: ${JSON.stringify(join(cache, 'assets'))} };
       }`);
@@ -94,7 +144,7 @@ for (const scenario of [
       const report = '# Original review\nDiff against the last reviewed build.\n';
       writeFileSync(join(cache, 'report.md'), report);
       const output = execFileSync(process.execPath, [join(root, 'tools', 'update.mjs'), '--apply', ...(scenario.force ? ['--force'] : [])], { encoding: 'utf8' });
-      assert.match(output, new RegExp(`status: ${scenario.pending ? 'needs-review' : 'up-to-date'}\\n$`));
+      assert.match(output, new RegExp(`status: ${scenario.pending || scenario.drift ? 'needs-review' : 'up-to-date'}\\n$`));
       if (scenario.pending) assert.ok(output.includes(scenario.pending));
       assert.equal(readFileSync(join(cache, 'report.md'), 'utf8'), report);
       assert.deepEqual(JSON.parse(readFileSync(join(root, 'data', 'builds.json'), 'utf8')), history);

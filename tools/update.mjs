@@ -16,6 +16,7 @@ import { readFileSync, writeFileSync, readdirSync, cpSync, mkdirSync, existsSync
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { mirror } from './fetch-build.mjs';
+import { compareChangelog, extractChangelog } from './dump-changelog.mjs';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 process.chdir(ROOT);
@@ -40,12 +41,17 @@ const live = await mirror();
 console.log(`documented: ${build.main}  live: ${live.main}`);
 if (live.main === build.main && (!force || pending.length)) {
   // Reapplying would compare the updated data to itself and erase the original review report.
+  const currentJournal = extractChangelog(live.dir, live.main);
+  const savedJournal = JSON.parse(readFileSync('data/changelog.json', 'utf8'));
+  const drift = compareChangelog(savedJournal, currentJournal);
+  const journalReview = drift.length || savedJournal.source?.sha256 !== currentJournal.source.sha256;
+  if (journalReview) console.log(`journal review required (original reports preserved): ${JSON.stringify(drift)}`);
   for (const b of pending) {
     console.log(`review required: ${b.main}`);
     const report = join(ROOT, '.cache', b.main.replace(/\.js$/, ''), 'report.md');
     if (existsSync(report)) console.log(`report: ${report}`);
   }
-  console.log(`status: ${pending.length ? 'needs-review' : 'up-to-date'}`);
+  console.log(`status: ${pending.length || journalReview ? 'needs-review' : 'up-to-date'}`);
   process.exit(0);
 }
 const cache = dirname(live.dir);
@@ -67,19 +73,17 @@ const commit = readFileSync(join(live.dir, C['death-flow'] ?? ''), 'utf8').match
 run('node', ['tools/dump-build.mjs', live.dir, C.boot, C.sim, C['i18n-en-content'], join(cache, 'data')]);
 run('node', ['tools/dump-changelog.mjs', live.dir, live.main, join(cache, 'data', 'changelog.json')]);
 const notes = (f) => existsSync(f) ? JSON.parse(readFileSync(f, 'utf8')) : { unreleased: [], days: [] };
-const noteIds = (c) => new Set([...c.unreleased, ...c.days.flatMap((d) => d.waves.flatMap((w) => w.lines))].map((l) => `${l.msgId}|${l.text}`));
-const oldNotes = noteIds(notes('data/changelog.json'));
-const newNotes = [...noteIds(notes(join(cache, 'data', 'changelog.json')))].filter((k) => !oldNotes.has(k));
+const journalChanges = compareChangelog(notes('data/changelog.json'), notes(join(cache, 'data', 'changelog.json')));
 const diff = JSON.parse(run('node', ['tools/diff-data.mjs', 'data', join(cache, 'data'), '--json']));
 report.push(`Game commit: \`${commit ?? 'not found'}\` (was \`${build.commit}\`).`, '', '## Data changes', '');
 if (diff.changes.length) {
   review.push(`${diff.changes.length} data change(s)`);
   for (const c of diff.changes) report.push(`- \`${c.path}\`: \`${JSON.stringify(c.old)}\` → \`${JSON.stringify(c.new)}\``);
 } else report.push('None. Registry, English text and config values are identical.');
-report.push('', '## New in-game patch notes', '');
-if (newNotes.length) {
-  review.push(`${newNotes.length} new patch note(s)`);
-  for (const k of newNotes) report.push(`- ${k.slice(k.indexOf('|') + 1)}`);
+report.push('', '## In-game journal changes', '', 'Official grouping/publication is not proof of when gameplay first changed. Reconcile with old/new source and measured evidence; retain both histories.', '');
+if (journalChanges.length) {
+  review.push(`${journalChanges.length} journal change(s), including removals/revisions/regrouping`);
+  for (const change of journalChanges) report.push(`- ${change.type}${change.id ? ` (${change.id})` : ''}: ${JSON.stringify(change.before)} → ${JSON.stringify(change.after)}`);
 } else report.push('None.');
 report.push('');
 // Entity names in the other languages (pages/entities.mjs, /controls#languages). Changed translations are

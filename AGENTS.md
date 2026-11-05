@@ -2,6 +2,17 @@
 
 Many agents work in this repository at the same time: the monitor and its updater workers, prose and measurement workers, UI work and release coordinators. These rules keep them from guessing and from overwriting each other. Skills under `.claude/skills/` (`wiki-update`, `playing-tibo`) add task-specific steps on top of these rules.
 
+## Journal sourcing and method maintenance
+
+- The official live **What's new** journal is a required source, alongside old/new source comparisons and actual gameplay probes. Use the existing `tools/dump-changelog.mjs` / `tools/update.mjs` pipeline, not a parallel hand-maintained changelog. Compare the current-version group and every older collapsed date; check the panel's display sorting, not declaration order.
+- Keep official publication/grouping separate from source-observed introduction and measured behavior. A note moving to an older code is not a newly introduced mechanic; an omitted note is not proof a feature was removed. Preserve before/after evidence and prior build history. Record source build/chunk/URL/SHA-256, and disclose unavailable historical assets rather than relabeling old claims as current. `data/journal-audit.md` records the historical reconciliation and its limits.
+- `.claude/skills/wiki-update/SKILL.md` is the canonical repo-local **update wiki** skill (confirmed by `amp skill info wiki-update`). Whenever a method is discovered, corrected or changed, update and validate that skill in the **same cycle**, along with affected code/tests/guidance. Load `building-skills` before editing it; do not create a duplicate or edit a server-synced global cache. Recheck discovery and reload skills after changes.
+
+## Quiet reporting
+
+- Continue authorized automatic wiki updates/deployments and resolve ordinary failures autonomously. Do not send routine ownership, dispatch, progress or final-success messages to Puck (`T-01a1a96f-f2ab-702a-84dc-ac4a6f7026cd`). Send Puck a concise outcome only when a failure occurred **and was resolved**; surface genuinely unrecoverable authorization/safety blockers truthfully. This does not authorize bypassing tool approvals or safety controls.
+- Report the full requested result and evidence to the dispatching monitor in the worker's own final response and via the supplied reply route. Do not retry or unarchive an archived coordinator. Coordination with active source/deployment owners is still required when state is confusing.
+
 ## Shipping
 
 - **Deploy without asking.** Pushing ordinary changes to `main` and deploying them to production is pre-authorized. Do not stop to ask for approval.
@@ -10,7 +21,7 @@ Many agents work in this repository at the same time: the monitor and its update
   - `node build.mjs`;
   - `node tools/check-quotes.mjs <assets dir>`, which must report 0 unresolved;
   - `node check-middleware.mjs`;
-  - `node --test tools/*.test.mjs pages/*.test.mjs`.
+  - `node --test tools/*.test.mjs pages/*.test.mjs tools/detector/*.test.mjs`.
 - **Never force-push, `reset --hard`, or discard changes you did not make.** Other agents may share the checkout. Rebase only a tree whose uncommitted changes are your own.
 - **One deployment owner at a time.** A push to `main` does not deploy production on its own; someone creates the Vercel production deployment. During concurrent work, agree on a single deployer and do not race. If a coordinator or the monitor owns the deploy, push and hand over the commit SHA.
 - **Done means live.** Work is finished only when:
