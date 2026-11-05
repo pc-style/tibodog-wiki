@@ -550,5 +550,15 @@
   "status": "reviewed",
   "updated": "2026-11-05T08:24:18Z",
   "changes": "The official journal moves the existing Battery saver note to November 4 under 71b0c5e and background-update note under df20ba3; these correspond to previously reviewed builds 44 and 42, not new mechanics. The other two current notes retain their order. No note text, kind, target or identity changed, and none was added or omitted. All 210 JavaScript modules across 204 roles were paired, including duplicate mounts, workers/worklets, wrappers, choices and 27 locales: 209 match exactly after dependency/build-metadata substitutions, with only the reviewed journal data differing in the remaining module. Its executable surroundings and grouping wrapper are unchanged. All 15 referenced CSS files, four own atlas PNGs/tables, wiki icon pixels, balance data and translated names are unchanged. Same-input five-minute Standard/Normal runs (seed wiki, no give/warp/god) match: level 13, 1,322 kills, 150 HP; Fry Sentry 6,387.99 damage, Hash Brown Shield 1,072.59, Spud Cannon 2,573.88 and Fry Lance 602.48. Current citations refreshed; previous measurements and the D3 snapshot preserved. No changed mechanic branch or newly settled coverage question; unavailable historical sources were not reverified."
+ },
+ {
+  "seen": "2026-11-05",
+  "main": "main-BJ6c9aJj.js",
+  "boot": "boot-BrwtivlS.js",
+  "sim": "sim-BgzIHEha.js",
+  "commit": "4e4968175c9c",
+  "status": "reviewed",
+  "updated": "2026-11-05T09:01:08Z",
+  "changes": "Source-only refresh: all 210 JavaScript modules across 204 roles match exactly after mapped dependency and own-build commit substitutions, including duplicate mounts, choices, workers/worklets, wrappers and all 27 locales. No added or removed roles or residual executable changes. All 15 referenced CSS files, four own atlas PNGs/tables, wiki icon pixels, balance data and translated names are unchanged. The complete live journal matches all 162 ordered date/code/kind/text records (28/41/47/46); no additions, omissions, revisions, metadata, ordering or regrouping changes. Same-input five-minute Standard/Normal runs (seed wiki, no give/warp/god) match: level 13, 1,322 kills, 150 HP; Fry Sentry 6,387.99 damage, Hash Brown Shield 1,072.59, Spud Cannon 2,573.88 and Fry Lance 602.48. Current source citations refreshed; prior numeric history and the D3 snapshot preserved. No changed mechanic branch or newly settled coverage question; unavailable historical sources were not reverified."
  }
 ]
