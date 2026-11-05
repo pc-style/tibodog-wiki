@@ -600,5 +600,15 @@
   "status": "reviewed",
   "updated": "2026-11-05T09:59:23Z",
   "changes": "The Colorado Queen now fires two aimed eggs instead of three two-shot bursts. Eggs stop and split into five larva bullets after 1.35 s (speed 55, or 70 on Nightmare; 60% damage), only while their original owner is alive and visible. New egg/larva art and one official journal note, translated in all 26 other languages. Reviewed all 210 JS roles, own index/warm list/15 CSS/atlases/223 icon crops and exact dependency identities; isolated actual-code old/new Normal/Nightmare measurements and owner/timing/pool controls confirm the changed attack. Same-input five-minute Standard/Normal smoke remains 1322 kills, level 13, HP 150 with damage from four weapons; this does not imply the new attack is unchanged. Prior numerical history and archival source limits preserved."
+ },
+ {
+  "seen": "2026-11-05",
+  "main": "main-BvLmNcA6.js",
+  "boot": "boot-DxOqqb5f.js",
+  "sim": "sim-BTjtt0jt.js",
+  "commit": "4c740f0a11e0",
+  "status": "reviewed",
+  "updated": "2026-11-05T10:18:04Z",
+  "changes": "Complete exact mapped-dependency comparison of all 210 JavaScript modules (including duplicate roles, workers, worklets and all 27 locales) found only dependency/build-ID renames. Own index and warm list map exactly; all 15 CSS files, atlas tables/PNGs and 223 icon crops are unchanged. No gameplay/data/name/journal changes since build 61; all 163 ordered live journal records and kind icons match. Same-input five-minute wiki Standard/Normal smoke with original run-extras rules matches build 61: 1322 kills, level 13, HP 150 and damage from four weapons. The Colorado Queen eggs remain a build-61 change; historical evidence and limits preserved."
  }
 ]
