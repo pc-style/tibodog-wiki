@@ -8,6 +8,7 @@
   "durable_objects": {
     "bindings": [{ "name": "DETECTOR", "class_name": "Detector" }]
   },
+  "r2_buckets": [{ "binding": "ARCHIVE", "bucket_name": "tibodog-game-builds" }],
   "migrations": [{ "tag": "v1", "new_sqlite_classes": ["Detector"] }],
   "triggers": { "crons": ["* * * * *"] }
 }
