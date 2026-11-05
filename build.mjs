@@ -7,6 +7,11 @@ import * as ent from './pages/entities.mjs';
 import { systemPages } from './pages/system.mjs';
 import { MECH } from './pages/mechanics.mjs';
 
+// /versions and /history show `changes` to players. Review notes belong in `evidence`, which /versions collapses.
+for (const b of BUILDS) {
+  if ((b.changes ?? '').length > 280) throw new Error(`data/builds.json: changes for build ${b.version} (${b.main}) is ${b.changes.length} chars; keep it to a short player-facing summary (≤ 280) and move review details into its "evidence" field.`);
+}
+
 const OUT = new URL('./dist/', import.meta.url).pathname;
 rmSync(OUT, { recursive: true, force: true });
 mkdirSync(OUT, { recursive: true });

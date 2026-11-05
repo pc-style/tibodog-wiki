@@ -410,8 +410,10 @@ function versions() {
       b.updated ? utc(b.updated) : '—',
       b.commit ? `\`${b.commit}\`` : '—',
       `\`${b.main}\``,
-      b.status === 'reviewed' ? b.changes : `**Not reviewed yet.** ${b.changes}`,
-    ])) + '\n';
+      (b.status === 'reviewed' ? b.changes : `**Not reviewed yet.** ${b.changes}`) + (b.evidence ? ` [Review evidence](#evidence-${b.version})` : ''),
+    ])) +
+    `\n## Review evidence\n\nThe full notes the wiki's reviewers wrote while comparing each build with the one before it: what was compared, what was measured and what could not be checked.\n\n` +
+    [...BUILDS].reverse().filter((b) => b.evidence).map((b) => `<details class="raw" id="evidence-${b.version}"><summary>Version ${b.version}: review evidence</summary>\n\n${b.evidence}\n\n</details>\n`).join('\n') + '\n';
 }
 
 export const MECH = { pois, gettingStarted, guides, sources, versions, coverage, bossSchedule };
