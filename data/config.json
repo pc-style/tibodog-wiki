@@ -5027,6 +5027,26 @@
   "andrewSpeech": {
    "lineSec": 3
   },
+  "damageNumbers": {
+   "sizeShare": 0.04,
+   "sizeMinCssPx": 10,
+   "hitSec": 1,
+   "critSec": 1.25,
+   "fadeInSec": 0.15,
+   "fadeOutSec": 0.35,
+   "riseUnits": 28,
+   "leanUnits": 6,
+   "popScale": 0.15,
+   "popSec": 0.2,
+   "critPopScale": 0.3,
+   "critPopSec": 0.26,
+   "overkillPopScale": 0.4,
+   "overkillPopSec": 0.3,
+   "endScale": 0.85,
+   "budgetMin": 5,
+   "budgetMax": 12,
+   "budgetCssPx": 40
+  },
   "keys": {
    "reroll": "KeyR",
    "skip": "KeyX",
