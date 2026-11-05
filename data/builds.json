@@ -747,5 +747,16 @@
   "updated": "2026-11-05T14:28:46Z",
   "changes": "Dash recharge now has a 0.75-second floor; normal Butter Socks timings are unchanged. The existing Deep Freezer journal note moves under 222ec08, without another gameplay change.",
   "evidence": "Compared all 275 reachable files in each own mirror against main-CvDFhAkW.js. Only sim, boot, main and the journal panel differ: sim adds dash.minCooldownSec=0.75 and clamps the rounded recharge ticks to that minimum; boot/main change only their own commit and sim IDs; the journal regroups the existing Deep Freezer note. Original sim boundary probes (seed wiki, Standard/Normal and Story/Normal, no give/warp/god; forced final dash multiplier) at 1/0.7/0.4/0.16/0.15/0.14/0 yield old 300/210/120/48/45/42/1 ticks and new 300/210/120/48/45/45/45 ticks, both assigned and observed recharge. Multipliers below 0.4 are synthetic, not naturally attainable through the normal 60% stat cap. Granting Butter Socks levels 0 through 5 through the real choice API gives matching 300/282/264/246/228/210 ticks and 0/1/1/2/2/3 extra charges in both builds. Same-input five-minute Standard/Normal seed wiki runs match completely, with each build's own RUN_EXTRAS rules installed and with no-rules controls: 1322 kills, level 13, HP 150, 38 dashes; no give/warp/god. Live Chromium journal check expanded every date: all 169 ordered date/code/kind/text records and kind icons match extraction (7/28/41/47/46). Deep Freezer's note moves to November 5 code 222ec08 and loses its added timestamp; damage numbers remain the sole current note. No note text or historical gameplay attribution is rewritten. All other assets, art, names and translated journal modules are unchanged. Current citations refreshed; unavailable historical original/D3 assets were not reverified."
+ },
+ {
+  "seen": "2026-11-05",
+  "main": "main-DTWWHM5A.js",
+  "boot": "boot-DB0Z2tqs.js",
+  "sim": "sim-CKDI2vsA.js",
+  "commit": "2fd0e4e84dc6",
+  "status": "reviewed",
+  "updated": "2026-11-05T14:42:02Z",
+  "changes": "No gameplay changes; a rebuild of the same game.",
+  "evidence": "Whole-build comparison (tools/same-build.mjs): all 275 files reachable from each build's own index.html match main-CagF4tvJ.js after mapping file hashes and the build's own commit id; zero changed or unmatched files. Registry, configuration, English text, translated names, journal grouping and icon pixels are unchanged. Live Chromium What's new check expanded every date and matched all 169 ordered date/code/kind/text records against extraction (7/28/41/47/46). Only the current version code changes to 2fd0e4e. Current citations and chunk references refreshed. No gameplay probe was needed for an identical rebuild; unavailable original historical assets were not reverified."
  }
 ]

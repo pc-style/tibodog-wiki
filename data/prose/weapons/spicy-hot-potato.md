@@ -7,7 +7,7 @@ Every 2 s it throws 3 potatoes (2 plus Tibo's built-in +1 amount, see [Stats](/s
 ## How it works
 
 - Hops, homing and the blast work as on [Hot Potato](/weapons/hot-potato): one pierce is used per hit, the potato turns to the nearest pest it has not hit yet within `hopRange` (110 here), and it explodes on the last pest or when its flight time runs out.
-- **Respawn.** On exploding, the potato spawns `fuse.respawn` (2) copies, spaced evenly around a random angle. Each copy has the original's damage, the full hop count it was launched with and a full flight timer. <small>[sim-ByXinCYv.js: `let r=n.fuseRespawn[t];if(r===0)return;let i=e.rng.angle();for(let n=0;n<r;n++)wp(e,t,i+n*N/r)`]</small>
+- **Respawn.** On exploding, the potato spawns `fuse.respawn` (2) copies, spaced evenly around a random angle. Each copy has the original's damage, the full hop count it was launched with and a full flight timer. <small>[sim-CKDI2vsA.js: `let r=n.fuseRespawn[t];if(r===0)return;let i=e.rng.angle();for(let n=0;n<r;n++)wp(e,t,i+n*N/r)`]</small>
 - The copies do not respawn again: a new projectile starts with no respawn value and the copy does not inherit it. So each thrown potato makes at most three blasts: its own and one per copy.
 - The copies start with an empty hit list, so they can hit pests the first potato already hit.
 
