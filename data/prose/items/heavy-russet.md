@@ -6,7 +6,7 @@ Legendary items share the smallest rarity weight, and Heavy Russet has weight 1 
 
 ## How it works
 
-- The bonk multiplies the hit after the elite/boss bonus and before the crit roll, so a bonk can also crit for 15 × 2 = 30× or more. <small>[sim-DrUZpiNa.js: `l*=i}let c=o.critChance+a.critBonus[r]`]</small>
+- The bonk multiplies the hit after the elite/boss bonus and before the crit roll, so a bonk can also crit for 15 × 2 = 30× or more. <small>[sim-JoUvrIFk.js: `l*=i}let c=o.critChance+a.critBonus[r]`]</small>
 - Only weapon hits can bonk. Dog bites, burn ticks and item blasts cannot.
 - The limit is 8 bonks per second per copy. At a 2% chance that only matters for very fast-hitting builds.
 - **Measured** (build 41 `main-B2gf34bA.js`, headless `tools/play.mjs`, standard mode, normal difficulty; copies added with `giveItem`; Peeler, Small Fry, Tot Toss, Chip Shuriken, Starch Chain and Seeker Sprouts each given 5 times with `give`; `warp(240)`; HP refilled every tick; Tibo walking a slow circle; later level-ups taking the first offer): over 180 s on seeds `s1`–`s5`, 1.97% of 24,931 rolls bonked with one copy (expected 2%), and 5.83% of 23,657 with three (expected 5.88%). With the chance set to 100% in the scenario (120 s, seeds `s1`–`s3`), one copy bonked 7.80–7.89 times per second and two copies 15.37–15.52.

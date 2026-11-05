@@ -71,8 +71,8 @@ export function extractChangelog(dir, main) {
   const sorted = need(src.match(/([\w$]+)\.toSorted\(([\w$]+)\)\.map\(\w+=>[\w$]+\(\w+\.id,\w+\.note\(\)\)\)/), 'unreleased notes');
   const [, unreleasedName, comparator] = sorted;
   const historyName = need(src.match(/\.\.\.([\w$]+)\.map\((\w+)=>\2\(\)\)\]/), 'dated history')[1];
-  // The newest dates are inline: `<name>=[{date:...},...<history>.map(e=>e())]`.
-  const inline = need(src.match(/[\w$]+=\[\{date:`/), 'inline newest dates');
+  // Newest dates may be assigned or passed directly into the display grouping function.
+  const inline = need(src.match(/\[\{date:`/), 'inline newest dates');
   const inlineStart = inline.index + inline[0].indexOf('[');
   const days = src.slice(inlineStart, closeOf(inlineStart));
   // Helper functions (kind/text, about, id) sit between the imports and the unreleased array.

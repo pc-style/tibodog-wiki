@@ -21,6 +21,11 @@ test('journal extraction preserves all days, render sorting, text and source pro
       ['2026-11-04', '456abcd', 'Newest dated'], ['2026-11-01', '123abcd', 'Older'],
     ]);
     assert.deepEqual(result.source, { url: `https://tibo.dog/assets/${chunk}`, sha256: createHash('sha256').update(journalSource).digest('hex') });
+    const argumentSource = journalSource.replace('var d=[{date:', 'render([{date:').replace(/\];$/, ']);');
+    writeFileSync(join(root, chunk), argumentSource);
+    const argumentResult = extractChangelog(root, 'main-fixture1.js');
+    assert.deepEqual(argumentResult.days, result.days);
+    assert.deepEqual(argumentResult.unreleased, result.unreleased);
     writeFileSync(join(root, chunk), journalSource.replace('id:`NEW`', 'id:`OLD`'));
     assert.throws(() => extractChangelog(root, 'main-fixture1.js'), /duplicate note msgId/);
   } finally {
