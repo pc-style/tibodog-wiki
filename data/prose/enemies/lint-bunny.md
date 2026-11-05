@@ -6,7 +6,7 @@ It is basic fodder: it walks straight at Tibo at speed 36 and has 8 HP and 3 con
 
 ## How it works
 
-It has no special behaviour: the `chase` kind just uses the default movement straight towards Tibo. <small>[sim-qQloWRmx.js: `` case`chase`:case`tank`:case`splitter`:return; ``]</small> With mass 0 it takes full knockback.
+It has no special behaviour: the `chase` kind just uses the default movement straight towards Tibo. <small>[sim-BfhgrRZL.js: `` case`chase`:case`tank`:case`splitter`:return; ``]</small> With mass 0 it takes full knockback.
 
 Lint Bunnies released by a Sock Pile take over the pile's HP, damage and speed scaling, so late-run bunnies are tougher than the base 8 HP suggests.
 

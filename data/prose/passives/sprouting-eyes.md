@@ -6,9 +6,9 @@ It is the catalyst for [Bottomless Sack](/weapons/bottomless-sack) (from [Grab B
 
 ## How it works
 
-The values per level are totals, not increments: the game reads the array entry for the current level.<small>[sim-qQloWRmx.js: ``function ur(e,t){return t<=0?0:typeof e==`number`?e*t:e[Math.min(t,e.length)-1]??0}``]</small> All amount bonuses are added, rounded down and added to each weapon's own amount.
+The values per level are totals, not increments: the game reads the array entry for the current level.<small>[sim-BfhgrRZL.js: ``function lr(e,t){return t<=0?0:typeof e==`number`?e*t:e[Math.min(t,e.length)-1]??0}``]</small> All amount bonuses are added, rounded down and added to each weapon's own amount.
 
-The bonus is skipped for `aura`, `cone`, `nuke` and `ring` weapons.<small>[sim-qQloWRmx.js: ``return e!==`aura`&&e!==`cone`&&e!==`nuke`&&e!==`ring` ``]</small> Among base weapons that means [Steam Vent](/weapons/steam-vent), [Deep Fryer](/weapons/deep-fryer), [Reset Button](/weapons/reset-button) and [Root Cellar](/weapons/root-cellar). Other weapons use amount in their own way, for example more wedges in a fan for [Gem Sling](/weapons/gem-sling) or more wires for [Potato Battery](/weapons/potato-battery).
+The bonus is skipped for `aura`, `cone`, `nuke` and `ring` weapons.<small>[sim-BfhgrRZL.js: ``return e!==`aura`&&e!==`cone`&&e!==`nuke`&&e!==`ring` ``]</small> Among base weapons that means [Steam Vent](/weapons/steam-vent), [Deep Fryer](/weapons/deep-fryer), [Reset Button](/weapons/reset-button) and [Root Cellar](/weapons/root-cellar). Other weapons use amount in their own way, for example more wedges in a fan for [Gem Sling](/weapons/gem-sling) or more wires for [Potato Battery](/weapons/potato-battery).
 
 Other amount sources are [GPU](/passives/gpu) (+1) and [Extra Eye](/items/extra-eye) (+1 per copy).
 
