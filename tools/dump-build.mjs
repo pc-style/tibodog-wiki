@@ -1,7 +1,9 @@
 // Loads a mirrored build's boot and sim modules in Node and writes registry.json,
 // config.json and en-content.json next to it, in the same shape as data/.
 // Usage: node tools/dump-build.mjs <assets dir> <boot file> <sim file> <content file> <out dir>
-import { writeFileSync, mkdirSync, readFileSync } from 'node:fs';
+import { writeFileSync, mkdirSync, readFileSync, unlinkSync } from 'node:fs';
+import { randomUUID } from 'node:crypto';
+import { pathToFileURL } from 'node:url';
 
 const [dir, bootF, simF, contentF, out] = process.argv.slice(2);
 const P = new Proxy(function () {}, {
@@ -56,9 +58,9 @@ for (const [src, m] of [['sim', sim], ['boot', boot]])
 const text = Object.values(content).find((v) => v && typeof v === 'object' && Object.keys(v).some((k) => k.startsWith('content.')));
 if (!text) throw new Error('content strings not found');
 
-// Difficulty table: not exported, so read the two object literals from the sim source:
-// a defaults object (used as-is by normal) and a per-level table that spreads it.
-function difficulty() {
+// Difficulty bindings are private. Evaluate them in their original module context so
+// overrides can use config bindings and helper calls, not just standalone literals.
+async function difficulty() {
   const code = readFileSync(`${dir}/${simF}`, 'utf8');
   const m = code.match(/([\w$]+)=\{alive:1,floorShare:0,/);
   if (!m) throw new Error('difficulty defaults not found');
@@ -76,13 +78,18 @@ function difficulty() {
   if (!t) throw new Error('difficulty table not found after defaults');
   const table = literal(defStart + defaults.length + t[1].length + 2);
   const spread = new RegExp(`\\.\\.\\.${m[1].replace(/\$/g, '\\$')},?`, 'g');
-  const D = new Function(`return ${defaults}`)();
-  const overrides = new Function(m[1], `return ${table.replace(spread, '')}`)({});
-  return { _source: `${simF}: difficulty defaults (used by normal) and per-level overrides`, defaults: D, ...overrides };
+  const temporary = `${dir}/.wiki-difficulty-${randomUUID()}.mjs`;
+  try {
+    writeFileSync(temporary, `${code}\nexport const __wikiDifficulty = {defaults:${m[1]},...${table.replace(spread, '')}};\n`);
+    const { __wikiDifficulty } = await import(pathToFileURL(temporary).href);
+    return { _source: `${simF}: difficulty defaults and per-level overrides`, ...__wikiDifficulty };
+  } finally {
+    unlinkSync(temporary);
+  }
 }
 
 mkdirSync(out, { recursive: true });
-writeFileSync(`${out}/difficulty.json`, JSON.stringify(difficulty(), null, 1));
+writeFileSync(`${out}/difficulty.json`, JSON.stringify(await difficulty(), null, 1));
 writeFileSync(`${out}/registry.json`, JSON.stringify(registry, null, 1));
 writeFileSync(`${out}/config.json`, JSON.stringify(config, null, 1));
 writeFileSync(`${out}/en-content.json`, JSON.stringify(Object.fromEntries(Object.entries(text).sort(([a], [b]) => a.localeCompare(b))), null, 1));

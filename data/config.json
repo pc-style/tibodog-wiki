@@ -551,6 +551,9 @@
      "alive": 150
     }
    ],
+   "lateFloor": [],
+   "capRampFromSec": 960,
+   "capRampFullSec": 1020,
    "ceilingScale": 1,
    "floorShare": 0
   },

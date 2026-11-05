@@ -620,5 +620,15 @@
   "status": "reviewed",
   "updated": "2026-11-05T10:28:09Z",
   "changes": "Complete exact mapped-dependency comparison of all 210 JavaScript modules, including duplicate roles, workers, worklets and all 27 locales, found only dependency/build-ID renames. Own index and warm list map exactly; all 15 CSS files, own atlas tables/PNGs and 223 icon RGBA crops are unchanged. No gameplay/data/name/journal changes since build 62; all 163 ordered live journal records and kind icons match. Same-input five-minute wiki Standard/Normal smoke with original run-extras rules matches build 62: 1322 kills, level 13, HP 150 and damage from four weapons. The Queen eggs remain a build-61 change; historical evidence and limits preserved."
+ },
+ {
+  "seen": "2026-11-05",
+  "main": "main-D48kP0ty.js",
+  "boot": "boot-BA_gBL2t.js",
+  "sim": "sim-04-ude95.js",
+  "commit": "ec7aa1130bf5",
+  "status": "reviewed",
+  "updated": "2026-11-05T10:58:45Z",
+  "changes": "Hard and Nightmare ordinary spawn limits rise to 650 and 800, with a ceiling floor ramp from 16:00 to 17:00; hard caps are 700 and 850. Standard pest XP drops gain the HP phase step from 25:00 (×1.4, then ×2 at 30:00), without within-phase growth. Boss ground warnings render above other floor effects; busy fights suppress small death puffs and merge/reposition damage numbers. Shared-run score checks accept peak crowds through 850. Reviewed all 210 JS modules, own indexes/warm lists, 15 CSS, own atlases/PNGs/crops and all 27 locales; four new journal notes match all 167 ordered live records. Original old/new spawn, death, renderer and score-boundary probes confirm these changes. Same-input original-rule five-minute Standard/Normal smoke matches: 1322 kills, level 13, HP 150 and damage from four weapons. Forced late probes are not natural-play or physical-device performance evidence; historical limits preserved."
  }
 ]

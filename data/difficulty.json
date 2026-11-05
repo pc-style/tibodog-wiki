@@ -1,5 +1,5 @@
 {
- "_source": "sim-34F7B_ih.js: difficulty defaults (used by normal) and per-level overrides",
+ "_source": "sim-04-ude95.js: difficulty defaults and per-level overrides",
  "defaults": {
   "alive": 1,
   "floorShare": 0,
@@ -114,11 +114,26 @@
   "shotPuddleRadius": 1.5,
   "shotPuddleSec": 1.65,
   "returnSpeed": 1.05,
+  "crowd": 1.3,
   "promises": [
    {
     "kind": "mixReach",
     "min": 0.25,
     "max": 0.35
+   },
+   {
+    "kind": "lateCrowd",
+    "skills": [
+     "practiced",
+     "expert"
+    ],
+    "minutes": {
+     "first": 18,
+     "last": 19
+    },
+    "minAlive": 15,
+    "min": 650,
+    "max": 700
    }
   ]
  },
@@ -170,11 +185,26 @@
   "returnSpeed": 1.05,
   "sharpAttacks": true,
   "areaScale": 1.45,
+  "crowd": 1.6,
   "promises": [
    {
     "kind": "mixReach",
     "min": 0.03,
     "max": 0.15
+   },
+   {
+    "kind": "lateCrowd",
+    "skills": [
+     "practiced",
+     "expert"
+    ],
+    "minutes": {
+     "first": 18,
+     "last": 19
+    },
+    "minAlive": 15,
+    "min": 800,
+    "max": 850
    }
   ]
  }

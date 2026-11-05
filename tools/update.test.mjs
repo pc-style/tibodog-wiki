@@ -104,11 +104,18 @@ test('extracts boss definitions and encounter order from either registry layout'
       const defs = '[{id:"first",hp:650},{id:"second",hp:9000}]';
       const bosses = `{boss:()=>{},bosses:${defs},bossOrder:[${defs}[1],${defs}[0]]}`;
       writeFileSync(join(root, 'boot.js'), `export default {weapon:()=>{},allWeapons:[],${split ? 'bossIds:["first","second"]' : `...${bosses}`}}`);
-      writeFileSync(join(root, 'sim.js'), `const defaults={alive:1,floorShare:0,shotPuddleSec:1},levels={easy:{...defaults,alive:.8}}; export default ${split ? bosses : '{}'};`);
+      writeFileSync(join(root, 'sim.js'), `const cfg={spawns:{maxEnemies:500,hardCap:730}};
+        function target(n){return {kind:'lateCrowd',min:n,max:n+cfg.spawns.hardCap-cfg.spawns.maxEnemies}}
+        const defaults={alive:1,floorShare:0,shotPuddleSec:1},levels={easy:{...defaults,alive:.8},hard:{...defaults,crowd:650/cfg.spawns.maxEnemies,promises:[target(650)]}};
+        export default ${split ? bosses : '{}'};`);
       execFileSync(process.execPath, [new URL('./dump-build.mjs', import.meta.url).pathname, root, 'boot.js', 'sim.js', 'content.js', join(root, 'out')]);
       const registry = JSON.parse(readFileSync(join(root, 'out', 'registry.json')));
       assert.deepEqual(registry.bosses, [{ id: 'first', hp: 650 }, { id: 'second', hp: 9000 }]);
       assert.deepEqual(registry.bossOrder.map((b) => b.id), ['second', 'first']);
+      const difficulty = JSON.parse(readFileSync(join(root, 'out', 'difficulty.json')));
+      assert.equal(difficulty.defaults.alive, 1);
+      assert.deepEqual(difficulty.easy, { alive: 0.8 });
+      assert.deepEqual(difficulty.hard, { crowd: 1.3, promises: [{ kind: 'lateCrowd', min: 650, max: 880 }] });
     }
   } finally {
     rmSync(root, { recursive: true, force: true });
