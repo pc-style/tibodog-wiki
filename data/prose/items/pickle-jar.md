@@ -2,7 +2,7 @@
 
 Pickle Jar is a common item that adds 0.1 recovery, which heals Tibo 0.1 HP per second. Copies stack additively. It is one of eight Common items of equal weight, so with no luck it is about 7.4% of random item rolls.
 
-Recovery is applied continuously while the run plays and never heals above max HP. <small>[sim-rLGjJtYK.js: `i.recovery>0&&Zo(e,i.recovery*t)`]</small> One jar is 6 HP per minute, or 120 HP over a 20-minute run. For scale, Tibo starts with 150 max HP on Normal (100 × 1.5).
+Recovery is applied continuously while the run plays and never heals above max HP. <small>[sim-Bgf_4bDZ.js: `i.recovery>0&&Zo(e,i.recovery*t)`]</small> One jar is 6 HP per minute, or 120 HP over a 20-minute run. For scale, Tibo starts with 150 max HP on Normal (100 × 1.5).
 
 ## Tips
 

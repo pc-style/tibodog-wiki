@@ -500,5 +500,15 @@
   "status": "reviewed",
   "updated": "2026-11-05T05:38:44Z",
   "changes": "Metadata-only rebuild relative to build 50: all 210 JavaScript modules across 204 roles, including six duplicate-role pairs, workers, worklets and all 27 localizations, match after exact mapped dependency filenames and own-commit literals. No added or removed roles, gameplay or journal changes. All 15 referenced CSS files and four atlas PNGs are byte-identical; each build's own atlas tables and extracted icons agree. Registry, config, English and translated names are unchanged; current citations were refreshed to this build's own source files. Actual five-minute Standard/Normal runs on both builds (seed wiki, no give/warp/god) match in every field except build: level 13, 1,322 kills, 150 HP; Fry Sentry 6,387.99 damage, Hash Brown Shield 1,072.59, Spud Cannon 2,573.88 and Fry Lance 602.48. The live expanded journal checked on 5 November 2026 matches all 162 notes in display order (28/41/47/46 across November 4/3/2/1); its four current notes display under c0d363d, not a new gameplay introduction date. No changed mechanic or newly settled coverage question was found. Prior measurements and the D3 archival snapshot are preserved; deleted historical sources and physical-device performance were not reverified."
+ },
+ {
+  "seen": "2026-11-05",
+  "main": "main-2oO1xVlb.js",
+  "boot": "boot-_L_w0iOt.js",
+  "sim": "sim-Bgf_4bDZ.js",
+  "commit": "fa2a07f153e7",
+  "status": "reviewed",
+  "updated": "2026-11-05T06:07:53Z",
+  "changes": "Metadata-only rebuild relative to build 51: all 210 JavaScript modules across 204 roles, including six duplicate-role pairs, workers, worklets and all 27 localizations, match after exact mapped dependency filenames and own-commit literals. No added or removed roles, gameplay or journal changes. All 15 referenced CSS files, four atlas PNGs and each build's own atlas tables are identical; extracted icons are pixel-identical. Registry, config, English and translated names are unchanged; current citations were refreshed to this build's own source files. Actual five-minute Standard/Normal runs on both builds (seed wiki, no give/warp/god) match in every field except build: level 13, 1,322 kills, 150 HP; Fry Sentry 6,387.99 damage, Hash Brown Shield 1,072.59, Spud Cannon 2,573.88 and Fry Lance 602.48. The live expanded journal checked on 5 November 2026 matches all 162 notes in display order (28/41/47/46 across November 4/3/2/1); its four current notes display under fa2a07f, not a new gameplay introduction date. No changed mechanic or newly settled coverage question was found. Prior measurements and the D3 archival snapshot are preserved; deleted historical sources and physical-device performance were not reverified."
  }
 ]
