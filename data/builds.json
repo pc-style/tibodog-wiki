@@ -410,5 +410,15 @@
   "status": "reviewed",
   "updated": "2026-11-05T00:12:51Z",
   "changes": "Update checks now run every 180 seconds during active play too, without reloading the run. Finding a different build warms same-origin assets and the selected language in the background at low priority; Save-Data and slow 2G connections skip downloads. The first audio-unlocking gesture after an update can fade music in over 0.6 seconds instead of cutting in. Adds a translated changelog note; preload dependency lists are trimmed. Reviewed all 197 JavaScript modules against the previous build's 196, pairing both mount/choices variants and worklet wrappers by role, including workers and all localizations. Combat logic, extracted gameplay data, English content, difficulty values, atlas tables/pixels and wiki icons are unchanged; Ketchup Kraken, Andrew and all 93 weapons remain. Same-seed five-minute Normal runs both finished with 1,322 kills and identical damage: Fry Sentry 6,387.99, Hash Brown Shield 1,072.59, Spud Cannon 2,573.88 and Fry Lance 602.48. Current citations, including hand-written entity prose, now name the exact current source."
+ },
+ {
+  "seen": "2026-11-05",
+  "main": "main-DG5OYSdZ.js",
+  "boot": "boot-BAouheRt.js",
+  "sim": "sim-qQloWRmx.js",
+  "commit": "febe941eab27",
+  "status": "reviewed",
+  "updated": "2026-11-05T01:03:26Z",
+  "changes": "Bosses defeated from 20:00 raise a Spud Forge: charge for 20 seconds and buy a limit break for a maxed weapon or eligible passive, starting at 2,500 gold. Breaks reset levels while strengthening the saved weapon shape or passive bonuses; evolutions and unions can then level to 8 too. Late-game enemy HP and damage now follow five-minute phases instead of multiplying by 4 every minute, and charger windups have a 0.6-second floor after 20:00. Standard scores use version 3: late point growth caps at 60:00 and then adds linearly, with a higher final cap. Large damage/HP numbers use compact suffixes, break marks appear on equipment and shared stats, and encounter-aware music adds crowd/event/boss layers and an overtime track. Replay submissions move into a lazy module and shared links carry break counts; old score versions remain readable. Reviewed all 211 JavaScript modules against the prior 197, including both choices/mount variants, workers, audio worklet implementations/wrappers and localization dictionaries. Base definitions, English content, difficulties and existing atlas pixels/icons are unchanged: Ketchup Kraken, Andrew and all 93 weapons remain. Same-input sim probes measured forges, breaks, evolution carry-over, phase boundaries, windups and long-run survival/dodging score arithmetic; the five-minute Normal smoke run again completed with 1,322 kills and identical four-weapon damage."
  }
 ]

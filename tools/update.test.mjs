@@ -28,6 +28,24 @@ test('quote repair updates prose source labels even when the quoted code is unch
   }
 });
 
+test('moved quotes retain their text and change only their own source label', () => {
+  const root = mkdtempSync(join(tmpdir(), 'wiki-moved-quotes-'));
+  try {
+    for (const dir of ['dist', 'pages', 'data/prose', 'assets']) mkdirSync(join(root, dir), { recursive: true });
+    const quote = 'cache:`no-store`,credentials:`omit`';
+    writeFileSync(join(root, 'assets/boot-current1.js'), 'otherCode');
+    writeFileSync(join(root, 'assets/replay-current1.js'), quote);
+    writeFileSync(join(root, 'dist/modes.md'), `[boot-current1.js: \`\` ${quote} \`\`]`);
+    writeFileSync(join(root, 'pages/modes.mjs'), `citeCode(BOOT, '${quote}')\n[boot-current1.js: \`otherCode\`]`);
+    writeFileSync(join(root, 'data/prose/modes.md'), `[boot-current1.js: \`\` ${quote} \`\`]`);
+    execFileSync(process.execPath, [new URL('./check-quotes.mjs', import.meta.url).pathname, join(root, 'assets'), '--write'], { cwd: root });
+    assert.equal(readFileSync(join(root, 'pages/modes.mjs'), 'utf8'), `citeCode('replay-current1.js', '${quote}')\n[boot-current1.js: \`otherCode\`]`);
+    assert.equal(readFileSync(join(root, 'data/prose/modes.md'), 'utf8'), `[replay-current1.js: \`\` ${quote} \`\`]`);
+  } finally {
+    rmSync(root, { recursive: true, force: true });
+  }
+});
+
 test('extracts boss definitions and encounter order from either registry layout', () => {
   const root = mkdtempSync(join(tmpdir(), 'wiki-dump-'));
   try {

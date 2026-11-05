@@ -111,7 +111,9 @@ run('node', ['--input-type=module', '-e', `
   const l = await import(${JSON.stringify(join(live.dir, pick(/^atlas-late\.generated-.{8}\.js$/)))});
   fs.writeFileSync(${JSON.stringify(join(atlasDir, 'atlas-early.json'))}, JSON.stringify(Object.values(e)[0]));
   fs.writeFileSync(${JSON.stringify(join(atlasDir, 'atlas-late.json'))}, JSON.stringify(Object.values(l)[0]));`]);
-const flagged = pick(/^flagged-atlas\.generated-.{8}\.js$/);
+// Several flagged sheets can coexist (for example the forge and weapon sheets).
+// Icon crops need the sheet that actually supplies icon sprites, not the first filename.
+const flagged = files.find((f) => /^flagged-atlas\.generated-.{8}\.js$/.test(f) && readFileSync(join(live.dir, f), 'utf8').includes('icon-'));
 if (flagged) run('node', ['--input-type=module', '-e', `
   import fs from 'node:fs';
   const { FLAGGED_ATLAS } = await import(${JSON.stringify(join(live.dir, flagged))});

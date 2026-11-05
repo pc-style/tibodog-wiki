@@ -88,6 +88,27 @@ if (write) {
   let edits = 0;
   const missed = [];
   for (const r of [...results.renamed, ...results.moved]) {
+    // A moved quote must change its named asset, not every citation of that asset.
+    // Page templates use cite/citeCode; prose and notes contain Markdown directly.
+    if (r.newFile !== r.file) {
+      for (const p of sources) {
+        const s = readFileSync(p, 'utf8');
+        let next = s;
+        for (const fn of ['cite', 'citeCode']) {
+          for (const label of [`'${r.file}'`, ...(r.file.startsWith('boot-') ? ['BOOT'] : r.file.startsWith('sim-') ? ['SIM'] : [])]) {
+            next = next.split(`${fn}(${label}, '${r.quote}')`).join(`${fn}('${r.newFile}', '${r.newQuote}')`);
+          }
+        }
+        for (const ticks of ['`', '\\`', '``', '\\`\\`']) {
+          for (const space of ['', ' ']) {
+            const from = `[${r.file}: ${ticks}${space}${r.quote.replaceAll('`', ticks.includes('\\') ? '\\`' : '`')}${space}${ticks}]`;
+            const to = from.replace(`[${r.file}:`, `[${r.newFile}:`);
+            next = next.split(from).join(to);
+          }
+        }
+        if (next !== s) { writeFileSync(p, next); edits++; }
+      }
+    }
     // update.mjs renames page chunks, but hand-written prose can still name the old build.
     if (r.newFile !== r.file && results.renamed.includes(r)) {
       for (const p of sources) {
