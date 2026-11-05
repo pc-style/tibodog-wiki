@@ -1,6 +1,14 @@
 #!/usr/bin/env bash
-set -euo pipefail
+set -uo pipefail
+
+cd "$(dirname "${BASH_SOURCE[0]}")/.."
 
 # Dependencies survive pause/resume. This static wiki has no runtime services
-# or authentication to restore; keep installs and live game fetches out of wakeup.
+# or authentication to restore; keep installs and long game work out of wakeup.
 echo 'Wiki ready; no runtime services to restore'
+
+# Read-only drift report (git / live game / production). Amp waits at most 10 s for this
+# hook, so it is capped at 8 s and never fails the wake. It fetches but never checks out,
+# resets or rebases: reconcile explicitly before pushing or deploying (see AGENTS.md).
+timeout 8 node tools/freshness.mjs || echo 'freshness check skipped (timed out or failed)'
+exit 0
