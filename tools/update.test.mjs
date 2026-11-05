@@ -122,6 +122,32 @@ test('extracts boss definitions and encounter order from either registry layout'
   }
 });
 
+test('headless runs install the original optional combat rules', () => {
+  const root = mkdtempSync(join(tmpdir(), 'wiki-play-'));
+  try {
+    const assets = join(root, '.cache/main-fixture1/assets');
+    mkdirSync(assets, { recursive: true });
+    mkdirSync(join(root, 'tools'));
+    writeFileSync(join(root, 'package.json'), '{"type":"module"}');
+    for (const file of ['play.mjs', 'load-endgame.mjs', 'fetch-build.mjs']) copyFileSync(new URL(file, import.meta.url), join(root, 'tools', file));
+    writeFileSync(join(assets, 'main-fixture1.js'), '');
+    writeFileSync(join(assets, 'boot-fixture1.js'), 'export default {}');
+    writeFileSync(join(assets, 'run-extras-fixture1.js'), 'export default {choicePanel(){},rules:{hit:()=>7},areas:{hit:()=>13}}');
+    writeFileSync(join(assets, 'sim-fixture1.js'), `export default {Game:class {
+      constructor(o){this.o=o;this.state={tick:0,me:0,player:{hp:[100]}}}
+      step(){this.state.player.hp[0]-=this.o.legendary.hit()+this.o.areas.hit();this.state.tick++}
+      drainEvents(){return []}
+    }}`);
+    const output = execFileSync(process.execPath, ['--input-type=module', '-'], { cwd: root, encoding: 'utf8', input: `
+      import {loadGame,Run} from './tools/play.mjs';
+      const run=new Run(await loadGame('main-fixture1.js'));run.step(1/60);console.log(run.hp);
+    ` });
+    assert.equal(output.trim(), '80');
+  } finally {
+    rmSync(root, { recursive: true, force: true });
+  }
+});
+
 test('dump includes content registered by the lazy endgame loader', () => {
   const root = mkdtempSync(join(tmpdir(), 'wiki-endgame-'));
   try {

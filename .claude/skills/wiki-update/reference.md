@@ -22,7 +22,7 @@ Edge cases behind the steps in SKILL.md. Each section says what goes wrong and w
 ## Playing
 
 - If `tools/play.mjs` cannot find `Game`, the stat enum or the recompute function, fix the lookup as part of the update.
-- Optional sim hooks need the browser's lazily installed rules (`RUN_EXTRAS.rules` via `useRules`/`installLegendary`). For such probes import and install the original rules from each mirror and keep a no-rules control; do not write a substitute callback.
+- `loadGame` exposes `extras` and `Run` installs its original combat and area rules automatically. Direct `new Game` probes must pass `legendary: api.extras?.rules` and `areas: api.extras?.areas` themselves. Keep a no-rules control when testing optional hooks; do not write substitute callbacks.
 - Use asymmetric inputs and both sides of boundaries; record seed, inputs, durations and numbers.
 - Spawn limits: a late crowd floor raises the ceiling, it does not guarantee that many are alive; keep ordinary limits separate from the hard-cap reserve. Probe the run config and the real spawn/death systems at timing boundaries, with Story and disabled-feature controls. For XP changes, measure the dropped pickup value.
 - Limits to state honestly: client replay submission is not server validation; draw cadence is not battery or temperature; Chromium's narrow viewport is not a phone; a forced scenario is not naturally reached gameplay.

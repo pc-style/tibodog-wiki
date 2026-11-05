@@ -34,6 +34,8 @@ export async function loadGame(main = JSON.parse(readFileSync(join(ROOT, 'data/b
   const sim = await import(pathToFileURL(join(dir, file(/^sim-[A-Za-z0-9_-]{8}\.js$/))).href);
   const boot = await import(pathToFileURL(join(dir, file(/^boot-[A-Za-z0-9_-]{8}\.js$/))).href);
   await loadEndgame(boot);
+  const extrasFile = file(/^run-extras-[A-Za-z0-9_-]{8}\.js$/);
+  const extras = extrasFile ? Object.values(await import(pathToFileURL(join(dir, extrasFile)).href)).find((v) => v?.choicePanel && v?.rules) : undefined;
   const Game = Object.values(sim).find((v) => v && typeof v === 'object' && typeof v.Game === 'function')?.Game;
   if (!Game) throw new Error(`no Game class in the sim chunk of ${main}`);
   const registry = Object.values(boot).find((v) => v && typeof v === 'object' && typeof v.weapon === 'function' && Array.isArray(v.allWeapons));
@@ -42,14 +44,14 @@ export async function loadGame(main = JSON.parse(readFileSync(join(ROOT, 'data/b
   // Index of each final stat in loadout.stats.values (a const enum, so only its literal is in the source).
   const lit = readFileSync(join(dir, file(/^sim-[A-Za-z0-9_-]{8}\.js$/)), 'utf8').match(/\{damageMult:0,[^}]*\}/)?.[0];
   const STAT = lit ? new Function(`return ${lit}`)() : {};
-  return { main, dir, sim, boot, Game, registry, recompute, STAT };
+  return { main, dir, sim, boot, Game, registry, recompute, STAT, extras };
 }
 
 // One run. The game pauses itself on every choice; `policy` answers them so time keeps moving.
 export class Run {
   constructor(api, { seed = 'wiki', mode, difficulty, god = false, policy = Run.firstPick } = {}) {
     this.api = api;
-    this.game = new api.Game({ seed, mode, difficulty, headless: true });
+    this.game = new api.Game({ seed, mode, difficulty, headless: true, legendary: api.extras?.rules, areas: api.extras?.areas });
     this.state.recordEvents = true;
     this.god = god;
     this.policy = policy;

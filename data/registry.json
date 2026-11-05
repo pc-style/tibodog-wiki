@@ -11415,6 +11415,12 @@
     "radius": 40,
     "leapTime": 0.55
    },
+   "sharpAttack": {
+    "kind": "hug",
+    "radius": 40,
+    "leapTime": 0.55,
+    "layout": "heart"
+   },
    "attackEvery": 3.6,
    "telegraph": 1.1,
    "patternEvery": 2.2,
@@ -11526,6 +11532,13 @@
     "ringRadius": 36,
     "minion": "beetle-brood"
    },
+   "sharpAttack": {
+    "kind": "summon",
+    "count": 8,
+    "ringRadius": 36,
+    "minion": "beetle-brood",
+    "layout": "stripes"
+   },
    "patternEvery": 2.8,
    "patterns": [
     {
@@ -11605,6 +11618,13 @@
     "ringRadius": 44,
     "minion": "maggot-swarm"
    },
+   "sharpAttack": {
+    "kind": "summon",
+    "count": 14,
+    "ringRadius": 44,
+    "minion": "maggot-swarm",
+    "layout": "spiral"
+   },
    "patternEvery": 3.6,
    "patterns": [
     {
@@ -11641,6 +11661,13 @@
     "radius": 40,
     "count": 3,
     "spread": 70
+   },
+   "sharpAttack": {
+    "kind": "slam",
+    "radius": 40,
+    "count": 3,
+    "spread": 70,
+    "layout": "star"
    },
    "patternEvery": 2.4,
    "patterns": [
@@ -11695,13 +11722,7 @@
     "spread": 80,
     "poolTime": 4,
     "poolDps": 12,
-    "layout": {
-     "kind": "wedges",
-     "count": 6,
-     "radius": 55,
-     "wave": 0.5,
-     "puddle": 11
-    }
+    "layout": "wedges"
    },
    "patternEvery": 3,
    "patterns": [
@@ -11760,6 +11781,13 @@
     "dashTime": 0.9,
     "width": 26
    },
+   "sharpAttack": {
+    "kind": "charge",
+    "dashSpeed": 320,
+    "dashTime": 0.9,
+    "width": 26,
+    "layout": "triangle"
+   },
    "patternEvery": 3,
    "patterns": [
     {
@@ -11794,6 +11822,12 @@
     "kind": "burrow",
     "radius": 40,
     "under": 1.2
+   },
+   "sharpAttack": {
+    "kind": "burrow",
+    "radius": 40,
+    "under": 1.2,
+    "layout": "serpent"
    },
    "patternEvery": 3,
    "patterns": [
@@ -11884,6 +11918,13 @@
     "dashTime": 1.1,
     "width": 70
    },
+   "sharpAttack": {
+    "kind": "charge",
+    "dashSpeed": 380,
+    "dashTime": 1.1,
+    "width": 70,
+    "layout": "wheel"
+   },
    "patternEvery": 2.4,
    "patterns": [
     {
@@ -11946,6 +11987,13 @@
     "count": 5,
     "spread": 80
    },
+   "sharpAttack": {
+    "kind": "slam",
+    "radius": 32,
+    "count": 5,
+    "spread": 80,
+    "layout": "gapRing"
+   },
    "patternEvery": 2.8,
    "patterns": [
     {
@@ -12005,13 +12053,7 @@
     "spread": 90,
     "poolTime": 5,
     "poolDps": 9,
-    "layout": {
-     "kind": "cropCircle",
-     "core": 21,
-     "orbit": 55,
-     "satellites": 6,
-     "satellite": 12.5
-    }
+    "layout": "cropCircle"
    },
    "patternEvery": 3.5,
    "patterns": [
@@ -12062,6 +12104,13 @@
     "dashSpeed": 280,
     "dashTime": 0.7,
     "width": 22
+   },
+   "sharpAttack": {
+    "kind": "charge",
+    "dashSpeed": 280,
+    "dashTime": 0.7,
+    "width": 22,
+    "layout": "cross"
    },
    "patternEvery": 2.6,
    "patterns": [
@@ -12138,6 +12187,13 @@
     "width": 22,
     "length": 360
    },
+   "sharpAttack": {
+    "kind": "sweep",
+    "lanes": 3,
+    "width": 22,
+    "length": 360,
+    "layout": "checkerboard"
+   },
    "patternEvery": 3.4,
    "patterns": [
     {
@@ -12179,24 +12235,7 @@
     "kind": "slam",
     "radius": 38,
     "count": 1,
-    "layout": {
-     "kind": "rings",
-     "bands": [
-      {
-       "inner": 0,
-       "outer": 19
-      },
-      {
-       "inner": 35,
-       "outer": 46
-      },
-      {
-       "inner": 62,
-       "outer": 72
-      }
-     ],
-     "wave": 0.35
-    }
+    "layout": "rings"
    },
    "patternEvery": 3,
    "patterns": [
@@ -12555,6 +12594,12 @@
     "radius": 40,
     "leapTime": 0.55
    },
+   "sharpAttack": {
+    "kind": "hug",
+    "radius": 40,
+    "leapTime": 0.55,
+    "layout": "heart"
+   },
    "attackEvery": 3.6,
    "telegraph": 1.1,
    "patternEvery": 2.2,
@@ -12666,6 +12711,13 @@
     "ringRadius": 36,
     "minion": "beetle-brood"
    },
+   "sharpAttack": {
+    "kind": "summon",
+    "count": 8,
+    "ringRadius": 36,
+    "minion": "beetle-brood",
+    "layout": "stripes"
+   },
    "patternEvery": 2.8,
    "patterns": [
     {
@@ -12748,24 +12800,7 @@
     "kind": "slam",
     "radius": 38,
     "count": 1,
-    "layout": {
-     "kind": "rings",
-     "bands": [
-      {
-       "inner": 0,
-       "outer": 19
-      },
-      {
-       "inner": 35,
-       "outer": 46
-      },
-      {
-       "inner": 62,
-       "outer": 72
-      }
-     ],
-     "wave": 0.35
-    }
+    "layout": "rings"
    },
    "patternEvery": 3,
    "patterns": [
@@ -12826,13 +12861,7 @@
     "spread": 90,
     "poolTime": 5,
     "poolDps": 9,
-    "layout": {
-     "kind": "cropCircle",
-     "core": 21,
-     "orbit": 55,
-     "satellites": 6,
-     "satellite": 12.5
-    }
+    "layout": "cropCircle"
    },
    "patternEvery": 3.5,
    "patterns": [
@@ -12883,6 +12912,13 @@
     "dashSpeed": 280,
     "dashTime": 0.7,
     "width": 22
+   },
+   "sharpAttack": {
+    "kind": "charge",
+    "dashSpeed": 280,
+    "dashTime": 0.7,
+    "width": 22,
+    "layout": "cross"
    },
    "patternEvery": 2.6,
    "patterns": [
@@ -12970,13 +13006,7 @@
     "spread": 80,
     "poolTime": 4,
     "poolDps": 12,
-    "layout": {
-     "kind": "wedges",
-     "count": 6,
-     "radius": 55,
-     "wave": 0.5,
-     "puddle": 11
-    }
+    "layout": "wedges"
    },
    "patternEvery": 3,
    "patterns": [
@@ -13033,6 +13063,12 @@
     "kind": "burrow",
     "radius": 40,
     "under": 1.2
+   },
+   "sharpAttack": {
+    "kind": "burrow",
+    "radius": 40,
+    "under": 1.2,
+    "layout": "serpent"
    },
    "patternEvery": 3,
    "patterns": [
@@ -13123,6 +13159,13 @@
     "width": 22,
     "length": 360
    },
+   "sharpAttack": {
+    "kind": "sweep",
+    "lanes": 3,
+    "width": 22,
+    "length": 360,
+    "layout": "checkerboard"
+   },
    "patternEvery": 3.4,
    "patterns": [
     {
@@ -13160,6 +13203,13 @@
     "radius": 40,
     "count": 3,
     "spread": 70
+   },
+   "sharpAttack": {
+    "kind": "slam",
+    "radius": 40,
+    "count": 3,
+    "spread": 70,
+    "layout": "star"
    },
    "patternEvery": 2.4,
    "patterns": [
@@ -13203,6 +13253,13 @@
     "dashTime": 0.9,
     "width": 26
    },
+   "sharpAttack": {
+    "kind": "charge",
+    "dashSpeed": 320,
+    "dashTime": 0.9,
+    "width": 26,
+    "layout": "triangle"
+   },
    "patternEvery": 3,
    "patterns": [
     {
@@ -13238,6 +13295,13 @@
     "count": 14,
     "ringRadius": 44,
     "minion": "maggot-swarm"
+   },
+   "sharpAttack": {
+    "kind": "summon",
+    "count": 14,
+    "ringRadius": 44,
+    "minion": "maggot-swarm",
+    "layout": "spiral"
    },
    "patternEvery": 3.6,
    "patterns": [
@@ -13275,6 +13339,13 @@
     "radius": 32,
     "count": 5,
     "spread": 80
+   },
+   "sharpAttack": {
+    "kind": "slam",
+    "radius": 32,
+    "count": 5,
+    "spread": 80,
+    "layout": "gapRing"
    },
    "patternEvery": 2.8,
    "patterns": [
@@ -13323,6 +13394,13 @@
     "dashSpeed": 380,
     "dashTime": 1.1,
     "width": 70
+   },
+   "sharpAttack": {
+    "kind": "charge",
+    "dashSpeed": 380,
+    "dashTime": 1.1,
+    "width": 70,
+    "layout": "wheel"
    },
    "patternEvery": 2.4,
    "patterns": [
