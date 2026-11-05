@@ -6,9 +6,9 @@ Brood are plain chasers: they walk straight at Tibo and hurt only on contact. Th
 
 ## How it works
 
-The in-game description says “Her brood hatches in a ring around Tibo.”, but the code places the ring 36 units around the Queen herself, not around Tibo. <small>[sim-DSrIjmoR.js: `Wa(e,a.x[t]+_(c)*i.ringRadius,a.y[t]+T(c)*i.ringRadius,6,n.telegraph,0)`]</small>
+The in-game description says “Her brood hatches in a ring around Tibo.”, but the code places the ring 36 units around the Queen herself, not around Tibo. <small>[sim-DS2NHJj-.js: `Wa(e,a.x[t]+_(c)*i.ringRadius,a.y[t]+T(c)*i.ringRadius,6,n.telegraph,0)`]</small>
 
-Hatched brood get the same time and [curse](/curse) scaling as ordinary pests. Any brood still alive 40 s after hatching disappears and drops nothing. <small>[sim-DSrIjmoR.js: `o>=0&&(e.enemies.despawnAt[o]=e.time+40)`]</small>
+Hatched brood get the same time and [curse](/curse) scaling as ordinary pests. Any brood still alive 40 s after hatching disappears and drops nothing. <small>[sim-DS2NHJj-.js: `o>=0&&(e.enemies.despawnAt[o]=e.time+40)`]</small>
 
 ## Tips
 

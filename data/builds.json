@@ -440,5 +440,15 @@
   "status": "reviewed",
   "updated": "2026-11-05T02:44:29Z",
   "changes": "Spittlebugs now fire two pairs of orbiting froth bubbles instead of three single shots. The pair's base forward speed is 70 instead of 75, with 0.35 seconds between pairs instead of 0.2 between singles; each bubble still deals 4 base damage. Orbits grow to radius 6 over 0.3 seconds; measured frequencies are 0.66 turns/s on Easy and Hard, 0.88 on Normal and 1.21 on Nightmare, whose radius is 7.2. Shot-path previews use the same motion and account for the orbit's reach, and the old spit sprite becomes an animated froth bubble. The new patch note is translated in all 26 non-English changelogs; the 27-language list and entity names are unchanged. Reviewed all 212 modules in 205 roles, including duplicate chunks, workers, worklets and each build's own atlases; icons are pixel-identical. Same-seed actual-code probes across all four difficulties measured three singles at ticks 30/41/53 becoming pairs at ticks 30/50, with opposite phases and difficulty-scaled motion. The five-minute Normal smoke again completed with 1,322 kills and damage from four weapons. Other definitions and late-game mechanics are unchanged."
+ },
+ {
+  "seen": "2026-11-05",
+  "main": "main-SQtK5eh9.js",
+  "boot": "boot-5tH1MZUJ.js",
+  "sim": "sim-DS2NHJj-.js",
+  "commit": "48673cda006b",
+  "status": "reviewed",
+  "updated": "2026-11-05T03:16:37Z",
+  "changes": "The title screen now tries normal, tight, compact and title-hidden layouts to give the Reset button more room on small screens. Its label can drop letter spacing and use more of the button width before shrinking; title and changelog spacing is measured more precisely. Compact layouts hide difficulty captions, and the tight layout adjusts picker and footer spacing. Gameplay definitions, simulation logic, patch notes, all 27 languages' entity names and icons are unchanged. Reviewed all 212 JavaScript modules, including duplicate roles, workers, worklets and each build's own atlases, plus the changed stylesheet. Same-seed five-minute Normal runs on the previous and current builds produced identical results: 1,322 kills and damage from four weapons."
  }
 ]
