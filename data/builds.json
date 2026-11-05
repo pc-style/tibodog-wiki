@@ -758,5 +758,16 @@
   "updated": "2026-11-05T14:42:02Z",
   "changes": "No gameplay changes; a rebuild of the same game.",
   "evidence": "Whole-build comparison (tools/same-build.mjs): all 275 files reachable from each build's own index.html match main-CagF4tvJ.js after mapping file hashes and the build's own commit id; zero changed or unmatched files. Registry, configuration, English text, translated names, journal grouping and icon pixels are unchanged. Live Chromium What's new check expanded every date and matched all 169 ordered date/code/kind/text records against extraction (7/28/41/47/46). Only the current version code changes to 2fd0e4e. Current citations and chunk references refreshed. No gameplay probe was needed for an identical rebuild; unavailable original historical assets were not reverified."
+ },
+ {
+  "seen": "2026-11-05",
+  "main": "main-C6X8CY_D.js",
+  "boot": "boot-BcmvN_Ku.js",
+  "sim": "sim-NFTWJMcM.js",
+  "commit": "a3e3bc189272",
+  "status": "reviewed",
+  "updated": "2026-11-05T16:01:23Z",
+  "changes": "No gameplay changes; a rebuild of the same game.",
+  "evidence": "Whole-build comparison (tools/same-build.mjs): all 275 files reachable from each build's own index.html match main-DTWWHM5A.js after mapping file hashes and the build's own commit id; zero changed or unmatched files. Both complete original mirrors contain 274 assets verified against detector archive SHA-256 manifests. Registry, configuration, English text, translated names, journal grouping and icon pixels are unchanged. Live Chromium What's new check expanded every date and matched all 169 ordered date/code/kind/text/art/icon records against extraction (7/28/41/47/46). Only the current version code changes to a3e3bc1. Current citations and chunk references refreshed. No gameplay probe was needed for an identical rebuild; unavailable original historical assets were not reverified."
  }
 ]
