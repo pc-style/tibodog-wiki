@@ -6,12 +6,12 @@ It is a swarm event, like the scheduled [Fry Fly Swarm](/events/fly-swarm), with
 
 ## How it works
 
-- **Geometry.** The gulls start beyond the edge of the view on one side, in a block 280 units wide (140 to each side of Tibo's position) and up to 60 deep. They fly in a fixed direction and never turn towards Tibo. <small>[sim-D6eyfxy3.js: `let t=r.range(-n.width,n.width),c=r.range(0,60),f=go(e,s,a-l*(d+c)-u*t,o-u*(d+c)+l*t)`]</small>
+- **Geometry.** The gulls start beyond the edge of the view on one side, in a block 280 units wide (140 to each side of Tibo's position) and up to 60 deep. They fly in a fixed direction and never turn towards Tibo. <small>[sim-CL_Cl1Ai.js: `let s=r.range(-n.width,n.width),d=r.range(0,60),f=go(e,s,a-l*(d+c)-u*t,o-u*(d+c)+l*t)`]</small>
 - **Count.** 24 × the enemy-count multiplier, capped at 2×. Before overtime the multiplier is 1 (see [Enemy scaling](/enemy-scaling)), so a drive-thru found before 20:00 always sends 24 gulls.
 - **Trigger.** If the enemy pool is full (550 on Easy/Normal, 700 on Hard, 850 on Nightmare), the drive-thru stays unused and the event tries again while Tibo is inside.
 - **Despawn.** Gulls are removed after 14 seconds or once they are about 460 units from Tibo, and drop nothing.
 
-**Measured** (headless `tools/play.mjs`, build `main-B2gf34bA`, standard mode, `--god`, Tibo teleported into the first Fry Palace Drive-Thru found at about 1:03 with pests removed first): every run spawned 24 gulls, on all four difficulties. In 5 of 10 runs (seeds `wiki` and `s1` to `s4`, Normal and Nightmare) one of them was gone again after the spawn tick, leaving 23. The band reaches about √(448² + 140²) ≈ 469 units from Tibo at its far corners, past the 460-unit despawn distance, so a gull placed there is probably removed at once (inference). <small>[sim-D6eyfxy3.js: `recycleDistance:460`]</small> With `--mode story`, entering the drive-thru fired no event.
+**Measured** (headless `tools/play.mjs`, build `main-B2gf34bA`, standard mode, `--god`, Tibo teleported into the first Fry Palace Drive-Thru found at about 1:03 with pests removed first): every run spawned 24 gulls, on all four difficulties. In 5 of 10 runs (seeds `wiki` and `s1` to `s4`, Normal and Nightmare) one of them was gone again after the spawn tick, leaving 23. The band reaches about √(448² + 140²) ≈ 469 units from Tibo at its far corners, past the 460-unit despawn distance, so a gull placed there is probably removed at once (inference). <small>[sim-CL_Cl1Ai.js: `recycleDistance:460`]</small> With `--mode story`, entering the drive-thru fired no event.
 
 ## Tips
 

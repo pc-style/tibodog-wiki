@@ -10858,9 +10858,8 @@
      "interval": 0.3,
      "telegraph": 0.8,
      "onHit": {
-      "kind": "slow",
-      "factor": 0.5,
-      "seconds": 1.5
+      "kind": "freeze",
+      "seconds": 0.3
      },
      "motion": {
       "turn": {
@@ -12068,9 +12067,8 @@
      "interval": 0.3,
      "telegraph": 0.8,
      "onHit": {
-      "kind": "slow",
-      "factor": 0.5,
-      "seconds": 1.5
+      "kind": "freeze",
+      "seconds": 0.3
      },
      "motion": {
       "turn": {

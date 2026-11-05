@@ -6,9 +6,9 @@ It walks towards Tibo at speed 34, the fastest of the tier-2 chargers, and lunge
 
 ## How it works
 
-The timings below are before 20:00. In Standard from 20:00, the windup is 0.6 s instead of 0.5 s; the dash and cooldown do not change. <small>[sim-D6eyfxy3.js: `return!In(e)||e.runClock<An?t:Math.max(t,.6)`]</small>
+The timings below are before 20:00. In Standard from 20:00, the windup is 0.6 s instead of 0.5 s; the dash and cooldown do not change. <small>[sim-CL_Cl1Ai.js: `return!Fn(e)||e.runClock<kn?t:Math.max(t,.6)`]</small>
 
-Its charge works like every charger's. It stops for a 0.5 s windup aimed at Tibo's position when the windup starts, then dashes in a straight line at 170 for about 0.76 s (1.3 × its 100-unit `dashRange`, so about 130 units). After that it walks normally for 1.6 s before it can charge again. <small>[sim-D6eyfxy3.js: `i.state[t]=2,i.timer[t]=1.3*n/r,i.windup[t]=0`]</small> The dash deals ordinary contact damage, no more.
+Its charge works like every charger's. It stops for a 0.5 s windup aimed at Tibo's position when the windup starts, then dashes in a straight line at 170 for about 0.76 s (1.3 × its 100-unit `dashRange`, so about 130 units). After that it walks normally for 1.6 s before it can charge again. <small>[sim-CL_Cl1Ai.js: `i.state[t]=2,i.timer[t]=1.3*n/r,i.windup[t]=0`]</small> The dash deals ordinary contact damage, no more.
 
 It uses the same charge numbers as the tier-3 [Bog Toad](/enemies/bog-toad), with about half its HP and a little over half its damage.
 
