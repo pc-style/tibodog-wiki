@@ -6,7 +6,7 @@ It is the catalyst for three evolutions: [Big Fry](/weapons/big-fry) (from [Smal
 
 ## How it works
 
-Picking up an XP gem adds its value times Tibo's XP gain multiplier.<small>[sim-Bgf_4bDZ.js: `o===g.xp)e.gemCount--,e.counters.gems++,Qo(e,a*i.growthMult)`]</small> That multiplier is `(1 + XP gain) × (1 + 0.5 × curse) × difficulty XP` (see [Stats](/stats)). The three parts multiply, so Fertilizer at level 5 together with [Rotten Spud](/passives/rotten-spud) at level 5 (curse 0.5) gives 1.4 × 1.25 = ×1.75 before the difficulty factor.
+Picking up an XP gem adds its value times Tibo's XP gain multiplier.<small>[sim-DrUZpiNa.js: `o===h.xp)e.gemCount--,e.counters.gems++,ds(e,a*i.growthMult)`]</small> That multiplier is `(1 + XP gain) × (1 + 0.5 × curse) × difficulty XP` (see [Stats](/stats)). The three parts multiply, so Fertilizer at level 5 together with [Rotten Spud](/passives/rotten-spud) at level 5 (curse 0.5) gives 1.4 × 1.25 = ×1.75 before the difficulty factor.
 
 Other XP gain sources are [Compost Tea](/items/compost-tea) (+0.06) and [Spud Shrine](/points-of-interest#spud-shrine) blessings. These add to Fertilizer's total.
 

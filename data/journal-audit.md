@@ -10,6 +10,8 @@ The supplied export's SHA-256 is `46aab5c28cf109aa822e4307ec85af58c36a5cbad2faac
 
 The subsequent build-49 review checked live `main-Cw6snbEQ.js` (`fa64517`) in the browser on the same date: all four days were expanded again, and all 162 ordered texts, kind fields and date/code groups matched extraction. The current-version label changed, not the four unversioned notes or historical groupings. Its source is [changelog-panel-BLoK4Oj4.js](https://tibo.dog/assets/changelog-panel-BLoK4Oj4.js), SHA-256 `17867239ec1236525c2980921fd179cde3aef62fbe954adda340da3e48431e1d`. This preserves the original snapshot rather than silently relabeling its browser evidence as the next build.
 
+The build-53 check on 5 November 2026 expanded all four days on live `main-DiDNiwIs.js`: all 162 ordered date/code/kind/text records still match extraction, with existing current notes now labeled `0281e61`. Source: [changelog-panel-CbnSpRoe.js](https://tibo.dog/assets/changelog-panel-CbnSpRoe.js), SHA-256 `21e1d9702006ea33f6e81f4f9bdd56b45804976a4b3a83fc838d79438a25d910`. The old/new journal comparison found no additions, omissions, revisions, metadata, ordering or regrouping changes; this does not reverify unavailable historical gameplay assets.
+
 The original extractor preserved declaration order for the four unversioned notes. The live UI instead sorts them using its comparator: **Battery saver → Spittlebugs → background updates → Forges**. This audit fixes that order without assigning those notes to the current build as new mechanics. Earlier dated notes already matched the full export word for word, with no missing or extra notes.
 
 ### Reconciliation with observed builds

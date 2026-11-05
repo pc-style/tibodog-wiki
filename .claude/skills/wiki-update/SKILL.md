@@ -47,6 +47,8 @@ Follow moved responsibilities into new/lazy modules. Separate consistent identif
 
 For a metadata-only candidate, strengthen generic hash-normalized diffs with an exact **mapped-dependency** check: replace each old asset filename with its paired new filename and only the known own-commit literals, then compare complete modules. Generic `CHUNK` placeholders can hide a swapped dependency. Prefer statement-level diffs to expensive character-level SequenceMatcher runs on large minified chunks. `fetch-build.mjs` mirrors JS/atlas PNGs, not all CSS: collect stylesheet references from each build's own index and modules, fetch those exact named files, record their digests and compare them explicitly. A missing local stylesheet is a mirror limitation, not evidence the game removed it.
 
+When identifier churn prevents exact equality, retain that failure list. A binding-aware AST comparison can separate local renames from changed statements while preserving literal values, static property names and exact mapped import paths; compare import bindings by use, not their declaration order. Treat moved imports as review findings, follow their producers and callers, and inspect residual changes rather than reporting a generic normalized match as exact equality. For rendering caches, probe asymmetric velocities, unchanged reads, changed components, recycled pool IDs and zero speed; for lazy effects, check the actual attachment caller, idempotence and audio's hazard reference. These isolated probes do not measure frame rate or prove every browser path.
+
 ### Play the new build
 
 Load the `playing-tibo` skill and play the new build, not just its diff:
