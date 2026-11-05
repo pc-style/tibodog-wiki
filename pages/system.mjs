@@ -75,6 +75,16 @@ export function systemPages(entityPages) {
 
   for (const p of MECH.guides()) add(p);
 
+  // ---------- Secrets (system pages miss build.mjs's prose pass, so read it here) ----------
+  add({
+    path: '/secrets',
+    title: 'Secrets and easter eggs',
+    description: 'Spoilers: the hidden jokes, scripted lines and reveals in tibo.dog, with how to trigger each one.',
+    body: readFileSync(new URL('../data/prose/secrets.md', import.meta.url), 'utf8'),
+    sources: ['Deployed tibo.dog JavaScript, quoted inline', 'Headless runs with `tools/play.mjs` and browser play on tibo.dog, 2026-11-05'],
+    search: 'secrets easter eggs spoilers hidden jokes taunt fries alex suit day 28 cut-in reset zombie',
+  });
+
   // ---------- Mechanics reference ----------
   const raw = readFileSync(new URL('../data/mechanics-notes.md', import.meta.url), 'utf8')
     .replace(/^# .*\n+Build:.*\n+/m, '')
