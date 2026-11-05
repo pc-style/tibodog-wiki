@@ -6,7 +6,7 @@ With 1300 base HP it is the weakest of the scheduled bosses after the first two:
 
 It drops a [chest](/chests), an XP gem worth 60 XP and a 25-gold coin (both multiplied by the biome's XP and gold multipliers).
 
-**Measured** (headless `tools/play.mjs`, build `main-B2gf34bA`, seed `wiki`, standard mode, `--god`; the clock warped to 2 s before each minute and stepped across it; level-up offers taken first-in-order except Rotten Spud, so curse stays at the difficulty's start value): it spawned at exactly 4:00 on all four difficulties, with 650 HP on Easy, 845 on Normal, 910 on Hard and 1358.5 on Nightmare. The Nightmare figure is 10% above base HP × the difficulty multiplier because Nightmare starts every run with one curse, and boss HP is multiplied by 1 + curse. <small>[sim-DS2NHJj-.js: `startCurses:1,tierLag:2,wallPests:.6`]</small> <small>[sim-DS2NHJj-.js: `n.maxHp[r]=i.hp*t.hpMult*(1+e.loadout.stats.curse)`]</small> Seeds `s1` to `s4` gave the same Normal times and HP.
+**Measured** (headless `tools/play.mjs`, build `main-B2gf34bA`, seed `wiki`, standard mode, `--god`; the clock warped to 2 s before each minute and stepped across it; level-up offers taken first-in-order except Rotten Spud, so curse stays at the difficulty's start value): it spawned at exactly 4:00 on all four difficulties, with 650 HP on Easy, 845 on Normal, 910 on Hard and 1358.5 on Nightmare. The Nightmare figure is 10% above base HP × the difficulty multiplier because Nightmare starts every run with one curse, and boss HP is multiplied by 1 + curse. <small>[sim-FslaxQ7g.js: `startCurses:1,tierLag:2,wallPests:.6`]</small> <small>[sim-FslaxQ7g.js: `n.maxHp[r]=i.hp*t.hpMult*(1+e.loadout.stats.curse)`]</small> Seeds `s1` to `s4` gave the same Normal times and HP.
 
 ## Fight
 
@@ -14,7 +14,7 @@ The Masher walks towards Tibo, fires a single bullet ring, and every 3.2 s of wa
 
 ### Mash slam
 
-The Masher marks a circle of radius 38 centred exactly where Tibo is standing when the attack starts. 1.2 s later the circle strikes once for the Masher's contact damage. The circle does not follow Tibo, and the boss stands still while it is marked. <small>[sim-DS2NHJj-.js: `let a=e.player.x[e.me],o=e.player.y[e.me];for(let s=0;s<i.count;s++){let c=s===0?0:(i.spread??60)*e.rng.next()`]</small> If the Masher dies before the strike, the marked circle is removed. <small>[sim-DS2NHJj-.js: `function Gm(e,t){let n=e.zones.ownerBoss[t];return n>=0&&!e.bosses.pool.has(n)}`]</small>
+The Masher marks a circle of radius 38 centred exactly where Tibo is standing when the attack starts. 1.2 s later the circle strikes once for the Masher's contact damage. The circle does not follow Tibo, and the boss stands still while it is marked. <small>[sim-FslaxQ7g.js: `let a=e.player.x[e.me],o=e.player.y[e.me];for(let s=0;s<i.count;s++){let c=s===0?0:(i.spread??60)*e.rng.next()`]</small> If the Masher dies before the strike, the marked circle is removed. <small>[sim-FslaxQ7g.js: `function Gm(e,t){let n=e.zones.ownerBoss[t];return n>=0&&!e.bosses.pool.has(n)}`]</small>
 
 ### Potato ring
 
@@ -32,7 +32,7 @@ Every 3 s of walking it fires one ring of 10 bullets after a 0.7 s warning, at s
 | Inner ring | 50.8–66.7 units | 1.55 s |
 | Outer ring | 89.9–104.4 units | 1.9 s |
 
-<small>[sim-DS2NHJj-.js: `let a=t[i],o=Wd(e,Z.cx,Z.cy,a.outer*r,Z.delay+i*n)`]</small>
+<small>[sim-FslaxQ7g.js: `let a=t[i],o=Wd(e,Z.cx,Z.cy,a.outer*r,Z.delay+i*n)`]</small>
 
 The ring bullets also weave from side to side by up to 9 units at 1.1 waves per second, with neighbouring bullets weaving in opposite directions, so the gaps open and close as the ring expands.
 

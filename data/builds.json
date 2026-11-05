@@ -450,5 +450,15 @@
   "status": "reviewed",
   "updated": "2026-11-05T03:16:37Z",
   "changes": "The title screen now tries normal, tight, compact and title-hidden layouts to give the Reset button more room on small screens. Its label can drop letter spacing and use more of the button width before shrinking; title and changelog spacing is measured more precisely. Compact layouts hide difficulty captions, and the tight layout adjusts picker and footer spacing. Gameplay definitions, simulation logic, patch notes, all 27 languages' entity names and icons are unchanged. Reviewed all 212 JavaScript modules, including duplicate roles, workers, worklets and each build's own atlases, plus the changed stylesheet. Same-seed five-minute Normal runs on the previous and current builds produced identical results: 1,322 kills and damage from four weapons."
+ },
+ {
+  "seen": "2026-11-05",
+  "main": "main-CIL4Vmce.js",
+  "boot": "boot-Ccgs0qqs.js",
+  "sim": "sim-FslaxQ7g.js",
+  "commit": "5977c789d6ef",
+  "status": "reviewed",
+  "updated": "2026-11-05T03:41:14Z",
+  "changes": "Map tips now reread their saved On/Off setting after another tab changes it or clears storage, rather than keeping a stale cached value. Run-end screens, loot notices and story text are initialized after the simulation loads instead of on the title screen; visitor state and Story-ending checks move between chunks without changing their rules. Gameplay definitions, difficulty, English content, patch notes, all 27 languages' entity names, stylesheet and atlas pixels are unchanged. Reviewed all 210 JavaScript modules against the previous 212, including duplicate roles, workers, worklets, localizations and each build's own atlases. Same-seed five-minute Normal runs matched at 1,322 kills and four-weapon damage of 6,387.99 / 1,072.59 / 2,573.88 / 602.48. Three same-seed Story comparisons matched at 60.6 / 61.4 / 61.1 seconds with 612 / 431 / 482 kills and identical visitor events. Actual old/new storage-controller probes confirmed that an external Off change stayed On before this build but reads Off now; unrelated keys do not invalidate the cache."
  }
 ]
