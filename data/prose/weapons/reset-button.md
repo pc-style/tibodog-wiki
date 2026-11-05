@@ -7,9 +7,9 @@ You get it from a level-up card. Every level only lowers the cooldown, from 90 s
 ## How it works
 
 - **What counts as on screen.** Pests and bosses are hit if they overlap the 320 × 320 play area centred on Tibo (`view.playWidth` and `playHeight` in the config). Pests further out are not affected.
-- **Pests.** Every pest in range is killed outright, whatever its HP. Killed pests drop nothing except the chest an elite carries, so you lose the XP, gold, rerolls and banishes they would have dropped. <small>[sim-D_9pEFdy.js: `t.has(r,A.NoDrops)?Cd(e,r):xd(e,r)`]</small>
-- **Bosses.** Each boss in range takes 5% of its max HP (`reset.bossHitFraction`). This hit cannot bring a boss below 1 HP. <small>[sim-D_9pEFdy.js: `e.attack.damage=r.bossHitFraction*(n.bossHitMult??1)`]</small>
-- **Pickups.** Each pickup in the play area is erased unless it passes a save roll. The save chance is 15% plus half of Tibo's luck, up to 95%. Some special pickups are exempt. <small>[sim-D_9pEFdy.js: `Math.min(.95,e.cfg.reset.dropSaveChance+.5*e.loadout.stats.luck)`]</small>
+- **Pests.** Every pest in range is killed outright, whatever its HP. Killed pests drop nothing except the chest an elite carries, so you lose the XP, gold, rerolls and banishes they would have dropped. <small>[sim-D8sW_hhq.js: `t.has(r,A.NoDrops)?Cd(e,r):xd(e,r)`]</small>
+- **Bosses.** Each boss in range takes 5% of its max HP (`reset.bossHitFraction`). This hit cannot bring a boss below 1 HP. <small>[sim-D8sW_hhq.js: `e.attack.damage=r.bossHitFraction*(n.bossHitMult??1)`]</small>
+- **Pickups.** Each pickup in the play area is erased unless it passes a save roll. The save chance is 15% plus half of Tibo's luck, up to 95%. Some special pickups are exempt. <small>[sim-D8sW_hhq.js: `Math.min(.95,e.cfg.reset.dropSaveChance+.5*e.loadout.stats.luck)`]</small>
 - **Bullets.** All enemy bullets are removed.
 - **Timing.** It fires as soon as it is off cooldown while any pest or boss is alive. Gaining a level resets its cooldown to zero, so it fires straight away after each level-up. Cooldown reduction cannot take it below 15 s (`reset.minCooldownSec`), and amount bonuses do not affect it.
 

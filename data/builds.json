@@ -725,5 +725,16 @@
   "updated": "2026-11-05T14:07:08Z",
   "changes": "Damage numbers linger for 1 second, or 1.25 seconds for crits, with eased rise, pop and fade. Their sizing and display priorities change; damage and balance are unchanged.",
   "evidence": "Compared all 274 assets reachable from each own index, including 210 JavaScript modules, 15 CSS files and 12 PNGs. Exact dependency/build-ID mapping leaves only boot's new damage-number config, the scene renderer, the new journal note and its 26 translations; binding-aware AST checks find no producer identity mismatches. Retained AST residuals are reviewed in source context, not claimed as exact equivalence. Original old/new renderer probes confirm 0.75-second visible-age windows become 1 second for hits and 1.25 for crits, quadratic fade-out, eased rise and sideways lean, sine pop and reduced-motion controls. Base font changes from 6.25% capped at 30 CSS pixels to 4% without that cap, minimum 10; capacity grows 96 to 128, while viewport budget remains 5 to 12 with pressure reduction. Legacy rendering gains amount/crit priority, with stable ties and expired-entry controls checked. Merging 30 and 70 still totals 100. Core sim, own atlas tables/PNGs, content locales and names are unchanged. Same-input five-minute Standard/Normal seed wiki runs with each build's own RUN_EXTRAS rules match completely: 1322 kills, level 13, HP 150 and four weapon damage sources; no give/warp/god. All 169 ordered live journal records and kind icons match extraction (7/28/41/47/46); only the lingering-number note is added, and earlier introduction/publication history is preserved. Live journal checked with Chromium SwiftShader after default WebGL2 was unavailable. Forced renderer probes do not measure physical-device frame rate, battery or temperature; unavailable historical original/D3 sources were not reverified."
+ },
+ {
+  "seen": "2026-11-05",
+  "main": "main-CvDFhAkW.js",
+  "boot": "boot-DoeRXSKv.js",
+  "sim": "sim-D8sW_hhq.js",
+  "commit": "9b1ac829d567",
+  "status": "reviewed",
+  "updated": "2026-11-05T14:13:04Z",
+  "changes": "No gameplay changes; a rebuild of the same game.",
+  "evidence": "All 275 files reachable from each own index match main-BdNZWxS6.js after exact dependency/hash and own-build-ID mapping: no residual executable, config, balance, art, names or journal changes. Own original index/assets captured while live. Same-input five-minute Standard/Normal seed wiki runs with each build's own RUN_EXTRAS rules match completely: 1322 kills, level 13, HP 150 and four weapon damage sources; no give/warp/god. Live browser check expanded all five days: all 169 ordered date/code/kind/text records and icons match extraction (7/28/41/47/46). Only the current label changes to 9b1ac82; damage-number presentation remains attributed to build 67. Current citations refreshed and original review/measurement history preserved. Browser uses Chromium SwiftShader, not a physical-device performance test; unavailable historical original/D3 sources were not reverified."
  }
 ]

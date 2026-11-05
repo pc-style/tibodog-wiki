@@ -6,7 +6,7 @@ It is made by opening a chest with Fry Lance at level 8 and [Spud Sneakers](/pas
 
 ## How it works
 
-- Aiming and the fan of extra lances work as on [Fry Lance](/weapons/fry-lance): the first lance goes at the nearest pest, the second 0.35 rad to one side, the third 0.35 rad to the other and the fourth 0.7 rad to the first side, about 60° of coverage in total. <small>[sim-D_9pEFdy.js: `Zm(e,1.2*n.length)+(i>0?s*Math.ceil(i/2)*.35:0)`]</small>
+- Aiming and the fan of extra lances work as on [Fry Lance](/weapons/fry-lance): the first lance goes at the nearest pest, the second 0.35 rad to one side, the third 0.35 rad to the other and the fourth 0.7 rad to the first side, about 60° of coverage in total. <small>[sim-D8sW_hhq.js: `Zm(e,1.2*n.length)+(i>0?s*Math.ceil(i/2)*.35:0)`]</small>
 - It fires only when a pest is within 224 units, even though the lances reach farther.
 - Each lance hits every pest touching its line once, with no pierce limit.
 - Extra projectiles add more lances to the fan, alternating sides at 0.35 rad steps.
