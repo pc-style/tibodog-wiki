@@ -6,15 +6,15 @@ It is the catalyst for [Waffle Cut](/weapons/waffle-cut) (from [Julienne Dash](/
 
 ## How it works
 
-The charge values per level are totals, not increments: the game reads the array entry for the current level.<small>[sim-BgzIHEha.js: ``function $n(e,t){return t<=0?0:typeof e==`number`?e*t:e[Math.min(t,e.length)-1]??0}``]</small>
+The charge values per level are totals, not increments: the game reads the array entry for the current level.<small>[sim-CM-5WO9_.js: ``function $n(e,t){return t<=0?0:typeof e==`number`?e*t:e[Math.min(t,e.length)-1]??0}``]</small>
 
-Spent charges come back one at a time. When a charge finishes recharging, the next one starts only if Tibo is still below the maximum.<small>[sim-BgzIHEha.js: `let a=t.dashCharges[n]+1;t.dashCharges[n]=a,t.dashCd[n]=a<r?ns(e):0`]</small> At level 5, refilling all 4 charges from empty takes 4 × 3.5 = 14 s.
+Spent charges come back one at a time. When a charge finishes recharging, the next one starts only if Tibo is still below the maximum.<small>[sim-CM-5WO9_.js: `let a=t.dashCharges[n]+1;t.dashCharges[n]=a,t.dashCd[n]=a<r?ns(e):0`]</small> At level 5, refilling all 4 charges from empty takes 4 × 3.5 = 14 s.
 
 Dash cooldown uses the same 60% cap as weapon cooldown (see [Stats](/stats)), but Butter Socks only reaches 30%, so the cap does not matter here.
 
-During a dash Tibo ignores ordinary damage.<small>[sim-BgzIHEha.js: `if(a.invuln[o]>0||a.stunTicks[o]>0||e.over||!r&&es(e))return!1`]</small> A dash lasts 9 ticks (0.15 s at 60 ticks per second) and covers 48 units (see [Controls](/controls)).
+During a dash Tibo ignores ordinary damage.<small>[sim-CM-5WO9_.js: `if(a.invuln[o]>0||a.stunTicks[o]>0||e.over||!r&&es(e))return!1`]</small> A dash lasts 9 ticks (0.15 s at 60 ticks per second) and covers 48 units (see [Controls](/controls)).
 
 ## Tips
 
 - [Julienne Dash](/weapons/julienne-dash) and its evolution Waffle Cut attack on each dash, so extra charges mean more attacks in a burst.
-- [Tot Stampede](/weapons/tot-stampede) counts distance walked and fires every 40 units. Dash movement counts toward that distance: each tick adds Tibo's movement up to 12 units.<small>[sim-BgzIHEha.js: `Math.min(12,D(a.x[o]-a.px[o],a.y[o]-a.py[o]))`]</small> One 48-unit dash is enough for a tot.
+- [Tot Stampede](/weapons/tot-stampede) counts distance walked and fires every 40 units. Dash movement counts toward that distance: each tick adds Tibo's movement up to 12 units.<small>[sim-CM-5WO9_.js: `Math.min(12,D(a.x[o]-a.px[o],a.y[o]-a.py[o]))`]</small> One 48-unit dash is enough for a tot.

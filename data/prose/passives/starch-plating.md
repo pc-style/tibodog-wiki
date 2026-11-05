@@ -6,7 +6,7 @@ It is the catalyst for three evolutions: [Cast Iron](/weapons/cast-iron) (from [
 
 ## How it works
 
-Damage taken is multiplied by `1 − min(0.85, armor / (5 × attacker level + armor))` (see [Stats](/stats#armor)).<small>[sim-BgzIHEha.js: `let u=l*(1-Fa(s.armor,i,e.cfg))`]</small> An attacker's level is 10 plus the run's minutes, +5 for elites and +10 for bosses (see [Enemy scaling](/enemy-scaling#enemy-level-and-armor)). Damage reduction with Starch Plating alone:
+Damage taken is multiplied by `1 − min(0.85, armor / (5 × attacker level + armor))` (see [Stats](/stats#armor)).<small>[sim-CM-5WO9_.js: `let u=l*(1-Fa(s.armor,i,e.cfg))`]</small> An attacker's level is 10 plus the run's minutes, +5 for elites and +10 for bosses (see [Enemy scaling](/enemy-scaling#enemy-level-and-armor)). Damage reduction with Starch Plating alone:
 
 | Armor | Pest at 0:00 (level 10) | Pest at 10:00 (level 20) | Pest at 20:00 (level 30) | Boss at 20:00 (level 40) |
 |---|---|---|---|---|

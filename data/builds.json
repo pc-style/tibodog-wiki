@@ -560,5 +560,15 @@
   "status": "reviewed",
   "updated": "2026-11-05T09:01:08Z",
   "changes": "Source-only refresh: all 210 JavaScript modules across 204 roles match exactly after mapped dependency and own-build commit substitutions, including duplicate mounts, choices, workers/worklets, wrappers and all 27 locales. No added or removed roles or residual executable changes. All 15 referenced CSS files, four own atlas PNGs/tables, wiki icon pixels, balance data and translated names are unchanged. The complete live journal matches all 162 ordered date/code/kind/text records (28/41/47/46); no additions, omissions, revisions, metadata, ordering or regrouping changes. Same-input five-minute Standard/Normal runs (seed wiki, no give/warp/god) match: level 13, 1,322 kills, 150 HP; Fry Sentry 6,387.99 damage, Hash Brown Shield 1,072.59, Spud Cannon 2,573.88 and Fry Lance 602.48. Current source citations refreshed; prior numeric history and the D3 snapshot preserved. No changed mechanic branch or newly settled coverage question; unavailable historical sources were not reverified."
+ },
+ {
+  "seen": "2026-11-05",
+  "main": "main-CbYGageq.js",
+  "boot": "boot-CPoy9Oiw.js",
+  "sim": "sim-CM-5WO9_.js",
+  "commit": "032e863f21ae",
+  "status": "reviewed",
+  "updated": "2026-11-05T09:10:54Z",
+  "changes": "Source-only refresh after build 57: all 210 JavaScript modules across 204 roles match exactly after mapped dependency and own-build commit substitutions, including duplicate mounts, choices, workers/worklets, wrappers and all 27 locales. No added or removed roles or residual executable changes; index and warm-list dependencies also match. All 15 referenced CSS files, four own atlas PNGs/tables, wiki icon pixels, balance data and translated names are unchanged. The complete live journal matches all 162 ordered date/code/kind/text records (28/41/47/46); no additions, omissions, revisions, metadata, ordering or regrouping changes. Same-input five-minute Standard/Normal runs (seed wiki, no give/warp/god) match: level 13, 1,322 kills, 150 HP; Fry Sentry 6,387.99 damage, Hash Brown Shield 1,072.59, Spud Cannon 2,573.88 and Fry Lance 602.48. Current citations refreshed; all previous numeric history and the D3 snapshot preserved. No changed mechanic branch or newly settled coverage question; unavailable historical sources were not reverified."
  }
 ]
