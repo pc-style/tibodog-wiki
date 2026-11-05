@@ -30,6 +30,8 @@ The original extractor preserved declaration order for the four unversioned note
 
 ### Reconciliation with observed builds
 
+The build-61 browser check on 5 November 2026 at 10:09 UTC used live `main-CKdQfNMW.js` and expanded all four days. All **163** ordered date/code/kind/text records and icon kinds matched extraction (29/41/47/46). Source: [changelog-panel-Bcu1XyVN.js](https://tibo.dog/assets/changelog-panel-Bcu1XyVN.js), SHA-256 `69bd3b91d3475c630be763c993f7a4db883c314f9e687898942521d6f4593a02`. The one addition is the Colorado Queen egg note, displayed under the current code `b8df3e9` on November 4; all previous 162 notes, their groups and metadata remain unchanged. Source comparison and isolated old/new simulation independently confirm the changed attack, rather than inferring it from publication alone. The original audit, earlier measured values and missing-historical-source limitations remain intact.
+
 In the original audit snapshot, twenty-five journal codes matched recorded game commits; the other 34 had no independently compared build in this wiki. A match is a cross-reference, not proof that all notes under that code were introduced together. The following covers every dated group in that snapshot; build numbers refer to [Versions](/versions#version-history). The build-56 regrouping adds the two cross-references described above without replacing this historical reconciliation.
 
 | Journal date | Codes and corresponding wiki observations |

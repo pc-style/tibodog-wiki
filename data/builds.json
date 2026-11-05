@@ -590,5 +590,15 @@
   "status": "reviewed",
   "updated": "2026-11-05T09:51:04Z",
   "changes": "Source-only refresh after build 59: all 210 JavaScript modules across 204 roles match exactly after mapped dependency and own-build commit substitutions, including duplicate mounts, choices, workers/worklets, wrappers and all 27 locales. No added or removed roles or residual executable changes; each build's own index and warm-list dependencies also match. All 15 referenced CSS files, four own atlas PNGs/tables, 223 wiki icon crops, balance data and translated names are unchanged. The complete live journal matches all 162 ordered date/code/kind/text records and icon kinds (28/41/47/46); still 63 dated codes and no current-version notes. No additions, omissions, revisions, metadata, ordering or regrouping changes. Same-input five-minute Standard/Normal runs (seed wiki, no give/warp/god) match: level 13, 1,322 kills, 150 HP; Fry Sentry 6,387.99 damage, Hash Brown Shield 1,072.59, Spud Cannon 2,573.88 and Fry Lance 602.48. Current citations refreshed; earlier reports, numeric history and the D3 snapshot preserved. No changed mechanic branch or newly settled coverage question; unavailable historical sources were not reverified."
+ },
+ {
+  "seen": "2026-11-05",
+  "main": "main-CKdQfNMW.js",
+  "boot": "boot-DHJ1HVRd.js",
+  "sim": "sim-B6ZTh-l-.js",
+  "commit": "b8df3e937a61",
+  "status": "reviewed",
+  "updated": "2026-11-05T09:59:23Z",
+  "changes": "The Colorado Queen now fires two aimed eggs instead of three two-shot bursts. Eggs stop and split into five larva bullets after 1.35 s (speed 55, or 70 on Nightmare; 60% damage), only while their original owner is alive and visible. New egg/larva art and one official journal note, translated in all 26 other languages. Reviewed all 210 JS roles, own index/warm list/15 CSS/atlases/223 icon crops and exact dependency identities; isolated actual-code old/new Normal/Nightmare measurements and owner/timing/pool controls confirm the changed attack. Same-input five-minute Standard/Normal smoke remains 1322 kills, level 13, HP 150 with damage from four weapons; this does not imply the new attack is unchanged. Prior numerical history and archival source limits preserved."
  }
 ]

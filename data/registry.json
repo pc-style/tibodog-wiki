@@ -10733,32 +10733,62 @@
    "patterns": [
     {
      "kind": "aimed",
-     "count": 2,
+     "count": 1,
      "speed": 80,
-     "radius": 2.5,
+     "radius": 3.5,
      "damage": 7,
-     "bursts": 3,
-     "interval": 0.25,
-     "telegraph": 0.6
+     "bursts": 2,
+     "interval": 0.45,
+     "telegraph": 0.6,
+     "motion": {
+      "speed": [
+       {
+        "at": 0.55,
+        "to": 1
+       },
+       {
+        "at": 0.85,
+        "to": 0
+       }
+      ],
+      "split": {
+       "at": 1.35,
+       "count": 5,
+       "speed": 55,
+       "radius": 2,
+       "damage": 0.6
+      }
+     }
     }
    ],
    "sharpPatterns": [
     {
      "kind": "aimed",
-     "count": 2,
+     "count": 1,
      "speed": 100,
-     "radius": 2.5,
+     "radius": 3.5,
      "damage": 7,
-     "bursts": 3,
-     "interval": 0.25,
+     "bursts": 2,
+     "interval": 0.45,
      "telegraph": 0.6,
      "motion": {
       "speed": [
        {
-        "at": 0.7,
-        "to": 0.5
+        "at": 0.55,
+        "to": 1
+       },
+       {
+        "at": 0.85,
+        "to": 0
        }
-      ]
+      ],
+      "split": {
+       "at": 1.35,
+       "count": 5,
+       "speed": 70,
+       "radius": 2,
+       "damage": 0.6
+      }
      }
     }
    ],
@@ -11534,32 +11564,62 @@
    "patterns": [
     {
      "kind": "aimed",
-     "count": 2,
+     "count": 1,
      "speed": 80,
-     "radius": 2.5,
+     "radius": 3.5,
      "damage": 7,
-     "bursts": 3,
-     "interval": 0.25,
-     "telegraph": 0.6
+     "bursts": 2,
+     "interval": 0.45,
+     "telegraph": 0.6,
+     "motion": {
+      "speed": [
+       {
+        "at": 0.55,
+        "to": 1
+       },
+       {
+        "at": 0.85,
+        "to": 0
+       }
+      ],
+      "split": {
+       "at": 1.35,
+       "count": 5,
+       "speed": 55,
+       "radius": 2,
+       "damage": 0.6
+      }
+     }
     }
    ],
    "sharpPatterns": [
     {
      "kind": "aimed",
-     "count": 2,
+     "count": 1,
      "speed": 100,
-     "radius": 2.5,
+     "radius": 3.5,
      "damage": 7,
-     "bursts": 3,
-     "interval": 0.25,
+     "bursts": 2,
+     "interval": 0.45,
      "telegraph": 0.6,
      "motion": {
       "speed": [
        {
-        "at": 0.7,
-        "to": 0.5
+        "at": 0.55,
+        "to": 1
+       },
+       {
+        "at": 0.85,
+        "to": 0
        }
-      ]
+      ],
+      "split": {
+       "at": 1.35,
+       "count": 5,
+       "speed": 70,
+       "radius": 2,
+       "damage": 0.6
+      }
      }
     }
    ],

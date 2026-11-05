@@ -1,22 +1,14 @@
 {
  "sim.An": {
-  "shape": "wide",
-  "color": "#cfd8dc",
-  "sprite": "the-mandoline"
+  "shape": "tall",
+  "color": "#b0bec5",
+  "sprite": "the-masher"
  },
  "sim.Bn": {
-  "shape": "round",
-  "color": "#fbc02d",
-  "sprite": "beetle-queen"
+  "shape": "blob",
+  "color": "#5d4037",
+  "sprite": "compost-titan"
  },
- "sim.Bt": [
-  "round",
-  "oval",
-  "clover",
-  "splat",
-  "slab",
-  "drop"
- ],
  "sim.C": {
   "rimWidth": 2,
   "rim": {
@@ -58,6 +50,298 @@
   ]
  },
  "sim.Dn": {
+  "fries": "fries-carton",
+  "knockedOut": "tibo-down"
+ },
+ "sim.En": {
+  "startChest": {
+   "offset": {
+    "x": 56,
+    "y": 0
+   },
+   "leash": {
+    "radius": 220,
+    "back": 32,
+    "throwSec": 0.25,
+    "pullSec": 1
+   },
+   "nudges": {
+    "lines": [
+     {
+      "afterSec": 8,
+      "line": "openIt"
+     },
+     {
+      "afterSec": 16,
+      "line": "bigBox"
+     },
+     {
+      "afterSec": 24,
+      "line": "asleep"
+     }
+    ],
+    "jail": {
+     "afterSec": 32,
+     "line": "hardWay",
+     "held": "notLeaving",
+     "radius": 12
+    }
+   },
+   "contents": {
+    "weapons": [
+     {
+      "id": "peeler",
+      "level": 4
+     },
+     {
+      "id": "tot-toss",
+      "level": 3
+     }
+    ],
+    "passives": [
+     {
+      "id": "thick-skin",
+      "level": 2
+     }
+    ]
+   }
+  },
+  "firstRush": {
+   "startTicks": 180,
+   "alive": {
+    "from": 10,
+    "to": 200
+   },
+   "everySec": {
+    "from": 0.55,
+    "to": 0.09
+   },
+   "batch": 3,
+   "reach": 250
+  },
+  "boss": {
+   "id": "amusing",
+   "landTicks": 1800,
+   "heal": 1
+  },
+  "secondRush": {
+   "peakTicks": 900,
+   "alive": {
+    "from": 220,
+    "to": 400
+   },
+   "everySec": {
+    "from": 0.2,
+    "to": 0.06
+   },
+   "batch": 3,
+   "reach": 200
+  },
+  "waves": {
+   "rows": [
+    {
+     "minute": 0,
+     "minEnemies": 8,
+     "maxEnemies": 500,
+     "interval": 1.3,
+     "batch": 2,
+     "tiers": [
+      1,
+      0,
+      0,
+      0,
+      0
+     ],
+     "enemy": "reset-zombie"
+    },
+    {
+     "minute": 1,
+     "minEnemies": 8,
+     "maxEnemies": 500,
+     "interval": 1.3,
+     "batch": 2,
+     "tiers": [
+      1,
+      0,
+      0,
+      0,
+      0
+     ],
+     "enemy": "reset-zombie"
+    },
+    {
+     "minute": 2,
+     "minEnemies": 12,
+     "maxEnemies": 500,
+     "interval": 1.1,
+     "batch": 2,
+     "tiers": [
+      1,
+      0,
+      0,
+      0,
+      0
+     ],
+     "enemy": "reset-zombie"
+    },
+    {
+     "minute": 3,
+     "minEnemies": 16,
+     "maxEnemies": 500,
+     "interval": 1,
+     "batch": 3,
+     "tiers": [
+      1,
+      0,
+      0,
+      0,
+      0
+     ],
+     "enemy": "reset-zombie"
+    }
+   ],
+   "afterLast": "hold"
+  },
+  "config": {
+   "spawns": {
+    "earlyCeiling": []
+   },
+   "levelUp": {
+    "catalystGuaranteeLevel": 6
+   },
+   "poteto": {
+    "visitChance": 0
+   },
+   "world": {
+    "landmarkEvents": false,
+    "poiTaperPerMinute": 0,
+    "onlyPois": [
+     "crops",
+     "taterMagnet",
+     "spudFreezer",
+     "frenzyFryer",
+     "botDock",
+     "taterLantern",
+     "seedVault"
+    ],
+    "outOfFirstView": [
+     "paidChest",
+     "seedVault"
+    ]
+   },
+   "alex": {
+    "chance": 1
+   }
+  },
+  "ending": [
+   {
+    "kind": "visit",
+    "afterJoinTicks": 900
+   },
+   {
+    "kind": "line",
+    "line": "inTheGame",
+    "at": "bonk"
+   },
+   {
+    "kind": "line",
+    "line": "foundYou",
+    "at": "bonk"
+   },
+   {
+    "kind": "line",
+    "line": "storyMode",
+    "at": "bonk"
+   },
+   {
+    "kind": "line",
+    "line": "noobs",
+    "at": "bonk"
+   },
+   {
+    "kind": "line",
+    "line": "madeSure",
+    "at": "bonk"
+   },
+   {
+    "kind": "line",
+    "line": "laugh",
+    "at": "bonk"
+   },
+   {
+    "kind": "line",
+    "line": "napTime",
+    "at": "bonk"
+   },
+   {
+    "kind": "knockOut",
+    "alex": true,
+    "alexAfterTicks": 30
+   },
+   {
+    "kind": "line",
+    "line": "realDifficulty",
+    "at": "fall"
+   }
+  ]
+ },
+ "sim.Fn": {
+  "shape": "wide",
+  "color": "#c62828",
+  "sprite": "harvester"
+ },
+ "sim.Hn": {
+  "shape": "plush",
+  "color": "#f3c6c3",
+  "sprite": "amusing"
+ },
+ "sim.In": {
+  "shape": "segmented",
+  "color": "#ff8f00",
+  "sprite": "great-wireworm"
+ },
+ "sim.Ln": {
+  "shape": "box",
+  "color": "#90a4ae",
+  "sprite": "grater-golem"
+ },
+ "sim.Mn": {
+  "shape": "tall",
+  "color": "#d7b46a",
+  "sprite": "sir-strawman"
+ },
+ "sim.Mt": {
+  "enemies": 1024,
+  "bosses": 16,
+  "projectiles": 4096,
+  "pickups": 4096,
+  "zones": 1024,
+  "emitters": 512,
+  "effects": 1024,
+  "pets": 8,
+  "summons": 64,
+  "dashCuts": 32,
+  "grokBots": 32,
+  "wires": 16,
+  "hits": 8192
+ },
+ "sim.Nn": {
+  "shape": "blob",
+  "color": "#689f38",
+  "sprite": "late-blight",
+  "puddle": {
+   "body": "#3d1b58",
+   "edge": "#050506",
+   "fleck": "#6c7189",
+   "bubble": "#9258a2",
+   "boil": {
+    "period": 2,
+    "density": 4,
+    "glow": 0.4
+   }
+  }
+ },
+ "sim.On": {
   "view": {
    "shortSide": 320,
    "maxAspect": 2,
@@ -649,21 +933,18 @@
    "areaScale": 1
   }
  },
- "sim.En": {
-  "fries": "fries-carton",
-  "knockedOut": "tibo-down"
+ "sim.Pn": {
+  "shape": "tentacled",
+  "color": "#d32f2f",
+  "sprite": "ketchup-kraken"
  },
- "sim.Fn": {
-  "shape": "segmented",
-  "color": "#ff8f00",
-  "sprite": "great-wireworm"
+ "sim.Pt": {
+  "spudForge": {
+   "color": "#ffe08a",
+   "pin": "anvil"
+  }
  },
- "sim.In": {
-  "shape": "box",
-  "color": "#90a4ae",
-  "sprite": "grater-golem"
- },
- "sim.Ln": {
+ "sim.Rn": {
   "shape": "box",
   "color": "#ff9800",
   "sprite": "fryer-king",
@@ -679,34 +960,84 @@
    }
   }
  },
- "sim.Mn": {
-  "shape": "blob",
-  "color": "#689f38",
-  "sprite": "late-blight",
-  "puddle": {
-   "body": "#3d1b58",
-   "edge": "#050506",
-   "fleck": "#6c7189",
-   "bubble": "#9258a2",
-   "boil": {
-    "period": 2,
-    "density": 4,
-    "glow": 0.4
-   }
-  }
+ "sim.Vn": {
+  "shape": "round",
+  "color": "#fbc02d",
+  "sprite": "beetle-queen"
  },
- "sim.Nn": {
-  "shape": "tentacled",
-  "color": "#d32f2f",
-  "sprite": "ketchup-kraken"
+ "sim.Vt": [
+  "round",
+  "oval",
+  "clover",
+  "splat",
+  "slab",
+  "drop"
+ ],
+ "sim.fn": [
+  "boss:amusing",
+  "boss:beetle-queen",
+  "boss:compost-titan",
+  "boss:deep-freezer",
+  "boss:fryer-king",
+  "boss:grater-golem",
+  "boss:great-wireworm",
+  "boss:harvester",
+  "boss:ketchup-kraken",
+  "boss:late-blight",
+  "boss:sir-strawman",
+  "boss:the-mandoline",
+  "boss:the-masher"
+ ],
+ "sim.hn": [
+  "enemy:aphid",
+  "enemy:beetle-brood",
+  "enemy:blight-spore",
+  "enemy:bog-slime",
+  "enemy:bog-toad",
+  "enemy:bowling-ball",
+  "enemy:bowling-pin",
+  "enemy:cave-grub",
+  "enemy:compost-maggot",
+  "enemy:crumb-ant",
+  "enemy:dumpster-raccoon",
+  "enemy:field-crow",
+  "enemy:field-rat",
+  "enemy:frost-flea",
+  "enemy:fry-fly",
+  "enemy:garden-slug",
+  "enemy:golden-scarab",
+  "enemy:grease-fiend",
+  "enemy:gull-flock",
+  "enemy:harvest-mouse",
+  "enemy:hay-bale",
+  "enemy:ice-imp",
+  "enemy:ketchup-drop",
+  "enemy:lint-bunny",
+  "enemy:little-grey",
+  "enemy:lost-saucer",
+  "enemy:maggot-swarm",
+  "enemy:mole",
+  "enemy:mud-golem",
+  "enemy:oil-drip",
+  "enemy:parking-gull",
+  "enemy:potato-beetle",
+  "enemy:reset-zombie",
+  "enemy:sand-crab",
+  "enemy:sizzle-imp",
+  "enemy:snow-mold",
+  "enemy:sock-pile",
+  "enemy:spittlebug",
+  "enemy:sprout-mite",
+  "enemy:swarm-fly",
+  "enemy:tomato-leech",
+  "enemy:wireworm-larva"
+ ],
+ "sim.jn": {
+  "shape": "wide",
+  "color": "#cfd8dc",
+  "sprite": "the-mandoline"
  },
- "sim.Nt": {
-  "spudForge": {
-   "color": "#ffe08a",
-   "pin": "anvil"
-  }
- },
- "sim.On": {
+ "sim.kn": {
   "boss": "[fn]",
   "bossAt": "[fn]",
   "bosses": [
@@ -836,32 +1167,62 @@
     "patterns": [
      {
       "kind": "aimed",
-      "count": 2,
+      "count": 1,
       "speed": 80,
-      "radius": 2.5,
+      "radius": 3.5,
       "damage": 7,
-      "bursts": 3,
-      "interval": 0.25,
-      "telegraph": 0.6
+      "bursts": 2,
+      "interval": 0.45,
+      "telegraph": 0.6,
+      "motion": {
+       "speed": [
+        {
+         "at": 0.55,
+         "to": 1
+        },
+        {
+         "at": 0.85,
+         "to": 0
+        }
+       ],
+       "split": {
+        "at": 1.35,
+        "count": 5,
+        "speed": 55,
+        "radius": 2,
+        "damage": 0.6
+       }
+      }
      }
     ],
     "sharpPatterns": [
      {
       "kind": "aimed",
-      "count": 2,
+      "count": 1,
       "speed": 100,
-      "radius": 2.5,
+      "radius": 3.5,
       "damage": 7,
-      "bursts": 3,
-      "interval": 0.25,
+      "bursts": 2,
+      "interval": 0.45,
       "telegraph": 0.6,
       "motion": {
        "speed": [
         {
-         "at": 0.7,
-         "to": 0.5
+         "at": 0.55,
+         "to": 1
+        },
+        {
+         "at": 0.85,
+         "to": 0
         }
-       ]
+       ],
+       "split": {
+        "at": 1.35,
+        "count": 5,
+        "speed": 70,
+        "radius": 2,
+        "damage": 0.6
+       }
       }
      }
     ],
@@ -1637,32 +1998,62 @@
     "patterns": [
      {
       "kind": "aimed",
-      "count": 2,
+      "count": 1,
       "speed": 80,
-      "radius": 2.5,
+      "radius": 3.5,
       "damage": 7,
-      "bursts": 3,
-      "interval": 0.25,
-      "telegraph": 0.6
+      "bursts": 2,
+      "interval": 0.45,
+      "telegraph": 0.6,
+      "motion": {
+       "speed": [
+        {
+         "at": 0.55,
+         "to": 1
+        },
+        {
+         "at": 0.85,
+         "to": 0
+        }
+       ],
+       "split": {
+        "at": 1.35,
+        "count": 5,
+        "speed": 55,
+        "radius": 2,
+        "damage": 0.6
+       }
+      }
      }
     ],
     "sharpPatterns": [
      {
       "kind": "aimed",
-      "count": 2,
+      "count": 1,
       "speed": 100,
-      "radius": 2.5,
+      "radius": 3.5,
       "damage": 7,
-      "bursts": 3,
-      "interval": 0.25,
+      "bursts": 2,
+      "interval": 0.45,
       "telegraph": 0.6,
       "motion": {
        "speed": [
         {
-         "at": 0.7,
-         "to": 0.5
+         "at": 0.55,
+         "to": 1
+        },
+        {
+         "at": 0.85,
+         "to": 0
         }
-       ]
+       ],
+       "split": {
+        "at": 1.35,
+        "count": 5,
+        "speed": 70,
+        "radius": 2,
+        "damage": 0.6
+       }
       }
      }
     ],
@@ -2438,32 +2829,62 @@
     "patterns": [
      {
       "kind": "aimed",
-      "count": 2,
+      "count": 1,
       "speed": 80,
-      "radius": 2.5,
+      "radius": 3.5,
       "damage": 7,
-      "bursts": 3,
-      "interval": 0.25,
-      "telegraph": 0.6
+      "bursts": 2,
+      "interval": 0.45,
+      "telegraph": 0.6,
+      "motion": {
+       "speed": [
+        {
+         "at": 0.55,
+         "to": 1
+        },
+        {
+         "at": 0.85,
+         "to": 0
+        }
+       ],
+       "split": {
+        "at": 1.35,
+        "count": 5,
+        "speed": 55,
+        "radius": 2,
+        "damage": 0.6
+       }
+      }
      }
     ],
     "sharpPatterns": [
      {
       "kind": "aimed",
-      "count": 2,
+      "count": 1,
       "speed": 100,
-      "radius": 2.5,
+      "radius": 3.5,
       "damage": 7,
-      "bursts": 3,
-      "interval": 0.25,
+      "bursts": 2,
+      "interval": 0.45,
       "telegraph": 0.6,
       "motion": {
        "speed": [
         {
-         "at": 0.7,
-         "to": 0.5
+         "at": 0.55,
+         "to": 1
+        },
+        {
+         "at": 0.85,
+         "to": 0
         }
-       ]
+       ],
+       "split": {
+        "at": 1.35,
+        "count": 5,
+        "speed": 70,
+        "radius": 2,
+        "damage": 0.6
+       }
       }
      }
     ],
@@ -3239,32 +3660,62 @@
     "patterns": [
      {
       "kind": "aimed",
-      "count": 2,
+      "count": 1,
       "speed": 80,
-      "radius": 2.5,
+      "radius": 3.5,
       "damage": 7,
-      "bursts": 3,
-      "interval": 0.25,
-      "telegraph": 0.6
+      "bursts": 2,
+      "interval": 0.45,
+      "telegraph": 0.6,
+      "motion": {
+       "speed": [
+        {
+         "at": 0.55,
+         "to": 1
+        },
+        {
+         "at": 0.85,
+         "to": 0
+        }
+       ],
+       "split": {
+        "at": 1.35,
+        "count": 5,
+        "speed": 55,
+        "radius": 2,
+        "damage": 0.6
+       }
+      }
      }
     ],
     "sharpPatterns": [
      {
       "kind": "aimed",
-      "count": 2,
+      "count": 1,
       "speed": 100,
-      "radius": 2.5,
+      "radius": 3.5,
       "damage": 7,
-      "bursts": 3,
-      "interval": 0.25,
+      "bursts": 2,
+      "interval": 0.45,
       "telegraph": 0.6,
       "motion": {
        "speed": [
         {
-         "at": 0.7,
-         "to": 0.5
+         "at": 0.55,
+         "to": 1
+        },
+        {
+         "at": 0.85,
+         "to": 0
         }
-       ]
+       ],
+       "split": {
+        "at": 1.35,
+        "count": 5,
+        "speed": 70,
+        "radius": 2,
+        "damage": 0.6
+       }
       }
      }
     ],
@@ -3916,254 +4367,27 @@
   "run": "[fn]",
   "runOrder": "[fn]"
  },
- "sim.Pn": {
-  "shape": "wide",
-  "color": "#c62828",
-  "sprite": "harvester"
+ "sim.mn": [
+  "dog:beagle",
+  "dog:collie",
+  "dog:corgi",
+  "dog:dachshund",
+  "dog:greyhound",
+  "dog:pomchi",
+  "dog:pomeranian",
+  "dog:retriever",
+  "dog:saint-bernard",
+  "dog:terrier",
+  "dog:zelda-and-link"
+ ],
+ "sim.nn": {
+  "harvest": 1,
+  "golden": 2,
+  "self": 3,
+  "rearm": 4,
+  "recall": 5
  },
- "sim.Rn": {
-  "shape": "box",
-  "color": "#81d4fa",
-  "sprite": "deep-freezer"
- },
- "sim.Tn": {
-  "startChest": {
-   "offset": {
-    "x": 56,
-    "y": 0
-   },
-   "leash": {
-    "radius": 220,
-    "back": 32,
-    "throwSec": 0.25,
-    "pullSec": 1
-   },
-   "nudges": {
-    "lines": [
-     {
-      "afterSec": 8,
-      "line": "openIt"
-     },
-     {
-      "afterSec": 16,
-      "line": "bigBox"
-     },
-     {
-      "afterSec": 24,
-      "line": "asleep"
-     }
-    ],
-    "jail": {
-     "afterSec": 32,
-     "line": "hardWay",
-     "held": "notLeaving",
-     "radius": 12
-    }
-   },
-   "contents": {
-    "weapons": [
-     {
-      "id": "peeler",
-      "level": 4
-     },
-     {
-      "id": "tot-toss",
-      "level": 3
-     }
-    ],
-    "passives": [
-     {
-      "id": "thick-skin",
-      "level": 2
-     }
-    ]
-   }
-  },
-  "firstRush": {
-   "startTicks": 180,
-   "alive": {
-    "from": 10,
-    "to": 200
-   },
-   "everySec": {
-    "from": 0.55,
-    "to": 0.09
-   },
-   "batch": 3,
-   "reach": 250
-  },
-  "boss": {
-   "id": "amusing",
-   "landTicks": 1800,
-   "heal": 1
-  },
-  "secondRush": {
-   "peakTicks": 900,
-   "alive": {
-    "from": 220,
-    "to": 400
-   },
-   "everySec": {
-    "from": 0.2,
-    "to": 0.06
-   },
-   "batch": 3,
-   "reach": 200
-  },
-  "waves": {
-   "rows": [
-    {
-     "minute": 0,
-     "minEnemies": 8,
-     "maxEnemies": 500,
-     "interval": 1.3,
-     "batch": 2,
-     "tiers": [
-      1,
-      0,
-      0,
-      0,
-      0
-     ],
-     "enemy": "reset-zombie"
-    },
-    {
-     "minute": 1,
-     "minEnemies": 8,
-     "maxEnemies": 500,
-     "interval": 1.3,
-     "batch": 2,
-     "tiers": [
-      1,
-      0,
-      0,
-      0,
-      0
-     ],
-     "enemy": "reset-zombie"
-    },
-    {
-     "minute": 2,
-     "minEnemies": 12,
-     "maxEnemies": 500,
-     "interval": 1.1,
-     "batch": 2,
-     "tiers": [
-      1,
-      0,
-      0,
-      0,
-      0
-     ],
-     "enemy": "reset-zombie"
-    },
-    {
-     "minute": 3,
-     "minEnemies": 16,
-     "maxEnemies": 500,
-     "interval": 1,
-     "batch": 3,
-     "tiers": [
-      1,
-      0,
-      0,
-      0,
-      0
-     ],
-     "enemy": "reset-zombie"
-    }
-   ],
-   "afterLast": "hold"
-  },
-  "config": {
-   "spawns": {
-    "earlyCeiling": []
-   },
-   "levelUp": {
-    "catalystGuaranteeLevel": 6
-   },
-   "poteto": {
-    "visitChance": 0
-   },
-   "world": {
-    "landmarkEvents": false,
-    "poiTaperPerMinute": 0,
-    "onlyPois": [
-     "crops",
-     "taterMagnet",
-     "spudFreezer",
-     "frenzyFryer",
-     "botDock",
-     "taterLantern",
-     "seedVault"
-    ],
-    "outOfFirstView": [
-     "paidChest",
-     "seedVault"
-    ]
-   },
-   "alex": {
-    "chance": 1
-   }
-  },
-  "ending": [
-   {
-    "kind": "visit",
-    "afterJoinTicks": 900
-   },
-   {
-    "kind": "line",
-    "line": "inTheGame",
-    "at": "bonk"
-   },
-   {
-    "kind": "line",
-    "line": "foundYou",
-    "at": "bonk"
-   },
-   {
-    "kind": "line",
-    "line": "storyMode",
-    "at": "bonk"
-   },
-   {
-    "kind": "line",
-    "line": "noobs",
-    "at": "bonk"
-   },
-   {
-    "kind": "line",
-    "line": "madeSure",
-    "at": "bonk"
-   },
-   {
-    "kind": "line",
-    "line": "laugh",
-    "at": "bonk"
-   },
-   {
-    "kind": "line",
-    "line": "napTime",
-    "at": "bonk"
-   },
-   {
-    "kind": "knockOut",
-    "alex": true,
-    "alexAfterTicks": 30
-   },
-   {
-    "kind": "line",
-    "line": "realDifficulty",
-    "at": "fall"
-   }
-  ]
- },
- "sim.Vn": {
-  "shape": "plush",
-  "color": "#f3c6c3",
-  "sprite": "amusing"
- },
- "sim.at": [
+ "sim.ot": [
   {
    "stat": "might",
    "label": "Damage",
@@ -4225,22 +4449,7 @@
    "base": 0.15
   }
  ],
- "sim.dn": [
-  "boss:amusing",
-  "boss:beetle-queen",
-  "boss:compost-titan",
-  "boss:deep-freezer",
-  "boss:fryer-king",
-  "boss:grater-golem",
-  "boss:great-wireworm",
-  "boss:harvester",
-  "boss:ketchup-kraken",
-  "boss:late-blight",
-  "boss:sir-strawman",
-  "boss:the-mandoline",
-  "boss:the-masher"
- ],
- "sim.fn": [
+ "sim.pn": [
   "bot:black",
   "bot:brown",
   "bot:red",
@@ -4253,82 +4462,13 @@
   "bot:magenta",
   "bot:gray"
  ],
- "sim.jn": {
-  "shape": "tall",
-  "color": "#d7b46a",
-  "sprite": "sir-strawman"
- },
- "sim.jt": {
-  "enemies": 1024,
-  "bosses": 16,
-  "projectiles": 4096,
-  "pickups": 4096,
-  "zones": 1024,
-  "emitters": 512,
-  "effects": 1024,
-  "pets": 8,
-  "summons": 64,
-  "dashCuts": 32,
-  "grokBots": 32,
-  "wires": 16,
-  "hits": 8192
- },
- "sim.kn": {
-  "shape": "tall",
-  "color": "#b0bec5",
-  "sprite": "the-masher"
- },
- "sim.mn": [
-  "enemy:aphid",
-  "enemy:beetle-brood",
-  "enemy:blight-spore",
-  "enemy:bog-slime",
-  "enemy:bog-toad",
-  "enemy:bowling-ball",
-  "enemy:bowling-pin",
-  "enemy:cave-grub",
-  "enemy:compost-maggot",
-  "enemy:crumb-ant",
-  "enemy:dumpster-raccoon",
-  "enemy:field-crow",
-  "enemy:field-rat",
-  "enemy:frost-flea",
-  "enemy:fry-fly",
-  "enemy:garden-slug",
-  "enemy:golden-scarab",
-  "enemy:grease-fiend",
-  "enemy:gull-flock",
-  "enemy:harvest-mouse",
-  "enemy:hay-bale",
-  "enemy:ice-imp",
-  "enemy:ketchup-drop",
-  "enemy:lint-bunny",
-  "enemy:little-grey",
-  "enemy:lost-saucer",
-  "enemy:maggot-swarm",
-  "enemy:mole",
-  "enemy:mud-golem",
-  "enemy:oil-drip",
-  "enemy:parking-gull",
-  "enemy:potato-beetle",
-  "enemy:reset-zombie",
-  "enemy:sand-crab",
-  "enemy:sizzle-imp",
-  "enemy:snow-mold",
-  "enemy:sock-pile",
-  "enemy:spittlebug",
-  "enemy:sprout-mite",
-  "enemy:swarm-fly",
-  "enemy:tomato-leech",
-  "enemy:wireworm-larva"
- ],
- "sim.nn": {
+ "sim.rn": {
   "hand": 0,
   "flying": 1,
   "planted": 2,
   "spent": 3
  },
- "sim.on": {
+ "sim.sn": {
   "critK": 1,
   "evasionK": 1,
   "discountK": 1,
@@ -4337,19 +4477,6 @@
   "baseCritMult": 2,
   "curseRewardShare": 0.5
  },
- "sim.pn": [
-  "dog:beagle",
-  "dog:collie",
-  "dog:corgi",
-  "dog:dachshund",
-  "dog:greyhound",
-  "dog:pomchi",
-  "dog:pomeranian",
-  "dog:retriever",
-  "dog:saint-bernard",
-  "dog:terrier",
-  "dog:zelda-and-link"
- ],
  "sim.t": {
   "AlexReveal": "[fn]",
   "ChargeSound": "[fn]",
@@ -4360,29 +4487,22 @@
   "SwatSound": "[fn]",
   "measureHudSpace": "[fn]"
  },
- "sim.tn": {
-  "harvest": 1,
-  "golden": 2,
-  "self": 3,
-  "rearm": 4,
-  "recall": 5
+ "sim.w": {
+  "gold": "#ffd04a",
+  "ochre3": "#d6a556",
+  "amber": "#f2a02c"
  },
- "sim.vn": {
+ "sim.yn": {
   "price": 2500,
   "priceGrowth": 1.6,
   "damageGrowth": 1.5,
   "passiveGrowth": 1.5,
   "top": 8
  },
- "sim.w": {
-  "gold": "#ffd04a",
-  "ochre3": "#d6a556",
-  "amber": "#f2a02c"
- },
  "sim.zn": {
-  "shape": "blob",
-  "color": "#5d4037",
-  "sprite": "compost-titan"
+  "shape": "box",
+  "color": "#81d4fa",
+  "sprite": "deep-freezer"
  },
  "boot.$t": {
   "effectsOpacity": 1,
