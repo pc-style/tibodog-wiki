@@ -769,5 +769,16 @@
   "updated": "2026-11-05T16:01:23Z",
   "changes": "No gameplay changes; a rebuild of the same game.",
   "evidence": "Whole-build comparison (tools/same-build.mjs): all 275 files reachable from each build's own index.html match main-DTWWHM5A.js after mapping file hashes and the build's own commit id; zero changed or unmatched files. Both complete original mirrors contain 274 assets verified against detector archive SHA-256 manifests. Registry, configuration, English text, translated names, journal grouping and icon pixels are unchanged. Live Chromium What's new check expanded every date and matched all 169 ordered date/code/kind/text/art/icon records against extraction (7/28/41/47/46). Only the current version code changes to a3e3bc1. Current citations and chunk references refreshed. No gameplay probe was needed for an identical rebuild; unavailable original historical assets were not reverified."
+ },
+ {
+  "seen": "2026-11-05",
+  "main": "main-DqZq-boy.js",
+  "boot": "boot-O2kAd1J1.js",
+  "sim": "sim-N12iPx_e.js",
+  "commit": "8d2c79af2ce2",
+  "status": "reviewed",
+  "updated": "2026-11-05T16:32:11Z",
+  "changes": "Tibo's hit circle has a thicker bright green ring with dark edges and distinct colors in color-blind modes. Collision size and gameplay are unchanged.",
+  "evidence": "Compared all 275 reachable files in each own mirror, including the complete original C6X mirror recovered from build71-delivered-evidence.tar.gz (274 assets verified against its archive SHA-256 manifest). Only scene, the journal panel and 26 translated journal modules have content changes; each translation adds only OGy3kO. Original old/new renderer probes cover 64 combinations of all four color settings, 319/320/321/1280 CSS-pixel widths and DPR 1/2, plus 192 hidden/attract/game-over controls. Stroke widths change from 2/4 to 3/7 CSS pixels, or 1.5/3.5 to 2/5 at shorter-side widths up to 320; the dark stroke becomes opaque. Mode colors are #23f000, #ee5566, #11aa88 and #ff22ff. Interpolated centre, collision radius and visibility gates are unchanged. Registry, sim logic, config, names and icon pixels match. Four five-minute seed wiki Standard/Normal runs with each build's own RUN_EXTRAS rules and no-rules controls match completely: 1322 kills, level 13, HP 150, 38 dashes; no give/warp/god. Live Chromium journal expands every date and matches all 170 ordered date/code/kind/text/art/icon records (8/28/41/47/46); only the new hit-circle note is added, with prior grouping/history preserved. Updated Settings prose and current citations. Renderer probes capture original draw inputs, not physical-device visibility or performance; unavailable older historical originals were not reverified."
  }
 ]
