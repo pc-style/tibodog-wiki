@@ -1,5 +1,5 @@
 {
- "sim.Ar": {
+ "sim.Dr": {
   "view": {
    "shortSide": 320,
    "maxAspect": 2,
@@ -598,237 +598,233 @@
    "areaScale": 1
   }
  },
- "sim.Dr": {
-  "startChest": {
-   "offset": {
-    "x": 56,
-    "y": 0
+ "sim.Er": {
+  "easy": {
+   "alive": 0.55,
+   "floorShare": 0,
+   "shooterCap": 1,
+   "earlyRamp": 1,
+   "earlyRampTime": 1,
+   "lateRamp": 1,
+   "lateRampTime": 1,
+   "crowdRamp": {
+    "kind": "normal"
    },
-   "leash": {
-    "radius": 220,
-    "back": 32,
-    "throwSec": 0.25,
-    "pullSec": 1
-   },
-   "nudges": {
-    "lines": [
-     {
-      "afterSec": 8,
-      "line": "openIt"
-     },
-     {
-      "afterSec": 16,
-      "line": "bigBox"
-     },
-     {
-      "afterSec": 24,
-      "line": "asleep"
-     }
-    ],
-    "jail": {
-     "afterSec": 32,
-     "line": "hardWay",
-     "held": "notLeaving",
-     "radius": 12
+   "opening": "main",
+   "pestHp": 0.5,
+   "damage": 0.4,
+   "bossHp": 0.5,
+   "eliteHp": 0.5,
+   "maxHp": 2,
+   "xp": 1.5,
+   "healDrops": 1,
+   "addedRevives": 2,
+   "allowRevives": true,
+   "startCurses": 0,
+   "tierLag": 3,
+   "wallPests": 0.15,
+   "overtimeHoldSec": 60,
+   "sharpPatterns": false,
+   "orbitPx": 1,
+   "orbitHz": 0.6,
+   "shotPuddleRadius": 1.3,
+   "shotPuddleSec": 1.5,
+   "returnSpeed": 0.7,
+   "sharpAttacks": false,
+   "areaScale": 1,
+   "promises": [
+    {
+     "kind": "mixReach",
+     "min": 0.65,
+     "max": 0.75
     }
+   ]
+  },
+  "normal": {
+   "alive": 0.7,
+   "floorShare": 0,
+   "shooterCap": 1,
+   "earlyRamp": 1,
+   "earlyRampTime": 1,
+   "lateRamp": 1,
+   "lateRampTime": 1,
+   "crowdRamp": {
+    "kind": "normal"
    },
-   "contents": {
-    "weapons": [
+   "opening": "main",
+   "pestHp": 0.65,
+   "damage": 0.55,
+   "bossHp": 0.65,
+   "eliteHp": 0.65,
+   "maxHp": 1.5,
+   "xp": 1.3,
+   "healDrops": 1,
+   "addedRevives": 1,
+   "allowRevives": true,
+   "startCurses": 0,
+   "tierLag": 2,
+   "wallPests": 0.3,
+   "overtimeHoldSec": 0,
+   "sharpPatterns": false,
+   "orbitPx": 1,
+   "orbitHz": 0.8,
+   "shotPuddleRadius": 1.45,
+   "shotPuddleSec": 1.65,
+   "returnSpeed": 1.05,
+   "sharpAttacks": false,
+   "areaScale": 1,
+   "promises": [
+    {
+     "kind": "mixReach",
+     "min": 0.4,
+     "max": 0.5
+    }
+   ]
+  },
+  "hard": {
+   "alive": 0.75,
+   "floorShare": 0.25,
+   "shooterCap": 1,
+   "earlyRamp": 1,
+   "earlyRampTime": 1,
+   "lateRamp": 1,
+   "lateRampTime": 1,
+   "crowdRamp": {
+    "kind": "own",
+    "points": [
      {
-      "id": "peeler",
-      "level": 4
+      "atSec": 0,
+      "alive": 25
      },
      {
-      "id": "tot-toss",
-      "level": 3
-     }
-    ],
-    "passives": [
+      "atSec": 80,
+      "alive": 35
+     },
      {
-      "id": "thick-skin",
-      "level": 2
+      "atSec": 230,
+      "alive": 150
      }
     ]
-   }
-  },
-  "firstRush": {
-   "startTicks": 180,
-   "alive": {
-    "from": 10,
-    "to": 200
    },
-   "everySec": {
-    "from": 0.55,
-    "to": 0.09
-   },
-   "batch": 3,
-   "reach": 250
-  },
-  "boss": {
-   "id": "amusing",
-   "landTicks": 1800,
-   "heal": 1
-  },
-  "secondRush": {
-   "peakTicks": 900,
-   "alive": {
-    "from": 220,
-    "to": 400
-   },
-   "everySec": {
-    "from": 0.2,
-    "to": 0.06
-   },
-   "batch": 3,
-   "reach": 200
-  },
-  "waves": {
-   "rows": [
+   "opening": "main",
+   "pestHp": 0.65,
+   "damage": 0.6,
+   "bossHp": 0.7,
+   "eliteHp": 0.65,
+   "maxHp": 1.5,
+   "xp": 1.3,
+   "healDrops": 1,
+   "addedRevives": 0,
+   "allowRevives": true,
+   "startCurses": 0,
+   "tierLag": 2,
+   "wallPests": 0.3,
+   "overtimeHoldSec": 0,
+   "sharpPatterns": false,
+   "orbitPx": 1,
+   "orbitHz": 0.6,
+   "shotPuddleRadius": 1.5,
+   "shotPuddleSec": 1.65,
+   "returnSpeed": 1.05,
+   "sharpAttacks": false,
+   "areaScale": 1,
+   "promises": [
     {
-     "minute": 0,
-     "minEnemies": 8,
-     "maxEnemies": 500,
-     "interval": 1.3,
-     "batch": 2,
-     "tiers": [
-      1,
-      0,
-      0,
-      0,
-      0
-     ],
-     "enemy": "reset-zombie"
+     "kind": "mixReach",
+     "min": 0.25,
+     "max": 0.35
     },
     {
-     "minute": 1,
-     "minEnemies": 8,
-     "maxEnemies": 500,
-     "interval": 1.3,
-     "batch": 2,
-     "tiers": [
-      1,
-      0,
-      0,
-      0,
-      0
+     "kind": "lateCrowd",
+     "skills": [
+      "practiced",
+      "expert"
      ],
-     "enemy": "reset-zombie"
-    },
-    {
-     "minute": 2,
-     "minEnemies": 12,
-     "maxEnemies": 500,
-     "interval": 1.1,
-     "batch": 2,
-     "tiers": [
-      1,
-      0,
-      0,
-      0,
-      0
-     ],
-     "enemy": "reset-zombie"
-    },
-    {
-     "minute": 3,
-     "minEnemies": 16,
-     "maxEnemies": 500,
-     "interval": 1,
-     "batch": 3,
-     "tiers": [
-      1,
-      0,
-      0,
-      0,
-      0
-     ],
-     "enemy": "reset-zombie"
+     "minutes": {
+      "first": 18,
+      "last": 19
+     },
+     "minAlive": 15,
+     "min": 650,
+     "max": 700
     }
    ],
-   "afterLast": "hold"
+   "crowd": 1.3
   },
-  "config": {
-   "spawns": {
-    "earlyCeiling": []
-   },
-   "levelUp": {
-    "catalystGuaranteeLevel": 6
-   },
-   "poteto": {
-    "visitChance": 0
-   },
-   "world": {
-    "landmarkEvents": false,
-    "poiTaperPerMinute": 0,
-    "onlyPois": [
-     "crops",
-     "taterMagnet",
-     "spudFreezer",
-     "frenzyFryer",
-     "botDock",
-     "taterLantern",
-     "seedVault"
-    ],
-    "outOfFirstView": [
-     "paidChest",
-     "seedVault"
+  "nightmare": {
+   "alive": 1.05,
+   "floorShare": 0.65,
+   "shooterCap": 1,
+   "earlyRamp": 1,
+   "earlyRampTime": 0.45,
+   "lateRamp": 0.32,
+   "lateRampTime": 0.3333333333333333,
+   "crowdRamp": {
+    "kind": "own",
+    "points": [
+     {
+      "atSec": 0,
+      "alive": 10
+     },
+     {
+      "atSec": 60,
+      "alive": 25
+     },
+     {
+      "atSec": 130,
+      "alive": 70
+     },
+     {
+      "atSec": 200,
+      "alive": 150
+     }
     ]
    },
-   "alex": {
-    "chance": 1
-   }
-  },
-  "ending": [
-   {
-    "kind": "visit",
-    "afterJoinTicks": 900
-   },
-   {
-    "kind": "line",
-    "line": "inTheGame",
-    "at": "bonk"
-   },
-   {
-    "kind": "line",
-    "line": "foundYou",
-    "at": "bonk"
-   },
-   {
-    "kind": "line",
-    "line": "storyMode",
-    "at": "bonk"
-   },
-   {
-    "kind": "line",
-    "line": "noobs",
-    "at": "bonk"
-   },
-   {
-    "kind": "line",
-    "line": "madeSure",
-    "at": "bonk"
-   },
-   {
-    "kind": "line",
-    "line": "laugh",
-    "at": "bonk"
-   },
-   {
-    "kind": "line",
-    "line": "napTime",
-    "at": "bonk"
-   },
-   {
-    "kind": "knockOut",
-    "alex": true,
-    "alexAfterTicks": 30
-   },
-   {
-    "kind": "line",
-    "line": "realDifficulty",
-    "at": "fall"
-   }
-  ]
+   "opening": "classic",
+   "pestHp": 1.2,
+   "damage": 0.95,
+   "bossHp": 0.95,
+   "eliteHp": 1.3,
+   "maxHp": 1.2,
+   "xp": 1.5,
+   "healDrops": 0.8,
+   "addedRevives": 0,
+   "allowRevives": false,
+   "startCurses": 1,
+   "tierLag": 2,
+   "wallPests": 0.6,
+   "overtimeHoldSec": 0,
+   "sharpPatterns": true,
+   "orbitPx": 1.2,
+   "orbitHz": 1.1,
+   "shotPuddleRadius": 1.6,
+   "shotPuddleSec": 1.65,
+   "returnSpeed": 1.05,
+   "sharpAttacks": true,
+   "areaScale": 1.45,
+   "promises": [
+    {
+     "kind": "mixReach",
+     "min": 0.03,
+     "max": 0.15
+    },
+    {
+     "kind": "lateCrowd",
+     "skills": [
+      "practiced",
+      "expert"
+     ],
+     "minutes": {
+      "first": 18,
+      "last": 19
+     },
+     "minAlive": 15,
+     "min": 800,
+     "max": 850
+    }
+   ],
+   "crowd": 1.6
+  }
  },
  "sim.Gn": [
   "dog:beagle",
@@ -914,14 +910,6 @@
   "enemy:armoured-siren-harpy",
   "enemy:fuse-totem"
  ],
- "sim.Lr": [
-  "round",
-  "oval",
-  "clover",
-  "splat",
-  "slab",
-  "drop"
- ],
  "sim.Lt": [
   "boss:amusing",
   "boss:beetle-queen",
@@ -951,10 +939,6 @@
   "self": 3,
   "rearm": 4,
   "recall": 5
- },
- "sim.Or": {
-  "fries": "fries-carton",
-  "knockedOut": "tibo-down"
  },
  "sim.Ot": {
   "evolutions": [
@@ -1259,6 +1243,14 @@
   "planted": 2,
   "spent": 3
  },
+ "sim.Pr": [
+  "round",
+  "oval",
+  "clover",
+  "splat",
+  "slab",
+  "drop"
+ ],
  "sim.Rn": {
   "critK": 1,
   "evasionK": 1,
@@ -1339,6 +1331,10 @@
   "enemy:armoured-siren-harpy",
   "enemy:fuse-totem"
  ],
+ "sim.Tr": {
+  "fries": "fries-carton",
+  "knockedOut": "tibo-down"
+ },
  "sim.Un": [
   "boss:amusing",
   "boss:beetle-queen",
@@ -5529,234 +5525,6 @@
   "color": "#81d4fa",
   "sprite": "deep-freezer"
  },
- "sim.kr": {
-  "easy": {
-   "alive": 0.55,
-   "floorShare": 0,
-   "shooterCap": 1,
-   "earlyRamp": 1,
-   "earlyRampTime": 1,
-   "lateRamp": 1,
-   "lateRampTime": 1,
-   "crowdRamp": {
-    "kind": "normal"
-   },
-   "opening": "main",
-   "pestHp": 0.5,
-   "damage": 0.4,
-   "bossHp": 0.5,
-   "eliteHp": 0.5,
-   "maxHp": 2,
-   "xp": 1.5,
-   "healDrops": 1,
-   "addedRevives": 2,
-   "allowRevives": true,
-   "startCurses": 0,
-   "tierLag": 3,
-   "wallPests": 0.15,
-   "overtimeHoldSec": 60,
-   "sharpPatterns": false,
-   "orbitPx": 1,
-   "orbitHz": 0.6,
-   "shotPuddleRadius": 1.3,
-   "shotPuddleSec": 1.5,
-   "returnSpeed": 0.7,
-   "sharpAttacks": false,
-   "areaScale": 1,
-   "promises": [
-    {
-     "kind": "mixReach",
-     "min": 0.65,
-     "max": 0.75
-    }
-   ]
-  },
-  "normal": {
-   "alive": 0.7,
-   "floorShare": 0,
-   "shooterCap": 1,
-   "earlyRamp": 1,
-   "earlyRampTime": 1,
-   "lateRamp": 1,
-   "lateRampTime": 1,
-   "crowdRamp": {
-    "kind": "normal"
-   },
-   "opening": "main",
-   "pestHp": 0.65,
-   "damage": 0.55,
-   "bossHp": 0.65,
-   "eliteHp": 0.65,
-   "maxHp": 1.5,
-   "xp": 1.3,
-   "healDrops": 1,
-   "addedRevives": 1,
-   "allowRevives": true,
-   "startCurses": 0,
-   "tierLag": 2,
-   "wallPests": 0.3,
-   "overtimeHoldSec": 0,
-   "sharpPatterns": false,
-   "orbitPx": 1,
-   "orbitHz": 0.8,
-   "shotPuddleRadius": 1.45,
-   "shotPuddleSec": 1.65,
-   "returnSpeed": 1.05,
-   "sharpAttacks": false,
-   "areaScale": 1,
-   "promises": [
-    {
-     "kind": "mixReach",
-     "min": 0.4,
-     "max": 0.5
-    }
-   ]
-  },
-  "hard": {
-   "alive": 0.75,
-   "floorShare": 0.25,
-   "shooterCap": 1,
-   "earlyRamp": 1,
-   "earlyRampTime": 1,
-   "lateRamp": 1,
-   "lateRampTime": 1,
-   "crowdRamp": {
-    "kind": "own",
-    "points": [
-     {
-      "atSec": 0,
-      "alive": 25
-     },
-     {
-      "atSec": 80,
-      "alive": 35
-     },
-     {
-      "atSec": 230,
-      "alive": 150
-     }
-    ]
-   },
-   "opening": "main",
-   "pestHp": 0.65,
-   "damage": 0.6,
-   "bossHp": 0.7,
-   "eliteHp": 0.65,
-   "maxHp": 1.5,
-   "xp": 1.3,
-   "healDrops": 1,
-   "addedRevives": 0,
-   "allowRevives": true,
-   "startCurses": 0,
-   "tierLag": 2,
-   "wallPests": 0.3,
-   "overtimeHoldSec": 0,
-   "sharpPatterns": false,
-   "orbitPx": 1,
-   "orbitHz": 0.6,
-   "shotPuddleRadius": 1.5,
-   "shotPuddleSec": 1.65,
-   "returnSpeed": 1.05,
-   "sharpAttacks": false,
-   "areaScale": 1,
-   "promises": [
-    {
-     "kind": "mixReach",
-     "min": 0.25,
-     "max": 0.35
-    },
-    {
-     "kind": "lateCrowd",
-     "skills": [
-      "practiced",
-      "expert"
-     ],
-     "minutes": {
-      "first": 18,
-      "last": 19
-     },
-     "minAlive": 15,
-     "min": 650,
-     "max": 700
-    }
-   ],
-   "crowd": 1.3
-  },
-  "nightmare": {
-   "alive": 1.05,
-   "floorShare": 0.65,
-   "shooterCap": 1,
-   "earlyRamp": 1,
-   "earlyRampTime": 0.45,
-   "lateRamp": 0.32,
-   "lateRampTime": 0.3333333333333333,
-   "crowdRamp": {
-    "kind": "own",
-    "points": [
-     {
-      "atSec": 0,
-      "alive": 10
-     },
-     {
-      "atSec": 60,
-      "alive": 25
-     },
-     {
-      "atSec": 130,
-      "alive": 70
-     },
-     {
-      "atSec": 200,
-      "alive": 150
-     }
-    ]
-   },
-   "opening": "classic",
-   "pestHp": 1.2,
-   "damage": 0.95,
-   "bossHp": 0.95,
-   "eliteHp": 1.3,
-   "maxHp": 1.2,
-   "xp": 1.5,
-   "healDrops": 0.8,
-   "addedRevives": 0,
-   "allowRevives": false,
-   "startCurses": 1,
-   "tierLag": 2,
-   "wallPests": 0.6,
-   "overtimeHoldSec": 0,
-   "sharpPatterns": true,
-   "orbitPx": 1.2,
-   "orbitHz": 1.1,
-   "shotPuddleRadius": 1.6,
-   "shotPuddleSec": 1.65,
-   "returnSpeed": 1.05,
-   "sharpAttacks": true,
-   "areaScale": 1.45,
-   "promises": [
-    {
-     "kind": "mixReach",
-     "min": 0.03,
-     "max": 0.15
-    },
-    {
-     "kind": "lateCrowd",
-     "skills": [
-      "practiced",
-      "expert"
-     ],
-     "minutes": {
-      "first": 18,
-      "last": 19
-     },
-     "minAlive": 15,
-     "min": 800,
-     "max": 850
-    }
-   ],
-   "crowd": 1.6
-  }
- },
  "sim.lr": {
   "shape": "blob",
   "color": "#689f38",
@@ -5880,6 +5648,238 @@
   "shape": "plush",
   "color": "#f3c6c3",
   "sprite": "amusing"
+ },
+ "sim.wr": {
+  "startChest": {
+   "offset": {
+    "x": 56,
+    "y": 0
+   },
+   "leash": {
+    "radius": 220,
+    "back": 32,
+    "throwSec": 0.25,
+    "pullSec": 1
+   },
+   "nudges": {
+    "lines": [
+     {
+      "afterSec": 8,
+      "line": "openIt"
+     },
+     {
+      "afterSec": 16,
+      "line": "bigBox"
+     },
+     {
+      "afterSec": 24,
+      "line": "asleep"
+     }
+    ],
+    "jail": {
+     "afterSec": 32,
+     "line": "hardWay",
+     "held": "notLeaving",
+     "radius": 12
+    }
+   },
+   "contents": {
+    "weapons": [
+     {
+      "id": "peeler",
+      "level": 4
+     },
+     {
+      "id": "tot-toss",
+      "level": 3
+     }
+    ],
+    "passives": [
+     {
+      "id": "thick-skin",
+      "level": 2
+     }
+    ]
+   }
+  },
+  "firstRush": {
+   "startTicks": 180,
+   "alive": {
+    "from": 10,
+    "to": 200
+   },
+   "everySec": {
+    "from": 0.55,
+    "to": 0.09
+   },
+   "batch": 3,
+   "reach": 250
+  },
+  "boss": {
+   "id": "amusing",
+   "landTicks": 1800,
+   "heal": 1
+  },
+  "secondRush": {
+   "peakTicks": 900,
+   "alive": {
+    "from": 220,
+    "to": 400
+   },
+   "everySec": {
+    "from": 0.2,
+    "to": 0.06
+   },
+   "batch": 3,
+   "reach": 200
+  },
+  "waves": {
+   "rows": [
+    {
+     "minute": 0,
+     "minEnemies": 8,
+     "maxEnemies": 500,
+     "interval": 1.3,
+     "batch": 2,
+     "tiers": [
+      1,
+      0,
+      0,
+      0,
+      0
+     ],
+     "enemy": "reset-zombie"
+    },
+    {
+     "minute": 1,
+     "minEnemies": 8,
+     "maxEnemies": 500,
+     "interval": 1.3,
+     "batch": 2,
+     "tiers": [
+      1,
+      0,
+      0,
+      0,
+      0
+     ],
+     "enemy": "reset-zombie"
+    },
+    {
+     "minute": 2,
+     "minEnemies": 12,
+     "maxEnemies": 500,
+     "interval": 1.1,
+     "batch": 2,
+     "tiers": [
+      1,
+      0,
+      0,
+      0,
+      0
+     ],
+     "enemy": "reset-zombie"
+    },
+    {
+     "minute": 3,
+     "minEnemies": 16,
+     "maxEnemies": 500,
+     "interval": 1,
+     "batch": 3,
+     "tiers": [
+      1,
+      0,
+      0,
+      0,
+      0
+     ],
+     "enemy": "reset-zombie"
+    }
+   ],
+   "afterLast": "hold"
+  },
+  "config": {
+   "spawns": {
+    "earlyCeiling": []
+   },
+   "levelUp": {
+    "catalystGuaranteeLevel": 6
+   },
+   "poteto": {
+    "visitChance": 0
+   },
+   "world": {
+    "landmarkEvents": false,
+    "poiTaperPerMinute": 0,
+    "onlyPois": [
+     "crops",
+     "taterMagnet",
+     "spudFreezer",
+     "frenzyFryer",
+     "botDock",
+     "taterLantern",
+     "seedVault"
+    ],
+    "outOfFirstView": [
+     "paidChest",
+     "seedVault"
+    ]
+   },
+   "alex": {
+    "chance": 1
+   }
+  },
+  "ending": [
+   {
+    "kind": "visit",
+    "afterJoinTicks": 900
+   },
+   {
+    "kind": "line",
+    "line": "inTheGame",
+    "at": "bonk"
+   },
+   {
+    "kind": "line",
+    "line": "foundYou",
+    "at": "bonk"
+   },
+   {
+    "kind": "line",
+    "line": "storyMode",
+    "at": "bonk"
+   },
+   {
+    "kind": "line",
+    "line": "noobs",
+    "at": "bonk"
+   },
+   {
+    "kind": "line",
+    "line": "madeSure",
+    "at": "bonk"
+   },
+   {
+    "kind": "line",
+    "line": "laugh",
+    "at": "bonk"
+   },
+   {
+    "kind": "line",
+    "line": "napTime",
+    "at": "bonk"
+   },
+   {
+    "kind": "knockOut",
+    "alex": true,
+    "alexAfterTicks": 30
+   },
+   {
+    "kind": "line",
+    "line": "realDifficulty",
+    "at": "fall"
+   }
+  ]
  },
  "sim.wt": [
   {
@@ -6567,6 +6567,10 @@
   "bossBar": {
    "downHoldSec": 0.6
   },
+  "shortDigits": {
+   "bossHp": 2,
+   "totals": 3
+  },
   "hazardHurt": {
    "tickSec": 0.5,
    "leaveSec": 0.07,
@@ -6806,12 +6810,50 @@
   "he",
   "ur"
  ],
+ "boot.ca": [
+  {
+   "phase": "weapons",
+   "sheet": true,
+   "manifest": "[fn]",
+   "url": "[fn]"
+  },
+  {
+   "phase": "lateGame",
+   "sheet": true,
+   "manifest": "[fn]",
+   "url": "[fn]"
+  },
+  {
+   "phase": "endgameHunt",
+   "sheet": true,
+   "manifest": "[fn]",
+   "url": "[fn]"
+  },
+  {
+   "phase": "endgameBurrow",
+   "sheet": true,
+   "manifest": "[fn]",
+   "url": "[fn]"
+  },
+  {
+   "phase": "endgameCourt",
+   "sheet": true,
+   "manifest": "[fn]",
+   "url": "[fn]"
+  },
+  {
+   "phase": "endgameShell",
+   "sheet": true,
+   "manifest": "[fn]",
+   "url": "[fn]"
+  }
+ ],
  "boot.d": {
   "family": "hunt",
   "skill": "positioning",
   "boss": "pack-lord"
  },
- "boot.fa": {
+ "boot.da": {
   "death": {
    "shown": false,
    "mounted": false,
@@ -6830,6 +6872,51 @@
    "end": "[fn]",
    "frame": "[fn]",
    "relabel": "[fn]"
+  }
+ },
+ "boot.ea": {
+  "_events": {},
+  "_locale": "",
+  "_messages": {},
+  "_variables": {},
+  "t": "[fn]"
+ },
+ "boot.fa": {
+  "shake": {
+   "offset": {
+    "x": 0,
+    "y": 0
+   },
+   "hear": "[fn]",
+   "addTrauma": "[fn]",
+   "hold": "[fn]",
+   "kick": "[fn]",
+   "advance": "[fn]",
+   "stop": "[fn]",
+   "scaleFor": "[fn]"
+  },
+  "hazard": {
+   "level": 0,
+   "taken": 0,
+   "ticks": 0,
+   "tickAt": null,
+   "marks": 0,
+   "markAmount": 0,
+   "chill": 0,
+   "frame": "[fn]"
+  },
+  "hitStop": {
+   "hear": "[fn]",
+   "holds": "[fn]",
+   "clear": "[fn]"
+  },
+  "impact": {
+   "current": null,
+   "holdsCutIn": false,
+   "holdsReveal": false,
+   "hear": "[fn]",
+   "frame": "[fn]",
+   "strike": "[fn]"
   }
  },
  "boot.in": {
@@ -6922,81 +7009,14 @@
   "familyStartSec": 60
  },
  "boot.la": [
-  {
-   "phase": "weapons",
-   "sheet": true,
-   "manifest": "[fn]",
-   "url": "[fn]"
-  },
-  {
-   "phase": "lateGame",
-   "sheet": true,
-   "manifest": "[fn]",
-   "url": "[fn]"
-  },
-  {
-   "phase": "endgameHunt",
-   "sheet": true,
-   "manifest": "[fn]",
-   "url": "[fn]"
-  },
-  {
-   "phase": "endgameBurrow",
-   "sheet": true,
-   "manifest": "[fn]",
-   "url": "[fn]"
-  },
-  {
-   "phase": "endgameCourt",
-   "sheet": true,
-   "manifest": "[fn]",
-   "url": "[fn]"
-  },
-  {
-   "phase": "endgameShell",
-   "sheet": true,
-   "manifest": "[fn]",
-   "url": "[fn]"
-  }
+  "weapons",
+  "lateGame",
+  "runMusic",
+  "endgameHunt",
+  "endgameBurrow",
+  "endgameCourt",
+  "endgameShell"
  ],
- "boot.pa": {
-  "shake": {
-   "offset": {
-    "x": 0,
-    "y": 0
-   },
-   "hear": "[fn]",
-   "addTrauma": "[fn]",
-   "hold": "[fn]",
-   "kick": "[fn]",
-   "advance": "[fn]",
-   "stop": "[fn]",
-   "scaleFor": "[fn]"
-  },
-  "hazard": {
-   "level": 0,
-   "taken": 0,
-   "ticks": 0,
-   "tickAt": null,
-   "marks": 0,
-   "markAmount": 0,
-   "chill": 0,
-   "frame": "[fn]"
-  },
-  "hitStop": {
-   "hear": "[fn]",
-   "holds": "[fn]",
-   "clear": "[fn]"
-  },
-  "impact": {
-   "current": null,
-   "holdsCutIn": false,
-   "holdsReveal": false,
-   "hear": "[fn]",
-   "frame": "[fn]",
-   "strike": "[fn]"
-  }
- },
  "boot.qr": {
   "aura": 0,
   "pool": 1,
@@ -7012,22 +7032,6 @@
   "protanopia",
   "deuteranopia",
   "tritanopia"
- ],
- "boot.ta": {
-  "_events": {},
-  "_locale": "",
-  "_messages": {},
-  "_variables": {},
-  "t": "[fn]"
- },
- "boot.ua": [
-  "weapons",
-  "lateGame",
-  "runMusic",
-  "endgameHunt",
-  "endgameBurrow",
-  "endgameCourt",
-  "endgameShell"
  ],
  "boot.wn": [
   "story",
