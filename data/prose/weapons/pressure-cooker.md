@@ -8,7 +8,7 @@ You get it by opening a chest while Steam Vent is level 8 and you own [Root Netw
 
 The damage pulse works exactly like Steam Vent's, on its own 0.3 s timer, so cooldown and amount bonuses still do nothing for it, while area and damage bonuses do (see [Steam Vent](/weapons/steam-vent#how-it-works)).
 
-The heal is counted per pulse: 0.12 HP for each enemy inside the cloud, capped at 2 HP. <small>[sim-C2-5Mjkx.js: `n.heal!==void 0&&a>0&&Zo(e,Math.min(n.heal*a,n.healCap??2))`]</small> The cap is reached at 17 enemies, which works out to at most about 6.7 HP per second. The heal is added directly to Tibo's HP, up to max HP, and no stat modifies it.
+The heal is counted per pulse: 0.12 HP for each enemy inside the cloud, capped at 2 HP. <small>[sim-rLGjJtYK.js: `n.heal!==void 0&&a>0&&Zo(e,Math.min(n.heal*a,n.healCap??2))`]</small> The cap is reached at 17 enemies, which works out to at most about 6.7 HP per second. The heal is added directly to Tibo's HP, up to max HP, and no stat modifies it.
 
 **Measured** in the headless sim (`tools/play.mjs`, build 41 `main-B2gf34bA.js`, Standard, Normal, god mode, seeds `s1`, `s2` and `s3`; the seeded starting weapon removed, the weapon given with `give`, spawning stopped after 4 s of play and the pests already on the field held at fixed spots with 10⁹ HP; Tibo standing still, facing right, with 8 pests in a line 20 to 90 units to his right): it pulsed every 0.3 s for 45 and hit every pest out to 80 units but not the one at 90. All three seeds gave the same figures.
 
