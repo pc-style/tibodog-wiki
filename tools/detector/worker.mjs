@@ -1,5 +1,5 @@
 const GAME = 'https://tibo.dog/';
-const WIKI = 'https://tibodog-wiki.vercel.app/api/index.json';
+const WIKI = 'https://www.tibodog.wiki/api/index.json';
 const MAIN = /^main-[A-Za-z0-9_-]{8}\.js$/;
 const REMIND_MS = 45 * 60 * 1000;
 const UA = 'tibodog-wiki-detector';
