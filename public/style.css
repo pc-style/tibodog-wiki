@@ -644,7 +644,7 @@ blockquote p { margin: 6px 0; }
   .with-ib { display: block; }
   .infobox, .infobox.fits { position: relative; top: auto; width: auto; margin: 0 0 28px; }
 }
-@media (min-width: 641px) and (max-width: 900px) {
+@media (max-width: 900px) {
   .infobox:has(> .ib-img) { display: grid; grid-template-columns: 220px minmax(0, 1fr); grid-template-rows: auto 1fr auto auto; }
   .infobox:has(> .ib-img) > .ib-title, .infobox:has(> .ib-img) > .ib-all { grid-column: 1 / -1; }
   .infobox:has(> .ib-img) > .ib-img { grid-column: 1; grid-row: 2; align-self: stretch; display: grid; place-items: center; margin: 12px 0 0 12px; }
@@ -652,6 +652,19 @@ blockquote p { margin: 6px 0; }
   .infobox:has(> .ib-img) > table { grid-column: 2; grid-row: 2 / span 2; margin: 2px 0 12px; }
   .infobox:has(> .ib-img) > table tr:first-child > * { border-top: 0; }
 }
+/* Phones: the picture sits beside the title so all the width goes to the stats; the caption repeats Type, so it goes. */
+@media (max-width: 640px) {
+  .infobox:has(> .ib-img) { grid-template-columns: 76px minmax(0, 1fr); grid-template-rows: auto auto auto; }
+  .infobox:has(> .ib-img) > .ib-title { grid-column: 2; grid-row: 1; align-self: center; padding: 14px 16px 0 12px; text-align: left; }
+  .infobox:has(> .ib-img) > .ib-title::after { margin-left: 0; }
+  .infobox:has(> .ib-img) > .ib-img { grid-column: 1; grid-row: 1; align-self: start; display: grid; padding: 8px; margin: 12px 0 0 12px; }
+  .infobox:has(> .ib-img) > .ib-img img { max-height: 48px; }
+  .infobox:has(> .ib-img) > .ib-cap { display: none; }
+  .infobox:has(> .ib-img) > table { grid-column: 1 / -1; grid-row: 2; margin: 10px 0 0; }
+  .infobox:has(> .ib-img) > table tr:first-child > * { border-top: 1px solid var(--line-2); }
+  .infobox:has(> .ib-img) > .ib-all { grid-row: 3; }
+}
+
 /* Very narrow phones: Tibo alone stands for the brand (the link keeps its aria-label), so search keeps room for its placeholder. */
 @media (max-width: 359px) { .brand-txt { display: none; } }
 @media (forced-colors: active) { h1, .brand b { -webkit-text-fill-color: currentColor; background: none; } }

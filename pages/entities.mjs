@@ -60,7 +60,7 @@ function flatRows(obj, prefix = '') {
 const WSTATS = [
   ['damage', 'Damage'],
   ['cooldown', 'Cooldown (s)'],
-  ['amount', 'Amount'],
+  ['amount', 'Amount (raw)'],
   ['area', 'Area'],
   ['speed', 'Speed'],
   ['duration', 'Duration (s)'],
@@ -155,7 +155,7 @@ export function weaponPages() {
       w.levels.forEach((l, i) => {
         for (const [k, v] of Object.entries(l)) cur[k] = (cur[k] ?? 0) + v;
         const change = Object.entries(l)
-          .map(([k, v]) => `${v >= 0 ? '+' : ''}${fmt(v)} ${WSTATS.find((s) => s[0] === k)?.[1].replace(/ \(s\)/, '').toLowerCase() ?? k}`)
+          .map(([k, v]) => `${v >= 0 ? '+' : ''}${fmt(v)} ${WSTATS.find((s) => s[0] === k)?.[1].replace(/ \(.*\)/, '').toLowerCase() ?? k}`)
           .join(', ');
         lrows.push([i + 2, change, ...used.map(([k]) => fmt(cur[k]))]);
       });
