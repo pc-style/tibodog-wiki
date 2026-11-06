@@ -8,10 +8,10 @@ If Tibo holds Zelda and finds [Link](/dogs/pomeranian), the two fuse into [Zelda
 
 ## How it works
 
-- Targets are chosen by distance from Tibo, not from Zelda. Only elites and pests that flee (the loot runners) qualify, and a pest that is already marked is skipped. <small>[run-extras-CHV7QXG-.js: `(r&dt)===0&&lt[n.def[t]??0]!==1`]</small>
-- Marks at once by level are 1, 1, 2, 2 and 3. If fewer targets are in range, Zelda marks as many as there are. <small>[run-extras-CHV7QXG-.js: `return n.marks[Math.min(r,n.marks.length)-1]??1`]</small>
+- Targets are chosen by distance from Tibo, not from Zelda. Only elites and pests that flee (the loot runners) qualify, and a pest that is already marked is skipped. <small>[run-extras-B8QEtCX1.js: `(r&ut)===0&&ct[n.def[t]??0]!==1`]</small>
+- Marks at once by level are 1, 1, 2, 2 and 3. If fewer targets are in range, Zelda marks as many as there are. <small>[run-extras-B8QEtCX1.js: `return n.marks[Math.min(r,n.marks.length)-1]??1`]</small>
 - With no target in range, Zelda checks again every 0.25 s and the interval does not start. An elite that comes within 600 units is marked almost immediately.
-- The mark multiplies damage after elite damage and before crits, so it stacks multiplicatively with both. It applies to every source, including the [Jack Russell Terrier's](/dogs/terrier) bites and the [Greyhound's](/dogs/greyhound) sprint. <small>[sim-C5PTMz0J.js: `return t.markT[n]>e.time?1+t.markB[n]:1`]</small>
+- The mark multiplies damage after elite damage and before crits, so it stacks multiplicatively with both. It applies to every source, including the [Jack Russell Terrier's](/dogs/terrier) bites and the [Greyhound's](/dogs/greyhound) sprint. <small>[sim-B8UwV9Dw.js: `return t.markT[n]>e.time?1+t.markB[n]:1`]</small>
 
 **Measured** (build 41 `main-B2gf34bA.js`, headless `tools/play.mjs`, standard mode, normal difficulty; legendary dogs enabled with the game's own `installLegendary` hook from the run-extras chunk; Zelda added at Tibo's side and trained with the sim's own dog-join and dog-level-up functions; `warp(300)` so elites were about; HP refilled every tick; Tibo walking a slow circle; level-ups taking the first offer; 240 s on seeds `s1`–`s3`; marks timed from the game's `dogAbility` events): marks were never less than 5 s apart at level 1 or 3 s apart at level 5. The longer gaps were exactly 8 s at level 1, the mark length, and 16.75 or 19.75 s at level 5, where a mark lasts about 19.5 s. That fits Zelda skipping targets that are already marked and waiting for a mark to run out (inference).
 

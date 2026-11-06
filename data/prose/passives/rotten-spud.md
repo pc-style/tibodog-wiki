@@ -15,7 +15,7 @@ With Rotten Spud as the only curse source, the effects at level 1 and level 5 ar
 | Enemy crowd and spawn rate | × (1 + curse) | ×1.1 | ×1.5 |
 | XP gain and gold gain | × (1 + 0.5 × curse) | ×1.05 | ×1.25 |
 
-The ordinary crowd ceiling is capped at 500 on Easy/Normal, 650 on Hard and 800 on Nightmare. Hard and Nightmare also have a [late ceiling floor](/modes#late-crowds), so curse is not the only way to raise the crowd.
+The ordinary crowd ceiling is capped at 500 on Easy/Normal, 650 on Hard and 800 on Nightmare. Hard and Nightmare also have a [late ceiling floor](/modes#late-crowds), so curse is not the only way to raise the crowd. From 20:00 in Standard late-game runs, bosses count against that maximum and ordinary waves leave another 40 places free. Scheduled elite groups wait for enough room for all their curse extras.
 
 Rotten Spud raises only the curse **stat**. It does not count as a curse taken, so unlike a [Moldy Shrine](/points-of-interest#moldy-shrine) it adds no extra elites or bosses (see [Curse](/curse#curses-taken)).
 

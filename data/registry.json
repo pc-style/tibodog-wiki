@@ -7018,6 +7018,42 @@
    }
   },
   {
+   "id": "clockwork-spud",
+   "tier": "evolved",
+   "base": {
+    "damage": 128,
+    "cooldown": 5,
+    "amount": 2,
+    "area": 1.3,
+    "speed": 0,
+    "duration": 4,
+    "pierce": 0,
+    "knockback": 2.5,
+    "interval": 0
+   },
+   "behavior": {
+    "kind": "bigUpdate",
+    "variant": {
+     "kind": "spudDecoy",
+     "rule": {
+      "lure": {
+       "reach": 80
+      },
+      "behind": 26,
+      "spread": 1.1,
+      "burstRadius": 30,
+      "echo": {
+       "reach": 0.6,
+       "wind": 0.45,
+       "damage": 0.8
+      }
+     }
+    }
+   },
+   "from": "spud-decoy",
+   "catalyst": "four-eyed-spud"
+  },
+  {
    "id": "hash-harrier",
    "tier": "evolved",
    "base": {
@@ -8470,6 +8506,42 @@
    },
    "from": "hot-streak",
    "catalyst": "thick-skin"
+  },
+  {
+   "id": "clockwork-spud",
+   "tier": "evolved",
+   "base": {
+    "damage": 128,
+    "cooldown": 5,
+    "amount": 2,
+    "area": 1.3,
+    "speed": 0,
+    "duration": 4,
+    "pierce": 0,
+    "knockback": 2.5,
+    "interval": 0
+   },
+   "behavior": {
+    "kind": "bigUpdate",
+    "variant": {
+     "kind": "spudDecoy",
+     "rule": {
+      "lure": {
+       "reach": 80
+      },
+      "behind": 26,
+      "spread": 1.1,
+      "burstRadius": 30,
+      "echo": {
+       "reach": 0.6,
+       "wind": 0.45,
+       "damage": 0.8
+      }
+     }
+    }
+   },
+   "from": "spud-decoy",
+   "catalyst": "four-eyed-spud"
   },
   {
    "id": "hash-harrier",

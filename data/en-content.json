@@ -1879,6 +1879,12 @@
  "content.weapon.chip-shuriken.name": [
   "Chip Shuriken"
  ],
+ "content.weapon.clockwork-spud.desc": [
+  "Tibo plants wind-up spuds behind him, and pests nearby walk to them. Each burst leaves a smaller spud that winds up and bursts once more."
+ ],
+ "content.weapon.clockwork-spud.name": [
+  "Clockwork Spud"
+ ],
  "content.weapon.cold-storage.desc": [
   "A wider, colder ring. Pests freeze longer and take harder frostbite."
  ],
