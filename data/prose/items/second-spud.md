@@ -6,9 +6,9 @@ When Tibo would be reset, a revive brings him back with 50% max HP and 4 s of in
 
 ## How it works
 
-- **Revive count** = `floor(revival) + the level's added revives`. Easy already gives 2 revives and Normal 1, so a Second Spud adds to those; on Hard it is your only source. <small>[sim-ieBkQqL1.js: `i[r.revivals]=t.level.allowRevives?Math.floor(e.revival)+t.level.addedRevives:0`]</small>
-- **Nightmare** allows no revives, so the item would do nothing there. The game removes it from the item pool on any level without revives. <small>[sim-ieBkQqL1.js: `return e.cfg.level.allowRevives?n:n.filter(e=>!t(e))`]</small>
-- **Stack limit.** Once you hold 2, it stops appearing in item rolls. <small>[sim-ieBkQqL1.js: `(t.maxStacks===void 0||e.loadout.itemCount(t.id)<t.maxStacks)`]</small>
+- **Revive count** = `floor(revival) + the level's added revives`. Easy already gives 2 revives and Normal 1, so a Second Spud adds to those; on Hard it is your only source. <small>[sim-Bsmt8r-d.js: `i[r.revivals]=t.level.allowRevives?Math.floor(e.revival)+t.level.addedRevives:0`]</small>
+- **Nightmare** allows no revives, so the item would do nothing there. The game removes it from the item pool on any level without revives. <small>[sim-Bsmt8r-d.js: `return e.cfg.level.allowRevives?n:n.filter(e=>!t(e))`]</small>
+- **Stack limit.** Once you hold 2, it stops appearing in item rolls. <small>[sim-Bsmt8r-d.js: `(t.maxStacks===void 0||e.loadout.itemCount(t.id)<t.maxStacks)`]</small>
 
 ## Tips
 
