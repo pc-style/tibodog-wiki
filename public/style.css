@@ -388,7 +388,8 @@ table.wikitable[style*="--txt-max"] > tbody > tr > td:not(:first-child):not(.num
 .cell-more > summary:hover { color: var(--title); }
 .cell-more[open] > summary { margin-bottom: 4px; }
 /* site.js: a Sections button in the corner of long pages once the contents list has scrolled away. */
-.sec-jump { position: fixed; z-index: 22; right: 16px; bottom: 16px; display: flex; flex-direction: column; align-items: flex-end; gap: 8px; }
+.sec-jump { position: fixed; z-index: 22; right: 16px; bottom: 16px; display: flex; flex-direction: column-reverse; align-items: flex-end; gap: 8px; }
+.sec-jump[hidden] { display: none; }
 .sec-jump > button { min-height: 44px; padding: 0 16px; font: 700 14px/1 var(--display); letter-spacing: .06em; text-transform: uppercase; color: var(--title); background: #0a0c18f2; border: 1px solid #c9a24fcc; box-shadow: var(--shadow); cursor: pointer; }
 .sec-jump > button:hover, .sec-jump > button[aria-expanded="true"] { border-color: var(--gold); background: #141a30; }
 .sec-list { max-height: min(60vh, 420px); overflow-y: auto; overscroll-behavior: contain; min-width: 220px; max-width: min(320px, calc(100vw - 32px)); padding: 10px 6px; background: #0a0c18; border: 1px solid #c9a24fcc; box-shadow: 0 12px 24px #000a; }
@@ -537,14 +538,18 @@ blockquote p { margin: 6px 0; }
 /* Home hero: a real gameplay frame behind the title, darkened under the text so contrast stays at body level. */
 .hero {
   position: relative; margin: 0 0 32px; padding: 36px 36px 22px; border: 1px solid #c9a24f99;
-  background: linear-gradient(90deg, #070914 0%, #070914 46%, #070914b3 66%, #07091433 100%), url(/home-scene.webp) right center / cover no-repeat, #0a0c18;
+  /* The frame sits in the right part, scaled to the panel height, so Tibo and the dog stay clear of the text side. */
+  background: linear-gradient(90deg, #070914 0%, #070914 54%, #07091400 72%), url(/home-scene.webp) right center / auto 100% no-repeat, #070914;
   box-shadow: var(--shadow);
 }
 .hero .lead { max-width: 52ch; margin-bottom: 18px; color: var(--text); }
 .hero-cap { max-width: 52ch; margin: 0; font-size: 12px; color: var(--muted); }
 @media (max-width: 860px) {
-  .hero { margin: -8px -18px 24px; padding: 100px 18px 14px; border-width: 0 0 1px;
-    background: linear-gradient(180deg, #07091400 0, #07091400 62px, #070914 104px), url(/home-scene-800.webp) center -34px / 100% auto no-repeat, #070914; }
+  .hero { margin: -8px -18px 24px; padding: 150px 18px 14px; border-width: 0 0 1px;
+    /* At most 520 px wide, with Tibo's head about 40 px down the band; wider screens fade the frame's sides out. */
+    background: linear-gradient(180deg, #07091400 0, #07091400 108px, #070914 154px),
+      linear-gradient(90deg, #070914 calc(50% - 260px), #07091400 calc(50% - 190px), #07091400 calc(50% + 190px), #070914 calc(50% + 260px)),
+      url(/home-scene-sm.webp) center calc(40px - min(31vw, 162px)) / min(100%, 520px) auto no-repeat, #070914; }
   .hero .lead { margin-bottom: 10px; }
 }
 @media (forced-colors: active) { .hero { background: Canvas; } }

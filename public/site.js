@@ -215,7 +215,8 @@
     const wrapS = document.createElement('div');
     wrapS.className = 'sec-jump';
     wrapS.hidden = true;
-    wrapS.innerHTML = '<div class="sec-list" id="sec-list" hidden><p>On this page</p><ol></ol></div><button type="button" aria-expanded="false" aria-controls="sec-list">Sections</button>';
+    // The button comes first in the DOM so Tab moves from it into the list; CSS draws the list above it.
+    wrapS.innerHTML = '<button type="button" aria-expanded="false" aria-controls="sec-list">Sections</button><div class="sec-list" id="sec-list" hidden><p>On this page</p><ol></ol></div>';
     const list = wrapS.querySelector('.sec-list');
     const btnS = wrapS.querySelector('button');
     for (const a of tops) { const li = document.createElement('li'); li.append(a.cloneNode(true)); list.querySelector('ol').append(li); }
@@ -225,6 +226,8 @@
     list.addEventListener('click', (e) => { if (e.target.closest('a')) setOpen(false); });
     wrapS.addEventListener('keydown', (e) => { if (e.key === 'Escape' && !list.hidden) { setOpen(false); btnS.focus(); } });
     document.addEventListener('pointerdown', (e) => { if (!wrapS.contains(e.target)) setOpen(false); });
+    // Focus moving out of the widget (past the last section, or back past the button) closes the list.
+    wrapS.addEventListener('focusout', (e) => { if (!wrapS.contains(e.relatedTarget)) setOpen(false); });
     const showS = () => {
       // A visible rail TOC already does this job.
       const railed = getComputedStyle(tocNav).position === 'absolute';
