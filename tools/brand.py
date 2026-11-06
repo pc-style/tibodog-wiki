@@ -229,11 +229,6 @@ if __name__ == '__main__':
         offset += len(data)
     with open(os.path.join(PUB, 'favicon.ico'), 'wb') as f:
         f.write(head + entries + b''.join(d for _, d in frames))
-    # Touch icon: the same gilded tile as the favicon, filling the square (iOS rounds the corners).
-    apple = Image.new('RGB', (180, 180), '#0b0e1c')
-    t = tile_mark(5)
-    apple.paste(t, ((180 - t.width) // 2, (180 - t.height) // 2), t)
-    apple.save(os.path.join(PUB, 'apple-touch-icon.png'), optimize=True)
     og(mark).save(os.path.join(PUB, 'og.png'), optimize=True)
     # Tibo for the header portrait and page previews, from the game's own idle-front frames in
     # atlas-Cq7nv457.png (build 75): "tibo-body" frame 0 @(394,1293) 38x87, anchor (18,86), plus his
@@ -245,4 +240,22 @@ if __name__ == '__main__':
         tibo.alpha_composite(a.crop((394, 1293, 394 + 38, 1293 + 87)), (1, 0))
         tibo.alpha_composite(a.crop((365, 1261, 365 + 8, 1261 + 29)), (1 + 18 - 19, 86 - 45))
         tibo.save(os.path.join(PUB, 'tibo.png'), optimize=True)
-    print('wrote logo.svg favicon.png favicon.ico apple-touch-icon.png og.png tibo.png')
+    # Touch icon: the home-screen icon matches the header portrait, Tibo's head and shoulders at 3x in a gold ring
+    # on night navy (iOS rounds the corners). The small favicons keep the book mark, which reads at 16 px.
+    tibo = Image.open(os.path.join(PUB, 'tibo.png')).convert('RGBA')
+    apple = Image.new('RGBA', (180, 180), (0, 0, 0, 0))
+    plate = Image.new('RGBA', (180, 180), '#0b0e1c')
+    pd = ImageDraw.Draw(plate)
+    for i in range(80, 0, -1):
+        k = i / 80
+        c = tuple(round(a + (b - a) * k) for a, b in zip((0x33, 0x3a, 0x5e), (0x0b, 0x0d, 0x1c)))
+        pd.ellipse([84 - i, 78 - i, 84 + i, 78 + i], fill=c)
+    head = tibo.crop((0, 0, 39, 56)).resize((39 * 3, 56 * 3), Image.NEAREST)
+    plate.alpha_composite(head, ((180 - head.width) // 2 + 1, 22))
+    mask = Image.new('L', (180, 180), 0)
+    ImageDraw.Draw(mask).ellipse([6, 6, 173, 173], fill=255)
+    apple = Image.new('RGBA', (180, 180), '#0b0e1c')
+    apple.paste(plate, (0, 0), mask)
+    ImageDraw.Draw(apple).ellipse([6, 6, 173, 173], outline='#c9a24f', width=6)
+    apple.convert('RGB').save(os.path.join(PUB, 'apple-touch-icon.png'), optimize=True)
+    print('wrote logo.svg favicon.png favicon.ico og.png tibo.png apple-touch-icon.png')

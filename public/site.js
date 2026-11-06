@@ -166,6 +166,34 @@
     apply();
   }
 
+  // Quick tips: a filter that narrows every topic to the matching tips and opens the topics that have any.
+  const topics = [...document.querySelectorAll('details.topic')];
+  if (topics.length > 1) {
+    const box = document.createElement('div');
+    box.className = 'tip-filter';
+    box.innerHTML = '<label for="tip-q">Filter tips</label><input id="tip-q" type="search" placeholder="Boss, weapon, dash, freeze…" autocomplete="off"><p id="tip-count" aria-live="polite"></p>';
+    topics[0].before(box);
+    const input = box.querySelector('input');
+    const count = box.querySelector('#tip-count');
+    const was = topics.map((t) => t.open);
+    input.addEventListener('input', () => {
+      const q = input.value.trim().toLowerCase();
+      let n = 0;
+      topics.forEach((t, i) => {
+        let hit = 0;
+        for (const li of t.querySelectorAll(':scope > ul > li')) {
+          const show = !q || li.textContent.toLowerCase().includes(q);
+          li.hidden = !show;
+          hit += show;
+        }
+        n += hit;
+        t.hidden = !!q && !hit;
+        t.open = q ? hit > 0 : was[i];
+      });
+      count.textContent = q ? (n ? `${n} tip${n === 1 ? '' : 's'} match` : 'No tips match. Try a shorter word.') : '';
+    });
+  }
+
   // The rail TOC marks the section being read.
   const tocLinks = [...document.querySelectorAll('.toc a[href^="#"]')];
   const heads = tocLinks.map((a) => document.getElementById(decodeURIComponent(a.hash.slice(1)))).filter(Boolean);

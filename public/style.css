@@ -519,6 +519,12 @@ blockquote p { margin: 6px 0; }
 .fight > div:last-child dt { color: var(--err); }
 @media (max-width: 480px) { .fight > div { grid-template-columns: 1fr; gap: 0; } }
 
+.tip-filter { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; max-width: 68ch; margin: 0 0 20px; }
+.tip-filter label { font: 700 13px/1.4 var(--display); letter-spacing: .08em; text-transform: uppercase; color: var(--accent); }
+.tip-filter input { flex: 1; min-width: 12rem; height: 44px; padding: 0 12px; font: inherit; color: var(--text); background: #0a0c18b3; border: 1px solid #c9a24f80; }
+.tip-filter input:focus-visible { outline: 2px solid #fff59d; outline-offset: 2px; border-color: var(--gold); }
+.tip-filter p { flex-basis: 100%; margin: 0; min-height: 1.4em; font-size: 14px; color: var(--muted); }
+
 /* ---------- Game panels ---------- */
 /* Hero panels (infobox, Quick tips topics, version card) wear the full game frame: gold rim, gold corner studs and an
    inner bronze line that breaks at the corners for the studs. Ordinary link cards get a quieter frame with small ticks. */
