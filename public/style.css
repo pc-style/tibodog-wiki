@@ -478,7 +478,7 @@ blockquote p { margin: 6px 0; }
 .cards a:hover { outline-color: #c9a24f99; box-shadow: var(--shadow), var(--glow); }
 .status { box-shadow: none; }
 .cards a:focus-visible { outline: 2px solid #fff59d; outline-offset: 2px; }
-@media (forced-colors: active) { .cards a, .infobox, details.topic, .status { background: Canvas; } }
+@media (forced-colors: active) { .cards a, .infobox, details.topic, .status, details.topic[open] > summary { background: Canvas; } }
 
 @media (max-width: 1180px) {
   .with-ib { grid-template-columns: minmax(0, 1fr) 280px; column-gap: 28px; }
