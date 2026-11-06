@@ -636,7 +636,8 @@ export const BOSS_MIN = { amusing: 2, 'beetle-queen': 3, 'the-masher': 4, 'late-
 const SCHEDULED = Object.keys(BOSS_MIN).length;
 export function bossPages() {
   const pages = [];
-  R.bosses.forEach((b) => {
+  // Pages follow the run's schedule, so Previous / Next walk the bosses in arrival order; endgame forms come last.
+  [...R.bosses].sort((x, y) => (BOSS_MIN[x.id] ?? 99) - (BOSS_MIN[y.id] ?? 99)).forEach((b) => {
     const n = name.boss(b.id);
     const title = t(`boss.${b.id}.title`);
     const desc = t(`boss.${b.id}.desc`) ?? '';
