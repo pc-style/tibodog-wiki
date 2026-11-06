@@ -1378,6 +1378,12 @@
  "content.item.tailwind-tater.name": [
   "Tailwind Tater"
  ],
+ "content.item.tater-tank.desc": [
+  "+1 dash charge."
+ ],
+ "content.item.tater-tank.name": [
+  "Tater Tank"
+ ],
  "content.item.tater-treat.desc": [
   "Dogs use their abilities 25% more often."
  ],

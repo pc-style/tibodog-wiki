@@ -9689,6 +9689,16 @@
    }
   },
   {
+   "id": "tater-tank",
+   "tier": "base",
+   "rarity": 2,
+   "mods": {
+    "dashCharges": 1
+   },
+   "maxStacks": 1,
+   "weight": 5
+  },
+  {
    "id": "thorny-jacket",
    "tier": "base",
    "rarity": 1,
@@ -10554,6 +10564,16 @@
      "share": 0.9
     }
    }
+  },
+  {
+   "id": "tater-tank",
+   "tier": "base",
+   "rarity": 2,
+   "mods": {
+    "dashCharges": 1
+   },
+   "maxStacks": 1,
+   "weight": 5
   },
   {
    "id": "thorny-jacket",
