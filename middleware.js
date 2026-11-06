@@ -6,7 +6,7 @@ const PAGES = new Set(PATHS);
 const API = new Set(API_PATHS);
 
 export const config = {
-  matcher: ['/((?!icons/|style\\.css|site\\.js|favicon\\.png|favicon\\.ico|logo\\.svg|apple-touch-icon\\.png|search-index\\.json|_vercel).*)'],
+  matcher: ['/((?!icons/|fonts/|style\\.css|site\\.js|favicon\\.png|favicon\\.ico|logo\\.svg|apple-touch-icon\\.png|search-index\\.json|_vercel).*)'],
 };
 
 function wantsMarkdown(accept) {

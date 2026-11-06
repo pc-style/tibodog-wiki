@@ -43,7 +43,7 @@
       ]
     },
     {
-      "source": "/icons/(.*)",
+      "source": "/(icons|fonts)/(.*)",
       "headers": [
         {
           "key": "Cache-Control",

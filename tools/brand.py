@@ -8,15 +8,19 @@ from PIL import Image, ImageDraw, ImageFont
 
 ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..')
 PUB = os.path.join(ROOT, 'public')
-FONT = os.environ.get('BRAND_FONT', '/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf')
+FONTS = os.path.join(PUB, 'fonts')
+DISPLAY = os.path.join(FONTS, 'cinzel-latin-700-normal.woff2')
+BODY = os.path.join(FONTS, 'marcellus-latin-400-normal.woff2')
 
 COLORS = {
-    'K': '#2a1d14',  # outline
-    'C': '#fbf3e4',  # page
-    'S': '#dccdb2',  # page shade and text lines
-    'O': '#e8954a',  # cover, heading line (site --accent)
-    'D': '#a3470d',  # spine (site light --link)
-    'P': '#5a3a24',  # paw
+    'K': '#05060d',  # outline (game focus shade)
+    'C': '#f4ecd8',  # page (game ink)
+    'S': '#c2b495',  # page shade and text lines (game dim ink)
+    'O': '#e6c06a',  # gilded cover and heading line
+    'D': '#b07a2c',  # spine, gold shadow
+    'P': '#1c223c',  # paw, night navy
+    'N': '#141a30',  # small tile fill
+    'G': '#c9a24f',  # small tile rim
 }
 
 PAW = [
@@ -62,14 +66,15 @@ def mark32():
 
 
 def tile16():
-    # Small sizes: the paw alone on an orange rounded tile, readable in a 16 px browser tab.
+    # Small sizes: the paw alone on a gold-rimmed night tile, readable in a 16 px browser tab.
     g = [['.'] * 16 for _ in range(16)]
     for y in range(16):
         for x in range(16):
-            corner = min(x, 15 - x) + min(y, 15 - y) < 2
+            corner = min(x, 15 - x) + min(y, 15 - y) < 1
+            edge = x in (0, 15) or y in (0, 15)
             if not corner:
-                g[y][x] = 'O'
-    put(g, 3, 4, [r.replace('P', 'C') for r in PAW])
+                g[y][x] = 'G' if edge else 'N'
+    put(g, 3, 4, [r.replace('P', 'O') for r in PAW])
     return g
 
 
@@ -102,39 +107,82 @@ def to_svg(grid):
     )
 
 
+def gold_text(im, xy, text, font):
+    # Cinzel lettering filled with the game's title gold gradient, over a dark drop shadow.
+    d = ImageDraw.Draw(im)
+    x, y = xy
+    d.text((x, y + 4), text, font=font, fill='#05060d')
+    box = d.textbbox((x, y), text, font=font)
+    mask = Image.new('L', im.size, 0)
+    ImageDraw.Draw(mask).text((x, y), text, font=font, fill=255)
+    grad = Image.new('RGB', im.size)
+    gd = ImageDraw.Draw(grad)
+    top, bot = box[1], box[3]
+    stops = [(0, (0xff, 0xf6, 0xd2)), (.45, (0xf2, 0xd0, 0x7a)), (1, (0xb8, 0x82, 0x2f))]
+    for yy in range(top, bot + 1):
+        t = (yy - top) / max(1, bot - top)
+        for (t0, c0), (t1, c1) in zip(stops, stops[1:]):
+            if t0 <= t <= t1:
+                k = (t - t0) / (t1 - t0)
+                gd.line([(0, yy), (im.width, yy)], fill=tuple(round(a + (b - a) * k) for a, b in zip(c0, c1)))
+    im.paste(grad, (0, 0), mask)
+    return box
+
+
+def frame(d, x0, y0, x1, y1):
+    # Double gold rule with diamond corners, like the game's gilded panels.
+    d.rectangle([x0, y0, x1, y1], outline='#d8b25a', width=2)
+    d.rectangle([x0 + 8, y0 + 8, x1 - 8, y1 - 8], outline='#6e5a32', width=1)
+    for cx, cy in [(x0, y0), (x1, y0), (x0, y1), (x1, y1)]:
+        d.polygon([(cx, cy - 7), (cx + 7, cy), (cx, cy + 7), (cx - 7, cy)], fill='#f3d488')
+
+
+def medallion(im, path, cx, cy, r=62):
+    # A sprite in a round night plate with a gold ring, as the game frames its icons.
+    plate = Image.new('RGBA', (2 * r, 2 * r), (0, 0, 0, 0))
+    pd = ImageDraw.Draw(plate)
+    for i in range(r, 0, -1):
+        t = i / r
+        c = tuple(round(a + (b - a) * t) for a, b in zip((0x33, 0x3a, 0x5e), (0x0b, 0x0d, 0x1c)))
+        pd.ellipse([r - i - r * .1, r - i - r * .15, r + i - r * .1, r + i - r * .15], fill=c + (255,))
+    mask = Image.new('L', plate.size, 0)
+    ImageDraw.Draw(mask).ellipse([0, 0, 2 * r - 1, 2 * r - 1], fill=255)
+    disc = Image.new('RGBA', plate.size, (0, 0, 0, 0))
+    disc.paste(plate, (0, 0), mask)
+    ImageDraw.Draw(disc).ellipse([0, 0, 2 * r - 1, 2 * r - 1], outline='#c9a24f', width=3)
+    im.paste(disc, (cx - r, cy - r), disc)
+    s = Image.open(os.path.join(PUB, 'icons', path)).convert('RGBA')
+    k = max(1, int(84 // max(s.size))) if max(s.size) <= 100 else 1 / -(-max(s.size) // 100)
+    s = s.resize((max(1, int(s.width * k)), max(1, int(s.height * k))), Image.NEAREST)
+    im.paste(s, (cx - s.width // 2, cy - s.height // 2), s)
+
+
 def og(mark):
     W, H = 1200, 630
-    im = Image.new('RGB', (W, H), '#141210')
+    im = Image.new('RGB', (W, H))
     d = ImageDraw.Draw(im)
-    d.rectangle([0, H - 10, W, H], fill=COLORS['O'])
+    # Night vignette, brightest a little above centre (the game's scrim).
+    for i in range(700, 0, -4):
+        t = i / 700
+        c = tuple(round(a + (b - a) * t) for a, b in zip((0x1c, 0x22, 0x3c), (0x05, 0x06, 0x0d)))
+        d.ellipse([430 - i * 1.3, 280 - i, 430 + i * 1.3, 280 + i], fill=c)
+    frame(d, 28, 28, W - 29, H - 29)
 
-    def sprite(path, scale):
-        s = Image.open(os.path.join(PUB, 'icons', path)).convert('RGBA')
-        return s.resize((s.width * scale, s.height * scale), Image.NEAREST)
+    m = mark.crop((1, 6, 31, 26)).resize((30 * 5, 20 * 5), Image.NEAREST)
+    im.paste(m, (88, 92), m)
+    gold_text(im, (84, 210), 'tibodog.wiki', ImageFont.truetype(DISPLAY, 86))
+    body = ImageFont.truetype(BODY, 36)
+    d.text((88, 336), 'The unofficial fan wiki for tibo.dog', font=body, fill='#f4ecd8')
+    small = ImageFont.truetype(BODY, 26)
+    d.text((88, 394), 'Weapons, evolutions, items, dogs, enemies,', font=small, fill='#c2b495')
+    d.text((88, 428), 'bosses and formulas, sourced from the live game', font=small, fill='#c2b495')
+    d.line([(88, 494), (520, 494)], fill='#6e5a32', width=1)
+    d.text((88, 510), 'www.tibodog.wiki', font=ImageFont.truetype(DISPLAY, 26), fill='#e6c06a')
 
-    boss = sprite('boss/harvester.png', 1)
-    im.paste(boss, (W - boss.width - 56, 64), boss)
-
-    m = mark.resize((128, 128), Image.NEAREST)
-    im.paste(m, (64, 56), m)
-    word = ImageFont.truetype(FONT, 84)
-    x, y = 64, 210
-    d.text((x, y), 'tibodog', font=word, fill='#ece7e0')
-    d.text((x + d.textlength('tibodog', font=word), y), '.wiki', font=word, fill='#f0a868')
-    sub = ImageFont.truetype(FONT.replace('-Bold', ''), 34)
-    d.text((x + 2, 322), 'The unofficial fan wiki for tibo.dog', font=sub, fill='#d3ccc3')
-    small = ImageFont.truetype(FONT.replace('-Bold', ''), 24)
-    d.text((x + 2, 372), 'Weapons, evolutions, items, dogs, enemies, bosses', font=small, fill='#a39a8f')
-    d.text((x + 2, 404), 'and formulas, sourced from the live game', font=small, fill='#a39a8f')
-
-    row = ['weapon/peeler.png', 'weapon/hot-potato.png', 'passive/hot-sauce.png', 'item/sharp-peeler.png',
-           'dog/corgi.png', 'dog/beagle.png', 'enemy/potato-beetle.png']
-    sprites = [sprite(p, 2) for p in row]
-    gap = (W - 2 * 64 - sum(s.width for s in sprites)) / (len(sprites) - 1)
-    sx = 64
-    for s in sprites:
-        im.paste(s, (round(sx), H - 40 - s.height), s)
-        sx += s.width + gap
+    icons = ['weapon/spud-cannon.png', 'item/kaboom-spud.png', 'dog/corgi.png',
+             'passive/hot-sauce.png', 'enemy/potato-beetle.png', 'boss/harvester.png']
+    for i, p in enumerate(icons):
+        medallion(im, p, 870 + (i % 2) * 160, 150 + (i // 2) * 165)
     return im
 
 
@@ -157,7 +205,7 @@ if __name__ == '__main__':
         offset += len(data)
     with open(os.path.join(PUB, 'favicon.ico'), 'wb') as f:
         f.write(head + entries + b''.join(d for _, d in frames))
-    apple = Image.new('RGB', (180, 180), '#1b1916')
+    apple = Image.new('RGB', (180, 180), '#0b0e1c')
     m4 = to_image(big, 5)
     apple.paste(m4, ((180 - m4.width) // 2, (180 - m4.height) // 2), m4)
     apple.save(os.path.join(PUB, 'apple-touch-icon.png'), optimize=True)
