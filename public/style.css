@@ -35,10 +35,13 @@
   --ok: #93d48c;
   --warn: #f2a02c;
   --err: #ff8a80;
-  --shadow: 0 0 0 1px #0009, 0 6px 20px #00000080;
+  /* Flat, like the game's panels: a hard 2 px drop, no blur. */
+  --shadow: 0 0 0 1px #0009, 0 2px 0 #000c;
   --glow: 0 0 .7em #e8c46a33;
   /* Game panel: gold rim, an inner bronze hairline and gold corner studs, as on tibo.dog's gilded panels. */
   --stud: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 10'%3E%3Cpath d='M5 0 10 5 5 10 0 5z' fill='%23f3d488'/%3E%3Cpath d='M5 3 7 5 5 7 3 5z' fill='%23b07a2c'/%3E%3C/svg%3E");
+  --ticks: var(--stud) left 3px top 3px / 6px 6px no-repeat border-box, var(--stud) right 3px top 3px / 6px 6px no-repeat border-box,
+    var(--stud) left 3px bottom 3px / 6px 6px no-repeat border-box, var(--stud) right 3px bottom 3px / 6px 6px no-repeat border-box;
   --studs: var(--stud) left 0 top 0 / 10px 10px no-repeat border-box, var(--stud) right 0 top 0 / 10px 10px no-repeat border-box,
     var(--stud) left 0 bottom 0 / 10px 10px no-repeat border-box, var(--stud) right 0 bottom 0 / 10px 10px no-repeat border-box;
   --radius: 2px;
@@ -256,6 +259,9 @@ p { margin: 0 0 16px; }
 ul, ol { padding-left: 24px; margin: 0 0 16px; }
 li { margin: 4px 0; }
 li::marker { color: var(--muted); }
+/* Bullets in articles are small gold diamonds, the game's list mark. */
+article ul:not([class]) { list-style-type: "◆  "; }
+article ul:not([class]) > li::marker { color: var(--accent); font-size: .7em; }
 strong, b { font-weight: 600; color: #fff8e6; }
 a strong, a b { color: inherit; }
 a code { color: var(--link); }
@@ -283,17 +289,33 @@ article small code { background: none; padding: 0; color: inherit; font-size: 12
 .toc a { display: block; padding: 3px 0; color: var(--text-2); line-height: 1.45; }
 .toc a:hover { color: var(--link); text-decoration: none; }
 .toc a[aria-current="true"] { color: var(--link); font-weight: 600; }
-@supports selector(:has(> *)) { @media (min-width: 1560px) {
-  /* A sticky right rail beside the article, only when tables still have room. */
-  article:has(> .toc):not(:has(.infobox)) { padding-right: 252px; max-width: 1312px; }
-  article > .toc { position: absolute; top: 0; right: 0; bottom: 0; width: 212px; margin: 0; }
-  article > .toc .toc-in > ol:has(> li) { display: block; }
-  article > .toc .toc-in {
+/* A sticky right-rail TOC beside the article on wide screens, for pages without an infobox. Between 1200 and 1560 px
+   pages with wide tables keep the inline TOC so their tables keep the full column. */
+@supports selector(:has(> *)) {
+@media (min-width: 1200px) and (max-width: 1559.98px) {
+  article:has(> .toc):not(:has(.infobox)):not(:has(.wikitable thead th:nth-child(3))) { padding-right: 236px; max-width: 1296px; }
+  article:has(> .toc):not(:has(.infobox)):not(:has(.wikitable thead th:nth-child(3))) > .toc { position: absolute; top: 0; right: 0; bottom: 0; width: 212px; margin: 0; }
+  article:has(> .toc):not(:has(.infobox)):not(:has(.wikitable thead th:nth-child(3))) > .toc .toc-in > ol:has(> li) { display: block; }
+  article:has(> .toc):not(:has(.infobox)):not(:has(.wikitable thead th:nth-child(3))) > .toc .toc-in {
     position: sticky; top: calc(var(--header-h) + 36px); max-height: calc(100vh - var(--header-h) - 72px); overflow-y: auto;
-    border-left-width: 1px;
     scrollbar-width: thin; scrollbar-color: var(--line) transparent;
   }
-} }
+}
+@media (min-width: 1560px) {
+  article:has(> .toc):not(:has(.infobox)) { padding-right: 252px; max-width: 1312px; }
+  article:has(> .toc):not(:has(.infobox)) > .toc { position: absolute; top: 0; right: 0; bottom: 0; width: 212px; margin: 0; }
+  article:has(> .toc):not(:has(.infobox)) > .toc .toc-in > ol:has(> li) { display: block; }
+  article:has(> .toc):not(:has(.infobox)) > .toc .toc-in {
+    position: sticky; top: calc(var(--header-h) + 36px); max-height: calc(100vh - var(--header-h) - 72px); overflow-y: auto;
+    scrollbar-width: thin; scrollbar-color: var(--line) transparent;
+  }
+}
+}
+
+/* Beside an infobox the TOC is a compact row of top-level sections, so the article starts near the title. */
+.ib-body > .toc .toc-in { max-width: none; }
+.ib-body > .toc .toc-in > ol { display: flex !important; flex-wrap: wrap; gap: 2px 20px; }
+.ib-body > .toc .toc-in ol ol { display: none; }
 
 /* ---------- Infobox ---------- */
 .with-ib { display: grid; grid-template-columns: minmax(0, 1fr) 320px; column-gap: 40px; align-items: start; }
@@ -337,12 +359,18 @@ article small code { background: none; padding: 0; color: inherit; font-size: 12
 .wikitable { width: max-content; min-width: 100%; border-collapse: collapse; font-size: 14.5px; line-height: 1.45; font-variant-numeric: tabular-nums; }
 /* Cap prose cells so max-content tables still wrap long text (changes, descriptions, biome lists). */
 .wikitable td { max-width: 28em; }
-.wikitable td:last-child:not(.num) { max-width: var(--last-max, 28em); }
+/* site.js sets --txt-max when a table would overflow: text columns and headings wrap tighter first. */
+table.wikitable[style*="--txt-max"] > tbody > tr > td:not(:first-child):not(.num) { max-width: var(--txt-max); }
+.wikitable[style*="--txt-max"] th { white-space: normal; }
+.wikitable[style*="--txt-max"] th .sort { text-align: left; }
 .wikitable th, .wikitable td { padding: 9px 12px; vertical-align: top; text-align: left; border-bottom: 1px solid var(--line-2); }
 /* site.js marks columns whose every value is a number; they align right so magnitudes line up. */
 .wikitable .num { text-align: right; }
 .wikitable th.num .sort { flex-direction: row-reverse; }
 .wikitable tbody tr:last-child td { border-bottom: 0; }
+/* Long tables that fit keep their column headings in view while scrolling (no inner scroll box, so no trap). */
+.table-wrap.fits { overflow: visible; }
+.table-wrap.fits .wikitable:has(tbody tr:nth-child(8)) thead th { position: sticky; top: var(--header-h); z-index: 2; box-shadow: 0 1px 0 #c9a24f80, 0 6px 10px -6px #000c; }
 .wikitable th {
   background: linear-gradient(180deg, #1c223c, #12172b); color: var(--gold); font: 700 13.5px/1.4 var(--display); letter-spacing: .03em; white-space: nowrap;
   border-bottom-color: #c9a24f80;
@@ -472,17 +500,43 @@ blockquote p { margin: 6px 0; }
 #search-page-results li a { font: 700 17px/1.4 var(--display); }
 
 /* ---------- Responsive ---------- */
+/* Home: an eyebrow names the site above a headline that says what it is for. */
+.eyebrow { margin: 0 0 6px; font: 700 13px/1.4 var(--display); letter-spacing: .1em; text-transform: uppercase; color: var(--accent); }
+/* The three starting tasks on home are the page's primary path: bigger, in full hero frames. */
+.cards.tasks { grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
+/* Icon above the words, so three tasks fit side by side next to the rail. */
+.cards.tasks a { grid-template-columns: 1fr; grid-template-rows: auto auto auto; row-gap: 8px; align-content: start; padding: 18px; position: relative; border-color: #c9a24f99; background: var(--studs), var(--surface); }
+.cards.tasks a:hover { background: var(--studs), linear-gradient(90deg, #c9a24f24, #c9a24f00 70%), var(--surface); }
+.cards.tasks strong { font-size: 18px; }
+.cards.tasks .ico { grid-row: auto; }
+@media (max-width: 600px) { .cards.tasks a { grid-template-columns: 52px 1fr; grid-template-rows: auto auto; row-gap: 0; } .cards.tasks .ico { grid-row: 1 / 3; } }
+
+/* Boss guide fight card: three labelled lines a player can read mid-run. */
+.fight { display: grid; gap: 6px; max-width: 68ch; margin: 0 0 16px; padding: 12px 16px; border-left: 3px solid var(--gold); background: #c9a24f12; }
+.fight > div { display: grid; grid-template-columns: 6.5em 1fr; gap: 12px; align-items: baseline; }
+.fight dt { font: 700 12.5px/1.4 var(--display); letter-spacing: .08em; text-transform: uppercase; color: var(--accent); }
+.fight dd { margin: 0; color: var(--text); }
+.fight > div:last-child dt { color: var(--err); }
+@media (max-width: 480px) { .fight > div { grid-template-columns: 1fr; gap: 0; } }
+
 /* ---------- Game panels ---------- */
-/* The inner hairline is an inset outline 5 px in from the rim; it crosses the corner studs faintly, like the game's own panels. */
-.cards a, .infobox, details.topic, .status {
-  border-color: #c9a24f99; background: var(--studs), var(--surface);
-  outline: 1px solid #c9a24f4d; outline-offset: -5px;
+/* Hero panels (infobox, Quick tips topics, version card) wear the full game frame: gold rim, gold corner studs and an
+   inner bronze line that breaks at the corners for the studs. Ordinary link cards get a quieter frame with small ticks. */
+.infobox, details.topic, .status { position: relative; border-color: #c9a24f99; background: var(--studs), var(--surface); }
+.infobox::before, details.topic::before, .status::before {
+  content: ""; position: absolute; inset: 4px; border: 1px solid #c9a24f4d; pointer-events: none;
+  clip-path: polygon(9px 0, calc(100% - 9px) 0, 100% 9px, 100% calc(100% - 9px), calc(100% - 9px) 100%, 9px 100%, 0 calc(100% - 9px), 0 9px);
 }
+.cards a {
+  border-color: #c9a24f80;
+  background: var(--ticks), var(--surface);
+}
+.cards a:hover { border-color: var(--gold); background: var(--ticks), linear-gradient(90deg, #c9a24f24, #c9a24f00 70%), var(--surface); transform: translateY(-1px); }
 .cards a, details.topic, .infobox { box-shadow: var(--shadow); }
-.cards a:hover { outline-color: #c9a24f99; box-shadow: var(--shadow), var(--glow); }
+.cards a:hover { box-shadow: var(--shadow); }
 .status { box-shadow: none; }
 .cards a:focus-visible { outline: 2px solid #fff59d; outline-offset: 2px; }
-@media (forced-colors: active) { .cards a, .infobox, details.topic, .status, details.topic[open] > summary { background: Canvas; } }
+@media (forced-colors: active) { .cards a, .infobox, details.topic, .status, details.topic[open] > summary { background: Canvas; } .infobox::before, details.topic::before, .status::before { border-color: CanvasText; } }
 
 @media (max-width: 1180px) {
   .with-ib { grid-template-columns: minmax(0, 1fr) 280px; column-gap: 28px; }
@@ -525,6 +579,10 @@ blockquote p { margin: 6px 0; }
   html.menu-open body::after { content: ""; position: fixed; inset: var(--header-h) 0 0; z-index: 25; background: #05060dcc; }
   .cards { grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); }
   .ib-img { padding: 12px; }
+  /* Phones: the infobox shows its six key stats first; site.js adds a button for the rest. */
+  .infobox.ib-short tr:nth-child(n + 7) { display: none; }
+  .ib-all { display: block; width: calc(100% - 24px); min-height: 40px; margin: 4px 12px 12px; font: 700 13.5px/1 var(--display); letter-spacing: .04em; color: var(--title); background: #0a0c18b3; border: 1px solid #c9a24f80; cursor: pointer; }
+  .ib-all:hover { border-color: var(--gold); }
   .ib-img img { max-height: 72px; }
   /* A wrapped prose cell must fit inside the table's visible width, or no whole line is ever visible. */
   .wikitable td { max-width: min(28em, calc(100vw - 4rem)); }
@@ -559,7 +617,7 @@ blockquote p { margin: 6px 0; }
   .lead { font-size: 17px; }
   .with-ib { grid-template-columns: minmax(0, 1fr) 260px; column-gap: 24px; }
   code.nw { white-space: normal; overflow-wrap: anywhere; }
-  .infobox, .infobox.fits { position: static; width: auto; margin: 0 0 28px; }
+  .infobox, .infobox.fits { position: relative; width: auto; margin: 0 0 28px; }
   .toc-in > ol:has(> li:nth-child(6)):not(:has(ol)) { display: block; }
   .anchor { display: none; }
   h2 .when { font-size: 12px; }
@@ -569,5 +627,5 @@ blockquote p { margin: 6px 0; }
 /* Very narrow phones: Tibo alone stands for the brand (the link keeps its aria-label), so search keeps room for its placeholder. */
 @media (max-width: 359px) { .brand-txt { display: none; } }
 @media (forced-colors: active) { h1, .brand b { -webkit-text-fill-color: currentColor; background: none; } }
-@media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; } .cards a:hover { transform: none; } }
 @media print { .top, .side, .foot, .toc { display: none; } .layout { display: block; } main { padding: 0; } pre { max-height: none; } }

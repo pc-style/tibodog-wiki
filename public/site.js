@@ -147,6 +147,43 @@
     });
   }
 
+  // Phones: a long infobox shows its first six stats and a button for the rest, so the article starts sooner.
+  const ib = document.querySelector('.infobox');
+  const ibRows = ib?.querySelectorAll('tr') ?? [];
+  if (ib && ibRows.length > 8) {
+    const btn = document.createElement('button');
+    btn.type = 'button';
+    btn.className = 'ib-all';
+    const label = () => { btn.textContent = ib.classList.contains('ib-short') ? `Show all ${ibRows.length} stats` : 'Show fewer stats'; btn.setAttribute('aria-expanded', String(!ib.classList.contains('ib-short'))); };
+    const apply = () => {
+      btn.hidden = !narrow;
+      ib.classList.toggle('ib-short', narrow && btn.dataset.open !== '1');
+      label();
+    };
+    btn.addEventListener('click', () => { btn.dataset.open = btn.dataset.open === '1' ? '' : '1'; apply(); });
+    ib.append(btn);
+    narrowMq.addEventListener('change', apply);
+    apply();
+  }
+
+  // The rail TOC marks the section being read.
+  const tocLinks = [...document.querySelectorAll('.toc a[href^="#"]')];
+  const heads = tocLinks.map((a) => document.getElementById(decodeURIComponent(a.hash.slice(1)))).filter(Boolean);
+  if (heads.length > 1) {
+    const mark = () => {
+      // The section whose heading has passed the top third of the screen is the one being read.
+      const top = Math.max(innerHeight * 0.3, 120);
+      let cur = heads[0];
+      for (const h of heads) if (h.getBoundingClientRect().top <= top) cur = h;
+      for (const a of tocLinks) {
+        if (a.hash.slice(1) === cur.id) a.setAttribute('aria-current', 'true');
+        else a.removeAttribute('aria-current');
+      }
+    };
+    addEventListener('scroll', () => requestAnimationFrame(mark), { passive: true });
+    mark();
+  }
+
   // Tables: numeric columns align right; tables with 4+ rows sort from a button in each header.
   // A leading dash ("—") marks a value the game sets elsewhere; it counts as empty.
   const num = (s) => {
@@ -178,15 +215,16 @@
       wrap.before(hint);
       // An overflowing table is a scroll region: keyboard users can focus it and scroll with the arrow keys.
       const fits = () => {
-        // A wide text column at the end (Biomes, notes) wraps tighter before the table resorts to scrolling.
-        table.style.removeProperty('--last-max');
-        const last = ths[ths.length - 1];
-        const extra = wrap.scrollWidth - wrap.clientWidth;
-        if (extra > 1 && last && !last.classList.contains('num') && last.offsetWidth - extra - 2 >= 180) {
-          table.style.setProperty('--last-max', `${last.offsetWidth - extra - 2}px`);
+        // Before a table resorts to scrolling, its text columns and headings wrap tighter, down to a readable floor.
+        table.style.removeProperty('--txt-max');
+        for (const px of [240, 200, 170, 140]) {
+          if (wrap.scrollWidth <= wrap.clientWidth + 1) break;
+          table.style.setProperty('--txt-max', `${px}px`);
         }
         const over = wrap.scrollWidth > wrap.clientWidth + 1;
         hint.hidden = !over;
+        // A table that fits needs no scroll box, so its header row can stick under the site header.
+        wrap.classList.toggle('fits', !over);
         if (over) {
           wrap.tabIndex = 0;
           wrap.setAttribute('role', 'region');
