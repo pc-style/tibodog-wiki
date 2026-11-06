@@ -421,6 +421,8 @@ blockquote p { margin: 6px 0; }
   .brand { font-size: 19px; }
   .search { order: 3; flex-basis: 100%; max-width: none; }
   .search-key { display: none; }
+  /* A wrapped prose cell must fit inside the table's visible width, or no whole line is ever visible. */
+  .wikitable td { max-width: min(28em, calc(100vw - 4rem)); }
   .tabs { padding: 8px 16px; }
   .tabs a { padding: 8px 12px; font-size: 13px; }
   .layout { display: block; }
