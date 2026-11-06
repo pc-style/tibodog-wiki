@@ -2065,6 +2065,12 @@
  "content.weapon.inferno-basket.name": [
   "Inferno Basket"
  ],
+ "content.weapon.jet-fryer.desc": [
+  "Each dash blasts two fans of hot fries backward from where the dash started. Every fry splashes hot oil where it lands."
+ ],
+ "content.weapon.jet-fryer.name": [
+  "Jet Fryer"
+ ],
  "content.weapon.julienne-dash.desc": [
   "Each dash slices every pest along Tibo's path. Between dashes, it also slices along the path he just walked."
  ],

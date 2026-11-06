@@ -6,8 +6,8 @@ You get it from a level-up card. At level 8 it deals 38 damage, the band runs to
 
 ## How it works
 
-- **A ring, not a disc.** The outer edge is `size` × area and the inner edge is (`size` − `width`) × area. A pest standing entirely inside the inner edge is skipped, so pests that have already reached Tibo are not hit. <small>[sim-dH1jfRwU.js: `if(r(J(e,i)-a,Y(e,i)-o)+fl(e,i)<c)continue`]</small>
-- **Per-pest cooldown.** Every frame, each pest touching the band is hit unless this weapon has hit it within the last cooldown period. Cooldown reduction makes repeat hits on the same pest come sooner. <small>[sim-dH1jfRwU.js: `let d=Math.max(1,Math.round(60*i.cooldown/Jv(e)))`]</small>
+- **A ring, not a disc.** The outer edge is `size` × area and the inner edge is (`size` − `width`) × area. A pest standing entirely inside the inner edge is skipped, so pests that have already reached Tibo are not hit. <small>[sim-BidEahwi.js: `if(r(J(e,i)-a,Y(e,i)-o)+fl(e,i)<c)continue`]</small>
+- **Per-pest cooldown.** Every frame, each pest touching the band is hit unless this weapon has hit it within the last cooldown period. Cooldown reduction makes repeat hits on the same pest come sooner. <small>[sim-BidEahwi.js: `let d=Math.max(1,Math.round(60*i.cooldown/Xv(e)))`]</small>
 - **Freeze and slow.** `onHit` freezes a normal pest, which stops it moving. `bossOnHit` slows a boss instead: `factor` 0.4 means the boss moves at 60% speed. Both durations are multiplied by Tibo's duration stat, so with the base +25% duration the freeze lasts 0.875 s and the boss slow 1.25 s.
 - The ring has no knockback, and amount bonuses do not affect it.
 

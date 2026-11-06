@@ -2233,7 +2233,7 @@
    "id": "tot-stampede",
    "tier": "base",
    "base": {
-    "damage": 16,
+    "damage": 19.2,
     "cooldown": 0,
     "amount": 1,
     "area": 1,
@@ -6075,7 +6075,7 @@
    "id": "tot-stampede",
    "tier": "base",
    "base": {
-    "damage": 16,
+    "damage": 19.2,
     "cooldown": 0,
     "amount": 1,
     "area": 1,
@@ -6352,7 +6352,7 @@
    "id": "tot-cavalry",
    "tier": "evolved",
    "base": {
-    "damage": 68,
+    "damage": 81.6,
     "cooldown": 0,
     "amount": 4,
     "area": 1,
@@ -7057,6 +7057,44 @@
    },
    "from": "harvest-moon",
    "catalyst": "potato-magnet"
+  },
+  {
+   "id": "jet-fryer",
+   "tier": "evolved",
+   "on": "dash",
+   "base": {
+    "damage": 70,
+    "cooldown": 0.4,
+    "amount": 7,
+    "area": 1.2,
+    "speed": 210,
+    "duration": 0.2,
+    "pierce": 99,
+    "knockback": 1,
+    "interval": 0
+   },
+   "behavior": {
+    "kind": "bigUpdate",
+    "variant": {
+     "kind": "afterburnerFries",
+     "size": 4,
+     "spread": 1.2,
+     "gap": 10,
+     "jet": {
+      "spread": 1.6,
+      "speed": 0.45,
+      "oil": {
+       "shape": "splat",
+       "radius": 12,
+       "sec": 4,
+       "every": 0.25,
+       "share": 1
+      }
+     }
+    }
+   },
+   "from": "afterburner-fries",
+   "catalyst": "hot-start"
   },
   {
    "id": "mash-colossus",
@@ -8302,7 +8340,7 @@
    "id": "tot-cavalry",
    "tier": "evolved",
    "base": {
-    "damage": 68,
+    "damage": 81.6,
     "cooldown": 0,
     "amount": 4,
     "area": 1,
@@ -8434,6 +8472,44 @@
    },
    "from": "harvest-moon",
    "catalyst": "potato-magnet"
+  },
+  {
+   "id": "jet-fryer",
+   "tier": "evolved",
+   "on": "dash",
+   "base": {
+    "damage": 70,
+    "cooldown": 0.4,
+    "amount": 7,
+    "area": 1.2,
+    "speed": 210,
+    "duration": 0.2,
+    "pierce": 99,
+    "knockback": 1,
+    "interval": 0
+   },
+   "behavior": {
+    "kind": "bigUpdate",
+    "variant": {
+     "kind": "afterburnerFries",
+     "size": 4,
+     "spread": 1.2,
+     "gap": 10,
+     "jet": {
+      "spread": 1.6,
+      "speed": 0.45,
+      "oil": {
+       "shape": "splat",
+       "radius": 12,
+       "sec": 4,
+       "every": 0.25,
+       "share": 1
+      }
+     }
+    }
+   },
+   "from": "afterburner-fries",
+   "catalyst": "hot-start"
   },
   {
    "id": "mash-colossus",
@@ -11043,7 +11119,7 @@
      "kind": "fan",
      "count": 3,
      "arc": 0.5,
-     "speed": 130,
+     "speed": 104,
      "radius": 2.5,
      "damage": 10,
      "bursts": 1,

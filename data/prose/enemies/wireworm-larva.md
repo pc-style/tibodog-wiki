@@ -6,7 +6,7 @@ It is a plain chaser: speed 40, 18 HP, 6 contact damage. Compared with the beetl
 
 ## How it works
 
-It has no special behaviour: the `chase` kind just uses the default movement straight towards Tibo. <small>[sim-dH1jfRwU.js: `` case`chase`:case`tank`:case`splitter`:return; ``]</small> Its mass of 0.1 means knockback moves it 90% as far as a massless pest.
+It has no special behaviour: the `chase` kind just uses the default movement straight towards Tibo. <small>[sim-BidEahwi.js: `` case`chase`:case`tank`:case`splitter`:return; ``]</small> Its mass of 0.1 means knockback moves it 90% as far as a massless pest.
 
 Tier 2 is the elite tier from 1:00 to 4:59, so an early elite spawned in Peel Forest can be a Wireworm Larva (see [Elites](/enemy-scaling#elites)).
 

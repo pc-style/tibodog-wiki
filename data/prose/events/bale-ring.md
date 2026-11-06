@@ -6,10 +6,10 @@ Hay bales are tanky and very slow: 400 base HP, 14 contact damage and a speed of
 
 ## How it works
 
-- **Count.** 36 bales × the difficulty's wall-pest multiplier, with a minimum of 1. That is 5 on Easy, 11 on Normal and Hard, and 22 on Nightmare (see [Modes](/modes)). They are spaced evenly around the circle. <small>[sim-dH1jfRwU.js: `o=Math.max(1,Math.round(t.count*e.cfg.level.wallPests))`]</small>
-- **Movement.** Bales don't chase Tibo. Each one heads for the spot where Tibo stood when the event fired and stops within 20 units of it. At speed 9, the ring takes about 17 seconds to close from 170 to 20 units. <small>[sim-dH1jfRwU.js: `r=n.tx[t]-n.x[t],i=n.ty[t]-n.y[t],a=Dt(r,i),o=a<20?0:n.speed[t]`]</small>
-- **Scaling.** The event sets each bale to its base speed of 9, so time and curse never make bales faster. Their HP and damage still follow normal [enemy scaling](/enemy-scaling). <small>[sim-dH1jfRwU.js: `r.speed[l]=E.enemyAt(n).speed,r.tx[l]=i,r.ty[l]=a,r.despawnAt[l]=e.time+t.life`]</small>
-- **Despawn.** A bale is removed at 22 seconds, or earlier if it ends up more than about 460 units from Tibo. A removed bale gives nothing. <small>[sim-dH1jfRwU.js: `if(s>0&&e.time>=s){i.pool.kill(o);continue}`]</small>
+- **Count.** 36 bales × the difficulty's wall-pest multiplier, with a minimum of 1. That is 5 on Easy, 11 on Normal and Hard, and 22 on Nightmare (see [Modes](/modes)). They are spaced evenly around the circle. <small>[sim-BidEahwi.js: `o=Math.max(1,Math.round(t.count*e.cfg.level.wallPests))`]</small>
+- **Movement.** Bales don't chase Tibo. Each one heads for the spot where Tibo stood when the event fired and stops within 20 units of it. At speed 9, the ring takes about 17 seconds to close from 170 to 20 units. <small>[sim-BidEahwi.js: `r=n.tx[t]-n.x[t],i=n.ty[t]-n.y[t],a=Dt(r,i),o=a<20?0:n.speed[t]`]</small>
+- **Scaling.** The event sets each bale to its base speed of 9, so time and curse never make bales faster. Their HP and damage still follow normal [enemy scaling](/enemy-scaling). <small>[sim-BidEahwi.js: `r.speed[l]=E.enemyAt(n).speed,r.tx[l]=i,r.ty[l]=a,r.despawnAt[l]=e.time+t.life`]</small>
+- **Despawn.** A bale is removed at 22 seconds, or earlier if it ends up more than about 460 units from Tibo. A removed bale gives nothing. <small>[sim-BidEahwi.js: `if(s>0&&e.time>=s){i.pool.kill(o);continue}`]</small>
 - **Full field.** Like other non-gold events, the ring is skipped (with no announcement) if the enemy pool is already at its hard cap (550 on Easy/Normal, 700 on Hard, 850 on Nightmare).
 
 **Measured** (headless `tools/play.mjs`, build `main-B2gf34bA`, standard mode, `--god`, seed `wiki`; the clock warped to 2 s before each minute with pests removed first): the ring fired at 6:00, 9:00, 13:00 and 16:00, and on Normal also at 19:00, 21:00, 23:00 and 25:00. Each ring had 5 bales on Easy, 11 on Normal and Hard, and 22 on Nightmare.
