@@ -66,6 +66,18 @@ function biomeCell(list) {
   return `<details class="cell-more"><summary>${list.length} biomes, ${range}</summary>${items}</details>`;
 }
 
+// The intro answers "what do I do with it": the bold one-action lead of the page's first tip, when it has one.
+// The in-game flavour text moves to the infobox, so the lead does not spend the first lines on a quote.
+function keyTip(dir, id) {
+  let md = '';
+  try { md = readFileSync(new URL(`../data/prose/${dir}/${id}.md`, import.meta.url), 'utf8'); } catch { return ''; }
+  const m = md.match(/^## Tips\n+- \*\*(.+?)\*\*/m);
+  return m ? ` **Key tip:** ${m[1]}` : '';
+}
+
+// When the key tip took the intro's place, the in-game text is kept as the infobox's last row.
+const withText = (rows, tip, desc) => (tip && desc ? [...rows, ['In-game text', `“${desc}”`]] : rows);
+
 const WSTATS = [
   ['damage', 'Damage'],
   ['cooldown', 'Cooldown (s)'],
@@ -209,8 +221,8 @@ export function weaponPages() {
       section: 'Weapons',
       crumbs: [['Weapons', '/weapons']],
       description: `${n} is ${/^(?!uni)[aeiou]/i.test(tierLabel[w.tier]) ? 'an' : 'a'} ${tierLabel[w.tier].toLowerCase()} in tibo.dog. ${desc}`.trim(),
-      lead: `**${n}** is ${/^(?!uni)[aeiou]/i.test(tierLabel[w.tier]) ? 'an' : 'a'} ${tierLabel[w.tier].toLowerCase()} in tibo.dog. In-game description: “${desc}”`,
-      infobox: { title: n, icon: `weapon/${w.id}`, caption: tierLabel[w.tier], rows, note: 'Raw values, before Tibo’s bonuses ([how stats combine](/stats)).' },
+      lead: `**${n}** is ${/^(?!uni)[aeiou]/i.test(tierLabel[w.tier]) ? 'an' : 'a'} ${tierLabel[w.tier].toLowerCase()} in tibo.dog.${keyTip('weapons', w.id) || ` In-game description: “${desc}”`}`,
+      infobox: { title: n, icon: `weapon/${w.id}`, caption: tierLabel[w.tier], rows: withText(rows, keyTip('weapons', w.id), desc), note: 'Raw values, before Tibo’s bonuses ([how stats combine](/stats)).' },
       body,
       sources: [SRC_REG, SRC_TEXT],
       search: `${n} ${w.id} weapon ${w.behavior.kind}`,
@@ -342,8 +354,8 @@ export function passivePages() {
       title: n,
       crumbs: [['Passives', '/passives']],
       description: `${n} is a passive in tibo.dog. ${desc}`,
-      lead: `**${n}** is a passive upgrade in tibo.dog. In-game description: “${desc}”`,
-      infobox: { title: n, icon: `passive/${p.id}`, caption: 'Passive', rows },
+      lead: `**${n}** is a passive upgrade in tibo.dog.${keyTip('passives', p.id) || ` In-game description: “${desc}”`}`,
+      infobox: { title: n, icon: `passive/${p.id}`, caption: 'Passive', rows: withText(rows, keyTip('passives', p.id), desc) },
       body,
       sources: [SRC_REG, SRC_TEXT],
       search: `${n} ${p.id} passive ${p.stat} ${statLabel(p.stat)}`,
@@ -420,8 +432,8 @@ export function itemPages() {
       title: n,
       crumbs: [['Items', '/items']],
       description: `${n} is ${/^[aeiou]/i.test(RARITY[it.rarity]) ? 'an' : 'a'} ${RARITY[it.rarity].toLowerCase()} ${it.tier === 'evolved' ? 'evolved ' : ''}item in tibo.dog. ${desc}`,
-      lead: `**${n}** is ${/^[aeiou]/i.test(RARITY[it.rarity]) ? 'an' : 'a'} ${RARITY[it.rarity].toLowerCase()} ${it.tier === 'evolved' ? 'evolved ' : ''}item in tibo.dog. In-game description: “${desc}”`,
-      infobox: { title: n, icon: `item/${it.id}`, caption: RARITY[it.rarity], rows },
+      lead: `**${n}** is ${/^[aeiou]/i.test(RARITY[it.rarity]) ? 'an' : 'a'} ${RARITY[it.rarity].toLowerCase()} ${it.tier === 'evolved' ? 'evolved ' : ''}item in tibo.dog.${keyTip('items', it.id) || ` In-game description: “${desc}”`}`,
+      infobox: { title: n, icon: `item/${it.id}`, caption: RARITY[it.rarity], rows: withText(rows, keyTip('items', it.id), desc) },
       body,
       sources: [SRC_REG, SRC_TEXT],
       search: `${n} ${it.id} item ${RARITY[it.rarity]} ${Object.keys(it.mods ?? {}).join(' ')}`,
@@ -525,8 +537,8 @@ export function dogPages() {
       title: n,
       crumbs: [['Dogs', '/dogs']],
       description: `${n} the ${breed} is a ${d.legendary ? 'legendary ' : ''}dog in tibo.dog. ${desc}`,
-      lead: `**${n}** the ${breed} is a ${d.legendary ? 'legendary ' : ''}dog that can join Tibo's pack. In-game description: “${desc}”`,
-      infobox: { title: n, icon: `dog/${d.id}`, caption: breed, rows },
+      lead: `**${n}** the ${breed} is a ${d.legendary ? 'legendary ' : ''}dog that can join Tibo's pack.${keyTip('dogs', d.id) || ` In-game description: “${desc}”`}`,
+      infobox: { title: n, icon: `dog/${d.id}`, caption: breed, rows: withText(rows, keyTip('dogs', d.id), desc) },
       body,
       sources: [SRC_REG, SRC_TEXT],
       search: `${n} ${breed} ${d.id} dog ${d.ability.kind}`,
@@ -605,7 +617,7 @@ export function enemyPages() {
       title: n,
       crumbs: [['Enemies', '/enemies']],
       description: `${n} is an enemy in tibo.dog: ${fmt(e.hp)} base HP, ${fmt(e.damage)} damage, ${ENEMY_BEH[e.behavior.kind]?.toLowerCase() ?? e.behavior.kind}.`,
-      lead: `**${n}** is an enemy (pest) in tibo.dog.`,
+      lead: `**${n}** is an enemy (pest) in tibo.dog.${keyTip('enemies', e.id)}`,
       infobox: { title: n, icon: `enemy/${e.id}`, caption: 'Enemy', rows },
       body,
       sources: [SRC_REG, SRC_TEXT],
@@ -705,8 +717,8 @@ export function bossPages() {
       title: n,
       crumbs: [['Bosses', '/bosses']],
       description: `${n}, ${title}, is ${BOSS_MIN[b.id] ? `timed boss ${order} of ${SCHEDULED}` : 'an endgame boss encounter'} in tibo.dog. ${desc}`,
-      lead: `**${n}**, *${title}*, is a boss in tibo.dog. In-game description: “${desc}”`,
-      infobox: { title: n, icon: `boss/${b.id}`, iconSize: 96, caption: title, rows },
+      lead: `**${n}**, *${title}*, is a boss in tibo.dog.${keyTip('bosses', b.id) || ` In-game description: “${desc}”`}`,
+      infobox: { title: n, icon: `boss/${b.id}`, iconSize: 96, caption: title, rows: withText(rows, keyTip('bosses', b.id), desc) },
       body,
       sources: [SRC_REG, SRC_TEXT, 'Game config `bosses.hpSteps` and `win.finalBoss` from `sim-CSyS7SGD.js`'],
       search: `${n} ${title} ${b.id} boss`,
@@ -750,8 +762,8 @@ export function biomePages() {
       title: n,
       crumbs: [['Biomes', '/biomes']],
       description: `${n} is a biome in tibo.dog. ${desc}`,
-      lead: `**${n}** is a ${b.placement.kind === 'landmark' ? 'landmark ' : ''}biome in tibo.dog. In-game description: “${desc}”`,
-      infobox: { title: n, caption: 'Biome', rows },
+      lead: `**${n}** is a ${b.placement.kind === 'landmark' ? 'landmark ' : ''}biome in tibo.dog.${keyTip('biomes', b.id) || ` In-game description: “${desc}”`}`,
+      infobox: { title: n, caption: 'Biome', rows: withText(rows, keyTip('biomes', b.id), desc) },
       body,
       sources: [SRC_REG, SRC_TEXT],
       search: `${n} ${b.id} biome`,
