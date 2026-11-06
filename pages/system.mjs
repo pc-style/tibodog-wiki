@@ -106,8 +106,9 @@ export function systemPages(entityPages) {
     path: '/search',
     title: 'Search',
     description: 'Search tibodog.wiki, the unofficial tibo.dog wiki.',
-    body: `<h2 id="search-heading">Search</h2>\n<ol id="search-page-results"></ol>\n<noscript>Search needs JavaScript. Every page is listed on <a href="/all-pages">All pages</a>.</noscript>\n\nWithout JavaScript, use [All pages](/all-pages) or the [sitemap](/sitemap.xml).\n`,
+    body: `<h2 id="search-heading">Search</h2>\n<ol id="search-page-results"></ol>\n<noscript>Search needs JavaScript. Every page is listed on <a href="/all-pages">All pages</a> and in the <a href="/sitemap.xml">sitemap</a>.</noscript>\n`,
     sources: [],
+    bare: true,
   });
 
   // ---------- All pages ----------

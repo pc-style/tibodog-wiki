@@ -229,9 +229,10 @@ if __name__ == '__main__':
         offset += len(data)
     with open(os.path.join(PUB, 'favicon.ico'), 'wb') as f:
         f.write(head + entries + b''.join(d for _, d in frames))
+    # Touch icon: the same gilded tile as the favicon, filling the square (iOS rounds the corners).
     apple = Image.new('RGB', (180, 180), '#0b0e1c')
-    m4 = to_image(big, 5)
-    apple.paste(m4, ((180 - m4.width) // 2, (180 - m4.height) // 2), m4)
+    t = tile_mark(5)
+    apple.paste(t, ((180 - t.width) // 2, (180 - t.height) // 2), t)
     apple.save(os.path.join(PUB, 'apple-touch-icon.png'), optimize=True)
     og(mark).save(os.path.join(PUB, 'og.png'), optimize=True)
     print('wrote logo.svg favicon.png favicon.ico apple-touch-icon.png og.png')

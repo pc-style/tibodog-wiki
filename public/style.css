@@ -108,7 +108,8 @@ img { max-width: 100%; }
 }
 .search input::placeholder { color: var(--muted); }
 .search input:hover { border-color: #c9a24fa6; }
-.search input:focus { outline: none; background: #0a0c18; border-color: var(--gold); box-shadow: 0 0 0 3px var(--accent-soft), var(--glow); }
+.search input:focus-visible { outline: 2px solid #fff59d; outline-offset: 2px; }
+.search input:focus {  background: #0a0c18; border-color: var(--gold); box-shadow: 0 0 0 3px var(--accent-soft), var(--glow); }
 .search input::-webkit-search-cancel-button { display: none; }
 .search-key {
   position: absolute; right: 10px; pointer-events: none; font: 500 11.5px/1 var(--mono); color: var(--muted);
@@ -254,7 +255,8 @@ article small code { background: none; padding: 0; color: inherit; font-size: 12
 /* ---------- On this page ---------- */
 .toc { margin: 0 0 28px; font-size: 14px; }
 .toc-in { border-left: 1px solid #c9a24f80; padding: 2px 0 2px 16px; max-width: 500px; }
-.toc-in > ol:has(> li:nth-child(6)):not(:has(ol)) { columns: 2; column-gap: 40px; }
+/* Two columns that read across in rows (grid), so a long flat list keeps its order. */
+.toc-in > ol:has(> li:nth-child(6)):not(:has(ol)) { display: grid; grid-template-columns: 1fr 1fr; column-gap: 40px; }
 .toc-in > ol > li { break-inside: avoid; }
 .toc h2 { display: inline; font-size: 13px; letter-spacing: .08em; color: var(--accent); margin: 0; padding: 0; background: none; }
 .toc summary { display: flex; align-items: center; gap: 8px; width: fit-content; margin: 0 0 6px; cursor: pointer; list-style: none; }
@@ -272,7 +274,7 @@ article small code { background: none; padding: 0; color: inherit; font-size: 12
   /* A sticky right rail beside the article, only when tables still have room. */
   article:has(> .toc):not(:has(.infobox)) { padding-right: 252px; max-width: 1312px; }
   article > .toc { position: absolute; top: 0; right: 0; bottom: 0; width: 212px; margin: 0; }
-  article > .toc .toc-in > ol { columns: auto; }
+  article > .toc .toc-in > ol:has(> li) { display: block; }
   article > .toc .toc-in {
     position: sticky; top: calc(var(--header-h) + 36px); max-height: calc(100vh - var(--header-h) - 72px); overflow-y: auto;
     border-left-width: 1px;
@@ -342,7 +344,7 @@ article small code { background: none; padding: 0; color: inherit; font-size: 12
 /* Key/value tables (no header row): label column reads as a label. */
 .wikitable:not(:has(thead)) td:first-child { color: var(--muted); white-space: nowrap; }
 /* Sortable headers are buttons (site.js); the arrow shows the order, and aria-sort announces it. */
-.wikitable .sort { display: inline-flex; align-items: baseline; gap: 6px; padding: 0; font: inherit; letter-spacing: inherit; color: inherit; text-align: inherit; background: none; border: 0; cursor: pointer; }
+.wikitable .sort { display: inline-flex; align-items: center; gap: 6px; min-height: 24px; padding: 0; font: inherit; letter-spacing: inherit; color: inherit; text-align: inherit; background: none; border: 0; cursor: pointer; }
 .wikitable .sort::after { content: "↕"; font-size: .9em; opacity: .6; }
 .wikitable .sort:hover { color: var(--title); }
 .wikitable .sort:hover::after { opacity: 1; }
@@ -380,6 +382,10 @@ td .ico { height: 26px; }
 .raw summary::before { content: "▸"; display: inline-block; margin-right: 8px; color: var(--muted); transition: transform .15s; }
 .raw[open] summary::before { transform: rotate(90deg); }
 .raw summary:hover { border-color: var(--gold); color: var(--title); }
+
+.scroll-hint { max-width: none !important; margin: 16px 0 -10px; font-size: 13px; color: var(--muted); text-align: right; }
+.scroll-hint[hidden] { display: none; }
+.no-results { color: var(--text-2); }
 
 /* ---------- Guides and Quick tips ---------- */
 h2 .when { margin-left: 10px; padding: 3px 8px; vertical-align: middle; font: 700 13px/1 var(--display); letter-spacing: .04em; color: var(--text-2); border: 1px solid #c9a24f80; background: #0a0c18b3; }
@@ -472,7 +478,7 @@ blockquote p { margin: 6px 0; }
   .sresults { position: fixed; top: calc(var(--header-h) - 4px); left: 8px; right: 8px; }
   .top > .play { display: none; }
   .search { max-width: none; min-width: 0; }
-  .search input { padding-right: 10px; }
+  .search input { padding-right: 10px; font-size: 16px; }
   .search-key { display: none; }
   .menu-play { display: block; width: fit-content; margin: 12px 0 0; }
   html:not(.js) .side-menu[open] { max-height: calc(100vh - var(--header-h) - 24px); overflow-y: auto; overscroll-behavior: contain; }
@@ -521,7 +527,7 @@ blockquote p { margin: 6px 0; }
   .with-ib { grid-template-columns: minmax(0, 1fr) 260px; column-gap: 24px; }
   code.nw { white-space: normal; overflow-wrap: anywhere; }
   .infobox, .infobox.fits { position: static; width: auto; margin: 0 0 28px; }
-  .toc-in > ol:has(> li:nth-child(6)) { columns: auto; }
+  .toc-in > ol:has(> li:nth-child(6)):not(:has(ol)) { display: block; }
   .anchor { display: none; }
   h2 .when { font-size: 12px; }
   .toc-in { max-width: none; }

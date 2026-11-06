@@ -140,13 +140,25 @@
     const cols = Math.max(...[...rows].map((r) => r.cells.length));
     for (let col = 1; col < cols; col++) {
       const vals = [...rows].map((r) => (r.cells[col]?.textContent ?? '').trim()).filter((v) => !blank(v));
-      if (vals.length && vals.every((v) => v.length <= 16 && !Number.isNaN(num(v)))) {
+      // Dates (2026-11-05) and clock times are labels, not quantities.
+      if (vals.length && vals.every((v) => v.length <= 16 && !Number.isNaN(num(v)) && !/^\d{4}-\d\d|^\d+:\d\d/.test(v))) {
         ths[col]?.classList.add('num');
         for (const r of rows) r.cells[col]?.classList.add('num');
       }
     }
     // A pinned first column must not cover a cell that gets keyboard focus while scrolling sideways.
     const wrap = table.closest('.table-wrap');
+    // Say so in words when a table has more columns than fit; the edge glow alone is easy to miss.
+    if (wrap) {
+      const hint = document.createElement('p');
+      hint.className = 'scroll-hint';
+      hint.setAttribute('aria-hidden', 'true');
+      hint.textContent = 'Scroll sideways for more columns →';
+      wrap.before(hint);
+      const fits = () => { hint.hidden = wrap.scrollWidth <= wrap.clientWidth + 1; };
+      fits();
+      window.addEventListener('resize', fits);
+    }
     if (wrap && table.tHead) {
       wrap.style.scrollPaddingLeft = `${ths[0]?.offsetWidth ?? 0}px`;
       // Browsers skip scrolling a partly visible control into view; bring the whole of it out from under the pin.
@@ -294,6 +306,9 @@
       const res = q ? search(q) : [];
       const h = document.getElementById('search-heading');
       if (h) h.textContent = q ? `${res.length} result${res.length === 1 ? '' : 's'} for “${q}”` : 'Type in the search box above.';
+      if (q && !res.length) {
+        out.insertAdjacentHTML('afterend', `<p class="no-results">Nothing matches “${esc(q)}”. Check the spelling, try a shorter word, or browse: <a href="/all-pages">All pages</a> · <a href="/weapons">Weapons</a> · <a href="/bosses">Bosses</a> · <a href="/guides">Guides</a> · <a href="/quick-tips">Quick tips</a></p>`);
+      }
       out.innerHTML = res
         .map((e) => `<li><a href="${e.u}">${e.i ? `<img class="ico" src="/icons/${e.i}.png" alt="" height="22">` : ''}${esc(e.t)}</a> <small>(${esc(e.s)})</small><br>${esc(e.d)}</li>`)
         .join('');
