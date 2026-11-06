@@ -212,6 +212,26 @@
     mark();
   }
 
+  // Long catalogue tables (20+ rows, e.g. /enemies) get a filter that hides rows not containing the text.
+  document.querySelectorAll('.table-wrap > table.wikitable').forEach((table, i) => {
+    const rows = [...(table.tBodies[0]?.rows ?? [])];
+    if (rows.length < 20) return;
+    const what = (table.tHead?.rows[0]?.cells[0]?.textContent ?? 'row').trim().toLowerCase();
+    const box = document.createElement('div');
+    box.className = 'tip-filter';
+    box.innerHTML = `<label for="tf-${i}">Filter table</label><input id="tf-${i}" type="search" autocomplete="off"><p aria-live="polite"></p>`;
+    const input = box.querySelector('input');
+    const count = box.querySelector('p');
+    input.placeholder = `Any ${what}, value or word…`;
+    table.closest('.table-wrap').before(box);
+    input.addEventListener('input', () => {
+      const q = input.value.trim().toLowerCase();
+      let n = 0;
+      for (const r of rows) { r.hidden = !!q && !r.textContent.toLowerCase().includes(q); n += !r.hidden; }
+      count.textContent = q ? `${n} of ${rows.length} rows` : '';
+    });
+  });
+
   // Tables: numeric columns align right; tables with 4+ rows sort from a button in each header.
   // A leading dash ("—") marks a value the game sets elsewhere; it counts as empty.
   const num = (s) => {
