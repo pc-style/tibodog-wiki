@@ -8,5 +8,5 @@ When max HP goes up, Tibo is also healed by the amount gained, so picking up a m
 
 ## Tips
 
-- Max HP makes healing from [Pickle Jar](/items/pickle-jar), [Vampire Tot](/items/vampire-tot) and snacks more useful, since they are all capped at max HP.
+- **Pair it with healing items.** Max HP makes healing from [Pickle Jar](/items/pickle-jar), [Vampire Tot](/items/vampire-tot) and snacks more useful, since they are all capped at max HP.
 - Muffins are better with Gravy Heart, which multiplies the flat bonus.

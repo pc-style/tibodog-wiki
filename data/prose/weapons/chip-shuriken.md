@@ -17,5 +17,5 @@ Levels mostly add chips: by level 8 it fires 8 chips per throw (raw amount 7 plu
 
 ## Tips
 
-- Close to Tibo the chips are tightly packed, and they spread out as the ring grows. Pests next to Tibo are the most likely to be hit.
+- **Chips hit pests next to Tibo best.** Close to Tibo the chips are tightly packed, and they spread out as the ring grows. Pests next to Tibo are the most likely to be hit.
 - Extra projectiles from passives add chips to every ring, which is the main way the weapon scales.

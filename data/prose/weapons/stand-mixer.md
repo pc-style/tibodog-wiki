@@ -15,5 +15,5 @@ Placement, damage ticks and pull work as described on [Whisk Vortex](/weapons/wh
 
 ## Tips
 
-- The slam lands after the full 3.1 s of pulling, when the whirlpool holds the most pests. Area makes both the whirlpool and the slam radius larger.
+- **Stack Area for a bigger whirlpool.** The slam lands after the full 3.1 s of pulling, when the whirlpool holds the most pests. Area makes both the whirlpool and the slam radius larger.
 - Extra amount from passives or items adds more whirlpools, and each one slams when it ends.

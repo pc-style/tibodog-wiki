@@ -18,7 +18,7 @@ If Tibo holds Link and finds [Zelda](/dogs/pomchi), the two fuse into [Zelda & L
 
 ## Tips
 
-- Fluff blocks a hit regardless of its size, so it is worth most against boss attacks and other heavy hits. Armor, by contrast, loses value as enemy levels rise (see [Armor](/stats#armor)).
+- **Pick it to block boss hits.** Fluff blocks a hit regardless of its size, so it is worth most against boss attacks and other heavy hits. Armor, by contrast, loses value as enemy levels rise (see [Armor](/stats#armor)).
 - Dodge from [Thick Skin](/passives/thick-skin) or [Ghost Skin](/items/ghost-skin) is rolled first, so dodge and fluff don't waste each other.
 - The recovery aura stacks with [Root Network](/passives/root-network) and the [Saint Bernard](/dogs/saint-bernard).
 - If Zelda turns up, fusing keeps Link's fluff, adds Zelda's marks and holds both in one pack slot.

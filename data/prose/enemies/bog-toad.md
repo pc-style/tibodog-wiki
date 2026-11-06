@@ -18,6 +18,6 @@ A freshly spawned toad waits 0.5–2 s before its first charge can start. The da
 
 ## Tips
 
-- Step sideways during the half-second windup. At Tibo's base speed of 62 that is about 31 units, far more than the 13 units of combined body radius the dash needs to connect.
+- **Move aside before it dashes.** Step sideways during the half-second windup. At Tibo's base speed of 62 that is about 31 units, far more than the 13 units of combined body radius the dash needs to connect.
 - After a missed dash the toad ends up at least 30 units past you with 1.6 s before it can charge again. That is a good moment to hit it with short-range weapons.
 - In Mash Swamp every tier-3 spawn is a toad, so mid-run waves there arrive as a stream of charges rather than a mixed crowd.

@@ -6,5 +6,5 @@ Recovery is applied continuously while the run plays and never heals above max H
 
 ## Tips
 
-- One level of [Root Network](/passives/root-network) gives 0.25 recovery, as much as two and a half jars. Treat the jar as a small bonus, not a healing plan.
+- **Don't rely on it for healing.** One level of [Root Network](/passives/root-network) gives 0.25 recovery, as much as two and a half jars. Treat the jar as a small bonus, not a healing plan.
 - Recovery is most useful against chip damage. Big boss hits outpace it.

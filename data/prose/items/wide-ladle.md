@@ -11,4 +11,4 @@ Area bonuses are summed and applied as `1 + total` (see [Stats](/stats#stat-conv
 
 ## Tips
 
-- Area is most useful for weapons that hit everything in a zone, such as auras, pools and novas.
+- **Pair it with auras, pools and novas.** Area is most useful for weapons that hit everything in a zone, such as auras, pools and novas.

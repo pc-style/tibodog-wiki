@@ -14,5 +14,5 @@ Tot Toss is one of the 17 weapons a standard run can start with, it is offered o
 
 ## Tips
 
-- With several tots per throw, the spread helps hit pests that are lined up behind or beside the nearest one, so extra amount still pays off in a crowd.
+- **Keep taking amount for crowds.** With several tots per throw, the spread helps hit pests that are lined up behind or beside the nearest one, so extra amount still pays off in a crowd.
 - [Chives](/passives/chives) shortens Tot Toss's cooldown now and is the catalyst for Tot Gatling later, so it is a natural pick alongside this weapon.

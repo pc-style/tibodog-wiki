@@ -14,5 +14,5 @@ It is offered as a level-up card, and it is on the list of new weapons [poteto's
 
 ## Tips
 
-- Area upgrades on the weapon (levels 3 and 7) and from passives make the ring wider. Since [Big Bowl](/passives/big-bowl) adds Area and is also the catalyst, it is a natural pick with this weapon.
+- **Pair it with Big Bowl.** Area upgrades on the weapon (levels 3 and 7) and from passives make the ring wider. Since [Big Bowl](/passives/big-bowl) adds Area and is also the catalyst, it is a natural pick with this weapon.
 - The knockback pushes pests out of the ring, which gives Tibo room in a crowd. It also moves pests away from melee weapons such as the [Peeler](/weapons/peeler).

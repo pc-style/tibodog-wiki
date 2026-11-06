@@ -12,4 +12,4 @@ Lint Bunnies released by a Sock Pile take over the pile's HP, damage and speed s
 
 ## Tips
 
-- It is frail, so its threat is numbers rather than any single bunny. In the Laundromat it can pay to sweep them up for the extra gold.
+- **Sweep them up in the Laundromat.** It is frail, so its threat is numbers rather than any single bunny. In the Laundromat it can pay to sweep them up for the extra gold.

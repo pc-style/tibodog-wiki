@@ -16,5 +16,5 @@ It is offered on level-up and can be given by [poteto's](/visitors#poteto) gift 
 
 ## Tips
 
-- Starch Chain does most of its work when pests are packed within 70 units of each other. Against spread-out enemies the chain ends early.
+- **Use it on tightly packed pests.** Starch Chain does most of its work when pests are packed within 70 units of each other. Against spread-out enemies the chain ends early.
 - Pierce bonuses are worth more here than on most weapons, because each point is a whole extra target per arc.

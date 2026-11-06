@@ -17,6 +17,6 @@ It walks straight at Tibo until it is within 72.8 units (70% of its 104 range). 
 
 ## Tips
 
-- The fan is locked in when the wind-up starts, so moving sideways during and after the wind-up usually takes Tibo out of it. Standing still or running straight towards or away from the imp keeps him in its line of fire.
+- **Move sideways during the wind-up.** The fan is locked in when the wind-up starts, so moving sideways during and after the wind-up usually takes Tibo out of it. Standing still or running straight towards or away from the imp keeps him in its line of fire.
 - The imp closes to about 73 units before circling, so it is nearer than its firing limit suggests. Targeted or long-range weapons can reach it without waiting for it to enter a short-range aura.
 - Killing an imp during its 0.5 s wind-up removes that volley, so a sudden burst of damage on a nearby imp prevents a hit as well as killing it.

@@ -17,6 +17,6 @@ With no flames the slash covers a radius of 34 and fires once per second. With f
 
 ## Tips
 
-- Keep moving. Stopping for a single tick costs every flame, while a hit costs only two.
+- **Never stand still, even briefly.** Keep moving. Stopping for a single tick costs every flame, while a hit costs only two.
 - [Thick Skin](/passives/thick-skin), the catalyst, raises dodge chance. Dodged hits do not cost flames, so it protects the streak as well as Tibo.
 - Area multiplies the whole radius, flames included, so area bonuses work well with this weapon.

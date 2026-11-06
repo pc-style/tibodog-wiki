@@ -14,5 +14,5 @@ The crit bonus is added straight to the hit's crit chance, after Tibo's crit poi
 
 ## Tips
 
-- Keep levelling Hot Sauce after the evolution: its crit chance stacks with the arc's flat +25%.
+- **Keep levelling Hot Sauce after evolving.** Keep levelling Hot Sauce after the evolution: its crit chance stacks with the arc's flat +25%.
 - Extra pierce turns into extra jumps here too, and extra amount adds whole arcs.

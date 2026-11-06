@@ -24,5 +24,5 @@ Other crit sources are [Hot Pepper](/items/hot-pepper) and [Spud Shrine](/points
 
 ## Tips
 
-- With a ×2 crit multiplier, a 23.1% crit chance raises average damage by 23.1%. With Sour Cream at level 5 (×3), the same chance gives +46%. The two passives are worth more together than apart.
+- **Pair it with Sour Cream.** With a ×2 crit multiplier, a 23.1% crit chance raises average damage by 23.1%. With Sour Cream at level 5 (×3), the same chance gives +46%. The two passives are worth more together than apart.
 - Because of the curve, extra crit points from items add less once you already have Hot Sauce.

@@ -24,6 +24,6 @@ The ×1.25 gold applies to pests that die inside the desert, wherever Tibo is st
 
 ## Tips
 
-- Fight next to the pools, not in them. The burn ticks every frame Tibo is inside, and neither dodge nor a dash protects him.
+- **Stay out of the oil pools.** Fight next to the pools, not in them. The burn ticks every frame Tibo is inside, and neither dodge nor a dash protects him.
 - Sizzle Imps make up a large share of spawns from about 6:00 to 11:00. They slow down and explode next to Tibo, so keep moving instead of letting them reach you while you are cornered against a pool.
 - With crates and carts common and gold at ×1.25, this is a good place to farm gold mid-run. Pull fights to the desert side of a border to get the multiplier.

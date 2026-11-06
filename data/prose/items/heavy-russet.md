@@ -14,5 +14,5 @@ Legendary items share the smallest rarity weight, and Heavy Russet has weight 1 
 
 ## Tips
 
-- Because the bonus comes in rare large hits, it is best against high-HP targets such as elites and bosses, where the full 15× counts.
+- **It is best against elites and bosses.** Because the bonus comes in rare large hits, it is best against high-HP targets such as elites and bosses, where the full 15× counts.
 - The [Microwave](/points-of-interest#microwave) can copy a held Heavy Russet, melting a copy of another Legendary item you hold, until you reach the 5-copy cap. Copies carry over when it evolves.

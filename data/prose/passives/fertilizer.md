@@ -12,5 +12,5 @@ Other XP gain sources are [Compost Tea](/items/compost-tea) (+0.06) and [Spud Sh
 
 ## Tips
 
-- XP gain pays off over the rest of the run, so it is worth more the earlier you take it. Late in a run, when most of your weapons and passives are already maxed, extra levels matter less.
+- **Take it early in a run.** XP gain pays off over the rest of the run, so it is worth more the earlier you take it. Late in a run, when most of your weapons and passives are already maxed, extra levels matter less.
 - Fertilizer works well with [Potato Magnet](/passives/potato-magnet), which brings gems in from farther away.

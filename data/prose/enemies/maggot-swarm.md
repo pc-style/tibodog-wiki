@@ -12,5 +12,5 @@ Each Maggot despawns 40 s after it appears, and earlier if it ends up more than 
 
 ## Tips
 
-- Maggots pay almost nothing, so they are best treated as an obstacle rather than an XP source. Staying away from the Titan when the ring of circles appears keeps Tibo from being surrounded the moment they hatch.
+- **Treat maggots as obstacles.** Maggots pay almost nothing, so they are best treated as an obstacle rather than an XP source. Staying away from the Titan when the ring of circles appears keeps Tibo from being surrounded the moment they hatch.
 - At speed 50 they are close to Tibo's 62, so they are hard to shake off, but they all expire 40 s after hatching.

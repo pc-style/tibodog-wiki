@@ -15,5 +15,5 @@ The rules are the same as [Spud Fence](/weapons/spud-fence#how-it-works); here i
 
 ## Tips
 
-- With up to 8 posts you can walk a full loop around a group and close the fence on them; pests inside then cross an arc whichever way they move.
+- **Walk a loop to fence in a group.** With up to 8 posts you can walk a full loop around a group and close the fence on them; pests inside then cross an arc whichever way they move.
 - Despite the GPU recipe, the fence ignores GPU heat: it neither builds heat nor slows down when the GPU throttles other weapons.

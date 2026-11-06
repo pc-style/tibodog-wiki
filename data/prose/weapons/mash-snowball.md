@@ -16,6 +16,6 @@ A ball starts with radius 4 and grows by 0.22 per unit Tibo moves, up to a radiu
 
 ## Tips
 
-- Run in straight lines, then stop or double back next to a crowd. A sharp turn launches the ball the way you were running, back across the ground you just covered.
+- **Run straight, then turn by a crowd.** Run in straight lines, then stop or double back next to a crowd. A sharp turn launches the ball the way you were running, back across the ground you just covered.
 - Area raises the ball's maximum size, and with it damage, roll distance, the width of its path and the splatter radius. Area bonuses work especially well with this weapon.
 - Short movements that never reach radius 9 never release a ball. Constant small dodging can leave it doing nothing.

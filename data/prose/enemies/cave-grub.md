@@ -6,5 +6,5 @@ It crawls straight at Tibo at speed 32 and hurts only on contact, for 6 base dam
 
 ## Tips
 
-- Grubs take about three times as much damage to kill as the [Compost Maggots](/enemies/compost-maggot) that make up the caves' tier-1 spawns. When the mix shifts towards grubs around 5:00, weapons that were one-shotting maggots may stop keeping up.
+- **Grubs need about three times the damage.** Grubs take about three times as much damage to kill as the [Compost Maggots](/enemies/compost-maggot) that make up the caves' tier-1 spawns. When the mix shifts towards grubs around 5:00, weapons that were one-shotting maggots may stop keeping up.
 - At speed 32 they are about half as fast as Tibo, so walking away while your weapons work is usually safe.

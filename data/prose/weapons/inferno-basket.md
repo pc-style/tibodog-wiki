@@ -15,5 +15,5 @@ Every hit also burns the target for 20 damage per second for 2 s, and all of the
 
 ## Tips
 
-- With the ×2 elite multiplier and Bacon Bits, Inferno Basket is a strong pick against elites and [bosses](/bosses) if you can stay within about 100 units of them.
+- **Stay close to elites and bosses.** With the ×2 elite multiplier and Bacon Bits, Inferno Basket is a strong pick against elites and [bosses](/bosses) if you can stay within about 100 units of them.
 - Area and duration remain its best stats; projectile count still does nothing.

@@ -14,6 +14,6 @@ Every 2.5 seconds Moss shoves every pest within 46 units of Tibo straight away f
 
 ## Tips
 
-- The circle is small: 46 units is only slightly more than Tibo's base 40-unit pickup range. Moss is for crowds pressing against Tibo, not for keeping distance from ranged pests.
+- **Use Moss against crowds pressing in.** The circle is small: 46 units is only slightly more than Tibo's base 40-unit pickup range. Moss is for crowds pressing against Tibo, not for keeping distance from ranged pests.
 - The shove does nothing to bosses or very heavy pests. If those are the threat, a [Corgi](/dogs/corgi) or [Link](/dogs/pomeranian) fits better.
 - At level 5 Moss's move-speed aura equals one and a half levels of [Spud Sneakers](/passives/spud-sneakers) (+8% per level). The [Greyhound](/dogs/greyhound) gives twice as much.

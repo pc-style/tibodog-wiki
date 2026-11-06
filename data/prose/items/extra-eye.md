@@ -10,5 +10,5 @@ The bonus adds to the same amount stat as [Sprouting Eyes](/passives/sprouting-e
 
 ## Tips
 
-- An extra projectile is a large boost for weapons that fire one or two projectiles per volley, and it applies to every eligible weapon at once.
+- **Take it for one- or two-projectile weapons.** An extra projectile is a large boost for weapons that fire one or two projectiles per volley, and it applies to every eligible weapon at once.
 - If your main damage comes from the excluded weapon kinds, an Extra Eye does little for them.

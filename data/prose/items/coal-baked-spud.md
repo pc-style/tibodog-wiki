@@ -16,5 +16,5 @@ It has weight 8 out of 78 among Uncommon items, about 2.6% of item rolls at luck
 
 ## Tips
 
-- It suits weapons that hit hard and not very often. A single big hit leaves a big fire, while many small hits keep overwriting each other with weak burns.
+- **Pair it with slow, hard-hitting weapons.** It suits weapons that hit hard and not very often. A single big hit leaves a big fire, while many small hits keep overwriting each other with weak burns.
 - [Slow Cooker](/passives/slow-cooker) lengthens every burn, but it is not this item's catalyst. The catalyst is Hot Sauce.

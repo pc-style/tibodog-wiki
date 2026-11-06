@@ -14,6 +14,6 @@ Compared with the Mud Golem it replaces, the fiend has less HP (200 against 260)
 
 ## Tips
 
-- Its body is large: the dash connects if its path passes within 14 units of Tibo's centre (radius 9 + Tibo's 6, less 1). Sidestep early and fully during the windup rather than at the last moment.
+- **Sidestep early and fully.** Its body is large: the dash connects if its path passes within 14 units of Tibo's centre (radius 9 + Tibo's 6, less 1). Sidestep early and fully during the windup rather than at the last moment.
 - Several fiends charging from different sides is the main danger in overtime here. Keep moving so that they come from one direction rather than surrounding Tibo.
 - A dash starts within 130 units and runs about 169, so a fiend that misses ends up at least 39 units past Tibo. Use the 1.6 s cooldown to hit it.

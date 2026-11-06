@@ -14,5 +14,5 @@ Each of Tibo's weapon hits has a 3% chance to call down a meteor. The hit is hel
 
 ## Tips
 
-- Meteor Russet turns Heavy Russet's single-target hits into area damage, so it helps against crowds as well as bosses.
+- **Use it against crowds and bosses.** Meteor Russet turns Heavy Russet's single-target hits into area damage, so it helps against crowds as well as bosses.
 - Meteor damage is a multiple of the triggering hit, and the number of meteors is capped. That favours weapons with big individual hits over many small ones.

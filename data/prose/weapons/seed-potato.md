@@ -18,7 +18,7 @@ At level 1 Tibo can have one plant out at a time and the weapon's damage is 30. 
 
 ## Tips
 
-- Wait for stage 3 (2.4 s after landing) before walking over a plant. A stage 3 harvest deals 4 times the damage of a stage 1 harvest over a larger radius. The plant also zaps harder while it grows.
+- **Let plants ripen fully before harvesting.** Wait for stage 3 (2.4 s after landing) before walking over a plant. A stage 3 harvest deals 4 times the damage of a stage 1 harvest over a larger radius. The plant also zaps harder while it grows.
 - Do not leave plants to time out. The 8 s self-burst deals only 0.6× damage, less than even a stage 1 harvest.
 - Luck adds gold to stage 3 harvests. Duration bonuses make the plants ripen sooner.
 - With a large pickup range the harvest reach (up to 34) is more than the 30-unit minimum throw. A seed thrown at a pest right next to Tibo can then be harvested at stage 1 the moment it lands. Step away from the plant if you want it to ripen.

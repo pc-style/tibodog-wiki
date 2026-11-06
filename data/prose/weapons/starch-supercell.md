@@ -15,5 +15,5 @@ Every 1.6 s it strikes 6 different pests (raw Amount 5 plus Tibo's base +1 proje
 
 ## Tips
 
-- In a dense crowd one volley can reach 6 strike targets plus up to 18 chain jumps. Against a lone pest it is a single 80-damage strike every 1.6 s.
+- **Point it at dense crowds.** In a dense crowd one volley can reach 6 strike targets plus up to 18 chain jumps. Against a lone pest it is a single 80-damage strike every 1.6 s.
 - Area widens the strike circles but not the chain range.

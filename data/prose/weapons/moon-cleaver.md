@@ -14,5 +14,5 @@ Every 1.15 s it chops 3 times (2 plus Tibo's built-in +1 amount, see [Stats](/st
 
 ## Tips
 
-- Two of the three chops face the way Tibo faces, so turn toward the larger group.
+- **Face the larger group.** Two of the three chops face the way Tibo faces, so turn toward the larger group.
 - Before Damage bonuses, the cleaver deals 96 per chop at full HP, 204 at half HP and 312 near 0 HP. Low-HP play pays off much more here than on the base Mezzaluna.

@@ -12,5 +12,5 @@ Masher Grip is the only source of the knockback stat.
 
 ## Tips
 
-- Knockback is defensive: pests pushed away take longer to reach Tibo. The effect is largest on light pests, which have little or no mass.
+- **Use it to keep light pests away.** Knockback is defensive: pests pushed away take longer to reach Tibo. The effect is largest on light pests, which have little or no mass.
 - Meteor Russet's crater hit carries knockback 1.2, so Masher Grip also pushes pests away from where a meteor lands.<small>[sim-DJfN0TyV.js: `J(e,n.crater[t],n.itemSrc[t],-1,1.2)`]</small>

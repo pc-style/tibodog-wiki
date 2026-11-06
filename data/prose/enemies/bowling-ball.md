@@ -14,6 +14,6 @@ The charge follows the same cycle as every charger: a 0.5 s windup standing stil
 
 ## Tips
 
-- A charge runs 156 units and starts within 120, so it ends at least 36 units past where Tibo stood. A sideways step during the windup leaves the ball rolling away with its charge on cooldown.
+- **Step sideways during the windup.** A charge runs 156 units and starts within 120, so it ends at least 36 units past where Tibo stood. A sideways step during the windup leaves the ball rolling away with its charge on cooldown.
 - Heavy mass makes knockback weapons poor at keeping balls away. Damage is a better answer.
 - During Strike the balls come from all sides at once. Since the walking speed is only 26, moving steadily in one direction tends to string them out behind Tibo, so their charges come one after another rather than together.

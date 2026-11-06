@@ -16,5 +16,5 @@ It evolves into [All-Seeing Spud](/items/all-seeing-spud) when [Four-Eyed Spud](
 
 ## Tips
 
-- Builds that kill large crowds trigger it most. Because eye damage follows the dead enemy's HP, it keeps up with late-game enemies better than flat-damage items.
+- **Take it for crowd-killing builds.** Builds that kill large crowds trigger it most. Because eye damage follows the dead enemy's HP, it keeps up with late-game enemies better than flat-damage items.
 - While you hold it, Four-Eyed Spud is offered more often on level-up cards (×4 weight), and its luck is useful on its own.

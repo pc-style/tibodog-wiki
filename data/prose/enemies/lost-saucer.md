@@ -14,6 +14,6 @@ The saucer spawns 40 units from Tibo in a random direction and has 20 seconds be
 
 ## Tips
 
-- Many fast hits beat a few big ones, because each hit rolls separately for its 2-gold coin.
+- **Use many fast hits.** Many fast hits beat a few big ones, because each hit rolls separately for its 2-gold coin.
 - Chase it at once: it starts only 40 units away, and while Tibo stays close it can only manage speed 40 against his 62.
 - Knockback can push it further away; weapons without knockback keep it in reach.

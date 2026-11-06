@@ -12,4 +12,4 @@ When the shooter cap is full, tier-2 spawns in a Crop Circle fall back to tier 1
 
 ## Tips
 
-- It is frail; its threat is numbers. When Tibo first enters a Crop Circle, the [Lost Saucer](/events/lost-saucer) event also starts, and the saucer is worth chasing before it escapes.
+- **Chase the Lost Saucer before it escapes.** It is frail; its threat is numbers. When Tibo first enters a Crop Circle, the [Lost Saucer](/events/lost-saucer) event also starts, and the saucer is worth chasing before it escapes.

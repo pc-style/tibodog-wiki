@@ -19,5 +19,5 @@ It does not change [chest](/chests) rewards. The [Microwave](/points-of-interest
 
 ## Tips
 
-- Coupon Book pays off when you plan to spend a lot of gold. It pairs naturally with gold gain from [Golden Gravy](/items/golden-gravy) or [Golden Fry](/passives/golden-fry).
+- **Take it if you plan to spend gold.** Coupon Book pays off when you plan to spend a lot of gold. It pairs naturally with gold gain from [Golden Gravy](/items/golden-gravy) or [Golden Fry](/passives/golden-fry).
 - Crate prices climb quickly (30, 72, 115, 159 gold and up), so the same percentage saves more gold on later crates.

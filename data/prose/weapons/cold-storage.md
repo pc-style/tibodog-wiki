@@ -14,5 +14,5 @@ Compared with a max-level Root Cellar (38 damage, re-hit every 1.6 s), it hits a
 
 ## Tips
 
-- A pest walking in towards Tibo takes a 110-damage hit and a freeze as soon as it touches the band, unless the ring hit it within the last second. This makes Cold Storage a strong defence against swarms.
+- **Use it to hold off swarms.** A pest walking in towards Tibo takes a 110-damage hit and a freeze as soon as it touches the band, unless the ring hit it within the last second. This makes Cold Storage a strong defence against swarms.
 - Weapons with high knockback can push frozen pests out of the band and out of the freeze lock.

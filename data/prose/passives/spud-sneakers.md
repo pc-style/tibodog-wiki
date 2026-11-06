@@ -14,5 +14,5 @@ Other move speed sources are [Starch Sock](/items/starch-sock) (+0.04), the aura
 
 ## Tips
 
-- Several weapons work off distance walked, so walking faster makes them fire more often: [Tot Stampede](/weapons/tot-stampede) every 40 units and [Spud Fence](/weapons/spud-fence) every 60 units.
+- **Pair it with distance-based weapons.** Several weapons work off distance walked, so walking faster makes them fire more often: [Tot Stampede](/weapons/tot-stampede) every 40 units and [Spud Fence](/weapons/spud-fence) every 60 units.
 - [Tater Twirl](/weapons/tater-twirl) spins at a pace equal to Tibo's actual speed divided by the base 62, capped at 2.<small>[sim-DJfN0TyV.js: `i=60*T(n.x[r]-n.px[r],n.y[r]-n.py[r])/e.cfg.player.baseSpeed;return Math.max(t.crawl,Math.min(t.maxPace,i))`]</small> Walking at Spud Sneakers level 5 speed gives a pace of 1.4 instead of 1.

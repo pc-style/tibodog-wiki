@@ -12,4 +12,4 @@ Dodge points add to [Thick Skin](/passives/thick-skin) (0.05 per level) before t
 
 ## Tips
 
-- Unlike armor, dodge does not lose value as enemies level up over the run. Ghost Skin's 4.8% stays 4.8%, while the 10 armor from [Baked Buckler](/items/baked-buckler) drops from blocking 17% of a hit at 0:00 to 6% at 20:00.
+- **Pick it for defence that holds up late.** Unlike armor, dodge does not lose value as enemies level up over the run. Ghost Skin's 4.8% stays 4.8%, while the 10 armor from [Baked Buckler](/items/baked-buckler) drops from blocking 17% of a hit at 0:00 to 6% at 20:00.

@@ -15,6 +15,6 @@ It is offered as a level-up card. At max level, with [Starch Plating](/passives/
 
 ## Tips
 
-- The pan does the most for runs that face many shooters: one swing can turn a spread of bullets into piercing shots that fly back toward the pests that fired them.
+- **Take it against many shooters.** The pan does the most for runs that face many shooters: one swing can turn a spread of bullets into piercing shots that fly back toward the pests that fired them.
 - Because the second swing goes behind Tibo, the pan also covers his back.
 - Starch Plating is also the catalyst for [Hash Bulwark](/weapons/hash-bulwark), so it can be worth taking with a [Hash Brown Shield](/weapons/hash-brown-shield) build.

@@ -17,5 +17,5 @@ It is a loot runner, like the scheduled [Golden Scarab](/events/golden-scarab): 
 
 ## Tips
 
-- The event starts as soon as Tibo crosses the edge, so the clock is running from the moment you enter. Chase right away: the saucer starts only 40 units off and is slower than Tibo.
+- **Chase it the moment you enter.** The event starts as soon as Tibo crosses the edge, so the clock is running from the moment you enter. Chase right away: the saucer starts only 40 units off and is slower than Tibo.
 - Because the item is guaranteed on the kill, a crop circle is worth a detour when you see one, if your damage can take 260 × the current HP multiplier off a fleeing target within 20 seconds.

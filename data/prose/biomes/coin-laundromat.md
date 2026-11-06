@@ -22,7 +22,7 @@ Elites from the laundromat are Sock Piles until 5:00, rats or spores until 10:00
 
 ## Tips
 
-- Use the 20 s of Loose Change to sweep up coins: walk through dropped gold, or save a magnet pickup for it, before the timer runs out.
+- **Sweep up coins during Loose Change.** Use the 20 s of Loose Change to sweep up coins: walk through dropped gold, or save a magnet pickup for it, before the timer runs out.
 - Stay and fight inside the laundromat when you want gold. Every coin dropped there is worth 40% more than in a ×1 biome.
 - The microwaves make this the place to copy a key item. Remember that each copy melts another item of the same rarity.
 - From about 9:00 to 18:00 Ice Imps dominate the spawns, so expect a lot of incoming fire here.

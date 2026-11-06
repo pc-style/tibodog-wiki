@@ -15,5 +15,5 @@ Each fry flies at 200 units per second for 1 s (Duration 0.8 plus Tibo's base +2
 
 ## Tips
 
-- The weapon rewards kiting: keep moving away from the crowd so the fries go into it. Facing a group head-on points the fries away from it.
+- **Kite away from the crowd.** The weapon rewards kiting: keep moving away from the crowd so the fries go into it. Facing a group head-on points the fries away from it.
 - Extra Amount only adds fries to the moving volley; the still drip stays at one fry, so it pays off only if you keep moving.

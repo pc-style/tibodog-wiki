@@ -10,4 +10,4 @@ Bottomless Sack is the evolution of [Grab Bag](/weapons/grab-bag). You get it by
 
 ## Tips
 
-- Every pick counts as one more attack, so amount bonuses scale the Sack quickly: each extra Amount adds another two random attacks per volley.
+- **Stack Amount bonuses on the Sack.** Every pick counts as one more attack, so amount bonuses scale the Sack quickly: each extra Amount adds another two random attacks per volley.

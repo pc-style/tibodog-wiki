@@ -16,5 +16,5 @@ By level 8 it deals 21 per hit, sprays for 1.1 s, reaches 91 units (area 1.3) an
 
 ## Tips
 
-- Area adds both reach and width of coverage, and duration lengthens every spray, so those stats help Deep Fryer more than projectile count.
+- **Favour Area and duration over projectile count.** Area adds both reach and width of coverage, and duration lengthens every spray, so those stats help Deep Fryer more than projectile count.
 - The short reach means it works best when pests are close. It pairs well with slows that keep them in the cone.

@@ -8,5 +8,5 @@ Lucky Peel is also the game's fallback item. If an item roll finds nothing it is
 
 ## Tips
 
-- One peel changes little. Several, or peels on top of [Four-Eyed Spud](/passives/four-eyed-spud) (+0.1 luck per level) or [Cursed Crown](/items/cursed-crown), add up to a fourth card more often.
+- **Stack peels with other luck.** One peel changes little. Several, or peels on top of [Four-Eyed Spud](/passives/four-eyed-spud) (+0.1 luck per level) or [Cursed Crown](/items/cursed-crown), add up to a fourth card more often.
 - Luck only improves item rarity on future rolls. It is most worth having early, before you buy [Potato Crates](/points-of-interest#potato-crate) or visit Fry Carts.

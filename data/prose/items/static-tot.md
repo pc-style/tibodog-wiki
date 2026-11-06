@@ -17,5 +17,5 @@ It evolves into [Storm Tot](/items/storm-tot) when [Root Network](/passives/root
 
 ## Tips
 
-- It needs other enemies nearby, so it is strongest against crowds and weak against a lone boss.
+- **Use it against crowds, not lone bosses.** It needs other enemies nearby, so it is strongest against crowds and weak against a lone boss.
 - While you hold it, Root Network is offered more often on level-up cards (×4 weight) (see [Level-up](/level-up#offer-weights)).

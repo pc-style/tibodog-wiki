@@ -10,4 +10,4 @@ It has no special behaviour: the `chase` kind just uses the default movement str
 
 ## Tips
 
-- With 8 base HP (about 5 at the start of a Normal run, after the ×0.65 [pest HP](/enemy-scaling) multiplier), most weapons kill it in one or two hits. Its threat is numbers: the opening wave rows pick tier 1 for 8 of every 9 spawns.
+- **Treat mites as a crowd.** With 8 base HP (about 5 at the start of a Normal run, after the ×0.65 [pest HP](/enemy-scaling) multiplier), most weapons kill it in one or two hits. Its threat is numbers: the opening wave rows pick tier 1 for 8 of every 9 spawns.

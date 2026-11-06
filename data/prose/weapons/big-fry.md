@@ -16,5 +16,5 @@ Every 0.45 s it fires 4 fries (raw amount 3 plus Tibo's base +1, see [Stats](/st
 
 ## Tips
 
-- Against one tough target such as a [boss](/bosses), the shared re-hit timer caps Big Fry at 2 hits per second, however many fries it fires. Its strength is long lines of pests, where every fry passes through all of them.
+- **Use it on long lines of pests.** Against one tough target such as a [boss](/bosses), the shared re-hit timer caps Big Fry at 2 hits per second, however many fries it fires. Its strength is long lines of pests, where every fry passes through all of them.
 - Kill bonuses carry over, so a Small Fry with many kills makes a stronger Big Fry from the start. The damage cap is reached long before the size cap.

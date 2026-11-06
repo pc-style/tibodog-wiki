@@ -15,5 +15,5 @@ Harvest Moon is a scheduled gold rush. The [wave table](/bosses) fires it at 8:0
 
 ## Tips
 
-- The window is a good moment to collect coins you left lying around. A Magnet pickup, a [Tater Magnet](/points-of-interest#tater-magnet) or a Tidy [Grok Bot](/grok-bots) pulls them in quickly.
+- **Collect leftover coins during the window.** The window is a good moment to collect coins you left lying around. A Magnet pickup, a [Tater Magnet](/points-of-interest#tater-magnet) or a Tidy [Grok Bot](/grok-bots) pulls them in quickly.
 - If you can kill The Fryer King at 8:00 within the 30 seconds, its 25-gold coin counts double.

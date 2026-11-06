@@ -14,6 +14,6 @@ When Tibo's health drops below 40% of his max HP, Barrel runs to him and heals 2
 
 ## Tips
 
-- The heal is a flat amount, so it matters less as max HP grows. At base 100 HP, a level 1 rescue is a quarter of Tibo's health; with [Gravy Heart](/passives/gravy-heart) and HP items it is a smaller share.
+- **Value it most at low max HP.** The heal is a flat amount, so it matters less as max HP grows. At base 100 HP, a level 1 rescue is a quarter of Tibo's health; with [Gravy Heart](/passives/gravy-heart) and HP items it is a smaller share.
 - Barrel and recovery from [Root Network](/passives/root-network) (+0.25 HP/s per level) stack. A level 5 Barrel's aura alone heals 48 HP a minute.
 - Barrel works best as a safety net against a sudden drop in HP. It does not replace dodge, armor or [Link's](/dogs/pomeranian) fluff, which stop damage before it lands.

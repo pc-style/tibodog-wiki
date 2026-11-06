@@ -17,5 +17,5 @@ You get it from a level-up card. Every level only lowers the cooldown, from 90 s
 
 ## Tips
 
-- Every level-up of Reset Button is an immediate screen clear, which can get you out of a swarm. The kills give no XP, though, and gems on the ground are likely to be erased, so it slows your levelling.
+- **Use it to escape swarms, not to level.** Every level-up of Reset Button is an immediate screen clear, which can get you out of a swarm. The kills give no XP, though, and gems on the ground are likely to be erased, so it slows your levelling.
 - Luck raises the chance that pickups survive the reset. Each level of [Four-Eyed Spud](/passives/four-eyed-spud), which is also the evolution catalyst, adds 5 percentage points to the save chance.

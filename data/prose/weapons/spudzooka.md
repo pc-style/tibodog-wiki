@@ -15,5 +15,5 @@ Every 1.4 s it fires 3 potato rockets (raw amount 2 plus Tibo's base +1, see [St
 
 ## Tips
 
-- The cluster ring makes the danger zone about 1.7 times as wide as the main blast, so it is at its best against large spread-out crowds.
+- **Use it on large, spread-out crowds.** The cluster ring makes the danger zone about 1.7 times as wide as the main blast, so it is at its best against large spread-out crowds.
 - Spudzooka still counts as Spud Cannon for the [Spud Artillery](/weapons/spud-artillery) union. Uniting it with a level 8 [Spud Lob](/weapons/spud-lob) replaces it with Spud Artillery and frees a weapon slot.

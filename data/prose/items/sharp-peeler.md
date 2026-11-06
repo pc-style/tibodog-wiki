@@ -12,4 +12,4 @@ A projectile with pierce *p* hits *p* + 1 enemies before it disappears, so a sho
 
 ## Tips
 
-- It is worth most with weapons that fire single-target shots with low pierce, such as [Fry Knives](/weapons/fry-knives) or [Tot Toss](/weapons/tot-toss), and with dense crowds. Check a weapon's pierce on its page first: for weapons with unlimited pierce it does nothing.
+- **Pair it with low-pierce shots.** It is worth most with weapons that fire single-target shots with low pierce, such as [Fry Knives](/weapons/fry-knives) or [Tot Toss](/weapons/tot-toss), and with dense crowds. Check a weapon's pierce on its page first: for weapons with unlimited pierce it does nothing.

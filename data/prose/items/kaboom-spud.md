@@ -15,5 +15,5 @@ The evolution replaces Boom Spud's flat explosion. When an enemy dies, Kaboom Sp
 
 ## Tips
 
-- Curse multiplies enemy HP ([Curse](/curse)), so the curse from Rotten Spud also makes every Kaboom blast bigger. The two scale together.
+- **Rotten Spud's curse grows Kaboom blasts.** Curse multiplies enemy HP ([Curse](/curse)), so the curse from Rotten Spud also makes every Kaboom blast bigger. The two scale together.
 - Because the blast scales with enemy HP, Kaboom Spud stays useful late in a run, where Boom Spud's flat 20 damage falls off.

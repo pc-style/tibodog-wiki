@@ -12,5 +12,5 @@ The damage multiplier also applies to item projectiles, such as the fries from [
 
 ## Tips
 
-- Because damage bonuses add up, each level of Butter Pat is a slightly smaller relative gain than the one before: level 1 is +10% over no bonus, while level 5 is about +7% over level 4.
+- **Each level gains slightly less.** Because damage bonuses add up, each level of Butter Pat is a slightly smaller relative gain than the one before: level 1 is +10% over no bonus, while level 5 is about +7% over level 4.
 - Elite damage ([Bacon Bits](/passives/bacon-bits)), crit chance ([Hot Sauce](/passives/hot-sauce)) and crit damage ([Sour Cream](/passives/sour-cream)) multiply with this stat instead of adding to it.

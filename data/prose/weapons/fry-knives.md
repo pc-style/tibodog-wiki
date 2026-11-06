@@ -15,5 +15,5 @@ Fry Knives has the highest offer weight of this group of weapons (100), so it sh
 
 ## Tips
 
-- Steer with movement. Walking toward a group, or turning to face it before stopping, points the knives at it.
+- **Face a group to aim the knives.** Steer with movement. Walking toward a group, or turning to face it before stopping, points the knives at it.
 - Pests coming from behind are not covered; pair Fry Knives with a weapon that hits around Tibo.

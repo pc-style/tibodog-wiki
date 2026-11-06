@@ -28,7 +28,7 @@ On Nightmare the ring drops slow to 25% speed by 0.4 s, hang there until 0.85 s,
 
 ## Tips
 
-- Leave the splat under Tibo straight away. It reaches about 30 units from its centre once Tibo's own size is counted, which takes about half a second at base move speed. Watch where the other three land so you do not walk into one.
+- **Step off the splat at once.** Leave the splat under Tibo straight away. It reaches about 30 units from its centre once Tibo's own size is counted, which takes about half a second at base move speed. Watch where the other three land so you do not walk into one.
 - Walk around puddles rather than dashing through them: the dash does not stop the ticks.
 - Puddles last 4 s and a new splash comes every 3.9 s, so the ground around the King is rarely clear. Leading the King into open ground before it splashes makes the next splashes easier to read.
 - Near the King, the gaps between ring drops are narrower than Tibo's hit circle plus a drop. They only open further out. A dash (48 units with brief immunity to hits; see [Dash details](/controls#dash-details)) can carry Tibo across both rings of a pair, because they travel about 30 units apart.

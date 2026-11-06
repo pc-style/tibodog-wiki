@@ -15,5 +15,5 @@ You get it from a level-up card. At level 8 it drops 14 potatoes for 64 damage e
 
 ## Tips
 
-- Potatoes fall around where Tibo was standing when the shower was called. It works best when pests are closing in on you, and you should not expect it to hit pests that are chasing you from far behind.
+- **It works best as pests close in.** Potatoes fall around where Tibo was standing when the shower was called. It works best when pests are closing in on you, and you should not expect it to hit pests that are chasing you from far behind.
 - The spread does not grow with [Big Bowl](/passives/big-bowl) until area is above 1.25, so early area bonuses mostly make each potato's blast bigger rather than covering more ground.

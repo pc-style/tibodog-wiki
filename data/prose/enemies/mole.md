@@ -12,4 +12,4 @@ Tier 4 is the elite tier from 10:00 to 14:59, so elites in these biomes are Mole
 
 ## Tips
 
-- It is easy to outwalk, and the danger is getting boxed in by a slow wall of them. Keep moving and don't rely on knockback to hold them off.
+- **Keep moving rather than relying on knockback.** It is easy to outwalk, and the danger is getting boxed in by a slow wall of them. Keep moving and don't rely on knockback to hold them off.

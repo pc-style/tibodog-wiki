@@ -14,5 +14,5 @@ Other projectile speed sources are [Time Tuber](/items/time-tuber) (+0.08) and [
 
 ## Tips
 
-- The bonus multiplies each weapon's own speed, so weapons with a base speed of 0 gain nothing. That includes ground pools, auras, beams, chains, mines and strikes such as [Root Spikes](/weapons/root-spikes); check the speed on each weapon's page.
+- **Skip it for zero-speed weapons.** The bonus multiplies each weapon's own speed, so weapons with a base speed of 0 gain nothing. That includes ground pools, auras, beams, chains, mines and strikes such as [Root Spikes](/weapons/root-spikes); check the speed on each weapon's page.
 - Faster shots reach distant pests sooner, which may help against fast or spread-out pests.

@@ -12,6 +12,6 @@ The charge cycle is the standard one. The crow stops for a 0.5 s windup aimed at
 
 ## Tips
 
-- Because crows walk at 40, they recover the distance after a missed dive faster than slower chargers do. Their 1.6 s cooldown is the window to hit them.
+- **Hit crows during their cooldown.** Because crows walk at 40, they recover the distance after a missed dive faster than slower chargers do. Their 1.6 s cooldown is the window to hit them.
 - A sideways step during the windup is enough to dodge, since the dive cannot turn. Watch for several crows winding up at once from different directions.
 - Knockback works well on crows, which resist only 20% of it, and buys time between their dives.

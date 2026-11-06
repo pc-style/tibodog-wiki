@@ -14,5 +14,5 @@ When Seed Potato evolves, any of its plants still in the ground are recalled to 
 
 ## Tips
 
-- With three or more plants out, a good rhythm is to toss them, move on while they ripen for 2.4 s, then walk back over them for stage 3 harvests.
+- **Toss, move on, then walk back.** With three or more plants out, a good rhythm is to toss them, move on while they ripen for 2.4 s, then walk back over them for stage 3 harvests.
 - Plants left alone still self-burst after 8 s for only 0.6× damage, so harvest the ones you can reach.

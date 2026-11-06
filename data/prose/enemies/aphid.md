@@ -8,5 +8,5 @@ It has no attack of its own: it walks straight at Tibo and hurts only by touchin
 
 ## Tips
 
-- Aphids arrive while enemy damage is at its lowest: on Normal the damage multiplier is about ×0.22 at the start and ×0.35 at 5:00 (see [Enemy scaling](/enemy-scaling)), so a touch costs Tibo about 1 HP or less before armor. You can afford to walk through a thin line of them to reach a pickup.
+- **Walk through a thin line for pickups.** Aphids arrive while enemy damage is at its lowest: on Normal the damage multiplier is about ×0.22 at the start and ×0.35 at 5:00 (see [Enemy scaling](/enemy-scaling)), so a touch costs Tibo about 1 HP or less before armor. You can afford to walk through a thin line of them to reach a pickup.
 - They have no mass, so any weapon with knockback pushes them the full distance.

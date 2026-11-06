@@ -14,5 +14,5 @@ Other amount sources are [GPU](/passives/gpu) (+1) and [Extra Eye](/items/extra-
 
 ## Tips
 
-- Levels 2 and 4 add nothing by themselves. They are still needed to reach levels 3 and 5.
+- **Push through levels 2 and 4.** Levels 2 and 4 add nothing by themselves. They are still needed to reach levels 3 and 5.
 - Sprouting Eyes at level 5 and GPU together give +4 projectiles to every weapon that uses amount.

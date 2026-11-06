@@ -15,6 +15,6 @@ It evolves into [Fry Volcano](/items/fry-volcano) when [Starch Plating](/passive
 
 ## Tips
 
-- The fries scale with run time, so the item gets stronger late without any investment.
+- **It grows stronger late with no investment.** The fries scale with run time, so the item gets stronger late without any investment.
 - It rewards builds that are hit often but survive, such as armor from Starch Plating, which is also its catalyst.
 - Thorns from [Thorny Jacket](/items/thorny-jacket) add directly to every fry.

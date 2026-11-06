@@ -6,5 +6,5 @@ Gold gain multiplies every coin Tibo picks up: gold = value × `(1 + greed) × (
 
 ## Tips
 
-- Gold buys [Potato Crates](/points-of-interest#potato-crate), [Fry Cart](/points-of-interest#fry-cart) items and [Tater Slots](/points-of-interest#tater-slots) spins. A Penny Spud only pays off when you spend that gold, so it suits runs that route through those points of interest.
+- **Take it only if you will spend gold.** Gold buys [Potato Crates](/points-of-interest#potato-crate), [Fry Cart](/points-of-interest#fry-cart) items and [Tater Slots](/points-of-interest#tater-slots) spins. A Penny Spud only pays off when you spend that gold, so it suits runs that route through those points of interest.
 - Curse also raises gold gain, and the two multiply, so greed is worth a little more in cursed runs.

@@ -14,4 +14,4 @@ Compared with a max-level Potato Rain (14 potatoes, 64 damage, every 3.3 s), it 
 
 ## Tips
 
-- Golden Fry raises gold gain, and it stays in your build after the evolution, so each extra coin from Golden Harvest is worth more.
+- **Golden Fry still raises gold after evolving.** Golden Fry raises gold gain, and it stays in your build after the evolution, so each extra coin from Golden Harvest is worth more.

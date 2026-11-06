@@ -6,5 +6,5 @@ Damage bonuses are summed and then applied as one multiplier, `1 + total` (see [
 
 ## Tips
 
-- One crystal is a small boost. It is a Common, so several can turn up in one run, and they keep adding 4 points each.
+- **Stack copies when they turn up.** One crystal is a small boost. It is a Common, so several can turn up in one run, and they keep adding 4 points each.
 - [Thorny Jacket](/items/thorny-jacket) contact damage is flat and is not raised by damage bonuses.

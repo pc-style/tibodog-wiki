@@ -12,4 +12,4 @@ Tier 2 is the elite tier from 1:00 to 4:59, so early elites spawned in Ketchup B
 
 ## Tips
 
-- It has the same HP and damage as the [Potato Beetle](/enemies/potato-beetle) and is slightly faster. Nothing about it needs special handling; watch the bog's burning puddles while dodging it.
+- **Treat it like a Potato Beetle.** It has the same HP and damage as the [Potato Beetle](/enemies/potato-beetle) and is slightly faster. Nothing about it needs special handling; watch the bog's burning puddles while dodging it.

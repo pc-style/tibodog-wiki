@@ -18,6 +18,6 @@ It also works without dashing. Whenever its 2 s cooldown is ready and Tibo is wa
 
 ## Tips
 
-- Damage depends on dash frequency as well as the 2 s cooldown. Dash charges and dash cooldown from [Butter Socks](/passives/butter-socks) mean more strips.
+- **Pair it with Butter Socks.** Damage depends on dash frequency as well as the 2 s cooldown. Dash charges and dash cooldown from [Butter Socks](/passives/butter-socks) mean more strips.
 - Dashing through or along a crowd puts the strip under the pests, and the slow keeps them in it. Dashing straight away from a chasing group leaves the strip between you and them.
 - Projectile-count passives do nothing for this weapon; area and duration help it.

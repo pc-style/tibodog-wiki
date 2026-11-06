@@ -16,5 +16,5 @@ It is offered as a level-up card. At level 8, with [Hot Sauce](/passives/hot-sau
 
 ## Tips
 
-- Level 3 and level 7 each add a potato, and four levels add pierce, so most upgrades raise the number of pests each volley touches.
+- **Upgrade it for more pests per volley.** Level 3 and level 7 each add a potato, and four levels add pierce, so most upgrades raise the number of pests each volley touches.
 - Hops need pests within 90 units of each other, so Hot Potato does its best work in packed crowds. Against a lone target, the potato hits once and then flies on until it finds another pest or its timer runs out.

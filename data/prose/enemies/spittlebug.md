@@ -17,5 +17,5 @@ Measured in a controlled headless run (seed `wiki`, Standard, each difficulty, n
 
 ## Tips
 
-- Move across the pair's path and leave room for the orbit around it; the bubbles no longer stay on a single straight line.
+- **Sidestep the bubble pair widely.** Move across the pair's path and leave room for the orbit around it; the bubbles no longer stay on a single straight line.
 - At 18 HP it rarely needs special attention; the shots matter mostly when several bugs fire at once.

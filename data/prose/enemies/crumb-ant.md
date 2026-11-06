@@ -6,5 +6,5 @@ It runs straight at Tibo and hurts only on contact, for 3 base damage. It is bui
 
 ## Tips
 
-- Ants reach Tibo well before their slower biome partners (Oil Drips and Bowling Pins move at 30). Expect them to arrive first in any early wave.
+- **Ants arrive first in early waves.** Ants reach Tibo well before their slower biome partners (Oil Drips and Bowling Pins move at 30). Expect them to arrive first in any early wave.
 - With so little HP (about 4 at the start of a Normal run), weapons that fire often or pierce tend to clear ants better than slow, heavy hitters.

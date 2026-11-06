@@ -12,4 +12,4 @@ Crit points add to [Hot Sauce](/passives/hot-sauce) (0.06 per level) before the 
 
 ## Tips
 
-- On its own, Hot Pepper is a small bonus. It is worth more when crits are already strong, for example with [Crit Chip](/items/crit-chip) or [Sour Cream](/passives/sour-cream).
+- **Take it when crits are already strong.** On its own, Hot Pepper is a small bonus. It is worth more when crits are already strong, for example with [Crit Chip](/items/crit-chip) or [Sour Cream](/passives/sour-cream).

@@ -12,6 +12,6 @@ Inferno Basket has its own elite multiplier of 2 (“Double damage to elites and
 
 ## Tips
 
-- Boss HP is multiplied ×3 from 16:00, ×4 from 18:00 and ×6 from 20:00 (see [Bosses](/bosses#boss-hp)). Bacon Bits is worth considering if your build struggles with those late bosses.
+- **Take it if late bosses stall you.** Boss HP is multiplied ×3 from 16:00, ×4 from 18:00 and ×6 from 20:00 (see [Bosses](/bosses#boss-hp)). Bacon Bits is worth considering if your build struggles with those late bosses.
 - Because it multiplies before crits, it stacks with [Hot Sauce](/passives/hot-sauce) and [Sour Cream](/passives/sour-cream) rather than competing with them.
 - Every elite drops a chest, and chests are the only way to evolve (see [Chests](/chests)).

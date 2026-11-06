@@ -12,5 +12,5 @@ When Tibo would be reset, a revive brings him back with 50% max HP and 4 s of in
 
 ## Tips
 
-- On Hard it is the only way to get a revive, which makes it much more valuable there than on Easy.
+- **Value it highest on Hard.** On Hard it is the only way to get a revive, which makes it much more valuable there than on Easy.
 - Level-ups earned while Tibo is down wait until he gets up, so a revive does not waste XP.

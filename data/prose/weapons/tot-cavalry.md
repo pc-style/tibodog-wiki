@@ -12,5 +12,5 @@ All the rules of [Tot Stampede](/weapons/tot-stampede#how-it-works) apply unchan
 
 ## Tips
 
-- The catalyst fits the weapon: [Butter Socks](/passives/butter-socks) gives extra dash charges and a shorter dash cooldown, and each 48-unit dash counts towards the 40-unit walk trigger like normal movement.
+- **Pair it with Butter Socks.** The catalyst fits the weapon: [Butter Socks](/passives/butter-socks) gives extra dash charges and a shorter dash cooldown, and each 48-unit dash counts towards the 40-unit walk trigger like normal movement.
 - Each point of Pierce bonus lets every tot hit one more pest before it bursts.

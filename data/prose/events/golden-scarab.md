@@ -17,6 +17,6 @@ The scarab is harmless (0 damage). It escapes after 25 seconds. Hitting it can s
 
 ## Tips
 
-- Chase it right away. It always starts close, and it only slows down once it is more than 70 units ahead, so Tibo catches up quickly.
+- **Chase the scarab at once.** Chase it right away. It always starts close, and it only slows down once it is more than 70 units ahead, so Tibo catches up quickly.
 - Weapons that hit often roll the 50% coin chance more times before the kill, so they may be worth keeping on it.
 - Every Golden Scarab minute also brings a boss (the [Colorado Queen](/bosses/beetle-queen) at 3:00), and 3:00, 7:00 and 17:00 add an elite. Weigh the item against the risk of chasing the scarab with those around.

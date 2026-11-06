@@ -21,6 +21,6 @@ Rotten Spud raises only the curse **stat**. It does not count as a curse taken, 
 
 ## Tips
 
-- A bigger crowd should also mean more kills and so more XP gems, on top of the higher XP multiplier. Whether that is worth tougher pests depends on how comfortably your build clears.
+- **Take it if your build clears comfortably.** A bigger crowd should also mean more kills and so more XP gems, on top of the higher XP multiplier. Whether that is worth tougher pests depends on how comfortably your build clears.
 - Kaboom Spud's explosions hit for half the dead enemy's max HP (“25% of kills explode, hitting nearby enemies for half the dead enemy's max HP.”). Curse raises enemy max HP, so it also makes those explosions stronger.
 - Moon Cleaver hits harder the more HP Tibo is missing, which suits a riskier, cursed run.

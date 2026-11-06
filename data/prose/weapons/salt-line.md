@@ -15,5 +15,5 @@ You get it from a level-up card. At level 8 it deals 40 damage per tick, patches
 
 ## Tips
 
-- Salt Line hits pests that follow Tibo's path. Walking in loops or circling a group drags pests across the salt again and again.
+- **Walk loops to drag pests over salt.** Salt Line hits pests that follow Tibo's path. Walking in loops or circling a group drags pests across the salt again and again.
 - A faster Tibo spreads the patches further apart and leaves a longer trail. [Spud Sneakers](/passives/spud-sneakers) adds move speed and is also the evolution catalyst.

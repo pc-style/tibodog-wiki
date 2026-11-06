@@ -15,7 +15,7 @@ Every 3 seconds Biscuit fetches. Every loose pickup within 120 units of Tibo sta
 
 ## Tips
 
-- Tibo's base pickup range is 40 units, so even a level 1 fetch reaches three times as far. The pickup-range aura works like a smaller [Potato Magnet](/passives/potato-magnet) (+25% per level).
+- **Pick it for long-range pickups.** Tibo's base pickup range is 40 units, so even a level 1 fetch reaches three times as far. The pickup-range aura works like a smaller [Potato Magnet](/passives/potato-magnet) (+25% per level).
 - A fetched magnet pickup still fires when it reaches Tibo, pulling in every gem and coin on the map.
 - Snacks are fetched too, and a snack collected at full HP heals nothing. If you are saving a snack for later, keep Tibo more than Biscuit's radius away from it.
 - Biscuit pairs well with dogs that drop loot on the ground: the [Dachshund](/dogs/dachshund) and the [Beagle](/dogs/beagle).

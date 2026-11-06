@@ -15,5 +15,5 @@ It is the same gold rush as the scheduled [Harvest Moon](/events/harvest-moon), 
 
 ## Tips
 
-- Walking in starts the timer, so you choose when it happens. Entering with a crowd of pests to kill gets more out of the 20 seconds.
+- **Enter with a crowd to kill.** Walking in starts the timer, so you choose when it happens. Entering with a crowd of pests to kill gets more out of the 20 seconds.
 - Fighting inside the laundromat during the rush stacks its ×1.4 coin value with the ×2.

@@ -12,4 +12,4 @@ Tier 2 is also the elite tier from 1:00 to 4:59, so an elite that spawns in Pota
 
 ## Tips
 
-- On its own it is not dangerous. With more than twice the HP of the tier-1 pests, it is where weak early weapons first start to need two or more hits per kill.
+- **Weak weapons need two or more hits.** On its own it is not dangerous. With more than twice the HP of the tier-1 pests, it is where weak early weapons first start to need two or more hits per kill.

@@ -14,5 +14,5 @@ The burn deals 30% of the triggering hit's damage per second for 3 seconds × Ti
 
 ## Tips
 
-- Bigger single hits make bigger blasts and burns, so it pairs well with crit and damage bonuses.
+- **Pair it with crit and damage bonuses.** Bigger single hits make bigger blasts and burns, so it pairs well with crit and damage bonuses.
 - Duration bonuses, such as [Slow Cooker](/passives/slow-cooker) or [Time Tuber](/items/time-tuber), lengthen the burn.

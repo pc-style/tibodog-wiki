@@ -12,5 +12,5 @@ Firing is the same as on [Gem Sling](/weapons/gem-sling#how-it-works). Only XP g
 
 ## Tips
 
-- Damage still depends on how many gems Tibo collects. Pickup range and XP drops matter as much as damage bonuses.
+- **Boost pickup range and XP drops.** Damage still depends on how many gems Tibo collects. Pickup range and XP drops matter as much as damage bonuses.
 - Extra amount multiplies the number of wedges per gem, so amount bonuses work well with this weapon.

@@ -14,5 +14,5 @@ It is made by opening a chest with Fry Knives at level 8 and [Salt Shaker](/pass
 
 ## Tips
 
-- Salt Shaker's projectile speed bonus also extends how far each knife reaches within its 1.2 s lifetime.
+- **Take Salt Shaker for longer reach.** Salt Shaker's projectile speed bonus also extends how far each knife reaches within its 1.2 s lifetime.
 - As with Fry Knives, the weapon only covers the direction Tibo faces.

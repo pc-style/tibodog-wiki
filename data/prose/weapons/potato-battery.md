@@ -16,6 +16,6 @@ Its listed amount is 0, so it clips 1 wire at level 1 (Tibo's built-in +1 amount
 
 ## Tips
 
-- The pinned pest stops where it is clipped, at least 50 units away when possible. Moving so that other pests walk across the wire gets more out of each zap.
+- **Make pests walk across the wire.** The pinned pest stops where it is clipped, at least 50 units away when possible. Moving so that other pests walk across the wire gets more out of each zap.
 - Running far away snaps the wire early (past 170 units). That discharges sooner but cuts the zapping short.
 - Other weapons can wear the clipped pest down to 1 HP, and the discharge then finishes it when the wire lets go.

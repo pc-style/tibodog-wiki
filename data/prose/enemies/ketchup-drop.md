@@ -10,4 +10,4 @@ It has no special behaviour: the `chase` kind just uses the default movement str
 
 ## Tips
 
-- At speed 30 it is less than half Tibo's base speed of 62, so it only becomes a problem in numbers. In Ketchup Bog, keep an eye on the burning ketchup puddles (“Puddles of ketchup burn and slow.”) as well.
+- **Watch for the burning puddles.** At speed 30 it is less than half Tibo's base speed of 62, so it only becomes a problem in numbers. In Ketchup Bog, keep an eye on the burning ketchup puddles (“Puddles of ketchup burn and slow.”) as well.

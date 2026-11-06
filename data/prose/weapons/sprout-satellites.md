@@ -15,5 +15,5 @@ It is offered on level-up cards and is in the starting-weapon pool. At level 8 i
 
 ## Tips
 
-- Because of the shared hit timer, more sprouts mean more coverage around the ring rather than more damage on one pest. A single target takes at most 2.5 hits per second from this weapon.
+- **Use it for coverage, not single targets.** Because of the shared hit timer, more sprouts mean more coverage around the ring rather than more damage on one pest. A single target takes at most 2.5 hits per second from this weapon.
 - Pests standing closer to Tibo than the orbit, or farther out, are not touched. The ring works best on pests walking in toward Tibo, since they have to cross it.

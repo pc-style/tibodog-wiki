@@ -15,5 +15,5 @@ It is offered as a level-up card. At max level, with [Starch Plating](/passives/
 
 ## Tips
 
-- The shield is strongest against many small hits. Early pests and bullets often deal 20 or less, so each hash brown cancels a whole hit. Late hits get through for most of their damage.
+- **It is strongest against many small hits.** The shield is strongest against many small hits. Early pests and bullets often deal 20 or less, so each hash brown cancels a whole hit. Late hits get through for most of their damage.
 - Starch Plating (armor) is the catalyst and also stacks well with it: the soak comes off first, then armor reduces what is left. Starch Plating is also the catalyst for [Cast Iron](/weapons/cast-iron).

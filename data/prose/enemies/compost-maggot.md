@@ -8,4 +8,4 @@ It is not the same pest as the [Maggot](/enemies/maggot-swarm) that the [Compost
 
 ## Tips
 
-- Maggots are slow and weak, so the early caves are a comfortable place to collect XP. The real step up comes when [Cave Grubs](/enemies/cave-grub), with three times the HP, take over the spawns.
+- **Collect XP while maggots dominate.** Maggots are slow and weak, so the early caves are a comfortable place to collect XP. The real step up comes when [Cave Grubs](/enemies/cave-grub), with three times the HP, take over the spawns.

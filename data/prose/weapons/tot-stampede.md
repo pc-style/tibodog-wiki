@@ -17,5 +17,5 @@ A batch has as many tots as the weapon's Amount, which includes Tibo's base +1 p
 
 ## Tips
 
-- The tots come out behind Tibo, so pests chasing him are the closest targets. Running away from a crowd sends the tots straight into it.
+- **Run away from the crowd.** The tots come out behind Tibo, so pests chasing him are the closest targets. Running away from a crowd sends the tots straight into it.
 - Because the trigger is distance, move-speed bonuses mean more tots per second; cooldown reduction does nothing for this weapon.

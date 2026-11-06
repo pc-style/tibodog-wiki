@@ -13,4 +13,4 @@ Compared with a max-level Root Spikes, it reaches almost twice as far (150 units
 
 ## Tips
 
-- The knockback scatters pests away from where the roots land. That buys time when you are surrounded, but it can also push pests out of reach of short-range weapons such as [Root Cellar](/weapons/root-cellar).
+- **Mind the knockback with short-range weapons.** The knockback scatters pests away from where the roots land. That buys time when you are surrounded, but it can also push pests out of reach of short-range weapons such as [Root Cellar](/weapons/root-cellar).

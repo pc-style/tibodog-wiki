@@ -14,5 +14,5 @@ Every 2.2 s it throws 5 heavy potatoes (raw amount 4 plus Tibo's base +1, see [S
 
 ## Tips
 
-- Against one tough target the shared timer caps the sack at 2 hits per second, however many potatoes pass through it. It does its best work on crowds that fill the wide column above and below Tibo.
+- **Use it on crowds above and below.** Against one tough target the shared timer caps the sack at 2 hits per second, however many potatoes pass through it. It does its best work on crowds that fill the wide column above and below Tibo.
 - Spud Artillery also uses this arc. Sack of Russets still counts as Spud Lob for that union, so a level 8 [Spud Cannon](/weapons/spud-cannon) can later unite with it into [Spud Artillery](/weapons/spud-artillery), freeing a weapon slot.

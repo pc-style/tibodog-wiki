@@ -15,5 +15,5 @@ It clips 3 wires at once (2 plus Tibo's built-in +1 amount, see [Stats](/stats))
 
 ## Tips
 
-- In boss fights, one wire stays on the boss and zaps every pest between it and Tibo. Keeping the boss within 200 units keeps the wire up for the full duration.
+- **Keep the boss close to hold the wire.** In boss fights, one wire stays on the boss and zaps every pest between it and Tibo. Keeping the boss within 200 units keeps the wire up for the full duration.
 - The discharge has a small, fixed radius (18 units, not scaled by Area). Its 1,120 damage mostly finishes off the clipped pest and anything bunched right next to it.

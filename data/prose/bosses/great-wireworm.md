@@ -26,7 +26,7 @@ Enemy bullets scale with time ([Enemy scaling](/enemy-scaling#enemy-bullets)). A
 
 ## Tips
 
-- The burrow circle stays where Tibo was when the dive began. Any movement takes him out of it long before the 2.2 s are up, so keep walking and do not stop on the mark.
+- **Keep walking off the burrow mark.** The burrow circle stays where Tibo was when the dive began. Any movement takes him out of it long before the 2.2 s are up, so keep walking and do not stop on the mark.
 - It surfaces on the mark itself, so getting well clear of the mark keeps its body, and its next fan, at a distance.
 - The beetle shots re-aim only once, when they stop. Moving across their new line just after they lunge forward makes them miss, while standing still lets all of them converge on Tibo.
 - Weapons cannot hit it underground, so the 4 s it spends on the surface between dives are the time to deal damage.

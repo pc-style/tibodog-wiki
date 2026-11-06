@@ -15,6 +15,6 @@ The game caps how many shooting pests can spawn (see [crowd limits](/enemy-scali
 
 ## Tips
 
-- A ring of six spreads out as it travels, so the gaps are widest far from the spore. Its strafing range of about 84 units is close enough that moving in to kill it is often safer than dodging repeated volleys.
+- **Close in and kill it.** A ring of six spreads out as it travels, so the gaps are widest far from the spore. Its strafing range of about 84 units is close enough that moving in to kill it is often safer than dodging repeated volleys.
 - Killing it during the telegraph cancels the volley, so fast single-target weapons do well against it.
 - Only one bullet in each ring is aimed at Tibo. A small sideways step beats the aimed bullet; the other five fly off in other directions.

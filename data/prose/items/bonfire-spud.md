@@ -14,5 +14,5 @@ When one of Tibo's weapons hits, there is a 25% chance to ignite the target and 
 
 ## Tips
 
-- Hot Sauce stays in your build after the evolution. Its crit chance keeps making the igniting hits, and so the fires, bigger.
+- **Hot Sauce crits keep growing the fires.** Hot Sauce stays in your build after the evolution. Its crit chance keeps making the igniting hits, and so the fires, bigger.
 - Weapons that hit dense groups make the most of the spread, because a single proc can light a whole crowd.

@@ -12,6 +12,6 @@ A bale is a moving wall, not a hunter. It has 400 base HP, the most of any pest,
 
 ## Tips
 
-- Simply walk out. On Normal the 11 bales start about 97 units apart, centre to centre. A bale touches Tibo within 13 units (8 + 6, less 1), so that leaves a gap of roughly 70 units to pass through. On Nightmare the gaps start at only about 23 units and shrink as the ring closes, so leave early.
+- **Walk out through a gap early.** Simply walk out. On Normal the 11 bales start about 97 units apart, centre to centre. A bale touches Tibo within 13 units (8 + 6, less 1), so that leaves a gap of roughly 70 units to pass through. On Nightmare the gaps start at only about 23 units and shrink as the ring closes, so leave early.
 - Once Tibo is outside, the bales keep crawling towards the old centre and ignore Tibo. They are only a problem if Tibo walks into them.
 - Breaking a bale costs a lot of damage for 3 XP, and they vanish on their own after 22 s, so destroying them is rarely worth it unless one blocks the only way out.

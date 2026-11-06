@@ -6,5 +6,5 @@ It has weight 3 out of 9 among Epic items, about 1.3% of item rolls at luck 0. C
 
 ## Tips
 
-- Gold buys [Potato Crates](/points-of-interest#potato-crate), [Fry Cart](/points-of-interest#fry-cart) items and [Tater Slots](/points-of-interest#tater-slots) spins, which all give more items. Golden Gravy speeds that up while also raising damage.
+- **Take it for gold and damage.** Gold buys [Potato Crates](/points-of-interest#potato-crate), [Fry Cart](/points-of-interest#fry-cart) items and [Tater Slots](/points-of-interest#tater-slots) spins, which all give more items. Golden Gravy speeds that up while also raising damage.
 - It pairs well with [Coupon Book](/items/coupon-book): one item increases the gold you earn and the other reduces what you spend.

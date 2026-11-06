@@ -15,5 +15,5 @@ You get it from a level-up card. At level 8 it deals 38 damage, the band runs to
 
 ## Tips
 
-- The ring catches pests as they walk in towards Tibo, and the freeze holds them at the band's edge for a moment. That gives other area weapons time to hit them before they reach you.
+- **Pair it with area weapons.** The ring catches pests as they walk in towards Tibo, and the freeze holds them at the band's edge for a moment. That gives other area weapons time to hit them before they reach you.
 - Its damage is low until the last levels, so treat it mainly as crowd control.

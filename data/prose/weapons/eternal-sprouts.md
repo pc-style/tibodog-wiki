@@ -15,5 +15,5 @@ Six sprouts (raw amount 5 plus Tibo's base +1, see [Stats](/stats)) circle Tibo 
 
 ## Tips
 
-- Once the evolution is done, Slow Cooker has nothing more to do for this weapon, though it still lengthens other weapons' durations.
+- **After evolving, Slow Cooker only helps other weapons.** Once the evolution is done, Slow Cooker has nothing more to do for this weapon, though it still lengthens other weapons' durations.
 - The ring sits at a fixed distance. Pests that get inside it, right up against Tibo, are out of reach, so staying on the move and making pests walk through the ring gets the most out of it.

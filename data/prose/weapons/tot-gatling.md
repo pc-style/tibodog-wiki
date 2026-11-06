@@ -25,6 +25,6 @@ With more tots per volley the rate keeps falling toward 10 per second. With 2 to
 
 ## Tips
 
-- Extra amount from [Sprouting Eyes](/passives/sprouting-eyes), [GPU](/passives/gpu) or [Extra Eye](/items/extra-eye) lowers Tot Gatling's damage. If it is your main weapon, think twice before taking amount for another weapon.
+- **Extra amount lowers Tot Gatling's damage.** Extra amount from [Sprouting Eyes](/passives/sprouting-eyes), [GPU](/passives/gpu) or [Extra Eye](/items/extra-eye) lowers Tot Gatling's damage. If it is your main weapon, think twice before taking amount for another weapon.
 - A little cooldown reduction helps (Chives level 1 already reaches the 17.1 tots per second ceiling); beyond that, damage and pierce are better investments.
 - Pierce 2 lets the stream cut through pests that step in front of the target, which makes it a good boss and elite weapon.

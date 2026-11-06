@@ -10,5 +10,5 @@ The dash shield is checked just before the dodge roll and has the same exception
 
 ## Tips
 
-- The base dash has a 5 s cooldown and a single charge. [Butter Socks](/passives/butter-socks) adds charges and shortens the cooldown, so it gives Ghost Pepper many more windows to work with.
+- **Pair it with Butter Socks.** The base dash has a 5 s cooldown and a single charge. [Butter Socks](/passives/butter-socks) adds charges and shortens the cooldown, so it gives Ghost Pepper many more windows to work with.
 - The extra 0.15 s makes it more forgiving to dash through bullets and enemy bodies, because Tibo is still safe for a moment after he lands.

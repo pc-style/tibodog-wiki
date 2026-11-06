@@ -14,5 +14,5 @@ Every 0.8 s it slashes 3 times (2 plus Tibo's built-in +1 amount, see [Stats](/s
 
 ## Tips
 
-- The healing scales with how many pests are in the boxes, so standing in a crowd pays off. [Gravy Heart](/passives/gravy-heart) raises max HP, which gives the healing more room to work.
+- **Stand in crowds to heal more.** The healing scales with how many pests are in the boxes, so standing in a crowd pays off. [Gravy Heart](/passives/gravy-heart) raises max HP, which gives the healing more room to work.
 - The boxes are 54 units tall, so the Peeler's weak spot above and below Tibo is much smaller here.

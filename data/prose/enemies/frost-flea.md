@@ -6,4 +6,4 @@ It hops straight at Tibo at speed 40 and hurts only on contact, for 3 base damag
 
 ## Tips
 
-- Fleas move at about two-thirds of Tibo's base speed. Walking in a wide circle keeps them trailing behind in a group, where area weapons can hit many at once.
+- **Walk in a wide circle.** Fleas move at about two-thirds of Tibo's base speed. Walking in a wide circle keeps them trailing behind in a group, where area weapons can hit many at once.

@@ -14,4 +14,4 @@ In Story mode the usual rules for its stats are changed by the story phases: pes
 
 ## Tips
 
-- At speed 21 it is about a third of Tibo's base speed, so it only catches Tibo when he is boxed in. In a normal run, the faster Field Crows beside it tend to reach Tibo first.
+- **Avoid getting boxed in.** At speed 21 it is about a third of Tibo's base speed, so it only catches Tibo when he is boxed in. In a normal run, the faster Field Crows beside it tend to reach Tibo first.

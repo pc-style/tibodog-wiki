@@ -23,5 +23,5 @@ The other crit damage source is [Crit Chip](/items/crit-chip) (+0.25).
 
 ## Tips
 
-- Take Sour Cream after you have a real crit chance, usually from Hot Sauce. Before that it mainly serves as the catalyst for Hashnado.
+- **Take it once you have crit chance.** Take Sour Cream after you have a real crit chance, usually from Hot Sauce. Before that it mainly serves as the catalyst for Hashnado.
 - Crit damage has no diminishing returns, unlike crit chance, so once you crit often it keeps its full value per level.

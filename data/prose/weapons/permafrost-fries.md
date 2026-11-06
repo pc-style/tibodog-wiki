@@ -15,5 +15,5 @@ It is made by opening a chest with Frozen Fries at level 8 and [Thick Skin](/pas
 
 ## Tips
 
-- With 5 fries per volley, most of the volley hits already-frozen targets, so expect close to double damage against groups of ordinary pests and elites.
+- **It deals near double damage to groups.** With 5 fries per volley, most of the volley hits already-frozen targets, so expect close to double damage against groups of ordinary pests and elites.
 - Against bosses neither the freeze nor the shatter bonus applies; it deals its plain 48 per hit.

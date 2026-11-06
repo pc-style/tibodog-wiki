@@ -12,5 +12,5 @@ Hashnado is the evolution of [Hash Boomerang](/weapons/hash-boomerang). You get 
 
 ## Tips
 
-- The fan of 5 short-range throws clears crowds around Tibo well, but it does little to far-off targets.
+- **Use it to clear crowds around Tibo.** The fan of 5 short-range throws clears crowds around Tibo well, but it does little to far-off targets.
 - Sour Cream is the catalyst. Crit damage pays off with crit chance from [Hot Sauce](/passives/hot-sauce) or the [Hot Pepper](/items/hot-pepper) item.

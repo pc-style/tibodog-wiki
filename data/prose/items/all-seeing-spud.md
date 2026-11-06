@@ -13,5 +13,5 @@ Each eye still deals 40% of the max HP of the enemy that died, as with Wandering
 
 ## Tips
 
-- Eyes from one kill can kill more enemies and trigger more eyes, so it snowballs best in dense crowds.
+- **Take it for dense crowds.** Eyes from one kill can kill more enemies and trigger more eyes, so it snowballs best in dense crowds.
 - Four-Eyed Spud at level 5 also gives +0.5 luck: a 50% chance of a fourth level-up card and better item rarity (see [Stats](/stats#luck)).

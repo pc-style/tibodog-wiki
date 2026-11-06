@@ -8,5 +8,5 @@ It is a different pest from the [Fry Fly Swarm](/enemies/swarm-fly), which the [
 
 ## Tips
 
-- At 54 against Tibo's base 62, Fry Flies are hard to shake off, and in the desert they tend to reach Tibo ahead of the rest of a wave.
+- **Fry Flies are hard to shake off.** At 54 against Tibo's base 62, Fry Flies are hard to shake off, and in the desert they tend to reach Tibo ahead of the rest of a wave.
 - Their low HP makes them a good fit for fast-firing or homing weapons. Knockback is fully effective but only buys a moment, given their speed.

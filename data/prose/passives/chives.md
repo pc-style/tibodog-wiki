@@ -16,5 +16,5 @@ Chives does not affect the dash cooldown, which is a separate stat (see [Butter 
 
 ## Tips
 
-- The fire-rate gain grows with each level: going from 28% to 35% reduction is a bigger relative speed-up than going from 0% to 7%.
+- **Keep levelling it for bigger gains.** The fire-rate gain grows with each level: going from 28% to 35% reduction is a bigger relative speed-up than going from 0% to 7%.
 - If you also run GPU, remember that a faster cooldown does not reduce GPU heat per second. See [GPU](/passives/gpu#how-it-works).

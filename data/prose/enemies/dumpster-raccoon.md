@@ -14,5 +14,5 @@ It uses the same charge numbers as the tier-3 [Bog Toad](/enemies/bog-toad), wit
 
 ## Tips
 
-- Sidestep during the windup. The dash cannot turn, and it ends at least 30 units past Tibo's old position.
+- **Step aside before it dashes.** Sidestep during the windup. The dash cannot turn, and it ends at least 30 units past Tibo's old position.
 - At the drive-thru the raccoons come mixed with fast Fry Flies (speed 54). Dodging a charge can steer Tibo into the flies, so leave yourself room on the side you step to.

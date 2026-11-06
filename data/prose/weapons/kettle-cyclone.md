@@ -12,5 +12,5 @@ Spiral behaviour is the same as on [Chip Shuriken](/weapons/chip-shuriken): all 
 
 ## Tips
 
-- GPU's heat applies to Kettle Cyclone like any weapon: firing builds heat, and at full heat weapons fire at half speed for 3 s (see [GPU](/passives/gpu)). Keep GPU levelling, since each level raises the heat cap and cooling rate.
+- **Keep levelling GPU alongside it.** GPU's heat applies to Kettle Cyclone like any weapon: firing builds heat, and at full heat weapons fire at half speed for 3 s (see [GPU](/passives/gpu)). Keep GPU levelling, since each level raises the heat cap and cooling rate.
 - GPU's +1 projectile per level adds a chip to every ring.

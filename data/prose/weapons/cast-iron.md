@@ -12,5 +12,5 @@ Cast Iron is the evolution of [Frying Pan](/weapons/frying-pan). You get it by o
 
 ## Tips
 
-- Homing swats are the main change from the pan: you don't need to be lined up with the shooter for a swatted bullet to hit something.
+- **Swat bullets without lining up.** Homing swats are the main change from the pan: you don't need to be lined up with the shooter for a swatted bullet to hit something.
 - Cast Iron and [Hash Bulwark](/weapons/hash-bulwark) share the Starch Plating catalyst, so one passive slot can serve both evolutions.

@@ -14,5 +14,5 @@ An elite Harvest Mouse still releases three rats, but they are not elites. They 
 
 ## Tips
 
-- Plan for the rats as part of the kill. Field Rats run at 50, so a mouse killed next to Tibo puts three fast attackers on top of Tibo at once. Killing mice at range gives time to deal with the split.
+- **Kill mice at range.** Plan for the rats as part of the kill. Field Rats run at 50, so a mouse killed next to Tibo puts three fast attackers on top of Tibo at once. Killing mice at range gives time to deal with the split.
 - Area damage around the spot where a mouse dies hits all three rats while they are still bunched together.

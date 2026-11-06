@@ -6,5 +6,5 @@ It shuffles straight at Tibo at speed 30 and hurts only on contact, for 4 base d
 
 ## Tips
 
-- Pins come mixed with Crumb Ants, which are faster (46) but have only 6 HP. The ants reach Tibo first, and the pins arrive later as a slower second line.
+- **Crumb Ants arrive before the pins.** Pins come mixed with Crumb Ants, which are faster (46) but have only 6 HP. The ants reach Tibo first, and the pins arrive later as a slower second line.
 - Knockback weapons push pins less far than the ants beside them, so expect pins to bunch up close to Tibo.

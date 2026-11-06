@@ -16,5 +16,5 @@ At level 8, with [Gravy Heart](/passives/gravy-heart) at any level, the next [ch
 
 ## Tips
 
-- The peels mostly add reach: they deal a little damage once to pests outside the slash boxes. Most of the damage comes from the slashes.
+- **Slashes, not peels, do most damage.** The peels mostly add reach: they deal a little damage once to pests outside the slash boxes. Most of the damage comes from the slashes.
 - The slash boxes are wide but short (20 units tall at level 1), so pests directly above or below Tibo are easy to miss. Area upgrades (levels 4 and 6) make the boxes taller as well as wider.

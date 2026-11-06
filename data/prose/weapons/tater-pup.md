@@ -15,5 +15,5 @@ It is one of the 17 weapons a standard run can start with, and it is offered on 
 
 ## Tips
 
-- Pups never need aiming and never run out, which makes Tater Tot Pup a steady single-target weapon. Its short 150-unit range means it does little against enemies that keep their distance.
+- **Use it for steady single-target damage.** Pups never need aiming and never run out, which makes Tater Tot Pup a steady single-target weapon. Its short 150-unit range means it does little against enemies that keep their distance.
 - Amount is especially valuable here: every extra projectile is a whole extra pup with its own fire timer.

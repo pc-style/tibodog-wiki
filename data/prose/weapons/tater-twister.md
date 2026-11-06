@@ -17,5 +17,5 @@ The pace, hit-rate and spin rules are the same as [Tater Twirl](/weapons/tater-t
 
 ## Tips
 
-- Move-speed bonuses are the main way to speed it up, since they raise the pace (up to double) and with it both spin and hit rate.
+- **Stack move-speed bonuses.** Move-speed bonuses are the main way to speed it up, since they raise the pace (up to double) and with it both spin and hit rate.
 - The wheels only reach about 41 units out, so consider pairing it with a ranged weapon for pests that keep their distance.

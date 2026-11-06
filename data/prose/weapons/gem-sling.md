@@ -15,5 +15,5 @@ At level 1 each gem flings two wedges: the weapon's amount of 1 plus Tibo's base
 
 ## Tips
 
-- Gem Sling's damage depends on how many gems you collect. [Potato Magnet](/passives/potato-magnet) and other pickup-range bonuses pull in more gems per second, so the catalyst helps the sling before the evolution too.
+- **Take Potato Magnet before the evolution.** Gem Sling's damage depends on how many gems you collect. [Potato Magnet](/passives/potato-magnet) and other pickup-range bonuses pull in more gems per second, so the catalyst helps the sling before the evolution too.
 - Since wedges fly where Tibo faces, walking towards a crowd while collecting gems aims the sling at it.

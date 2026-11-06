@@ -15,5 +15,5 @@ It is offered as a level-up card. At max level, with [Sour Cream](/passives/sour
 
 ## Tips
 
-- Its reach is short, so it hits hardest close to Tibo. Pests that crowd him get hit on both passes.
+- **Fight crowds up close.** Its reach is short, so it hits hardest close to Tibo. Pests that crowd him get hit on both passes.
 - Sour Cream raises crit damage, which only pays off with crit chance. [Hot Sauce](/passives/hot-sauce) is the passive that adds crit chance.

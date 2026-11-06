@@ -12,5 +12,5 @@ Other duration sources are [Time Tuber](/items/time-tuber) (+0.15), [Philosopher
 
 ## Tips
 
-- Duration is most useful for weapons whose effect lasts a set time, such as ground pools and orbits, and for freezing or burning builds.
+- **Pair it with pools, orbits, freezes and burns.** Duration is most useful for weapons whose effect lasts a set time, such as ground pools and orbits, and for freezing or burning builds.
 - Because of the hidden base, the in-game “+10% weapon duration per level” is 10 points on top of 125%, not 10% of the current total.

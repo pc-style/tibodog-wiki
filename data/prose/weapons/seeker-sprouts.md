@@ -14,5 +14,5 @@ It is offered on level-up cards and is in the starting-weapon pool. At level 8 i
 
 ## Tips
 
-- Sprouts leave in Tibo's facing direction, so walking toward a pack gets them to it fastest. Running away sends them off backwards first.
+- **Walk toward the pack you want hit.** Sprouts leave in Tibo's facing direction, so walking toward a pack gets them to it fastest. Running away sends them off backwards first.
 - The level 5 and level 8 upgrades (+1 sprout each) and the cooldown cuts at levels 5 and 7 add the most volume. [Pierce](/stats) bonuses matter more after level 7, once each sprout can hit two pests.

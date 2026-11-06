@@ -14,5 +14,5 @@ It has weight 6 out of 53 among Rare items, about 1.1% of item rolls at luck 0. 
 
 ## Tips
 
-- You need a steady freeze source first: [Frozen Fries](/weapons/frozen-fries), [Root Cellar](/weapons/root-cellar), [Hash Bulwark](/weapons/hash-bulwark), [Cold Storage](/weapons/cold-storage) or [Permafrost Fries](/weapons/permafrost-fries). A [Spud Freezer](/points-of-interest#spud-freezer) freezes every pest on the map for 7.5 s, which makes a good moment to clear the screen.
+- **Get a steady freeze source first.** You need a steady freeze source first: [Frozen Fries](/weapons/frozen-fries), [Root Cellar](/weapons/root-cellar), [Hash Bulwark](/weapons/hash-bulwark), [Cold Storage](/weapons/cold-storage) or [Permafrost Fries](/weapons/permafrost-fries). A [Spud Freezer](/points-of-interest#spud-freezer) freezes every pest on the map for 7.5 s, which makes a good moment to clear the screen.
 - Slow Cooker is worth taking with this item even before the evolution, because longer freezes leave more time for frozen enemies to die.

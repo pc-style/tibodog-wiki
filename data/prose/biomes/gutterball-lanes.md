@@ -24,6 +24,6 @@ Elites from the lanes are Bowling Balls until 5:00, rats or crows until 10:00, H
 
 ## Tips
 
-- On a patch Tibo walks at about 37 units per second at base speed, slower than Crumb Ants (46) and Field Rats (50). Avoid being caught on one by a crowd of them.
+- **Keep off patches near fast pests.** On a patch Tibo walks at about 37 units per second at base speed, slower than Crumb Ants (46) and Field Rats (50). Avoid being caught on one by a crowd of them.
 - A charger that gets within dash range stops for half a second (0.6 seconds from 20:00 in Standard) with its direction locked, then dashes in a straight line. <small>[sim-DJfN0TyV.js: `i.state[t]=1,i.timer[t]=.5,e.bigUpdate.lateGame&&(i.timer[t]=Gr(e,.5)),i.tx[t]=r/s,i.ty[t]=a/s`]</small> When a Bowling Ball stops, step sideways out of its line rather than running straight away, especially on a slow patch.
 - With crates making up 41% of the points of interest, the lanes are a good place to spend gold on items.

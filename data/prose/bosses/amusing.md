@@ -38,7 +38,7 @@ On Nightmare the fan is unchanged. The ring shots slow to 30% speed by 0.35 s, h
 
 ## Tips
 
-- To avoid the hug, keep moving: walking 46 units (the circle's radius plus Tibo's body) takes Tibo about 0.75 s, well inside the 1.65 s before it lands. Dashing is not needed.
+- **Walk out of the hug circle.** To avoid the hug, keep moving: walking 46 units (the circle's radius plus Tibo's body) takes Tibo about 0.75 s, well inside the 1.65 s before it lands. Dashing is not needed.
 - Patterns are aimed where Tibo stood when they started, so walking steadily sideways makes the fan miss. Avoid turning back into the fan's second burst.
 - For the double ring, step through a gap in the first ring early. Standing still between the rings tends to put Tibo in the path of the second, offset ring.
 - The spiral's shots are weak (4 damage), but there are 24 of them. The shots in each stream spread apart as they travel, so the gaps are widest far from amusing; backing off before the spiral starts makes it easier to slip through.

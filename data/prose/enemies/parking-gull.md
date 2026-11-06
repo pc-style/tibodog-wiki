@@ -12,4 +12,4 @@ It has no special behaviour: the `chase` kind just uses the default movement str
 
 ## Tips
 
-- Its speed means it catches up with a retreating Tibo sooner than other tier-1 pests, but at 7 HP it is the easiest of them to kill.
+- **Kill it instead of retreating.** Its speed means it catches up with a retreating Tibo sooner than other tier-1 pests, but at 7 HP it is the easiest of them to kill.

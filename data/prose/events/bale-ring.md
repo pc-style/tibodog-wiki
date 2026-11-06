@@ -16,6 +16,6 @@ Hay bales are tanky and very slow: 400 base HP, 14 contact damage and a speed of
 
 ## Tips
 
-- The ring closes on a fixed point, so walking out through a gap takes it out of play. On Normal, neighbouring bales start about 97 units apart, centre to centre (about 49 on Nightmare). The gaps shrink as the ring closes, so leaving early is easiest.
+- **Walk out through a gap early.** The ring closes on a fixed point, so walking out through a gap takes it out of play. On Normal, neighbouring bales start about 97 units apart, centre to centre (about 49 on Nightmare). The gaps shrink as the ring closes, so leaving early is easiest.
 - A 400-HP bale is worth only 3 XP, so fighting through the ring usually isn't worth it unless your weapons are already hitting the bales.
 - Tibo's [dash](/controls) ignores normal damage, which can carry him through a gap that has become too tight.

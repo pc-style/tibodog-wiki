@@ -6,5 +6,5 @@ It walks straight at Tibo and hurts only on contact. It is the toughest and slow
 
 ## Tips
 
-- At speed 26 a Bog Slime cannot keep up with a walking Tibo, so it is easy to kite slimes into a clump for area weapons.
+- **Kite slimes into a clump.** At speed 26 a Bog Slime cannot keep up with a walking Tibo, so it is easy to kite slimes into a clump for area weapons.
 - Weapons that kill an Aphid in one hit may need two for a Bog Slime early on, which can slow down clearing in the swamp biomes.

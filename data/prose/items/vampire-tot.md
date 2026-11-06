@@ -8,5 +8,5 @@ Every kill counts, whatever killed the enemy: weapons, item effects, thorns or d
 
 ## Tips
 
-- It is weakest early, when kills are slow, and best late in big crowds.
+- **It is weak early, strong late.** It is weakest early, when kills are slow, and best late in big crowds.
 - Compare it with [Pickle Jar](/items/pickle-jar) (0.1 HP per second): Vampire Tot heals more only while you kill more than two enemies per second.

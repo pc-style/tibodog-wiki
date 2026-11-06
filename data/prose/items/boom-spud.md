@@ -16,5 +16,5 @@ Boom Spud has weight 6 out of 53 among Rare items, about 1.1% of item rolls at l
 
 ## Tips
 
-- 20 damage is enough to finish most early pests, but pest HP grows over the run (about 3.4× by 20:00 on Normal, see [Enemy scaling](/enemy-scaling)). Treat Boom Spud as a way to clear crowds early and as a step towards Kaboom Spud.
+- **Clear early crowds, then evolve it.** 20 damage is enough to finish most early pests, but pest HP grows over the run (about 3.4× by 20:00 on Normal, see [Enemy scaling](/enemy-scaling)). Treat Boom Spud as a way to clear crowds early and as a step towards Kaboom Spud.
 - Holding Boom Spud makes [Rotten Spud](/passives/rotten-spud) four times as likely in level-up offers ([Level-up](/level-up#offer-weights)). If you plan to evolve it, accept the curse that comes with it.

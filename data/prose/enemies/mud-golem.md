@@ -14,5 +14,5 @@ Tier 5 is the elite tier from 15:00, so late elites in these biomes are Mud Gole
 
 ## Tips
 
-- Its base speed of 28 is far below Tibo's 62. Standard's late-game curve does not add overtime speed growth, but curse, elite bonuses and terrain can still change the chase (see [Enemy scaling](/enemy-scaling)).
+- **Outwalk it, but watch for speed bonuses.** Its base speed of 28 is far below Tibo's 62. Standard's late-game curve does not add overtime speed growth, but curse, elite bonuses and terrain can still change the chase (see [Enemy scaling](/enemy-scaling)).
 - Knockback barely moves it; damage per second matters more than crowd control here.

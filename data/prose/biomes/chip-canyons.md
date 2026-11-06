@@ -16,6 +16,6 @@ The gold and XP multipliers use the biome where the pest dies, not where Tibo st
 
 ## Tips
 
-- With no hazard, this is a comfortable place to fight. The danger is dashes: Sand Crabs, Field Crows and Grease Fiends all charge. A charger in range stops for half a second (0.6 seconds from 20:00 in Standard) with its direction locked, then dashes in a straight line, so step sideways when one stops. <small>[sim-DJfN0TyV.js: `i.state[t]=1,i.timer[t]=.5,e.bigUpdate.lateGame&&(i.timer[t]=Gr(e,.5)),i.tx[t]=r/s,i.ty[t]=a/s`]</small>
+- **Step sideways when a charger stops.** With no hazard, this is a comfortable place to fight. The danger is dashes: Sand Crabs, Field Crows and Grease Fiends all charge. A charger in range stops for half a second (0.6 seconds from 20:00 in Standard) with its direction locked, then dashes in a straight line, so step sideways when one stops. <small>[sim-DJfN0TyV.js: `i.state[t]=1,i.timer[t]=.5,e.bigUpdate.lateGame&&(i.timer[t]=Gr(e,.5)),i.tx[t]=r/s,i.ty[t]=a/s`]</small>
 - Kill Harvest Mice where your area weapons can catch the three rats they leave behind.
 - The extra Fry Carts make Chip Canyons a good place to shop once you have gold.

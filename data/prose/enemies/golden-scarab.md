@@ -13,6 +13,6 @@ It deals no damage at all. Its HP is high for its time (300 base) and scales wit
 
 ## Tips
 
-- Tibo's base speed of 62 beats the scarab's 40, so a straight chase closes the gap by about 22 units per second. When the event fires, head for it at once: 25 s is not much time at 3:00, when the scarab has about 230 HP.
+- **Chase it as soon as it appears.** Tibo's base speed of 62 beats the scarab's 40, so a straight chase closes the gap by about 22 units per second. When the event fires, head for it at once: 25 s is not much time at 3:00, when the scarab has about 230 HP.
 - Weapons that hit many times pay out more gold along the way, because the coin roll happens on every hit.
 - Its mass of 0.5 halves knockback, but knockback still pushes it away from Tibo. Heavy-knockback weapons can work against you during the chase.

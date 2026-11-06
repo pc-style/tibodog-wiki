@@ -27,6 +27,6 @@ The shared beat always counts as used, even when there is nothing to mark and th
 
 ## Tips
 
-- One pack slot for both legendaries is the main gain: it leaves two slots for other dogs.
+- **Both legendaries share one pack slot.** One pack slot for both legendaries is the main gain: it leaves two slots for other dogs.
 - Thanks to the eclipse charge above the cap, a Zelda & Link at level 3 or higher can hold three charges and cancel three hits in a row.
 - The eclipse's +10% lasts only a second, so treat it as a minor bonus. The regular +25% marks matter more, especially with a [Jack Russell Terrier](/dogs/terrier) biting marked elites.

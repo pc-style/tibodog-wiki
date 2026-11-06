@@ -13,5 +13,5 @@ Hash Bulwark is the evolution of [Hash Brown Shield](/weapons/hash-brown-shield)
 
 ## Tips
 
-- Each burst both damages and freezes the crowd that just hit Tibo, which gives him a moment to step away.
+- **Step away after each burst.** Each burst both damages and freezes the crowd that just hit Tibo, which gives him a moment to step away.
 - Starch Plating stays useful after the evolution: armor reduces whatever damage gets past the 30 soak.

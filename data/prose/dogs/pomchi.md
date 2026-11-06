@@ -17,7 +17,7 @@ If Tibo holds Zelda and finds [Link](/dogs/pomeranian), the two fuse into [Zelda
 
 ## Tips
 
-- Zelda is an elite killer. Elite damage from [Bacon Bits](/passives/bacon-bits) or [Boss Buster](/items/boss-buster) and the mark multiply each other.
+- **Stack Zelda with elite damage.** Zelda is an elite killer. Elite damage from [Bacon Bits](/passives/bacon-bits) or [Boss Buster](/items/boss-buster) and the mark multiply each other.
 - Taking curse adds extra elites (see [Curse](/curse)), which gives Zelda more targets.
 - The +25% can help kill a loot runner before it escapes.
 - Zelda does nothing against bosses. For the boss HP steps late in a run, look elsewhere for damage.

@@ -12,5 +12,5 @@ The volley rules are the same as [Tailgate Fries](/weapons/tailgate-fries#how-it
 
 ## Tips
 
-- Pierce 2 means each fry can hit three pests in a line, which suits the tight queue of pests that forms behind a running Tibo.
+- **Run so pests queue behind you.** Pierce 2 means each fry can hit three pests in a line, which suits the tight queue of pests that forms behind a running Tibo.
 - Butter Pat stays in your passives after the evolution, and its damage bonus keeps applying to every fry.

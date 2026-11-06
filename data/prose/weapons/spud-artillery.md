@@ -15,4 +15,4 @@ Every 1.8 s it lobs 6 potatoes (raw Amount 5 plus Tibo's base +1 projectile, see
 
 ## Tips
 
-- Area raises both the sideways spread and the blast radius; projectile speed raises the arc.
+- **Stack Area for spread and blast size.** Area raises both the sideways spread and the blast radius; projectile speed raises the arc.

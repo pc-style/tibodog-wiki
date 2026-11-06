@@ -29,4 +29,4 @@ A pair comes up 1 time in 6. The best result, double sixes (1/36), deals 6× dam
 
 ## Tips
 
-- Duds become rare (under 3%) and the big 6 face comes up almost a third of the time, so Loaded Dice is much more consistent than Spud Dice. Averaged over all rolls, the damage multiplier from faces and pairs works out to about 1.8× per throw (split extras not counted).
+- **It is much more consistent than Spud Dice.** Duds become rare (under 3%) and the big 6 face comes up almost a third of the time, so Loaded Dice is much more consistent than Spud Dice. Averaged over all rolls, the damage multiplier from faces and pairs works out to about 1.8× per throw (split extras not counted).

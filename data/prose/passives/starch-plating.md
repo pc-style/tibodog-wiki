@@ -20,5 +20,5 @@ Armor applies after dodge and after guard weapons such as Hash Brown Shield soak
 
 ## Tips
 
-- Armor is strongest early. If you take Starch Plating for defence, take it early rather than late.
+- **Take it early for defence.** Armor is strongest early. If you take Starch Plating for defence, take it early rather than late.
 - Fry Volcano fires when Tibo is hit, and armor lowers what each of those hits costs, so the two fit together.

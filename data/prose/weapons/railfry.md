@@ -15,4 +15,4 @@ It is made by opening a chest with Fry Lance at level 8 and [Spud Sneakers](/pas
 
 ## Tips
 
-- Spud Sneakers is also the catalyst for [Ghee Glide](/weapons/ghee-glide), so one copy can unlock both if you carry [Butter Streak](/weapons/butter-streak) too.
+- **Carry Butter Streak to share Spud Sneakers.** Spud Sneakers is also the catalyst for [Ghee Glide](/weapons/ghee-glide), so one copy can unlock both if you carry [Butter Streak](/weapons/butter-streak) too.

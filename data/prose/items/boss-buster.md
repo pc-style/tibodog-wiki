@@ -10,5 +10,5 @@ The multiplier applies to every damage instance that hits an elite or a boss, be
 
 ## Tips
 
-- Elites always drop a chest and bosses are the main thing between Tibo and the 20:00 mark ([Chests](/chests), [Bosses](/bosses)). Damage that only applies to them is still worth taking.
+- **Take it for elite and boss damage.** Elites always drop a chest and bosses are the main thing between Tibo and the 20:00 mark ([Chests](/chests), [Bosses](/bosses)). Damage that only applies to them is still worth taking.
 - It does nothing against ordinary pests. Pair it with something that clears crowds.

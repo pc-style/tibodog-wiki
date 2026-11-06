@@ -12,5 +12,5 @@ Salt Flats is the evolution of [Salt Line](/weapons/salt-line). A chest can evol
 
 ## Tips
 
-- The push and slow together make the trail work as a wall. Circling a crowd leaves a ring of salt that damages pests and holds them back as they try to cross.
+- **Circle a crowd to wall it in.** The push and slow together make the trail work as a wall. Circling a crowd leaves a ring of salt that damages pests and holds them back as they try to cross.
 - Spud Sneakers levels make Tibo faster, so the trail covers more ground.

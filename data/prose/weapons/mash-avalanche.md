@@ -14,5 +14,5 @@ Growing, release triggers and size-based damage work as described on [Mash Snowb
 
 ## Tips
 
-- The first contact triggers the split, so the full-size, full-damage ball usually hits only the first pests in its path. The rest of the crowd takes the 70% balls and their splatters.
+- **Split balls hit most of the crowd.** The first contact triggers the split, so the full-size, full-damage ball usually hits only the first pests in its path. The rest of the crowd takes the 70% balls and their splatters.
 - Area still raises the ball's size cap, and with it the damage of the original ball and the three smaller ones.

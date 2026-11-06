@@ -10,4 +10,4 @@ It has no special behaviour: the `chase` kind just uses the default movement str
 
 ## Tips
 
-- At speed 30 it is less than half Tibo's base speed of 62. The faster Crumb Ants (speed 46) next to it tend to reach Tibo first.
+- **Crumb Ants reach Tibo before drips.** At speed 30 it is less than half Tibo's base speed of 62. The faster Crumb Ants (speed 46) next to it tend to reach Tibo first.

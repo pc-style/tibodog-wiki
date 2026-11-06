@@ -15,5 +15,5 @@ It is only offered on level-up cards and is not in the starting-weapon pool. Lev
 
 ## Tips
 
-- The bonus depends on kills, not on time held, so picking it up early gives it more of the run to reach the 240-kill cap.
+- **Pick it up early.** The bonus depends on kills, not on time held, so picking it up early gives it more of the run to reach the 240-kill cap.
 - Early on its hits are weak, so many of its kills will be finishing blows on pests other weapons have already damaged. Those count in full, because only the killing blow matters.

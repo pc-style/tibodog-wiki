@@ -22,6 +22,6 @@ Pests use the table of the biome just off screen where they spawn, so the swamp'
 
 ## Tips
 
-- At base speed Tibo walks at 62 units per second, or about 34 in the mash. That is still faster than the swamp's own walkers (22–30 base speed), but much slower than pests coming in from neighbouring biomes, such as [Field Rats](/enemies/field-rat) (50). Elite speed bonuses and overtime also close the gap.
+- **In the mash, Field Rats outrun Tibo.** At base speed Tibo walks at 62 units per second, or about 34 in the mash. That is still faster than the swamp's own walkers (22–30 base speed), but much slower than pests coming in from neighbouring biomes, such as [Field Rats](/enemies/field-rat) (50). Elite speed bonuses and overtime also close the gap.
 - Bog Toads dash at 170 regardless of terrain. Avoid standing still in a mash patch when one is lining up.
 - Use the dash to cross a patch. It covers the same 48 units in or out of the mash.

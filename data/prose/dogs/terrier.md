@@ -16,6 +16,6 @@ About once a second, Pip darts at the nearest enemy within 110 units of itself a
 
 ## Tips
 
-- Pip is the strongest single-target dog. Bite damage divided by the interval gives about 24 damage per second at level 1 and about 134 at level 5, before Tibo's damage multiplier and misses.
+- **Pick Pip for single-target damage.** Pip is the strongest single-target dog. Bite damage divided by the interval gives about 24 damage per second at level 1 and about 134 at level 5, before Tibo's damage multiplier and misses.
 - Because bites scale with Tibo's damage, Pip suits damage builds. The +3% damage aura per level adds a little more.
 - Zelda's marks add 25% to every bite on a marked elite or loot runner, which makes Pip with Zelda a strong elite-hunting pair.

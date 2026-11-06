@@ -14,5 +14,5 @@ The heal is counted per pulse: 0.12 HP for each enemy inside the cloud, capped a
 
 ## Tips
 
-- The heal scales with how many pests are in the cloud, so Pressure Cooker heals most when you are surrounded and nothing when the area is clear. [Root Network](/passives/root-network)'s regeneration (+0.25 HP per second per level) covers the quiet moments.
+- **Pair it with Root Network.** The heal scales with how many pests are in the cloud, so Pressure Cooker heals most when you are surrounded and nothing when the area is clear. [Root Network](/passives/root-network)'s regeneration (+0.25 HP per second per level) covers the quiet moments.
 - Area bonuses grow both the damage zone and the number of enemies that count toward the heal.

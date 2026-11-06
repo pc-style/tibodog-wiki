@@ -12,4 +12,4 @@ The targeting rules are the same as Starch Bolt's: the weapon waits until an ene
 
 ## Tips
 
-- Thunder Tuber shines against dense waves, where all 9 strikes find targets and the 24-unit blasts overlap. Against a lone boss most of the cast is wasted, so keep a focused weapon for boss fights.
+- **Keep a focused weapon for bosses.** Thunder Tuber shines against dense waves, where all 9 strikes find targets and the 24-unit blasts overlap. Against a lone boss most of the cast is wasted, so keep a focused weapon for boss fights.

@@ -16,6 +16,6 @@ Every 4 seconds, if an enemy is within 150 units, Zoom sprints 150 units straigh
 
 ## Tips
 
-- Zoom averages 7.5 damage per second at level 1 and about 46 at level 5, before Tibo's damage multiplier. Every enemy on the line takes the full hit, so Zoom is best against dense crowds and lines of pests walking at Tibo.
+- **Use Zoom against dense crowds and lines.** Zoom averages 7.5 damage per second at level 1 and about 46 at level 5, before Tibo's damage multiplier. Every enemy on the line takes the full hit, so Zoom is best against dense crowds and lines of pests walking at Tibo.
 - Against a single target the [Jack Russell Terrier](/dogs/terrier) does far more: about 134 damage per second at level 5 against Zoom's 46.
 - The move-speed aura at level 5 equals three levels of [Spud Sneakers](/passives/spud-sneakers) (+8% per level). That alone can justify keeping Zoom in a build that kites.

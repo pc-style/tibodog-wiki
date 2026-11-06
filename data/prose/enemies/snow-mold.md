@@ -16,5 +16,5 @@ No new pieces are made once the enemy hard cap (550 on Easy/Normal, 700 on Hard,
 
 ## Tips
 
-- Weapons that hit an area or pierce clean up the pieces well, because they appear together right where the mold died.
+- **Use area or pierce weapons.** Weapons that hit an area or pierce clean up the pieces well, because they appear together right where the mold died.
 - Expect each mold to come back as two smaller pests; killing one right next to Tibo puts the pieces in contact range.

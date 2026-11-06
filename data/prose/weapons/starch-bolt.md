@@ -16,5 +16,5 @@ It is one of the 17 configured starting weapons of a standard run, with gear abl
 
 ## Tips
 
-- Because targets are random, Starch Bolt is better at thinning a crowd than at focusing a boss. With a single enemy in range only one strike lands per cast.
+- **Use it to thin crowds, not bosses.** Because targets are random, Starch Bolt is better at thinning a crowd than at focusing a boss. With a single enemy in range only one strike lands per cast.
 - [Sprouting Eyes](/passives/sprouting-eyes) is worth picking early: it adds strikes now and is the catalyst you need for Thunder Tuber later.

@@ -12,4 +12,4 @@ Tier 2 is the elite tier from 1:00 to 4:59, so an early elite spawned in Peel Fo
 
 ## Tips
 
-- Treat it like the Potato Beetle beside it. Peel Forest's brambles also hurt Tibo (“Thorny brambles scratch.”), so watch where kiting takes him.
+- **Watch the brambles while kiting.** Treat it like the Potato Beetle beside it. Peel Forest's brambles also hurt Tibo (“Thorny brambles scratch.”), so watch where kiting takes him.

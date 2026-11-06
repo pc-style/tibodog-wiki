@@ -26,6 +26,6 @@ Elites from the drive-thru are raccoons or flies until 5:00, rats or imps until 
 
 ## Tips
 
-- The gulls only cross the screen once and do not turn, so you can step out of their band instead of fighting them. Area weapons can turn the flock into a burst of XP gems, though.
+- **Step out of the gull band.** The gulls only cross the screen once and do not turn, so you can step out of their band instead of fighting them. Area weapons can turn the flock into a burst of XP gems, though.
 - The oil patches are small and sparse (at most two per chunk), so they are easy to keep away from.
 - This is the best landmark for shopping and item copying, with Fry Carts and Microwaves making up nearly half of its points of interest.

@@ -8,5 +8,5 @@ Baked Buckler has weight 8 out of 78 among Uncommon items, so at luck 0 roughly 
 
 ## Tips
 
-- One Buckler is worth the most early in a run, when attacker levels are low. Later on, 10 armor barely changes the numbers unless you already stack armor from Starch Plating.
+- **Take it early in a run.** One Buckler is worth the most early in a run, when attacker levels are low. Later on, 10 armor barely changes the numbers unless you already stack armor from Starch Plating.
 - Armor and dodge work at different stages: [Ghost Skin](/items/ghost-skin) and dodge cancel a hit outright, and armor reduces the hits that land.

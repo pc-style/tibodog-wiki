@@ -28,7 +28,7 @@ Enemy bullets scale with time ([Enemy scaling](/enemy-scaling#enemy-bullets)). A
 
 ## Tips
 
-- A dash cancels the homing of every spiral shot already in the air. Dashing early in a spiral, once the first volleys are out, turns the rest of their flight into straight lines. Volleys fired after the dash still home.
+- **Dash early in each spiral.** A dash cancels the homing of every spiral shot already in the air. Dashing early in a spiral, once the first volleys are out, turns the rest of their flight into straight lines. Volleys fired after the dash still home.
 - At 17:00 the spiral shots are faster than Tibo, so outrunning them does not work. Moving across their path does, because each shot can turn at most 0.8 radians (about 46°) in total.
 - Maggots are slower than Tibo (50 against 62) but arrive in rings of 14. Weapons that hit an area or pierce ([Stats](/stats#stat-sources)) keep the numbers down. Kiting the Titan, the slowest boss after [Ketchup Kraken](/bosses/ketchup-kraken), is easy, but every 5 s spent kiting adds another ring.
 - Its HP is the main problem. [Bacon Bits](/passives/bacon-bits) and [Boss Buster](/items/boss-buster) raise damage against bosses. If Grater Golem is still alive at 17:00, killing one of the two quickly is usually better than splitting damage.

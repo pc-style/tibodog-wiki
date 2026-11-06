@@ -16,5 +16,5 @@ After the announcement, 26 [Fry Fly Swarm](/enemies/swarm-fly) pests enter from 
 
 ## Tips
 
-- The flies don't steer, so moving sideways to their path gets Tibo out of the band. At base speed, Tibo covers the 120 units to the edge of the band in about 2 seconds.
+- **Move sideways out of the band.** The flies don't steer, so moving sideways to their path gets Tibo out of the band. At base speed, Tibo covers the 120 units to the edge of the band in about 2 seconds.
 - With 10 base HP, the flies die quickly to area weapons. Standing your ground also works if your build already clears crowds.

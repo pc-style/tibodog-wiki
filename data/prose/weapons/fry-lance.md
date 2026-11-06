@@ -15,5 +15,5 @@ By level 8 it deals 68 damage, fires every 1.7 s, throws 3 lances 0.15 s apart (
 
 ## Tips
 
-- Lances are strongest against pests that line up, such as a column chasing Tibo. Moving so the crowd is directly behind the nearest pest puts more of it on the line.
+- **Line pests up behind the nearest one.** Lances are strongest against pests that line up, such as a column chasing Tibo. Moving so the crowd is directly behind the nearest pest puts more of it on the line.
 - Only the first lance of a volley aims at the target; the others go 20° or more off to the sides, so the extra lances are most useful against wide groups.

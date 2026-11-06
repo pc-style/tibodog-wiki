@@ -14,5 +14,5 @@ The event sends a band of 26 flies across the screen in one straight line at spe
 
 ## Tips
 
-- The band is about 240 units wide and every fly holds its course, so moving across its path, not away from it, gets Tibo out fastest.
+- **Move across the band, not away.** The band is about 240 units wide and every fly holds its course, so moving across its path, not away from it, gets Tibo out fastest.
 - If Tibo is caught inside it, the flies only touch him as they pass. At speed 100 they are gone within seconds.

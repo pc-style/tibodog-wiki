@@ -18,5 +18,5 @@ A freshly spawned crab also waits a random 0.5–2 s before its first charge. Th
 
 ## Tips
 
-- The dash direction is fixed at the start of the wind-up, so stepping sideways during the 0.5 s pause makes it miss.
+- **Step sideways during the pause.** The dash direction is fixed at the start of the wind-up, so stepping sideways during the 0.5 s pause makes it miss.
 - The dash carries it about 117 units, past where Tibo stood. Afterwards it has a 1.6 s cooldown and is just a slow walker, a good moment to finish it.

@@ -15,6 +15,6 @@ At level 1 it casts two whirlpools every 2.7 s, but only when a pest is within 1
 
 ## Tips
 
-- Whisk Vortex is idle when no pest is within 130 units, and its damage per hit is low. It is most useful for holding a crowd in place for weapons that hit an area.
+- **Pair it with area weapons.** Whisk Vortex is idle when no pest is within 130 units, and its damage per hit is low. It is most useful for holding a crowd in place for weapons that hit an area.
 - Area raises both the whirlpool's size and its pull radius. That makes [Big Bowl](/passives/big-bowl), the catalyst, a good fit even before the evolution.
 - The pull does not move bosses, so do not count on it to keep a boss in place.

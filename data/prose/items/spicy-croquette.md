@@ -16,5 +16,5 @@ It evolves into [Magma Croquette](/items/magma-croquette) when [Big Bowl](/passi
 
 ## Tips
 
-- Copies are not wasted when it evolves: every Spicy Croquette you hold becomes a Magma Croquette.
+- **Take extra copies; none are wasted.** Copies are not wasted when it evolves: every Spicy Croquette you hold becomes a Magma Croquette.
 - While you hold the croquette, Big Bowl is offered more often on level-up cards (×4 weight), which helps reach level 5 (see [Level-up](/level-up#offer-weights)).

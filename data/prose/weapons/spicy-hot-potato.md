@@ -15,5 +15,5 @@ Every 2 s it throws 3 potatoes (2 plus Tibo's built-in +1 amount, see [Stats](/s
 
 ## Tips
 
-- One volley can produce up to 9 blasts (3 potatoes plus 2 copies each). That makes the weapon best in dense waves, where the copies find new pests to hop to right away.
+- **Use it on dense waves.** One volley can produce up to 9 blasts (3 potatoes plus 2 copies each). That makes the weapon best in dense waves, where the copies find new pests to hop to right away.
 - Pierce bonuses help twice, since the copies also get the extra hops.

@@ -13,5 +13,5 @@ The enemy struck by a jump is also inside its own thunderclap, so it takes 1.2×
 
 ## Tips
 
-- The thunderclaps make it much better than Static Tot in tight crowds, where each clap hits several enemies.
+- **Use it in tight crowds.** The thunderclaps make it much better than Static Tot in tight crowds, where each clap hits several enemies.
 - Root Network's recovery (+1.25 HP per second at level 5) is useful on its own, so the catalyst is rarely a wasted slot.

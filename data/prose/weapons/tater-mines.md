@@ -15,5 +15,5 @@ It is offered on level-up. At level 8 a chest evolves it into [Landmine Harvest]
 
 ## Tips
 
-- Mines only work where pests walk. Kiting in a loop, so that the crowd following Tibo crosses the spots where mines were dropped, gets the most out of them.
+- **Kite in loops over your mines.** Mines only work where pests walk. Kiting in a loop, so that the crowd following Tibo crosses the spots where mines were dropped, gets the most out of them.
 - Because a mine blasts a wider area than its trigger, the explosion usually catches the pests bunched up behind the first one.

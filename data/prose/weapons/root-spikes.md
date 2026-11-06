@@ -14,5 +14,5 @@ You get it from a level-up card. At level 8 it targets 9 pests (8 + 1) for 48 da
 
 ## Tips
 
-- Extra spikes are only useful when enough pests are close to Tibo. It does nothing against pests that are far away.
+- **Extra spikes need pests close by.** Extra spikes are only useful when enough pests are close to Tibo. It does nothing against pests that are far away.
 - The blasts are small, so slower pests that walk in a straight line are the easiest to hit.

@@ -14,5 +14,5 @@ The crown's curse is the curse stat only, like [Rotten Spud](/passives/rotten-sp
 
 ## Tips
 
-- +30% damage equals three levels of [Butter Pat](/passives/butter-pat) and takes no passive slot. Whether the extra enemy HP is worth it depends on how comfortably your build is clearing.
+- **Take it if your build clears comfortably.** +30% damage equals three levels of [Butter Pat](/passives/butter-pat) and takes no passive slot. Whether the extra enemy HP is worth it depends on how comfortably your build is clearing.
 - Curse makes kill-based item effects that scale with enemy max HP, such as [Kaboom Spud](/items/kaboom-spud), [Freezer Burn](/items/freezer-burn) and [Glacier Spud](/items/glacier-spud), hit harder, because those enemies have more HP.

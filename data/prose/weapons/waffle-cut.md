@@ -14,5 +14,5 @@ Like Julienne Dash, it fires on every dash and, between dashes, on its 1.1 s coo
 
 ## Tips
 
-- The repeat cuts stay where the dash started, so dashing through a crowd leaves a cross that keeps cutting the pests that chase Tibo into it.
+- **Dash through crowds to leave a cross.** The repeat cuts stay where the dash started, so dashing through a crowd leaves a cross that keeps cutting the pests that chase Tibo into it.
 - Extra dash charges from [Butter Socks](/passives/butter-socks) mean more crosses, and the crosses can overlap.

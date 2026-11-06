@@ -15,5 +15,5 @@ Frozen Fries is one of the possible starting weapons of a standard run (see [Lev
 
 ## Tips
 
-- The freeze is crowd control, not boss control. Against a [boss](/bosses) it is just a projectile.
+- **Use the freeze on crowds, not bosses.** The freeze is crowd control, not boss control. Against a [boss](/bosses) it is just a projectile.
 - Pierce makes the freeze spread through a line of pests, which matters more than raw damage early on.

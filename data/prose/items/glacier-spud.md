@@ -15,5 +15,5 @@ Glacier Spud no longer needs frozen enemies. Any kill has a 30% chance to shatte
 
 ## Tips
 
-- With Slow Cooker maxed, the duration multiplier is 1.75 (1 + 0.5 + the base 0.25), so the freeze lasts about 2.6 s and the slow 3.5 s even with no other duration sources.
+- **Max Slow Cooker for longer freezes.** With Slow Cooker maxed, the duration multiplier is 1.75 (1 + 0.5 + the base 0.25), so the freeze lasts about 2.6 s and the slow 3.5 s even with no other duration sources.
 - Large groups of frozen and slowed enemies bunch up and are easy targets for area weapons. Glacier Spud is as much crowd control as damage.

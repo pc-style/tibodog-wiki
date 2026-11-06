@@ -12,5 +12,5 @@ Crit chance and crit damage both apply to every damage instance, not just weapon
 
 ## Tips
 
-- Crit Chip does nothing without crit chance. Each chip raises average damage by crit chance × 0.25 of a normal hit. With maxed Hot Sauce (23.1% crit) that is +5.8% of a normal hit, or about 4.7% more than Tibo dealt before.
+- **Skip it without crit chance.** Crit Chip does nothing without crit chance. Each chip raises average damage by crit chance × 0.25 of a normal hit. With maxed Hot Sauce (23.1% crit) that is +5.8% of a normal hit, or about 4.7% more than Tibo dealt before.
 - It is best once crit chance is already high, because the value of crit damage grows with how often you crit.

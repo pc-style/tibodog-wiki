@@ -6,4 +6,4 @@ Move speed is summed and applied as `1 + total` to Tibo's base speed of 62 (see 
 
 ## Tips
 
-- Extra speed helps you get around enemies, reach points of interest and outrun slow pests. Its effect is small unless you have several socks or Spud Sneakers as well.
+- **Stack socks or add Spud Sneakers.** Extra speed helps you get around enemies, reach points of interest and outrun slow pests. Its effect is small unless you have several socks or Spud Sneakers as well.

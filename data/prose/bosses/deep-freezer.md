@@ -30,7 +30,7 @@ Enemy bullets scale with time ([Enemy scaling](/enemy-scaling#enemy-bullets)). A
 
 ## Tips
 
-- The slam is easy to walk out of at full speed: Tibo needs to cover about 46 units from the centre of the first circle (its radius plus his body), and he does about 56 in 0.9 s. Watch the two random circles so you do not walk into one.
+- **Walk out of the slam circle.** The slam is easy to walk out of at full speed: Tibo needs to cover about 46 units from the centre of the first circle (its radius plus his body), and he does about 56 in 0.9 s. Watch the two random circles so you do not walk into one.
 - Keep a dash charge for a slam that follows a cube hit: dashing breaks the freeze rather than waiting for it to expire. The 25% damage reduction is a fallback, not protection from a slam.
 - The space straight in front of the Freezer is where the cubes cross. Stepping well to one side of its aim, rather than backing straight away, keeps Tibo out of most paths.
 - [Butter Socks](/passives/butter-socks) adds dash charges and shortens the dash cooldown, which helps with the freeze-then-slam combination. [Ghost Pepper](/items/ghost-pepper) extends the protection after a dash.

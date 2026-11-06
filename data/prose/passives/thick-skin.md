@@ -16,6 +16,6 @@ The other dodge source is [Ghost Skin](/items/ghost-skin). Its points add to Thi
 
 ## Tips
 
-- Hot Streak and Wildfire Roast lose two flames each time Tibo is hit (“A hit puts out two flames”). Dodged hits do not count, so Thick Skin helps keep the streak going on top of being their catalyst.
+- **Use it to keep flame streaks alive.** Hot Streak and Wildfire Roast lose two flames each time Tibo is hit (“A hit puts out two flames”). Dodged hits do not count, so Thick Skin helps keep the streak going on top of being their catalyst.
 - Unlike [Starch Plating](/passives/starch-plating), dodge chance does not weaken as enemies get stronger. It works the same against a boss at 20:00 as against a pest at 0:00.
 - [Porcupine Spud](/items/porcupine-spud) and [Fry Volcano](/items/fry-volcano) fire when Tibo is hit, so a dodged hit does not trigger them.

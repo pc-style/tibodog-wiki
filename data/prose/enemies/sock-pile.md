@@ -14,4 +14,4 @@ An elite Sock Pile (tier 2 is the elite tier from 1:00 to 4:59) releases ordinar
 
 ## Tips
 
-- Each pile turns into three more pests, so killing piles at a distance gives the bunnies time to be caught by area weapons before they reach Tibo.
+- **Kill piles at a distance.** Each pile turns into three more pests, so killing piles at a distance gives the bunnies time to be caught by area weapons before they reach Tibo.

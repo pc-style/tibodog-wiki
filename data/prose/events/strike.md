@@ -16,7 +16,7 @@ It uses the same ring spawn as [Ring of Hay Bales](/events/bale-ring), but these
 
 ## Tips
 
-- Because the dash direction is fixed when the windup starts, a step sideways during the 0.5-second pause makes the ball miss. A [dash](/controls) also works, since Tibo ignores normal damage while dashing.
+- **Sidestep during the windup.** Because the dash direction is fixed when the windup starts, a step sideways during the 0.5-second pause makes the ball miss. A [dash](/controls) also works, since Tibo ignores normal damage while dashing.
 - With 28 base HP and only 2 to 6 balls, it is probably quicker to kill them than to dodge for the full 16 seconds.
 - The lanes have patches of slowing ground (see [Gutterball Lanes](/biomes/gutterball-lanes)). Sidestepping a charge from inside one is harder, so it may be worth fighting on clear floor.
 - Gutterball Lanes also spawns bowling balls as ordinary pests, so more of them may roll in after the event ends.

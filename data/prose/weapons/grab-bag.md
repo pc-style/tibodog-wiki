@@ -12,5 +12,5 @@ It is offered as a level-up card. At max level, with [Sprouting Eyes](/passives/
 
 ## Tips
 
-- Grab Bag's damage per hit is the same whatever it copies, so its value comes from variety: crowd attacks such as pools and novas, and single-target shots, all hit at Grab Bag's damage.
+- **Value it for variety, not damage.** Grab Bag's damage per hit is the same whatever it copies, so its value comes from variety: crowd attacks such as pools and novas, and single-target shots, all hit at Grab Bag's damage.
 - Amount bonuses add more random picks per volley, so [Sprouting Eyes](/passives/sprouting-eyes) helps it now and is also its evolution catalyst.

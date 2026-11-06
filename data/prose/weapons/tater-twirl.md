@@ -16,6 +16,6 @@ Tibo starts with 2 wheels (raw Amount 1 plus his base +1 projectile, see [Stats]
 
 ## Tips
 
-- Keep moving. A still Tibo gets about an eighth of the hits, and move-speed bonuses raise both spin and hit rate up to double.
+- **Keep moving and stack move speed.** Keep moving. A still Tibo gets about an eighth of the hits, and move-speed bonuses raise both spin and hit rate up to double.
 - A dash moves Tibo 48 units in 9 ticks, several times walking speed, so it briefly pushes the wheels to their maximum pace.
 - Damage, Amount and Area are the stats that matter; the spin also gets a small boost from projectile speed. The weapon has no cooldown, so cooldown reduction does nothing for it.

@@ -6,4 +6,4 @@ It has weight 8 out of 78 among Uncommon items, about 2.6% of item rolls at luck
 
 ## Tips
 
-- XP gain pays off over time. A copy found early in a run is worth more than one found near the end.
+- **Grab it early for the most value.** XP gain pays off over time. A copy found early in a run is worth more than one found near the end.

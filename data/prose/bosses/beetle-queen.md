@@ -34,7 +34,7 @@ Eggs launch at base speed 100 instead of 80 and follow the same stop-and-hatch t
 
 ## Tips
 
-- Eggs aim at where Tibo was before the warning. Move sideways to avoid their initial path, then leave room for the radial larvae when they hatch.
+- **Move sideways from the eggs.** Eggs aim at where Tibo was before the warning. Move sideways to avoid their initial path, then leave room for the radial larvae when they hatch.
 - Brood are slower than Tibo (46 against 62), so you can kite them. They still add up over a long fight, though, so killing the Queen quickly is the main defence.
 - Brood hatch around the Queen. Fighting her from range keeps the fresh brood away from Tibo at first, while weapons that hit an area or pierce ([Stats](/stats#stat-sources)) can clear a brood ring in one go.
 - If the Queen is nearly dead when she stops to hatch, finishing her within that 1 s cancels the whole brood.

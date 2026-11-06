@@ -24,6 +24,6 @@ Pests use the table of the biome just off screen where they spawn, so the caves'
 
 ## Tips
 
-- The caves pay well in both gold and XP, and the late pests (Moles and Mud Golems) are slow tanks. If you can handle their HP, this is a good place to spend the middle and late game.
+- **Stay here if you can handle tanks.** The caves pay well in both gold and XP, and the late pests (Moles and Mud Golems) are slow tanks. If you can handle their HP, this is a good place to spend the middle and late game.
 - Moldy Shrines are common here. Each one trades +0.1 curse for a pile of gold, and curse brings extra elites and bosses, so take them when your build can handle the extra pressure (see [Curse](/curse)).
 - The vents are small. Keep track of them when kiting a crowd, because dodge will not save you while you stand in one.

@@ -25,5 +25,5 @@ Other luck sources are [Lucky Peel](/items/lucky-peel) (+0.05), [Cursed Crown](/
 
 ## Tips
 
-- Take Four-Eyed Spud for Loaded Dice or All-Seeing Spud, not to improve the dice themselves.
+- **Take it for Loaded Dice or All-Seeing Spud.** Take Four-Eyed Spud for Loaded Dice or All-Seeing Spud, not to improve the dice themselves.
 - The 4th card is the most visible gain. Each extra card gives you more choice on every level-up for the rest of the run.

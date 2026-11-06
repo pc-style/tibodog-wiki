@@ -6,4 +6,4 @@ It has weight 10 out of 80 among Common items. Common is the most likely rarity,
 
 ## Tips
 
-- A bigger pickup range lets Tibo collect XP without walking into the crowd. It is a comfort pick rather than a power pick.
+- **Take it for comfort, not power.** A bigger pickup range lets Tibo collect XP without walking into the crowd. It is a comfort pick rather than a power pick.

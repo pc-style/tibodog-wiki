@@ -12,5 +12,5 @@ Other recovery sources are [Pickle Jar](/items/pickle-jar) (+0.1) and the auras 
 
 ## Tips
 
-- Enemy damage grows over the run (see [Enemy scaling](/enemy-scaling)) while recovery stays the same, so Root Network matters most early. Late in a run, armor or dodge is likely to do more for survival.
+- **Take it early, not late.** Enemy damage grows over the run (see [Enemy scaling](/enemy-scaling)) while recovery stays the same, so Root Network matters most early. Late in a run, armor or dodge is likely to do more for survival.
 - Pressure Cooker also heals (“Each enemy it burns heals Tibo.”), which suits a sustain build built around Root Network.

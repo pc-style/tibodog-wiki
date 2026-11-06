@@ -15,4 +15,4 @@ Its direct hit (26) is lower than a max-level Rösti Disc's 30. It makes up for 
 
 ## Tips
 
-- The explosions hit pests at the edge of the play area as they walk in towards Tibo. Pair Rösti Storm with a weapon that covers the space close to him.
+- **Pair it with a close-range weapon.** The explosions hit pests at the edge of the play area as they walk in towards Tibo. Pair Rösti Storm with a weapon that covers the space close to him.

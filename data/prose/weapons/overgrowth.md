@@ -14,5 +14,5 @@ It fires 6 homing sprouts (raw amount 5 plus Tibo's base +1, see [Stats](/stats)
 
 ## Tips
 
-- Shards fan out forward from the pest that was hit, so they do the most in dense crowds where something is behind the first target.
+- **Use it on dense crowds.** Shards fan out forward from the pest that was hit, so they do the most in dense crowds where something is behind the first target.
 - Extra [pierce](/stats) adds one more hit per sprout, and each extra hit also makes two more shards.

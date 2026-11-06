@@ -19,5 +19,5 @@ Other gold gain sources are [Penny Spud](/items/penny-spud) (+0.08), [Golden Gra
 
 ## Tips
 
-- Gold only helps if you spend it. Golden Fry fits runs where you plan to use the Fry Cart, Potato Crates or the Dog Kennel often.
+- **Take it only if you will spend gold.** Gold only helps if you spend it. Golden Fry fits runs where you plan to use the Fry Cart, Potato Crates or the Dog Kennel often.
 - Crate prices rise with each crate bought (see [Potato Crate](/points-of-interest#potato-crate)), so extra gold buys fewer extra crates later in a run.

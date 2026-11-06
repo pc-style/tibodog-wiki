@@ -14,7 +14,7 @@ Every 6 seconds Frank digs and scatters 6 coins around itself. Each dig also has
 
 ## Tips
 
-- Frank is the only dog that produces rerolls. The other sources are pickups, elite kills, the [Seed Vault](/points-of-interest#seed-vault) and [Tater Lanterns](/points-of-interest#tater-lantern). See [Reroll, skip and banish](/level-up#reroll-skip-and-banish).
+- **Pick Frank for extra rerolls.** Frank is the only dog that produces rerolls. The other sources are pickups, elite kills, the [Seed Vault](/points-of-interest#seed-vault) and [Tater Lanterns](/points-of-interest#tater-lantern). See [Reroll, skip and banish](/level-up#reroll-skip-and-banish).
 - Training pays for itself quickly. Taking Frank from level 1 to 4 at a [Dog Kennel](/points-of-interest#dog-kennel) costs 120 + 240 + 450 = 810 gold before the purchase-price multiplier. It raises the dig rate from 1 to about 4 gold per second, so the cost comes back in roughly four and a half minutes, sooner with gold gain.
 - Coins land on the ground and still have to be collected. A [Golden Retriever](/dogs/retriever) or [Potato Magnet](/passives/potato-magnet) helps.
 - Gold buys items at the [Fry Cart](/points-of-interest#fry-cart), opens [Potato Crates](/points-of-interest#potato-crate), spins [Tater Slots](/points-of-interest#tater-slots) and trains dogs, so an early Frank compounds over the run.

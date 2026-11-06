@@ -12,5 +12,5 @@ Bursts lock onto the nearest pest within 220 units as described on [Locked Gatli
 
 ## Tips
 
-- Each lane is a full stream of tots, so amount bonuses scale this weapon directly.
+- **Stack amount bonuses.** Each lane is a full stream of tots, so amount bonuses scale this weapon directly.
 - As with the base weapon, you can sweep the locked stream across a crowd by moving sideways to the firing angle.

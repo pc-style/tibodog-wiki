@@ -19,5 +19,5 @@ Area and damage do help: the radius is 32 × area, and damage bonuses apply to e
 
 ## Tips
 
-- Steam Vent rewards staying close to enemies, so defensive passives such as [Starch Plating](/passives/starch-plating) (armor) or [Thick Skin](/passives/thick-skin) (dodge) help it, since you will be taking contact hits while it works.
+- **Add armor or dodge passives.** Steam Vent rewards staying close to enemies, so defensive passives such as [Starch Plating](/passives/starch-plating) (armor) or [Thick Skin](/passives/thick-skin) (dodge) help it, since you will be taking contact hits while it works.
 - If Steam Vent is a main damage source, area ([Big Bowl](/passives/big-bowl)) and damage ([Butter Pat](/passives/butter-pat)) do more for it than cooldown or extra projectiles.

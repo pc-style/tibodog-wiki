@@ -6,5 +6,5 @@ Its behaviour is listed as `tank`, but that label does not change how it moves: 
 
 ## Tips
 
-- At about a third of Tibo's base speed, slugs pose little threat to a Tibo who keeps moving. The danger is getting boxed in by a slow crowd that takes a long time to clear.
+- **Keep moving and avoid getting boxed in.** At about a third of Tibo's base speed, slugs pose little threat to a Tibo who keeps moving. The danger is getting boxed in by a slow crowd that takes a long time to clear.
 - With [Bog Slimes](/enemies/bog-slime) and Ketchup Drops at tier 1, Mash Swamp's early game is slow and tanky: lots of HP to chew through, but little that can catch Tibo.

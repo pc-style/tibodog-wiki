@@ -15,5 +15,5 @@ At level 1 it fires every 0.14 s during a burst; the measured bursts had 16 shot
 
 ## Tips
 
-- The lock is taken once per burst. If Tibo walks past the target or the crowd shifts, the rest of the burst keeps going the original way. Strafing sideways across the locked angle sweeps the stream over a wide line of pests.
+- **Strafe sideways to sweep the stream.** The lock is taken once per burst. If Tibo walks past the target or the crowd shifts, the rest of the burst keeps going the original way. Strafing sideways across the locked angle sweeps the stream over a wide line of pests.
 - Cooldown bonuses shorten the time between tots within a burst. They do not change the 2 s burst length or the 0.35 s pause.

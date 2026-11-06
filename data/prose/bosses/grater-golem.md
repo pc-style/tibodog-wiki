@@ -26,7 +26,7 @@ Enemy bullets scale with time ([Enemy scaling](/enemy-scaling#enemy-bullets)). A
 
 ## Tips
 
-- Dodge the charge sideways. Getting more than about 21 units off the line takes Tibo about a third of a second, and he has a full second. Running straight away along the line does not work, because the Golem is five times faster than Tibo while dashing.
+- **Step sideways off the charge line.** Dodge the charge sideways. Getting more than about 21 units off the line takes Tibo about a third of a second, and he has a full second. Running straight away along the line does not work, because the Golem is five times faster than Tibo while dashing.
 - Past the far end of the line (288 units) Tibo is safe from the dash. After a charge the Golem has to walk back, which gives Tibo time to attack or collect pickups.
 - With 23 swaying shots, the ring's gaps are tight and keep changing near the Golem. A dash through the ring (see [Dash details](/controls#dash-details)) is more reliable than threading a gap.
 - Its HP after the ×3 step makes this the first real damage check of a run. [Bacon Bits](/passives/bacon-bits) and [Boss Buster](/items/boss-buster) raise damage against bosses, and [Strategy](/strategy) suggests having a strong single-target source by minute 15.

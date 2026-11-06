@@ -22,7 +22,7 @@ Elites from the circle are Spittlebugs until 5:00, crows or spores until 10:00, 
 
 ## Tips
 
-- Crop Circle is the best place in the game to earn XP: the highest XP multiplier and no hazard. Its many Spud Shrines add stat picks on top.
+- **Come here to farm XP.** Crop Circle is the best place in the game to earn XP: the highest XP multiplier and no hazard. Its many Spud Shrines add stat picks on top.
 - Crop Patches are everywhere here. Break them for coins and the chance of a 30 HP snack when you need healing.
 - For the saucer, fast-hitting weapons are what count: every hit is a coin flip for gold, not every point of damage. It escapes after 20 s, so chase it straight away.
 - Spittlebugs can show up from the first minute here. Expect some ranged fire earlier than in the climate biomes.

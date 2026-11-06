@@ -12,5 +12,5 @@ Each bonus is added to the same stat as passives and other items before conversi
 
 ## Tips
 
-- It has no weakness and suits any build. Area and duration help aura, pool and orbit weapons; projectile speed helps shots reach targets.
+- **Take it in any build.** It has no weakness and suits any build. Area and duration help aura, pool and orbit weapons; projectile speed helps shots reach targets.
 - You cannot rely on finding one, but if a Fry Cart's bumped third slot rolls it, it is usually worth buying.

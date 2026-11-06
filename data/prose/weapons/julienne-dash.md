@@ -14,6 +14,6 @@ It is offered as a level-up card. At level 8, with [Butter Socks](/passives/butt
 
 ## Tips
 
-- Dash through pests rather than away from them: the cut only covers the dash path and 40 units past it.
+- **Dash into pests, not away from them.** Dash through pests rather than away from them: the cut only covers the dash path and 40 units past it.
 - [Butter Socks](/passives/butter-socks) adds dash charges and shortens the dash cooldown (see [Controls](/controls) for dash basics), so it means more cuts as well as unlocking the evolution.
 - When you are not dashing, walking away from a crowd points the backward cut at the pests chasing Tibo.

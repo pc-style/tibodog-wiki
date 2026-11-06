@@ -16,5 +16,5 @@ During a dash Tibo ignores ordinary damage.<small>[sim-DJfN0TyV.js: `if(a.invuln
 
 ## Tips
 
-- [Julienne Dash](/weapons/julienne-dash) and its evolution Waffle Cut attack on each dash, so extra charges mean more attacks in a burst.
+- **Pair it with Julienne Dash.** [Julienne Dash](/weapons/julienne-dash) and its evolution Waffle Cut attack on each dash, so extra charges mean more attacks in a burst.
 - [Tot Stampede](/weapons/tot-stampede) counts distance walked and fires every 40 units. Dash movement counts toward that distance: each tick adds Tibo's movement up to 12 units.<small>[sim-DJfN0TyV.js: `Math.min(12,T(a.x[o]-a.px[o],a.y[o]-a.py[o]))`]</small> One 48-unit dash is enough for a tot.

@@ -26,6 +26,6 @@ The ×1.3 gold and ×1.1 XP apply to pests that die inside the bog. <small>[sim-
 
 ## Tips
 
-- The puddles are dense (up to four per chunk), so plan your kiting route around them. They do not slow Tibo, so you can cross one quickly if you need to.
+- **Kite around the puddles.** The puddles are dense (up to four per chunk), so plan your kiting route around them. They do not slow Tibo, so you can cross one quickly if you need to.
 - From about 9:00 to 18:00 much of the crowd shoots. Keep moving across their line of fire rather than standing still to fight.
 - For gold, this is the best climate biome. Its crates, nests and lairs also make it a good place to find chests.

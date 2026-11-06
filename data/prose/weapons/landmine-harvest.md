@@ -14,5 +14,5 @@ The `goldOnKill` value of 0.25 is added to a pest's gold drop chance when a mine
 
 ## Tips
 
-- The gold bonus only counts when the mine lands the killing blow, so Landmine Harvest earns the most gold when it is clearing weak pests rather than finishing off enemies your other weapons already hurt.
+- **Let the mines clear weak pests.** The gold bonus only counts when the mine lands the killing blow, so Landmine Harvest earns the most gold when it is clearing weak pests rather than finishing off enemies your other weapons already hurt.
 - Its catalyst, Rotten Spud, raises [curse](/curse): tougher, faster and more numerous enemies, but more XP and gold. More pests walking into mines suits this weapon.

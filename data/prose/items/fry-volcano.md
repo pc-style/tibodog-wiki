@@ -13,6 +13,6 @@ Compared with Porcupine Spud, each fry has the same base damage (30, +15% of bas
 
 ## Tips
 
-- Starch Plating at level 5 gives 100 armor, so a Fry Volcano build takes less damage per hit while still triggering on every hit that gets through.
+- **Pair it with Starch Plating.** Starch Plating at level 5 gives 100 armor, so a Fry Volcano build takes less damage per hit while still triggering on every hit that gets through.
 - The blast centres on Tibo, so it clears enemies pressed against him, while the fries reach further out.
 - [Thorny Jacket](/items/thorny-jacket) thorns count 1.5× in each fry and twice that in the blast.

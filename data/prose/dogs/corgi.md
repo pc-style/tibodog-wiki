@@ -15,6 +15,6 @@ Every 5 seconds Waffles barks and freezes every pest within 60 units of itself f
 
 ## Tips
 
-- Frozen pests take double damage from [Permafrost Fries](/weapons/permafrost-fries) (`shatter` 2), and the check only asks whether the pest is frozen, not who froze it. A Corgi therefore feeds that evolution. <small>[sim-DJfN0TyV.js: `a.shatter[r]>0&&t.freezeT[n]>0&&(u*=a.shatter[r])`]</small>
+- **Pair it with Permafrost Fries.** Frozen pests take double damage from [Permafrost Fries](/weapons/permafrost-fries) (`shatter` 2), and the check only asks whether the pest is frozen, not who froze it. A Corgi therefore feeds that evolution. <small>[sim-DJfN0TyV.js: `a.shatter[r]>0&&t.freezeT[n]>0&&(u*=a.shatter[r])`]</small>
 - The armor aura loses value as the run goes on, because armor is weighed against the attacker's level. +24 armor blocks about 32% of a hit from a level-10 pest at 0:00, but about 14% from a level-30 pest at 20:00. See [Armor](/stats#armor).
 - Waffles cannot freeze a boss. In a boss fight its value is in freezing the pests that come with it.

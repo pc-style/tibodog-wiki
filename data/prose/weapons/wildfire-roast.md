@@ -12,5 +12,5 @@ Flames, hits and slashes work as described on [Hot Streak](/weapons/hot-streak#h
 
 ## Tips
 
-- Almost all of the gain over Hot Streak depends on keeping flames lit. Without flames it is slightly weaker than the max-level base weapon.
+- **Keep the flames lit.** Almost all of the gain over Hot Streak depends on keeping flames lit. Without flames it is slightly weaker than the max-level base weapon.
 - Thick Skin stays useful after the evolution because dodged hits do not put out flames.

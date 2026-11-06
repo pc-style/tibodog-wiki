@@ -12,4 +12,4 @@ Gravy Flood is the evolution of [Gravy Boat](/weapons/gravy-boat). You get it by
 
 ## Tips
 
-- Tibo's base move speed is 62, so the pools trail well behind him when he runs. If you circle around a spot, the pools gather under him and the pests chasing him.
+- **Circle a spot to pool the gravy.** Tibo's base move speed is 62, so the pools trail well behind him when he runs. If you circle around a spot, the pools gather under him and the pests chasing him.

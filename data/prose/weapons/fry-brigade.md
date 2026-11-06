@@ -15,5 +15,5 @@ There are 5 pups (raw Amount 4 plus Tibo's base +1 projectile, see [Stats](/stat
 
 ## Tips
 
-- Turrets stay where they were planted, so moving around a lot spreads them over a wide area, while staying near one spot stacks them.
+- **Stay near one spot to stack turrets.** Turrets stay where they were planted, so moving around a lot spreads them over a wide area, while staying near one spot stacks them.
 - The union frees a slot, but you need both partner weapons at level 8 (or one evolved) first; see [Evolutions](/evolutions#unions) for the exact rule.

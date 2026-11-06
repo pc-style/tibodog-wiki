@@ -14,4 +14,4 @@ You get it from a level-up card. At level 8 it launches 4 discs (3 + 1) for 30 d
 
 ## Tips
 
-- The discs cover the whole area around Tibo without aiming. That makes Rösti Disc good at clearing pests that surround him and poor at focusing a single target such as a boss.
+- **Use it on surrounding crowds, not bosses.** The discs cover the whole area around Tibo without aiming. That makes Rösti Disc good at clearing pests that surround him and poor at focusing a single target such as a boss.

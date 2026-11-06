@@ -12,4 +12,4 @@ Thorny Jacket is an uncommon item that adds 8 thorns. Copies stack additively. W
 
 ## Tips
 
-- On its own, 8 flat damage falls behind enemy HP within minutes (see [Enemy scaling](/enemy-scaling)). Its value is mostly in boosting Porcupine Spud, Fry Volcano and the hash brown shields, where it adds to every projectile or shard.
+- **Take it to boost fries and shards.** On its own, 8 flat damage falls behind enemy HP within minutes (see [Enemy scaling](/enemy-scaling)). Its value is mostly in boosting Porcupine Spud, Fry Volcano and the hash brown shields, where it adds to every projectile or shard.

@@ -20,6 +20,6 @@ Pests use the table of the biome just off screen where they spawn, so walking to
 
 ## Tips
 
-- The start area has no hazards and only basic points of interest. Crop Patches here are a safe early source of coins and the occasional heal.
+- **Use Crop Patches for early coins.** The start area has no hazards and only basic points of interest. Crop Patches here are a safe early source of coins and the occasional heal.
 - Leaving the field is the quickest way to raise gold or XP income: every neighbour pays at least as much, and some pay more.
 - Reset Zombies are slow (base speed 21) but have 80 base HP. You can usually walk away from them.

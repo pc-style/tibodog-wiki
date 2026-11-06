@@ -12,6 +12,6 @@ A gull touches Tibo if its line passes within 9 units of Tibo's centre (4 for th
 
 ## Tips
 
-- The band is sparse. Spread over 280 units, the 24 gulls put on average about 1.5 into the 18-unit lane that hits a standing Tibo, so a Lunch Rush usually costs a hit or two, not 24.
+- **A Lunch Rush costs a hit or two.** The band is sparse. Spread over 280 units, the 24 gulls put on average about 1.5 into the 18-unit lane that hits a standing Tibo, so a Lunch Rush usually costs a hit or two, not 24.
 - Moving sideways across the flock's path while it passes sweeps Tibo through more lanes. Standing still, or moving parallel to the flight line, keeps the lane narrow.
 - Any area or piercing weapon kills gulls quickly, but they are worth very little XP, so there is no need to chase them.

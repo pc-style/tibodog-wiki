@@ -11,5 +11,5 @@ Both bonuses are added to the stat totals before conversion (see [Stats](/stats#
 
 ## Tips
 
-- It pairs with weapons whose damage depends on how long their effect stays out, and with burn items such as [Magma Croquette](/items/magma-croquette).
+- **Pair it with lasting effects and burns.** It pairs with weapons whose damage depends on how long their effect stays out, and with burn items such as [Magma Croquette](/items/magma-croquette).
 - [Slow Cooker](/passives/slow-cooker) gives +0.1 duration per level if you want more of the same.

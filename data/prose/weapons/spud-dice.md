@@ -23,5 +23,5 @@ Freeze and burn durations are multiplied by Tibo's [duration](/stats) stat. The 
 
 ## Tips
 
-- Averaged over the six faces, a die's damage multiplier is about 1.2 (0.25, four faces at 1, and 3). A split die adds two full-damage dice on top. Expect variety from this weapon rather than a steady single-target damage dealer.
+- **It gives variety, not steady damage.** Averaged over the six faces, a die's damage multiplier is about 1.2 (0.25, four faces at 1, and 3). A split die adds two full-damage dice on top. Expect variety from this weapon rather than a steady single-target damage dealer.
 - The gold face works best on pests the blast can kill outright, such as crowds of weak pests.

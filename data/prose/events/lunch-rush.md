@@ -15,5 +15,5 @@ It is a swarm event, like the scheduled [Fry Fly Swarm](/events/fly-swarm), with
 
 ## Tips
 
-- Stepping sideways to the flight path clears the band. Tibo needs a little over 2 seconds at base speed to cover the 140 units to its edge.
+- **Move across the flight path.** Stepping sideways to the flight path clears the band. Tibo needs a little over 2 seconds at base speed to cover the 140 units to its edge.
 - The drive-thru has burning pools on the ground (see [Fry Palace Drive-Thru](/biomes/fry-palace)), so watch where you sidestep.

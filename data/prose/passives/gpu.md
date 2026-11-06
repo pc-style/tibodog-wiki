@@ -24,6 +24,6 @@ The +1 projectile goes through the normal amount stat, so it does not help `aura
 
 ## Tips
 
-- Cooling of 2.6–2.8 per second keeps pace with two weapons that fire constantly, but not with three. Measured at GPU level 1 over 180 s with Peeler and Small Fry given once each: Peeler + Small Fry (seed `s2`) added 2.0 heat per second and never throttled. The starting Seeker Sprouts + Peeler + Small Fry (seed `s3`) added 2.9–3.0 heat per second and throttled 3 times, or 2 with Chives at level 5. A full set of fast-firing weapons overheats; weapons that only fire when a target is in range add less.
+- **Three constantly firing weapons cause overheating.** Cooling of 2.6–2.8 per second keeps pace with two weapons that fire constantly, but not with three. Measured at GPU level 1 over 180 s with Peeler and Small Fry given once each: Peeler + Small Fry (seed `s2`) added 2.0 heat per second and never throttled. The starting Seeker Sprouts + Peeler + Small Fry (seed `s3`) added 2.9–3.0 heat per second and throttled 3 times, or 2 with Chives at level 5. A full set of fast-firing weapons overheats; weapons that only fire when a target is in range add less.
 - Each level raises the heat cap and the cooling rate, so levelling GPU makes throttles rarer. The throttle itself always lasts 3 s.
 - GPU's +1 projectile stacks with [Sprouting Eyes](/passives/sprouting-eyes) and [Extra Eye](/items/extra-eye).

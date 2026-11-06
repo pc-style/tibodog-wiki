@@ -8,5 +8,5 @@ Rats that come out of a Harvest Mouse are full Field Rats, scaled to match the m
 
 ## Tips
 
-- Outrunning rats takes a long time: at base speed Tibo gains only 12 units per second on them, and less once [curse](/curse) or overtime speeds pests up. Killing them is usually better than trying to kite.
+- **Kill rats instead of outrunning them.** Outrunning rats takes a long time: at base speed Tibo gains only 12 units per second on them, and less once [curse](/curse) or overtime speeds pests up. Killing them is usually better than trying to kite.
 - When a Harvest Mouse dies, its three rats start right on top of where it fell, already close to Tibo if it was killed up close. Killing mice at range gives you time to deal with the rats.

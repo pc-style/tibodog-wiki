@@ -15,5 +15,5 @@ In Standard runs it is one of the weapons Tibo can start with: when no starting 
 
 ## Tips
 
-- Turrets do not follow Tibo. They work best when you fight near one spot, for example while you hold a chokepoint or wait out a boss. When you kite in long lines, you leave them behind.
+- **Hold one spot to use the turrets.** Turrets do not follow Tibo. They work best when you fight near one spot, for example while you hold a chokepoint or wait out a boss. When you kite in long lines, you leave them behind.
 - Duration raises turret uptime directly. [Slow Cooker](/passives/slow-cooker) keeps each turret alive longer; [Chives](/passives/chives) makes successive drops overlap more.

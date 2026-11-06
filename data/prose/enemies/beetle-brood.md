@@ -12,5 +12,5 @@ Hatched brood get the same time and [curse](/curse) scaling as ordinary pests. A
 
 ## Tips
 
-- Because the brood hatch next to the Queen, staying at range keeps each new batch at a distance. Area weapons aimed at the Queen can catch the brood as they appear.
+- **Fight the Queen from range.** Because the brood hatch next to the Queen, staying at range keeps each new batch at a distance. Area weapons aimed at the Queen can catch the brood as they appear.
 - The supply only stops when the Queen dies, so it usually pays to focus her down rather than chase brood that will despawn anyway.

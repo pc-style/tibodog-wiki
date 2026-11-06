@@ -15,5 +15,5 @@ It is offered on level-up cards and is in the starting-weapon pool. At level 8 i
 
 ## Tips
 
-- The blast covers everything around the target, so the shell does the most against packed groups. The pest closest to Tibo, which is the one it aims at, takes the most damage.
+- **Fire it into packed groups.** The blast covers everything around the target, so the shell does the most against packed groups. The pest closest to Tibo, which is the one it aims at, takes the most damage.
 - Spudzooka and Spud Artillery both build on this weapon. If both are ready at the same chest, the game asks “Evolve or unite?” (see [Chests](/chests)). A union only needs one partner to be a max-level base weapon, so a Spudzooka can still unite later with a level 8 Spud Lob. <small>[sim-DJfN0TyV.js: `return cf(n)||cf(r)?[n,r]:void 0`]</small>

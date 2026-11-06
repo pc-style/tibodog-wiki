@@ -16,6 +16,6 @@ Each coin is a normal gold pickup worth 1 gold, multiplied by Tibo's gold gain, 
 
 ## Tips
 
-- Treat Scout as a luck dog that also scouts, not as a gold dog. The [Dachshund](/dogs/dachshund) drops 6 coins every 6 s at level 1, more than twice Scout's 3 coins every 8 s, and adds gold gain on top.
+- **Pick Scout for luck, not gold.** Treat Scout as a luck dog that also scouts, not as a gold dog. The [Dachshund](/dogs/dachshund) drops 6 coins every 6 s at level 1, more than twice Scout's 3 coins every 8 s, and adds gold gain on top.
 - Scout's luck aura works like [Four-Eyed Spud](/passives/four-eyed-spud) (+0.1 per level) without using a passive slot. At level 5 Scout alone gives a 40% chance of a fourth level-up card, plus bigger chests and rarer items. See [Luck](/stats#luck).
 - Pointing pays off most early in a run, while you still need to find a [Fry Cart](/points-of-interest#fry-cart), [Spud Whetstone](/points-of-interest#spud-whetstone) or [Dog Kennel](/points-of-interest#dog-kennel). A [Golden Retriever](/dogs/retriever) in the same pack pulls Scout's coins to Tibo.

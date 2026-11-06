@@ -15,6 +15,6 @@ The explosion uses the imp's scaled damage, so it follows the usual [enemy damag
 
 ## Tips
 
-- Killing it before it gets within 18 units is the cleanest answer: 30 HP is low, and you keep the XP.
+- **Kill it before it gets close.** Killing it before it gets within 18 units is the cleanest answer: 30 HP is low, and you keep the XP.
 - Once the fuse is lit, walking straight away is usually enough. Tibo's base speed is 62, so in 0.6 s he covers about 37 units while the imp creeps forward at about 10 units per second. A dash (48 units) also clears the blast.
 - Standing still in a crowd is risky here: several imps can light their fuses together and the blasts stack.

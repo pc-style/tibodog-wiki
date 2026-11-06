@@ -15,5 +15,5 @@ New with the evolution, Tibo moves 15% faster while standing in his own ghee. It
 
 ## Tips
 
-- Walking along a strip you just laid keeps the 15% speed bonus, which helps when kiting.
+- **Kite along your fresh strips.** Walking along a strip you just laid keeps the 15% speed bonus, which helps when kiting.
 - Spud Sneakers is also the catalyst for [Railfry](/weapons/railfry), so one copy can serve both evolutions if you carry [Fry Lance](/weapons/fry-lance) too.

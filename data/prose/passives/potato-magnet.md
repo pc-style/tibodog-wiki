@@ -14,5 +14,5 @@ Other sources are [Copper Spoon](/items/copper-spoon) (+0.1), the aura of the do
 
 ## Tips
 
-- [Gem Sling](/weapons/gem-sling) and Gem Catapult fire a wedge for each XP gem Tibo picks up, so a wider pickup range keeps them firing while Tibo stays away from the crowd.
+- **Pair it with Gem Sling.** [Gem Sling](/weapons/gem-sling) and Gem Catapult fire a wedge for each XP gem Tibo picks up, so a wider pickup range keeps them firing while Tibo stays away from the crowd.
 - A larger range lets Tibo collect XP without walking into pests to reach it. It pairs naturally with [Fertilizer](/passives/fertilizer).

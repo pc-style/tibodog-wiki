@@ -14,5 +14,5 @@ In Standard runs it is one of the weapons Tibo can start with: when no starting 
 
 ## Tips
 
-- Because the range is short, the boat is a close-defence weapon. It does nothing while Tibo is clear of pests, and it starts its cooldown only once it has actually fired.
+- **Keep it for close defence.** Because the range is short, the boat is a close-defence weapon. It does nothing while Tibo is clear of pests, and it starts its cooldown only once it has actually fired.
 - Area raises the pool radius directly, so [Big Bowl](/passives/big-bowl) makes each pool cover more of the crowd.

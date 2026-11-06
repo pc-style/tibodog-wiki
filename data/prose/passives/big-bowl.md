@@ -15,5 +15,5 @@ Other area sources are [Wide Ladle](/items/wide-ladle) (+0.06), [Philosopher's P
 
 ## Tips
 
-- Magma Croquette needs Big Bowl at level 5 and a Spicy Croquette in hand when you open a chest (see [Evolutions](/evolutions#item-evolutions)).
+- **Max it to evolve Spicy Croquette.** Magma Croquette needs Big Bowl at level 5 and a Spicy Croquette in hand when you open a chest (see [Evolutions](/evolutions#item-evolutions)).
 - Area helps most with pools, novas and other attacks that hit everything in a zone. It does less for single-target shots.

@@ -24,6 +24,6 @@ Elites from the forest are larvae or beetles until 5:00, spores or rats until 10
 
 ## Tips
 
-- The brambles are small and do little damage, so they matter mostly when you are low on HP or cornered. Recovery can cover part of the 6 HP per second.
+- **Mind the brambles when low or cornered.** The brambles are small and do little damage, so they matter mostly when you are low on HP or cornered. Recovery can cover part of the 6 HP per second.
 - Field Rats (base speed 50) are faster than most early pests and arrive in groups once Harvest Mice split. Keep space around Tibo from about 9:00 on.
 - With common shrines and nests and no gold bonus, the forest is better for building up than for farming gold.

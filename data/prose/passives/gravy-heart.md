@@ -12,5 +12,5 @@ When max HP goes up, current HP goes up by the same amount, so taking a level of
 
 ## Tips
 
-- Gravy Heart scales healing that is a share of max HP, such as a revive's 50% max HP (see [Stats](/stats#healing-and-revives)). Flat healing, such as the 30 HP from a snack, stays the same.
+- **It boosts revives, not snack heals.** Gravy Heart scales healing that is a share of max HP, such as a revive's 50% max HP (see [Stats](/stats#healing-and-revives)). Flat healing, such as the 30 HP from a snack, stays the same.
 - [Mezzaluna](/weapons/mezzaluna) and [Moon Cleaver](/weapons/moon-cleaver) hit harder the more HP Tibo is missing, as a share of max HP. More max HP neither helps nor hurts that bonus directly.

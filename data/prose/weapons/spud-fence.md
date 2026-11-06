@@ -17,6 +17,6 @@ At base move speed (62 units per second, see [Stats](/stats)) Tibo plants about 
 
 ## Tips
 
-- Walk circles or zig-zags around a crowd instead of running straight away from it; a straight line leaves the fence behind the pests chasing you, while loops drag arcs back through them.
+- **Walk loops around the crowd.** Walk circles or zig-zags around a crowd instead of running straight away from it; a straight line leaves the fence behind the pests chasing you, while loops drag arcs back through them.
 - Spud Fence is not fired on a cooldown, so cooldown reduction does nothing for it. Amount and Duration are the stats that make the fence longer.
 - Spud Fence never adds or reacts to [GPU](/passives/gpu) heat, because it does not use the weapon cooldown timer.

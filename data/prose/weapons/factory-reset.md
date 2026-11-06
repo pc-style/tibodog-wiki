@@ -15,4 +15,4 @@ Its base cooldown is 45 s, compared with 59.9 s for a max-level Reset Button. Th
 
 ## Tips
 
-- Each activation kills a screen of pests and their drops land on the ground. Moving through the area afterwards with a large pickup range ([Potato Magnet](/passives/potato-magnet)) collects that XP quickly.
+- **Sweep up the drops with Potato Magnet.** Each activation kills a screen of pests and their drops land on the ground. Moving through the area afterwards with a large pickup range ([Potato Magnet](/passives/potato-magnet)) collects that XP quickly.

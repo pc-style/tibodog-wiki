@@ -15,4 +15,4 @@ It is offered on level-up cards, is in the starting-weapon pool, and is one of t
 
 ## Tips
 
-- The potatoes always cover a column above and below Tibo, not the direction he faces. Lining up so pests are directly north or south of him gets the most out of each throw.
+- **Line pests up north or south.** The potatoes always cover a column above and below Tibo, not the direction he faces. Lining up so pests are directly north or south of him gets the most out of each throw.

@@ -20,6 +20,6 @@ Elites from the tundra are Snow Molds until 5:00, rats or crows until 10:00, Ice
 
 ## Tips
 
-- On frost Tibo walks at about 43 units per second at base speed. That is slower than Field Rats (50) and only a little faster than Field Crows (40) between charges, so frost patches are bad places to be caught by tier 3 pests.
+- **Keep off frost when chased.** On frost Tibo walks at about 43 units per second at base speed. That is slower than Field Rats (50) and only a little faster than Field Crows (40) between charges, so frost patches are bad places to be caught by tier 3 pests.
 - The frost is mild compared with Mash Swamp, and the tundra's XP bonus makes it a good place to level, especially from about 9:00 to 18:00 when Ice Imps (7 XP each) make up a large share of spawns.
 - Ice Imps fire a three-shot fan. Keep moving sideways to them rather than backing away in a straight line.
