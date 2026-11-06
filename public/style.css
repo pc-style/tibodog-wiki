@@ -259,7 +259,7 @@ article small code { background: none; padding: 0; color: inherit; font-size: 12
 .toc-in > ol:has(> li:nth-child(6)):not(:has(ol)) { display: grid; grid-template-columns: 1fr 1fr; column-gap: 40px; }
 .toc-in > ol > li { break-inside: avoid; }
 .toc h2 { display: inline; font-size: 13px; letter-spacing: .08em; color: var(--accent); margin: 0; padding: 0; background: none; }
-.toc summary { display: flex; align-items: center; gap: 8px; width: fit-content; margin: 0 0 6px; cursor: pointer; list-style: none; }
+.toc summary { display: flex; align-items: center; gap: 8px; width: fit-content; min-height: 24px; margin: 0 0 6px; cursor: pointer; list-style: none; }
 .toc summary::-webkit-details-marker { display: none; }
 .toc summary::after { content: ""; width: 6px; height: 6px; border: solid var(--accent); border-width: 0 1.5px 1.5px 0; transform: rotate(45deg) translate(-2px, -2px); }
 .toc details:not([open]) summary::after { transform: rotate(-45deg); }
@@ -336,9 +336,11 @@ article small code { background: none; padding: 0; color: inherit; font-size: 12
 .wikitable tbody tr:hover td { background: #c9a24f12; }
 .wikitable td:first-child { color: #fff8e6; }
 /* The first column (the row's name) stays in view while a wide table scrolls sideways. */
-.wikitable:has(thead) :is(td, th):first-child { position: sticky; left: 0; z-index: 1; }
-.wikitable:has(thead) td:first-child { background: #0a0c18; box-shadow: inset -1px 0 var(--line-2); }
-.wikitable:has(thead) tbody tr:hover td:first-child { background: linear-gradient(#c9a24f12, #c9a24f12), #0a0c18; }
+.wikitable:has(thead th:nth-child(3)) :is(td, th):first-child { position: sticky; left: 0; z-index: 1; }
+/* Names are short; a capped name column leaves room for the data beside it. */
+.wikitable:has(thead th:nth-child(3)) td:first-child { max-width: 16em; }
+.wikitable:has(thead th:nth-child(3)) td:first-child { background: #0a0c18; box-shadow: inset -1px 0 var(--line-2); }
+.wikitable:has(thead th:nth-child(3)) tbody tr:hover td:first-child { background: linear-gradient(#c9a24f12, #c9a24f12), #0a0c18; }
 /* Short-value columns don't need the full prose width; only the last column (changes, descriptions, biomes) does. */
 .wikitable td:not(:last-child):not(:has(> .ico:first-child, code.nw)) { max-width: 18em; }
 /* Key/value tables (no header row): label column reads as a label. */
@@ -496,16 +498,16 @@ blockquote p { margin: 6px 0; }
   /* A wrapped prose cell must fit inside the table's visible width, or no whole line is ever visible. */
   .wikitable td { max-width: min(28em, calc(100vw - 4rem)); }
   /* The pinned name column may wrap, so the first numbers still show beside it. */
-  .wikitable:has(thead) td:first-child, .wikitable:has(thead) td:first-child:has(> .ico:first-child):not(:has(> .ico ~ .ico)) { max-width: 34vw; white-space: normal; }
+  .wikitable:has(thead th:nth-child(3)) td:first-child, .wikitable:has(thead th:nth-child(3)) td:first-child:has(> .ico:first-child):not(:has(> .ico ~ .ico)) { max-width: 34vw; white-space: normal; }
   .wikitable td:first-child .ico { height: 20px; margin-right: 6px; }
-  .wikitable:has(thead) td:first-child code { white-space: normal; overflow-wrap: anywhere; }
+  .wikitable:has(thead th:nth-child(3)) td:first-child code { white-space: normal; overflow-wrap: anywhere; }
   .wikitable th, .wikitable td { padding: 8px 9px; }
   .wikitable th { font-size: 12.5px; letter-spacing: .02em; }
   .wikitable .sort { gap: 4px; }
   /* Key/value tables fit the screen and wrap both columns instead of scrolling. */
-  .wikitable:not(:has(thead)) { width: 100%; }
-  .wikitable:not(:has(thead)) td { max-width: none; }
-  .wikitable:not(:has(thead)) td:first-child { white-space: normal; width: 40%; }
+  .wikitable:not(:has(thead th:nth-child(3))) { width: 100%; }
+  .wikitable:not(:has(thead th:nth-child(3))) td { max-width: none; }
+  .wikitable:not(:has(thead th:nth-child(3))) td:first-child { white-space: normal; width: 40%; }
   .tabs { padding: 8px 16px; }
   .tabs a { padding: 8px 12px; font-size: 13px; }
   .layout { display: block; }

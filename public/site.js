@@ -2,6 +2,8 @@
 (() => {
   // On small screens, start with the navigation and the page contents collapsed.
   const narrowMq = window.matchMedia('(max-width: 860px)');
+  let closed = [];
+  try { const saved = JSON.parse(localStorage.getItem('tibo-wiki.nav-closed')); if (Array.isArray(saved)) closed = saved; } catch {}
   let narrow = narrowMq.matches;
   const menu = document.querySelector('.side-menu');
   if (menu && narrow) menu.open = false;
@@ -11,8 +13,12 @@
   narrowMq.addEventListener('change', (e) => {
     narrow = e.matches;
     if (menu) menu.open = !narrow;
-    for (const g of document.querySelectorAll('.nav-group')) g.open = !narrow || !!g.querySelector('[aria-current]');
-    if (q0) q0.setAttribute('placeholder', narrow && window.innerWidth <= 600 ? 'Search the wiki' : placeholder);
+    // Desktop gets back the groups the reader left open; the phone menu shows only the current group.
+    for (const g of document.querySelectorAll('.nav-group')) {
+      const here = !!g.querySelector('[aria-current]');
+      g.open = here || (!narrow && !closed.includes(g.dataset.group));
+    }
+    if (q0) q0.setAttribute('placeholder', narrow && window.innerWidth <= 600 ? 'Search' : placeholder);
   });
 
   // Small screens: a Menu button in the sticky header opens the navigation as a panel under it,
@@ -26,30 +32,43 @@
       menu.open = !menu.open;
       if (menu.open) (menu.querySelector('.menu-panel [aria-current]') ?? menu.querySelector('.menu-panel a'))?.focus({ preventScroll: true });
     });
-    menu.addEventListener('toggle', sync);
+    menu.addEventListener('toggle', () => {
+      sync();
+      // Only one overlay at a time: opening the menu closes search suggestions.
+      if (menu.open && narrow) {
+        const list = document.getElementById('search-results');
+        if (list && !list.hidden) { list.hidden = true; q0?.setAttribute('aria-expanded', 'false'); q0?.removeAttribute('aria-activedescendant'); }
+      }
+    });
+    // …and focusing search closes the menu, so suggestions are never hidden behind it.
+    q0?.addEventListener('focus', () => { if (narrow && menu.open) menu.open = false; });
     document.addEventListener('keydown', (e) => {
       if (e.key === 'Escape' && menu.open && narrow) { menu.open = false; menuBtn.focus(); }
     });
+    // The phone panel closes when focus or a tap goes elsewhere, so it never hides the page it covers.
+    const inside = (el) => el && (menu.contains(el) || menuBtn.contains(el));
+    document.addEventListener('pointerdown', (e) => { if (narrow && menu.open && !inside(e.target)) menu.open = false; });
+    menu.addEventListener('focusout', (e) => { if (narrow && menu.open && e.relatedTarget && !inside(e.relatedTarget)) menu.open = false; });
     sync();
   }
   // Phones: a placeholder that fits the narrow search box.
-  if (narrow && window.matchMedia('(max-width: 600px)').matches) document.getElementById('q')?.setAttribute('placeholder', 'Search the wiki');
+  if (narrow && window.matchMedia('(max-width: 600px)').matches) document.getElementById('q')?.setAttribute('placeholder', 'Search');
   if (narrow) for (const t of document.querySelectorAll('details.toc-in')) t.open = false;
 
-  // Sidebar groups remember being folded; the group holding the current page always stays open.
+  // Sidebar groups remember being folded on desktop; the group holding the current page always stays open.
   // On small screens only that group starts open, so the menu stays short (not remembered).
+  // Only a reader's own click on a desktop group is saved, never a fold made by this script.
   const KEY = 'tibo-wiki.nav-closed';
-  let closed = [];
-  try { const saved = JSON.parse(localStorage.getItem(KEY)); if (Array.isArray(saved)) closed = saved; } catch {}
   const groups = [...document.querySelectorAll('.nav-group')];
   const hasHere = groups.some((g) => g.querySelector('[aria-current]'));
   for (const g of groups) {
     const here = g.querySelector('[aria-current]');
-    if (narrow) { g.open = !!here || (!hasHere && g === groups[0]); continue; }
-    if (!here && closed.includes(g.dataset.group)) g.open = false;
-    g.addEventListener('toggle', () => {
+    if (narrow) g.open = !!here || (!hasHere && g === groups[0]);
+    else if (!here && closed.includes(g.dataset.group)) g.open = false;
+    g.querySelector('summary').addEventListener('click', () => {
+      if (narrowMq.matches) return;
       const set = new Set(closed);
-      g.open ? set.delete(g.dataset.group) : set.add(g.dataset.group);
+      g.open ? set.add(g.dataset.group) : set.delete(g.dataset.group); // click runs before the fold changes
       closed = [...set];
       try { localStorage.setItem(KEY, JSON.stringify(closed)); } catch {}
     });
@@ -155,11 +174,27 @@
       hint.setAttribute('aria-hidden', 'true');
       hint.textContent = 'Scroll sideways for more columns →';
       wrap.before(hint);
-      const fits = () => { hint.hidden = wrap.scrollWidth <= wrap.clientWidth + 1; };
+      // An overflowing table is a scroll region: keyboard users can focus it and scroll with the arrow keys.
+      const fits = () => {
+        const over = wrap.scrollWidth > wrap.clientWidth + 1;
+        hint.hidden = !over;
+        if (over) {
+          wrap.tabIndex = 0;
+          wrap.setAttribute('role', 'region');
+          let h = wrap.previousElementSibling;
+          while (h && !/^H[1-3]$/.test(h.tagName)) h = h.previousElementSibling;
+          wrap.setAttribute('aria-label', `${h ? h.textContent.replace(/^#/, '').trim() : document.title}, scrollable table`);
+        } else {
+          wrap.removeAttribute('tabindex');
+          wrap.removeAttribute('role');
+          wrap.removeAttribute('aria-label');
+        }
+      };
       fits();
       window.addEventListener('resize', fits);
+      document.fonts?.ready.then(fits);
     }
-    if (wrap && table.tHead) {
+    if (wrap && ths.length >= 3) {
       wrap.style.scrollPaddingLeft = `${ths[0]?.offsetWidth ?? 0}px`;
       // Browsers skip scrolling a partly visible control into view; bring the whole of it out from under the pin.
       wrap.addEventListener('focusin', (e) => e.target.scrollIntoView({ block: 'nearest', inline: 'nearest' }));
@@ -192,6 +227,11 @@
         if (status) status.textContent = `Sorted by ${btn.textContent.trim()}, ${dir}.`;
       });
     });
+  }
+
+  // Code blocks too wide for their box can be focused and scrolled from the keyboard.
+  for (const pre of document.querySelectorAll('article pre')) {
+    if (pre.scrollWidth > pre.clientWidth + 1) { pre.tabIndex = 0; pre.setAttribute('role', 'region'); pre.setAttribute('aria-label', 'Code, scrollable'); }
   }
 
   // Search.
@@ -305,9 +345,12 @@
     load().then(() => {
       const res = q ? search(q) : [];
       const h = document.getElementById('search-heading');
-      if (h) h.textContent = q ? `${res.length} result${res.length === 1 ? '' : 's'} for “${q}”` : 'Type in the search box above.';
-      if (q && !res.length) {
-        out.insertAdjacentHTML('afterend', `<p class="no-results">Nothing matches “${esc(q)}”. Check the spelling, try a shorter word, or browse: <a href="/all-pages">All pages</a> · <a href="/weapons">Weapons</a> · <a href="/bosses">Bosses</a> · <a href="/guides">Guides</a> · <a href="/quick-tips">Quick tips</a></p>`);
+      if (h) h.textContent = q ? `${res.length} result${res.length === 1 ? '' : 's'} for “${q}”` : 'Search the wiki';
+      if (!res.length) {
+        const browse = 'browse: <a href="/all-pages">All pages</a> · <a href="/weapons">Weapons</a> · <a href="/bosses">Bosses</a> · <a href="/guides">Guides</a> · <a href="/quick-tips">Quick tips</a>';
+        out.insertAdjacentHTML('afterend', q
+          ? `<p class="no-results">Nothing matches “${esc(q)}”. Check the spelling, try a shorter word, or ${browse}</p>`
+          : `<p class="no-results">Type a weapon, boss, item or topic in the search box at the top, or ${browse}</p>`);
       }
       out.innerHTML = res
         .map((e) => `<li><a href="${e.u}">${e.i ? `<img class="ico" src="/icons/${e.i}.png" alt="" height="22">` : ''}${esc(e.t)}</a> <small>(${esc(e.s)})</small><br>${esc(e.d)}</li>`)
