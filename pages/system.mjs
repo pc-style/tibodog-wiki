@@ -25,6 +25,8 @@ export function systemPages(entityPages) {
     h1: 'Every weapon, boss and build in tibo.dog',
     // Four sections need no table of contents; the rail would only take width from the task cards.
     toc: false,
+    // The band behind the title is a real frame of the game (public/home-scene*.webp), not drawn art.
+    hero: 'Pictured: Tibo and his first dog, 7 s into Story mode (tibo.dog screenshot, 2026-11-06).',
     description: `Unofficial, source-cited wiki for tibo.dog: all ${R.allWeapons.length} weapons, ${R.evolutions.length} evolutions, ${R.passives.length} passives, ${R.allItems.length} items, ${R.dogs.length} dogs, ${R.enemies.length} enemies, ${R.bosses.length} bosses and ${R.biomes.length} biomes, with stats from the game build.`,
     // Short, so the task cards arrive in the first phone screen; how a run works is on Getting started.
     lead: `The unofficial fan wiki for [tibo.dog](https://tibo.dog/), a free survivors-like by [poteto](https://x.com/poteto) that plays in the browser and inside X posts. Stats come from the game's own code, and every page lists its sources.`,

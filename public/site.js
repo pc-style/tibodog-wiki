@@ -165,6 +165,8 @@
     };
     btn.addEventListener('click', () => { btn.dataset.open = btn.dataset.open === '1' ? '' : '1'; apply(); });
     ib.append(btn);
+    // The note about raw values follows the button, under the full list of stats.
+    const ibNote = ib.querySelector('.ib-note'); if (ibNote) ib.append(ibNote);
     narrowMq.addEventListener('change', apply);
     apply();
   }
@@ -203,6 +205,35 @@
       });
       count.textContent = q ? (n ? `${n} tip${n === 1 ? '' : 's'} match` : 'No tips match. Try a shorter word.') : '';
     });
+  }
+
+  // Long pages: once the contents list has scrolled away (and no rail shows it), a Sections button stays in
+  // the corner and opens the page's top-level sections, so the reader can jump without going back up.
+  const tocNav = document.querySelector('article .toc');
+  const tops = tocNav ? [...tocNav.querySelectorAll('.toc-in > ol > li > a')] : [];
+  if (tops.length >= 4) {
+    const wrapS = document.createElement('div');
+    wrapS.className = 'sec-jump';
+    wrapS.hidden = true;
+    wrapS.innerHTML = '<div class="sec-list" id="sec-list" hidden><p>On this page</p><ol></ol></div><button type="button" aria-expanded="false" aria-controls="sec-list">Sections</button>';
+    const list = wrapS.querySelector('.sec-list');
+    const btnS = wrapS.querySelector('button');
+    for (const a of tops) { const li = document.createElement('li'); li.append(a.cloneNode(true)); list.querySelector('ol').append(li); }
+    document.body.append(wrapS);
+    const setOpen = (o) => { list.hidden = !o; btnS.setAttribute('aria-expanded', String(o)); };
+    btnS.addEventListener('click', () => setOpen(list.hidden));
+    list.addEventListener('click', (e) => { if (e.target.closest('a')) setOpen(false); });
+    wrapS.addEventListener('keydown', (e) => { if (e.key === 'Escape' && !list.hidden) { setOpen(false); btnS.focus(); } });
+    document.addEventListener('pointerdown', (e) => { if (!wrapS.contains(e.target)) setOpen(false); });
+    const showS = () => {
+      // A visible rail TOC already does this job.
+      const railed = getComputedStyle(tocNav).position === 'absolute';
+      const gone = tocNav.getBoundingClientRect().bottom < 0;
+      wrapS.hidden = railed || !gone;
+      if (wrapS.hidden) setOpen(false);
+    };
+    addEventListener('scroll', () => requestAnimationFrame(showS), { passive: true });
+    addEventListener('resize', showS);
   }
 
   // The rail TOC marks the section being read.
@@ -305,7 +336,7 @@
         const strip = document.createElement('div');
         strip.className = 'thead-strip';
         strip.setAttribute('aria-hidden', 'true');
-        strip.inert = true;
+        // Not inert: an inert strip lets taps fall through to the row links under it. It holds no controls instead.
         strip.hidden = true;
         document.body.append(strip);
         let built = '';
@@ -324,6 +355,8 @@
             copy.removeAttribute('style');
             copy.style.width = `${table.offsetWidth}px`;
             copy.append(table.tHead.cloneNode(true));
+            // A display-only copy: sort buttons become plain text, so it offers nothing to press.
+            for (const b of copy.querySelectorAll('button')) b.replaceWith(...b.childNodes);
             [...copy.tHead.rows[0].cells].forEach((th, i) => { th.style.width = th.style.minWidth = th.style.maxWidth = `${ths[i].offsetWidth}px`; th.style.boxSizing = 'border-box'; });
             strip.replaceChildren(copy);
           }

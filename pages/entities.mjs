@@ -210,7 +210,7 @@ export function weaponPages() {
       crumbs: [['Weapons', '/weapons']],
       description: `${n} is ${/^(?!uni)[aeiou]/i.test(tierLabel[w.tier]) ? 'an' : 'a'} ${tierLabel[w.tier].toLowerCase()} in tibo.dog. ${desc}`.trim(),
       lead: `**${n}** is ${/^(?!uni)[aeiou]/i.test(tierLabel[w.tier]) ? 'an' : 'a'} ${tierLabel[w.tier].toLowerCase()} in tibo.dog. In-game description: “${desc}”`,
-      infobox: { title: n, icon: `weapon/${w.id}`, caption: tierLabel[w.tier], rows },
+      infobox: { title: n, icon: `weapon/${w.id}`, caption: tierLabel[w.tier], rows, note: 'Raw values, before Tibo’s bonuses ([how stats combine](/stats)).' },
       body,
       sources: [SRC_REG, SRC_TEXT],
       search: `${n} ${w.id} weapon ${w.behavior.kind}`,
