@@ -1,0 +1,135 @@
+{
+ "_note": "Boss fight cards for /guides/bosses. Each field is a short reading of the quoted sentences, which build.mjs checks still appear in data/prose/bosses/<id>.md.",
+ "cards": {
+  "amusing": {
+   "watch": "A circle is marked where Tibo stands; amusing will land there.",
+   "do": "Keep walking out of the circle; no dash needed.",
+   "avoid": "Standing still between the double rings walks into the offset second ring.",
+   "sources": [
+    "When the hug starts, the game marks a circle of radius 40 where Tibo is standing.",
+    "To avoid the hug, keep moving: walking 46 units (the circle's radius plus Tibo's body) takes Tibo about 0.75 s, well inside the 1.65 s before it lands.",
+    "Standing still between the rings tends to put Tibo in the path of the second, offset ring."
+   ]
+  },
+  "beetle-queen": {
+   "watch": "Eggs are aimed where Tibo stood before the warning.",
+   "do": "Move sideways, then leave room for the hatching larvae.",
+   "avoid": "Ignoring her lets several broods chase Tibo at once.",
+   "sources": [
+    "Eggs aim at where Tibo was before the warning.",
+    "Move sideways to avoid their initial path, then leave room for the radial larvae when they hatch.",
+    "One full cycle takes 6 s (5 s of walking plus the 1 s hatch), so an ignored Queen can have several broods chasing Tibo at once."
+   ]
+  },
+  "compost-titan": {
+   "watch": "A 1 s warning, then four homing spiral streams.",
+   "do": "Dash once the first volleys are out to stop their homing.",
+   "avoid": "Trying to outrun spiral shots at 17:00; they are faster than Tibo.",
+   "sources": [
+    "Every 3.6 s at base, after a 1 s warning, the Titan fires four streams of shots at right angles to each other.",
+    "Dashing early in a spiral, once the first volleys are out, turns the rest of their flight into straight lines.",
+    "At 17:00 the spiral shots are faster than Tibo, so outrunning them does not work."
+   ]
+  },
+  "deep-freezer": {
+   "watch": "Three slam circles appear; the first is centred on Tibo.",
+   "do": "Walk out of the first circle at full speed.",
+   "avoid": "A cube freeze right before a slam, with no dash to break it.",
+   "sources": [
+    "The first is centred on Tibo; the other two are placed up to 70 units away in random directions.",
+    "The slam is easy to walk out of at full speed: Tibo needs to cover about 46 units from the centre of the first circle (its radius plus his body), and he does about 56 in 0.9 s.",
+    "Keep a dash charge for a slam that follows a cube hit: dashing breaks the freeze rather than waiting for it to expire."
+   ]
+  },
+  "fryer-king": {
+   "watch": "Splat marks appear on the ground, the first centred on Tibo.",
+   "do": "Step off the splat at once.",
+   "avoid": "Dashing through oil puddles; the dash does not stop the ticks.",
+   "sources": [
+    "The first is centred on Tibo; the other three land 20 to 80 units away in random directions.",
+    "Leave the splat under Tibo straight away.",
+    "Walk around puddles rather than dashing through them: the dash does not stop the ticks."
+   ]
+  },
+  "grater-golem": {
+   "watch": "The Golem stands still on a marked line for 1 s, then dashes.",
+   "do": "Dodge the charge sideways, off the line.",
+   "avoid": "Running straight away along the line; the dash is five times faster.",
+   "sources": [
+    "The Golem stands still for 1 s, then dashes along the line.",
+    "Dodge the charge sideways.",
+    "Running straight away along the line does not work, because the Golem is five times faster than Tibo while dashing."
+   ]
+  },
+  "great-wireworm": {
+   "watch": "It burrows and a circle marks where Tibo stands.",
+   "do": "Keep walking and do not stop on the mark.",
+   "avoid": "Standing still lets the re-aimed beetle shots converge on Tibo.",
+   "sources": [
+    "When the dive starts, the game marks a circle of radius 40 on Tibo's position, and the Wireworm goes underground at once.",
+    "Any movement takes him out of it long before the 2.2 s are up, so keep walking and do not stop on the mark.",
+    "Moving across their new line just after they lunge forward makes them miss, while standing still lets all of them converge on Tibo."
+   ]
+  },
+  "harvester": {
+   "watch": "A wide warning lane shows the charge path for 1 s.",
+   "do": "Start moving off the lane as soon as it appears.",
+   "avoid": "Standing just past Tibo's old spot; the charge runs the full lane.",
+   "sources": [
+    "A 70-unit-wide warning lane, 418 units long, shows its path for 1 s.",
+    "At base speed that is about 0.65 s of the 1 s warning, so start moving as soon as the lane appears.",
+    "The charge always runs the full 418 units, so standing just past where Tibo was is not safe either."
+   ]
+  },
+  "ketchup-kraken": {
+   "watch": "Five circles are marked around Tibo, the first centred on him.",
+   "do": "Move out of the centred circle during the 1.1 s warning.",
+   "avoid": "Dashing through ketchup puddles; dash and dodge do not stop their damage.",
+   "sources": [
+    "Five circles of radius 32 are marked around Tibo's position: the first centred on him, the other four at random spots up to 80 units away.",
+    "It is always centred on Tibo and strikes first, so moving about 38 units (its radius plus Tibo's size) during the 1.1 s warning avoids it.",
+    "Puddle damage is ground-hazard damage: dashing and dodge sources such as [Thick Skin](/passives/thick-skin) don't stop it, though [armor](/stats#armor) does."
+   ]
+  },
+  "late-blight": {
+   "watch": "Five clover-shaped pools are marked at once, one centred on Tibo.",
+   "do": "Leave the centre pool during the 1.2 s warning.",
+   "avoid": "Dashing through standing pools; dash and dodge do not stop their ticks.",
+   "sources": [
+    "Five clover-shaped pools of radius 26 are marked at once: one centred on Tibo and four at random spots 20–90 units from him.",
+    "It is always on Tibo, so moving about 32 units (its radius plus his own size) during the 1.2 s warning avoids the strike.",
+    "The dash only protects against hits, not the ticking pool damage, and neither does dodge from [Thick Skin](/passives/thick-skin) or [Ghost Skin](/items/ghost-skin)."
+   ]
+  },
+  "sir-strawman": {
+   "watch": "A narrow lane shows its locked charge path for 0.8 s.",
+   "do": "Step about 20 units to the side of the lane.",
+   "avoid": "Standing behind it; returning straw passes through and keeps going.",
+   "sources": [
+    "A 22-unit-wide lane shows its path for 0.8 s, then it rushes along it at speed 280 for 0.7 s, covering about 196 units.",
+    "The direction is locked when the lane appears, so about 20 units to the side (its body radius plus Tibo's size) is enough.",
+    "The returning shots come back through the point they were thrown from and keep going, so the area behind Sir Strawman is not safe either."
+   ]
+  },
+  "the-mandoline": {
+   "watch": "Three parallel lines are marked across the boss-to-Tibo direction.",
+   "do": "Reach a safe strip between two lines, then wait there.",
+   "avoid": "Escaping sideways along the lines; they are long and centred on Tibo.",
+   "sources": [
+    "When the attack starts, the Mandoline locks the direction from itself to Tibo and marks three parallel lines across that direction, each 360 units long and 22 units wide.",
+    "The three lines are fixed once marked and strike only 0.15 s apart, so it is safer to reach one of the two safe strips and wait there than to keep moving through the lanes.",
+    "The lines are 360 units long and centred on Tibo's position, so going sideways is slow (about 3 s at base speed)."
+   ]
+  },
+  "the-masher": {
+   "watch": "A circle is marked exactly where Tibo is standing.",
+   "do": "Walk out of the circle; a dash is rarely needed.",
+   "avoid": "Crossing the bullet ring close to the Masher, before its gaps open.",
+   "sources": [
+    "The Masher marks a circle of radius 38 centred exactly where Tibo is standing when the attack starts.",
+    "At base speed that takes about 0.7 s of the 1.2 s warning, so a dash is rarely needed.",
+    "Twelve bullets leave Tibo-sized gaps once the ring is about 25 units from the Masher."
+   ]
+  }
+ }
+}

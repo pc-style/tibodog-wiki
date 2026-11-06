@@ -52,6 +52,22 @@ export function firstSentence(tip) {
   return t;
 }
 
+// Boss fight cards (data/boss-cards.json): what to watch for, what to do, what to avoid. Each card cites sentences
+// from the boss's own prose, and the build stops if a game update rewrote them, so a card can't silently go stale.
+const BOSS_CARDS = JSON.parse(readFileSync(new URL('../data/boss-cards.json', import.meta.url), 'utf8')).cards;
+const flat = (s) => s.replace(/\s+/g, ' ');
+function fightCard(page) {
+  const id = page.path.split('/')[2];
+  const c = page.path.startsWith('/bosses/') && BOSS_CARDS[id];
+  if (!c) return '';
+  const prose = flat(readFileSync(new URL(`../data/prose/bosses/${id}.md`, import.meta.url), 'utf8'));
+  for (const q of c.sources) {
+    if (!prose.includes(flat(q))) throw new Error(`data/boss-cards.json: the ${id} card cites a sentence that is no longer in data/prose/bosses/${id}.md; update the card: "${q}"`);
+  }
+  const row = (k, v) => `<div><dt>${k}</dt><dd>${v}</dd></div>`;
+  return `<dl class="fight">${row('Watch for', c.watch)}${row('Do', c.do)}${row('Avoid', c.avoid)}</dl>\n\n`;
+}
+
 const iconOf = (p) => (p.infobox?.icon ? `{{icon:${p.infobox.icon}}}` : '');
 // Arrival time as minutes; pages without one keep their order after the timed ones (stable sort).
 const minutes = (p) => { const m = /^(\d+):(\d+)/.exec(arrives(p) ?? ''); return m ? +m[1] + m[2] / 60 : 1e9; };
@@ -93,8 +109,8 @@ export function guidePages(entityPages) {
       .map(({ page, tips }) => {
         const when = arrives(page) ? ` <small class="when">${arrives(page)}</small>` : '';
         // The first tip leads; the rest fold away so a long guide stays scannable.
-        const more = tips.length > 1 ? `\n<details class="more"><summary>${tips.length - 1} more tip${tips.length > 2 ? 's' : ''}</summary>\n\n${tips.slice(1).map((x) => `- ${x}`).join('\n')}\n\n</details>\n` : '';
-        return `## ${iconOf(page)}[${page.title}](${page.path})${when}\n\n${tips[0]}\n${more}`;
+        const more = tips.length > 1 ? `\n<details class="more"><summary>More on ${page.title} (${tips.length - 1} tip${tips.length > 2 ? 's' : ''})</summary>\n\n${tips.slice(1).map((x) => `- ${x}`).join('\n')}\n\n</details>\n` : '';
+        return `## ${iconOf(page)}[${page.title}](${page.path})${when}\n\n${fightCard(page)}${tips[0]}\n${more}`;
       })
       .join('\n'),
     sources: [SOURCE],

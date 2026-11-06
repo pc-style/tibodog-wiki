@@ -20,9 +20,16 @@ export function systemPages(entityPages) {
   add({
     path: '/',
     title: 'tibodog.wiki',
+    // The header already shows the site name, so the page opens with what the wiki does for a player.
+    eyebrow: 'The unofficial tibo.dog wiki',
+    h1: 'Every weapon, boss and build in tibo.dog',
     description: `Unofficial, source-cited wiki for tibo.dog: all ${R.allWeapons.length} weapons, ${R.evolutions.length} evolutions, ${R.passives.length} passives, ${R.allItems.length} items, ${R.dogs.length} dogs, ${R.enemies.length} enemies, ${R.bosses.length} bosses and ${R.biomes.length} biomes, with stats from the game build.`,
     lead: `Welcome to **tibodog.wiki**, the unofficial fan wiki for [tibo.dog](https://tibo.dog/), a free 2.5D pixel survivors-like by [poteto](https://x.com/poteto) that plays in the browser and inside X posts. You play Tibo with a pack of up to three dogs; potato weapons fire on their own while you move, dash and pick upgrades. Survive 20 minutes, then keep going as long as you last; there is no win screen.`,
-    body: `## Browse\n\n<div class="cards">\n${[
+    body: `## Start here\n\n<div class="cards tasks">\n${[
+      card('/getting-started', 'New to the game?', 'How a run works, from the first dash to 20:00', 'dog/corgi'),
+      card('/strategy', 'Plan a build', 'Weapons, evolutions and passives that work together', 'weapon/mashquake'),
+      card('/guides/bosses', 'Beat the next boss', 'Every boss in arrival order, with the move that saves you', 'boss/harvester'),
+    ].join('\n')}\n</div>\n\n## Browse\n\n<div class="cards">\n${[
       card('/weapons', 'Weapons', `${R.baseWeapons.length} base, ${R.evolutions.length} evolutions, ${R.unions.length} unions`, 'weapon/spud-cannon'),
       card('/evolutions', 'Evolutions', 'Every recipe and catalyst', 'weapon/mashquake'),
       card('/passives', 'Passives', `${R.passives.length} stat upgrades`, 'passive/butter-pat'),
