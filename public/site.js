@@ -34,6 +34,8 @@
     });
     menu.addEventListener('toggle', () => {
       sync();
+      // While the phone panel is open the page behind it is dimmed and does not scroll.
+      document.documentElement.classList.toggle('menu-open', menu.open && narrow);
       // Only one overlay at a time: opening the menu closes search suggestions.
       if (menu.open && narrow) {
         const list = document.getElementById('search-results');
@@ -176,6 +178,13 @@
       wrap.before(hint);
       // An overflowing table is a scroll region: keyboard users can focus it and scroll with the arrow keys.
       const fits = () => {
+        // A wide text column at the end (Biomes, notes) wraps tighter before the table resorts to scrolling.
+        table.style.removeProperty('--last-max');
+        const last = ths[ths.length - 1];
+        const extra = wrap.scrollWidth - wrap.clientWidth;
+        if (extra > 1 && last && !last.classList.contains('num') && last.offsetWidth - extra - 2 >= 180) {
+          table.style.setProperty('--last-max', `${last.offsetWidth - extra - 2}px`);
+        }
         const over = wrap.scrollWidth > wrap.clientWidth + 1;
         hint.hidden = !over;
         if (over) {
@@ -199,7 +208,8 @@
       // Browsers skip scrolling a partly visible control into view; bring the whole of it out from under the pin.
       wrap.addEventListener('focusin', (e) => e.target.scrollIntoView({ block: 'nearest', inline: 'nearest' }));
     }
-    if (rows.length < 4) continue;
+    // Two-column tables are key/value lists; sorting them helps nobody.
+    if (rows.length < 4 || ths.length < 3) continue;
     ths.forEach((th, col) => {
       const btn = document.createElement('button');
       btn.type = 'button';

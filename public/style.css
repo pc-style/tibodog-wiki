@@ -334,6 +334,7 @@ article small code { background: none; padding: 0; color: inherit; font-size: 12
 .wikitable { width: max-content; min-width: 100%; border-collapse: collapse; font-size: 14.5px; line-height: 1.45; font-variant-numeric: tabular-nums; }
 /* Cap prose cells so max-content tables still wrap long text (changes, descriptions, biome lists). */
 .wikitable td { max-width: 28em; }
+.wikitable td:last-child:not(.num) { max-width: var(--last-max, 28em); }
 .wikitable th, .wikitable td { padding: 9px 12px; vertical-align: top; text-align: left; border-bottom: 1px solid var(--line-2); }
 /* site.js marks columns whose every value is a number; they align right so magnitudes line up. */
 .wikitable .num { text-align: right; }
@@ -517,6 +518,8 @@ blockquote p { margin: 6px 0; }
     position: fixed; z-index: 30; top: var(--header-h); left: 0; right: 0; max-height: calc(100dvh - var(--header-h)); overflow-y: auto; overscroll-behavior: contain;
     padding: 4px 16px 16px; background: #090c18; border-bottom: 1px solid #c9a24f80; box-shadow: 0 12px 24px #000a;
   }
+  html.menu-open { overflow: hidden; }
+  html.menu-open body::after { content: ""; position: fixed; inset: var(--header-h) 0 0; z-index: 25; background: #05060dcc; }
   .cards { grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); }
   .ib-img { padding: 12px; }
   .ib-img img { max-height: 72px; }
