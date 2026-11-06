@@ -26,6 +26,10 @@ test('journal extraction preserves all days, render sorting, text and source pro
     const argumentResult = extractChangelog(root, 'main-fixture1.js');
     assert.deepEqual(argumentResult.days, result.days);
     assert.deepEqual(argumentResult.unreleased, result.unreleased);
+    writeFileSync(join(root, chunk), 'var route=`/changelog`;' + argumentSource);
+    const routeResult = extractChangelog(root, 'main-fixture1.js');
+    assert.deepEqual(routeResult.days, result.days);
+    assert.deepEqual(routeResult.unreleased, result.unreleased);
     writeFileSync(join(root, chunk), journalSource.replace('id:`NEW`', 'id:`OLD`'));
     assert.throws(() => extractChangelog(root, 'main-fixture1.js'), /duplicate note msgId/);
   } finally {
@@ -104,9 +108,12 @@ test('extracts boss definitions and encounter order from either registry layout'
       const defs = '[{id:"first",hp:650},{id:"second",hp:9000}]';
       const bosses = `{boss:()=>{},bosses:${defs},bossOrder:[${defs}[1],${defs}[0]]}`;
       writeFileSync(join(root, 'boot.js'), `export default {weapon:()=>{},allWeapons:[],${split ? 'bossIds:["first","second"]' : `...${bosses}`}}`);
-      writeFileSync(join(root, 'sim.js'), `const cfg={spawns:{maxEnemies:500,hardCap:730}};
+      writeFileSync(join(root, 'difficulty-config.js'), 'export const cfg={spawns:{maxEnemies:500,hardCap:730}};');
+      const difficultyCode = `import {cfg} from './difficulty-config.js';
         function target(n){return {kind:'lateCrowd',min:n,max:n+cfg.spawns.hardCap-cfg.spawns.maxEnemies}}
-        const defaults={alive:1,floorShare:0,shotPuddleSec:1},levels={easy:{...defaults,alive:.8},hard:{...defaults,crowd:650/cfg.spawns.maxEnemies,promises:[target(650)]}};
+        const defaults={alive:1,floorShare:0,shotPuddleSec:1},levels={easy:{...defaults,alive:.8},hard:{...defaults,crowd:650/cfg.spawns.maxEnemies,promises:[target(650)]}};`;
+      writeFileSync(join(root, 'intro-shared.js'), split ? `${difficultyCode} export {cfg};` : '');
+      writeFileSync(join(root, 'sim.js'), `${split ? '' : difficultyCode}
         export default ${split ? bosses : '{}'};`);
       execFileSync(process.execPath, [new URL('./dump-build.mjs', import.meta.url).pathname, root, 'boot.js', 'sim.js', 'content.js', join(root, 'out')]);
       const registry = JSON.parse(readFileSync(join(root, 'out', 'registry.json')));
@@ -116,6 +123,10 @@ test('extracts boss definitions and encounter order from either registry layout'
       assert.equal(difficulty.defaults.alive, 1);
       assert.deepEqual(difficulty.easy, { alive: 0.8 });
       assert.deepEqual(difficulty.hard, { crowd: 1.3, promises: [{ kind: 'lateCrowd', min: 650, max: 880 }] });
+      if (split) {
+        const config = JSON.parse(readFileSync(join(root, 'out', 'config.json')));
+        assert.deepEqual(config['intro-shared.cfg'].spawns, { maxEnemies: 500, hardCap: 730 });
+      }
     }
   } finally {
     rmSync(root, { recursive: true, force: true });

@@ -1,7 +1,7 @@
 // Loads a mirrored build's boot and sim modules in Node and writes registry.json,
 // config.json and en-content.json next to it, in the same shape as data/.
 // Usage: node tools/dump-build.mjs <assets dir> <boot file> <sim file> <content file> <out dir>
-import { writeFileSync, mkdirSync, readFileSync, unlinkSync } from 'node:fs';
+import { writeFileSync, mkdirSync, readFileSync, readdirSync, unlinkSync } from 'node:fs';
 import { randomUUID } from 'node:crypto';
 import { pathToFileURL } from 'node:url';
 import { loadEndgame } from './load-endgame.mjs';
@@ -48,7 +48,9 @@ if (!Array.isArray(reg.bosses)) {
 }
 
 const config = {};
-for (const [src, m] of [['sim', sim], ['boot', boot]])
+const sharedFile = readdirSync(dir).find((f) => /^intro-shared(?:-[A-Za-z0-9_-]{8})?\.js$/.test(f));
+const shared = sharedFile ? await import(pathToFileURL(`${dir}/${sharedFile}`).href) : {};
+for (const [src, m] of [['sim', sim], ['boot', boot], ['intro-shared', shared]])
   for (const [k, v] of Object.entries(m))
     if (v && typeof v === 'object' && typeof v.weapon !== 'function') {
       try {
@@ -63,9 +65,12 @@ if (!text) throw new Error('content strings not found');
 // Difficulty bindings are private. Evaluate them in their original module context so
 // overrides can use config bindings and helper calls, not just standalone literals.
 async function difficulty() {
-  const code = readFileSync(`${dir}/${simF}`, 'utf8');
-  const m = code.match(/([\w$]+)=\{alive:1,floorShare:0,/);
-  if (!m) throw new Error('difficulty defaults not found');
+  const candidates = readdirSync(dir).filter((f) => /\.js$/.test(f)).map((file) => {
+    const code = readFileSync(`${dir}/${file}`, 'utf8');
+    return { file, code, match: code.match(/([\w$]+)=\{alive:1,floorShare:0,/) };
+  }).filter((c) => c.match);
+  if (candidates.length !== 1) throw new Error(`expected one difficulty defaults module, found ${candidates.length}`);
+  const { file, code, match: m } = candidates[0];
   const literal = (start) => {
     let depth = 0;
     for (let i = start; i < code.length; i++) {
@@ -84,7 +89,7 @@ async function difficulty() {
   try {
     writeFileSync(temporary, `${code}\nexport const __wikiDifficulty = {defaults:${m[1]},...${table.replace(spread, '')}};\n`);
     const { __wikiDifficulty } = await import(pathToFileURL(temporary).href);
-    return { _source: `${simF}: difficulty defaults and per-level overrides`, ...__wikiDifficulty };
+    return { _source: `${file}: difficulty defaults and per-level overrides`, ...__wikiDifficulty };
   } finally {
     unlinkSync(temporary);
   }

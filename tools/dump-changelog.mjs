@@ -80,7 +80,7 @@ export function extractChangelog(dir, main) {
   const helpers = src.slice(
     importsEnd ? importsEnd.index + importsEnd[0].length : 0,
     src.search(new RegExp(`var ${unreleasedName.replace('$', '\\$')}=\\[`)),
-  );
+  ).replace(/^var [\w$]+=`\/changelog`;/, '');
   if (!/^(function [\w$]+\([^)]*\)\{[^]*?\})+$/.test(helpers))
     throw new Error(`unexpected code before the notes in ${chunk}; update tools/dump-changelog.mjs`);
 
