@@ -3,8 +3,9 @@
 @font-face { font-family: "Cinzel"; src: url(/fonts/cinzel-latin-ext-700-normal.woff2) format("woff2"); font-weight: 700; font-display: swap; unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
 @font-face { font-family: "Marcellus"; src: url(/fonts/marcellus-latin-400-normal.woff2) format("woff2"); font-weight: 400; font-display: swap; unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
 @font-face { font-family: "Marcellus"; src: url(/fonts/marcellus-latin-ext-400-normal.woff2) format("woff2"); font-weight: 400; font-display: swap; unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
-/* Marcellus has old-style figures (20 reads as 2O); digits come from Cinzel, as in the game's own "Gilded Figures". */
-@font-face { font-family: "Wiki Figures"; src: url(/fonts/cinzel-latin-700-normal.woff2) format("woff2"); font-weight: 400 700; font-display: swap; unicode-range: U+30-39; }
+/* Marcellus has old-style figures (20 reads as 2O); digits come from Cinzel, as in the game's own "Gilded Figures".
+   Medium weight matches Marcellus, so numbers in prose don't read as bold. */
+@font-face { font-family: "Wiki Figures"; src: url(/fonts/cinzel-latin-500-normal.woff2) format("woff2"); font-weight: 400; font-display: swap; unicode-range: U+30-39; }
 :root {
   --bg: #0b0e1c;
   --side: #090c18;
@@ -32,8 +33,8 @@
   --err: #ff8a80;
   --shadow: 0 0 0 1px #0009, 0 6px 20px #00000080;
   --glow: 0 0 .7em #e8c46a33;
-  --radius: 4px;
-  --radius-sm: 3px;
+  --radius: 2px;
+  --radius-sm: 2px;
   --header-h: 62px;
   --display: "Cinzel", Georgia, "Times New Roman", serif;
   --body: "Wiki Figures", "Marcellus", Georgia, "Times New Roman", serif;
@@ -60,11 +61,11 @@ article :is(p, li, td, blockquote) > a, article li > strong > a, .lead a, .infob
 article :is(p, li, td, blockquote) > a:hover, article li > strong > a:hover, .lead a:hover, .infobox td a:hover, .foot > p:first-child a:hover { text-decoration-color: currentColor; }
 .toc a, .crumbs a, #search-page-results a { text-decoration: none !important; }
 a.ext::after { content: "↗"; font-size: .7em; margin-left: 2px; opacity: .7; }
-:focus-visible { outline: 2px solid #fff59d; outline-offset: 2px; border-radius: 4px; }
+:focus-visible { outline: 2px solid #fff59d; outline-offset: 2px; }
 ::selection { background: var(--accent-soft); }
 code {
   font-family: var(--mono); font-size: .84em; color: var(--code-text);
-  background: var(--code); padding: .12em .38em; border-radius: 5px; overflow-wrap: break-word;
+  background: var(--code); padding: .12em .38em; border-radius: 2px; overflow-wrap: break-word;
 }
 pre {
   background: var(--code); padding: 14px 16px; border-radius: var(--radius); overflow: auto;
@@ -78,7 +79,7 @@ code.long { white-space: normal; overflow-wrap: normal; word-break: break-all; -
 pre code { background: none; padding: 0; font-size: inherit; overflow-wrap: normal; }
 img { max-width: 100%; }
 .sr, .skip:not(:focus) { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
-.skip:focus { position: fixed; top: 8px; left: 8px; z-index: 100; background: var(--panel); padding: 8px 12px; border-radius: 8px; box-shadow: var(--shadow); }
+.skip:focus { position: fixed; top: 8px; left: 8px; z-index: 100; background: var(--panel); padding: 8px 12px; border-radius: 2px; box-shadow: var(--shadow); }
 
 /* ---------- Header ---------- */
 .top {
@@ -95,6 +96,8 @@ img { max-width: 100%; }
 }
 .brand:hover { text-decoration: none; }
 .brand img { image-rendering: pixelated; filter: drop-shadow(0 2px 0 #05060d); }
+.brand-txt { display: flex; flex-direction: column; gap: 4px; }
+.brand small { font: 400 11px/1 var(--body); letter-spacing: .06em; color: var(--muted); -webkit-text-fill-color: currentColor; text-shadow: none; }
 .brand b { font-weight: 700; color: var(--title); background: var(--title-gold); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; text-shadow: none; }
 .search { position: relative; flex: 1; max-width: 520px; display: flex; align-items: center; }
 .search-ico { position: absolute; left: 12px; color: var(--muted); pointer-events: none; }
@@ -117,10 +120,10 @@ img { max-width: 100%; }
   background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow);
   max-height: 70vh; overflow: auto;
 }
-.sresults li a { display: flex; gap: 10px; align-items: center; padding: 7px 10px; color: var(--text); border-radius: var(--radius-sm); font-size: 14.5px; }
-.sresults li a:hover, .sresults li[aria-selected="true"] a { background: var(--panel-2); text-decoration: none; }
+.sresults li { display: flex; gap: 10px; align-items: center; margin: 0; padding: 7px 10px; color: var(--text); font-size: 14.5px; cursor: pointer; box-shadow: inset 2px 0 transparent; }
+.sresults li[aria-selected="true"] { background: linear-gradient(90deg, #c9a24f40, #c9a24f0d); color: var(--title); box-shadow: inset 2px 0 var(--gold); }
 .sresults .ico { width: 24px; height: 24px; object-fit: contain; margin: 0; }
-.sresults li a:not(:has(> .ico))::before { content: ""; width: 24px; flex: none; }
+.sresults li:not(:has(> .ico))::before { content: ""; width: 24px; flex: none; }
 .sresults small { color: var(--muted); margin-left: auto; font-size: 12px; }
 .ver-chip {
   margin-left: auto; display: inline-flex; align-items: center; gap: 7px; white-space: nowrap;
@@ -134,6 +137,7 @@ img { max-width: 100%; }
   white-space: nowrap; font: 700 15px/1 var(--display); letter-spacing: .04em; padding: 10px 16px; border-radius: 2px;
   color: #1a1426 !important; background: var(--primary); box-shadow: inset 0 0 0 1px #fff3cc80, 0 0 0 1px #7a5a24, 0 3px 10px #00000080;
 }
+.menu-play { display: none; }
 .play:hover { background: var(--primary-hot); box-shadow: inset 0 0 0 1px #fff3cc, 0 0 0 1px #7a5a24, var(--glow); text-decoration: none; }
 
 /* ---------- Section tabs (Wiki / Guides / Quick tips), styled like the game's difficulty buttons ---------- */
@@ -201,7 +205,7 @@ img { max-width: 100%; }
 .status button:hover { border-color: var(--gold); color: var(--title); }
 .status button[aria-busy="true"] { cursor: progress; opacity: .7; }
 #live-result:empty { display: none; }
-#live-result { margin-top: 10px; padding: 8px 10px; border-radius: 8px; line-height: 1.45; color: var(--text); background: var(--panel-2); }
+#live-result { margin-top: 10px; padding: 8px 10px; border-radius: 2px; line-height: 1.45; color: var(--text); background: var(--panel-2); }
 #live-result[data-status="up-to-date"] { background: color-mix(in srgb, var(--ok) 12%, transparent); }
 #live-result[data-status="game-updated"], #live-result[data-status="wiki-ahead"] { background: color-mix(in srgb, var(--warn) 14%, transparent); }
 #live-result[data-status="error"] { background: color-mix(in srgb, var(--err) 12%, transparent); }
@@ -224,10 +228,10 @@ h2 {
   font-size: 25px; line-height: 1.3; letter-spacing: .01em; margin: 48px 0 14px; padding-bottom: 8px; text-wrap: balance; color: var(--title);
   background: linear-gradient(90deg, #d8b25a99, transparent 85%) bottom / 100% 1px no-repeat;
 }
-h3 { font-size: 18.5px; line-height: 1.35; letter-spacing: .01em; margin: 32px 0 10px; color: var(--link); }
+h3 { font-size: 18.5px; line-height: 1.35; letter-spacing: .01em; margin: 32px 0 10px; color: var(--text); }
 h2, h3 { position: relative; }
 .anchor { position: absolute; left: -22px; padding-right: 8px; color: var(--muted) !important; opacity: 0; font-weight: 500; transition: opacity .15s; }
-h2:hover .anchor, h3:hover .anchor, .anchor:focus { opacity: 1; text-decoration: none; }
+h2:hover .anchor, h3:hover .anchor, .anchor:focus-visible { opacity: 1; text-decoration: none; }
 .lead { font-size: 18px; line-height: 1.6; color: var(--text-2); margin: 0 0 28px; max-width: 66ch; }
 /* Keep running text at a readable measure; tables and cards may use the full width. */
 article > p, article > ul, article > ol, article > blockquote, article > h2, article > h3,
@@ -238,7 +242,7 @@ ul, ol { padding-left: 24px; margin: 0 0 16px; }
 li { margin: 4px 0; }
 li::marker { color: var(--muted); }
 /* Marcellus has one weight; emphasis is colour, as in the game, not synthetic bold. */
-strong, b { font-weight: 400; color: #fff8e6; }
+strong, b { font-weight: 400; color: #fff8e6; -webkit-text-stroke: .35px currentColor; }
 a strong, a b { color: inherit; }
 a code { color: var(--link); }
 hr { border: 0; height: 1px; background: linear-gradient(90deg, transparent, #d8b25a99, transparent); margin: 32px 0; }
@@ -252,7 +256,12 @@ article small code { background: none; padding: 0; color: inherit; font-size: 11
 .toc-in { border-left: 1px solid #c9a24f80; padding: 2px 0 2px 16px; max-width: 500px; }
 .toc-in > ol:has(> li:nth-child(6)) { columns: 2; column-gap: 40px; }
 .toc-in > ol > li { break-inside: avoid; }
-.toc h2 { font-size: 13px; letter-spacing: .08em; color: var(--accent); margin: 0 0 6px; padding: 0; background: none; }
+.toc h2 { display: inline; font-size: 13px; letter-spacing: .08em; color: var(--accent); margin: 0; padding: 0; background: none; }
+.toc summary { display: flex; align-items: center; gap: 8px; width: fit-content; margin: 0 0 6px; cursor: pointer; list-style: none; }
+.toc summary::-webkit-details-marker { display: none; }
+.toc summary::after { content: ""; width: 6px; height: 6px; border: solid var(--accent); border-width: 0 1.5px 1.5px 0; transform: rotate(45deg) translate(-2px, -2px); }
+.toc details:not([open]) summary::after { transform: rotate(-45deg); }
+.toc details:not([open]) summary { margin: 0; }
 .toc ol { list-style: none; margin: 0; padding: 0; }
 .toc li { margin: 0; }
 .toc ol ol { padding-left: 14px; font-size: 13.5px; }
@@ -313,7 +322,10 @@ article small code { background: none; padding: 0; color: inherit; font-size: 11
 .wikitable { width: max-content; min-width: 100%; border-collapse: collapse; font-size: 14.5px; line-height: 1.45; font-variant-numeric: tabular-nums; }
 /* Cap prose cells so max-content tables still wrap long text (changes, descriptions, biome lists). */
 .wikitable td { max-width: 28em; }
-.wikitable th, .wikitable td { padding: 9px 12px; vertical-align: middle; text-align: left; border-bottom: 1px solid var(--line-2); }
+.wikitable th, .wikitable td { padding: 9px 12px; vertical-align: top; text-align: left; border-bottom: 1px solid var(--line-2); }
+/* site.js marks columns whose every value is a number; they align right so magnitudes line up. */
+.wikitable .num { text-align: right; }
+.wikitable th.num .sort { flex-direction: row-reverse; }
 .wikitable tbody tr:last-child td { border-bottom: 0; }
 .wikitable th {
   background: linear-gradient(180deg, #1c223c, #12172b); color: var(--gold); font: 700 13.5px/1.4 var(--display); letter-spacing: .03em; white-space: nowrap;
@@ -321,15 +333,20 @@ article small code { background: none; padding: 0; color: inherit; font-size: 11
 }
 .wikitable tbody tr:hover td { background: #c9a24f12; }
 .wikitable td:first-child { color: #fff8e6; }
+/* The first column (the row's name) stays in view while a wide table scrolls sideways. */
+.wikitable :is(td, th):first-child { position: sticky; left: 0; z-index: 1; }
+.wikitable td:first-child { background: #0a0c18; box-shadow: inset -1px 0 var(--line-2); }
+.wikitable tbody tr:hover td:first-child { background: linear-gradient(#c9a24f12, #c9a24f12), #0a0c18; }
 /* Key/value tables (no header row): label column reads as a label. */
 .wikitable:not(:has(thead)) td:first-child { color: var(--muted); white-space: nowrap; }
-.wikitable th[data-sort] { cursor: pointer; user-select: none; }
-.wikitable th[data-sort]::after { content: "↕"; margin-left: 5px; font-size: .9em; opacity: .35; transition: opacity .15s; }
-.wikitable th[data-sort]:hover { color: var(--title); }
-.wikitable th[data-sort]:hover::after { opacity: .8; }
-.wikitable th[aria-sort="ascending"], .wikitable th[aria-sort="descending"] { color: var(--title); }
-.wikitable th[aria-sort="ascending"]::after { content: "↑"; opacity: 1; }
-.wikitable th[aria-sort="descending"]::after { content: "↓"; opacity: 1; }
+/* Sortable headers are buttons (site.js); the arrow shows the order, and aria-sort announces it. */
+.wikitable .sort { display: inline-flex; align-items: baseline; gap: 6px; width: 100%; padding: 0; font: inherit; letter-spacing: inherit; color: inherit; text-align: inherit; background: none; border: 0; cursor: pointer; }
+.wikitable .sort::after { content: "↕"; font-size: .9em; opacity: .6; }
+.wikitable .sort:hover { color: var(--title); }
+.wikitable .sort:hover::after { opacity: 1; }
+.wikitable th[aria-sort="ascending"], .wikitable th[aria-sort="descending"] { color: var(--title); box-shadow: inset 0 -2px var(--gold); }
+.wikitable th[aria-sort="ascending"] .sort::after { content: "↑"; opacity: 1; }
+.wikitable th[aria-sort="descending"] .sort::after { content: "↓"; opacity: 1; }
 .wikitable code, .infobox code, .sources code, .foot code { font-size: 12.5px; background: none; padding: 0; color: var(--code-text); }
 .ico { image-rendering: pixelated; vertical-align: middle; margin-right: 8px; width: auto; height: 24px; }
 /* List rows that start with an icon keep their text aligned whatever the sprite's width. */
@@ -360,6 +377,29 @@ td .ico { height: 26px; }
 .raw[open] summary::before { transform: rotate(90deg); }
 .raw summary:hover { border-color: var(--gold); color: var(--title); }
 
+/* ---------- Guides and Quick tips ---------- */
+h2 .when { margin-left: 10px; padding: 3px 8px; vertical-align: middle; font: 700 13px/1 var(--display); letter-spacing: .04em; color: var(--text-2); border: 1px solid #c9a24f80; background: #0a0c18b3; }
+details.more { margin: -6px 0 16px; }
+details.more > summary, details.topic > summary { cursor: pointer; list-style: none; }
+details.more > summary::-webkit-details-marker, details.topic > summary::-webkit-details-marker { display: none; }
+details.more > summary { width: fit-content; font-size: 14px; color: var(--link); text-decoration: underline; text-decoration-color: #f2d07a73; text-underline-offset: 3px; }
+details.more > summary::before, details.topic > summary::before { content: "▸"; display: inline-block; margin-right: 8px; color: var(--muted); transition: transform .15s; }
+details[open].more > summary::before, details[open].topic > summary::before { transform: rotate(90deg); }
+details.more > ul { margin-top: 8px; }
+details.topic { margin: 0 0 10px; border: 1px solid var(--line); background: var(--surface); max-width: 68ch; }
+details.topic > summary { display: flex; align-items: center; gap: 4px; padding: 12px 16px; }
+details.topic > summary:hover { background: #c9a24f12; }
+details.topic > summary h2 { display: inline; margin: 0; padding: 0; font-size: 21px; background: none; }
+details.topic > summary small { margin-left: auto; color: var(--muted); font-size: 13px; }
+details.topic[open] > summary { border-bottom: 1px solid var(--line-2); }
+details.topic > :not(summary) { margin-left: 16px; margin-right: 16px; }
+details.topic > ul { margin-top: 14px; }
+.nf-search { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; max-width: 560px; margin: 0 0 32px; }
+.nf-search label { flex-basis: 100%; font: 700 13px/1.4 var(--display); letter-spacing: .08em; color: var(--accent); }
+.nf-search input { flex: 1; min-width: 0; height: 40px; padding: 0 12px; font: inherit; color: var(--text); background: #0a0c18b3; border: 1px solid #c9a24f80; border-radius: 2px; }
+.nf-search input:focus { outline: none; border-color: var(--gold); box-shadow: 0 0 0 3px var(--accent-soft); }
+.nf-search button { height: 40px; padding: 0 18px; font: 700 15px/1 var(--display); color: #1a1426; background: var(--primary); border: 0; border-radius: 2px; box-shadow: inset 0 0 0 1px #fff3cc80, 0 0 0 1px #7a5a24; cursor: pointer; }
+
 /* ---------- Footnotes ---------- */
 sup.fn { font-size: 11px; line-height: 0; margin-left: 1px; }
 sup.fn a { color: var(--muted); font-variant-numeric: tabular-nums; }
@@ -367,7 +407,7 @@ sup.fn a:hover { color: var(--link); text-decoration: none; }
 .refs-h { font: 700 13px/1.4 var(--display); letter-spacing: .08em; color: var(--accent); margin: 24px 0 8px; }
 .refs { font-size: 12.5px; line-height: 1.5; padding-left: 28px; }
 .refs li { margin: 0 0 6px; overflow-wrap: anywhere; }
-.refs li:target { background: var(--accent-soft); border-radius: 4px; }
+.refs li:target { background: var(--accent-soft); }
 .refs code, .refs code.nw { white-space: normal; background: none; padding: 0; font-size: 11.5px; color: var(--muted); }
 .ref-file { color: var(--text-2); font-weight: 550; margin-right: 4px; }
 :target { scroll-margin-top: calc(var(--header-h) + 16px); }
@@ -413,16 +453,27 @@ blockquote p { margin: 6px 0; }
   .play { margin-left: auto; }
 }
 @media (max-width: 860px) {
-  :root { --header-h: auto; }
-  /* relative, not static: keeps z-index so search suggestions paint above the article. */
-  .top { position: relative; height: auto; flex-wrap: wrap; gap: 10px 16px; padding: 12px 16px; }
-  .brand { width: auto; }
-  .play { margin-left: auto; padding: 8px 12px; font-size: 13.5px; }
-  .brand { font-size: 19px; }
-  .search { order: 3; flex-basis: 100%; max-width: none; }
+  /* One compact sticky row: brand and search stay in reach on long pages. Play moves into the Menu. */
+  :root { --header-h: 56px; }
+  .top { gap: 12px; padding: 0 12px; }
+  .brand { width: auto; gap: 8px; font-size: 17px; }
+  .brand img { width: 28px; height: 28px; }
+  .brand small { font-size: 10px; }
+  .top > .play { display: none; }
+  .search { max-width: none; }
+  .search input { padding-right: 10px; }
   .search-key { display: none; }
+  .menu-play { display: block; width: fit-content; margin: 12px 0 0; }
+  .side-menu[open] { max-height: calc(100vh - var(--header-h) - 24px); overflow-y: auto; overscroll-behavior: contain; }
+  .side-menu[open] > summary { position: sticky; top: 0; z-index: 1; background: #0a0c18; }
+  .cards { grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); }
+  .ib-img { padding: 12px; }
+  .ib-img img { max-height: 72px; }
   /* A wrapped prose cell must fit inside the table's visible width, or no whole line is ever visible. */
   .wikitable td { max-width: min(28em, calc(100vw - 4rem)); }
+  /* The pinned name column may wrap, so the first numbers still show beside it. */
+  .wikitable td:first-child, .wikitable td:first-child:has(> .ico:first-child) { max-width: 38vw; white-space: normal; }
+  .wikitable td:first-child .ico { display: block; margin-bottom: 4px; }
   .tabs { padding: 8px 16px; }
   .tabs a { padding: 8px 12px; font-size: 13px; }
   .layout { display: block; }
@@ -446,7 +497,9 @@ blockquote p { margin: 6px 0; }
   .infobox, .infobox.fits { position: static; width: auto; margin: 0 0 28px; }
   .toc-in > ol:has(> li:nth-child(6)) { columns: auto; }
   .anchor { display: none; }
+  h2 .when { font-size: 12px; }
   .toc-in { max-width: none; }
 }
+@media (forced-colors: active) { h1, .brand b { -webkit-text-fill-color: currentColor; background: none; } }
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
 @media print { .top, .side, .foot, .toc { display: none; } .layout { display: block; } main { padding: 0; } pre { max-height: none; } }

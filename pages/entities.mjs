@@ -41,7 +41,7 @@ function withLocalNames(kind, pages) {
     const s = localNames(kind, p.path.split('/').pop());
     const at = p.body.indexOf('## Data\n');
     p.body = at < 0 ? `${p.body.trimEnd()}\n\n${s}` : p.body.slice(0, at) + s + p.body.slice(at);
-    if (s) p.sources.push(`Names in other languages from the ${L10N.languages.length - 1} \`i18n-<code>-content\` files of \`${L10N.build.main}\` (\`data/i18n-names.json\`)`);
+    if (s) p.sources.push(`Names in other languages from the game's ${L10N.languages.length - 1} per-language content files (\`i18n-*-content\`) of \`${L10N.build.main}\` (\`data/i18n-names.json\`)`);
   }
   return pages;
 }
@@ -213,12 +213,13 @@ export function weaponPages() {
 function weaponRow(w) {
   const trigger = triggerText(w);
   return [
+    // The numbers come right after the name, so a phone shows them without scrolling sideways.
     `${icon('weapon', w.id)}${link('weapon', w.id)}`,
-    trigger === 'Automatic (cooldown)' ? 'Auto' : trigger === 'When Tibo dashes' ? 'Dash' : trigger,
-    `<code style="white-space:nowrap">${attackKind(w)}</code>`,
     fmt(w.base.damage),
     fmt(w.base.cooldown),
     fmt(w.base.amount),
+    trigger === 'Automatic (cooldown)' ? 'Auto' : trigger === 'When Tibo dashes' ? 'Dash' : trigger,
+    `<code style="white-space:nowrap">${attackKind(w)}</code>`,
     w.behavior.onHit?.kind ?? '',
   ];
 }
@@ -228,7 +229,7 @@ export function weaponIndex() {
   let body = `tibo.dog has **${R.allWeapons.length} weapons**: ${base.length} base weapons, ${R.evolutions.length} evolutions and ${R.unions.length} unions. Weapons fire on their own; Tibo holds up to ${GAME.player.weaponSlots} at once. Base weapons level up to level 8 from level-up cards; evolutions and unions replace them (see [Evolutions](/evolutions)).\n\n`;
   body += `${RAW_NOTE}\n\n`;
   body += `## Movement and pickup triggers\n\nNot every weapon fires on a cooldown. **Gem Sling / Gem Catapult** fire on XP gem pickups; **Tot Stampede / Tot Cavalry** spawn tots every 40 units walked; **Spud Fence / Spark Corral** plant posts every 60 units. Standing still stops those movement triggers. **Tater Twirl / Tater Twister** slow to a crawl while still. **Tailgate Fries / Tailgate Party** keep a one-fry drip while still. **Hot Streak / Wildfire Roast** gain up to five flames while moving, lose two per hit and lose all on stopping. **Mash Snowball / Mash Avalanche** grow while moving and release on a hard turn, a stop, or after remaining full. **Seed Potato / Potato Patch** plant automatically; walk over a plant to harvest it. **Locked Gatling / Tater Minigun** hold a firing angle through each 2 s burst.\n\nThese summaries follow the current simulation, not just the raw cooldown column. <small>[sim-BkfBhQfw.js: \`var Oh={every:40,live:12}\`]</small> <small>[sim-BkfBhQfw.js: \`let a=Math.min(n.perTick,i.queue);if(a<=0)return!1;\`]</small>\n\n`;
-  const head = ['Weapon', 'Trigger', 'Attack', 'Damage', 'Cooldown (s)', 'Amount', 'On hit'];
+  const head = ['Weapon', 'Damage', 'Cooldown (s)', 'Amount', 'Trigger', 'Attack', 'On hit'];
   body += `## Base weapons\n\n` + table([...head, 'Evolves into'], base.map((w) => [...weaponRow(w), recipes.evolutionOf(w.id).map((e) => ilink('weapon', e.id)).join(', ')])) + '\n';
   body += `## Evolutions\n\n` + table([...head, 'From'], R.evolutions.map((w) => [...weaponRow(w), `${ilink('weapon', w.from)} + ${ilink(kindOf(w.catalyst), w.catalyst)}`])) + '\n';
   body += `## Unions\n\n` + table([...head, 'From'], R.unions.map((w) => [...weaponRow(w), w.from.map((x) => ilink('weapon', x)).join(' + ')])) + '\n';
@@ -540,6 +541,9 @@ const ENEMY_BEH = {
   exploder: 'Explodes',
 };
 
+// Endgame enemies whose phase rules replace catalog stats (their catalog HP of 1 is not real).
+const endgameFamily = (e) => e.behavior.kind === 'bigUpdate' ? 'Hunt' : e.id.startsWith('armoured-') || e.id === 'fuse-totem' ? 'Shell' : ['barnacle-troll', 'basilisk', 'coral-golem', 'dune-manticore', 'jelly-wraith', 'mangrove-treant', 'queen-herald', 'queen-seer', 'queen-warden', 'sea-serpent', 'siren-harpy'].includes(e.id) ? 'Court' : '';
+
 export function enemyPages() {
   const pages = [];
   const summons = Object.fromEntries(R.bosses.filter((b) => b.attack?.minion).map((b) => [b.attack.minion, b.id]));
@@ -550,7 +554,7 @@ export function enemyPages() {
     const splitFrom = R.enemies.filter((x) => x.behavior.child === e.id);
     const rows = [
       ['Behaviour', `${ENEMY_BEH[e.behavior.kind] ?? ''} (\`${e.behavior.kind}\`)`],
-      ['Base HP', fmt(e.hp)],
+      ['Base HP', endgameFamily(e) ? `Set by [${endgameFamily(e)} phase](/endgame#${endgameFamily(e).toLowerCase()}) rules (catalog: ${fmt(e.hp)})` : fmt(e.hp)],
       ['Base damage', fmt(e.damage)],
       ['Speed', fmt(e.speed)],
       ['XP', fmt(e.xp)],
@@ -558,7 +562,7 @@ export function enemyPages() {
       ['Radius', fmt(e.radius)],
       ['Mass', fmt(e.mass)],
     ];
-    const family = e.behavior.kind === 'bigUpdate' ? 'Hunt' : e.id.startsWith('armoured-') || e.id === 'fuse-totem' ? 'Shell' : ['barnacle-troll', 'basilisk', 'coral-golem', 'dune-manticore', 'jelly-wraith', 'mangrove-treant', 'queen-herald', 'queen-seer', 'queen-warden', 'sea-serpent', 'siren-harpy'].includes(e.id) ? 'Court' : '';
+    const family = endgameFamily(e);
     let body = `## Stats\n\nBase values before [time scaling](/enemy-scaling) and [difficulty](/modes).\n\n` + table(['Stat', 'Value'], rows.map(([k, v]) => [k, v])) + '\n';
     if (family) body += `This is a **${family} endgame enemy**. Its phase spawn rules can replace catalog HP, speed and other values; a catalog HP of 1 is not its HP in play. See [Endgame phases](/endgame#${family.toLowerCase()}) for protection and encounter rules.\n\n`;
     if (Object.keys(e.behavior).length > 1) body += `## Behaviour parameters\n\n` + table(['Parameter', 'Value'], flatRows(e.behavior)) + '\n';
@@ -590,23 +594,24 @@ export function enemyPages() {
 }
 
 export function enemyIndex() {
-  let body = `There are ${R.enemies.length} regular enemies (pests). Values are base stats before time scaling and difficulty.\n\n`;
+  let body = `There are ${R.enemies.length} regular enemies (pests). Values are base stats before time scaling and difficulty. Endgame enemies show no HP: their [phase rules](/endgame) set it, and the catalog value of 1 is not their HP in play.\n\n`;
   body += table(
-    ['Enemy', 'Behaviour', 'HP', 'Damage', 'Speed', 'XP', 'Biomes'],
+    ['Enemy', 'HP', 'Damage', 'Speed', 'XP', 'Behaviour', 'Biomes'],
     R.enemies.map((e) => [
       `${icon('enemy', e.id)}${link('enemy', e.id)}`,
-      `\`${e.behavior.kind}\``,
-      fmt(e.hp),
+      endgameFamily(e) ? '— <small>endgame</small>' : fmt(e.hp),
       fmt(e.damage),
       fmt(e.speed),
       fmt(e.xp),
-      enemyBiomes(e.id).map((b) => `${link('biome', b.biome)} (T${b.tier})`).join(', '),
+      `\`${e.behavior.kind}\``,
+      endgameFamily(e) ? `[${endgameFamily(e)} phase](/endgame#${endgameFamily(e).toLowerCase()})` : enemyBiomes(e.id).map((b) => `${link('biome', b.biome)} (T${b.tier})`).join(', '),
     ]),
   );
   return { path: '/enemies', title: 'Enemies', description: `All ${R.enemies.length} enemies in tibo.dog with HP, damage, speed, XP and biomes.`, body, sources: [SRC_REG, SRC_TEXT], search: 'enemies pests list' };
 }
 
-const BOSS_MIN = { amusing: 2, 'beetle-queen': 3, 'the-masher': 4, 'late-blight': 6, 'sir-strawman': 7, 'fryer-king': 8, 'great-wireworm': 10, 'the-mandoline': 12, 'deep-freezer': 14, 'grater-golem': 16, 'compost-titan': 17, 'ketchup-kraken': 18, harvester: 20 };
+export const BOSS_MIN = { amusing: 2, 'beetle-queen': 3, 'the-masher': 4, 'late-blight': 6, 'sir-strawman': 7, 'fryer-king': 8, 'great-wireworm': 10, 'the-mandoline': 12, 'deep-freezer': 14, 'grater-golem': 16, 'compost-titan': 17, 'ketchup-kraken': 18, harvester: 20 };
+const SCHEDULED = Object.keys(BOSS_MIN).length;
 export function bossPages() {
   const pages = [];
   R.bosses.forEach((b) => {
@@ -616,7 +621,8 @@ export function bossPages() {
     const order = R.bossOrder.findIndex((x) => x.id === b.id) + 1;
     const rows = [
       ['Title', title],
-      ['Order', `${order} of ${R.bossOrder.length}`],
+      // The first 13 registry entries are the run's timed bosses; the rest are endgame forms and heads.
+      ['Order', BOSS_MIN[b.id] ? `${order} of ${SCHEDULED} timed bosses` : 'Endgame encounter'],
       ['Arrives', BOSS_MIN[b.id] ? `${BOSS_MIN[b.id]}:00 ([schedule](/bosses#wave-schedule))` : ''],
       ['Base HP', fmt(b.hp)],
       ['Contact damage', fmt(b.damage)],
@@ -675,7 +681,7 @@ export function bossPages() {
       path: path.boss(b.id),
       title: n,
       crumbs: [['Bosses', '/bosses']],
-      description: `${n}, ${title}, is boss ${order} of ${R.bossOrder.length} in tibo.dog. ${desc}`,
+      description: `${n}, ${title}, is ${BOSS_MIN[b.id] ? `timed boss ${order} of ${SCHEDULED}` : 'an endgame boss encounter'} in tibo.dog. ${desc}`,
       lead: `**${n}**, *${title}*, is a boss in tibo.dog. In-game description: “${desc}”`,
       infobox: { title: n, icon: `boss/${b.id}`, iconSize: 96, caption: title, rows },
       body,

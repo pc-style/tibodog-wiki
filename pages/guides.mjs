@@ -53,6 +53,8 @@ export function firstSentence(tip) {
 }
 
 const iconOf = (p) => (p.infobox?.icon ? `{{icon:${p.infobox.icon}}}` : '');
+// Arrival time as minutes; pages without one keep their order after the timed ones (stable sort).
+const minutes = (p) => { const m = /^(\d+):(\d+)/.exec(arrives(p) ?? ''); return m ? +m[1] + m[2] / 60 : 1e9; };
 const arrives = (p) => p.infobox?.rows?.find((r) => r[0] === 'Arrives')?.[1]?.replace(/\s*\(\[[^\]]*\]\([^)]*\)\)/, '');
 
 export function guidePages(entityPages) {
@@ -62,7 +64,9 @@ export function guidePages(entityPages) {
     entries: entityPages
       .filter((p) => p.path.startsWith(`/${t.id}/`))
       .map((p) => ({ page: p, tips: tipsOf(p.path) }))
-      .filter((e) => e.tips.length),
+      .filter((e) => e.tips.length)
+      // Bosses follow the run's schedule (the topic description promises arrival order); the rest stay alphabetical.
+      .sort((a, b) => minutes(a.page) - minutes(b.page)),
   }));
   const cards = (list) => `<div class="cards">\n${list.map(([u, title, sub, ic]) => `<a href="${u}">${ic ? `{{icon:${ic}}}` : ''}<strong>${title}</strong><span>${sub}</span></a>`).join('\n')}\n</div>\n`;
 
@@ -73,7 +77,7 @@ export function guidePages(entityPages) {
     title: 'Guides',
     description: 'Practical tibo.dog guides: how to beat each boss, survive each biome and use every weapon, item, passive and dog, built from the tips on this wiki.',
     lead: 'Practical advice for playing tibo.dog, gathered by topic from the tips on every wiki page. Each guide links back to the full page with stats and sources. For the short version, see [Quick tips](/quick-tips).',
-    body: `## Topic guides\n\n${cards(topics.map((t) => [t.path, t.title, `${t.desc} ${t.entries.length} pages.`, t.icon]))}\n## Start with the basics\n\n${cards(BASICS.map(([u, t, s]) => [u, t, s]))}`,
+    body: `## Topic guides\n\n${cards(topics.map((t) => [t.path, t.title, `${t.desc} ${t.entries.length}\u00a0${t.short.toLowerCase()}.`, t.icon]))}\n## Start with the basics\n\n${cards(BASICS.map(([u, t, s]) => [u, t, s]))}`,
     sources: [SOURCE],
     search: 'guides guide how to play walkthrough advice',
   };
@@ -84,11 +88,13 @@ export function guidePages(entityPages) {
     crumbs: [['Guides', '/guides']],
     title: t.title,
     description: `${t.desc} Tips for ${t.entries.length} ${t.short.toLowerCase()} in tibo.dog, each linked to its full wiki page.`,
-    lead: `${t.desc} Every tip below is the same text as on that ${t.one}'s page, which also has the numbers and sources.`,
+    lead: `${t.desc} Each entry starts with its key tip; open the rest under it. The same tips, with numbers and sources, are on each ${t.one}'s page.`,
     body: t.entries
       .map(({ page, tips }) => {
-        const when = arrives(page) ? ` <small>arrives ${arrives(page)}</small>` : '';
-        return `## ${iconOf(page)}[${page.title}](${page.path})${when}\n\n${tips.map((x) => `- ${x}`).join('\n')}\n`;
+        const when = arrives(page) ? ` <small class="when">${arrives(page)}</small>` : '';
+        // The first tip leads; the rest fold away so a long guide stays scannable.
+        const more = tips.length > 1 ? `\n<details class="more"><summary>${tips.length - 1} more tip${tips.length > 2 ? 's' : ''}</summary>\n\n${tips.slice(1).map((x) => `- ${x}`).join('\n')}\n\n</details>\n` : '';
+        return `## ${iconOf(page)}[${page.title}](${page.path})${when}\n\n${tips[0]}\n${more}`;
       })
       .join('\n'),
     sources: [SOURCE],
@@ -101,9 +107,11 @@ export function guidePages(entityPages) {
     crumbs: [],
     title: 'Quick tips',
     description: 'One-line tibo.dog tips for every boss, biome, enemy, event, weapon, passive, item and dog, each linked to its wiki page.',
-    lead: 'The short version: the first tip from each wiki page, one line each. Follow a link for the full advice and the numbers behind it, or read the [Guides](/guides).',
+    lead: 'The short version: the first tip from each wiki page, grouped by topic. Follow a link for the full advice and the numbers behind it, or read the [Guides](/guides).',
+    // One folded section per topic; a link to #topic unfolds it (site.js). The sidebar lists the topics, so no TOC.
+    toc: false,
     body: topics
-      .map((t) => `## ${t.short}\n\n${t.entries.map(({ page, tips }) => `- ${iconOf(page)}**[${page.title}](${page.path})**: ${firstSentence(tips[0])}`).join('\n')}\n\nMore in the [${t.title.toLowerCase()}](${t.path}).\n`)
+      .map((t) => `<details class="topic"><summary><h2 id="${t.id}">${t.short}</h2><small>${t.entries.length} tips</small></summary>\n\n${t.entries.map(({ page, tips }) => `- ${iconOf(page)}**[${page.title}](${page.path})**: ${firstSentence(tips[0])}`).join('\n')}\n\nMore in the [${t.title.toLowerCase()}](${t.path}).\n\n</details>\n`)
       .join('\n'),
     sources: [SOURCE],
     search: 'quick tips short advice cheat sheet',

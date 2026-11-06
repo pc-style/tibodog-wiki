@@ -14,3 +14,13 @@ test('quick tips keep the whole first sentence of a tip', () => {
   // No sentence break: the whole tip.
   assert.equal(firstSentence('one line only'), 'one line only');
 });
+
+test('the boss guide lists bosses in the order they arrive', async () => {
+  // The guide promises arrival order; alphabetical order put 17:00 before 14:00.
+  const { guidePages } = await import('./guides.mjs');
+  const { bossPages } = await import('./entities.mjs');
+  const guide = guidePages(bossPages()).find((p) => p.path === '/guides/bosses');
+  const times = [...guide.body.matchAll(/<small class="when">(\d+):(\d+)<\/small>/g)].map((m) => +m[1] * 60 + +m[2]);
+  assert.equal(times.length, 13);
+  assert.deepEqual(times, [...times].sort((a, b) => a - b));
+});

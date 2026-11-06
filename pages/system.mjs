@@ -1,6 +1,6 @@
 // Guide, mechanics and meta pages.
 import { R, GAME, STORY, FORMULA, DIFF, BUILD, BUILT_AT, utc, t, name, link, ilink, icon, fmt, pct, RARITY, slug, statLabel } from '../lib/data.mjs';
-import { table, flatRows, json, SRC_REG, SRC_TEXT } from './entities.mjs';
+import { table, flatRows, json, SRC_REG, SRC_TEXT, BOSS_MIN } from './entities.mjs';
 import { SITE } from '../lib/render.mjs';
 import { MECH } from './mechanics.mjs';
 import { readFileSync } from 'node:fs';
@@ -29,7 +29,7 @@ export function systemPages(entityPages) {
       card('/items', 'Items', `${R.items.length} items, ${R.evolvedItems.length} evolved`, 'item/kaboom-spud'),
       card('/dogs', 'Dogs', `${R.dogs.length} dogs for Tibo's pack`, 'dog/corgi'),
       card('/enemies', 'Enemies', `${R.enemies.length} pests`, 'enemy/aphid'),
-      card('/bosses', 'Bosses', `${R.bosses.length} bosses in order`, 'boss/harvester'),
+      card('/bosses', 'Bosses', `${Object.keys(BOSS_MIN).length} timed bosses, plus endgame forms`, 'boss/harvester'),
       card('/biomes', 'Biomes', `${R.biomes.length} biomes and hazards`, 'enemy/sand-crab'),
       card('/points-of-interest', 'Points of interest', `${R.pois.length} shrines, shops and machines`, 'item/coupon-book'),
       card('/modes', 'Modes', 'Story, Easy, Normal, Hard, Nightmare', 'item/cursed-crown'),
@@ -106,7 +106,7 @@ export function systemPages(entityPages) {
     path: '/search',
     title: 'Search',
     description: 'Search tibodog.wiki, the unofficial tibo.dog wiki.',
-    body: `<h2 id="search-heading">Search</h2>\n<ol id="search-page-results"></ol>\n<noscript>Search needs JavaScript. Every page is listed on [All pages](/all-pages).</noscript>\n\nWithout JavaScript, use [All pages](/all-pages) or the [sitemap](/sitemap.xml).\n`,
+    body: `<h2 id="search-heading">Search</h2>\n<ol id="search-page-results"></ol>\n<noscript>Search needs JavaScript. Every page is listed on <a href="/all-pages">All pages</a>.</noscript>\n\nWithout JavaScript, use [All pages](/all-pages) or the [sitemap](/sitemap.xml).\n`,
     sources: [],
   });
 

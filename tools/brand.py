@@ -65,29 +65,40 @@ def mark32():
     return g
 
 
+def tile(size):
+    # Night-navy tile with a gold rim and clipped corners, the frame every icon size shares.
+    g = [['.'] * size for _ in range(size)]
+    for y in range(size):
+        for x in range(size):
+            if min(x, size - 1 - x) + min(y, size - 1 - y) >= 1:
+                g[y][x] = 'G' if x in (0, size - 1) or y in (0, size - 1) else 'N'
+    return g
+
+
 def tile16():
-    # Small sizes: the paw alone on a gold-rimmed night tile, readable in a 16 px browser tab.
-    g = [['.'] * 16 for _ in range(16)]
-    for y in range(16):
-        for x in range(16):
-            corner = min(x, 15 - x) + min(y, 15 - y) < 1
-            edge = x in (0, 15) or y in (0, 15)
-            if not corner:
-                g[y][x] = 'G' if edge else 'N'
-    # Separate toe dots and pad so the 16 px paw does not merge into one shape.
+    # 16 px: the same open book as the full mark, simplified to read in a browser tab.
+    # Cream pages, text lines and a gold cover on the tile; the paw needs 32 px to read, so it starts there.
+    g = tile(16)
     put(g, 2, 3, [
-        '...OO..OO...',
-        '...OO..OO...',
-        'OO........OO',
-        'OO........OO',
-        '............',
-        '....OOOO....',
-        '..OOOOOOOO..',
-        '.OOOOOOOOOO.',
-        '.OOOOOOOOOO.',
-        '..OOO..OOO..',
+        'CCCC....CCCC',
+        'CCCCCSSCCCCC',
+        'COOOCSSCSSSC',
+        'CCCCCSSCCCCC',
+        'CSSSCSSCSSSC',
+        'CCCCCSSCCCCC',
+        'CSSCCSSCSSCC',
+        'SSSSSSSSSSSS',
+        'OOOOOODOOOOO',
     ])
     return g
+
+
+def tile_mark(scale):
+    # 32/64 px icon frames and the touch icon: the full mark on the same tile as the 16 px icon.
+    im = to_image(tile(32), scale)
+    m = to_image(mark32(), scale)
+    im.alpha_composite(m)
+    return im
 
 
 def to_image(grid, scale=1):
@@ -203,10 +214,11 @@ if __name__ == '__main__':
     mark = to_image(big)
     with open(os.path.join(PUB, 'logo.svg'), 'w') as f:
         f.write(to_svg(big))
-    to_image(big, 2).save(os.path.join(PUB, 'favicon.png'), optimize=True)
-    # favicon.ico with PNG frames: the paw tile at 16 px, the full mark at 32 and 64 px.
+    tile_mark(2).save(os.path.join(PUB, 'favicon.png'), optimize=True)
+    # favicon.ico with PNG frames, all on the same gilded tile: the simplified book at 16 px,
+    # the full book-and-paw mark at 32 and 64 px.
     frames = []
-    for im in [to_image(tile16()), mark, to_image(big, 2)]:
+    for im in [to_image(tile16()), tile_mark(1), tile_mark(2)]:
         buf = io.BytesIO()
         im.save(buf, 'PNG', optimize=True)
         frames.append((im.width, buf.getvalue()))

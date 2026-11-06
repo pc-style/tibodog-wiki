@@ -82,9 +82,11 @@ const localKeywords = (path) => {
   if (path === '/controls') return `language languages translation lang ${L10N_LANGS.map((l) => `${l.endonym} ${l.englishName} ${l.tag}`).join(' ')}`;
   return '';
 };
+// Search snippets end at a word boundary with an ellipsis, never mid-word.
+const clip = (t, n) => (t.length <= n ? t : `${t.slice(0, t.lastIndexOf(' ', n)).replace(/[,;:]$/, '')}…`);
 const index = pages
   .filter((p) => p.path !== '/search')
-  .map((p) => ({ t: p.title, u: p.path, d: p.description.slice(0, 160), k: `${p.search ?? ''} ${localKeywords(p.path)}`.trim(), s: p.crumbs?.[0]?.[0] ?? 'Guide', i: p.infobox?.icon ?? '' }));
+  .map((p) => ({ t: p.title, u: p.path, d: clip(p.description, 160), k: `${p.search ?? ''} ${localKeywords(p.path)}`.trim(), s: p.crumbs?.[0]?.[0] ?? 'Guide', i: p.infobox?.icon ?? '' }));
 write('search-index.json', JSON.stringify(index));
 
 // Sitemap.
@@ -176,7 +178,9 @@ const nf = {
   path: '/404',
   title: 'Page not found',
   description: 'This page does not exist on tibodog.wiki.',
-  body: `The page you asked for does not exist.\n\n- [Main page](/)\n- [All pages](/all-pages)\n- [Search](/search)\n- Machine-readable index: [/llms.txt](/llms.txt)\n`,
+  lead: 'There is no page at this address. It may have been renamed, or the link may be mistyped.',
+  body: `<form class="nf-search" action="/search" method="get" role="search"><label for="nf-q">Search the wiki</label><input id="nf-q" name="q" type="search" placeholder="Weapon, boss, item…"><button type="submit">Search</button></form>\n\n## Popular pages\n\n<div class="cards">\n${[['/weapons', 'Weapons', 'weapon/spud-cannon'], ['/bosses', 'Bosses', 'boss/harvester'], ['/guides', 'Guides', 'boss/the-masher'], ['/quick-tips', 'Quick tips', ''], ['/all-pages', 'All pages', '']].map(([u, t, i]) => `<a href="${u}">${i ? `{{icon:${i}}}` : ''}<strong>${t}</strong></a>`).join('\n')}\n</div>\n`,
+  bare: true,
 };
 write('404.html', renderHtml(nf, pages));
 write('404.md', renderMd(nf));
