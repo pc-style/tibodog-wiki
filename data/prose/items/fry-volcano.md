@@ -2,7 +2,7 @@
 
 Fry Volcano is the evolved form of [Porcupine Spud](/items/porcupine-spud). When Tibo takes damage, he erupts in a blast around himself and fires 24 piercing fries, at most once every 0.5 seconds. You get it by holding Porcupine Spud with [Starch Plating](/passives/starch-plating) at level 5 and opening a [chest](/chests). It never drops on its own, and once you have it, Porcupine Spud stops dropping (see [Evolutions](/evolutions#item-evolutions)).
 
-Compared with Porcupine Spud, each fry has the same base damage (30, +15% of base per minute) but adds 1.5× Tibo's thorns instead of 1×. The fries also pierce 5 enemies instead of 2 and fly faster and longer. The new part is the blast: it hits every enemy within 56 units of Tibo for twice the damage of one fry. <small>[sim-6hUEdZJv.js: `n.blast!==void 0&&(J(e,c*n.blast.share,t.src,-1,1),tv(e,t,a,o,n.blast.radius*K_(e)))`]</small>
+Compared with Porcupine Spud, each fry has the same base damage (30, +15% of base per minute) but adds 1.5× Tibo's thorns instead of 1×. The fries also pierce 5 enemies instead of 2 and fly faster and longer. The new part is the blast: it hits every enemy within 56 units of Tibo for twice the damage of one fry. <small>[sim-CvuJ2v0s.js: `r.blast!==void 0&&(J(e,l*r.blast.share,n.src,-1,1),$_(e,n,o,s,r.blast.radius*W_(e)))`]</small>
 
 ## How it works
 

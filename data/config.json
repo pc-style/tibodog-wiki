@@ -132,14 +132,6 @@
   "enemy:armoured-siren-harpy",
   "enemy:fuse-totem"
  ],
- "sim.B": {
-  "fps": 14,
-  "dollops": 8,
-  "hop": 10,
-  "reachMin": 0.5,
-  "reachMax": 0.85,
-  "shadow": 2
- },
  "sim.Bn": {
   "melee": 0,
   "shot": 1,
@@ -571,24 +563,6 @@
   "baseCritMult": 2,
   "curseRewardShare": 0.5
  },
- "sim.It": {
-  "white": "#fffaea",
-  "gold": "#ffd04a",
-  "leaf1": "#9fcf6e",
-  "leaf0": "#74ad5c",
-  "orange": "#d3731c",
-  "plum4": "#bd8cc8",
-  "sky": "#9cc4ec",
-  "cyan1": "#8aeaff",
-  "red": "#d03c3c",
-  "teal1": "#1878a8",
-  "plum5": "#e8c4ff",
-  "plum6": "#eed4ff",
-  "amber": "#f2a02c",
-  "ochre4": "#ebc67d",
-  "ochre5": "#f8e3ad",
-  "lemon": "#fff08a"
- },
  "sim.Jn": {
   "easy": 0.5,
   "normal": 0.7,
@@ -738,13 +712,24 @@
   "ochre3": "#d6a556",
   "amber": "#f2a02c"
  },
- "sim.Lt": [
-  "common",
-  "rare",
-  "set",
-  "legendary",
-  "mythic"
- ],
+ "sim.Lt": {
+  "white": "#fffaea",
+  "gold": "#ffd04a",
+  "leaf1": "#9fcf6e",
+  "leaf0": "#74ad5c",
+  "orange": "#d3731c",
+  "plum4": "#bd8cc8",
+  "sky": "#9cc4ec",
+  "cyan1": "#8aeaff",
+  "red": "#d03c3c",
+  "teal1": "#1878a8",
+  "plum5": "#e8c4ff",
+  "plum6": "#eed4ff",
+  "amber": "#f2a02c",
+  "ochre4": "#ebc67d",
+  "ochre5": "#f8e3ad",
+  "lemon": "#fff08a"
+ },
  "sim.Oa": [
   "round",
   "oval",
@@ -753,60 +738,18 @@
   "slab",
   "drop"
  ],
- "sim.Rt": {
-  "tiers": {
-   "common": {
-    "ink": "white"
-   },
-   "rare": {
-    "ink": "gold"
-   },
-   "set": {
-    "ink": "leaf1",
-    "seen": {
-     "protanopia": "sky",
-     "deuteranopia": "cyan1",
-     "tritanopia": "leaf0"
-    }
-   },
-   "legendary": {
-    "ink": "orange"
-   },
-   "mythic": {
-    "ink": "plum5",
-    "seen": {
-     "protanopia": "plum4",
-     "deuteranopia": "plum4",
-     "tritanopia": "cyan1"
-    }
-   }
-  },
-  "ancestral": {
-   "mark": "word"
-  },
-  "primal": {
-   "mark": "label",
-   "ink": "red",
-   "seen": {
-    "deuteranopia": "teal1",
-    "tritanopia": "teal1"
-   },
-   "text": "white"
-  },
-  "greater": {
-   "star": "red",
-   "core": "white"
-  },
-  "fx": {
-   "light": "white",
-   "gold": "gold",
-   "ember": "amber",
-   "molten": "ochre5",
-   "cool": "sky",
-   "bright": "lemon",
-   "dusk": "plum4",
-   "warm": "ochre4"
-  }
+ "sim.Rt": [
+  "common",
+  "rare",
+  "set",
+  "legendary",
+  "mythic"
+ ],
+ "sim.S": {
+  "off": "#eed4ff",
+  "protanopia": "#fffaea",
+  "deuteranopia": "#fffaea",
+  "tritanopia": "#eed4ff"
  },
  "sim.Ti": [
   "dog:beagle",
@@ -825,6 +768,14 @@
   "dog:husky",
   "dog:newfoundland"
  ],
+ "sim.V": {
+  "fps": 14,
+  "dollops": 8,
+  "hop": 10,
+  "reachMin": 0.5,
+  "reachMax": 0.85,
+  "shadow": 2
+ },
  "sim.Vi": [
   "might",
   "area",
@@ -1353,12 +1304,6 @@
     "at": "fall"
    }
   ]
- },
- "sim.bt": {
-  "cap": 0,
-  "heldTick": 1,
-  "chance": 2,
-  "life": 3
  },
  "sim.ca": {
   "shape": "box",
@@ -5994,213 +5939,72 @@
   "bot:magenta",
   "bot:gray"
  ],
- "sim.x": {
-  "off": "#eed4ff",
-  "protanopia": "#fffaea",
-  "deuteranopia": "#fffaea",
-  "tritanopia": "#eed4ff"
- },
  "sim.xa": {
   "fries": "fries-carton",
   "knockedOut": "tibo-down"
  },
- "boot.Ao": {
-  "shake": {
-   "offset": {
-    "x": 0,
-    "y": 0
+ "sim.xt": {
+  "cap": 0,
+  "heldTick": 1,
+  "chance": 2,
+  "life": 3
+ },
+ "sim.zt": {
+  "tiers": {
+   "common": {
+    "ink": "white"
    },
-   "hear": "[fn]",
-   "addTrauma": "[fn]",
-   "hold": "[fn]",
-   "kick": "[fn]",
-   "advance": "[fn]",
-   "stop": "[fn]",
-   "scaleFor": "[fn]"
+   "rare": {
+    "ink": "gold"
+   },
+   "set": {
+    "ink": "leaf1",
+    "seen": {
+     "protanopia": "sky",
+     "deuteranopia": "cyan1",
+     "tritanopia": "leaf0"
+    }
+   },
+   "legendary": {
+    "ink": "orange"
+   },
+   "mythic": {
+    "ink": "plum5",
+    "seen": {
+     "protanopia": "plum4",
+     "deuteranopia": "plum4",
+     "tritanopia": "cyan1"
+    }
+   }
   },
-  "hazard": {
-   "level": 0,
-   "taken": 0,
-   "ticks": 0,
-   "tickAt": null,
-   "marks": 0,
-   "markAmount": 0,
-   "chill": 0,
-   "frame": "[fn]"
+  "ancestral": {
+   "mark": "word"
   },
-  "hitStop": {
-   "hear": "[fn]",
-   "holds": "[fn]",
-   "clear": "[fn]"
+  "primal": {
+   "mark": "label",
+   "ink": "red",
+   "seen": {
+    "deuteranopia": "teal1",
+    "tritanopia": "teal1"
+   },
+   "text": "white"
   },
-  "impact": {
-   "current": null,
-   "holdsCutIn": false,
-   "holdsReveal": false,
-   "hear": "[fn]",
-   "frame": "[fn]",
-   "strike": "[fn]"
+  "greater": {
+   "star": "red",
+   "core": "white"
+  },
+  "fx": {
+   "light": "white",
+   "gold": "gold",
+   "ember": "amber",
+   "molten": "ochre5",
+   "cool": "sky",
+   "bright": "lemon",
+   "dusk": "plum4",
+   "warm": "ochre4"
   }
  },
- "boot.Bi": {
-  "slash": 0.15,
-  "beam": 0.2,
-  "explosion": 0.3,
-  "strike": 0.25,
-  "cone": 0.17,
-  "reset": 0.9,
-  "spawn": 0.25,
-  "death": 0.3,
-  "shockwave": 0.35,
-  "chain": 0.15,
-  "heal": 0.4,
-  "pickup": 0.3,
-  "bark": 0.35,
-  "bite": 0.2,
-  "gpuSteam": 0.9,
-  "shards": 0.4,
-  "discharge": 0.3
- },
- "boot.Do": [
-  "weapons",
-  "lateGame",
-  "runMusic",
-  "endgameHunt",
-  "endgameBurrow",
-  "endgameCourt",
-  "endgameShell",
-  "ladder",
-  "gear",
-  "variety"
- ],
- "boot.Eo": [
-  "weapons",
-  "lateGame",
-  "endgameHunt",
-  "endgameBurrow",
-  "endgameCourt",
-  "endgameShell",
-  "ladder",
-  "gear",
-  "runMusic",
-  "variety"
- ],
- "boot.Fi": [
-  "none",
-  "boss",
-  "elite",
-  "lootRunner",
-  "poteto",
-  "story"
- ],
- "boot.Gi": {
-  "wander": 0,
-  "hop": 1,
-  "cheer": 2,
-  "beam": 3,
-  "swarm": 4
- },
- "boot.Go": {
-  "warmupSeconds": 1,
-  "windowSeconds": 0.5,
-  "targetFps": 60,
-  "slowestDisplayFps": 30,
-  "slowMs": 18.5,
-  "fastMs": 17.2,
-  "windowNoiseMs": 6.6,
-  "ignoreAboveMs": 100,
-  "throttledMs": 250,
-  "longFramesToFall": 3,
-  "slowWindowsToStep": 2,
-  "bandWindowsToStep": 8,
-  "scaleStep": 0.85,
-  "minScale": 0.5,
-  "upWindows": 8,
-  "tierUpWindows": 20,
-  "raiseWorkMs": 1.5,
-  "quietSeconds": 0.5,
-  "failWindows": 8,
-  "maxUpWindows": 480,
-  "settleFastWindows": 4,
-  "settleSeconds": 10
- },
- "boot.Hi": {
-  "slash": 0,
-  "beam": 1,
-  "explosion": 2,
-  "strike": 3,
-  "cone": 4,
-  "reset": 5,
-  "spawn": 6,
-  "death": 7,
-  "shockwave": 8,
-  "chain": 9,
-  "heal": 10,
-  "pickup": 11,
-  "bark": 12,
-  "bite": 13,
-  "gpuSteam": 14,
-  "shards": 15,
-  "discharge": 16
- },
- "boot.Ii": {
-  "none": 0,
-  "boss": 1,
-  "elite": 2,
-  "lootRunner": 3,
-  "poteto": 4,
-  "story": 5
- },
- "boot.Ji": {
-  "straight": 0,
-  "lob": 1,
-  "boomerang": 2,
-  "bounce": 3,
-  "homing": 4,
-  "spiral": 5
- },
- "boot.Ki": {
-  "NoDrops": 1,
-  "BossShare": 2,
-  "Kill": 4,
-  "Reset": 8,
-  "Meteor": 16
- },
- "boot.Li": {
-  "dud": 1,
-  "freeze": 2,
-  "burn": 3,
-  "split": 4,
-  "gold": 5,
-  "blast": 6
- },
- "boot.Os": [
-  {
-   "parts": [
-    "pomeranian",
-    "pomchi"
-   ],
-   "into": "zelda-and-link"
-  }
- ],
- "boot.Pi": {
-  "Elite": 1,
-  "Chest": 2,
-  "NoSplit": 4,
-  "Down": 8,
-  "NoDrops": 16,
-  "Invincible": 32,
-  "Hidden": 64,
-  "CursedExtra": 128
- },
- "boot.Pr": [
-  "story",
-  "easy",
-  "normal",
-  "hard",
-  "nightmare"
- ],
- "boot.Qi": {
+ "boot.$i": {
   "slash": 0,
   "targetShot": 1,
   "facingShot": 2,
@@ -6227,17 +6031,59 @@
   "tether": 23,
   "ring": 24
  },
- "boot.Ri": {
-  "alive": 0,
-  "revived": 1,
-  "knocked": 2,
-  "fading": 3,
-  "dark": 4,
-  "beam": 5,
-  "drop": 6,
-  "dawn": 7
+ "boot.Ao": {
+  "death": {
+   "shown": false,
+   "mounted": false,
+   "frame": "[fn]",
+   "reset": "[fn]",
+   "show": "[fn]",
+   "open": "[fn]",
+   "statsLevels": "[fn]"
+  },
+  "chestBanners": {
+   "ready": false,
+   "frame": "[fn]"
+  },
+  "texts": {
+   "start": "[fn]",
+   "end": "[fn]",
+   "frame": "[fn]",
+   "relabel": "[fn]"
+  }
  },
- "boot.To": [
+ "boot.Bi": [
+  "slash",
+  "beam",
+  "explosion",
+  "strike",
+  "cone",
+  "reset",
+  "spawn",
+  "death",
+  "shockwave",
+  "chain",
+  "heal",
+  "pickup",
+  "bark",
+  "bite",
+  "gpuSteam",
+  "shards",
+  "discharge"
+ ],
+ "boot.Do": [
+  "weapons",
+  "lateGame",
+  "endgameHunt",
+  "endgameBurrow",
+  "endgameCourt",
+  "endgameShell",
+  "ladder",
+  "gear",
+  "runMusic",
+  "variety"
+ ],
+ "boot.Eo": [
   {
    "phase": "weapons",
    "sheet": true,
@@ -6294,7 +6140,24 @@
    "url": "[fn]"
   }
  ],
- "boot.Vs": {
+ "boot.Fi": {
+  "Elite": 1,
+  "Chest": 2,
+  "NoSplit": 4,
+  "Down": 8,
+  "NoDrops": 16,
+  "Invincible": 32,
+  "Hidden": 64,
+  "CursedExtra": 128
+ },
+ "boot.Fr": [
+  "story",
+  "easy",
+  "normal",
+  "hard",
+  "nightmare"
+ ],
+ "boot.Hs": {
   "alexReveal": {
    "playing": false,
    "live": false,
@@ -6321,25 +6184,74 @@
    "relabel": "[fn]"
   }
  },
- "boot.Yi": [
-  "xp",
-  "gold",
-  "heal",
-  "magnet",
-  "chest",
-  "reroll",
-  "skip",
-  "banish",
-  "item",
-  "beacon"
+ "boot.Ii": [
+  "none",
+  "boss",
+  "elite",
+  "lootRunner",
+  "poteto",
+  "story"
  ],
- "boot.Z": {
-  "tier": "low",
-  "scale": 0.5,
-  "adaptive": false,
-  "climb": false
+ "boot.Ji": {
+  "off": 0,
+  "free": 1,
+  "jailed": 2,
+  "strayed": 3,
+  "lassoed": 4,
+  "pulling": 5
  },
- "boot.Zi": {
+ "boot.Ki": {
+  "wander": 0,
+  "hop": 1,
+  "cheer": 2,
+  "beam": 3,
+  "swarm": 4
+ },
+ "boot.Ko": {
+  "warmupSeconds": 1,
+  "windowSeconds": 0.5,
+  "targetFps": 60,
+  "slowestDisplayFps": 30,
+  "slowMs": 18.5,
+  "fastMs": 17.2,
+  "windowNoiseMs": 6.6,
+  "ignoreAboveMs": 100,
+  "throttledMs": 250,
+  "longFramesToFall": 3,
+  "slowWindowsToStep": 2,
+  "bandWindowsToStep": 8,
+  "scaleStep": 0.85,
+  "minScale": 0.5,
+  "upWindows": 8,
+  "tierUpWindows": 20,
+  "raiseWorkMs": 1.5,
+  "quietSeconds": 0.5,
+  "failWindows": 8,
+  "maxUpWindows": 480,
+  "settleFastWindows": 4,
+  "settleSeconds": 10
+ },
+ "boot.Li": {
+  "none": 0,
+  "boss": 1,
+  "elite": 2,
+  "lootRunner": 3,
+  "poteto": 4,
+  "story": 5
+ },
+ "boot.Oo": [
+  "weapons",
+  "lateGame",
+  "runMusic",
+  "endgameHunt",
+  "endgameBurrow",
+  "endgameCourt",
+  "endgameShell",
+  "ladder",
+  "gear",
+  "variety"
+ ],
+ "boot.Qi": {
   "xp": 0,
   "gold": 1,
   "heal": 2,
@@ -6351,7 +6263,513 @@
   "item": 8,
   "beacon": 9
  },
- "boot.ea": {
+ "boot.Ri": {
+  "dud": 1,
+  "freeze": 2,
+  "burn": 3,
+  "split": 4,
+  "gold": 5,
+  "blast": 6
+ },
+ "boot.Ui": {
+  "slash": 0,
+  "beam": 1,
+  "explosion": 2,
+  "strike": 3,
+  "cone": 4,
+  "reset": 5,
+  "spawn": 6,
+  "death": 7,
+  "shockwave": 8,
+  "chain": 9,
+  "heal": 10,
+  "pickup": 11,
+  "bark": 12,
+  "bite": 13,
+  "gpuSteam": 14,
+  "shards": 15,
+  "discharge": 16
+ },
+ "boot.Vi": {
+  "slash": 0.15,
+  "beam": 0.2,
+  "explosion": 0.3,
+  "strike": 0.25,
+  "cone": 0.17,
+  "reset": 0.9,
+  "spawn": 0.25,
+  "death": 0.3,
+  "shockwave": 0.35,
+  "chain": 0.15,
+  "heal": 0.4,
+  "pickup": 0.3,
+  "bark": 0.35,
+  "bite": 0.2,
+  "gpuSteam": 0.9,
+  "shards": 0.4,
+  "discharge": 0.3
+ },
+ "boot.Xi": [
+  "xp",
+  "gold",
+  "heal",
+  "magnet",
+  "chest",
+  "reroll",
+  "skip",
+  "banish",
+  "item",
+  "beacon"
+ ],
+ "boot.Yi": {
+  "straight": 0,
+  "lob": 1,
+  "boomerang": 2,
+  "bounce": 3,
+  "homing": 4,
+  "spiral": 5
+ },
+ "boot.Z": {
+  "tier": "low",
+  "scale": 0.5,
+  "adaptive": false,
+  "climb": false
+ },
+ "boot._o": {
+  "_events": {},
+  "_locale": "",
+  "_messages": {},
+  "_variables": {},
+  "t": "[fn]"
+ },
+ "boot.aa": {
+  "aura": 0,
+  "pool": 1,
+  "mine": 2,
+  "nova": 3,
+  "strike": 4,
+  "telegraph": 5,
+  "hazardPool": 6,
+  "scar": 7
+ },
+ "boot.ds": [
+  "hit",
+  "crit",
+  "kill",
+  "gem",
+  "coin",
+  "hurt",
+  "dodge",
+  "dash",
+  "levelUp",
+  "chest",
+  "chestDrop",
+  "jackpot",
+  "reelStop",
+  "evolve",
+  "reset",
+  "bossSpawn",
+  "bossDefeated",
+  "dogBark",
+  "dogJoined",
+  "buy",
+  "uiSelect",
+  "enemyShot",
+  "nearMiss",
+  "shotHit",
+  "textMessage",
+  "textTone",
+  "speechBlip",
+  "bonk",
+  "bigBonk",
+  "evilLaugh",
+  "thud",
+  "faceplant",
+  "skitter",
+  "visitCutIn",
+  "overheat",
+  "crunch",
+  "swat",
+  "hazardTick",
+  "iaiDraw",
+  "sheathe",
+  "slice"
+ ],
+ "boot.f": {
+  "family": "hunt",
+  "skill": "positioning",
+  "boss": "pack-lord"
+ },
+ "boot.gs": {
+  "throwSec": 0.25,
+  "minThrow": 30,
+  "maxThrow": 90,
+  "flightSec": 0.35,
+  "stageSec": 1.2,
+  "selfSec": 8,
+  "zapSec": 1,
+  "zapR": 30,
+  "zapK": 0.3,
+  "reach": 24,
+  "reachK": 0.25,
+  "maxReach": 34,
+  "burstR": 30,
+  "stageR": 8,
+  "burstK": 1.5,
+  "selfK": 0.6,
+  "leashR": 160,
+  "maxPlants": 4,
+  "luckK": 0.5,
+  "goldCoins": 4
+ },
+ "boot.ho": [
+  {
+   "tag": "en",
+   "endonym": "English",
+   "englishName": "English",
+   "dir": "ltr"
+  },
+  {
+   "tag": "zh-CN",
+   "endonym": "简体中文",
+   "englishName": "Simplified Chinese",
+   "dir": "ltr"
+  },
+  {
+   "tag": "zh-TW",
+   "endonym": "繁體中文",
+   "englishName": "Traditional Chinese (Taiwan)",
+   "dir": "ltr"
+  },
+  {
+   "tag": "ja",
+   "endonym": "日本語",
+   "englishName": "Japanese",
+   "dir": "ltr"
+  },
+  {
+   "tag": "ko",
+   "endonym": "한국어",
+   "englishName": "Korean",
+   "dir": "ltr"
+  },
+  {
+   "tag": "es",
+   "endonym": "Español",
+   "englishName": "Spanish",
+   "dir": "ltr"
+  },
+  {
+   "tag": "hi",
+   "endonym": "हिन्दी",
+   "englishName": "Hindi",
+   "dir": "ltr"
+  },
+  {
+   "tag": "de",
+   "endonym": "Deutsch",
+   "englishName": "German",
+   "dir": "ltr"
+  },
+  {
+   "tag": "fr",
+   "endonym": "Français",
+   "englishName": "French",
+   "dir": "ltr"
+  },
+  {
+   "tag": "pt",
+   "endonym": "Português (Brasil)",
+   "englishName": "Brazilian Portuguese",
+   "dir": "ltr"
+  },
+  {
+   "tag": "tr",
+   "endonym": "Türkçe",
+   "englishName": "Turkish",
+   "dir": "ltr"
+  },
+  {
+   "tag": "id",
+   "endonym": "Bahasa Indonesia",
+   "englishName": "Indonesian",
+   "dir": "ltr"
+  },
+  {
+   "tag": "ru",
+   "endonym": "Русский",
+   "englishName": "Russian",
+   "dir": "ltr"
+  },
+  {
+   "tag": "ms",
+   "endonym": "Bahasa Melayu",
+   "englishName": "Malay",
+   "dir": "ltr"
+  },
+  {
+   "tag": "fil",
+   "endonym": "Filipino",
+   "englishName": "Filipino",
+   "dir": "ltr"
+  },
+  {
+   "tag": "mr",
+   "endonym": "मराठी",
+   "englishName": "Marathi",
+   "dir": "ltr"
+  },
+  {
+   "tag": "vi",
+   "endonym": "Tiếng Việt",
+   "englishName": "Vietnamese",
+   "dir": "ltr"
+  },
+  {
+   "tag": "te",
+   "endonym": "తెలుగు",
+   "englishName": "Telugu",
+   "dir": "ltr"
+  },
+  {
+   "tag": "ta",
+   "endonym": "தமிழ்",
+   "englishName": "Tamil",
+   "dir": "ltr"
+  },
+  {
+   "tag": "bn",
+   "endonym": "বাংলা",
+   "englishName": "Bengali",
+   "dir": "ltr"
+  },
+  {
+   "tag": "th",
+   "endonym": "ไทย",
+   "englishName": "Thai",
+   "dir": "ltr"
+  },
+  {
+   "tag": "ha",
+   "endonym": "Hausa",
+   "englishName": "Hausa",
+   "dir": "ltr"
+  },
+  {
+   "tag": "pcm",
+   "endonym": "Naijá",
+   "englishName": "Nigerian Pidgin",
+   "dir": "ltr"
+  },
+  {
+   "tag": "ar",
+   "endonym": "العربية",
+   "englishName": "Arabic",
+   "dir": "rtl"
+  },
+  {
+   "tag": "fa",
+   "endonym": "فارسی",
+   "englishName": "Persian",
+   "dir": "rtl"
+  },
+  {
+   "tag": "he",
+   "endonym": "עברית",
+   "englishName": "Hebrew",
+   "dir": "rtl"
+  },
+  {
+   "tag": "ur",
+   "endonym": "اردو",
+   "englishName": "Urdu",
+   "dir": "rtl"
+  }
+ ],
+ "boot.hr": {
+  "effectsOpacity": 1,
+  "shake": "full",
+  "flashes": true,
+  "damageNumbers": true,
+  "hitbox": true,
+  "recommendedPicks": true,
+  "musicVolume": 1,
+  "soundVolume": 1,
+  "quality": "auto",
+  "batterySaver": "off",
+  "colorVision": "off",
+  "picker": {
+   "storyDone": false
+  },
+  "autoAdvance": true,
+  "skipIntro": false
+ },
+ "boot.hs": {
+  "baseWeapons": [],
+  "evolvedWeapons": [],
+  "unionWeapons": [],
+  "passives": [],
+  "items": [],
+  "evolvedItems": [],
+  "enemies": [],
+  "bosses": [],
+  "biomes": [],
+  "pets": [],
+  "events": [],
+  "grokBotHelps": []
+ },
+ "boot.jo": {
+  "shake": {
+   "offset": {
+    "x": 0,
+    "y": 0
+   },
+   "hear": "[fn]",
+   "addTrauma": "[fn]",
+   "hold": "[fn]",
+   "kick": "[fn]",
+   "advance": "[fn]",
+   "stop": "[fn]",
+   "scaleFor": "[fn]"
+  },
+  "hazard": {
+   "level": 0,
+   "taken": 0,
+   "ticks": 0,
+   "tickAt": null,
+   "marks": 0,
+   "markAmount": 0,
+   "chill": 0,
+   "frame": "[fn]"
+  },
+  "hitStop": {
+   "hear": "[fn]",
+   "holds": "[fn]",
+   "clear": "[fn]"
+  },
+  "impact": {
+   "current": null,
+   "holdsCutIn": false,
+   "holdsReveal": false,
+   "hear": "[fn]",
+   "frame": "[fn]",
+   "strike": "[fn]"
+  }
+ },
+ "boot.ks": [
+  {
+   "parts": [
+    "pomeranian",
+    "pomchi"
+   ],
+   "into": "zelda-and-link"
+  }
+ ],
+ "boot.mo": [
+  "en",
+  "zh-CN",
+  "zh-TW",
+  "ja",
+  "ko",
+  "es",
+  "hi",
+  "de",
+  "fr",
+  "pt",
+  "tr",
+  "id",
+  "ru",
+  "ms",
+  "fil",
+  "mr",
+  "vi",
+  "te",
+  "ta",
+  "bn",
+  "th",
+  "ha",
+  "pcm",
+  "ar",
+  "fa",
+  "he",
+  "ur"
+ ],
+ "boot.mr": [
+  "off",
+  "protanopia",
+  "deuteranopia",
+  "tritanopia"
+ ],
+ "boot.pt": {
+  "gain": 1,
+  "slots": 8,
+  "heroSec": 0.03333333333333333,
+  "stillReach": 0.85,
+  "tiers": {
+   "legendary": {
+    "rings": 1,
+    "stagger": 0.08,
+    "ringSec": 0.42,
+    "reach": 1.2,
+    "ringGlow": 0.35,
+    "heroGlow": 0.4,
+    "sparks": 10,
+    "sparkSec": 0.75,
+    "sparkRise": 16,
+    "coreSec": 0.22,
+    "coreGlow": 0.7,
+    "markSec": 1.4,
+    "markReach": 0.55,
+    "markDashes": 10,
+    "kick": 0.16,
+    "stopFrames": 0
+   },
+   "set": {
+    "rings": 2,
+    "stagger": 0.08,
+    "ringSec": 0.48,
+    "reach": 1.3,
+    "ringGlow": 0.42,
+    "heroGlow": 0.45,
+    "sparks": 14,
+    "sparkSec": 0.85,
+    "sparkRise": 20,
+    "coreSec": 0.26,
+    "coreGlow": 0.8,
+    "markSec": 1.8,
+    "markReach": 0.6,
+    "markDashes": 12,
+    "kick": 0.22,
+    "stopFrames": 0
+   },
+   "mythic": {
+    "rings": 3,
+    "stagger": 0.08,
+    "ringSec": 0.55,
+    "reach": 1.4,
+    "ringGlow": 0.5,
+    "heroGlow": 0.5,
+    "sparks": 18,
+    "sparkSec": 1,
+    "sparkRise": 24,
+    "coreSec": 0.3,
+    "coreGlow": 0.9,
+    "markSec": 2.2,
+    "markReach": 0.65,
+    "markDashes": 16,
+    "kick": 0.3,
+    "stopFrames": 3
+   }
+  }
+ },
+ "boot.qi": {
+  "NoDrops": 1,
+  "BossShare": 2,
+  "Kill": 4,
+  "Reset": 8,
+  "Meteor": 16
+ },
+ "boot.ta": {
   "circle": 0,
   "line": 1,
   "cone": 2,
@@ -6363,7 +6781,7 @@
   "heart": 8,
   "checker": 9
  },
- "boot.er": {
+ "boot.tr": {
   "width": 256,
   "height": 64,
   "pixelSize": {
@@ -6408,72 +6826,13 @@
    }
   }
  },
- "boot.f": {
-  "family": "hunt",
-  "skill": "positioning",
-  "boss": "pack-lord"
+ "boot.u": {
+  "startSec": 1200,
+  "phaseSec": 300,
+  "bossAtSec": 240,
+  "familyStartSec": 60
  },
- "boot.go": {
-  "_events": {},
-  "_locale": "",
-  "_messages": {},
-  "_variables": {},
-  "t": "[fn]"
- },
- "boot.hs": {
-  "throwSec": 0.25,
-  "minThrow": 30,
-  "maxThrow": 90,
-  "flightSec": 0.35,
-  "stageSec": 1.2,
-  "selfSec": 8,
-  "zapSec": 1,
-  "zapR": 30,
-  "zapK": 0.3,
-  "reach": 24,
-  "reachK": 0.25,
-  "maxReach": 34,
-  "burstR": 30,
-  "stageR": 8,
-  "burstK": 1.5,
-  "selfK": 0.6,
-  "leashR": 160,
-  "maxPlants": 4,
-  "luckK": 0.5,
-  "goldCoins": 4
- },
- "boot.ia": {
-  "aura": 0,
-  "pool": 1,
-  "mine": 2,
-  "nova": 3,
-  "strike": 4,
-  "telegraph": 5,
-  "hazardPool": 6,
-  "scar": 7
- },
- "boot.ko": {
-  "death": {
-   "shown": false,
-   "mounted": false,
-   "frame": "[fn]",
-   "reset": "[fn]",
-   "show": "[fn]",
-   "open": "[fn]",
-   "statsLevels": "[fn]"
-  },
-  "chestBanners": {
-   "ready": false,
-   "frame": "[fn]"
-  },
-  "texts": {
-   "start": "[fn]",
-   "end": "[fn]",
-   "frame": "[fn]",
-   "relabel": "[fn]"
-  }
- },
- "boot.ls": {
+ "boot.us": {
   "game": {
    "title": "tibo.dog",
    "url": "https://tibo.dog/"
@@ -6919,358 +7278,15 @@
    "dash": "Space",
    "autoAdvance": "KeyT",
    "skipLines": "Space"
+  },
+  "pad": {
+   "deadZone": 0.2,
+   "menuTilt": 0.6,
+   "menuRelease": 0.35,
+   "repeatDelayMs": 450,
+   "repeatMs": 90
   }
  },
- "boot.mo": [
-  {
-   "tag": "en",
-   "endonym": "English",
-   "englishName": "English",
-   "dir": "ltr"
-  },
-  {
-   "tag": "zh-CN",
-   "endonym": "简体中文",
-   "englishName": "Simplified Chinese",
-   "dir": "ltr"
-  },
-  {
-   "tag": "zh-TW",
-   "endonym": "繁體中文",
-   "englishName": "Traditional Chinese (Taiwan)",
-   "dir": "ltr"
-  },
-  {
-   "tag": "ja",
-   "endonym": "日本語",
-   "englishName": "Japanese",
-   "dir": "ltr"
-  },
-  {
-   "tag": "ko",
-   "endonym": "한국어",
-   "englishName": "Korean",
-   "dir": "ltr"
-  },
-  {
-   "tag": "es",
-   "endonym": "Español",
-   "englishName": "Spanish",
-   "dir": "ltr"
-  },
-  {
-   "tag": "hi",
-   "endonym": "हिन्दी",
-   "englishName": "Hindi",
-   "dir": "ltr"
-  },
-  {
-   "tag": "de",
-   "endonym": "Deutsch",
-   "englishName": "German",
-   "dir": "ltr"
-  },
-  {
-   "tag": "fr",
-   "endonym": "Français",
-   "englishName": "French",
-   "dir": "ltr"
-  },
-  {
-   "tag": "pt",
-   "endonym": "Português (Brasil)",
-   "englishName": "Brazilian Portuguese",
-   "dir": "ltr"
-  },
-  {
-   "tag": "tr",
-   "endonym": "Türkçe",
-   "englishName": "Turkish",
-   "dir": "ltr"
-  },
-  {
-   "tag": "id",
-   "endonym": "Bahasa Indonesia",
-   "englishName": "Indonesian",
-   "dir": "ltr"
-  },
-  {
-   "tag": "ru",
-   "endonym": "Русский",
-   "englishName": "Russian",
-   "dir": "ltr"
-  },
-  {
-   "tag": "ms",
-   "endonym": "Bahasa Melayu",
-   "englishName": "Malay",
-   "dir": "ltr"
-  },
-  {
-   "tag": "fil",
-   "endonym": "Filipino",
-   "englishName": "Filipino",
-   "dir": "ltr"
-  },
-  {
-   "tag": "mr",
-   "endonym": "मराठी",
-   "englishName": "Marathi",
-   "dir": "ltr"
-  },
-  {
-   "tag": "vi",
-   "endonym": "Tiếng Việt",
-   "englishName": "Vietnamese",
-   "dir": "ltr"
-  },
-  {
-   "tag": "te",
-   "endonym": "తెలుగు",
-   "englishName": "Telugu",
-   "dir": "ltr"
-  },
-  {
-   "tag": "ta",
-   "endonym": "தமிழ்",
-   "englishName": "Tamil",
-   "dir": "ltr"
-  },
-  {
-   "tag": "bn",
-   "endonym": "বাংলা",
-   "englishName": "Bengali",
-   "dir": "ltr"
-  },
-  {
-   "tag": "th",
-   "endonym": "ไทย",
-   "englishName": "Thai",
-   "dir": "ltr"
-  },
-  {
-   "tag": "ha",
-   "endonym": "Hausa",
-   "englishName": "Hausa",
-   "dir": "ltr"
-  },
-  {
-   "tag": "pcm",
-   "endonym": "Naijá",
-   "englishName": "Nigerian Pidgin",
-   "dir": "ltr"
-  },
-  {
-   "tag": "ar",
-   "endonym": "العربية",
-   "englishName": "Arabic",
-   "dir": "rtl"
-  },
-  {
-   "tag": "fa",
-   "endonym": "فارسی",
-   "englishName": "Persian",
-   "dir": "rtl"
-  },
-  {
-   "tag": "he",
-   "endonym": "עברית",
-   "englishName": "Hebrew",
-   "dir": "rtl"
-  },
-  {
-   "tag": "ur",
-   "endonym": "اردو",
-   "englishName": "Urdu",
-   "dir": "rtl"
-  }
- ],
- "boot.mr": {
-  "effectsOpacity": 1,
-  "shake": "full",
-  "flashes": true,
-  "damageNumbers": true,
-  "hitbox": true,
-  "recommendedPicks": true,
-  "musicVolume": 1,
-  "soundVolume": 1,
-  "quality": "auto",
-  "batterySaver": "off",
-  "colorVision": "off",
-  "picker": {
-   "storyDone": false
-  },
-  "autoAdvance": true,
-  "skipIntro": false
- },
- "boot.ms": {
-  "baseWeapons": [],
-  "evolvedWeapons": [],
-  "unionWeapons": [],
-  "passives": [],
-  "items": [],
-  "evolvedItems": [],
-  "enemies": [],
-  "bosses": [],
-  "biomes": [],
-  "pets": [],
-  "events": [],
-  "grokBotHelps": []
- },
- "boot.po": [
-  "en",
-  "zh-CN",
-  "zh-TW",
-  "ja",
-  "ko",
-  "es",
-  "hi",
-  "de",
-  "fr",
-  "pt",
-  "tr",
-  "id",
-  "ru",
-  "ms",
-  "fil",
-  "mr",
-  "vi",
-  "te",
-  "ta",
-  "bn",
-  "th",
-  "ha",
-  "pcm",
-  "ar",
-  "fa",
-  "he",
-  "ur"
- ],
- "boot.pr": [
-  "off",
-  "protanopia",
-  "deuteranopia",
-  "tritanopia"
- ],
- "boot.pt": {
-  "gain": 1,
-  "slots": 8,
-  "heroSec": 0.03333333333333333,
-  "stillReach": 0.85,
-  "tiers": {
-   "legendary": {
-    "rings": 1,
-    "stagger": 0.08,
-    "ringSec": 0.42,
-    "reach": 1.2,
-    "ringGlow": 0.35,
-    "heroGlow": 0.4,
-    "sparks": 10,
-    "sparkSec": 0.75,
-    "sparkRise": 16,
-    "coreSec": 0.22,
-    "coreGlow": 0.7,
-    "markSec": 1.4,
-    "markReach": 0.55,
-    "markDashes": 10,
-    "kick": 0.16,
-    "stopFrames": 0
-   },
-   "set": {
-    "rings": 2,
-    "stagger": 0.08,
-    "ringSec": 0.48,
-    "reach": 1.3,
-    "ringGlow": 0.42,
-    "heroGlow": 0.45,
-    "sparks": 14,
-    "sparkSec": 0.85,
-    "sparkRise": 20,
-    "coreSec": 0.26,
-    "coreGlow": 0.8,
-    "markSec": 1.8,
-    "markReach": 0.6,
-    "markDashes": 12,
-    "kick": 0.22,
-    "stopFrames": 0
-   },
-   "mythic": {
-    "rings": 3,
-    "stagger": 0.08,
-    "ringSec": 0.55,
-    "reach": 1.4,
-    "ringGlow": 0.5,
-    "heroGlow": 0.5,
-    "sparks": 18,
-    "sparkSec": 1,
-    "sparkRise": 24,
-    "coreSec": 0.3,
-    "coreGlow": 0.9,
-    "markSec": 2.2,
-    "markReach": 0.65,
-    "markDashes": 16,
-    "kick": 0.3,
-    "stopFrames": 3
-   }
-  }
- },
- "boot.qi": {
-  "off": 0,
-  "free": 1,
-  "jailed": 2,
-  "strayed": 3,
-  "lassoed": 4,
-  "pulling": 5
- },
- "boot.u": {
-  "startSec": 1200,
-  "phaseSec": 300,
-  "bossAtSec": 240,
-  "familyStartSec": 60
- },
- "boot.us": [
-  "hit",
-  "crit",
-  "kill",
-  "gem",
-  "coin",
-  "hurt",
-  "dodge",
-  "dash",
-  "levelUp",
-  "chest",
-  "chestDrop",
-  "jackpot",
-  "reelStop",
-  "evolve",
-  "reset",
-  "bossSpawn",
-  "bossDefeated",
-  "dogBark",
-  "dogJoined",
-  "buy",
-  "uiSelect",
-  "enemyShot",
-  "nearMiss",
-  "shotHit",
-  "textMessage",
-  "textTone",
-  "speechBlip",
-  "bonk",
-  "bigBonk",
-  "evilLaugh",
-  "thud",
-  "faceplant",
-  "skitter",
-  "visitCutIn",
-  "overheat",
-  "crunch",
-  "swat",
-  "hazardTick",
-  "iaiDraw",
-  "sheathe",
-  "slice"
- ],
  "boot.ut": {
   "game": null,
   "simAt": 0,
@@ -7324,25 +7340,16 @@
   "taken": "[fn]",
   "needs": "[fn]"
  },
- "boot.zi": [
-  "slash",
-  "beam",
-  "explosion",
-  "strike",
-  "cone",
-  "reset",
-  "spawn",
-  "death",
-  "shockwave",
-  "chain",
-  "heal",
-  "pickup",
-  "bark",
-  "bite",
-  "gpuSteam",
-  "shards",
-  "discharge"
- ],
+ "boot.zi": {
+  "alive": 0,
+  "revived": 1,
+  "knocked": 2,
+  "fading": 3,
+  "dark": 4,
+  "beam": 5,
+  "drop": 6,
+  "dawn": 7
+ },
  "intro-shared.A": {
   "moreElites": {
    "startCurses": 1,
