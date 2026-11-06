@@ -32,7 +32,7 @@ Many agents work in this repository at the same time: the monitor and its update
 - **Never force-push, `reset --hard`, or discard changes you did not make.** Other agents may share the checkout. Rebase only a tree whose uncommitted changes are your own.
 - **One deployment owner at a time.** A push to `main` does not deploy production on its own; someone creates the Vercel production deployment. During concurrent work, agree on a single deployer and do not race. If a coordinator or the monitor owns the deploy, push and hand over the commit SHA.
 - **Done means live.** Work is finished only when:
-  - the production deployment's commit equals `origin/main`, as reported by `/api/index.json` `meta.wiki.commit` on https://tibodog-wiki.vercel.app;
+  - the production deployment's commit equals `origin/main`, as reported by `/api/index.json` `meta.wiki.commit` on https://www.tibodog.wiki (the canonical domain; `tibodog.wiki` and `tibodog-wiki.vercel.app` redirect there);
   - the changed pages have been checked on production.
 
 ## When something is confusing

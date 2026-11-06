@@ -14,7 +14,7 @@ import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 export const GAME = 'https://tibo.dog/';
-export const WIKI = 'https://tibodog-wiki.vercel.app';
+export const WIKI = 'https://www.tibodog.wiki';
 
 // Pure: turns raw observations into one verdict per kind. null means "could not observe".
 export function classify(o) {

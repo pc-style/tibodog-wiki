@@ -6,7 +6,7 @@ const PAGES = new Set(PATHS);
 const API = new Set(API_PATHS);
 
 export const config = {
-  matcher: ['/((?!icons/|style\\.css|site\\.js|favicon\\.png|search-index\\.json|_vercel).*)'],
+  matcher: ['/((?!icons/|style\\.css|site\\.js|favicon\\.png|favicon\\.ico|logo\\.svg|apple-touch-icon\\.png|search-index\\.json|_vercel).*)'],
 };
 
 function wantsMarkdown(accept) {
@@ -23,7 +23,7 @@ function wantsMarkdown(accept) {
 }
 
 const mdNotFound = (path) =>
-  `# 404 Not Found\n\nThere is no page at \`${path}\` on the tibo.dog Wiki.\n\n- Main page: /index.md\n- Every page: /all-pages.md\n- Index for agents: /llms.txt\n- Data API: /api/index.json\n`;
+  `# 404 Not Found\n\nThere is no page at \`${path}\` on tibodog.wiki.\n\n- Main page: /index.md\n- Every page: /all-pages.md\n- Index for agents: /llms.txt\n- Data API: /api/index.json\n`;
 
 const json = (body, status = 200) =>
   new Response(JSON.stringify(body, null, 1), { status, headers: { 'content-type': 'application/json; charset=utf-8', 'cache-control': 'no-store', 'access-control-allow-origin': '*' } });
@@ -33,7 +33,7 @@ async function liveBuild() {
   const checkedAt = new Date().toISOString().replace(/\.\d+Z$/, 'Z');
   let main;
   try {
-    const res = await fetch('https://tibo.dog/', { cache: 'no-store', headers: { 'user-agent': 'tibodog-wiki live build check (+https://tibodog-wiki.vercel.app/versions)' }, signal: AbortSignal.timeout(8000) });
+    const res = await fetch('https://tibo.dog/', { cache: 'no-store', headers: { 'user-agent': 'tibodog-wiki live build check (+https://www.tibodog.wiki/versions)' }, signal: AbortSignal.timeout(8000) });
     if (!res.ok) throw new Error(`tibo.dog answered HTTP ${res.status}`);
     main = (await res.text()).match(/assets\/(main-[A-Za-z0-9_-]{8}\.js)/)?.[1];
     if (!main) throw new Error('no main-*.js script found in the tibo.dog page');

@@ -11,7 +11,7 @@ const SITE = process.argv.includes('--site') ? process.argv[process.argv.indexOf
 export const ARCHIVE = process.env.TIBO_ARCHIVE ?? 'https://tibodog-game-detector.pcstyle.workers.dev/archive/';
 export const ASSET = /[A-Za-z0-9_.-]+-[A-Za-z0-9_-]{8}\.(?:js|css|png|webp|jpg|svg|json|wasm|woff2|mp3|ogg|wav)\b/g;
 const TEXT = /\.(js|css|svg|json)$/;
-const UA = { 'user-agent': 'tibodog-wiki-updater (+https://tibodog-wiki.vercel.app/about)' };
+const UA = { 'user-agent': 'tibodog-wiki-updater (+https://www.tibodog.wiki/about)' };
 
 // Tries each URL in order; returns bytes or null when every source answers 404.
 async function get(urls) {

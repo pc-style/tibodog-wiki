@@ -19,9 +19,9 @@ export function systemPages(entityPages) {
   const card = (u, title, sub, ic) => `<a href="${u}">${ic ? icon(...ic.split('/')) : ''}<strong>${title}</strong><span>${sub}</span></a>`;
   add({
     path: '/',
-    title: 'tibo.dog Wiki',
+    title: 'tibodog.wiki',
     description: `Unofficial, source-cited wiki for tibo.dog: all ${R.allWeapons.length} weapons, ${R.evolutions.length} evolutions, ${R.passives.length} passives, ${R.allItems.length} items, ${R.dogs.length} dogs, ${R.enemies.length} enemies, ${R.bosses.length} bosses and ${R.biomes.length} biomes, with stats from the game build.`,
-    lead: `Welcome to the unofficial **tibo.dog Wiki**. [tibo.dog](https://tibo.dog/) is a free 2.5D pixel survivors-like by [poteto](https://x.com/poteto) that plays in the browser and inside X posts. You play Tibo with a pack of up to three dogs; potato weapons fire on their own while you move, dash and pick upgrades. Survive 20 minutes, then keep going as long as you last; there is no win screen.`,
+    lead: `Welcome to **tibodog.wiki**, the unofficial fan wiki for [tibo.dog](https://tibo.dog/), a free 2.5D pixel survivors-like by [poteto](https://x.com/poteto) that plays in the browser and inside X posts. You play Tibo with a pack of up to three dogs; potato weapons fire on their own while you move, dash and pick upgrades. Survive 20 minutes, then keep going as long as you last; there is no win screen.`,
     body: `## Browse\n\n<div class="cards">\n${[
       card('/weapons', 'Weapons', `${R.baseWeapons.length} base, ${R.evolutions.length} evolutions, ${R.unions.length} unions`, 'weapon/spud-cannon'),
       card('/evolutions', 'Evolutions', 'Every recipe and catalyst', 'weapon/mashquake'),
@@ -105,7 +105,7 @@ export function systemPages(entityPages) {
   add({
     path: '/search',
     title: 'Search',
-    description: 'Search the tibo.dog Wiki.',
+    description: 'Search tibodog.wiki, the unofficial tibo.dog wiki.',
     body: `<h2 id="search-heading">Search</h2>\n<ol id="search-page-results"></ol>\n<noscript>Search needs JavaScript. Every page is listed on [All pages](/all-pages).</noscript>\n\nWithout JavaScript, use [All pages](/all-pages) or the [sitemap](/sitemap.xml).\n`,
     sources: [],
   });
@@ -117,7 +117,7 @@ export function systemPages(entityPages) {
   add({
     path: '/all-pages',
     title: 'All pages',
-    description: `Every page on the tibo.dog Wiki (${all.length + 1} pages).`,
+    description: `Every page on tibodog.wiki (${all.length + 1} pages).`,
     body: Object.entries(groups)
       .map(([g, list]) => `## ${g}\n\n${list.sort((a, b) => a.title.localeCompare(b.title)).map((p) => `- [${p.title}](${p.path})`).join('\n')}\n`)
       .join('\n'),
@@ -129,7 +129,7 @@ export function systemPages(entityPages) {
   add({
     path: '/sources',
     title: 'Sources & method',
-    description: 'How the tibo.dog Wiki was researched: game build, files, extraction method and how verified facts are separated from inference.',
+    description: 'How tibodog.wiki was researched: game build, files, extraction method and how verified facts are separated from inference.',
     body: MECH.sources(),
     sources: [],
     search: 'sources citations method research version',
@@ -145,7 +145,7 @@ export function systemPages(entityPages) {
   add({
     path: '/coverage',
     title: 'Coverage gaps',
-    description: 'What the tibo.dog Wiki does not cover yet or could not verify.',
+    description: 'What tibodog.wiki does not cover yet or could not verify.',
     body: MECH.coverage(),
     sources: [],
     search: 'gaps missing unknown todo',
@@ -178,15 +178,15 @@ export function systemPages(entityPages) {
   add({
     path: '/about',
     title: 'About',
-    description: 'About the unofficial tibo.dog Wiki: who maintains it, what it covers and how it relates to the game.',
-    body: `The **tibo.dog Wiki** is an unofficial fan reference for [tibo.dog](https://tibo.dog/), the free browser survivors-like by [poteto](https://x.com/poteto). It is not made by, affiliated with or endorsed by the developer.\n\n## What it covers\n\nWeapons, evolutions, unions, passives, items and item evolutions, dogs, enemies, bosses, biomes, events, points of interest, Grok Bots, visitors, difficulty modes, story mode, stat formulas, level-ups, chests, curse, controls, unlocks and strategy. The design follows community game wikis such as minecraft.wiki: one page per thing, an infobox with the key numbers, tables you can sort, and links between related pages.\n\n## How it is made\n\nThe content is generated from data extracted from the deployed game (build \`${BUILD.boot}\`, researched ${BUILD.researched}). Descriptions in quotes are the game's own English text. Interpretations are marked as such. See [Sources & method](/sources).\n\n## Maintainer\n\nMaintained by Adam Krupa ([pcstyle.dev](https://pcstyle.dev), [GitHub](https://github.com/pc-style)). See [Contact](/contact) for corrections.\n\n## Game art and text\n\nSprites, names and descriptions belong to the game's owner and are reproduced at small size for identification and reference. If the developer would like anything changed or removed, use the [contact page](/contact).\n`,
+    description: 'About tibodog.wiki, the unofficial tibo.dog fan wiki: who maintains it, what it covers and how it relates to the game.',
+    body: `**tibodog.wiki** is an unofficial fan reference for [tibo.dog](https://tibo.dog/), the free browser survivors-like by [poteto](https://x.com/poteto). It is not made by, affiliated with or endorsed by the developer; the name only says which game it covers.\n\n<p class="brand-mark"><img src="/logo.svg" width="96" height="96" alt="tibodog.wiki logo: an open book with a paw print"></p>\n\nThe logo, an open book with a paw print, is original art made for this wiki, not a game sprite. It is drawn by [\`tools/brand.py\`](https://github.com/pc-style/tibodog-wiki/blob/main/tools/brand.py) along with the favicons and the link preview image.\n\n## What it covers\n\nWeapons, evolutions, unions, passives, items and item evolutions, dogs, enemies, bosses, biomes, events, points of interest, Grok Bots, visitors, difficulty modes, story mode, stat formulas, level-ups, chests, curse, controls, unlocks and strategy. The design follows community game wikis such as minecraft.wiki: one page per thing, an infobox with the key numbers, tables you can sort, and links between related pages.\n\n## How it is made\n\nThe content is generated from data extracted from the deployed game (build \`${BUILD.boot}\`, researched ${BUILD.researched}). Descriptions in quotes are the game's own English text. Interpretations are marked as such. See [Sources & method](/sources).\n\n## Maintainer\n\nMaintained by Adam Krupa ([pcstyle.dev](https://pcstyle.dev), [GitHub](https://github.com/pc-style)). See [Contact](/contact) for corrections.\n\n## Game art and text\n\nSprites, names and descriptions belong to the game's owner and are reproduced at small size for identification and reference. If the developer would like anything changed or removed, use the [contact page](/contact).\n`,
     sources: [SRC_ABOUT],
     search: 'about wiki maintainer',
   });
   add({
     path: '/contact',
     title: 'Contact',
-    description: 'How to report a mistake or request a change on the tibo.dog Wiki.',
+    description: 'How to report a mistake or request a change on tibodog.wiki.',
     body: `Found a wrong number, an outdated page or something missing? Get in touch with the maintainer.\n\n- Email: [me@pcstyle.dev](mailto:me@pcstyle.dev)\n- GitHub: [pc-style](https://github.com/pc-style)\n- Website: [pcstyle.dev](https://pcstyle.dev)\n\nPlease include the page URL, what is wrong and, if you can, where the correct information comes from (a game version, a screenshot or a developer post).\n\n## For the game's developer\n\nThis wiki is unofficial. If you are the developer of tibo.dog and want something corrected, credited differently or removed, email the address above and it will be handled promptly.\n\n## Not for game support\n\nThis wiki cannot help with problems in the game itself, accounts or saves. For the game, see [tibo.dog](https://tibo.dog/) and its maker, [poteto on X](https://x.com/poteto).\n`,
     sources: [],
     search: 'contact email corrections report',
@@ -194,7 +194,7 @@ export function systemPages(entityPages) {
   add({
     path: '/privacy',
     title: 'Privacy',
-    description: 'Privacy policy of the tibo.dog Wiki: no accounts, no cookies, no analytics scripts.',
+    description: 'Privacy policy of tibodog.wiki: no accounts, no cookies, no analytics scripts.',
     body: `This wiki is a static website. It has no accounts, sets no cookies and runs no analytics or advertising scripts.\n\n## What is processed\n\n- **Hosting logs.** The site is hosted on Vercel. Like any web host, Vercel processes request data such as IP address, user agent and the page requested in order to serve pages and protect the service. See [Vercel's privacy policy](https://vercel.com/legal/privacy-policy).\n- **Search.** Search runs entirely in your browser against a static index file. Search terms are not sent anywhere except as part of the page URL when you submit the search form.\n- **Local storage.** None.\n\n## The game\n\nThis policy covers only the wiki. tibo.dog itself has its own [privacy page](https://tibo.dog/privacy), which describes the anonymous gameplay analytics the game records and how to turn them off in the game's Settings.\n\n## Contact\n\nQuestions about this policy: see [Contact](/contact).\n\nLast updated ${BUILD.researched}.\n`,
     sources: [],
     search: 'privacy cookies',
