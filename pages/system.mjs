@@ -23,6 +23,8 @@ export function systemPages(entityPages) {
     // The header already shows the site name, so the page opens with what the wiki does for a player.
     eyebrow: 'The unofficial tibo.dog wiki',
     h1: 'Every weapon, boss and build in tibo.dog',
+    // Four sections need no table of contents; the rail would only take width from the task cards.
+    toc: false,
     description: `Unofficial, source-cited wiki for tibo.dog: all ${R.allWeapons.length} weapons, ${R.evolutions.length} evolutions, ${R.passives.length} passives, ${R.allItems.length} items, ${R.dogs.length} dogs, ${R.enemies.length} enemies, ${R.bosses.length} bosses and ${R.biomes.length} biomes, with stats from the game build.`,
     lead: `Welcome to **tibodog.wiki**, the unofficial fan wiki for [tibo.dog](https://tibo.dog/), a free 2.5D pixel survivors-like by [poteto](https://x.com/poteto) that plays in the browser and inside X posts. You play Tibo with a pack of up to three dogs; potato weapons fire on their own while you move, dash and pick upgrades. Survive 20 minutes, then keep going as long as you last; there is no win screen.`,
     body: `## Start here\n\n<div class="cards tasks">\n${[

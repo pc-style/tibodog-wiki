@@ -68,6 +68,15 @@ function fightCard(page) {
   return `<dl class="fight">${row('Watch for', c.watch)}${row('Do', c.do)}${row('Avoid', c.avoid)}</dl>\n\n`;
 }
 
+// Under a fight card the key tip starts with its reasoning: a bold lead or opening sentences the card already
+// quotes are dropped, so the guide does not say the same instruction twice. The boss page keeps the full tip.
+function afterCard(page, tip) {
+  const sources = BOSS_CARDS[page.path.split('/')[2]].sources.map(flat);
+  let t = tip.replace(/^\*\*.+?\*\*\s*/, '');
+  for (let s = sources.find((q) => t.startsWith(q)); s; s = sources.find((q) => t.startsWith(q))) t = t.slice(s.length).trimStart();
+  return t ? `${t}\n` : '';
+}
+
 const iconOf = (p) => (p.infobox?.icon ? `{{icon:${p.infobox.icon}}}` : '');
 // Arrival time as minutes; pages without one keep their order after the timed ones (stable sort).
 const minutes = (p) => { const m = /^(\d+):(\d+)/.exec(arrives(p) ?? ''); return m ? +m[1] + m[2] / 60 : 1e9; };
@@ -110,7 +119,8 @@ export function guidePages(entityPages) {
         const when = arrives(page) ? ` <small class="when">${arrives(page)}</small>` : '';
         // The first tip leads; the rest fold away so a long guide stays scannable.
         const more = tips.length > 1 ? `\n<details class="more"><summary>More on ${page.title} (${tips.length - 1} tip${tips.length > 2 ? 's' : ''})</summary>\n\n${tips.slice(1).map((x) => `- ${x}`).join('\n')}\n\n</details>\n` : '';
-        return `## ${iconOf(page)}[${page.title}](${page.path})${when}\n\n${fightCard(page)}${tips[0]}\n${more}`;
+        const card = fightCard(page);
+        return `## ${iconOf(page)}[${page.title}](${page.path})${when}\n\n${card}${card ? afterCard(page, tips[0]) : tips[0]}\n${more}`;
       })
       .join('\n'),
     sources: [SOURCE],

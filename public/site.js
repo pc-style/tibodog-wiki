@@ -176,6 +176,9 @@
     const input = box.querySelector('input');
     const count = box.querySelector('#tip-count');
     const was = topics.map((t) => t.open);
+    // Each topic's tip count follows the filter ("1 of 13 tips"), so a header never contradicts what shows under it.
+    const smalls = topics.map((t) => t.querySelector(':scope > summary small'));
+    const totals = smalls.map((s) => s?.textContent ?? '');
     input.addEventListener('input', () => {
       const q = input.value.trim().toLowerCase();
       let n = 0;
@@ -189,6 +192,7 @@
         n += hit;
         t.hidden = !!q && !hit;
         t.open = q ? hit > 0 : was[i];
+        if (smalls[i]) smalls[i].textContent = q ? `${hit} of ${totals[i]}` : totals[i];
       });
       count.textContent = q ? (n ? `${n} tip${n === 1 ? '' : 's'} match` : 'No tips match. Try a shorter word.') : '';
     });
