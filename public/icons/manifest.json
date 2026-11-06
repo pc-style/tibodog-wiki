@@ -675,167 +675,14 @@
    "scale": 4,
    "source": "atlas-Cq7nv457.png sprite \"icon-starch-supercell\" anim \"icon\" frame 0 @(749,609)"
   },
-  "gem-sling": {
-   "file": "weapon/gem-sling.png",
-   "w": 52,
-   "h": 60,
-   "nativeW": 13,
-   "nativeH": 15,
-   "scale": 4,
-   "source": "flagged-atlas-B7CjaNh5.png sprite \"icon-gem-sling\" anim \"icon\" frame 0 @(55,356)"
-  },
-  "hot-streak": {
-   "file": "weapon/hot-streak.png",
+  "gravy-pack": {
+   "file": "weapon/gravy-pack.png",
    "w": 64,
    "h": 60,
    "nativeW": 16,
    "nativeH": 15,
    "scale": 4,
-   "source": "flagged-atlas-B7CjaNh5.png sprite \"icon-hot-streak\" anim \"icon\" frame 0 @(70,356)"
-  },
-  "locked-gatling": {
-   "file": "weapon/locked-gatling.png",
-   "w": 64,
-   "h": 52,
-   "nativeW": 16,
-   "nativeH": 13,
-   "scale": 4,
-   "source": "flagged-atlas-B7CjaNh5.png sprite \"icon-locked-gatling\" anim \"icon\" frame 0 @(88,356)"
-  },
-  "mash-snowball": {
-   "file": "weapon/mash-snowball.png",
-   "w": 60,
-   "h": 60,
-   "nativeW": 15,
-   "nativeH": 15,
-   "scale": 4,
-   "source": "flagged-atlas-B7CjaNh5.png sprite \"icon-mash-snowball\" anim \"icon\" frame 0 @(124,356)"
-  },
-  "seed-potato": {
-   "file": "weapon/seed-potato.png",
-   "w": 52,
-   "h": 64,
-   "nativeW": 13,
-   "nativeH": 16,
-   "scale": 4,
-   "source": "flagged-atlas-B7CjaNh5.png sprite \"icon-seed-potato\" anim \"icon\" frame 0 @(159,356)"
-  },
-  "spud-fence": {
-   "file": "weapon/spud-fence.png",
-   "w": 64,
-   "h": 56,
-   "nativeW": 16,
-   "nativeH": 14,
-   "scale": 4,
-   "source": "flagged-atlas-B7CjaNh5.png sprite \"icon-spud-fence\" anim \"icon\" frame 0 @(192,356)"
-  },
-  "tailgate-fries": {
-   "file": "weapon/tailgate-fries.png",
-   "w": 64,
-   "h": 60,
-   "nativeW": 16,
-   "nativeH": 15,
-   "scale": 4,
-   "source": "flagged-atlas-B7CjaNh5.png sprite \"icon-tailgate-fries\" anim \"icon\" frame 0 @(210,356)"
-  },
-  "tater-twirl": {
-   "file": "weapon/tater-twirl.png",
-   "w": 64,
-   "h": 64,
-   "nativeW": 16,
-   "nativeH": 16,
-   "scale": 4,
-   "source": "flagged-atlas-B7CjaNh5.png sprite \"icon-tater-twirl\" anim \"icon\" frame 0 @(264,356)"
-  },
-  "tot-stampede": {
-   "file": "weapon/tot-stampede.png",
-   "w": 64,
-   "h": 52,
-   "nativeW": 16,
-   "nativeH": 13,
-   "scale": 4,
-   "source": "flagged-atlas-B7CjaNh5.png sprite \"icon-tot-stampede\" anim \"icon\" frame 0 @(318,356)"
-  },
-  "gem-catapult": {
-   "file": "weapon/gem-catapult.png",
-   "w": 56,
-   "h": 64,
-   "nativeW": 14,
-   "nativeH": 16,
-   "scale": 4,
-   "source": "flagged-atlas-B7CjaNh5.png sprite \"icon-gem-catapult\" anim \"icon\" frame 0 @(39,356)"
-  },
-  "mash-avalanche": {
-   "file": "weapon/mash-avalanche.png",
-   "w": 64,
-   "h": 64,
-   "nativeW": 16,
-   "nativeH": 16,
-   "scale": 4,
-   "source": "flagged-atlas-B7CjaNh5.png sprite \"icon-mash-avalanche\" anim \"icon\" frame 0 @(106,356)"
-  },
-  "potato-patch": {
-   "file": "weapon/potato-patch.png",
-   "w": 64,
-   "h": 64,
-   "nativeW": 16,
-   "nativeH": 16,
-   "scale": 4,
-   "source": "flagged-atlas-B7CjaNh5.png sprite \"icon-potato-patch\" anim \"icon\" frame 0 @(141,356)"
-  },
-  "spark-corral": {
-   "file": "weapon/spark-corral.png",
-   "w": 64,
-   "h": 56,
-   "nativeW": 16,
-   "nativeH": 14,
-   "scale": 4,
-   "source": "flagged-atlas-B7CjaNh5.png sprite \"icon-spark-corral\" anim \"icon\" frame 0 @(174,356)"
-  },
-  "tailgate-party": {
-   "file": "weapon/tailgate-party.png",
-   "w": 64,
-   "h": 64,
-   "nativeW": 16,
-   "nativeH": 16,
-   "scale": 4,
-   "source": "flagged-atlas-B7CjaNh5.png sprite \"icon-tailgate-party\" anim \"icon\" frame 0 @(228,356)"
-  },
-  "tater-minigun": {
-   "file": "weapon/tater-minigun.png",
-   "w": 64,
-   "h": 48,
-   "nativeW": 16,
-   "nativeH": 12,
-   "scale": 4,
-   "source": "flagged-atlas-B7CjaNh5.png sprite \"icon-tater-minigun\" anim \"icon\" frame 0 @(246,356)"
-  },
-  "tater-twister": {
-   "file": "weapon/tater-twister.png",
-   "w": 64,
-   "h": 60,
-   "nativeW": 16,
-   "nativeH": 15,
-   "scale": 4,
-   "source": "flagged-atlas-B7CjaNh5.png sprite \"icon-tater-twister\" anim \"icon\" frame 0 @(282,356)"
-  },
-  "tot-cavalry": {
-   "file": "weapon/tot-cavalry.png",
-   "w": 64,
-   "h": 60,
-   "nativeW": 16,
-   "nativeH": 15,
-   "scale": 4,
-   "source": "flagged-atlas-B7CjaNh5.png sprite \"icon-tot-cavalry\" anim \"icon\" frame 0 @(300,356)"
-  },
-  "wildfire-roast": {
-   "file": "weapon/wildfire-roast.png",
-   "w": 64,
-   "h": 56,
-   "nativeW": 16,
-   "nativeH": 14,
-   "scale": 4,
-   "source": "flagged-atlas-B7CjaNh5.png sprite \"icon-wildfire-roast\" anim \"icon\" frame 0 @(336,356)"
+   "source": "flagged-atlas-B7CjaNh5.png sprite \"icon-gravy-pack\" anim \"icon\" frame 0 @(306,49)"
   }
  },
  "passive": {
@@ -1036,6 +883,69 @@
    "nativeH": 13,
    "scale": 4,
    "source": "atlas-Cq7nv457.png sprite \"icon-thick-skin\" anim \"icon\" frame 0 @(869,609)"
+  },
+  "couch-potato": {
+   "file": "passive/couch-potato.png",
+   "w": 64,
+   "h": 44,
+   "nativeW": 16,
+   "nativeH": 11,
+   "scale": 4,
+   "source": "flagged-atlas-B7CjaNh5.png sprite \"icon-couch-potato\" anim \"icon\" frame 0 @(255,49)"
+  },
+  "gravy-splash": {
+   "file": "passive/gravy-splash.png",
+   "w": 64,
+   "h": 64,
+   "nativeW": 16,
+   "nativeH": 16,
+   "scale": 4,
+   "source": "flagged-atlas-B7CjaNh5.png sprite \"icon-gravy-splash\" anim \"icon\" frame 0 @(324,49)"
+  },
+  "hash-rush": {
+   "file": "passive/hash-rush.png",
+   "w": 64,
+   "h": 48,
+   "nativeW": 16,
+   "nativeH": 12,
+   "scale": 4,
+   "source": "flagged-atlas-B7CjaNh5.png sprite \"icon-hash-rush\" anim \"icon\" frame 0 @(342,49)"
+  },
+  "hearty-helping": {
+   "file": "passive/hearty-helping.png",
+   "w": 64,
+   "h": 60,
+   "nativeW": 16,
+   "nativeH": 15,
+   "scale": 4,
+   "source": "flagged-atlas-B7CjaNh5.png sprite \"icon-hearty-helping\" anim \"icon\" frame 0 @(360,49)"
+  },
+  "lean-lunch": {
+   "file": "passive/lean-lunch.png",
+   "w": 64,
+   "h": 56,
+   "nativeW": 16,
+   "nativeH": 14,
+   "scale": 4,
+   "source": "flagged-atlas-B7CjaNh5.png sprite \"icon-lean-lunch\" anim \"icon\" frame 0 @(378,49)"
+  },
+  "mash-finisher": {
+   "file": "passive/mash-finisher.png",
+   "w": 64,
+   "h": 64,
+   "nativeW": 16,
+   "nativeH": 16,
+   "scale": 4,
+   "source": "flagged-atlas-B7CjaNh5.png sprite \"icon-mash-finisher\" anim \"icon\" frame 0 @(432,49)"
+  },
+  "tater-trot": {
+   "file": "passive/tater-trot.png",
+   "w": 64,
+   "h": 56,
+   "nativeW": 16,
+   "nativeH": 14,
+   "scale": 4,
+   "source": "flagged-atlas-B7CjaNh5.png sprite \"icon-tater-trot\" anim \"icon\" frame 0 @(171,73)"
   }
  },
  "item": {
@@ -1416,6 +1326,78 @@
    "nativeH": 16,
    "scale": 4,
    "source": "atlas-Cq7nv457.png sprite \"icon-storm-tot\" anim \"icon\" frame 0 @(801,609)"
+  },
+  "frozen-pea": {
+   "file": "item/frozen-pea.png",
+   "w": 64,
+   "h": 64,
+   "nativeW": 16,
+   "nativeH": 16,
+   "scale": 4,
+   "source": "flagged-atlas-B7CjaNh5.png sprite \"icon-frozen-pea\" anim \"icon\" frame 0 @(273,49)"
+  },
+  "fry-fuel": {
+   "file": "item/fry-fuel.png",
+   "w": 52,
+   "h": 64,
+   "nativeW": 13,
+   "nativeH": 16,
+   "scale": 4,
+   "source": "flagged-atlas-B7CjaNh5.png sprite \"icon-fry-fuel\" anim \"icon\" frame 0 @(291,49)"
+  },
+  "lightning-spud": {
+   "file": "item/lightning-spud.png",
+   "w": 64,
+   "h": 60,
+   "nativeW": 16,
+   "nativeH": 15,
+   "scale": 4,
+   "source": "flagged-atlas-B7CjaNh5.png sprite \"icon-lightning-spud\" anim \"icon\" frame 0 @(396,49)"
+  },
+  "mash-splat": {
+   "file": "item/mash-splat.png",
+   "w": 64,
+   "h": 64,
+   "nativeW": 16,
+   "nativeH": 16,
+   "scale": 4,
+   "source": "flagged-atlas-B7CjaNh5.png sprite \"icon-mash-splat\" anim \"icon\" frame 0 @(450,49)"
+  },
+  "midnight-fries": {
+   "file": "item/midnight-fries.png",
+   "w": 60,
+   "h": 64,
+   "nativeW": 15,
+   "nativeH": 16,
+   "scale": 4,
+   "source": "flagged-atlas-B7CjaNh5.png sprite \"icon-midnight-fries\" anim \"icon\" frame 0 @(468,49)"
+  },
+  "moon-dust": {
+   "file": "item/moon-dust.png",
+   "w": 64,
+   "h": 64,
+   "nativeW": 16,
+   "nativeH": 16,
+   "scale": 4,
+   "source": "flagged-atlas-B7CjaNh5.png sprite \"icon-moon-dust\" anim \"icon\" frame 0 @(485,49)"
+  },
+  "tater-treat": {
+   "file": "item/tater-treat.png",
+   "w": 64,
+   "h": 44,
+   "nativeW": 16,
+   "nativeH": 11,
+   "scale": 4,
+   "source": "flagged-atlas-B7CjaNh5.png sprite \"icon-tater-treat\" anim \"icon\" frame 0 @(153,73)"
+  },
+  "mash-crater": {
+   "file": "item/mash-crater.png",
+   "w": 64,
+   "h": 56,
+   "nativeW": 16,
+   "nativeH": 14,
+   "scale": 4,
+   "source": "flagged-atlas-B7CjaNh5.png sprite \"icon-mash-crater\" anim \"icon\" frame 0 @(414,49)"
   }
  },
  "enemy": {
@@ -2250,9 +2232,227 @@
    "nativeH": 44,
    "scale": 2,
    "source": "atlas-late-Buf1XZKv.png sprite \"zelda-and-link\" anim \"idle-front\" frame 0 @(768,10407)"
+  },
+  "dalmatian": {
+   "file": "dog/dalmatian.png",
+   "w": 44,
+   "h": 80,
+   "nativeW": 11,
+   "nativeH": 20,
+   "scale": 4,
+   "source": "flagged-atlas-B7CjaNh5.png sprite \"dalmatian\" anim \"idle-front\" frame 0 @(137,2)"
+  },
+  "husky": {
+   "file": "dog/husky.png",
+   "w": 44,
+   "h": 84,
+   "nativeW": 11,
+   "nativeH": 21,
+   "scale": 4,
+   "source": "flagged-atlas-B7CjaNh5.png sprite \"husky\" anim \"idle-front\" frame 0 @(148,49)"
   }
  },
  "missing": [
+  {
+   "category": "weapon",
+   "id": "gem-sling",
+   "reason": "no \"icon-gem-sling\" sprite with an \"icon\" anim in early atlas"
+  },
+  {
+   "category": "weapon",
+   "id": "hot-streak",
+   "reason": "no \"icon-hot-streak\" sprite with an \"icon\" anim in early atlas"
+  },
+  {
+   "category": "weapon",
+   "id": "locked-gatling",
+   "reason": "no \"icon-locked-gatling\" sprite with an \"icon\" anim in early atlas"
+  },
+  {
+   "category": "weapon",
+   "id": "mash-snowball",
+   "reason": "no \"icon-mash-snowball\" sprite with an \"icon\" anim in early atlas"
+  },
+  {
+   "category": "weapon",
+   "id": "seed-potato",
+   "reason": "no \"icon-seed-potato\" sprite with an \"icon\" anim in early atlas"
+  },
+  {
+   "category": "weapon",
+   "id": "spud-fence",
+   "reason": "no \"icon-spud-fence\" sprite with an \"icon\" anim in early atlas"
+  },
+  {
+   "category": "weapon",
+   "id": "tailgate-fries",
+   "reason": "no \"icon-tailgate-fries\" sprite with an \"icon\" anim in early atlas"
+  },
+  {
+   "category": "weapon",
+   "id": "tater-twirl",
+   "reason": "no \"icon-tater-twirl\" sprite with an \"icon\" anim in early atlas"
+  },
+  {
+   "category": "weapon",
+   "id": "tot-stampede",
+   "reason": "no \"icon-tot-stampede\" sprite with an \"icon\" anim in early atlas"
+  },
+  {
+   "category": "weapon",
+   "id": "gem-catapult",
+   "reason": "no \"icon-gem-catapult\" sprite with an \"icon\" anim in early atlas"
+  },
+  {
+   "category": "weapon",
+   "id": "mash-avalanche",
+   "reason": "no \"icon-mash-avalanche\" sprite with an \"icon\" anim in early atlas"
+  },
+  {
+   "category": "weapon",
+   "id": "potato-patch",
+   "reason": "no \"icon-potato-patch\" sprite with an \"icon\" anim in early atlas"
+  },
+  {
+   "category": "weapon",
+   "id": "spark-corral",
+   "reason": "no \"icon-spark-corral\" sprite with an \"icon\" anim in early atlas"
+  },
+  {
+   "category": "weapon",
+   "id": "tailgate-party",
+   "reason": "no \"icon-tailgate-party\" sprite with an \"icon\" anim in early atlas"
+  },
+  {
+   "category": "weapon",
+   "id": "tater-minigun",
+   "reason": "no \"icon-tater-minigun\" sprite with an \"icon\" anim in early atlas"
+  },
+  {
+   "category": "weapon",
+   "id": "tater-twister",
+   "reason": "no \"icon-tater-twister\" sprite with an \"icon\" anim in early atlas"
+  },
+  {
+   "category": "weapon",
+   "id": "tot-cavalry",
+   "reason": "no \"icon-tot-cavalry\" sprite with an \"icon\" anim in early atlas"
+  },
+  {
+   "category": "weapon",
+   "id": "wildfire-roast",
+   "reason": "no \"icon-wildfire-roast\" sprite with an \"icon\" anim in early atlas"
+  },
+  {
+   "category": "weapon",
+   "id": "afterburner-fries",
+   "reason": "no \"icon-afterburner-fries\" sprite with an \"icon\" anim in early atlas"
+  },
+  {
+   "category": "weapon",
+   "id": "broadside",
+   "reason": "no \"icon-broadside\" sprite with an \"icon\" anim in early atlas"
+  },
+  {
+   "category": "weapon",
+   "id": "comet-scythe",
+   "reason": "no \"icon-comet-scythe\" sprite with an \"icon\" anim in early atlas"
+  },
+  {
+   "category": "weapon",
+   "id": "harvest-moon",
+   "reason": "no \"icon-harvest-moon\" sprite with an \"icon\" anim in early atlas"
+  },
+  {
+   "category": "weapon",
+   "id": "hash-hawk",
+   "reason": "no \"icon-hash-hawk\" sprite with an \"icon\" anim in early atlas"
+  },
+  {
+   "category": "weapon",
+   "id": "mash-golem",
+   "reason": "no \"icon-mash-golem\" sprite with an \"icon\" anim in early atlas"
+  },
+  {
+   "category": "weapon",
+   "id": "mash-landing",
+   "reason": "no \"icon-mash-landing\" sprite with an \"icon\" anim in early atlas"
+  },
+  {
+   "category": "weapon",
+   "id": "peel-phantom",
+   "reason": "no \"icon-peel-phantom\" sprite with an \"icon\" anim in early atlas"
+  },
+  {
+   "category": "weapon",
+   "id": "skipping-cannonball",
+   "reason": "no \"icon-skipping-cannonball\" sprite with an \"icon\" anim in early atlas"
+  },
+  {
+   "category": "weapon",
+   "id": "sprout-squad",
+   "reason": "no \"icon-sprout-squad\" sprite with an \"icon\" anim in early atlas"
+  },
+  {
+   "category": "weapon",
+   "id": "spud-decoy",
+   "reason": "no \"icon-spud-decoy\" sprite with an \"icon\" anim in early atlas"
+  },
+  {
+   "category": "passive",
+   "id": "hot-start",
+   "reason": "no \"icon-hot-start\" sprite with an \"icon\" anim in early atlas"
+  },
+  {
+   "category": "passive",
+   "id": "packed-pan",
+   "reason": "frame is fully transparent"
+  },
+  {
+   "category": "passive",
+   "id": "peel-out",
+   "reason": "frame is fully transparent"
+  },
+  {
+   "category": "passive",
+   "id": "spry-sprout",
+   "reason": "frame is fully transparent"
+  },
+  {
+   "category": "passive",
+   "id": "stuffed-skin",
+   "reason": "frame is fully transparent"
+  },
+  {
+   "category": "item",
+   "id": "static-socks",
+   "reason": "no \"icon-static-socks\" sprite with an \"icon\" anim in early atlas"
+  },
+  {
+   "category": "item",
+   "id": "potato-knish",
+   "reason": "frame is fully transparent"
+  },
+  {
+   "category": "item",
+   "id": "receipt-spud",
+   "reason": "frame is fully transparent"
+  },
+  {
+   "category": "item",
+   "id": "souffle-spud",
+   "reason": "frame is fully transparent"
+  },
+  {
+   "category": "item",
+   "id": "spud-spring",
+   "reason": "frame is fully transparent"
+  },
+  {
+   "category": "item",
+   "id": "tailwind-tater",
+   "reason": "frame is fully transparent"
+  },
   {
    "category": "enemy",
    "id": "alley-raccoon",
@@ -2297,6 +2497,16 @@
    "category": "boss",
    "id": "root-hydra-stump",
    "reason": "no sprite \"root-hydra-stump\" with idle-front/idle/walk anim in early or late atlas"
+  },
+  {
+   "category": "dog",
+   "id": "sigkitten",
+   "reason": "no sprite \"sigkitten\" with idle-front/idle/walk anim in early or late atlas"
+  },
+  {
+   "category": "dog",
+   "id": "newfoundland",
+   "reason": "frame is fully transparent"
   }
  ]
 }

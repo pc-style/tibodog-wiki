@@ -1,16 +1,16 @@
 ## Overview
 
-Potato Battery clips a live wire from Tibo to a nearby pest. Every 0.25 s the wire zaps every pest touching it, including the clipped one, for 5 damage and slows them by 50% for 0.3 s × Duration. The clipped pest is almost pinned in place (−85% speed) and cannot drop below 1 HP while the wire holds. When the wire lets go, it bursts for 5× damage around the clipped pest, which usually finishes it off.
+Potato Battery clips a live wire from Tibo to a nearby pest. Every 0.25 s the wire zaps every pest touching it, including the clipped one, for 7 damage and slows them by 50% for 0.3 s × Duration. The clipped pest is almost pinned in place (−85% speed) and cannot drop below 1 HP while the wire holds. When the wire lets go, it bursts for 8× damage around the clipped pest, which usually finishes it off.
 
 Its listed amount is 0, so it clips 1 wire at level 1 (Tibo's built-in +1 amount, see [Stats](/stats)) and 2 from level 5. It is offered as a level-up card. At level 8, with [Root Network](/passives/root-network) at any level, the next [chest](/chests) evolves it into [Spud Grid](/weapons/spud-grid).
 
 ## How it works
 
-- **Target choice.** Within 110 units, the battery clips the nearest pest that is at least 50 units away (`minRange`) and not already clipped. If every pest is closer than that, it takes the farthest one in range. It does not clip bosses. <small>[sim-BkfBhQfw.js: `g>=o&&g<c&&(c=g,s=a),g>u&&(u=g,l=a)`]</small>
+- **Target choice.** Within 110 units, the battery clips the nearest pest that is at least 50 units away (`minRange`) and not already clipped. If every pest is closer than that, it takes the farthest one in range. It does not clip bosses. <small>[sim-h87i1VLB.js: `g>=o&&g<c&&(c=g,s=a),g>u&&(u=g,l=a)`]</small>
 - **The wire** is a line from Tibo to the clipped pest, `size` × Area wide (8 at level 1). It follows both of them as they move.
-- **Letting go.** The wire lasts `duration` seconds (4 s, × Duration) or snaps as soon as the clipped pest is more than 170 units from Tibo. Either way it discharges `discharge` × damage (25 at level 1) to every pest within 18 units of the clipped pest. <small>[sim-BkfBhQfw.js: `if(n.life[o]=u,u<=0||A(c-r,l-i)>n.snap[o]){n.pool.kill(o),cg(e,o);continue}`]</small>
-- **HP floor.** Any hit that would bring a clipped pest below 1 HP leaves it at 1 HP. Bosses are exempt. <small>[sim-BkfBhQfw.js: `!i&&(c&l.Reset)===0&&Zl(e,n))&&(y=1)`]</small>
-- **Cooldown.** The 2.5 s cooldown only starts counting once all of this weapon's wires are gone. A full cycle is wire time plus cooldown, about 7.5 s at level 1 with the base Duration bonus. <small>[sim-BkfBhQfw.js: `n.pool.isAlive(i)&&n.slot[i]===t&&r++}return r})(e,t.slot)>0||(t.cd=Nm(e,t.cd)`]</small> With no pest in range it checks again every 0.1 s.
+- **Letting go.** The wire lasts `duration` seconds (3 s, × Duration) or snaps as soon as the clipped pest is more than 170 units from Tibo. Either way it discharges `discharge` × damage (56 at level 1) to every pest within 18 units of the clipped pest. <small>[sim-h87i1VLB.js: `if(n.life[o]=d,d<=0||c(l-r,u-i)>n.snap[o]){n.pool.kill(o),Rw(e,o);continue}`]</small>
+- **HP floor.** Any hit that would bring a clipped pest below 1 HP leaves it at 1 HP. Bosses are exempt. <small>[sim-h87i1VLB.js: `!i&&(s&p.Reset)===0&&Cf(e,n))&&(y=1)`]</small>
+- **Cooldown.** The 2 s cooldown only starts counting once all of this weapon's wires are gone. A full cycle is wire time plus cooldown, about 5.75 s at level 1 with the base Duration bonus. <small>[sim-h87i1VLB.js: `n.pool.isAlive(i)&&n.slot[i]===t&&r++}return r})(e,t.slot)>0||(t.cd=Ov(e,t.cd)`]</small> With no pest in range it checks again every 0.1 s.
 
 **Measured** in the headless sim (`tools/play.mjs`, build 41 `main-B2gf34bA.js`, Standard, Normal, god mode, seeds `s1`, `s2` and `s3`; the seeded starting weapon removed, the weapon given with `give`, spawning stopped after 4 s of play and the pests already on the field held at fixed spots with 10⁹ HP; pests held 60 to 90 units from Tibo): at level 1 one wire lasted 5 s (4 s plus the base +25% duration) and a new one clipped 7.5 s after the previous, zapping every 0.25 s for 5 and bursting for 25 on release; from level 5 two wires clipped at once. All three seeds gave the same figures.
 

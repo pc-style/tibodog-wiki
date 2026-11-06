@@ -308,6 +308,132 @@
  "content.botHelp.zapper.name": [
   "Zapper Bot"
  ],
+ "content.dailyWeather.aurora.desc": [
+  "Every 25 seconds an aurora makes experience worth triple and doubles Tibo's pickup reach. Tibo starts deep in the Potato Field."
+ ],
+ "content.dailyWeather.aurora.name": [
+  "Aurora"
+ ],
+ "content.dailyWeather.blizzard.desc": [
+  "A blizzard blows all run. Tibo grows colder away from the campfires and slows as he freezes, and a campfire warms him back up. Tibo starts deep in the Frozen Tundra."
+ ],
+ "content.dailyWeather.blizzard.name": [
+  "Blizzard"
+ ],
+ "content.dailyWeather.bloodmoon.desc": [
+  "Elites come twice as often and hit harder, and each one drops triple experience and coins. Tibo starts deep in the Mash Swamp."
+ ],
+ "content.dailyWeather.bloodmoon.name": [
+  "Blood Moon"
+ ],
+ "content.dailyWeather.drop.desc": [
+  "Pests fall from the sky around Tibo instead of walking in, and a shadow on the ground shows where each one will land."
+ ],
+ "content.dailyWeather.drop.name": [
+  "Pest Drop"
+ ],
+ "content.dailyWeather.echo.desc": [
+  "Every third hit from Tibo's weapons echoes a moment later and strikes every pest close to it. Tibo starts deep in the Peel Forest."
+ ],
+ "content.dailyWeather.echo.name": [
+  "Echo Day"
+ ],
+ "content.dailyWeather.eclipse.desc": [
+  "Only a ring of light stays around Tibo. Pests inside it take more damage, and pests outside it show only their eyes. Tibo starts deep in the Compost Caves."
+ ],
+ "content.dailyWeather.eclipse.name": [
+  "Eclipse"
+ ],
+ "content.dailyWeather.fog.desc": [
+  "Fog fills the Compost Caves. Pests and bosses that lose Tibo in the fog creep along until they come close, and Tibo starts deep in the caves."
+ ],
+ "content.dailyWeather.fog.name": [
+  "Thick Fog"
+ ],
+ "content.dailyWeather.hail.desc": [
+  "Hail pelts the pests near Tibo every moment, hurting and knocking back every pest and boss a stone lands on, and Tibo starts deep in the Peel Forest."
+ ],
+ "content.dailyWeather.hail.name": [
+  "Hailstorm"
+ ],
+ "content.dailyWeather.heat.desc": [
+  "Heat shimmers all run, burning ground spreads twice as often, and Tibo starts deep in the Fry-Oil Desert."
+ ],
+ "content.dailyWeather.heat.name": [
+  "Heatwave"
+ ],
+ "content.dailyWeather.meteors.desc": [
+  "Meteors fall on the thickest crowds near Tibo, and each crater slows the pests inside it for a while. Tibo starts deep in the Chip Canyons."
+ ],
+ "content.dailyWeather.meteors.name": [
+  "Meteor Shower"
+ ],
+ "content.dailyWeather.migration.desc": [
+  "Every minute a herd of beetles charges across the map in a straight band, and each beetle drops rich experience. Tibo starts deep in the Peel Forest."
+ ],
+ "content.dailyWeather.migration.name": [
+  "Migration"
+ ],
+ "content.dailyWeather.night.desc": [
+  "Night falls all run, pests and bosses rush in faster from the dark outside Tibo's light, and Tibo starts deep in the Potato Field."
+ ],
+ "content.dailyWeather.night.name": [
+  "Long Night"
+ ],
+ "content.dailyWeather.rain.desc": [
+  "Rain falls all run, mud puddles spread twice as often and wider, and Tibo starts deep in the Mash Swamp."
+ ],
+ "content.dailyWeather.rain.name": [
+  "Downpour"
+ ],
+ "content.dailyWeather.rings.desc": [
+  "Rings of sprouting potatoes dot the ground, and Tibo's weapons fire faster while he stands in one. Tibo starts deep in the Mash Swamp."
+ ],
+ "content.dailyWeather.rings.name": [
+  "Sprout Rings"
+ ],
+ "content.dailyWeather.sandstorm.desc": [
+  "Sand blows across the Fry-Oil Desert and piles into drifts that slow Tibo but not pests and bosses, and Tibo starts deep in the desert."
+ ],
+ "content.dailyWeather.sandstorm.name": [
+  "Sandstorm"
+ ],
+ "content.dailyWeather.sizes.desc": [
+  "A quarter of the pests are giants with more health and experience, and a quarter are tiny and fast. Tibo starts deep in the Crop Circle."
+ ],
+ "content.dailyWeather.sizes.name": [
+  "Odd Sizes"
+ ],
+ "content.dailyWeather.snow.desc": [
+  "Snow falls all run, everyone moves slower, frost patches spread twice as often, and Tibo starts deep in the Frozen-Fries Tundra."
+ ],
+ "content.dailyWeather.snow.name": [
+  "Big Freeze"
+ ],
+ "content.dailyWeather.storm.desc": [
+  "Lightning strikes the thickest crowd near Tibo every few seconds, hurting and knocking back every pest and boss in the blast, and Tibo starts deep in the Ketchup Bog."
+ ],
+ "content.dailyWeather.storm.name": [
+  "Thunderstorm"
+ ],
+ "content.dailyWeather.swarm.desc": [
+  "Every pest comes with a twin, so there are twice as many pests, each with half the health and half the experience. Tibo starts deep in the Potato Field."
+ ],
+ "content.dailyWeather.swarm.name": [
+  "Swarm Day"
+ ],
+ "content.dailyWeather.tilt.desc": [
+  "The ground tilts and turns every 30 seconds, and pests and pickups slide downhill. Tibo starts deep in the Chip Canyons."
+ ],
+ "content.dailyWeather.tilt.name": [
+  "Gravity Tilt"
+ ],
+ "content.dailyWeather.warp.desc": [
+  "Every 15 seconds time warps, and pests, bosses and enemy bullets move at half pace for 3 seconds. Tibo starts deep in the Compost Caves."
+ ],
+ "content.dailyWeather.warp.name": [
+  "Time Warp"
+ ],
  "content.dog.beagle.breed": [
   "Beagle"
  ],
@@ -344,6 +470,15 @@
  "content.dog.dachshund.name": [
   "Frank"
  ],
+ "content.dog.dalmatian.breed": [
+  "Dalmatian"
+ ],
+ "content.dog.dalmatian.desc": [
+  "Bites a nearby enemy every 2 seconds and gives it one of your burns, slows or freezes."
+ ],
+ "content.dog.dalmatian.name": [
+  "Sprinkles"
+ ],
  "content.dog.greyhound.breed": [
   "Greyhound"
  ],
@@ -352,6 +487,24 @@
  ],
  "content.dog.greyhound.name": [
   "Zoom"
+ ],
+ "content.dog.husky.breed": [
+  "Siberian Husky"
+ ],
+ "content.dog.husky.desc": [
+  "Howls every few seconds, and every other dog in your pack acts at once."
+ ],
+ "content.dog.husky.name": [
+  "Echo"
+ ],
+ "content.dog.newfoundland.breed": [
+  "Newfoundland"
+ ],
+ "content.dog.newfoundland.desc": [
+  "Leaps at enemy shots that come close to you and catches them."
+ ],
+ "content.dog.newfoundland.name": [
+  "Buoy"
  ],
  "content.dog.pomchi.breed": [
   "Chihuahua-Pomeranian"
@@ -388,6 +541,15 @@
  ],
  "content.dog.saint-bernard.name": [
   "Barrel"
+ ],
+ "content.dog.sigkitten.breed": [
+  "Cat"
+ ],
+ "content.dog.sigkitten.desc": [
+  "Hacks the pests' shots: they slow down as they near you, so you have more time to dodge. SIGSTOP, kind of."
+ ],
+ "content.dog.sigkitten.name": [
+  "SIGKITTEN"
  ],
  "content.dog.terrier.breed": [
   "Jack Russell Terrier"
@@ -620,6 +782,12 @@
  "content.event.bale-ring.name": [
   "Ring of Hay Bales"
  ],
+ "content.event.crab-tide.announce": [
+  "Crab tide! Crabs scuttle in from every side!"
+ ],
+ "content.event.crab-tide.name": [
+  "Crab Tide"
+ ],
  "content.event.fly-swarm.announce": [
   "A swarm of fry flies!"
  ],
@@ -661,6 +829,248 @@
  ],
  "content.event.strike.name": [
   "Strike"
+ ],
+ "content.gear.bog-witch-chest.name": [
+  "Witch's Robe"
+ ],
+ "content.gear.bog-witch-hat.name": [
+  "Witch's Hat"
+ ],
+ "content.gear.bog-witch-legs.name": [
+  "Witch's Skirt"
+ ],
+ "content.gear.buccaneer-boots.name": [
+  "Buccaneer's Boots"
+ ],
+ "content.gear.buccaneer-chest.name": [
+  "Buccaneer's Coat"
+ ],
+ "content.gear.buccaneer-hat.name": [
+  "Buccaneer's Tricorn"
+ ],
+ "content.gear.burlap-hood.name": [
+  "Burlap Hood"
+ ],
+ "content.gear.colander-helm.name": [
+  "Colander Helm"
+ ],
+ "content.gear.comet-treads.desc": [
+  "Zone and storm effects last 25% longer."
+ ],
+ "content.gear.comet-treads.name": [
+  "Comet Treads"
+ ],
+ "content.gear.crown-of-plenty.desc": [
+  "Shot weapons fire one more projectile."
+ ],
+ "content.gear.crown-of-plenty.name": [
+  "Crown of Plenty"
+ ],
+ "content.gear.ember-striders.desc": [
+  "Shots pierce one more enemy."
+ ],
+ "content.gear.ember-striders.name": [
+  "Ember Striders"
+ ],
+ "content.gear.farm-overalls.name": [
+  "Farm Overalls"
+ ],
+ "content.gear.fry-cook-boots.name": [
+  "Fry Cook's Boots"
+ ],
+ "content.gear.fry-cook-hat.name": [
+  "Fry Cook's Toque"
+ ],
+ "content.gear.fry-cook-legs.name": [
+  "Fry Cook's Trousers"
+ ],
+ "content.gear.fryers-apron.desc": [
+  "Killing an elite adds ",
+  [
+   "elite"
+  ],
+  " s of Frenzy and killing a boss adds ",
+  [
+   "boss"
+  ],
+  " s, up to ",
+  [
+   "cap"
+  ],
+  " s. In Frenzy, weapons fire ",
+  [
+   "fire"
+  ],
+  " times as fast, Tibo runs ",
+  [
+   "move"
+  ],
+  " times as fast and Tibo takes ",
+  [
+   "hurt"
+  ],
+  "% less damage."
+ ],
+ "content.gear.fryers-apron.name": [
+  "Fryer's Apron"
+ ],
+ "content.gear.garden-clogs.name": [
+  "Garden Clogs"
+ ],
+ "content.gear.harvest-vest.name": [
+  "Harvest Vest"
+ ],
+ "content.gear.iron-skillet-chest.name": [
+  "Skillet Cuirass"
+ ],
+ "content.gear.iron-skillet-hat.name": [
+  "Skillet Helm"
+ ],
+ "content.gear.iron-skillet-legs.name": [
+  "Skillet Greaves"
+ ],
+ "content.gear.kitchen-apron.name": [
+  "Kitchen Apron"
+ ],
+ "content.gear.larder-heart.desc": [
+  "Damage Tibo takes is paid from his XP bar first. A full bar pays ",
+  [
+   "damage"
+  ],
+  " damage. The bar never drops a level."
+ ],
+ "content.gear.larder-heart.name": [
+  "Larder Heart"
+ ],
+ "content.gear.leftover-lederhosen.desc": [
+  "Damage past a pest's last HP carries to the nearest boss within ",
+  [
+   "range"
+  ],
+  " units, or else to the nearest pest. Carried damage never crits. Weapons deal ",
+  [
+   "less"
+  ],
+  "% less damage."
+ ],
+ "content.gear.leftover-lederhosen.name": [
+  "Leftover Lederhosen"
+ ],
+ "content.gear.mash-ram-helm.desc": [
+  "Each dash ends in a mash burst. Each pest it hits takes ",
+  [
+   "refund"
+  ],
+  " s off the dash recharge. The dash recharges ",
+  [
+   "slower"
+  ],
+  "% slower."
+ ],
+ "content.gear.mash-ram-helm.name": [
+  "Mash Ram Helm"
+ ],
+ "content.gear.mech-pilot-boots.name": [
+  "Mech Stompers"
+ ],
+ "content.gear.mech-pilot-chest.name": [
+  "Mech Harness"
+ ],
+ "content.gear.mech-pilot-legs.name": [
+  "Mech Greaves"
+ ],
+ "content.gear.muddy-boots.name": [
+  "Muddy Boots"
+ ],
+ "content.gear.one-potato-clogs.desc": [
+  "Tibo holds at most ",
+  [
+   "weapons"
+  ],
+  " weapons. Each weapon slot the Clogs seal gives every held weapon ",
+  [
+   "damage"
+  ],
+  "% more damage and ",
+  [
+   "area"
+  ],
+  "% more area."
+ ],
+ "content.gear.one-potato-clogs.name": [
+  "One Potato Clogs"
+ ],
+ "content.gear.pack-ranger-boots.name": [
+  "Ranger's Claw Boots"
+ ],
+ "content.gear.pack-ranger-hat.name": [
+  "Ranger's Skull Hood"
+ ],
+ "content.gear.pack-ranger-legs.name": [
+  "Ranger's Hide Wraps"
+ ],
+ "content.gear.patched-trousers.name": [
+  "Patched Trousers"
+ ],
+ "content.gear.peel-leggings.name": [
+  "Peel Leggings"
+ ],
+ "content.gear.sack-tunic.name": [
+  "Sack Tunic"
+ ],
+ "content.gear.space-farmer-boots.name": [
+  "Space Boots"
+ ],
+ "content.gear.space-farmer-chest.name": [
+  "Space Plate"
+ ],
+ "content.gear.space-farmer-hat.name": [
+  "Space Helm"
+ ],
+ "content.gear.sprout-sandals.name": [
+  "Sprout Sandals"
+ ],
+ "content.gear.starch-mail.desc": [
+  "Every weapon has 12% more area."
+ ],
+ "content.gear.starch-mail.name": [
+  "Starch Mail"
+ ],
+ "content.gear.storm-sage-boots.name": [
+  "Sage's Boots"
+ ],
+ "content.gear.storm-sage-chest.name": [
+  "Sage's Mantle"
+ ],
+ "content.gear.storm-sage-legs.name": [
+  "Sage's Leggings"
+ ],
+ "content.gear.straw-hat.name": [
+  "Straw Hat"
+ ],
+ "content.gearSet.bog-witch.name": [
+  "Bog Witch"
+ ],
+ "content.gearSet.buccaneer.name": [
+  "Buccaneer"
+ ],
+ "content.gearSet.fry-cook.name": [
+  "Fry Cook"
+ ],
+ "content.gearSet.iron-skillet.name": [
+  "Iron Skillet"
+ ],
+ "content.gearSet.mech-pilot.name": [
+  "Mech Pilot"
+ ],
+ "content.gearSet.pack-ranger.name": [
+  "Pack Ranger"
+ ],
+ "content.gearSet.space-farmer.name": [
+  "Space Farmer"
+ ],
+ "content.gearSet.storm-sage.name": [
+  "Storm Sage"
  ],
  "content.item.all-seeing-spud.desc": [
   "35% of kills send 4 potato eyes that pierce through enemies."
@@ -746,6 +1156,18 @@
  "content.item.freezer-burn.name": [
   "Freezer Burn"
  ],
+ "content.item.frozen-pea.desc": [
+  "8% of hits freeze the enemy for 1 s. Bosses slow instead."
+ ],
+ "content.item.frozen-pea.name": [
+  "Frozen Pea"
+ ],
+ "content.item.fry-fuel.desc": [
+  "Every 30 kills refills one dash charge."
+ ],
+ "content.item.fry-fuel.name": [
+  "Fry Fuel"
+ ],
  "content.item.fry-volcano.desc": [
   "When Tibo is hit, he erupts in a blast and fires 24 fries that pierce through enemies."
  ],
@@ -794,6 +1216,12 @@
  "content.item.kaboom-spud.name": [
   "Kaboom Spud"
  ],
+ "content.item.lightning-spud.desc": [
+  "6% of hits call down lightning on the enemies around them."
+ ],
+ "content.item.lightning-spud.name": [
+  "Lightning Spud"
+ ],
  "content.item.lucky-peel.desc": [
   "+5% luck."
  ],
@@ -806,11 +1234,35 @@
  "content.item.magma-croquette.name": [
   "Magma Croquette"
  ],
+ "content.item.mash-crater.desc": [
+  "Each dash lands in a wide mash crater that throws 8 hash browns outward."
+ ],
+ "content.item.mash-crater.name": [
+  "Mash Crater"
+ ],
+ "content.item.mash-splat.desc": [
+  "Each dash lands in a mash splat that hits the enemies around Tibo."
+ ],
+ "content.item.mash-splat.name": [
+  "Mash Splat"
+ ],
  "content.item.meteor-russet.desc": [
   "3% of hits call down a meteor for 20× damage that also craters enemies around it."
  ],
  "content.item.meteor-russet.name": [
   "Meteor Russet"
+ ],
+ "content.item.midnight-fries.desc": [
+  "+5% damage. After 20:00, damage grows 6% more each minute."
+ ],
+ "content.item.midnight-fries.name": [
+  "Midnight Fries"
+ ],
+ "content.item.moon-dust.desc": [
+  "15% of kills burst into moon dust that slows enemies nearby."
+ ],
+ "content.item.moon-dust.name": [
+  "Moon Dust"
  ],
  "content.item.penny-spud.desc": [
   "+8% gold gain."
@@ -836,6 +1288,18 @@
  "content.item.porcupine-spud.name": [
   "Porcupine Spud"
  ],
+ "content.item.potato-knish.desc": [
+  "+15 max HP."
+ ],
+ "content.item.potato-knish.name": [
+  "Potato Knish"
+ ],
+ "content.item.receipt-spud.desc": [
+  "Each chest or crate you open gives +2% damage for the rest of the run."
+ ],
+ "content.item.receipt-spud.name": [
+  "Receipt Spud"
+ ],
  "content.item.salt-crystal.desc": [
   "+4% damage."
  ],
@@ -854,6 +1318,12 @@
  "content.item.sharp-peeler.name": [
   "Sharp Peeler"
  ],
+ "content.item.souffle-spud.desc": [
+  "When Tibo is hit, he puffs up and shoves nearby enemies away."
+ ],
+ "content.item.souffle-spud.name": [
+  "Soufflé Spud"
+ ],
  "content.item.spicy-croquette.desc": [
   "12% of hits burst in a fiery blast."
  ],
@@ -866,11 +1336,23 @@
  "content.item.spud-muffin.name": [
   "Spud Muffin"
  ],
+ "content.item.spud-spring.desc": [
+  "Cuts the dash cooldown by 15%. Stacks up to 3 times."
+ ],
+ "content.item.spud-spring.name": [
+  "Spud Spring"
+ ],
  "content.item.starch-sock.desc": [
   "+4% move speed."
  ],
  "content.item.starch-sock.name": [
   "Starch Sock"
+ ],
+ "content.item.static-socks.desc": [
+  "Each dash ends with a starch bolt on the 3 nearest enemies, 176 damage each."
+ ],
+ "content.item.static-socks.name": [
+  "Static Socks"
  ],
  "content.item.static-tot.desc": [
   "10% of hits arc lightning to 3 more enemies."
@@ -883,6 +1365,18 @@
  ],
  "content.item.storm-tot.name": [
   "Storm Tot"
+ ],
+ "content.item.tailwind-tater.desc": [
+  "+1% damage for every 2% move speed above base."
+ ],
+ "content.item.tailwind-tater.name": [
+  "Tailwind Tater"
+ ],
+ "content.item.tater-treat.desc": [
+  "Dogs use their abilities 25% more often."
+ ],
+ "content.item.tater-treat.name": [
+  "Tater Treat"
  ],
  "content.item.thorny-jacket.desc": [
   "Enemies that hit Tibo take 8 damage."
@@ -944,6 +1438,12 @@
  "content.passive.chives.name": [
   "Chives"
  ],
+ "content.passive.couch-potato.desc": [
+  "While Tibo stands still, damage rises 4% a second per level, up to 20% per level. Moving resets it."
+ ],
+ "content.passive.couch-potato.name": [
+  "Couch Potato"
+ ],
  "content.passive.fertilizer.desc": [
   "+8% XP gain per level."
  ],
@@ -957,7 +1457,7 @@
   "Four-Eyed Spud"
  ],
  "content.passive.golden-fry.desc": [
-  "+12% gold gain per level."
+  "+20% gold gain per level."
  ],
  "content.passive.golden-fry.name": [
   "Golden Fry"
@@ -974,17 +1474,65 @@
  "content.passive.gravy-heart.name": [
   "Gravy Heart"
  ],
+ "content.passive.gravy-splash.desc": [
+  "Every 0.5 s, the HP Tibo healed splashes out as damage to nearby enemies: 100% of it per level."
+ ],
+ "content.passive.gravy-splash.name": [
+  "Gravy Splash"
+ ],
+ "content.passive.hash-rush.desc": [
+  "Each dash in the last 4 s adds 4% damage per level, counting up to 3 dashes."
+ ],
+ "content.passive.hash-rush.name": [
+  "Hash Rush"
+ ],
+ "content.passive.hearty-helping.desc": [
+  "+2% damage for every 50 max HP Tibo gains above his starting max HP. Each level adds another 2% per 50."
+ ],
+ "content.passive.hearty-helping.name": [
+  "Hearty Helping"
+ ],
  "content.passive.hot-sauce.desc": [
   "Raises crit chance with each level. The higher your crit chance, the less each level adds."
  ],
  "content.passive.hot-sauce.name": [
   "Hot Sauce"
  ],
+ "content.passive.hot-start.desc": [
+  "After each dash, every weapon reloads 60% faster for 1.3 s. Each level adds 0.3 s. Tibo glows while it lasts."
+ ],
+ "content.passive.hot-start.name": [
+  "Hot Start"
+ ],
+ "content.passive.lean-lunch.desc": [
+  "+4% damage and -2% cooldown per level for each empty weapon slot."
+ ],
+ "content.passive.lean-lunch.name": [
+  "Lean Lunch"
+ ],
+ "content.passive.mash-finisher.desc": [
+  "A hit mashes any pest left below 2% of its max HP per level, up to 15%. Elites mash at half that. Bosses never do."
+ ],
+ "content.passive.mash-finisher.name": [
+  "Mash Finisher"
+ ],
  "content.passive.masher-grip.desc": [
   "+25% knockback per level."
  ],
  "content.passive.masher-grip.name": [
   "Masher Grip"
+ ],
+ "content.passive.packed-pan.desc": [
+  "+1% damage for each pest inside Tibo's pickup range, up to 10 pests. Each level adds another 1% per pest."
+ ],
+ "content.passive.packed-pan.name": [
+  "Packed Pan"
+ ],
+ "content.passive.peel-out.desc": [
+  "After Tibo dodges a hit, his weapons deal double damage for 2 s. Peels spin around him while it lasts."
+ ],
+ "content.passive.peel-out.name": [
+  "Peel Out"
  ],
  "content.passive.potato-magnet.desc": [
   "+25% pickup range per level."
@@ -1028,6 +1576,12 @@
  "content.passive.sprouting-eyes.name": [
   "Sprouting Eyes"
  ],
+ "content.passive.spry-sprout.desc": [
+  "Each level cuts the dash cooldown by 5%."
+ ],
+ "content.passive.spry-sprout.name": [
+  "Spry Sprout"
+ ],
  "content.passive.spud-sneakers.desc": [
   "+8% move speed per level."
  ],
@@ -1039,6 +1593,18 @@
  ],
  "content.passive.starch-plating.name": [
   "Starch Plating"
+ ],
+ "content.passive.stuffed-skin.desc": [
+  "+8 max HP per level."
+ ],
+ "content.passive.stuffed-skin.name": [
+  "Stuffed Skin"
+ ],
+ "content.passive.tater-trot.desc": [
+  "Each 1% of bonus move speed adds 1% fire rate, up to 8% per level."
+ ],
+ "content.passive.tater-trot.name": [
+  "Tater Trot"
  ],
  "content.passive.thick-skin.desc": [
   "Raises the chance to dodge a hit with each level. The higher your dodge chance, the less each level adds."
@@ -1223,6 +1789,48 @@
  "content.shrine.moveSpeed.label": [
   "Move speed"
  ],
+ "content.varietyPlace.chili-bottle.desc": [
+  "Pick it up to breathe fire where Tibo faces for 10 s. The fire grows with his damage and area."
+ ],
+ "content.varietyPlace.chili-bottle.name": [
+  "Chili Bottle"
+ ],
+ "content.varietyPlace.dig-spot.desc": [
+  "Stand on the X to dig up a chest."
+ ],
+ "content.varietyPlace.dig-spot.name": [
+  "X Marks the Spot"
+ ],
+ "content.varietyPlace.lighthouse.desc": [
+  "Stand by it to light it. Crabs swarm in, and a chest lands at its foot."
+ ],
+ "content.varietyPlace.lighthouse.name": [
+  "Lighthouse"
+ ],
+ "content.varietyPlace.mash-bomb.desc": [
+  "Break it to flatten every pest on screen. Elites and bosses lose a fifth of their max HP."
+ ],
+ "content.varietyPlace.mash-bomb.name": [
+  "Mash Bomb"
+ ],
+ "content.varietyPlace.rowboat.desc": [
+  "Stand in it to row to the far shore."
+ ],
+ "content.varietyPlace.rowboat.name": [
+  "Rowboat"
+ ],
+ "content.varietyPlace.treasure-map.desc": [
+  "Read it to mark an X. Dig at the X for a chest."
+ ],
+ "content.varietyPlace.treasure-map.name": [
+  "Treasure Map"
+ ],
+ "content.weapon.afterburner-fries.desc": [
+  "Each dash blasts a fan of hot fries backward from where the dash started."
+ ],
+ "content.weapon.afterburner-fries.name": [
+  "Afterburner Fries"
+ ],
  "content.weapon.big-fry.desc": [
   "The fry pierces everything and grows bigger as it grows stronger."
  ],
@@ -1234,6 +1842,12 @@
  ],
  "content.weapon.bottomless-sack.name": [
   "Bottomless Sack"
+ ],
+ "content.weapon.broadside.desc": [
+  "Fires a row of powder shells out of both sides of Tibo, square to the way he runs. Each shell bursts on the first pest it meets or where it lands."
+ ],
+ "content.weapon.broadside.name": [
+  "Broadside"
  ],
  "content.weapon.butter-streak.desc": [
   "Each dash leaves a strip of melted butter that slows pests and burns them for 2 s. Between dashes, it also leaves one on the path Tibo just walked."
@@ -1258,6 +1872,12 @@
  ],
  "content.weapon.cold-storage.name": [
   "Cold Storage"
+ ],
+ "content.weapon.comet-scythe.desc": [
+  "A scythe blade circles Tibo. Every two laps its orbit swings out wide and pulls back in close, so it cuts both the pests at Tibo's feet and the ring beyond them."
+ ],
+ "content.weapon.comet-scythe.name": [
+  "Comet Scythe"
  ],
  "content.weapon.deep-fryer.desc": [
   "Sprays hot oil in a cone."
@@ -1361,6 +1981,18 @@
  "content.weapon.gravy-flood.name": [
   "Gravy Flood"
  ],
+ "content.weapon.gravy-pack.desc": [
+  "Four gravy-glazed tot pups run with Tibo. Each bite heals him 0.05 HP."
+ ],
+ "content.weapon.gravy-pack.name": [
+  "Gravy Pack"
+ ],
+ "content.weapon.harvest-moon.desc": [
+  "A moon spud circles Tibo. Each pest it touches rides its orbit for a moment, then is flung out and hit. A flung pest cannot be caught again for a few seconds, and bosses are too heavy to catch."
+ ],
+ "content.weapon.harvest-moon.name": [
+  "Harvest Moon"
+ ],
  "content.weapon.hash-boomerang.desc": [
   "A crispy hash brown that flies out and comes back."
  ],
@@ -1378,6 +2010,12 @@
  ],
  "content.weapon.hash-bulwark.name": [
   "Hash Bulwark"
+ ],
+ "content.weapon.hash-hawk.desc": [
+  "A hash-brown hawk circles above Tibo. Every few seconds it dives on the toughest pest in reach, a boss first, then an elite, and strikes everything beside it."
+ ],
+ "content.weapon.hash-hawk.name": [
+  "Hash Hawk"
  ],
  "content.weapon.hashnado.desc": [
   "Hash browns spin out in a crispy storm and return."
@@ -1445,6 +2083,18 @@
  "content.weapon.mash-avalanche.name": [
   "Mash Avalanche"
  ],
+ "content.weapon.mash-golem.desc": [
+  "A golem of mash rises in front of Tibo and stomps the way he faces, shoving pests out of its path to open a lane. At the end of its walk it slams the ground and crumbles."
+ ],
+ "content.weapon.mash-golem.name": [
+  "Mash Golem"
+ ],
+ "content.weapon.mash-landing.desc": [
+  "Each dash ends in a mash shockwave that hits every pest around Tibo and shoves it back."
+ ],
+ "content.weapon.mash-landing.name": [
+  "Mash Landing"
+ ],
  "content.weapon.mash-snowball.desc": [
   "A ball of mash rolls behind Tibo and grows with every step he runs. When he stops or turns hard, it surges ahead along his last heading and splatters pests by its size. A full ball lets go on its own."
  ],
@@ -1480,6 +2130,12 @@
  ],
  "content.weapon.overgrowth.name": [
   "Overgrowth"
+ ],
+ "content.weapon.peel-phantom.desc": [
+  "Each dash leaves a peel husk of Tibo where the dash began. Nearby pests chase the husk until it bursts."
+ ],
+ "content.weapon.peel-phantom.name": [
+  "Peel Phantom"
  ],
  "content.weapon.peeler.desc": [
   "Slashes sideways. From level 4 it flings potato peels through the crowd, one more each level. Tibo's trusty kitchen tool."
@@ -1583,6 +2239,12 @@
  "content.weapon.seeker-sprouts.name": [
   "Seeker Sprouts"
  ],
+ "content.weapon.skipping-cannonball.desc": [
+  "A cannonball skips along the way Tibo faces and bursts at every bounce, each burst bigger than the last. Amount adds a bounce."
+ ],
+ "content.weapon.skipping-cannonball.name": [
+  "Skipping Cannonball"
+ ],
  "content.weapon.small-fry.desc": [
   "A tiny fry that starts weak and gains damage with every kill it makes, for the rest of the run."
  ],
@@ -1607,6 +2269,12 @@
  "content.weapon.sprout-satellites.name": [
   "Sprout Satellites"
  ],
+ "content.weapon.sprout-squad.desc": [
+  "A pest that falls can sprout a seedling where it fell. Each seedling hops to the nearest pest and bites it until it wilts. More amount lets more seedlings grow at once."
+ ],
+ "content.weapon.sprout-squad.name": [
+  "Sprout Squad"
+ ],
  "content.weapon.spud-artillery.desc": [
   "A barrage of lobbed potatoes that explode. Frees a weapon slot."
  ],
@@ -1618,6 +2286,12 @@
  ],
  "content.weapon.spud-cannon.name": [
   "Spud Cannon"
+ ],
+ "content.weapon.spud-decoy.desc": [
+  "Every few seconds Tibo plants a wind-up spud behind him. Pests nearby walk to it instead of him, and then it bursts."
+ ],
+ "content.weapon.spud-decoy.name": [
+  "Spud Decoy"
  ],
  "content.weapon.spud-dice.desc": [
   "Throws a potato die. 1 is a dud, 2 freezes, 3 burns, 4 splits, 5 pays gold, 6 blows up big."

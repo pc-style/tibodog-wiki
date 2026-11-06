@@ -1,6 +1,6 @@
 ## Overview
 
-Golden Fry raises gold gain by 0.12 per level, so gold income is multiplied by ×1.12 at level 1 and ×1.60 at level 5. Gold buys items at the Fry Cart, opens Potato Crates, spins Tater Slots and trains dogs at the Dog Kennel (see [Points of interest](/points-of-interest)).
+Golden Fry raises gold gain by 0.2 per level, so gold income is multiplied by ×1.2 at level 1 and ×2 at level 5. Gold buys items at the Fry Cart, opens Potato Crates, spins Tater Slots and trains dogs at the Dog Kennel (see [Points of interest](/points-of-interest)).
 
 It is the catalyst for [Golden Harvest](/weapons/golden-harvest), the evolution of [Potato Rain](/weapons/potato-rain) (“A downpour of golden potatoes. Kills can drop gold.”).
 
@@ -8,7 +8,7 @@ It is the catalyst for [Golden Harvest](/weapons/golden-harvest), the evolution 
 
 The gold gain multiplier is `(1 + gold gain) × (1 + 0.5 × curse)` (see [Stats](/stats)). It applies to:
 
-- every gold coin picked up<small>[sim-BkfBhQfw.js: `let t=1*o*a.greedMult*(e.time<e.goldRushUntil?e.goldRushMult:1)`]</small>
+- every gold coin picked up<small>[sim-h87i1VLB.js: `let t=1*a*i.greedMult*(e.time<e.goldRushUntil?e.goldRushMult:1)`]</small>
 - gold inside chests, and the 20-gold fallback reward when a chest has nothing else to give (see [Chests](/chests#gold-in-chests))
 - the gold from accepting a [Moldy Shrine](/points-of-interest#moldy-shrine)
 - the gold in poteto's gift chest (see [Visitors](/visitors#poteto))

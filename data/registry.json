@@ -28,8 +28,8 @@
    "tier": "base",
    "on": "dash",
    "base": {
-    "damage": 9,
-    "cooldown": 2.5,
+    "damage": 14,
+    "cooldown": 2,
     "amount": 1,
     "area": 1,
     "speed": 0,
@@ -40,7 +40,7 @@
    },
    "levels": [
     {
-     "damage": 5
+     "damage": 7
     },
     {
      "area": 0.15
@@ -49,7 +49,7 @@
      "duration": 0.5
     },
     {
-     "damage": 5
+     "damage": 7
     },
     {
      "area": 0.15
@@ -58,7 +58,7 @@
      "duration": 0.5
     },
     {
-     "damage": 9
+     "damage": 12
     }
    ],
    "weight": 75,
@@ -271,8 +271,8 @@
    "id": "fry-lance",
    "tier": "base",
    "base": {
-    "damage": 22,
-    "cooldown": 2.4,
+    "damage": 26,
+    "cooldown": 2,
     "amount": 1,
     "area": 1,
     "speed": 0,
@@ -283,7 +283,7 @@
    },
    "levels": [
     {
-     "damage": 10
+     "damage": 12
     },
     {
      "area": 0.25
@@ -292,7 +292,7 @@
      "amount": 1
     },
     {
-     "damage": 10
+     "damage": 12
     },
     {
      "cooldown": -0.3
@@ -301,7 +301,7 @@
      "area": 0.25
     },
     {
-     "damage": 15
+     "damage": 18
     }
    ],
    "weight": 80,
@@ -651,8 +651,8 @@
    "tier": "base",
    "on": "dash",
    "base": {
-    "damage": 22,
-    "cooldown": 1.2,
+    "damage": 30,
+    "cooldown": 1,
     "amount": 1,
     "area": 1,
     "speed": 0,
@@ -675,13 +675,13 @@
      "area": 0.15
     },
     {
-     "damage": 14
+     "damage": 18
     },
     {
      "area": 0.2
     },
     {
-     "damage": 20
+     "damage": 26
     }
    ],
    "weight": 75,
@@ -739,8 +739,8 @@
    "id": "mezzaluna",
    "tier": "base",
    "base": {
-    "damage": 18,
-    "cooldown": 1.5,
+    "damage": 24,
+    "cooldown": 1.3,
     "amount": 1,
     "area": 1,
     "speed": 0,
@@ -751,26 +751,26 @@
    },
    "levels": [
     {
-     "damage": 6
+     "damage": 8
     },
     {
      "area": 0.1
     },
     {
-     "damage": 6
+     "damage": 8
     },
     {
      "cooldown": -0.15
     },
     {
-     "damage": 9,
+     "damage": 12,
      "area": 0.1
     },
     {
-     "damage": 9
+     "damage": 12
     },
     {
-     "damage": 12
+     "damage": 16
     }
    ],
    "weight": 80,
@@ -855,19 +855,19 @@
    "id": "potato-battery",
    "tier": "base",
    "base": {
-    "damage": 5,
-    "cooldown": 2.5,
+    "damage": 7,
+    "cooldown": 2,
     "amount": 0,
     "area": 1,
     "speed": 0,
-    "duration": 4,
+    "duration": 3,
     "pierce": 0,
     "knockback": 0,
     "interval": 0
    },
    "levels": [
     {
-     "damage": 2
+     "damage": 3
     },
     {
      "duration": 0.5
@@ -879,13 +879,13 @@
      "amount": 1
     },
     {
-     "damage": 5
+     "damage": 7
     },
     {
      "cooldown": -0.5
     },
     {
-     "damage": 5,
+     "damage": 7,
      "area": 0.25
     }
    ],
@@ -897,7 +897,7 @@
     "range": 110,
     "snap": 170,
     "hitInterval": 0.25,
-    "discharge": 5,
+    "discharge": 8,
     "pin": 0.85,
     "onHit": {
      "kind": "slow",
@@ -1051,8 +1051,8 @@
    "id": "root-spikes",
    "tier": "base",
    "base": {
-    "damage": 22,
-    "cooldown": 2.8,
+    "damage": 26,
+    "cooldown": 2.4,
     "amount": 3,
     "area": 1,
     "speed": 0,
@@ -1141,7 +1141,7 @@
    "id": "salt-line",
    "tier": "base",
    "base": {
-    "damage": 8,
+    "damage": 14,
     "cooldown": 0.2,
     "amount": 1,
     "area": 1,
@@ -1153,7 +1153,7 @@
    },
    "levels": [
     {
-     "damage": 4
+     "damage": 7
     },
     {
      "duration": 0.5
@@ -1162,7 +1162,7 @@
      "area": 0.2
     },
     {
-     "damage": 4
+     "damage": 7
     },
     {
      "duration": 0.5
@@ -1171,7 +1171,7 @@
      "area": 0.2
     },
     {
-     "damage": 8
+     "damage": 12
     }
    ],
    "weight": 75,
@@ -1742,8 +1742,8 @@
    "id": "whisk-vortex",
    "tier": "base",
    "base": {
-    "damage": 3,
-    "cooldown": 3.2,
+    "damage": 3.6,
+    "cooldown": 2.7,
     "amount": 1,
     "area": 1,
     "speed": 0,
@@ -1754,7 +1754,7 @@
    },
    "levels": [
     {
-     "damage": 1
+     "damage": 1.2
     },
     {
      "duration": 0.3
@@ -1763,7 +1763,7 @@
      "area": 0.15
     },
     {
-     "damage": 1
+     "damage": 1.2
     },
     {
      "duration": 0.3
@@ -2273,6 +2273,579 @@
     "size": 4,
     "turn": 7
    }
+  },
+  {
+   "id": "afterburner-fries",
+   "tier": "base",
+   "on": "dash",
+   "base": {
+    "damage": 10,
+    "cooldown": 0.4,
+    "amount": 4,
+    "area": 1,
+    "speed": 300,
+    "duration": 0.5,
+    "pierce": 1,
+    "knockback": 1,
+    "interval": 0
+   },
+   "levels": [
+    {
+     "damage": 3
+    },
+    {
+     "amount": 1
+    },
+    {
+     "damage": 4
+    },
+    {
+     "pierce": 1
+    },
+    {
+     "amount": 2
+    },
+    {
+     "damage": 5
+    },
+    {
+     "damage": 7
+    }
+   ],
+   "weight": 75,
+   "behavior": {
+    "kind": "bigUpdate",
+    "variant": {
+     "kind": "afterburnerFries",
+     "size": 3,
+     "spread": 1.1,
+     "gap": 10
+    }
+   }
+  },
+  {
+   "id": "broadside",
+   "tier": "base",
+   "base": {
+    "damage": 72,
+    "cooldown": 2.4,
+    "amount": 2,
+    "area": 1,
+    "speed": 170,
+    "duration": 0,
+    "pierce": 0,
+    "knockback": 1.2,
+    "interval": 0.06
+   },
+   "levels": [
+    {
+     "damage": 18
+    },
+    {
+     "area": 0.12
+    },
+    {
+     "amount": 1
+    },
+    {
+     "damage": 22
+    },
+    {
+     "cooldown": -0.4
+    },
+    {
+     "area": 0.15
+    },
+    {
+     "damage": 36
+    }
+   ],
+   "weight": 75,
+   "behavior": {
+    "kind": "bigUpdate",
+    "variant": {
+     "kind": "broadside",
+     "size": 3,
+     "explodeRadius": 18,
+     "range": 56,
+     "minFlight": 32,
+     "rowGap": 22
+    }
+   }
+  },
+  {
+   "id": "comet-scythe",
+   "tier": "base",
+   "base": {
+    "damage": 12,
+    "cooldown": 0,
+    "amount": 1,
+    "area": 1,
+    "speed": 4.2,
+    "duration": 0,
+    "pierce": 0,
+    "knockback": 1.5,
+    "interval": 0
+   },
+   "levels": [
+    {
+     "damage": 4
+    },
+    {
+     "area": 0.12
+    },
+    {
+     "damage": 5
+    },
+    {
+     "amount": 1
+    },
+    {
+     "damage": 6
+    },
+    {
+     "area": 0.15
+    },
+    {
+     "damage": 9
+    }
+   ],
+   "weight": 75,
+   "behavior": {
+    "kind": "bigUpdate",
+    "variant": {
+     "kind": "cometScythe",
+     "size": 9,
+     "orbitRadius": 34,
+     "hitInterval": 0.3,
+     "reachIn": 0.4,
+     "reachOut": 1.7,
+     "lapsPerSwing": 2
+    }
+   }
+  },
+  {
+   "id": "harvest-moon",
+   "tier": "base",
+   "base": {
+    "damage": 8,
+    "cooldown": 0,
+    "amount": 1,
+    "area": 1,
+    "speed": 2.6,
+    "duration": 0.9,
+    "pierce": 0,
+    "knockback": 1.5,
+    "interval": 0
+   },
+   "levels": [
+    {
+     "damage": 3
+    },
+    {
+     "duration": 0.2
+    },
+    {
+     "damage": 4
+    },
+    {
+     "amount": 1
+    },
+    {
+     "damage": 5
+    },
+    {
+     "area": 0.15
+    },
+    {
+     "damage": 7
+    }
+   ],
+   "weight": 75,
+   "behavior": {
+    "kind": "bigUpdate",
+    "variant": {
+     "kind": "harvestMoon",
+     "size": 6,
+     "orbitRadius": 56,
+     "strikeInterval": 0.5,
+     "grab": 7,
+     "minCarry": 0.4,
+     "regrab": 3,
+     "fling": 240
+    }
+   }
+  },
+  {
+   "id": "hash-hawk",
+   "tier": "base",
+   "base": {
+    "damage": 30,
+    "cooldown": 2.2,
+    "amount": 1,
+    "area": 1,
+    "speed": 320,
+    "duration": 0,
+    "pierce": 0,
+    "knockback": 1,
+    "interval": 0
+   },
+   "levels": [
+    {
+     "damage": 6
+    },
+    {
+     "amount": 1
+    },
+    {
+     "damage": 8
+    },
+    {
+     "cooldown": -0.4
+    },
+    {
+     "damage": 10
+    },
+    {
+     "amount": 1
+    },
+    {
+     "damage": 14
+    }
+   ],
+   "weight": 70,
+   "behavior": {
+    "kind": "bigUpdate",
+    "variant": {
+     "kind": "hashHawk",
+     "rule": {
+      "range": 150,
+      "circleRadius": 36,
+      "circleSquash": 0.55,
+      "circleTurn": 2.4,
+      "returnSpeed": 240,
+      "burstRadius": 12,
+      "retrySec": 0.2,
+      "staggerSec": 0.6,
+      "eliteWeight": 10,
+      "bossWeight": 100
+     }
+    }
+   }
+  },
+  {
+   "id": "mash-golem",
+   "tier": "base",
+   "base": {
+    "damage": 8,
+    "cooldown": 5,
+    "amount": 1,
+    "area": 1,
+    "speed": 50,
+    "duration": 1.2,
+    "pierce": 99,
+    "knockback": 4,
+    "interval": 0.3
+   },
+   "levels": [
+    {
+     "damage": 3
+    },
+    {
+     "duration": 0.3
+    },
+    {
+     "damage": 3
+    },
+    {
+     "area": 0.15
+    },
+    {
+     "cooldown": -0.8
+    },
+    {
+     "damage": 4
+    },
+    {
+     "amount": 1
+    }
+   ],
+   "weight": 75,
+   "behavior": {
+    "kind": "bigUpdate",
+    "variant": {
+     "kind": "mashGolem",
+     "lead": 10,
+     "riseSec": 0.3,
+     "body": 11,
+     "pulseSec": 0.15,
+     "fanDeg": 24,
+     "reach": 120,
+     "slamRadius": 28,
+     "slamMult": 2.5
+    }
+   }
+  },
+  {
+   "id": "mash-landing",
+   "tier": "base",
+   "on": "dash",
+   "base": {
+    "damage": 90,
+    "cooldown": 0.8,
+    "amount": 1,
+    "area": 1,
+    "speed": 0,
+    "duration": 0,
+    "pierce": 99,
+    "knockback": 3,
+    "interval": 0
+   },
+   "levels": [
+    {
+     "damage": 20
+    },
+    {
+     "area": 0.15
+    },
+    {
+     "damage": 25
+    },
+    {
+     "area": 0.15
+    },
+    {
+     "damage": 35
+    },
+    {
+     "area": 0.2
+    },
+    {
+     "damage": 50
+    }
+   ],
+   "weight": 75,
+   "behavior": {
+    "kind": "bigUpdate",
+    "variant": {
+     "kind": "mashLanding",
+     "radius": 34
+    }
+   }
+  },
+  {
+   "id": "peel-phantom",
+   "tier": "base",
+   "on": "dash",
+   "base": {
+    "damage": 20,
+    "cooldown": 0,
+    "amount": 0,
+    "area": 1,
+    "speed": 0,
+    "duration": 1.5,
+    "pierce": 0,
+    "knockback": 2,
+    "interval": 0
+   },
+   "levels": [
+    {
+     "damage": 6
+    },
+    {
+     "duration": 0.3
+    },
+    {
+     "area": 0.15
+    },
+    {
+     "damage": 8
+    },
+    {
+     "duration": 0.3
+    },
+    {
+     "area": 0.15
+    },
+    {
+     "damage": 12
+    }
+   ],
+   "weight": 75,
+   "behavior": {
+    "kind": "bigUpdate",
+    "variant": {
+     "kind": "peelPhantom",
+     "lure": {
+      "reach": 64
+     },
+     "burst": 24,
+     "spread": 18
+    }
+   }
+  },
+  {
+   "id": "skipping-cannonball",
+   "tier": "base",
+   "base": {
+    "damage": 14,
+    "cooldown": 2,
+    "amount": 1,
+    "area": 1,
+    "speed": 110,
+    "duration": 0,
+    "pierce": 0,
+    "knockback": 1,
+    "interval": 0
+   },
+   "levels": [
+    {
+     "damage": 4
+    },
+    {
+     "area": 0.12
+    },
+    {
+     "amount": 1
+    },
+    {
+     "damage": 5
+    },
+    {
+     "cooldown": -0.3
+    },
+    {
+     "amount": 1
+    },
+    {
+     "damage": 8
+    }
+   ],
+   "weight": 75,
+   "behavior": {
+    "kind": "bigUpdate",
+    "variant": {
+     "kind": "skippingCannonball",
+     "rule": {
+      "hops": 3,
+      "hopGap": 0.28,
+      "minSpeed": 80,
+      "burstRadius": 23,
+      "burstGrowth": 5,
+      "damageGrowth": 0.25,
+      "settle": 0.45
+     }
+    }
+   }
+  },
+  {
+   "id": "sprout-squad",
+   "tier": "base",
+   "base": {
+    "damage": 6,
+    "cooldown": 0,
+    "amount": 1,
+    "area": 1,
+    "speed": 70,
+    "duration": 6,
+    "pierce": 0,
+    "knockback": 0.4,
+    "interval": 0.4
+   },
+   "levels": [
+    {
+     "damage": 2
+    },
+    {
+     "amount": 1
+    },
+    {
+     "duration": 1
+    },
+    {
+     "damage": 3
+    },
+    {
+     "amount": 1
+    },
+    {
+     "duration": 1
+    },
+    {
+     "damage": 4
+    }
+   ],
+   "weight": 75,
+   "behavior": {
+    "kind": "bigUpdate",
+    "variant": {
+     "kind": "sproutSquad",
+     "rule": {
+      "chance": 0.12,
+      "perAmount": 3,
+      "seekRange": 110,
+      "reach": 3,
+      "heel": 22,
+      "riseSec": 0.3,
+      "wiltSec": 0.35,
+      "hopHz": 2.5,
+      "airShare": 0.6
+     }
+    }
+   }
+  },
+  {
+   "id": "spud-decoy",
+   "tier": "base",
+   "base": {
+    "damage": 30,
+    "cooldown": 7,
+    "amount": 1,
+    "area": 1,
+    "speed": 0,
+    "duration": 4,
+    "pierce": 0,
+    "knockback": 2,
+    "interval": 0
+   },
+   "levels": [
+    {
+     "damage": 8
+    },
+    {
+     "duration": 0.5
+    },
+    {
+     "area": 0.15
+    },
+    {
+     "damage": 10
+    },
+    {
+     "cooldown": -1
+    },
+    {
+     "amount": 1
+    },
+    {
+     "damage": 14
+    }
+   ],
+   "weight": 75,
+   "behavior": {
+    "kind": "bigUpdate",
+    "variant": {
+     "kind": "spudDecoy",
+     "rule": {
+      "lure": {
+       "reach": 80
+      },
+      "behind": 26,
+      "spread": 1.1,
+      "burstRadius": 30
+     }
+    }
+   }
   }
  ],
  "allWeapons": [
@@ -2281,8 +2854,8 @@
    "tier": "base",
    "on": "dash",
    "base": {
-    "damage": 9,
-    "cooldown": 2.5,
+    "damage": 14,
+    "cooldown": 2,
     "amount": 1,
     "area": 1,
     "speed": 0,
@@ -2293,7 +2866,7 @@
    },
    "levels": [
     {
-     "damage": 5
+     "damage": 7
     },
     {
      "area": 0.15
@@ -2302,7 +2875,7 @@
      "duration": 0.5
     },
     {
-     "damage": 5
+     "damage": 7
     },
     {
      "area": 0.15
@@ -2311,7 +2884,7 @@
      "duration": 0.5
     },
     {
-     "damage": 9
+     "damage": 12
     }
    ],
    "weight": 75,
@@ -2524,8 +3097,8 @@
    "id": "fry-lance",
    "tier": "base",
    "base": {
-    "damage": 22,
-    "cooldown": 2.4,
+    "damage": 26,
+    "cooldown": 2,
     "amount": 1,
     "area": 1,
     "speed": 0,
@@ -2536,7 +3109,7 @@
    },
    "levels": [
     {
-     "damage": 10
+     "damage": 12
     },
     {
      "area": 0.25
@@ -2545,7 +3118,7 @@
      "amount": 1
     },
     {
-     "damage": 10
+     "damage": 12
     },
     {
      "cooldown": -0.3
@@ -2554,7 +3127,7 @@
      "area": 0.25
     },
     {
-     "damage": 15
+     "damage": 18
     }
    ],
    "weight": 80,
@@ -2904,8 +3477,8 @@
    "tier": "base",
    "on": "dash",
    "base": {
-    "damage": 22,
-    "cooldown": 1.2,
+    "damage": 30,
+    "cooldown": 1,
     "amount": 1,
     "area": 1,
     "speed": 0,
@@ -2928,13 +3501,13 @@
      "area": 0.15
     },
     {
-     "damage": 14
+     "damage": 18
     },
     {
      "area": 0.2
     },
     {
-     "damage": 20
+     "damage": 26
     }
    ],
    "weight": 75,
@@ -2992,8 +3565,8 @@
    "id": "mezzaluna",
    "tier": "base",
    "base": {
-    "damage": 18,
-    "cooldown": 1.5,
+    "damage": 24,
+    "cooldown": 1.3,
     "amount": 1,
     "area": 1,
     "speed": 0,
@@ -3004,26 +3577,26 @@
    },
    "levels": [
     {
-     "damage": 6
+     "damage": 8
     },
     {
      "area": 0.1
     },
     {
-     "damage": 6
+     "damage": 8
     },
     {
      "cooldown": -0.15
     },
     {
-     "damage": 9,
+     "damage": 12,
      "area": 0.1
     },
     {
-     "damage": 9
+     "damage": 12
     },
     {
-     "damage": 12
+     "damage": 16
     }
    ],
    "weight": 80,
@@ -3108,19 +3681,19 @@
    "id": "potato-battery",
    "tier": "base",
    "base": {
-    "damage": 5,
-    "cooldown": 2.5,
+    "damage": 7,
+    "cooldown": 2,
     "amount": 0,
     "area": 1,
     "speed": 0,
-    "duration": 4,
+    "duration": 3,
     "pierce": 0,
     "knockback": 0,
     "interval": 0
    },
    "levels": [
     {
-     "damage": 2
+     "damage": 3
     },
     {
      "duration": 0.5
@@ -3132,13 +3705,13 @@
      "amount": 1
     },
     {
-     "damage": 5
+     "damage": 7
     },
     {
      "cooldown": -0.5
     },
     {
-     "damage": 5,
+     "damage": 7,
      "area": 0.25
     }
    ],
@@ -3150,7 +3723,7 @@
     "range": 110,
     "snap": 170,
     "hitInterval": 0.25,
-    "discharge": 5,
+    "discharge": 8,
     "pin": 0.85,
     "onHit": {
      "kind": "slow",
@@ -3304,8 +3877,8 @@
    "id": "root-spikes",
    "tier": "base",
    "base": {
-    "damage": 22,
-    "cooldown": 2.8,
+    "damage": 26,
+    "cooldown": 2.4,
     "amount": 3,
     "area": 1,
     "speed": 0,
@@ -3394,7 +3967,7 @@
    "id": "salt-line",
    "tier": "base",
    "base": {
-    "damage": 8,
+    "damage": 14,
     "cooldown": 0.2,
     "amount": 1,
     "area": 1,
@@ -3406,7 +3979,7 @@
    },
    "levels": [
     {
-     "damage": 4
+     "damage": 7
     },
     {
      "duration": 0.5
@@ -3415,7 +3988,7 @@
      "area": 0.2
     },
     {
-     "damage": 4
+     "damage": 7
     },
     {
      "duration": 0.5
@@ -3424,7 +3997,7 @@
      "area": 0.2
     },
     {
-     "damage": 8
+     "damage": 12
     }
    ],
    "weight": 75,
@@ -3995,8 +4568,8 @@
    "id": "whisk-vortex",
    "tier": "base",
    "base": {
-    "damage": 3,
-    "cooldown": 3.2,
+    "damage": 3.6,
+    "cooldown": 2.7,
     "amount": 1,
     "area": 1,
     "speed": 0,
@@ -4007,7 +4580,7 @@
    },
    "levels": [
     {
-     "damage": 1
+     "damage": 1.2
     },
     {
      "duration": 0.3
@@ -4016,7 +4589,7 @@
      "area": 0.15
     },
     {
-     "damage": 1
+     "damage": 1.2
     },
     {
      "duration": 0.3
@@ -4207,8 +4780,8 @@
    "tier": "evolved",
    "on": "dash",
    "base": {
-    "damage": 80,
-    "cooldown": 1.8,
+    "damage": 120,
+    "cooldown": 1.5,
     "amount": 1,
     "area": 1.5,
     "speed": 0,
@@ -4636,8 +5209,8 @@
    "id": "railfry",
    "tier": "evolved",
    "base": {
-    "damage": 58,
-    "cooldown": 1.6,
+    "damage": 68,
+    "cooldown": 1.4,
     "amount": 3,
     "area": 1.8,
     "speed": 0,
@@ -4703,10 +5276,10 @@
    "id": "salt-flats",
    "tier": "evolved",
    "base": {
-    "damage": 80,
+    "damage": 110,
     "cooldown": 0.12,
     "amount": 1,
-    "area": 1.7,
+    "area": 2,
     "speed": 0,
     "duration": 3,
     "pierce": 0,
@@ -4716,7 +5289,7 @@
    "behavior": {
     "kind": "pool",
     "size": 11,
-    "hitInterval": 0.25,
+    "hitInterval": 0.2,
     "range": 0,
     "trail": {
      "push": 60
@@ -4847,7 +5420,7 @@
    "id": "taproot-eruption",
    "tier": "evolved",
    "base": {
-    "damage": 90,
+    "damage": 105,
     "cooldown": 1.5,
     "amount": 8,
     "area": 1.6,
@@ -4936,8 +5509,8 @@
    "tier": "evolved",
    "on": "dash",
    "base": {
-    "damage": 110,
-    "cooldown": 1.3,
+    "damage": 150,
+    "cooldown": 1.1,
     "amount": 2,
     "area": 1.6,
     "speed": 0,
@@ -5671,8 +6244,8 @@
    "id": "tailgate-party",
    "tier": "evolved",
    "base": {
-    "damage": 47.6,
-    "cooldown": 0.6,
+    "damage": 57,
+    "cooldown": 0.5,
     "amount": 5,
     "area": 1,
     "speed": 200,
@@ -5808,6 +6381,602 @@
    },
    "from": "hot-streak",
    "catalyst": "thick-skin"
+  },
+  {
+   "id": "afterburner-fries",
+   "tier": "base",
+   "on": "dash",
+   "base": {
+    "damage": 10,
+    "cooldown": 0.4,
+    "amount": 4,
+    "area": 1,
+    "speed": 300,
+    "duration": 0.5,
+    "pierce": 1,
+    "knockback": 1,
+    "interval": 0
+   },
+   "levels": [
+    {
+     "damage": 3
+    },
+    {
+     "amount": 1
+    },
+    {
+     "damage": 4
+    },
+    {
+     "pierce": 1
+    },
+    {
+     "amount": 2
+    },
+    {
+     "damage": 5
+    },
+    {
+     "damage": 7
+    }
+   ],
+   "weight": 75,
+   "behavior": {
+    "kind": "bigUpdate",
+    "variant": {
+     "kind": "afterburnerFries",
+     "size": 3,
+     "spread": 1.1,
+     "gap": 10
+    }
+   }
+  },
+  {
+   "id": "broadside",
+   "tier": "base",
+   "base": {
+    "damage": 72,
+    "cooldown": 2.4,
+    "amount": 2,
+    "area": 1,
+    "speed": 170,
+    "duration": 0,
+    "pierce": 0,
+    "knockback": 1.2,
+    "interval": 0.06
+   },
+   "levels": [
+    {
+     "damage": 18
+    },
+    {
+     "area": 0.12
+    },
+    {
+     "amount": 1
+    },
+    {
+     "damage": 22
+    },
+    {
+     "cooldown": -0.4
+    },
+    {
+     "area": 0.15
+    },
+    {
+     "damage": 36
+    }
+   ],
+   "weight": 75,
+   "behavior": {
+    "kind": "bigUpdate",
+    "variant": {
+     "kind": "broadside",
+     "size": 3,
+     "explodeRadius": 18,
+     "range": 56,
+     "minFlight": 32,
+     "rowGap": 22
+    }
+   }
+  },
+  {
+   "id": "comet-scythe",
+   "tier": "base",
+   "base": {
+    "damage": 12,
+    "cooldown": 0,
+    "amount": 1,
+    "area": 1,
+    "speed": 4.2,
+    "duration": 0,
+    "pierce": 0,
+    "knockback": 1.5,
+    "interval": 0
+   },
+   "levels": [
+    {
+     "damage": 4
+    },
+    {
+     "area": 0.12
+    },
+    {
+     "damage": 5
+    },
+    {
+     "amount": 1
+    },
+    {
+     "damage": 6
+    },
+    {
+     "area": 0.15
+    },
+    {
+     "damage": 9
+    }
+   ],
+   "weight": 75,
+   "behavior": {
+    "kind": "bigUpdate",
+    "variant": {
+     "kind": "cometScythe",
+     "size": 9,
+     "orbitRadius": 34,
+     "hitInterval": 0.3,
+     "reachIn": 0.4,
+     "reachOut": 1.7,
+     "lapsPerSwing": 2
+    }
+   }
+  },
+  {
+   "id": "harvest-moon",
+   "tier": "base",
+   "base": {
+    "damage": 8,
+    "cooldown": 0,
+    "amount": 1,
+    "area": 1,
+    "speed": 2.6,
+    "duration": 0.9,
+    "pierce": 0,
+    "knockback": 1.5,
+    "interval": 0
+   },
+   "levels": [
+    {
+     "damage": 3
+    },
+    {
+     "duration": 0.2
+    },
+    {
+     "damage": 4
+    },
+    {
+     "amount": 1
+    },
+    {
+     "damage": 5
+    },
+    {
+     "area": 0.15
+    },
+    {
+     "damage": 7
+    }
+   ],
+   "weight": 75,
+   "behavior": {
+    "kind": "bigUpdate",
+    "variant": {
+     "kind": "harvestMoon",
+     "size": 6,
+     "orbitRadius": 56,
+     "strikeInterval": 0.5,
+     "grab": 7,
+     "minCarry": 0.4,
+     "regrab": 3,
+     "fling": 240
+    }
+   }
+  },
+  {
+   "id": "hash-hawk",
+   "tier": "base",
+   "base": {
+    "damage": 30,
+    "cooldown": 2.2,
+    "amount": 1,
+    "area": 1,
+    "speed": 320,
+    "duration": 0,
+    "pierce": 0,
+    "knockback": 1,
+    "interval": 0
+   },
+   "levels": [
+    {
+     "damage": 6
+    },
+    {
+     "amount": 1
+    },
+    {
+     "damage": 8
+    },
+    {
+     "cooldown": -0.4
+    },
+    {
+     "damage": 10
+    },
+    {
+     "amount": 1
+    },
+    {
+     "damage": 14
+    }
+   ],
+   "weight": 70,
+   "behavior": {
+    "kind": "bigUpdate",
+    "variant": {
+     "kind": "hashHawk",
+     "rule": {
+      "range": 150,
+      "circleRadius": 36,
+      "circleSquash": 0.55,
+      "circleTurn": 2.4,
+      "returnSpeed": 240,
+      "burstRadius": 12,
+      "retrySec": 0.2,
+      "staggerSec": 0.6,
+      "eliteWeight": 10,
+      "bossWeight": 100
+     }
+    }
+   }
+  },
+  {
+   "id": "mash-golem",
+   "tier": "base",
+   "base": {
+    "damage": 8,
+    "cooldown": 5,
+    "amount": 1,
+    "area": 1,
+    "speed": 50,
+    "duration": 1.2,
+    "pierce": 99,
+    "knockback": 4,
+    "interval": 0.3
+   },
+   "levels": [
+    {
+     "damage": 3
+    },
+    {
+     "duration": 0.3
+    },
+    {
+     "damage": 3
+    },
+    {
+     "area": 0.15
+    },
+    {
+     "cooldown": -0.8
+    },
+    {
+     "damage": 4
+    },
+    {
+     "amount": 1
+    }
+   ],
+   "weight": 75,
+   "behavior": {
+    "kind": "bigUpdate",
+    "variant": {
+     "kind": "mashGolem",
+     "lead": 10,
+     "riseSec": 0.3,
+     "body": 11,
+     "pulseSec": 0.15,
+     "fanDeg": 24,
+     "reach": 120,
+     "slamRadius": 28,
+     "slamMult": 2.5
+    }
+   }
+  },
+  {
+   "id": "mash-landing",
+   "tier": "base",
+   "on": "dash",
+   "base": {
+    "damage": 90,
+    "cooldown": 0.8,
+    "amount": 1,
+    "area": 1,
+    "speed": 0,
+    "duration": 0,
+    "pierce": 99,
+    "knockback": 3,
+    "interval": 0
+   },
+   "levels": [
+    {
+     "damage": 20
+    },
+    {
+     "area": 0.15
+    },
+    {
+     "damage": 25
+    },
+    {
+     "area": 0.15
+    },
+    {
+     "damage": 35
+    },
+    {
+     "area": 0.2
+    },
+    {
+     "damage": 50
+    }
+   ],
+   "weight": 75,
+   "behavior": {
+    "kind": "bigUpdate",
+    "variant": {
+     "kind": "mashLanding",
+     "radius": 34
+    }
+   }
+  },
+  {
+   "id": "peel-phantom",
+   "tier": "base",
+   "on": "dash",
+   "base": {
+    "damage": 20,
+    "cooldown": 0,
+    "amount": 0,
+    "area": 1,
+    "speed": 0,
+    "duration": 1.5,
+    "pierce": 0,
+    "knockback": 2,
+    "interval": 0
+   },
+   "levels": [
+    {
+     "damage": 6
+    },
+    {
+     "duration": 0.3
+    },
+    {
+     "area": 0.15
+    },
+    {
+     "damage": 8
+    },
+    {
+     "duration": 0.3
+    },
+    {
+     "area": 0.15
+    },
+    {
+     "damage": 12
+    }
+   ],
+   "weight": 75,
+   "behavior": {
+    "kind": "bigUpdate",
+    "variant": {
+     "kind": "peelPhantom",
+     "lure": {
+      "reach": 64
+     },
+     "burst": 24,
+     "spread": 18
+    }
+   }
+  },
+  {
+   "id": "skipping-cannonball",
+   "tier": "base",
+   "base": {
+    "damage": 14,
+    "cooldown": 2,
+    "amount": 1,
+    "area": 1,
+    "speed": 110,
+    "duration": 0,
+    "pierce": 0,
+    "knockback": 1,
+    "interval": 0
+   },
+   "levels": [
+    {
+     "damage": 4
+    },
+    {
+     "area": 0.12
+    },
+    {
+     "amount": 1
+    },
+    {
+     "damage": 5
+    },
+    {
+     "cooldown": -0.3
+    },
+    {
+     "amount": 1
+    },
+    {
+     "damage": 8
+    }
+   ],
+   "weight": 75,
+   "behavior": {
+    "kind": "bigUpdate",
+    "variant": {
+     "kind": "skippingCannonball",
+     "rule": {
+      "hops": 3,
+      "hopGap": 0.28,
+      "minSpeed": 80,
+      "burstRadius": 23,
+      "burstGrowth": 5,
+      "damageGrowth": 0.25,
+      "settle": 0.45
+     }
+    }
+   }
+  },
+  {
+   "id": "sprout-squad",
+   "tier": "base",
+   "base": {
+    "damage": 6,
+    "cooldown": 0,
+    "amount": 1,
+    "area": 1,
+    "speed": 70,
+    "duration": 6,
+    "pierce": 0,
+    "knockback": 0.4,
+    "interval": 0.4
+   },
+   "levels": [
+    {
+     "damage": 2
+    },
+    {
+     "amount": 1
+    },
+    {
+     "duration": 1
+    },
+    {
+     "damage": 3
+    },
+    {
+     "amount": 1
+    },
+    {
+     "duration": 1
+    },
+    {
+     "damage": 4
+    }
+   ],
+   "weight": 75,
+   "behavior": {
+    "kind": "bigUpdate",
+    "variant": {
+     "kind": "sproutSquad",
+     "rule": {
+      "chance": 0.12,
+      "perAmount": 3,
+      "seekRange": 110,
+      "reach": 3,
+      "heel": 22,
+      "riseSec": 0.3,
+      "wiltSec": 0.35,
+      "hopHz": 2.5,
+      "airShare": 0.6
+     }
+    }
+   }
+  },
+  {
+   "id": "spud-decoy",
+   "tier": "base",
+   "base": {
+    "damage": 30,
+    "cooldown": 7,
+    "amount": 1,
+    "area": 1,
+    "speed": 0,
+    "duration": 4,
+    "pierce": 0,
+    "knockback": 2,
+    "interval": 0
+   },
+   "levels": [
+    {
+     "damage": 8
+    },
+    {
+     "duration": 0.5
+    },
+    {
+     "area": 0.15
+    },
+    {
+     "damage": 10
+    },
+    {
+     "cooldown": -1
+    },
+    {
+     "amount": 1
+    },
+    {
+     "damage": 14
+    }
+   ],
+   "weight": 75,
+   "behavior": {
+    "kind": "bigUpdate",
+    "variant": {
+     "kind": "spudDecoy",
+     "rule": {
+      "lure": {
+       "reach": 80
+      },
+      "behind": 26,
+      "spread": 1.1,
+      "burstRadius": 30
+     }
+    }
+   }
+  },
+  {
+   "id": "gravy-pack",
+   "tier": "evolved",
+   "base": {
+    "damage": 30,
+    "cooldown": 0.55,
+    "amount": 4,
+    "area": 1,
+    "speed": 230,
+    "duration": 1.5,
+    "pierce": 2,
+    "knockback": 1.2,
+    "interval": 0.1
+   },
+   "behavior": {
+    "kind": "familiar",
+    "size": 4,
+    "range": 170,
+    "heal": 0.05
+   },
+   "from": "tater-pup",
+   "catalyst": "gravy-heart"
   }
  ],
  "evolutions": [
@@ -5977,8 +7146,8 @@
    "tier": "evolved",
    "on": "dash",
    "base": {
-    "damage": 80,
-    "cooldown": 1.8,
+    "damage": 120,
+    "cooldown": 1.5,
     "amount": 1,
     "area": 1.5,
     "speed": 0,
@@ -6406,8 +7575,8 @@
    "id": "railfry",
    "tier": "evolved",
    "base": {
-    "damage": 58,
-    "cooldown": 1.6,
+    "damage": 68,
+    "cooldown": 1.4,
     "amount": 3,
     "area": 1.8,
     "speed": 0,
@@ -6473,10 +7642,10 @@
    "id": "salt-flats",
    "tier": "evolved",
    "base": {
-    "damage": 80,
+    "damage": 110,
     "cooldown": 0.12,
     "amount": 1,
-    "area": 1.7,
+    "area": 2,
     "speed": 0,
     "duration": 3,
     "pierce": 0,
@@ -6486,7 +7655,7 @@
    "behavior": {
     "kind": "pool",
     "size": 11,
-    "hitInterval": 0.25,
+    "hitInterval": 0.2,
     "range": 0,
     "trail": {
      "push": 60
@@ -6617,7 +7786,7 @@
    "id": "taproot-eruption",
    "tier": "evolved",
    "base": {
-    "damage": 90,
+    "damage": 105,
     "cooldown": 1.5,
     "amount": 8,
     "area": 1.6,
@@ -6706,8 +7875,8 @@
    "tier": "evolved",
    "on": "dash",
    "base": {
-    "damage": 110,
-    "cooldown": 1.3,
+    "damage": 150,
+    "cooldown": 1.1,
     "amount": 2,
     "area": 1.6,
     "speed": 0,
@@ -6875,8 +8044,8 @@
    "id": "tailgate-party",
    "tier": "evolved",
    "base": {
-    "damage": 47.6,
-    "cooldown": 0.6,
+    "damage": 57,
+    "cooldown": 0.5,
     "amount": 5,
     "area": 1,
     "speed": 200,
@@ -7012,6 +8181,29 @@
    },
    "from": "hot-streak",
    "catalyst": "thick-skin"
+  },
+  {
+   "id": "gravy-pack",
+   "tier": "evolved",
+   "base": {
+    "damage": 30,
+    "cooldown": 0.55,
+    "amount": 4,
+    "area": 1,
+    "speed": 230,
+    "duration": 1.5,
+    "pierce": 2,
+    "knockback": 1.2,
+    "interval": 0.1
+   },
+   "behavior": {
+    "kind": "familiar",
+    "size": 4,
+    "range": 170,
+    "heal": 0.05
+   },
+   "from": "tater-pup",
+   "catalyst": "gravy-heart"
   }
  ],
  "unions": [
@@ -7159,7 +8351,7 @@
   {
    "id": "golden-fry",
    "stat": "greed",
-   "perLevel": 0.12,
+   "perLevel": 0.2,
    "maxLevel": 5,
    "weight": 80
   },
@@ -7295,6 +8487,174 @@
    "perLevel": 0.05,
    "maxLevel": 5,
    "weight": 80
+  },
+  {
+   "id": "hot-start",
+   "stat": "dashGrace",
+   "perLevel": 0,
+   "maxLevel": 5,
+   "weight": 60,
+   "effect": {
+    "phase": "gear",
+    "variant": {
+     "kind": "hotStart",
+     "fireRate": 1.6,
+     "baseSec": 1,
+     "perLevelSec": 0.3
+    }
+   }
+  },
+  {
+   "id": "couch-potato",
+   "stat": "might",
+   "perLevel": 0,
+   "maxLevel": 5,
+   "weight": 60,
+   "effect": {
+    "phase": "variety",
+    "variant": {
+     "kind": "couchPotato",
+     "rampPerSec": 0.04,
+     "capPerLevel": 0.2
+    }
+   }
+  },
+  {
+   "id": "gravy-splash",
+   "stat": "dashGrace",
+   "perLevel": 0,
+   "maxLevel": 5,
+   "weight": 60,
+   "effect": {
+    "phase": "variety",
+    "variant": {
+     "kind": "gravySplash",
+     "share": 1,
+     "everySec": 0.5,
+     "radius": 64
+    }
+   }
+  },
+  {
+   "id": "hash-rush",
+   "stat": "might",
+   "perLevel": 0,
+   "maxLevel": 5,
+   "weight": 60,
+   "effect": {
+    "phase": "variety",
+    "variant": {
+     "kind": "hashRush",
+     "damagePerDash": 0.04,
+     "windowSec": 4,
+     "maxDashes": 3
+    }
+   }
+  },
+  {
+   "id": "hearty-helping",
+   "stat": "might",
+   "perLevel": 0,
+   "maxLevel": 5,
+   "weight": 60,
+   "effect": {
+    "phase": "variety",
+    "variant": {
+     "kind": "heartyHelping",
+     "damagePerStep": 0.02,
+     "hpStep": 50
+    }
+   }
+  },
+  {
+   "id": "lean-lunch",
+   "stat": "might",
+   "perLevel": 0,
+   "maxLevel": 5,
+   "weight": 70,
+   "effect": {
+    "phase": "variety",
+    "variant": {
+     "kind": "leanLunch",
+     "damagePerSlot": 0.04,
+     "cooldownPerSlot": 0.02
+    }
+   }
+  },
+  {
+   "id": "mash-finisher",
+   "stat": "might",
+   "perLevel": 0,
+   "maxLevel": 5,
+   "weight": 70,
+   "effect": {
+    "phase": "variety",
+    "variant": {
+     "kind": "mashFinisher",
+     "hpSharePerLevel": 0.02,
+     "hpShareCap": 0.15,
+     "eliteShare": 0.5
+    }
+   }
+  },
+  {
+   "id": "packed-pan",
+   "stat": "might",
+   "perLevel": 0,
+   "maxLevel": 5,
+   "weight": 60,
+   "effect": {
+    "phase": "variety",
+    "variant": {
+     "kind": "packedPan",
+     "damagePerPest": 0.01,
+     "pestCap": 10
+    }
+   }
+  },
+  {
+   "id": "peel-out",
+   "stat": "dashGrace",
+   "perLevel": 0,
+   "maxLevel": 5,
+   "weight": 60,
+   "effect": {
+    "phase": "variety",
+    "variant": {
+     "kind": "peelOut",
+     "mult": 2,
+     "seconds": 2
+    }
+   }
+  },
+  {
+   "id": "spry-sprout",
+   "stat": "dashCooldown",
+   "perLevel": 0.05,
+   "maxLevel": 5,
+   "weight": 60
+  },
+  {
+   "id": "stuffed-skin",
+   "stat": "maxHp",
+   "perLevel": 8,
+   "maxLevel": 5,
+   "weight": 60
+  },
+  {
+   "id": "tater-trot",
+   "stat": "cooldown",
+   "perLevel": 0,
+   "maxLevel": 5,
+   "weight": 60,
+   "effect": {
+    "phase": "variety",
+    "variant": {
+     "kind": "taterTrot",
+     "fireRatePerSpeed": 1,
+     "capPerLevel": 0.08
+    }
+   }
   }
  ],
  "items": [
@@ -7532,11 +8892,11 @@
    "weight": 8,
    "effect": {
     "kind": "onHurt",
-    "cooldown": 0.7,
+    "cooldown": 0.5,
     "proc": {
      "kind": "quills",
      "count": 10,
-     "damage": 30,
+     "damage": 50,
      "thornsShare": 1,
      "speed": 220,
      "pierce": 2,
@@ -7682,6 +9042,245 @@
     "area": 0.06
    },
    "weight": 8
+  },
+  {
+   "id": "static-socks",
+   "tier": "base",
+   "rarity": 2,
+   "mods": {},
+   "maxStacks": 1,
+   "weight": 6,
+   "effect": {
+    "kind": "bigUpdate",
+    "variant": {
+     "phase": "gear",
+     "variant": {
+      "kind": "staticSocks",
+      "bolts": 3,
+      "damage": 176,
+      "reach": 140,
+      "knockback": 0.4
+     }
+    }
+   }
+  },
+  {
+   "id": "frozen-pea",
+   "tier": "base",
+   "rarity": 1,
+   "mods": {},
+   "weight": 8,
+   "effect": {
+    "kind": "bigUpdate",
+    "variant": {
+     "phase": "variety",
+     "variant": {
+      "kind": "frozenPea",
+      "chance": 0.08,
+      "freezeSec": 1,
+      "bossSlow": 0.5
+     }
+    }
+   }
+  },
+  {
+   "id": "fry-fuel",
+   "tier": "base",
+   "rarity": 2,
+   "mods": {},
+   "maxStacks": 1,
+   "weight": 6,
+   "effect": {
+    "kind": "bigUpdate",
+    "variant": {
+     "phase": "variety",
+     "variant": {
+      "kind": "fryFuel",
+      "kills": 30
+     }
+    }
+   }
+  },
+  {
+   "id": "lightning-spud",
+   "tier": "base",
+   "rarity": 2,
+   "mods": {},
+   "weight": 6,
+   "effect": {
+    "kind": "onHit",
+    "chance": 0.06,
+    "perSec": 2,
+    "proc": {
+     "kind": "blast",
+     "radius": 34,
+     "share": 0.9
+    }
+   }
+  },
+  {
+   "id": "mash-splat",
+   "tier": "base",
+   "rarity": 1,
+   "mods": {},
+   "maxStacks": 1,
+   "weight": 8,
+   "effect": {
+    "kind": "bigUpdate",
+    "variant": {
+     "phase": "variety",
+     "variant": {
+      "kind": "tiboBurst",
+      "on": "dash",
+      "cooldown": 0.5,
+      "damage": 55,
+      "thornsShare": 0,
+      "radius": 52,
+      "share": 1,
+      "knockback": 1
+     }
+    }
+   }
+  },
+  {
+   "id": "midnight-fries",
+   "tier": "base",
+   "rarity": 2,
+   "mods": {
+    "might": 0.05
+   },
+   "maxStacks": 2,
+   "weight": 5,
+   "effect": {
+    "kind": "bigUpdate",
+    "variant": {
+     "phase": "variety",
+     "variant": {
+      "kind": "overtime",
+      "perMinute": 0.06
+     }
+    }
+   }
+  },
+  {
+   "id": "moon-dust",
+   "tier": "base",
+   "rarity": 2,
+   "mods": {},
+   "weight": 6,
+   "effect": {
+    "kind": "bigUpdate",
+    "variant": {
+     "phase": "variety",
+     "variant": {
+      "kind": "killDust",
+      "chance": 0.15,
+      "perSec": 3,
+      "radius": 40,
+      "share": 0.08,
+      "status": {
+       "kind": "slow",
+       "factor": 0.5,
+       "seconds": 2
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": "potato-knish",
+   "tier": "base",
+   "rarity": 0,
+   "mods": {
+    "maxHp": 15
+   },
+   "weight": 10
+  },
+  {
+   "id": "receipt-spud",
+   "tier": "base",
+   "rarity": 1,
+   "mods": {},
+   "weight": 6,
+   "effect": {
+    "kind": "bigUpdate",
+    "variant": {
+     "phase": "variety",
+     "variant": {
+      "kind": "receiptSpud",
+      "perOpening": 0.02
+     }
+    }
+   }
+  },
+  {
+   "id": "souffle-spud",
+   "tier": "base",
+   "rarity": 1,
+   "mods": {},
+   "maxStacks": 1,
+   "weight": 8,
+   "effect": {
+    "kind": "bigUpdate",
+    "variant": {
+     "phase": "variety",
+     "variant": {
+      "kind": "tiboBurst",
+      "on": "hurt",
+      "cooldown": 2,
+      "damage": 25,
+      "thornsShare": 1,
+      "radius": 60,
+      "share": 1,
+      "knockback": 4
+     }
+    }
+   }
+  },
+  {
+   "id": "spud-spring",
+   "tier": "base",
+   "rarity": 2,
+   "mods": {
+    "dashCooldown": 0.15
+   },
+   "maxStacks": 3,
+   "weight": 6
+  },
+  {
+   "id": "tailwind-tater",
+   "tier": "base",
+   "rarity": 1,
+   "mods": {},
+   "weight": 6,
+   "effect": {
+    "kind": "bigUpdate",
+    "variant": {
+     "phase": "variety",
+     "variant": {
+      "kind": "tailwindTater",
+      "perMoveSpeed": 0.5
+     }
+    }
+   }
+  },
+  {
+   "id": "tater-treat",
+   "tier": "base",
+   "rarity": 1,
+   "mods": {},
+   "maxStacks": 3,
+   "weight": 8,
+   "effect": {
+    "kind": "bigUpdate",
+    "variant": {
+     "phase": "variety",
+     "variant": {
+      "kind": "dogHaste",
+      "haste": 0.25
+     }
+    }
+   }
   }
  ],
  "evolvedItems": [
@@ -7869,6 +9468,39 @@
    },
    "from": "static-tot",
    "catalyst": "root-network"
+  },
+  {
+   "id": "mash-crater",
+   "tier": "evolved",
+   "rarity": 3,
+   "mods": {},
+   "effect": {
+    "kind": "bigUpdate",
+    "variant": {
+     "phase": "variety",
+     "variant": {
+      "kind": "tiboBurst",
+      "on": "dash",
+      "cooldown": 0.3,
+      "damage": 40,
+      "thornsShare": 0,
+      "shots": {
+       "kind": "quills",
+       "count": 8,
+       "damage": 40,
+       "thornsShare": 0,
+       "speed": 200,
+       "pierce": 2,
+       "life": 0.5
+      },
+      "radius": 64,
+      "share": 1.2,
+      "knockback": 1.5
+     }
+    }
+   },
+   "from": "mash-splat",
+   "catalyst": "butter-socks"
   }
  ],
  "allItems": [
@@ -8106,11 +9738,11 @@
    "weight": 8,
    "effect": {
     "kind": "onHurt",
-    "cooldown": 0.7,
+    "cooldown": 0.5,
     "proc": {
      "kind": "quills",
      "count": 10,
-     "damage": 30,
+     "damage": 50,
      "thornsShare": 1,
      "speed": 220,
      "pierce": 2,
@@ -8441,6 +10073,278 @@
    },
    "from": "static-tot",
    "catalyst": "root-network"
+  },
+  {
+   "id": "static-socks",
+   "tier": "base",
+   "rarity": 2,
+   "mods": {},
+   "maxStacks": 1,
+   "weight": 6,
+   "effect": {
+    "kind": "bigUpdate",
+    "variant": {
+     "phase": "gear",
+     "variant": {
+      "kind": "staticSocks",
+      "bolts": 3,
+      "damage": 176,
+      "reach": 140,
+      "knockback": 0.4
+     }
+    }
+   }
+  },
+  {
+   "id": "frozen-pea",
+   "tier": "base",
+   "rarity": 1,
+   "mods": {},
+   "weight": 8,
+   "effect": {
+    "kind": "bigUpdate",
+    "variant": {
+     "phase": "variety",
+     "variant": {
+      "kind": "frozenPea",
+      "chance": 0.08,
+      "freezeSec": 1,
+      "bossSlow": 0.5
+     }
+    }
+   }
+  },
+  {
+   "id": "fry-fuel",
+   "tier": "base",
+   "rarity": 2,
+   "mods": {},
+   "maxStacks": 1,
+   "weight": 6,
+   "effect": {
+    "kind": "bigUpdate",
+    "variant": {
+     "phase": "variety",
+     "variant": {
+      "kind": "fryFuel",
+      "kills": 30
+     }
+    }
+   }
+  },
+  {
+   "id": "lightning-spud",
+   "tier": "base",
+   "rarity": 2,
+   "mods": {},
+   "weight": 6,
+   "effect": {
+    "kind": "onHit",
+    "chance": 0.06,
+    "perSec": 2,
+    "proc": {
+     "kind": "blast",
+     "radius": 34,
+     "share": 0.9
+    }
+   }
+  },
+  {
+   "id": "mash-splat",
+   "tier": "base",
+   "rarity": 1,
+   "mods": {},
+   "maxStacks": 1,
+   "weight": 8,
+   "effect": {
+    "kind": "bigUpdate",
+    "variant": {
+     "phase": "variety",
+     "variant": {
+      "kind": "tiboBurst",
+      "on": "dash",
+      "cooldown": 0.5,
+      "damage": 55,
+      "thornsShare": 0,
+      "radius": 52,
+      "share": 1,
+      "knockback": 1
+     }
+    }
+   }
+  },
+  {
+   "id": "midnight-fries",
+   "tier": "base",
+   "rarity": 2,
+   "mods": {
+    "might": 0.05
+   },
+   "maxStacks": 2,
+   "weight": 5,
+   "effect": {
+    "kind": "bigUpdate",
+    "variant": {
+     "phase": "variety",
+     "variant": {
+      "kind": "overtime",
+      "perMinute": 0.06
+     }
+    }
+   }
+  },
+  {
+   "id": "moon-dust",
+   "tier": "base",
+   "rarity": 2,
+   "mods": {},
+   "weight": 6,
+   "effect": {
+    "kind": "bigUpdate",
+    "variant": {
+     "phase": "variety",
+     "variant": {
+      "kind": "killDust",
+      "chance": 0.15,
+      "perSec": 3,
+      "radius": 40,
+      "share": 0.08,
+      "status": {
+       "kind": "slow",
+       "factor": 0.5,
+       "seconds": 2
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": "potato-knish",
+   "tier": "base",
+   "rarity": 0,
+   "mods": {
+    "maxHp": 15
+   },
+   "weight": 10
+  },
+  {
+   "id": "receipt-spud",
+   "tier": "base",
+   "rarity": 1,
+   "mods": {},
+   "weight": 6,
+   "effect": {
+    "kind": "bigUpdate",
+    "variant": {
+     "phase": "variety",
+     "variant": {
+      "kind": "receiptSpud",
+      "perOpening": 0.02
+     }
+    }
+   }
+  },
+  {
+   "id": "souffle-spud",
+   "tier": "base",
+   "rarity": 1,
+   "mods": {},
+   "maxStacks": 1,
+   "weight": 8,
+   "effect": {
+    "kind": "bigUpdate",
+    "variant": {
+     "phase": "variety",
+     "variant": {
+      "kind": "tiboBurst",
+      "on": "hurt",
+      "cooldown": 2,
+      "damage": 25,
+      "thornsShare": 1,
+      "radius": 60,
+      "share": 1,
+      "knockback": 4
+     }
+    }
+   }
+  },
+  {
+   "id": "spud-spring",
+   "tier": "base",
+   "rarity": 2,
+   "mods": {
+    "dashCooldown": 0.15
+   },
+   "maxStacks": 3,
+   "weight": 6
+  },
+  {
+   "id": "tailwind-tater",
+   "tier": "base",
+   "rarity": 1,
+   "mods": {},
+   "weight": 6,
+   "effect": {
+    "kind": "bigUpdate",
+    "variant": {
+     "phase": "variety",
+     "variant": {
+      "kind": "tailwindTater",
+      "perMoveSpeed": 0.5
+     }
+    }
+   }
+  },
+  {
+   "id": "tater-treat",
+   "tier": "base",
+   "rarity": 1,
+   "mods": {},
+   "maxStacks": 3,
+   "weight": 8,
+   "effect": {
+    "kind": "bigUpdate",
+    "variant": {
+     "phase": "variety",
+     "variant": {
+      "kind": "dogHaste",
+      "haste": 0.25
+     }
+    }
+   }
+  },
+  {
+   "id": "mash-crater",
+   "tier": "evolved",
+   "rarity": 3,
+   "mods": {},
+   "effect": {
+    "kind": "bigUpdate",
+    "variant": {
+     "phase": "variety",
+     "variant": {
+      "kind": "tiboBurst",
+      "on": "dash",
+      "cooldown": 0.3,
+      "damage": 40,
+      "thornsShare": 0,
+      "shots": {
+       "kind": "quills",
+       "count": 8,
+       "damage": 40,
+       "thornsShare": 0,
+       "speed": 200,
+       "pierce": 2,
+       "life": 0.5
+      },
+      "radius": 64,
+      "share": 1.2,
+      "knockback": 1.5
+     }
+    }
+   },
+   "from": "mash-splat",
+   "catalyst": "butter-socks"
   }
  ],
  "enemies": [
@@ -10681,6 +12585,16 @@
     "radius": 200,
     "life": 16
    }
+  },
+  {
+   "id": "crab-tide",
+   "effect": {
+    "kind": "wall",
+    "enemy": "sand-crab",
+    "count": 30,
+    "radius": 180,
+    "life": 20
+   }
   }
  ],
  "dogs": [
@@ -11130,6 +13044,197 @@
    "legendary": true,
    "speed": 100,
    "size": 10
+  },
+  {
+   "id": "sigkitten",
+   "ability": {
+    "kind": "fetch",
+    "radius": 0,
+    "every": 3
+   },
+   "flagged": {
+    "kind": "sigstop",
+    "every": 3,
+    "retry": 0.25,
+    "hold": 3.5,
+    "radius": 64,
+    "inner": 58,
+    "slow": 0.75,
+    "floor": 0.25
+   },
+   "aura": {
+    "luck": 0.05
+   },
+   "levelUps": [
+    {
+     "every": 1,
+     "power": 1.25,
+     "aura": 1
+    },
+    {
+     "every": 1,
+     "power": 1.25,
+     "aura": 1
+    },
+    {
+     "every": 1,
+     "power": 1.25,
+     "aura": 0.5
+    },
+    {
+     "every": 1,
+     "power": 1.25,
+     "aura": 0.5
+    }
+   ],
+   "weight": 0,
+   "legendary": true,
+   "speed": 100,
+   "size": 6
+  },
+  {
+   "id": "dalmatian",
+   "ability": {
+    "kind": "bite",
+    "damage": 16,
+    "every": 2,
+    "range": 110
+   },
+   "flagged": {
+    "kind": "spots",
+    "burn": {
+     "kind": "burn",
+     "dps": 14,
+     "seconds": 3
+    },
+    "slow": {
+     "kind": "slow",
+     "factor": 0.5,
+     "seconds": 2
+    },
+    "freeze": {
+     "kind": "freeze",
+     "seconds": 1
+    },
+    "bossFreeze": {
+     "kind": "slow",
+     "factor": 0.4,
+     "seconds": 1
+    }
+   },
+   "aura": {
+    "duration": 0.05
+   },
+   "levelUps": [
+    {
+     "every": 0.85,
+     "power": 1.35,
+     "aura": 1
+    },
+    {
+     "every": 0.85,
+     "power": 1.35,
+     "aura": 1
+    },
+    {
+     "every": 0.9,
+     "power": 1.2,
+     "aura": 0.5
+    },
+    {
+     "every": 0.9,
+     "power": 1.2,
+     "aura": 0.5
+    }
+   ],
+   "weight": 10,
+   "speed": 125,
+   "size": 6
+  },
+  {
+   "id": "husky",
+   "ability": {
+    "kind": "fetch",
+    "radius": 0,
+    "every": 10
+   },
+   "flagged": {
+    "kind": "howl",
+    "every": 10,
+    "retry": 0.25
+   },
+   "aura": {
+    "cooldown": 0.02
+   },
+   "levelUps": [
+    {
+     "every": 0.85,
+     "power": 1,
+     "aura": 1
+    },
+    {
+     "every": 0.85,
+     "power": 1,
+     "aura": 1
+    },
+    {
+     "every": 0.9,
+     "power": 1,
+     "aura": 0.5
+    },
+    {
+     "every": 0.9,
+     "power": 1,
+     "aura": 0.5
+    }
+   ],
+   "weight": 9,
+   "speed": 130,
+   "size": 6
+  },
+  {
+   "id": "newfoundland",
+   "ability": {
+    "kind": "fetch",
+    "radius": 0,
+    "every": 1.5
+   },
+   "flagged": {
+    "kind": "catch",
+    "every": 1.5,
+    "retry": 0.25,
+    "range": 64,
+    "margin": 6,
+    "leap": 0.6
+   },
+   "aura": {
+    "maxHp": 8
+   },
+   "levelUps": [
+    {
+     "every": 0.85,
+     "power": 1.3,
+     "aura": 1
+    },
+    {
+     "every": 0.85,
+     "power": 1.3,
+     "aura": 1
+    },
+    {
+     "every": 0.9,
+     "power": 1.2,
+     "aura": 0.5
+    },
+    {
+     "every": 0.9,
+     "power": 1.2,
+     "aura": 0.5
+    }
+   ],
+   "weight": 8,
+   "speed": 80,
+   "size": 8
   }
  ],
  "pois": [

@@ -1,13 +1,13 @@
 ## Overview
 
-Salt Line leaves a trail of salt behind Tibo while he walks. Every 0.2 s of movement it drops 2 salt patches 0.1 s apart (its raw amount of 1 plus Tibo's base +1 amount, see [Stats](/stats)), so a walking Tibo leaves a patch with a radius of 9 units just behind him every 0.1 s. Each patch lasts 2 s, or 2.5 s with Tibo's base +25% duration (see [Stats](/stats)). Pests on the salt take 8 damage every 0.3 s and are slowed by 45% for 1 s (1.25 s with the base duration bonus). Bosses are slowed too.
+Salt Line leaves a trail of salt behind Tibo while he walks. Every 0.2 s of movement it drops 2 salt patches 0.1 s apart (its raw amount of 1 plus Tibo's base +1 amount, see [Stats](/stats)), so a walking Tibo leaves a patch with a radius of 9 units just behind him every 0.1 s. Each patch lasts 2 s, or 2.5 s with Tibo's base +25% duration (see [Stats](/stats)). Pests on the salt take 14 damage every 0.3 s and are slowed by 45% for 1 s (1.25 s with the base duration bonus). Bosses are slowed too.
 
-You get it from a level-up card. At level 8 it deals 24 damage per tick, patches last 3 s before duration bonuses and the patch radius is about 12.6 units (area 1.4). With a max-level Salt Line and [Spud Sneakers](/passives/spud-sneakers), a chest can evolve it into [Salt Flats](/weapons/salt-flats).
+You get it from a level-up card. At level 8 it deals 40 damage per tick, patches last 3 s before duration bonuses and the patch radius is about 12.6 units (area 1.4). With a max-level Salt Line and [Spud Sneakers](/passives/spud-sneakers), a chest can evolve it into [Salt Flats](/weapons/salt-flats).
 
 ## How it works
 
-- **Only while moving.** It drops patches only while Tibo is moving. Standing still stops new salt, though patches already on the ground keep working until they expire. <small>[sim-BkfBhQfw.js: `return t.trail===void 0?Jo(e,n,r,t.range)!==void 0:e.player.moving[e.me]===1`]</small>
-- **Patches do not stack.** Patches overlap, but a pest can take damage from this trail at most once per `hitInterval` (0.3 s), however many patches it stands on. Standing in thick salt is no worse than standing in one patch. <small>[sim-BkfBhQfw.js: `o.rehit[i]=n.trail===void 0?0:re(n.hitInterval)`]</small>
+- **Only while moving.** It drops patches only while Tibo is moving. Standing still stops new salt, though patches already on the ground keep working until they expire. <small>[sim-h87i1VLB.js: `return t.trail===void 0?Uc(e,n,r,t.range)!==void 0:e.player.moving[e.me]===1`]</small>
+- **Patches do not stack.** Patches overlap, but a pest can take damage from this trail at most once per `hitInterval` (0.3 s), however many patches it stands on. Standing in thick salt is no worse than standing in one patch. <small>[sim-h87i1VLB.js: `o.rehit[i]=n.trail===void 0?0:Re(n.hitInterval)`]</small>
 - **Slow.** `factor` 0.45 means a slowed pest moves at 55% speed. Duration bonuses lengthen both the patches and the slow.
 - The trail has no knockback. Amount adds patches to each drop, which makes the single trail denser; because of the shared hit timer that adds no damage.
 
