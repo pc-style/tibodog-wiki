@@ -8,15 +8,15 @@ The fused dog does both jobs on one shared timer. Every 5 seconds it marks elite
 
 ### Fusing
 
-- Fusion is checked before the usual stray rules. It happens even when the pack is full, without a swap prompt. <small>[sim-BtjJ7SxK.js: `` if(e.legendary!==null&&e.legendary.fuse(e,t.id))return`joined` ``]</small>
-- The fused dog takes the pack slot and the level of the partner Tibo already had. Training that partner before the fusion is not lost. <small>[run-extras-DmX1NK3B.js: `a.level[i]=Math.min(o,Se(l))`]</small>
+- Fusion is checked before the usual stray rules. It happens even when the pack is full, without a swap prompt. <small>[sim-ieBkQqL1.js: `` if(e.legendary!==null&&e.legendary.fuse(e,t.id))return`joined` ``]</small>
+- The fused dog takes the pack slot and the level of the partner Tibo already had. Training that partner before the fusion is not lost. <small>[run-extras-BAXCPhoO.js: `a.level[i]=Math.min(o,Se(l))`]</small>
 
 ### Each beat
 
 - **Marks**: the same rules as Zelda. It marks the nearest unmarked elites or loot runners within 600 units of Tibo (1, 1, 2, 2 and 3 at once by level), and they take +25% damage for `8 × power` seconds.
 - **Fluff**: on every second beat it grows a charge, up to 1, or 2 from level 3. A charge cancels the next hit on Tibo that is not dodged and sneezes pests away, exactly as for Link. Because two beats equal one Link interval, fluff regrows at Link's pace at the same level.
-- **Eclipse**: on the first beat at least 50 s after the fusion or the last eclipse. The 50 s does not shrink with training. <small>[run-extras-DmX1NK3B.js: `r.beat%n.puffBeats===0&&xt(e,t),e.time-Math.max(r.coronaAt,r.fusedAt)>=n.corona.every`]</small>
-  - It adds one fluff charge that may go one above the normal cap, so up to 3 charges from level 3. <small>[run-extras-DmX1NK3B.js: `let i=yt(e,n)+r.charges`]</small>
+- **Eclipse**: on the first beat at least 50 s after the fusion or the last eclipse. The 50 s does not shrink with training. <small>[run-extras-BAXCPhoO.js: `r.beat%n.puffBeats===0&&xt(e,t),e.time-Math.max(r.coronaAt,r.fusedAt)>=n.corona.every`]</small>
+  - It adds one fluff charge that may go one above the normal cap, so up to 3 charges from level 3. <small>[run-extras-BAXCPhoO.js: `let i=yt(e,n)+r.charges`]</small>
   - It marks every pest within 110 units of Tibo, elite or not, for +10% damage taken for 1 s. Bosses are excluded. An existing stronger or longer mark is kept.
 
 ### Differences from the separate dogs
