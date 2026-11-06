@@ -6053,35 +6053,14 @@
   "recovery"
  ],
  "boot.$i": {
-  "xp": 0,
-  "gold": 1,
-  "heal": 2,
-  "magnet": 3,
-  "chest": 4,
-  "reroll": 5,
-  "skip": 6,
-  "banish": 7,
-  "item": 8,
-  "beacon": 9
+  "straight": 0,
+  "lob": 1,
+  "boomerang": 2,
+  "bounce": 3,
+  "homing": 4,
+  "spiral": 5
  },
- "boot.As": [
-  {
-   "parts": [
-    "pomeranian",
-    "pomchi"
-   ],
-   "into": "zelda-and-link"
-  }
- ],
- "boot.Bi": {
-  "dud": 1,
-  "freeze": 2,
-  "burn": 3,
-  "split": 4,
-  "gold": 5,
-  "blast": 6
- },
- "boot.Do": [
+ "boot.Ao": [
   {
    "phase": "weapons",
    "sheet": true,
@@ -6138,40 +6117,7 @@
    "url": "[fn]"
   }
  ],
- "boot.Hi": [
-  "slash",
-  "beam",
-  "explosion",
-  "strike",
-  "cone",
-  "reset",
-  "spawn",
-  "death",
-  "shockwave",
-  "chain",
-  "heal",
-  "pickup",
-  "bark",
-  "bite",
-  "gpuSteam",
-  "shards",
-  "discharge"
- ],
- "boot.Ir": [
-  "story",
-  "easy",
-  "normal",
-  "hard",
-  "nightmare"
- ],
- "boot.Ji": {
-  "NoDrops": 1,
-  "BossShare": 2,
-  "Kill": 4,
-  "Reset": 8,
-  "Meteor": 16
- },
- "boot.Li": {
+ "boot.Bi": {
   "Elite": 1,
   "Chest": 2,
   "NoSplit": 4,
@@ -6181,7 +6127,7 @@
   "Hidden": 64,
   "CursedExtra": 128
  },
- "boot.Mo": {
+ "boot.Fo": {
   "shake": {
    "offset": {
     "x": 0,
@@ -6219,27 +6165,34 @@
    "strike": "[fn]"
   }
  },
- "boot.Oo": [
-  "weapons",
-  "lateGame",
-  "endgameHunt",
-  "endgameBurrow",
-  "endgameCourt",
-  "endgameShell",
-  "ladder",
-  "gear",
-  "runMusic",
-  "variety"
+ "boot.Gi": [
+  "slash",
+  "beam",
+  "explosion",
+  "strike",
+  "cone",
+  "reset",
+  "spawn",
+  "death",
+  "shockwave",
+  "chain",
+  "heal",
+  "pickup",
+  "bark",
+  "bite",
+  "gpuSteam",
+  "shards",
+  "discharge"
  ],
- "boot.Ri": [
-  "none",
-  "boss",
-  "elite",
-  "lootRunner",
-  "poteto",
-  "story"
- ],
- "boot.Ui": {
+ "boot.Hi": {
+  "none": 0,
+  "boss": 1,
+  "elite": 2,
+  "lootRunner": 3,
+  "poteto": 4,
+  "story": 5
+ },
+ "boot.Ki": {
   "slash": 0.15,
   "beam": 0.2,
   "explosion": 0.3,
@@ -6258,7 +6211,7 @@
   "shards": 0.4,
   "discharge": 0.3
  },
- "boot.Us": {
+ "boot.Ks": {
   "alexReveal": {
    "playing": false,
    "live": false,
@@ -6285,7 +6238,73 @@
    "relabel": "[fn]"
   }
  },
- "boot.Vi": {
+ "boot.Mo": [
+  "weapons",
+  "lateGame",
+  "runMusic",
+  "endgameHunt",
+  "endgameBurrow",
+  "endgameCourt",
+  "endgameShell",
+  "ladder",
+  "gear",
+  "variety"
+ ],
+ "boot.Ns": [
+  {
+   "parts": [
+    "pomeranian",
+    "pomchi"
+   ],
+   "into": "zelda-and-link"
+  }
+ ],
+ "boot.Po": {
+  "death": {
+   "shown": false,
+   "mounted": false,
+   "frame": "[fn]",
+   "reset": "[fn]",
+   "show": "[fn]",
+   "open": "[fn]",
+   "statsLevels": "[fn]"
+  },
+  "chestBanners": {
+   "ready": false,
+   "frame": "[fn]"
+  },
+  "texts": {
+   "start": "[fn]",
+   "end": "[fn]",
+   "frame": "[fn]",
+   "relabel": "[fn]"
+  }
+ },
+ "boot.Qi": {
+  "off": 0,
+  "free": 1,
+  "jailed": 2,
+  "strayed": 3,
+  "lassoed": 4,
+  "pulling": 5
+ },
+ "boot.Ui": {
+  "dud": 1,
+  "freeze": 2,
+  "burn": 3,
+  "split": 4,
+  "gold": 5,
+  "blast": 6
+ },
+ "boot.Vi": [
+  "none",
+  "boss",
+  "elite",
+  "lootRunner",
+  "poteto",
+  "story"
+ ],
+ "boot.Wi": {
   "alive": 0,
   "revived": 1,
   "knocked": 2,
@@ -6295,40 +6314,36 @@
   "drop": 6,
   "dawn": 7
  },
- "boot.Wi": {
-  "slash": 0,
-  "beam": 1,
-  "explosion": 2,
-  "strike": 3,
-  "cone": 4,
-  "reset": 5,
-  "spawn": 6,
-  "death": 7,
-  "shockwave": 8,
-  "chain": 9,
-  "heal": 10,
-  "pickup": 11,
-  "bark": 12,
-  "bite": 13,
-  "gpuSteam": 14,
-  "shards": 15,
-  "discharge": 16
- },
  "boot.Xi": {
-  "straight": 0,
-  "lob": 1,
-  "boomerang": 2,
-  "bounce": 3,
-  "homing": 4,
-  "spiral": 5
+  "wander": 0,
+  "hop": 1,
+  "cheer": 2,
+  "beam": 3,
+  "swarm": 4
  },
- "boot.Yi": {
-  "off": 0,
-  "free": 1,
-  "jailed": 2,
-  "strayed": 3,
-  "lassoed": 4,
-  "pulling": 5
+ "boot.Xo": {
+  "warmupSeconds": 1,
+  "windowSeconds": 0.5,
+  "targetFps": 60,
+  "slowestDisplayFps": 30,
+  "slowMs": 18.5,
+  "fastMs": 17.2,
+  "windowNoiseMs": 6.6,
+  "ignoreAboveMs": 100,
+  "throttledMs": 250,
+  "longFramesToFall": 3,
+  "slowWindowsToStep": 2,
+  "bandWindowsToStep": 8,
+  "scaleStep": 0.85,
+  "minScale": 0.5,
+  "upWindows": 8,
+  "tierUpWindows": 20,
+  "raiseWorkMs": 1.5,
+  "quietSeconds": 0.5,
+  "failWindows": 8,
+  "maxUpWindows": 480,
+  "settleFastWindows": 4,
+  "settleSeconds": 10
  },
  "boot.Z": {
   "tier": "low",
@@ -6336,19 +6351,71 @@
   "adaptive": false,
   "climb": false
  },
- "boot.Zi": [
-  "xp",
-  "gold",
-  "heal",
-  "magnet",
-  "chest",
-  "reroll",
-  "skip",
-  "banish",
-  "item",
-  "beacon"
- ],
- "boot._s": {
+ "boot.Zi": {
+  "NoDrops": 1,
+  "BossShare": 2,
+  "Kill": 4,
+  "Reset": 8,
+  "Meteor": 16
+ },
+ "boot.aa": {
+  "circle": 0,
+  "line": 1,
+  "cone": 2,
+  "ring": 3,
+  "wedge": 4,
+  "box": 5,
+  "arc": 6,
+  "star": 7,
+  "heart": 8,
+  "checker": 9
+ },
+ "boot.ar": {
+  "width": 256,
+  "height": 64,
+  "pixelSize": {
+   "reset-button": 1
+  },
+  "sprites": {
+   "reset-button": {
+    "idle": {
+     "kind": "loop",
+     "fps": 1,
+     "frames": [
+      {
+       "x": 2,
+       "y": 2,
+       "w": 48,
+       "h": 31,
+       "ax": 24,
+       "ay": 30
+      }
+     ]
+    },
+    "pressed": {
+     "kind": "once",
+     "fps": 1,
+     "frames": [
+      {
+       "x": 52,
+       "y": 2,
+       "w": 48,
+       "h": 27,
+       "ax": 24,
+       "ay": 26
+      }
+     ]
+    }
+   }
+  },
+  "inks": {
+   "reset-button": {
+    "face": "#fffaea",
+    "outline": "#4a1424"
+   }
+  }
+ },
+ "boot.bs": {
   "throwSec": 0.25,
   "minThrow": 30,
   "maxThrow": 90,
@@ -6370,7 +6437,89 @@
   "luckK": 0.5,
   "goldCoins": 4
  },
- "boot.ds": {
+ "boot.ea": [
+  "xp",
+  "gold",
+  "heal",
+  "magnet",
+  "chest",
+  "reroll",
+  "skip",
+  "banish",
+  "item",
+  "beacon"
+ ],
+ "boot.f": {
+  "family": "hunt",
+  "skill": "positioning",
+  "boss": "pack-lord"
+ },
+ "boot.hs": [
+  "hit",
+  "crit",
+  "kill",
+  "gem",
+  "coin",
+  "hurt",
+  "dodge",
+  "dash",
+  "levelUp",
+  "chest",
+  "chestDrop",
+  "jackpot",
+  "reelStop",
+  "evolve",
+  "reset",
+  "bossSpawn",
+  "bossDefeated",
+  "dogBark",
+  "dogJoined",
+  "buy",
+  "uiSelect",
+  "enemyShot",
+  "nearMiss",
+  "shotHit",
+  "textMessage",
+  "textTone",
+  "speechBlip",
+  "bonk",
+  "bigBonk",
+  "evilLaugh",
+  "thud",
+  "faceplant",
+  "skitter",
+  "visitCutIn",
+  "overheat",
+  "crunch",
+  "swat",
+  "hazardTick",
+  "iaiDraw",
+  "sheathe",
+  "slice"
+ ],
+ "boot.jo": [
+  "weapons",
+  "lateGame",
+  "endgameHunt",
+  "endgameBurrow",
+  "endgameCourt",
+  "endgameShell",
+  "ladder",
+  "gear",
+  "runMusic",
+  "variety"
+ ],
+ "boot.la": {
+  "aura": 0,
+  "pool": 1,
+  "mine": 2,
+  "nova": 3,
+  "strike": 4,
+  "telegraph": 5,
+  "hazardPool": 6,
+  "scar": 7
+ },
+ "boot.ms": {
   "game": {
    "title": "tibo.dog",
    "url": "https://tibo.dog/"
@@ -6829,7 +6978,100 @@
    "repeatMs": 90
   }
  },
- "boot.ea": {
+ "boot.na": {
+  "xp": 0,
+  "gold": 1,
+  "heal": 2,
+  "magnet": 3,
+  "chest": 4,
+  "reroll": 5,
+  "skip": 6,
+  "banish": 7,
+  "item": 8,
+  "beacon": 9
+ },
+ "boot.pt": {
+  "gain": 1,
+  "slots": 8,
+  "heroSec": 0.03333333333333333,
+  "stillReach": 0.85,
+  "tiers": {
+   "legendary": {
+    "rings": 1,
+    "stagger": 0.08,
+    "ringSec": 0.42,
+    "reach": 1.2,
+    "ringGlow": 0.35,
+    "heroGlow": 0.4,
+    "sparks": 10,
+    "sparkSec": 0.75,
+    "sparkRise": 16,
+    "coreSec": 0.22,
+    "coreGlow": 0.7,
+    "markSec": 1.4,
+    "markReach": 0.55,
+    "markDashes": 10,
+    "kick": 0.16,
+    "stopFrames": 0
+   },
+   "set": {
+    "rings": 2,
+    "stagger": 0.08,
+    "ringSec": 0.48,
+    "reach": 1.3,
+    "ringGlow": 0.42,
+    "heroGlow": 0.45,
+    "sparks": 14,
+    "sparkSec": 0.85,
+    "sparkRise": 20,
+    "coreSec": 0.26,
+    "coreGlow": 0.8,
+    "markSec": 1.8,
+    "markReach": 0.6,
+    "markDashes": 12,
+    "kick": 0.22,
+    "stopFrames": 0
+   },
+   "mythic": {
+    "rings": 3,
+    "stagger": 0.08,
+    "ringSec": 0.55,
+    "reach": 1.4,
+    "ringGlow": 0.5,
+    "heroGlow": 0.5,
+    "sparks": 18,
+    "sparkSec": 1,
+    "sparkRise": 24,
+    "coreSec": 0.3,
+    "coreGlow": 0.9,
+    "markSec": 2.2,
+    "markReach": 0.65,
+    "markDashes": 16,
+    "kick": 0.3,
+    "stopFrames": 3
+   }
+  }
+ },
+ "boot.qi": {
+  "slash": 0,
+  "beam": 1,
+  "explosion": 2,
+  "strike": 3,
+  "cone": 4,
+  "reset": 5,
+  "spawn": 6,
+  "death": 7,
+  "shockwave": 8,
+  "chain": 9,
+  "heal": 10,
+  "pickup": 11,
+  "bark": 12,
+  "bite": 13,
+  "gpuSteam": 14,
+  "shards": 15,
+  "discharge": 16
+ },
+ "boot.ra": {
   "slash": 0,
   "targetShot": 1,
   "facingShot": 2,
@@ -6856,55 +7098,102 @@
   "tether": 23,
   "ring": 24
  },
- "boot.f": {
-  "family": "hunt",
-  "skill": "positioning",
-  "boss": "pack-lord"
+ "boot.u": {
+  "startSec": 1200,
+  "phaseSec": 300,
+  "bossAtSec": 240,
+  "familyStartSec": 60
  },
- "boot.fs": [
-  "hit",
-  "crit",
-  "kill",
-  "gem",
-  "coin",
-  "hurt",
-  "dodge",
-  "dash",
-  "levelUp",
-  "chest",
-  "chestDrop",
-  "jackpot",
-  "reelStop",
-  "evolve",
-  "reset",
-  "bossSpawn",
-  "bossDefeated",
-  "dogBark",
-  "dogJoined",
-  "buy",
-  "uiSelect",
-  "enemyShot",
-  "nearMiss",
-  "shotHit",
-  "textMessage",
-  "textTone",
-  "speechBlip",
-  "bonk",
-  "bigBonk",
-  "evilLaugh",
-  "thud",
-  "faceplant",
-  "skitter",
-  "visitCutIn",
-  "overheat",
-  "crunch",
-  "swat",
-  "hazardTick",
-  "iaiDraw",
-  "sheathe",
-  "slice"
+ "boot.ut": {
+  "game": null,
+  "simAt": 0,
+  "drawnAt": 0,
+  "next": 0,
+  "watchStep": null,
+  "still": false,
+  "started": {
+   "__typed": "Uint32Array",
+   "len": 3
+  },
+  "def": {
+   "__typed": "Int16Array",
+   "len": 8
+  },
+  "tier": {
+   "__typed": "Int8Array",
+   "len": 8
+  },
+  "x": {
+   "__typed": "Float32Array",
+   "len": 8
+  },
+  "y": {
+   "__typed": "Float32Array",
+   "len": 8
+  },
+  "radius": {
+   "__typed": "Float32Array",
+   "len": 8
+  },
+  "born": {
+   "__typed": "Float64Array",
+   "len": 8
+  },
+  "seenRing": {
+   "__typed": "Float64Array",
+   "len": 16
+  },
+  "seenNext": 0,
+  "dashAt": -1,
+  "landingAt": null,
+  "found": {
+   "__typed": "Float64Array",
+   "len": 64
+  }
+ },
+ "boot.vo": [
+  "en",
+  "zh-CN",
+  "zh-TW",
+  "ja",
+  "ko",
+  "es",
+  "hi",
+  "de",
+  "fr",
+  "pt",
+  "tr",
+  "id",
+  "ru",
+  "ms",
+  "fil",
+  "mr",
+  "vi",
+  "te",
+  "ta",
+  "bn",
+  "th",
+  "ha",
+  "pcm",
+  "ar",
+  "fa",
+  "he",
+  "ur"
  ],
- "boot.go": [
+ "boot.vr": [
+  "off",
+  "protanopia",
+  "deuteranopia",
+  "tritanopia"
+ ],
+ "boot.xo": {
+  "_events": {},
+  "_locale": "",
+  "_messages": {},
+  "_variables": {},
+  "t": "[fn]"
+ },
+ "boot.yo": [
   {
    "tag": "en",
    "endonym": "English",
@@ -7068,7 +7357,7 @@
    "dir": "rtl"
   }
  ],
- "boot.gr": {
+ "boot.yr": {
   "effectsOpacity": 1,
   "shake": "full",
   "flashes": true,
@@ -7086,7 +7375,7 @@
   "autoAdvance": true,
   "skipIntro": false
  },
- "boot.gs": {
+ "boot.ys": {
   "baseWeapons": [],
   "evolvedWeapons": [],
   "unionWeapons": [],
@@ -7100,308 +7389,19 @@
   "events": [],
   "grokBotHelps": []
  },
- "boot.ho": [
-  "en",
-  "zh-CN",
-  "zh-TW",
-  "ja",
-  "ko",
-  "es",
-  "hi",
-  "de",
-  "fr",
-  "pt",
-  "tr",
-  "id",
-  "ru",
-  "ms",
-  "fil",
-  "mr",
-  "vi",
-  "te",
-  "ta",
-  "bn",
-  "th",
-  "ha",
-  "pcm",
-  "ar",
-  "fa",
-  "he",
-  "ur"
- ],
- "boot.hr": [
-  "off",
-  "protanopia",
-  "deuteranopia",
-  "tritanopia"
- ],
- "boot.jo": {
-  "death": {
-   "shown": false,
-   "mounted": false,
-   "frame": "[fn]",
-   "reset": "[fn]",
-   "show": "[fn]",
-   "open": "[fn]",
-   "statsLevels": "[fn]"
-  },
-  "chestBanners": {
-   "ready": false,
-   "frame": "[fn]"
-  },
-  "texts": {
-   "start": "[fn]",
-   "end": "[fn]",
-   "frame": "[fn]",
-   "relabel": "[fn]"
-  }
- },
- "boot.ko": [
-  "weapons",
-  "lateGame",
-  "runMusic",
-  "endgameHunt",
-  "endgameBurrow",
-  "endgameCourt",
-  "endgameShell",
-  "ladder",
-  "gear",
-  "variety"
- ],
- "boot.na": {
-  "circle": 0,
-  "line": 1,
-  "cone": 2,
-  "ring": 3,
-  "wedge": 4,
-  "box": 5,
-  "arc": 6,
-  "star": 7,
-  "heart": 8,
-  "checker": 9
- },
- "boot.nr": {
-  "width": 256,
-  "height": 64,
-  "pixelSize": {
-   "reset-button": 1
-  },
-  "sprites": {
-   "reset-button": {
-    "idle": {
-     "kind": "loop",
-     "fps": 1,
-     "frames": [
-      {
-       "x": 2,
-       "y": 2,
-       "w": 48,
-       "h": 31,
-       "ax": 24,
-       "ay": 30
-      }
-     ]
-    },
-    "pressed": {
-     "kind": "once",
-     "fps": 1,
-     "frames": [
-      {
-       "x": 52,
-       "y": 2,
-       "w": 48,
-       "h": 27,
-       "ax": 24,
-       "ay": 26
-      }
-     ]
-    }
-   }
-  },
-  "inks": {
-   "reset-button": {
-    "face": "#fffaea",
-    "outline": "#4a1424"
-   }
-  }
- },
- "boot.oa": {
-  "aura": 0,
-  "pool": 1,
-  "mine": 2,
-  "nova": 3,
-  "strike": 4,
-  "telegraph": 5,
-  "hazardPool": 6,
-  "scar": 7
- },
- "boot.pt": {
-  "gain": 1,
-  "slots": 8,
-  "heroSec": 0.03333333333333333,
-  "stillReach": 0.85,
-  "tiers": {
-   "legendary": {
-    "rings": 1,
-    "stagger": 0.08,
-    "ringSec": 0.42,
-    "reach": 1.2,
-    "ringGlow": 0.35,
-    "heroGlow": 0.4,
-    "sparks": 10,
-    "sparkSec": 0.75,
-    "sparkRise": 16,
-    "coreSec": 0.22,
-    "coreGlow": 0.7,
-    "markSec": 1.4,
-    "markReach": 0.55,
-    "markDashes": 10,
-    "kick": 0.16,
-    "stopFrames": 0
-   },
-   "set": {
-    "rings": 2,
-    "stagger": 0.08,
-    "ringSec": 0.48,
-    "reach": 1.3,
-    "ringGlow": 0.42,
-    "heroGlow": 0.45,
-    "sparks": 14,
-    "sparkSec": 0.85,
-    "sparkRise": 20,
-    "coreSec": 0.26,
-    "coreGlow": 0.8,
-    "markSec": 1.8,
-    "markReach": 0.6,
-    "markDashes": 12,
-    "kick": 0.22,
-    "stopFrames": 0
-   },
-   "mythic": {
-    "rings": 3,
-    "stagger": 0.08,
-    "ringSec": 0.55,
-    "reach": 1.4,
-    "ringGlow": 0.5,
-    "heroGlow": 0.5,
-    "sparks": 18,
-    "sparkSec": 1,
-    "sparkRise": 24,
-    "coreSec": 0.3,
-    "coreGlow": 0.9,
-    "markSec": 2.2,
-    "markReach": 0.65,
-    "markDashes": 16,
-    "kick": 0.3,
-    "stopFrames": 3
-   }
-  }
- },
- "boot.qi": {
-  "wander": 0,
-  "hop": 1,
-  "cheer": 2,
-  "beam": 3,
-  "swarm": 4
- },
- "boot.qo": {
-  "warmupSeconds": 1,
-  "windowSeconds": 0.5,
-  "targetFps": 60,
-  "slowestDisplayFps": 30,
-  "slowMs": 18.5,
-  "fastMs": 17.2,
-  "windowNoiseMs": 6.6,
-  "ignoreAboveMs": 100,
-  "throttledMs": 250,
-  "longFramesToFall": 3,
-  "slowWindowsToStep": 2,
-  "bandWindowsToStep": 8,
-  "scaleStep": 0.85,
-  "minScale": 0.5,
-  "upWindows": 8,
-  "tierUpWindows": 20,
-  "raiseWorkMs": 1.5,
-  "quietSeconds": 0.5,
-  "failWindows": 8,
-  "maxUpWindows": 480,
-  "settleFastWindows": 4,
-  "settleSeconds": 10
- },
- "boot.u": {
-  "startSec": 1200,
-  "phaseSec": 300,
-  "bossAtSec": 240,
-  "familyStartSec": 60
- },
- "boot.ut": {
-  "game": null,
-  "simAt": 0,
-  "drawnAt": 0,
-  "next": 0,
-  "watchStep": null,
-  "still": false,
-  "started": {
-   "__typed": "Uint32Array",
-   "len": 3
-  },
-  "def": {
-   "__typed": "Int16Array",
-   "len": 8
-  },
-  "tier": {
-   "__typed": "Int8Array",
-   "len": 8
-  },
-  "x": {
-   "__typed": "Float32Array",
-   "len": 8
-  },
-  "y": {
-   "__typed": "Float32Array",
-   "len": 8
-  },
-  "radius": {
-   "__typed": "Float32Array",
-   "len": 8
-  },
-  "born": {
-   "__typed": "Float64Array",
-   "len": 8
-  },
-  "seenRing": {
-   "__typed": "Float64Array",
-   "len": 16
-  },
-  "seenNext": 0,
-  "dashAt": -1,
-  "landingAt": null,
-  "found": {
-   "__typed": "Float64Array",
-   "len": 64
-  }
- },
- "boot.vo": {
-  "_events": {},
-  "_locale": "",
-  "_messages": {},
-  "_variables": {},
-  "t": "[fn]"
- },
  "boot.yt": {
   "load": "[fn]",
   "take": "[fn]",
   "taken": "[fn]",
   "needs": "[fn]"
  },
- "boot.zi": {
-  "none": 0,
-  "boss": 1,
-  "elite": 2,
-  "lootRunner": 3,
-  "poteto": 4,
-  "story": 5
- },
+ "boot.zr": [
+  "story",
+  "easy",
+  "normal",
+  "hard",
+  "nightmare"
+ ],
  "intro-shared.A": {
   "moreElites": {
    "startCurses": 1,

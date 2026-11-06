@@ -7,8 +7,8 @@ Every 2.2 s it sends 3 rings (2 plus Tibo's built-in +1 amount, see [Stats](/sta
 ## How it works
 
 - The rings work like [Mash Wave](/weapons/mash-wave)'s: each stays centred where Tibo was when it was released, its edge band is 12 × √Area + 6 units deep, and it hits each pest once.
-- The slow uses the game's `slow` status, which multiplies speed by 1 − `factor`. A factor of 0.4 is a 40% slow. <small>[sim-DOWGQeHt.js: `let l=t.slowT[i]>0?1-t.slowF[i]:1`]</small>
-- **Clumps.** The 6 clumps start at Tibo and fly outward in a full circle (`spread` π on each side), starting from a different angle each time. Each deals the full wave damage (`damageMult` 1), passes through every pest, and flies at 90 units/s for 1.4 s × Duration. Clumps that hit one pest share a 0.3 s cooldown per weapon (`rehit`). <small>[sim-DOWGQeHt.js: `return!(e.tick-r.hitStamp[i]<e.projectiles.rehit[t]||(r.hitStamp[i]=e.tick,0))`]</small>
+- The slow uses the game's `slow` status, which multiplies speed by 1 − `factor`. A factor of 0.4 is a 40% slow. <small>[sim-BrIYs-gn.js: `let l=t.slowT[i]>0?1-t.slowF[i]:1`]</small>
+- **Clumps.** The 6 clumps start at Tibo and fly outward in a full circle (`spread` π on each side), starting from a different angle each time. Each deals the full wave damage (`damageMult` 1), passes through every pest, and flies at 90 units/s for 1.4 s × Duration. Clumps that hit one pest share a 0.3 s cooldown per weapon (`rehit`). <small>[sim-BrIYs-gn.js: `return!(e.tick-r.hitStamp[i]<e.projectiles.rehit[t]||(r.hitStamp[i]=e.tick,0))`]</small>
 
 **Measured** in the headless sim (`tools/play.mjs`, build 41 `main-B2gf34bA.js`, Standard, Normal, god mode, seeds `s1`, `s2` and `s3`; the seeded starting weapon removed, the weapon given with `give`, spawning stopped after 4 s of play and the pests already on the field held at fixed spots with 10⁹ HP; Tibo standing still, facing right, with 8 pests in a line 20 to 90 units to his right): every 2.2 s it released 3 rings 0.3 s apart and 18 clumps, the clumps with a 1.75 s lifetime; each hit slowed the pest by 40% for 1.25 s. All three seeds gave the same figures.
 
