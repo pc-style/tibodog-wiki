@@ -136,6 +136,12 @@ The live `main-Dk11gw6T.js` panel (`8c58e96`) was expanded for all six dates. It
 
 Only `intro-skip-field` and `hash-harrier` are new notes. Existing notes move between official publication codes/dates without becoming new introductions. Source comparisons and original-engine controls separately establish the intro transition and Harrier evolution/crumb damage; controlled grants and inserted chests do not establish natural acquisition or drop odds. All hashed old/new assets are retained against archive manifests. Earlier historical-source and server/device limitations remain.
 
+### Build 82 follow-up
+
+The live `main-D5ofIbgQ.js` panel (`30ba7de`) was expanded for all six dates. It and the independently fetched official [full changelog](https://tibo.dog/changelog) match all **228 ordered date/code/kind/text records**: **23 / 43 / 28 / 41 / 47 / 46** for November 6 through November 1. Source: [changelog-panel-BBpHtOb8.js](https://tibo.dog/assets/changelog-panel-BBpHtOb8.js), SHA-256 `633a4d7d5fcd8b7eac609047bc15391e571d6e955a150536de90cdfc2519d801`.
+
+Only `set-weapon-class-tooltips` and `daily-board-stability` are new notes. Earlier notes retain their wording; shifted indices and publication codes do not establish a new introduction. All 26 translated journal dictionaries add the same two message IDs. Original-client controls separately confirm weapon-tag help and fixed Daily-board geometry with empty, populated and failed responses on desktop and narrow viewports. Those mocked responses do not establish server acceptance, and tooltip models do not establish natural acquisition. Natural five-minute old/new Standard/Normal runs match. Both builds' hashed assets are retained against detector archive manifests; earlier historical-source and device-performance limits remain.
+
 ### Future checks
 
 The existing extractor now follows the panel's comparator, records source URL/SHA-256 and rejects duplicate note identities. The updater reports additions, removals, revised text/metadata, ordering, date/code regrouping and moves out of the unversioned group, keeping both before and after values. With an unchanged game build it still checks the saved journal against the mirrored source and reports drift without erasing the original build review. Old notes without stable IDs use their message IDs; a rewritten message ID may therefore appear as a removal plus addition rather than an asserted identity match.

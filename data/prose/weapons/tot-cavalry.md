@@ -6,7 +6,7 @@ A batch is 5 tots (raw Amount 4 plus Tibo's base +1 projectile), released 0.08 s
 
 ## How it works
 
-All the rules of [Tot Stampede](/weapons/tot-stampede#how-it-works) apply unchanged, including the limit of 12 tots on the field at once. <small>[sim-DN19mlsQ.js: `var yw={every:40,live:12}`]</small> At base move speed a full batch of 5 comes every 0.65 s or so, which fills the limit within two seconds if the tots do not find targets; after that a new batch only gets as many tots as there is room for.
+All the rules of [Tot Stampede](/weapons/tot-stampede#how-it-works) apply unchanged, including the limit of 12 tots on the field at once. <small>[sim-CQWK9k-D.js: `var yw={every:40,live:12}`]</small> At base move speed a full batch of 5 comes every 0.65 s or so, which fills the limit within two seconds if the tots do not find targets; after that a new batch only gets as many tots as there is room for.
 
 **Measured** in the headless sim (`tools/play.mjs`, build 41 `main-B2gf34bA.js`, Standard, Normal, god mode, seeds `s1`, `s2` and `s3`; the seeded starting weapon removed, the weapon given with `give`, spawning stopped after 4 s of play and the pests already on the field held at fixed spots with 10⁹ HP; Tibo walking right for 8 s past 12 pests held at fixed points on his path): batches of 5 tots about 0.07 s apart appeared about every 0.65 s, each with a 5 s lifetime. All three seeds gave the same figures.
 
