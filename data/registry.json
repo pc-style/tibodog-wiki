@@ -7220,6 +7220,36 @@
    "catalyst": "stuffed-skin"
   },
   {
+   "id": "mash-meteor",
+   "tier": "evolved",
+   "on": "dash",
+   "base": {
+    "damage": 750,
+    "cooldown": 0.6,
+    "amount": 1,
+    "area": 1.6,
+    "speed": 0,
+    "duration": 0,
+    "pierce": 99,
+    "knockback": 4,
+    "interval": 0
+   },
+   "behavior": {
+    "kind": "bigUpdate",
+    "variant": {
+     "kind": "mashLanding",
+     "radius": 52,
+     "echo": {
+      "delay": 0.35,
+      "reach": 1.75,
+      "share": 0.9
+     }
+    }
+   },
+   "from": "mash-landing",
+   "catalyst": "mash-splat"
+  },
+  {
    "id": "peel-poltergeist",
    "tier": "evolved",
    "on": "dash",
@@ -8708,6 +8738,36 @@
    },
    "from": "mash-golem",
    "catalyst": "stuffed-skin"
+  },
+  {
+   "id": "mash-meteor",
+   "tier": "evolved",
+   "on": "dash",
+   "base": {
+    "damage": 750,
+    "cooldown": 0.6,
+    "amount": 1,
+    "area": 1.6,
+    "speed": 0,
+    "duration": 0,
+    "pierce": 99,
+    "knockback": 4,
+    "interval": 0
+   },
+   "behavior": {
+    "kind": "bigUpdate",
+    "variant": {
+     "kind": "mashLanding",
+     "radius": 52,
+     "echo": {
+      "delay": 0.35,
+      "reach": 1.75,
+      "share": 0.9
+     }
+    }
+   },
+   "from": "mash-landing",
+   "catalyst": "mash-splat"
   },
   {
    "id": "peel-poltergeist",

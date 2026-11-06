@@ -2143,6 +2143,12 @@
  "content.weapon.mash-landing.name": [
   "Mash Landing"
  ],
+ "content.weapon.mash-meteor.desc": [
+  "Each dash ends in a bigger mash shockwave, and a second, wider ring follows a moment later."
+ ],
+ "content.weapon.mash-meteor.name": [
+  "Mash Meteor"
+ ],
  "content.weapon.mash-snowball.desc": [
   "A ball of mash rolls behind Tibo and grows with every step he runs. When he stops or turns hard, it surges ahead along his last heading and splatters pests by its size. A full ball lets go on its own."
  ],
