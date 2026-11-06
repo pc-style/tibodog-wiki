@@ -5,6 +5,7 @@ import { renderHtml, renderMd, SITE, SITE_NAME } from './lib/render.mjs';
 import { R, BUILD, BUILDS, BUILT_AT, WIKI_COMMIT, GAME, DIFF, TEXT } from './lib/data.mjs';
 import * as ent from './pages/entities.mjs';
 import { systemPages } from './pages/system.mjs';
+import { guidePages } from './pages/guides.mjs';
 import { MECH } from './pages/mechanics.mjs';
 
 // /versions and /history show `changes` to players. Review notes belong in `evidence`, which /versions collapses.
@@ -39,6 +40,7 @@ for (const p of pages) {
   const f = new URL(`./data/prose${p.path}.md`, import.meta.url);
   if (existsSync(f)) p.body = `${readFileSync(f, 'utf8').trim()}\n\n${p.body}`;
 }
+pages.push(...guidePages(pages));
 pages.push(...systemPages(pages));
 
 // Sanity checks: unique paths, every internal link resolves.
