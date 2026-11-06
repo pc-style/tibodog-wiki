@@ -5,7 +5,7 @@ Usage: python3 tools/icons.py <assets dir> <atlas dir with atlas-early.json, atl
 Icons mirror the game's own lookups: weapons, passives and items use the early atlas sprite
 "icon-<id>" (anim "icon", frame 0); enemies, bosses and dogs use the first sprite found in the
 early then late atlas with an "idle-front", "idle" or "walk" anim, frame 0.
-The optional flagged atlas supplies additional icons without replacing existing ones.
+Optional atlas pages supply additional icons without replacing earlier ones.
 """
 import json, os, sys
 from PIL import Image
@@ -19,7 +19,7 @@ pages = [
 ]
 if 'flagged' in names:
     pages.append((names['flagged'], json.load(open(os.path.join(ATLAS, 'atlas-flagged.json')))))
-for page in names.get('endgame', []):
+for page in [*names.get('optional', []), *names.get('endgame', [])]:
     pages.append((page['image'], json.load(open(os.path.join(ATLAS, 'atlas-' + page['phase'] + '.json')))))
 imgs = {name: Image.open(os.path.join(A, name)).convert('RGBA') for name, _ in pages}
 early_name, early = pages[0]

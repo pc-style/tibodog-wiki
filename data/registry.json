@@ -6956,6 +6956,51 @@
    }
   },
   {
+   "id": "hash-harrier",
+   "tier": "evolved",
+   "base": {
+    "damage": 125,
+    "cooldown": 1.6,
+    "amount": 3,
+    "area": 1.2,
+    "speed": 380,
+    "duration": 2.5,
+    "pierce": 0,
+    "knockback": 1.2,
+    "interval": 0
+   },
+   "behavior": {
+    "kind": "bigUpdate",
+    "variant": {
+     "kind": "hashHawk",
+     "rule": {
+      "range": 170,
+      "circleRadius": 44,
+      "circleSquash": 0.55,
+      "circleTurn": 2.1,
+      "returnSpeed": 280,
+      "burstRadius": 15,
+      "retrySec": 0.2,
+      "staggerSec": 0.4,
+      "eliteWeight": 10,
+      "bossWeight": 100,
+      "crumbs": {
+       "radius": 20,
+       "tickSec": 0.25,
+       "dpsShare": 0.3,
+       "burn": {
+        "kind": "burn",
+        "dps": 14,
+        "seconds": 1.5
+       }
+      }
+     }
+    }
+   },
+   "from": "hash-hawk",
+   "catalyst": "bacon-bits"
+  },
+  {
    "id": "gravy-pack",
    "tier": "evolved",
    "base": {
@@ -8181,6 +8226,51 @@
    },
    "from": "hot-streak",
    "catalyst": "thick-skin"
+  },
+  {
+   "id": "hash-harrier",
+   "tier": "evolved",
+   "base": {
+    "damage": 125,
+    "cooldown": 1.6,
+    "amount": 3,
+    "area": 1.2,
+    "speed": 380,
+    "duration": 2.5,
+    "pierce": 0,
+    "knockback": 1.2,
+    "interval": 0
+   },
+   "behavior": {
+    "kind": "bigUpdate",
+    "variant": {
+     "kind": "hashHawk",
+     "rule": {
+      "range": 170,
+      "circleRadius": 44,
+      "circleSquash": 0.55,
+      "circleTurn": 2.1,
+      "returnSpeed": 280,
+      "burstRadius": 15,
+      "retrySec": 0.2,
+      "staggerSec": 0.4,
+      "eliteWeight": 10,
+      "bossWeight": 100,
+      "crumbs": {
+       "radius": 20,
+       "tickSec": 0.25,
+       "dpsShare": 0.3,
+       "burn": {
+        "kind": "burn",
+        "dps": 14,
+        "seconds": 1.5
+       }
+      }
+     }
+    }
+   },
+   "from": "hash-hawk",
+   "catalyst": "bacon-bits"
   },
   {
    "id": "gravy-pack",

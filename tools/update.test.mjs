@@ -271,6 +271,14 @@ Image.new('RGBA', (2, 1), (0, 255, 0, 255)).save(sys.argv[1]+'/flagged.png')
     assert.equal(after.weapon.old.w, 8);
     assert.equal(after.weapon.new.w, 4);
     assert.equal(after.weapon.new.h, 2);
+    // New recipes can put their icon on another optional sheet (including non-render sheets).
+    delete pages.flagged;
+    delete pages.endgame;
+    pages.optional = [
+      { phase: 'endgameCourt', image: 'flagged.png' },
+      { phase: 'flagged', image: 'flagged.png' },
+    ];
+    assert.deepEqual(crop(), after);
     execFileSync('python3', ['-I', '-c', `
 from PIL import Image
 import sys

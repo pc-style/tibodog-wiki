@@ -6,7 +6,7 @@ Glacier Spud no longer needs frozen enemies. Any kill has a 30% chance to shatte
 
 ## How it works
 
-- The frost ring deals no damage. It sets the enemy's slow factor to 0.5, which halves its movement speed. <small>[sim-CSyS7SGD.js: `l=t.slowT[i]>0?1-t.slowF[i]:1`]</small>
+- The frost ring deals no damage. It sets the enemy's slow factor to 0.5, which halves its movement speed. <small>[sim-DN19mlsQ.js: `l=t.slowT[i]>0?1-t.slowF[i]:1`]</small>
 - Bosses are immune to the freeze, but the frost ring slows them too.
 - Boss deaths also roll for a shatter, which deals 40% of the boss's max HP to everything nearby.
 - Copies stack: with *N* copies the chance per kill is `1 − 0.7^N`, limited to 10 × *N* shatters per second.

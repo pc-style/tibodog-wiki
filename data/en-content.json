@@ -2017,6 +2017,12 @@
  "content.weapon.hash-bulwark.name": [
   "Hash Bulwark"
  ],
+ "content.weapon.hash-harrier.desc": [
+  "Ember-winged hash-brown harriers circle above Tibo and dive on the toughest pest in reach, a boss first, then an elite. Each dive leaves burning hash crumbs that scorch pests standing on them."
+ ],
+ "content.weapon.hash-harrier.name": [
+  "Hash Harrier"
+ ],
  "content.weapon.hash-hawk.desc": [
   "A hash-brown hawk circles above Tibo. Every few seconds it dives on the toughest pest in reach, a boss first, then an elite, and strikes everything beside it."
  ],
