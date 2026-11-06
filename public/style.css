@@ -414,6 +414,8 @@ details.topic > summary:hover { background: #c9a24f12; }
 details.topic > summary h2 { display: inline; margin: 0; padding: 0; font-size: 21px; background: none; }
 details.topic > summary small { margin-left: auto; color: var(--muted); font-size: 13px; }
 details.topic[open] > summary { position: sticky; top: var(--header-h); z-index: 2; background: #141a30; border-bottom: 1px solid var(--line-2); }
+/* The sticky title bar sits over the panel's top corners, so it carries the two top studs itself. */
+details.topic[open] > summary { background: var(--stud) left -1px top -1px / 10px 10px no-repeat, var(--stud) right -1px top -1px / 10px 10px no-repeat, #141a30; }
 details.topic > :not(summary) { margin-left: 16px; margin-right: 16px; }
 details.topic > ul { margin-top: 14px; }
 .nf-search { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; max-width: 560px; margin: 0 0 32px; }
