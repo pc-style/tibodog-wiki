@@ -57,6 +57,15 @@ function flatRows(obj, prefix = '') {
   return rows;
 }
 
+// An enemy found in many biomes would make its catalogue row very tall; past two, the list folds behind a count.
+function biomeCell(list) {
+  const items = list.map((b) => `${link('biome', b.biome)} (T${b.tier})`).join(', ');
+  if (list.length <= 2) return items;
+  const tiers = [...new Set(list.map((b) => b.tier))].sort((x, y) => x - y);
+  const range = tiers.length > 1 ? `T${tiers[0]}–T${tiers.at(-1)}` : `T${tiers[0]}`;
+  return `<details class="cell-more"><summary>${list.length} biomes, ${range}</summary>${items}</details>`;
+}
+
 const WSTATS = [
   ['damage', 'Damage'],
   ['cooldown', 'Cooldown (s)'],
@@ -617,7 +626,7 @@ export function enemyIndex() {
       fmt(e.speed),
       fmt(e.xp),
       `\`${e.behavior.kind}\``,
-      endgameFamily(e) ? `[${endgameFamily(e)} phase](/endgame#${endgameFamily(e).toLowerCase()})` : enemyBiomes(e.id).map((b) => `${link('biome', b.biome)} (T${b.tier})`).join(', '),
+      endgameFamily(e) ? `[${endgameFamily(e)} phase](/endgame#${endgameFamily(e).toLowerCase()})` : biomeCell(enemyBiomes(e.id)),
     ]),
   );
   return { path: '/enemies', title: 'Enemies', description: `All ${R.enemies.length} enemies in tibo.dog with HP, damage, speed, XP and biomes.`, body, sources: [SRC_REG, SRC_TEXT], search: 'enemies pests list' };

@@ -3,7 +3,7 @@ import { mkdirSync, writeFileSync, rmSync, cpSync, readFileSync, existsSync } fr
 import { dirname, join } from 'node:path';
 import { renderHtml, renderMd, ogPath, SITE, SITE_NAME } from './lib/render.mjs';
 import { ogImage } from './lib/og.mjs';
-import { R, BUILD, BUILDS, BUILT_AT, WIKI_COMMIT, GAME, DIFF, TEXT } from './lib/data.mjs';
+import { R, BUILD, BUILDS, BUILT_AT, WIKI_COMMIT, GAME, DIFF, TEXT, ICONS } from './lib/data.mjs';
 import * as ent from './pages/entities.mjs';
 import { systemPages } from './pages/system.mjs';
 import { guidePages } from './pages/guides.mjs';
@@ -88,9 +88,11 @@ const TIER = Object.fromEntries([...R.evolutions.map((w) => [w.id, 'Evolutions']
 const section = (p) => (p.path.startsWith('/weapons/') && TIER[p.path.slice(9)]) || (p.crumbs?.[0]?.[0] ?? 'Guide');
 // Search snippets end at a word boundary with an ellipsis, never mid-word.
 const clip = (t, n) => (t.length <= n ? t : `${t.slice(0, t.lastIndexOf(' ', n)).replace(/[,;:]$/, '')}…`);
+// Only pages whose sprite exists get an icon in search results; the rest would show a broken image.
+const hasIcon = (spec) => { const [cat, id] = (spec ?? '').split('/'); return !!ICONS[cat]?.[id]; };
 const index = pages
   .filter((p) => p.path !== '/search')
-  .map((p) => ({ t: p.title, u: p.path, d: clip(p.description, 160), k: `${p.search ?? ''} ${localKeywords(p.path)}`.trim(), s: section(p), i: p.infobox?.icon ?? '' }));
+  .map((p) => ({ t: p.title, u: p.path, d: clip(p.description, 160), k: `${p.search ?? ''} ${localKeywords(p.path)}`.trim(), s: section(p), i: hasIcon(p.infobox?.icon) ? p.infobox.icon : '' }));
 write('search-index.json', JSON.stringify(index));
 
 // Sitemap.
