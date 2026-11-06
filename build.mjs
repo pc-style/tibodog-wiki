@@ -1,7 +1,8 @@
 // Builds the static wiki into dist/: HTML pages, Markdown twins, sitemap, llms.txt, search index and data API.
 import { mkdirSync, writeFileSync, rmSync, cpSync, readFileSync, existsSync } from 'node:fs';
 import { dirname, join } from 'node:path';
-import { renderHtml, renderMd, SITE, SITE_NAME } from './lib/render.mjs';
+import { renderHtml, renderMd, ogPath, SITE, SITE_NAME } from './lib/render.mjs';
+import { ogImage } from './lib/og.mjs';
 import { R, BUILD, BUILDS, BUILT_AT, WIKI_COMMIT, GAME, DIFF, TEXT } from './lib/data.mjs';
 import * as ent from './pages/entities.mjs';
 import { systemPages } from './pages/system.mjs';
@@ -187,6 +188,10 @@ const nf = {
 };
 write('404.html', renderHtml(nf, pages));
 write('404.md', renderMd(nf));
+
+// Social preview cards: one per page, so every shared link shows its own title and sprite.
+// Drawing is synchronous; the PNG encodes run on sharp's worker threads, so start them all and wait once.
+await Promise.all([...pages, nf].map(async (p) => write(ogPath(p).slice(1), await ogImage(p, SITE + (p.path === '/' ? '/' : p.path)))));
 
 console.log(`Built ${pages.length} pages (${pages.length * 2} HTML+MD files) into dist/`);
 

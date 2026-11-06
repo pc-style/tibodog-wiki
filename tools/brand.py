@@ -235,4 +235,14 @@ if __name__ == '__main__':
     apple.paste(t, ((180 - t.width) // 2, (180 - t.height) // 2), t)
     apple.save(os.path.join(PUB, 'apple-touch-icon.png'), optimize=True)
     og(mark).save(os.path.join(PUB, 'og.png'), optimize=True)
-    print('wrote logo.svg favicon.png favicon.ico apple-touch-icon.png og.png')
+    # Tibo for the header portrait and page previews, from the game's own idle-front frames in
+    # atlas-Cq7nv457.png (build 75): "tibo-body" frame 0 @(394,1293) 38x87, anchor (18,86), plus his
+    # left arm "tibo-arm" "rest-idle-front" frame 0 @(365,1261) 8x29, anchor (19,45), placed by the anchors.
+    atlas = os.path.join(ROOT, '.cache', 'main-CSuyb4iv', 'assets', 'atlas-Cq7nv457.png')
+    if os.path.exists(atlas):
+        a = Image.open(atlas).convert('RGBA')
+        tibo = Image.new('RGBA', (39, 87), (0, 0, 0, 0))
+        tibo.alpha_composite(a.crop((394, 1293, 394 + 38, 1293 + 87)), (1, 0))
+        tibo.alpha_composite(a.crop((365, 1261, 365 + 8, 1261 + 29)), (1 + 18 - 19, 86 - 45))
+        tibo.save(os.path.join(PUB, 'tibo.png'), optimize=True)
+    print('wrote logo.svg favicon.png favicon.ico apple-touch-icon.png og.png tibo.png')

@@ -9,7 +9,10 @@
     "play": "node tools/play.mjs"
   },
   "dependencies": {
+    "@resvg/resvg-js": "2.6.2",
     "@vercel/functions": "^3.10.5",
-    "marked": "^15.0.0"
+    "marked": "^15.0.0",
+    "satori": "0.63.2",
+    "sharp": "^0.35.5"
   }
 }
