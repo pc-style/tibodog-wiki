@@ -8,7 +8,7 @@ It uses the same ring spawn as [Ring of Hay Bales](/events/bale-ring), but these
 
 - **Count.** 10 balls × the difficulty's wall-pest multiplier: 2 on Easy, 3 on Normal and Hard, 6 on Nightmare (see [Modes](/modes)). The ring is much thinner than the event's raw count suggests.
 - **Approach.** The event sets each ball to its base speed of 26. A ball rolls towards Tibo at that speed until it is within 120 units and its cooldown is over.
-- **Charge.** The ball stops for a 0.5-second windup (0.6 seconds from 20:00 in Standard) and locks its direction towards Tibo's position at the start of the windup. It then dashes at 210 for about 0.74 seconds (roughly 156 units, past where Tibo stood) and rolls normally for 1.6 seconds before it can wind up again. <small>[sim-DJfN0TyV.js: `i.state[t]=1,i.timer[t]=.5,e.bigUpdate.lateGame&&(i.timer[t]=Gr(e,.5)),i.tx[t]=r/s,i.ty[t]=a/s`]</small> <small>[sim-DJfN0TyV.js: `i.state[t]=2,i.timer[t]=1.3*n/r,i.windup[t]=0`]</small>
+- **Charge.** The ball stops for a 0.5-second windup (0.6 seconds from 20:00 in Standard) and locks its direction towards Tibo's position at the start of the windup. It then dashes at 210 for about 0.74 seconds (roughly 156 units, past where Tibo stood) and rolls normally for 1.6 seconds before it can wind up again. <small>[sim-CSyS7SGD.js: `i.state[t]=1,i.timer[t]=.5,e.bigUpdate.lateGame&&(i.timer[t]=Gr(e,.5)),i.tx[t]=r/s,i.ty[t]=a/s`]</small> <small>[sim-CSyS7SGD.js: `i.state[t]=2,i.timer[t]=1.3*n/r,i.windup[t]=0`]</small>
 - **Despawn.** Balls are removed after 16 seconds, or once they are about 460 units from Tibo.
 - **Trigger.** If the enemy pool is full (550 on Easy/Normal, 700 on Hard, 850 on Nightmare), the alley stays unused and the event tries again while Tibo is inside.
 

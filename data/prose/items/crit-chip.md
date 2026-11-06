@@ -2,7 +2,7 @@
 
 Crit Chip is a Rare item that adds 0.25 to the crit damage multiplier per copy. Crits normally deal ×2 damage, so one chip makes them deal ×2.25. Crit damage has no diminishing returns: each copy adds the same flat 0.25, and copies stack with [Sour Cream](/passives/sour-cream) (0.2 per level).
 
-It has weight 6 out of 53 among Rare items, about 1.1% of item rolls at luck 0. It has no evolution.
+It has weight 6 out of 94 among Rare items, about 0.64% of item rolls at luck 0 with the full pool eligible. It has no evolution.
 
 ## How it works
 

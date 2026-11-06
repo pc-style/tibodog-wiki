@@ -8346,7 +8346,23 @@
    "stat": "luck",
    "perLevel": 0.1,
    "maxLevel": 5,
-   "weight": 80
+   "weight": 80,
+   "effect": {
+    "phase": "gear",
+    "variant": {
+     "kind": "extraProjectile",
+     "tags": [
+      "shot"
+     ],
+     "perLevel": [
+      0,
+      1,
+      1,
+      2,
+      2
+     ]
+    }
+   }
   },
   {
    "id": "golden-fry",
@@ -8786,6 +8802,27 @@
      "status": {
       "kind": "freeze",
       "seconds": 1
+     }
+    }
+   }
+  },
+  {
+   "id": "fry-box",
+   "tier": "base",
+   "rarity": 2,
+   "mods": {},
+   "maxStacks": 2,
+   "weight": 6,
+   "effect": {
+    "kind": "bigUpdate",
+    "variant": {
+     "phase": "gear",
+     "variant": {
+      "kind": "extraProjectile",
+      "tags": [
+       "shot"
+      ],
+      "amount": 1
      }
     }
    }
@@ -9632,6 +9669,27 @@
      "status": {
       "kind": "freeze",
       "seconds": 1
+     }
+    }
+   }
+  },
+  {
+   "id": "fry-box",
+   "tier": "base",
+   "rarity": 2,
+   "mods": {},
+   "maxStacks": 2,
+   "weight": 6,
+   "effect": {
+    "kind": "bigUpdate",
+    "variant": {
+     "phase": "gear",
+     "variant": {
+      "kind": "extraProjectile",
+      "tags": [
+       "shot"
+      ],
+      "amount": 1
      }
     }
    }

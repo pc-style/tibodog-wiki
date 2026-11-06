@@ -1162,6 +1162,12 @@
  "content.item.frozen-pea.name": [
   "Frozen Pea"
  ],
+ "content.item.fry-box.desc": [
+  "Shot weapons fire +1 projectile."
+ ],
+ "content.item.fry-box.name": [
+  "Fry Box"
+ ],
  "content.item.fry-fuel.desc": [
   "Every 30 kills refills one dash charge."
  ],
@@ -1451,7 +1457,7 @@
   "Fertilizer"
  ],
  "content.passive.four-eyed-spud.desc": [
-  "+10% luck per level."
+  "+10% luck per level. Shot weapons fire +1 projectile at levels 2 and 4."
  ],
  "content.passive.four-eyed-spud.name": [
   "Four-Eyed Spud"
