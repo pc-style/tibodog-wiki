@@ -6,9 +6,9 @@ Every 2.5 seconds Moss shoves every pest within 46 units of Tibo straight away f
 
 ## How it works
 
-- The circle is centred on Tibo, not on Moss. Its radius grows with the square root of power (`46 × √power`); the push grows with power itself. <small>[sim-BidEahwi.js: `(e,n.radius*bi(i),n.push*i,c,a.breed[t])`]</small>
-- Each pest's push is scaled by `1 − mass`. Pests with mass 0, such as [Aphid](/enemies/aphid), take the full shove. [Mud Golem](/enemies/mud-golem) (mass 0.8) takes 20% of it, and [Hay Bale](/enemies/hay-bale) (mass 1) does not move at all. Tibo's knockback stat plays no part. <small>[sim-BidEahwi.js: `m=n*(1-l.mass[u])`]</small>
-- If no pest is in range, Moss checks again every 0.25 s, and the interval only restarts after a shove that hit something. So after a quiet stretch, the first pest to step close is pushed almost at once. <small>[sim-BidEahwi.js: `dC(e,o,s.ability,c)?(n.cd[o]=k(vi(s,n.level[o])),Sr(e,n.breed[o])):n.cd[o]=iC`]</small>
+- The circle is centred on Tibo, not on Moss. Its radius grows with the square root of power (`46 × √power`); the push grows with power itself. <small>[sim-Begj1yyi.js: `(e,r.radius*xi(a),r.push*a,l,o.breed[t])`]</small>
+- Each pest's push is scaled by `1 − mass`. Pests with mass 0, such as [Aphid](/enemies/aphid), take the full shove. [Mud Golem](/enemies/mud-golem) (mass 0.8) takes 20% of it, and [Hay Bale](/enemies/hay-bale) (mass 1) does not move at all. Tibo's knockback stat plays no part. <small>[sim-Begj1yyi.js: `m=n*(1-l.mass[u])`]</small>
+- If no pest is in range, Moss checks again every 0.25 s, and the interval only restarts after a shove that hit something. So after a quiet stretch, the first pest to step close is pushed almost at once. <small>[sim-Begj1yyi.js: `fC(e,o,s.ability,c)?(n.cd[o]=T(yi(s,n.level[o])),Sr(e,n.breed[o])):n.cd[o]=aC`]</small>
 
 **Measured** (build 41 `main-B2gf34bA.js`, headless `tools/play.mjs`, seed `wiki`, standard mode, normal difficulty; Moss added at Tibo's side and trained with the sim's own dog-join and dog-level-up functions; HP refilled every tick; Tibo standing still; level-ups taking the first offer; 150 s; shoves timed from the game's `dogAbility` events): the shortest gap between shoves was 2.5 s at level 1 (5 of 9 gaps) and 1.3 s at level 5 (21 of 39). The other gaps were longer. That is likely Moss waiting for a pest to come in range (inference; the run did not log pest distances).
 

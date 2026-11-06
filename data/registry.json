@@ -5554,7 +5554,7 @@
    "id": "fry-brigade",
    "tier": "union",
    "base": {
-    "damage": 22,
+    "damage": 32,
     "cooldown": 0.3,
     "amount": 4,
     "area": 1,
@@ -5574,17 +5574,17 @@
     }
    },
    "from": [
-    "fry-sentry",
-    "tater-pup"
+    "fry-fortress",
+    "gravy-pack"
    ]
   },
   {
    "id": "spud-artillery",
    "tier": "union",
    "base": {
-    "damage": 84,
+    "damage": 152,
     "cooldown": 1.8,
-    "amount": 5,
+    "amount": 8,
     "area": 1.6,
     "speed": 230,
     "duration": 3,
@@ -5600,17 +5600,17 @@
     "explodeRadius": 32
    },
    "from": [
-    "spud-lob",
-    "spud-cannon"
+    "sack-of-russets",
+    "spudzooka"
    ]
   },
   {
    "id": "starch-supercell",
    "tier": "union",
    "base": {
-    "damage": 80,
+    "damage": 165,
     "cooldown": 1.6,
-    "amount": 6,
+    "amount": 12,
     "area": 1.8,
     "speed": 0,
     "duration": 0,
@@ -5622,12 +5622,12 @@
     "kind": "strike",
     "size": 12,
     "range": 190,
-    "chain": 3,
+    "chain": 5,
     "jump": 80
    },
    "from": [
-    "starch-bolt",
-    "starch-chain"
+    "thunder-tuber",
+    "gratin-arc"
    ]
   },
   {
@@ -8587,7 +8587,7 @@
    "id": "fry-brigade",
    "tier": "union",
    "base": {
-    "damage": 22,
+    "damage": 32,
     "cooldown": 0.3,
     "amount": 4,
     "area": 1,
@@ -8607,17 +8607,17 @@
     }
    },
    "from": [
-    "fry-sentry",
-    "tater-pup"
+    "fry-fortress",
+    "gravy-pack"
    ]
   },
   {
    "id": "spud-artillery",
    "tier": "union",
    "base": {
-    "damage": 84,
+    "damage": 152,
     "cooldown": 1.8,
-    "amount": 5,
+    "amount": 8,
     "area": 1.6,
     "speed": 230,
     "duration": 3,
@@ -8633,17 +8633,17 @@
     "explodeRadius": 32
    },
    "from": [
-    "spud-lob",
-    "spud-cannon"
+    "sack-of-russets",
+    "spudzooka"
    ]
   },
   {
    "id": "starch-supercell",
    "tier": "union",
    "base": {
-    "damage": 80,
+    "damage": 165,
     "cooldown": 1.6,
-    "amount": 6,
+    "amount": 12,
     "area": 1.8,
     "speed": 0,
     "duration": 0,
@@ -8655,12 +8655,12 @@
     "kind": "strike",
     "size": 12,
     "range": 190,
-    "chain": 3,
+    "chain": 5,
     "jump": 80
    },
    "from": [
-    "starch-bolt",
-    "starch-chain"
+    "thunder-tuber",
+    "gratin-arc"
    ]
   }
  ],

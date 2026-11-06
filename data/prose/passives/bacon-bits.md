@@ -6,7 +6,7 @@ It is the catalyst for [Inferno Basket](/weapons/inferno-basket), the evolution 
 
 ## How it works
 
-When a hit lands on a boss or an enemy flagged as elite, its damage is multiplied by Tibo's elite damage stat and by the weapon's own elite multiplier, before the crit roll.<small>[sim-BidEahwi.js: `let r=a||t.has(n,y.Elite);if(r&&(u*=s.eliteMult*o.eliteMult[i])`]</small> The stat is a plain `1 + total`, with no diminishing returns or cap (see [Stats](/stats)). The only other source is the [Boss Buster](/items/boss-buster) item (+0.15).
+When a hit lands on a boss or an enemy flagged as elite, its damage is multiplied by Tibo's elite damage stat and by the weapon's own elite multiplier, before the crit roll.<small>[sim-Begj1yyi.js: `let i=a||t.has(n,_.Elite);if(i&&(u*=s.eliteMult*o.eliteMult[r])`]</small> The stat is a plain `1 + total`, with no diminishing returns or cap (see [Stats](/stats)). The only other source is the [Boss Buster](/items/boss-buster) item (+0.15).
 
 Inferno Basket has its own elite multiplier of 2 (“Double damage to elites and bosses.”). The two multiply, so with Bacon Bits at level 5 an Inferno Basket hit on an elite or boss deals 2 × 1.6 = 3.2 times its normal damage.
 

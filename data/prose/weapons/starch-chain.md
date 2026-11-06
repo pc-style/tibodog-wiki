@@ -2,11 +2,11 @@
 
 Starch Chain fires a spark at the nearest pest within 150 units of Tibo, which then jumps from enemy to enemy. Each arc hits the first target and then makes 3 more jumps, so it damages up to 4 enemies for 14 each. Every 1.8 seconds it fires 2 arcs: a raw amount of 1 plus the +1 base amount bonus every non-aura weapon gets (see [Stats](/stats)). Levels add jumps (7 jumps, or 8 enemies per arc, at level 8), raise damage to 38 and add a third arc.
 
-It is offered on level-up and can be given by [poteto's](/visitors#poteto) gift chest. At level 8 a chest evolves it into [Gratin Arc](/weapons/gratin-arc) if you own [Hot Sauce](/passives/hot-sauce). Paired with a maxed [Starch Bolt](/weapons/starch-bolt) it can instead unite into [Starch Supercell](/weapons/starch-supercell). See [Evolutions](/evolutions).
+It is offered on level-up and can be given by [poteto's](/visitors#poteto) gift chest. At level 8 a chest evolves it into [Gratin Arc](/weapons/gratin-arc) if you own [Hot Sauce](/passives/hot-sauce). Gratin Arc then unites with [Thunder Tuber](/weapons/thunder-tuber) into [Starch Supercell](/weapons/starch-supercell). See [Evolutions](/evolutions).
 
 ## How it works
 
-- **Pierce is the jump count.** After the first hit, the spark jumps once per point of pierce, capped at 60, so pierce bonuses from passives and items lengthen the chain. <small>[sim-BidEahwi.js: `Yw(e,c,l,r.pierce===-1?60:Math.min(60,r.pierce),n.jump*Math.sqrt(r.area),s)`]</small>
+- **Pierce is the jump count.** After the first hit, the spark jumps once per point of pierce, capped at 60, so pierce bonuses from passives and items lengthen the chain. <small>[sim-Begj1yyi.js: `Xw(e,c,l,r.pierce===-1?60:Math.min(60,r.pierce),n.jump*Math.sqrt(r.area),s)`]</small>
 - **Each jump goes to the nearest enemy not yet hit by this arc**, as long as it is within 70 units of the previous target. If nothing is close enough, the chain stops early. The jump distance grows with the square root of area: double area gives about 1.4 times the jump distance.
 - **Every link deals full damage.** There is no falloff along the chain.
 - **Arcs are separate.** The arcs of one cast fire 0.2 s apart and each starts again from the nearest enemy, so later arcs can hit the same pests as the first.
