@@ -4776,6 +4776,28 @@
    "catalyst": "four-eyed-spud"
   },
   {
+   "id": "fry-fortress",
+   "tier": "evolved",
+   "base": {
+    "damage": 21,
+    "cooldown": 5,
+    "amount": 3,
+    "area": 1,
+    "speed": 260,
+    "duration": 7,
+    "pierce": 2,
+    "knockback": 1,
+    "interval": 0.3
+   },
+   "behavior": {
+    "kind": "turret",
+    "size": 4,
+    "range": 180
+   },
+   "from": "fry-sentry",
+   "catalyst": "slow-cooker"
+  },
+  {
    "id": "ghee-glide",
    "tier": "evolved",
    "on": "dash",
@@ -7001,6 +7023,89 @@
    "catalyst": "bacon-bits"
   },
   {
+   "id": "hunters-moon",
+   "tier": "evolved",
+   "base": {
+    "damage": 93,
+    "cooldown": 0,
+    "amount": 2,
+    "area": 1.3,
+    "speed": 2.8,
+    "duration": 0.8,
+    "pierce": 0,
+    "knockback": 1.5,
+    "interval": 0
+   },
+   "behavior": {
+    "kind": "bigUpdate",
+    "variant": {
+     "kind": "harvestMoon",
+     "size": 7,
+     "orbitRadius": 62,
+     "strikeInterval": 0.5,
+     "grab": 12,
+     "minCarry": 0.4,
+     "regrab": 2,
+     "fling": 300,
+     "burst": {
+      "radius": 30,
+      "share": 0.4,
+      "land": 0.25,
+      "knockback": 1
+     }
+    }
+   },
+   "from": "harvest-moon",
+   "catalyst": "potato-magnet"
+  },
+  {
+   "id": "mash-colossus",
+   "tier": "evolved",
+   "base": {
+    "damage": 13.5,
+    "cooldown": 3.6,
+    "amount": 2,
+    "area": 1.3,
+    "speed": 55,
+    "duration": 1.6,
+    "pierce": 99,
+    "knockback": 5,
+    "interval": 0.3
+   },
+   "behavior": {
+    "kind": "bigUpdate",
+    "variant": {
+     "kind": "mashGolem",
+     "lead": 12,
+     "riseSec": 0.3,
+     "body": 16,
+     "pulseSec": 0.15,
+     "fanDeg": 24,
+     "reach": 120,
+     "slamRadius": 38,
+     "slamMult": 5,
+     "patch": {
+      "every": 14,
+      "radius": 16,
+      "sec": 3,
+      "slow": {
+       "kind": "slow",
+       "factor": 0.5,
+       "seconds": 0.4
+      }
+     },
+     "ring": {
+      "reach": 105,
+      "speed": 135,
+      "width": 14,
+      "mult": 2
+     }
+    }
+   },
+   "from": "mash-golem",
+   "catalyst": "stuffed-skin"
+  },
+  {
    "id": "gravy-pack",
    "tier": "evolved",
    "base": {
@@ -7185,6 +7290,28 @@
    },
    "from": "reset-button",
    "catalyst": "four-eyed-spud"
+  },
+  {
+   "id": "fry-fortress",
+   "tier": "evolved",
+   "base": {
+    "damage": 21,
+    "cooldown": 5,
+    "amount": 3,
+    "area": 1,
+    "speed": 260,
+    "duration": 7,
+    "pierce": 2,
+    "knockback": 1,
+    "interval": 0.3
+   },
+   "behavior": {
+    "kind": "turret",
+    "size": 4,
+    "range": 180
+   },
+   "from": "fry-sentry",
+   "catalyst": "slow-cooker"
   },
   {
    "id": "ghee-glide",
@@ -8271,6 +8398,89 @@
    },
    "from": "hash-hawk",
    "catalyst": "bacon-bits"
+  },
+  {
+   "id": "hunters-moon",
+   "tier": "evolved",
+   "base": {
+    "damage": 93,
+    "cooldown": 0,
+    "amount": 2,
+    "area": 1.3,
+    "speed": 2.8,
+    "duration": 0.8,
+    "pierce": 0,
+    "knockback": 1.5,
+    "interval": 0
+   },
+   "behavior": {
+    "kind": "bigUpdate",
+    "variant": {
+     "kind": "harvestMoon",
+     "size": 7,
+     "orbitRadius": 62,
+     "strikeInterval": 0.5,
+     "grab": 12,
+     "minCarry": 0.4,
+     "regrab": 2,
+     "fling": 300,
+     "burst": {
+      "radius": 30,
+      "share": 0.4,
+      "land": 0.25,
+      "knockback": 1
+     }
+    }
+   },
+   "from": "harvest-moon",
+   "catalyst": "potato-magnet"
+  },
+  {
+   "id": "mash-colossus",
+   "tier": "evolved",
+   "base": {
+    "damage": 13.5,
+    "cooldown": 3.6,
+    "amount": 2,
+    "area": 1.3,
+    "speed": 55,
+    "duration": 1.6,
+    "pierce": 99,
+    "knockback": 5,
+    "interval": 0.3
+   },
+   "behavior": {
+    "kind": "bigUpdate",
+    "variant": {
+     "kind": "mashGolem",
+     "lead": 12,
+     "riseSec": 0.3,
+     "body": 16,
+     "pulseSec": 0.15,
+     "fanDeg": 24,
+     "reach": 120,
+     "slamRadius": 38,
+     "slamMult": 5,
+     "patch": {
+      "every": 14,
+      "radius": 16,
+      "sec": 3,
+      "slow": {
+       "kind": "slow",
+       "factor": 0.5,
+       "seconds": 0.4
+      }
+     },
+     "ring": {
+      "reach": 105,
+      "speed": 135,
+      "width": 14,
+      "mult": 2
+     }
+    }
+   },
+   "from": "mash-golem",
+   "catalyst": "stuffed-skin"
   },
   {
    "id": "gravy-pack",

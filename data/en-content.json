@@ -1915,6 +1915,12 @@
  "content.weapon.fry-brigade.name": [
   "Fry Brigade"
  ],
+ "content.weapon.fry-fortress.desc": [
+  "Drops three armored fry turrets at a time. They stand longer and their crinkle fries pierce."
+ ],
+ "content.weapon.fry-fortress.name": [
+  "Fry Fortress"
+ ],
  "content.weapon.fry-knives.desc": [
   "Fires sharp fries in the direction Tibo faces."
  ],
@@ -2047,6 +2053,12 @@
  "content.weapon.hot-streak.name": [
   "Hot Streak"
  ],
+ "content.weapon.hunters-moon.desc": [
+  "Bigger moon spuds circle Tibo and catch pests from farther out. Each flung pest bursts into moon dust where it lands and hits the pests around it. Bosses are too heavy to catch."
+ ],
+ "content.weapon.hunters-moon.name": [
+  "Hunter's Moon"
+ ],
  "content.weapon.inferno-basket.desc": [
   "A long blast of fryer oil. Double damage to elites and bosses."
  ],
@@ -2094,6 +2106,12 @@
  ],
  "content.weapon.mash-avalanche.name": [
   "Mash Avalanche"
+ ],
+ "content.weapon.mash-colossus.desc": [
+  "A bigger golem of mash stomps the way Tibo faces. Each step leaves a patch of mash that slows pests, and its last slam sends a ring of mash rolling out."
+ ],
+ "content.weapon.mash-colossus.name": [
+  "Mash Colossus"
  ],
  "content.weapon.mash-golem.desc": [
   "A golem of mash rises in front of Tibo and stomps the way he faces, shoving pests out of its path to open a lane. At the end of its walk it slams the ground and crumbles."
