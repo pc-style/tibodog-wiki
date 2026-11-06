@@ -55,6 +55,10 @@ body {
 }
 a { color: var(--link); text-decoration: none; text-underline-offset: 3px; text-decoration-thickness: 1px; }
 a:hover { color: var(--link-hover); text-decoration: underline; }
+/* Links in running text are underlined, not told apart by colour alone (WCAG 1.4.1). */
+article :is(p, li, td, blockquote) > a, article li > strong > a, .lead a, .infobox td a { text-decoration: underline; text-decoration-color: #f2d07a73; }
+article :is(p, li, td, blockquote) > a:hover, article li > strong > a:hover, .lead a:hover, .infobox td a:hover { text-decoration-color: currentColor; }
+.toc a, .crumbs a, #search-page-results a { text-decoration: none !important; }
 a.ext::after { content: "↗"; font-size: .7em; margin-left: 2px; opacity: .7; }
 :focus-visible { outline: 2px solid #fff59d; outline-offset: 2px; border-radius: 4px; }
 ::selection { background: var(--accent-soft); }
@@ -116,6 +120,7 @@ img { max-width: 100%; }
 .sresults li a { display: flex; gap: 10px; align-items: center; padding: 7px 10px; color: var(--text); border-radius: var(--radius-sm); font-size: 14.5px; }
 .sresults li a:hover, .sresults li[aria-selected="true"] a { background: var(--panel-2); text-decoration: none; }
 .sresults .ico { width: 24px; height: 24px; object-fit: contain; margin: 0; }
+.sresults li a:not(:has(> .ico))::before { content: ""; width: 24px; flex: none; }
 .sresults small { color: var(--muted); margin-left: auto; font-size: 12px; }
 .ver-chip {
   margin-left: auto; display: inline-flex; align-items: center; gap: 7px; white-space: nowrap;
@@ -226,13 +231,16 @@ h2:hover .anchor, h3:hover .anchor, .anchor:focus { opacity: 1; text-decoration:
 .lead { font-size: 18px; line-height: 1.6; color: var(--text-2); margin: 0 0 28px; max-width: 66ch; }
 /* Keep running text at a readable measure; tables and cards may use the full width. */
 article > p, article > ul, article > ol, article > blockquote, article > h2, article > h3,
-.ib-body > p, .ib-body > ul, .ib-body > ol, .ib-body > blockquote { max-width: 76ch; }
+.ib-body > p, .ib-body > ul, .ib-body > ol, .ib-body > blockquote { max-width: 68ch; }
 .with-ib > .lead { max-width: none; }
 p { margin: 0 0 16px; }
 ul, ol { padding-left: 24px; margin: 0 0 16px; }
 li { margin: 4px 0; }
 li::marker { color: var(--muted); }
-strong { font-weight: 700; color: #fff8e6; }
+/* Marcellus has one weight; emphasis is colour, as in the game, not synthetic bold. */
+strong, b { font-weight: 400; color: #fff8e6; }
+a strong, a b { color: inherit; }
+a code { color: var(--link); }
 hr { border: 0; height: 1px; background: linear-gradient(90deg, transparent, #d8b25a99, transparent); margin: 32px 0; }
 
 /* Source citations in running text: keep them, but quiet. */
@@ -292,13 +300,21 @@ article small code { background: none; padding: 0; color: inherit; font-size: 11
 /* ---------- Tables ---------- */
 .table-wrap {
   overflow-x: auto; margin: 16px 0 24px; width: fit-content; min-width: min(100%, 26rem); max-width: 100%;
-  border: 1px solid var(--line); border-radius: var(--radius); background: #0a0c1899;
+  border: 1px solid var(--line); border-radius: var(--radius);
+  /* Scroll cue: gold edge shadows show only where more columns are hidden (covers scroll with the content). */
+  background:
+    linear-gradient(90deg, #0a0c18 30%, #0a0c1800) left center / 40px 100% no-repeat local,
+    linear-gradient(270deg, #0a0c18 30%, #0a0c1800) right center / 40px 100% no-repeat local,
+    radial-gradient(farthest-side at 0 50%, #c9a24f66, #c9a24f00) left center / 14px 100% no-repeat scroll,
+    radial-gradient(farthest-side at 100% 50%, #c9a24f66, #c9a24f00) right center / 14px 100% no-repeat scroll,
+    #0a0c18;
 }
-.wikitable { width: 100%; border-collapse: collapse; font-size: 14.5px; line-height: 1.45; font-variant-numeric: tabular-nums; }
+/* max-content, not 100%: a percentage of a fit-content wrapper is circular and squeezed cells overflowed. */
+.wikitable { width: max-content; min-width: 100%; border-collapse: collapse; font-size: 14.5px; line-height: 1.45; font-variant-numeric: tabular-nums; }
 .wikitable th, .wikitable td { padding: 9px 12px; vertical-align: middle; text-align: left; border-bottom: 1px solid var(--line-2); }
 .wikitable tbody tr:last-child td { border-bottom: 0; }
 .wikitable th {
-  background: linear-gradient(180deg, #1c223c, #12172b); color: var(--gold); font: 700 12.5px/1.4 var(--display); letter-spacing: .03em; white-space: nowrap;
+  background: linear-gradient(180deg, #1c223c, #12172b); color: var(--gold); font: 700 13.5px/1.4 var(--display); letter-spacing: .03em; white-space: nowrap;
   border-bottom-color: #c9a24f80;
 }
 .wikitable tbody tr:hover td { background: #c9a24f12; }
@@ -314,6 +330,8 @@ article small code { background: none; padding: 0; color: inherit; font-size: 11
 .wikitable th[aria-sort="descending"]::after { content: "↓"; opacity: 1; }
 .wikitable code, .infobox code, .sources code, .foot code { font-size: 12.5px; background: none; padding: 0; color: var(--code-text); }
 .ico { image-rendering: pixelated; vertical-align: middle; margin-right: 8px; width: auto; height: 24px; }
+/* List rows that start with an icon keep their text aligned whatever the sprite's width. */
+li > .ico:first-child { width: 28px; object-fit: contain; }
 td .ico { height: 26px; }
 .wikitable td:has(> .ico:first-child) { white-space: nowrap; }
 .wikitable td code { white-space: nowrap; overflow-wrap: normal; }
@@ -394,22 +412,23 @@ blockquote p { margin: 6px 0; }
 }
 @media (max-width: 860px) {
   :root { --header-h: auto; }
-  .top { position: static; height: auto; flex-wrap: wrap; gap: 10px 16px; padding: 12px 16px; }
+  /* relative, not static: keeps z-index so search suggestions paint above the article. */
+  .top { position: relative; height: auto; flex-wrap: wrap; gap: 10px 16px; padding: 12px 16px; }
   .brand { width: auto; }
   .play { margin-left: auto; padding: 8px 12px; font-size: 13.5px; }
   .brand { font-size: 19px; }
   .search { order: 3; flex-basis: 100%; max-width: none; }
   .search-key { display: none; }
-  .tabs { padding: 10px 16px; }
-  .tabs a { padding: 9px 12px; font-size: 13px; }
+  .tabs { padding: 8px 16px; }
+  .tabs a { padding: 8px 12px; font-size: 13px; }
   .layout { display: block; }
-  .side { position: static; height: auto; overflow: visible; padding: 12px 16px; border-right: 0; border-bottom: 1px solid var(--line); }
+  .side { position: static; height: auto; overflow: visible; padding: 8px 16px; border-right: 0; border-bottom: 1px solid var(--line); }
   .side-menu > summary {
     display: flex; align-items: center; justify-content: space-between; cursor: pointer; list-style: none;
     padding: 9px 14px; border: 1px solid #c9a24f80; border-radius: 0; background: #0a0c18b3; font: 700 15px/1.4 var(--display); color: var(--title);
   }
   .side-menu > summary::-webkit-details-marker { display: none; }
-  .side-menu > summary::after { content: ""; width: 8px; height: 8px; border: solid var(--muted); border-width: 0 2px 2px 0; transform: rotate(45deg) translateY(-3px); transition: transform .15s; }
+  .side-menu > summary::after { content: ""; width: 8px; height: 8px; border: solid var(--muted); border-width: 0 2px 2px 0; transform: rotate(45deg) translateY(-3px); }
   .side-menu[open] > summary::after { transform: rotate(-135deg) translateX(-2px); }
   .side-menu:not([open]) > :not(summary) { display: none; }
   .side ul { display: grid; grid-template-columns: 1fr 1fr; column-gap: 8px; }

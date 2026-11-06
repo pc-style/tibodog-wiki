@@ -85,7 +85,6 @@ export function guidePages(entityPages) {
     title: t.title,
     description: `${t.desc} Tips for ${t.entries.length} ${t.short.toLowerCase()} in tibo.dog, each linked to its full wiki page.`,
     lead: `${t.desc} Every tip below is the same text as on that ${t.one}'s page, which also has the numbers and sources.`,
-    toc: false,
     body: t.entries
       .map(({ page, tips }) => {
         const when = arrives(page) ? ` <small>arrives ${arrives(page)}</small>` : '';

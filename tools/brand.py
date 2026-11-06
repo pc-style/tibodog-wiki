@@ -74,7 +74,19 @@ def tile16():
             edge = x in (0, 15) or y in (0, 15)
             if not corner:
                 g[y][x] = 'G' if edge else 'N'
-    put(g, 3, 4, [r.replace('P', 'O') for r in PAW])
+    # Separate toe dots and pad so the 16 px paw does not merge into one shape.
+    put(g, 2, 3, [
+        '...OO..OO...',
+        '...OO..OO...',
+        'OO........OO',
+        'OO........OO',
+        '............',
+        '....OOOO....',
+        '..OOOOOOOO..',
+        '.OOOOOOOOOO.',
+        '.OOOOOOOOOO.',
+        '..OOO..OOO..',
+    ])
     return g
 
 
