@@ -380,6 +380,10 @@ table.wikitable[style*="--txt-max"] > tbody > tr > td:not(:first-child):not(.num
 .wikitable tbody tr:last-child td { border-bottom: 0; }
 /* Long tables that fit keep their column headings in view while scrolling (no inner scroll box, so no trap). */
 .table-wrap.fits { overflow: visible; }
+/* site.js: the copied header row of a sideways-scrolling table, shown under the site header while the table is in view. */
+.thead-strip { position: fixed; z-index: 20; overflow: hidden; border-bottom: 1px solid #c9a24f80; box-shadow: 0 6px 10px -6px #000c; pointer-events: none; }
+.thead-strip > table { margin: 0; }
+.thead-strip th { border-bottom: 0; }
 .table-wrap.fits .wikitable:has(tbody tr:nth-child(8)) thead th { position: sticky; top: var(--header-h); z-index: 2; box-shadow: 0 1px 0 #c9a24f80, 0 6px 10px -6px #000c; }
 .wikitable th {
   background: linear-gradient(180deg, #1c223c, #12172b); color: var(--gold); font: 700 13.5px/1.4 var(--display); letter-spacing: .03em; white-space: nowrap;
@@ -527,7 +531,12 @@ blockquote p { margin: 6px 0; }
 .fight dt { font: 700 12.5px/1.4 var(--display); letter-spacing: .08em; text-transform: uppercase; color: var(--accent); }
 .fight dd { margin: 0; color: var(--text); }
 .fight > div:last-child dt { color: var(--err); }
-@media (max-width: 480px) { .fight > div { grid-template-columns: 1fr; gap: 0; } }
+@media (max-width: 480px) {
+  .fight > div { grid-template-columns: 1fr; gap: 0; }
+  /* While a query is being typed the search takes the whole header row; the brand and Menu return on exit. */
+  .top:has(.search input:focus) > :not(.search) { display: none; }
+  .top:has(.search input:focus) > .search { max-width: none; }
+}
 
 .tip-filter { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; max-width: 68ch; margin: 0 0 20px; }
 .tip-filter label { font: 700 13px/1.4 var(--display); letter-spacing: .08em; text-transform: uppercase; color: var(--accent); }
@@ -667,6 +676,6 @@ blockquote p { margin: 6px 0; }
 
 /* Very narrow phones: Tibo alone stands for the brand (the link keeps its aria-label), so search keeps room for its placeholder. */
 @media (max-width: 359px) { .brand-txt { display: none; } }
-@media (forced-colors: active) { h1, .brand b { -webkit-text-fill-color: currentColor; background: none; } }
+@media (forced-colors: active) { h1, .brand b { -webkit-text-fill-color: currentColor; background: none; } h2 { background: linear-gradient(CanvasText, CanvasText) left bottom 3px / 100% 1px no-repeat; } .ib-title::after { background: linear-gradient(CanvasText, CanvasText) center / 100% 1px no-repeat; } }
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; } .cards a:hover { transform: none; } }
 @media print { .top, .side, .foot, .toc { display: none; } .layout { display: block; } main { padding: 0; } pre { max-height: none; } }

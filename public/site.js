@@ -13,6 +13,8 @@
   narrowMq.addEventListener('change', (e) => {
     narrow = e.matches;
     if (menu) menu.open = !narrow;
+    // Page contents folded for the phone open again on desktop, unless the reader folded them.
+    for (const t of document.querySelectorAll('details.toc-in')) if (!t.dataset.reader) t.open = !narrow;
     // Desktop gets back the groups the reader left open; the phone menu shows only the current group.
     for (const g of document.querySelectorAll('.nav-group')) {
       const here = !!g.querySelector('[aria-current]');
@@ -56,6 +58,7 @@
   // Phones: a placeholder that fits the narrow search box.
   if (narrow && window.matchMedia('(max-width: 600px)').matches) document.getElementById('q')?.setAttribute('placeholder', 'Search');
   if (narrow) for (const t of document.querySelectorAll('details.toc-in')) t.open = false;
+  for (const t of document.querySelectorAll('details.toc-in')) t.querySelector('summary')?.addEventListener('click', () => { t.dataset.reader = t.open ? 'closed' : 'open'; });
 
   // Sidebar groups remember being folded on desktop; the group holding the current page always stays open.
   // On small screens only that group starts open, so the menu stays short (not remembered).
@@ -175,12 +178,16 @@
     topics[0].before(box);
     const input = box.querySelector('input');
     const count = box.querySelector('#tip-count');
-    const was = topics.map((t) => t.open);
+    let was = topics.map((t) => t.open);
+    let filtering = false;
     // Each topic's tip count follows the filter ("1 of 13 tips"), so a header never contradicts what shows under it.
     const smalls = topics.map((t) => t.querySelector(':scope > summary small'));
     const totals = smalls.map((s) => s?.textContent ?? '');
     input.addEventListener('input', () => {
       const q = input.value.trim().toLowerCase();
+      // Remember what the reader had open when a search starts, and give it back when the box is cleared.
+      if (q && !filtering) was = topics.map((t) => t.open);
+      filtering = !!q;
       let n = 0;
       topics.forEach((t, i) => {
         let hit = 0;
@@ -292,6 +299,43 @@
       fits();
       window.addEventListener('resize', fits);
       document.fonts?.ready.then(fits);
+      // A long table that scrolls sideways can't stick its own header (that needs an inner scroll box, a keyboard
+      // trap), so a copy of the header row follows under the site header and scrolls sideways with the table.
+      if (rows.length >= 8 && table.tHead) {
+        const strip = document.createElement('div');
+        strip.className = 'thead-strip';
+        strip.setAttribute('aria-hidden', 'true');
+        strip.inert = true;
+        strip.hidden = true;
+        document.body.append(strip);
+        let built = '';
+        const place = () => {
+          const over = !wrap.classList.contains('fits');
+          const t = wrap.getBoundingClientRect();
+          const top = parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--header-h')) || 62;
+          const show = over && table.tHead.getBoundingClientRect().top < top && t.bottom > top + 80;
+          strip.hidden = !show;
+          if (!show) return;
+          const ths = [...table.tHead.rows[0].cells];
+          const key = `${t.width}|${ths.map((th) => th.offsetWidth).join(',')}|${ths.map((th) => th.textContent).join('|')}`;
+          if (key !== built) {
+            built = key;
+            const copy = table.cloneNode(false);
+            copy.removeAttribute('style');
+            copy.style.width = `${table.offsetWidth}px`;
+            copy.append(table.tHead.cloneNode(true));
+            [...copy.tHead.rows[0].cells].forEach((th, i) => { th.style.width = th.style.minWidth = th.style.maxWidth = `${ths[i].offsetWidth}px`; th.style.boxSizing = 'border-box'; });
+            strip.replaceChildren(copy);
+          }
+          strip.style.top = `${top}px`;
+          strip.style.left = `${t.left + wrap.clientLeft}px`;
+          strip.style.width = `${wrap.clientWidth}px`;
+          strip.scrollLeft = wrap.scrollLeft;
+        };
+        addEventListener('scroll', () => requestAnimationFrame(place), { passive: true });
+        wrap.addEventListener('scroll', () => { strip.scrollLeft = wrap.scrollLeft; }, { passive: true });
+        addEventListener('resize', place);
+      }
     }
     if (wrap && ths.length >= 3) {
       wrap.style.scrollPaddingLeft = `${ths[0]?.offsetWidth ?? 0}px`;

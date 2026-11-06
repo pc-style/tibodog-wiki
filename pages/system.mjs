@@ -26,7 +26,8 @@ export function systemPages(entityPages) {
     // Four sections need no table of contents; the rail would only take width from the task cards.
     toc: false,
     description: `Unofficial, source-cited wiki for tibo.dog: all ${R.allWeapons.length} weapons, ${R.evolutions.length} evolutions, ${R.passives.length} passives, ${R.allItems.length} items, ${R.dogs.length} dogs, ${R.enemies.length} enemies, ${R.bosses.length} bosses and ${R.biomes.length} biomes, with stats from the game build.`,
-    lead: `Welcome to **tibodog.wiki**, the unofficial fan wiki for [tibo.dog](https://tibo.dog/), a free 2.5D pixel survivors-like by [poteto](https://x.com/poteto) that plays in the browser and inside X posts. You play Tibo with a pack of up to three dogs; potato weapons fire on their own while you move, dash and pick upgrades. Survive 20 minutes, then keep going as long as you last; there is no win screen.`,
+    // Short, so the task cards arrive in the first phone screen; how a run works is on Getting started.
+    lead: `The unofficial fan wiki for [tibo.dog](https://tibo.dog/), a free survivors-like by [poteto](https://x.com/poteto) that plays in the browser and inside X posts. Stats come from the game's own code, and every page lists its sources.`,
     body: `## Start here\n\n<div class="cards tasks">\n${[
       card('/getting-started', 'New to the game?', 'How a run works, from the first dash to 20:00', 'dog/corgi'),
       card('/strategy', 'Plan a build', 'Weapons, evolutions and passives that work together', 'weapon/mashquake'),
