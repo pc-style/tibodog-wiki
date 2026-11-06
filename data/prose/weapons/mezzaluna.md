@@ -14,5 +14,5 @@ From level 5 the chop behind Tibo also flicks shreds back through the crowd: 1 a
 
 ## Tips
 
-- **It hits 20% less at full HP.** At full HP Mezzaluna does 20% less than its listed damage. It only beats the listed number once Tibo is below about 86% HP.
+- **It pays off once Tibo is hurt.** At full HP Mezzaluna does 20% less than its listed damage. It only beats the listed number once Tibo is below about 86% HP.
 - Healing works against the bonus, so the weapon rewards playing at low HP. [Rotten Spud](/passives/rotten-spud), the catalyst, adds [curse](/curse), which makes pests stronger and more numerous, so the evolution is a risky build.

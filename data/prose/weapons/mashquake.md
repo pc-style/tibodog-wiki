@@ -14,5 +14,5 @@ Every 2.2 s it sends 3 rings (2 plus Tibo's built-in +1 amount, see [Stats](/sta
 
 ## Tips
 
-- **Clumps reach pests past the ring.** The clumps travel past the edge of the ring, so they reach pests outside its 144-unit radius.
+- **Use it on pests beyond the ring.** The clumps travel past the edge of the ring, so they reach pests outside its 144-unit radius.
 - The slow keeps pests inside the next ring and in the path of the clumps a little longer.
