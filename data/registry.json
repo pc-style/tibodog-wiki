@@ -7184,6 +7184,45 @@
    "catalyst": "stuffed-skin"
   },
   {
+   "id": "peel-poltergeist",
+   "tier": "evolved",
+   "on": "dash",
+   "base": {
+    "damage": 120,
+    "cooldown": 0,
+    "amount": 0,
+    "area": 1.8,
+    "speed": 190,
+    "duration": 24,
+    "pierce": 3,
+    "knockback": 2,
+    "interval": 0.25
+   },
+   "behavior": {
+    "kind": "bigUpdate",
+    "variant": {
+     "kind": "peelPhantom",
+     "lure": {
+      "reach": 160
+     },
+     "burst": 30,
+     "spread": 18,
+     "spin": {
+      "radius": 34,
+      "cut": 0.3
+     },
+     "ring": {
+      "peels": 10,
+      "cut": 0.6,
+      "size": 5,
+      "life": 1.4
+     }
+    }
+   },
+   "from": "peel-phantom",
+   "catalyst": "peel-out"
+  },
+  {
    "id": "gravy-pack",
    "tier": "evolved",
    "base": {
@@ -8597,6 +8636,45 @@
    },
    "from": "mash-golem",
    "catalyst": "stuffed-skin"
+  },
+  {
+   "id": "peel-poltergeist",
+   "tier": "evolved",
+   "on": "dash",
+   "base": {
+    "damage": 120,
+    "cooldown": 0,
+    "amount": 0,
+    "area": 1.8,
+    "speed": 190,
+    "duration": 24,
+    "pierce": 3,
+    "knockback": 2,
+    "interval": 0.25
+   },
+   "behavior": {
+    "kind": "bigUpdate",
+    "variant": {
+     "kind": "peelPhantom",
+     "lure": {
+      "reach": 160
+     },
+     "burst": 30,
+     "spread": 18,
+     "spin": {
+      "radius": 34,
+      "cut": 0.3
+     },
+     "ring": {
+      "peels": 10,
+      "cut": 0.6,
+      "size": 5,
+      "life": 1.4
+     }
+    }
+   },
+   "from": "peel-phantom",
+   "catalyst": "peel-out"
   },
   {
    "id": "gravy-pack",

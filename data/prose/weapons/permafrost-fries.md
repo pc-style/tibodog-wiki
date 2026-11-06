@@ -9,7 +9,7 @@ With [Spicy Hot Potato](/weapons/spicy-hot-potato) also evolved, the next chest 
 ## How it works
 
 - Targeting, volley spread and freeze rules are the same as on [Frozen Fries](/weapons/frozen-fries). Bosses still cannot be frozen.
-- **Shatter**: each fry carries a `shatter` multiplier of 2. <small>[sim-Davaqo7b.js: `s.shatter[i]=n.shatter??0`]</small> When it hits a pest that is frozen at that moment, the damage is multiplied by 2. <small>[sim-Davaqo7b.js: `o.shatter[r]>0&&t.freezeT[n]>0&&(u*=o.shatter[r])`]</small>
+- **Shatter**: each fry carries a `shatter` multiplier of 2. <small>[sim-BHWBCY8v.js: `s.shatter[i]=n.shatter??0`]</small> When it hits a pest that is frozen at that moment, the damage is multiplied by 2. <small>[sim-BHWBCY8v.js: `o.shatter[r]>0&&t.freezeT[n]>0&&(u*=o.shatter[r])`]</small>
 - Damage is applied before the hit's own freeze, so the first fry to hit an unfrozen pest deals normal damage and freezes it; the next fries of the volley, and any fry within the next 2 s, deal double.
 - Permafrost Fries' shatter bonus applies to its own hits, not every weapon's damage. Pests frozen by other sources (for example [Waffles](/dogs/corgi) or [Baked Alaska](/weapons/baked-alaska)) also take double damage from it, because the check is on the pest's freeze, not on who froze it.
 

@@ -862,7 +862,7 @@
    "nativeW": 16,
    "nativeH": 15,
    "scale": 4,
-   "source": "flagged-atlas-BE-rN7DA.png sprite \"icon-afterburner-fries\" anim \"icon\" frame 0 @(264,4040)"
+   "source": "flagged-atlas-A95Ydolg.png sprite \"icon-afterburner-fries\" anim \"icon\" frame 0 @(264,4040)"
   },
   "broadside": {
    "file": "weapon/broadside.png",
@@ -871,7 +871,7 @@
    "nativeW": 16,
    "nativeH": 14,
    "scale": 4,
-   "source": "flagged-atlas-BE-rN7DA.png sprite \"icon-broadside\" anim \"icon\" frame 0 @(282,4040)"
+   "source": "flagged-atlas-A95Ydolg.png sprite \"icon-broadside\" anim \"icon\" frame 0 @(282,4040)"
   },
   "comet-scythe": {
    "file": "weapon/comet-scythe.png",
@@ -880,7 +880,7 @@
    "nativeW": 16,
    "nativeH": 15,
    "scale": 4,
-   "source": "flagged-atlas-BE-rN7DA.png sprite \"icon-comet-scythe\" anim \"icon\" frame 0 @(300,4040)"
+   "source": "flagged-atlas-A95Ydolg.png sprite \"icon-comet-scythe\" anim \"icon\" frame 0 @(300,4040)"
   },
   "harvest-moon": {
    "file": "weapon/harvest-moon.png",
@@ -889,7 +889,7 @@
    "nativeW": 14,
    "nativeH": 16,
    "scale": 4,
-   "source": "flagged-atlas-BE-rN7DA.png sprite \"icon-harvest-moon\" anim \"icon\" frame 0 @(318,4040)"
+   "source": "flagged-atlas-A95Ydolg.png sprite \"icon-harvest-moon\" anim \"icon\" frame 0 @(318,4040)"
   },
   "hash-hawk": {
    "file": "weapon/hash-hawk.png",
@@ -898,7 +898,7 @@
    "nativeW": 16,
    "nativeH": 15,
    "scale": 4,
-   "source": "flagged-atlas-BE-rN7DA.png sprite \"icon-hash-hawk\" anim \"icon\" frame 0 @(352,4040)"
+   "source": "flagged-atlas-A95Ydolg.png sprite \"icon-hash-hawk\" anim \"icon\" frame 0 @(352,4040)"
   },
   "mash-golem": {
    "file": "weapon/mash-golem.png",
@@ -907,7 +907,7 @@
    "nativeW": 16,
    "nativeH": 16,
    "scale": 4,
-   "source": "flagged-atlas-BE-rN7DA.png sprite \"icon-mash-golem\" anim \"icon\" frame 0 @(441,4040)"
+   "source": "flagged-atlas-A95Ydolg.png sprite \"icon-mash-golem\" anim \"icon\" frame 0 @(441,4040)"
   },
   "mash-landing": {
    "file": "weapon/mash-landing.png",
@@ -916,7 +916,7 @@
    "nativeW": 16,
    "nativeH": 16,
    "scale": 4,
-   "source": "flagged-atlas-BE-rN7DA.png sprite \"icon-mash-landing\" anim \"icon\" frame 0 @(459,4040)"
+   "source": "flagged-atlas-A95Ydolg.png sprite \"icon-mash-landing\" anim \"icon\" frame 0 @(459,4040)"
   },
   "peel-phantom": {
    "file": "weapon/peel-phantom.png",
@@ -925,7 +925,7 @@
    "nativeW": 15,
    "nativeH": 16,
    "scale": 4,
-   "source": "flagged-atlas-BE-rN7DA.png sprite \"icon-peel-phantom\" anim \"icon\" frame 0 @(477,4040)"
+   "source": "flagged-atlas-A95Ydolg.png sprite \"icon-peel-phantom\" anim \"icon\" frame 0 @(477,4040)"
   },
   "skipping-cannonball": {
    "file": "weapon/skipping-cannonball.png",
@@ -934,7 +934,7 @@
    "nativeW": 16,
    "nativeH": 15,
    "scale": 4,
-   "source": "flagged-atlas-BE-rN7DA.png sprite \"icon-skipping-cannonball\" anim \"icon\" frame 0 @(225,4076)"
+   "source": "flagged-atlas-A95Ydolg.png sprite \"icon-skipping-cannonball\" anim \"icon\" frame 0 @(242,4076)"
   },
   "sprout-squad": {
    "file": "weapon/sprout-squad.png",
@@ -943,7 +943,7 @@
    "nativeW": 14,
    "nativeH": 16,
    "scale": 4,
-   "source": "flagged-atlas-BE-rN7DA.png sprite \"icon-sprout-squad\" anim \"icon\" frame 0 @(243,4076)"
+   "source": "flagged-atlas-A95Ydolg.png sprite \"icon-sprout-squad\" anim \"icon\" frame 0 @(260,4076)"
   },
   "spud-decoy": {
    "file": "weapon/spud-decoy.png",
@@ -952,7 +952,7 @@
    "nativeW": 15,
    "nativeH": 15,
    "scale": 4,
-   "source": "flagged-atlas-BE-rN7DA.png sprite \"icon-spud-decoy\" anim \"icon\" frame 0 @(259,4076)"
+   "source": "flagged-atlas-A95Ydolg.png sprite \"icon-spud-decoy\" anim \"icon\" frame 0 @(276,4076)"
   },
   "hash-harrier": {
    "file": "weapon/hash-harrier.png",
@@ -961,7 +961,7 @@
    "nativeW": 16,
    "nativeH": 15,
    "scale": 4,
-   "source": "flagged-atlas-BE-rN7DA.png sprite \"icon-hash-harrier\" anim \"icon\" frame 0 @(334,4040)"
+   "source": "flagged-atlas-A95Ydolg.png sprite \"icon-hash-harrier\" anim \"icon\" frame 0 @(334,4040)"
   },
   "hunters-moon": {
    "file": "weapon/hunters-moon.png",
@@ -970,7 +970,7 @@
    "nativeW": 15,
    "nativeH": 16,
    "scale": 4,
-   "source": "flagged-atlas-BE-rN7DA.png sprite \"icon-hunters-moon\" anim \"icon\" frame 0 @(388,4040)"
+   "source": "flagged-atlas-A95Ydolg.png sprite \"icon-hunters-moon\" anim \"icon\" frame 0 @(388,4040)"
   },
   "jet-fryer": {
    "file": "weapon/jet-fryer.png",
@@ -979,7 +979,7 @@
    "nativeW": 16,
    "nativeH": 16,
    "scale": 4,
-   "source": "flagged-atlas-BE-rN7DA.png sprite \"icon-jet-fryer\" anim \"icon\" frame 0 @(405,4040)"
+   "source": "flagged-atlas-A95Ydolg.png sprite \"icon-jet-fryer\" anim \"icon\" frame 0 @(405,4040)"
   },
   "mash-colossus": {
    "file": "weapon/mash-colossus.png",
@@ -988,7 +988,16 @@
    "nativeW": 16,
    "nativeH": 16,
    "scale": 4,
-   "source": "flagged-atlas-BE-rN7DA.png sprite \"icon-mash-colossus\" anim \"icon\" frame 0 @(423,4040)"
+   "source": "flagged-atlas-A95Ydolg.png sprite \"icon-mash-colossus\" anim \"icon\" frame 0 @(423,4040)"
+  },
+  "peel-poltergeist": {
+   "file": "weapon/peel-poltergeist.png",
+   "w": 64,
+   "h": 64,
+   "nativeW": 16,
+   "nativeH": 16,
+   "scale": 4,
+   "source": "flagged-atlas-A95Ydolg.png sprite \"icon-peel-poltergeist\" anim \"icon\" frame 0 @(494,4040)"
   },
   "gravy-pack": {
    "file": "weapon/gravy-pack.png",
@@ -1206,7 +1215,7 @@
    "nativeW": 16,
    "nativeH": 12,
    "scale": 4,
-   "source": "flagged-atlas-BE-rN7DA.png sprite \"icon-hot-start\" anim \"icon\" frame 0 @(370,4040)"
+   "source": "flagged-atlas-A95Ydolg.png sprite \"icon-hot-start\" anim \"icon\" frame 0 @(370,4040)"
   },
   "couch-potato": {
    "file": "passive/couch-potato.png",
@@ -1703,7 +1712,7 @@
    "nativeW": 16,
    "nativeH": 16,
    "scale": 4,
-   "source": "flagged-atlas-BE-rN7DA.png sprite \"icon-static-socks\" anim \"icon\" frame 0 @(276,4076)"
+   "source": "flagged-atlas-A95Ydolg.png sprite \"icon-static-socks\" anim \"icon\" frame 0 @(293,4076)"
   },
   "frozen-pea": {
    "file": "item/frozen-pea.png",
@@ -2663,7 +2672,7 @@
    "nativeW": 23,
    "nativeH": 52,
    "scale": 2,
-   "source": "flagged-atlas-fx-DYqMkw-o.png sprite \"sigkitten\" anim \"idle-front\" frame 0 @(97,490)"
+   "source": "flagged-atlas-fx-OKvDAeE-.png sprite \"sigkitten\" anim \"idle-front\" frame 0 @(167,490)"
   },
   "dalmatian": {
    "file": "dog/dalmatian.png",

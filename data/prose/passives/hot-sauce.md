@@ -18,7 +18,7 @@ Crit points are converted with `x / (1 + x)` (see [Stats](/stats#diminishing-ret
 
 **Measured** (build 41 `main-B2gf34bA.js`, headless `tools/play.mjs`, standard mode, normal difficulty): after Hot Sauce was given 1 to 5 times with `give`, the game's own `critChance` stat read 0.0566, 0.1071, 0.1525, 0.1935 and 0.2308. In play, with Hot Sauce given 5 times, Peeler, Small Fry and Tot Toss each given 5 times, `warp(240)`, HP refilled every tick, Tibo standing still and later level-ups taking the first offer, 4,065 of 17,724 hits were crits over 180 s on seeds `s1`–`s5` (22.9%, expected 23.1%). A control run without Hot Sauce (seed `s1`) had 0 crits in 3,817 hits, so those weapons have no crit bonus of their own.
 
-Each hit then rolls against that chance plus the weapon's own crit bonus.<small>[sim-Davaqo7b.js: `let l=s.critChance+o.critBonus[r];l>0&&e.rng.next()<l&&(u*=s.critMult,d=!0)`]</small> The weapon bonus is added after the curve, so it is not reduced. Gratin Arc has a crit bonus of 0.25 (“crits often”), so with Hot Sauce at level 5 its hits crit 48.1% of the time.
+Each hit then rolls against that chance plus the weapon's own crit bonus.<small>[sim-BHWBCY8v.js: `let l=s.critChance+o.critBonus[r];l>0&&e.rng.next()<l&&(u*=s.critMult,d=!0)`]</small> The weapon bonus is added after the curve, so it is not reduced. Gratin Arc has a crit bonus of 0.25 (“crits often”), so with Hot Sauce at level 5 its hits crit 48.1% of the time.
 
 Other crit sources are [Hot Pepper](/items/hot-pepper) and [Spud Shrine](/points-of-interest#spud-shrine) blessings. Their points are added to Hot Sauce's before the curve.
 

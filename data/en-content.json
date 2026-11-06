@@ -2179,6 +2179,12 @@
  "content.weapon.peel-phantom.name": [
   "Peel Phantom"
  ],
+ "content.weapon.peel-poltergeist.desc": [
+  "Each dash leaves a haunted peel husk where the dash began. Pests chase it into its spinning peels, then it bursts into a ring of peels."
+ ],
+ "content.weapon.peel-poltergeist.name": [
+  "Peel Poltergeist"
+ ],
  "content.weapon.peeler.desc": [
   "Slashes sideways. From level 4 it flings potato peels through the crowd, one more each level. Tibo's trusty kitchen tool."
  ],
