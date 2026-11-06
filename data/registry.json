@@ -315,8 +315,8 @@
    "id": "fry-sentry",
    "tier": "base",
    "base": {
-    "damage": 6,
-    "cooldown": 7,
+    "damage": 7,
+    "cooldown": 6,
     "amount": 1,
     "area": 1,
     "speed": 220,
@@ -458,8 +458,8 @@
    "id": "gravy-boat",
    "tier": "base",
    "base": {
-    "damage": 8,
-    "cooldown": 4,
+    "damage": 9.5,
+    "cooldown": 3.4,
     "amount": 1,
     "area": 1,
     "speed": 0,
@@ -910,8 +910,8 @@
    "id": "potato-rain",
    "tier": "base",
    "base": {
-    "damage": 24,
-    "cooldown": 5,
+    "damage": 28,
+    "cooldown": 4.2,
     "amount": 6,
     "area": 1,
     "speed": 0,
@@ -925,7 +925,7 @@
      "amount": 2
     },
     {
-     "damage": 10
+     "damage": 12
     },
     {
      "area": 0.15
@@ -937,7 +937,7 @@
      "cooldown": -0.9
     },
     {
-     "damage": 20
+     "damage": 24
     },
     {
      "amount": 3
@@ -1610,8 +1610,8 @@
    "id": "tater-mines",
    "tier": "base",
    "base": {
-    "damage": 30,
-    "cooldown": 2.5,
+    "damage": 36,
+    "cooldown": 2.1,
     "amount": 1,
     "area": 1,
     "speed": 0,
@@ -1625,7 +1625,7 @@
      "amount": 1
     },
     {
-     "damage": 15
+     "damage": 18
     },
     {
      "area": 0.2
@@ -1637,7 +1637,7 @@
      "cooldown": -0.4
     },
     {
-     "damage": 20
+     "damage": 24
     },
     {
      "amount": 1
@@ -3141,8 +3141,8 @@
    "id": "fry-sentry",
    "tier": "base",
    "base": {
-    "damage": 6,
-    "cooldown": 7,
+    "damage": 7,
+    "cooldown": 6,
     "amount": 1,
     "area": 1,
     "speed": 220,
@@ -3284,8 +3284,8 @@
    "id": "gravy-boat",
    "tier": "base",
    "base": {
-    "damage": 8,
-    "cooldown": 4,
+    "damage": 9.5,
+    "cooldown": 3.4,
     "amount": 1,
     "area": 1,
     "speed": 0,
@@ -3736,8 +3736,8 @@
    "id": "potato-rain",
    "tier": "base",
    "base": {
-    "damage": 24,
-    "cooldown": 5,
+    "damage": 28,
+    "cooldown": 4.2,
     "amount": 6,
     "area": 1,
     "speed": 0,
@@ -3751,7 +3751,7 @@
      "amount": 2
     },
     {
-     "damage": 10
+     "damage": 12
     },
     {
      "area": 0.15
@@ -3763,7 +3763,7 @@
      "cooldown": -0.9
     },
     {
-     "damage": 20
+     "damage": 24
     },
     {
      "amount": 3
@@ -4436,8 +4436,8 @@
    "id": "tater-mines",
    "tier": "base",
    "base": {
-    "damage": 30,
-    "cooldown": 2.5,
+    "damage": 36,
+    "cooldown": 2.1,
     "amount": 1,
     "area": 1,
     "speed": 0,
@@ -4451,7 +4451,7 @@
      "amount": 1
     },
     {
-     "damage": 15
+     "damage": 18
     },
     {
      "area": 0.2
@@ -4463,7 +4463,7 @@
      "cooldown": -0.4
     },
     {
-     "damage": 20
+     "damage": 24
     },
     {
      "amount": 1
@@ -4618,7 +4618,7 @@
    "id": "big-fry",
    "tier": "evolved",
    "base": {
-    "damage": 10,
+    "damage": 12,
     "cooldown": 0.45,
     "amount": 3,
     "area": 1,
@@ -4811,8 +4811,8 @@
    "id": "golden-harvest",
    "tier": "evolved",
    "base": {
-    "damage": 110,
-    "cooldown": 3,
+    "damage": 130,
+    "cooldown": 2.6,
     "amount": 20,
     "area": 1.4,
     "speed": 0,
@@ -4858,7 +4858,7 @@
    "id": "gravy-flood",
    "tier": "evolved",
    "base": {
-    "damage": 18,
+    "damage": 21,
     "cooldown": 3,
     "amount": 4,
     "area": 1.6,
@@ -6984,7 +6984,7 @@
    "id": "big-fry",
    "tier": "evolved",
    "base": {
-    "damage": 10,
+    "damage": 12,
     "cooldown": 0.45,
     "amount": 3,
     "area": 1,
@@ -7177,8 +7177,8 @@
    "id": "golden-harvest",
    "tier": "evolved",
    "base": {
-    "damage": 110,
-    "cooldown": 3,
+    "damage": 130,
+    "cooldown": 2.6,
     "amount": 20,
     "area": 1.4,
     "speed": 0,
@@ -7224,7 +7224,7 @@
    "id": "gravy-flood",
    "tier": "evolved",
    "base": {
-    "damage": 18,
+    "damage": 21,
     "cooldown": 3,
     "amount": 4,
     "area": 1.6,
@@ -10668,7 +10668,7 @@
    "id": "ice-imp",
    "behavior": {
     "kind": "ranged",
-    "range": 130,
+    "range": 104,
     "shotEvery": 2.6,
     "pattern": {
      "kind": "fan",
