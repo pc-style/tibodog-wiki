@@ -10,7 +10,7 @@ ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..')
 PUB = os.path.join(ROOT, 'public')
 FONTS = os.path.join(PUB, 'fonts')
 DISPLAY = os.path.join(FONTS, 'cinzel-latin-700-normal.woff2')
-BODY = os.path.join(FONTS, 'marcellus-latin-400-normal.woff2')
+BODY = os.path.join(FONTS, 'source-serif-4-latin-400-normal.woff2')
 
 COLORS = {
     'K': '#05060d',  # outline (game focus shade)
