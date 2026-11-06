@@ -118,6 +118,12 @@ The pinned original `main-B0g0r5mM.js` Chromium mirror (`97313f9`) expands all f
 
 Four new notes describe controllers, every finished Daily run, set-matched Open World starts and survival/banner priority. The current notes remain published under November 5. The official full changelog fetched during review already serves the next build, DSa (`32cf9f6`): the same 220 ordered date/kind/text records, but its current group has the newer code. This is observed regrouping, not proof of new introduction. Historical limits remain. Original-game controls separately test the set threshold, Daily client saving and banner queue; virtual-controller browser controls are not physical-device evidence or proof of server leaderboard acceptance.
 
+### Build 79 follow-up
+
+The pinned `main-DSaLwHIP.js` panel and the official full changelog independently match all **220 ordered date/code/kind/text records**, with every date expanded: **58 / 28 / 41 / 47 / 46**. Source: [changelog-panel-26qomHfH.js](https://tibo.dog/assets/changelog-panel-26qomHfH.js), SHA-256 `76efc2accb799fc5b3d2d0be2827cd29e35210cad7166a0bf4fb87ead229d6e3`.
+
+There are no new, revised or removed notes versus B0g. The current code is now `32cf9f6`; the November 5 publication group is preserved. The source-observed change is renderer-only native trigonometry in three modules, not a new mechanic or another introduction of the four prior notes. Same-input simulation summaries match, and sampled original rendering helpers and an actual browser run were checked separately. Historical-source and server/device limitations above remain.
+
 ### Future checks
 
 The existing extractor now follows the panel's comparator, records source URL/SHA-256 and rejects duplicate note identities. The updater reports additions, removals, revised text/metadata, ordering, date/code regrouping and moves out of the unversioned group, keeping both before and after values. With an unchanged game build it still checks the saved journal against the mirrored source and reports drift without erasing the original build review. Old notes without stable IDs use their message IDs; a rewritten message ID may therefore appear as a removal plus addition rather than an asserted identity match.
