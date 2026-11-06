@@ -453,9 +453,17 @@ const DOG_DETAIL = {
   pomeranian: 'Holds fluff charges (1, or 2 from level 3) that cancel the next hit on Tibo; spending one sneezes pests away (push 220, plus a 0.5 s stun from level 5).',
   pomchi: 'Marks the nearest elite or loot runner within 600 for `8 × power` seconds: it takes +25% damage. Marks at once by level: 1/1/2/2/3.',
   'zelda-and-link': 'Both Link\'s fluff and Zelda\'s marks, plus every 50 s an eclipse that adds a fluff charge and marks every pest within 110 (+10% damage taken for 1 s).',
+  dalmatian: 'Bites for `16 × power × damage`. Chooses among the burn, slow or freeze types available from the current weapon/item loadout; it does not cycle through statuses absent from the loadout. Its own status parameters are below, with a slow substituted for freeze on bosses.',
+  sigkitten: 'Creates a hostile-shot slowing field around Tibo. At level 1 it lasts 3.5 s, reaches radius 64 (inner radius 58) and reduces speed to a floor of 25% inside, fading to normal speed at its edge. The fallback `fetch` definition with radius 0 is not its active ability.',
+  husky: 'Howls to reset other eligible dogs’ cooldowns to one tick, excluding itself and rescue dogs. If nobody needs a reset it retries after 0.25 s instead of spending its full 10 s cooldown. Its fallback `fetch` is not a pickup ability.',
+  newfoundland: 'Catches a hostile shot within `64 × √power` whose projected path approaches Tibo’s hit area, then leaps to its position over 0.6 s. Receding shots are ignored. Its fallback `fetch` is not a pickup ability.',
 };
 
 const DOG_ABILITY = {
+  spots: 'Bites with a status available from the loadout',
+  sigstop: 'Slows hostile shots around Tibo',
+  howl: 'Resets other eligible dogs’ cooldowns',
+  catch: 'Intercepts an incoming hostile shot',
   sniff: 'Finds gold and points to nearby crates, shrines and dogs',
   herd: 'Shoves nearby enemies back',
   bark: 'Freezes nearby enemies (not bosses)',
@@ -478,7 +486,7 @@ export function dogPages() {
     const rows = [
       ['Name', n],
       ['Breed', breed],
-      ['Ability', `${DOG_ABILITY[d.ability.kind] ?? ''} (\`${d.ability.kind}\`)`],
+      ['Ability', `${DOG_ABILITY[d.flagged?.kind ?? d.ability.kind] ?? ''} (\`${d.flagged?.kind ?? d.ability.kind}\`)`],
       ['Ability every', d.ability.every ? `${fmt(d.ability.every)} s` : ''],
       ['Aura', modsText(d.aura)],
       ['Legendary', d.legendary ? 'Yes' : 'No'],
@@ -487,6 +495,7 @@ export function dogPages() {
       ['Speed', d.speed],
     ];
     let body = `## Ability\n\n**Verified** (dog ability code in \`sim-h87i1VLB.js\` and \`run-extras-zcHDkxyh.js\`): ${DOG_DETAIL[d.id] ?? ''} \`power\` is the training multiplier below; damage is Tibo's damage multiplier.\n\n` + table(['Parameter', 'Value'], flatRows(d.ability)) + '\n';
+    if (d.flagged) body += `### Active special rules\n\nThese parameters override or supplement the fallback ability above.\n\n` + table(['Parameter', 'Value'], flatRows(d.flagged)) + '\n';
     if (d.ability.kind === 'puff' || d.ability.kind === 'eclipse') body += `### Fluff visuals\n\n**Verified**: stored fluff charges appear as tufts orbiting Link or Zelda & Link. Spending a charge pops a tuft and sends wisps outward with the sneeze. Reduced motion holds the tufts and wisps still. These visuals do not change the shield or knockback values. <small>[scene-CmQXH5am.js: \`function fB(e){return Math.min(4,e.legend.fluff)}\`]</small> <small>[scene-CmQXH5am.js: \`function mB(e,t,n,r){return Kwe+(r?0:.22*n*E)+e/Math.max(1,t)*E}\`]</small>\n\n`;
     if (d.ability.kind === 'listen' || d.ability.kind === 'eclipse') body += `### Mark visuals\n\n**Verified**: Zelda's ordinary marks appear as moons above pests, with a clock showing remaining time and rising stars. The renderer shows at most 24 of these marks. Reduced motion holds the moon still and hides its stars; disabling flashes suppresses the opening pop and blinking. Eclipse marks use their separate effect. Mark duration and damage bonuses are unchanged. <small>[scene-CmQXH5am.js: \`for(let r=0;r<s.pool.count&&c<24;r++)\`]</small> <small>[scene-CmQXH5am.js: \`!n.still&&TB.left>SB&&cTe(e,i)\`]</small>\n\n`;
     body += `## Aura\n\nWhile in Tibo's pack, ${n} adds: ${modsText(d.aura)}.\n\n`;
@@ -500,7 +509,7 @@ export function dogPages() {
     });
     body += table(['Level', '`every` ×', '`power` ×', '`aura`', 'Ability interval (s)', 'Total power ×'], lr) + '\n';
     body += `**Verified**: ability power is the product of \`power\` multipliers, the interval is \`ability.every\` × the product of \`every\` multipliers, and the aura is multiplied by \`1 + sum of aura\` values.${' '}<small>[sim-h87i1VLB.js: \`function bi(e,t){let n=e.levelUps,r=1;for(let e=0;e<t-1;e++)r+=n[e]?.aura??0;return r}\`]</small>\n\n` + table(['Level', 'Aura at this level'], Array.from({ length: d.levelUps.length + 1 }, (_, i) => { const m = 1 + d.levelUps.slice(0, i).reduce((a, l) => a + (l.aura ?? 0), 0); return [i + 1, modsText(Object.fromEntries(Object.entries(d.aura).map(([k, v]) => [k, +(v * m).toFixed(4)])))]; })) + '\n';
-    body += `## Obtaining\n\n${d.id === 'zelda-and-link' ? 'Hold both [Link](/dogs/pomeranian) and [Zelda](/dogs/pomchi): they fuse into Zelda & Link, keeping the level of the partner already in the pack (a new stray joins at level 1).' : d.legendary ? `${n} is a legendary dog (weight 0 in the normal pool). Each run, each of Link and Zelda is in the run with ${pct(GAME.dogs.legendaryChance)} chance; stray dogs at least 1200 units from the start take them from that queue.` : `Stray dogs appear as [Stray Dog](/points-of-interest#stray-dog) points of interest; walk onto one to recruit it. ${n}'s breed weight is ${d.weight}.`} See [Dogs](/dogs#getting-dogs).\n\n`;
+    body += `## Obtaining\n\n${d.id === 'zelda-and-link' ? 'Hold both [Link](/dogs/pomeranian) and [Zelda](/dogs/pomchi): they fuse into Zelda & Link, keeping the level of the partner already in the pack (a new stray joins at level 1).' : d.legendary && d.flagged ? `${n} is a legendary dog (weight 0 in the normal pool). The active gear rules give this flagged legendary its own ${pct(GAME.dogs.legendaryChance)} per-run chance to enter the legendary queue. This is a client rule, not a measured recruitment rate. <small>[sim-h87i1VLB.js: \`T.dogs.filter(e=>!0===e.legendary&&e.flagged!==void 0)\`]</small>` : d.legendary ? `${n} is a legendary dog (weight 0 in the normal pool). Each run, each of Link and Zelda is in the run with ${pct(GAME.dogs.legendaryChance)} chance; stray dogs at least 1200 units from the start take them from that queue.` : `Stray dogs appear as [Stray Dog](/points-of-interest#stray-dog) points of interest; walk onto one to recruit it. ${n}'s breed weight is ${d.weight}.`} See [Dogs](/dogs#getting-dogs).\n\n`;
     body += `## Data\n\n\`\`\`json\n${JSON.stringify(d, null, 2)}\n\`\`\`\n`;
     pages.push({
       path: path.dog(d.id),
