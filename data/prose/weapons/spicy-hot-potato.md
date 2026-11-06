@@ -2,12 +2,14 @@
 
 Spicy Hot Potato is the evolution of [Hot Potato](/weapons/hot-potato). Get Hot Potato to level 8 while you own [Hot Sauce](/passives/hot-sauce), then open a [chest](/chests).
 
+Own [Permafrost Fries](/weapons/permafrost-fries) alongside it and the next chest unites them into [Baked Alaska](/weapons/baked-alaska), freeing a weapon slot.
+
 Every 2 s it throws 3 potatoes (2 plus Tibo's built-in +1 amount, see [Stats](/stats)), 0.3 s apart. Each one hits up to 6 pests, hopping to targets up to 110 units away, and then explodes for 3× damage in a 39-unit radius (30 × its 1.3 Area). Each blast throws **two new potatoes** in opposite directions, so one throw can hit many more pests than the base weapon.
 
 ## How it works
 
 - Hops, homing and the blast work as on [Hot Potato](/weapons/hot-potato): one pierce is used per hit, the potato turns to the nearest pest it has not hit yet within `hopRange` (110 here), and it explodes on the last pest or when its flight time runs out.
-- **Respawn.** On exploding, the potato spawns `fuse.respawn` (2) copies, spaced evenly around a random angle. Each copy has the original's damage, the full hop count it was launched with and a full flight timer. <small>[sim-Begj1yyi.js: `let r=n.fuseRespawn[t];if(r===0)return;let i=e.rng.angle();for(let n=0;n<r;n++)xC(e,t,i+n*A/r)`]</small>
+- **Respawn.** On exploding, the potato spawns `fuse.respawn` (2) copies, spaced evenly around a random angle. Each copy has the original's damage, the full hop count it was launched with and a full flight timer. <small>[sim-Davaqo7b.js: `let i=r.fuseRespawn[t];if(i===0)return;let a=e.rng.angle();for(let n=0;n<i;n++)SC(e,t,a+n*A/i)`]</small>
 - The copies do not respawn again: a new projectile starts with no respawn value and the copy does not inherit it. So each thrown potato makes at most three blasts: its own and one per copy.
 - The copies start with an empty hit list, so they can hit pests the first potato already hit.
 

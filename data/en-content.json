@@ -1837,6 +1837,12 @@
  "content.weapon.afterburner-fries.name": [
   "Afterburner Fries"
  ],
+ "content.weapon.baked-alaska.desc": [
+  "A hot potato that freezes each enemy it hops to. Frozen enemies take double damage. Its last hop shatters every frozen enemy nearby and throws two fresh hot potatoes. Frees a weapon slot."
+ ],
+ "content.weapon.baked-alaska.name": [
+  "Baked Alaska"
+ ],
  "content.weapon.big-fry.desc": [
   "The fry pierces everything and grows bigger as it grows stronger."
  ],

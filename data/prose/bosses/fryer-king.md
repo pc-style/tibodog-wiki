@@ -1,6 +1,6 @@
 ## Overview
 
-The Fryer King is the sixth boss. It arrives at 8:00 on the [wave schedule](/bosses#wave-schedule), together with a [Fry Fly Swarm](/events/fly-swarm) and a [Harvest Moon](/events/harvest-moon). It has 3300 base HP: about 2145 on Normal (boss HP ×0.65, see [Modes](/modes)) and 3135 on Nightmare before [curse](/curse). Nightmare starts every run with one curse, which adds 10% to boss HP, so there it actually has about 3449. <small>[intro-shared-7H-n3WGU.js: `startCurses:1,tierLag:2,wallPests:.6`]</small> <small>[sim-Begj1yyi.js: `n.maxHp[r]=i.hp*t.hpMult*(1+e.loadout.stats.curse)`]</small> It walks at speed 30 and deals 22 contact damage.
+The Fryer King is the sixth boss. It arrives at 8:00 on the [wave schedule](/bosses#wave-schedule), together with a [Fry Fly Swarm](/events/fly-swarm) and a [Harvest Moon](/events/harvest-moon). It has 3300 base HP: about 2145 on Normal (boss HP ×0.65, see [Modes](/modes)) and 3135 on Nightmare before [curse](/curse). Nightmare starts every run with one curse, which adds 10% to boss HP, so there it actually has about 3449. <small>[intro-shared-FlAgJcsP.js: `startCurses:1,tierLag:2,wallPests:.6`]</small> <small>[sim-Davaqo7b.js: `n.maxHp[r]=i.hp*t.hpMult*(1+e.loadout.stats.curse)`]</small> It walks at speed 30 and deals 22 contact damage.
 
 It opens the post-20:00 rotation, so a long run meets it again at 21:00, 28:00 and every 7 minutes after that ([After 20:00](/bosses#after-20-00)), each time with much more HP. A [Boss Lair](/points-of-interest#boss-lair) can also wake it. It drops an XP gem worth 100, a 25-gold coin and a chest ([Chests](/chests)).
 
@@ -8,17 +8,17 @@ It opens the post-20:00 rotation, so a long run meets it again at 21:00, 28:00 a
 
 ## Fight
 
-The King walks towards Tibo. Every 3 s it stops to splash hot oil, and between splashes it fires rings of oil drops. One splash cycle takes 3.9 s: 3 s of walking plus the 0.9 s warning. The ring timer is paused while it splashes. <small>[sim-Begj1yyi.js: `d===0?(uS(e,o,s,c,l,u),lS(e,o,s,t)):d===1?dS(e,o,s,t):fS(e,o,s,t)`]</small>
+The King walks towards Tibo. Every 3 s it stops to splash hot oil, and between splashes it fires rings of oil drops. One splash cycle takes 3.9 s: 3 s of walking plus the 0.9 s warning. The ring timer is paused while it splashes. <small>[sim-Davaqo7b.js: `d===0?(uS(e,o,s,c,l,u),lS(e,o,s,t)):d===1?dS(e,o,s,t):fS(e,o,s,t)`]</small>
 
 ### Oil splash
 
-Four splat-shaped marks of radius 24 appear on the ground. The first is centred on Tibo; the other three land 20 to 80 units away in random directions. After 0.9 s each splat hits for half the King's contact damage (11 at base), then stays as a puddle of oil for 4 s. A puddle deals 12 damage per second at base, in ticks every 0.5 s, while Tibo stands in it. <small>[sim-Begj1yyi.js: `d=l===0?0:e.rng.range(20,i.spread),f=oS(e,kc(e,a+D(u)*d,o+b(u)*d,i.radius,n.telegraph,.5*s),t)`]</small> Puddle and splash damage grow with run time like the King's contact damage.
+Four splat-shaped marks of radius 24 appear on the ground. The first is centred on Tibo; the other three land 20 to 80 units away in random directions. After 0.9 s each splat hits for half the King's contact damage (11 at base), then stays as a puddle of oil for 4 s. A puddle deals 12 damage per second at base, in ticks every 0.5 s, while Tibo stands in it. <small>[sim-Davaqo7b.js: `d=l===0?0:e.rng.range(20,i.spread),f=oS(e,kc(e,a+D(u)*d,o+b(u)*d,i.radius,n.telegraph,.5*s),t)`]</small> Puddle and splash damage grow with run time like the King's contact damage.
 
-Puddle ticks are ground damage, and Tibo's dash does not block them. The game skips dash protection and dodge chance for this kind of damage; armor still reduces it. <small>[sim-Begj1yyi.js: `if(a.invuln[o]>0||a.stunTicks[o]>0||e.over||!r&&Uc(e))return!1`]</small>
+Puddle ticks are ground damage, and Tibo's dash does not block them. The game skips dash protection and dodge chance for this kind of damage; armor still reduces it. <small>[sim-Davaqo7b.js: `if(a.invuln[o]>0||a.stunTicks[o]>0||e.over||!r&&Uc(e))return!1`]</small>
 
 ### Oil rings
 
-After a 0.9 s warning, the King fires a full ring of 18 drops at speed 95, 16 damage each, then a second ring 0.35 s later, rotated by half a gap. Enemy bullets scale with time ([Enemy scaling](/enemy-scaling#enemy-bullets)). At 8:00 each ring has 24 drops (18 × 1.32, rounded) moving at about 106, a new ring pair starts about every 2.4 s instead of every 3 s, and the two rings come about 0.28 s apart. <small>[sim-Begj1yyi.js: `a.count[o]=Math.max(1,Math.round(t.count*d.bulletCount))`]</small>
+After a 0.9 s warning, the King fires a full ring of 18 drops at speed 95, 16 damage each, then a second ring 0.35 s later, rotated by half a gap. Enemy bullets scale with time ([Enemy scaling](/enemy-scaling#enemy-bullets)). At 8:00 each ring has 24 drops (18 × 1.32, rounded) moving at about 106, a new ring pair starts about every 2.4 s instead of every 3 s, and the two rings come about 0.28 s apart. <small>[sim-Davaqo7b.js: `a.count[o]=Math.max(1,Math.round(t.count*d.bulletCount))`]</small>
 
 **Measured** (headless `tools/play.mjs`, build `main-B2gf34bA`, seed `wiki`, standard mode, `--god`, Normal; the clock warped to just before 8:00; every other boss and every pest removed each tick, so the sim's hostile-shot counter only counts this boss): pairs of 24-drop rings 0.27 s apart, starting 2.35 s, 5.68 s, 9.00 s and 12.32 s after it spawned. Easy and Nightmare gave the same counts.
 

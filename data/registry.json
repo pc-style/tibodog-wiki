@@ -5551,6 +5551,46 @@
    "catalyst": "butter-socks"
   },
   {
+   "id": "baked-alaska",
+   "tier": "union",
+   "base": {
+    "damage": 11,
+    "cooldown": 2,
+    "amount": 2,
+    "area": 1.4,
+    "speed": 180,
+    "duration": 3,
+    "pierce": 7,
+    "knockback": 1,
+    "interval": 0.25
+   },
+   "behavior": {
+    "kind": "homing",
+    "size": 6,
+    "turn": 8,
+    "onHit": {
+     "kind": "freeze",
+     "seconds": 2
+    },
+    "shatter": 2,
+    "fuse": {
+     "blast": 3,
+     "radius": 32,
+     "hopRange": 120,
+     "respawn": 2,
+     "shatter": {
+      "mult": 2.5,
+      "radius": 90
+     },
+     "blowsAlone": true
+    }
+   },
+   "from": [
+    "permafrost-fries",
+    "spicy-hot-potato"
+   ]
+  },
+  {
    "id": "fry-brigade",
    "tier": "union",
    "base": {
@@ -8583,6 +8623,46 @@
   }
  ],
  "unions": [
+  {
+   "id": "baked-alaska",
+   "tier": "union",
+   "base": {
+    "damage": 11,
+    "cooldown": 2,
+    "amount": 2,
+    "area": 1.4,
+    "speed": 180,
+    "duration": 3,
+    "pierce": 7,
+    "knockback": 1,
+    "interval": 0.25
+   },
+   "behavior": {
+    "kind": "homing",
+    "size": 6,
+    "turn": 8,
+    "onHit": {
+     "kind": "freeze",
+     "seconds": 2
+    },
+    "shatter": 2,
+    "fuse": {
+     "blast": 3,
+     "radius": 32,
+     "hopRange": 120,
+     "respawn": 2,
+     "shatter": {
+      "mult": 2.5,
+      "radius": 90
+     },
+     "blowsAlone": true
+    }
+   },
+   "from": [
+    "permafrost-fries",
+    "spicy-hot-potato"
+   ]
+  },
   {
    "id": "fry-brigade",
    "tier": "union",
