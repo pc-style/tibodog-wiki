@@ -108,10 +108,10 @@ export function guidePages(entityPages) {
     title: 'Quick tips',
     description: 'One-line tibo.dog tips for every boss, biome, enemy, event, weapon, passive, item and dog, each linked to its wiki page.',
     lead: 'The short version: the first tip from each wiki page, grouped by topic. Follow a link for the full advice and the numbers behind it, or read the [Guides](/guides).',
-    // One folded section per topic; a link to #topic unfolds it (site.js). The sidebar lists the topics, so no TOC.
+    // One folded section per topic, the first open; a link to #topic unfolds it (site.js). The sidebar lists the topics, so no TOC.
     toc: false,
     body: topics
-      .map((t) => `<details class="topic"><summary><h2 id="${t.id}">${t.short}</h2><small>${t.entries.length} tips</small></summary>\n\n${t.entries.map(({ page, tips }) => `- ${iconOf(page)}**[${page.title}](${page.path})**: ${firstSentence(tips[0])}`).join('\n')}\n\nMore in the [${t.title.toLowerCase()}](${t.path}).\n\n</details>\n`)
+      .map((t, i) => `<details class="topic"${i ? '' : ' open'}><summary><h2 id="${t.id}">${t.short}</h2><small>${t.entries.length} tips</small></summary>\n\n${t.entries.map(({ page, tips }) => `- ${iconOf(page)}**[${page.title}](${page.path})**: ${firstSentence(tips[0])}`).join('\n')}\n\nMore in the [${t.title.toLowerCase()}](${t.path}).\n\n</details>\n`)
       .join('\n'),
     sources: [SOURCE],
     search: 'quick tips short advice cheat sheet',

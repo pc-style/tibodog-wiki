@@ -137,7 +137,7 @@ img { max-width: 100%; }
   white-space: nowrap; font: 700 15px/1 var(--display); letter-spacing: .04em; padding: 10px 16px; border-radius: 2px;
   color: #1a1426 !important; background: var(--primary); box-shadow: inset 0 0 0 1px #fff3cc80, 0 0 0 1px #7a5a24, 0 3px 10px #00000080;
 }
-.menu-play { display: none; }
+.menu-play, .menu-btn { display: none; }
 .play:hover { background: var(--primary-hot); box-shadow: inset 0 0 0 1px #fff3cc, 0 0 0 1px #7a5a24, var(--glow); text-decoration: none; }
 
 /* ---------- Section tabs (Wiki / Guides / Quick tips), styled like the game's difficulty buttons ---------- */
@@ -249,12 +249,12 @@ hr { border: 0; height: 1px; background: linear-gradient(90deg, transparent, #d8
 
 /* Source citations in running text: keep them, but quiet. */
 article small { display: inline-block; max-width: 100%; font-size: 12px; color: var(--muted); }
-article small code { background: none; padding: 0; color: inherit; font-size: 11px; }
+article small code { background: none; padding: 0; color: inherit; font-size: 12px; }
 
 /* ---------- On this page ---------- */
 .toc { margin: 0 0 28px; font-size: 14px; }
 .toc-in { border-left: 1px solid #c9a24f80; padding: 2px 0 2px 16px; max-width: 500px; }
-.toc-in > ol:has(> li:nth-child(6)) { columns: 2; column-gap: 40px; }
+.toc-in > ol:has(> li:nth-child(6)):not(:has(ol)) { columns: 2; column-gap: 40px; }
 .toc-in > ol > li { break-inside: avoid; }
 .toc h2 { display: inline; font-size: 13px; letter-spacing: .08em; color: var(--accent); margin: 0; padding: 0; background: none; }
 .toc summary { display: flex; align-items: center; gap: 8px; width: fit-content; margin: 0 0 6px; cursor: pointer; list-style: none; }
@@ -334,13 +334,15 @@ article small code { background: none; padding: 0; color: inherit; font-size: 11
 .wikitable tbody tr:hover td { background: #c9a24f12; }
 .wikitable td:first-child { color: #fff8e6; }
 /* The first column (the row's name) stays in view while a wide table scrolls sideways. */
-.wikitable :is(td, th):first-child { position: sticky; left: 0; z-index: 1; }
-.wikitable td:first-child { background: #0a0c18; box-shadow: inset -1px 0 var(--line-2); }
-.wikitable tbody tr:hover td:first-child { background: linear-gradient(#c9a24f12, #c9a24f12), #0a0c18; }
+.wikitable:has(thead) :is(td, th):first-child { position: sticky; left: 0; z-index: 1; }
+.wikitable:has(thead) td:first-child { background: #0a0c18; box-shadow: inset -1px 0 var(--line-2); }
+.wikitable:has(thead) tbody tr:hover td:first-child { background: linear-gradient(#c9a24f12, #c9a24f12), #0a0c18; }
+/* Short-value columns don't need the full prose width; only the last column (changes, descriptions, biomes) does. */
+.wikitable td:not(:last-child):not(:has(> .ico:first-child, code.nw)) { max-width: 18em; }
 /* Key/value tables (no header row): label column reads as a label. */
 .wikitable:not(:has(thead)) td:first-child { color: var(--muted); white-space: nowrap; }
 /* Sortable headers are buttons (site.js); the arrow shows the order, and aria-sort announces it. */
-.wikitable .sort { display: inline-flex; align-items: baseline; gap: 6px; width: 100%; padding: 0; font: inherit; letter-spacing: inherit; color: inherit; text-align: inherit; background: none; border: 0; cursor: pointer; }
+.wikitable .sort { display: inline-flex; align-items: baseline; gap: 6px; padding: 0; font: inherit; letter-spacing: inherit; color: inherit; text-align: inherit; background: none; border: 0; cursor: pointer; }
 .wikitable .sort::after { content: "↕"; font-size: .9em; opacity: .6; }
 .wikitable .sort:hover { color: var(--title); }
 .wikitable .sort:hover::after { opacity: 1; }
@@ -352,8 +354,10 @@ article small code { background: none; padding: 0; color: inherit; font-size: 11
 /* List rows that start with an icon keep their text aligned whatever the sprite's width. */
 li > .ico:first-child { width: 28px; object-fit: contain; }
 td .ico { height: 26px; }
-.wikitable td:has(> .ico:first-child) { white-space: nowrap; }
-.wikitable td code { white-space: nowrap; overflow-wrap: normal; }
+/* One icon + name stays on a line; lists of several icon links wrap between entries. */
+.wikitable td:has(> .ico:first-child):not(:has(> .ico ~ .ico)) { white-space: nowrap; }
+/* Single tokens never split; code with spaces (formulas, JSON) wraps like text. */
+.wikitable td code.nw { white-space: nowrap; overflow-wrap: normal; }
 
 /* ---------- Main page cards ---------- */
 .cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 12px; margin: 16px 0 32px; }
@@ -391,7 +395,7 @@ details.topic > summary { display: flex; align-items: center; gap: 4px; padding:
 details.topic > summary:hover { background: #c9a24f12; }
 details.topic > summary h2 { display: inline; margin: 0; padding: 0; font-size: 21px; background: none; }
 details.topic > summary small { margin-left: auto; color: var(--muted); font-size: 13px; }
-details.topic[open] > summary { border-bottom: 1px solid var(--line-2); }
+details.topic[open] > summary { position: sticky; top: var(--header-h); z-index: 2; background: #141a30; border-bottom: 1px solid var(--line-2); }
 details.topic > :not(summary) { margin-left: 16px; margin-right: 16px; }
 details.topic > ul { margin-top: 14px; }
 .nf-search { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; max-width: 560px; margin: 0 0 32px; }
@@ -408,7 +412,7 @@ sup.fn a:hover { color: var(--link); text-decoration: none; }
 .refs { font-size: 12.5px; line-height: 1.5; padding-left: 28px; }
 .refs li { margin: 0 0 6px; overflow-wrap: anywhere; }
 .refs li:target { background: var(--accent-soft); }
-.refs code, .refs code.nw { white-space: normal; background: none; padding: 0; font-size: 11.5px; color: var(--muted); }
+.refs code, .refs code.nw { white-space: normal; background: none; padding: 0; font-size: 12.5px; color: var(--muted); }
 .ref-file { color: var(--text-2); font-weight: 550; margin-right: 4px; }
 :target { scroll-margin-top: calc(var(--header-h) + 16px); }
 
@@ -455,25 +459,47 @@ blockquote p { margin: 6px 0; }
 @media (max-width: 860px) {
   /* One compact sticky row: brand and search stay in reach on long pages. Play moves into the Menu. */
   :root { --header-h: 56px; }
-  .top { gap: 12px; padding: 0 12px; }
+  .top { gap: 10px; padding: 0 12px; background: #0b0e1c; }
   .brand { width: auto; gap: 8px; font-size: 17px; }
   .brand img { width: 28px; height: 28px; }
-  .brand small { font-size: 10px; }
+  .brand small { font-size: 11px; }
+  .menu-btn:not([hidden]) {
+    display: grid; place-items: center; flex: none; width: 40px; height: 38px; padding: 0; cursor: pointer;
+    color: var(--title); background: #0a0c18b3; border: 1px solid #c9a24f80;
+  }
+  .menu-btn[aria-expanded="true"] { color: #1a1426; background: var(--primary); border-color: #7a5a24; }
+  /* Suggestions span the screen, not just the narrow search box. */
+  .sresults { position: fixed; top: calc(var(--header-h) - 4px); left: 8px; right: 8px; }
   .top > .play { display: none; }
-  .search { max-width: none; }
+  .search { max-width: none; min-width: 0; }
   .search input { padding-right: 10px; }
   .search-key { display: none; }
   .menu-play { display: block; width: fit-content; margin: 12px 0 0; }
-  .side-menu[open] { max-height: calc(100vh - var(--header-h) - 24px); overflow-y: auto; overscroll-behavior: contain; }
-  .side-menu[open] > summary { position: sticky; top: 0; z-index: 1; background: #0a0c18; }
+  html:not(.js) .side-menu[open] { max-height: calc(100vh - var(--header-h) - 24px); overflow-y: auto; overscroll-behavior: contain; }
+  html:not(.js) .side-menu[open] > summary { position: sticky; top: 0; z-index: 1; background: #0a0c18; }
+  /* With JavaScript the header's Menu button opens the navigation as a panel under the sticky header. */
+  .js .side { padding: 0; border: 0; }
+  .js .side-menu > summary { display: none; }
+  .js .side-menu[open] > .menu-panel {
+    position: fixed; z-index: 30; top: var(--header-h); left: 0; right: 0; max-height: calc(100dvh - var(--header-h)); overflow-y: auto; overscroll-behavior: contain;
+    padding: 4px 16px 16px; background: #090c18; border-bottom: 1px solid #c9a24f80; box-shadow: 0 12px 24px #000a;
+  }
   .cards { grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); }
   .ib-img { padding: 12px; }
   .ib-img img { max-height: 72px; }
   /* A wrapped prose cell must fit inside the table's visible width, or no whole line is ever visible. */
   .wikitable td { max-width: min(28em, calc(100vw - 4rem)); }
   /* The pinned name column may wrap, so the first numbers still show beside it. */
-  .wikitable td:first-child, .wikitable td:first-child:has(> .ico:first-child) { max-width: 38vw; white-space: normal; }
-  .wikitable td:first-child .ico { display: block; margin-bottom: 4px; }
+  .wikitable:has(thead) td:first-child, .wikitable:has(thead) td:first-child:has(> .ico:first-child):not(:has(> .ico ~ .ico)) { max-width: 34vw; white-space: normal; }
+  .wikitable td:first-child .ico { height: 20px; margin-right: 6px; }
+  .wikitable:has(thead) td:first-child code { white-space: normal; overflow-wrap: anywhere; }
+  .wikitable th, .wikitable td { padding: 8px 9px; }
+  .wikitable th { font-size: 12.5px; letter-spacing: .02em; }
+  .wikitable .sort { gap: 4px; }
+  /* Key/value tables fit the screen and wrap both columns instead of scrolling. */
+  .wikitable:not(:has(thead)) { width: 100%; }
+  .wikitable:not(:has(thead)) td { max-width: none; }
+  .wikitable:not(:has(thead)) td:first-child { white-space: normal; width: 40%; }
   .tabs { padding: 8px 16px; }
   .tabs a { padding: 8px 12px; font-size: 13px; }
   .layout { display: block; }
@@ -492,7 +518,7 @@ blockquote p { margin: 6px 0; }
   h1 { font-size: 31px; margin-bottom: 14px; }
   h2 { font-size: 22px; margin-top: 40px; }
   .lead { font-size: 17px; }
-  .with-ib { display: block; }
+  .with-ib { grid-template-columns: minmax(0, 1fr) 260px; column-gap: 24px; }
   code.nw { white-space: normal; overflow-wrap: anywhere; }
   .infobox, .infobox.fits { position: static; width: auto; margin: 0 0 28px; }
   .toc-in > ol:has(> li:nth-child(6)) { columns: auto; }
@@ -500,6 +526,7 @@ blockquote p { margin: 6px 0; }
   h2 .when { font-size: 12px; }
   .toc-in { max-width: none; }
 }
+@media (max-width: 640px) { .with-ib { display: block; } }
 @media (forced-colors: active) { h1, .brand b { -webkit-text-fill-color: currentColor; background: none; } }
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
 @media print { .top, .side, .foot, .toc { display: none; } .layout { display: block; } main { padding: 0; } pre { max-height: none; } }

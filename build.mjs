@@ -82,11 +82,14 @@ const localKeywords = (path) => {
   if (path === '/controls') return `language languages translation lang ${L10N_LANGS.map((l) => `${l.endonym} ${l.englishName} ${l.tag}`).join(' ')}`;
   return '';
 };
+// Search labels: evolutions and unions live under Weapons but are named as what they are.
+const TIER = Object.fromEntries([...R.evolutions.map((w) => [w.id, 'Evolutions']), ...R.unions.map((w) => [w.id, 'Unions'])]);
+const section = (p) => (p.path.startsWith('/weapons/') && TIER[p.path.slice(9)]) || (p.crumbs?.[0]?.[0] ?? 'Guide');
 // Search snippets end at a word boundary with an ellipsis, never mid-word.
 const clip = (t, n) => (t.length <= n ? t : `${t.slice(0, t.lastIndexOf(' ', n)).replace(/[,;:]$/, '')}…`);
 const index = pages
   .filter((p) => p.path !== '/search')
-  .map((p) => ({ t: p.title, u: p.path, d: clip(p.description, 160), k: `${p.search ?? ''} ${localKeywords(p.path)}`.trim(), s: p.crumbs?.[0]?.[0] ?? 'Guide', i: p.infobox?.icon ?? '' }));
+  .map((p) => ({ t: p.title, u: p.path, d: clip(p.description, 160), k: `${p.search ?? ''} ${localKeywords(p.path)}`.trim(), s: section(p), i: p.infobox?.icon ?? '' }));
 write('search-index.json', JSON.stringify(index));
 
 // Sitemap.
@@ -179,7 +182,7 @@ const nf = {
   title: 'Page not found',
   description: 'This page does not exist on tibodog.wiki.',
   lead: 'There is no page at this address. It may have been renamed, or the link may be mistyped.',
-  body: `<form class="nf-search" action="/search" method="get" role="search"><label for="nf-q">Search the wiki</label><input id="nf-q" name="q" type="search" placeholder="Weapon, boss, item…"><button type="submit">Search</button></form>\n\n## Popular pages\n\n<div class="cards">\n${[['/weapons', 'Weapons', 'weapon/spud-cannon'], ['/bosses', 'Bosses', 'boss/harvester'], ['/guides', 'Guides', 'boss/the-masher'], ['/quick-tips', 'Quick tips', ''], ['/all-pages', 'All pages', '']].map(([u, t, i]) => `<a href="${u}">${i ? `{{icon:${i}}}` : ''}<strong>${t}</strong></a>`).join('\n')}\n</div>\n`,
+  body: `<form class="nf-search" action="/search" method="get" role="search"><label for="nf-q">Search the wiki</label><input id="nf-q" name="q" type="search" placeholder="Weapon, boss, item…"><button type="submit">Search</button></form>\n\n## Popular pages\n\n<div class="cards">\n${[['/weapons', 'Weapons', 'weapon/spud-cannon', 'Every weapon, evolution and union'], ['/bosses', 'Bosses', 'boss/harvester', 'The 13 timed bosses and endgame forms'], ['/guides', 'Guides', 'boss/the-masher', 'How to beat bosses, biomes and more'], ['/quick-tips', 'Quick tips', 'dog/corgi', 'One key tip per page'], ['/all-pages', 'All pages', 'item/kaboom-spud', 'Every page on the wiki, A to Z']].map(([u, t, i, d]) => `<a href="${u}">{{icon:${i}}}<strong>${t}</strong><span>${d}</span></a>`).join('\n')}\n</div>\n`,
   bare: true,
 };
 write('404.html', renderHtml(nf, pages));

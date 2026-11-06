@@ -1,9 +1,39 @@
 // Progressive enhancement only: every page works without this script.
 (() => {
   // On small screens, start with the navigation and the page contents collapsed.
-  const narrow = window.matchMedia('(max-width: 860px)').matches;
+  const narrowMq = window.matchMedia('(max-width: 860px)');
+  let narrow = narrowMq.matches;
   const menu = document.querySelector('.side-menu');
   if (menu && narrow) menu.open = false;
+  // Crossing the breakpoint (rotating, resizing): the desktop sidebar is always shown, the phone menu starts closed.
+  const q0 = document.getElementById('q');
+  const placeholder = q0?.getAttribute('placeholder');
+  narrowMq.addEventListener('change', (e) => {
+    narrow = e.matches;
+    if (menu) menu.open = !narrow;
+    for (const g of document.querySelectorAll('.nav-group')) g.open = !narrow || !!g.querySelector('[aria-current]');
+    if (q0) q0.setAttribute('placeholder', narrow && window.innerWidth <= 600 ? 'Search the wiki' : placeholder);
+  });
+
+  // Small screens: a Menu button in the sticky header opens the navigation as a panel under it,
+  // so it is reachable anywhere on a long page. Without JavaScript the in-page Menu still works.
+  const menuBtn = document.querySelector('.menu-btn');
+  if (menu && menuBtn) {
+    document.documentElement.classList.add('js');
+    menuBtn.hidden = false;
+    const sync = () => menuBtn.setAttribute('aria-expanded', String(menu.open));
+    menuBtn.addEventListener('click', () => {
+      menu.open = !menu.open;
+      if (menu.open) (menu.querySelector('.menu-panel [aria-current]') ?? menu.querySelector('.menu-panel a'))?.focus({ preventScroll: true });
+    });
+    menu.addEventListener('toggle', sync);
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && menu.open && narrow) { menu.open = false; menuBtn.focus(); }
+    });
+    sync();
+  }
+  // Phones: a placeholder that fits the narrow search box.
+  if (narrow && window.matchMedia('(max-width: 600px)').matches) document.getElementById('q')?.setAttribute('placeholder', 'Search the wiki');
   if (narrow) for (const t of document.querySelectorAll('details.toc-in')) t.open = false;
 
   // Sidebar groups remember being folded; the group holding the current page always stays open.
@@ -114,6 +144,13 @@
         ths[col]?.classList.add('num');
         for (const r of rows) r.cells[col]?.classList.add('num');
       }
+    }
+    // A pinned first column must not cover a cell that gets keyboard focus while scrolling sideways.
+    const wrap = table.closest('.table-wrap');
+    if (wrap && table.tHead) {
+      wrap.style.scrollPaddingLeft = `${ths[0]?.offsetWidth ?? 0}px`;
+      // Browsers skip scrolling a partly visible control into view; bring the whole of it out from under the pin.
+      wrap.addEventListener('focusin', (e) => e.target.scrollIntoView({ block: 'nearest', inline: 'nearest' }));
     }
     if (rows.length < 4) continue;
     ths.forEach((th, col) => {
