@@ -1909,6 +1909,12 @@
  "content.weapon.deep-fryer.name": [
   "Deep Fryer"
  ],
+ "content.weapon.eclipse-scythe.desc": [
+  "Sun and moon blades circle Tibo. While the sun blades swing out wide, the moon blades cut close at his feet, then they trade places, so pests near and far are always in reach."
+ ],
+ "content.weapon.eclipse-scythe.name": [
+  "Eclipse Scythe"
+ ],
  "content.weapon.eternal-sprouts.desc": [
   "Sprouts circle Tibo forever."
  ],

@@ -2420,7 +2420,8 @@
      "hitInterval": 0.3,
      "reachIn": 0.4,
      "reachOut": 1.7,
-     "lapsPerSwing": 2
+     "lapsPerSwing": 2,
+     "counterSwing": false
     }
    }
   },
@@ -6590,7 +6591,8 @@
      "hitInterval": 0.3,
      "reachIn": 0.4,
      "reachOut": 1.7,
-     "lapsPerSwing": 2
+     "lapsPerSwing": 2,
+     "counterSwing": false
     }
    }
   },
@@ -7052,6 +7054,36 @@
    },
    "from": "spud-decoy",
    "catalyst": "four-eyed-spud"
+  },
+  {
+   "id": "eclipse-scythe",
+   "tier": "evolved",
+   "base": {
+    "damage": 52,
+    "cooldown": 0,
+    "amount": 3,
+    "area": 1.35,
+    "speed": 4.6,
+    "duration": 0,
+    "pierce": 0,
+    "knockback": 1.5,
+    "interval": 0
+   },
+   "behavior": {
+    "kind": "bigUpdate",
+    "variant": {
+     "kind": "cometScythe",
+     "size": 11,
+     "orbitRadius": 36,
+     "hitInterval": 0.25,
+     "reachIn": 0.4,
+     "reachOut": 1.8,
+     "lapsPerSwing": 2,
+     "counterSwing": true
+    }
+   },
+   "from": "comet-scythe",
+   "catalyst": "big-bowl"
   },
   {
    "id": "hash-harrier",
@@ -8572,6 +8604,36 @@
    },
    "from": "spud-decoy",
    "catalyst": "four-eyed-spud"
+  },
+  {
+   "id": "eclipse-scythe",
+   "tier": "evolved",
+   "base": {
+    "damage": 52,
+    "cooldown": 0,
+    "amount": 3,
+    "area": 1.35,
+    "speed": 4.6,
+    "duration": 0,
+    "pierce": 0,
+    "knockback": 1.5,
+    "interval": 0
+   },
+   "behavior": {
+    "kind": "bigUpdate",
+    "variant": {
+     "kind": "cometScythe",
+     "size": 11,
+     "orbitRadius": 36,
+     "hitInterval": 0.25,
+     "reachIn": 0.4,
+     "reachOut": 1.8,
+     "lapsPerSwing": 2,
+     "counterSwing": true
+    }
+   },
+   "from": "comet-scythe",
+   "catalyst": "big-bowl"
   },
   {
    "id": "hash-harrier",
