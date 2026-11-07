@@ -2,7 +2,7 @@
 
 Meteor Russet is the evolved form of [Heavy Russet](/items/heavy-russet). Hold Heavy Russet with [Masher Grip](/passives/masher-grip) at level 5, and the next [chest](/chests) you open turns every Heavy Russet copy (up to 5) into the same number of Meteor Russets.
 
-Each of Tibo's weapon hits has a 3% chance to call down a meteor. The hit is held back for 0.4 s while the meteor falls, then lands on the original target at 20× damage. The impact also craters every enemy within 56 units of where the meteor was called, for 30× the triggering hit's damage (20× the hit × a 1.5 share). The crater radius grows with the square root of your area multiplier. <small>[sim-CnlRFyr3.js: `a=r*c.proc.mult*d.share,o=d.radius*xv(e)`]</small> The section Meteor impact below has the landing details.
+Each of Tibo's weapon hits has a 3% chance to call down a meteor. The hit is held back for 0.4 s while the meteor falls, then lands on the original target at 20× damage. The impact also craters every enemy within 56 units of where the meteor was called, for 30× the triggering hit's damage (20× the hit × a 1.5 share). The crater radius grows with the square root of your area multiplier. <small>[sim-DSqbJT_O.js: `a=r*c.proc.mult*d.share,o=d.radius*wv(e)`]</small> The section Meteor impact below has the landing details.
 
 ## How it works
 
