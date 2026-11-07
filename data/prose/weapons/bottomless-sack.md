@@ -1,6 +1,6 @@
 ## Overview
 
-Bottomless Sack is the evolution of [Grab Bag](/weapons/grab-bag). You get it by opening a [chest](/chests) with a max-level Grab Bag and [Sprouting Eyes](/passives/sprouting-eyes) at any level. Like Grab Bag, it fires other weapons' attacks with its own stats. It makes two picks per shot instead of one, and it copies the **evolved** form of each weapon. For example, it copies [Gravy Flood](/weapons/gravy-flood) instead of [Gravy Boat](/weapons/gravy-boat), and [Hashnado](/weapons/hashnado) instead of [Hash Boomerang](/weapons/hash-boomerang). A weapon with no evolution is copied as it is.<small>[sim-DluAnNp6.js: `ST(CT().map(e=>a.evolutionOf(e.id)??e))`]</small>
+Bottomless Sack is the evolution of [Grab Bag](/weapons/grab-bag). You get it by opening a [chest](/chests) with a max-level Grab Bag and [Sprouting Eyes](/passives/sprouting-eyes) at any level. Like Grab Bag, it fires other weapons' attacks with its own stats. It makes two picks per shot instead of one, and it copies the **evolved** form of each weapon. For example, it copies [Gravy Flood](/weapons/gravy-flood) instead of [Gravy Boat](/weapons/gravy-boat), and [Hashnado](/weapons/hashnado) instead of [Hash Boomerang](/weapons/hash-boomerang). A weapon with no evolution is copied as it is.<small>[sim-BEypEELT.js: `ST(CT().map(e=>a.evolutionOf(e.id)??e))`]</small>
 
 ## How it works
 

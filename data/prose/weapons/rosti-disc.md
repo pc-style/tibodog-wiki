@@ -6,7 +6,7 @@ You get it from a level-up card. At level 8 it launches 4 discs (3 + 1) for 30 d
 
 ## How it works
 
-- **Bouncing.** The bounce box is the 320 × 320 play area centred on Tibo (`view.playWidth` and `playHeight` in the config). When a disc crosses the left or right edge while moving outward, its horizontal direction flips. The top and bottom edges work the same way for vertical movement. The box moves with Tibo, so discs stay around him as he walks. <small>[sim-DluAnNp6.js: `(r<a-s&&l<0||r>a+s&&l>0)&&(n.vx[t]=-l,eT(e,t))`]</small>
+- **Bouncing.** The bounce box is the 320 × 320 play area centred on Tibo (`view.playWidth` and `playHeight` in the config). When a disc crosses the left or right edge while moving outward, its horizontal direction flips. The top and bottom edges work the same way for vertical movement. The box moves with Tibo, so discs stay around him as he walks. <small>[sim-BEypEELT.js: `(r<a-s&&l<0||r>a+s&&l>0)&&(n.vx[t]=-l,eT(e,t))`]</small>
 - **Pierce.** The 99 pierce counts as unlimited, so a disc never breaks on hitting pests.
 - Each launch direction is random and the discs do not aim. Projectile speed from [Salt Shaker](/passives/salt-shaker) makes discs cross the box faster. Duration keeps them alive longer. Area makes each disc bigger, scaling its radius with the square root of area.
 
