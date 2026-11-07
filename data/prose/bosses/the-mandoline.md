@@ -6,7 +6,7 @@ It has 5200 base HP, which is 3380 HP on Normal (boss HP ×0.65, see [Modes](/mo
 
 It drops a [chest](/chests), an XP gem worth 140 XP and a 25-gold coin (both multiplied by the biome's XP and gold multipliers).
 
-**Measured** (headless `tools/play.mjs`, build `main-B2gf34bA`, seed `wiki`, standard mode, `--god`; the clock warped to 2 s before each minute and stepped across it; level-up offers taken first-in-order except Rotten Spud, so curse stays at the difficulty's start value): it spawned at exactly 12:00 on all four difficulties, with 2600 HP on Easy, 3380 on Normal, 3640 on Hard and 5434 on Nightmare. The Nightmare figure is 10% above base HP × the difficulty multiplier because Nightmare starts every run with one curse, and boss HP is multiplied by 1 + curse. <small>[intro-shared-Cxnv5gc-.js: `startCurses:1,tierLag:2,wallPests:.6`]</small> <small>[sim-C59Bg0bk.js: `n.maxHp[r]=i.hp*t.hpMult*(1+e.loadout.stats.curse)`]</small> Seeds `s1` to `s4` gave the same Normal times and HP.
+**Measured** (headless `tools/play.mjs`, build `main-B2gf34bA`, seed `wiki`, standard mode, `--god`; the clock warped to 2 s before each minute and stepped across it; level-up offers taken first-in-order except Rotten Spud, so curse stays at the difficulty's start value): it spawned at exactly 12:00 on all four difficulties, with 2600 HP on Easy, 3380 on Normal, 3640 on Hard and 5434 on Nightmare. The Nightmare figure is 10% above base HP × the difficulty multiplier because Nightmare starts every run with one curse, and boss HP is multiplied by 1 + curse. <small>[intro-shared-CJehVJow.js: `startCurses:1,tierLag:2,wallPests:.6`]</small> <small>[sim-BEjq2fOA.js: `n.maxHp[r]=i.hp*t.hpMult*(1+e.loadout.stats.curse)`]</small> Seeds `s1` to `s4` gave the same Normal times and HP.
 
 ## Fight
 
@@ -14,7 +14,7 @@ The Mandoline walks towards Tibo, fires a fast-spinning spiral, and every 3.4 s 
 
 ### Three-lane slice
 
-When the attack starts, the Mandoline locks the direction from itself to Tibo and marks three parallel lines across that direction, each 360 units long and 22 units wide. The middle line runs through Tibo's position; the other two run 57.2 units nearer to the boss and 57.2 units further away. <small>[sim-C59Bg0bk.js: `let f=(u-(i.lanes-1)/2)*i.width*2.6`]</small> The lines strike one after another, starting with the one nearest the boss: at 1.1 s, 1.25 s and 1.4 s. Each deals the Mandoline's contact damage. <small>[sim-C59Bg0bk.js: `i.width/2,n.telegraph+.15*u,a.damage[t]`]</small>
+When the attack starts, the Mandoline locks the direction from itself to Tibo and marks three parallel lines across that direction, each 360 units long and 22 units wide. The middle line runs through Tibo's position; the other two run 57.2 units nearer to the boss and 57.2 units further away. <small>[sim-BEjq2fOA.js: `let f=(u-(i.lanes-1)/2)*i.width*2.6`]</small> The lines strike one after another, starting with the one nearest the boss: at 1.1 s, 1.25 s and 1.4 s. Each deals the Mandoline's contact damage. <small>[sim-BEjq2fOA.js: `i.width/2,n.telegraph+.15*u,a.damage[t]`]</small>
 
 ### Slicer spiral
 

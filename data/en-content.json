@@ -1945,6 +1945,12 @@
  "content.weapon.fry-brigade.name": [
   "Fry Brigade"
  ],
+ "content.weapon.fry-by.desc": [
+  "Fries spray behind Tibo while he runs. Each dash blasts a wide double fan of fries back along his path, and every fan fry splashes hot oil where it lands. Frees a weapon slot."
+ ],
+ "content.weapon.fry-by.name": [
+  "Fry-By"
+ ],
  "content.weapon.fry-fortress.desc": [
   "Drops three armored fry turrets at a time. They stand longer and their crinkle fries pierce."
  ],
@@ -2035,6 +2041,12 @@
  "content.weapon.gravy-pack.name": [
   "Gravy Pack"
  ],
+ "content.weapon.grease-fire.desc": [
+  "Wildfire Roast's sweep sprays a huge cloud of burning fryer oil, and the flames at Tibo's feet light the oil into burning puddles as he runs. Each flame he keeps lit makes the sweep reach much farther, up to five. A hit puts out two flames, and a stop puts them all out. Frees a weapon slot."
+ ],
+ "content.weapon.grease-fire.name": [
+  "Grease Fire"
+ ],
  "content.weapon.griddle-guard.desc": [
   "Hash browns circle Tibo and block hits and bullets. Where one blocks a bullet, the pan swings there and swats it back at the shooter. Broken hash browns burst into freezing shards, and the pan swings both ways. Frees a weapon slot."
  ],
@@ -2100,6 +2112,12 @@
  ],
  "content.weapon.hot-streak.name": [
   "Hot Streak"
+ ],
+ "content.weapon.hungry-sprouts.desc": [
+  "Homing sprouts that split when they hit and gain damage with every kill they make, for the rest of the run. Frees a weapon slot."
+ ],
+ "content.weapon.hungry-sprouts.name": [
+  "Hungry Sprouts"
  ],
  "content.weapon.hunters-moon.desc": [
   "Bigger moon spuds circle Tibo and catch pests from farther out. Each flung pest bursts into moon dust where it lands and hits the pests around it. Bosses are too heavy to catch."

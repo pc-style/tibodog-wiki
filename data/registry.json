@@ -5710,6 +5710,35 @@
    ]
   },
   {
+   "id": "hungry-sprouts",
+   "tier": "union",
+   "base": {
+    "damage": 84,
+    "cooldown": 0.6,
+    "amount": 6,
+    "area": 1,
+    "speed": 220,
+    "duration": 3,
+    "pierce": 2,
+    "knockback": 1,
+    "interval": 0.07
+   },
+   "behavior": {
+    "kind": "homing",
+    "size": 4,
+    "turn": 8,
+    "split": 2,
+    "growOnKill": {
+     "perKill": 0.0011,
+     "cap": 11
+    }
+   },
+   "from": [
+    "big-fry",
+    "overgrowth"
+   ]
+  },
+  {
    "id": "knife-block",
    "tier": "union",
    "base": {
@@ -6583,6 +6612,53 @@
    },
    "from": "hot-streak",
    "catalyst": "thick-skin"
+  },
+  {
+   "id": "grease-fire",
+   "tier": "union",
+   "base": {
+    "damage": 220,
+    "cooldown": 0,
+    "amount": 1,
+    "area": 1.74,
+    "speed": 0,
+    "duration": 1.2,
+    "pierce": 99,
+    "knockback": 1,
+    "interval": 0
+   },
+   "behavior": {
+    "kind": "bigUpdate",
+    "variant": {
+     "kind": "hotStreak",
+     "size": 44,
+     "hitInterval": 1,
+     "streak": {
+      "steps": 5,
+      "stepSec": 1,
+      "hitLoss": 2,
+      "stopSec": 0,
+      "area": 0.48,
+      "rate": 0.24,
+      "firstStep": 0
+     },
+     "puddle": {
+      "everySec": 0.5,
+      "size": 14,
+      "tickSec": 0.25,
+      "damage": 0.4,
+      "burn": {
+       "kind": "burn",
+       "dps": 40,
+       "seconds": 2
+      }
+     }
+    }
+   },
+   "from": [
+    "wildfire-roast",
+    "pressure-cooker"
+   ]
   },
   {
    "id": "hash-carousel",
@@ -7752,6 +7828,47 @@
    },
    "from": "skipping-cannonball",
    "catalyst": "sprouting-eyes"
+  },
+  {
+   "id": "fry-by",
+   "tier": "union",
+   "base": {
+    "damage": 74,
+    "cooldown": 0.5,
+    "amount": 5,
+    "area": 1,
+    "speed": 240,
+    "duration": 0.8,
+    "pierce": 2,
+    "knockback": 1.2,
+    "interval": 0.06
+   },
+   "behavior": {
+    "kind": "bigUpdate",
+    "variant": {
+     "kind": "fryBy",
+     "size": 3,
+     "spread": 0.3,
+     "dripSpeed": 0.35,
+     "fan": 2.6,
+     "rows": 2,
+     "gap": 8,
+     "innerSpeed": 0.5,
+     "fanLife": 0.22,
+     "fanPierce": 99,
+     "oil": {
+      "shape": "splat",
+      "radius": 12,
+      "sec": 4,
+      "every": 0.25,
+      "share": 1
+     }
+    }
+   },
+   "from": [
+    "tailgate-party",
+    "jet-fryer"
+   ]
   },
   {
    "id": "gravy-pack",
@@ -9607,6 +9724,35 @@
    ]
   },
   {
+   "id": "hungry-sprouts",
+   "tier": "union",
+   "base": {
+    "damage": 84,
+    "cooldown": 0.6,
+    "amount": 6,
+    "area": 1,
+    "speed": 220,
+    "duration": 3,
+    "pierce": 2,
+    "knockback": 1,
+    "interval": 0.07
+   },
+   "behavior": {
+    "kind": "homing",
+    "size": 4,
+    "turn": 8,
+    "split": 2,
+    "growOnKill": {
+     "perKill": 0.0011,
+     "cap": 11
+    }
+   },
+   "from": [
+    "big-fry",
+    "overgrowth"
+   ]
+  },
+  {
    "id": "knife-block",
    "tier": "union",
    "base": {
@@ -9705,6 +9851,53 @@
    "from": [
     "thunder-tuber",
     "gratin-arc"
+   ]
+  },
+  {
+   "id": "grease-fire",
+   "tier": "union",
+   "base": {
+    "damage": 220,
+    "cooldown": 0,
+    "amount": 1,
+    "area": 1.74,
+    "speed": 0,
+    "duration": 1.2,
+    "pierce": 99,
+    "knockback": 1,
+    "interval": 0
+   },
+   "behavior": {
+    "kind": "bigUpdate",
+    "variant": {
+     "kind": "hotStreak",
+     "size": 44,
+     "hitInterval": 1,
+     "streak": {
+      "steps": 5,
+      "stepSec": 1,
+      "hitLoss": 2,
+      "stopSec": 0,
+      "area": 0.48,
+      "rate": 0.24,
+      "firstStep": 0
+     },
+     "puddle": {
+      "everySec": 0.5,
+      "size": 14,
+      "tickSec": 0.25,
+      "damage": 0.4,
+      "burn": {
+       "kind": "burn",
+       "dps": 40,
+       "seconds": 2
+      }
+     }
+    }
+   },
+   "from": [
+    "wildfire-roast",
+    "pressure-cooker"
    ]
   },
   {
@@ -9871,6 +10064,47 @@
    "from": [
     "tot-gatling",
     "tot-cavalry"
+   ]
+  },
+  {
+   "id": "fry-by",
+   "tier": "union",
+   "base": {
+    "damage": 74,
+    "cooldown": 0.5,
+    "amount": 5,
+    "area": 1,
+    "speed": 240,
+    "duration": 0.8,
+    "pierce": 2,
+    "knockback": 1.2,
+    "interval": 0.06
+   },
+   "behavior": {
+    "kind": "bigUpdate",
+    "variant": {
+     "kind": "fryBy",
+     "size": 3,
+     "spread": 0.3,
+     "dripSpeed": 0.35,
+     "fan": 2.6,
+     "rows": 2,
+     "gap": 8,
+     "innerSpeed": 0.5,
+     "fanLife": 0.22,
+     "fanPierce": 99,
+     "oil": {
+      "shape": "splat",
+      "radius": 12,
+      "sec": 4,
+      "every": 0.25,
+      "share": 1
+     }
+    }
+   },
+   "from": [
+    "tailgate-party",
+    "jet-fryer"
    ]
   }
  ],
