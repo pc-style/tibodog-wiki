@@ -7,7 +7,7 @@ Every 1.4 s it fires 3 potato rockets (raw amount 2 plus Tibo's base +1, see [St
 ## How it works
 
 - **Main blast.** As with Spud Cannon, the rocket hits the first pest it touches, then explodes. It also explodes if it reaches the end of its flight, 2 s or 2.5 s with Tibo's base +25% duration. The struck pest takes the impact and the blast.
-- **Cluster bursts.** After the main blast, the rocket triggers `cluster` (4) extra explosions. Each one is centred 1.1 × the blast radius from the impact point in a random direction, has 0.6 × the blast radius, and deals half damage with half knockback. <small>[sim-CJ_9Wh4W.js: `e.attack.damage=.5*o,e.attack.kb=.5;for(let t=0;t<s;t++){let t=e.rng.angle();ou(e,r+b(t)*a*1.1,i+d(t)*a*1.1,.6*a)}`]</small> At area 1.8 that means four 25-damage bursts of about 24-unit radius, centred about 44 units out. They reach from roughly 20 to 67 units from the impact.
+- **Cluster bursts.** After the main blast, the rocket triggers `cluster` (4) extra explosions. Each one is centred 1.1 × the blast radius from the impact point in a random direction, has 0.6 × the blast radius, and deals half damage with half knockback. <small>[sim-aJ7IG2rS.js: `e.attack.damage=.5*o,e.attack.kb=.5;for(let t=0;t<s;t++){let t=e.rng.angle();ou(e,r+b(t)*a*1.1,i+d(t)*a*1.1,.6*a)}`]</small> At area 1.8 that means four 25-damage bursts of about 24-unit radius, centred about 44 units out. They reach from roughly 20 to 67 units from the impact.
 - **Overlap.** The bursts overlap the edge of the main blast and can overlap each other, since the angles are random. A pest in an overlap is hit by each explosion that covers it.
 - **Scaling.** [Area](/stats) bonuses enlarge the main blast, the cluster bursts and their distance from the centre together.
 
