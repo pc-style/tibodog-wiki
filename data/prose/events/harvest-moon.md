@@ -6,9 +6,9 @@ Harvest Moon is a scheduled gold rush. The [wave table](/bosses) fires it at 8:0
 
 ## How it works
 
-- **Applied on pickup.** The ×2 applies when a coin is collected, on top of the gold gain stat. Coins dropped before the rush but picked up during it count double. Coins still on the ground when it ends don't. <small>[sim-DQjMQPwG.js: `let t=1*a*i.greedMult*(e.time<e.goldRushUntil?e.goldRushMult:1)`]</small>
-- **No stacking.** A second gold rush sets the end time to whichever finishes later and sets the multiplier to its own value. Two rushes therefore extend the window rather than giving ×4. <small>[sim-DQjMQPwG.js: `e.goldRushUntil=Math.max(e.goldRushUntil,e.time+t.duration),e.goldRushMult=t.goldMult`]</small>
-- **Always fires.** Other events are skipped when the enemy pool is full, but gold rushes skip that check. <small>[sim-DQjMQPwG.js: ``t.effect.kind!==`goldRush`&&!Hc(e)``]</small>
+- **Applied on pickup.** The ×2 applies when a coin is collected, on top of the gold gain stat. Coins dropped before the rush but picked up during it count double. Coins still on the ground when it ends don't. <small>[sim-C59Bg0bk.js: `let t=1*a*i.greedMult*(e.time<e.goldRushUntil?e.goldRushMult:1)`]</small>
+- **No stacking.** A second gold rush sets the end time to whichever finishes later and sets the multiplier to its own value. Two rushes therefore extend the window rather than giving ×4. <small>[sim-C59Bg0bk.js: `e.goldRushUntil=Math.max(e.goldRushUntil,e.time+t.duration),e.goldRushMult=t.goldMult`]</small>
+- **Always fires.** Other events are skipped when the enemy pool is full, but gold rushes skip that check. <small>[sim-C59Bg0bk.js: ``t.effect.kind!==`goldRush`&&!Hc(e)``]</small>
 - Coin values at drop time are on [Pickups](/pickups): pests drop 1 × the biome's gold multiplier, elites 10 ×, bosses 25 ×.
 
 **Measured** (headless `tools/play.mjs`, build `main-B2gf34bA`, standard mode, `--god`, seed `wiki`; the clock warped to 2 s before each minute): Harvest Moon was announced at 8:00 and 15:00 on all four difficulties, on the same tick as a Fry Fly Swarm, and at no other minute up to 25:00 on Normal. The only pests spawned on that tick were the swarm's 26 flies and ordinary wave pests.
