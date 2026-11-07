@@ -1429,5 +1429,16 @@
   "updated": "2026-11-07T17:00:00Z",
   "changes": "The journal files the existing gear-set tradeoffs and Overdrive vent cues under November 7, code 925be5f. Gameplay, artwork and note wording are unchanged.",
   "evidence": "Reviewed all four changed paths (boot and journal pairs) across 407 reachable files per build. Exact boot text matches after masking hashed asset references and known full commits 1467f389872e3dcbe4c56fc2f13f0eb4a06ca563 to d0cfec848caabe6a80c183d386de6dfed73889e1; normalized diff has zero hunks. Complete journal diff moves set-rules-trade and overdrive-vent-cue from the current group into November 7 under 925be5f, the code that first published those notes in build 128. Their former official publication times 14:37:26Z and 14:37:27Z remain historical evidence; the behavior and artwork were already present in source-observed build 126. No current notes remain. All 305 identities, kinds and texts are unchanged. All 305 ordered notes and 112 published codes match source, official /changelog and the live panel with all seven dates expanded: 20/80/43/28/41/47/46. Both original 406-asset mirrors match detector SHA-256 manifests. Registry, config, difficulty, entity text, translations, icons, simulation and optional combat/area/endgame rules unchanged. Natural original-engine five-minute Standard/Normal seed wiki full summaries match build 130: 1765 kills, level 13, 156.03 HP and 122.3 gold; no grants, warps, storage fixtures or god mode. First-party /data/v1/index.json matches this full game commit and simVersion e6b072586108feb8; resources were not exhaustively audited or substituted for the original-engine pipeline. Prior build 126 supplied-loadout probes remain historical fixtures, not natural acquisition, server acceptance, physical-device or performance evidence. Historical missing-source limits and Bog Witch two/three-piece discrepancy retained. Prose/citations/history refreshed preserving UI/keyTip/withText/bold action leads. Mirrors, manifests, diffs, probes, journal records, gates and delivery receipts preserved recoverably. No nested workers/reviewers, infrastructure or legacy-timer changes."
+ },
+ {
+  "seen": "2026-11-07",
+  "main": "main-DIJXUV8I.js",
+  "boot": "boot-DyU55E5z.js",
+  "sim": "sim-CvmkyGNp.js",
+  "commit": "7580d099b970",
+  "status": "reviewed",
+  "updated": "2026-11-07T17:25:50Z",
+  "changes": "No gameplay changes; a rebuild of the same game.",
+  "evidence": "Automatic whole-build comparison (tools/same-build.mjs): all 407 files reachable from the index.html match main-beHczRrE.js after mapping file hashes and the build's own commit id."
  }
 ]
