@@ -6,10 +6,10 @@ It also works without dashing. Whenever its 2 s cooldown is ready and Tibo is wa
 
 ## How it works
 
-- **Every dash places a strip, even if the cooldown is still running**, and each dash restarts the cooldown. <small>[sim-CFo3ylXb.js: `e.player.dashedAt[e.me]===e.tick`]</small> The strip runs from where the dash started along the dash direction, covering the full 48-unit dash (see [Controls](/controls)).
-- **Between dashes**, when the cooldown is ready and Tibo is moving, a strip of the same length is laid backwards from Tibo's position, along the path he just walked. <small>[sim-CFo3ylXb.js: `a.dx[r]=-i.fx[e.me]`]</small> Standing still does not trigger it.
-- **Strip shape**: the strip is made of `ceil(48 / pool radius) + 1` circular pools spaced evenly along the path. Each pool has radius `size × area` (9 at level 1), so a level-1 strip is 7 overlapping pools. <small>[sim-CFo3ylXb.js: `Math.ceil(s/(n.size*r.area))+1`]</small>
-- **Hits**: each pool ticks every 0.3 s (`hitInterval`). All butter pools of this weapon share one re-hit timer per pest, so a pest standing where pools overlap is still hit only once every 0.3 s. <small>[sim-CFo3ylXb.js: `rehit[i]=n.trail===void 0?0:ye(n.hitInterval)`]</small>
+- **Every dash places a strip, even if the cooldown is still running**, and each dash restarts the cooldown. <small>[sim-r66zS6bG.js: `e.player.dashedAt[e.me]===e.tick`]</small> The strip runs from where the dash started along the dash direction, covering the full 48-unit dash (see [Controls](/controls)).
+- **Between dashes**, when the cooldown is ready and Tibo is moving, a strip of the same length is laid backwards from Tibo's position, along the path he just walked. <small>[sim-r66zS6bG.js: `a.dx[r]=-i.fx[e.me]`]</small> Standing still does not trigger it.
+- **Strip shape**: the strip is made of `ceil(48 / pool radius) + 1` circular pools spaced evenly along the path. Each pool has radius `size × area` (9 at level 1), so a level-1 strip is 7 overlapping pools. <small>[sim-r66zS6bG.js: `Math.ceil(s/(n.size*r.area))+1`]</small>
+- **Hits**: each pool ticks every 0.3 s (`hitInterval`). All butter pools of this weapon share one re-hit timer per pest, so a pest standing where pools overlap is still hit only once every 0.3 s. <small>[sim-r66zS6bG.js: `rehit[i]=n.trail===void 0?0:ye(n.hitInterval)`]</small>
 - **Slow**: each hit sets the pest's speed to ×0.5 for 1 s, scaled by Tibo's duration stat. The pool's lifetime also scales with duration (see [Stats](/stats)).
 - The in-game text says the butter "burns" pests for 2 s. In the data that is the strip's own damage over its 2 s raw lifetime; Butter Streak applies no separate burn status, only the slow.
 - Extra projectiles (`amount`) place extra strips in the same spot at the same moment. Tibo's base +1 amount already makes every firing two identical strips. Because of the shared re-hit timer the extra strips add no damage.
