@@ -5596,6 +5596,45 @@
    ]
   },
   {
+   "id": "cold-frame",
+   "tier": "union",
+   "base": {
+    "damage": 170,
+    "cooldown": 0.9,
+    "amount": 6,
+    "area": 1.75,
+    "speed": 4.6,
+    "duration": 0,
+    "pierce": 0,
+    "knockback": 1.4,
+    "interval": 0.1
+   },
+   "behavior": {
+    "kind": "orbit",
+    "size": 5,
+    "orbitRadius": 33,
+    "hitInterval": 0.3,
+    "permanent": true,
+    "frost": {
+     "size": 44,
+     "width": 11,
+     "onHit": {
+      "kind": "freeze",
+      "seconds": 1.2
+     },
+     "bossOnHit": {
+      "kind": "slow",
+      "factor": 0.55,
+      "seconds": 1.6
+     }
+    }
+   },
+   "from": [
+    "cold-storage",
+    "eternal-sprouts"
+   ]
+  },
+  {
    "id": "fry-brigade",
    "tier": "union",
    "base": {
@@ -9417,6 +9456,45 @@
    "from": [
     "permafrost-fries",
     "spicy-hot-potato"
+   ]
+  },
+  {
+   "id": "cold-frame",
+   "tier": "union",
+   "base": {
+    "damage": 170,
+    "cooldown": 0.9,
+    "amount": 6,
+    "area": 1.75,
+    "speed": 4.6,
+    "duration": 0,
+    "pierce": 0,
+    "knockback": 1.4,
+    "interval": 0.1
+   },
+   "behavior": {
+    "kind": "orbit",
+    "size": 5,
+    "orbitRadius": 33,
+    "hitInterval": 0.3,
+    "permanent": true,
+    "frost": {
+     "size": 44,
+     "width": 11,
+     "onHit": {
+      "kind": "freeze",
+      "seconds": 1.2
+     },
+     "bossOnHit": {
+      "kind": "slow",
+      "factor": 0.55,
+      "seconds": 1.6
+     }
+    }
+   },
+   "from": [
+    "cold-storage",
+    "eternal-sprouts"
    ]
   },
   {

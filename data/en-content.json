@@ -1891,6 +1891,12 @@
  "content.weapon.clockwork-spud.name": [
   "Clockwork Spud"
  ],
+ "content.weapon.cold-frame.desc": [
+  "Sprouts circle Tibo forever inside a wide cold ring. Pests that cross the ring or meet a sprout freeze for a moment. Bosses only slow. Frees a weapon slot."
+ ],
+ "content.weapon.cold-frame.name": [
+  "Cold Frame"
+ ],
  "content.weapon.cold-storage.desc": [
   "A wider, colder ring. Pests freeze longer and take harder frostbite."
  ],
