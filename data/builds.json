@@ -1473,5 +1473,16 @@
   "updated": "2026-11-07T18:45:56Z",
   "changes": "No gameplay changes; a rebuild of the same game.",
   "evidence": "Automatic whole-build comparison (tools/same-build.mjs): all 407 files reachable from the index.html match main-BJgrgZou.js after mapping file hashes and the build's own commit id."
+ },
+ {
+  "seen": "2026-11-07",
+  "main": "main-Di_nOkfT.js",
+  "boot": "boot-pYZw-_cg.js",
+  "sim": "sim-CG3gW6oN.js",
+  "commit": "c022ac393e05",
+  "status": "reviewed",
+  "updated": "2026-11-07T21:28:26Z",
+  "changes": "Daily leaderboard runs put their shared link in the address bar for copying or reloading. Browser Back closes the run detail and returns to the board.",
+  "evidence": "Scoped navigation/journal review against main-qX8_DBjB.js: boot history handling, Daily row lifecycle, row-stats link parameters and shared-run address construction. Registry, English content, config values, names and icons are identical; sim has zero normalized logic hunks. All 306 live journal texts match extraction in display order with every older day expanded; the new current note was published at 2026-11-07T20:12:58Z, separate from source-observed introduction. A real Normal board row loaded /r/ run/stats parameters; browser Back restored the board URL, visible list and row focus. Opening its copied address loaded the shared-run view. Exact owning combat/UI citations repaired without changed combat claims. Sources, SHA-256 hashes and probe limitations are in data/journal-audit.md; no ceremonial gameplay run."
  }
 ]

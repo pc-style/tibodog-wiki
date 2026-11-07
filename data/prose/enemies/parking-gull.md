@@ -8,7 +8,7 @@ It is a different enemy from the [Gull Flock](/enemies/gull-flock) that crosses 
 
 ## How it works
 
-It has no special behaviour: the `chase` kind just uses the default movement straight towards Tibo. <small>[sim-CssMfSN7.js: `` case`chase`:case`tank`:case`splitter`:return; ``]</small> With mass 0 it takes full knockback.
+It has no special behaviour: the `chase` kind just uses the default movement straight towards Tibo. <small>[sim-CG3gW6oN.js: `` case`chase`:case`tank`:case`splitter`:return; ``]</small> With mass 0 it takes full knockback.
 
 ## Tips
 
