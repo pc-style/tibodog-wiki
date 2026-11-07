@@ -7,8 +7,8 @@ Every 4 seconds, if an enemy is within 150 units, Zoom sprints 150 units straigh
 ## How it works
 
 - Zoom aims at the enemy nearest to itself, then always runs the full 150 units in that direction, overshooting the target.
-- The sprint runs at twice Zoom's speed, 340 units per second, so it takes about 0.44 s. <small>[sim-BKmk53sU.js: `n.length/(2*c.dogAt(i.breed[t]).speed)`]</small>
-- Damage lands once, when the sprint ends. It hits every enemy whose centre is within 12 units (Zoom's size 6 + 6) of the line from start to finish. <small>[sim-BKmk53sU.js: `Mt(K(e,n),q(e,n),s,l,a,o)>u+6||X(e,n)`]</small>
+- The sprint runs at twice Zoom's speed, 340 units per second, so it takes about 0.44 s. <small>[sim-CbXtrX7h.js: `n.length/(2*c.dogAt(i.breed[t]).speed)`]</small>
+- Damage lands once, when the sprint ends. It hits every enemy whose centre is within 12 units (Zoom's size 6 + 6) of the line from start to finish. <small>[sim-CbXtrX7h.js: `Mt(K(e,n),q(e,n),s,l,a,o)>u+6||X(e,n)`]</small>
 - The damage is `30 × power × Tibo's damage multiplier`, so [Butter Pat](/passives/butter-pat) and other damage bonuses raise it. Each hit then goes through the normal hit rules: elite damage, [Zelda's](/dogs/pomchi) marks and crits all apply.
 - If nothing is within 150 units, Zoom checks again every 0.25 s.
 

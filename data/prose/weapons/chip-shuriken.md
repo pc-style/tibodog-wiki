@@ -6,12 +6,12 @@ Levels mostly add chips: by level 8 it fires 8 chips per throw (raw amount 7 plu
 
 ## How it works
 
-- **All chips fire at once.** Spiral weapons fire a single volley per cooldown containing every chip, so `interval` has no effect. <small>[sim-BKmk53sU.js: ``return e===`strike`||e===`rain`||e===`spiral`||e===`nuke`||e===`turret` ``]</small>
-- **Spacing**: chips are spread evenly over a full circle, and the starting angle advances by 0.4 rad on each throw, so consecutive rings do not line up. <small>[sim-BKmk53sU.js: `PO(e,t,r,a+o/r.amount*D,C.spiral`]</small>
-- **The spiral is anchored where it was thrown.** Its centre is Tibo's position at the moment of the throw; the chips do not follow him afterwards. <small>[sim-BKmk53sU.js: `i.ox[s]=e.player.x[e.me]`]</small>
-- **Motion**: each chip starts 6 units from the centre. Its angle grows by `spin` rad/s and its radius by its speed per second. <small>[sim-BKmk53sU.js: `r.orbitR[t]+E(r.vx[t],r.vy[t])*n`]</small> Projectile speed bonuses (such as [Salt Shaker](/passives/salt-shaker)) make the ring expand faster, not spin faster.
+- **All chips fire at once.** Spiral weapons fire a single volley per cooldown containing every chip, so `interval` has no effect. <small>[sim-CbXtrX7h.js: ``return e===`strike`||e===`rain`||e===`spiral`||e===`nuke`||e===`turret` ``]</small>
+- **Spacing**: chips are spread evenly over a full circle, and the starting angle advances by 0.4 rad on each throw, so consecutive rings do not line up. <small>[sim-CbXtrX7h.js: `PO(e,t,r,a+o/r.amount*D,C.spiral`]</small>
+- **The spiral is anchored where it was thrown.** Its centre is Tibo's position at the moment of the throw; the chips do not follow him afterwards. <small>[sim-CbXtrX7h.js: `i.ox[s]=e.player.x[e.me]`]</small>
+- **Motion**: each chip starts 6 units from the centre. Its angle grows by `spin` rad/s and its radius by its speed per second. <small>[sim-CbXtrX7h.js: `r.orbitR[t]+E(r.vx[t],r.vy[t])*n`]</small> Projectile speed bonuses (such as [Salt Shaker](/passives/salt-shaker)) make the ring expand faster, not spin faster.
 - **Lifetime** is the weapon's duration (1.6 s) times Tibo's duration stat, which starts at +25% (see [Stats](/stats)). At base values a chip ends roughly 6 + 110 × 2 = 226 units out, after a bit less than one full turn.
-- **Pierce**: a chip with pierce N hits N + 1 different pests; it is destroyed on the hit after its pierce runs out. <small>[sim-BKmk53sU.js: `r<=0?n.pool.kill(t):n.pierce[t]=r-1`]</small>
+- **Pierce**: a chip with pierce N hits N + 1 different pests; it is destroyed on the hit after its pierce runs out. <small>[sim-CbXtrX7h.js: `r<=0?n.pool.kill(t):n.pierce[t]=r-1`]</small>
 
 **Measured** in the headless sim (`tools/play.mjs`, build 41 `main-B2gf34bA.js`, Standard, Normal, god mode, seeds `s1`, `s2` and `s3`; the seeded starting weapon removed, the weapon given with `give`, spawning stopped after 4 s of play and the pests already on the field held at fixed spots with 10⁹ HP; Tibo standing still, facing right, with 8 pests in a line 20 to 90 units to his right): at level 1 every throw released 4 chips on the same tick, every 1.6 s, each spawned with a 2 s lifetime and pierce 2; at level 8 it released 8 chips every 1.6 s with pierce 3. The in-game stat table shows the raw amounts (3 and 7). All three seeds gave the same figures.
 
