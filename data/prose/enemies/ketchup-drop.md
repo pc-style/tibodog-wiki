@@ -6,7 +6,7 @@ It is slow fodder: it walks straight at Tibo at speed 30 and has 9 HP and 4 cont
 
 ## How it works
 
-It has no special behaviour: the `chase` kind just uses the default movement straight towards Tibo. <small>[sim-BY3r5cDe.js: `` case`chase`:case`tank`:case`splitter`:return; ``]</small> With mass 0 it takes full knockback.
+It has no special behaviour: the `chase` kind just uses the default movement straight towards Tibo. <small>[sim-D8O4GfAa.js: `` case`chase`:case`tank`:case`splitter`:return; ``]</small> With mass 0 it takes full knockback.
 
 ## Tips
 
