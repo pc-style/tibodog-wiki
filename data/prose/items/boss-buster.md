@@ -6,7 +6,7 @@ It has weight 6 out of 94 among Rare items, about 0.64% of item rolls at luck 0 
 
 ## How it works
 
-The multiplier applies to every damage instance that hits an elite or a boss, before crit. That includes item procs, burn ticks and blasts as well as weapon hits. Endgame shields can reduce or block the resulting damage. <small>[sim-Dm3DDgW-.js: `let c=i||t.has(n,C.Elite);if(c&&(u*=o.eliteMult*a.eliteMult[r])`]</small>
+The multiplier applies to every damage instance that hits an elite or a boss, before crit. That includes item procs, burn ticks and blasts as well as weapon hits. Endgame shields can reduce or block the resulting damage. <small>[sim-09V9QVjL.js: `let c=i||t.has(n,C.Elite);if(c&&(u*=o.eliteMult*a.eliteMult[r])`]</small>
 
 ## Tips
 
