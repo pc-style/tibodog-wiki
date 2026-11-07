@@ -7,7 +7,7 @@ Area bonuses are summed and applied as `1 + total` (see [Stats](/stats#stat-conv
 ## How it works
 
 - **Weapons** use the area multiplier for the size of their attacks.
-- **Item effects** such as [Spicy Croquette](/items/spicy-croquette) blasts and [Static Tot](/items/static-tot) arc range grow with the square root of the area multiplier, so one ladle makes them only about 3% larger. <small>[sim-DSqbJT_O.js: `return Math.sqrt(e.loadout.stats.areaMult)`]</small>
+- **Item effects** such as [Spicy Croquette](/items/spicy-croquette) blasts and [Static Tot](/items/static-tot) arc range grow with the square root of the area multiplier, so one ladle makes them only about 3% larger. <small>[sim-oJL-1F-Y.js: `return Math.sqrt(e.loadout.stats.areaMult)`]</small>
 
 ## Tips
 

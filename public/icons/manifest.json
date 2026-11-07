@@ -7,7 +7,7 @@
    "nativeW": 16,
    "nativeH": 11,
    "scale": 4,
-   "source": "atlas-BkLDxtZk.png sprite \"icon-butter-streak\" anim \"icon\" frame 0 @(501,603)"
+   "source": "atlas-DgY08xco.png sprite \"icon-butter-streak\" anim \"icon\" frame 0 @(748,591)"
   },
   "chip-shuriken": {
    "file": "weapon/chip-shuriken.png",
@@ -16,7 +16,7 @@
    "nativeW": 16,
    "nativeH": 16,
    "scale": 4,
-   "source": "atlas-BkLDxtZk.png sprite \"icon-chip-shuriken\" anim \"icon\" frame 0 @(537,603)"
+   "source": "atlas-DgY08xco.png sprite \"icon-chip-shuriken\" anim \"icon\" frame 0 @(784,591)"
   },
   "deep-fryer": {
    "file": "weapon/deep-fryer.png",
@@ -25,7 +25,7 @@
    "nativeW": 16,
    "nativeH": 15,
    "scale": 4,
-   "source": "atlas-BkLDxtZk.png sprite \"icon-deep-fryer\" anim \"icon\" frame 0 @(706,603)"
+   "source": "atlas-DgY08xco.png sprite \"icon-deep-fryer\" anim \"icon\" frame 0 @(953,591)"
   },
   "frozen-fries": {
    "file": "weapon/frozen-fries.png",
@@ -34,7 +34,7 @@
    "nativeW": 13,
    "nativeH": 14,
    "scale": 4,
-   "source": "atlas-BkLDxtZk.png sprite \"icon-frozen-fries\" anim \"icon\" frame 0 @(824,603)"
+   "source": "atlas-DgY08xco.png sprite \"icon-frozen-fries\" anim \"icon\" frame 0 @(50,622)"
   },
   "fry-knives": {
    "file": "weapon/fry-knives.png",
@@ -43,7 +43,7 @@
    "nativeW": 16,
    "nativeH": 16,
    "scale": 4,
-   "source": "atlas-BkLDxtZk.png sprite \"icon-fry-knives\" anim \"icon\" frame 0 @(885,603)"
+   "source": "atlas-DgY08xco.png sprite \"icon-fry-knives\" anim \"icon\" frame 0 @(111,622)"
   },
   "fry-lance": {
    "file": "weapon/fry-lance.png",
@@ -52,7 +52,7 @@
    "nativeW": 15,
    "nativeH": 15,
    "scale": 4,
-   "source": "atlas-BkLDxtZk.png sprite \"icon-fry-lance\" anim \"icon\" frame 0 @(903,603)"
+   "source": "atlas-DgY08xco.png sprite \"icon-fry-lance\" anim \"icon\" frame 0 @(129,622)"
   },
   "fry-sentry": {
    "file": "weapon/fry-sentry.png",
@@ -61,7 +61,7 @@
    "nativeW": 14,
    "nativeH": 15,
    "scale": 4,
-   "source": "atlas-BkLDxtZk.png sprite \"icon-fry-sentry\" anim \"icon\" frame 0 @(920,603)"
+   "source": "atlas-DgY08xco.png sprite \"icon-fry-sentry\" anim \"icon\" frame 0 @(146,622)"
   },
   "frying-pan": {
    "file": "weapon/frying-pan.png",
@@ -70,7 +70,7 @@
    "nativeW": 16,
    "nativeH": 14,
    "scale": 4,
-   "source": "atlas-BkLDxtZk.png sprite \"icon-frying-pan\" anim \"icon\" frame 0 @(954,603)"
+   "source": "atlas-DgY08xco.png sprite \"icon-frying-pan\" anim \"icon\" frame 0 @(180,622)"
   },
   "grab-bag": {
    "file": "weapon/grab-bag.png",
@@ -79,7 +79,7 @@
    "nativeW": 13,
    "nativeH": 16,
    "scale": 4,
-   "source": "atlas-BkLDxtZk.png sprite \"icon-grab-bag\" anim \"icon\" frame 0 @(106,627)"
+   "source": "atlas-DgY08xco.png sprite \"icon-grab-bag\" anim \"icon\" frame 0 @(349,622)"
   },
   "gravy-boat": {
    "file": "weapon/gravy-boat.png",
@@ -88,7 +88,7 @@
    "nativeW": 15,
    "nativeH": 13,
    "scale": 4,
-   "source": "atlas-BkLDxtZk.png sprite \"icon-gravy-boat\" anim \"icon\" frame 0 @(139,627)"
+   "source": "atlas-DgY08xco.png sprite \"icon-gravy-boat\" anim \"icon\" frame 0 @(382,622)"
   },
   "hash-boomerang": {
    "file": "weapon/hash-boomerang.png",
@@ -97,7 +97,7 @@
    "nativeW": 15,
    "nativeH": 15,
    "scale": 4,
-   "source": "atlas-BkLDxtZk.png sprite \"icon-hash-boomerang\" anim \"icon\" frame 0 @(191,627)"
+   "source": "atlas-DgY08xco.png sprite \"icon-hash-boomerang\" anim \"icon\" frame 0 @(452,622)"
   },
   "hash-brown-shield": {
    "file": "weapon/hash-brown-shield.png",
@@ -106,7 +106,7 @@
    "nativeW": 15,
    "nativeH": 15,
    "scale": 4,
-   "source": "atlas-BkLDxtZk.png sprite \"icon-hash-brown-shield\" anim \"icon\" frame 0 @(208,627)"
+   "source": "atlas-DgY08xco.png sprite \"icon-hash-brown-shield\" anim \"icon\" frame 0 @(469,622)"
   },
   "hot-potato": {
    "file": "weapon/hot-potato.png",
@@ -115,7 +115,7 @@
    "nativeW": 16,
    "nativeH": 15,
    "scale": 4,
-   "source": "atlas-BkLDxtZk.png sprite \"icon-hot-potato\" anim \"icon\" frame 0 @(311,627)"
+   "source": "atlas-DgY08xco.png sprite \"icon-hot-potato\" anim \"icon\" frame 0 @(572,622)"
   },
   "julienne-dash": {
    "file": "weapon/julienne-dash.png",
@@ -124,7 +124,7 @@
    "nativeW": 15,
    "nativeH": 16,
    "scale": 4,
-   "source": "atlas-BkLDxtZk.png sprite \"icon-julienne-dash\" anim \"icon\" frame 0 @(361,627)"
+   "source": "atlas-DgY08xco.png sprite \"icon-julienne-dash\" anim \"icon\" frame 0 @(622,622)"
   },
   "mash-wave": {
    "file": "weapon/mash-wave.png",
@@ -133,7 +133,7 @@
    "nativeW": 16,
    "nativeH": 14,
    "scale": 4,
-   "source": "atlas-BkLDxtZk.png sprite \"icon-mash-wave\" anim \"icon\" frame 0 @(519,627)"
+   "source": "atlas-DgY08xco.png sprite \"icon-mash-wave\" anim \"icon\" frame 0 @(780,622)"
   },
   "mezzaluna": {
    "file": "weapon/mezzaluna.png",
@@ -142,7 +142,7 @@
    "nativeW": 14,
    "nativeH": 12,
    "scale": 4,
-   "source": "atlas-BkLDxtZk.png sprite \"icon-mezzaluna\" anim \"icon\" frame 0 @(589,627)"
+   "source": "atlas-DgY08xco.png sprite \"icon-mezzaluna\" anim \"icon\" frame 0 @(850,622)"
   },
   "peeler": {
    "file": "weapon/peeler.png",
@@ -151,7 +151,7 @@
    "nativeW": 10,
    "nativeH": 16,
    "scale": 4,
-   "source": "atlas-BkLDxtZk.png sprite \"icon-peeler\" anim \"icon\" frame 0 @(640,627)"
+   "source": "atlas-DgY08xco.png sprite \"icon-peeler\" anim \"icon\" frame 0 @(901,622)"
   },
   "potato-battery": {
    "file": "weapon/potato-battery.png",
@@ -160,7 +160,7 @@
    "nativeW": 16,
    "nativeH": 15,
    "scale": 4,
-   "source": "atlas-BkLDxtZk.png sprite \"icon-potato-battery\" anim \"icon\" frame 0 @(736,627)"
+   "source": "atlas-DgY08xco.png sprite \"icon-potato-battery\" anim \"icon\" frame 0 @(997,622)"
   },
   "potato-rain": {
    "file": "weapon/potato-rain.png",
@@ -169,7 +169,7 @@
    "nativeW": 16,
    "nativeH": 16,
    "scale": 4,
-   "source": "atlas-BkLDxtZk.png sprite \"icon-potato-rain\" anim \"icon\" frame 0 @(770,627)"
+   "source": "atlas-DgY08xco.png sprite \"icon-potato-rain\" anim \"icon\" frame 0 @(18,640)"
   },
   "reset-button": {
    "file": "weapon/reset-button.png",
@@ -178,7 +178,7 @@
    "nativeW": 14,
    "nativeH": 11,
    "scale": 4,
-   "source": "atlas-BkLDxtZk.png sprite \"icon-reset-button\" anim \"icon\" frame 0 @(822,627)"
+   "source": "atlas-DgY08xco.png sprite \"icon-reset-button\" anim \"icon\" frame 0 @(70,640)"
   },
   "root-cellar": {
    "file": "weapon/root-cellar.png",
@@ -187,7 +187,7 @@
    "nativeW": 16,
    "nativeH": 15,
    "scale": 4,
-   "source": "atlas-BkLDxtZk.png sprite \"icon-root-cellar\" anim \"icon\" frame 0 @(838,627)"
+   "source": "atlas-DgY08xco.png sprite \"icon-root-cellar\" anim \"icon\" frame 0 @(86,640)"
   },
   "root-spikes": {
    "file": "weapon/root-spikes.png",
@@ -196,7 +196,7 @@
    "nativeW": 16,
    "nativeH": 14,
    "scale": 4,
-   "source": "atlas-BkLDxtZk.png sprite \"icon-root-spikes\" anim \"icon\" frame 0 @(874,627)"
+   "source": "atlas-DgY08xco.png sprite \"icon-root-spikes\" anim \"icon\" frame 0 @(122,640)"
   },
   "rosti-disc": {
    "file": "weapon/rosti-disc.png",
@@ -205,7 +205,7 @@
    "nativeW": 15,
    "nativeH": 15,
    "scale": 4,
-   "source": "atlas-BkLDxtZk.png sprite \"icon-rosti-disc\" anim \"icon\" frame 0 @(892,627)"
+   "source": "atlas-DgY08xco.png sprite \"icon-rosti-disc\" anim \"icon\" frame 0 @(140,640)"
   },
   "salt-line": {
    "file": "weapon/salt-line.png",
@@ -214,7 +214,7 @@
    "nativeW": 16,
    "nativeH": 15,
    "scale": 4,
-   "source": "atlas-BkLDxtZk.png sprite \"icon-salt-line\" anim \"icon\" frame 0 @(995,627)"
+   "source": "atlas-DgY08xco.png sprite \"icon-salt-line\" anim \"icon\" frame 0 @(243,640)"
   },
   "seeker-sprouts": {
    "file": "weapon/seeker-sprouts.png",
@@ -223,7 +223,7 @@
    "nativeW": 13,
    "nativeH": 14,
    "scale": 4,
-   "source": "atlas-BkLDxtZk.png sprite \"icon-seeker-sprouts\" anim \"icon\" frame 0 @(37,645)"
+   "source": "atlas-DgY08xco.png sprite \"icon-seeker-sprouts\" anim \"icon\" frame 0 @(296,640)"
   },
   "small-fry": {
    "file": "weapon/small-fry.png",
@@ -232,7 +232,7 @@
    "nativeW": 15,
    "nativeH": 15,
    "scale": 4,
-   "source": "atlas-BkLDxtZk.png sprite \"icon-small-fry\" anim \"icon\" frame 0 @(88,645)"
+   "source": "atlas-DgY08xco.png sprite \"icon-small-fry\" anim \"icon\" frame 0 @(347,640)"
   },
   "sprout-satellites": {
    "file": "weapon/sprout-satellites.png",
@@ -241,7 +241,7 @@
    "nativeW": 16,
    "nativeH": 14,
    "scale": 4,
-   "source": "atlas-BkLDxtZk.png sprite \"icon-sprout-satellites\" anim \"icon\" frame 0 @(157,645)"
+   "source": "atlas-DgY08xco.png sprite \"icon-sprout-satellites\" anim \"icon\" frame 0 @(416,640)"
   },
   "spud-cannon": {
    "file": "weapon/spud-cannon.png",
@@ -250,7 +250,7 @@
    "nativeW": 15,
    "nativeH": 16,
    "scale": 4,
-   "source": "atlas-BkLDxtZk.png sprite \"icon-spud-cannon\" anim \"icon\" frame 0 @(208,645)"
+   "source": "atlas-DgY08xco.png sprite \"icon-spud-cannon\" anim \"icon\" frame 0 @(467,640)"
   },
   "spud-dice": {
    "file": "weapon/spud-dice.png",
@@ -259,7 +259,7 @@
    "nativeW": 15,
    "nativeH": 15,
    "scale": 4,
-   "source": "atlas-BkLDxtZk.png sprite \"icon-spud-dice\" anim \"icon\" frame 0 @(225,645)"
+   "source": "atlas-DgY08xco.png sprite \"icon-spud-dice\" anim \"icon\" frame 0 @(484,640)"
   },
   "spud-lob": {
    "file": "weapon/spud-lob.png",
@@ -268,7 +268,7 @@
    "nativeW": 16,
    "nativeH": 16,
    "scale": 4,
-   "source": "atlas-BkLDxtZk.png sprite \"icon-spud-lob\" anim \"icon\" frame 0 @(257,645)"
+   "source": "atlas-DgY08xco.png sprite \"icon-spud-lob\" anim \"icon\" frame 0 @(516,640)"
   },
   "starch-bolt": {
    "file": "weapon/starch-bolt.png",
@@ -277,7 +277,7 @@
    "nativeW": 14,
    "nativeH": 15,
    "scale": 4,
-   "source": "atlas-BkLDxtZk.png sprite \"icon-starch-bolt\" anim \"icon\" frame 0 @(345,645)"
+   "source": "atlas-DgY08xco.png sprite \"icon-starch-bolt\" anim \"icon\" frame 0 @(604,640)"
   },
   "starch-chain": {
    "file": "weapon/starch-chain.png",
@@ -286,7 +286,7 @@
    "nativeW": 14,
    "nativeH": 14,
    "scale": 4,
-   "source": "atlas-BkLDxtZk.png sprite \"icon-starch-chain\" anim \"icon\" frame 0 @(361,645)"
+   "source": "atlas-DgY08xco.png sprite \"icon-starch-chain\" anim \"icon\" frame 0 @(620,640)"
   },
   "steam-vent": {
    "file": "weapon/steam-vent.png",
@@ -295,7 +295,7 @@
    "nativeW": 16,
    "nativeH": 15,
    "scale": 4,
-   "source": "atlas-BkLDxtZk.png sprite \"icon-steam-vent\" anim \"icon\" frame 0 @(438,645)"
+   "source": "atlas-DgY08xco.png sprite \"icon-steam-vent\" anim \"icon\" frame 0 @(697,640)"
   },
   "tater-mines": {
    "file": "weapon/tater-mines.png",
@@ -304,7 +304,7 @@
    "nativeW": 16,
    "nativeH": 14,
    "scale": 4,
-   "source": "atlas-BkLDxtZk.png sprite \"icon-tater-mines\" anim \"icon\" frame 0 @(492,645)"
+   "source": "atlas-DgY08xco.png sprite \"icon-tater-mines\" anim \"icon\" frame 0 @(751,640)"
   },
   "tater-pup": {
    "file": "weapon/tater-pup.png",
@@ -313,7 +313,7 @@
    "nativeW": 12,
    "nativeH": 14,
    "scale": 4,
-   "source": "atlas-BkLDxtZk.png sprite \"icon-tater-pup\" anim \"icon\" frame 0 @(510,645)"
+   "source": "atlas-DgY08xco.png sprite \"icon-tater-pup\" anim \"icon\" frame 0 @(769,640)"
   },
   "tot-toss": {
    "file": "weapon/tot-toss.png",
@@ -322,7 +322,7 @@
    "nativeW": 16,
    "nativeH": 13,
    "scale": 4,
-   "source": "atlas-BkLDxtZk.png sprite \"icon-tot-toss\" anim \"icon\" frame 0 @(643,645)"
+   "source": "atlas-DgY08xco.png sprite \"icon-tot-toss\" anim \"icon\" frame 0 @(902,640)"
   },
   "whisk-vortex": {
    "file": "weapon/whisk-vortex.png",
@@ -331,7 +331,7 @@
    "nativeW": 16,
    "nativeH": 16,
    "scale": 4,
-   "source": "atlas-BkLDxtZk.png sprite \"icon-whisk-vortex\" anim \"icon\" frame 0 @(712,645)"
+   "source": "atlas-DgY08xco.png sprite \"icon-whisk-vortex\" anim \"icon\" frame 0 @(971,640)"
   },
   "big-fry": {
    "file": "weapon/big-fry.png",
@@ -340,7 +340,7 @@
    "nativeW": 16,
    "nativeH": 15,
    "scale": 4,
-   "source": "atlas-BkLDxtZk.png sprite \"icon-big-fry\" anim \"icon\" frame 0 @(377,603)"
+   "source": "atlas-DgY08xco.png sprite \"icon-big-fry\" anim \"icon\" frame 0 @(624,591)"
   },
   "bottomless-sack": {
    "file": "weapon/bottomless-sack.png",
@@ -349,7 +349,7 @@
    "nativeW": 15,
    "nativeH": 16,
    "scale": 4,
-   "source": "atlas-BkLDxtZk.png sprite \"icon-bottomless-sack\" anim \"icon\" frame 0 @(449,603)"
+   "source": "atlas-DgY08xco.png sprite \"icon-bottomless-sack\" anim \"icon\" frame 0 @(696,591)"
   },
   "cast-iron": {
    "file": "weapon/cast-iron.png",
@@ -358,7 +358,7 @@
    "nativeW": 16,
    "nativeH": 14,
    "scale": 4,
-   "source": "atlas-BkLDxtZk.png sprite \"icon-cast-iron\" anim \"icon\" frame 0 @(519,603)"
+   "source": "atlas-DgY08xco.png sprite \"icon-cast-iron\" anim \"icon\" frame 0 @(766,591)"
   },
   "cold-storage": {
    "file": "weapon/cold-storage.png",
@@ -367,7 +367,7 @@
    "nativeW": 15,
    "nativeH": 16,
    "scale": 4,
-   "source": "atlas-BkLDxtZk.png sprite \"icon-cold-storage\" anim \"icon\" frame 0 @(603,603)"
+   "source": "atlas-DgY08xco.png sprite \"icon-cold-storage\" anim \"icon\" frame 0 @(850,591)"
   },
   "eternal-sprouts": {
    "file": "weapon/eternal-sprouts.png",
@@ -376,7 +376,7 @@
    "nativeW": 16,
    "nativeH": 15,
    "scale": 4,
-   "source": "atlas-BkLDxtZk.png sprite \"icon-eternal-sprouts\" anim \"icon\" frame 0 @(724,603)"
+   "source": "atlas-DgY08xco.png sprite \"icon-eternal-sprouts\" anim \"icon\" frame 0 @(971,591)"
   },
   "factory-reset": {
    "file": "weapon/factory-reset.png",
@@ -385,7 +385,7 @@
    "nativeW": 16,
    "nativeH": 13,
    "scale": 4,
-   "source": "atlas-BkLDxtZk.png sprite \"icon-factory-reset\" anim \"icon\" frame 0 @(758,603)"
+   "source": "atlas-DgY08xco.png sprite \"icon-factory-reset\" anim \"icon\" frame 0 @(1005,591)"
   },
   "fry-fortress": {
    "file": "weapon/fry-fortress.png",
@@ -394,7 +394,7 @@
    "nativeW": 16,
    "nativeH": 16,
    "scale": 4,
-   "source": "atlas-BkLDxtZk.png sprite \"icon-fry-fortress\" anim \"icon\" frame 0 @(867,603)"
+   "source": "atlas-DgY08xco.png sprite \"icon-fry-fortress\" anim \"icon\" frame 0 @(93,622)"
   },
   "ghee-glide": {
    "file": "weapon/ghee-glide.png",
@@ -403,7 +403,7 @@
    "nativeW": 16,
    "nativeH": 14,
    "scale": 4,
-   "source": "atlas-BkLDxtZk.png sprite \"icon-ghee-glide\" anim \"icon\" frame 0 @(972,603)"
+   "source": "atlas-DgY08xco.png sprite \"icon-ghee-glide\" anim \"icon\" frame 0 @(198,622)"
   },
   "golden-harvest": {
    "file": "weapon/golden-harvest.png",
@@ -412,7 +412,7 @@
    "nativeW": 16,
    "nativeH": 16,
    "scale": 4,
-   "source": "atlas-BkLDxtZk.png sprite \"icon-golden-harvest\" anim \"icon\" frame 0 @(70,627)"
+   "source": "atlas-DgY08xco.png sprite \"icon-golden-harvest\" anim \"icon\" frame 0 @(313,622)"
   },
   "gratin-arc": {
    "file": "weapon/gratin-arc.png",
@@ -421,7 +421,7 @@
    "nativeW": 16,
    "nativeH": 15,
    "scale": 4,
-   "source": "atlas-BkLDxtZk.png sprite \"icon-gratin-arc\" anim \"icon\" frame 0 @(121,627)"
+   "source": "atlas-DgY08xco.png sprite \"icon-gratin-arc\" anim \"icon\" frame 0 @(364,622)"
   },
   "gravy-flood": {
    "file": "weapon/gravy-flood.png",
@@ -430,7 +430,7 @@
    "nativeW": 15,
    "nativeH": 16,
    "scale": 4,
-   "source": "atlas-BkLDxtZk.png sprite \"icon-gravy-flood\" anim \"icon\" frame 0 @(156,627)"
+   "source": "atlas-DgY08xco.png sprite \"icon-gravy-flood\" anim \"icon\" frame 0 @(399,622)"
   },
   "hash-bulwark": {
    "file": "weapon/hash-bulwark.png",
@@ -439,7 +439,7 @@
    "nativeW": 16,
    "nativeH": 15,
    "scale": 4,
-   "source": "atlas-BkLDxtZk.png sprite \"icon-hash-bulwark\" anim \"icon\" frame 0 @(225,627)"
+   "source": "atlas-DgY08xco.png sprite \"icon-hash-bulwark\" anim \"icon\" frame 0 @(486,622)"
   },
   "hashnado": {
    "file": "weapon/hashnado.png",
@@ -448,7 +448,7 @@
    "nativeW": 15,
    "nativeH": 15,
    "scale": 4,
-   "source": "atlas-BkLDxtZk.png sprite \"icon-hashnado\" anim \"icon\" frame 0 @(243,627)"
+   "source": "atlas-DgY08xco.png sprite \"icon-hashnado\" anim \"icon\" frame 0 @(504,622)"
   },
   "inferno-basket": {
    "file": "weapon/inferno-basket.png",
@@ -457,7 +457,7 @@
    "nativeW": 16,
    "nativeH": 15,
    "scale": 4,
-   "source": "atlas-BkLDxtZk.png sprite \"icon-inferno-basket\" anim \"icon\" frame 0 @(343,627)"
+   "source": "atlas-DgY08xco.png sprite \"icon-inferno-basket\" anim \"icon\" frame 0 @(604,622)"
   },
   "kettle-cyclone": {
    "file": "weapon/kettle-cyclone.png",
@@ -466,7 +466,7 @@
    "nativeW": 16,
    "nativeH": 16,
    "scale": 4,
-   "source": "atlas-BkLDxtZk.png sprite \"icon-kettle-cyclone\" anim \"icon\" frame 0 @(396,627)"
+   "source": "atlas-DgY08xco.png sprite \"icon-kettle-cyclone\" anim \"icon\" frame 0 @(657,622)"
   },
   "landmine-harvest": {
    "file": "weapon/landmine-harvest.png",
@@ -475,7 +475,7 @@
    "nativeW": 16,
    "nativeH": 14,
    "scale": 4,
-   "source": "atlas-BkLDxtZk.png sprite \"icon-landmine-harvest\" anim \"icon\" frame 0 @(432,627)"
+   "source": "atlas-DgY08xco.png sprite \"icon-landmine-harvest\" anim \"icon\" frame 0 @(693,622)"
   },
   "loaded-dice": {
    "file": "weapon/loaded-dice.png",
@@ -484,7 +484,7 @@
    "nativeW": 16,
    "nativeH": 14,
    "scale": 4,
-   "source": "atlas-BkLDxtZk.png sprite \"icon-loaded-dice\" anim \"icon\" frame 0 @(450,627)"
+   "source": "atlas-DgY08xco.png sprite \"icon-loaded-dice\" anim \"icon\" frame 0 @(711,622)"
   },
   "mandoline-fury": {
    "file": "weapon/mandoline-fury.png",
@@ -493,7 +493,7 @@
    "nativeW": 16,
    "nativeH": 16,
    "scale": 4,
-   "source": "atlas-BkLDxtZk.png sprite \"icon-mandoline-fury\" anim \"icon\" frame 0 @(501,627)"
+   "source": "atlas-DgY08xco.png sprite \"icon-mandoline-fury\" anim \"icon\" frame 0 @(762,622)"
   },
   "mashquake": {
    "file": "weapon/mashquake.png",
@@ -502,7 +502,7 @@
    "nativeW": 16,
    "nativeH": 16,
    "scale": 4,
-   "source": "atlas-BkLDxtZk.png sprite \"icon-mashquake\" anim \"icon\" frame 0 @(553,627)"
+   "source": "atlas-DgY08xco.png sprite \"icon-mashquake\" anim \"icon\" frame 0 @(814,622)"
   },
   "moon-cleaver": {
    "file": "weapon/moon-cleaver.png",
@@ -511,7 +511,7 @@
    "nativeW": 16,
    "nativeH": 13,
    "scale": 4,
-   "source": "atlas-BkLDxtZk.png sprite \"icon-moon-cleaver\" anim \"icon\" frame 0 @(605,627)"
+   "source": "atlas-DgY08xco.png sprite \"icon-moon-cleaver\" anim \"icon\" frame 0 @(866,622)"
   },
   "overgrowth": {
    "file": "weapon/overgrowth.png",
@@ -520,7 +520,7 @@
    "nativeW": 15,
    "nativeH": 14,
    "scale": 4,
-   "source": "atlas-BkLDxtZk.png sprite \"icon-overgrowth\" anim \"icon\" frame 0 @(623,627)"
+   "source": "atlas-DgY08xco.png sprite \"icon-overgrowth\" anim \"icon\" frame 0 @(884,622)"
   },
   "permafrost-fries": {
    "file": "weapon/permafrost-fries.png",
@@ -529,7 +529,7 @@
    "nativeW": 16,
    "nativeH": 14,
    "scale": 4,
-   "source": "atlas-BkLDxtZk.png sprite \"icon-permafrost-fries\" anim \"icon\" frame 0 @(668,627)"
+   "source": "atlas-DgY08xco.png sprite \"icon-permafrost-fries\" anim \"icon\" frame 0 @(929,622)"
   },
   "pressure-cooker": {
    "file": "weapon/pressure-cooker.png",
@@ -538,7 +538,7 @@
    "nativeW": 14,
    "nativeH": 16,
    "scale": 4,
-   "source": "atlas-BkLDxtZk.png sprite \"icon-pressure-cooker\" anim \"icon\" frame 0 @(788,627)"
+   "source": "atlas-DgY08xco.png sprite \"icon-pressure-cooker\" anim \"icon\" frame 0 @(36,640)"
   },
   "railfry": {
    "file": "weapon/railfry.png",
@@ -547,7 +547,7 @@
    "nativeW": 16,
    "nativeH": 15,
    "scale": 4,
-   "source": "atlas-BkLDxtZk.png sprite \"icon-railfry\" anim \"icon\" frame 0 @(804,627)"
+   "source": "atlas-DgY08xco.png sprite \"icon-railfry\" anim \"icon\" frame 0 @(52,640)"
   },
   "rosti-storm": {
    "file": "weapon/rosti-storm.png",
@@ -556,7 +556,7 @@
    "nativeW": 16,
    "nativeH": 16,
    "scale": 4,
-   "source": "atlas-BkLDxtZk.png sprite \"icon-rosti-storm\" anim \"icon\" frame 0 @(909,627)"
+   "source": "atlas-DgY08xco.png sprite \"icon-rosti-storm\" anim \"icon\" frame 0 @(157,640)"
   },
   "sack-of-russets": {
    "file": "weapon/sack-of-russets.png",
@@ -565,7 +565,7 @@
    "nativeW": 15,
    "nativeH": 14,
    "scale": 4,
-   "source": "atlas-BkLDxtZk.png sprite \"icon-sack-of-russets\" anim \"icon\" frame 0 @(943,627)"
+   "source": "atlas-DgY08xco.png sprite \"icon-sack-of-russets\" anim \"icon\" frame 0 @(191,640)"
   },
   "salt-flats": {
    "file": "weapon/salt-flats.png",
@@ -574,7 +574,7 @@
    "nativeW": 16,
    "nativeH": 14,
    "scale": 4,
-   "source": "atlas-BkLDxtZk.png sprite \"icon-salt-flats\" anim \"icon\" frame 0 @(977,627)"
+   "source": "atlas-DgY08xco.png sprite \"icon-salt-flats\" anim \"icon\" frame 0 @(225,640)"
   },
   "spicy-hot-potato": {
    "file": "weapon/spicy-hot-potato.png",
@@ -583,7 +583,7 @@
    "nativeW": 16,
    "nativeH": 16,
    "scale": 4,
-   "source": "atlas-BkLDxtZk.png sprite \"icon-spicy-hot-potato\" anim \"icon\" frame 0 @(139,645)"
+   "source": "atlas-DgY08xco.png sprite \"icon-spicy-hot-potato\" anim \"icon\" frame 0 @(398,640)"
   },
   "spud-grid": {
    "file": "weapon/spud-grid.png",
@@ -592,7 +592,7 @@
    "nativeW": 13,
    "nativeH": 15,
    "scale": 4,
-   "source": "atlas-BkLDxtZk.png sprite \"icon-spud-grid\" anim \"icon\" frame 0 @(242,645)"
+   "source": "atlas-DgY08xco.png sprite \"icon-spud-grid\" anim \"icon\" frame 0 @(501,640)"
   },
   "spudzooka": {
    "file": "weapon/spudzooka.png",
@@ -601,7 +601,7 @@
    "nativeW": 16,
    "nativeH": 16,
    "scale": 4,
-   "source": "atlas-BkLDxtZk.png sprite \"icon-spudzooka\" anim \"icon\" frame 0 @(309,645)"
+   "source": "atlas-DgY08xco.png sprite \"icon-spudzooka\" anim \"icon\" frame 0 @(568,640)"
   },
   "stand-mixer": {
    "file": "weapon/stand-mixer.png",
@@ -610,7 +610,7 @@
    "nativeW": 16,
    "nativeH": 16,
    "scale": 4,
-   "source": "atlas-BkLDxtZk.png sprite \"icon-stand-mixer\" anim \"icon\" frame 0 @(327,645)"
+   "source": "atlas-DgY08xco.png sprite \"icon-stand-mixer\" anim \"icon\" frame 0 @(586,640)"
   },
   "taproot-eruption": {
    "file": "weapon/taproot-eruption.png",
@@ -619,7 +619,7 @@
    "nativeW": 16,
    "nativeH": 14,
    "scale": 4,
-   "source": "atlas-BkLDxtZk.png sprite \"icon-taproot-eruption\" anim \"icon\" frame 0 @(474,645)"
+   "source": "atlas-DgY08xco.png sprite \"icon-taproot-eruption\" anim \"icon\" frame 0 @(733,640)"
   },
   "thousand-fries": {
    "file": "weapon/thousand-fries.png",
@@ -628,7 +628,7 @@
    "nativeW": 16,
    "nativeH": 16,
    "scale": 4,
-   "source": "atlas-BkLDxtZk.png sprite \"icon-thousand-fries\" anim \"icon\" frame 0 @(576,645)"
+   "source": "atlas-DgY08xco.png sprite \"icon-thousand-fries\" anim \"icon\" frame 0 @(835,640)"
   },
   "thunder-tuber": {
    "file": "weapon/thunder-tuber.png",
@@ -637,7 +637,7 @@
    "nativeW": 15,
    "nativeH": 15,
    "scale": 4,
-   "source": "atlas-BkLDxtZk.png sprite \"icon-thunder-tuber\" anim \"icon\" frame 0 @(594,645)"
+   "source": "atlas-DgY08xco.png sprite \"icon-thunder-tuber\" anim \"icon\" frame 0 @(853,640)"
   },
   "tot-gatling": {
    "file": "weapon/tot-gatling.png",
@@ -646,7 +646,7 @@
    "nativeW": 16,
    "nativeH": 16,
    "scale": 4,
-   "source": "atlas-BkLDxtZk.png sprite \"icon-tot-gatling\" anim \"icon\" frame 0 @(625,645)"
+   "source": "atlas-DgY08xco.png sprite \"icon-tot-gatling\" anim \"icon\" frame 0 @(884,640)"
   },
   "waffle-cut": {
    "file": "weapon/waffle-cut.png",
@@ -655,7 +655,7 @@
    "nativeW": 14,
    "nativeH": 16,
    "scale": 4,
-   "source": "atlas-BkLDxtZk.png sprite \"icon-waffle-cut\" anim \"icon\" frame 0 @(679,645)"
+   "source": "atlas-DgY08xco.png sprite \"icon-waffle-cut\" anim \"icon\" frame 0 @(938,640)"
   },
   "baked-alaska": {
    "file": "weapon/baked-alaska.png",
@@ -664,7 +664,7 @@
    "nativeW": 15,
    "nativeH": 16,
    "scale": 4,
-   "source": "atlas-BkLDxtZk.png sprite \"icon-baked-alaska\" anim \"icon\" frame 0 @(324,603)"
+   "source": "atlas-DgY08xco.png sprite \"icon-baked-alaska\" anim \"icon\" frame 0 @(571,591)"
   },
   "fry-brigade": {
    "file": "weapon/fry-brigade.png",
@@ -673,7 +673,16 @@
    "nativeW": 12,
    "nativeH": 15,
    "scale": 4,
-   "source": "atlas-BkLDxtZk.png sprite \"icon-fry-brigade\" anim \"icon\" frame 0 @(853,603)"
+   "source": "atlas-DgY08xco.png sprite \"icon-fry-brigade\" anim \"icon\" frame 0 @(79,622)"
+  },
+  "griddle-guard": {
+   "file": "weapon/griddle-guard.png",
+   "w": 64,
+   "h": 56,
+   "nativeW": 16,
+   "nativeH": 14,
+   "scale": 4,
+   "source": "atlas-DgY08xco.png sprite \"icon-griddle-guard\" anim \"icon\" frame 0 @(434,622)"
   },
   "knife-block": {
    "file": "weapon/knife-block.png",
@@ -682,7 +691,7 @@
    "nativeW": 16,
    "nativeH": 16,
    "scale": 4,
-   "source": "atlas-BkLDxtZk.png sprite \"icon-knife-block\" anim \"icon\" frame 0 @(414,627)"
+   "source": "atlas-DgY08xco.png sprite \"icon-knife-block\" anim \"icon\" frame 0 @(675,622)"
   },
   "spud-artillery": {
    "file": "weapon/spud-artillery.png",
@@ -691,7 +700,7 @@
    "nativeW": 15,
    "nativeH": 16,
    "scale": 4,
-   "source": "atlas-BkLDxtZk.png sprite \"icon-spud-artillery\" anim \"icon\" frame 0 @(191,645)"
+   "source": "atlas-DgY08xco.png sprite \"icon-spud-artillery\" anim \"icon\" frame 0 @(450,640)"
   },
   "starch-supercell": {
    "file": "weapon/starch-supercell.png",
@@ -700,7 +709,7 @@
    "nativeW": 14,
    "nativeH": 15,
    "scale": 4,
-   "source": "atlas-BkLDxtZk.png sprite \"icon-starch-supercell\" anim \"icon\" frame 0 @(404,645)"
+   "source": "atlas-DgY08xco.png sprite \"icon-starch-supercell\" anim \"icon\" frame 0 @(663,640)"
   },
   "gem-sling": {
    "file": "weapon/gem-sling.png",
@@ -709,7 +718,7 @@
    "nativeW": 13,
    "nativeH": 15,
    "scale": 4,
-   "source": "flagged-atlas-DgLzcb8N.png sprite \"icon-gem-sling\" anim \"icon\" frame 0 @(55,356)"
+   "source": "flagged-atlas-BulrTGLN.png sprite \"icon-gem-sling\" anim \"icon\" frame 0 @(55,419)"
   },
   "hot-streak": {
    "file": "weapon/hot-streak.png",
@@ -718,7 +727,7 @@
    "nativeW": 16,
    "nativeH": 15,
    "scale": 4,
-   "source": "flagged-atlas-DgLzcb8N.png sprite \"icon-hot-streak\" anim \"icon\" frame 0 @(70,356)"
+   "source": "flagged-atlas-BulrTGLN.png sprite \"icon-hot-streak\" anim \"icon\" frame 0 @(88,419)"
   },
   "locked-gatling": {
    "file": "weapon/locked-gatling.png",
@@ -727,7 +736,7 @@
    "nativeW": 16,
    "nativeH": 13,
    "scale": 4,
-   "source": "flagged-atlas-DgLzcb8N.png sprite \"icon-locked-gatling\" anim \"icon\" frame 0 @(88,356)"
+   "source": "flagged-atlas-BulrTGLN.png sprite \"icon-locked-gatling\" anim \"icon\" frame 0 @(106,419)"
   },
   "mash-snowball": {
    "file": "weapon/mash-snowball.png",
@@ -736,7 +745,7 @@
    "nativeW": 15,
    "nativeH": 15,
    "scale": 4,
-   "source": "flagged-atlas-DgLzcb8N.png sprite \"icon-mash-snowball\" anim \"icon\" frame 0 @(124,356)"
+   "source": "flagged-atlas-BulrTGLN.png sprite \"icon-mash-snowball\" anim \"icon\" frame 0 @(142,419)"
   },
   "seed-potato": {
    "file": "weapon/seed-potato.png",
@@ -745,7 +754,7 @@
    "nativeW": 13,
    "nativeH": 16,
    "scale": 4,
-   "source": "flagged-atlas-DgLzcb8N.png sprite \"icon-seed-potato\" anim \"icon\" frame 0 @(159,356)"
+   "source": "flagged-atlas-BulrTGLN.png sprite \"icon-seed-potato\" anim \"icon\" frame 0 @(177,419)"
   },
   "spud-fence": {
    "file": "weapon/spud-fence.png",
@@ -754,7 +763,7 @@
    "nativeW": 16,
    "nativeH": 14,
    "scale": 4,
-   "source": "flagged-atlas-DgLzcb8N.png sprite \"icon-spud-fence\" anim \"icon\" frame 0 @(192,356)"
+   "source": "flagged-atlas-BulrTGLN.png sprite \"icon-spud-fence\" anim \"icon\" frame 0 @(210,419)"
   },
   "tailgate-fries": {
    "file": "weapon/tailgate-fries.png",
@@ -763,7 +772,7 @@
    "nativeW": 16,
    "nativeH": 15,
    "scale": 4,
-   "source": "flagged-atlas-DgLzcb8N.png sprite \"icon-tailgate-fries\" anim \"icon\" frame 0 @(210,356)"
+   "source": "flagged-atlas-BulrTGLN.png sprite \"icon-tailgate-fries\" anim \"icon\" frame 0 @(228,419)"
   },
   "tater-twirl": {
    "file": "weapon/tater-twirl.png",
@@ -772,7 +781,7 @@
    "nativeW": 16,
    "nativeH": 16,
    "scale": 4,
-   "source": "flagged-atlas-DgLzcb8N.png sprite \"icon-tater-twirl\" anim \"icon\" frame 0 @(264,356)"
+   "source": "flagged-atlas-BulrTGLN.png sprite \"icon-tater-twirl\" anim \"icon\" frame 0 @(282,419)"
   },
   "tot-stampede": {
    "file": "weapon/tot-stampede.png",
@@ -781,7 +790,7 @@
    "nativeW": 16,
    "nativeH": 13,
    "scale": 4,
-   "source": "flagged-atlas-DgLzcb8N.png sprite \"icon-tot-stampede\" anim \"icon\" frame 0 @(336,356)"
+   "source": "flagged-atlas-BulrTGLN.png sprite \"icon-tot-stampede\" anim \"icon\" frame 0 @(354,419)"
   },
   "gem-catapult": {
    "file": "weapon/gem-catapult.png",
@@ -790,7 +799,7 @@
    "nativeW": 14,
    "nativeH": 16,
    "scale": 4,
-   "source": "flagged-atlas-DgLzcb8N.png sprite \"icon-gem-catapult\" anim \"icon\" frame 0 @(39,356)"
+   "source": "flagged-atlas-BulrTGLN.png sprite \"icon-gem-catapult\" anim \"icon\" frame 0 @(39,419)"
   },
   "mash-avalanche": {
    "file": "weapon/mash-avalanche.png",
@@ -799,7 +808,7 @@
    "nativeW": 16,
    "nativeH": 16,
    "scale": 4,
-   "source": "flagged-atlas-DgLzcb8N.png sprite \"icon-mash-avalanche\" anim \"icon\" frame 0 @(106,356)"
+   "source": "flagged-atlas-BulrTGLN.png sprite \"icon-mash-avalanche\" anim \"icon\" frame 0 @(124,419)"
   },
   "potato-patch": {
    "file": "weapon/potato-patch.png",
@@ -808,7 +817,7 @@
    "nativeW": 16,
    "nativeH": 16,
    "scale": 4,
-   "source": "flagged-atlas-DgLzcb8N.png sprite \"icon-potato-patch\" anim \"icon\" frame 0 @(141,356)"
+   "source": "flagged-atlas-BulrTGLN.png sprite \"icon-potato-patch\" anim \"icon\" frame 0 @(159,419)"
   },
   "spark-corral": {
    "file": "weapon/spark-corral.png",
@@ -817,7 +826,7 @@
    "nativeW": 16,
    "nativeH": 14,
    "scale": 4,
-   "source": "flagged-atlas-DgLzcb8N.png sprite \"icon-spark-corral\" anim \"icon\" frame 0 @(174,356)"
+   "source": "flagged-atlas-BulrTGLN.png sprite \"icon-spark-corral\" anim \"icon\" frame 0 @(192,419)"
   },
   "tailgate-party": {
    "file": "weapon/tailgate-party.png",
@@ -826,7 +835,7 @@
    "nativeW": 16,
    "nativeH": 16,
    "scale": 4,
-   "source": "flagged-atlas-DgLzcb8N.png sprite \"icon-tailgate-party\" anim \"icon\" frame 0 @(228,356)"
+   "source": "flagged-atlas-BulrTGLN.png sprite \"icon-tailgate-party\" anim \"icon\" frame 0 @(246,419)"
   },
   "tater-minigun": {
    "file": "weapon/tater-minigun.png",
@@ -835,7 +844,7 @@
    "nativeW": 16,
    "nativeH": 12,
    "scale": 4,
-   "source": "flagged-atlas-DgLzcb8N.png sprite \"icon-tater-minigun\" anim \"icon\" frame 0 @(246,356)"
+   "source": "flagged-atlas-BulrTGLN.png sprite \"icon-tater-minigun\" anim \"icon\" frame 0 @(264,419)"
   },
   "tater-twister": {
    "file": "weapon/tater-twister.png",
@@ -844,7 +853,7 @@
    "nativeW": 16,
    "nativeH": 15,
    "scale": 4,
-   "source": "flagged-atlas-DgLzcb8N.png sprite \"icon-tater-twister\" anim \"icon\" frame 0 @(282,356)"
+   "source": "flagged-atlas-BulrTGLN.png sprite \"icon-tater-twister\" anim \"icon\" frame 0 @(300,419)"
   },
   "tot-cavalry": {
    "file": "weapon/tot-cavalry.png",
@@ -853,7 +862,7 @@
    "nativeW": 16,
    "nativeH": 15,
    "scale": 4,
-   "source": "flagged-atlas-DgLzcb8N.png sprite \"icon-tot-cavalry\" anim \"icon\" frame 0 @(318,356)"
+   "source": "flagged-atlas-BulrTGLN.png sprite \"icon-tot-cavalry\" anim \"icon\" frame 0 @(336,419)"
   },
   "wildfire-roast": {
    "file": "weapon/wildfire-roast.png",
@@ -862,7 +871,16 @@
    "nativeW": 16,
    "nativeH": 14,
    "scale": 4,
-   "source": "flagged-atlas-DgLzcb8N.png sprite \"icon-wildfire-roast\" anim \"icon\" frame 0 @(354,356)"
+   "source": "flagged-atlas-BulrTGLN.png sprite \"icon-wildfire-roast\" anim \"icon\" frame 0 @(372,419)"
+  },
+  "hash-carousel": {
+   "file": "weapon/hash-carousel.png",
+   "w": 64,
+   "h": 56,
+   "nativeW": 16,
+   "nativeH": 14,
+   "scale": 4,
+   "source": "flagged-atlas-BulrTGLN.png sprite \"icon-hash-carousel\" anim \"icon\" frame 0 @(70,419)"
   },
   "tot-barrage": {
    "file": "weapon/tot-barrage.png",
@@ -871,7 +889,7 @@
    "nativeW": 16,
    "nativeH": 16,
    "scale": 4,
-   "source": "flagged-atlas-DgLzcb8N.png sprite \"icon-tot-barrage\" anim \"icon\" frame 0 @(300,356)"
+   "source": "flagged-atlas-BulrTGLN.png sprite \"icon-tot-barrage\" anim \"icon\" frame 0 @(318,419)"
   },
   "afterburner-fries": {
    "file": "weapon/afterburner-fries.png",
@@ -880,7 +898,7 @@
    "nativeW": 16,
    "nativeH": 15,
    "scale": 4,
-   "source": "flagged-atlas-DorBW8yb.png sprite \"icon-afterburner-fries\" anim \"icon\" frame 0 @(264,4040)"
+   "source": "flagged-atlas-BTyuPV8f.png sprite \"icon-afterburner-fries\" anim \"icon\" frame 0 @(264,4040)"
   },
   "broadside": {
    "file": "weapon/broadside.png",
@@ -889,7 +907,7 @@
    "nativeW": 16,
    "nativeH": 14,
    "scale": 4,
-   "source": "flagged-atlas-DorBW8yb.png sprite \"icon-broadside\" anim \"icon\" frame 0 @(282,4040)"
+   "source": "flagged-atlas-BTyuPV8f.png sprite \"icon-broadside\" anim \"icon\" frame 0 @(282,4040)"
   },
   "comet-scythe": {
    "file": "weapon/comet-scythe.png",
@@ -898,7 +916,7 @@
    "nativeW": 16,
    "nativeH": 15,
    "scale": 4,
-   "source": "flagged-atlas-DorBW8yb.png sprite \"icon-comet-scythe\" anim \"icon\" frame 0 @(317,4040)"
+   "source": "flagged-atlas-BTyuPV8f.png sprite \"icon-comet-scythe\" anim \"icon\" frame 0 @(317,4040)"
   },
   "harvest-moon": {
    "file": "weapon/harvest-moon.png",
@@ -907,7 +925,7 @@
    "nativeW": 14,
    "nativeH": 16,
    "scale": 4,
-   "source": "flagged-atlas-DorBW8yb.png sprite \"icon-harvest-moon\" anim \"icon\" frame 0 @(351,4040)"
+   "source": "flagged-atlas-BTyuPV8f.png sprite \"icon-harvest-moon\" anim \"icon\" frame 0 @(369,4040)"
   },
   "hash-hawk": {
    "file": "weapon/hash-hawk.png",
@@ -916,7 +934,7 @@
    "nativeW": 16,
    "nativeH": 15,
    "scale": 4,
-   "source": "flagged-atlas-DorBW8yb.png sprite \"icon-hash-hawk\" anim \"icon\" frame 0 @(385,4040)"
+   "source": "flagged-atlas-BTyuPV8f.png sprite \"icon-hash-hawk\" anim \"icon\" frame 0 @(403,4040)"
   },
   "mash-golem": {
    "file": "weapon/mash-golem.png",
@@ -925,7 +943,7 @@
    "nativeW": 16,
    "nativeH": 16,
    "scale": 4,
-   "source": "flagged-atlas-DorBW8yb.png sprite \"icon-mash-golem\" anim \"icon\" frame 0 @(474,4040)"
+   "source": "flagged-atlas-BTyuPV8f.png sprite \"icon-mash-golem\" anim \"icon\" frame 0 @(492,4040)"
   },
   "mash-landing": {
    "file": "weapon/mash-landing.png",
@@ -934,7 +952,7 @@
    "nativeW": 16,
    "nativeH": 16,
    "scale": 4,
-   "source": "flagged-atlas-DorBW8yb.png sprite \"icon-mash-landing\" anim \"icon\" frame 0 @(492,4040)"
+   "source": "flagged-atlas-BTyuPV8f.png sprite \"icon-mash-landing\" anim \"icon\" frame 0 @(2,4058)"
   },
   "peel-phantom": {
    "file": "weapon/peel-phantom.png",
@@ -943,7 +961,7 @@
    "nativeW": 15,
    "nativeH": 16,
    "scale": 4,
-   "source": "flagged-atlas-DorBW8yb.png sprite \"icon-peel-phantom\" anim \"icon\" frame 0 @(20,4058)"
+   "source": "flagged-atlas-BTyuPV8f.png sprite \"icon-peel-phantom\" anim \"icon\" frame 0 @(38,4058)"
   },
   "skipping-cannonball": {
    "file": "weapon/skipping-cannonball.png",
@@ -952,7 +970,7 @@
    "nativeW": 16,
    "nativeH": 15,
    "scale": 4,
-   "source": "flagged-atlas-DorBW8yb.png sprite \"icon-skipping-cannonball\" anim \"icon\" frame 0 @(345,4076)"
+   "source": "flagged-atlas-BTyuPV8f.png sprite \"icon-skipping-cannonball\" anim \"icon\" frame 0 @(363,4076)"
   },
   "sprout-squad": {
    "file": "weapon/sprout-squad.png",
@@ -961,7 +979,7 @@
    "nativeW": 14,
    "nativeH": 16,
    "scale": 4,
-   "source": "flagged-atlas-DorBW8yb.png sprite \"icon-sprout-squad\" anim \"icon\" frame 0 @(363,4076)"
+   "source": "flagged-atlas-BTyuPV8f.png sprite \"icon-sprout-squad\" anim \"icon\" frame 0 @(381,4076)"
   },
   "spud-decoy": {
    "file": "weapon/spud-decoy.png",
@@ -970,7 +988,7 @@
    "nativeW": 15,
    "nativeH": 15,
    "scale": 4,
-   "source": "flagged-atlas-DorBW8yb.png sprite \"icon-spud-decoy\" anim \"icon\" frame 0 @(379,4076)"
+   "source": "flagged-atlas-BTyuPV8f.png sprite \"icon-spud-decoy\" anim \"icon\" frame 0 @(397,4076)"
   },
   "clockwork-spud": {
    "file": "weapon/clockwork-spud.png",
@@ -979,7 +997,7 @@
    "nativeW": 15,
    "nativeH": 16,
    "scale": 4,
-   "source": "flagged-atlas-DorBW8yb.png sprite \"icon-clockwork-spud\" anim \"icon\" frame 0 @(300,4040)"
+   "source": "flagged-atlas-BTyuPV8f.png sprite \"icon-clockwork-spud\" anim \"icon\" frame 0 @(300,4040)"
   },
   "eclipse-scythe": {
    "file": "weapon/eclipse-scythe.png",
@@ -988,7 +1006,16 @@
    "nativeW": 14,
    "nativeH": 14,
    "scale": 4,
-   "source": "flagged-atlas-DorBW8yb.png sprite \"icon-eclipse-scythe\" anim \"icon\" frame 0 @(335,4040)"
+   "source": "flagged-atlas-BTyuPV8f.png sprite \"icon-eclipse-scythe\" anim \"icon\" frame 0 @(335,4040)"
+  },
+  "full-broadside": {
+   "file": "weapon/full-broadside.png",
+   "w": 64,
+   "h": 64,
+   "nativeW": 16,
+   "nativeH": 16,
+   "scale": 4,
+   "source": "flagged-atlas-BTyuPV8f.png sprite \"icon-full-broadside\" anim \"icon\" frame 0 @(351,4040)"
   },
   "hash-harrier": {
    "file": "weapon/hash-harrier.png",
@@ -997,7 +1024,7 @@
    "nativeW": 16,
    "nativeH": 15,
    "scale": 4,
-   "source": "flagged-atlas-DorBW8yb.png sprite \"icon-hash-harrier\" anim \"icon\" frame 0 @(367,4040)"
+   "source": "flagged-atlas-BTyuPV8f.png sprite \"icon-hash-harrier\" anim \"icon\" frame 0 @(385,4040)"
   },
   "hunters-moon": {
    "file": "weapon/hunters-moon.png",
@@ -1006,7 +1033,7 @@
    "nativeW": 15,
    "nativeH": 16,
    "scale": 4,
-   "source": "flagged-atlas-DorBW8yb.png sprite \"icon-hunters-moon\" anim \"icon\" frame 0 @(421,4040)"
+   "source": "flagged-atlas-BTyuPV8f.png sprite \"icon-hunters-moon\" anim \"icon\" frame 0 @(439,4040)"
   },
   "jet-fryer": {
    "file": "weapon/jet-fryer.png",
@@ -1015,7 +1042,7 @@
    "nativeW": 16,
    "nativeH": 16,
    "scale": 4,
-   "source": "flagged-atlas-DorBW8yb.png sprite \"icon-jet-fryer\" anim \"icon\" frame 0 @(438,4040)"
+   "source": "flagged-atlas-BTyuPV8f.png sprite \"icon-jet-fryer\" anim \"icon\" frame 0 @(456,4040)"
   },
   "mash-colossus": {
    "file": "weapon/mash-colossus.png",
@@ -1024,7 +1051,7 @@
    "nativeW": 16,
    "nativeH": 16,
    "scale": 4,
-   "source": "flagged-atlas-DorBW8yb.png sprite \"icon-mash-colossus\" anim \"icon\" frame 0 @(456,4040)"
+   "source": "flagged-atlas-BTyuPV8f.png sprite \"icon-mash-colossus\" anim \"icon\" frame 0 @(474,4040)"
   },
   "mash-meteor": {
    "file": "weapon/mash-meteor.png",
@@ -1033,7 +1060,7 @@
    "nativeW": 16,
    "nativeH": 16,
    "scale": 4,
-   "source": "flagged-atlas-DorBW8yb.png sprite \"icon-mash-meteor\" anim \"icon\" frame 0 @(2,4058)"
+   "source": "flagged-atlas-BTyuPV8f.png sprite \"icon-mash-meteor\" anim \"icon\" frame 0 @(20,4058)"
   },
   "peel-poltergeist": {
    "file": "weapon/peel-poltergeist.png",
@@ -1042,7 +1069,7 @@
    "nativeW": 16,
    "nativeH": 16,
    "scale": 4,
-   "source": "flagged-atlas-DorBW8yb.png sprite \"icon-peel-poltergeist\" anim \"icon\" frame 0 @(37,4058)"
+   "source": "flagged-atlas-BTyuPV8f.png sprite \"icon-peel-poltergeist\" anim \"icon\" frame 0 @(55,4058)"
   },
   "root-legion": {
    "file": "weapon/root-legion.png",
@@ -1051,7 +1078,7 @@
    "nativeW": 16,
    "nativeH": 16,
    "scale": 4,
-   "source": "flagged-atlas-DorBW8yb.png sprite \"icon-root-legion\" anim \"icon\" frame 0 @(309,4076)"
+   "source": "flagged-atlas-BTyuPV8f.png sprite \"icon-root-legion\" anim \"icon\" frame 0 @(327,4076)"
   },
   "russet-ricochet": {
    "file": "weapon/russet-ricochet.png",
@@ -1060,7 +1087,7 @@
    "nativeW": 16,
    "nativeH": 16,
    "scale": 4,
-   "source": "flagged-atlas-DorBW8yb.png sprite \"icon-russet-ricochet\" anim \"icon\" frame 0 @(327,4076)"
+   "source": "flagged-atlas-BTyuPV8f.png sprite \"icon-russet-ricochet\" anim \"icon\" frame 0 @(345,4076)"
   },
   "gravy-pack": {
    "file": "weapon/gravy-pack.png",
@@ -1080,7 +1107,7 @@
    "nativeW": 16,
    "nativeH": 14,
    "scale": 4,
-   "source": "atlas-BkLDxtZk.png sprite \"icon-bacon-bits\" anim \"icon\" frame 0 @(306,603)"
+   "source": "atlas-DgY08xco.png sprite \"icon-bacon-bits\" anim \"icon\" frame 0 @(553,591)"
   },
   "big-bowl": {
    "file": "passive/big-bowl.png",
@@ -1089,7 +1116,7 @@
    "nativeW": 16,
    "nativeH": 13,
    "scale": 4,
-   "source": "atlas-BkLDxtZk.png sprite \"icon-big-bowl\" anim \"icon\" frame 0 @(359,603)"
+   "source": "atlas-DgY08xco.png sprite \"icon-big-bowl\" anim \"icon\" frame 0 @(606,591)"
   },
   "butter-pat": {
    "file": "passive/butter-pat.png",
@@ -1098,7 +1125,7 @@
    "nativeW": 16,
    "nativeH": 12,
    "scale": 4,
-   "source": "atlas-BkLDxtZk.png sprite \"icon-butter-pat\" anim \"icon\" frame 0 @(466,603)"
+   "source": "atlas-DgY08xco.png sprite \"icon-butter-pat\" anim \"icon\" frame 0 @(713,591)"
   },
   "butter-socks": {
    "file": "passive/butter-socks.png",
@@ -1107,7 +1134,7 @@
    "nativeW": 15,
    "nativeH": 16,
    "scale": 4,
-   "source": "atlas-BkLDxtZk.png sprite \"icon-butter-socks\" anim \"icon\" frame 0 @(484,603)"
+   "source": "atlas-DgY08xco.png sprite \"icon-butter-socks\" anim \"icon\" frame 0 @(731,591)"
   },
   "chives": {
    "file": "passive/chives.png",
@@ -1116,7 +1143,7 @@
    "nativeW": 12,
    "nativeH": 15,
    "scale": 4,
-   "source": "atlas-BkLDxtZk.png sprite \"icon-chives\" anim \"icon\" frame 0 @(571,603)"
+   "source": "atlas-DgY08xco.png sprite \"icon-chives\" anim \"icon\" frame 0 @(818,591)"
   },
   "fertilizer": {
    "file": "passive/fertilizer.png",
@@ -1125,7 +1152,7 @@
    "nativeW": 16,
    "nativeH": 16,
    "scale": 4,
-   "source": "atlas-BkLDxtZk.png sprite \"icon-fertilizer\" anim \"icon\" frame 0 @(776,603)"
+   "source": "atlas-DgY08xco.png sprite \"icon-fertilizer\" anim \"icon\" frame 0 @(2,622)"
   },
   "four-eyed-spud": {
    "file": "passive/four-eyed-spud.png",
@@ -1134,7 +1161,7 @@
    "nativeW": 14,
    "nativeH": 13,
    "scale": 4,
-   "source": "atlas-BkLDxtZk.png sprite \"icon-four-eyed-spud\" anim \"icon\" frame 0 @(794,603)"
+   "source": "atlas-DgY08xco.png sprite \"icon-four-eyed-spud\" anim \"icon\" frame 0 @(20,622)"
   },
   "golden-fry": {
    "file": "passive/golden-fry.png",
@@ -1143,7 +1170,7 @@
    "nativeW": 14,
    "nativeH": 14,
    "scale": 4,
-   "source": "atlas-BkLDxtZk.png sprite \"icon-golden-fry\" anim \"icon\" frame 0 @(36,627)"
+   "source": "atlas-DgY08xco.png sprite \"icon-golden-fry\" anim \"icon\" frame 0 @(279,622)"
   },
   "gpu": {
    "file": "passive/gpu.png",
@@ -1152,7 +1179,7 @@
    "nativeW": 16,
    "nativeH": 11,
    "scale": 4,
-   "source": "atlas-BkLDxtZk.png sprite \"icon-gpu\" anim \"icon\" frame 0 @(88,627)"
+   "source": "atlas-DgY08xco.png sprite \"icon-gpu\" anim \"icon\" frame 0 @(331,622)"
   },
   "gravy-heart": {
    "file": "passive/gravy-heart.png",
@@ -1161,7 +1188,7 @@
    "nativeW": 16,
    "nativeH": 12,
    "scale": 4,
-   "source": "atlas-BkLDxtZk.png sprite \"icon-gravy-heart\" anim \"icon\" frame 0 @(173,627)"
+   "source": "atlas-DgY08xco.png sprite \"icon-gravy-heart\" anim \"icon\" frame 0 @(416,622)"
   },
   "hot-sauce": {
    "file": "passive/hot-sauce.png",
@@ -1170,7 +1197,7 @@
    "nativeW": 12,
    "nativeH": 15,
    "scale": 4,
-   "source": "atlas-BkLDxtZk.png sprite \"icon-hot-sauce\" anim \"icon\" frame 0 @(329,627)"
+   "source": "atlas-DgY08xco.png sprite \"icon-hot-sauce\" anim \"icon\" frame 0 @(590,622)"
   },
   "masher-grip": {
    "file": "passive/masher-grip.png",
@@ -1179,7 +1206,7 @@
    "nativeW": 14,
    "nativeH": 15,
    "scale": 4,
-   "source": "atlas-BkLDxtZk.png sprite \"icon-masher-grip\" anim \"icon\" frame 0 @(537,627)"
+   "source": "atlas-DgY08xco.png sprite \"icon-masher-grip\" anim \"icon\" frame 0 @(798,622)"
   },
   "potato-magnet": {
    "file": "passive/potato-magnet.png",
@@ -1188,7 +1215,7 @@
    "nativeW": 14,
    "nativeH": 14,
    "scale": 4,
-   "source": "atlas-BkLDxtZk.png sprite \"icon-potato-magnet\" anim \"icon\" frame 0 @(754,627)"
+   "source": "atlas-DgY08xco.png sprite \"icon-potato-magnet\" anim \"icon\" frame 0 @(2,640)"
   },
   "root-network": {
    "file": "passive/root-network.png",
@@ -1197,7 +1224,7 @@
    "nativeW": 16,
    "nativeH": 15,
    "scale": 4,
-   "source": "atlas-BkLDxtZk.png sprite \"icon-root-network\" anim \"icon\" frame 0 @(856,627)"
+   "source": "atlas-DgY08xco.png sprite \"icon-root-network\" anim \"icon\" frame 0 @(104,640)"
   },
   "rotten-spud": {
    "file": "passive/rotten-spud.png",
@@ -1206,7 +1233,7 @@
    "nativeW": 14,
    "nativeH": 15,
    "scale": 4,
-   "source": "atlas-BkLDxtZk.png sprite \"icon-rotten-spud\" anim \"icon\" frame 0 @(927,627)"
+   "source": "atlas-DgY08xco.png sprite \"icon-rotten-spud\" anim \"icon\" frame 0 @(175,640)"
   },
   "salt-shaker": {
    "file": "passive/salt-shaker.png",
@@ -1215,7 +1242,7 @@
    "nativeW": 15,
    "nativeH": 15,
    "scale": 4,
-   "source": "atlas-BkLDxtZk.png sprite \"icon-salt-shaker\" anim \"icon\" frame 0 @(2,645)"
+   "source": "atlas-DgY08xco.png sprite \"icon-salt-shaker\" anim \"icon\" frame 0 @(261,640)"
   },
   "slow-cooker": {
    "file": "passive/slow-cooker.png",
@@ -1224,7 +1251,7 @@
    "nativeW": 16,
    "nativeH": 15,
    "scale": 4,
-   "source": "atlas-BkLDxtZk.png sprite \"icon-slow-cooker\" anim \"icon\" frame 0 @(70,645)"
+   "source": "atlas-DgY08xco.png sprite \"icon-slow-cooker\" anim \"icon\" frame 0 @(329,640)"
   },
   "sour-cream": {
    "file": "passive/sour-cream.png",
@@ -1233,7 +1260,7 @@
    "nativeW": 14,
    "nativeH": 15,
    "scale": 4,
-   "source": "atlas-BkLDxtZk.png sprite \"icon-sour-cream\" anim \"icon\" frame 0 @(105,645)"
+   "source": "atlas-DgY08xco.png sprite \"icon-sour-cream\" anim \"icon\" frame 0 @(364,640)"
   },
   "sprouting-eyes": {
    "file": "passive/sprouting-eyes.png",
@@ -1242,7 +1269,7 @@
    "nativeW": 14,
    "nativeH": 16,
    "scale": 4,
-   "source": "atlas-BkLDxtZk.png sprite \"icon-sprouting-eyes\" anim \"icon\" frame 0 @(175,645)"
+   "source": "atlas-DgY08xco.png sprite \"icon-sprouting-eyes\" anim \"icon\" frame 0 @(434,640)"
   },
   "spud-sneakers": {
    "file": "passive/spud-sneakers.png",
@@ -1251,7 +1278,7 @@
    "nativeW": 16,
    "nativeH": 10,
    "scale": 4,
-   "source": "atlas-BkLDxtZk.png sprite \"icon-spud-sneakers\" anim \"icon\" frame 0 @(291,645)"
+   "source": "atlas-DgY08xco.png sprite \"icon-spud-sneakers\" anim \"icon\" frame 0 @(550,640)"
   },
   "starch-plating": {
    "file": "passive/starch-plating.png",
@@ -1260,7 +1287,7 @@
    "nativeW": 12,
    "nativeH": 13,
    "scale": 4,
-   "source": "atlas-BkLDxtZk.png sprite \"icon-starch-plating\" anim \"icon\" frame 0 @(377,645)"
+   "source": "atlas-DgY08xco.png sprite \"icon-starch-plating\" anim \"icon\" frame 0 @(636,640)"
   },
   "thick-skin": {
    "file": "passive/thick-skin.png",
@@ -1269,7 +1296,7 @@
    "nativeW": 16,
    "nativeH": 13,
    "scale": 4,
-   "source": "atlas-BkLDxtZk.png sprite \"icon-thick-skin\" anim \"icon\" frame 0 @(540,645)"
+   "source": "atlas-DgY08xco.png sprite \"icon-thick-skin\" anim \"icon\" frame 0 @(799,640)"
   },
   "hot-start": {
    "file": "passive/hot-start.png",
@@ -1278,7 +1305,7 @@
    "nativeW": 16,
    "nativeH": 12,
    "scale": 4,
-   "source": "flagged-atlas-DorBW8yb.png sprite \"icon-hot-start\" anim \"icon\" frame 0 @(403,4040)"
+   "source": "flagged-atlas-BTyuPV8f.png sprite \"icon-hot-start\" anim \"icon\" frame 0 @(421,4040)"
   },
   "couch-potato": {
    "file": "passive/couch-potato.png",
@@ -1388,7 +1415,7 @@
    "nativeW": 16,
    "nativeH": 16,
    "scale": 4,
-   "source": "atlas-BkLDxtZk.png sprite \"icon-baked-buckler\" anim \"icon\" frame 0 @(341,603)"
+   "source": "atlas-DgY08xco.png sprite \"icon-baked-buckler\" anim \"icon\" frame 0 @(588,591)"
   },
   "boom-spud": {
    "file": "item/boom-spud.png",
@@ -1397,7 +1424,7 @@
    "nativeW": 16,
    "nativeH": 16,
    "scale": 4,
-   "source": "atlas-BkLDxtZk.png sprite \"icon-boom-spud\" anim \"icon\" frame 0 @(413,603)"
+   "source": "atlas-DgY08xco.png sprite \"icon-boom-spud\" anim \"icon\" frame 0 @(660,591)"
   },
   "boss-buster": {
    "file": "item/boss-buster.png",
@@ -1406,7 +1433,7 @@
    "nativeW": 16,
    "nativeH": 15,
    "scale": 4,
-   "source": "atlas-BkLDxtZk.png sprite \"icon-boss-buster\" anim \"icon\" frame 0 @(431,603)"
+   "source": "atlas-DgY08xco.png sprite \"icon-boss-buster\" anim \"icon\" frame 0 @(678,591)"
   },
   "chive-charm": {
    "file": "item/chive-charm.png",
@@ -1415,7 +1442,7 @@
    "nativeW": 14,
    "nativeH": 15,
    "scale": 4,
-   "source": "atlas-BkLDxtZk.png sprite \"icon-chive-charm\" anim \"icon\" frame 0 @(555,603)"
+   "source": "atlas-DgY08xco.png sprite \"icon-chive-charm\" anim \"icon\" frame 0 @(802,591)"
   },
   "coal-baked-spud": {
    "file": "item/coal-baked-spud.png",
@@ -1424,7 +1451,7 @@
    "nativeW": 16,
    "nativeH": 14,
    "scale": 4,
-   "source": "atlas-BkLDxtZk.png sprite \"icon-coal-baked-spud\" anim \"icon\" frame 0 @(585,603)"
+   "source": "atlas-DgY08xco.png sprite \"icon-coal-baked-spud\" anim \"icon\" frame 0 @(832,591)"
   },
   "compost-tea": {
    "file": "item/compost-tea.png",
@@ -1433,7 +1460,7 @@
    "nativeW": 15,
    "nativeH": 13,
    "scale": 4,
-   "source": "atlas-BkLDxtZk.png sprite \"icon-compost-tea\" anim \"icon\" frame 0 @(620,603)"
+   "source": "atlas-DgY08xco.png sprite \"icon-compost-tea\" anim \"icon\" frame 0 @(867,591)"
   },
   "copper-spoon": {
    "file": "item/copper-spoon.png",
@@ -1442,7 +1469,7 @@
    "nativeW": 14,
    "nativeH": 13,
    "scale": 4,
-   "source": "atlas-BkLDxtZk.png sprite \"icon-copper-spoon\" anim \"icon\" frame 0 @(637,603)"
+   "source": "atlas-DgY08xco.png sprite \"icon-copper-spoon\" anim \"icon\" frame 0 @(884,591)"
   },
   "coupon-book": {
    "file": "item/coupon-book.png",
@@ -1451,7 +1478,7 @@
    "nativeW": 16,
    "nativeH": 12,
    "scale": 4,
-   "source": "atlas-BkLDxtZk.png sprite \"icon-coupon-book\" anim \"icon\" frame 0 @(653,603)"
+   "source": "atlas-DgY08xco.png sprite \"icon-coupon-book\" anim \"icon\" frame 0 @(900,591)"
   },
   "crit-chip": {
    "file": "item/crit-chip.png",
@@ -1460,7 +1487,7 @@
    "nativeW": 15,
    "nativeH": 15,
    "scale": 4,
-   "source": "atlas-BkLDxtZk.png sprite \"icon-crit-chip\" anim \"icon\" frame 0 @(671,603)"
+   "source": "atlas-DgY08xco.png sprite \"icon-crit-chip\" anim \"icon\" frame 0 @(918,591)"
   },
   "cursed-crown": {
    "file": "item/cursed-crown.png",
@@ -1469,7 +1496,7 @@
    "nativeW": 16,
    "nativeH": 16,
    "scale": 4,
-   "source": "atlas-BkLDxtZk.png sprite \"icon-cursed-crown\" anim \"icon\" frame 0 @(688,603)"
+   "source": "atlas-DgY08xco.png sprite \"icon-cursed-crown\" anim \"icon\" frame 0 @(935,591)"
   },
   "extra-eye": {
    "file": "item/extra-eye.png",
@@ -1478,7 +1505,7 @@
    "nativeW": 14,
    "nativeH": 15,
    "scale": 4,
-   "source": "atlas-BkLDxtZk.png sprite \"icon-extra-eye\" anim \"icon\" frame 0 @(742,603)"
+   "source": "atlas-DgY08xco.png sprite \"icon-extra-eye\" anim \"icon\" frame 0 @(989,591)"
   },
   "freezer-burn": {
    "file": "item/freezer-burn.png",
@@ -1487,7 +1514,7 @@
    "nativeW": 12,
    "nativeH": 15,
    "scale": 4,
-   "source": "atlas-BkLDxtZk.png sprite \"icon-freezer-burn\" anim \"icon\" frame 0 @(810,603)"
+   "source": "atlas-DgY08xco.png sprite \"icon-freezer-burn\" anim \"icon\" frame 0 @(36,622)"
   },
   "fry-box": {
    "file": "item/fry-box.png",
@@ -1496,7 +1523,7 @@
    "nativeW": 12,
    "nativeH": 14,
    "scale": 4,
-   "source": "atlas-BkLDxtZk.png sprite \"icon-fry-box\" anim \"icon\" frame 0 @(839,603)"
+   "source": "atlas-DgY08xco.png sprite \"icon-fry-box\" anim \"icon\" frame 0 @(65,622)"
   },
   "ghost-pepper": {
    "file": "item/ghost-pepper.png",
@@ -1505,7 +1532,7 @@
    "nativeW": 13,
    "nativeH": 16,
    "scale": 4,
-   "source": "atlas-BkLDxtZk.png sprite \"icon-ghost-pepper\" anim \"icon\" frame 0 @(990,603)"
+   "source": "atlas-DgY08xco.png sprite \"icon-ghost-pepper\" anim \"icon\" frame 0 @(216,622)"
   },
   "ghost-skin": {
    "file": "item/ghost-skin.png",
@@ -1514,7 +1541,7 @@
    "nativeW": 12,
    "nativeH": 14,
    "scale": 4,
-   "source": "atlas-BkLDxtZk.png sprite \"icon-ghost-skin\" anim \"icon\" frame 0 @(1005,603)"
+   "source": "atlas-DgY08xco.png sprite \"icon-ghost-skin\" anim \"icon\" frame 0 @(231,622)"
   },
   "golden-gravy": {
    "file": "item/golden-gravy.png",
@@ -1523,7 +1550,7 @@
    "nativeW": 16,
    "nativeH": 14,
    "scale": 4,
-   "source": "atlas-BkLDxtZk.png sprite \"icon-golden-gravy\" anim \"icon\" frame 0 @(52,627)"
+   "source": "atlas-DgY08xco.png sprite \"icon-golden-gravy\" anim \"icon\" frame 0 @(295,622)"
   },
   "heavy-russet": {
    "file": "item/heavy-russet.png",
@@ -1532,7 +1559,7 @@
    "nativeW": 16,
    "nativeH": 15,
    "scale": 4,
-   "source": "atlas-BkLDxtZk.png sprite \"icon-heavy-russet\" anim \"icon\" frame 0 @(278,627)"
+   "source": "atlas-DgY08xco.png sprite \"icon-heavy-russet\" anim \"icon\" frame 0 @(539,622)"
   },
   "hot-pepper": {
    "file": "item/hot-pepper.png",
@@ -1541,7 +1568,7 @@
    "nativeW": 13,
    "nativeH": 14,
    "scale": 4,
-   "source": "atlas-BkLDxtZk.png sprite \"icon-hot-pepper\" anim \"icon\" frame 0 @(296,627)"
+   "source": "atlas-DgY08xco.png sprite \"icon-hot-pepper\" anim \"icon\" frame 0 @(557,622)"
   },
   "lucky-peel": {
    "file": "item/lucky-peel.png",
@@ -1550,7 +1577,7 @@
    "nativeW": 13,
    "nativeH": 14,
    "scale": 4,
-   "source": "atlas-BkLDxtZk.png sprite \"icon-lucky-peel\" anim \"icon\" frame 0 @(468,627)"
+   "source": "atlas-DgY08xco.png sprite \"icon-lucky-peel\" anim \"icon\" frame 0 @(729,622)"
   },
   "penny-spud": {
    "file": "item/penny-spud.png",
@@ -1559,7 +1586,7 @@
    "nativeW": 14,
    "nativeH": 15,
    "scale": 4,
-   "source": "atlas-BkLDxtZk.png sprite \"icon-penny-spud\" anim \"icon\" frame 0 @(652,627)"
+   "source": "atlas-DgY08xco.png sprite \"icon-penny-spud\" anim \"icon\" frame 0 @(913,622)"
   },
   "philosophers-potato": {
    "file": "item/philosophers-potato.png",
@@ -1568,7 +1595,7 @@
    "nativeW": 16,
    "nativeH": 15,
    "scale": 4,
-   "source": "atlas-BkLDxtZk.png sprite \"icon-philosophers-potato\" anim \"icon\" frame 0 @(686,627)"
+   "source": "atlas-DgY08xco.png sprite \"icon-philosophers-potato\" anim \"icon\" frame 0 @(947,622)"
   },
   "pickle-jar": {
    "file": "item/pickle-jar.png",
@@ -1577,7 +1604,7 @@
    "nativeW": 12,
    "nativeH": 14,
    "scale": 4,
-   "source": "atlas-BkLDxtZk.png sprite \"icon-pickle-jar\" anim \"icon\" frame 0 @(704,627)"
+   "source": "atlas-DgY08xco.png sprite \"icon-pickle-jar\" anim \"icon\" frame 0 @(965,622)"
   },
   "porcupine-spud": {
    "file": "item/porcupine-spud.png",
@@ -1586,7 +1613,7 @@
    "nativeW": 16,
    "nativeH": 15,
    "scale": 4,
-   "source": "atlas-BkLDxtZk.png sprite \"icon-porcupine-spud\" anim \"icon\" frame 0 @(718,627)"
+   "source": "atlas-DgY08xco.png sprite \"icon-porcupine-spud\" anim \"icon\" frame 0 @(979,622)"
   },
   "salt-crystal": {
    "file": "item/salt-crystal.png",
@@ -1595,7 +1622,7 @@
    "nativeW": 15,
    "nativeH": 15,
    "scale": 4,
-   "source": "atlas-BkLDxtZk.png sprite \"icon-salt-crystal\" anim \"icon\" frame 0 @(960,627)"
+   "source": "atlas-DgY08xco.png sprite \"icon-salt-crystal\" anim \"icon\" frame 0 @(208,640)"
   },
   "second-spud": {
    "file": "item/second-spud.png",
@@ -1604,7 +1631,7 @@
    "nativeW": 16,
    "nativeH": 15,
    "scale": 4,
-   "source": "atlas-BkLDxtZk.png sprite \"icon-second-spud\" anim \"icon\" frame 0 @(19,645)"
+   "source": "atlas-DgY08xco.png sprite \"icon-second-spud\" anim \"icon\" frame 0 @(278,640)"
   },
   "sharp-peeler": {
    "file": "item/sharp-peeler.png",
@@ -1613,7 +1640,7 @@
    "nativeW": 16,
    "nativeH": 16,
    "scale": 4,
-   "source": "atlas-BkLDxtZk.png sprite \"icon-sharp-peeler\" anim \"icon\" frame 0 @(52,645)"
+   "source": "atlas-DgY08xco.png sprite \"icon-sharp-peeler\" anim \"icon\" frame 0 @(311,640)"
   },
   "spicy-croquette": {
    "file": "item/spicy-croquette.png",
@@ -1622,7 +1649,7 @@
    "nativeW": 16,
    "nativeH": 14,
    "scale": 4,
-   "source": "atlas-BkLDxtZk.png sprite \"icon-spicy-croquette\" anim \"icon\" frame 0 @(121,645)"
+   "source": "atlas-DgY08xco.png sprite \"icon-spicy-croquette\" anim \"icon\" frame 0 @(380,640)"
   },
   "spud-muffin": {
    "file": "item/spud-muffin.png",
@@ -1631,7 +1658,7 @@
    "nativeW": 14,
    "nativeH": 13,
    "scale": 4,
-   "source": "atlas-BkLDxtZk.png sprite \"icon-spud-muffin\" anim \"icon\" frame 0 @(275,645)"
+   "source": "atlas-DgY08xco.png sprite \"icon-spud-muffin\" anim \"icon\" frame 0 @(534,640)"
   },
   "starch-sock": {
    "file": "item/starch-sock.png",
@@ -1640,7 +1667,7 @@
    "nativeW": 11,
    "nativeH": 15,
    "scale": 4,
-   "source": "atlas-BkLDxtZk.png sprite \"icon-starch-sock\" anim \"icon\" frame 0 @(391,645)"
+   "source": "atlas-DgY08xco.png sprite \"icon-starch-sock\" anim \"icon\" frame 0 @(650,640)"
   },
   "static-tot": {
    "file": "item/static-tot.png",
@@ -1649,7 +1676,7 @@
    "nativeW": 16,
    "nativeH": 16,
    "scale": 4,
-   "source": "atlas-BkLDxtZk.png sprite \"icon-static-tot\" anim \"icon\" frame 0 @(420,645)"
+   "source": "atlas-DgY08xco.png sprite \"icon-static-tot\" anim \"icon\" frame 0 @(679,640)"
   },
   "tater-tank": {
    "file": "item/tater-tank.png",
@@ -1658,7 +1685,7 @@
    "nativeW": 14,
    "nativeH": 15,
    "scale": 4,
-   "source": "atlas-BkLDxtZk.png sprite \"icon-tater-tank\" anim \"icon\" frame 0 @(524,645)"
+   "source": "atlas-DgY08xco.png sprite \"icon-tater-tank\" anim \"icon\" frame 0 @(783,640)"
   },
   "thorny-jacket": {
    "file": "item/thorny-jacket.png",
@@ -1667,7 +1694,7 @@
    "nativeW": 16,
    "nativeH": 13,
    "scale": 4,
-   "source": "atlas-BkLDxtZk.png sprite \"icon-thorny-jacket\" anim \"icon\" frame 0 @(558,645)"
+   "source": "atlas-DgY08xco.png sprite \"icon-thorny-jacket\" anim \"icon\" frame 0 @(817,640)"
   },
   "time-tuber": {
    "file": "item/time-tuber.png",
@@ -1676,7 +1703,7 @@
    "nativeW": 12,
    "nativeH": 16,
    "scale": 4,
-   "source": "atlas-BkLDxtZk.png sprite \"icon-time-tuber\" anim \"icon\" frame 0 @(611,645)"
+   "source": "atlas-DgY08xco.png sprite \"icon-time-tuber\" anim \"icon\" frame 0 @(870,640)"
   },
   "vampire-tot": {
    "file": "item/vampire-tot.png",
@@ -1685,7 +1712,7 @@
    "nativeW": 16,
    "nativeH": 14,
    "scale": 4,
-   "source": "atlas-BkLDxtZk.png sprite \"icon-vampire-tot\" anim \"icon\" frame 0 @(661,645)"
+   "source": "atlas-DgY08xco.png sprite \"icon-vampire-tot\" anim \"icon\" frame 0 @(920,640)"
   },
   "wandering-eyes": {
    "file": "item/wandering-eyes.png",
@@ -1694,7 +1721,7 @@
    "nativeW": 15,
    "nativeH": 15,
    "scale": 4,
-   "source": "atlas-BkLDxtZk.png sprite \"icon-wandering-eyes\" anim \"icon\" frame 0 @(695,645)"
+   "source": "atlas-DgY08xco.png sprite \"icon-wandering-eyes\" anim \"icon\" frame 0 @(954,640)"
   },
   "wide-ladle": {
    "file": "item/wide-ladle.png",
@@ -1703,7 +1730,7 @@
    "nativeW": 14,
    "nativeH": 15,
    "scale": 4,
-   "source": "atlas-BkLDxtZk.png sprite \"icon-wide-ladle\" anim \"icon\" frame 0 @(730,645)"
+   "source": "atlas-DgY08xco.png sprite \"icon-wide-ladle\" anim \"icon\" frame 0 @(989,640)"
   },
   "all-seeing-spud": {
    "file": "item/all-seeing-spud.png",
@@ -1712,7 +1739,7 @@
    "nativeW": 16,
    "nativeH": 16,
    "scale": 4,
-   "source": "atlas-BkLDxtZk.png sprite \"icon-all-seeing-spud\" anim \"icon\" frame 0 @(288,603)"
+   "source": "atlas-DgY08xco.png sprite \"icon-all-seeing-spud\" anim \"icon\" frame 0 @(535,591)"
   },
   "bonfire-spud": {
    "file": "item/bonfire-spud.png",
@@ -1721,7 +1748,7 @@
    "nativeW": 16,
    "nativeH": 15,
    "scale": 4,
-   "source": "atlas-BkLDxtZk.png sprite \"icon-bonfire-spud\" anim \"icon\" frame 0 @(395,603)"
+   "source": "atlas-DgY08xco.png sprite \"icon-bonfire-spud\" anim \"icon\" frame 0 @(642,591)"
   },
   "fry-volcano": {
    "file": "item/fry-volcano.png",
@@ -1730,7 +1757,7 @@
    "nativeW": 16,
    "nativeH": 15,
    "scale": 4,
-   "source": "atlas-BkLDxtZk.png sprite \"icon-fry-volcano\" anim \"icon\" frame 0 @(936,603)"
+   "source": "atlas-DgY08xco.png sprite \"icon-fry-volcano\" anim \"icon\" frame 0 @(162,622)"
   },
   "glacier-spud": {
    "file": "item/glacier-spud.png",
@@ -1739,7 +1766,7 @@
    "nativeW": 16,
    "nativeH": 15,
    "scale": 4,
-   "source": "atlas-BkLDxtZk.png sprite \"icon-glacier-spud\" anim \"icon\" frame 0 @(2,627)"
+   "source": "atlas-DgY08xco.png sprite \"icon-glacier-spud\" anim \"icon\" frame 0 @(245,622)"
   },
   "kaboom-spud": {
    "file": "item/kaboom-spud.png",
@@ -1748,7 +1775,7 @@
    "nativeW": 16,
    "nativeH": 16,
    "scale": 4,
-   "source": "atlas-BkLDxtZk.png sprite \"icon-kaboom-spud\" anim \"icon\" frame 0 @(378,627)"
+   "source": "atlas-DgY08xco.png sprite \"icon-kaboom-spud\" anim \"icon\" frame 0 @(639,622)"
   },
   "magma-croquette": {
    "file": "item/magma-croquette.png",
@@ -1757,7 +1784,7 @@
    "nativeW": 16,
    "nativeH": 14,
    "scale": 4,
-   "source": "atlas-BkLDxtZk.png sprite \"icon-magma-croquette\" anim \"icon\" frame 0 @(483,627)"
+   "source": "atlas-DgY08xco.png sprite \"icon-magma-croquette\" anim \"icon\" frame 0 @(744,622)"
   },
   "meteor-russet": {
    "file": "item/meteor-russet.png",
@@ -1766,7 +1793,7 @@
    "nativeW": 16,
    "nativeH": 16,
    "scale": 4,
-   "source": "atlas-BkLDxtZk.png sprite \"icon-meteor-russet\" anim \"icon\" frame 0 @(571,627)"
+   "source": "atlas-DgY08xco.png sprite \"icon-meteor-russet\" anim \"icon\" frame 0 @(832,622)"
   },
   "storm-tot": {
    "file": "item/storm-tot.png",
@@ -1775,7 +1802,7 @@
    "nativeW": 16,
    "nativeH": 16,
    "scale": 4,
-   "source": "atlas-BkLDxtZk.png sprite \"icon-storm-tot\" anim \"icon\" frame 0 @(456,645)"
+   "source": "atlas-DgY08xco.png sprite \"icon-storm-tot\" anim \"icon\" frame 0 @(715,640)"
   },
   "static-socks": {
    "file": "item/static-socks.png",
@@ -1784,7 +1811,7 @@
    "nativeW": 16,
    "nativeH": 16,
    "scale": 4,
-   "source": "flagged-atlas-DorBW8yb.png sprite \"icon-static-socks\" anim \"icon\" frame 0 @(396,4076)"
+   "source": "flagged-atlas-BTyuPV8f.png sprite \"icon-static-socks\" anim \"icon\" frame 0 @(414,4076)"
   },
   "frozen-pea": {
    "file": "item/frozen-pea.png",
@@ -1912,7 +1939,7 @@
    "nativeW": 17,
    "nativeH": 11,
    "scale": 4,
-   "source": "atlas-BkLDxtZk.png sprite \"aphid\" anim \"walk\" frame 0 @(58,131)"
+   "source": "atlas-DgY08xco.png sprite \"aphid\" anim \"walk\" frame 0 @(58,131)"
   },
   "beetle-brood": {
    "file": "enemy/beetle-brood.png",
@@ -1921,7 +1948,7 @@
    "nativeW": 19,
    "nativeH": 12,
    "scale": 4,
-   "source": "atlas-late-DLWKLhni.png sprite \"beetle-brood\" anim \"walk\" frame 0 @(974,194)"
+   "source": "atlas-late-DKkUsGWi.png sprite \"beetle-brood\" anim \"walk\" frame 0 @(974,194)"
   },
   "blight-spore": {
    "file": "enemy/blight-spore.png",
@@ -1930,7 +1957,7 @@
    "nativeW": 19,
    "nativeH": 18,
    "scale": 4,
-   "source": "atlas-late-DLWKLhni.png sprite \"blight-spore\" anim \"walk\" frame 0 @(625,355)"
+   "source": "atlas-late-DKkUsGWi.png sprite \"blight-spore\" anim \"walk\" frame 0 @(625,355)"
   },
   "bog-slime": {
    "file": "enemy/bog-slime.png",
@@ -1939,7 +1966,7 @@
    "nativeW": 23,
    "nativeH": 18,
    "scale": 4,
-   "source": "atlas-late-DLWKLhni.png sprite \"bog-slime\" anim \"walk\" frame 0 @(54,407)"
+   "source": "atlas-late-DKkUsGWi.png sprite \"bog-slime\" anim \"walk\" frame 0 @(54,407)"
   },
   "bog-toad": {
    "file": "enemy/bog-toad.png",
@@ -1948,7 +1975,7 @@
    "nativeW": 25,
    "nativeH": 16,
    "scale": 4,
-   "source": "atlas-late-DLWKLhni.png sprite \"bog-toad\" anim \"walk\" frame 0 @(610,407)"
+   "source": "atlas-late-DKkUsGWi.png sprite \"bog-toad\" anim \"walk\" frame 0 @(610,407)"
   },
   "bowling-ball": {
    "file": "enemy/bowling-ball.png",
@@ -1957,7 +1984,7 @@
    "nativeW": 16,
    "nativeH": 15,
    "scale": 4,
-   "source": "atlas-late-DLWKLhni.png sprite \"bowling-ball\" anim \"walk\" frame 0 @(317,446)"
+   "source": "atlas-late-DKkUsGWi.png sprite \"bowling-ball\" anim \"walk\" frame 0 @(317,446)"
   },
   "bowling-pin": {
    "file": "enemy/bowling-pin.png",
@@ -1966,7 +1993,7 @@
    "nativeW": 11,
    "nativeH": 24,
    "scale": 4,
-   "source": "atlas-late-DLWKLhni.png sprite \"bowling-pin\" anim \"walk\" frame 0 @(606,446)"
+   "source": "atlas-late-DKkUsGWi.png sprite \"bowling-pin\" anim \"walk\" frame 0 @(606,446)"
   },
   "cave-grub": {
    "file": "enemy/cave-grub.png",
@@ -1975,7 +2002,7 @@
    "nativeW": 21,
    "nativeH": 15,
    "scale": 4,
-   "source": "atlas-late-DLWKLhni.png sprite \"cave-grub\" anim \"walk\" frame 0 @(151,497)"
+   "source": "atlas-late-DKkUsGWi.png sprite \"cave-grub\" anim \"walk\" frame 0 @(151,497)"
   },
   "compost-maggot": {
    "file": "enemy/compost-maggot.png",
@@ -1984,7 +2011,7 @@
    "nativeW": 19,
    "nativeH": 7,
    "scale": 4,
-   "source": "atlas-late-DLWKLhni.png sprite \"compost-maggot\" anim \"walk\" frame 0 @(418,538)"
+   "source": "atlas-late-DKkUsGWi.png sprite \"compost-maggot\" anim \"walk\" frame 0 @(418,538)"
   },
   "crumb-ant": {
    "file": "enemy/crumb-ant.png",
@@ -1993,7 +2020,7 @@
    "nativeW": 20,
    "nativeH": 12,
    "scale": 4,
-   "source": "atlas-late-DLWKLhni.png sprite \"crumb-ant\" anim \"walk\" frame 0 @(594,669)"
+   "source": "atlas-late-DKkUsGWi.png sprite \"crumb-ant\" anim \"walk\" frame 0 @(594,669)"
   },
   "dumpster-raccoon": {
    "file": "enemy/dumpster-raccoon.png",
@@ -2002,7 +2029,7 @@
    "nativeW": 28,
    "nativeH": 22,
    "scale": 4,
-   "source": "atlas-late-DLWKLhni.png sprite \"dumpster-raccoon\" anim \"walk\" frame 0 @(735,774)"
+   "source": "atlas-late-DKkUsGWi.png sprite \"dumpster-raccoon\" anim \"walk\" frame 0 @(735,774)"
   },
   "field-crow": {
    "file": "enemy/field-crow.png",
@@ -2011,7 +2038,7 @@
    "nativeW": 25,
    "nativeH": 19,
    "scale": 4,
-   "source": "atlas-late-DLWKLhni.png sprite \"field-crow\" anim \"walk\" frame 0 @(459,819)"
+   "source": "atlas-late-DKkUsGWi.png sprite \"field-crow\" anim \"walk\" frame 0 @(459,819)"
   },
   "field-rat": {
    "file": "enemy/field-rat.png",
@@ -2020,7 +2047,7 @@
    "nativeW": 29,
    "nativeH": 13,
    "scale": 4,
-   "source": "atlas-late-DLWKLhni.png sprite \"field-rat\" anim \"walk\" frame 0 @(126,858)"
+   "source": "atlas-late-DKkUsGWi.png sprite \"field-rat\" anim \"walk\" frame 0 @(126,858)"
   },
   "frost-flea": {
    "file": "enemy/frost-flea.png",
@@ -2029,7 +2056,7 @@
    "nativeW": 14,
    "nativeH": 11,
    "scale": 4,
-   "source": "atlas-late-DLWKLhni.png sprite \"frost-flea\" anim \"walk\" frame 0 @(533,858)"
+   "source": "atlas-late-DKkUsGWi.png sprite \"frost-flea\" anim \"walk\" frame 0 @(533,858)"
   },
   "fry-fly": {
    "file": "enemy/fry-fly.png",
@@ -2038,7 +2065,7 @@
    "nativeW": 16,
    "nativeH": 14,
    "scale": 4,
-   "source": "atlas-late-DLWKLhni.png sprite \"fry-fly\" anim \"walk\" frame 0 @(924,858)"
+   "source": "atlas-late-DKkUsGWi.png sprite \"fry-fly\" anim \"walk\" frame 0 @(924,858)"
   },
   "garden-slug": {
    "file": "enemy/garden-slug.png",
@@ -2047,7 +2074,7 @@
    "nativeW": 30,
    "nativeH": 15,
    "scale": 4,
-   "source": "atlas-late-DLWKLhni.png sprite \"garden-slug\" anim \"walk\" frame 0 @(667,5149)"
+   "source": "atlas-late-DKkUsGWi.png sprite \"garden-slug\" anim \"walk\" frame 0 @(255,5203)"
   },
   "golden-scarab": {
    "file": "enemy/golden-scarab.png",
@@ -2056,7 +2083,7 @@
    "nativeW": 26,
    "nativeH": 16,
    "scale": 4,
-   "source": "atlas-late-DLWKLhni.png sprite \"golden-scarab\" anim \"walk\" frame 0 @(627,5186)"
+   "source": "atlas-late-DKkUsGWi.png sprite \"golden-scarab\" anim \"walk\" frame 0 @(215,5240)"
   },
   "grease-fiend": {
    "file": "enemy/grease-fiend.png",
@@ -2065,7 +2092,7 @@
    "nativeW": 24,
    "nativeH": 23,
    "scale": 4,
-   "source": "atlas-late-DLWKLhni.png sprite \"grease-fiend\" anim \"walk\" frame 0 @(87,5329)"
+   "source": "atlas-late-DKkUsGWi.png sprite \"grease-fiend\" anim \"walk\" frame 0 @(690,5312)"
   },
   "gull-flock": {
    "file": "enemy/gull-flock.png",
@@ -2074,7 +2101,7 @@
    "nativeW": 23,
    "nativeH": 15,
    "scale": 4,
-   "source": "atlas-late-DLWKLhni.png sprite \"gull-flock\" anim \"walk\" frame 0 @(642,5387)"
+   "source": "atlas-late-DKkUsGWi.png sprite \"gull-flock\" anim \"walk\" frame 0 @(270,5432)"
   },
   "harvest-mouse": {
    "file": "enemy/harvest-mouse.png",
@@ -2083,7 +2110,7 @@
    "nativeW": 29,
    "nativeH": 22,
    "scale": 4,
-   "source": "atlas-late-DLWKLhni.png sprite \"harvest-mouse\" anim \"walk\" frame 0 @(985,5387)"
+   "source": "atlas-late-DKkUsGWi.png sprite \"harvest-mouse\" anim \"walk\" frame 0 @(613,5432)"
   },
   "hay-bale": {
    "file": "enemy/hay-bale.png",
@@ -2092,7 +2119,7 @@
    "nativeW": 22,
    "nativeH": 17,
    "scale": 4,
-   "source": "atlas-BkLDxtZk.png sprite \"hay-bale\" anim \"idle\" frame 0 @(847,572)"
+   "source": "atlas-DgY08xco.png sprite \"hay-bale\" anim \"idle\" frame 0 @(73,591)"
   },
   "ice-imp": {
    "file": "enemy/ice-imp.png",
@@ -2101,7 +2128,7 @@
    "nativeW": 17,
    "nativeH": 20,
    "scale": 4,
-   "source": "atlas-late-DLWKLhni.png sprite \"ice-imp\" anim \"walk\" frame 0 @(603,5912)"
+   "source": "atlas-late-DKkUsGWi.png sprite \"ice-imp\" anim \"walk\" frame 0 @(270,6022)"
   },
   "ketchup-drop": {
    "file": "enemy/ketchup-drop.png",
@@ -2110,7 +2137,7 @@
    "nativeW": 21,
    "nativeH": 15,
    "scale": 4,
-   "source": "atlas-late-DLWKLhni.png sprite \"ketchup-drop\" anim \"walk\" frame 0 @(393,5967)"
+   "source": "atlas-late-DKkUsGWi.png sprite \"ketchup-drop\" anim \"walk\" frame 0 @(53,6068)"
   },
   "lint-bunny": {
    "file": "enemy/lint-bunny.png",
@@ -2119,7 +2146,7 @@
    "nativeW": 16,
    "nativeH": 16,
    "scale": 4,
-   "source": "atlas-late-DLWKLhni.png sprite \"lint-bunny\" anim \"walk\" frame 0 @(808,6179)"
+   "source": "atlas-late-DKkUsGWi.png sprite \"lint-bunny\" anim \"walk\" frame 0 @(548,6313)"
   },
   "little-grey": {
    "file": "enemy/little-grey.png",
@@ -2128,7 +2155,7 @@
    "nativeW": 13,
    "nativeH": 23,
    "scale": 4,
-   "source": "atlas-late-DLWKLhni.png sprite \"little-grey\" anim \"walk\" frame 0 @(995,6179)"
+   "source": "atlas-late-DKkUsGWi.png sprite \"little-grey\" anim \"walk\" frame 0 @(735,6313)"
   },
   "lost-saucer": {
    "file": "enemy/lost-saucer.png",
@@ -2137,7 +2164,7 @@
    "nativeW": 30,
    "nativeH": 16,
    "scale": 4,
-   "source": "atlas-late-DLWKLhni.png sprite \"lost-saucer\" anim \"walk\" frame 0 @(859,6243)"
+   "source": "atlas-late-DKkUsGWi.png sprite \"lost-saucer\" anim \"walk\" frame 0 @(623,6369)"
   },
   "maggot-swarm": {
    "file": "enemy/maggot-swarm.png",
@@ -2146,7 +2173,7 @@
    "nativeW": 17,
    "nativeH": 7,
    "scale": 4,
-   "source": "atlas-late-DLWKLhni.png sprite \"maggot-swarm\" anim \"walk\" frame 0 @(285,6278)"
+   "source": "atlas-late-DKkUsGWi.png sprite \"maggot-swarm\" anim \"walk\" frame 0 @(57,6404)"
   },
   "mole": {
    "file": "enemy/mole.png",
@@ -2155,7 +2182,7 @@
    "nativeW": 31,
    "nativeH": 13,
    "scale": 4,
-   "source": "atlas-late-DLWKLhni.png sprite \"mole\" anim \"walk\" frame 0 @(101,6747)"
+   "source": "atlas-late-DKkUsGWi.png sprite \"mole\" anim \"walk\" frame 0 @(101,6873)"
   },
   "mud-golem": {
    "file": "enemy/mud-golem.png",
@@ -2164,7 +2191,7 @@
    "nativeW": 38,
    "nativeH": 36,
    "scale": 4,
-   "source": "atlas-late-DLWKLhni.png sprite \"mud-golem\" anim \"walk\" frame 0 @(450,6747)"
+   "source": "atlas-late-DKkUsGWi.png sprite \"mud-golem\" anim \"walk\" frame 0 @(450,6873)"
   },
   "oil-drip": {
    "file": "enemy/oil-drip.png",
@@ -2173,7 +2200,7 @@
    "nativeW": 14,
    "nativeH": 16,
    "scale": 4,
-   "source": "atlas-late-DLWKLhni.png sprite \"oil-drip\" anim \"walk\" frame 0 @(167,6816)"
+   "source": "atlas-late-DKkUsGWi.png sprite \"oil-drip\" anim \"walk\" frame 0 @(167,6942)"
   },
   "parking-gull": {
    "file": "enemy/parking-gull.png",
@@ -2182,7 +2209,7 @@
    "nativeW": 23,
    "nativeH": 18,
    "scale": 4,
-   "source": "atlas-late-DLWKLhni.png sprite \"parking-gull\" anim \"walk\" frame 0 @(601,6816)"
+   "source": "atlas-late-DKkUsGWi.png sprite \"parking-gull\" anim \"walk\" frame 0 @(601,6942)"
   },
   "potato-beetle": {
    "file": "enemy/potato-beetle.png",
@@ -2191,7 +2218,7 @@
    "nativeW": 23,
    "nativeH": 14,
    "scale": 4,
-   "source": "atlas-BkLDxtZk.png sprite \"potato-beetle\" anim \"walk\" frame 0 @(480,1041)"
+   "source": "atlas-DgY08xco.png sprite \"potato-beetle\" anim \"walk\" frame 0 @(712,995)"
   },
   "reset-zombie": {
    "file": "enemy/reset-zombie.png",
@@ -2200,7 +2227,7 @@
    "nativeW": 24,
    "nativeH": 42,
    "scale": 4,
-   "source": "atlas-late-DLWKLhni.png sprite \"reset-zombie\" anim \"walk\" frame 0 @(783,10022)"
+   "source": "atlas-late-DKkUsGWi.png sprite \"reset-zombie\" anim \"walk\" frame 0 @(783,10148)"
   },
   "sand-crab": {
    "file": "enemy/sand-crab.png",
@@ -2209,7 +2236,7 @@
    "nativeW": 19,
    "nativeH": 17,
    "scale": 4,
-   "source": "atlas-late-DLWKLhni.png sprite \"sand-crab\" anim \"walk\" frame 0 @(451,10100)"
+   "source": "atlas-late-DKkUsGWi.png sprite \"sand-crab\" anim \"walk\" frame 0 @(23,10332)"
   },
   "sizzle-imp": {
    "file": "enemy/sizzle-imp.png",
@@ -2218,7 +2245,7 @@
    "nativeW": 16,
    "nativeH": 20,
    "scale": 4,
-   "source": "atlas-late-DLWKLhni.png sprite \"sizzle-imp\" anim \"walk\" frame 0 @(2,10258)"
+   "source": "atlas-late-DKkUsGWi.png sprite \"sizzle-imp\" anim \"walk\" frame 0 @(556,10411)"
   },
   "snow-mold": {
    "file": "enemy/snow-mold.png",
@@ -2227,7 +2254,7 @@
    "nativeW": 20,
    "nativeH": 13,
    "scale": 4,
-   "source": "atlas-late-DLWKLhni.png sprite \"snow-mold\" anim \"walk\" frame 0 @(455,10258)"
+   "source": "atlas-late-DKkUsGWi.png sprite \"snow-mold\" anim \"walk\" frame 0 @(2,10489)"
   },
   "sock-pile": {
    "file": "enemy/sock-pile.png",
@@ -2236,7 +2263,7 @@
    "nativeW": 29,
    "nativeH": 21,
    "scale": 4,
-   "source": "atlas-late-DLWKLhni.png sprite \"sock-pile\" anim \"walk\" frame 0 @(886,10258)"
+   "source": "atlas-late-DKkUsGWi.png sprite \"sock-pile\" anim \"walk\" frame 0 @(433,10489)"
   },
   "spittlebug": {
    "file": "enemy/spittlebug.png",
@@ -2245,7 +2272,7 @@
    "nativeW": 18,
    "nativeH": 11,
    "scale": 4,
-   "source": "atlas-late-DLWKLhni.png sprite \"spittlebug\" anim \"walk\" frame 0 @(328,10302)"
+   "source": "atlas-late-DKkUsGWi.png sprite \"spittlebug\" anim \"walk\" frame 0 @(883,10489)"
   },
   "sprout-mite": {
    "file": "enemy/sprout-mite.png",
@@ -2254,7 +2281,7 @@
    "nativeW": 24,
    "nativeH": 14,
    "scale": 4,
-   "source": "atlas-BkLDxtZk.png sprite \"sprout-mite\" anim \"walk\" frame 0 @(418,1295)"
+   "source": "atlas-DgY08xco.png sprite \"sprout-mite\" anim \"walk\" frame 0 @(795,1255)"
   },
   "swarm-fly": {
    "file": "enemy/swarm-fly.png",
@@ -2263,7 +2290,7 @@
    "nativeW": 17,
    "nativeH": 10,
    "scale": 4,
-   "source": "atlas-BkLDxtZk.png sprite \"swarm-fly\" anim \"walk\" frame 0 @(21,1328)"
+   "source": "atlas-DgY08xco.png sprite \"swarm-fly\" anim \"walk\" frame 0 @(398,1288)"
   },
   "tomato-leech": {
    "file": "enemy/tomato-leech.png",
@@ -2272,7 +2299,7 @@
    "nativeW": 23,
    "nativeH": 9,
    "scale": 4,
-   "source": "atlas-late-DLWKLhni.png sprite \"tomato-leech\" anim \"walk\" frame 0 @(296,10529)"
+   "source": "atlas-late-DKkUsGWi.png sprite \"tomato-leech\" anim \"walk\" frame 0 @(857,10670)"
   },
   "wireworm-larva": {
    "file": "enemy/wireworm-larva.png",
@@ -2281,7 +2308,7 @@
    "nativeW": 24,
    "nativeH": 8,
    "scale": 4,
-   "source": "atlas-late-DLWKLhni.png sprite \"wireworm-larva\" anim \"walk\" frame 0 @(748,10529)"
+   "source": "atlas-late-DKkUsGWi.png sprite \"wireworm-larva\" anim \"walk\" frame 0 @(292,10760)"
   },
   "crow-elder": {
    "file": "enemy/crow-elder.png",
@@ -2508,7 +2535,7 @@
    "nativeW": 50,
    "nativeH": 64,
    "scale": 4,
-   "source": "atlas-BkLDxtZk.png sprite \"amusing\" anim \"idle\" frame 0 @(692,2)"
+   "source": "atlas-DgY08xco.png sprite \"amusing\" anim \"idle\" frame 0 @(692,2)"
   },
   "beetle-queen": {
    "file": "boss/beetle-queen.png",
@@ -2517,7 +2544,7 @@
    "nativeW": 70,
    "nativeH": 50,
    "scale": 4,
-   "source": "atlas-late-DLWKLhni.png sprite \"beetle-queen\" anim \"idle\" frame 0 @(2,355)"
+   "source": "atlas-late-DKkUsGWi.png sprite \"beetle-queen\" anim \"idle\" frame 0 @(2,355)"
   },
   "compost-titan": {
    "file": "boss/compost-titan.png",
@@ -2526,7 +2553,7 @@
    "nativeW": 95,
    "nativeH": 61,
    "scale": 4,
-   "source": "atlas-late-DLWKLhni.png sprite \"compost-titan\" anim \"idle\" frame 0 @(876,538)"
+   "source": "atlas-late-DKkUsGWi.png sprite \"compost-titan\" anim \"idle\" frame 0 @(876,538)"
   },
   "deep-freezer": {
    "file": "boss/deep-freezer.png",
@@ -2535,7 +2562,7 @@
    "nativeW": 67,
    "nativeH": 66,
    "scale": 4,
-   "source": "atlas-late-DLWKLhni.png sprite \"deep-freezer\" anim \"idle\" frame 0 @(729,696)"
+   "source": "atlas-late-DKkUsGWi.png sprite \"deep-freezer\" anim \"idle\" frame 0 @(729,696)"
   },
   "fryer-king": {
    "file": "boss/fryer-king.png",
@@ -2544,7 +2571,7 @@
    "nativeW": 64,
    "nativeH": 60,
    "scale": 4,
-   "source": "atlas-late-DLWKLhni.png sprite \"fryer-king\" anim \"idle\" frame 0 @(662,893)"
+   "source": "atlas-late-DKkUsGWi.png sprite \"fryer-king\" anim \"idle\" frame 0 @(662,893)"
   },
   "grater-golem": {
    "file": "boss/grater-golem.png",
@@ -2553,7 +2580,7 @@
    "nativeW": 36,
    "nativeH": 69,
    "scale": 4,
-   "source": "atlas-late-DLWKLhni.png sprite \"grater-golem\" anim \"idle\" frame 0 @(42,5258)"
+   "source": "atlas-late-DKkUsGWi.png sprite \"grater-golem\" anim \"idle\" frame 0 @(622,5240)"
   },
   "great-wireworm": {
    "file": "boss/great-wireworm.png",
@@ -2562,7 +2589,7 @@
    "nativeW": 62,
    "nativeH": 55,
    "scale": 4,
-   "source": "atlas-late-DLWKLhni.png sprite \"great-wireworm\" anim \"idle\" frame 0 @(564,5329)"
+   "source": "atlas-late-DKkUsGWi.png sprite \"great-wireworm\" anim \"idle\" frame 0 @(198,5374)"
   },
   "harvester": {
    "file": "boss/harvester.png",
@@ -2571,7 +2598,7 @@
    "nativeW": 94,
    "nativeH": 84,
    "scale": 4,
-   "source": "atlas-late-DLWKLhni.png sprite \"harvester\" anim \"idle\" frame 0 @(578,5523)"
+   "source": "atlas-late-DKkUsGWi.png sprite \"harvester\" anim \"idle\" frame 0 @(194,5615)"
   },
   "ketchup-kraken": {
    "file": "boss/ketchup-kraken.png",
@@ -2580,7 +2607,7 @@
    "nativeW": 65,
    "nativeH": 55,
    "scale": 4,
-   "source": "atlas-late-DLWKLhni.png sprite \"ketchup-kraken\" anim \"idle\" frame 0 @(126,6028)"
+   "source": "atlas-late-DKkUsGWi.png sprite \"ketchup-kraken\" anim \"idle\" frame 0 @(801,6068)"
   },
   "late-blight": {
    "file": "boss/late-blight.png",
@@ -2589,7 +2616,7 @@
    "nativeW": 86,
    "nativeH": 62,
    "scale": 4,
-   "source": "atlas-late-DLWKLhni.png sprite \"late-blight\" anim \"idle\" frame 0 @(2,6179)"
+   "source": "atlas-late-DKkUsGWi.png sprite \"late-blight\" anim \"idle\" frame 0 @(710,6247)"
   },
   "sir-strawman": {
    "file": "boss/sir-strawman.png",
@@ -2598,7 +2625,7 @@
    "nativeW": 61,
    "nativeH": 76,
    "scale": 4,
-   "source": "atlas-late-DLWKLhni.png sprite \"sir-strawman\" anim \"idle\" frame 0 @(528,10179)"
+   "source": "atlas-late-DKkUsGWi.png sprite \"sir-strawman\" anim \"idle\" frame 0 @(73,10411)"
   },
   "the-mandoline": {
    "file": "boss/the-mandoline.png",
@@ -2607,7 +2634,7 @@
    "nativeW": 76,
    "nativeH": 58,
    "scale": 4,
-   "source": "atlas-late-DLWKLhni.png sprite \"the-mandoline\" anim \"idle\" frame 0 @(554,10365)"
+   "source": "atlas-late-DKkUsGWi.png sprite \"the-mandoline\" anim \"idle\" frame 0 @(86,10596)"
   },
   "the-masher": {
    "file": "boss/the-masher.png",
@@ -2616,7 +2643,7 @@
    "nativeW": 38,
    "nativeH": 64,
    "scale": 4,
-   "source": "atlas-late-DLWKLhni.png sprite \"the-masher\" anim \"idle\" frame 0 @(288,10439)"
+   "source": "atlas-late-DKkUsGWi.png sprite \"the-masher\" anim \"idle\" frame 0 @(836,10596)"
   },
   "queen": {
    "file": "boss/queen.png",
@@ -2645,7 +2672,7 @@
    "nativeW": 10,
    "nativeH": 15,
    "scale": 4,
-   "source": "atlas-BkLDxtZk.png sprite \"beagle\" anim \"idle-front\" frame 0 @(386,131)"
+   "source": "atlas-DgY08xco.png sprite \"beagle\" anim \"idle-front\" frame 0 @(386,131)"
   },
   "collie": {
    "file": "dog/collie.png",
@@ -2654,7 +2681,7 @@
    "nativeW": 11,
    "nativeH": 18,
    "scale": 4,
-   "source": "atlas-BkLDxtZk.png sprite \"collie\" anim \"idle-front\" frame 0 @(663,131)"
+   "source": "atlas-DgY08xco.png sprite \"collie\" anim \"idle-front\" frame 0 @(663,131)"
   },
   "corgi": {
    "file": "dog/corgi.png",
@@ -2663,7 +2690,7 @@
    "nativeW": 10,
    "nativeH": 16,
    "scale": 4,
-   "source": "atlas-BkLDxtZk.png sprite \"corgi\" anim \"idle-front\" frame 0 @(827,131)"
+   "source": "atlas-DgY08xco.png sprite \"corgi\" anim \"idle-front\" frame 0 @(827,131)"
   },
   "dachshund": {
    "file": "dog/dachshund.png",
@@ -2672,7 +2699,7 @@
    "nativeW": 10,
    "nativeH": 13,
    "scale": 4,
-   "source": "atlas-BkLDxtZk.png sprite \"dachshund\" anim \"idle-front\" frame 0 @(53,152)"
+   "source": "atlas-DgY08xco.png sprite \"dachshund\" anim \"idle-front\" frame 0 @(53,152)"
   },
   "greyhound": {
    "file": "dog/greyhound.png",
@@ -2681,7 +2708,7 @@
    "nativeW": 12,
    "nativeH": 19,
    "scale": 4,
-   "source": "atlas-BkLDxtZk.png sprite \"greyhound\" anim \"idle-front\" frame 0 @(847,472)"
+   "source": "atlas-DgY08xco.png sprite \"greyhound\" anim \"idle-front\" frame 0 @(98,494)"
   },
   "pomchi": {
    "file": "dog/pomchi.png",
@@ -2690,7 +2717,7 @@
    "nativeW": 33,
    "nativeH": 35,
    "scale": 2,
-   "source": "atlas-late-DLWKLhni.png sprite \"pomchi\" anim \"idle-front\" frame 0 @(532,6855)"
+   "source": "atlas-late-DKkUsGWi.png sprite \"pomchi\" anim \"idle-front\" frame 0 @(532,6981)"
   },
   "pomeranian": {
    "file": "dog/pomeranian.png",
@@ -2699,7 +2726,7 @@
    "nativeW": 28,
    "nativeH": 34,
    "scale": 2,
-   "source": "atlas-late-DLWKLhni.png sprite \"pomeranian\" anim \"idle-front\" frame 0 @(76,6905)"
+   "source": "atlas-late-DKkUsGWi.png sprite \"pomeranian\" anim \"idle-front\" frame 0 @(76,7031)"
   },
   "retriever": {
    "file": "dog/retriever.png",
@@ -2708,7 +2735,7 @@
    "nativeW": 11,
    "nativeH": 18,
    "scale": 4,
-   "source": "atlas-BkLDxtZk.png sprite \"retriever\" anim \"idle-front\" frame 0 @(597,1085)"
+   "source": "atlas-DgY08xco.png sprite \"retriever\" anim \"idle-front\" frame 0 @(831,1045)"
   },
   "saint-bernard": {
    "file": "dog/saint-bernard.png",
@@ -2717,7 +2744,7 @@
    "nativeW": 14,
    "nativeH": 24,
    "scale": 4,
-   "source": "atlas-BkLDxtZk.png sprite \"saint-bernard\" anim \"idle-front\" frame 0 @(791,1085)"
+   "source": "atlas-DgY08xco.png sprite \"saint-bernard\" anim \"idle-front\" frame 0 @(37,1078)"
   },
   "terrier": {
    "file": "dog/terrier.png",
@@ -2726,7 +2753,7 @@
    "nativeW": 10,
    "nativeH": 15,
    "scale": 4,
-   "source": "atlas-BkLDxtZk.png sprite \"terrier\" anim \"idle-front\" frame 0 @(265,1328)"
+   "source": "atlas-DgY08xco.png sprite \"terrier\" anim \"idle-front\" frame 0 @(642,1288)"
   },
   "zelda-and-link": {
    "file": "dog/zelda-and-link.png",
@@ -2735,7 +2762,7 @@
    "nativeW": 51,
    "nativeH": 44,
    "scale": 2,
-   "source": "atlas-late-DLWKLhni.png sprite \"zelda-and-link\" anim \"idle-front\" frame 0 @(157,10576)"
+   "source": "atlas-late-DKkUsGWi.png sprite \"zelda-and-link\" anim \"idle-front\" frame 0 @(678,10760)"
   },
   "sigkitten": {
    "file": "dog/sigkitten.png",
@@ -2744,7 +2771,7 @@
    "nativeW": 23,
    "nativeH": 52,
    "scale": 2,
-   "source": "flagged-atlas-fx-CNMSH0fL.png sprite \"sigkitten\" anim \"idle-front\" frame 0 @(307,559)"
+   "source": "flagged-atlas-fx-2PioYbOa.png sprite \"sigkitten\" anim \"idle-front\" frame 0 @(62,614)"
   },
   "dalmatian": {
    "file": "dog/dalmatian.png",

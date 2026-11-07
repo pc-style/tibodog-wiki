@@ -5624,6 +5624,53 @@
    ]
   },
   {
+   "id": "griddle-guard",
+   "tier": "union",
+   "base": {
+    "damage": 260,
+    "cooldown": 1.8,
+    "amount": 4,
+    "area": 1.4,
+    "speed": 3,
+    "duration": 2,
+    "pierce": 99,
+    "knockback": 3,
+    "interval": 0
+   },
+   "behavior": {
+    "kind": "guard",
+    "size": 7,
+    "orbitRadius": 18,
+    "burst": 90,
+    "soak": 34,
+    "onHit": {
+     "kind": "freeze",
+     "seconds": 0.9
+    },
+    "swing": {
+     "size": 52,
+     "height": 36,
+     "damage": 0.12,
+     "cooldown": 0.6,
+     "speed": 250,
+     "reflect": {
+      "mult": 2.5,
+      "pierce": 5,
+      "homing": true
+     },
+     "charge": {
+      "cap": 3,
+      "area": 0.35,
+      "damage": 0.75
+     }
+    }
+   },
+   "from": [
+    "cast-iron",
+    "hash-bulwark"
+   ]
+  },
+  {
    "id": "knife-block",
    "tier": "union",
    "base": {
@@ -6499,6 +6546,45 @@
    "catalyst": "thick-skin"
   },
   {
+   "id": "hash-carousel",
+   "tier": "union",
+   "base": {
+    "damage": 220,
+    "cooldown": 1.4,
+    "amount": 4,
+    "area": 1.4,
+    "speed": 6,
+    "duration": 0.5,
+    "pierce": 99,
+    "knockback": 1,
+    "interval": 0.1
+   },
+   "behavior": {
+    "kind": "bigUpdate",
+    "variant": {
+     "kind": "twirl",
+     "size": 9,
+     "orbitRadius": 38,
+     "hitInterval": 0.2,
+     "crawl": 0.12,
+     "maxPace": 2,
+     "riseSec": 0.12,
+     "toss": {
+      "size": 7,
+      "speed": 220,
+      "returnAccel": 340,
+      "life": 2.8,
+      "share": 0.2,
+      "lead": 0.5
+     }
+    }
+   },
+   "from": [
+    "hashnado",
+    "tater-twister"
+   ]
+  },
+  {
    "id": "tot-barrage",
    "tier": "union",
    "base": {
@@ -7174,6 +7260,48 @@
    },
    "from": "comet-scythe",
    "catalyst": "big-bowl"
+  },
+  {
+   "id": "full-broadside",
+   "tier": "evolved",
+   "base": {
+    "damage": 68,
+    "cooldown": 2.2,
+    "amount": 2,
+    "area": 1.3,
+    "speed": 190,
+    "duration": 0,
+    "pierce": 0,
+    "knockback": 1.3,
+    "interval": 0.06
+   },
+   "behavior": {
+    "kind": "bigUpdate",
+    "variant": {
+     "kind": "broadside",
+     "size": 4,
+     "explodeRadius": 20,
+     "range": 56,
+     "minFlight": 32,
+     "rowGap": 22,
+     "rows": {
+      "count": 2,
+      "reach": 28,
+      "stagger": 0.5
+     },
+     "burst": {
+      "count": 3,
+      "fanDeg": 38,
+      "reach": 20,
+      "flight": 0.2,
+      "explodeRadius": 11,
+      "damage": 0.25,
+      "knockback": 0.5
+     }
+    }
+   },
+   "from": "broadside",
+   "catalyst": "sour-cream"
   },
   {
    "id": "hash-harrier",
@@ -8808,6 +8936,48 @@
    "catalyst": "big-bowl"
   },
   {
+   "id": "full-broadside",
+   "tier": "evolved",
+   "base": {
+    "damage": 68,
+    "cooldown": 2.2,
+    "amount": 2,
+    "area": 1.3,
+    "speed": 190,
+    "duration": 0,
+    "pierce": 0,
+    "knockback": 1.3,
+    "interval": 0.06
+   },
+   "behavior": {
+    "kind": "bigUpdate",
+    "variant": {
+     "kind": "broadside",
+     "size": 4,
+     "explodeRadius": 20,
+     "range": 56,
+     "minFlight": 32,
+     "rowGap": 22,
+     "rows": {
+      "count": 2,
+      "reach": 28,
+      "stagger": 0.5
+     },
+     "burst": {
+      "count": 3,
+      "fanDeg": 38,
+      "reach": 20,
+      "flight": 0.2,
+      "explodeRadius": 11,
+      "damage": 0.25,
+      "knockback": 0.5
+     }
+    }
+   },
+   "from": "broadside",
+   "catalyst": "sour-cream"
+  },
+  {
    "id": "hash-harrier",
    "tier": "evolved",
    "base": {
@@ -9218,6 +9388,53 @@
    ]
   },
   {
+   "id": "griddle-guard",
+   "tier": "union",
+   "base": {
+    "damage": 260,
+    "cooldown": 1.8,
+    "amount": 4,
+    "area": 1.4,
+    "speed": 3,
+    "duration": 2,
+    "pierce": 99,
+    "knockback": 3,
+    "interval": 0
+   },
+   "behavior": {
+    "kind": "guard",
+    "size": 7,
+    "orbitRadius": 18,
+    "burst": 90,
+    "soak": 34,
+    "onHit": {
+     "kind": "freeze",
+     "seconds": 0.9
+    },
+    "swing": {
+     "size": 52,
+     "height": 36,
+     "damage": 0.12,
+     "cooldown": 0.6,
+     "speed": 250,
+     "reflect": {
+      "mult": 2.5,
+      "pierce": 5,
+      "homing": true
+     },
+     "charge": {
+      "cap": 3,
+      "area": 0.35,
+      "damage": 0.75
+     }
+    }
+   },
+   "from": [
+    "cast-iron",
+    "hash-bulwark"
+   ]
+  },
+  {
    "id": "knife-block",
    "tier": "union",
    "base": {
@@ -9316,6 +9533,45 @@
    "from": [
     "thunder-tuber",
     "gratin-arc"
+   ]
+  },
+  {
+   "id": "hash-carousel",
+   "tier": "union",
+   "base": {
+    "damage": 220,
+    "cooldown": 1.4,
+    "amount": 4,
+    "area": 1.4,
+    "speed": 6,
+    "duration": 0.5,
+    "pierce": 99,
+    "knockback": 1,
+    "interval": 0.1
+   },
+   "behavior": {
+    "kind": "bigUpdate",
+    "variant": {
+     "kind": "twirl",
+     "size": 9,
+     "orbitRadius": 38,
+     "hitInterval": 0.2,
+     "crawl": 0.12,
+     "maxPace": 2,
+     "riseSec": 0.12,
+     "toss": {
+      "size": 7,
+      "speed": 220,
+      "returnAccel": 340,
+      "life": 2.8,
+      "share": 0.2,
+      "lead": 0.5
+     }
+    }
+   },
+   "from": [
+    "hashnado",
+    "tater-twister"
    ]
   },
   {

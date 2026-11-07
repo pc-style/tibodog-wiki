@@ -6,7 +6,7 @@ It is the catalyst for [Pressure Cooker](/weapons/pressure-cooker) (from [Steam 
 
 ## How it works
 
-Recovery is applied every tick as `recovery × elapsed time`, capped at max HP.<small>[sim-DSqbJT_O.js: `i.recovery>0&&nu(e,i.recovery*t)`]</small> It is a flat amount, so it does not scale with max HP, difficulty or the run clock.
+Recovery is applied every tick as `recovery × elapsed time`, capped at max HP.<small>[sim-oJL-1F-Y.js: `i.recovery>0&&ru(e,i.recovery*t)`]</small> It is a flat amount, so it does not scale with max HP, difficulty or the run clock.
 
 Other recovery sources are [Pickle Jar](/items/pickle-jar) (+0.1) and the auras of the dogs [Link](/dogs/pomeranian), [Barrel](/dogs/saint-bernard) and [Zelda & Link](/dogs/zelda-and-link).
 

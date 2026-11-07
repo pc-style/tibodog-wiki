@@ -1969,6 +1969,12 @@
  "content.weapon.frying-pan.name": [
   "Frying Pan"
  ],
+ "content.weapon.full-broadside.desc": [
+  "Fires two rows of powder shells out of both sides of Tibo. Each shell bursts on the first pest it meets or where it lands, and throws three small shells that burst where they land."
+ ],
+ "content.weapon.full-broadside.name": [
+  "Full Broadside"
+ ],
  "content.weapon.gem-catapult.desc": [
   "Each XP gem Tibo picks up flings a potato wedge along his heading, with each wedge hitting far harder. More amount flings more wedges in a fan."
  ],
@@ -2023,6 +2029,12 @@
  "content.weapon.gravy-pack.name": [
   "Gravy Pack"
  ],
+ "content.weapon.griddle-guard.desc": [
+  "Hash browns circle Tibo and block hits and bullets. Where one blocks a bullet, the pan swings there and swats it back at the shooter. Broken hash browns burst into freezing shards, and the pan swings both ways. Frees a weapon slot."
+ ],
+ "content.weapon.griddle-guard.name": [
+  "Griddle Guard"
+ ],
  "content.weapon.harvest-moon.desc": [
   "A moon spud circles Tibo. Each pest it touches rides its orbit for a moment, then is flung out and hit. A flung pest cannot be caught again for a few seconds, and bosses are too heavy to catch."
  ],
@@ -2046,6 +2058,12 @@
  ],
  "content.weapon.hash-bulwark.name": [
   "Hash Bulwark"
+ ],
+ "content.weapon.hash-carousel.desc": [
+  "Golden hash-brown wheels circle Tibo and throw hash browns that fly out and back. They spin and throw as fast as he runs, and slow to a crawl when he stands still. Frees a weapon slot."
+ ],
+ "content.weapon.hash-carousel.name": [
+  "Hash Carousel"
  ],
  "content.weapon.hash-harrier.desc": [
   "Ember-winged hash-brown harriers circle above Tibo and dive on the toughest pest in reach, a boss first, then an elite. Each dive leaves burning hash crumbs that scorch pests standing on them."
