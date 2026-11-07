@@ -6624,6 +6624,40 @@
    ]
   },
   {
+   "id": "loot-sling",
+   "tier": "union",
+   "base": {
+    "damage": 23,
+    "cooldown": 1.6,
+    "amount": 1,
+    "area": 1.2,
+    "speed": 230,
+    "duration": 1.2,
+    "pierce": 2,
+    "knockback": 1,
+    "interval": 0.6
+   },
+   "behavior": {
+    "kind": "bigUpdate",
+    "variant": {
+     "kind": "sling",
+     "fan": 0.16,
+     "spread": 0.05,
+     "size": 4,
+     "perTick": 1,
+     "maxQueue": 30,
+     "mimic": {
+      "count": 2,
+      "evolved": true
+     }
+    }
+   },
+   "from": [
+    "gem-catapult",
+    "bottomless-sack"
+   ]
+  },
+  {
    "id": "starch-garden",
    "tier": "union",
    "base": {
@@ -9710,6 +9744,40 @@
    "from": [
     "hashnado",
     "tater-twister"
+   ]
+  },
+  {
+   "id": "loot-sling",
+   "tier": "union",
+   "base": {
+    "damage": 23,
+    "cooldown": 1.6,
+    "amount": 1,
+    "area": 1.2,
+    "speed": 230,
+    "duration": 1.2,
+    "pierce": 2,
+    "knockback": 1,
+    "interval": 0.6
+   },
+   "behavior": {
+    "kind": "bigUpdate",
+    "variant": {
+     "kind": "sling",
+     "fan": 0.16,
+     "spread": 0.05,
+     "size": 4,
+     "perTick": 1,
+     "maxQueue": 30,
+     "mimic": {
+      "count": 2,
+      "evolved": true
+     }
+    }
+   },
+   "from": [
+    "gem-catapult",
+    "bottomless-sack"
    ]
   },
   {

@@ -2155,6 +2155,12 @@
  "content.weapon.locked-gatling.name": [
   "Locked Gatling"
  ],
+ "content.weapon.loot-sling.desc": [
+  "Pulls two evolved snacks from the sack at a time, and each XP gem Tibo picks up flings one more along his heading. Frees a weapon slot."
+ ],
+ "content.weapon.loot-sling.name": [
+  "Loot Sling"
+ ],
  "content.weapon.mandoline-fury.desc": [
   "Slices both ways at once and flings potato slices through the crowd. Each slash hit heals Tibo a little."
  ],

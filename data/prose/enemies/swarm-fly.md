@@ -6,11 +6,11 @@ The event sends a band of 26 flies across the screen in one straight line at spe
 
 ## How it works
 
-- **Formation**: the flies spawn on one side of Tibo, at the normal spawn distance plus up to 60 units, spread up to 120 units either side of a line through him. They all fly along that line, towards and past him. <small>[sim-DkPbThzu.js: `i.vx[t]=i.tx[t]*i.speed[t],i.vy[t]=i.ty[t]*i.speed[t]`]</small>
+- **Formation**: the flies spawn on one side of Tibo, at the normal spawn distance plus up to 60 units, spread up to 120 units either side of a line through him. They all fly along that line, towards and past him. <small>[sim-DQjMQPwG.js: `i.vx[t]=i.tx[t]*i.speed[t],i.vy[t]=i.ty[t]*i.speed[t]`]</small>
 - **No steering**: a fly keeps the heading it spawned with. It does not turn towards Tibo.
-- **Lifetime**: every fly despawns 14 s after spawning, or earlier once it is more than 460 units from Tibo. <small>[sim-DkPbThzu.js: `r.despawnAt[f]=e.time+14`]</small>
-- **Count**: 26 × the pest-count scaling, capped at ×2. The count scaling is 1 until 20:00, so overtime swarms grow to at most 52 flies. <small>[sim-DkPbThzu.js: `d=Math.round(t.count*Math.min(2,gc(e.scale,e.cfg,e.runClock).count))`]</small>
-- **Passes through crowds**: Fry Fly Swarm flies are the one enemy left out of the push that keeps pests from overlapping, so the swarm flies straight through other pests and bosses instead of being slowed by them. The [Gull Flock](/enemies/gull-flock) of the Lunch Rush event flies the same way but is still pushed. <small>[sim-DkPbThzu.js: ``return b.enemyIndex(`swarm-fly`)``]</small>
+- **Lifetime**: every fly despawns 14 s after spawning, or earlier once it is more than 460 units from Tibo. <small>[sim-DQjMQPwG.js: `r.despawnAt[f]=e.time+14`]</small>
+- **Count**: 26 × the pest-count scaling, capped at ×2. The count scaling is 1 until 20:00, so overtime swarms grow to at most 52 flies. <small>[sim-DQjMQPwG.js: `d=Math.round(t.count*Math.min(2,gc(e.scale,e.cfg,e.runClock).count))`]</small>
+- **Passes through crowds**: Fry Fly Swarm flies are the one enemy left out of the push that keeps pests from overlapping, so the swarm flies straight through other pests and bosses instead of being slowed by them. The [Gull Flock](/enemies/gull-flock) of the Lunch Rush event flies the same way but is still pushed. <small>[sim-DQjMQPwG.js: ``return x.enemyIndex(`swarm-fly`)``]</small>
 
 ## Tips
 

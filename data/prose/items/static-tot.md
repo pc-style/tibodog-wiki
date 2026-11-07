@@ -8,7 +8,7 @@ It evolves into [Storm Tot](/items/storm-tot) when [Root Network](/passives/root
 
 ## How it works
 
-- **Targets.** Each jump goes to the nearest enemy within range of the previous one that this chain has not hit yet. The enemy that was originally hit is excluded. The chain stops early when nothing is in range. <small>[sim-DkPbThzu.js: `let r=Al(e,l,u,s,o);if(r===void 0)break;d=!0,Pl(e,r,o)`]</small>
+- **Targets.** Each jump goes to the nearest enemy within range of the previous one that this chain has not hit yet. The enemy that was originally hit is excluded. The chain stops early when nothing is in range. <small>[sim-DQjMQPwG.js: `let r=Al(e,l,u,s,o);if(r===void 0)break;d=!0,Pl(e,r,o)`]</small>
 - **What can trigger it.** Only hits from Tibo's weapons. Item effects, thorns and dogs cannot trigger it, so arcs do not set off further arcs or [Spicy Croquette](/items/spicy-croquette) blasts.
 - **Rate limit.** Besides the 10% roll, it can fire at most 16 times per second. The limit refills continuously and holds at most one second's worth.
 - **Stacking.** With *n* copies the chance is `1 − 0.9^n` and the cap is 16 × *n* per second: 19% with two, 27.1% with three. Jumps, range and damage do not change.

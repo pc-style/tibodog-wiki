@@ -1,6 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { dogPages } from './entities.mjs';
+import { dogPages, weaponPages } from './entities.mjs';
 
 test('dog pages describe active special abilities, not zero-radius fetch fallbacks', () => {
   const pages = dogPages();
@@ -10,6 +10,23 @@ test('dog pages describe active special abilities, not zero-radius fetch fallbac
     assert.ok(shown.includes(`\`${ability}\``), `${id}: ${shown}`);
     if (ability !== 'fetch') {
       assert.ok(!shown.includes('Brings pickups'));
+    }
+  }
+});
+
+test('Loot Sling describes automatic copies without changing the pickup-only wedge slings', () => {
+  const pages = weaponPages();
+  for (const id of ['loot-sling', 'gem-sling', 'gem-catapult']) {
+    const page = pages.find((p) => p.path === `/weapons/${id}`);
+    const rows = Object.fromEntries(page.infobox.rows);
+    assert.match(rows.Trigger, /XP gem pickups/);
+    if (id === 'loot-sling') {
+      assert.match(rows.Trigger, /Automatic/);
+      assert.match(rows.Attack, /evolved attacks/);
+      assert.doesNotMatch(rows.Attack, /wedges/);
+    } else {
+      assert.doesNotMatch(rows.Trigger, /Automatic/);
+      assert.match(rows.Attack, /wedges/);
     }
   }
 });
