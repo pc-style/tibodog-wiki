@@ -10,7 +10,7 @@ It drops a [chest](/chests), an XP gem worth 230 XP and a 25-gold coin (both mul
 
 ## Fight
 
-The Kraken crawls towards Tibo, throws fans of ketchup that turn into puddles, and every 3 s of walking stops for a round of tentacle slams. A full cycle takes 4.1 s, and its first slams start about 1.8 s after it spawns. It is the same on every difficulty: it has no Nightmare variants.
+The Kraken crawls towards Tibo, throws fans of ketchup that turn into puddles, and every 3 s of walking stops for a round of tentacle slams. A full cycle takes 4.1 s, and its first slams start about 1.8 s after it spawns. These are base timings: [conditional N2+ boss pacing](/modes#boss-attack-pacing) can shorten the ground and pattern intervals independently. It has no separate Nightmare attack or pattern definitions.
 
 ### Tentacle slams
 

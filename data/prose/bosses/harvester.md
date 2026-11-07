@@ -16,7 +16,7 @@ The Harvester walks towards Tibo and alternates two bullet patterns while walkin
 
 ### Combine charge
 
-When the attack is ready, the Harvester stops and locks onto the direction Tibo is in at that moment. A 70-unit-wide warning lane, 418 units long, shows its path for 1 s. It then drives along that line at speed 380 for 1.1 s, which covers the whole lane, and does not steer. A full cycle of walking, warning and charging takes 4.7 s.
+When the attack is ready, the Harvester stops and locks onto the direction Tibo is in at that moment. A 70-unit-wide warning lane, 418 units long, shows its path for 1 s. It then drives along that line at speed 380 for 1.1 s, which covers the whole lane, and does not steer. A full cycle of walking, warning and charging takes 4.7 s before conditional N2+ pacing shortens the walking interval.
 
 The charge damage comes from touching the boss, not from the lane. While charging, its body hitbox widens from its normal radius of 22 to half the lane width (35), and contact damage is ×1.5, which is 90 before time scaling. <small>[sim-sB5IBoT-.js: ``e.bosses.state[t]===2&&r.attack.kind===`charge`?1.5:1``]</small>
 
@@ -38,7 +38,7 @@ Enemy bullet counts, fire rates and bullet speeds all grow with run time (see [E
 
 **Measured** (headless `tools/play.mjs`, build `main-B2gf34bA`, seed `wiki`, standard mode, `--god`, Normal; the clock warped to just before 20:00; every other boss and every pest removed each tick, so the sim's hostile-shot counter only counts this boss): three 7-bullet volleys 0.15 s apart at 1.85 s, two 43-bullet rings 0.23 s apart at 5.65 s, the volleys again at 9.05 s and the rings at 10.75 s after it spawned.
 
-The charge is not affected: its timing and speed are fixed.
+Time-based bullet scaling does not change the charge's walking interval, warning, speed or duration. Conditional N2+ pacing can shorten the walking interval, but its 1 s warning, speed 380 and 1.1 s charge remain unchanged.
 
 ## Tips
 

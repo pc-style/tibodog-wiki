@@ -10,7 +10,7 @@ It drops a [chest](/chests), an XP gem worth 140 XP and a 25-gold coin (both mul
 
 ## Fight
 
-The Mandoline walks towards Tibo, fires a fast-spinning spiral, and every 3.4 s of walking stops to slice the ground in three lanes. A full cycle takes 4.5 s, and its first slice comes about 2 s after it spawns. It is the same on every difficulty: it has no Nightmare variants.
+The Mandoline walks towards Tibo, fires a fast-spinning spiral, and every 3.4 s of walking stops to slice the ground in three lanes. A full cycle takes 4.5 s, and its first slice comes about 2 s after it spawns. These are base timings: [conditional N2+ boss pacing](/modes#boss-attack-pacing) can shorten the ground and pattern intervals independently. It has no separate Nightmare attack or pattern definitions.
 
 ### Three-lane slice
 
