@@ -6,9 +6,9 @@ It is a charger and the deadliest one. It has 200 base HP and 22 contact damage,
 
 ## How it works
 
-The timings below are before 20:00. In Standard from 20:00, the windup is 0.6 s instead of 0.5 s; the dash and cooldown do not change. <small>[sim-Bsmt8r-d.js: `return!Gr(e)||e.runClock<zr?t:Math.max(t,.6)`]</small>
+The timings below are before 20:00. In Standard from 20:00, the windup is 0.6 s instead of 0.5 s; the dash and cooldown do not change. <small>[sim-Dm3DDgW-.js: `return!Gr(e)||e.runClock<zr?t:Math.max(t,.6)`]</small>
 
-It uses the standard charger cycle. First comes a 0.5 s windup aimed at Tibo's position when the windup starts. Then it dashes in a straight line at 220 for 1.3 × 130 / 220 ≈ 0.77 s, about 169 units. After that it has 1.6 s of normal walking before it can charge again. <small>[sim-Bsmt8r-d.js: `i.state[t]=2,i.timer[t]=1.3*n/r,i.windup[t]=0`]</small> The dash deals ordinary contact damage, but at 22 base and with late-game [enemy scaling](/enemy-scaling) applied, that is a heavy hit.
+It uses the standard charger cycle. First comes a 0.5 s windup aimed at Tibo's position when the windup starts. Then it dashes in a straight line at 220 for 1.3 × 130 / 220 ≈ 0.77 s, about 169 units. After that it has 1.6 s of normal walking before it can charge again. <small>[sim-Dm3DDgW-.js: `i.state[t]=2,i.timer[t]=1.3*n/r,i.windup[t]=0`]</small> The dash deals ordinary contact damage, but at 22 base and with late-game [enemy scaling](/enemy-scaling) applied, that is a heavy hit.
 
 Compared with the Mud Golem it replaces, the fiend has less HP (200 against 260) but is much faster (40 against 28) and charges.
 
