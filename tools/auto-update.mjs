@@ -96,9 +96,10 @@ try {
       const pages = [];
       const walk = (dir) => { for (const f of readdirSync(join(cwd, 'dist', dir), { withFileTypes: true })) { const p = join(dir, f.name); if (f.isDirectory()) walk(p); else if (p.endsWith('.md')) pages.push(p); } };
       walk('');
-      // Only the two labelled wiki-deployment-time cells differ between local
+      // Only the labelled wiki-deployment times differ between local
       // and Vercel builds. Publication, research and measurement dates stay exact.
       const normalized = (s) => s.replace(/(\| Wiki last updated \| \*\*)[^*\n]+(\*\*)/g, '$1BUILD_TIME$2')
+        .replace(/(^Source page: [^\n]+ · Wiki updated )[^\n]+(?= · Game version )/gm, '$1BUILD_TIME')
         .replace(/(\), wiki updated )[^|\n]+(?= \|)/g, '$1BUILD_TIME');
       for (let i = 0; i < pages.length; i += 8) await Promise.all(pages.slice(i, i + 8).map(async (p) => {
         const text = await get(`https://www.tibodog.wiki/${p}`);
