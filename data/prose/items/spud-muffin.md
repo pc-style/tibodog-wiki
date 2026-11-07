@@ -2,9 +2,9 @@
 
 Spud Muffin is a common item that adds 10 max HP. Copies stack. It is one of eight Common items of equal weight, so with no luck it is about 7.4% of random item rolls.
 
-The 10 HP is added to Tibo's base 100 before the percentage bonus from [Gravy Heart](/passives/gravy-heart) and the level's max HP multiplier are applied. <small>[sim-09V9QVjL.js: `i[r.maxHp]=Math.max(1,(t.player.baseMaxHp+e.maxHp)*(1+e.maxHpPct)*t.level.maxHp)`]</small> So one muffin is worth 20 HP on Easy (×2), 15 on Normal and Hard (×1.5) and 12 on Nightmare (×1.2), before Gravy Heart.
+The 10 HP is added to Tibo's base 100 before the percentage bonus from [Gravy Heart](/passives/gravy-heart) and the level's max HP multiplier are applied. <small>[sim-ByqCWxdN.js: `i[r.maxHp]=Math.max(1,(t.player.baseMaxHp+e.maxHp)*(1+e.maxHpPct)*t.level.maxHp)`]</small> So one muffin is worth 20 HP on Easy (×2), 15 on Normal and Hard (×1.5) and 12 on Nightmare (×1.2), before Gravy Heart.
 
-When max HP goes up, Tibo is also healed by the amount gained, so picking up a muffin heals him too. <small>[sim-09V9QVjL.js: `n.hp[e.me]=Math.min(r,(n.hp[e.me]??0)+Math.max(0,t))`]</small>
+When max HP goes up, Tibo is also healed by the amount gained, so picking up a muffin heals him too. <small>[sim-ByqCWxdN.js: `n.hp[e.me]=Math.min(r,(n.hp[e.me]??0)+Math.max(0,t))`]</small>
 
 ## Tips
 

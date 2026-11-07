@@ -182,6 +182,14 @@ The next live build, `main-B75fWSZL.js` (`74579c1`), preserves every note's iden
 
 Both transitions compare all 383 reachable files per build; all 382 hashed assets in each original mirror match the detector manifests. Build 96's natural five-minute Standard/Normal run (seed `wiki`, no grants, warp or god mode) matches build 95's full summary. Build 97 changes no gameplay or UI logic, so it needs no additional play run. Original mirrors, before/after journal rows, scripts, results and delivery receipts are retained in the worker evidence archive. Earlier historical-source and physical-device limits remain intact.
 
+### Build 98 follow-up
+
+The live `main-xLDa8uuE.js` journal (`07ab5f7`) and official [full changelog](https://tibo.dog/changelog) match all **268 ordered date/code/kind/text records**, after expanding every older in-game date: **63 / 43 / 28 / 41 / 47 / 46**. Source: [changelog-panel-6MQF2kAf.js](https://tibo.dog/assets/changelog-panel-6MQF2kAf.js), SHA-256 `6f46515160d58440130cd8d036c3c898e556ef28d7d5169100aecc6b83603eed`.
+
+The existing Daily row note now says it opens the player's **stats**, rather than just name and score. Its identity, publication timestamp and current-group position are unchanged; no other note moves or changes. All 26 translated journals replace that message, and their UI dictionaries add the loading message. This is an extension of the existing row detail, not the introduction of clickable rows or a new replay-submission rule.
+
+The whole-build review covers 383 → 384 reachable files, including the new row-stats loader and the renamed/split summary modules. Original-client controls distinguish old name-only rows from new loading/stats/fallback states, and check identity matching and stale-response cancellation. Supplied rows and encoded summaries are fixtures, not natural acquisition or proof of server score, log or claim acceptance. Unmodified five-minute Standard/Normal runs on both builds (seed `wiki`, no grants, warp or god mode) have identical full summaries. All 382 old and 383 new hashed assets match their detector manifests. Historical-source limits above remain unchanged.
+
 ### Future checks
 
 The existing extractor now follows the panel's comparator, records source URL/SHA-256 and rejects duplicate note identities. The updater reports additions, removals, revised text/metadata, ordering, date/code regrouping and moves out of the unversioned group, keeping both before and after values. With an unchanged game build it still checks the saved journal against the mirrored source and reports drift without erasing the original build review. Old notes without stable IDs use their message IDs; a rewritten message ID may therefore appear as a removal plus addition rather than an asserted identity match.

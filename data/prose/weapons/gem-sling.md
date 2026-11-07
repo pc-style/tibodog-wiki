@@ -6,8 +6,8 @@ At level 1 each gem flings two wedges: the weapon's amount of 1 plus Tibo's base
 
 ## How it works
 
-- **One volley per gem.** Only XP gem pickups count. Gold and other pickups do not. <small>[sim-09V9QVjL.js: `o===D.xp)e.gemCount--,e.counters.gems++`]</small>
-- **Queue.** Collected gems join a queue that holds at most 40. The sling fires for up to 2 queued gems per tick (60 ticks per second), so a big pickup of gems is fired off quickly, but any gems above 40 in the queue are lost. <small>[sim-09V9QVjL.js: `i.queue=Math.min(n.maxQueue,i.queue+e.counters.gems-i.seenGems)`]</small>
+- **One volley per gem.** Only XP gem pickups count. Gold and other pickups do not. <small>[sim-ByqCWxdN.js: `o===D.xp)e.gemCount--,e.counters.gems++`]</small>
+- **Queue.** Collected gems join a queue that holds at most 40. The sling fires for up to 2 queued gems per tick (60 ticks per second), so a big pickup of gems is fired off quickly, but any gems above 40 in the queue are lost. <small>[sim-ByqCWxdN.js: `i.queue=Math.min(n.maxQueue,i.queue+e.counters.gems-i.seenGems)`]</small>
 - **Direction.** Wedges go along Tibo's facing direction, not towards pests. Each wedge has a small random spread of up to ±0.05 rad (about 3°).
 - **Amount.** Each gem fires one wedge per point of amount (two with no amount bonuses), fanned 0.16 rad (about 9°) apart and centred on Tibo's heading.
 
