@@ -5624,6 +5624,55 @@
    ]
   },
   {
+   "id": "knife-block",
+   "tier": "union",
+   "base": {
+    "damage": 126,
+    "cooldown": 0.9,
+    "amount": 2,
+    "area": 1.6,
+    "speed": 0,
+    "duration": 0.15,
+    "pierce": 99,
+    "knockback": 2,
+    "interval": 0.12
+   },
+   "behavior": {
+    "kind": "slash",
+    "size": 64,
+    "height": 34,
+    "twin": true,
+    "heal": 0.125,
+    "healCap": 2,
+    "hpEdge": {
+     "lowHpBonus": 1.6
+    },
+    "fling": {
+     "count": 2,
+     "size": 3,
+     "speed": 40,
+     "life": 2.2,
+     "damageMult": 0.5,
+     "spread": 0.6,
+     "rehit": 6
+    },
+    "flick": {
+     "count": 3,
+     "size": 3,
+     "speed": 170,
+     "life": 0.8,
+     "damageMult": 0.4,
+     "spread": 0.45,
+     "rehit": 1,
+     "back": true
+    }
+   },
+   "from": [
+    "mandoline-fury",
+    "moon-cleaver"
+   ]
+  },
+  {
    "id": "spud-artillery",
    "tier": "union",
    "base": {
@@ -9045,6 +9094,55 @@
    "from": [
     "fry-fortress",
     "gravy-pack"
+   ]
+  },
+  {
+   "id": "knife-block",
+   "tier": "union",
+   "base": {
+    "damage": 126,
+    "cooldown": 0.9,
+    "amount": 2,
+    "area": 1.6,
+    "speed": 0,
+    "duration": 0.15,
+    "pierce": 99,
+    "knockback": 2,
+    "interval": 0.12
+   },
+   "behavior": {
+    "kind": "slash",
+    "size": 64,
+    "height": 34,
+    "twin": true,
+    "heal": 0.125,
+    "healCap": 2,
+    "hpEdge": {
+     "lowHpBonus": 1.6
+    },
+    "fling": {
+     "count": 2,
+     "size": 3,
+     "speed": 40,
+     "life": 2.2,
+     "damageMult": 0.5,
+     "spread": 0.6,
+     "rehit": 6
+    },
+    "flick": {
+     "count": 3,
+     "size": 3,
+     "speed": 170,
+     "life": 0.8,
+     "damageMult": 0.4,
+     "spread": 0.45,
+     "rehit": 1,
+     "back": true
+    }
+   },
+   "from": [
+    "mandoline-fury",
+    "moon-cleaver"
    ]
   },
   {

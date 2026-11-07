@@ -2107,6 +2107,12 @@
  "content.weapon.kettle-cyclone.name": [
   "Kettle Cyclone"
  ],
+ "content.weapon.knife-block.desc": [
+  "Slices in front of Tibo and behind him at once and flings potato slices both ways. Each slash hit heals Tibo a little, and the more HP Tibo is missing, the harder it hits. Frees a weapon slot."
+ ],
+ "content.weapon.knife-block.name": [
+  "Knife Block"
+ ],
  "content.weapon.landmine-harvest.desc": [
   "Rotten mines. Enemies they kill drop extra gold."
  ],

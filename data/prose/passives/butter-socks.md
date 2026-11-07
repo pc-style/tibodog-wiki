@@ -6,15 +6,15 @@ It is the catalyst for [Waffle Cut](/weapons/waffle-cut) (from [Julienne Dash](/
 
 ## How it works
 
-The charge values per level are totals, not increments: the game reads the array entry for the current level.<small>[sim-Cn6iREtF.js: ``function oi(e,t){return t<=0?0:typeof e==`number`?e*t:e[Math.min(t,e.length)-1]??0}``]</small>
+The charge values per level are totals, not increments: the game reads the array entry for the current level.<small>[sim-B4hL87aF.js: ``function ai(e,t){return t<=0?0:typeof e==`number`?e*t:e[Math.min(t,e.length)-1]??0}``]</small>
 
-Spent charges come back one at a time. When a charge finishes recharging, the next one starts only if Tibo is still below the maximum.<small>[sim-Cn6iREtF.js: `let a=t.dashCharges[n]+1;t.dashCharges[n]=a,t.dashCd[n]=a<r?rl(e):0`]</small> At level 5, refilling all 4 charges from empty takes 4 × 3.5 = 14 s.
+Spent charges come back one at a time. When a charge finishes recharging, the next one starts only if Tibo is still below the maximum.<small>[sim-B4hL87aF.js: `let a=t.dashCharges[n]+1;t.dashCharges[n]=a,t.dashCd[n]=a<r?nl(e):0`]</small> At level 5, refilling all 4 charges from empty takes 4 × 3.5 = 14 s.
 
-Butter Socks alone reaches 30% dash-cooldown reduction. With the variety rules enabled, dash reduction uses the raw bonus up to 100%, with a 0.75 s minimum recharge, rather than the ordinary 60% stat cap. Butter Socks alone does not reach that floor.<small>[sim-Cn6iREtF.js: `let t=Math.min(e.loadout.totals.dashCooldown,1),n=E(e.cfg.dash.cooldownSec*(1-t));return Math.max(n,tS(e))`]</small>
+Butter Socks alone reaches 30% dash-cooldown reduction. With the variety rules enabled, dash reduction uses the raw bonus up to 100%, with a 0.75 s minimum recharge, rather than the ordinary 60% stat cap. Butter Socks alone does not reach that floor.<small>[sim-B4hL87aF.js: `let t=Math.min(e.loadout.totals.dashCooldown,1),n=D(e.cfg.dash.cooldownSec*(1-t));return Math.max(n,eS(e))`]</small>
 
-During a dash Tibo ignores ordinary damage.<small>[sim-Cn6iREtF.js: `if(a.invuln[o]>0||a.stunTicks[o]>0||e.over||!r&&el(e))return!1`]</small> A dash lasts 9 ticks (0.15 s at 60 ticks per second) and covers 48 units (see [Controls](/controls)).
+During a dash Tibo ignores ordinary damage.<small>[sim-B4hL87aF.js: `if(a.invuln[o]>0||a.stunTicks[o]>0||e.over||!r&&$c(e))return!1`]</small> A dash lasts 9 ticks (0.15 s at 60 ticks per second) and covers 48 units (see [Controls](/controls)).
 
 ## Tips
 
 - **Pair it with Julienne Dash.** [Julienne Dash](/weapons/julienne-dash) and its evolution Waffle Cut attack on each dash, so extra charges mean more attacks in a burst.
-- [Tot Stampede](/weapons/tot-stampede) counts distance walked and fires every 40 units. Dash movement counts toward that distance: each tick adds Tibo's movement up to 12 units.<small>[sim-Cn6iREtF.js: `Math.min(12,l(a.x[o]-a.px[o],a.y[o]-a.py[o]))`]</small> One 48-unit dash is enough for a tot.
+- [Tot Stampede](/weapons/tot-stampede) counts distance walked and fires every 40 units. Dash movement counts toward that distance: each tick adds Tibo's movement up to 12 units.<small>[sim-B4hL87aF.js: `Math.min(12,l(a.x[o]-a.px[o],a.y[o]-a.py[o]))`]</small> One 48-unit dash is enough for a tot.

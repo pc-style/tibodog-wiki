@@ -5943,6 +5943,14 @@
    {
     "kind": "union",
     "weapons": [
+     "mandoline-fury",
+     "moon-cleaver"
+    ],
+    "result": "knife-block"
+   },
+   {
+    "kind": "union",
+    "weapons": [
      "sack-of-russets",
      "spudzooka"
     ],
