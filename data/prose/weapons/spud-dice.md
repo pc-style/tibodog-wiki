@@ -10,12 +10,12 @@ Each die rolls a uniform 1–6 when thrown. [Luck](/stats) is not used in the ro
 
 | Face | Effect |
 |---|---|
-| 1 (dud) | Damage × 0.25 and blast radius × 0.4. <small>[sim-BjSybi87.js: `r.damage[t]=.25*r.damage[t],r.explodeRadius[t]=.4*r.explodeRadius[t]`]</small> |
+| 1 (dud) | Damage × 0.25 and blast radius × 0.4. <small>[sim-BKmk53sU.js: `r.damage[t]=.25*r.damage[t],r.explodeRadius[t]=.4*r.explodeRadius[t]`]</small> |
 | 2 (freeze) | Pests it hits are frozen for 1.5 s. |
-| 3 (burn) | Pests it hits burn for 10 damage per second for 3 s. <small>[sim-BjSybi87.js: ``var YE={kind:`freeze`,seconds:1.5},XE={kind:`burn`,dps:10,seconds:3}``]</small> |
-| 4 (split) | Two extra dice are fired 0.4 radians (about 23°) to either side, with the same blast radius and the weapon's normal damage. They have no face effect of their own. <small>[sim-BjSybi87.js: `PO(e,t,n,o+s*UO,C.straight,i)`]</small> |
-| 5 (gold) | Pests hit by the blast get +0.6 added to their chance of dropping gold if they die from it. <small>[sim-BjSybi87.js: `r.next()<n.goldChance[t]+n.killGold[t]`]</small> |
-| 6 (blast) | Damage × 3 and blast radius × 1.6. <small>[sim-BjSybi87.js: `r.damage[t]=3*r.damage[t],r.explodeRadius[t]=1.6*r.explodeRadius[t]`]</small> |
+| 3 (burn) | Pests it hits burn for 10 damage per second for 3 s. <small>[sim-BKmk53sU.js: ``var YE={kind:`freeze`,seconds:1.5},XE={kind:`burn`,dps:10,seconds:3}``]</small> |
+| 4 (split) | Two extra dice are fired 0.4 radians (about 23°) to either side, with the same blast radius and the weapon's normal damage. They have no face effect of their own. <small>[sim-BKmk53sU.js: `PO(e,t,n,o+s*UO,C.straight,i)`]</small> |
+| 5 (gold) | Pests hit by the blast get +0.6 added to their chance of dropping gold if they die from it. <small>[sim-BKmk53sU.js: `r.next()<n.goldChance[t]+n.killGold[t]`]</small> |
+| 6 (blast) | Damage × 3 and blast radius × 1.6. <small>[sim-BKmk53sU.js: `r.damage[t]=3*r.damage[t],r.explodeRadius[t]=1.6*r.explodeRadius[t]`]</small> |
 
 Freeze and burn durations are multiplied by Tibo's [duration](/stats) stat. The gold bonus is stored on the pest by the last hit it took, so it only pays out if no other hit lands before the pest dies.
 
