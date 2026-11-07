@@ -2263,6 +2263,12 @@
  "content.weapon.root-cellar.name": [
   "Root Cellar"
  ],
+ "content.weapon.root-legion.desc": [
+  "More seedlings sprout and live longer, and a new one rises beside Tibo every half second. Each seedling that wilts leaves a root snare that holds pests in place for a moment."
+ ],
+ "content.weapon.root-legion.name": [
+  "Root Legion"
+ ],
  "content.weapon.root-spikes.desc": [
   "Roots burst out of the ground under enemies."
  ],

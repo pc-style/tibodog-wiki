@@ -2790,7 +2790,11 @@
       "riseSec": 0.3,
       "wiltSec": 0.35,
       "hopHz": 2.5,
-      "airShare": 0.6
+      "airShare": 0.6,
+      "sproutSec": 0,
+      "snareRadius": 0,
+      "snareSec": 0,
+      "snareBossSlow": 0
      }
     }
    }
@@ -6961,7 +6965,11 @@
       "riseSec": 0.3,
       "wiltSec": 0.35,
       "hopHz": 2.5,
-      "airShare": 0.6
+      "airShare": 0.6,
+      "sproutSec": 0,
+      "snareRadius": 0,
+      "snareSec": 0,
+      "snareBossSlow": 0
      }
     }
    }
@@ -7319,6 +7327,44 @@
    },
    "from": "peel-phantom",
    "catalyst": "peel-out"
+  },
+  {
+   "id": "root-legion",
+   "tier": "evolved",
+   "base": {
+    "damage": 80,
+    "cooldown": 0,
+    "amount": 5,
+    "area": 1,
+    "speed": 80,
+    "duration": 11,
+    "pierce": 0,
+    "knockback": 0.5,
+    "interval": 0.35
+   },
+   "behavior": {
+    "kind": "bigUpdate",
+    "variant": {
+     "kind": "sproutSquad",
+     "rule": {
+      "chance": 0.2,
+      "perAmount": 4,
+      "seekRange": 130,
+      "reach": 3,
+      "heel": 22,
+      "riseSec": 0.3,
+      "wiltSec": 0.35,
+      "hopHz": 2.5,
+      "airShare": 0.6,
+      "sproutSec": 0.5,
+      "snareRadius": 26,
+      "snareSec": 1.2,
+      "snareBossSlow": 0.3
+     }
+    }
+   },
+   "from": "sprout-squad",
+   "catalyst": "root-network"
   },
   {
    "id": "gravy-pack",
@@ -8869,6 +8915,44 @@
    },
    "from": "peel-phantom",
    "catalyst": "peel-out"
+  },
+  {
+   "id": "root-legion",
+   "tier": "evolved",
+   "base": {
+    "damage": 80,
+    "cooldown": 0,
+    "amount": 5,
+    "area": 1,
+    "speed": 80,
+    "duration": 11,
+    "pierce": 0,
+    "knockback": 0.5,
+    "interval": 0.35
+   },
+   "behavior": {
+    "kind": "bigUpdate",
+    "variant": {
+     "kind": "sproutSquad",
+     "rule": {
+      "chance": 0.2,
+      "perAmount": 4,
+      "seekRange": 130,
+      "reach": 3,
+      "heel": 22,
+      "riseSec": 0.3,
+      "wiltSec": 0.35,
+      "hopHz": 2.5,
+      "airShare": 0.6,
+      "sproutSec": 0.5,
+      "snareRadius": 26,
+      "snareSec": 1.2,
+      "snareBossSlow": 0.3
+     }
+    }
+   },
+   "from": "sprout-squad",
+   "catalyst": "root-network"
   },
   {
    "id": "gravy-pack",

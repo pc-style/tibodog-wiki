@@ -6,13 +6,13 @@ It is the catalyst for [Kettle Cyclone](/weapons/kettle-cyclone) (from [Chip Shu
 
 ## How it works
 
-**Heat gain.** Each time a weapon starts an attack, heat rises by that weapon's current cooldown in seconds, at most 6. No heat is added while throttled.<small>[sim-aoTT3npm.js: `function py(e,t){let n=e.loadout.thermal;!n.on||e.player.throttleTicks[e.me]>0||(e.player.heat[e.me]=e.player.heat[e.me]+Math.min(t,n.maxVolleyHeat))}`]</small> Turret shots add heat too.
+**Heat gain.** Each time a weapon starts an attack, heat rises by that weapon's current cooldown in seconds, at most 6. No heat is added while throttled.<small>[sim-Cn6iREtF.js: `function gy(e,t){let n=e.loadout.thermal;!n.on||e.player.throttleTicks[e.me]>0||(e.player.heat[e.me]=e.player.heat[e.me]+Math.min(t,n.maxVolleyHeat))}`]</small> Turret shots add heat too.
 
 So a weapon that fires as soon as its cooldown is ready adds about 1 heat per second, whatever its cooldown: a 0.5 s weapon adds 0.5 heat twice a second. This also means cooldown reduction, from GPU itself or [Chives](/passives/chives), does not lower heat per second. Fire-rate boosts that are not cooldown, such as the [Frenzy Fryer](/points-of-interest#frenzy-fryer), do raise it. Weapons with no cooldown, such as [Steam Vent](/weapons/steam-vent), add no heat.
 
 **Cooling.** Heat drops by 2.6–2.8 per second. If heat reaches the cap after cooling, GPU throttles.
 
-**Throttle.** For 3 s, weapon timers run at half speed, and heat drains in a straight line from the cap to 0.<small>[sim-aoTT3npm.js: `(e.player.throttleTicks[e.me]>0?e.loadout.thermal.throttleRate:1)*ay(e)`]</small> After the throttle, heat starts again from 0. Gear and other active effects can multiply the resulting rate.
+**Throttle.** For 3 s, weapon timers run at half speed, and heat drains in a straight line from the cap to 0.<small>[sim-Cn6iREtF.js: `(e.player.throttleTicks[e.me]>0?e.loadout.thermal.throttleRate:1)*cy(e)`]</small> After the throttle, heat starts again from 0. Gear and other active effects can multiply the resulting rate.
 
 **Measured** (build 41 `main-B2gf34bA.js`, headless `tools/play.mjs`, standard mode, normal difficulty; GPU and weapons given with `give`, HP refilled every tick, Tibo standing still, later level-ups taking the first offer):
 

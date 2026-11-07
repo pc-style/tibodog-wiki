@@ -2,11 +2,11 @@
 
 Root Network makes Tibo regenerate HP over time. Each level adds 0.25 HP per second: 0.25 HP/s (15 HP per minute) at level 1 and 1.25 HP/s (75 HP per minute) at level 5. Healing stops at max HP.
 
-It is the catalyst for [Pressure Cooker](/weapons/pressure-cooker) (from [Steam Vent](/weapons/steam-vent)) and [Spud Grid](/weapons/spud-grid) (from [Potato Battery](/weapons/potato-battery)). At level 5 it also evolves [Static Tot](/items/static-tot) into [Storm Tot](/items/storm-tot).
+It is the catalyst for [Pressure Cooker](/weapons/pressure-cooker) (from [Steam Vent](/weapons/steam-vent)), [Spud Grid](/weapons/spud-grid) (from [Potato Battery](/weapons/potato-battery)) and [Root Legion](/weapons/root-legion) (from [Sprout Squad](/weapons/sprout-squad)). At level 5 it also evolves [Static Tot](/items/static-tot) into [Storm Tot](/items/storm-tot).
 
 ## How it works
 
-Recovery is applied every tick as `recovery × elapsed time`, capped at max HP.<small>[sim-aoTT3npm.js: `i.recovery>0&&Yl(e,i.recovery*t)`]</small> It is a flat amount, so it does not scale with max HP, difficulty or the run clock.
+Recovery is applied every tick as `recovery × elapsed time`, capped at max HP.<small>[sim-Cn6iREtF.js: `i.recovery>0&&Yl(e,i.recovery*t)`]</small> It is a flat amount, so it does not scale with max HP, difficulty or the run clock.
 
 Other recovery sources are [Pickle Jar](/items/pickle-jar) (+0.1) and the auras of the dogs [Link](/dogs/pomeranian), [Barrel](/dogs/saint-bernard) and [Zelda & Link](/dogs/zelda-and-link).
 

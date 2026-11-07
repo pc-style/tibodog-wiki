@@ -5573,7 +5573,9 @@
   "cap": 0,
   "heldTick": 1,
   "chance": 2,
-  "life": 3
+  "life": 3,
+  "snareSec": 4,
+  "sproutAt": 5
  },
  "sim.ka": {
   "shape": "plush",
@@ -6171,6 +6173,37 @@
   "lassoed": 4,
   "pulling": 5
  },
+ "boot.Cs": {
+  "throwSec": 0.25,
+  "minThrow": 30,
+  "maxThrow": 90,
+  "flightSec": 0.35,
+  "stageSec": 1.2,
+  "selfSec": 8,
+  "zapSec": 1,
+  "zapR": 30,
+  "zapK": 0.3,
+  "reach": 24,
+  "reachK": 0.25,
+  "maxReach": 34,
+  "burstR": 30,
+  "stageR": 8,
+  "burstK": 1.5,
+  "selfK": 0.6,
+  "leashR": 160,
+  "maxPlants": 6,
+  "luckK": 0.5,
+  "goldCoins": 4
+ },
+ "boot.Ds": {
+  "steps": 5,
+  "stepSec": 1,
+  "hitLoss": 2,
+  "stopSec": 0,
+  "area": 0.48,
+  "rate": 0.24,
+  "firstStep": 0
+ },
  "boot.Fo": {
   "death": {
    "shown": false,
@@ -6248,15 +6281,6 @@
    "strike": "[fn]"
   }
  },
- "boot.Is": [
-  {
-   "parts": [
-    "pomeranian",
-    "pomchi"
-   ],
-   "into": "zelda-and-link"
-  }
- ],
  "boot.Ji": {
   "slash": 0,
   "beam": 1,
@@ -6334,26 +6358,29 @@
   "t": "[fn]"
  },
  "boot.Ss": {
-  "throwSec": 0.25,
-  "minThrow": 30,
-  "maxThrow": 90,
-  "flightSec": 0.35,
-  "stageSec": 1.2,
-  "selfSec": 8,
-  "zapSec": 1,
-  "zapR": 30,
-  "zapK": 0.3,
-  "reach": 24,
-  "reachK": 0.25,
-  "maxReach": 34,
-  "burstR": 30,
-  "stageR": 8,
-  "burstK": 1.5,
-  "selfK": 0.6,
-  "leashR": 160,
-  "maxPlants": 4,
-  "luckK": 0.5,
-  "goldCoins": 4
+  "every": 60,
+  "live": 4,
+  "arcWidth": 24,
+  "zapSec": 0.2,
+  "maxSpan": 90,
+  "minLife": 0.5
+ },
+ "boot.Ts": {
+  "kind": "snowball",
+  "turnDeg": 120,
+  "stopTicks": 4,
+  "minR": 4,
+  "maxR": 14,
+  "growPerUnit": 0.22,
+  "minRelease": 9,
+  "fullSec": 0.25,
+  "surgeSpeed": 220,
+  "surgeBase": 70,
+  "surgePerR": 9,
+  "splatK": 2.5,
+  "trailBase": 8,
+  "trailPerR": 6,
+  "sweepK": 1.4
  },
  "boot.Ui": {
   "none": 0,
@@ -6380,6 +6407,15 @@
   "hard",
   "nightmare"
  ],
+ "boot.Vs": [
+  {
+   "parts": [
+    "pomeranian",
+    "pomchi"
+   ],
+   "into": "zelda-and-link"
+  }
+ ],
  "boot.Wi": {
   "dud": 1,
   "freeze": 2,
@@ -6387,33 +6423,6 @@
   "split": 4,
   "gold": 5,
   "blast": 6
- },
- "boot.Xs": {
-  "alexReveal": {
-   "playing": false,
-   "live": false,
-   "ready": "[fn]",
-   "frame": "[fn]",
-   "view": "[fn]",
-   "skip": "[fn]",
-   "probe": "[fn]",
-   "relabel": "[fn]"
-  },
-  "storyLines": {
-   "holds": false,
-   "speaking": false,
-   "grokTabOwed": false,
-   "readyForDeathPanel": "[fn]",
-   "frame": "[fn]",
-   "relabel": "[fn]"
-  },
-  "friesLines": {
-   "holds": false,
-   "speaking": false,
-   "frame": "[fn]",
-   "sample": "[fn]",
-   "relabel": "[fn]"
-  }
  },
  "boot.Z": {
   "tier": "low",
@@ -7330,6 +7339,33 @@
    "url": "[fn]"
   }
  ],
+ "boot.nc": {
+  "alexReveal": {
+   "playing": false,
+   "live": false,
+   "ready": "[fn]",
+   "frame": "[fn]",
+   "view": "[fn]",
+   "skip": "[fn]",
+   "probe": "[fn]",
+   "relabel": "[fn]"
+  },
+  "storyLines": {
+   "holds": false,
+   "speaking": false,
+   "grokTabOwed": false,
+   "readyForDeathPanel": "[fn]",
+   "frame": "[fn]",
+   "relabel": "[fn]"
+  },
+  "friesLines": {
+   "holds": false,
+   "speaking": false,
+   "frame": "[fn]",
+   "sample": "[fn]",
+   "relabel": "[fn]"
+  }
+ },
  "boot.oa": {
   "circle": 0,
   "line": 1,
@@ -7445,6 +7481,28 @@
   "telegraph": 5,
   "hazardPool": 6,
   "scar": 7
+ },
+ "boot.ws": {
+  "throwSec": 0.25,
+  "minThrow": 30,
+  "maxThrow": 90,
+  "flightSec": 0.35,
+  "stageSec": 1.2,
+  "selfSec": 8,
+  "zapSec": 1,
+  "zapR": 30,
+  "zapK": 0.3,
+  "reach": 24,
+  "reachK": 0.25,
+  "maxReach": 34,
+  "burstR": 30,
+  "stageR": 8,
+  "burstK": 1.5,
+  "selfK": 0.6,
+  "leashR": 160,
+  "maxPlants": 4,
+  "luckK": 0.5,
+  "goldCoins": 4
  },
  "boot.xr": {
   "effectsOpacity": 1,
