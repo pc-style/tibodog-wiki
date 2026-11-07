@@ -6,8 +6,8 @@ Every 1.8 s it lobs 9 potatoes (raw Amount 8 plus Tibo's base +1 projectile, see
 
 ## How it works
 
-- **Throw.** Each potato is thrown straight up the screen at 85–110% of its Speed (230), with a random sideways drift of up to 140 × (0.6 + 0.4 × Area) units per second, about 174 at its base Area. Gravity (420) then pulls it back down past Tibo, so potatoes rise roughly 45–75 units above him and fall back through the height they were thrown from about 1.1 s later. <small>[sim-Bkz6e7bE.js: `c.vx[n]=e.rng.range(-r.spreadX,r.spreadX)*(.6+.4*o.area),c.vy[n]=-o.speed*e.rng.range(.85,1.1)`]</small>
-- **Hitting.** A potato hits anything it passes over on the way up or down. On its first hit it explodes and is removed, so its Pierce never comes into play. The pest it touched takes the direct hit and is also inside the blast. <small>[sim-Bkz6e7bE.js: `if(n.split[t]>0&&iw(e,t,a),n.explodeRadius[t]>0)rw(e,t),n.pool.kill(t)`]</small>
+- **Throw.** Each potato is thrown straight up the screen at 85–110% of its Speed (230), with a random sideways drift of up to 140 × (0.6 + 0.4 × Area) units per second, about 174 at its base Area. Gravity (420) then pulls it back down past Tibo, so potatoes rise roughly 45–75 units above him and fall back through the height they were thrown from about 1.1 s later. <small>[sim-dQVU-VqL.js: `c.vx[n]=e.rng.range(-r.spreadX,r.spreadX)*(.6+.4*o.area),c.vy[n]=-o.speed*e.rng.range(.85,1.1)`]</small>
+- **Hitting.** A potato hits anything it passes over on the way up or down. On its first hit it explodes and is removed, so its Pierce never comes into play. The pest it touched takes the direct hit and is also inside the blast. <small>[sim-dQVU-VqL.js: `if(n.split[t]>0&&iw(e,t,a),n.explodeRadius[t]>0)rw(e,t),n.pool.kill(t)`]</small>
 - **Misses.** A potato that touches nothing explodes wherever it is when its Duration runs out.
 - **No target needed.** The weapon fires on its cooldown even when no pest is around.
 

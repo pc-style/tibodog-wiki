@@ -6,10 +6,10 @@ It deals no damage at all. Its HP is high for its time (300 base) and scales wit
 
 ## How it works
 
-- **Running.** It moves directly away from Tibo. Within 70 units (`lootRunners.sprintRadius`) it flees at its full speed of 40; farther out it slows to 30% of that, 12. <small>[sim-Bkz6e7bE.js: `let n=r>e.cfg.lootRunners.sprintRadius?.3:1`]</small>
-- **Escaping.** It vanishes, with no drops, 25 s after it appears (`escapeAfter`). Like other timed pests, it is also removed if Tibo gets more than 460 units away from it. <small>[sim-Bkz6e7bE.js: `` i.despawnAt[d]=e.time+(s.behavior.kind===`flee`?s.behavior.escapeAfter:25) ``]</small>
-- **Gold per hit.** Each hit that lands has a 50% chance to drop a coin worth 2 (`goldPerHit`). <small>[sim-Bkz6e7bE.js: `` n>0&&e.lootRng.chance(.5)&&V(e,`gold` ``]</small>
-- **Reward.** Killing it drops an item pickup, which Tibo opens by standing on it (see [Pickups](/pickups)), on top of its normal drops. <small>[sim-Bkz6e7bE.js: `` db[n.def[t]]===1&&Hc(e,`item`,i,a,1,`lootRunner`) ``]</small>
+- **Running.** It moves directly away from Tibo. Within 70 units (`lootRunners.sprintRadius`) it flees at its full speed of 40; farther out it slows to 30% of that, 12. <small>[sim-dQVU-VqL.js: `let n=r>e.cfg.lootRunners.sprintRadius?.3:1`]</small>
+- **Escaping.** It vanishes, with no drops, 25 s after it appears (`escapeAfter`). Like other timed pests, it is also removed if Tibo gets more than 460 units away from it. <small>[sim-dQVU-VqL.js: `` i.despawnAt[d]=e.time+(s.behavior.kind===`flee`?s.behavior.escapeAfter:25) ``]</small>
+- **Gold per hit.** Each hit that lands has a 50% chance to drop a coin worth 2 (`goldPerHit`). <small>[sim-dQVU-VqL.js: `` n>0&&e.lootRng.chance(.5)&&V(e,`gold` ``]</small>
+- **Reward.** Killing it drops an item pickup, which Tibo opens by standing on it (see [Pickups](/pickups)), on top of its normal drops. <small>[sim-dQVU-VqL.js: `` db[n.def[t]]===1&&Hc(e,`item`,i,a,1,`lootRunner`) ``]</small>
 
 ## Tips
 
