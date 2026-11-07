@@ -6125,7 +6125,10 @@
   "dog:sigkitten",
   "dog:dalmatian",
   "dog:husky",
-  "dog:newfoundland"
+  "dog:newfoundland",
+  "dog:saluki",
+  "dog:shiba",
+  "dog:whippet"
  ],
  "sim.vi": [
   [
@@ -6591,7 +6594,8 @@
   "ladder",
   "gear",
   "variety",
-  "setRules"
+  "setRules",
+  "moreVariety"
  ],
  "boot.Ka": {
   "warmupSeconds": 1,
@@ -6693,6 +6697,13 @@
    "sheet": true,
    "manifest": "[fn]",
    "icons": false,
+   "url": "[fn]"
+  },
+  {
+   "phase": "moreVariety",
+   "sheet": true,
+   "manifest": "[fn]",
+   "icons": "[fn]",
    "url": "[fn]"
   }
  ],
@@ -7227,7 +7238,8 @@
   "gear",
   "runMusic",
   "variety",
-  "setRules"
+  "setRules",
+  "moreVariety"
  ],
  "boot.ra": {
   "wander": 0,

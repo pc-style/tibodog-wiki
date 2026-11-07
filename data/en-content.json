@@ -542,6 +542,24 @@
  "content.dog.saint-bernard.name": [
   "Barrel"
  ],
+ "content.dog.saluki.breed": [
+  "Saluki"
+ ],
+ "content.dog.saluki.desc": [
+  "Runs at your heels and lunges at a pest every 2 seconds, harder the faster you move."
+ ],
+ "content.dog.saluki.name": [
+  "Gale"
+ ],
+ "content.dog.shiba.breed": [
+  "Shiba"
+ ],
+ "content.dog.shiba.desc": [
+  "When Tibo kills an elite, Kiko calls two spirit pups that hunt pests for 6 s."
+ ],
+ "content.dog.shiba.name": [
+  "Kiko"
+ ],
  "content.dog.sigkitten.breed": [
   "Cat"
  ],
@@ -559,6 +577,15 @@
  ],
  "content.dog.terrier.name": [
   "Pip"
+ ],
+ "content.dog.whippet.breed": [
+  "Whippet"
+ ],
+ "content.dog.whippet.desc": [
+  "When Tibo is hit, Whip tugs him a short dash away, once every 15 s."
+ ],
+ "content.dog.whippet.name": [
+  "Whip"
  ],
  "content.dog.zelda-and-link.breed": [
   "Pomeranian and Chihuahua-Pomeranian"
@@ -782,6 +809,12 @@
  "content.event.bale-ring.name": [
   "Ring of Hay Bales"
  ],
+ "content.event.big-gust.announce": [
+  "A gust pulls every gem, coin and snack to Tibo!"
+ ],
+ "content.event.big-gust.name": [
+  "Big Gust"
+ ],
  "content.event.crab-tide.announce": [
   "Crab tide! Crabs scuttle in from every side!"
  ],
@@ -793,6 +826,12 @@
  ],
  "content.event.fly-swarm.name": [
   "Fry Fly Swarm"
+ ],
+ "content.event.fry-rush.announce": [
+  "Weapons fire 30% faster for 15 s!"
+ ],
+ "content.event.fry-rush.name": [
+  "Fry Rush"
  ],
  "content.event.golden-scarab.announce": [
   "A Golden Scarab! Catch it!"
@@ -823,6 +862,12 @@
  ],
  "content.event.lunch-rush.name": [
   "Lunch Rush"
+ ],
+ "content.event.picnic.announce": [
+  "Snacks rain around Tibo for 10 s!"
+ ],
+ "content.event.picnic.name": [
+  "Picnic"
  ],
  "content.event.strike.announce": [
   "Strike! Bowling balls roll in from every side!"
@@ -1126,6 +1171,12 @@
  "content.item.copper-spoon.name": [
   "Copper Spoon"
  ],
+ "content.item.copper-tot.desc": [
+  "Picking up gold has a 25% chance to hit a random pest on screen for heavy damage."
+ ],
+ "content.item.copper-tot.name": [
+  "Copper Tot"
+ ],
  "content.item.coupon-book.desc": [
   "Everything you buy costs less."
  ],
@@ -1312,6 +1363,12 @@
  "content.item.salt-crystal.name": [
   "Salt Crystal"
  ],
+ "content.item.second-helping.desc": [
+  "Each snack Tibo eats at full HP gives +1% damage for the rest of the run, up to +10% per level."
+ ],
+ "content.item.second-helping.name": [
+  "Second Helping"
+ ],
  "content.item.second-spud.desc": [
   "Revive once with half HP."
  ],
@@ -1330,6 +1387,12 @@
  "content.item.souffle-spud.name": [
   "Soufflé Spud"
  ],
+ "content.item.spark-spud.desc": [
+  "Walking charges a spark. Every 300 units Tibo walks, it bursts, hitting and stunning pests around him."
+ ],
+ "content.item.spark-spud.name": [
+  "Spark Spud"
+ ],
  "content.item.spicy-croquette.desc": [
   "12% of hits burst in a fiery blast."
  ],
@@ -1341,6 +1404,12 @@
  ],
  "content.item.spud-muffin.name": [
   "Spud Muffin"
+ ],
+ "content.item.spud-purse.desc": [
+  "Every 100 units Tibo walks, he drops a coin, 16 units sooner per extra copy."
+ ],
+ "content.item.spud-purse.name": [
+  "Spud Purse"
  ],
  "content.item.spud-spring.desc": [
   "Cuts the dash cooldown by 15%. Stacks up to 3 times."
@@ -1414,11 +1483,23 @@
  "content.item.wandering-eyes.name": [
   "Wandering Eyes"
  ],
+ "content.item.warm-bowl.desc": [
+  "Charging any activation ring leaves a healing pool there for 10 s."
+ ],
+ "content.item.warm-bowl.name": [
+  "Warm Bowl"
+ ],
  "content.item.wide-ladle.desc": [
   "+6% area."
  ],
  "content.item.wide-ladle.name": [
   "Wide Ladle"
+ ],
+ "content.passive.aged-russet.desc": [
+  "+0.5% damage per level for each level Tibo has gained this run, up to +10% per level."
+ ],
+ "content.passive.aged-russet.name": [
+  "Aged Russet"
  ],
  "content.passive.bacon-bits.desc": [
   "+12% damage to elites and bosses per level."
@@ -1449,6 +1530,12 @@
  ],
  "content.passive.chives.name": [
   "Chives"
+ ],
+ "content.passive.clean-plate.desc": [
+  "After 5 s without a hit, +12% crit chance per level. A hit sheds one level."
+ ],
+ "content.passive.clean-plate.name": [
+  "Clean Plate"
  ],
  "content.passive.couch-potato.desc": [
   "While Tibo stands still, damage rises 4% a second per level, up to 20% per level. Moving resets it."

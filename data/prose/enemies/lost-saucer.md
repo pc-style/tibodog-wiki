@@ -6,10 +6,10 @@ The saucer spawns 40 units from Tibo in a random direction and has 20 seconds be
 
 ## How it works
 
-- **Fleeing**: it moves directly away from Tibo. Within 70 units it runs at its full speed of 40; farther out it slows to 30% (12 units per second). Tibo's base speed is 62, so he can always close the gap. <small>[sim-CeO30Hnb.js: `let n=r>e.cfg.lootRunners.sprintRadius?.3:1;i.vx[t]=-i.vx[t]*n,i.vy[t]=-i.vy[t]*n`]</small>
-- **Gold per hit**: every hit has a 50% chance to drop a coin worth 2, before Tibo's gold gain. <small>[sim-CeO30Hnb.js: ``n>0&&e.lootRng.chance(.5)&&R(e,`gold`,e.enemies.x[t],e.enemies.y[t],n)``]</small>
-- **Escape**: it despawns 20 s after spawning (its `escapeAfter`), or earlier if it gets more than 460 units from Tibo. Either way it drops nothing. <small>[sim-CeO30Hnb.js: ``r.despawnAt[d]=e.time+(a.behavior.kind===`flee`?a.behavior.escapeAfter:25)``]</small>
-- **Item on kill**: killing a loot runner adds an item pickup to the normal drops. <small>[sim-CeO30Hnb.js: ``jS[n.def[t]]===1&&nl(e,`item`,i,a,1,`lootRunner`)``]</small>
+- **Fleeing**: it moves directly away from Tibo. Within 70 units it runs at its full speed of 40; farther out it slows to 30% (12 units per second). Tibo's base speed is 62, so he can always close the gap. <small>[sim-BtxK0PMC.js: `let n=r>e.cfg.lootRunners.sprintRadius?.3:1;i.vx[t]=-i.vx[t]*n,i.vy[t]=-i.vy[t]*n`]</small>
+- **Gold per hit**: every hit has a 50% chance to drop a coin worth 2, before Tibo's gold gain. <small>[sim-BtxK0PMC.js: ``n>0&&e.lootRng.chance(.5)&&R(e,`gold`,e.enemies.x[t],e.enemies.y[t],n)``]</small>
+- **Escape**: it despawns 20 s after spawning (its `escapeAfter`), or earlier if it gets more than 460 units from Tibo. Either way it drops nothing. <small>[sim-BtxK0PMC.js: ``r.despawnAt[d]=e.time+(a.behavior.kind===`flee`?a.behavior.escapeAfter:25)``]</small>
+- **Item on kill**: killing a loot runner adds an item pickup to the normal drops. <small>[sim-BtxK0PMC.js: ``tC[n.def[t]]===1&&pl(e,`item`,i,a,1,`lootRunner`)``]</small>
 - **Knockback**: its mass of 0.5 halves knockback. Knockback pushes it away from where the hit came from, which for most of Tibo's weapons is also away from him.
 
 ## Tips

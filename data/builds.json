@@ -1495,5 +1495,16 @@
   "updated": "2026-11-07T22:10:34Z",
   "changes": "XP and gold can keep dropping when uncollected supplies fill the pickup pool. If gem/coin reuse fails, a new gem, coin, chest or item can replace the farthest unprotected pickup; existing XP, gold, chests and items are not evicted by this fallback.",
   "evidence": "Scoped pickup-allocation review against main-Di_nOkfT.js: three normalized sim hunks add a fallback after existing gem-cap and gem/coin reuse paths; boot only changes own commit and simVersion. Registry, English content, config values, localized names and icons match. All 54 old/new original-allocator fixtures passed with seed wiki, Standard/Normal and a supplied five-slot SlotPool: below/full capacity, XP/gold/chest/item insertion, protected and incoming-supply rejection, farther protected slots, merge priority and value conservation, player-relative distance, dead-slot exclusion and reset fields/generation. These are supplied-state allocator fixtures, not natural long-run, performance or server evidence. All 307 live journal notes match text, kind, date/code grouping and display order with every older day expanded; long-run-drops was published at 2026-11-07T21:04:55Z, distinct from source-observed introduction. Five ambiguous citations now use their correct current functions; Save code strings retain their owning chunk. Sources, hashes, exact fixture inputs/results and prior evidence limits are in data/journal-audit.md."
+ },
+ {
+  "seen": "2026-11-07",
+  "main": "main-Br-jCdj5.js",
+  "boot": "boot-DW5mYh2o.js",
+  "sim": "sim-BtxK0PMC.js",
+  "commit": "1d9b8a74ee11",
+  "status": "reviewed",
+  "updated": "2026-11-07T23:08:40Z",
+  "changes": "Five new items, two passives and three dogs reward movement, spare snacks, clean dodging and elite kills. Big Gust gathers loot, Picnic drops snacks, and Fry Rush briefly speeds weapon fire.",
+  "evidence": "Scoped new-module/direct-call-site review against build 137: 37 normalized sim hunks and 5 boot flag/loader/version hunks. Existing updater imports numeric definitions and ten icons. Thirteen entity pages explain the new behavior; 69 original-module supplied-state checks cover flag gates, movement/dash counters, snack-before-heal caps, level-based damage, timed crit tiers and shedding, healing-pool boundaries, gold targeting, spirit lifetime, Whip hit/cooldown and event eligibility/duration. These are controlled fixtures, not natural acquisition, survival/DPS, performance or server evidence. All 310 live journal text/kind/date/code records match extraction in display order with every older date expanded. Backdated new-note publication and older leaderboard/pickup histories remain distinct from source introduction. Nine citation categories and Save code's owning chunk repaired. Sources, SHA-256 hashes, exact fixture controls/results and prior evidence limits are in data/journal-audit.md. No infrastructure, legacy timers, unrelated review or schema changes."
  }
 ]
