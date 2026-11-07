@@ -2293,6 +2293,12 @@
  "content.weapon.rosti-storm.name": [
   "Rösti Storm"
  ],
+ "content.weapon.russet-ricochet.desc": [
+  "Russet cannonballs skip out in a fan along the way Tibo faces and burst at every bounce, each burst bigger than the last. Every burst throws a small spud at a nearby pest, and the spud bursts too. Amount adds a bounce."
+ ],
+ "content.weapon.russet-ricochet.name": [
+  "Russet Ricochet"
+ ],
  "content.weapon.sack-of-russets.desc": [
   "A whole sack of heavy potatoes, all at once."
  ],

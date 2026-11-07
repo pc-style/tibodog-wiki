@@ -6,7 +6,7 @@ It is the catalyst for [Cold Storage](/weapons/cold-storage) (from [Root Cellar]
 
 ## How it works
 
-The duration multiplier is `max(0.2, 1 + total + 0.25)`.<small>[sim-B4hL87aF.js: `i[r.durationMult]=Math.max(.2,1+e.duration+t.player.baseDuration)`]</small> Each weapon's duration is multiplied by it, which lengthens pools, orbits and other timed attacks. It also lengthens freeze, slow and burn effects, including burns and freezes from items.<small>[sim-B4hL87aF.js: `Ev.seconds=r*e.loadout.stats.durationMult`]</small>
+The duration multiplier is `max(0.2, 1 + total + 0.25)`.<small>[sim-Bkz6e7bE.js: `i[r.durationMult]=Math.max(.2,1+e.duration+t.player.baseDuration)`]</small> Each weapon's duration is multiplied by it, which lengthens pools, orbits and other timed attacks. It also lengthens freeze, slow and burn effects, including burns and freezes from items.<small>[sim-Bkz6e7bE.js: `Dv.seconds=r*e.loadout.stats.durationMult`]</small>
 
 Other duration sources are [Time Tuber](/items/time-tuber) (+0.15), [Philosopher's Potato](/items/philosophers-potato) (+0.1) and [Spud Shrine](/points-of-interest#spud-shrine) blessings.
 

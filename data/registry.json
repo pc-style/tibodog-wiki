@@ -7416,6 +7416,50 @@
    "catalyst": "root-network"
   },
   {
+   "id": "russet-ricochet",
+   "tier": "evolved",
+   "base": {
+    "damage": 34,
+    "cooldown": 0.95,
+    "amount": 3,
+    "area": 1.15,
+    "speed": 115,
+    "duration": 0,
+    "pierce": 0,
+    "knockback": 1,
+    "interval": 0
+   },
+   "behavior": {
+    "kind": "bigUpdate",
+    "variant": {
+     "kind": "skippingCannonball",
+     "rule": {
+      "hops": 3,
+      "hopGap": 0.28,
+      "minSpeed": 80,
+      "burstRadius": 23,
+      "burstGrowth": 5,
+      "damageGrowth": 0.25,
+      "settle": 0.45,
+      "fan": {
+       "balls": 2,
+       "spreadDeg": 28
+      },
+      "spud": {
+       "share": 0.6,
+       "radius": 14,
+       "seek": 110,
+       "reach": 34,
+       "flight": 0.25,
+       "turnDeg": 55
+      }
+     }
+    }
+   },
+   "from": "skipping-cannonball",
+   "catalyst": "sprouting-eyes"
+  },
+  {
    "id": "gravy-pack",
    "tier": "evolved",
    "base": {
@@ -9002,6 +9046,50 @@
    },
    "from": "sprout-squad",
    "catalyst": "root-network"
+  },
+  {
+   "id": "russet-ricochet",
+   "tier": "evolved",
+   "base": {
+    "damage": 34,
+    "cooldown": 0.95,
+    "amount": 3,
+    "area": 1.15,
+    "speed": 115,
+    "duration": 0,
+    "pierce": 0,
+    "knockback": 1,
+    "interval": 0
+   },
+   "behavior": {
+    "kind": "bigUpdate",
+    "variant": {
+     "kind": "skippingCannonball",
+     "rule": {
+      "hops": 3,
+      "hopGap": 0.28,
+      "minSpeed": 80,
+      "burstRadius": 23,
+      "burstGrowth": 5,
+      "damageGrowth": 0.25,
+      "settle": 0.45,
+      "fan": {
+       "balls": 2,
+       "spreadDeg": 28
+      },
+      "spud": {
+       "share": 0.6,
+       "radius": 14,
+       "seek": 110,
+       "reach": 34,
+       "flight": 0.25,
+       "turnDeg": 55
+      }
+     }
+    }
+   },
+   "from": "skipping-cannonball",
+   "catalyst": "sprouting-eyes"
   },
   {
    "id": "gravy-pack",

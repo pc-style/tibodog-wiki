@@ -34,8 +34,8 @@ export async function loadGame(main = JSON.parse(readFileSync(join(ROOT, 'data/b
   const sim = await import(pathToFileURL(join(dir, file(/^sim-[A-Za-z0-9_-]{8}\.js$/))).href);
   const boot = await import(pathToFileURL(join(dir, file(/^boot-[A-Za-z0-9_-]{8}\.js$/))).href);
   await loadEndgame(boot);
-  const extrasFile = file(/^run-extras-[A-Za-z0-9_-]{8}\.js$/);
-  const extras = extrasFile ? Object.values(await import(pathToFileURL(join(dir, extrasFile)).href)).find((v) => v?.choicePanel && v?.rules) : undefined;
+  const extrasFile = file(/^run-rules-[A-Za-z0-9_-]{8}\.js$/) ?? file(/^run-extras-[A-Za-z0-9_-]{8}\.js$/);
+  const extras = extrasFile ? Object.values(await import(pathToFileURL(join(dir, extrasFile)).href)).find((v) => v?.rules && v?.areas) : undefined;
   const Game = Object.values(sim).find((v) => v && typeof v === 'object' && typeof v.Game === 'function')?.Game;
   if (!Game) throw new Error(`no Game class in the sim chunk of ${main}`);
   const registry = Object.values(boot).find((v) => v && typeof v === 'object' && typeof v.weapon === 'function' && Array.isArray(v.allWeapons));
