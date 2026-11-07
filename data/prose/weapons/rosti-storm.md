@@ -7,7 +7,7 @@ Its direct hit (26) is lower than a max-level Rösti Disc's 30. It makes up for 
 ## How it works
 
 - Discs move and bounce exactly like Rösti Disc's. They start at Tibo in a random direction, flip direction at the edges of the 320 × 320 play area centred on him and have unlimited pierce.
-- **Bounce explosions.** At each bounce the disc deals 60% of its damage (15.6 at base) to every pest within `explodeOnBounce` × area, 24 units at area 1.2, with knockback 1. <small>[sim-BIASVETB.js: `q(e,.6*n.damage[t],n.src[t],n.slot[t],1),nu(e,n.x[t],n.y[t],r)`]</small>
+- **Bounce explosions.** At each bounce the disc deals 60% of its damage (15.6 at base) to every pest within `explodeOnBounce` × area, 24 units at area 1.2, with knockback 1. <small>[sim-DluAnNp6.js: `q(e,.6*n.damage[t],n.src[t],n.slot[t],1),nu(e,n.x[t],n.y[t],r)`]</small>
 - Bounces happen at the play-area edges, so the explosions go off around the edges of the area around Tibo, not near Tibo himself.
 - Faster discs reach the edges more often, so projectile speed from [Salt Shaker](/passives/salt-shaker) means more bounces and more explosions over each disc's life.
 
