@@ -1484,5 +1484,16 @@
   "updated": "2026-11-07T21:28:26Z",
   "changes": "Daily leaderboard runs put their shared link in the address bar for copying or reloading. Browser Back closes the run detail and returns to the board.",
   "evidence": "Scoped navigation/journal review against main-qX8_DBjB.js: boot history handling, Daily row lifecycle, row-stats link parameters and shared-run address construction. Registry, English content, config values, names and icons are identical; sim has zero normalized logic hunks. All 306 live journal texts match extraction in display order with every older day expanded; the new current note was published at 2026-11-07T20:12:58Z, separate from source-observed introduction. A real Normal board row loaded /r/ run/stats parameters; browser Back restored the board URL, visible list and row focus. Opening its copied address loaded the shared-run view. Exact owning combat/UI citations repaired without changed combat claims. Sources, SHA-256 hashes and probe limitations are in data/journal-audit.md; no ceremonial gameplay run."
+ },
+ {
+  "seen": "2026-11-07",
+  "main": "main-B8UaU6H2.js",
+  "boot": "boot-DLmVH_bQ.js",
+  "sim": "sim-CeO30Hnb.js",
+  "commit": "f0fff8b23a39",
+  "status": "reviewed",
+  "updated": "2026-11-07T22:10:34Z",
+  "changes": "XP and gold can keep dropping when uncollected supplies fill the pickup pool. If gem/coin reuse fails, a new gem, coin, chest or item can replace the farthest unprotected pickup; existing XP, gold, chests and items are not evicted by this fallback.",
+  "evidence": "Scoped pickup-allocation review against main-Di_nOkfT.js: three normalized sim hunks add a fallback after existing gem-cap and gem/coin reuse paths; boot only changes own commit and simVersion. Registry, English content, config values, localized names and icons match. All 54 old/new original-allocator fixtures passed with seed wiki, Standard/Normal and a supplied five-slot SlotPool: below/full capacity, XP/gold/chest/item insertion, protected and incoming-supply rejection, farther protected slots, merge priority and value conservation, player-relative distance, dead-slot exclusion and reset fields/generation. These are supplied-state allocator fixtures, not natural long-run, performance or server evidence. All 307 live journal notes match text, kind, date/code grouping and display order with every older day expanded; long-run-drops was published at 2026-11-07T21:04:55Z, distinct from source-observed introduction. Five ambiguous citations now use their correct current functions; Save code strings retain their owning chunk. Sources, hashes, exact fixture inputs/results and prior evidence limits are in data/journal-audit.md."
  }
 ]
