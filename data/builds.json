@@ -1506,5 +1506,16 @@
   "updated": "2026-11-07T23:08:40Z",
   "changes": "Five new items, two passives and three dogs reward movement, spare snacks, clean dodging and elite kills. Big Gust gathers loot, Picnic drops snacks, and Fry Rush briefly speeds weapon fire.",
   "evidence": "Scoped new-module/direct-call-site review against build 137: 37 normalized sim hunks and 5 boot flag/loader/version hunks. Existing updater imports numeric definitions and ten icons. Thirteen entity pages explain the new behavior; 69 original-module supplied-state checks cover flag gates, movement/dash counters, snack-before-heal caps, level-based damage, timed crit tiers and shedding, healing-pool boundaries, gold targeting, spirit lifetime, Whip hit/cooldown and event eligibility/duration. These are controlled fixtures, not natural acquisition, survival/DPS, performance or server evidence. All 310 live journal text/kind/date/code records match extraction in display order with every older date expanded. Backdated new-note publication and older leaderboard/pickup histories remain distinct from source introduction. Nine citation categories and Save code's owning chunk repaired. Sources, SHA-256 hashes, exact fixture controls/results and prior evidence limits are in data/journal-audit.md. No infrastructure, legacy timers, unrelated review or schema changes."
+ },
+ {
+  "seen": "2026-11-07",
+  "main": "main-DgnHnanq.js",
+  "boot": "boot-Pnr14wzQ.js",
+  "sim": "sim-DnXbkcN3.js",
+  "commit": "8ef663d0df3a",
+  "status": "reviewed",
+  "updated": "2026-11-07T23:50:44Z",
+  "changes": "The journal files the existing new-item, dog and event notes under November 7, code 1d9b8a7, and the long-run pickup fix under f0fff8b. Gameplay and note wording are unchanged.",
+  "evidence": "Publication-only reconciliation against build 138 across 412 reachable files per build. Whole-build comparison isolates the journal and title-gear-parts pairs; the latter only swaps daily-claim and daily-claim-steps in one Promise.all retry-prefetch list. Exact role-preserving comparison confirms the rest matches after hash masking. Sim and boot have zero normalized hunks; no new/removed chunk roles. Registry, English text, config, names and icons unchanged. All 310 note identities, message IDs, kinds and texts preserved. All 310 live panel records match extraction and official full changelog in display order with every older date expanded: 25/80/43/28/41/47/46 notes, 115 published codes, no current notes. The three variety notes retain publication times 2026-11-07T18:58:02Z/:03Z/:04Z and source introduction in build 138; long-run-drops retains 2026-11-07T21:04:55Z and build 137 introduction. Regrouping is not a new introduction. Programmatic source refresh and two verbatim Save code citation relocations; 1777 quotes resolve. Sources, SHA-256 and preserved historical evidence limits are in data/journal-audit.md. No gameplay probes, unchanged-module review, schema, infrastructure or legacy timer changes."
  }
 ]
