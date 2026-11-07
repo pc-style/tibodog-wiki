@@ -6,7 +6,7 @@ Every 0.8 s it slashes 3 times (2 plus Tibo's built-in +1 amount, see [Stats](/s
 
 ## How it works
 
-- **Healing.** The heal is `min(0.25 × pests hit, 4)` per slash, so it reaches the cap at 16 pests. A full volley heals up to 12 HP every 0.8 s, before cooldown bonuses. <small>[sim-sB5IBoT-.js: `n.heal!==void 0&&l>0&&ou(e,Math.min(n.heal*l,n.healCap??4))`]</small>
+- **Healing.** The heal is `min(0.25 × pests hit, 4)` per slash, so it reaches the cap at 16 pests. A full volley heals up to 12 HP every 0.8 s, before cooldown bonuses. <small>[sim-DT94mWmG.js: `n.heal!==void 0&&l>0&&ou(e,Math.min(n.heal*l,n.healCap??4))`]</small>
 - **Slices.** As with the Peeler's peels, slices fan out over ±0.6 rad, move at 40 units/s for 2.2 s × Duration and pierce everything, here for 0.5× the slash damage. A volley throws 12. The 6 s `rehit` timer is shared by all of this weapon's slices, so any one pest takes slice damage at most once every 6 s.
 - Unlike [Moon Cleaver](/weapons/moon-cleaver), every slash flings, not only the rear one.
 
