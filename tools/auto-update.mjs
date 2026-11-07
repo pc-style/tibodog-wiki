@@ -1,7 +1,7 @@
 // Event entry point: code does detection, import, checks, Git and live verification.
 // Exit 20 requests writing/schema work; failures preserve the isolated worktree.
 import { execFileSync } from 'node:child_process';
-import { mkdirSync, mkdtempSync, readFileSync, readdirSync, rmSync, symlinkSync, writeFileSync } from 'node:fs';
+import { mkdirSync, mkdtempSync, readFileSync, readdirSync, rmSync, symlinkSync, unlinkSync, writeFileSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -35,7 +35,7 @@ try {
   git('fetch', '--quiet', 'origin', 'main');
   const documented = JSON.parse(git('show', 'origin/main:data/build.json'));
   const html = await get('https://tibo.dog/');
-  const main = html.match(/assets\/(main-[A-Za-z0-9_-]{8}\.js)/)?.[1];
+  let main = html.match(/assets\/(main-[A-Za-z0-9_-]{8}\.js)/)?.[1];
   if (!main) throw new Error('Game entry parse failed');
   const history = JSON.parse(git('show', 'origin/main:data/builds.json'));
   if (main === documented.main && history.every((b) => b.status === 'reviewed')) {
@@ -57,9 +57,13 @@ try {
       console.log(`automatic: needs-review; preserved ${worktree}; report .cache/${main.slice(0, -3)}/report.md`);
       process.exitCode = 20;
     } else {
+      // Detection and mirroring are separate requests; the game may release
+      // again between them. Every gate and receipt must use the imported build.
+      main = JSON.parse(readFileSync(join(cwd, 'data/build.json'), 'utf8')).main;
+      if (!/^main-[A-Za-z0-9_-]{8}\.js$/.test(main)) throw new Error('Invalid imported build metadata');
       checks(main);
       git('add', 'data', 'pages', 'public/icons', 'paths.js');
-      git('commit', '-m', `Update game data automatically: ${main}`);
+      git('commit', '-m', `Update game data automatically: ${main}`, '-m', 'Automatic validated update; no model review.\n\nAmp-Thread-ID: T-41922f7d-7aa9-47ea-9612-ef6df9b9f21a');
       git('fetch', '--quiet', 'origin', 'main');
       git('rebase', 'origin/main');
       // A second updater may have changed the documented build. Never merge two releases.
@@ -112,6 +116,14 @@ try {
   console.error(`automatic: blocked: ${e.message}${worktree ? `; preserved ${worktree}` : ''}`);
   process.exitCode = 1;
 } finally {
-  if (worktree && clean) { cwd = root; git('worktree', 'remove', worktree); }
-  rmSync(lock, { recursive: true });
+  try {
+    if (worktree && clean) {
+      // Git counts ignored symlinks as untracked worktree content. Unlink only
+      // these two owned links, never their shared targets or another checkout.
+      unlinkSync(join(worktree, 'node_modules'));
+      unlinkSync(join(worktree, '.cache'));
+      cwd = root;
+      git('worktree', 'remove', worktree);
+    }
+  } finally { rmSync(lock, { recursive: true }); }
 }
