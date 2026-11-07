@@ -6,7 +6,7 @@ It arrives just as the ×4 boss HP step starts at 18:00, so its 11000 base HP be
 
 It drops a [chest](/chests), an XP gem worth 230 XP and a 25-gold coin (both multiplied by the biome's XP and gold multipliers).
 
-**Measured** (headless `tools/play.mjs`, build `main-B2gf34bA`, seed `wiki`, standard mode, `--god`; the clock warped to 2 s before each minute and stepped across it; level-up offers taken first-in-order except Rotten Spud, so curse stays at the difficulty's start value): it spawned at exactly 18:00 on all four difficulties, with 22,000 HP on Easy, 28,600 on Normal, 30,800 on Hard and 45,980 on Nightmare. The Nightmare figure is 10% above base HP × the difficulty multiplier because Nightmare starts every run with one curse, and boss HP is multiplied by 1 + curse. <small>[intro-shared-CC6cMTQZ.js: `startCurses:1,tierLag:2,wallPests:.6`]</small> <small>[sim-LB46ZBLZ.js: `n.maxHp[r]=i.hp*t.hpMult*(1+e.loadout.stats.curse)`]</small> Seeds `s1` to `s4` gave the same Normal times and HP. The Nightmare value comes from a run where each earlier boss was removed on arrival, because a stationary god-mode Tibo was killed by stacked boss hits at 17:59 otherwise.
+**Measured** (headless `tools/play.mjs`, build `main-B2gf34bA`, seed `wiki`, standard mode, `--god`; the clock warped to 2 s before each minute and stepped across it; level-up offers taken first-in-order except Rotten Spud, so curse stays at the difficulty's start value): it spawned at exactly 18:00 on all four difficulties, with 22,000 HP on Easy, 28,600 on Normal, 30,800 on Hard and 45,980 on Nightmare. The Nightmare figure is 10% above base HP × the difficulty multiplier because Nightmare starts every run with one curse, and boss HP is multiplied by 1 + curse. <small>[intro-shared-A0VvDYm8.js: `startCurses:1,tierLag:2,wallPests:.6`]</small> <small>[sim-sB5IBoT-.js: `n.maxHp[r]=i.hp*t.hpMult*(1+e.loadout.stats.curse)`]</small> Seeds `s1` to `s4` gave the same Normal times and HP. The Nightmare value comes from a run where each earlier boss was removed on arrival, because a stationary god-mode Tibo was killed by stacked boss hits at 17:59 otherwise.
 
 ## Fight
 
@@ -14,7 +14,7 @@ The Kraken crawls towards Tibo, throws fans of ketchup that turn into puddles, a
 
 ### Tentacle slams
 
-Five circles of radius 32 are marked around Tibo's position: the first centred on him, the other four at random spots up to 80 units away. They strike in turn, 0.12 s apart, at 1.1 s, 1.22 s, 1.34 s, 1.46 s and 1.58 s. Each deals the Kraken's contact damage. <small>[sim-LB46ZBLZ.js: `u=xC(e,Xc(e,a+y(l)*c,o+S(l)*c,i.radius,n.telegraph+.12*s,e.bosses.damage[t]),t)`]</small>
+Five circles of radius 32 are marked around Tibo's position: the first centred on him, the other four at random spots up to 80 units away. They strike in turn, 0.12 s apart, at 1.1 s, 1.22 s, 1.34 s, 1.46 s and 1.58 s. Each deals the Kraken's contact damage. <small>[sim-sB5IBoT-.js: `u=xC(e,Xc(e,a+y(l)*c,o+S(l)*c,i.radius,n.telegraph+.12*s,e.bosses.damage[t]),t)`]</small>
 
 ### Ketchup fan
 
