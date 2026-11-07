@@ -5663,6 +5663,44 @@
    ]
   },
   {
+   "id": "gravy-whirlpool",
+   "tier": "union",
+   "base": {
+    "damage": 32,
+    "cooldown": 3.2,
+    "amount": 2,
+    "area": 1.4,
+    "speed": 0,
+    "duration": 4,
+    "pierce": 0,
+    "knockback": 0,
+    "interval": 0.1
+   },
+   "behavior": {
+    "kind": "pool",
+    "shape": "clover",
+    "size": 30,
+    "hitInterval": 0.25,
+    "range": 160,
+    "grow": 0.4,
+    "follow": 10,
+    "pull": {
+     "speed": 150,
+     "radius": 64,
+     "slam": 3
+    },
+    "onHit": {
+     "kind": "burn",
+     "dps": 12,
+     "seconds": 2
+    }
+   },
+   "from": [
+    "gravy-flood",
+    "stand-mixer"
+   ]
+  },
+  {
    "id": "griddle-guard",
    "tier": "union",
    "base": {
@@ -9787,6 +9825,44 @@
    "from": [
     "fry-fortress",
     "gravy-pack"
+   ]
+  },
+  {
+   "id": "gravy-whirlpool",
+   "tier": "union",
+   "base": {
+    "damage": 32,
+    "cooldown": 3.2,
+    "amount": 2,
+    "area": 1.4,
+    "speed": 0,
+    "duration": 4,
+    "pierce": 0,
+    "knockback": 0,
+    "interval": 0.1
+   },
+   "behavior": {
+    "kind": "pool",
+    "shape": "clover",
+    "size": 30,
+    "hitInterval": 0.25,
+    "range": 160,
+    "grow": 0.4,
+    "follow": 10,
+    "pull": {
+     "speed": 150,
+     "radius": 64,
+     "slam": 3
+    },
+    "onHit": {
+     "kind": "burn",
+     "dps": 12,
+     "seconds": 2
+    }
+   },
+   "from": [
+    "gravy-flood",
+    "stand-mixer"
    ]
   },
   {

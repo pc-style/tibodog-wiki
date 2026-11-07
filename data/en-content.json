@@ -2041,6 +2041,12 @@
  "content.weapon.gravy-pack.name": [
   "Gravy Pack"
  ],
+ "content.weapon.gravy-whirlpool.desc": [
+  "Scalding gravy whirlpools drag in crowds and burn them. They grow, drift after Tibo and slam their catch. Frees a weapon slot."
+ ],
+ "content.weapon.gravy-whirlpool.name": [
+  "Gravy Whirlpool"
+ ],
  "content.weapon.grease-fire.desc": [
   "Wildfire Roast's sweep sprays a huge cloud of burning fryer oil, and the flames at Tibo's feet light the oil into burning puddles as he runs. Each flame he keeps lit makes the sweep reach much farther, up to five. A hit puts out two flames, and a stop puts them all out. Frees a weapon slot."
  ],

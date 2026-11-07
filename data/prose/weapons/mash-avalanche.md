@@ -6,7 +6,7 @@ Mash Avalanche is the evolution of [Mash Snowball](/weapons/mash-snowball). A ch
 
 Growing, release triggers and size-based damage work as described on [Mash Snowball](/weapons/mash-snowball#how-it-works). A full ball deals 152 × radius ÷ 14, and the size cap is 14 × area (1.2 here).
 
-- **The split.** As soon as the original ball hits at least one pest while rolling, it stops and splits into three balls. The new balls fan out at −30°, 0° and +30° from its heading and continue for the distance it had left. Each has 0.7 times its radius and therefore 0.7 times its damage. The original ball does not splatter. A ball that rolls its whole distance without touching a pest does not split and splatters normally. <small>[sim-SY4MKKFC.js: `r.split!==void 0&&t.surgeKid[o]===0&&t.surgeHits[o]>0`]</small>
+- **The split.** As soon as the original ball hits at least one pest while rolling, it stops and splits into three balls. The new balls fan out at −30°, 0° and +30° from its heading and continue for the distance it had left. Each has 0.7 times its radius and therefore 0.7 times its damage. The original ball does not splatter. A ball that rolls its whole distance without touching a pest does not split and splatters normally. <small>[sim-BIMMSp4H.js: `r.split!==void 0&&t.surgeKid[o]===0&&t.surgeHits[o]>0`]</small>
 - **Splatters.** Each of the three smaller balls splatters at the end of its roll, over 2.5 times its own radius. They do not split again.
 - **No double hits.** The three balls share the original ball's hit record. A pest already hit by the original ball, or by one of the three, is not hit again by the others. The split spreads damage over a wider area. It does not hit the same pest several times.
 

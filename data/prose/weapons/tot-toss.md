@@ -6,8 +6,8 @@ Tot Toss is one of the 17 weapons a standard run can start with, it is offered o
 
 ## How it works
 
-- **Targeting.** Each tot is aimed at the nearest enemy at the moment it is thrown. The weapon only fires when some enemy is within 70% of the larger screen dimension, so in practice it never wastes a throw on an empty screen. <small>[sim-SY4MKKFC.js: `function VE(e){return .7*Math.max(e.field.width,e.field.height)}`]</small>
-- **Volleys.** Tots in one throw leave 0.1 s apart. The first flies straight at the target; each later tot gets a random spread that grows with its position in the volley (±0.08 radians for the second, up to ±0.32 for the fifth). <small>[sim-SY4MKKFC.js: `UE(e,VE(e))+e.rng.range(-.08,.08)*i`]</small>
+- **Targeting.** Each tot is aimed at the nearest enemy at the moment it is thrown. The weapon only fires when some enemy is within 70% of the larger screen dimension, so in practice it never wastes a throw on an empty screen. <small>[sim-BIMMSp4H.js: `function VE(e){return .7*Math.max(e.field.width,e.field.height)}`]</small>
+- **Volleys.** Tots in one throw leave 0.1 s apart. The first flies straight at the target; each later tot gets a random spread that grows with its position in the volley (±0.08 radians for the second, up to ±0.32 for the fifth). <small>[sim-BIMMSp4H.js: `UE(e,VE(e))+e.rng.range(-.08,.08)*i`]</small>
 - **Pierce.** A tot is removed after hitting one more enemy than its pierce value, and it cannot hit the same enemy twice.
 
 **Measured** in the headless sim (`tools/play.mjs`, build 41 `main-B2gf34bA.js`, Standard, Normal, god mode, seeds `s1`, `s2` and `s3`; the seeded starting weapon removed, the weapon given with `give`, spawning stopped after 4 s of play and the pests already on the field held at fixed spots with 10⁹ HP; Tibo standing still, facing right, with 8 pests in a line 20 to 90 units to his right): at level 1 it threw 2 tots 0.1 s apart every 1.1 s, each spawned with a 2.5 s lifetime, and only the nearest pest was ever hit (pierce 0, one pest per tot). At level 8 it threw 5 tots every 1 s and they hit the two nearest pests and no others (pierce 1). All three seeds gave the same figures.
