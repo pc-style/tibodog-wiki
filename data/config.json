@@ -1,4 +1,39 @@
 {
+ "sim.$": {
+  "radius": [
+   6,
+   7,
+   8
+  ],
+  "fps": 5,
+  "lift": 9,
+  "bob": 1.5,
+  "bobRate": 5,
+  "shadow": 3,
+  "glow": 0.25,
+  "motes": 4,
+  "trail": 3,
+  "trailStep": 0.16,
+  "trailLift": 4
+ },
+ "sim.$t": {
+  "white": "#fffaea",
+  "gold": "#ffd04a",
+  "leaf1": "#9fcf6e",
+  "leaf0": "#74ad5c",
+  "orange": "#d3731c",
+  "plum4": "#bd8cc8",
+  "sky": "#9cc4ec",
+  "cyan1": "#8aeaff",
+  "red": "#d03c3c",
+  "teal1": "#1878a8",
+  "plum5": "#e8c4ff",
+  "plum6": "#eed4ff",
+  "amber": "#f2a02c",
+  "ochre4": "#ebc67d",
+  "ochre5": "#f8e3ad",
+  "lemon": "#fff08a"
+ },
  "sim.Aa": {
   "shape": "tall",
   "color": "#d7b46a",
@@ -32,6 +67,13 @@
   "boss:queen",
   "boss:shell-titan"
  ],
+ "sim.Cn": {
+  "piece": "starch-mail",
+  "effect": {
+   "kind": "area",
+   "mult": 1.12
+  }
+ },
  "sim.Da": {
   "boss": "[fn]",
   "bossAt": "[fn]",
@@ -4134,7 +4176,7 @@
   "run": "[fn]",
   "runOrder": "[fn]"
  },
- "sim.Dn": [
+ "sim.En": [
   "might",
   "area",
   "cooldown",
@@ -4144,16 +4186,6 @@
   "crit-chance",
   "recovery"
  ],
- "sim.En": {
-  "piece": "crown-of-plenty",
-  "effect": {
-   "kind": "extraProjectile",
-   "tags": [
-    "shot"
-   ],
-   "amount": 1
-  }
- },
  "sim.Fa": {
   "shape": "box",
   "color": "#90a4ae",
@@ -4436,6 +4468,22 @@
    }
   }
  ],
+ "sim.Fn": {
+  "dealtPerLevel": 2.2,
+  "dealtAt20Min": 5500000000,
+  "dealtPerMinute": 1.09,
+  "killsPerMinute": 250000,
+  "killsPerLevel": 1,
+  "margin": 3
+ },
+ "sim.Ft": {
+  "cap": 0,
+  "heldTick": 1,
+  "chance": 2,
+  "life": 3,
+  "snareSec": 4,
+  "sproutAt": 5
+ },
  "sim.Hi": {
   "hand": 0,
   "flying": 1,
@@ -4457,22 +4505,6 @@
     "glow": 0.6
    }
   }
- },
- "sim.In": {
-  "dealtPerLevel": 2.2,
-  "dealtAt20Min": 5500000000,
-  "dealtPerMinute": 1.09,
-  "killsPerMinute": 250000,
-  "killsPerLevel": 1,
-  "margin": 3
- },
- "sim.It": {
-  "cap": 0,
-  "heldTick": 1,
-  "chance": 2,
-  "life": 3,
-  "snareSec": 4,
-  "sproutAt": 5
  },
  "sim.Ja": {
   "fries": "fries-carton",
@@ -4614,14 +4646,24 @@
   "tritanopia": "#eed4ff"
  },
  "sim.Tn": {
-  "piece": "ember-striders",
+  "piece": "crown-of-plenty",
   "effect": {
-   "kind": "pierce",
+   "kind": "extraProjectile",
    "tags": [
     "shot"
    ],
    "amount": 1
   }
+ },
+ "sim.U": {
+  "fps": 14,
+  "dollops": 8,
+  "dollopRadius": 42,
+  "mostDollops": 16,
+  "hop": 10,
+  "reachMin": 0.5,
+  "reachMax": 0.85,
+  "shadow": 2
  },
  "sim.Vi": {
   "harvest": 1,
@@ -4701,16 +4743,6 @@
   "enemy:armoured-siren-harpy",
   "enemy:fuse-totem"
  ],
- "sim.W": {
-  "fps": 14,
-  "dollops": 8,
-  "dollopRadius": 42,
-  "mostDollops": 16,
-  "hop": 10,
-  "reachMin": 0.5,
-  "reachMax": 0.85,
-  "shadow": 2
- },
  "sim.Xi": [
   "bot:black",
   "bot:brown",
@@ -4775,7 +4807,390 @@
   "life": 18,
   "migrant": "beetle-brood"
  },
- "sim._r": {
+ "sim.ai": [
+  [
+   {
+    "path": "M8 4.5A5.2 5.2 0 1 1 7.99 4.5Z",
+    "ink": "#5d6475"
+   },
+   {
+    "path": "M6 6.6A2.2 2.2 0 1 1 5.99 6.6Z",
+    "ink": "#9aa3b5"
+   },
+   {
+    "path": "M7.2 4.8L8 2.2L9.6 1.4L10 2.4L8.8 3.1L8.8 4.8Z",
+    "ink": "#93622c"
+   },
+   {
+    "path": "M9.6 0.4L11.2 1.2L10.4 2.6L9.2 1.8Z",
+    "ink": "#ffd04a"
+   }
+  ],
+  [
+   {
+    "path": "M6.4 5H9.6V7Q11.5 8 11.5 10.5V14.2Q11.5 15 10.7 15H5.3Q4.5 15 4.5 14.2V10.5Q4.5 8 6.4 7Z",
+    "ink": "#5a8f3a"
+   },
+   {
+    "path": "M5.6 10H10.4V13H5.6Z",
+    "ink": "#f8e3ad"
+   },
+   {
+    "path": "M6.6 2.2H9.4V5H6.6Z",
+    "ink": "#ffd04a"
+   },
+   {
+    "path": "M7.4 0.6L8.8 1.2L8 2.2Z",
+    "ink": "#9fcf6e"
+   }
+  ],
+  [
+   {
+    "path": "M1 2.6L5.6 4.4V5.4L1 7Z M15 2.6L10.4 4.4V5.4L15 7Z",
+    "ink": "#fff08a"
+   },
+   {
+    "path": "M4.8 15.4L6 6.6H10L11.2 15.4Z",
+    "ink": "#e8e1d3"
+   },
+   {
+    "path": "M5.5 10.4H10.5L10.8 12.4H5.2Z",
+    "ink": "#34598a"
+   },
+   {
+    "path": "M4.8 5.6H11.2V6.8H4.8Z M5.8 3.8L8 1.4L10.2 3.8Z",
+    "ink": "#47464f"
+   },
+   {
+    "path": "M6.3 3.8H9.7V5.6H6.3Z",
+    "ink": "#ffd04a"
+   }
+  ],
+  [
+   {
+    "path": "M9.4 1.2L10.8 1.7L7.4 11.2L6 10.7Z",
+    "ink": "#d6a556"
+   },
+   {
+    "path": "M1.2 8.4H14.8L12.6 13.2H3.4Z",
+    "ink": "#b5845a"
+   },
+   {
+    "path": "M1.2 8.4H14.8V9.8H1.2Z",
+    "ink": "#7c4f2f"
+   },
+   {
+    "path": "M0.8 14.2Q2.8 13 4.8 14.2Q6.8 15.4 8.8 14.2Q10.8 13 12.8 14.2Q14 14.9 15.2 14.2V15.6H0.8Z",
+    "ink": "#9cc4ec"
+   }
+  ],
+  [
+   {
+    "path": "M1.6 3.4L5.8 2.2L10.2 3.4L14.4 2.2V12.6L10.2 13.8L5.8 12.6L1.6 13.8Z",
+    "ink": "#f8e3ad"
+   },
+   {
+    "path": "M5.4 2.3H6.2V12.7H5.4Z M9.8 3.3H10.6V13.7H9.8Z",
+    "ink": "#d6a556"
+   },
+   {
+    "path": "M2.9 10.6H4.1V11.8H2.9Z M4.7 8.6H5.9V9.8H4.7Z M7 7.6H8.2V8.8H7Z",
+    "ink": "#7c4f2f"
+   },
+   {
+    "path": "M10.4 4.6L11.4 5.6L12.4 4.6L13.2 5.4L12.2 6.4L13.2 7.4L12.4 8.2L11.4 7.2L10.4 8.2L9.6 7.4L10.6 6.4L9.6 5.4Z",
+    "ink": "#28180d"
+   }
+  ],
+  [
+   {
+    "path": "M2.6 4.6L4.4 2.8L8 6.4L11.6 2.8L13.4 4.6L9.8 8.2L13.4 11.8L11.6 13.6L8 10L4.4 13.6L2.6 11.8L6.2 8.2Z",
+    "ink": "#ffd04a"
+   },
+   {
+    "path": "M13.4 0.4L14 2L15.6 2.6L14 3.2L13.4 4.8L12.8 3.2L11.2 2.6L12.8 2Z",
+    "ink": "#fffaea"
+   }
+  ]
+ ],
+ "sim.dn": {
+  "mist": "#c8cedc",
+  "white": "#fffaea",
+  "lemon": "#fff08a",
+  "gold": "#ffd04a",
+  "ochre3": "#d6a556",
+  "plum0": "#24112e",
+  "plum1": "#3d1b58",
+  "plum3": "#9258a2",
+  "cyan0": "#2fb8e0",
+  "cyan1": "#8aeaff",
+  "leaf0": "#74ad5c",
+  "leaf1": "#9fcf6e",
+  "moss1": "#4b7a35",
+  "olive3": "#737856",
+  "fog": "#9aa1b8",
+  "sky": "#9cc4ec",
+  "slate": "#2d2c33",
+  "iron": "#47464f",
+  "frost": "#e2ecf4",
+  "fogbank": "#7a7f82",
+  "steel": "#6c7189",
+  "navy2": "#254467",
+  "navy0": "#0c1827"
+ },
+ "sim.en": [
+  "common",
+  "rare",
+  "set",
+  "legendary",
+  "mythic"
+ ],
+ "sim.fn": {
+  "mist": "#c8cedc",
+  "white": "#fffaea",
+  "lemon": "#fff08a",
+  "gold": "#ffd04a",
+  "ochre3": "#d6a556",
+  "plum0": "#24112e",
+  "plum1": "#3d1b58",
+  "plum3": "#9258a2",
+  "cyan0": "#2fb8e0",
+  "cyan1": "#8aeaff",
+  "leaf0": "#74ad5c",
+  "leaf1": "#9fcf6e",
+  "moss1": "#4b7a35",
+  "olive3": "#737856",
+  "fog": "#9aa1b8",
+  "sky": "#9cc4ec"
+ },
+ "sim.gi": [
+  {
+   "id": "snow",
+   "rules": {
+    "startBiome": "frozen-tundra",
+    "startRadius": 1600,
+    "zones": {
+     "chill": {
+      "weight": 2,
+      "grow": 1
+     }
+    },
+    "pace": {
+     "tibo": 0.9,
+     "pests": 0.9
+    }
+   }
+  },
+  {
+   "id": "rain",
+   "rules": {
+    "startBiome": "mash-swamp",
+    "startRadius": 1600,
+    "zones": {
+     "slow": {
+      "weight": 2,
+      "grow": 1.3
+     }
+    }
+   }
+  },
+  {
+   "id": "heat",
+   "rules": {
+    "startBiome": "fry-oil-desert",
+    "startRadius": 1600,
+    "zones": {
+     "burn": {
+      "weight": 2,
+      "grow": 1
+     }
+    }
+   }
+  },
+  {
+   "id": "fog",
+   "since": 20765,
+   "rules": {
+    "startBiome": "compost-caves",
+    "startRadius": 1600,
+    "sight": {
+     "radius": 90,
+     "pace": 0.6
+    }
+   }
+  },
+  {
+   "id": "hail",
+   "since": 20765,
+   "rules": {
+    "startBiome": "peel-forest",
+    "startRadius": 1600,
+    "strikes": {
+     "every": 0.4,
+     "reach": 150,
+     "radius": 9,
+     "share": 0.3,
+     "crowd": false,
+     "bolt": false,
+     "source": "weather-hail",
+     "ink": "frost"
+    }
+   }
+  },
+  {
+   "id": "night",
+   "since": 20765,
+   "rules": {
+    "startBiome": "potato-field",
+    "startRadius": 1600,
+    "sight": {
+     "radius": 105,
+     "pace": 1.2
+    }
+   }
+  },
+  {
+   "id": "storm",
+   "since": 20765,
+   "rules": {
+    "startBiome": "ketchup-bog",
+    "startRadius": 1600,
+    "strikes": {
+     "every": 8,
+     "reach": 170,
+     "radius": 45,
+     "share": 1,
+     "crowd": true,
+     "bolt": true,
+     "source": "weather-lightning",
+     "ink": "frost"
+    }
+   }
+  },
+  {
+   "id": "sandstorm",
+   "since": 20765,
+   "rules": {
+    "startBiome": "fry-oil-desert",
+    "startRadius": 1600,
+    "drifts": {
+     "kind": "slow",
+     "perChunk": 3,
+     "radius": 28,
+     "strength": 0.35
+    }
+   }
+  },
+  {
+   "id": "meteors",
+   "since": 20765,
+   "rules": {
+    "startBiome": "chip-canyons",
+    "startRadius": 1600
+   }
+  },
+  {
+   "id": "bloodmoon",
+   "since": 20765,
+   "rules": {
+    "startBiome": "mash-swamp",
+    "startRadius": 1600
+   }
+  },
+  {
+   "id": "drop",
+   "since": 20765,
+   "rules": {
+    "startBiome": "fry-oil-desert",
+    "startRadius": 1600
+   }
+  },
+  {
+   "id": "tilt",
+   "since": 20765,
+   "rules": {
+    "startBiome": "chip-canyons",
+    "startRadius": 1600
+   }
+  },
+  {
+   "id": "echo",
+   "since": 20765,
+   "rules": {
+    "startBiome": "peel-forest",
+    "startRadius": 1600
+   }
+  },
+  {
+   "id": "eclipse",
+   "since": 20765,
+   "rules": {
+    "startBiome": "compost-caves",
+    "startRadius": 1600
+   }
+  },
+  {
+   "id": "aurora",
+   "since": 20765,
+   "rules": {
+    "startBiome": "potato-field",
+    "startRadius": 1600
+   }
+  },
+  {
+   "id": "sizes",
+   "since": 20765,
+   "rules": {
+    "startBiome": "crop-circle",
+    "startRadius": 1600
+   }
+  },
+  {
+   "id": "migration",
+   "since": 20765,
+   "rules": {
+    "startBiome": "peel-forest",
+    "startRadius": 1600
+   }
+  },
+  {
+   "id": "warp",
+   "since": 20765,
+   "rules": {
+    "startBiome": "compost-caves",
+    "startRadius": 1600
+   }
+  },
+  {
+   "id": "swarm",
+   "since": 20765,
+   "rules": {
+    "startBiome": "potato-field",
+    "startRadius": 1600,
+    "crowd": {
+     "cap": 540,
+     "ceiling": 2
+    }
+   }
+  },
+  {
+   "id": "rings",
+   "since": 20765,
+   "rules": {
+    "startBiome": "mash-swamp",
+    "startRadius": 1600
+   }
+  },
+  {
+   "id": "blizzard",
+   "since": 20765,
+   "rules": {
+    "startBiome": "frozen-tundra",
+    "startRadius": 1600
+   }
+  }
+ ],
+ "sim.gr": {
   "evolutions": [
    {
     "kind": "evolution",
@@ -5251,461 +5666,6 @@
   "evolvedBy": "[fn]",
   "itemsEvolvedBy": "[fn]"
  },
- "sim.ai": [
-  [
-   {
-    "path": "M8 4.5A5.2 5.2 0 1 1 7.99 4.5Z",
-    "ink": "#5d6475"
-   },
-   {
-    "path": "M6 6.6A2.2 2.2 0 1 1 5.99 6.6Z",
-    "ink": "#9aa3b5"
-   },
-   {
-    "path": "M7.2 4.8L8 2.2L9.6 1.4L10 2.4L8.8 3.1L8.8 4.8Z",
-    "ink": "#93622c"
-   },
-   {
-    "path": "M9.6 0.4L11.2 1.2L10.4 2.6L9.2 1.8Z",
-    "ink": "#ffd04a"
-   }
-  ],
-  [
-   {
-    "path": "M6.4 5H9.6V7Q11.5 8 11.5 10.5V14.2Q11.5 15 10.7 15H5.3Q4.5 15 4.5 14.2V10.5Q4.5 8 6.4 7Z",
-    "ink": "#5a8f3a"
-   },
-   {
-    "path": "M5.6 10H10.4V13H5.6Z",
-    "ink": "#f8e3ad"
-   },
-   {
-    "path": "M6.6 2.2H9.4V5H6.6Z",
-    "ink": "#ffd04a"
-   },
-   {
-    "path": "M7.4 0.6L8.8 1.2L8 2.2Z",
-    "ink": "#9fcf6e"
-   }
-  ],
-  [
-   {
-    "path": "M1 2.6L5.6 4.4V5.4L1 7Z M15 2.6L10.4 4.4V5.4L15 7Z",
-    "ink": "#fff08a"
-   },
-   {
-    "path": "M4.8 15.4L6 6.6H10L11.2 15.4Z",
-    "ink": "#e8e1d3"
-   },
-   {
-    "path": "M5.5 10.4H10.5L10.8 12.4H5.2Z",
-    "ink": "#34598a"
-   },
-   {
-    "path": "M4.8 5.6H11.2V6.8H4.8Z M5.8 3.8L8 1.4L10.2 3.8Z",
-    "ink": "#47464f"
-   },
-   {
-    "path": "M6.3 3.8H9.7V5.6H6.3Z",
-    "ink": "#ffd04a"
-   }
-  ],
-  [
-   {
-    "path": "M9.4 1.2L10.8 1.7L7.4 11.2L6 10.7Z",
-    "ink": "#d6a556"
-   },
-   {
-    "path": "M1.2 8.4H14.8L12.6 13.2H3.4Z",
-    "ink": "#b5845a"
-   },
-   {
-    "path": "M1.2 8.4H14.8V9.8H1.2Z",
-    "ink": "#7c4f2f"
-   },
-   {
-    "path": "M0.8 14.2Q2.8 13 4.8 14.2Q6.8 15.4 8.8 14.2Q10.8 13 12.8 14.2Q14 14.9 15.2 14.2V15.6H0.8Z",
-    "ink": "#9cc4ec"
-   }
-  ],
-  [
-   {
-    "path": "M1.6 3.4L5.8 2.2L10.2 3.4L14.4 2.2V12.6L10.2 13.8L5.8 12.6L1.6 13.8Z",
-    "ink": "#f8e3ad"
-   },
-   {
-    "path": "M5.4 2.3H6.2V12.7H5.4Z M9.8 3.3H10.6V13.7H9.8Z",
-    "ink": "#d6a556"
-   },
-   {
-    "path": "M2.9 10.6H4.1V11.8H2.9Z M4.7 8.6H5.9V9.8H4.7Z M7 7.6H8.2V8.8H7Z",
-    "ink": "#7c4f2f"
-   },
-   {
-    "path": "M10.4 4.6L11.4 5.6L12.4 4.6L13.2 5.4L12.2 6.4L13.2 7.4L12.4 8.2L11.4 7.2L10.4 8.2L9.6 7.4L10.6 6.4L9.6 5.4Z",
-    "ink": "#28180d"
-   }
-  ],
-  [
-   {
-    "path": "M2.6 4.6L4.4 2.8L8 6.4L11.6 2.8L13.4 4.6L9.8 8.2L13.4 11.8L11.6 13.6L8 10L4.4 13.6L2.6 11.8L6.2 8.2Z",
-    "ink": "#ffd04a"
-   },
-   {
-    "path": "M13.4 0.4L14 2L15.6 2.6L14 3.2L13.4 4.8L12.8 3.2L11.2 2.6L12.8 2Z",
-    "ink": "#fffaea"
-   }
-  ]
- ],
- "sim.cr": [
-  {
-   "stat": "might",
-   "label": "Damage",
-   "base": 0.06
-  },
-  {
-   "stat": "area",
-   "label": "Area",
-   "base": 0.06
-  },
-  {
-   "stat": "cooldown",
-   "label": "Cooldown",
-   "base": 0.03
-  },
-  {
-   "stat": "moveSpeed",
-   "label": "Move speed",
-   "base": 0.05
-  },
-  {
-   "stat": "maxHp",
-   "label": "Max HP",
-   "base": 12
-  },
-  {
-   "stat": "armor",
-   "label": "Armor",
-   "base": 10
-  },
-  {
-   "stat": "luck",
-   "label": "Luck",
-   "base": 0.06
-  },
-  {
-   "stat": "greed",
-   "label": "Gold gain",
-   "base": 0.1
-  },
-  {
-   "stat": "growth",
-   "label": "XP gain",
-   "base": 0.06
-  },
-  {
-   "stat": "critChance",
-   "label": "Crit",
-   "base": 0.04
-  },
-  {
-   "stat": "duration",
-   "label": "Duration",
-   "base": 0.06
-  },
-  {
-   "stat": "magnet",
-   "label": "Pickup range",
-   "base": 0.15
-  }
- ],
- "sim.en": {
-  "white": "#fffaea",
-  "gold": "#ffd04a",
-  "leaf1": "#9fcf6e",
-  "leaf0": "#74ad5c",
-  "orange": "#d3731c",
-  "plum4": "#bd8cc8",
-  "sky": "#9cc4ec",
-  "cyan1": "#8aeaff",
-  "red": "#d03c3c",
-  "teal1": "#1878a8",
-  "plum5": "#e8c4ff",
-  "plum6": "#eed4ff",
-  "amber": "#f2a02c",
-  "ochre4": "#ebc67d",
-  "ochre5": "#f8e3ad",
-  "lemon": "#fff08a"
- },
- "sim.et": {
-  "radius": [
-   6,
-   7,
-   8
-  ],
-  "fps": 5,
-  "lift": 9,
-  "bob": 1.5,
-  "bobRate": 5,
-  "shadow": 3,
-  "glow": 0.25,
-  "motes": 4,
-  "trail": 3,
-  "trailStep": 0.16,
-  "trailLift": 4
- },
- "sim.fn": {
-  "mist": "#c8cedc",
-  "white": "#fffaea",
-  "lemon": "#fff08a",
-  "gold": "#ffd04a",
-  "ochre3": "#d6a556",
-  "plum0": "#24112e",
-  "plum1": "#3d1b58",
-  "plum3": "#9258a2",
-  "cyan0": "#2fb8e0",
-  "cyan1": "#8aeaff",
-  "leaf0": "#74ad5c",
-  "leaf1": "#9fcf6e",
-  "moss1": "#4b7a35",
-  "olive3": "#737856",
-  "fog": "#9aa1b8",
-  "sky": "#9cc4ec",
-  "slate": "#2d2c33",
-  "iron": "#47464f",
-  "frost": "#e2ecf4",
-  "fogbank": "#7a7f82",
-  "steel": "#6c7189",
-  "navy2": "#254467",
-  "navy0": "#0c1827"
- },
- "sim.gi": [
-  {
-   "id": "snow",
-   "rules": {
-    "startBiome": "frozen-tundra",
-    "startRadius": 1600,
-    "zones": {
-     "chill": {
-      "weight": 2,
-      "grow": 1
-     }
-    },
-    "pace": {
-     "tibo": 0.9,
-     "pests": 0.9
-    }
-   }
-  },
-  {
-   "id": "rain",
-   "rules": {
-    "startBiome": "mash-swamp",
-    "startRadius": 1600,
-    "zones": {
-     "slow": {
-      "weight": 2,
-      "grow": 1.3
-     }
-    }
-   }
-  },
-  {
-   "id": "heat",
-   "rules": {
-    "startBiome": "fry-oil-desert",
-    "startRadius": 1600,
-    "zones": {
-     "burn": {
-      "weight": 2,
-      "grow": 1
-     }
-    }
-   }
-  },
-  {
-   "id": "fog",
-   "since": 20765,
-   "rules": {
-    "startBiome": "compost-caves",
-    "startRadius": 1600,
-    "sight": {
-     "radius": 90,
-     "pace": 0.6
-    }
-   }
-  },
-  {
-   "id": "hail",
-   "since": 20765,
-   "rules": {
-    "startBiome": "peel-forest",
-    "startRadius": 1600,
-    "strikes": {
-     "every": 0.4,
-     "reach": 150,
-     "radius": 9,
-     "share": 0.3,
-     "crowd": false,
-     "bolt": false,
-     "source": "weather-hail",
-     "ink": "frost"
-    }
-   }
-  },
-  {
-   "id": "night",
-   "since": 20765,
-   "rules": {
-    "startBiome": "potato-field",
-    "startRadius": 1600,
-    "sight": {
-     "radius": 105,
-     "pace": 1.2
-    }
-   }
-  },
-  {
-   "id": "storm",
-   "since": 20765,
-   "rules": {
-    "startBiome": "ketchup-bog",
-    "startRadius": 1600,
-    "strikes": {
-     "every": 8,
-     "reach": 170,
-     "radius": 45,
-     "share": 1,
-     "crowd": true,
-     "bolt": true,
-     "source": "weather-lightning",
-     "ink": "frost"
-    }
-   }
-  },
-  {
-   "id": "sandstorm",
-   "since": 20765,
-   "rules": {
-    "startBiome": "fry-oil-desert",
-    "startRadius": 1600,
-    "drifts": {
-     "kind": "slow",
-     "perChunk": 3,
-     "radius": 28,
-     "strength": 0.35
-    }
-   }
-  },
-  {
-   "id": "meteors",
-   "since": 20765,
-   "rules": {
-    "startBiome": "chip-canyons",
-    "startRadius": 1600
-   }
-  },
-  {
-   "id": "bloodmoon",
-   "since": 20765,
-   "rules": {
-    "startBiome": "mash-swamp",
-    "startRadius": 1600
-   }
-  },
-  {
-   "id": "drop",
-   "since": 20765,
-   "rules": {
-    "startBiome": "fry-oil-desert",
-    "startRadius": 1600
-   }
-  },
-  {
-   "id": "tilt",
-   "since": 20765,
-   "rules": {
-    "startBiome": "chip-canyons",
-    "startRadius": 1600
-   }
-  },
-  {
-   "id": "echo",
-   "since": 20765,
-   "rules": {
-    "startBiome": "peel-forest",
-    "startRadius": 1600
-   }
-  },
-  {
-   "id": "eclipse",
-   "since": 20765,
-   "rules": {
-    "startBiome": "compost-caves",
-    "startRadius": 1600
-   }
-  },
-  {
-   "id": "aurora",
-   "since": 20765,
-   "rules": {
-    "startBiome": "potato-field",
-    "startRadius": 1600
-   }
-  },
-  {
-   "id": "sizes",
-   "since": 20765,
-   "rules": {
-    "startBiome": "crop-circle",
-    "startRadius": 1600
-   }
-  },
-  {
-   "id": "migration",
-   "since": 20765,
-   "rules": {
-    "startBiome": "peel-forest",
-    "startRadius": 1600
-   }
-  },
-  {
-   "id": "warp",
-   "since": 20765,
-   "rules": {
-    "startBiome": "compost-caves",
-    "startRadius": 1600
-   }
-  },
-  {
-   "id": "swarm",
-   "since": 20765,
-   "rules": {
-    "startBiome": "potato-field",
-    "startRadius": 1600,
-    "crowd": {
-     "cap": 540,
-     "ceiling": 2
-    }
-   }
-  },
-  {
-   "id": "rings",
-   "since": 20765,
-   "rules": {
-    "startBiome": "mash-swamp",
-    "startRadius": 1600
-   }
-  },
-  {
-   "id": "blizzard",
-   "since": 20765,
-   "rules": {
-    "startBiome": "frozen-tundra",
-    "startRadius": 1600
-   }
-  }
- ],
  "sim.ha": {
   "critK": 1,
   "evasionK": 1,
@@ -5823,60 +5783,18 @@
    "lemon"
   ]
  },
- "sim.nn": {
-  "tiers": {
-   "common": {
-    "ink": "white"
-   },
-   "rare": {
-    "ink": "gold"
-   },
-   "set": {
-    "ink": "leaf1",
-    "seen": {
-     "protanopia": "sky",
-     "deuteranopia": "cyan1",
-     "tritanopia": "leaf0"
-    }
-   },
-   "legendary": {
-    "ink": "orange"
-   },
-   "mythic": {
-    "ink": "plum5",
-    "seen": {
-     "protanopia": "plum4",
-     "deuteranopia": "plum4",
-     "tritanopia": "cyan1"
-    }
-   }
-  },
-  "ancestral": {
-   "mark": "word"
-  },
-  "primal": {
-   "mark": "label",
-   "ink": "red",
-   "seen": {
-    "deuteranopia": "teal1",
-    "tritanopia": "teal1"
-   },
-   "text": "white"
-  },
-  "greater": {
-   "star": "red",
-   "core": "white"
-  },
-  "fx": {
-   "light": "white",
-   "gold": "gold",
-   "ember": "amber",
-   "molten": "ochre5",
-   "cool": "sky",
-   "bright": "lemon",
-   "dusk": "plum4",
-   "warm": "ochre4"
-  }
+ "sim.nt": {
+  "fps": 12,
+  "motes": 8,
+  "glints": 3,
+  "reachMin": 0.3,
+  "reachMax": 0.85,
+  "rise": 7,
+  "glintRise": 12,
+  "glintDelay": 0.06,
+  "moteGlow": 0.35,
+  "glintGlow": 1,
+  "shadow": 1
  },
  "sim.oi": [
   "mashBomb",
@@ -5886,24 +5804,6 @@
   "treasure-map",
   "dig-spot"
  ],
- "sim.pn": {
-  "mist": "#c8cedc",
-  "white": "#fffaea",
-  "lemon": "#fff08a",
-  "gold": "#ffd04a",
-  "ochre3": "#d6a556",
-  "plum0": "#24112e",
-  "plum1": "#3d1b58",
-  "plum3": "#9258a2",
-  "cyan0": "#2fb8e0",
-  "cyan1": "#8aeaff",
-  "leaf0": "#74ad5c",
-  "leaf1": "#9fcf6e",
-  "moss1": "#4b7a35",
-  "olive3": "#737856",
-  "fog": "#9aa1b8",
-  "sky": "#9cc4ec"
- },
  "sim.qa": {
   "startChest": {
    "offset": {
@@ -6141,19 +6041,68 @@
   "ochre3": "#d6a556",
   "amber": "#f2a02c"
  },
- "sim.rt": {
-  "fps": 12,
-  "motes": 8,
-  "glints": 3,
-  "reachMin": 0.3,
-  "reachMax": 0.85,
-  "rise": 7,
-  "glintRise": 12,
-  "glintDelay": 0.06,
-  "moteGlow": 0.35,
-  "glintGlow": 1,
-  "shadow": 1
- },
+ "sim.sr": [
+  {
+   "stat": "might",
+   "label": "Damage",
+   "base": 0.06
+  },
+  {
+   "stat": "area",
+   "label": "Area",
+   "base": 0.06
+  },
+  {
+   "stat": "cooldown",
+   "label": "Cooldown",
+   "base": 0.03
+  },
+  {
+   "stat": "moveSpeed",
+   "label": "Move speed",
+   "base": 0.05
+  },
+  {
+   "stat": "maxHp",
+   "label": "Max HP",
+   "base": 12
+  },
+  {
+   "stat": "armor",
+   "label": "Armor",
+   "base": 10
+  },
+  {
+   "stat": "luck",
+   "label": "Luck",
+   "base": 0.06
+  },
+  {
+   "stat": "greed",
+   "label": "Gold gain",
+   "base": 0.1
+  },
+  {
+   "stat": "growth",
+   "label": "XP gain",
+   "base": 0.06
+  },
+  {
+   "stat": "critChance",
+   "label": "Crit",
+   "base": 0.04
+  },
+  {
+   "stat": "duration",
+   "label": "Duration",
+   "base": 0.06
+  },
+  {
+   "stat": "magnet",
+   "label": "Pickup range",
+   "base": 0.15
+  }
+ ],
  "sim.t": {
   "AlexReveal": "[fn]",
   "ChargeSound": "[fn]",
@@ -6171,13 +6120,61 @@
   "UNION_ROWS_TAKEN": true,
   "measureHudSpace": "[fn]"
  },
- "sim.tn": [
-  "common",
-  "rare",
-  "set",
-  "legendary",
-  "mythic"
- ],
+ "sim.tn": {
+  "tiers": {
+   "common": {
+    "ink": "white"
+   },
+   "rare": {
+    "ink": "gold"
+   },
+   "set": {
+    "ink": "leaf1",
+    "seen": {
+     "protanopia": "sky",
+     "deuteranopia": "cyan1",
+     "tritanopia": "leaf0"
+    }
+   },
+   "legendary": {
+    "ink": "orange"
+   },
+   "mythic": {
+    "ink": "plum5",
+    "seen": {
+     "protanopia": "plum4",
+     "deuteranopia": "plum4",
+     "tritanopia": "cyan1"
+    }
+   }
+  },
+  "ancestral": {
+   "mark": "word"
+  },
+  "primal": {
+   "mark": "label",
+   "ink": "red",
+   "seen": {
+    "deuteranopia": "teal1",
+    "tritanopia": "teal1"
+   },
+   "text": "white"
+  },
+  "greater": {
+   "star": "red",
+   "core": "white"
+  },
+  "fx": {
+   "light": "white",
+   "gold": "gold",
+   "ember": "amber",
+   "molten": "ochre5",
+   "cool": "sky",
+   "bright": "lemon",
+   "dusk": "plum4",
+   "warm": "ochre4"
+  }
+ },
  "sim.to": [
   "round",
   "oval",
@@ -6193,10 +6190,13 @@
   "turnEvery": 30
  },
  "sim.wn": {
-  "piece": "starch-mail",
+  "piece": "ember-striders",
   "effect": {
-   "kind": "area",
-   "mult": 1.12
+   "kind": "pierce",
+   "tags": [
+    "shot"
+   ],
+   "amount": 1
   }
  },
  "sim.xi": {
@@ -9683,6 +9683,8 @@
   "hpPerLevel": 1.11,
   "damagePerLevel": 1.044,
   "lateCurvePerLevel": 0.087,
+  "bossHitSharePerLevel": 0,
+  "bossAttackRatePerLevel": 1.001,
   "stacking": {
    "weaponLevel": 1.2,
    "evolvedRanks": 7,
