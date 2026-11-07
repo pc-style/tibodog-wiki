@@ -5146,6 +5146,30 @@
    {
     "kind": "union",
     "weapons": [
+     "taproot-eruption",
+     "spud-grid"
+    ],
+    "result": "root-current"
+   },
+   {
+    "kind": "union",
+    "weapons": [
+     "ghee-glide",
+     "salt-flats"
+    ],
+    "result": "salted-butter"
+   },
+   {
+    "kind": "union",
+    "weapons": [
+     "golden-harvest",
+     "landmine-harvest"
+    ],
+    "result": "sowing-season"
+   },
+   {
+    "kind": "union",
+    "weapons": [
      "sack-of-russets",
      "spudzooka"
     ],

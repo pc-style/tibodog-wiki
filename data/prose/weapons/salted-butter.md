@@ -1,0 +1,17 @@
+## Overview
+
+Salted Butter unites [Ghee Glide](/weapons/ghee-glide) and [Salt Flats](/weapons/salt-flats). Own both evolutions and open a [chest](/chests) to combine them and free a weapon slot. Walking and dashing lay a slowing, burning trail that pushes pests aside and gives Tibo 15% more walking speed while he is on it.
+
+## How it works
+
+- **Keep moving to lay the trail.** Raw cooldown 0.2 s and Amount 1 become two patches per walking volley with Tibo's base +1, spaced 0.1 s apart. A patch has radius `11 × Area` (22 at base Area 2) and lasts 3.5 s × Duration, or 4.375 s with Tibo's base bonus. Dashes lay strips along the dash path as well as the walking trail. <small>[start-rows-C7qIuu83.js: `damage:420,cooldown:.2,amount:1,area:2,speed:0,duration:3.5,pierce:0,knockback:0,interval:.1`]</small> <small>[sim-CFo3ylXb.js: `c=Math.ceil(s/(n.size*r.area))+1`]</small>
+- **Slow and push pests.** The trail hits for 420 raw damage every 0.2 s, with a shared re-hit timer across overlapping patches of the same trail type. Hits slow pests and bosses by 55% for 1.2 s × Duration; ordinary pests also receive an outward push of 60, reduced by mass. Bosses are not pushed. <small>[start-rows-C7qIuu83.js: `` kind:`pool`,size:11,hitInterval:.2,range:0,trail:{push:60,haste:.15,dash:!0,burn:{share:.25,seconds:2}} ``]</small> <small>[start-rows-C7qIuu83.js: `` kind:`slow`,factor:.55,seconds:1.2 ``]</small>
+- **Leave a real burn.** Unlike Ghee Glide, this trail applies a burn status: one quarter of modified hit damage per second, for 2 s × Duration. Without bonuses that is 105 damage per second for 2.5 s with Tibo's base Duration. Further hits refresh the burn; burns keep the highest damage rate and longest remaining duration rather than adding every patch's rate. <small>[sim-CFo3ylXb.js: `o.burn[i]=c===void 0?0:c.share*r.damage,o.burnFor[i]=c===void 0?0:c.seconds*e.loadout.stats.durationMult`]</small> <small>[sim-CFo3ylXb.js: `e.burnDps[t]=Math.max(e.burnDps[t],n),e.burnT[t]=Math.max(e.burnT[t],r)`]</small>
+- **Run on your own butter.** Its haste value is 0.15. As with Ghee Glide, overlapping speed patches use the largest haste, not a stacking bonus. Existing partner pools survive the union with their original damage and lifetime; their slot and hit stamps transfer so the freed weapon slot cannot inherit their timers. <small>[sim-CFo3ylXb.js: `n.slot[r]===t.from&&(n.slot[r]=t.to)`]</small> <small>[sim-CFo3ylXb.js: `e.poolStamp[i+t]=Math.max(e.poolStamp[i+t]??cf,e.poolStamp[r+t]??cf),e.poolStamp[r+t]=cf`]</small>
+
+**Controlled checks:** original engines `main-mEUYCZvr.js` → `main-B4LDNZMr.js`, Standard/Normal, seeds `s1/s2/s3`. Recipe fixtures cover both partner orders, missing partners and slot release. Stepped walking/dash controls compare both partners with the union; original callbacks confirm 105 burn damage per second for 2.5 s, retained pools and transferred hit stamps in either equipment order. Six existing-weapon controls match old/new damage and kills across the three seeds, and the union deals damage in all three. Grants, held level-ups, HP refills and supplied targets/clocks are fixtures, not natural acquisition, representative DPS or server acceptance.
+
+## Tips
+
+- **Kite along the trail.** Staying on fresh butter keeps the speed bonus while pests cross the slow and burn.
+- **Use dashes to fill a gap.** Dash strips cover the path even between walking volleys.

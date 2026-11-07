@@ -5788,6 +5788,119 @@
    ]
   },
   {
+   "id": "root-current",
+   "tier": "union",
+   "base": {
+    "damage": 150,
+    "cooldown": 0.3,
+    "amount": 2,
+    "area": 1.6,
+    "speed": 0,
+    "duration": 5,
+    "pierce": 0,
+    "knockback": 3,
+    "interval": 0
+   },
+   "behavior": {
+    "kind": "tether",
+    "size": 8,
+    "minRange": 60,
+    "range": 150,
+    "snap": 210,
+    "hitInterval": 0.2,
+    "discharge": 14,
+    "pin": 0.85,
+    "clipsBosses": true,
+    "onHit": {
+     "kind": "slow",
+     "factor": 0.5,
+     "seconds": 0.3
+    },
+    "roots": {
+     "everySec": 1,
+     "size": 18,
+     "damageMult": 2,
+     "delay": 0.25
+    }
+   },
+   "from": [
+    "taproot-eruption",
+    "spud-grid"
+   ]
+  },
+  {
+   "id": "salted-butter",
+   "tier": "union",
+   "base": {
+    "damage": 420,
+    "cooldown": 0.2,
+    "amount": 1,
+    "area": 2,
+    "speed": 0,
+    "duration": 3.5,
+    "pierce": 0,
+    "knockback": 0,
+    "interval": 0.1
+   },
+   "behavior": {
+    "kind": "pool",
+    "size": 11,
+    "hitInterval": 0.2,
+    "range": 0,
+    "trail": {
+     "push": 60,
+     "haste": 0.15,
+     "dash": true,
+     "burn": {
+      "share": 0.25,
+      "seconds": 2
+     }
+    },
+    "onHit": {
+     "kind": "slow",
+     "factor": 0.55,
+     "seconds": 1.2
+    }
+   },
+   "from": [
+    "ghee-glide",
+    "salt-flats"
+   ]
+  },
+  {
+   "id": "sowing-season",
+   "tier": "union",
+   "base": {
+    "damage": 175,
+    "cooldown": 2.4,
+    "amount": 22,
+    "area": 1.5,
+    "speed": 0,
+    "duration": 2,
+    "pierce": 0,
+    "knockback": 1.5,
+    "interval": 0.1
+   },
+   "behavior": {
+    "kind": "rain",
+    "size": 18,
+    "spread": 140,
+    "delay": 0.4,
+    "goldOnKill": 0.1,
+    "plant": {
+     "lifeSec": 8,
+     "size": 26,
+     "trigger": 16,
+     "cap": 20,
+     "goldOnKill": 0.25
+    }
+   },
+   "from": [
+    "golden-harvest",
+    "landmine-harvest"
+   ]
+  },
+  {
    "id": "spud-artillery",
    "tier": "union",
    "base": {
@@ -9799,6 +9912,119 @@
    "from": [
     "mandoline-fury",
     "moon-cleaver"
+   ]
+  },
+  {
+   "id": "root-current",
+   "tier": "union",
+   "base": {
+    "damage": 150,
+    "cooldown": 0.3,
+    "amount": 2,
+    "area": 1.6,
+    "speed": 0,
+    "duration": 5,
+    "pierce": 0,
+    "knockback": 3,
+    "interval": 0
+   },
+   "behavior": {
+    "kind": "tether",
+    "size": 8,
+    "minRange": 60,
+    "range": 150,
+    "snap": 210,
+    "hitInterval": 0.2,
+    "discharge": 14,
+    "pin": 0.85,
+    "clipsBosses": true,
+    "onHit": {
+     "kind": "slow",
+     "factor": 0.5,
+     "seconds": 0.3
+    },
+    "roots": {
+     "everySec": 1,
+     "size": 18,
+     "damageMult": 2,
+     "delay": 0.25
+    }
+   },
+   "from": [
+    "taproot-eruption",
+    "spud-grid"
+   ]
+  },
+  {
+   "id": "salted-butter",
+   "tier": "union",
+   "base": {
+    "damage": 420,
+    "cooldown": 0.2,
+    "amount": 1,
+    "area": 2,
+    "speed": 0,
+    "duration": 3.5,
+    "pierce": 0,
+    "knockback": 0,
+    "interval": 0.1
+   },
+   "behavior": {
+    "kind": "pool",
+    "size": 11,
+    "hitInterval": 0.2,
+    "range": 0,
+    "trail": {
+     "push": 60,
+     "haste": 0.15,
+     "dash": true,
+     "burn": {
+      "share": 0.25,
+      "seconds": 2
+     }
+    },
+    "onHit": {
+     "kind": "slow",
+     "factor": 0.55,
+     "seconds": 1.2
+    }
+   },
+   "from": [
+    "ghee-glide",
+    "salt-flats"
+   ]
+  },
+  {
+   "id": "sowing-season",
+   "tier": "union",
+   "base": {
+    "damage": 175,
+    "cooldown": 2.4,
+    "amount": 22,
+    "area": 1.5,
+    "speed": 0,
+    "duration": 2,
+    "pierce": 0,
+    "knockback": 1.5,
+    "interval": 0.1
+   },
+   "behavior": {
+    "kind": "rain",
+    "size": 18,
+    "spread": 140,
+    "delay": 0.4,
+    "goldOnKill": 0.1,
+    "plant": {
+     "lifeSec": 8,
+     "size": 26,
+     "trigger": 16,
+     "cap": 20,
+     "goldOnKill": 0.25
+    }
+   },
+   "from": [
+    "golden-harvest",
+    "landmine-harvest"
    ]
   },
   {

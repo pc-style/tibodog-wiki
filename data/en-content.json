@@ -2317,6 +2317,12 @@
  "content.weapon.root-cellar.name": [
   "Root Cellar"
  ],
+ "content.weapon.root-current.desc": [
+  "Clips three live wires. Every second, roots burst under each wired pest, throw pests back and carry the zap to every pest they hit. Frees a weapon slot."
+ ],
+ "content.weapon.root-current.name": [
+  "Root Current"
+ ],
  "content.weapon.root-legion.desc": [
   "More seedlings sprout and live longer, and a new one rises beside Tibo every half second. Each seedling that wilts leaves a root snare that holds pests in place for a moment."
  ],
@@ -2365,6 +2371,12 @@
  "content.weapon.salt-line.name": [
   "Salt Line"
  ],
+ "content.weapon.salted-butter.desc": [
+  "Every step and every dash leaves salted butter that stings and slows pests, pushes them out of Tibo's path and sets them burning. Tibo walks 15% faster on it. Frees a weapon slot."
+ ],
+ "content.weapon.salted-butter.name": [
+  "Salted Butter"
+ ],
  "content.weapon.seed-potato.desc": [
   "Tibo tosses a seed potato onto the nearest crowd. It sprouts in three stages and zaps pests around it every second. Walk over it to harvest a burst that grows with the stage and catch the potato to throw again. Left alone, it bursts weakly after 8 s."
  ],
@@ -2388,6 +2400,12 @@
  ],
  "content.weapon.small-fry.name": [
   "Small Fry"
+ ],
+ "content.weapon.sowing-season.desc": [
+  "Golden potatoes rain down, and each one that misses stays planted as a mine. Kills can drop gold. Frees a weapon slot."
+ ],
+ "content.weapon.sowing-season.name": [
+  "Sowing Season"
  ],
  "content.weapon.spark-corral.desc": [
   "Every 60 units Tibo walks, he plants a charged starch post. A braided arc twice as wide runs between the posts and zaps pests much harder. More posts stand, and each lasts 9 s."
