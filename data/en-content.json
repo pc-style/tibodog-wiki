@@ -2503,6 +2503,12 @@
  "content.weapon.thunder-tuber.name": [
   "Thunder Tuber"
  ],
+ "content.weapon.tot-barrage.desc": [
+  "A nonstop stream of tater tots. Each tot that hits pops out a tot that charges the next pest, and walking sends squads of charging tots out behind Tibo. Frees a weapon slot."
+ ],
+ "content.weapon.tot-barrage.name": [
+  "Tot Barrage"
+ ],
  "content.weapon.tot-cavalry.desc": [
   "Every 40 units Tibo walks, a squad of buttered tater tots charges out behind him and rams through two pests each. A still Tibo makes no tots."
  ],

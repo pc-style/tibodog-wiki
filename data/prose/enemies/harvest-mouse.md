@@ -6,7 +6,7 @@ It runs straight at Tibo at speed 44 and hurts on contact for 14, with 95 base H
 
 ## How it works
 
-When a mouse dies, three Field Rats appear in a small ring around the spot and are pushed outward. <small>[sim-dQVU-VqL.js: `r.kx[p]=60*f(d),r.ky[p]=60*n(d)`]</small> They are ordinary Field Rats with their full base stats, scaled by the same HP, damage and speed multipliers as the mouse that spawned them. This differs from a splitter without a `child` (the [Snow Mold](/enemies/snow-mold); the [Sock Pile](/enemies/sock-pile) has one and releases full [Lint Bunnies](/enemies/lint-bunny)), whose copies get only 35% HP, a smaller body and half XP, and cannot split again. <small>[sim-dQVU-VqL.js: `e.scratch.hp=r.maxHp[t]/a.hp*(s?.35:1)`]</small> <small>[boot-DsGMbI9P.js: `` child:`lint-bunny` ``]</small>
+When a mouse dies, three Field Rats appear in a small ring around the spot and are pushed outward. <small>[sim-BMwZozX5.js: `n.kx[d]=60*h(i),n.ky[d]=60*C(i)`]</small> They are ordinary Field Rats with their full base stats, scaled by the same HP, damage and speed multipliers as the mouse that spawned them. This differs from a splitter without a `child` (the [Snow Mold](/enemies/snow-mold); the [Sock Pile](/enemies/sock-pile) has one and releases full [Lint Bunnies](/enemies/lint-bunny)), whose copies get only 35% HP, a smaller body and half XP, and cannot split again. <small>[sim-BMwZozX5.js: `e.scratch.hp=n.maxHp[t]/a.hp*(s?.35:1)`]</small> <small>[boot-5sXyG2xJ.js: `` child:`lint-bunny` ``]</small>
 
 An elite Harvest Mouse still releases three rats, but they are not elites. They get the normal scaling for the current time instead of the elite's stats.
 

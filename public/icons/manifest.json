@@ -709,7 +709,7 @@
    "nativeW": 13,
    "nativeH": 15,
    "scale": 4,
-   "source": "flagged-atlas-B7CjaNh5.png sprite \"icon-gem-sling\" anim \"icon\" frame 0 @(55,356)"
+   "source": "flagged-atlas-DgLzcb8N.png sprite \"icon-gem-sling\" anim \"icon\" frame 0 @(55,356)"
   },
   "hot-streak": {
    "file": "weapon/hot-streak.png",
@@ -718,7 +718,7 @@
    "nativeW": 16,
    "nativeH": 15,
    "scale": 4,
-   "source": "flagged-atlas-B7CjaNh5.png sprite \"icon-hot-streak\" anim \"icon\" frame 0 @(70,356)"
+   "source": "flagged-atlas-DgLzcb8N.png sprite \"icon-hot-streak\" anim \"icon\" frame 0 @(70,356)"
   },
   "locked-gatling": {
    "file": "weapon/locked-gatling.png",
@@ -727,7 +727,7 @@
    "nativeW": 16,
    "nativeH": 13,
    "scale": 4,
-   "source": "flagged-atlas-B7CjaNh5.png sprite \"icon-locked-gatling\" anim \"icon\" frame 0 @(88,356)"
+   "source": "flagged-atlas-DgLzcb8N.png sprite \"icon-locked-gatling\" anim \"icon\" frame 0 @(88,356)"
   },
   "mash-snowball": {
    "file": "weapon/mash-snowball.png",
@@ -736,7 +736,7 @@
    "nativeW": 15,
    "nativeH": 15,
    "scale": 4,
-   "source": "flagged-atlas-B7CjaNh5.png sprite \"icon-mash-snowball\" anim \"icon\" frame 0 @(124,356)"
+   "source": "flagged-atlas-DgLzcb8N.png sprite \"icon-mash-snowball\" anim \"icon\" frame 0 @(124,356)"
   },
   "seed-potato": {
    "file": "weapon/seed-potato.png",
@@ -745,7 +745,7 @@
    "nativeW": 13,
    "nativeH": 16,
    "scale": 4,
-   "source": "flagged-atlas-B7CjaNh5.png sprite \"icon-seed-potato\" anim \"icon\" frame 0 @(159,356)"
+   "source": "flagged-atlas-DgLzcb8N.png sprite \"icon-seed-potato\" anim \"icon\" frame 0 @(159,356)"
   },
   "spud-fence": {
    "file": "weapon/spud-fence.png",
@@ -754,7 +754,7 @@
    "nativeW": 16,
    "nativeH": 14,
    "scale": 4,
-   "source": "flagged-atlas-B7CjaNh5.png sprite \"icon-spud-fence\" anim \"icon\" frame 0 @(192,356)"
+   "source": "flagged-atlas-DgLzcb8N.png sprite \"icon-spud-fence\" anim \"icon\" frame 0 @(192,356)"
   },
   "tailgate-fries": {
    "file": "weapon/tailgate-fries.png",
@@ -763,7 +763,7 @@
    "nativeW": 16,
    "nativeH": 15,
    "scale": 4,
-   "source": "flagged-atlas-B7CjaNh5.png sprite \"icon-tailgate-fries\" anim \"icon\" frame 0 @(210,356)"
+   "source": "flagged-atlas-DgLzcb8N.png sprite \"icon-tailgate-fries\" anim \"icon\" frame 0 @(210,356)"
   },
   "tater-twirl": {
    "file": "weapon/tater-twirl.png",
@@ -772,7 +772,7 @@
    "nativeW": 16,
    "nativeH": 16,
    "scale": 4,
-   "source": "flagged-atlas-B7CjaNh5.png sprite \"icon-tater-twirl\" anim \"icon\" frame 0 @(264,356)"
+   "source": "flagged-atlas-DgLzcb8N.png sprite \"icon-tater-twirl\" anim \"icon\" frame 0 @(264,356)"
   },
   "tot-stampede": {
    "file": "weapon/tot-stampede.png",
@@ -781,7 +781,7 @@
    "nativeW": 16,
    "nativeH": 13,
    "scale": 4,
-   "source": "flagged-atlas-B7CjaNh5.png sprite \"icon-tot-stampede\" anim \"icon\" frame 0 @(318,356)"
+   "source": "flagged-atlas-DgLzcb8N.png sprite \"icon-tot-stampede\" anim \"icon\" frame 0 @(336,356)"
   },
   "gem-catapult": {
    "file": "weapon/gem-catapult.png",
@@ -790,7 +790,7 @@
    "nativeW": 14,
    "nativeH": 16,
    "scale": 4,
-   "source": "flagged-atlas-B7CjaNh5.png sprite \"icon-gem-catapult\" anim \"icon\" frame 0 @(39,356)"
+   "source": "flagged-atlas-DgLzcb8N.png sprite \"icon-gem-catapult\" anim \"icon\" frame 0 @(39,356)"
   },
   "mash-avalanche": {
    "file": "weapon/mash-avalanche.png",
@@ -799,7 +799,7 @@
    "nativeW": 16,
    "nativeH": 16,
    "scale": 4,
-   "source": "flagged-atlas-B7CjaNh5.png sprite \"icon-mash-avalanche\" anim \"icon\" frame 0 @(106,356)"
+   "source": "flagged-atlas-DgLzcb8N.png sprite \"icon-mash-avalanche\" anim \"icon\" frame 0 @(106,356)"
   },
   "potato-patch": {
    "file": "weapon/potato-patch.png",
@@ -808,7 +808,7 @@
    "nativeW": 16,
    "nativeH": 16,
    "scale": 4,
-   "source": "flagged-atlas-B7CjaNh5.png sprite \"icon-potato-patch\" anim \"icon\" frame 0 @(141,356)"
+   "source": "flagged-atlas-DgLzcb8N.png sprite \"icon-potato-patch\" anim \"icon\" frame 0 @(141,356)"
   },
   "spark-corral": {
    "file": "weapon/spark-corral.png",
@@ -817,7 +817,7 @@
    "nativeW": 16,
    "nativeH": 14,
    "scale": 4,
-   "source": "flagged-atlas-B7CjaNh5.png sprite \"icon-spark-corral\" anim \"icon\" frame 0 @(174,356)"
+   "source": "flagged-atlas-DgLzcb8N.png sprite \"icon-spark-corral\" anim \"icon\" frame 0 @(174,356)"
   },
   "tailgate-party": {
    "file": "weapon/tailgate-party.png",
@@ -826,7 +826,7 @@
    "nativeW": 16,
    "nativeH": 16,
    "scale": 4,
-   "source": "flagged-atlas-B7CjaNh5.png sprite \"icon-tailgate-party\" anim \"icon\" frame 0 @(228,356)"
+   "source": "flagged-atlas-DgLzcb8N.png sprite \"icon-tailgate-party\" anim \"icon\" frame 0 @(228,356)"
   },
   "tater-minigun": {
    "file": "weapon/tater-minigun.png",
@@ -835,7 +835,7 @@
    "nativeW": 16,
    "nativeH": 12,
    "scale": 4,
-   "source": "flagged-atlas-B7CjaNh5.png sprite \"icon-tater-minigun\" anim \"icon\" frame 0 @(246,356)"
+   "source": "flagged-atlas-DgLzcb8N.png sprite \"icon-tater-minigun\" anim \"icon\" frame 0 @(246,356)"
   },
   "tater-twister": {
    "file": "weapon/tater-twister.png",
@@ -844,7 +844,7 @@
    "nativeW": 16,
    "nativeH": 15,
    "scale": 4,
-   "source": "flagged-atlas-B7CjaNh5.png sprite \"icon-tater-twister\" anim \"icon\" frame 0 @(282,356)"
+   "source": "flagged-atlas-DgLzcb8N.png sprite \"icon-tater-twister\" anim \"icon\" frame 0 @(282,356)"
   },
   "tot-cavalry": {
    "file": "weapon/tot-cavalry.png",
@@ -853,7 +853,7 @@
    "nativeW": 16,
    "nativeH": 15,
    "scale": 4,
-   "source": "flagged-atlas-B7CjaNh5.png sprite \"icon-tot-cavalry\" anim \"icon\" frame 0 @(300,356)"
+   "source": "flagged-atlas-DgLzcb8N.png sprite \"icon-tot-cavalry\" anim \"icon\" frame 0 @(318,356)"
   },
   "wildfire-roast": {
    "file": "weapon/wildfire-roast.png",
@@ -862,7 +862,16 @@
    "nativeW": 16,
    "nativeH": 14,
    "scale": 4,
-   "source": "flagged-atlas-B7CjaNh5.png sprite \"icon-wildfire-roast\" anim \"icon\" frame 0 @(336,356)"
+   "source": "flagged-atlas-DgLzcb8N.png sprite \"icon-wildfire-roast\" anim \"icon\" frame 0 @(354,356)"
+  },
+  "tot-barrage": {
+   "file": "weapon/tot-barrage.png",
+   "w": 64,
+   "h": 64,
+   "nativeW": 16,
+   "nativeH": 16,
+   "scale": 4,
+   "source": "flagged-atlas-DgLzcb8N.png sprite \"icon-tot-barrage\" anim \"icon\" frame 0 @(300,356)"
   },
   "afterburner-fries": {
    "file": "weapon/afterburner-fries.png",

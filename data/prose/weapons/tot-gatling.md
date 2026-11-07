@@ -4,13 +4,15 @@ Tot Gatling is the evolution of [Tot Toss](/weapons/tot-toss): instead of a few 
 
 You get it by opening a chest while Tot Toss is level 8 and you own [Chives](/passives/chives) at any level. See [Evolutions](/evolutions) and [Chests](/chests). It is a different weapon from [Locked Gatling](/weapons/locked-gatling), which fires tots in fixed-angle bursts.
 
+**Union:** hold [Tot Cavalry](/weapons/tot-cavalry) as well and open a chest to make [Tot Barrage](/weapons/tot-barrage), freeing one weapon slot. Its thrown tots pop a charging tot on their first hit, and walking adds squads behind Tibo.
+
 ## How it works
 
 Targeting and spread follow [Tot Toss](/weapons/tot-toss#how-it-works): every tot is aimed at the nearest enemy when it leaves, and the second tot of each pair gets a small random spread.
 
-**Frame timing.** The game simulates 60 frames per second and rounds every cooldown to whole frames, so 0.13 s becomes 8 frames (0.133 s). <small>[sim-dQVU-VqL.js: `e.tick++,e.time=e.tick/60`]</small> <small>[boot-DsGMbI9P.js: `function gn(e){return mn(Math.max(1,Math.round(60*e)))}`]</small>
+**Frame timing.** The game simulates 60 frames per second and rounds every cooldown to whole frames, so 0.13 s becomes 8 frames (0.133 s). <small>[sim-BMwZozX5.js: `e.tick++,e.time=e.tick/60`]</small> <small>[boot-5sXyG2xJ.js: `function hn(e){return pn(Math.max(1,Math.round(60*e)))}`]</small>
 
-**Volleys limit the fire rate.** A new volley only starts after the previous one has finished, and tots within a volley leave 0.1 s apart. <small>[sim-dQVU-VqL.js: `t.cd<=0&&t.volleyLeft<=0`]</small> On most weapons that gap is far shorter than the cooldown, but Tot Gatling's cooldown is already close to it. As a result, cooldown reduction past a point stops helping, and extra amount makes the stream slower. Working through the timing rules gives these fire rates (tots per second, without fire-rate effects such as [Frenzy Fryer](/points-of-interest#frenzy-fryer)):
+**Volleys limit the fire rate.** A new volley only starts after the previous one has finished, and tots within a volley leave 0.1 s apart. <small>[sim-BMwZozX5.js: `t.cd<=0&&t.volleyLeft<=0`]</small> On most weapons that gap is far shorter than the cooldown, but Tot Gatling's cooldown is already close to it. As a result, cooldown reduction past a point stops helping, and extra amount makes the stream slower. Working through the timing rules gives these fire rates (tots per second, without fire-rate effects such as [Frenzy Fryer](/points-of-interest#frenzy-fryer)):
 
 | Tots per volley | Base cooldown (8 frames) | [Chives](/passives/chives) level 5, −35% (5 frames) | 60% cooldown cap (3 frames) |
 |---|---|---|---|
