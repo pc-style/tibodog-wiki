@@ -430,6 +430,12 @@ The official note says two Bog Witch pieces spread pools. This build's original 
 
 The 144 old/new 90-second set runs use supplied nightmare gear, granted weapons and HP refills, across three seeds. Focused original-function controls establish rule boundaries and caps, not natural gear acquisition, representative DPS/survival or server acceptance. Natural no-gear five-minute Standard/Normal seed `wiki` full summaries match (1,765 kills, level 13, 156.03 HP, 122.3 gold). No claims about physical devices or performance follow from these checks.
 
+### Build 127: version-only rebuild
+
+`main-DpXJfDs5.js` changes only the boot pair relative to build 126 across 407 reachable files per build. Exact boot text matches after masking hashed filenames and the known full game commits `3e6450aedd053574e076dc0c9d77a6f27cf9d5e9` → `4797abb6f3d41dfca03fff9e890cc66b65896cdc`. Both 406-asset mirrors match detector SHA-256 manifests. All 303 ordered notes and 111 codes match source and the original live panel with all seven dates expanded (18/80/43/28/41/47/46); the official changelog's 303 note texts match. Publication, grouping and note identities are unchanged; only the current version label becomes `4797abb`. Build 126 remains the source-observed introduction of the eight set rules and orphan-shot artwork fix. The Bog Witch two/three-piece discrepancy remains; no omitted note or new version label is interpreted as a gameplay change.
+
+Natural five-minute original-engine controls retain identical full summaries. Prior fixture limitations and historical missing-source limits remain. This review also clarifies that Space Farmer's retained +50% might is global, unlike its orbit-only erase-stack damage. No UI helpers, key tips, text wrappers, bold action leads, infrastructure or legacy timers change.
+
 ### Future checks
 
 The existing extractor now follows the panel's comparator, records source URL/SHA-256 and rejects duplicate note identities. The updater reports additions, removals, revised text/metadata, ordering, date/code regrouping and moves out of the unversioned group, keeping both before and after values. With an unchanged game build it still checks the saved journal against the mirrored source and reports drift without erasing the original build review. Old notes without stable IDs use their message IDs; a rewritten message ID may therefore appear as a removal plus addition rather than an asserted identity match.

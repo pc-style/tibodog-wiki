@@ -2,7 +2,7 @@
 
 Storm Tot is the evolved form of [Static Tot](/items/static-tot). Each weapon hit has a 15% chance to arc lightning up to 6 jumps, reaching enemies within 90 units of the last one. Each enemy reached takes 80% of the original hit's damage, and a thunderclap at each one deals 40% of the hit to every enemy within 24 units. You get it by holding Static Tot with [Root Network](/passives/root-network) at level 5 and opening a [chest](/chests). Every Static Tot you hold becomes a Storm Tot, and Static Tot then stops dropping.
 
-The enemy struck by a jump is also inside its own thunderclap, so it takes 1.2× the original hit in total. A full six-jump chain deals at least 7.2× the hit, more when the claps catch extra enemies. <small>[sim-BJSyZ192.js: `J(e,a*c.share,t.src,-1,.3),My(e,i,f,n)`]</small>
+The enemy struck by a jump is also inside its own thunderclap, so it takes 1.2× the original hit in total. A full six-jump chain deals at least 7.2× the hit, more when the claps catch extra enemies. <small>[sim-CJ_9Wh4W.js: `J(e,a*c.share,t.src,-1,.3),My(e,i,f,n)`]</small>
 
 ## How it works
 
