@@ -6,11 +6,11 @@ It has weight 6 out of 94 among Rare items, about 0.64% of item rolls at luck 0 
 
 ## How it works
 
-- Freezer Burn freezes nothing by itself. The enemy must still be frozen when it dies. <small>[sim-i37fXX4z.js: `o.frozenOnly&&t.freezeT[n]<=0`]</small>
+- Freezer Burn freezes nothing by itself. The enemy must still be frozen when it dies. <small>[sim-BJSyZ192.js: `o.frozenOnly&&t.freezeT[n]<=0`]</small>
 - The proc chance is 100%, limited to 6 shatters per second per copy. Extra copies only raise that limit.
 - Shatter damage comes from the dead enemy's max HP, not from Tibo's damage stat. It still gets the elite/boss bonus and can crit.
 - The shatter freezes every enemy it hits, including the ones it kills, so those also count as frozen when they die. One frozen kill can chain through a packed group until the per-second limit runs out.
-- Bosses cannot be frozen, so they never shatter, and the shatter's freeze does not affect them. <small>[sim-i37fXX4z.js: `` case`freeze`:r||(e.freezeT[t]=Math.max(e.freezeT[t],n.seconds*i)) ``]</small>
+- Bosses cannot be frozen, so they never shatter, and the shatter's freeze does not affect them. <small>[sim-BJSyZ192.js: `` case`freeze`:r||(e.freezeT[t]=Math.max(e.freezeT[t],n.seconds*i)) ``]</small>
 
 ## Tips
 

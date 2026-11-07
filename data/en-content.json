@@ -1765,6 +1765,137 @@
  "content.rarity.4.name": [
   "Legendary"
  ],
+ "content.setRule.event-horizon.desc": [
+  "Event Horizon: orbiting bodies erase small enemy bullets, each once per ",
+  [
+   "dim"
+  ],
+  " s. Each erase: +",
+  [
+   "gain"
+  ],
+  "% orbit damage for ",
+  [
+   "sec"
+  ],
+  " s, up to +",
+  [
+   "cap"
+  ],
+  "%"
+ ],
+ "content.setRule.hold-the-line.desc": [
+  "Hold the Line: armor up to ",
+  [
+   "cap"
+  ],
+  ", pests in melee reach take a free swing for ",
+  [
+   "swing"
+  ],
+  "× damage, and the dash becomes Brace; dash again to break out"
+ ],
+ "content.setRule.hold-the-line.label": [
+  [
+   "armor"
+  ],
+  " armor for each pest in melee reach, up to ",
+  [
+   "twoCap"
+  ]
+ ],
+ "content.setRule.overdrive.desc": [
+  "Overdrive: dash through pests or bullets to refund the charge and build heat. At ",
+  [
+   "heat"
+  ],
+  " heat, vent nearby bullets and fire ",
+  [
+   "rate"
+  ],
+  "% faster for ",
+  [
+   "sec"
+  ],
+  " s"
+ ],
+ "content.setRule.overdrive.label": [
+  "dashing through a bullet refunds ",
+  [
+   "refund"
+  ],
+  "% of the recharge"
+ ],
+ "content.setRule.ricochet.desc": [
+  "Ricochet: each pierce, plus ",
+  [
+   "jumps"
+  ],
+  ", becomes a jump to the nearest new pest within ",
+  [
+   "reach"
+  ],
+  " or back in off the view's edge, for +",
+  [
+   "gain"
+  ],
+  "% damage per jump."
+ ],
+ "content.setRule.ships-bell.desc": [
+  "Ship's Bell: every ",
+  [
+   "period"
+  ],
+  " s, and early on a dash, blast weapons fire an extra volley"
+ ],
+ "content.setRule.spreading-bog.desc": [
+  "Pests that die in your pools leave bogs (",
+  [
+   "damage"
+  ],
+  "% damage, up to ",
+  [
+   "cap"
+  ],
+  "). Tibo -",
+  [
+   "wade"
+  ],
+  "% speed in bogs"
+ ],
+ "content.setRule.static-step.desc": [
+  "Static Step: walking stores sparks, up to ",
+  [
+   "max"
+  ],
+  ". Each storm volley spends one to fork every strike to a second pest for double damage. With no sparks, storm weapons recharge ",
+  [
+   "slow"
+  ],
+  "% slower"
+ ],
+ "content.setRule.the-hunt.desc": [
+  "The Hunt: summons and dogs hunt the toughest pest in view for ",
+  [
+   "quarry"
+  ],
+  "% more damage. Its fall speeds them up ",
+  [
+   "howl"
+  ],
+  "% for ",
+  [
+   "seconds"
+  ],
+  " s"
+ ],
+ "content.setRule.the-hunt.label": [
+  "Summons and dogs deal ",
+  [
+   "elite"
+  ],
+  "% more damage to elites and bosses"
+ ],
  "content.shrine.area.label": [
   "Area"
  ],
