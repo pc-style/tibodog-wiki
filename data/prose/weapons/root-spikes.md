@@ -6,7 +6,7 @@ You get it from a level-up card. At level 8 it targets 9 pests (8 + 1) for 48 da
 
 ## How it works
 
-- **Targeting.** It only fires when at least one pest is within `range` (80 units) of Tibo. Area bonuses do not increase this range. Each spike in a volley picks a different random pest in range. When there are fewer pests in range than spikes, the extra spikes are lost. <small>[sim-DT94mWmG.js: `let o=Fl(e,n.range,i);if(o===void 0)return;Ll(e,o,i)`]</small>
+- **Targeting.** It only fires when at least one pest is within `range` (80 units) of Tibo. Area bonuses do not increase this range. Each spike in a volley picks a different random pest in range. When there are fewer pests in range than spikes, the extra spikes are lost. <small>[sim-BIASVETB.js: `let o=Fl(e,n.range,i);if(o===void 0)return;Ll(e,o,i)`]</small>
 - **Delay.** The spike lands where the pest was when it was targeted, `delay` (0.3 s) later. A fast pest can walk out of the 10-unit blast before it erupts. Any other pest standing on the spot is hit as well.
 - Each blast's radius is `size` × area. Amount bonuses from [GPU](/passives/gpu) and [Sprouting Eyes](/passives/sprouting-eyes) add more spikes per volley.
 
