@@ -6,9 +6,11 @@ The evolution raises the weapon's damage from 72 at max level to 123, and lets T
 
 ## How it works
 
-Throwing, growing, zaps, harvests and the 8 s self-burst follow the rules on [Seed Potato](/weapons/seed-potato#how-it-works). The plant limit is 3 plus Tibo's amount bonuses from passives and items (the base +1 amount does not count), capped at 6. <small>[sim-oJL-1F-Y.js: `s=Math.min(n.maxPlants,6,Math.max(1,t.raw.amount)+o)`]</small> The in-game text says Tibo “tosses three fertilized seed potatoes at a time”. In the code he still throws one seed at a time, at least 0.25 s apart, until three plants are out.
+Throwing, growing, zaps, harvests and the 8 s self-burst follow the rules on [Seed Potato](/weapons/seed-potato#how-it-works). The plant limit is 3 plus Tibo's amount bonuses from passives and items (the base +1 amount does not count), capped at 6. <small>[sim-BUcaJmpn.js: `s=Math.min(n.maxPlants,6,Math.max(1,t.raw.amount)+o)`]</small> The in-game text says Tibo “tosses three fertilized seed potatoes at a time”. In the code he still throws one seed at a time, at least 0.25 s apart, until three plants are out.
 
 When Seed Potato evolves, any of its plants still in the ground are recalled to Tibo's hand.
+
+Own Potato Patch and [Spark Corral](/weapons/spark-corral), then open a chest to unite them into [Starch Garden](/weapons/starch-garden), freeing a weapon slot.
 
 **Measured** in the headless sim (`tools/play.mjs`, build 41 `main-B2gf34bA.js`, Standard, Normal, god mode, seeds `s1`, `s2` and `s3`; the seeded starting weapon removed, the weapon given with `give`, spawning stopped after 4 s of play and the pests already on the field held at fixed spots with 10⁹ HP; Tibo standing still, facing right, with 8 pests in a line 20 to 90 units to his right): zaps dealt 36.9, 73.8 and 110.7, that is 0.3, 0.6 and 0.9 × 123 for stages 1 to 3. All three seeds gave the same figures.
 

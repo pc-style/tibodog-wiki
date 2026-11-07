@@ -6,8 +6,8 @@ It is offered as a level-up card. At level 8, with [Butter Socks](/passives/butt
 
 ## How it works
 
-- **On a dash** the cut starts where the dash began and runs in the dash direction. It is `length` × √Area + 48 units long, which covers the 48-unit dash plus 40 more at level 1, and `size` × Area wide (20 units at level 1). It pierces everything in the line. <small>[sim-oJL-1F-Y.js: `l=t.length*Math.sqrt(n.area)+e.cfg.dash.distance,d=t.size*n.area`]</small>
-- **Between dashes**, once the cooldown is ready and a pest is within 224 units (0.7 × the 320-unit play field), it cuts from Tibo's current position straight backwards, opposite to the way he faces. <small>[sim-oJL-1F-Y.js: `a.dx[r]=-i.fx[e.me],a.dy[r]=-i.fy[e.me]`]</small>
+- **On a dash** the cut starts where the dash began and runs in the dash direction. It is `length` × √Area + 48 units long, which covers the 48-unit dash plus 40 more at level 1, and `size` × Area wide (20 units at level 1). It pierces everything in the line. <small>[sim-BUcaJmpn.js: `l=t.length*Math.sqrt(n.area)+e.cfg.dash.distance,d=t.size*n.area`]</small>
+- **Between dashes**, once the cooldown is ready and a pest is within 224 units (0.7 × the 320-unit play field), it cuts from Tibo's current position straight backwards, opposite to the way he faces. <small>[sim-BUcaJmpn.js: `a.dx[r]=-i.fx[e.me],a.dy[r]=-i.fy[e.me]`]</small>
 - A dash always fires the weapon and restarts the cooldown.
 
 **Measured** in the headless sim (`tools/play.mjs`, build 41 `main-B2gf34bA.js`, Standard, Normal, god mode, seeds `s1`, `s2` and `s3`; the seeded starting weapon removed, the weapon given with `give`, spawning stopped after 4 s of play and the pests already on the field held at fixed spots with 10⁹ HP; Tibo walking right for 8 s past 12 pests held at fixed points on his path, no dashes): between dashes it fired every 1.2 s and pests on the cut took both cuts on the same tick (44 at level 1, 140 at level 8). Dash cuts were not measured. All three seeds gave the same figures.

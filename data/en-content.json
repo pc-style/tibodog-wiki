@@ -2449,6 +2449,12 @@
  "content.weapon.starch-chain.name": [
   "Starch Chain"
  ],
+ "content.weapon.starch-garden.desc": [
+  "Tibo tosses fertilized seed potatoes onto crowds, and every 60 units he walks he plants a starch post with a seed potato at its foot. Every plant grows in three stages and zaps pests around it, and the arcs between posts grow stronger with their plants. Walk over a plant to harvest a burst. Frees a weapon slot."
+ ],
+ "content.weapon.starch-garden.name": [
+  "Starch Garden"
+ ],
  "content.weapon.starch-supercell.desc": [
   "Lightning that chains between enemies. Frees a weapon slot."
  ],

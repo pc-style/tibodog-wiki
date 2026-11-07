@@ -6585,6 +6585,66 @@
    ]
   },
   {
+   "id": "starch-garden",
+   "tier": "union",
+   "base": {
+    "damage": 65,
+    "cooldown": 0,
+    "amount": 4,
+    "area": 1,
+    "speed": 0,
+    "duration": 1,
+    "pierce": 99,
+    "knockback": 1,
+    "interval": 0.1
+   },
+   "behavior": {
+    "kind": "bigUpdate",
+    "variant": {
+     "kind": "seedPotato",
+     "rule": {
+      "throwSec": 0.25,
+      "minThrow": 30,
+      "maxThrow": 90,
+      "flightSec": 0.35,
+      "stageSec": 1.2,
+      "selfSec": 8,
+      "zapSec": 1,
+      "zapR": 30,
+      "zapK": 0.3,
+      "reach": 24,
+      "reachK": 0.25,
+      "maxReach": 34,
+      "burstR": 30,
+      "stageR": 8,
+      "burstK": 1.5,
+      "selfK": 0.6,
+      "leashR": 160,
+      "maxPlants": 6,
+      "luckK": 0.5,
+      "goldCoins": 4
+     },
+     "garden": {
+      "fence": {
+       "every": 60,
+       "live": 4,
+       "arcWidth": 54,
+       "zapSec": 0.2,
+       "maxSpan": 90,
+       "minLife": 0.5
+      },
+      "postSec": 9,
+      "arcStageK": 0.2,
+      "arcGrowK": 0.25
+     }
+    }
+   },
+   "from": [
+    "potato-patch",
+    "spark-corral"
+   ]
+  },
+  {
    "id": "tot-barrage",
    "tier": "union",
    "base": {
@@ -9572,6 +9632,66 @@
    "from": [
     "hashnado",
     "tater-twister"
+   ]
+  },
+  {
+   "id": "starch-garden",
+   "tier": "union",
+   "base": {
+    "damage": 65,
+    "cooldown": 0,
+    "amount": 4,
+    "area": 1,
+    "speed": 0,
+    "duration": 1,
+    "pierce": 99,
+    "knockback": 1,
+    "interval": 0.1
+   },
+   "behavior": {
+    "kind": "bigUpdate",
+    "variant": {
+     "kind": "seedPotato",
+     "rule": {
+      "throwSec": 0.25,
+      "minThrow": 30,
+      "maxThrow": 90,
+      "flightSec": 0.35,
+      "stageSec": 1.2,
+      "selfSec": 8,
+      "zapSec": 1,
+      "zapR": 30,
+      "zapK": 0.3,
+      "reach": 24,
+      "reachK": 0.25,
+      "maxReach": 34,
+      "burstR": 30,
+      "stageR": 8,
+      "burstK": 1.5,
+      "selfK": 0.6,
+      "leashR": 160,
+      "maxPlants": 6,
+      "luckK": 0.5,
+      "goldCoins": 4
+     },
+     "garden": {
+      "fence": {
+       "every": 60,
+       "live": 4,
+       "arcWidth": 54,
+       "zapSec": 0.2,
+       "maxSpan": 90,
+       "minLife": 0.5
+      },
+      "postSec": 9,
+      "arcStageK": 0.2,
+      "arcGrowK": 0.25
+     }
+    }
+   },
+   "from": [
+    "potato-patch",
+    "spark-corral"
    ]
   },
   {
