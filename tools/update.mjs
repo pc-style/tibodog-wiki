@@ -1,10 +1,11 @@
 // Checks tibo.dog for a new game build and refreshes the wiki's data from it.
 //
-// Usage: node tools/update.mjs [--apply] [--force]
+// Usage: node tools/update.mjs [--apply] [--auto] [--force]
 //   (no flag)  mirror the live build, report what changed, change nothing
 //   --apply    also write data/, icons and build.json, rename chunk names and quotes in pages/,
 //              then rebuild and recheck every quote
 //   --force    recheck a reviewed build; pending reviews always resume without overwriting evidence
+//   --auto     with --apply, refuse all writes unless the automatic lane accepts the build
 //
 // Writes .cache/<main>/report.md. Last stdout line is "status: <s>", where s is
 //   up-to-date    live build is the documented one and every history entry is reviewed
@@ -20,10 +21,13 @@ import { fileURLToPath } from 'node:url';
 import { mirror } from './fetch-build.mjs';
 import { compareChangelog, extractChangelog } from './dump-changelog.mjs';
 import { sameBuild } from './same-build.mjs';
+import { numericUpdate } from './numeric-update.mjs';
+import { fetchOfficialData, applyOfficialData } from './official-data.mjs';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 process.chdir(ROOT);
 const apply = process.argv.includes('--apply');
+const auto = process.argv.includes('--auto');
 const force = process.argv.includes('--force');
 const run = (cmd, args, opts = {}) => execFileSync(cmd, args, { encoding: 'utf8', maxBuffer: 64 << 20, ...opts });
 const tryRun = (cmd, args) => {
@@ -87,6 +91,16 @@ run('node', ['tools/dump-changelog.mjs', live.dir, live.main, join(cache, 'data'
 const notes = (f) => existsSync(f) ? JSON.parse(readFileSync(f, 'utf8')) : { unreleased: [], days: [] };
 const journalChanges = compareChangelog(notes('data/changelog.json'), notes(join(cache, 'data', 'changelog.json')));
 const diff = JSON.parse(run('node', ['tools/diff-data.mjs', 'data', join(cache, 'data'), '--json']));
+// The first-party export owns catalog values. Cross-check against this exact
+// mirrored revision; keep extraction for config/difficulty, absent from the public API.
+const official = await fetchOfficialData(commit);
+const imported = applyOfficialData({
+  registry: JSON.parse(readFileSync(join(cache, 'data/registry.json'), 'utf8')),
+  content: JSON.parse(readFileSync(join(cache, 'data/en-content.json'), 'utf8')),
+}, official);
+writeFileSync(join(cache, 'data/registry.json'), JSON.stringify(imported.registry, null, 1));
+writeFileSync(join(cache, 'data/en-content.json'), JSON.stringify(imported.content, null, 1));
+writeFileSync(join(cache, 'official-data.json'), JSON.stringify(official, null, 1));
 report.push(`Game commit: \`${commit ?? 'not found'}\` (was \`${build.commit}\`).`, '', '## Data changes', '');
 if (diff.changes.length) {
   review.push(`${diff.changes.length} data change(s)`);
@@ -180,12 +194,33 @@ print('\\n'.join(out))`]).trim();
 report.push('## Icons', '', iconDiff ? iconDiff.split('\n').map((l) => `- ${l}`).join('\n') : 'All icons pixel-identical.', '');
 if (/^(new|gone)/m.test(iconDiff)) review.push('icons added or removed');
 
-if (!apply) {
+const prose = existsSync('data/prose') ? readdirSync('data/prose', { recursive: true }).filter((f) => f.endsWith('.md')).map((f) => ({ path: `data/prose/${f}`, text: readFileSync(`data/prose/${f}`, 'utf8') })) : [];
+const numericSame = prev && !same.identical ? sameBuild(dirname(prev.dir), dirname(live.dir), { numbers: true }) : same;
+const decision = numericUpdate({ changes: diff.changes, same, numericSame, pending, prose });
+if (journalChanges.length) decision.reasons.push('journal text or publication changed');
+if (langList(oldL10n) !== langList(newL10n)) decision.reasons.push('language schema changed');
+if (iconDiff) decision.reasons.push('art changed');
+decision.automatic = decision.reasons.length === 0;
+report.push('## Automatic update decision', '', decision.automatic ? 'Existing numeric values or an identical rebuild; no agent review required.' : decision.reasons.map((r) => `- ${r}`).join('\n'), '');
+
+if (!apply || auto) {
   // Quote check without touching sources.
   const q = tryRun('node', ['tools/check-quotes.mjs', live.dir]);
   report.push('## Quoted code', '', '```', q.out.trim(), '```', '');
-  if (!q.ok) review.push('quoted code no longer found');
-} else {
+  if (!q.ok) {
+    review.push('quoted code no longer found');
+    decision.automatic = false;
+    decision.reasons.push('authored citations need updating');
+  }
+}
+if (apply && auto && !decision.automatic) {
+  report.push('Automatic apply refused without changing tracked files.', ...decision.reasons.map((r) => `- ${r}`));
+  writeFileSync(join(cache, 'report.md'), report.join('\n') + '\n');
+  console.log(`report: ${join(cache, 'report.md')}`);
+  console.log('status: needs-review');
+  process.exit(0);
+}
+if (apply) {
   // 5. Write data, icons and build info.
   for (const f of ['registry.json', 'config.json', 'en-content.json', 'difficulty.json', 'changelog.json', 'i18n-names.json']) cpSync(join(cache, 'data', f), join('data', f));
   if (iconDiff) cpSync(join(cache, 'icons'), 'public/icons', { recursive: true });
@@ -224,7 +259,7 @@ if (!apply) {
   }
 }
 
-const status = review.length || !same?.identical ? 'needs-review' : 'identical';
+const status = decision.automatic && !review.some((r) => /failed|quoted code/.test(r)) ? (same?.identical ? 'identical' : 'numeric') : 'needs-review';
 if (apply) {
   // 8. Log the build. An unreviewed entry shows as "Not reviewed yet" on /versions until someone
   // updates the affected pages, writes the change summary and sets status to "reviewed".
@@ -233,9 +268,11 @@ if (apply) {
     const detected = `Detected: ${review.join('; ')}.`;
     builds.push({
       seen: today, main: live.main, boot: C.boot, sim: C.sim, commit,
-      status: status === 'identical' ? 'reviewed' : 'unreviewed',
+      status: ['identical', 'numeric'].includes(status) ? 'reviewed' : 'unreviewed',
       updated: now,
-      ...(status === 'identical'
+      ...(status === 'numeric'
+        ? { changes: `Updated ${diff.changes.length} numeric values from the official game data.`, evidence: `Automatic numeric-only AST and schema comparison against ${build.main}; first-party export ${official.index.game.commit}; ${same.files[1]} reachable files checked. No changed authored text, entities or logic structure.` }
+        : status === 'identical'
         ? { changes: 'No gameplay changes; a rebuild of the same game.', evidence: `Automatic whole-build comparison (tools/same-build.mjs): all ${same.files[1]} files reachable from the ${same.roots} match ${build.main} after mapping file hashes and the build's own commit id.` }
         : detected.length <= 280 ? { changes: detected } : { changes: 'Detected changes; see review evidence.', evidence: detected }),
     });

@@ -1,6 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { mkdtemp, rm, readFile } from 'node:fs/promises';
+import { mkdtemp, rm, readFile, mkdir, writeFile } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { pathToFileURL } from 'node:url';
@@ -115,6 +115,8 @@ test('receiver serializes duplicate/replayed events, validates input and probes 
   const ctx = { signal: new AbortController().signal };
   const deliver = (payload, context = ctx) => handler({ id: 'amp-event-1', body: new TextEncoder().encode(JSON.stringify(payload)) }, context);
   try {
+    await mkdir(join(root, '.amp/detector'), { recursive: true });
+    await writeFile(join(root, '.amp/detector/agent-owner.json'), JSON.stringify({ thread: 'T-active-writer' }));
     await register(amp);
     const payload = { type: 'build.changed', id: 'change-1', live: B, documented: A };
     await assert.rejects(deliver(payload), /Connection lost/);
@@ -138,6 +140,48 @@ test('receiver serializes duplicate/replayed events, validates input and probes 
     await deliver(reminder);
     assert.equal(messages.length, 2);
     assert.match(messages[1], /^\[tibo-event:change-4\]\nReminder: production still documents main-oldbuild\.js while the game serves main-newbuild\.js, 50 minutes after/);
+  } finally {
+    if (previous === undefined) delete process.env.AMP_THREAD_ID; else process.env.AMP_THREAD_ID = previous;
+    await rm(root, { recursive: true, force: true });
+  }
+});
+
+test('receiver queues updates without inference and escalates only writing/failure results', async () => {
+  const root = await mkdtemp(join(tmpdir(), 'tibo-automatic-'));
+  const previous = process.env.AMP_THREAD_ID;
+  process.env.AMP_THREAD_ID = 'T-41922f7d-7aa9-47ea-9612-ef6df9b9f21a';
+  let handler;
+  const messages = [], calls = [], commands = [];
+  const amp = {
+    system: { workspaceRoot: pathToFileURL(root) },
+    createWebhook: async (o) => { handler = o.handler; return { url: 'https://private.invalid' }; },
+    registerTool() {},
+    $: async (strings) => { commands.push(strings.join('')); return { exitCode: 0, stdout: 'Active: active (running)' }; },
+    threads: { get: () => ({ messages: async () => messages.map((text) => ({ content: [{ type: 'text', text }] })), appendUserMessage: async (m) => messages.push(m.content) }) },
+  };
+  const ctx = { signal: new AbortController().signal, tools: { call: async (...args) => calls.push(args) } };
+  const deliver = (payload) => handler({ body: Buffer.from(JSON.stringify(payload)) }, ctx);
+  try {
+    await register(amp);
+    const event = { id: 'numeric-1', type: 'build.changed', live: B, documented: A };
+    await deliver(event);
+    await deliver(event);
+    assert.equal(messages.length, 0);
+    assert.equal(commands.length, 1);
+    assert.deepEqual(JSON.parse(await readFile(join(root, '.amp/detector/jobs/numeric-1.job.json'))), event);
+    await writeFile(join(root, '.amp/detector/jobs/numeric-1.result.json'), JSON.stringify({ code: 0, summary: 'shipped' }));
+    await deliver({ id: 'result-numeric-1', type: 'automatic.result', job: 'numeric-1' });
+    assert.equal(messages.length, 0);
+    await writeFile(join(root, '.amp/detector/jobs/text-2.result.json'), JSON.stringify({ code: 20, summary: 'refresh authored text: whisk.md' }));
+    await deliver({ id: 'result-text-2', type: 'automatic.result', job: 'text-2' });
+    await deliver({ id: 'result-text-2', type: 'automatic.result', job: 'text-2' });
+    assert.equal(messages.length, 1);
+    assert.match(messages[0], /needs writing.*refresh authored text/s);
+    const ci = { id: 'ci-3', type: 'ci.subscribe', sha: 'a'.repeat(40) };
+    await deliver(ci); await deliver(ci);
+    assert.equal(calls.length, 1);
+    assert.equal(calls[0][1].commit_sha, ci.sha);
+    await assert.rejects(deliver({ id: 'bad', type: 'automatic.result', job: '../secret' }), /Invalid job/);
   } finally {
     if (previous === undefined) delete process.env.AMP_THREAD_ID; else process.env.AMP_THREAD_ID = previous;
     await rm(root, { recursive: true, force: true });

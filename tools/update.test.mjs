@@ -1,6 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { mkdtempSync, mkdirSync, copyFileSync, writeFileSync, readFileSync, rmSync } from 'node:fs';
+import { mkdtempSync, mkdirSync, copyFileSync, writeFileSync, readFileSync, rmSync, symlinkSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { execFileSync } from 'node:child_process';
@@ -203,6 +203,8 @@ for (const scenario of [
       copyFileSync(new URL('./update.mjs', import.meta.url), join(root, 'tools', 'update.mjs'));
       copyFileSync(new URL('./dump-changelog.mjs', import.meta.url), join(root, 'tools', 'dump-changelog.mjs'));
       copyFileSync(new URL('./same-build.mjs', import.meta.url), join(root, 'tools', 'same-build.mjs'));
+      for (const file of ['numeric-update.mjs', 'official-data.mjs']) copyFileSync(new URL(file, import.meta.url), join(root, 'tools', file));
+      symlinkSync(new URL('../node_modules', import.meta.url), join(root, 'node_modules'), 'dir');
       writeFileSync(join(cache, 'assets', 'changelog-panel-fixture1.js'), journalSource);
       const journal = extractChangelog(join(cache, 'assets'), 'main-current1.js');
       if (scenario.drift) journal.unreleased.pop();

@@ -9,10 +9,20 @@ A failed review/deployment is not automatically retried by repeatedly launching 
 
 The project plugin [tibo-detector.js](../../.amp/plugins/tibo-detector.js) registers
 only in monitor thread `T-41922f7d-7aa9-47ea-9612-ef6df9b9f21a`. A changed build
-wakes that existing Medium + Fast host, which verifies fresh evidence, reuses any
-active worker and follows the Monitor section of the wiki-update skill
-(`.claude/skills/wiki-update/SKILL.md`); event-driven runs must not re-enable polling.
+queues a disk-backed job for the supervised `tibo-updates` service. Its code-only
+updater imports revision-matched first-party catalogs and validates extracted
+config, numeric-only AST/data changes, citations, build, middleware and tests.
+Accepted numeric updates and identical rebuilds commit, push and verify the Git
+deployment and live pages without inference. Only writing/new content/schema work
+or a failed gate wakes the monitor; active agent ownership prevents competing
+delivery. The method remains in `.claude/skills/wiki-update/SKILL.md`.
 Keep the monitor unarchived: archiving its thread disables webhook delivery.
+
+Jobs, logs, results and the last successful delivery receipt live under the
+Git-ignored `.amp/detector/`. The queue acknowledges result delivery separately
+from execution, so retrying a lost callback never reruns a completed update.
+The service survives CLI updates and pause/resume. The webhook starts it when
+needed; it does not hold an orb-awake lease or create agent schedules.
 
 ## Watchdog
 

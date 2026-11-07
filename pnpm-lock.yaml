@@ -14,6 +14,9 @@ importers:
       '@vercel/functions':
         specifier: ^3.10.5
         version: 3.10.5
+      acorn:
+        specifier: 8.15.0
+        version: 8.15.0
       marked:
         specifier: ^15.0.0
         version: 15.0.12
@@ -298,6 +301,11 @@ packages:
   '@vercel/oidc@4.0.5':
     resolution: {integrity: sha512-E+duTxv0W8r3qNCGUYxTLt0V0BlLUlrEqxYOu2OoFubIbxwGjwm4wofache+YgU6Sr0MwoAA/vsSrrNrrWjimw==}
     engines: {node: '>= 20'}
+
+  acorn@8.15.0:
+    resolution: {integrity: sha512-NZyJarBfL7nWwIq+FDL6Zp/yHEhePMNnnJ0y3qfieCrmNvYct8uvtiV41UvlSe6apAfk0fY1FbWx+NwfmpvtTg==}
+    engines: {node: '>=0.4.0'}
+    hasBin: true
 
   base64-js@0.0.8:
     resolution: {integrity: sha512-3XSA2cR/h/73EzlXXdU6YNycmYI7+kicTxks4eJg2g39biHR84slg2+des+p7iHYhbRg/udIS4TD53WabcOUkw==}
@@ -661,6 +669,8 @@ snapshots:
       '@vercel/cli-config': 0.3.5
       '@vercel/cli-exec': 1.0.1
       jose: 5.10.0
+
+  acorn@8.15.0: {}
 
   base64-js@0.0.8: {}
 
