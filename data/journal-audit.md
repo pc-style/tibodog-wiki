@@ -723,6 +723,16 @@ Sources:
 - [Current boot, boot-EKs_gqiS.js](https://tibo.dog/assets/boot-EKs_gqiS.js), SHA-256 `01ab18c69da425cc02090fc65c429d24ee4ab067b49eef6f9325e5219ccad510`.
 - [Current journal, changelog-panel-CBTq-jy8.js](https://tibo.dog/assets/changelog-panel-CBTq-jy8.js), SHA-256 `409caf911bfdd4b2c13124f29763d2764d8813e614c3bc139c9ce02aafcd9932`.
 
+## Build 152: lightning-note grouping
+
+`main-TmaBX-b1.js` (game commit `b5f9581476ca`) moves unchanged `chain-zap-kills` / `STXazu` from next into **November 7, version `34bfb33`**. Its original publication remains **2026-11-08T06:12:55Z**; the source-observed animation introduction remains **build 149**. The XP-art note keeps its build-151 grouping, original publication and build-148 introduction. These are not newly introduced visual changes.
+
+The whole graph stays **412 files**; only the English journal differs substantively from build 151. All **317 note identities, message IDs, kinds, texts and about-fields** are identical. Sim and boot have zero normalized hunks; numeric data/config, English content, translated entity names and icon pixels are unchanged. Build 151's completed navigation review is preserved, rather than erased when this build superseded it before publication. No new behavioral claim or replay of unchanged gameplay was needed. Current citation owners are retargeted; two Save code quotes move verbatim to `save-code-panel-CIYtOBol.js`.
+
+The initial required collection failed archive-manifest HTTP 404 at **08:07:14 UTC**, and a later purposeful fresh retry failed again at **08:09:16 UTC** (`2026-11-08T08-07-12-840Z-f4d40e28` and `2026-11-08T08-09-16-748Z-a088ebfc`). Both failures remain separate from build 151's archive and buffer failures. After the manifest became available, fresh proof `2026-11-08T08-12-10-995Z-b7dd108c` verified archived HTML and all **411 assets**, plus a separately fetched revision-bound official full journal. Chromium full/panel and an independent actual live-panel check each match **317 ordered notes, seven dates, 121 codes**, with every older date expanded. Revision-bound first-party catalog and all-locale text validation pass separately. No stale proof, manual acceptance override, tooling or retry-policy change was used.
+
+Source: [Current journal, changelog-panel-BdZjq64h.js](https://tibo.dog/assets/changelog-panel-BdZjq64h.js), SHA-256 `d689c13f281c4f20cb67d5cb3a30bbb861002681366a09f5bbf4dfc03046240a`. Archive manifest SHA-256 `54f825036b49c88870c9e931f0a98753ea90f16b3cc754fedb4a4a7e407fc003`, archived at `2026-11-08T08:09:21.991Z`; availability alone was not treated as provenance approval.
+
 ### Future checks
 
 The existing extractor now follows the panel's comparator, records source URL/SHA-256 and rejects duplicate note identities. The updater reports additions, removals, revised text/metadata, ordering, date/code regrouping and moves out of the unversioned group, keeping both before and after values. With an unchanged game build it still checks the saved journal against the mirrored source and reports drift without erasing the original build review. Old notes without stable IDs use their message IDs; a rewritten message ID may therefore appear as a removal plus addition rather than an asserted identity match.
