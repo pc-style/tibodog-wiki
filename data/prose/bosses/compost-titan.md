@@ -1,6 +1,6 @@
 ## Overview
 
-Compost Titan is the eleventh boss. It arrives at 17:00 on the [wave schedule](/bosses#wave-schedule), in the same minute as an elite and a [Golden Scarab](/events/golden-scarab), and only a minute after [Grater Golem](/bosses/grater-golem). The ×3 boss HP step from minute 16 applies, so its 9000 base HP becomes 27,000. That is about 17,550 on Normal (boss HP ×0.65, see [Modes](/modes)) and 25,650 on Nightmare before [curse](/curse). Nightmare starts every run with one curse, which adds 10% to boss HP, so there it actually has about 28,215. <small>[intro-shared-C842JKPa.js: `startCurses:1,tierLag:2,wallPests:.6`]</small> <small>[sim-BYbipzJm.js: `n.maxHp[r]=i.hp*t.hpMult*(1+e.loadout.stats.curse)`]</small> It is large (body radius 22) and slow (speed 24, against Tibo's base 62), and deals 30 contact damage.
+Compost Titan is the eleventh boss. It arrives at 17:00 on the [wave schedule](/bosses#wave-schedule), in the same minute as an elite and a [Golden Scarab](/events/golden-scarab), and only a minute after [Grater Golem](/bosses/grater-golem). The ×3 boss HP step from minute 16 applies, so its 9000 base HP becomes 27,000. That is about 17,550 on Normal (boss HP ×0.65, see [Modes](/modes)) and 25,650 on Nightmare before [curse](/curse). Nightmare starts every run with one curse, which adds 10% to boss HP, so there it actually has about 28,215. <small>[intro-shared-Br8aSNV2.js: `startCurses:1,tierLag:2,wallPests:.6`]</small> <small>[sim-EYxKn8bh.js: `n.maxHp[r]=i.hp*t.hpMult*(1+e.loadout.stats.curse)`]</small> It is large (body radius 22) and slow (speed 24, against Tibo's base 62), and deals 30 contact damage.
 
 It is part of the post-20:00 rotation, so a long run meets it again at 25:00, 32:00 and every 7 minutes after that ([After 20:00](/bosses#after-20-00)). A [Boss Lair](/points-of-interest#boss-lair) can also wake it. It drops an XP gem worth 200, a 25-gold coin and a chest ([Chests](/chests)). It has no Nightmare variants.
 
@@ -8,11 +8,11 @@ It is part of the post-20:00 rotation, so a long run meets it again at 25:00, 32
 
 ## Fight
 
-The Titan lumbers towards Tibo, firing homing spirals. Every 4 s it stops to release a ring of maggots. One summon cycle is 5 s: 4 s of walking plus a 1 s warning. The spiral timer is paused during the summon. <small>[sim-BYbipzJm.js: `d===0?($T(e,o,s,c,l,u),QT(e,o,s,t)):d===1?eE(e,o,s,t):tE(e,o,s,t)`]</small>
+The Titan lumbers towards Tibo, firing homing spirals. Every 4 s it stops to release a ring of maggots. One summon cycle is 5 s: 4 s of walking plus a 1 s warning. The spiral timer is paused during the summon. <small>[sim-EYxKn8bh.js: `d===0?($T(e,o,s,c,l,u),QT(e,o,s,t)):d===1?eE(e,o,s,t):tE(e,o,s,t)`]</small>
 
 ### Maggot ring
 
-Fourteen spawn marks appear in a ring 44 units around the Titan. After 1 s a [Maggot](/enemies/maggot-swarm) hatches on each: an ordinary chasing pest with 30 base HP, speed 50 and 10 contact damage. Each one despawns 40 s after hatching if it is not killed. <small>[sim-BYbipzJm.js: `t>=0&&(e.enemies.despawnAt[t]=e.time+40)`]</small> A new ring every 5 s and a 40 s lifetime mean an ignored Titan can have up to about 110 maggots out at once.
+Fourteen spawn marks appear in a ring 44 units around the Titan. After 1 s a [Maggot](/enemies/maggot-swarm) hatches on each: an ordinary chasing pest with 30 base HP, speed 50 and 10 contact damage. Each one despawns 40 s after hatching if it is not killed. <small>[sim-EYxKn8bh.js: `t>=0&&(e.enemies.despawnAt[t]=e.time+40)`]</small> A new ring every 5 s and a 40 s lifetime mean an ignored Titan can have up to about 110 maggots out at once.
 
 If the Titan dies during the 1 s warning, the marks vanish and no maggots hatch.
 
@@ -20,7 +20,7 @@ If the Titan dies during the 1 s warning, the marks vanish and no maggots hatch.
 
 Every 3.6 s at base, after a 1 s warning, the Titan fires four streams of shots at right angles to each other. It fires 12 volleys, 0.18 s apart, turning about 0.22 radians (12°) between volleys, so the streams sweep around it. The shots fly at speed 55 and deal 12 damage each.
 
-From 0.4 s to 1.4 s after launch, each shot steers towards Tibo, turning up to 0.8 radians per second. It only steers while Tibo is ahead of it, and it stops steering for good once Tibo dashes. <small>[sim-BYbipzJm.js: `u!==void 0&&r>=u.after&&r<u.until&&oE.dashAgo>Math.round(r/i)`]</small>
+From 0.4 s to 1.4 s after launch, each shot steers towards Tibo, turning up to 0.8 radians per second. It only steers while Tibo is ahead of it, and it stops steering for good once Tibo dashes. <small>[sim-EYxKn8bh.js: `u!==void 0&&r>=u.after&&r<u.until&&oE.dashAgo>Math.round(r/i)`]</small>
 
 Enemy bullets scale with time ([Enemy scaling](/enemy-scaling#enemy-bullets)). At 17:00 the spiral has seven streams instead of four (4 × 1.68, rounded), the shots fly at about 69, faster than Tibo walks, volleys come about 0.12 s apart and a new spiral starts about every 2.4 s.
 

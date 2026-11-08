@@ -7113,7 +7113,6 @@
   "NoDrops": 1,
   "BossShare": 2,
   "Kill": 4,
-  "Reset": 8,
   "Meteor": 16
  },
  "boot.js": {

@@ -2506,7 +2506,7 @@
   "Permafrost Fries"
  ],
  "content.weapon.potato-battery.desc": [
-  "Clips a live wire onto a pest. The wire zaps and slows every pest it touches. The clipped pest can't die until the wire lets go."
+  "Clips a live wire onto a pest. The wire zaps and slows every pest it touches. When the clipped pest dies, the wire jumps to the next one."
  ],
  "content.weapon.potato-battery.name": [
   "Potato Battery"
