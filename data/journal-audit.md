@@ -673,6 +673,21 @@ Sources:
 - [Current atlas metadata, atlas.generated-D7zDT2xg.js](https://tibo.dog/assets/atlas.generated-D7zDT2xg.js), SHA-256 `ce7c373739981483c0c0bc3acb45297ba131a0ec7963bbf91311783830e97505`.
 - [Current atlas image, atlas-CW5uf1fv.png](https://tibo.dog/assets/atlas-CW5uf1fv.png), SHA-256 `5015400919e348bb192657dd65e560d2e847944eef3ccb4ba0bce1f9ae28e2c9`.
 
+## Build 149: lightning-kill animation
+
+`main-EzjRHQdR.js` (game commit `34bfb33aeb58`) adds `chain-zap-kills` / `STXazu`: “Pests that a lightning zap kills fall at once.” Original publication is **2026-11-08T06:12:55Z**; source-observed introduction is **build 149**, separate from observation time and the current-version wrapper. Earlier publication, grouping and introduction evidence is preserved.
+
+The complete graph remains **412 files**. English and all 26 translated journals change. Scene has five normalized hunks: collect active friendly chain endpoints, match deaths by position and effect age, save a corpse frame offset, apply it when selecting the death frame, and allocate its array. `run-drops` and `title-gear-parts` have zero normalized hunks; their source changes are renamed imports/identifiers. Sim and boot have zero normalized hunks. Registry, config, names and icon pixels are unchanged; the warm list retargets changed asset hashes. Unchanged simulation alone was not treated as proof of unchanged rendering.
+
+Controlled probes execute each build's original endpoint collector, corpse insertion and ordinary death draw loop, with identical forced effect fixtures and intercepted draw calls. Seven cases per build cover an exact match, the 0.5-unit position boundary, an outside-position miss, the half-tick age boundary, an outside-age miss, a hostile bolt and a missing chain. Matching friendly deaths select frames **1/1/2** at ages 0/0.099/0.101 s, versus old **0/0/1**. Misses and hostile controls retain **0/0/1**. The scene uses position/age correlation, not an explicit causal killer ID. This is isolated renderer evidence, not natural gameplay, GPU output or performance timing. Enemy scaling documents the visual-only change, without inferring new damage or earlier simulation kills.
+
+The first required collection failed on archive-manifest HTTP 404 and remains a failed receipt. Fresh retry `2026-11-08T07-10-44-366Z-2e70cef2` passes the archived panel and separately fetched revision-bound official full page in Chromium: **316 ordered notes, seven displayed dates, 119 codes**, every older date expanded. First-party API validation passes separately; the API does not supply the journal. No tooling, acceptance or retry-policy changes.
+
+Sources:
+
+- [Current scene, scene-CN_K94mc.js](https://tibo.dog/assets/scene-CN_K94mc.js), SHA-256 `8879ff84a5396061f77f1b14e77355b9e586e4d5c5c09f6506f4ca7ef2d69c82`.
+- [Current journal, changelog-panel-JC8s-V-S.js](https://tibo.dog/assets/changelog-panel-JC8s-V-S.js), SHA-256 `bd3a11731c89756202636c0859358a4e0d3f11f4af3115219e8c7b170dbc5e12`.
+
 ### Future checks
 
 The existing extractor now follows the panel's comparator, records source URL/SHA-256 and rejects duplicate note identities. The updater reports additions, removals, revised text/metadata, ordering, date/code regrouping and moves out of the unversioned group, keeping both before and after values. With an unchanged game build it still checks the saved journal against the mirrored source and reports drift without erasing the original build review. Old notes without stable IDs use their message IDs; a rewritten message ID may therefore appear as a removal plus addition rather than an asserted identity match.
