@@ -271,6 +271,15 @@
    },
    {
     "kind": "evolution",
+    "weapon": "spud-dynamo",
+    "catalyst": {
+     "kind": "passive",
+     "id": "slow-cooker"
+    },
+    "result": "dynamo-coil"
+   },
+   {
+    "kind": "evolution",
     "weapon": "sprout-satellites",
     "catalyst": {
      "kind": "passive",
@@ -322,6 +331,15 @@
      "id": "hot-sauce"
     },
     "result": "gratin-arc"
+   },
+   {
+    "kind": "evolution",
+    "weapon": "starch-puddle",
+    "catalyst": {
+     "kind": "passive",
+     "id": "butter-pat"
+    },
+    "result": "gratin-puddle"
    },
    {
     "kind": "evolution",

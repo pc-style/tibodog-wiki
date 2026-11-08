@@ -4,31 +4,31 @@ amusing is the first boss of a run. It arrives at 2:00 on the [wave schedule](/b
 
 It is not in the post-20:00 boss rotation ([After 20:00](/bosses#after-20-00)), and a [Boss Lair](/points-of-interest#boss-lair) never wakes it, because lairs pick from the second boss in the order onwards. In a normal run you meet it once, unless cursed extra bosses add copies.
 
-On death it drops an XP gem worth 40 (times the biome's XP multiplier), a 25-gold coin and a chest ([Chests](/chests)). Killing it also reveals [Alex](/visitors#alex), who joins in 25% of normal runs and always in Story. <small>[sim-DEo-fQlt.js: `` n.def[t]===Vy&&Kt(e.alex)===`pending` ``]</small> amusing is also the scripted boss of [Story mode](/story-mode), where it has extra HP, damage and speed.
+On death it drops an XP gem worth 40 (times the biome's XP multiplier), a 25-gold coin and a chest ([Chests](/chests)). Killing it also reveals [Alex](/visitors#alex), who joins in 25% of normal runs and always in Story. <small>[sim-BhFUkOts.js: `` n.def[t]===Vy&&Kt(e.alex)===`pending` ``]</small> amusing is also the scripted boss of [Story mode](/story-mode), where it has extra HP, damage and speed.
 
-**Measured** (headless `tools/play.mjs`, build `main-B2gf34bA`, seed `wiki`, standard mode, `--god`; the clock warped to 2 s before each minute and stepped across it; level-up offers taken first-in-order except Rotten Spud, so curse stays at the difficulty's start value): it spawned at exactly 2:00 on all four difficulties, with 325 HP on Easy, 422.5 on Normal, 455 on Hard and 679.25 on Nightmare. The Nightmare figure is 10% above base HP × the difficulty multiplier because Nightmare starts every run with one curse, and boss HP is multiplied by 1 + curse. <small>[intro-shared-mNJGGdsT.js: `startCurses:1,tierLag:2,wallPests:.6`]</small> <small>[sim-DEo-fQlt.js: `n.maxHp[r]=i.hp*t.hpMult*(1+e.loadout.stats.curse)`]</small> Seeds `s1` to `s4` gave the same Normal times and HP.
+**Measured** (headless `tools/play.mjs`, build `main-B2gf34bA`, seed `wiki`, standard mode, `--god`; the clock warped to 2 s before each minute and stepped across it; level-up offers taken first-in-order except Rotten Spud, so curse stays at the difficulty's start value): it spawned at exactly 2:00 on all four difficulties, with 325 HP on Easy, 422.5 on Normal, 455 on Hard and 679.25 on Nightmare. The Nightmare figure is 10% above base HP × the difficulty multiplier because Nightmare starts every run with one curse, and boss HP is multiplied by 1 + curse. <small>[intro-shared-BMr-puWj.js: `startCurses:1,tierLag:2,wallPests:.6`]</small> <small>[sim-BhFUkOts.js: `n.maxHp[r]=i.hp*t.hpMult*(1+e.loadout.stats.curse)`]</small> Seeds `s1` to `s4` gave the same Normal times and HP.
 
 ## Fight
 
-amusing walks straight at Tibo. Every 3.6 s it stops for its hug, and between hugs it cycles through three bullet patterns in a fixed order: fan, ring, spiral, then the fan again. A new pattern starts every 2.2 s at base. The bullet-pattern clock only runs while the boss is walking, so it pauses during the hug. <small>[sim-DEo-fQlt.js: `d===0?($T(e,o,s,c,l,u),QT(e,o,s,t)):d===1?eE(e,o,s,t):tE(e,o,s,t)`]</small> The first hug comes about 2.2 s after it spawns, and the first pattern about 1.1 s after.
+amusing walks straight at Tibo. Every 3.6 s it stops for its hug, and between hugs it cycles through three bullet patterns in a fixed order: fan, ring, spiral, then the fan again. A new pattern starts every 2.2 s at base. The bullet-pattern clock only runs while the boss is walking, so it pauses during the hug. <small>[sim-BhFUkOts.js: `d===0?($T(e,o,s,c,l,u),QT(e,o,s,t)):d===1?eE(e,o,s,t):tE(e,o,s,t)`]</small> The first hug comes about 2.2 s after it spawns, and the first pattern about 1.1 s after.
 
-When amusing walks away from the camera, it shows its back-facing walk animation. This changes its appearance, not its attacks or movement speed. The renderer selects that walk when upward movement is greater than sideways movement; an exact diagonal keeps the ordinary walk. Bosses without back-facing art fall back to their ordinary walk or idle frames. <small>[scene-C4rKTfPm.js: `return t<-Math.abs(e)`]</small> <small>[clip-chains-DBwJlYBi.js: `` walkBack:()=>[`walk-back`,`walk`,`idle`] ``]</small>
+When amusing walks away from the camera, it shows its back-facing walk animation. This changes its appearance, not its attacks or movement speed. The renderer selects that walk when upward movement is greater than sideways movement; an exact diagonal keeps the ordinary walk. Bosses without back-facing art fall back to their ordinary walk or idle frames. <small>[scene-CeN-10-O.js: `return t<-Math.abs(e)`]</small> <small>[clip-chains-DBwJlYBi.js: `` walkBack:()=>[`walk-back`,`walk`,`idle`] ``]</small>
 
-Enemy bullets scale with run time ([Enemy scaling](/enemy-scaling#enemy-bullets)): count +4% per minute, fire rate +3% and speed +1.5%. At 2:00 that only changes the ring, which grows from 12 to 13 shots, and shortens the pattern interval to about 2.1 s. <small>[sim-DEo-fQlt.js: `a.count[o]=Math.max(1,Math.round(t.count*d.bulletCount))`]</small>
+Enemy bullets scale with run time ([Enemy scaling](/enemy-scaling#enemy-bullets)): count +4% per minute, fire rate +3% and speed +1.5%. At 2:00 that only changes the ring, which grows from 12 to 13 shots, and shortens the pattern interval to about 2.1 s. <small>[sim-BhFUkOts.js: `a.count[o]=Math.max(1,Math.round(t.count*d.bulletCount))`]</small>
 
 **Measured** (headless `tools/play.mjs`, build `main-B2gf34bA`, seed `wiki`, standard mode, `--god`, Normal; the clock warped to just before 2:00; every other boss and every pest removed each tick, so the sim's hostile-shot counter only counts this boss): 5-shot fans 1.85 s and 2.22 s after it spawned, two 13-shot rings at 5.68 s and 6.23 s, then 12 two-shot spiral bursts from 7.67 s to 8.90 s (about 0.11 s apart), and the next fan at 11.40 s. Easy and Nightmare gave the same counts and timings, and so did seed `s2`.
 
 ### Hug
 
-When the hug starts, the game marks a circle of radius 40 where Tibo is standing. amusing stands still for 1.1 s, then leaps onto the marked spot over 0.55 s. The circle deals the boss's contact damage (24 base, scaled with run time) when amusing lands, 1.65 s after it was marked. <small>[sim-DEo-fQlt.js: `dl(e,a,s,o.radius,n.telegraph+o.leapTime,r.damage[t])`]</small> The circle does not follow Tibo.
+When the hug starts, the game marks a circle of radius 40 where Tibo is standing. amusing stands still for 1.1 s, then leaps onto the marked spot over 0.55 s. The circle deals the boss's contact damage (24 base, scaled with run time) when amusing lands, 1.65 s after it was marked. <small>[sim-BhFUkOts.js: `dl(e,a,s,o.radius,n.telegraph+o.leapTime,r.damage[t])`]</small> The circle does not follow Tibo.
 
 ### Fan
 
-Five shots spread over 1 radian (about 57°), aimed at Tibo, fired twice 0.4 s apart at speed 70, 6 damage each. The aim is fixed when the pattern starts, and the first shots leave 0.8 s later. <small>[sim-DEo-fQlt.js: `return m(e.player.y[e.me]-n,e.player.x[e.me]-t)}(e,l,u)`]</small>
+Five shots spread over 1 radian (about 57°), aimed at Tibo, fired twice 0.4 s apart at speed 70, 6 damage each. The aim is fixed when the pattern starts, and the first shots leave 0.8 s later. <small>[sim-BhFUkOts.js: `return m(e.player.y[e.me]-n,e.player.x[e.me]-t)}(e,l,u)`]</small>
 
 ### Ring
 
-Twelve shots (13 at 2:00) in a full circle at speed 55, 6 damage each, after a 0.9 s warning. A second ring follows 0.6 s later, rotated by half a gap so its shots fly between the first ring's. <small>[sim-DEo-fQlt.js: `Dv.angle=c+r%2*Math.PI/s+D*n/s`]</small>
+Twelve shots (13 at 2:00) in a full circle at speed 55, 6 damage each, after a 0.9 s warning. A second ring follows 0.6 s later, rotated by half a gap so its shots fly between the first ring's. <small>[sim-BhFUkOts.js: `Dv.angle=c+r%2*Math.PI/s+D*n/s`]</small>
 
 ### Spiral
 

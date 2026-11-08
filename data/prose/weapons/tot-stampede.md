@@ -7,9 +7,9 @@ A batch has as many tots as the weapon's Amount, which includes Tibo's base +1 p
 ## How it works
 
 - **Walk counter.** Tibo's movement is added up each tick (at most 12 units per tick), and a batch is released every 40 units. Any change in position counts, including dashes.
-- **Tot limit.** At most 12 of the weapon's tots can be on the field. A batch is cut down to the free room, and if there is none, the counter waits at 40 units and releases a batch as soon as a tot is gone. <small>[sim-DEo-fQlt.js: `fD={every:40,live:12}`]</small>
-- **Launch.** Tots leave 0.08 s apart, aimed backwards from Tibo's facing with up to 1.2 rad (about 69°) of random spread either way. <small>[sim-DEo-fQlt.js: `let n=e.projectiles,r=-n.vx[t],i=-n.vy[t];n.vx[t]=r,n.vy[t]=i`]</small>
-- **Homing.** Every 0.1 s a tot looks for the nearest pest within 200 units of itself and turns towards it at up to 7 rad/s (`turn`). Until it first finds a pest it flies straight; if no pest is in range at a later check, it keeps steering towards the spot where it last saw one. <small>[sim-DEo-fQlt.js: `if((e.tick+t)%6!=0)return;let n=e.projectiles,r=Ql(e,n.x[t],n.y[t],200);`]</small>
+- **Tot limit.** At most 12 of the weapon's tots can be on the field. A batch is cut down to the free room, and if there is none, the counter waits at 40 units and releases a batch as soon as a tot is gone. <small>[sim-BhFUkOts.js: `fD={every:40,live:12}`]</small>
+- **Launch.** Tots leave 0.08 s apart, aimed backwards from Tibo's facing with up to 1.2 rad (about 69°) of random spread either way. <small>[sim-BhFUkOts.js: `let n=e.projectiles,r=-n.vx[t],i=-n.vy[t];n.vx[t]=r,n.vy[t]=i`]</small>
+- **Homing.** Every 0.1 s a tot looks for the nearest pest within 200 units of itself and turns towards it at up to 7 rad/s (`turn`). Until it first finds a pest it flies straight; if no pest is in range at a later check, it keeps steering towards the spot where it last saw one. <small>[sim-BhFUkOts.js: `if((e.tick+t)%6!=0)return;let n=e.projectiles,r=Ql(e,n.x[t],n.y[t],200);`]</small>
 - **Lifetime.** A tot that hits nothing disappears after its Duration, 3.75 s at level 1 and 5 s from level 4 (both include Tibo's base +25%). Tots fly at 120 units per second, 140 from level 4.
 - **Pierce 0.** A tot bursts on the first pest it hits. Pierce bonuses let it carry on through more.
 

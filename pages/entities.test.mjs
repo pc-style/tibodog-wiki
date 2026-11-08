@@ -2,6 +2,15 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { dogPages, weaponPages } from './entities.mjs';
 
+test('weapon infobox slow percentages show reduction, not remaining speed', () => {
+  const pages = weaponPages();
+  for (const [id, reduction] of [['starch-puddle', '45%'], ['gratin-puddle', '65%']]) {
+    const page = pages.find((p) => p.path === `/weapons/${id}`);
+    const shown = Object.fromEntries(page.infobox.rows)['On hit'];
+    assert.ok(shown.includes(`−${reduction} speed`), shown);
+  }
+});
+
 test('dog pages describe active special abilities, not zero-radius fetch fallbacks', () => {
   const pages = dogPages();
   for (const [id, ability] of [['sigkitten', 'sigstop'], ['husky', 'howl'], ['newfoundland', 'catch'], ['retriever', 'fetch'], ['saluki', 'gale'], ['shiba', 'spirits'], ['whippet', 'tug']]) {

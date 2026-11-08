@@ -2139,6 +2139,12 @@
  "content.weapon.deep-fryer.name": [
   "Deep Fryer"
  ],
+ "content.weapon.dynamo-coil.desc": [
+  "The sparks stay out, and a third spark joins them."
+ ],
+ "content.weapon.dynamo-coil.name": [
+  "Dynamo Coil"
+ ],
  "content.weapon.eclipse-scythe.desc": [
   "Sun and moon blades circle Tibo. While the sun blades swing out wide, the moon blades cut close at his feet, then they trade places, so pests near and far are always in reach."
  ],
@@ -2246,6 +2252,12 @@
  ],
  "content.weapon.gratin-arc.name": [
   "Gratin Arc"
+ ],
+ "content.weapon.gratin-puddle.desc": [
+  "A wider puddle of gratin that lasts longer and zaps harder."
+ ],
+ "content.weapon.gratin-puddle.name": [
+  "Gratin Puddle"
  ],
  "content.weapon.gravy-boat.desc": [
   "Pours scalding gravy pools on enemies."
@@ -2685,6 +2697,12 @@
  "content.weapon.spud-dice.name": [
   "Spud Dice"
  ],
+ "content.weapon.spud-dynamo.desc": [
+  "Two starch sparks orbit Tibo and zap what they touch."
+ ],
+ "content.weapon.spud-dynamo.name": [
+  "Spud Dynamo"
+ ],
  "content.weapon.spud-fence.desc": [
   "Every 60 units Tibo walks, he plants a starch post. A live arc runs from each post to the one before and zaps pests that cross it. At most four posts stand, and a still Tibo plants none."
  ],
@@ -2732,6 +2750,12 @@
  ],
  "content.weapon.starch-garden.name": [
   "Starch Garden"
+ ],
+ "content.weapon.starch-puddle.desc": [
+  "Drops a puddle of charged starch on the nearest crowd. Pests standing in it are zapped and slowed until it dries."
+ ],
+ "content.weapon.starch-puddle.name": [
+  "Starch Puddle"
  ],
  "content.weapon.starch-supercell.desc": [
   "Lightning that chains between enemies. Frees a weapon slot."

@@ -1426,6 +1426,51 @@
    }
   },
   {
+   "id": "spud-dynamo",
+   "tier": "base",
+   "base": {
+    "damage": 12,
+    "cooldown": 4.5,
+    "amount": 1,
+    "area": 1,
+    "speed": 2.4,
+    "duration": 2.4,
+    "pierce": 0,
+    "knockback": 0.3,
+    "interval": 0.1
+   },
+   "levels": [
+    {
+     "damage": 1
+    },
+    {
+     "duration": 0.2
+    },
+    {
+     "damage": 1
+    },
+    {
+     "cooldown": -0.4
+    },
+    {
+     "area": 0.1
+    },
+    {
+     "damage": 1
+    },
+    {
+     "duration": 0.2
+    }
+   ],
+   "weight": 70,
+   "behavior": {
+    "kind": "orbit",
+    "size": 16,
+    "orbitRadius": 88,
+    "hitInterval": 0.3
+   }
+  },
+  {
    "id": "spud-lob",
    "tier": "base",
    "base": {
@@ -1558,6 +1603,58 @@
     "kind": "chain",
     "range": 150,
     "jump": 70
+   }
+  },
+  {
+   "id": "starch-puddle",
+   "tier": "base",
+   "base": {
+    "damage": 8,
+    "cooldown": 3.2,
+    "amount": 1,
+    "area": 1,
+    "speed": 0,
+    "duration": 2.4,
+    "pierce": 0,
+    "knockback": 0,
+    "interval": 0.1
+   },
+   "levels": [
+    {
+     "damage": 2
+    },
+    {
+     "duration": 0.4
+    },
+    {
+     "area": 0.2
+    },
+    {
+     "damage": 2
+    },
+    {
+     "cooldown": -0.4
+    },
+    {
+     "duration": 0.4
+    },
+    {
+     "damage": 2,
+     "area": 0.2
+    }
+   ],
+   "weight": 75,
+   "behavior": {
+    "kind": "pool",
+    "shape": "round",
+    "size": 20,
+    "hitInterval": 0.4,
+    "range": 120,
+    "onHit": {
+     "kind": "slow",
+     "factor": 0.55,
+     "seconds": 0.6
+    }
    }
   },
   {
@@ -4257,6 +4354,51 @@
    }
   },
   {
+   "id": "spud-dynamo",
+   "tier": "base",
+   "base": {
+    "damage": 12,
+    "cooldown": 4.5,
+    "amount": 1,
+    "area": 1,
+    "speed": 2.4,
+    "duration": 2.4,
+    "pierce": 0,
+    "knockback": 0.3,
+    "interval": 0.1
+   },
+   "levels": [
+    {
+     "damage": 1
+    },
+    {
+     "duration": 0.2
+    },
+    {
+     "damage": 1
+    },
+    {
+     "cooldown": -0.4
+    },
+    {
+     "area": 0.1
+    },
+    {
+     "damage": 1
+    },
+    {
+     "duration": 0.2
+    }
+   ],
+   "weight": 70,
+   "behavior": {
+    "kind": "orbit",
+    "size": 16,
+    "orbitRadius": 88,
+    "hitInterval": 0.3
+   }
+  },
+  {
    "id": "spud-lob",
    "tier": "base",
    "base": {
@@ -4389,6 +4531,58 @@
     "kind": "chain",
     "range": 150,
     "jump": 70
+   }
+  },
+  {
+   "id": "starch-puddle",
+   "tier": "base",
+   "base": {
+    "damage": 8,
+    "cooldown": 3.2,
+    "amount": 1,
+    "area": 1,
+    "speed": 0,
+    "duration": 2.4,
+    "pierce": 0,
+    "knockback": 0,
+    "interval": 0.1
+   },
+   "levels": [
+    {
+     "damage": 2
+    },
+    {
+     "duration": 0.4
+    },
+    {
+     "area": 0.2
+    },
+    {
+     "damage": 2
+    },
+    {
+     "cooldown": -0.4
+    },
+    {
+     "duration": 0.4
+    },
+    {
+     "damage": 2,
+     "area": 0.2
+    }
+   ],
+   "weight": 75,
+   "behavior": {
+    "kind": "pool",
+    "shape": "round",
+    "size": 20,
+    "hitInterval": 0.4,
+    "range": 120,
+    "onHit": {
+     "kind": "slow",
+     "factor": 0.55,
+     "seconds": 0.6
+    }
    }
   },
   {
@@ -4734,6 +4928,30 @@
    "catalyst": "slow-cooker"
   },
   {
+   "id": "dynamo-coil",
+   "tier": "evolved",
+   "base": {
+    "damage": 8,
+    "cooldown": 0,
+    "amount": 2,
+    "area": 1,
+    "speed": 2.2,
+    "duration": 0,
+    "pierce": 0,
+    "knockback": 0.3,
+    "interval": 0.1
+   },
+   "behavior": {
+    "kind": "orbit",
+    "size": 18,
+    "orbitRadius": 100,
+    "hitInterval": 0.35,
+    "permanent": true
+   },
+   "from": "spud-dynamo",
+   "catalyst": "slow-cooker"
+  },
+  {
    "id": "eternal-sprouts",
    "tier": "evolved",
    "base": {
@@ -4880,6 +5098,35 @@
    },
    "from": "starch-chain",
    "catalyst": "hot-sauce"
+  },
+  {
+   "id": "gratin-puddle",
+   "tier": "evolved",
+   "base": {
+    "damage": 18,
+    "cooldown": 11,
+    "amount": 1,
+    "area": 1.3,
+    "speed": 0,
+    "duration": 3.6,
+    "pierce": 0,
+    "knockback": 0,
+    "interval": 0.1
+   },
+   "behavior": {
+    "kind": "pool",
+    "shape": "round",
+    "size": 24,
+    "hitInterval": 0.35,
+    "range": 140,
+    "onHit": {
+     "kind": "slow",
+     "factor": 0.35,
+     "seconds": 0.8
+    }
+   },
+   "from": "starch-puddle",
+   "catalyst": "butter-pat"
   },
   {
    "id": "gravy-flood",
@@ -8161,6 +8408,30 @@
    "catalyst": "slow-cooker"
   },
   {
+   "id": "dynamo-coil",
+   "tier": "evolved",
+   "base": {
+    "damage": 8,
+    "cooldown": 0,
+    "amount": 2,
+    "area": 1,
+    "speed": 2.2,
+    "duration": 0,
+    "pierce": 0,
+    "knockback": 0.3,
+    "interval": 0.1
+   },
+   "behavior": {
+    "kind": "orbit",
+    "size": 18,
+    "orbitRadius": 100,
+    "hitInterval": 0.35,
+    "permanent": true
+   },
+   "from": "spud-dynamo",
+   "catalyst": "slow-cooker"
+  },
+  {
    "id": "eternal-sprouts",
    "tier": "evolved",
    "base": {
@@ -8307,6 +8578,35 @@
    },
    "from": "starch-chain",
    "catalyst": "hot-sauce"
+  },
+  {
+   "id": "gratin-puddle",
+   "tier": "evolved",
+   "base": {
+    "damage": 18,
+    "cooldown": 11,
+    "amount": 1,
+    "area": 1.3,
+    "speed": 0,
+    "duration": 3.6,
+    "pierce": 0,
+    "knockback": 0,
+    "interval": 0.1
+   },
+   "behavior": {
+    "kind": "pool",
+    "shape": "round",
+    "size": 24,
+    "hitInterval": 0.35,
+    "range": 140,
+    "onHit": {
+     "kind": "slow",
+     "factor": 0.35,
+     "seconds": 0.8
+    }
+   },
+   "from": "starch-puddle",
+   "catalyst": "butter-pat"
   },
   {
    "id": "gravy-flood",

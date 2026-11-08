@@ -2,7 +2,7 @@
 
 Butter Pat is the plain damage passive. Each level adds 0.1 to the damage stat (`might`), so every weapon deals ×1.1 damage at level 1 and ×1.5 at level 5. There is no cap or diminishing returns (see [Stats](/stats)).
 
-It is the catalyst for [Sack of Russets](/weapons/sack-of-russets) (from [Spud Lob](/weapons/spud-lob)) and [Tailgate Party](/weapons/tailgate-party) (from [Tailgate Fries](/weapons/tailgate-fries)).
+It is the catalyst for [Sack of Russets](/weapons/sack-of-russets) (from [Spud Lob](/weapons/spud-lob)), [Tailgate Party](/weapons/tailgate-party) (from [Tailgate Fries](/weapons/tailgate-fries)) and [Gratin Puddle](/weapons/gratin-puddle) (from [Starch Puddle](/weapons/starch-puddle)).
 
 ## How it works
 
