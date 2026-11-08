@@ -7511,6 +7511,9 @@
    "mergeSec": 1.5,
    "lifeSec": 3
   },
+  "gemCluster": {
+   "radius": 8
+  },
   "camera": {
    "zoom": 1.15
   },
