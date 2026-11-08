@@ -551,6 +551,22 @@ Sources (mirrored through the existing archive workflow):
 
 Build 140's original journal/content URLs and hashes remain above. Current official patch notes cite `id:RtXdwJ` in the current journal; the historical `gXkEUz` evidence belongs to `changelog-panel-BjJloqBn.js`, not the current chunk. The generated import supplies the current quote without rewriting the earlier audit. Programmatic reference refreshes and three exact quote relocations keep existing citations tied to their current owners. No schema, updater, infrastructure or legacy timer changes are included.
 
+### Build 142: Panic Fry note regrouped
+
+`main-C-lU_n3W.js` (game commit `48ca7c7bf816`) moves the unchanged `panic-fry` note, message ID `RtXdwJ`, from `next` into the official **November 7** group under **284a59a**, the code of build 141. Its `added` field disappears. That grouping date is separate from the wording revision's publication timestamp, **2026-11-08T01:35:54Z**, preserved above. The original publication remains **2026-11-07T23:58:05Z**, message ID `gXkEUz`; source-observed item introduction remains **build 140**, followed by the **build 141** wording revision. A note grouped under November 7 does not prove it first existed then.
+
+The existing updater/archive workflow compares **412 reachable files per build** and isolates the journal pair. An independent role-preserving comparison of complete file multisets, including duplicate-role chunks, agrees: after mapping asset hash suffixes and each build's own commit, only the journal differs. The full journal diff contains only the move; its executable surroundings are unchanged. `title-gear-parts` matches with dependency order preserved, so no retry-prefetch permutation exception is needed for this pair. Simulation and boot have **zero normalized hunks**; simulation version remains `d12e7f1ac4212fc6`, with no added or removed chunk roles. Registry, English content, config, localized names and icon pixels are unchanged. No gameplay probes or unchanged-module audit were performed. Build 140's **57 controls** and their supplied-state, acquisition, server and performance limits remain historical evidence, not new measurements.
+
+The live **What's new** panel with all six older dates expanded matches extraction in all **311 ordered date/code/kind/text records**. The official full changelog matches the same ordered code/kind/text records. Seven displayed dates retain **26 / 80 / 43 / 28 / 41 / 47 / 46** notes. All **116 codes** now belong to published groups; no unversioned notes remain. No note text, identity, message ID, kind or relative order changes. The two November 6 source groups remain one displayed date.
+
+Sources (mirrored through the existing archive workflow):
+
+- [Journal, changelog-panel-1ZMThNO1.js](https://tibo.dog/assets/changelog-panel-1ZMThNO1.js), SHA-256 `f1da909e8f7647f0fffcf1d3418996aa07aaedad7dc15ed201b9bdf90b8aafb5`.
+- [Simulation, sim-CUTgHmYT.js](https://tibo.dog/assets/sim-CUTgHmYT.js), SHA-256 `a78d5aad1c82ed32db6559022cd8ecd2d493a903c683d36043c0b797fbb4a6c6`.
+- [Boot, boot-Clmn9zaF.js](https://tibo.dog/assets/boot-Clmn9zaF.js), SHA-256 `791f813437758c4f5886257d870801e598e2a79a86e79c2041f3b9847e77aaa5`.
+
+The generated import refreshes source references and relocates two verbatim Save code citations to `save-code-panel-D-0VsIC_.js`; all **1,786 quotes resolve**. Earlier publication snapshots, measured results and unavailable-historical-source limits remain intact. No updater/schema, infrastructure or legacy timer changes are included.
+
 ### Future checks
 
 The existing extractor now follows the panel's comparator, records source URL/SHA-256 and rejects duplicate note identities. The updater reports additions, removals, revised text/metadata, ordering, date/code regrouping and moves out of the unversioned group, keeping both before and after values. With an unchanged game build it still checks the saved journal against the mirrored source and reports drift without erasing the original build review. Old notes without stable IDs use their message IDs; a rewritten message ID may therefore appear as a removal plus addition rather than an asserted identity match.

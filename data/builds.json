@@ -1539,5 +1539,16 @@
   "updated": "2026-11-08T02:39:10Z",
   "changes": "Panic Fry's description and journal now say pests slow by 5% and hits deal 25% more damage. This clarifies the wording; gameplay is unchanged.",
   "evidence": "Scoped wording/history comparison against build 140 across 412 reachable files per build. Sim and boot have zero normalized hunks; simVersion remains d12e7f1ac4212fc6, with no added/removed chunk roles. Registry, config, names and icon pixels unchanged. All 27 content catalogs change only Panic Fry's description; 26 translated journal catalogs replace only its message key. The remaining title-gear-parts difference is one daily-claim/daily-claim-steps retry-prefetch permutation, with the same Promise.all dependencies and otherwise identical source. The current panic-fry note changes gXkEUz to RtXdwJ and added time 2026-11-07T23:58:05Z to 2026-11-08T01:35:54Z; the original publication and build 140 source introduction remain preserved. All 311 live panel and full-changelog text/kind/date/code records match the generated import in display order, with all older dates expanded: 26/80/43/28/41/47/46 notes and 116 codes. Current history quotes use the current journal; historical IDs retain their old source ownership. Prior 57 controls and their supplied-state limits are preserved, not rerun. No gameplay probes, unchanged-module audit, schema/updater, infrastructure or legacy timer changes. Source URLs and SHA-256 hashes are in data/journal-audit.md."
+ },
+ {
+  "seen": "2026-11-08",
+  "main": "main-C-lU_n3W.js",
+  "boot": "boot-Clmn9zaF.js",
+  "sim": "sim-CUTgHmYT.js",
+  "commit": "48ca7c7bf816",
+  "status": "reviewed",
+  "updated": "2026-11-08T03:24:18Z",
+  "changes": "Panic Fry's unchanged journal note moves into November 7 under version 284a59a. This is publication regrouping, not a new item or gameplay change.",
+  "evidence": "Scoped journal/history reconciliation against build 141 across 412 reachable files per build. Whole-build and independent role-preserving file-multiset comparisons isolate only the journal; duplicate-role chunks and dependency order are preserved, with no retry-prefetch permutation exception needed. Full journal diff only moves panic-fry/RtXdwJ from next into 2026-11-07/284a59a and removes added metadata. Revision publication remains 2026-11-08T01:35:54Z; original publication remains 2026-11-07T23:58:05Z/gXkEUz, source introduction build 140 and wording revision build 141. Sim and boot have zero normalized hunks; simVersion d12e7f1ac4212fc6, registry, English content, config, names and icon pixels unchanged; no added/removed chunk roles. All 311 ordered live panel date/code/kind/text records match extraction with all six older dates expanded; official full changelog matches ordered code/kind/text. Seven dates retain 26/80/43/28/41/47/46 notes; 116 published codes and no unversioned notes. Two verbatim Save code citations relocated to save-code-panel-D-0VsIC_.js; 1786 quotes resolve. Prior 57 controls and their evidence limits remain historical, not rerun. No gameplay probes, unchanged-module audit, updater/schema, infrastructure or legacy timer changes. Source URLs/hashes and historical-source limits are in data/journal-audit.md."
  }
 ]
