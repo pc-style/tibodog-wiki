@@ -92,12 +92,14 @@ test('local CLI prepares unchanged-note graduation without approval or publishin
 
     // Exercise the owning import CLI, with only browser/network/build boundaries
     // isolated. General extraction must not run for the accepted graduation.
-    for (const scenario of ['accepted', 'gate-failed', 'browser-failed', 'api-failed', 'text-changed']) {
+    for (const scenario of ['accepted', 'gate-failed', 'dirty-source', 'browser-failed', 'api-failed', 'text-changed']) {
       const checkout = join(f.root, scenario);
       execFileSync('git', ['clone', '--quiet', '--local', target, checkout]);
       mkdirSync(join(checkout, 'tools'));
       symlinkSync(new URL('../node_modules', import.meta.url), join(checkout, 'node_modules'), 'dir');
-      writeFileSync(join(checkout, '.gitignore'), 'node_modules\n');
+      // Real automatic worktrees link the host cache. The repository's ignore
+      // contract must cover that symlink without hiding unrelated authored work.
+      copyFileSync(new URL('../.gitignore', import.meta.url), join(checkout, '.gitignore'));
       for (const file of ['update.mjs', 'journal-only.mjs', 'same-build.mjs', 'numeric-update.mjs', 'official-data.mjs', 'update-measurements.mjs', 'dump-changelog.mjs']) copyFileSync(new URL(file, import.meta.url), join(checkout, 'tools', file));
       const shadow = readFileSync(new URL('./shadow-update.mjs', import.meta.url), 'utf8');
       writeFileSync(join(checkout, 'tools/shadow-update.mjs'), `if(process.argv[1]?.endsWith('/shadow-update.mjs')){console.log('shadow evidence: ${join(f.root, 'evidence')}');process.exit(${scenario === 'browser-failed' ? 1 : 0});}\n` + shadow);
@@ -110,6 +112,8 @@ test('local CLI prepares unchanged-note graduation without approval or publishin
       writeFileSync(requestFile, scenario === 'api-failed' ? 'globalThis.fetch=async()=>new Response("unavailable",{status:403});' : requestSource);
       execFileSync('git', ['add', '.'], { cwd: checkout });
       execFileSync('git', ['-c', 'user.name=Fixture', '-c', 'user.email=fixture@example.invalid', 'commit', '-qm', 'fixture boundaries'], { cwd: checkout });
+      symlinkSync(f.root, join(checkout, '.cache'), 'dir');
+      if (scenario === 'dirty-source') writeFileSync(join(checkout, 'draft.md'), 'Untracked authored work must block preparation.');
       const imported = spawnSync(process.execPath, ['tools/update.mjs', '--apply', '--auto'], { cwd: checkout, encoding: 'utf8', env: { ...process.env, NODE_OPTIONS: `--import=${requestFile}`, TIBO_MEASUREMENTS_DIR: join(f.root, `measure-${scenario}`) } });
       const history = JSON.parse(readFileSync(join(checkout, 'data/builds.json')));
       if (scenario === 'accepted' || scenario === 'gate-failed') {
@@ -118,6 +122,11 @@ test('local CLI prepares unchanged-note graduation without approval or publishin
         assert.deepEqual(history.slice(0, -1), f.history);
         assert.equal(history.at(-1).status, scenario === 'accepted' ? 'reviewed' : 'unreviewed');
         assert.deepEqual(JSON.parse(readFileSync(join(checkout, 'data/registry.json'))), registry);
+      } else if (scenario === 'dirty-source') {
+        assert.equal(imported.status, 0, imported.stderr);
+        assert.match(imported.stdout, /status: needs-review\n$/);
+        assert.deepEqual(history, f.history);
+        assert.equal(readFileSync(join(checkout, 'draft.md'), 'utf8'), 'Untracked authored work must block preparation.');
       } else {
         assert.notEqual(imported.status, 0);
         assert.match(imported.stderr, /semantic-review-fallback/);
@@ -125,7 +134,7 @@ test('local CLI prepares unchanged-note graduation without approval or publishin
         assert.doesNotMatch(imported.stdout, /status: journal-only/);
       }
       const measured = JSON.parse(readFileSync(join(f.root, `measure-${scenario}`, 'report.json'))).records.find((r) => r.lane === 'import');
-      assert.equal(measured.status, scenario === 'accepted' ? 'journal-only' : scenario === 'gate-failed' ? 'needs-review' : 'failed');
+      assert.equal(measured.status, scenario === 'accepted' ? 'journal-only' : ['gate-failed', 'dirty-source'].includes(scenario) ? 'needs-review' : 'failed');
       if (scenario === 'accepted') assert.equal(measured.journalFastPath.status, 'journal-only');
     }
   } finally { rmSync(f.root, { recursive: true, force: true }); }
