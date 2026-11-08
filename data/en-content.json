@@ -1322,7 +1322,7 @@
   "Moon Dust"
  ],
  "content.item.panic-fry.desc": [
-  "The first time each minute Tibo drops below 50% HP, pests slow to nineteen-twentieths speed for 3 s and his hits deal a quarter more damage."
+  "The first time each minute Tibo drops below 50% HP, pests slow by 5% for 3 s and his hits deal 25% more damage."
  ],
  "content.item.panic-fry.name": [
   "Panic Fry"
