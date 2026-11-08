@@ -7,8 +7,8 @@ Every 3 seconds Biscuit fetches. Every loose pickup within 120 units of Tibo sta
 ## How it works
 
 - The circle is centred on Tibo. Its radius grows with the square root of power (`120 × √power`).
-- Everything except chests and items is fetched: XP gems, coins, snacks, magnets, rerolls, skips, banishes and Bot Beacons. <small>[sim-DwWYU7G5.js: `n===C.chest||n===C.item)continue`]</small>
-- Fetched pickups fly to Tibo at 300 units per second and are collected on arrival. <small>[sim-DwWYU7G5.js: `n.x[o]=l+p/e*300*t`]</small>
+- Everything except chests and items is fetched: XP gems, coins, snacks, magnets, rerolls, skips, banishes and Bot Beacons. <small>[sim-BEF9Qth5.js: `n===C.chest||n===C.item)continue`]</small>
+- Fetched pickups fly to Tibo at 300 units per second and are collected on arrival. <small>[sim-BEF9Qth5.js: `n.x[o]=l+p/e*300*t`]</small>
 - A fetch only counts if it moved at least one pickup. Otherwise Biscuit checks again every 0.25 s, so a new drop inside the circle is pulled in almost immediately once the interval has passed.
 
 **Measured** (build 41 `main-B2gf34bA.js`, headless `tools/play.mjs`, seed `wiki`, standard mode, normal difficulty; Biscuit added at Tibo's side and trained with the sim's own dog-join and dog-level-up functions; HP refilled every tick; Tibo standing still; level-ups taking the first offer; 150 s; fetches timed from the game's `dogAbility` events): Biscuit fetched every 3 s at level 1 (46 of 47 gaps) and every 1.55 s at level 5 (91 of 92), the 1.555 s interval rounded to whole ticks.

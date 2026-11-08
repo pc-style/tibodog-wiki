@@ -4,8 +4,8 @@ Spark Spud rewards walking with a burst every 300 units. Each copy adds 24 base 
 
 ## How it works
 
-- **Walk, rather than dash, to charge it.** The spark adds Tibo's actual frame-to-frame displacement only while he is not dashing, capped at 12 units per tick. It keeps the remainder after each burst. <small>[sim-DwWYU7G5.js: `t.walked+=Math.min(12,i)`]</small> This is not the same counter as [Spud Purse](/items/spud-purse).
-- **Stack for damage, not more frequent bursts.** Every copy shares the same 300-unit threshold. Damage is `24 × copies × damage multiplier × (1 + 0.15 × run minutes)`; radius scales with the square root of Area. <small>[sim-DwWYU7G5.js: `J(e,r.damage*t.stacks*eb(e),t.src,-1,r.knockback)`]</small>
+- **Walk, rather than dash, to charge it.** The spark adds Tibo's actual frame-to-frame displacement only while he is not dashing, capped at 12 units per tick. It keeps the remainder after each burst. <small>[sim-BEF9Qth5.js: `t.walked+=Math.min(12,i)`]</small> This is not the same counter as [Spud Purse](/items/spud-purse).
+- **Stack for damage, not more frequent bursts.** Every copy shares the same 300-unit threshold. Damage is `24 × copies × damage multiplier × (1 + 0.15 × run minutes)`; radius scales with the square root of Area. <small>[sim-BEF9Qth5.js: `J(e,r.damage*t.stacks*eb(e),t.src,-1,r.knockback)`]</small>
 
 ## Tips
 

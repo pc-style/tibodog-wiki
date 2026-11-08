@@ -6,9 +6,9 @@ Every 1.15 s it chops 3 times (2 plus Tibo's built-in +1 amount, see [Stats](/st
 
 ## How it works
 
-- **Low-HP bonus.** The multiplier is `0.8 + (1.6 + 0.2) × missing HP fraction` (`lowHpBonus` 1.6). See [Stats](/stats) for the shared formula. <small>[sim-DwWYU7G5.js: `return 1-r+(t.hpEdge.lowHpBonus+r)*n`]</small>
+- **Low-HP bonus.** The multiplier is `0.8 + (1.6 + 0.2) × missing HP fraction` (`lowHpBonus` 1.6). See [Stats](/stats) for the shared formula. <small>[sim-BEF9Qth5.js: `return 1-r+(t.hpEdge.lowHpBonus+r)*n`]</small>
 - **Chop order.** Swings alternate sides, starting on the side Tibo faces (left or right). The third and fourth swings of a volley sit 10 units lower than the first two.
-- **Shreds.** Only the rear chop flings (`fling.back`). The 4 shreds fan out over ±0.45 rad behind Tibo, fly at 170 units/s for 0.8 s × Duration and pierce everything. A pest can be hit by this weapon's shreds once per second (`rehit` 1), however many pass through it. <small>[sim-DwWYU7G5.js: `r===void 0||!0===r.back&&i===a||QD(e,t,n,r,(i>0?0:Math.PI)+.2*_(XD(e)))`]</small>
+- **Shreds.** Only the rear chop flings (`fling.back`). The 4 shreds fan out over ±0.45 rad behind Tibo, fly at 170 units/s for 0.8 s × Duration and pierce everything. A pest can be hit by this weapon's shreds once per second (`rehit` 1), however many pass through it. <small>[sim-BEF9Qth5.js: `r===void 0||!0===r.back&&i===a||QD(e,t,n,r,(i>0?0:Math.PI)+.2*_(XD(e)))`]</small>
 
 **Measured** in the headless sim (`tools/play.mjs`, build 41 `main-B2gf34bA.js`, Standard, Normal, god mode, seeds `s1`, `s2` and `s3`; the seeded starting weapon removed, the weapon given with `give`, spawning stopped after 4 s of play and the pests already on the field held at fixed spots with 10⁹ HP; pests held 28 units to each side of Tibo): it chopped right, left and right, 0.1 s apart, every 1.15 s, for 96 (0.8 × 120, Tibo at full HP), and the rear chop flung 4 shreds with a 1 s lifetime. All three seeds gave the same figures.
 

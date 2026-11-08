@@ -733,6 +733,16 @@ The initial required collection failed archive-manifest HTTP 404 at **08:07:14 U
 
 Source: [Current journal, changelog-panel-BdZjq64h.js](https://tibo.dog/assets/changelog-panel-BdZjq64h.js), SHA-256 `d689c13f281c4f20cb67d5cb3a30bbb861002681366a09f5bbf4dfc03046240a`. Archive manifest SHA-256 `54f825036b49c88870c9e931f0a98753ea90f16b3cc754fedb4a4a7e407fc003`, archived at `2026-11-08T08:09:21.991Z`; availability alone was not treated as provenance approval.
 
+## Build 153: Nightmare-note grouping
+
+`main-mBEhAN0X.js` (game commit `f973974b8607`) moves unchanged `faster-set-drops` / `LOLnnU` from next into **November 7, version `c2e8b87`**. Its original publication remains **2026-11-08T05:12:05Z**; its source-observed note/config introduction remains **build 150**. This grouping is not a new drop-rate change. The Modes page retains the official journal attribution and explicit uncertainty about server-side odds and set selection.
+
+The complete graph stays **412 files**; only the English journal changes substantively. All **317 note identities, message IDs, kinds, texts and about-fields** are unchanged. Boot/sim have zero normalized hunks; numeric data/config, entity names and icon pixels are unchanged. Current citations are retargeted to their original owners, including two verbatim Save code quotes in `save-code-panel-BLeoFjJa.js` and the shell quote in `shell-BY-qM0Qp.js`. No new gameplay claim, server reward request or unchanged-gameplay replay was needed.
+
+The required collection failed archive-manifest HTTP 404 at **08:28:06 UTC**; a later purposeful retry failed again at **08:30:04 UTC**. Receipts `2026-11-08T08-28-05-104Z-fe3105a2` and `2026-11-08T08-30-04-082Z-12fcb3d6`, the blocked measurement session and unreviewed checkpoint `4279bf78` remain preserved. After archive availability, fresh proof `2026-11-08T08-32-11-848Z-82da768d` verified archived HTML and all **411 assets** plus the separately fetched revision-bound official full journal. Chromium full/panel and a separate actual live-panel check each match **317 ordered notes, seven dates, 121 codes**, with all older dates expanded. Revision-bound first-party catalogs and all-locale text validation pass separately. No stale proof, gate relaxation, tooling or retry-policy change was used.
+
+Source: [Current journal, changelog-panel-B4Gsc5Xw.js](https://tibo.dog/assets/changelog-panel-B4Gsc5Xw.js), SHA-256 `3037243a924c16e5de610aed4ee576635814f7190254f077b257fb66f997553d`.
+
 ### Future checks
 
 The existing extractor now follows the panel's comparator, records source URL/SHA-256 and rejects duplicate note identities. The updater reports additions, removals, revised text/metadata, ordering, date/code regrouping and moves out of the unversioned group, keeping both before and after values. With an unchanged game build it still checks the saved journal against the mirrored source and reports drift without erasing the original build review. Old notes without stable IDs use their message IDs; a rewritten message ID may therefore appear as a removal plus addition rather than an asserted identity match.
