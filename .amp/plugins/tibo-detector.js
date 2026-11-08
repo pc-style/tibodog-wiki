@@ -1,6 +1,7 @@
 import { mkdir, readFile, writeFile, rename } from 'node:fs/promises';
 import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { recordEvent } from '../../tools/update-measurements.mjs';
 
 export const description = 'Queues programmatic wiki updates; wakes an agent only for writing, new content, schema changes or failures.';
 const MONITOR = 'T-41922f7d-7aa9-47ea-9612-ef6df9b9f21a';
@@ -70,6 +71,7 @@ export default async function (amp) {
         let owner = null;
         try { owner = JSON.parse(await readFile(join(directory, 'agent-owner.json'), 'utf8')).thread; }
         catch (e) { if (e.code !== 'ENOENT') throw e; }
+        recordEvent(root, payload, owner ? 'agent-reserved' : 'automatic-queue');
         if (!owner) {
           await mkdir(join(directory, 'jobs'), { recursive: true });
           await writeFile(join(directory, 'jobs', `${payload.id}.job.json`), JSON.stringify(payload));

@@ -5,9 +5,11 @@ import { mkdirSync, mkdtempSync, readFileSync, readdirSync, rmSync, symlinkSync,
 import { tmpdir } from 'node:os';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { measureProcess } from './update-measurements.mjs';
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
 if (!process.argv.includes('--ship')) throw new Error('Use --ship for delivery, or tools/update.mjs for a read-only check');
+const measurement = measureProcess(root, 'automatic');
 const lock = join(root, '.amp/detector/automatic.lock');
 mkdirSync(dirname(lock), { recursive: true });
 try { mkdirSync(lock); } catch (e) {
@@ -16,13 +18,16 @@ try { mkdirSync(lock); } catch (e) {
   process.exit(1);
 }
 let cwd = root;
-const run = (cmd, args) => execFileSync(cmd, args, { cwd, encoding: 'utf8', maxBuffer: 64 << 20, timeout: 600000 });
+const run = (cmd, args) => measurement.sync(`${cmd}:${args[0] === '--test' ? 'tests' : args[0]}`, () => execFileSync(cmd, args, {
+  cwd, encoding: 'utf8', maxBuffer: 64 << 20, timeout: 600000,
+  env: { ...process.env, TIBO_MEASUREMENTS_DIR: measurement.directory, TIBO_MEASUREMENT_PARENT: measurement.receipt.id },
+}));
 const git = (...args) => run('git', args).trim();
-const get = async (url) => {
+const get = async (url) => measurement.async(`fetch:${new URL(url).pathname}`, async () => {
   const r = await fetch(`${url}${url.includes('?') ? '&' : '?'}fresh=${Date.now()}`, { headers: { 'cache-control': 'no-cache' }, signal: AbortSignal.timeout(20000) });
   if (!r.ok) throw new Error(`HTTP ${r.status}: ${url}`);
   return r.text();
-};
+});
 const tests = () => ['tools', 'pages', 'tools/detector'].flatMap((d) => readdirSync(join(cwd, d)).filter((f) => f.endsWith('.test.mjs')).map((f) => `${d}/${f}`));
 const checks = (main) => {
   for (const args of [['build.mjs'], ['tools/check-quotes.mjs', `.cache/${main.slice(0, -3)}/assets`], ['check-middleware.mjs'], ['--test', ...tests()]]) console.log(run('node', args));
@@ -37,6 +42,8 @@ try {
   const html = await get('https://tibo.dog/');
   let main = html.match(/assets\/(main-[A-Za-z0-9_-]{8}\.js)/)?.[1];
   if (!main) throw new Error('Game entry parse failed');
+  Object.assign(measurement.receipt, { oldMain: documented.main, newMain: main });
+  measurement.persist();
   const history = JSON.parse(git('show', 'origin/main:data/builds.json'));
   if (main === documented.main && history.every((b) => b.status === 'reviewed')) {
     const api = JSON.parse(await get('https://www.tibodog.wiki/api/index.json'));
@@ -61,6 +68,8 @@ try {
       // again between them. Every gate and receipt must use the imported build.
       main = JSON.parse(readFileSync(join(cwd, 'data/build.json'), 'utf8')).main;
       if (!/^main-[A-Za-z0-9_-]{8}\.js$/.test(main)) throw new Error('Invalid imported build metadata');
+      measurement.receipt.newMain = main;
+      measurement.persist();
       checks(main);
       git('add', 'data', 'pages', 'public/icons', 'paths.js');
       git('commit', '-m', `Update game data automatically: ${main}`, '-m', 'Automatic validated update; no model review.\n\nAmp-Thread-ID: T-41922f7d-7aa9-47ea-9612-ef6df9b9f21a');
@@ -71,25 +80,29 @@ try {
       if (remoteBuild.main !== documented.main) throw new Error('Concurrent updater changed the baseline; do not push');
       checks(main);
       const sha = git('rev-parse', 'HEAD');
+      measurement.receipt.shippedSha = sha;
+      measurement.persist();
       git('push', 'origin', 'HEAD:main');
-      const ci = await fetch(readFileSync(join(root, '.amp/detector/webhook-url'), 'utf8').trim(), {
+      const ci = await measurement.async('ci-subscribe', () => fetch(readFileSync(join(root, '.amp/detector/webhook-url'), 'utf8').trim(), {
         method: 'POST', headers: { 'Content-Type': 'application/json', 'Idempotency-Key': `ci-${sha}` },
         body: JSON.stringify({ id: `ci-${sha}`, type: 'ci.subscribe', sha }), signal: AbortSignal.timeout(20000),
-      });
+      }));
       if (!ci.ok) throw new Error('Pushed; CI subscription delivery needs recovery');
       // Observe the existing Git integration; never trigger a duplicate deployment.
       const deadline = Date.now() + 10 * 60 * 1000;
       let live = false;
       let deployment;
-      while (Date.now() < deadline) {
-        const statuses = JSON.parse(run('gh', ['api', `repos/pc-style/tibodog-wiki/commits/${sha}/status`]));
-        deployment = statuses.statuses.find((s) => /vercel/i.test(s.context));
-        if (deployment?.state === 'failure' || deployment?.state === 'error') throw new Error(`Git deployment failed: ${deployment.target_url}`);
-        const api = JSON.parse(await get('https://www.tibodog.wiki/api/index.json'));
-        if (deployment?.state === 'success' && api.meta.wiki.commit === sha.slice(0, 7) && api.meta.build.main === main) { live = true; break; }
-        await new Promise((resolve) => setTimeout(resolve, 15000));
-      }
-      if (!live) throw new Error('Pushed, but production readiness/live verification timed out');
+      await measurement.async('deployment-and-canonical-live', async () => {
+        while (Date.now() < deadline) {
+          const statuses = JSON.parse(run('gh', ['api', `repos/pc-style/tibodog-wiki/commits/${sha}/status`]));
+          deployment = statuses.statuses.find((s) => /vercel/i.test(s.context));
+          if (deployment?.state === 'failure' || deployment?.state === 'error') throw new Error(`Git deployment failed: ${deployment.target_url}`);
+          const api = JSON.parse(await get('https://www.tibodog.wiki/api/index.json'));
+          if (deployment?.state === 'success' && api.meta.wiki.commit === sha.slice(0, 7) && api.meta.build.main === main) { live = true; break; }
+          await new Promise((resolve) => setTimeout(resolve, 15000));
+        }
+        if (!live) throw new Error('Pushed, but production readiness/live verification timed out');
+      });
       git('fetch', '--quiet', 'origin', 'main');
       if (git('rev-parse', 'origin/main') !== sha) throw new Error('origin/main advanced during delivery; recheck latest deployment');
       // Compare every published Markdown page, not just a status endpoint.
@@ -101,10 +114,12 @@ try {
       const normalized = (s) => s.replace(/(\| Wiki last updated \| \*\*)[^*\n]+(\*\*)/g, '$1BUILD_TIME$2')
         .replace(/(^Source page: [^\n]+ · Wiki updated )[^\n]+(?= · Game version )/gm, '$1BUILD_TIME')
         .replace(/(\), wiki updated )[^|\n]+(?= \|)/g, '$1BUILD_TIME');
-      for (let i = 0; i < pages.length; i += 8) await Promise.all(pages.slice(i, i + 8).map(async (p) => {
-        const text = await get(`https://www.tibodog.wiki/${p}`);
-        if (normalized(text) !== normalized(readFileSync(join(cwd, 'dist', p), 'utf8'))) throw new Error(`Live page differs: ${p}`);
-      }));
+      await measurement.async('all-published-pages', async () => {
+        for (let i = 0; i < pages.length; i += 8) await Promise.all(pages.slice(i, i + 8).map(async (p) => {
+          const text = await get(`https://www.tibodog.wiki/${p}`);
+          if (normalized(text) !== normalized(readFileSync(join(cwd, 'dist', p), 'utf8'))) throw new Error(`Live page differs: ${p}`);
+        }));
+      });
       const versions = await get('https://www.tibodog.wiki/versions');
       if (versions.includes('Not reviewed yet')) throw new Error('Live history still contains an unreviewed build');
       const receipt = { main, sha, commit: `https://github.com/pc-style/tibodog-wiki/commit/${sha}`, deployment: deployment.target_url, pages: pages.length, checkedAt: new Date().toISOString() };
@@ -126,5 +141,8 @@ try {
       cwd = root;
       git('worktree', 'remove', worktree);
     }
-  } finally { rmSync(lock, { recursive: true }); }
+  } finally {
+    rmSync(lock, { recursive: true });
+    measurement.finish(clean ? 'complete' : process.exitCode === 20 ? 'needs-review' : 'failed', { exitCode: process.exitCode ?? 0 });
+  }
 }

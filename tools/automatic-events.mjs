@@ -4,6 +4,7 @@ import { execFileSync } from 'node:child_process';
 import { mkdirSync, readFileSync, readdirSync, rmSync, writeFileSync, existsSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { recordEvent, startMeasurement } from './update-measurements.mjs';
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
 const queue = join(root, '.amp/detector/jobs');
 mkdirSync(queue, { recursive: true });
@@ -13,10 +14,18 @@ for (;;) {
     const id = file.slice(0, -9);
     const resultFile = join(queue, `${id}.result.json`);
     if (!existsSync(resultFile)) {
+      const payload = JSON.parse(readFileSync(join(queue, file)));
+      // Older persisted jobs may predate receiver instrumentation. Record only
+      // this newly observed start, never invent their original receive time.
+      recordEvent(root, payload, 'queue-start-backfill');
+      const measurement = startMeasurement(root, 'queue-job', { event: id, newMain: payload.live });
       let output, code = 0;
       console.log(`Running automatic job ${id}`);
-      try { output = execFileSync('node', ['tools/auto-update.mjs', '--ship'], { cwd: root, encoding: 'utf8', maxBuffer: 64 << 20, timeout: 30 * 60 * 1000 }); }
+      try { output = measurement.sync('automatic-process', () => execFileSync('node', ['tools/auto-update.mjs', '--ship'], { cwd: root, encoding: 'utf8', maxBuffer: 64 << 20, timeout: 30 * 60 * 1000,
+        env: { ...process.env, TIBO_UPDATE_EVENT: id, TIBO_MEASUREMENT_PARENT: measurement.receipt.id, TIBO_MEASUREMENTS_DIR: measurement.directory },
+      })); }
       catch (e) { code = e.status ?? 1; output = `${e.stdout ?? ''}\n${e.stderr ?? ''}`; }
+      measurement.finish(code === 0 ? 'complete' : code === 20 ? 'needs-review' : 'failed', { exitCode: code });
       writeFileSync(join(queue, `${id}.log`), output);
       writeFileSync(resultFile, JSON.stringify({ code, summary: output.slice(-2000), checkedAt: new Date().toISOString() }));
     }

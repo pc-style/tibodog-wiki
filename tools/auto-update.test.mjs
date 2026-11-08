@@ -1,6 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { mkdtempSync, mkdirSync, copyFileSync, writeFileSync, readFileSync, rmSync, existsSync } from 'node:fs';
+import { mkdtempSync, mkdirSync, copyFileSync, writeFileSync, readFileSync, readdirSync, rmSync, existsSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { spawnSync } from 'node:child_process';
@@ -13,6 +13,7 @@ test('automatic delivery publishes numeric data, live-checks it, and stops at fa
     try {
       for (const d of ['tools', 'bin', 'node_modules', '.cache', '.amp/detector']) mkdirSync(join(root, d), { recursive: true });
       copyFileSync(new URL('./auto-update.mjs', import.meta.url), join(root, 'tools/auto-update.mjs'));
+      copyFileSync(new URL('./update-measurements.mjs', import.meta.url), join(root, 'tools/update-measurements.mjs'));
       writeFileSync(join(root, '.amp/detector/webhook-url'), 'https://private.invalid');
       const executable = (file, body) => writeFileSync(join(root, 'bin', file), '#!/usr/bin/env node\n' + body, { mode: 0o755 });
       executable('git', `
@@ -48,8 +49,17 @@ test('automatic delivery publishes numeric data, live-checks it, and stops at fa
       };`);
       const result = spawnSync(process.execPath, ['tools/auto-update.mjs', '--ship'], {
         cwd: root, encoding: 'utf8', timeout: 15000,
-        env: { ...process.env, FIXTURE_ROOT: root, SCENARIO: scenario, NODE_OPTIONS: `--import=${join(root, 'request.mjs')}`, PATH: `${root}/bin:${process.env.PATH}` },
+        env: { ...process.env, TIBO_MEASUREMENTS_DIR: join(root, 'measurements'), FIXTURE_ROOT: root, SCENARIO: scenario, NODE_OPTIONS: `--import=${join(root, 'request.mjs')}`, PATH: `${root}/bin:${process.env.PATH}` },
       });
+      const records = readdirSync(join(root, 'measurements')).filter((f) => f.endsWith('.json') && f !== 'report.json').map((f) => JSON.parse(readFileSync(join(root, 'measurements', f))));
+      assert.equal(records.length, 1);
+      const measurement = records[0];
+      assert.equal(measurement.provenance, 'execution');
+      assert.equal(measurement.status, ['numeric', 'raced'].includes(scenario) ? 'complete' : scenario === 'writing' ? 'needs-review' : 'failed');
+      assert.ok(measurement.durationMs >= 0);
+      assert.ok(measurement.stages.length > 0);
+      if (scenario === 'quotes-fail') assert.ok(measurement.stages.some((s) => s.name === 'node:tools/check-quotes.mjs' && s.status === 'failed'));
+      if (['numeric', 'raced'].includes(scenario)) assert.ok(measurement.stages.some((s) => s.name === 'all-published-pages' && s.status === 'passed'));
       if (['numeric', 'raced'].includes(scenario)) {
         assert.equal(result.status, 0, result.stderr);
         const receipt = JSON.parse(readFileSync(join(root, '.amp/detector/automatic-receipt.json')));

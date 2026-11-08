@@ -203,8 +203,9 @@ for (const scenario of [
       copyFileSync(new URL('./update.mjs', import.meta.url), join(root, 'tools', 'update.mjs'));
       copyFileSync(new URL('./dump-changelog.mjs', import.meta.url), join(root, 'tools', 'dump-changelog.mjs'));
       copyFileSync(new URL('./same-build.mjs', import.meta.url), join(root, 'tools', 'same-build.mjs'));
-      for (const file of ['numeric-update.mjs', 'official-data.mjs']) copyFileSync(new URL(file, import.meta.url), join(root, 'tools', file));
+      for (const file of ['numeric-update.mjs', 'official-data.mjs', 'update-measurements.mjs']) copyFileSync(new URL(file, import.meta.url), join(root, 'tools', file));
       symlinkSync(new URL('../node_modules', import.meta.url), join(root, 'node_modules'), 'dir');
+      writeFileSync(join(cache, 'assets', 'main-current1.js'), '/* original game entry */');
       writeFileSync(join(cache, 'assets', 'changelog-panel-fixture1.js'), journalSource);
       const journal = extractChangelog(join(cache, 'assets'), 'main-current1.js');
       if (scenario.drift) journal.unreleased.pop();
@@ -223,11 +224,18 @@ for (const scenario of [
       writeFileSync(join(root, 'data', 'builds.json'), JSON.stringify(history));
       const report = '# Original review\nDiff against the last reviewed build.\n';
       writeFileSync(join(cache, 'report.md'), report);
-      const output = execFileSync(process.execPath, [join(root, 'tools', 'update.mjs'), '--apply', ...(scenario.force ? ['--force'] : [])], { encoding: 'utf8' });
+      const measurementDir = join(root, 'measurements');
+      const output = execFileSync(process.execPath, [join(root, 'tools', 'update.mjs'), '--apply', ...(scenario.force ? ['--force'] : [])], { encoding: 'utf8', env: { ...process.env, TIBO_MEASUREMENTS_DIR: measurementDir } });
       assert.match(output, new RegExp(`status: ${scenario.pending || scenario.drift ? 'needs-review' : 'up-to-date'}\\n$`));
       if (scenario.pending) assert.ok(output.includes(scenario.pending));
       assert.equal(readFileSync(join(cache, 'report.md'), 'utf8'), report);
       assert.deepEqual(JSON.parse(readFileSync(join(root, 'data', 'builds.json'), 'utf8')), history);
+      const measured = JSON.parse(readFileSync(join(measurementDir, 'report.json'))).records;
+      assert.equal(measured.length, 1);
+      assert.equal(measured[0].status, scenario.pending || scenario.drift ? 'needs-review' : 'up-to-date');
+      assert.equal(measured[0].newMain, 'main-current1.js');
+      assert.equal(measured[0].stages[0].name, 'mirror:live');
+      assert.equal(measured[0].stages[0].status, 'passed');
     } finally {
       rmSync(root, { recursive: true, force: true });
     }

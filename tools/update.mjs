@@ -15,6 +15,7 @@
 //   needs-review  game data, sim/boot logic or quoted code changed; a person or agent must
 //                 update the affected pages (see report) before deploying
 import { execFileSync } from 'node:child_process';
+import { createHash } from 'node:crypto';
 import { readFileSync, writeFileSync, readdirSync, cpSync, mkdirSync, existsSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -23,13 +24,18 @@ import { compareChangelog, extractChangelog } from './dump-changelog.mjs';
 import { sameBuild } from './same-build.mjs';
 import { numericUpdate } from './numeric-update.mjs';
 import { fetchOfficialData, applyOfficialData } from './official-data.mjs';
+import { measureProcess, importShadow } from './update-measurements.mjs';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 process.chdir(ROOT);
 const apply = process.argv.includes('--apply');
 const auto = process.argv.includes('--auto');
 const force = process.argv.includes('--force');
-const run = (cmd, args, opts = {}) => execFileSync(cmd, args, { encoding: 'utf8', maxBuffer: 64 << 20, ...opts });
+const measurement = measureProcess(ROOT, 'import', { apply, automatic: auto });
+const run = (cmd, args, opts = {}) => measurement.sync(`${cmd}:${args[0]}`, () => execFileSync(cmd, args, {
+  encoding: 'utf8', maxBuffer: 64 << 20,
+  env: { ...process.env, TIBO_MEASUREMENTS_DIR: measurement.directory, TIBO_MEASUREMENT_PARENT: measurement.receipt.id }, ...opts,
+}));
 const tryRun = (cmd, args) => {
   try {
     return { ok: true, out: run(cmd, args, { stdio: ['ignore', 'pipe', 'pipe'] }) };
@@ -44,7 +50,9 @@ const now = new Date().toISOString().replace(/\.\d+Z$/, 'Z');
 const build = JSON.parse(readFileSync('data/build.json', 'utf8'));
 const builds = JSON.parse(readFileSync('data/builds.json', 'utf8'));
 const pending = builds.filter((b) => b.status === 'unreviewed');
-const live = await mirror();
+const live = await measurement.async('mirror:live', () => mirror());
+Object.assign(measurement.receipt, { oldMain: build.main, newMain: live.main, mainSha256: createHash('sha256').update(readFileSync(join(live.dir, live.main))).digest('hex') });
+measurement.persist();
 console.log(`documented: ${build.main}  live: ${live.main}`);
 if (live.main === build.main && (!force || pending.length)) {
   // Reapplying would compare the updated data to itself and erase the original review report.
@@ -59,23 +67,33 @@ if (live.main === build.main && (!force || pending.length)) {
     if (existsSync(report)) console.log(`report: ${report}`);
   }
   console.log(`status: ${pending.length || journalReview ? 'needs-review' : 'up-to-date'}`);
+  measurement.finish(pending.length || journalReview ? 'needs-review' : 'up-to-date');
   process.exit(0);
 }
 const cache = dirname(live.dir);
+if (apply) {
+  // Required observation, not a new acceptance gate. Preserve failed evidence
+  // without changing classification or any existing live/citation/release check.
+  const shadow = tryRun('node', ['tools/shadow-update.mjs', build.main, live.main, '--browser']);
+  const evidence = shadow.out.match(/shadow evidence: (.+)/)?.[1];
+  if (evidence && existsSync(join(evidence, 'receipt.json'))) importShadow(ROOT, join(evidence, 'receipt.json'));
+  measurement.receipt.journalMeasurement = { status: shadow.ok ? 'passed' : 'failed', evidence: evidence ?? null };
+  measurement.persist();
+}
 const report = [`# tibo.dog build ${live.main}`, '', `Checked ${new Date().toISOString()}. Wiki documented \`${build.main}\`.`, ''];
 let review = pending.map((b) => `unreviewed build ${b.main}`);
 
 // 1. Previous build (for code diffs). Prefer the local mirror; old CDN assets may be deleted.
 let prev = null;
 try {
-  prev = await mirror(undefined, build.main);
+  prev = await measurement.async('mirror:previous', () => mirror(undefined, build.main));
 } catch (e) {
   report.push(`Previous build ${build.main} could not be fetched (${e.message}); code diff skipped.`, '');
   review.push('previous build unavailable, code not diffed');
 }
 
 // Whole-build comparison decides whether this is only a rebuild of the documented game.
-const same = prev ? sameBuild(dirname(prev.dir), dirname(live.dir)) : null;
+const same = prev ? measurement.sync('whole-build-comparison', () => sameBuild(dirname(prev.dir), dirname(live.dir))) : null;
 if (same) {
   report.push('## Whole-build comparison', '', same.identical
     ? `All ${same.files[1]} files reachable from the ${same.roots} match \`${build.main}\` after mapping file hashes and the build's own commit id.`
@@ -93,7 +111,7 @@ const journalChanges = compareChangelog(notes('data/changelog.json'), notes(join
 const diff = JSON.parse(run('node', ['tools/diff-data.mjs', 'data', join(cache, 'data'), '--json']));
 // The first-party export owns catalog values. Cross-check against this exact
 // mirrored revision; keep extraction for config/difficulty, absent from the public API.
-const official = await fetchOfficialData(commit);
+const official = await measurement.async('official-data', () => fetchOfficialData(commit));
 const imported = applyOfficialData({
   registry: JSON.parse(readFileSync(join(cache, 'data/registry.json'), 'utf8')),
   content: JSON.parse(readFileSync(join(cache, 'data/en-content.json'), 'utf8')),
@@ -195,7 +213,7 @@ report.push('## Icons', '', iconDiff ? iconDiff.split('\n').map((l) => `- ${l}`)
 if (/^(new|gone)/m.test(iconDiff)) review.push('icons added or removed');
 
 const prose = existsSync('data/prose') ? readdirSync('data/prose', { recursive: true }).filter((f) => f.endsWith('.md')).map((f) => ({ path: `data/prose/${f}`, text: readFileSync(`data/prose/${f}`, 'utf8') })) : [];
-const numericSame = prev && !same.identical ? sameBuild(dirname(prev.dir), dirname(live.dir), { numbers: true }) : same;
+const numericSame = prev && !same.identical ? measurement.sync('numeric-build-comparison', () => sameBuild(dirname(prev.dir), dirname(live.dir), { numbers: true })) : same;
 const decision = numericUpdate({ changes: diff.changes, same, numericSame, pending, prose });
 if (journalChanges.length) decision.reasons.push('journal text or publication changed');
 if (langList(oldL10n) !== langList(newL10n)) decision.reasons.push('language schema changed');
@@ -218,6 +236,7 @@ if (apply && auto && !decision.automatic) {
   writeFileSync(join(cache, 'report.md'), report.join('\n') + '\n');
   console.log(`report: ${join(cache, 'report.md')}`);
   console.log('status: needs-review');
+  measurement.finish('needs-review');
   process.exit(0);
 }
 if (apply) {
@@ -284,3 +303,4 @@ report.splice(3, 0, `**Status: ${status}**${review.length ? ` (${review.join('; 
 writeFileSync(join(cache, 'report.md'), report.join('\n') + '\n');
 console.log(`report: ${join(cache, 'report.md')}`);
 console.log(`status: ${status}`);
+measurement.finish(status);
