@@ -604,6 +604,22 @@ Sources (normal updater/archive mirrors; earlier hashes and historical-source li
 
 The updater refreshes source references and relocates two verbatim Save code quotes to `save-code-panel-C0yUCsmE.js`. No updater/schema, shadow invocation/classification/publishing, infrastructure or timer changes are included.
 
+### Build 145: offer-weight notes filed under their release code
+
+`main-CTQH2__w.js` (game commit `64e9535f2236`) moves the unchanged `offer-floors` / `jpNweA` and `sowing-season-reach` / `nNNTK3` notes from `next` into **November 7**, under **23fb26c**. Their `added` fields disappear from the current source; their original publication times remain **2026-11-07T23:19:38Z** and **2026-11-07T23:19:39Z**, preserved in build 143's evidence above. Source-observed introduction of the weight changes remains **build 143**, not build 145 or an inferred November 7 introduction. Build 144's current-version wrapper was display context, not a separate publication.
+
+The normal updater/archive comparison covers **412 reachable files per build** and isolates only `changelog-panel-BUusH6BE.js` → `changelog-panel-9iqUoTsi.js`. Direct normalized comparison has exactly **two hunks**: remove the two unversioned records, then insert those same notes into the dated wave. Text, kind, stable IDs, message IDs and relative note order are unchanged. Simulation and boot have **zero normalized hunks**; data, names and icon pixels are unchanged, with no added or removed chunk roles. No combat replay or unchanged-module audit was performed. Build 143's offer rankings, complete-pool arithmetic, historical build 41 measurements and all earlier evidence limits are unchanged.
+
+The actual live **What's new** panel, with every older collapsed day expanded, matches all **313 ordered date/code/kind/text records**. The required measured browser collection also verifies the archived client and the separately captured official full changelog against those records; the full page is bound to this live build before and after capture. Seven displayed dates retain **28 / 80 / 43 / 28 / 41 / 47 / 46** notes and **117 codes**, now all published groups with no unversioned notes. The two November 6 source groups remain one displayed date.
+
+Sources (normal updater/archive mirrors; build 144's journal and simulation/boot hashes remain above):
+
+- [Journal, changelog-panel-9iqUoTsi.js](https://tibo.dog/assets/changelog-panel-9iqUoTsi.js), SHA-256 `129db83808e485574ebc0ba45fb7c32fe897571b5e2b21500d663ade682e43f4`.
+- [Simulation, sim-DRV1ehYp.js](https://tibo.dog/assets/sim-DRV1ehYp.js), SHA-256 `87d8976d1bb0abfdfc3af7ccb86feb65f01e90339a18b474a7e6b708a0c7e173`.
+- [Boot, boot-Bulg2Z1J.js](https://tibo.dog/assets/boot-Bulg2Z1J.js), SHA-256 `c4cc724cf8fb5c2d9b305b062dabfa51a7cda6d31d90ae69f9a4c8a394545912`.
+
+The existing pipeline imports the current journal and source references; the two Save code quotes move verbatim to `save-code-panel-CfpMf38d.js`. Required measurements record actual command stages and browser receipts, not estimated inference or replayed production latency. No method, schema, infrastructure, acceptance or publishing decisions are changed.
+
 ### Future checks
 
 The existing extractor now follows the panel's comparator, records source URL/SHA-256 and rejects duplicate note identities. The updater reports additions, removals, revised text/metadata, ordering, date/code regrouping and moves out of the unversioned group, keeping both before and after values. With an unchanged game build it still checks the saved journal against the mirrored source and reports drift without erasing the original build review. Old notes without stable IDs use their message IDs; a rewritten message ID may therefore appear as a removal plus addition rather than an asserted identity match.

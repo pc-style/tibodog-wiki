@@ -6,7 +6,7 @@ It is a plain chaser: speed 38, 20 HP, 6 contact damage. It gives 2 XP and has a
 
 ## How it works
 
-It has no special behaviour: the `chase` kind just uses the default movement straight towards Tibo. <small>[sim-pcti3OIT.js: `` case`chase`:case`tank`:case`splitter`:return; ``]</small> Its mass of 0.1 means knockback moves it 90% as far as a massless pest.
+It has no special behaviour: the `chase` kind just uses the default movement straight towards Tibo. <small>[sim-DRV1ehYp.js: `` case`chase`:case`tank`:case`splitter`:return; ``]</small> Its mass of 0.1 means knockback moves it 90% as far as a massless pest.
 
 Tier 2 is the elite tier from 1:00 to 4:59, so early elites spawned in Ketchup Bog are Tomato Leeches (see [Elites](/enemy-scaling#elites)).
 
