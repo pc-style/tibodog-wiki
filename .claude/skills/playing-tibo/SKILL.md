@@ -1,6 +1,6 @@
 ---
 name: playing-tibo
-description: Plays tibo.dog to measure or confirm game behaviour, headlessly with the game's own sim or in a real browser. Use when writing or checking wiki claims, reviewing a new build, or closing a gap on /coverage.
+description: Plays and analyzes tibo.dog runs using the game's sim and shared-run reader. Use for build and item decisions, gameplay probes, wiki claims, or coverage gaps.
 ---
 
 # Play tibo.dog
@@ -13,6 +13,12 @@ There are two ways to play:
 |---|---|
 | Numbers, timings, damage, drop rates, boss attacks, what a parameter changes, anything inside a run | **Headless sim** (`tools/play.mjs`) |
 | Menus, Story flow, cutscenes, shared runs (`/r/…`), settings, encyclopedia, anything outside the sim | **Browser** (agent-browser on https://tibo.dog/) |
+
+## Choosing a build
+
+Read [meta.md](meta.md) for the November 8 Nightmare Daily sample, exact evolution paths, item priorities and evidence limits. Its starting recommendation is **Storm Sage → Starch Supercell**, then **Root Current** when the necessary slots and catalysts are available; **Storm Tot** and **Meteor Russet** are high-value item targets. Keep moving to feed Static Step sparks. This is a dated, fixed-kit Daily recommendation, not an all-mode tier list.
+
+For new run links, use the game's `run-address-*.js` reader and card resolver, including extension sections, rather than reverse-engineering the binary format or scraping screenshots. Count a weapon's presence as damage history, not proof it occupies a final slot. Include item and set-rule damage separately. Compare within the same day, difficulty and ladder level; Nightmare ranks ladder before score. Recheck the live build and current recipes before reusing the recommendation. The reader workflow and limitations are in [meta.md](meta.md#refreshing-the-evidence).
 
 ## Headless sim
 
