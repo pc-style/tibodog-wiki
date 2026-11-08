@@ -36,6 +36,13 @@ Edge cases behind the steps in SKILL.md. Each section says what goes wrong and w
 - Check the live **What's new** panel in a browser (`using-agent-browser`): the current group and every collapsed older day, in the game's display order (its comparator, not declaration order). If WebGL 2 fails in the orb, try SwiftShader flags; a blank screen is not a check.
 - Official grouping is not when a mechanic first appeared. A note moving to an older code is not new; an omitted note is not a removal. Keep publication dates separate from observation times. The history and its limits live in `data/journal-audit.md`.
 
+## Shadow replay
+
+- `node tools/shadow-update.mjs <old main> <new main> [--browser]` writes a unique `.cache/shadow/<run>/` directory. `receipt.json` records actual stage start/end/duration and failure, wiki/tool/source hashes, and explicitly unmeasured production stages. `packet.json` contains whole-build comparison, stable-ID journal changes with both sides, prior wiki evidence and judgment limits. Neither file grants automatic eligibility or review approval.
+- Browser replay runs the archived game on a temporary loopback server, expands every journal date and compares every ordered text/kind/date/code record. It derives the current display code from the requested build, not today's game. A separate server-rendered full changelog is checked only when the live entry matches before and after capture; historical full-page HTML is not archived and is reported unavailable, never synthesized. Archived browser evidence is not a replacement for the required live-panel check.
+- If a prior shadow run captured the full page before the game advanced, add `--full-receipt <prior run>/receipt.json`. It reuses only the saved `full.html` whose digest, main and journal source match that receipt's successful capture stage; it still reruns browser record verification. A failed later browser stage does not invalidate a separately successful capture stage.
+- Missing archives, digest differences, extraction/schema errors, blank/wrong-build browser pages, collapsed dates and record mismatches preserve failed receipts and exit nonzero. Without `--browser`, the browser stage is explicitly not run. No data, prose, owner reservation, queue, Git ref, CI subscription or deployment is changed. Existing publishing decisions and final gates remain unchanged.
+
 ## Pages and citations
 
 - Every quote cites the file that contains it; exact filenames beat same-prefix wrappers. A quote that moved chunk needs its label fixed even if the text is unchanged. Do not loosen `check-quotes.mjs`.

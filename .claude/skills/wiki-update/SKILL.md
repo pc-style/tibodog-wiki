@@ -35,6 +35,10 @@ The Cloudflare detector (`tools/detector/`) checks tibo.dog every minute and arc
 3. The push deploys production through Vercel's Git integration; do not create another deployment. Find the deployment for your SHA (team `team_ceF7ek1jhDCXPvwYHv5HrsGM`, project `prj_ezw3MZfNGIIQlXJSKRbpzexA2qtp`). Only if none appears within 2 minutes, create one production deployment for exactly that SHA.
 4. Done means live: wait for READY, then check `https://www.tibodog.wiki/api/index.json` `meta.wiki.commit` equals the latest `origin/main`, `/versions` shows no "Not reviewed yet", and each changed page shows the change. Inspect a screenshot of any changed layout.
 
+## Optional shadow audit
+
+When requested, run `node tools/shadow-update.mjs <old main> <new main> --browser` for revision-bound timing receipts, complete journal display checks and an escalation evidence packet (reference.md: *Shadow replay*). This does not apply data, mark reviews complete, replace live journal checks, or change any acceptance or delivery gate. Do not schedule replays or wait for a future release without authorization.
+
 ## Keeping this skill small
 
 When a method breaks, fix the tool that owns it (`update.mjs`, `same-build.mjs`, `check-quotes.mjs`, `play.mjs`) and its test before adding prose. Add prose only for judgement a tool cannot make, put edge cases in reference.md, and delete a rule once a tool enforces it. Validate with `amp skill info wiki-update` and reload skills after editing.
