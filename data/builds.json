@@ -1737,5 +1737,16 @@
   "updated": "2026-11-08T15:00:46Z",
   "changes": "The unchanged Bog Witch gear-drop note moves from next into the November 8 release group 5485db0. No gameplay or note wording changes.",
   "evidence": "Existing unchanged-graduation proof passes against158DPD without tooling or acceptance changes. Complete413to413source graph matches after only pure journal data normalization; panel diff has2data hunks, no helper/comparator/renderer or gameplay logic changes. Registry/English/config/names/art unchanged. Fresh shadow2026-11-08T14-54-52-862Z-4a9e159e verifies HTML/all412assets each side plus revision-bound full journal. Full/panel and independent actual live panel agree323ordered notes/8dates/127codes; fresh first-party catalogs/all-locales match. Bog Witch text/identity unchanged,nexttoNov8/5485db0; publication11:46:07Z/introduction157 retained separately. Original automatic attempt failed new archive provenance with manifest HTTP404 at14:52:25.786Z; shadow failure skipped graduation proof and generic normal classification refused. That was missing required evidence, not proven changed logic or a predicate defect. Original failed and later passed receipts retained separately. Two renamed save-code citations repaired to their owning asset. No sim replay, reward writes, new server-acceptance claim or unchanged-gameplay review. Proof: .cache/main-CHUp5z41/journal-proof.json; source hashes/details in data/journal-audit.md."
+ },
+ {
+  "seen": "2026-11-08",
+  "main": "main-B15wsGXi.js",
+  "boot": "boot-D4x1xCUB.js",
+  "sim": "sim-BOrXOAif.js",
+  "commit": "de1088288f3c",
+  "status": "reviewed",
+  "updated": "2026-11-08T20:58:11Z",
+  "changes": "The HD-2D renderer reuses the startup WebGL check's canvas and context, opening a fresh context if that pair is missing or lost. No gameplay, balance or journal changes were found.",
+  "evidence": "Focused review of the complete 413-to-413 graph. Unique changed roles: boot/gl-stage/hd2d-renderer implement one-shot preflight context reuse and cached renderer information; boss-entrance-scene/run-summary-state are binding renames, death-flow/run-analytics embed the new build ID. Duplicate roles paired by source/import identity and zero normalized hunks. The sim Pv hunk is alpha-equivalent after resolving distance and flag imports, not changed gameplay. Config value multiset retains every prior value; new boot.ot exports the same attributes previously inline in gl-stage. Registry, English, journal identities/text/grouping and atlas pixels are unchanged. Original old/new module controls in Chromium SwiftShader request 3 versus 1 contexts across preflight/renderer-query/stage; new pair is taken once, absent and lost pairs open fresh, null preflight stays unsupported. Not a loading-speed, hardware or server-acceptance measurement. Fresh shadow2026-11-08T20-46-47-580Z-533d8bf2 verifies archived HTML/all412assets per side, full/panel323ordered notes/8dates/127codes; separate actual live panel agrees. Official catalogs/all locales bind de1088288f3c. Nine unresolved quote locations repaired against their callers. Original automatic shadow404 and later successful recovery preserved separately; unchanged-graduation proof correctly refused No next-to-dated graduation. No tooling or acceptance expansion. Provenance and limits: data/journal-audit.md."
  }
 ]
