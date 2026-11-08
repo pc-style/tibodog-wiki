@@ -44,6 +44,14 @@ test('importing same-role chunks in a different order is a change', () => {
   assert.equal(sameBuild(build('Aa'), build('Bb', { preloadSwap: true, swap: true })).identical, false);
 });
 
+test('local journal correspondence distinguishes same-role sources and leaves ambiguity unresolved', () => {
+  const result = sameBuild(build('Aa'), build('Bb', { preloadSwap: true }), { journal: (text) => text });
+  assert.equal(result.mapping['fx-Aaone000.js'], 'fx-Bbone000.js');
+  assert.equal(result.mapping['fx-Aatwo000.js'], 'fx-Bbtwo000.js');
+  const ambiguous = sameBuild(build('Aa', { fx: ['spin()', 'spin()'] }), build('Bb', { fx: ['spin()', 'spin()'] }), { journal: (text) => text });
+  assert.equal(ambiguous.mapping['fx-Aaone000.js'], null);
+});
+
 test('a changed image reached only through CSS is a change', () => {
   assert.equal(sameBuild(build('Aa'), build('Bb', { png: 'PNG2' })).identical, false);
 });

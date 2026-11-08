@@ -31,7 +31,7 @@ function ownCommit(root) {
 }
 
 // Files reachable from `entry`, each with a label (content with asset names reduced to roles) and its references.
-function load(root, entry, numbers) {
+function load(root, entry, numbers, journal) {
   const own = ownCommit(root);
   const nodes = new Map();
   const stack = [entry];
@@ -44,7 +44,8 @@ function load(root, entry, numbers) {
       nodes.set(name, { label: sha(bytes), refs: [] });
       continue;
     }
-    const text = own ? bytes.toString('utf8').replace(/`([0-9a-f]{7,40})`/g, (m, h) => (own.startsWith(h) ? '`COMMIT`' : m)) : bytes.toString('utf8');
+    let text = own ? bytes.toString('utf8').replace(/`([0-9a-f]{7,40})`/g, (m, h) => (own.startsWith(h) ? '`COMMIT`' : m)) : bytes.toString('utf8');
+    if (journal && /^changelog-panel-[A-Za-z0-9_-]{8}\.js$/.test(name)) text = journal(text);
     // Retry dependencies are fetched with Promise.all, not executed in array
     // order. Hashed-name sorting can swap two same-role preload entries on a
     // rebuild. Preserve actual imports and specifier keys in their exact order.
@@ -113,10 +114,10 @@ function colours(nodes) {
   return c;
 }
 
-export function sameBuild(oldRoot, newRoot, { numbers = false } = {}) {
+export function sameBuild(oldRoot, newRoot, { numbers = false, journal = null } = {}) {
   // Compare from the served HTML when both builds have it, else from each entry script.
   const indexed = [oldRoot, newRoot].every((r) => existsSync(join(r, 'index.html')));
-  const [a, b] = [oldRoot, newRoot].map((r) => load(r, indexed ? 'index.html' : `${basename(r)}.js`, numbers));
+  const [a, b] = [oldRoot, newRoot].map((r) => load(r, indexed ? 'index.html' : `${basename(r)}.js`, numbers, journal));
   const [ca, cb] = [colours(a), colours(b)];
   const count = (c) => [...c.values()].reduce((m, v) => m.set(v, (m.get(v) ?? 0) + 1), new Map());
   const [na, nb] = [count(ca), count(cb)];
@@ -128,7 +129,14 @@ export function sameBuild(oldRoot, newRoot, { numbers = false } = {}) {
   const labels = (g) => new Set([...g.values()].map((v) => v.label));
   const [la, lb] = [labels(a), labels(b)];
   const changed = [...[...a].filter(([, v]) => !lb.has(v.label)).map(([n]) => `old ${n}`), ...[...b].filter(([, v]) => !la.has(v.label)).map(([n]) => `new ${n}`)];
-  return { identical: a.size > 0 && a.size === b.size && unmatched.length === 0, files: [a.size, b.size], roots: indexed ? 'index.html' : 'entry script', changed, unmatched: unmatched.length };
+  const identical = a.size > 0 && a.size === b.size && unmatched.length === 0;
+  // The local journal experiment needs source correspondence, not the last
+  // filename sharing a role. Ambiguous graph identities remain unresolved.
+  const mapping = journal && identical ? Object.fromEntries([...ca].map(([name, colour]) => {
+    const matches = [...cb].filter(([next, value]) => role(next) === role(name) && value === colour).map(([next]) => next);
+    return [name, matches.includes(name) ? name : matches.length === 1 ? matches[0] : null];
+  })) : null;
+  return { identical, files: [a.size, b.size], roots: indexed ? 'index.html' : 'entry script', changed, unmatched: unmatched.length, ...(mapping ? { mapping } : {}) };
 }
 
 if (import.meta.url === `file://${process.argv[1]}`) {
