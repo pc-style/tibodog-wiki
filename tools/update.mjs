@@ -71,12 +71,14 @@ if (live.main === build.main && (!force || pending.length)) {
   process.exit(0);
 }
 const cache = dirname(live.dir);
+let journalEvidence = null;
 if (apply) {
   // Required observation, not a new acceptance gate. Preserve failed evidence
   // without changing classification or any existing live/citation/release check.
   const shadow = tryRun('node', ['tools/shadow-update.mjs', build.main, live.main, '--browser']);
   const evidence = shadow.out.match(/shadow evidence: (.+)/)?.[1];
   if (evidence && existsSync(join(evidence, 'receipt.json'))) importShadow(ROOT, join(evidence, 'receipt.json'));
+  if (shadow.ok && evidence) journalEvidence = join(evidence, 'receipt.json');
   measurement.receipt.journalMeasurement = { status: shadow.ok ? 'passed' : 'failed', evidence: evidence ?? null };
   measurement.persist();
 }
@@ -90,6 +92,64 @@ try {
 } catch (e) {
   report.push(`Previous build ${build.main} could not be fetched (${e.message}); code diff skipped.`, '');
   review.push('previous build unavailable, code not diffed');
+}
+
+// Only unchanged next→dated graduations may reuse reviewed extraction. Proof or
+// API failures fall through to the existing semantic-review classifier; they
+// never turn a changed journal into an identical/numeric acceptance.
+let journalPlan = null;
+let applyJournalOnlyLocal;
+if (apply && prev && journalEvidence) {
+  try {
+    const journal = await import('./journal-only.mjs');
+    applyJournalOnlyLocal = journal.applyJournalOnlyLocal;
+    const plan = measurement.sync('journal-graduation-proof', () => journal.prepareJournalOnly(dirname(prev.dir), cache, journalEvidence,
+      builds, JSON.parse(readFileSync('data/changelog.json', 'utf8'))));
+    const official = await measurement.async('journal-official-data', () => fetchOfficialData(plan.gameCommit));
+    measurement.sync('journal-catalog-consistency', () => applyOfficialData({ registry: JSON.parse(readFileSync('data/registry.json')),
+      content: JSON.parse(readFileSync('data/en-content.json')) }, official));
+    plan.officialData = official.provenance;
+    writeFileSync(join(cache, 'official-data.json'), JSON.stringify(official, null, 1));
+    journalPlan = plan;
+  } catch (error) {
+    measurement.receipt.journalFastPath = { status: 'not-eligible', reason: error.message };
+    report.push('## Journal graduation fast path', '', `Refused: ${error.message}. Existing review rules still apply.`, '');
+    measurement.persist();
+  }
+}
+if (journalPlan) {
+  writeFileSync(join(cache, 'journal-proof.json'), JSON.stringify(journalPlan, null, 2) + '\n');
+  let status = 'needs-review';
+  try {
+    measurement.sync('journal-prepare', () => applyJournalOnlyLocal(journalPlan, ROOT, cache));
+    const history = JSON.parse(readFileSync('data/builds.json'));
+    const entry = history.at(-1);
+    entry.status = 'reviewed';
+    entry.changes = 'Existing journal notes moved into a dated release group; no gameplay or wording changes.';
+    entry.evidence = `Automatic unchanged next-to-dated proof against ${build.main}; all ${journalPlan.whole.files[1]} reachable files checked, full/panel browser and official API validated. Original publication timestamps and prior introduction history retained. Proof: .cache/${live.main.slice(0, -3)}/journal-proof.json.`;
+    writeFileSync('data/builds.json', JSON.stringify(history, null, 1) + '\n');
+    // Source labels were mapped by graph identity, not guessed by filename role.
+    // Keep these import gates and every outer automatic delivery/final gate.
+    for (const args of [['build.mjs'], ['tools/check-quotes.mjs', live.dir], ['check-middleware.mjs']]) run('node', args);
+    status = 'journal-only';
+  } catch (error) {
+    const history = JSON.parse(readFileSync('data/builds.json'));
+    const entry = history.find((b) => b.main === live.main);
+    if (entry) {
+      entry.status = 'unreviewed';
+      writeFileSync('data/builds.json', JSON.stringify(history, null, 1) + '\n');
+    }
+    report.push(`Preparation/gate failed; semantic review required: ${error.message}`, '');
+  }
+  measurement.receipt.journalFastPath = { status, proof: join(cache, 'journal-proof.json') };
+  report.push('## Journal graduation proof', '', `${journalPlan.whole.files[1]} reachable files checked; full/panel browser and official API validated.`,
+    ...journalPlan.moved.map((m) => `- ${m.id}: original publication ${m.publishedAt}; grouped ${m.date}/${m.version}. Prior introduction history retained.`),
+    '', '## Automatic update decision', '', status === 'journal-only' ? 'Verified unchanged next-to-dated graduation; no semantic changes or agent review. All final delivery gates remain required.' : 'Semantic review required; no automatic approval.', '');
+  writeFileSync(join(cache, 'report.md'), report.join('\n') + '\n');
+  console.log(`report: ${join(cache, 'report.md')}`);
+  console.log(`status: ${status}`);
+  measurement.finish(status);
+  process.exit(0);
 }
 
 // Whole-build comparison decides whether this is only a rebuild of the documented game.

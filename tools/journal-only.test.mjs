@@ -1,6 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { mkdtempSync, mkdirSync, writeFileSync, readFileSync, rmSync } from 'node:fs';
+import { mkdtempSync, mkdirSync, writeFileSync, readFileSync, rmSync, copyFileSync, symlinkSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { createHash } from 'node:crypto';
@@ -18,17 +18,17 @@ function fixture() {
   const root = mkdtempSync(join(tmpdir(), 'journal-only-'));
   const beforeRoot = join(root, 'main-oldbuild'), afterRoot = join(root, 'main-newbuild'), evidence = join(root, 'evidence');
   mkdirSync(evidence);
-  const receipt = { status: 'complete', stages: [{ name: 'browser:new', status: 'passed' }], binding: { builds: {} }, artifacts: {} };
+  const receipt = { mode: 'shadow', status: 'complete', stages: [{ name: 'browser:new', status: 'passed' }], binding: { oldMain: 'main-oldbuild.js', newMain: 'main-newbuild.js', builds: {} }, artifacts: {} };
   const artifact = (name, value) => { const bytes = JSON.stringify(value); writeFileSync(join(evidence, name), bytes); receipt.artifacts[name] = hash(bytes); return bytes; };
   for (const [dir, next, key] of [[beforeRoot, false, 'old'], [afterRoot, true, 'new']]) {
     mkdirSync(join(dir, 'assets'), { recursive: true });
-    const files = { 'changelog-panel-fixture1.js': source(next), 'boot-fixture1.js': 'export{}', 'sim-fixture1.js': 'export{}', 'i18n-en-content-fixture1.js': 'export{}' };
-    const html = '<script src="/assets/changelog-panel-fixture1.js"></script><script src="/assets/boot-fixture1.js"></script><script src="/assets/sim-fixture1.js"></script><script src="/assets/i18n-en-content-fixture1.js"></script>';
+    const files = { [`main-${next ? 'new' : 'old'}build.js`]: '/* mirrored entry */', 'changelog-panel-fixture1.js': source(next), 'boot-fixture1.js': 'export{}', 'sim-fixture1.js': 'export{}', 'i18n-en-content-fixture1.js': 'export{}' };
+    const html = `<script src="/assets/main-${next ? 'new' : 'old'}build.js"></script><script src="/assets/changelog-panel-fixture1.js"></script><script src="/assets/boot-fixture1.js"></script><script src="/assets/sim-fixture1.js"></script><script src="/assets/i18n-en-content-fixture1.js"></script>`;
     writeFileSync(join(dir, 'index.html'), html);
     for (const [name, text] of Object.entries(files)) writeFileSync(join(dir, 'assets', name), text);
     const journal = extractChangelog(join(dir, 'assets'), `main-${next ? 'new' : 'old'}build.js`);
     const manifest = artifact(`${key}-manifest.json`, { main: journal.build, files: Object.entries(files).map(([name, text]) => ({ name, size: Buffer.byteLength(text), sha256: hash(text) })) });
-    receipt.binding.builds[key] = { main: journal.build, journal: journal.source, htmlSha256: hash(html), manifest: { sha256: hash(JSON.stringify(JSON.parse(manifest), null, 2)) }, verifiedAssets: 4, gameCommit: '333cccc12345' };
+    receipt.binding.builds[key] = { main: journal.build, journal: journal.source, htmlSha256: hash(html), manifest: { sha256: hash(JSON.stringify(JSON.parse(manifest), null, 2)) }, verifiedAssets: 5, gameCommit: '333cccc12345' };
   }
   const before = extractChangelog(join(beforeRoot, 'assets'), 'main-oldbuild.js'), after = extractChangelog(join(afterRoot, 'assets'), 'main-newbuild.js');
   for (const surface of ['panel', 'full']) artifact(`${surface}.json`, { main: after.build, surface, url: `https://tibo.dog/${surface === 'panel' ? '' : 'changelog'}`, rows: journalRows(after, '333cccc'), dates: ['2026-11-07', '2026-11-06'], expanded: ['true', 'true'] });
@@ -89,6 +89,45 @@ test('local CLI prepares unchanged-note graduation without approval or publishin
     assert.deepEqual(JSON.parse(readFileSync(join(target, 'data/changelog.json'))), f.after);
     assert.match(readFileSync(join(target, 'data/journal-audit.md'), 'utf8'), /^Prior introduction evidence\.[\s\S]*2026-11-07T23:19:38Z/);
     assert.equal(cli('--apply-local').status, 1);
+
+    // Exercise the owning import CLI, with only browser/network/build boundaries
+    // isolated. General extraction must not run for the accepted graduation.
+    for (const scenario of ['accepted', 'gate-failed', 'browser-failed', 'api-failed', 'text-changed']) {
+      const checkout = join(f.root, scenario);
+      execFileSync('git', ['clone', '--quiet', '--local', target, checkout]);
+      mkdirSync(join(checkout, 'tools'));
+      symlinkSync(new URL('../node_modules', import.meta.url), join(checkout, 'node_modules'), 'dir');
+      writeFileSync(join(checkout, '.gitignore'), 'node_modules\n');
+      for (const file of ['update.mjs', 'journal-only.mjs', 'same-build.mjs', 'numeric-update.mjs', 'official-data.mjs', 'update-measurements.mjs', 'dump-changelog.mjs']) copyFileSync(new URL(file, import.meta.url), join(checkout, 'tools', file));
+      const shadow = readFileSync(new URL('./shadow-update.mjs', import.meta.url), 'utf8');
+      writeFileSync(join(checkout, 'tools/shadow-update.mjs'), `if(process.argv[1]?.endsWith('/shadow-update.mjs')){console.log('shadow evidence: ${join(f.root, 'evidence')}');process.exit(${scenario === 'browser-failed' ? 1 : 0});}\n` + shadow);
+      writeFileSync(join(checkout, 'tools/fetch-build.mjs'), `export const ASSET=/[A-Za-z0-9_.-]+-[A-Za-z0-9_-]{8}\\.(?:js|css|png)/g;export const ARCHIVE='https://archive.invalid/';export async function mirror(site,main){return {main:main??'main-newbuild.js',chunks:{boot:'boot-fixture1.js',sim:'sim-fixture1.js','i18n-en-content':'i18n-en-content-fixture1.js','death-flow':'main-newbuild.js'},dir:main?${JSON.stringify(join(f.beforeRoot, 'assets'))}:${JSON.stringify(join(f.afterRoot, 'assets'))}}}`);
+      writeFileSync(join(checkout, 'tools/dump-build.mjs'), 'console.error("semantic-review-fallback");process.exit(31)');
+      writeFileSync(join(checkout, 'build.mjs'), 'console.log("build passed")');
+      writeFileSync(join(checkout, 'tools/check-quotes.mjs'), `process.exit(${scenario === 'gate-failed' ? 1 : 0})`);
+      writeFileSync(join(checkout, 'check-middleware.mjs'), 'console.log("middleware passed")');
+      if (scenario === 'text-changed') writeFileSync(join(f.afterRoot, 'assets/changelog-panel-fixture1.js'), source(true).replace('More often, not stronger.', 'Stronger, not more often.'));
+      writeFileSync(requestFile, scenario === 'api-failed' ? 'globalThis.fetch=async()=>new Response("unavailable",{status:403});' : requestSource);
+      execFileSync('git', ['add', '.'], { cwd: checkout });
+      execFileSync('git', ['-c', 'user.name=Fixture', '-c', 'user.email=fixture@example.invalid', 'commit', '-qm', 'fixture boundaries'], { cwd: checkout });
+      const imported = spawnSync(process.execPath, ['tools/update.mjs', '--apply', '--auto'], { cwd: checkout, encoding: 'utf8', env: { ...process.env, NODE_OPTIONS: `--import=${requestFile}`, TIBO_MEASUREMENTS_DIR: join(f.root, `measure-${scenario}`) } });
+      const history = JSON.parse(readFileSync(join(checkout, 'data/builds.json')));
+      if (scenario === 'accepted' || scenario === 'gate-failed') {
+        assert.equal(imported.status, 0, imported.stderr);
+        assert.match(imported.stdout, new RegExp(`status: ${scenario === 'accepted' ? 'journal-only' : 'needs-review'}\\n$`));
+        assert.deepEqual(history.slice(0, -1), f.history);
+        assert.equal(history.at(-1).status, scenario === 'accepted' ? 'reviewed' : 'unreviewed');
+        assert.deepEqual(JSON.parse(readFileSync(join(checkout, 'data/registry.json'))), registry);
+      } else {
+        assert.notEqual(imported.status, 0);
+        assert.match(imported.stderr, /semantic-review-fallback/);
+        assert.deepEqual(history, f.history);
+        assert.doesNotMatch(imported.stdout, /status: journal-only/);
+      }
+      const measured = JSON.parse(readFileSync(join(f.root, `measure-${scenario}`, 'report.json'))).records.find((r) => r.lane === 'import');
+      assert.equal(measured.status, scenario === 'accepted' ? 'journal-only' : scenario === 'gate-failed' ? 'needs-review' : 'failed');
+      if (scenario === 'accepted') assert.equal(measured.journalFastPath.status, 'journal-only');
+    }
   } finally { rmSync(f.root, { recursive: true, force: true }); }
 });
 
@@ -123,6 +162,11 @@ test('near misses retain semantic review and cannot hide missing/duplicate notes
     assert.throws(f.prepare, /browser evidence/);
     f.receipt.status = 'complete'; writeFileSync(f.receiptFile, JSON.stringify(f.receipt));
     const fullFile = join(f.root, 'evidence/full.json'), original = readFileSync(fullFile);
+    const panel = readFileSync(join(f.root, 'evidence/panel.json'));
+    writeFileSync(fullFile, panel);
+    f.receipt.artifacts['full.json'] = hash(panel); writeFileSync(f.receiptFile, JSON.stringify(f.receipt));
+    assert.throws(f.prepare, /evidence surface/);
+    writeFileSync(fullFile, original);
     const full = JSON.parse(original); full.rows.pop();
     const changed = JSON.stringify(full); writeFileSync(fullFile, changed);
     f.receipt.artifacts['full.json'] = hash(changed); writeFileSync(f.receiptFile, JSON.stringify(f.receipt));

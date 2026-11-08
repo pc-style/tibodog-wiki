@@ -162,7 +162,9 @@ export function prepareJournalOnly(oldRoot, newRoot, receiptFile, history, basel
   for (const file of ['panel.json', 'full.json']) {
     const bytes = readFileSync(join(dirname(receiptFile), file));
     need(receipt.artifacts?.[file] === hash(bytes), 'Browser artifact digest mismatch');
-    verifyJournalCapture(after, receipt.binding.builds.new.gameCommit.slice(0, 7), JSON.parse(bytes));
+    const capture = JSON.parse(bytes);
+    need(capture.surface === file.slice(0, -5), 'Wrong browser evidence surface');
+    verifyJournalCapture(after, receipt.binding.builds.new.gameCommit.slice(0, 7), capture);
   }
   return { schema: 1, status: 'local-candidate', automatic: false, publishing: 'disabled; explicit approval and integration required', oldMain, newMain,
     source: { before: before.source, after: after.source }, whole, moved,
@@ -176,7 +178,7 @@ export function prepareJournalOnly(oldRoot, newRoot, receiptFile, history, basel
 
 // Explicit isolated-checkout preparation only. Never marks a build reviewed or
 // runs Git writes, network delivery, or a substitute for final correctness gates.
-function applyJournalOnlyLocal(plan, root, newRoot) {
+export function applyJournalOnlyLocal(plan, root, newRoot) {
   need(plan.status === 'local-candidate' && plan.automatic === false, 'Not a local-only candidate');
   need(!execFileSync('git', ['status', '--porcelain'], { cwd: root, encoding: 'utf8' }).trim(), 'Local destination must be clean');
   const history = JSON.parse(readFileSync(join(root, 'data/builds.json')));

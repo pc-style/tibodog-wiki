@@ -60,7 +60,7 @@ try {
     console.log(run('node', ['build.mjs']));
     const output = run('node', ['tools/update.mjs', '--apply', '--auto']);
     console.log(output);
-    if (!/^status: (identical|numeric|up-to-date)$/m.test(output)) {
+    if (!/^status: (identical|numeric|journal-only|up-to-date)$/m.test(output)) {
       console.log(`automatic: needs-review; preserved ${worktree}; report .cache/${main.slice(0, -3)}/report.md`);
       process.exitCode = 20;
     } else {
