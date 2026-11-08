@@ -11502,6 +11502,29 @@
    }
   },
   {
+   "id": "panic-fry",
+   "tier": "base",
+   "rarity": 2,
+   "mods": {},
+   "weight": 6,
+   "maxStacks": 5,
+   "effect": {
+    "kind": "bigUpdate",
+    "variant": {
+     "phase": "moreVariety",
+     "variant": {
+      "kind": "panicFry",
+      "hpShare": 0.5,
+      "minuteSec": 60,
+      "slowFactor": 0.05,
+      "windowSec": 3,
+      "perStackSec": 1,
+      "damageMult": 1.25
+     }
+    }
+   }
+  },
+  {
    "id": "second-helping",
    "tier": "base",
    "rarity": 1,
@@ -12700,6 +12723,29 @@
       "chance": 0.25,
       "damage": 48,
       "knockback": 0.4
+     }
+    }
+   }
+  },
+  {
+   "id": "panic-fry",
+   "tier": "base",
+   "rarity": 2,
+   "mods": {},
+   "weight": 6,
+   "maxStacks": 5,
+   "effect": {
+    "kind": "bigUpdate",
+    "variant": {
+     "phase": "moreVariety",
+     "variant": {
+      "kind": "panicFry",
+      "hpShare": 0.5,
+      "minuteSec": 60,
+      "slowFactor": 0.05,
+      "windowSec": 3,
+      "perStackSec": 1,
+      "damageMult": 1.25
      }
     }
    }

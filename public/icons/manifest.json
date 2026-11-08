@@ -1503,7 +1503,7 @@
    "nativeW": 15,
    "nativeH": 12,
    "scale": 4,
-   "source": "flagged-atlas-Cu-Vd0lk.png sprite \"icon-aged-russet\" anim \"icon\" frame 0 @(102,2)"
+   "source": "flagged-atlas-B8LkX0wd.png sprite \"icon-aged-russet\" anim \"icon\" frame 0 @(102,2)"
   },
   "clean-plate": {
    "file": "passive/clean-plate.png",
@@ -1512,7 +1512,7 @@
    "nativeW": 12,
    "nativeH": 13,
    "scale": 4,
-   "source": "flagged-atlas-Cu-Vd0lk.png sprite \"icon-clean-plate\" anim \"icon\" frame 0 @(119,2)"
+   "source": "flagged-atlas-B8LkX0wd.png sprite \"icon-clean-plate\" anim \"icon\" frame 0 @(119,2)"
   }
  },
  "item": {
@@ -2045,7 +2045,16 @@
    "nativeW": 14,
    "nativeH": 13,
    "scale": 4,
-   "source": "flagged-atlas-Cu-Vd0lk.png sprite \"icon-copper-tot\" anim \"icon\" frame 0 @(133,2)"
+   "source": "flagged-atlas-B8LkX0wd.png sprite \"icon-copper-tot\" anim \"icon\" frame 0 @(133,2)"
+  },
+  "panic-fry": {
+   "file": "item/panic-fry.png",
+   "w": 48,
+   "h": 52,
+   "nativeW": 12,
+   "nativeH": 13,
+   "scale": 4,
+   "source": "flagged-atlas-B8LkX0wd.png sprite \"icon-panic-fry\" anim \"icon\" frame 0 @(149,2)"
   },
   "second-helping": {
    "file": "item/second-helping.png",
@@ -2054,7 +2063,7 @@
    "nativeW": 14,
    "nativeH": 15,
    "scale": 4,
-   "source": "flagged-atlas-Cu-Vd0lk.png sprite \"icon-second-helping\" anim \"icon\" frame 0 @(149,2)"
+   "source": "flagged-atlas-B8LkX0wd.png sprite \"icon-second-helping\" anim \"icon\" frame 0 @(163,2)"
   },
   "spark-spud": {
    "file": "item/spark-spud.png",
@@ -2063,7 +2072,7 @@
    "nativeW": 13,
    "nativeH": 14,
    "scale": 4,
-   "source": "flagged-atlas-Cu-Vd0lk.png sprite \"icon-spark-spud\" anim \"icon\" frame 0 @(165,2)"
+   "source": "flagged-atlas-B8LkX0wd.png sprite \"icon-spark-spud\" anim \"icon\" frame 0 @(179,2)"
   },
   "spud-purse": {
    "file": "item/spud-purse.png",
@@ -2072,7 +2081,7 @@
    "nativeW": 11,
    "nativeH": 14,
    "scale": 4,
-   "source": "flagged-atlas-Cu-Vd0lk.png sprite \"icon-spud-purse\" anim \"icon\" frame 0 @(180,2)"
+   "source": "flagged-atlas-B8LkX0wd.png sprite \"icon-spud-purse\" anim \"icon\" frame 0 @(194,2)"
   },
   "warm-bowl": {
    "file": "item/warm-bowl.png",
@@ -2081,7 +2090,7 @@
    "nativeW": 13,
    "nativeH": 13,
    "scale": 4,
-   "source": "flagged-atlas-Cu-Vd0lk.png sprite \"icon-warm-bowl\" anim \"icon\" frame 0 @(193,2)"
+   "source": "flagged-atlas-B8LkX0wd.png sprite \"icon-warm-bowl\" anim \"icon\" frame 0 @(207,2)"
   }
  },
  "enemy": {
@@ -2960,7 +2969,7 @@
    "nativeW": 11,
    "nativeH": 20,
    "scale": 4,
-   "source": "flagged-atlas-Cu-Vd0lk.png sprite \"saluki\" anim \"idle-front\" frame 0 @(337,2)"
+   "source": "flagged-atlas-B8LkX0wd.png sprite \"saluki\" anim \"idle-front\" frame 0 @(351,2)"
   },
   "shiba": {
    "file": "dog/shiba.png",
@@ -2969,7 +2978,7 @@
    "nativeW": 11,
    "nativeH": 20,
    "scale": 4,
-   "source": "flagged-atlas-Cu-Vd0lk.png sprite \"shiba\" anim \"idle-front\" frame 0 @(116,25)"
+   "source": "flagged-atlas-B8LkX0wd.png sprite \"shiba\" anim \"idle-front\" frame 0 @(129,25)"
   },
   "whippet": {
    "file": "dog/whippet.png",
@@ -2978,7 +2987,7 @@
    "nativeW": 11,
    "nativeH": 19,
    "scale": 4,
-   "source": "flagged-atlas-Cu-Vd0lk.png sprite \"whippet\" anim \"idle-front\" frame 0 @(86,48)"
+   "source": "flagged-atlas-B8LkX0wd.png sprite \"whippet\" anim \"idle-front\" frame 0 @(98,48)"
   }
  },
  "missing": [
