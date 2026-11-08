@@ -70,7 +70,7 @@ test('saved full pages require matching revision, source, digest and a successfu
 });
 
 test('shadow CLI binds receipts to sources, preserves failures and never invokes publishing', () => {
-  for (const scenario of ['success', 'corrupt', 'missing']) {
+  for (const scenario of ['success', 'corrupt', 'missing', 'pending-new', 'missing-old', 'http-error']) {
     const root = mkdtempSync(join(tmpdir(), 'wiki-shadow-'));
     try {
       for (const d of ['tools', 'data', 'bin']) mkdirSync(join(root, d));
@@ -102,6 +102,8 @@ test('shadow CLI binds receipts to sources, preserves failures and never invokes
       writeFileSync(join(root, 'request.mjs'), `
         globalThis.fetch=async(url)=>{
           const main=new URL(url).pathname.split('/')[1];
+          if((process.env.SCENARIO==='pending-new'&&main==='main-newbuild.js')||(process.env.SCENARIO==='missing-old'&&main==='main-oldbuild.js'))return new Response('',{status:404});
+          if(process.env.SCENARIO==='http-error')return new Response('',{status:503});
           return Response.json({main,archivedAt:'2026-11-07T23:00:00Z',files:[
             {name:main,size:${Buffer.byteLength('import "./changelog-panel-fixture1.js"')},sha256:${JSON.stringify(digest('import "./changelog-panel-fixture1.js"'))}},
             ...${JSON.stringify(files)}.map(f=>({...f,sha256:process.env.SCENARIO==='corrupt'?'bad':f.sha256}))
@@ -129,7 +131,12 @@ test('shadow CLI binds receipts to sources, preserves failures and never invokes
         assert.equal(receipt.stages.at(-1).status, 'not-run');
       } else {
         assert.equal(receipt.stages.at(-1).status, 'failed');
-        assert.match(receipt.error, scenario === 'missing' ? /Archive missing/ : /digest mismatch/);
+        assert.match(receipt.error, scenario === 'missing' ? /Archive missing/ : scenario === 'corrupt' ? /digest mismatch/ : /Archive manifest HTTP/);
+        if (['pending-new', 'missing-old'].includes(scenario)) {
+          const label = scenario === 'pending-new' ? 'new' : 'old';
+          assert.equal(receipt.stages.at(-1).name, `provenance:${label}`);
+          assert.deepEqual(receipt.stages.at(-1).failure, { code: 'ARCHIVE_NOT_READY', main: `main-${label}build.js`, httpStatus: 404 });
+        } else assert.equal(receipt.stages.at(-1).failure, undefined);
       }
       // CLI rejects accidental delivery flags before doing work.
       assert.throws(() => execFileSync(process.execPath, ['tools/shadow-update.mjs', 'main-oldbuild.js', 'main-newbuild.js', '--ship'], { cwd: root, stdio: 'pipe' }));

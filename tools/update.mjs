@@ -19,7 +19,8 @@ import { createHash } from 'node:crypto';
 import { readFileSync, writeFileSync, readdirSync, cpSync, mkdirSync, existsSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { mirror } from './fetch-build.mjs';
+import { performance } from 'node:perf_hooks';
+import { mirror, ARCHIVE } from './fetch-build.mjs';
 import { compareChangelog, extractChangelog } from './dump-changelog.mjs';
 import { sameBuild } from './same-build.mjs';
 import { numericUpdate } from './numeric-update.mjs';
@@ -75,12 +76,74 @@ let journalEvidence = null;
 if (apply) {
   // Required observation, not a new acceptance gate. Preserve failed evidence
   // without changing classification or any existing live/citation/release check.
-  const shadow = tryRun('node', ['tools/shadow-update.mjs', build.main, live.main, '--browser']);
-  const evidence = shadow.out.match(/shadow evidence: (.+)/)?.[1];
-  if (evidence && existsSync(join(evidence, 'receipt.json'))) importShadow(ROOT, join(evidence, 'receipt.json'));
+  const observe = () => {
+    const shadow = tryRun('node', ['tools/shadow-update.mjs', build.main, live.main, '--browser']);
+    const evidence = shadow.out.match(/shadow evidence: (.+)/)?.[1];
+    const receipt = evidence && existsSync(join(evidence, 'receipt.json'))
+      ? importShadow(ROOT, join(evidence, 'receipt.json')) : null;
+    (measurement.receipt.journalAttempts ??= []).push({ status: shadow.ok ? 'passed' : 'failed', evidence: evidence ?? null });
+    measurement.receipt.journalMeasurement = { status: shadow.ok ? 'passed' : 'failed', evidence: evidence ?? null };
+    measurement.persist();
+    return { shadow, evidence, receipt };
+  };
+  let { shadow, evidence, receipt } = observe();
+  const failed = receipt?.stages.at(-1);
+  // A missing new manifest can be the detector's still-running archive crawl.
+  // Only this typed dependency failure retries; old archives, corrupt assets,
+  // browser/API failures and semantic differences retain their existing rules.
+  if (!shadow.ok && receipt?.binding.oldMain === build.main && receipt.binding.newMain === live.main &&
+      failed?.name === 'provenance:new' && failed.failure?.code === 'ARCHIVE_NOT_READY' &&
+      failed.failure.main === live.main && failed.failure.httpStatus === 404) {
+    const recovery = measurement.receipt.archiveRecovery = { target: live.main, status: 'pending', observations: [] };
+    const deadline = performance.now() + 180000;
+    const get = async (url, stage) => measurement.async(stage, async () => {
+      const remaining = deadline - performance.now();
+      if (remaining <= 0) throw new Error(`Archive readiness deadline expired: ${live.main}`);
+      return fetch(url, { headers: { 'cache-control': 'no-cache' }, signal: AbortSignal.timeout(Math.max(1, Math.floor(Math.min(20000, remaining)))) });
+    });
+    const fresh = async () => {
+      const response = await get('https://tibo.dog/', 'archive-recovery:live');
+      if (!response.ok) throw new Error(`Archive recovery live HTTP ${response.status}`);
+      const html = await response.text();
+      const mains = [...html.matchAll(/<script\b[^>]*\bsrc=["'][^"']*\/assets\/(main-[A-Za-z0-9_-]{8}\.js)["'][^>]*>/g)].map((m) => m[1]);
+      const current = new Set(mains).size === 1 ? mains[0] : null;
+      recovery.observations.push({ at: new Date().toISOString(), surface: 'live', main: current });
+      measurement.persist();
+      if (current !== live.main) {
+        recovery.status = 'superseded';
+        throw new Error(`Archive recovery target changed or unavailable: expected ${live.main}, observed ${current}`);
+      }
+    };
+    try {
+      await measurement.async('archive-recovery', async () => {
+        await fresh();
+        for (let attempt = 0; attempt < 12 && performance.now() < deadline; attempt++) {
+          await measurement.async('archive-recovery:wait', () => new Promise((resolve) => setTimeout(resolve, Math.min(15000, Math.max(0, deadline - performance.now())))));
+          await fresh();
+          const response = await get(new URL(`${live.main}/manifest.json`, ARCHIVE), 'archive-recovery:manifest');
+          recovery.observations.push({ at: new Date().toISOString(), surface: 'manifest', httpStatus: response.status });
+          await response.body?.cancel();
+          measurement.persist();
+          if (response.status === 404) continue;
+          if (!response.ok) throw new Error(`Archive recovery manifest HTTP ${response.status}`);
+          // HTTP availability is not provenance. Rerun the entire proof into a
+          // new evidence directory, including all digests/full/panel checks.
+          await fresh();
+          ({ shadow, evidence } = observe());
+          if (!shadow.ok) throw new Error(`Archive recovery proof failed; evidence preserved: ${evidence ?? 'unavailable'}`);
+          await fresh();
+          recovery.status = 'complete';
+          return;
+        }
+        recovery.status = 'exhausted';
+        throw new Error(`Archive still unavailable after bounded recovery: ${live.main}`);
+      });
+    } catch (error) {
+      if (recovery.status === 'pending') recovery.status = 'failed';
+      throw error;
+    } finally { measurement.persist(); }
+  }
   if (shadow.ok && evidence) journalEvidence = join(evidence, 'receipt.json');
-  measurement.receipt.journalMeasurement = { status: shadow.ok ? 'passed' : 'failed', evidence: evidence ?? null };
-  measurement.persist();
 }
 const report = [`# tibo.dog build ${live.main}`, '', `Checked ${new Date().toISOString()}. Wiki documented \`${build.main}\`.`, ''];
 let review = pending.map((b) => `unreviewed build ${b.main}`);

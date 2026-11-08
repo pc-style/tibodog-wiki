@@ -211,6 +211,7 @@ for (const scenario of [
       if (scenario.drift) journal.unreleased.pop();
       writeFileSync(join(root, 'data', 'changelog.json'), JSON.stringify(journal));
       writeFileSync(join(root, 'tools', 'fetch-build.mjs'), `export const ASSET = /[A-Za-z0-9_.-]+-[A-Za-z0-9_-]{8}\\.js/g;
+      export const ARCHIVE = 'https://archive.invalid/';
       export async function mirror() {
         return { main: 'main-current1.js', dir: ${JSON.stringify(join(cache, 'assets'))} };
       }`);

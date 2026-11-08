@@ -92,7 +92,9 @@ test('local CLI prepares unchanged-note graduation without approval or publishin
 
     // Exercise the owning import CLI, with only browser/network/build boundaries
     // isolated. General extraction must not run for the accepted graduation.
-    for (const scenario of ['accepted', 'gate-failed', 'dirty-source', 'browser-failed', 'api-failed', 'text-changed']) {
+    for (const scenario of ['accepted', 'gate-failed', 'dirty-source', 'browser-failed', 'api-failed',
+      'archive-recovered', 'archive-gate-failed', 'archive-timeout', 'archive-deadline', 'archive-superseded', 'archive-late-superseded', 'archive-unparseable', 'archive-http-error',
+      'archive-corrupt', 'archive-browser-failed', 'archive-api-failed', 'archive-old-missing', 'text-changed']) {
       const checkout = join(f.root, scenario);
       execFileSync('git', ['clone', '--quiet', '--local', target, checkout]);
       mkdirSync(join(checkout, 'tools'));
@@ -102,25 +104,54 @@ test('local CLI prepares unchanged-note graduation without approval or publishin
       copyFileSync(new URL('../.gitignore', import.meta.url), join(checkout, '.gitignore'));
       for (const file of ['update.mjs', 'journal-only.mjs', 'same-build.mjs', 'numeric-update.mjs', 'official-data.mjs', 'update-measurements.mjs', 'dump-changelog.mjs']) copyFileSync(new URL(file, import.meta.url), join(checkout, 'tools', file));
       const shadow = readFileSync(new URL('./shadow-update.mjs', import.meta.url), 'utf8');
-      writeFileSync(join(checkout, 'tools/shadow-update.mjs'), `if(process.argv[1]?.endsWith('/shadow-update.mjs')){console.log('shadow evidence: ${join(f.root, 'evidence')}');process.exit(${scenario === 'browser-failed' ? 1 : 0});}\n` + shadow);
+      const attempts = join(f.root, `attempts-${scenario}`);
+      const recovery = scenario.startsWith('archive-');
+      const observation = recovery ? `
+        const fs=await import('node:fs'),p=await import('node:path');
+        fs.mkdirSync(${JSON.stringify(attempts)},{recursive:true});
+        const n=fs.readdirSync(${JSON.stringify(attempts)}).length;
+        const out=p.join(${JSON.stringify(attempts)},String(n));
+        fs.cpSync(${JSON.stringify(join(f.root, 'evidence'))},out,{recursive:true});
+        const r=JSON.parse(fs.readFileSync(p.join(out,'receipt.json')));
+        const failed=n===0||${JSON.stringify(['archive-corrupt', 'archive-browser-failed'].includes(scenario))};
+        if(failed){r.status='failed';r.stages=[{name:n===0?${JSON.stringify(scenario === 'archive-old-missing' ? 'provenance:old' : 'provenance:new')}:'browser:new',status:'failed',error:'Preserved proof failure',...(n===0?{failure:{code:'ARCHIVE_NOT_READY',main:${JSON.stringify(scenario === 'archive-old-missing' ? 'main-oldbuild.js' : 'main-newbuild.js')},httpStatus:404}}:{})}];}
+        fs.writeFileSync(p.join(out,'receipt.json'),JSON.stringify(r));
+        console.log('shadow evidence: '+out);process.exit(failed?1:0);
+      ` : `console.log('shadow evidence: ${join(f.root, 'evidence')}');process.exit(${scenario === 'browser-failed' ? 1 : 0});`;
+      writeFileSync(join(checkout, 'tools/shadow-update.mjs'), `if(process.argv[1]?.endsWith('/shadow-update.mjs')){${observation}}\n` + shadow);
       writeFileSync(join(checkout, 'tools/fetch-build.mjs'), `export const ASSET=/[A-Za-z0-9_.-]+-[A-Za-z0-9_-]{8}\\.(?:js|css|png)/g;export const ARCHIVE='https://archive.invalid/';export async function mirror(site,main){return {main:main??'main-newbuild.js',chunks:{boot:'boot-fixture1.js',sim:'sim-fixture1.js','i18n-en-content':'i18n-en-content-fixture1.js','death-flow':'main-newbuild.js'},dir:main?${JSON.stringify(join(f.beforeRoot, 'assets'))}:${JSON.stringify(join(f.afterRoot, 'assets'))}}}`);
       writeFileSync(join(checkout, 'tools/dump-build.mjs'), 'console.error("semantic-review-fallback");process.exit(31)');
       writeFileSync(join(checkout, 'build.mjs'), 'console.log("build passed")');
-      writeFileSync(join(checkout, 'tools/check-quotes.mjs'), `process.exit(${scenario === 'gate-failed' ? 1 : 0})`);
+      const gateFailed = ['gate-failed', 'archive-gate-failed'].includes(scenario);
+      writeFileSync(join(checkout, 'tools/check-quotes.mjs'), `process.exit(${gateFailed ? 1 : 0})`);
       writeFileSync(join(checkout, 'check-middleware.mjs'), 'console.log("middleware passed")');
       if (scenario === 'text-changed') writeFileSync(join(f.afterRoot, 'assets/changelog-panel-fixture1.js'), source(true).replace('More often, not stronger.', 'Stronger, not more often.'));
       writeFileSync(requestFile, scenario === 'api-failed' ? 'globalThis.fetch=async()=>new Response("unavailable",{status:403});' : requestSource);
+      if (recovery) writeFileSync(requestFile, requestSource + `
+        const fs=await import('node:fs'),original=globalThis.fetch,timer=globalThis.setTimeout;
+        const {performance}=await import('node:perf_hooks'),clock=performance.now.bind(performance);
+        let offset=0;
+        if(${JSON.stringify(scenario === 'archive-deadline')})performance.now=()=>clock()+offset;
+        globalThis.setTimeout=(fn,delay,...args)=>timer(()=>{if(${JSON.stringify(scenario === 'archive-deadline')})offset+=180001;fn(...args);},delay===15000?0:delay);
+        let polls=0;
+        globalThis.fetch=async(url)=>{
+          if(${JSON.stringify(scenario === 'archive-unparseable')}&&String(url)==='https://tibo.dog/')return new Response('Unknown entry shape');
+          if(String(url)==='https://tibo.dog/')return new Response('<script src="/assets/'+(${JSON.stringify(scenario === 'archive-superseded')}||(${JSON.stringify(scenario === 'archive-late-superseded')}&&fs.readdirSync(${JSON.stringify(attempts)}).length>1)?'main-later222.js':'main-newbuild.js')+'"></script>');
+          if(String(url)==='https://archive.invalid/main-newbuild.js/manifest.json')return new Response('',{status:${JSON.stringify(scenario === 'archive-http-error')}?503:(${JSON.stringify(scenario === 'archive-timeout')}||polls++===0)?404:200});
+          if(${JSON.stringify(scenario === 'archive-api-failed')}&&String(url).includes('/data/v1/'))return new Response('',{status:403});
+          return original(url);
+        };`);
       execFileSync('git', ['add', '.'], { cwd: checkout });
       execFileSync('git', ['-c', 'user.name=Fixture', '-c', 'user.email=fixture@example.invalid', 'commit', '-qm', 'fixture boundaries'], { cwd: checkout });
       symlinkSync(f.root, join(checkout, '.cache'), 'dir');
       if (scenario === 'dirty-source') writeFileSync(join(checkout, 'draft.md'), 'Untracked authored work must block preparation.');
       const imported = spawnSync(process.execPath, ['tools/update.mjs', '--apply', '--auto'], { cwd: checkout, encoding: 'utf8', env: { ...process.env, NODE_OPTIONS: `--import=${requestFile}`, TIBO_MEASUREMENTS_DIR: join(f.root, `measure-${scenario}`) } });
       const history = JSON.parse(readFileSync(join(checkout, 'data/builds.json')));
-      if (scenario === 'accepted' || scenario === 'gate-failed') {
+      if (scenario === 'accepted' || gateFailed || scenario === 'archive-recovered') {
         assert.equal(imported.status, 0, imported.stderr);
-        assert.match(imported.stdout, new RegExp(`status: ${scenario === 'accepted' ? 'journal-only' : 'needs-review'}\\n$`));
+        assert.match(imported.stdout, new RegExp(`status: ${gateFailed ? 'needs-review' : 'journal-only'}\\n$`));
         assert.deepEqual(history.slice(0, -1), f.history);
-        assert.equal(history.at(-1).status, scenario === 'accepted' ? 'reviewed' : 'unreviewed');
+        assert.equal(history.at(-1).status, gateFailed ? 'unreviewed' : 'reviewed');
         assert.deepEqual(JSON.parse(readFileSync(join(checkout, 'data/registry.json'))), registry);
       } else if (scenario === 'dirty-source') {
         assert.equal(imported.status, 0, imported.stderr);
@@ -129,13 +160,28 @@ test('local CLI prepares unchanged-note graduation without approval or publishin
         assert.equal(readFileSync(join(checkout, 'draft.md'), 'utf8'), 'Untracked authored work must block preparation.');
       } else {
         assert.notEqual(imported.status, 0);
-        assert.match(imported.stderr, /semantic-review-fallback/);
+        assert.match(imported.stderr, recovery && !['archive-api-failed', 'archive-old-missing'].includes(scenario)
+          ? /Archive (still unavailable|readiness|recovery)/ : /semantic-review-fallback/);
         assert.deepEqual(history, f.history);
         assert.doesNotMatch(imported.stdout, /status: journal-only/);
       }
       const measured = JSON.parse(readFileSync(join(f.root, `measure-${scenario}`, 'report.json'))).records.find((r) => r.lane === 'import');
-      assert.equal(measured.status, scenario === 'accepted' ? 'journal-only' : ['gate-failed', 'dirty-source'].includes(scenario) ? 'needs-review' : 'failed');
-      if (scenario === 'accepted') assert.equal(measured.journalFastPath.status, 'journal-only');
+      assert.equal(measured.status, ['accepted', 'archive-recovered'].includes(scenario) ? 'journal-only' : gateFailed || scenario === 'dirty-source' ? 'needs-review' : 'failed');
+      if (['accepted', 'archive-recovered'].includes(scenario)) assert.equal(measured.journalFastPath.status, 'journal-only');
+      if (recovery) {
+        assert.equal(measured.journalAttempts.length, ['archive-recovered', 'archive-gate-failed', 'archive-corrupt', 'archive-browser-failed', 'archive-api-failed', 'archive-late-superseded'].includes(scenario) ? 2 : 1);
+        const first = JSON.parse(readFileSync(join(attempts, '0/receipt.json')));
+        assert.equal(first.status, 'failed', 'Recovery must not overwrite the original failure');
+        if (scenario === 'archive-old-missing') assert.equal(measured.archiveRecovery, undefined);
+        else {
+          const observed = measured.archiveRecovery;
+          assert.equal(observed.target, 'main-newbuild.js');
+          assert.equal(observed.status, ['archive-recovered', 'archive-gate-failed', 'archive-api-failed'].includes(scenario) ? 'complete'
+            : scenario === 'archive-timeout' ? 'exhausted' : scenario.includes('superseded') || scenario === 'archive-unparseable' ? 'superseded' : 'failed');
+          if (scenario === 'archive-timeout') assert.equal(observed.observations.filter((o) => o.surface === 'manifest').length, 12);
+          if (scenario === 'archive-deadline') assert.equal(observed.observations.filter((o) => o.surface === 'manifest').length, 0);
+        }
+      }
     }
   } finally { rmSync(f.root, { recursive: true, force: true }); }
 });

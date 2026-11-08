@@ -139,7 +139,11 @@ export async function shadowUpdate(oldMain, newMain, { browser = false, fullRece
     const start = performance.now();
     receipt.stages.push(entry); save();
     try { const result = await action(); entry.status = 'passed'; return result; }
-    catch (error) { entry.status = 'failed'; entry.error = error.message; throw error; }
+    catch (error) {
+      entry.status = 'failed'; entry.error = error.message;
+      if (error.code === 'ARCHIVE_NOT_READY') entry.failure = { code: error.code, main: error.main, httpStatus: 404 };
+      throw error;
+    }
     finally { entry.completedAt = new Date().toISOString(); entry.durationMs = Math.round(performance.now() - start); save(); }
   };
   console.log(`shadow evidence: ${out}`);
@@ -153,7 +157,8 @@ export async function shadowUpdate(oldMain, newMain, { browser = false, fullRece
       await stage(`provenance:${label}`, async () => {
         const url = new URL(`${main}/manifest.json`, ARCHIVE).href;
         const response = await fetch(url, { signal: AbortSignal.timeout(20000) });
-        if (!response.ok) throw new Error(`Archive manifest HTTP ${response.status}: ${main}`);
+        if (!response.ok) throw Object.assign(new Error(`Archive manifest HTTP ${response.status}: ${main}`),
+          response.status === 404 ? { code: 'ARCHIVE_NOT_READY', main } : {});
         const bytes = Buffer.from(await response.arrayBuffer());
         const manifest = JSON.parse(bytes);
         if (manifest.main !== main || !manifest.files?.length) throw new Error('Invalid archive manifest');
