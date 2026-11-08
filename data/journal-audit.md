@@ -620,6 +620,26 @@ Sources (normal updater/archive mirrors; build 144's journal and simulation/boot
 
 The existing pipeline imports the current journal and source references; the two Save code quotes move verbatim to `save-code-panel-CfpMf38d.js`. Required measurements record actual command stages and browser receipts, not estimated inference or replayed production latency. No method, schema, infrastructure, acceptance or publishing decisions are changed.
 
+### Build 146: four-second base dash recharge
+
+`main-DJFWFA7c.js` (game commit `464bec52f041`) changes the base dash recharge from **5 s to 4 s**. The normal updater/archive compares **412 reachable files per build** against build 145. `intro-shared-BW1VNPrl.js` → `intro-shared-HypxxEin.js` has one normalized hunk, changing only `dash.cooldownSec`. Simulation has zero normalized hunks; boot has one, containing only its own commit and simVersion. No chunk roles are added or removed; names and icon pixels are unchanged. The other changed roles are the English journal and 26 translated journals (one normalized hunk each). No blanket unchanged-module audit or gameplay replay was performed for this imported numeric change.
+
+The English journal adds only **shorter-dash / 7MQv4E**, “The dash comes back in 4 seconds.” Its publication timestamp is **2026-11-08T04:30:43Z**. It remains `next` in publication data, displayed under current-version wrapper **464bec5** on the latest journal day, **November 7**. That display date is not a claim that the cooldown changed on November 7: source-observed introduction is **build 146**. No older note moves, changes or disappears. All prior publication and measurement evidence remains historical.
+
+The required collection initially failed because the new build's archive manifest returned **HTTP 404**. After the manifest became available, a measured old/new shadow/browser retry passed archive digests, all ordered panel records and the separately captured official full changelog bound to this live revision. An independent actual live **What's new** check also matches **314 ordered date/code/kind/text records**, with all seven dates expanded and **118 displayed codes**. Counts in display order are **29 / 80 / 43 / 28 / 41 / 47 / 46**. Both failed and successful attempts remain in the measurement export; elapsed worker time is not inference time.
+
+Controls and Stats now read the imported cooldown rather than hard-coding five seconds; Getting Started already reads it and cites its current owner. Direct base-recharge tips on Butter Socks, Ghost Pepper, Harvester and Sir Strawman are corrected. Butter Socks at level 1 is about **3.8 s**, at level 5 **2.8 s**; four sequential level-5 recharges total **11.2 s**. These are derived from the imported base and unchanged reduction, not new combat measurements. Existing build-41 measurements and unrelated five-second timings are preserved. Save code citations relocate verbatim to `save-code-panel-BKybbJIQ.js`; all **1793 quotes** resolve.
+
+Sources (normal updater/archive mirrors; earlier hashes and historical-source limits remain above):
+
+- [Old config owner, intro-shared-BW1VNPrl.js](https://tibo.dog/assets/intro-shared-BW1VNPrl.js), SHA-256 `6840684136a2eb12076e7bc44ce3b2b4e4275b06dfd1b06b8db241bc21686b57`.
+- [New config owner, intro-shared-HypxxEin.js](https://tibo.dog/assets/intro-shared-HypxxEin.js), SHA-256 `a10ad7072e27c405246766cc94b43cc6ec64032e4dad2c8195317408e7841a11`.
+- [Journal, changelog-panel-VxfSqNs8.js](https://tibo.dog/assets/changelog-panel-VxfSqNs8.js), SHA-256 `b888501abc7f96e9b4bee3b1eab7442a9aea6aef9ff392c1b4cc6b5e85c18d8c`.
+- [Simulation, sim-DEIZSebo.js](https://tibo.dog/assets/sim-DEIZSebo.js), SHA-256 `1fcc2c65e9500e67688f3eb2f8c1a67051b4f3f3ee3626e7c94efb4641a067b0`.
+- [Boot, boot-i_oqX5AR.js](https://tibo.dog/assets/boot-i_oqX5AR.js), SHA-256 `b3db2f100e93bf73c6566f7cc1de54fa5e2763c0649048c2beb8f72a27d6dea0`.
+
+No tooling, method, schema, infrastructure, timer, acceptance or publishing changes are included.
+
 ### Future checks
 
 The existing extractor now follows the panel's comparator, records source URL/SHA-256 and rejects duplicate note identities. The updater reports additions, removals, revised text/metadata, ordering, date/code regrouping and moves out of the unversioned group, keeping both before and after values. With an unchanged game build it still checks the saved journal against the mirrored source and reports drift without erasing the original build review. Old notes without stable IDs use their message IDs; a rewritten message ID may therefore appear as a removal plus addition rather than an asserted identity match.

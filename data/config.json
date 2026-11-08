@@ -9233,7 +9233,7 @@
   "dash": {
    "distance": 48,
    "ticks": 9,
-   "cooldownSec": 5,
+   "cooldownSec": 4,
    "minCooldownSec": 0.75,
    "charges": 1,
    "bufferTicks": 6

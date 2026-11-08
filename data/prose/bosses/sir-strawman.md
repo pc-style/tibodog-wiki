@@ -6,7 +6,7 @@ It has 2600 base HP, which is 1690 HP on Normal (boss HP ×0.65, see [Modes](/mo
 
 It drops a [chest](/chests), an XP gem worth 90 XP and a 25-gold coin (both multiplied by the biome's XP and gold multipliers).
 
-**Measured** (headless `tools/play.mjs`, build `main-B2gf34bA`, seed `wiki`, standard mode, `--god`; the clock warped to 2 s before each minute and stepped across it; level-up offers taken first-in-order except Rotten Spud, so curse stays at the difficulty's start value): it spawned at exactly 7:00 on all four difficulties, with 1300 HP on Easy, 1690 on Normal, 1820 on Hard and 2717 on Nightmare. The Nightmare figure is 10% above base HP × the difficulty multiplier because Nightmare starts every run with one curse, and boss HP is multiplied by 1 + curse. <small>[intro-shared-BW1VNPrl.js: `startCurses:1,tierLag:2,wallPests:.6`]</small> <small>[sim-DRV1ehYp.js: `n.maxHp[r]=i.hp*t.hpMult*(1+e.loadout.stats.curse)`]</small> Seeds `s1` to `s4` gave the same Normal times and HP.
+**Measured** (headless `tools/play.mjs`, build `main-B2gf34bA`, seed `wiki`, standard mode, `--god`; the clock warped to 2 s before each minute and stepped across it; level-up offers taken first-in-order except Rotten Spud, so curse stays at the difficulty's start value): it spawned at exactly 7:00 on all four difficulties, with 1300 HP on Easy, 1690 on Normal, 1820 on Hard and 2717 on Nightmare. The Nightmare figure is 10% above base HP × the difficulty multiplier because Nightmare starts every run with one curse, and boss HP is multiplied by 1 + curse. <small>[intro-shared-HypxxEin.js: `startCurses:1,tierLag:2,wallPests:.6`]</small> <small>[sim-DEIZSebo.js: `n.maxHp[r]=i.hp*t.hpMult*(1+e.loadout.stats.curse)`]</small> Seeds `s1` to `s4` gave the same Normal times and HP.
 
 ## Fight
 
@@ -14,7 +14,7 @@ Sir Strawman is a smaller version of the Harvester's fight: a short charge and a
 
 ### Lance charge
 
-When the attack is ready, Sir Strawman stops and locks onto the direction Tibo is in at that moment. <small>[sim-DRV1ehYp.js: `s.state[t]=1,s.timer[t]=n.telegraph,s.timer2[t]=n.telegraph,s.tx[t]=r/l,s.ty[t]=i/l`]</small> A 22-unit-wide lane shows its path for 0.8 s, then it rushes along it at speed 280 for 0.7 s, covering about 196 units. The hit comes from touching it during the rush, and contact damage is ×1.5 while charging (27 before time scaling). Its hitbox stays at its normal radius of 15, because the lane is narrower than its body.
+When the attack is ready, Sir Strawman stops and locks onto the direction Tibo is in at that moment. <small>[sim-DEIZSebo.js: `s.state[t]=1,s.timer[t]=n.telegraph,s.timer2[t]=n.telegraph,s.tx[t]=r/l,s.ty[t]=i/l`]</small> A 22-unit-wide lane shows its path for 0.8 s, then it rushes along it at speed 280 for 0.7 s, covering about 196 units. The hit comes from touching it during the rush, and contact damage is ×1.5 while charging (27 before time scaling). Its hitbox stays at its normal radius of 15, because the lane is narrower than its body.
 
 ### Straw fan
 
@@ -31,5 +31,5 @@ On [Nightmare](/modes#nightmare-rules) the fan is slightly faster (130 base) and
 - **Step sideways off the lane.** The direction is locked when the lane appears, so about 20 units to the side (its body radius plus Tibo's size) is enough. At base speed that takes about a third of a second, well inside the 0.8 s warning.
 - **Get out of the fan's wedge, not just its range.** The returning shots come back through the point they were thrown from and keep going, so the area behind Sir Strawman is not safe either. The safest place is to the side of the 63° wedge, in either direction.
 - **Keep track of the shots on their way back.** On Normal and harder they come back faster than they went out (on Easy, slower). Walking into the wedge right after the shots stop can be how a hit happens.
-- **A dash through the fan works if timed.** The dash makes Tibo immune to hits for 0.15 s (more with [Ghost Pepper](/items/ghost-pepper)), but with only one charge and a 5 s recharge it is usually better kept for the charge. See [dash details](/controls#dash-details).
+- **A dash through the fan works if timed.** The dash makes Tibo immune to hits for 0.15 s (more with [Ghost Pepper](/items/ghost-pepper)), but with only one charge and a 4 s recharge it is usually better kept for the charge. See [dash details](/controls#dash-details).
 - **Boss damage bonuses** such as [Bacon Bits](/passives/bacon-bits) and [Boss Buster](/items/boss-buster) shorten the fight. The 7:00 elite arrives at the same time, so area weapons that hit both are useful.
