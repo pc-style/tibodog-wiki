@@ -6,7 +6,7 @@ Glacier Spud no longer needs frozen enemies. Any kill has a 30% chance to shatte
 
 ## How it works
 
-- The frost ring deals no damage. It sets the enemy's slow factor to 0.5, which halves its movement speed. If [Panic Fry](/items/panic-fry) is active, the stronger slow wins; its 5% slow does not add to this one. <small>[sim-Cj5issfs.js: `let u=t.slowT[a]>0?t.slowF[a]:0,d=1-(u>i?u:i)`]</small>
+- The frost ring deals no damage. It sets the enemy's slow factor to 0.5, which halves its movement speed. If [Panic Fry](/items/panic-fry) is active, the stronger slow wins; its 5% slow does not add to this one. <small>[sim-pcti3OIT.js: `let u=t.slowT[a]>0?t.slowF[a]:0,d=1-(u>i?u:i)`]</small>
 - Bosses are immune to the freeze, but the frost ring slows them too.
 - Boss deaths also roll for a shatter, which deals 40% of the boss's max HP to everything nearby.
 - Copies stack: with *N* copies the chance per kill is `1 − 0.7^N`, limited to 10 × *N* shatters per second.

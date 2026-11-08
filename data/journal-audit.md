@@ -586,6 +586,24 @@ Sources (mirrored through the existing archive workflow; build 142 hashes remain
 
 The unchanged item-selection rules are in `sim-Cj5issfs.js`: `Rd` rolls rarity, `Wd` filters eligible candidates and weights them, `Hd` applies stack/evolution/gear restrictions, and `wd` applies missing-catalyst weight. Current quoted Save code text moves verbatim to `save-code-panel-B2vq5_b5.js`; **1,789 quotes resolve**. No updater/schema, infrastructure or legacy timer changes are included.
 
+### Build 144: gilded Daily spacing in Vietnamese and Urdu
+
+`main-BgcTrsn7.js` (game commit `20cd26c89cb7`) adds two CSS rules to the Daily preview: Vietnamese gear-set names gain `padding-block-start:var(--space-2)` and Urdu weapon-class targets gain `padding-block-end:var(--space-4)`, only in the gilded theme. Neither rule is limited to a short-screen media query. The normal updater/archive compares **412 reachable files per build** against build 143 and isolates only `daily-dialog-DYjjCCEx.js` → `daily-dialog-0W6npAsA.js`. Direct normalized code comparison finds **one insertion**, containing exactly these two rules. Simulation and boot have zero normalized hunks; data, journal, localized names and icon pixels are unchanged. No gameplay replay or unchanged-module audit was performed.
+
+Matched original old/new clients rendered the same Storm Sage Daily kit in Vietnamese and Urdu at **1280 × 720** and **390 × 640**, DPR 2, with the gilded theme. Computed Vietnamese set-name top padding changed from **0** to **4.75 / 3.861 CSS px** (desktop / narrow); Urdu target bottom padding changed from **0** to **9.5 / 7.722 CSS px**. All eight screenshots were inspected; text, gear and buttons remain visible. These are Chromium viewport checks, not physical-phone, gameplay, online-result or performance measurements. Screenshots are retained in the build-144 writing thread, with old left/new right and desktop above narrow.
+
+The live **What's new** panel, with every older date expanded, matches all **313 ordered date/code/kind/text records**, seven dates and **117 displayed codes**. The two unversioned notes now render under the client's **20cd26c** wrapper, not a new publication. Their original timestamps and build-143 source observations remain above. All prior publication, introduction and measurement evidence is preserved; this build adds no journal note.
+
+Sources (normal updater/archive mirrors; earlier hashes and historical-source limits remain above):
+
+- [Old Daily dialog, daily-dialog-DYjjCCEx.js](https://tibo.dog/assets/daily-dialog-DYjjCCEx.js), SHA-256 `bf398cbd6faf11932fae990e95dc795e3c8ab34a5ec448e0090a27c7d3b6ff93`.
+- [New Daily dialog, daily-dialog-0W6npAsA.js](https://tibo.dog/assets/daily-dialog-0W6npAsA.js), SHA-256 `5fbd565f62bc2ffc51aa412d37ffed3316a3a8978885ae1a09f29d08feef9359`.
+- [Journal, changelog-panel-BUusH6BE.js](https://tibo.dog/assets/changelog-panel-BUusH6BE.js), SHA-256 `99f58d6097997e86dc82d92d1c40611d9317d51c93f781b3d377e53269b83650`.
+- [Simulation, sim-pcti3OIT.js](https://tibo.dog/assets/sim-pcti3OIT.js), SHA-256 `5c78f6856a8886c7b9c66fd222048eb93d2d89a8c4fd0a802484971beebdc96f`.
+- [Boot, boot-Bd3z7Yfw.js](https://tibo.dog/assets/boot-Bd3z7Yfw.js), SHA-256 `3f4294e58ec4ebea553f5c202e1297a8e592886c7a5ce1494ffd39a5f8acdb66`.
+
+The updater refreshes source references and relocates two verbatim Save code quotes to `save-code-panel-C0yUCsmE.js`. No updater/schema, shadow invocation/classification/publishing, infrastructure or timer changes are included.
+
 ### Future checks
 
 The existing extractor now follows the panel's comparator, records source URL/SHA-256 and rejects duplicate note identities. The updater reports additions, removals, revised text/metadata, ordering, date/code regrouping and moves out of the unversioned group, keeping both before and after values. With an unchanged game build it still checks the saved journal against the mirrored source and reports drift without erasing the original build review. Old notes without stable IDs use their message IDs; a rewritten message ID may therefore appear as a removal plus addition rather than an asserted identity match.

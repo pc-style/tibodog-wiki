@@ -6,7 +6,7 @@ It walks straight at Tibo at speed 40, a little faster than most tier-1 pests, a
 
 ## How it works
 
-It has no special behaviour: the `chase` kind just uses the default movement straight towards Tibo. <small>[sim-Cj5issfs.js: `` case`chase`:case`tank`:case`splitter`:return; ``]</small> With mass 0 it takes full knockback.
+It has no special behaviour: the `chase` kind just uses the default movement straight towards Tibo. <small>[sim-pcti3OIT.js: `` case`chase`:case`tank`:case`splitter`:return; ``]</small> With mass 0 it takes full knockback.
 
 When the shooter cap is full, tier-2 spawns in a Crop Circle fall back to tier 1, because the [Spittlebug](/enemies/spittlebug) is the only tier-2 pest there. Early in a run that can mean more Little Greys than the tier weights alone would give.
 
