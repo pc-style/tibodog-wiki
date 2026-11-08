@@ -655,6 +655,24 @@ Sources:
 
 All prior publication, introduction and measured-behavior evidence remains intact. Current citation sources are retargeted by the updater, including the shell quote's actual owner; all **1793 quotes** resolve. No tooling, method, acceptance, infrastructure or new gameplay claims are included.
 
+## Build 148: XP gem art uses one size
+
+`main-Druixxh8.js` (game commit `7acafea64774`) adds the `xp-gem-size` / `Virmbv` art note: “Green and red XP gems match the blue gem's size.” Its original publication is **2026-11-08T05:31:50Z**. The source-observed art change is **build 148**; publication, observation and the panel's current-version/date wrapper are separate facts. Build 147 was observed and reviewed locally but superseded before publication; its journal reconciliation and all earlier evidence remain preserved above.
+
+The normal updater/archive compares **412 reachable files per build**. English and all **26 translated journal chunks**, the derived sprite generator, early atlas metadata and early atlas PNG change. The generator has exactly two normalized hunks: green radius **4 → 3**, red **5 → 3**, blue unchanged at **3**. Registry, config and English content remain identical, sim and boot have zero normalized hunks, entity names and entity icon pixels are unchanged. There are no added or removed chunk roles.
+
+The art check compares **every one of 2,091 original early-atlas frame crops and anchors**, not just the wiki's entity icons: **2,075 match**, and only **16 XP frames** change, covering green/red and both color-blind variants. All four current green/red frames match blue's dimensions and anchors: **8×8, 8×7, 6×9, 6×9** source pixels. Before, green was 11×10, 11×9, 9×11, 9×11; red was 14×12, 14×11, 12×13, 12×13. Chromium rendering of original atlas crops at one fixed inspection scale was captured and inspected. This is asset rendering, not a natural gameplay, performance or server test. Unchanged simulation/config support unchanged XP values and collection rules; no blanket gameplay replay was performed.
+
+The first required journal collection hit archive-manifest HTTP 404 and remains a failed observation. A fresh retry, `2026-11-08T06-54-05-001Z-3182aaf3`, verifies archived panel and separately fetched revision-bound official full journal in Chromium: **315 ordered records, seven displayed dates, 119 codes**, with every older date expanded. First-party API validation also passes; it does not replace the journal. Pickups now explains the art-only change and cites its current generator. No tooling, acceptance, infrastructure or automatic retry policy changes are included.
+
+Sources:
+
+- [Current journal, changelog-panel-D1q0VNeY.js](https://tibo.dog/assets/changelog-panel-D1q0VNeY.js), SHA-256 `351467ca12031cd3eff2701469ff22a56ac6d0cca3a1a7b701aabe1d97666b71`.
+- [Prior generator, derived-sprites-DD01KM6d.js](https://tibo.dog/assets/derived-sprites-DD01KM6d.js), SHA-256 `3f90bec2f138c800b57307312bab60ae998ee1af294cc5b38b59da7bdd4e43f4`.
+- [Current generator, derived-sprites-C6f5DLpm.js](https://tibo.dog/assets/derived-sprites-C6f5DLpm.js), SHA-256 `dbf649ad6fde3cb1dcedec1d6454181802d4ef9cb9eb02df2579be3e2c8ceffd`.
+- [Current atlas metadata, atlas.generated-D7zDT2xg.js](https://tibo.dog/assets/atlas.generated-D7zDT2xg.js), SHA-256 `ce7c373739981483c0c0bc3acb45297ba131a0ec7963bbf91311783830e97505`.
+- [Current atlas image, atlas-CW5uf1fv.png](https://tibo.dog/assets/atlas-CW5uf1fv.png), SHA-256 `5015400919e348bb192657dd65e560d2e847944eef3ccb4ba0bce1f9ae28e2c9`.
+
 ### Future checks
 
 The existing extractor now follows the panel's comparator, records source URL/SHA-256 and rejects duplicate note identities. The updater reports additions, removals, revised text/metadata, ordering, date/code regrouping and moves out of the unversioned group, keeping both before and after values. With an unchanged game build it still checks the saved journal against the mirrored source and reports drift without erasing the original build review. Old notes without stable IDs use their message IDs; a rewritten message ID may therefore appear as a removal plus addition rather than an asserted identity match.
