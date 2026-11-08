@@ -46,7 +46,20 @@ test('required worker CLI preserves failures, lineage, review elapsed time and u
     assert.equal(cli('ingest', join(root, 'export.json')).status, 0);
     assert.equal(readMeasurements(env.TIBO_MEASUREMENTS_DIR).length, 3);
     for (const stage of ['build', 'quotes', 'middleware', 'tests', 'push', 'live']) assert.equal(cli('run', stage, '--', process.execPath, '-e', 'process.exit(0)').status, 0);
+    assert.equal(cli('run', 'build', '--', process.execPath, '-e', 'process.exit(7)').status, 7);
+    const retryFailed = cli('worker-finish', id, 'complete');
+    assert.equal(retryFailed.status, 1);
+    assert.match(retryFailed.stderr, /Missing required measured worker stages: build/);
+    assert.equal(cli('run', 'build', '--', process.execPath, '-e', 'process.exit(0)').status, 0);
     assert.equal(cli('worker-finish', id, 'complete').status, 0);
+    const history = ['history-main-BEEfjBeo.js', 'history-main-C-lU_n3W.js'].map((id) => ({ schema: 1, id, stages: [] }));
+    writeFileSync(join(root, 'history.json'), JSON.stringify({ schema: 1, records: history }));
+    for (let i = 0; i < 2; i++) assert.equal(cli('ingest', join(root, 'history.json')).status, 0);
+    assert.deepEqual(readMeasurements(env.TIBO_MEASUREMENTS_DIR).filter((r) => r.id.startsWith('history-')), history);
+    for (const id of ['../escape', '/absolute', 'nested/file', 'nested\\file', '.', '..']) {
+      writeFileSync(join(root, 'invalid.json'), JSON.stringify({ schema: 1, records: [{ schema: 1, id, stages: [] }] }));
+      assert.equal(cli('ingest', join(root, 'invalid.json')).status, 1, id);
+    }
   } finally { rmSync(root, { recursive: true, force: true }); }
 });
 

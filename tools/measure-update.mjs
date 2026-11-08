@@ -34,8 +34,11 @@ try {
     const file = join(directory, `${id}.json`), receipt = JSON.parse(readFileSync(file));
     if (receipt.lane !== 'worker-review') throw new Error('Not a worker-review receipt');
     if (status === 'complete') {
-      const stages = readMeasurements(directory).filter((r) => r.parent === id && r.status === 'complete').flatMap((r) => r.stages.filter((s) => s.status === 'passed').map((s) => s.name));
-      const missing = ['build', 'quotes', 'middleware', 'tests', 'push', 'live'].filter((stage) => !stages.includes(stage));
+      const stages = new Map();
+      for (const r of readMeasurements(directory).filter((r) => r.parent === id).sort((a, b) => a.startedAt.localeCompare(b.startedAt))) {
+        for (const stage of r.stages) stages.set(stage.name, r.status === 'complete' && stage.status === 'passed');
+      }
+      const missing = ['build', 'quotes', 'middleware', 'tests', 'push', 'live'].filter((stage) => !stages.get(stage));
       if (missing.length) throw new Error(`Missing required measured worker stages: ${missing.join(', ')}`);
     }
     receipt.completedAt = new Date().toISOString();
@@ -53,7 +56,7 @@ try {
     mkdirSync(directory, { recursive: true });
     // Receipt IDs cannot escape this directory. Ingestion has no publishing effect.
     for (const r of bundle.records) {
-      if (!/^[a-zA-Z0-9-]+$/.test(r.id ?? '') || r.schema !== 1 || !Array.isArray(r.stages)) throw new Error('Invalid receipt');
+      if (!/^[a-zA-Z0-9][a-zA-Z0-9_.-]*$/.test(r.id ?? '') || r.schema !== 1 || !Array.isArray(r.stages)) throw new Error('Invalid receipt');
       save(join(directory, `${r.id}.json`), r);
     }
     refreshReport(directory);
