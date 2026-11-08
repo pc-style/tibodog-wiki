@@ -6,7 +6,7 @@ The evolution raises the weapon's damage from 72 at max level to 123, and lets T
 
 ## How it works
 
-Throwing, growing, zaps, harvests and the 8 s self-burst follow the rules on [Seed Potato](/weapons/seed-potato#how-it-works). The plant limit is 3 plus Tibo's amount bonuses from passives and items (the base +1 amount does not count), capped at 6. <small>[sim-DA4RGMxM.js: `s=Math.min(n.maxPlants,6,Math.max(1,t.raw.amount)+o)`]</small> The in-game text says Tibo “tosses three fertilized seed potatoes at a time”. In the code he still throws one seed at a time, at least 0.25 s apart, until three plants are out.
+Throwing, growing, zaps, harvests and the 8 s self-burst follow the rules on [Seed Potato](/weapons/seed-potato#how-it-works). The plant limit is 3 plus Tibo's amount bonuses from passives and items (the base +1 amount does not count), capped at 6. <small>[sim-wTU8O3Z8.js: `s=Math.min(n.maxPlants,6,Math.max(1,t.raw.amount)+o)`]</small> The in-game text says Tibo “tosses three fertilized seed potatoes at a time”. In the code he still throws one seed at a time, at least 0.25 s apart, until three plants are out.
 
 When Seed Potato evolves, any of its plants still in the ground are recalled to Tibo's hand.
 

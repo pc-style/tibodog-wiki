@@ -6,8 +6,8 @@ It is offered on level-up cards, is in the starting-weapon pool, and is one of t
 
 ## How it works
 
-- **Launch.** Every potato goes straight up the screen (toward the top of the play area) at the weapon's speed times a random 0.85–1.1. It also gets a random sideways speed of up to `spreadX` (90) × (0.6 + 0.4 × area) units per second, either way. <small>[sim-DA4RGMxM.js: `o.vx[i]=e.rng.range(-n.spreadX,n.spreadX)*(.6+.4*r.area),o.vy[i]=-r.speed*e.rng.range(.85,1.1),o.gravity[i]=n.gravity`]</small>
-- **Arc.** `gravity` (420 units/s²) pulls the potato back down every tick. <small>[sim-DA4RGMxM.js: `i===w.lob?r.vy[t]=r.vy[t]+r.gravity[t]*n`]</small> At the base speed of 210 it peaks about 52 units above Tibo after 0.5 s, comes back level with him after about 1 s, and keeps falling below him for the rest of its life, 3 s or 3.75 s with Tibo's base +25% duration.
+- **Launch.** Every potato goes straight up the screen (toward the top of the play area) at the weapon's speed times a random 0.85–1.1. It also gets a random sideways speed of up to `spreadX` (90) × (0.6 + 0.4 × area) units per second, either way. <small>[sim-wTU8O3Z8.js: `o.vx[i]=e.rng.range(-n.spreadX,n.spreadX)*(.6+.4*r.area),o.vy[i]=-r.speed*e.rng.range(.85,1.1),o.gravity[i]=n.gravity`]</small>
+- **Arc.** `gravity` (420 units/s²) pulls the potato back down every tick. <small>[sim-wTU8O3Z8.js: `i===w.lob?r.vy[t]=r.vy[t]+r.gravity[t]*n`]</small> At the base speed of 210 it peaks about 52 units above Tibo after 0.5 s, comes back level with him after about 1 s, and keeps falling below him for the rest of its life, 3 s or 3.75 s with Tibo's base +25% duration.
 - **Hits.** A potato damages every pest it overlaps, rising and falling. Each potato hits a given pest only once and is used up after pierce + 1 pests.
 - **Stat effects.** [Projectile speed](/stats) raises the arc, area widens the sideways scatter, and pierce bonuses add hits per potato.
 

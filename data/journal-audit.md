@@ -688,6 +688,25 @@ Sources:
 - [Current scene, scene-CN_K94mc.js](https://tibo.dog/assets/scene-CN_K94mc.js), SHA-256 `8879ff84a5396061f77f1b14e77355b9e586e4d5c5c09f6506f4ca7ef2d69c82`.
 - [Current journal, changelog-panel-JC8s-V-S.js](https://tibo.dog/assets/changelog-panel-JC8s-V-S.js), SHA-256 `bd3a11731c89756202636c0859358a4e0d3f11f4af3115219e8c7b170dbc5e12`.
 
+## Build 150: official Nightmare set-drop claim
+
+`main-D7DcS5vK.js` (game commit `c2e8b87272e6`) adds `faster-set-drops` / `LOLnnU`: “Nightmare drops a set piece much more often, and that piece fills the set you already started.” Its **original publication is 2026-11-08T05:12:05Z**, earlier than the two other current notes; its **source-observed introduction is build 150**. The other two notes merely shift index. Publication, observation, current-version grouping and implementation introduction are not interchangeable.
+
+The complete graph stays **412 files**. The only substantive drop-code hunk changes `smartShare` **0.75 → 1** in the public `drops` constants. `run-drops`, `title-gear-parts`, sim and boot have zero normalized hunks. Numeric registry/config, entity names and icon pixels are unchanged. English and all 26 translated journals change; the warm list retargets assets.
+
+The original call path is `watchRunDrops` → `DropClaim.watch` → `LockerFrame` → `https://save.tibo.dog/save-frame.html` → `/gear/ticket`, `/gear/checkpoint` and `/gear/reveal`. The public client supplies eligibility and signed request/reply handling, not the server roll and set-selection implementation. The current save-frame body was fetched read-only to verify this boundary; it is separate from the archived game graph, not historical server code. No ticket/checkpoint/reveal or authenticated reward requests were sent. The `smartShare` change does **not** establish a 75% → 100% Nightmare drop chance, or which missing piece is selected.
+
+Original old/new `DropClaim` and `workerGrant` modules pass **64 controlled cases**: four difficulties, before/at 20:00 ordinary and 15:00 Daily, unfinished ordinary runs, disabled gear, Story and repeated checkpoint calls through all three ordinary thresholds. Supplied state and intercepted transport establish unchanged client eligibility and difficulty forwarding, not naturally earned rewards or server acceptance. Exact old/new drop probabilities and selection for partial, completed, multiple and no-started sets remain **unverified**. Modes attributes the improvement to the official journal and keeps those limits explicit; it does not claim every reward completes a set.
+
+Required source collection failed twice on archive-manifest HTTP 404; both receipts are retained (`2026-11-08T07-27-13-148Z-7db56850`, `2026-11-08T07-29-40-206Z-e30785a3`). A later purposeful fresh check, `2026-11-08T07-31-32-805Z-1da1621c`, passes full archived provenance and Chromium panel/full-page comparison: **317 ordered notes, seven dates, 119 codes**, with all older dates expanded. First-party API validation passes separately. No stale proof, reward writes, acceptance relaxation or retry-policy/tooling changes.
+
+Sources:
+
+- [Current journal, changelog-panel-04ftLepk.js](https://tibo.dog/assets/changelog-panel-04ftLepk.js), SHA-256 `c44529705fc2839880e821d252a777341a9429e923113045d792f4ccadfcf8fe`.
+- [Current constants, drops-D1uwmj4y.js](https://tibo.dog/assets/drops-D1uwmj4y.js), SHA-256 `597eaf685b47f855b2893312dd3b50c7e0a1ee72f1f2f28ad781362990294c36`.
+- [Current client, drop-claim-CFrhappp.js](https://tibo.dog/assets/drop-claim-CFrhappp.js), SHA-256 `48f0eaee78e3374c48f667923388c70a90e76b5b3a70470f20bd914d413af624`.
+- [Current public save-frame body](https://save.tibo.dog/assets/save-frame-D4jqrDmL.js), SHA-256 `db52f10af996c56cd3b775c0ff46f7a1b810c2c60ec89d68099d56b672b9247c`; read-only boundary evidence, not source for exact server probabilities.
+
 ### Future checks
 
 The existing extractor now follows the panel's comparator, records source URL/SHA-256 and rejects duplicate note identities. The updater reports additions, removals, revised text/metadata, ordering, date/code regrouping and moves out of the unversioned group, keeping both before and after values. With an unchanged game build it still checks the saved journal against the mirrored source and reports drift without erasing the original build review. Old notes without stable IDs use their message IDs; a rewritten message ID may therefore appear as a removal plus addition rather than an asserted identity match.
