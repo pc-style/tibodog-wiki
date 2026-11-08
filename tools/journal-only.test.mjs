@@ -22,7 +22,7 @@ function fixture() {
   const artifact = (name, value) => { const bytes = JSON.stringify(value); writeFileSync(join(evidence, name), bytes); receipt.artifacts[name] = hash(bytes); return bytes; };
   for (const [dir, next, key] of [[beforeRoot, false, 'old'], [afterRoot, true, 'new']]) {
     mkdirSync(join(dir, 'assets'), { recursive: true });
-    const files = { [`main-${next ? 'new' : 'old'}build.js`]: '/* mirrored entry */', 'changelog-panel-fixture1.js': source(next), 'boot-fixture1.js': 'export{}', 'sim-fixture1.js': 'export{}', 'i18n-en-content-fixture1.js': 'export{}' };
+    const files = { [`main-${next ? 'new' : 'old'}build.js`]: '/* mirrored entry */', 'changelog-panel-fixture1.js': source(next).replace('2026-11-07T23:19:38Z', '2026-11-08T05:12:05Z'), 'boot-fixture1.js': 'export{}', 'sim-fixture1.js': 'export{}', 'i18n-en-content-fixture1.js': 'export{}' };
     const html = `<script src="/assets/main-${next ? 'new' : 'old'}build.js"></script><script src="/assets/changelog-panel-fixture1.js"></script><script src="/assets/boot-fixture1.js"></script><script src="/assets/sim-fixture1.js"></script><script src="/assets/i18n-en-content-fixture1.js"></script>`;
     writeFileSync(join(dir, 'index.html'), html);
     for (const [name, text] of Object.entries(files)) writeFileSync(join(dir, 'assets', name), text);
@@ -45,7 +45,7 @@ test('local CLI prepares unchanged-note graduation without approval or publishin
     const plan = f.prepare();
     assert.equal(plan.automatic, false);
     assert.deepEqual(plan.priorHistory, f.history);
-    assert.equal(plan.moved[0].publishedAt, '2026-11-07T23:19:38Z');
+    assert.deepEqual(plan.moved, [{ id: 'a', msgId: 'A', publishedAt: '2026-11-08T05:12:05Z', from: 'next', date: '2026-11-07', version: '222bbbb' }]);
     const target = join(f.root, 'checkout');
     mkdirSync(join(target, 'data'), { recursive: true });
     for (const [name, value] of Object.entries({ 'build.json': { main: f.before.build }, 'builds.json': f.history, 'changelog.json': f.before })) writeFileSync(join(target, 'data', name), JSON.stringify(value));
@@ -87,7 +87,7 @@ test('local CLI prepares unchanged-note graduation without approval or publishin
     assert.deepEqual(result.slice(0, -1), f.history);
     assert.equal(result.at(-1).status, 'unreviewed');
     assert.deepEqual(JSON.parse(readFileSync(join(target, 'data/changelog.json'))), f.after);
-    assert.match(readFileSync(join(target, 'data/journal-audit.md'), 'utf8'), /^Prior introduction evidence\.[\s\S]*2026-11-07T23:19:38Z/);
+    assert.match(readFileSync(join(target, 'data/journal-audit.md'), 'utf8'), /^Prior introduction evidence\.[\s\S]*original publication 2026-11-08T05:12:05Z; now 2026-11-07\/222bbbb/);
     assert.equal(cli('--apply-local').status, 1);
 
     // Exercise the owning import CLI, with only browser/network/build boundaries
@@ -140,6 +140,28 @@ test('local CLI prepares unchanged-note graduation without approval or publishin
   } finally { rmSync(f.root, { recursive: true, force: true }); }
 });
 
+test('graduation preserves publication independently of valid official grouping dates', () => {
+  const f = fixture();
+  try {
+    for (const publishedAt of ['2026-11-07T23:19:38Z', '2026-11-08T00:00:00Z', '2026-11-08T05:12:05Z']) {
+      const before = structuredClone(f.before);
+      before.unreleased[0].added = publishedAt;
+      assert.equal(journalGraduation(before, f.after)[0].publishedAt, publishedAt);
+      assert.equal(journalGraduation(before, f.after)[0].date, '2026-11-07');
+    }
+    for (const date of [null, '', 'Nov 7', '2026-02-30', '2026-13-07', '2026-11-07T00:00:00Z']) {
+      const after = structuredClone(f.after);
+      after.days[0].date = date;
+      assert.throws(() => journalGraduation(f.before, after));
+    }
+    for (const added of [undefined, '', 'invalid', '2026-11-08']) {
+      const before = structuredClone(f.before);
+      before.unreleased[0].added = added;
+      assert.throws(() => journalGraduation(before, f.after));
+    }
+  } finally { rmSync(f.root, { recursive: true, force: true }); }
+});
+
 test('near misses retain semantic review and cannot hide missing/duplicate notes or publication changes', () => {
   const f = fixture();
   try {
@@ -149,6 +171,7 @@ test('near misses retain semantic review and cannot hide missing/duplicate notes
       (j) => { j.days[0].waves[0].lines[0].id = 'different'; },
       (j) => { j.days[0].waves[0].lines[0].msgId = 'different'; },
       (j) => { j.days[0].waves[0].lines[0].about = { kind: 'weapon', id: 'peeler' }; },
+      (j) => { j.days[0].waves[0].lines[0].added = '2026-11-08T05:12:06Z'; },
       (j) => { j.days[0].date = '2026-11-08'; },
       (j) => { j.days[1].waves[0].lines = []; },
       (j) => { j.days[1].waves[0].lines.push(j.days[0].waves[0].lines[0]); },

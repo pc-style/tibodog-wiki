@@ -103,7 +103,8 @@ export function journalSkeleton(source) {
 }
 
 // Narrower than arbitrary regrouping: only existing next notes may graduate to
-// dated waves. Existing dated notes/groups retain exact order and metadata.
+// dated waves. Official grouping can cross the UTC publication date; retain
+// publication separately. Existing dated notes/groups keep exact order/metadata.
 export function journalGraduation(before, after) {
   const rows = (j) => [...j.unreleased.map((line) => ({ line, date: null, version: 'next' })), ...j.days.flatMap((d) => d.waves.flatMap((w) => w.lines.map((line) => ({ line, date: d.date, version: w.version }))))];
   const index = (j) => {
@@ -120,7 +121,8 @@ export function journalGraduation(before, after) {
     const b = next.get(key);
     if (isDeepStrictEqual(a, b)) continue;
     const { added, ...line } = a.line;
-    need(a.version === 'next' && b.version !== 'next' && typeof a.line.id === 'string' && /^\d{4}-\d{2}-\d{2}T/.test(added ?? '') && Number.isFinite(Date.parse(added)) && b.date === added.slice(0, 10) && isDeepStrictEqual(line, b.line), 'Text, identity, publication or existing dated note changed');
+    need(typeof b.date === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(b.date) && new Date(b.date).toISOString().slice(0, 10) === b.date, 'Invalid official grouping date');
+    need(a.version === 'next' && b.version !== 'next' && typeof a.line.id === 'string' && /^\d{4}-\d{2}-\d{2}T/.test(added ?? '') && Number.isFinite(Date.parse(added)) && isDeepStrictEqual(line, b.line), 'Text, identity, publication or existing dated note changed');
     moved.push({ id: line.id, msgId: key, publishedAt: added, from: 'next', date: b.date, version: b.version });
   }
   need(moved.length > 0, 'No next-to-dated graduation');
