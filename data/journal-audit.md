@@ -842,3 +842,20 @@ Sources:
 The existing extractor now follows the panel's comparator, records source URL/SHA-256 and rejects duplicate note identities. The updater reports additions, removals, revised text/metadata, ordering, date/code regrouping and moves out of the unversioned group, keeping both before and after values. With an unchanged game build it still checks the saved journal against the mirrored source and reports drift without erasing the original build review. Old notes without stable IDs use their message IDs; a rewritten message ID may therefore appear as a removal plus addition rather than an asserted identity match.
 
 These are review signals, not automatic gameplay conclusions. Future workers must compare the complete current journal, preserve old/new source and measurement evidence, and update the canonical wiki-update skill in the same cycle whenever the method changes.
+
+
+## Local journal graduation main-CHUp5z41.js
+
+Existing journal notes moved from next into a dated release group; no gameplay or note wording changes.
+
+- bog-witch-start-drops (iOWZmN): original publication 2026-11-08T11:46:07Z; now 2026-11-08/5485db0. Source introduction remains in prior build history.
+
+Sources: https://tibo.dog/assets/changelog-panel-CbYzgKmn.js SHA-256 7517b2a62aa1574c7cca1efa4179644be6b7ea0c42f9c2cf3652ec298d5d7c20; https://tibo.dog/assets/changelog-panel-0zGBVCS1.js SHA-256 715f491fc9b289825b56f6e52527ed2dad244b2088256a1dc9b64f1d0f10cc6b. Prior history SHA-256 5fa6e393696c2459462ca3ab97244a3bb9ad8fca2ea0fbba89222ee1894c06e4.
+
+### Build 159 verification and the initial refusal
+
+The original automatic job's shadow receipt `3dc87998-e6d6-46b2-ba76-97358c00d6fc` failed new-build archive provenance at **14:52:25.786Z**, reporting **Archive manifest HTTP 404: main-CHUp5z41.js**. Old provenance had verified 412 assets; fetching the new live files succeeded, but that was not enough to satisfy archive provenance. The updater requires successful shadow evidence before attempting the unchanged-graduation proof. It therefore skipped that proof and the normal classifier conservatively refused the journal/source difference. Its generic changed-code/publication reasons were not evidence of changed panel logic. The underlying reason the manifest was unavailable is not established by this receipt; no acceptance check was loosened.
+
+Fresh shadow `2026-11-08T14-54-52-862Z-4a9e159e` subsequently passes with both archived HTML pages and **412 assets per side**. The new manifest SHA-256 is `b87f1c23b7475c2288efedcb173fdb9a66d1dcdee9d3930f3e3d0ef014c9c3ef`, archived **14:54:21.914Z**; the revision-bound full journal was captured **14:54:56.223Z**, SHA-256 `923c26d56ea0f0883105d48dfe2d2fc5eab5f9e4ff0250049950053a941f91fc`. Full/panel browser captures and a separate actual live-panel check agree on **323 ordered notes, eight dates and 127 codes**. Fresh official catalogs and every listed locale validate against game `98d447c069ba` before and after collection.
+
+The complete **413 → 413** source graph passes the existing pure-journal-data equivalence check. The normalized panel diff has only two data hunks: remove the sole next entry and insert its unchanged dated entry. Helpers, comparator, rendering, executable gameplay, registry, English content, config, names and art are unchanged. Bog Witch's source-observed introduction remains **157**, not the new grouping's delivery date. Its reward statement remains an official published claim, not measured server acceptance. No simulation replay, reward write or new gameplay measurement was needed. Original failed and subsequent successful evidence remain distinct; a later pass does not erase the 404.

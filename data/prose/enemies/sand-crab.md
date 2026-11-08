@@ -6,9 +6,9 @@ It is a charger: it walks slowly towards Tibo (speed 30), and when he is in rang
 
 ## How it works
 
-The timings below are before 20:00. In Standard from 20:00, the windup is 0.6 s instead of 0.5 s; the dash and cooldown do not change. <small>[sim-BhFUkOts.js: `return!ii(e)||e.runClock<Qr?t:Math.max(t,.6)`]</small>
+The timings below are before 20:00. In Standard from 20:00, the windup is 0.6 s instead of 0.5 s; the dash and cooldown do not change. <small>[sim-CJCEF4hP.js: `return!ii(e)||e.runClock<Qr?t:Math.max(t,.6)`]</small>
 
-The charge is a three-step cycle: <small>[sim-BhFUkOts.js: `i.state[t]=2,i.timer[t]=1.3*n/r,i.windup[t]=0`]</small>
+The charge is a three-step cycle: <small>[sim-CJCEF4hP.js: `i.state[t]=2,i.timer[t]=1.3*n/r,i.windup[t]=0`]</small>
 
 1. **Approach**: while its cooldown is running or Tibo is 90 units or more away, it walks towards him like an ordinary pest.
 2. **Wind-up**: once Tibo is within 90 units, it stops for 0.5 s and locks its direction towards where he is at that moment.
