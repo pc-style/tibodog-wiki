@@ -640,6 +640,21 @@ Sources (normal updater/archive mirrors; earlier hashes and historical-source li
 
 No tooling, method, schema, infrastructure, timer, acceptance or publishing changes are included.
 
+## Build 147: the existing dash note is filed under November 7
+
+`main-DatTs9MS.js` (game commit `45a90e1b1302`) moves the unchanged `shorter-dash` / `7MQv4E` note, “The dash comes back in 4 seconds.”, from `next` to **November 7 / 464bec5**. That is the official journal grouping, not its original publication time: **2026-11-08T04:30:43Z** remains preserved in build 146's source evidence above. The four-second cooldown was first source-observed in **build 146**, not introduced again by this filing change. No timezone or earlier introduction is inferred from the dated group.
+
+The normal updater/archive compares **412 reachable files per build**. Only the English journal chunk changes, with exactly two normalized hunks moving that note and removing its `added` field. All **314 note identities, message IDs, kinds, text and about metadata** match as a complete multiset, including older notes without stable IDs. Sim and boot have zero normalized hunks; registry, config and English content are byte-identical. Translated names and icon pixels are unchanged, with no added or removed chunk roles. No gameplay replay is needed for unchanged text and gameplay.
+
+Required measurement run `2026-11-08T06-38-56-038Z-dad0519c` verifies the archived panel and separately fetched, revision-bound official full journal in Chromium: **314 ordered records, seven displayed dates, 118 codes**, all older dates expanded, counts **29/80/43/28/41/47/46**. First-party API validation also passes; the API is not the journal source. The automatic same-publication-day graduation gate correctly refuses this cross-date case. This ordinary semantic review does not relax that gate or alter retry policy. The earlier archive-manifest 404 and automatic retry remain separate measured attempts, not successful proof or new publication timestamps.
+
+Sources:
+
+- [Prior journal, changelog-panel-VxfSqNs8.js](https://tibo.dog/assets/changelog-panel-VxfSqNs8.js), SHA-256 `b888501abc7f96e9b4bee3b1eab7442a9aea6aef9ff392c1b4cc6b5e85c18d8c`.
+- [Current journal, changelog-panel-B56WHmP1.js](https://tibo.dog/assets/changelog-panel-B56WHmP1.js), SHA-256 `43d87ba6af1b40c670039d6d4110437506ae1eee55d26998161a149121cb1e1b`.
+
+All prior publication, introduction and measured-behavior evidence remains intact. Current citation sources are retargeted by the updater, including the shell quote's actual owner; all **1793 quotes** resolve. No tooling, method, acceptance, infrastructure or new gameplay claims are included.
+
 ### Future checks
 
 The existing extractor now follows the panel's comparator, records source URL/SHA-256 and rejects duplicate note identities. The updater reports additions, removals, revised text/metadata, ordering, date/code regrouping and moves out of the unversioned group, keeping both before and after values. With an unchanged game build it still checks the saved journal against the mirrored source and reports drift without erasing the original build review. Old notes without stable IDs use their message IDs; a rewritten message ID may therefore appear as a removal plus addition rather than an asserted identity match.
