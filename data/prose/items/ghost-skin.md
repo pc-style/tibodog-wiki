@@ -2,7 +2,7 @@
 
 Ghost Skin is a Rare item that adds 0.05 dodge points per copy. Dodge points become a dodge chance through the curve `x / (1 + x)` ([Stats](/stats#diminishing-returns)). One Ghost Skin alone gives 4.8%. A successful dodge cancels the whole hit, not just part of it.
 
-It has weight 6 out of 94 among Rare items, about 0.64% of item rolls at luck 0 with the full pool eligible. Copies stack with no cap. It has no evolution.
+It has weight 6 out of 131 among Rare items, about 0.46% of item rolls at luck 0 with the full pool eligible and no weapon-catalyst weight bonuses. Copies stack with no cap. It has no evolution.
 
 ## How it works
 

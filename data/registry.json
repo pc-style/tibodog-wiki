@@ -158,7 +158,7 @@
      "damage": 7
     }
    ],
-   "weight": 75,
+   "weight": 95,
    "behavior": {
     "kind": "cone",
     "size": 70,
@@ -539,7 +539,7 @@
      "damage": 8
     }
    ],
-   "weight": 90,
+   "weight": 80,
    "behavior": {
     "kind": "boomerang",
     "size": 7,
@@ -684,7 +684,7 @@
      "damage": 26
     }
    ],
-   "weight": 75,
+   "weight": 90,
    "behavior": {
     "kind": "beam",
     "size": 20,
@@ -773,7 +773,7 @@
      "damage": 16
     }
    ],
-   "weight": 80,
+   "weight": 75,
    "behavior": {
     "kind": "slash",
     "size": 58,
@@ -833,7 +833,7 @@
      "damage": 7
     }
    ],
-   "weight": 100,
+   "weight": 70,
    "behavior": {
     "kind": "slash",
     "size": 64,
@@ -943,7 +943,7 @@
      "amount": 3
     }
    ],
-   "weight": 75,
+   "weight": 130,
    "behavior": {
     "kind": "rain",
     "size": 18,
@@ -1131,7 +1131,7 @@
      "damage": 10
     }
    ],
-   "weight": 85,
+   "weight": 80,
    "behavior": {
     "kind": "bouncer",
     "size": 6
@@ -1371,7 +1371,7 @@
      "damage": 15
     }
    ],
-   "weight": 85,
+   "weight": 75,
    "behavior": {
     "kind": "explosive",
     "size": 5,
@@ -1462,7 +1462,7 @@
      "damage": 15
     }
    ],
-   "weight": 90,
+   "weight": 80,
    "behavior": {
     "kind": "lob",
     "size": 7,
@@ -1553,7 +1553,7 @@
      "damage": 10
     }
    ],
-   "weight": 80,
+   "weight": 75,
    "behavior": {
     "kind": "chain",
     "range": 150,
@@ -1599,7 +1599,7 @@
      "damage": 8
     }
    ],
-   "weight": 90,
+   "weight": 80,
    "behavior": {
     "kind": "aura",
     "size": 32,
@@ -1643,7 +1643,7 @@
      "amount": 1
     }
    ],
-   "weight": 80,
+   "weight": 100,
    "behavior": {
     "kind": "mine",
     "size": 26,
@@ -1732,7 +1732,7 @@
      "damage": 10
     }
    ],
-   "weight": 100,
+   "weight": 80,
    "behavior": {
     "kind": "targetShot",
     "size": 4
@@ -1775,7 +1775,7 @@
      "area": 0.15
     }
    ],
-   "weight": 80,
+   "weight": 75,
    "behavior": {
     "kind": "pool",
     "shape": "clover",
@@ -2989,7 +2989,7 @@
      "damage": 7
     }
    ],
-   "weight": 75,
+   "weight": 95,
    "behavior": {
     "kind": "cone",
     "size": 70,
@@ -3370,7 +3370,7 @@
      "damage": 8
     }
    ],
-   "weight": 90,
+   "weight": 80,
    "behavior": {
     "kind": "boomerang",
     "size": 7,
@@ -3515,7 +3515,7 @@
      "damage": 26
     }
    ],
-   "weight": 75,
+   "weight": 90,
    "behavior": {
     "kind": "beam",
     "size": 20,
@@ -3604,7 +3604,7 @@
      "damage": 16
     }
    ],
-   "weight": 80,
+   "weight": 75,
    "behavior": {
     "kind": "slash",
     "size": 58,
@@ -3664,7 +3664,7 @@
      "damage": 7
     }
    ],
-   "weight": 100,
+   "weight": 70,
    "behavior": {
     "kind": "slash",
     "size": 64,
@@ -3774,7 +3774,7 @@
      "amount": 3
     }
    ],
-   "weight": 75,
+   "weight": 130,
    "behavior": {
     "kind": "rain",
     "size": 18,
@@ -3962,7 +3962,7 @@
      "damage": 10
     }
    ],
-   "weight": 85,
+   "weight": 80,
    "behavior": {
     "kind": "bouncer",
     "size": 6
@@ -4202,7 +4202,7 @@
      "damage": 15
     }
    ],
-   "weight": 85,
+   "weight": 75,
    "behavior": {
     "kind": "explosive",
     "size": 5,
@@ -4293,7 +4293,7 @@
      "damage": 15
     }
    ],
-   "weight": 90,
+   "weight": 80,
    "behavior": {
     "kind": "lob",
     "size": 7,
@@ -4384,7 +4384,7 @@
      "damage": 10
     }
    ],
-   "weight": 80,
+   "weight": 75,
    "behavior": {
     "kind": "chain",
     "range": 150,
@@ -4430,7 +4430,7 @@
      "damage": 8
     }
    ],
-   "weight": 90,
+   "weight": 80,
    "behavior": {
     "kind": "aura",
     "size": 32,
@@ -4474,7 +4474,7 @@
      "amount": 1
     }
    ],
-   "weight": 80,
+   "weight": 100,
    "behavior": {
     "kind": "mine",
     "size": 26,
@@ -4563,7 +4563,7 @@
      "damage": 10
     }
    ],
-   "weight": 100,
+   "weight": 80,
    "behavior": {
     "kind": "targetShot",
     "size": 4
@@ -4606,7 +4606,7 @@
      "area": 0.15
     }
    ],
-   "weight": 80,
+   "weight": 75,
    "behavior": {
     "kind": "pool",
     "shape": "clover",
@@ -10491,7 +10491,7 @@
    "stat": "greed",
    "perLevel": 0.2,
    "maxLevel": 5,
-   "weight": 80
+   "weight": 85
   },
   {
    "id": "gpu",
@@ -10534,7 +10534,7 @@
    "stat": "maxHpPct",
    "perLevel": 0.12,
    "maxLevel": 5,
-   "weight": 100
+   "weight": 90
   },
   {
    "id": "hot-sauce",
@@ -10569,7 +10569,7 @@
    "stat": "curse",
    "perLevel": 0.1,
    "maxLevel": 5,
-   "weight": 60
+   "weight": 65
   },
   {
    "id": "salt-shaker",
@@ -10843,7 +10843,7 @@
    "mods": {
     "explodeOnKill": 0.12
    },
-   "weight": 6
+   "weight": 16
   },
   {
    "id": "boss-buster",
@@ -11851,7 +11851,7 @@
    "mods": {
     "explodeOnKill": 0.12
    },
-   "weight": 6
+   "weight": 16
   },
   {
    "id": "boss-buster",
