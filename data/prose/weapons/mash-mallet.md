@@ -6,9 +6,9 @@ At level 8, hold [Masher Grip](/passives/masher-grip) at any level and open a [c
 
 ## How it works
 
-The strike searches within 64 units of Tibo. Each pound selects a pest not already selected by that attack, then hits around that pest with radius 16 × modified Area. More Amount adds pounds, subject to having eligible targets; it does not enlarge each impact. Tibo's ordinary +1 Amount makes the raw Amount 1 become 2 before other bonuses. <small>[sim-BtJ1ZXuM.js: `let i=nu(e),a=n.size*r.area;for(let o=0;o<r.amount;o++){let o=$l(e,n.range,i);if(o===void 0)return;tu(e,o,i)`]</small>
+The strike searches within 64 units of Tibo. Each pound selects a pest not already selected by that attack, then hits around that pest with radius 16 × modified Area. More Amount adds pounds, subject to having eligible targets; it does not enlarge each impact. Tibo's ordinary +1 Amount makes the raw Amount 1 become 2 before other bonuses. <small>[sim-CGWtUfyF.js: `let i=nu(e),a=n.size*r.area;for(let o=0;o<r.amount;o++){let o=$l(e,n.range,i);if(o===void 0)return;tu(e,o,i)`]</small>
 
-The official description says “nearest”, but the original build's strike picker uses seeded-random selection among nearby candidates, not distance ranking. In the supplied Amount-1 control, seed `s1` selected the pest 50 units away while the pest 20 units away remained untouched. This finding belongs to `main-CAVio-MR.js`; it has not been verified against a later build.
+The official description says “nearest”, but the strike picker uses seeded-random selection among nearby candidates, not distance ranking. In the supplied Amount-1 control on `main-CAVio-MR.js`, seed `s1` selected the pest 50 units away while the pest 20 units away remained untouched. The current `main-sYP4bxZZ.js` simulation is source-identical after normalizing asset filenames, so the same targeting contract applies; this is source-equivalence evidence, not a new current-build gameplay run.
 
 Mash Mallet is melee-tagged, but the game's melee-restricted new-weapon offers and melee starter fill explicitly exclude it, Peel Lash and Skillet Flail. Ordinary offers, including Mech Pilot's unrestricted pool, can include it. See [Modes](/modes#new-melee-weapons-and-set-restrictions).
 
