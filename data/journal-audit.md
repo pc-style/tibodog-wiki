@@ -942,3 +942,12 @@ The new **bog-witch-zone-damage / yZ3DgJ** note is in **next**, published **2026
 Fresh shadow **2026-11-09T06-20-00-789Z-07a63e27** verifies both archived HTML pages and all **412 assets per side**. DI manifest SHA-256 `02c45028cc4f5622149a395f69b1782b9bb6c3d81a6e7683bd88d7a4db824a62`, archived **06:16:18.272Z**. Journal source https://tibo.dog/assets/changelog-panel-BG1rhnn9.js SHA-256 `74a5a99a7268b976c2d2d45b3486c3e89c76f13738c59b4be99979fed4d95a43`. Full journal captured **06:20:03.613Z**, HTML SHA-256 `a3fdfdcf4a5b53d53f34316bfa76a7f508713f2c9ca96c3b00503e28331e1274`. Full/panel and separate expanded actual panel agree on **328 notes, eight dates, 131 codes**. All **37 official catalog/locale resources** bind `81125e7ebac38557b3cfa44acb7daf3f3a6804fc`, with matching before/after index SHA-256 `b2d7437a5fbfead3c4ad9ad3186d8a77eed67b60131ead6f4771ebd8c601f8dd`. Config/difficulty retain the disclosed extracted fallback.
 
 The original automatic import **06bcca73-3e55-49e7-ad1d-808587150696** exhausted its bounded archive-readiness recovery after **180004 ms** with manifest HTTP404. The later archive availability, fresh normal escalation and this worker session are separate records. No archive failure cause, repaired earlier attempt, speedup, timer change, tooling change or acceptance expansion is inferred.
+
+
+## Local journal graduation main-DX2hK_JH.js
+
+Existing journal notes moved from next into a dated release group; no gameplay or note wording changes.
+
+- bog-witch-zone-damage (yZ3DgJ): original publication 2026-11-09T04:20:52Z; now 2026-11-08/81125e7. Source introduction remains in prior build history.
+
+Sources: https://tibo.dog/assets/changelog-panel-BG1rhnn9.js SHA-256 74a5a99a7268b976c2d2d45b3486c3e89c76f13738c59b4be99979fed4d95a43; https://tibo.dog/assets/changelog-panel-fBRPVf98.js SHA-256 76bbbf24d14b033b390ef71a3cb715719191be72c7f40b520d05ac53737ef00a. Prior history SHA-256 2668fb793ca517a684f5406e8219facdbc4ac1948f6f1c4093681cfb35f816b6.

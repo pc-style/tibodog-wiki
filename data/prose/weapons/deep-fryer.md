@@ -6,9 +6,9 @@ By level 8 it deals 21 per hit, sprays for 1.1 s, reaches 91 units (area 1.3) an
 
 ## How it works
 
-- **Trigger**: when the cooldown is ready, the spray starts only if a pest is within 1.3 × the cone's reach. <small>[sim-CM2Zj_DE.js: `Ql(e,i,a,1.3*o)!==void 0&&(t.active=D(Math.max(.2,r.duration))`]</small>
-- **Cycle**: the cooldown starts only after the spray ends, so a full cycle is spray time plus cooldown. <small>[sim-CM2Zj_DE.js: `(e,t,n,r),t.active<=0&&(t.cd=D(r.cooldown))`]</small> The spray time is the weapon's duration times Tibo's duration stat (base +25%, see [Stats](/stats)), so at level 1 it is about 1.1 s, or 7 to 8 hits.
-- **Aim and width**: on every hit the cone turns toward the nearest pest within range, then hits every pest within the reach whose direction is within half the cone `angle` plus 0.1 rad. For Deep Fryer that is 0.4 rad (about 23°) either side. <small>[sim-CM2Zj_DE.js: `Math.abs(It(t.angle,x(q(e,r)-a,K(e,r)-i)))<=c+.1&&X(e,r)`]</small>
+- **Trigger**: when the cooldown is ready, the spray starts only if a pest is within 1.3 × the cone's reach. <small>[sim-CPXfSfkD.js: `Ql(e,i,a,1.3*o)!==void 0&&(t.active=D(Math.max(.2,r.duration))`]</small>
+- **Cycle**: the cooldown starts only after the spray ends, so a full cycle is spray time plus cooldown. <small>[sim-CPXfSfkD.js: `(e,t,n,r),t.active<=0&&(t.cd=D(r.cooldown))`]</small> The spray time is the weapon's duration times Tibo's duration stat (base +25%, see [Stats](/stats)), so at level 1 it is about 1.1 s, or 7 to 8 hits.
+- **Aim and width**: on every hit the cone turns toward the nearest pest within range, then hits every pest within the reach whose direction is within half the cone `angle` plus 0.1 rad. For Deep Fryer that is 0.4 rad (about 23°) either side. <small>[sim-CPXfSfkD.js: `Math.abs(It(t.angle,x(q(e,r)-a,K(e,r)-i)))<=c+.1&&X(e,r)`]</small>
 - **Amount does nothing**: cone weapons ignore the projectile-count bonus (see [Stats](/stats)).
 - The cone has no pierce limit; every pest inside it is hit.
 

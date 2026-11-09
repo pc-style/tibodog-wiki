@@ -6,10 +6,10 @@ It deals no damage at all. Its HP is high for its time (300 base) and scales wit
 
 ## How it works
 
-- **Running.** It moves directly away from Tibo. Within 70 units (`lootRunners.sprintRadius`) it flees at its full speed of 40; farther out it slows to 30% of that, 12. <small>[sim-CM2Zj_DE.js: `let n=r>e.cfg.lootRunners.sprintRadius?.3:1`]</small>
-- **Escaping.** It vanishes, with no drops, 25 s after it appears (`escapeAfter`). Like other timed pests, it is also removed if Tibo gets more than 460 units away from it. <small>[sim-CM2Zj_DE.js: `` r.despawnAt[u]=e.time+(o.behavior.kind===`flee`?o.behavior.escapeAfter:25) ``]</small>
-- **Gold per hit.** Each hit that lands has a 50% chance to drop a coin worth 2 (`goldPerHit`). <small>[sim-CM2Zj_DE.js: `` n>0&&e.lootRng.chance(.5)&&z(e,`gold` ``]</small>
-- **Reward.** Killing it drops an item pickup, which Tibo opens by standing on it (see [Pickups](/pickups)), on top of its normal drops. <small>[sim-CM2Zj_DE.js: `` uC[n.def[t]]===1&&ml(e,`item`,i,a,1,`lootRunner`) ``]</small>
+- **Running.** It moves directly away from Tibo. Within 70 units (`lootRunners.sprintRadius`) it flees at its full speed of 40; farther out it slows to 30% of that, 12. <small>[sim-CPXfSfkD.js: `let n=r>e.cfg.lootRunners.sprintRadius?.3:1`]</small>
+- **Escaping.** It vanishes, with no drops, 25 s after it appears (`escapeAfter`). Like other timed pests, it is also removed if Tibo gets more than 460 units away from it. <small>[sim-CPXfSfkD.js: `` r.despawnAt[u]=e.time+(o.behavior.kind===`flee`?o.behavior.escapeAfter:25) ``]</small>
+- **Gold per hit.** Each hit that lands has a 50% chance to drop a coin worth 2 (`goldPerHit`). <small>[sim-CPXfSfkD.js: `` n>0&&e.lootRng.chance(.5)&&z(e,`gold` ``]</small>
+- **Reward.** Killing it drops an item pickup, which Tibo opens by standing on it (see [Pickups](/pickups)), on top of its normal drops. <small>[sim-CPXfSfkD.js: `` uC[n.def[t]]===1&&ml(e,`item`,i,a,1,`lootRunner`) ``]</small>
 
 ## Tips
 
