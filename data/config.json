@@ -5215,7 +5215,7 @@
    },
    "three": {
     "tag": {
-     "damage": 2.4
+     "damage": 0.8
     },
     "offTagDamage": 0.7,
     "tradeoff": {

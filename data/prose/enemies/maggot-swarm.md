@@ -6,9 +6,9 @@ The Compost Titan arrives at 17:00 in the [wave schedule](/bosses#wave-schedule)
 
 ## How it works
 
-The summon places 14 small warning circles in a ring 44 units around the Titan. After the attack's 1 s telegraph, each circle turns into a Maggot. <small>[sim-C6IpOLeC.js: `e.zones.spawnDef[l]=o`]</small> Maggots get the normal pest scaling for the current time (see [Enemy scaling](/enemy-scaling)).
+The summon places 14 small warning circles in a ring 44 units around the Titan. After the attack's 1 s telegraph, each circle turns into a Maggot. <small>[sim-CM2Zj_DE.js: `e.zones.spawnDef[l]=o`]</small> Maggots get the normal pest scaling for the current time (see [Enemy scaling](/enemy-scaling)).
 
-Each Maggot despawns 40 s after it appears, and earlier if it ends up more than 460 units from Tibo. <small>[sim-C6IpOLeC.js: `e.enemies.despawnAt[o]=e.time+40`]</small> It has no behaviour beyond the plain chase. With mass 0 it takes full knockback.
+Each Maggot despawns 40 s after it appears, and earlier if it ends up more than 460 units from Tibo. <small>[sim-CM2Zj_DE.js: `e.enemies.despawnAt[o]=e.time+40`]</small> It has no behaviour beyond the plain chase. With mass 0 it takes full knockback.
 
 ## Tips
 
