@@ -5455,7 +5455,6 @@
     }
    },
    "three": {
-    "offers": "tag",
     "startLevels": 2,
     "tag": {
      "damage": 1.4
