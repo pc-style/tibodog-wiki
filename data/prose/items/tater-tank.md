@@ -1,6 +1,6 @@
 ## Extra dash
 
-Tater Tank adds **one dash charge**, so an otherwise unmodified Tibo can dash twice before waiting for recharge. It does not shorten the cooldown or increase dash distance. It has a one-stack limit. <small>[boot-ByVRMCra.js: `` id:`tater-tank`,tier:`base`,rarity:2,mods:{dashCharges:1},maxStacks:1,weight:5 ``]</small>
+Tater Tank adds **one dash charge**, so an otherwise unmodified Tibo can dash twice before waiting for recharge. It does not shorten the cooldown or increase dash distance. It has a one-stack limit. <small>[boot-D43gKGeE.js: `` id:`tater-tank`,tier:`base`,rarity:2,mods:{dashCharges:1},maxStacks:1,weight:5 ``]</small>
 
 **Save the second dash for the way out.** One charge can carry you through a gap; the other lets you leave if pests close around the landing spot. [Butter Socks](/passives/butter-socks) reduces recharge time separately.
 

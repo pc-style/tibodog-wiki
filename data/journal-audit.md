@@ -989,3 +989,13 @@ All nine authored dependency flags were inspected: Mash Swamp's slow, Chive Char
 Fresh shadow **2026-11-09T13-19-03-306Z-3371f79e** verifies both archived HTML documents and **412 assets per side**. Target manifest SHA-256 `d0e9346cf96ee5e2cdd3f773743763e750b81bc7b6af44c469c42e6e883b49f9`, archived **12:35:18.401Z**. Journal source https://tibo.dog/assets/changelog-panel-Dp3SN6ly.js SHA-256 `4b736a1e8094160e3c77390fe91551e8619e66439a7c407ca50b356acb03570b`. Full journal HTML captured **13:19:07.417Z**, SHA-256 `e16ba29b60f86f14a97f28dd0f265724f40364176f0b7bba2b3eb5930788ca0e`. Full/panel and a separate actual expanded live panel agree on **331 notes, nine dates, 133 codes**. All **37 official catalog/locale resources** bind `9b5f6dbb8b3fd20c40eac138ac832b72cf03347b`; before/after index SHA-256 `a3ea9cd92cf6114dfa6eecdf68fc171b1e790843e9317c0f464d6de13c051b04`. Config/difficulty retain their disclosed extracted fallback.
 
 The prior event **40c3cba3** / automatic receipt **6a41deb8**, preserved by the monitor in `/tmp/tibodog-auto-SDpvsi`, exhausted its archive-404 deadline. That failure remains separate: the current worker's fresh successful proof does not overwrite, relabel or approve it, infer a defect or widen retry/acceptance policy.
+
+
+## Local journal graduation main-G7U_rAs8.js
+
+Existing journal notes moved from next into a dated release group; no gameplay or note wording changes.
+
+- mech-pilot-stronger (NFlzWI): original publication 2026-11-09T05:12:40Z; now 2026-11-09/9b5f6db. Source introduction remains in prior build history.
+- static-step-fork-arcs (FRaGC2): original publication 2026-11-09T11:00:35Z; now 2026-11-09/dd0a0ab. Source introduction remains in prior build history.
+
+Sources: https://tibo.dog/assets/changelog-panel-Dp3SN6ly.js SHA-256 4b736a1e8094160e3c77390fe91551e8619e66439a7c407ca50b356acb03570b; https://tibo.dog/assets/changelog-panel-BPOGvFAq.js SHA-256 c4743f1b9905b7b500979997d27dedd03ae9bedf95811809c65dd8133e9c3b70. Prior history SHA-256 d2f9dc4392ab6001580092f785719550cb4fbcc4c9bd07a71e515a4ddc9163fc.

@@ -1869,5 +1869,16 @@
   "updated": "2026-11-09T13:23:32Z",
   "changes": "Mech Pilot's full-set global Might rises from +55% to +100% at set strength 1. The bonus still scales with worn-set strength and adds to other Might; dash and Overdrive behavior are unchanged.",
   "evidence": "Scoped build170DHu→171G2u review. Whole413→413 graph: raw Mech three.tibo.might .55→1 and approved-Might entry .55→1; boot revision/fingerprint only, new panel note and26localized journal changes. All160 renamed nonlocale JS role pairs assessed;155 normalized-identical, other five are sim2numeric hunks, boot revision/fingerprint, death-flow own commit, analytics own commit and panel addition. Entire sim byte-equal after precisely restoring those2Mech numeric values and normalizing asset hashes: active full-set sanitization, partial-set stripping, additive Might, worn-strength calculation, ladder, dash and Overdrive consumers unchanged. Approved Might is used once, not added atop raw Might; 1×actual strength contributes to global Might, whose damage multiplier remains max(.1,1+totalMight). This is source-derived numeric interpretation using the established reviewed contract, not a new gameplay measurement. Prior gear controls remain revision-labelled; no169/170 replay or DPS/acquisition/server-acceptance claim. All9 authored dependency flags assessed as unrelated uses of .55: swamp/weapon slow factors, cooldown measurements, growth/travel timing; no blanket prose rewrite. Modes value/explanation and2stale quotes repaired. Freshshadow2026-11-09T13-19-03-306Z-3371f79e verifies both archivedHTML/412assets each, full/panel331notes/9dates/133codes; separate actual expanded live panel and37officialAPIresources bind full9b5f6dbb8b3fd20c40eac138ac832b72cf03347b. New next mech-pilot-stronger/NFlzWI publication2026-11-09T05:12:40Z separate from observed introduction171; unchanged fork note shifts next0→1, every older collapsed date/order unchanged. Prior event40c3cba3/receipt6a41deb8 archive404deadline remains separate and failed; no cause/retry/approval carryover. Config/difficulty extracted fallback disclosed; provenance and limits in data/journal-audit.md."
+ },
+ {
+  "seen": "2026-11-09",
+  "main": "main-G7U_rAs8.js",
+  "boot": "boot-D43gKGeE.js",
+  "sim": "sim-CE9PZlJN.js",
+  "commit": "4ddac9e97225",
+  "status": "reviewed",
+  "updated": "2026-11-09T14:35:25Z",
+  "changes": "Existing journal notes moved into a dated release group; no gameplay or wording changes.",
+  "evidence": "Automatic unchanged next-to-dated proof against main-G2uSmhPT.js; all 413 reachable files checked, full/panel browser and official API validated. Original publication timestamps and prior introduction history retained. Proof: .cache/main-G7U_rAs8/journal-proof.json."
  }
 ]
