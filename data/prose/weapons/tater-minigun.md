@@ -6,7 +6,7 @@ The only change from a max-level Locked Gatling is damage. Each tot deals 20.4 i
 
 ## How it works
 
-Bursts lock onto the nearest pest within 220 units as described on [Locked Gatling](/weapons/locked-gatling#how-it-works). Every tot in a burst flies along the angle taken at the start, from wherever Tibo is when it fires. Each point of amount is one lane, 7 units from the next. With Tibo's base +1 amount that is two lanes before any amount bonuses. <small>[sim-CGWtUfyF.js: `c=(i-.5*(r.amount-1))*n.lane`]</small>
+Bursts lock onto the nearest pest within 220 units as described on [Locked Gatling](/weapons/locked-gatling#how-it-works). Every tot in a burst flies along the angle taken at the start, from wherever Tibo is when it fires. Each point of amount is one lane, 7 units from the next. With Tibo's base +1 amount that is two lanes before any amount bonuses. <small>[sim-B6dlvQvf.js: `c=(i-.5*(r.amount-1))*n.lane`]</small>
 
 **Measured** in the headless sim (`tools/play.mjs`, build 41 `main-B2gf34bA.js`, Standard, Normal, god mode, seeds `s1`, `s2` and `s3`; the seeded starting weapon removed, the weapon given with `give`, spawning stopped after 4 s of play and the pests already on the field held at fixed spots with 10⁹ HP; Tibo standing still, facing right, with 8 pests in a line 20 to 90 units to his right): a burst was 21 shots 0.1 s apart over 2 s, a new burst began every 2.35 s, each shot was 2 tots of 20.4, and only the 3 nearest pests were hit (pierce 2). All three seeds gave the same figures.
 

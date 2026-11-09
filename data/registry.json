@@ -506,7 +506,7 @@
    "id": "hash-boomerang",
    "tier": "base",
    "base": {
-    "damage": 12,
+    "damage": 36,
     "cooldown": 2,
     "amount": 1,
     "area": 1,
@@ -3567,7 +3567,7 @@
    "id": "hash-boomerang",
    "tier": "base",
    "base": {
-    "damage": 12,
+    "damage": 36,
     "cooldown": 2,
     "amount": 1,
     "area": 1,
@@ -5474,7 +5474,7 @@
    "id": "hashnado",
    "tier": "evolved",
    "base": {
-    "damage": 40,
+    "damage": 80,
     "cooldown": 1.2,
     "amount": 4,
     "area": 1.6,
@@ -5548,7 +5548,7 @@
    "id": "kettle-cyclone",
    "tier": "evolved",
    "base": {
-    "damage": 21,
+    "damage": 42,
     "cooldown": 0.8,
     "amount": 8,
     "area": 1.4,
@@ -7395,7 +7395,7 @@
    "id": "hash-carousel",
    "tier": "union",
    "base": {
-    "damage": 220,
+    "damage": 440,
     "cooldown": 1.4,
     "amount": 4,
     "area": 1.4,
@@ -9021,7 +9021,7 @@
    "id": "hashnado",
    "tier": "evolved",
    "base": {
-    "damage": 40,
+    "damage": 80,
     "cooldown": 1.2,
     "amount": 4,
     "area": 1.6,
@@ -9095,7 +9095,7 @@
    "id": "kettle-cyclone",
    "tier": "evolved",
    "base": {
-    "damage": 21,
+    "damage": 42,
     "cooldown": 0.8,
     "amount": 8,
     "area": 1.4,
@@ -10906,7 +10906,7 @@
    "id": "hash-carousel",
    "tier": "union",
    "base": {
-    "damage": 220,
+    "damage": 440,
     "cooldown": 1.4,
     "amount": 4,
     "area": 1.4,

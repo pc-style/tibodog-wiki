@@ -1,6 +1,6 @@
 ## Overview
 
-Kettle Cyclone is the evolution of [Chip Shuriken](/weapons/chip-shuriken). It throws 9 kettle chips (raw amount 8 plus Tibo's base +1, see [Stats](/stats)) in an expanding spiral every 0.8 s, twice as often as the base weapon. Each chip deals 21 damage and passes through up to 4 pests (5 hits). The chips are larger (area 1.4), a little faster (130), live a little longer (1.8 s before duration bonuses) and spin slightly faster (3.4 rad/s).
+Kettle Cyclone is the evolution of [Chip Shuriken](/weapons/chip-shuriken). It throws 9 kettle chips (raw amount 8 plus Tibo's base +1, see [Stats](/stats)) in an expanding spiral every 0.8 s, twice as often as the base weapon. Each chip has 42 base damage and passes through up to 4 pests (5 hits). The chips are larger (area 1.4), a little faster (130), live a little longer (1.8 s before duration bonuses) and spin slightly faster (3.4 rad/s).
 
 It is made by opening a chest with Chip Shuriken at level 8 and [GPU](/passives/gpu) at any level (see [Evolutions](/evolutions) and [Chests](/chests)).
 

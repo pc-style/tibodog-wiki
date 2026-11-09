@@ -4,8 +4,8 @@ Spud Purse drops a 1-value coin ahead of Tibo as he travels. The distance per co
 
 ## How it works
 
-- **Collect the coin after it drops.** It appears 24 units along Tibo's facing direction; creating it does not directly credit gold. <small>[sim-CGWtUfyF.js: `` z(e,`gold`,r.x[i]+a*n,r.y[i]+o*n,1) ``]</small>
-- **Extra copies shorten the gap.** The five-entry distance table is used directly, not a percentage reduction. Existing partial progress carries into the next coin. The module records distance continuously, so travel before obtaining the purse is not paid out retroactively. <small>[sim-CGWtUfyF.js: `let n=e.run.distance-t.purseMarked;t.purseMarked=e.run.distance`]</small>
+- **Collect the coin after it drops.** It appears 24 units along Tibo's facing direction; creating it does not directly credit gold. <small>[sim-B6dlvQvf.js: `` z(e,`gold`,r.x[i]+a*n,r.y[i]+o*n,1) ``]</small>
+- **Extra copies shorten the gap.** The five-entry distance table is used directly, not a percentage reduction. Existing partial progress carries into the next coin. The module records distance continuously, so travel before obtaining the purse is not paid out retroactively. <small>[sim-B6dlvQvf.js: `let n=e.run.distance-t.purseMarked;t.purseMarked=e.run.distance`]</small>
 - Its coins are ordinary gold pickups. Picking them up can trigger [Copper Tot](/items/copper-tot); [Big Gust](/events/big-gust) can pull them in.
 
 ## Tips

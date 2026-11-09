@@ -1,6 +1,6 @@
 ## Overview
 
-Hashnado is the evolution of [Hash Boomerang](/weapons/hash-boomerang). You get it by opening a [chest](/chests) with a max-level Hash Boomerang and [Sour Cream](/passives/sour-cream) at any level. It throws the same returning hash browns, but more of them, faster and harder: 40 damage each, a 1.2 s cooldown, and its own Amount of 4.
+Hashnado is the evolution of [Hash Boomerang](/weapons/hash-boomerang). You get it by opening a [chest](/chests) with a max-level Hash Boomerang and [Sour Cream](/passives/sour-cream) at any level. It throws the same returning hash browns, but more of them, faster and harder: 80 base damage each, a 1.2 s cooldown, and its own Amount of 4.
 
 ## How it works
 
