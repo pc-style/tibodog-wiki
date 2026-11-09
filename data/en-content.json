@@ -2133,6 +2133,12 @@
  "content.weapon.comet-scythe.name": [
   "Comet Scythe"
  ],
+ "content.weapon.crater-pound.desc": [
+  "The masher pounds two pests at Tibo's feet, and each pound lands wider."
+ ],
+ "content.weapon.crater-pound.name": [
+  "Mash Crater"
+ ],
  "content.weapon.deep-fryer.desc": [
   "Sprays hot oil in a cone."
  ],
@@ -2373,6 +2379,12 @@
  "content.weapon.inferno-basket.name": [
   "Inferno Basket"
  ],
+ "content.weapon.iron-flail.desc": [
+  "A heavier skillet swings wider through the pests in front of Tibo and the pests behind him."
+ ],
+ "content.weapon.iron-flail.name": [
+  "Iron Flail"
+ ],
  "content.weapon.jet-fryer.desc": [
   "Each dash blasts two fans of hot fries backward from where the dash started. Every fry splashes hot oil where it lands."
  ],
@@ -2451,6 +2463,12 @@
  "content.weapon.mash-landing.name": [
   "Mash Landing"
  ],
+ "content.weapon.mash-mallet.desc": [
+  "A masher pounds the nearest pest at Tibo's feet."
+ ],
+ "content.weapon.mash-mallet.name": [
+  "Mash Mallet"
+ ],
  "content.weapon.mash-meteor.desc": [
   "Each dash ends in a bigger mash shockwave, and a second, wider ring follows a moment later."
  ],
@@ -2492,6 +2510,12 @@
  ],
  "content.weapon.overgrowth.name": [
   "Overgrowth"
+ ],
+ "content.weapon.peel-lash.desc": [
+  "A long potato peel cracks the nearest pest, then jumps to one beside it."
+ ],
+ "content.weapon.peel-lash.name": [
+  "Peel Lash"
  ],
  "content.weapon.peel-phantom.desc": [
   "Each dash leaves a peel husk of Tibo where the dash began. Nearby pests chase the husk until it bursts."
@@ -2552,6 +2576,12 @@
  ],
  "content.weapon.reset-button.name": [
   "Reset Button"
+ ],
+ "content.weapon.rind-whip.desc": [
+  "A long potato peel cracks the nearest pest, then jumps across the pests beside it."
+ ],
+ "content.weapon.rind-whip.name": [
+  "Rind Whip"
  ],
  "content.weapon.root-cellar.desc": [
   "A ring of cellar cold around Tibo. Pests that cross it take frostbite and freeze for a moment. Bosses only slow."
@@ -2630,6 +2660,12 @@
  ],
  "content.weapon.seeker-sprouts.name": [
   "Seeker Sprouts"
+ ],
+ "content.weapon.skillet-flail.desc": [
+  "An iron skillet swings through the pests in front of Tibo and the pests behind him."
+ ],
+ "content.weapon.skillet-flail.name": [
+  "Skillet Flail"
  ],
  "content.weapon.skipping-cannonball.desc": [
   "A cannonball skips along the way Tibo faces and bursts at every bounce, each burst bigger than the last. Amount adds a bounce."

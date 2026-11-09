@@ -1880,5 +1880,15 @@
   "updated": "2026-11-09T14:35:25Z",
   "changes": "Existing journal notes moved into a dated release group; no gameplay or wording changes.",
   "evidence": "Automatic unchanged next-to-dated proof against main-G2uSmhPT.js; all 413 reachable files checked, full/panel browser and official API validated. Original publication timestamps and prior introduction history retained. Proof: .cache/main-G7U_rAs8/journal-proof.json."
+ },
+ {
+  "seen": "2026-11-09",
+  "main": "main-CAVio-MR.js",
+  "boot": "boot-HhABrwn3.js",
+  "sim": "sim-BtJ1ZXuM.js",
+  "commit": "146c7ffbe9fd",
+  "status": "unreviewed",
+  "updated": "2026-11-09T17:33:00Z",
+  "changes": "Detected: 128 changed file(s); 134 data change(s); 3 journal change(s), including removals/revisions/regrouping; sim: 5 logic hunk(s); boot: 8 logic hunk(s); icons added or removed; quoted code no longer found."
  }
 ]

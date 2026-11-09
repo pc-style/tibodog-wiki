@@ -445,7 +445,7 @@
      "amount": 1
     }
    ],
-   "weight": 75,
+   "weight": 76,
    "behavior": {
     "kind": "targetShot",
     "size": 4,
@@ -692,6 +692,50 @@
    }
   },
   {
+   "id": "mash-mallet",
+   "tier": "base",
+   "base": {
+    "damage": 41,
+    "cooldown": 2,
+    "amount": 1,
+    "area": 1,
+    "speed": 0,
+    "duration": 0,
+    "pierce": 0,
+    "knockback": 1.2,
+    "interval": 0.1
+   },
+   "levels": [
+    {
+     "damage": 6
+    },
+    {
+     "area": 0.15
+    },
+    {
+     "cooldown": -0.2
+    },
+    {
+     "damage": 8
+    },
+    {
+     "amount": 1
+    },
+    {
+     "damage": 8
+    },
+    {
+     "area": 0.15
+    }
+   ],
+   "weight": 75,
+   "behavior": {
+    "kind": "strike",
+    "size": 16,
+    "range": 64
+   }
+  },
+  {
    "id": "mash-wave",
    "tier": "base",
    "base": {
@@ -793,6 +837,50 @@
      "countPerLevel": 1,
      "back": true
     }
+   }
+  },
+  {
+   "id": "peel-lash",
+   "tier": "base",
+   "base": {
+    "damage": 63,
+    "cooldown": 1.6,
+    "amount": 1,
+    "area": 1,
+    "speed": 0,
+    "duration": 0,
+    "pierce": 1,
+    "knockback": 0.4,
+    "interval": 0.15
+   },
+   "levels": [
+    {
+     "damage": 4
+    },
+    {
+     "pierce": 1
+    },
+    {
+     "cooldown": -0.15
+    },
+    {
+     "damage": 5
+    },
+    {
+     "area": 0.1
+    },
+    {
+     "pierce": 1
+    },
+    {
+     "damage": 6
+    }
+   ],
+   "weight": 75,
+   "behavior": {
+    "kind": "chain",
+    "range": 64,
+    "jump": 36
    }
   },
   {
@@ -1234,6 +1322,51 @@
     "kind": "homing",
     "size": 4,
     "turn": 5
+   }
+  },
+  {
+   "id": "skillet-flail",
+   "tier": "base",
+   "base": {
+    "damage": 14,
+    "cooldown": 0.76,
+    "amount": 1,
+    "area": 1,
+    "speed": 0,
+    "duration": 0.15,
+    "pierce": 99,
+    "knockback": 1.6,
+    "interval": 0.12
+   },
+   "levels": [
+    {
+     "damage": 4
+    },
+    {
+     "area": 0.1
+    },
+    {
+     "damage": 4
+    },
+    {
+     "cooldown": -0.15
+    },
+    {
+     "damage": 5
+    },
+    {
+     "area": 0.1
+    },
+    {
+     "damage": 6
+    }
+   ],
+   "weight": 75,
+   "behavior": {
+    "kind": "slash",
+    "size": 52,
+    "height": 22,
+    "twin": true
    }
   },
   {
@@ -2611,7 +2744,7 @@
      "damage": 14
     }
    ],
-   "weight": 70,
+   "weight": 71,
    "behavior": {
     "kind": "bigUpdate",
     "variant": {
@@ -2873,7 +3006,7 @@
      "damage": 4
     }
    ],
-   "weight": 75,
+   "weight": 78,
    "behavior": {
     "kind": "bigUpdate",
     "variant": {
@@ -3373,7 +3506,7 @@
      "amount": 1
     }
    ],
-   "weight": 75,
+   "weight": 76,
    "behavior": {
     "kind": "targetShot",
     "size": 4,
@@ -3620,6 +3753,50 @@
    }
   },
   {
+   "id": "mash-mallet",
+   "tier": "base",
+   "base": {
+    "damage": 41,
+    "cooldown": 2,
+    "amount": 1,
+    "area": 1,
+    "speed": 0,
+    "duration": 0,
+    "pierce": 0,
+    "knockback": 1.2,
+    "interval": 0.1
+   },
+   "levels": [
+    {
+     "damage": 6
+    },
+    {
+     "area": 0.15
+    },
+    {
+     "cooldown": -0.2
+    },
+    {
+     "damage": 8
+    },
+    {
+     "amount": 1
+    },
+    {
+     "damage": 8
+    },
+    {
+     "area": 0.15
+    }
+   ],
+   "weight": 75,
+   "behavior": {
+    "kind": "strike",
+    "size": 16,
+    "range": 64
+   }
+  },
+  {
    "id": "mash-wave",
    "tier": "base",
    "base": {
@@ -3721,6 +3898,50 @@
      "countPerLevel": 1,
      "back": true
     }
+   }
+  },
+  {
+   "id": "peel-lash",
+   "tier": "base",
+   "base": {
+    "damage": 63,
+    "cooldown": 1.6,
+    "amount": 1,
+    "area": 1,
+    "speed": 0,
+    "duration": 0,
+    "pierce": 1,
+    "knockback": 0.4,
+    "interval": 0.15
+   },
+   "levels": [
+    {
+     "damage": 4
+    },
+    {
+     "pierce": 1
+    },
+    {
+     "cooldown": -0.15
+    },
+    {
+     "damage": 5
+    },
+    {
+     "area": 0.1
+    },
+    {
+     "pierce": 1
+    },
+    {
+     "damage": 6
+    }
+   ],
+   "weight": 75,
+   "behavior": {
+    "kind": "chain",
+    "range": 64,
+    "jump": 36
    }
   },
   {
@@ -4162,6 +4383,51 @@
     "kind": "homing",
     "size": 4,
     "turn": 5
+   }
+  },
+  {
+   "id": "skillet-flail",
+   "tier": "base",
+   "base": {
+    "damage": 14,
+    "cooldown": 0.76,
+    "amount": 1,
+    "area": 1,
+    "speed": 0,
+    "duration": 0.15,
+    "pierce": 99,
+    "knockback": 1.6,
+    "interval": 0.12
+   },
+   "levels": [
+    {
+     "damage": 4
+    },
+    {
+     "area": 0.1
+    },
+    {
+     "damage": 4
+    },
+    {
+     "cooldown": -0.15
+    },
+    {
+     "damage": 5
+    },
+    {
+     "area": 0.1
+    },
+    {
+     "damage": 6
+    }
+   ],
+   "weight": 75,
+   "behavior": {
+    "kind": "slash",
+    "size": 52,
+    "height": 22,
+    "twin": true
    }
   },
   {
@@ -4928,6 +5194,28 @@
    "catalyst": "slow-cooker"
   },
   {
+   "id": "crater-pound",
+   "tier": "evolved",
+   "base": {
+    "damage": 36,
+    "cooldown": 1.6,
+    "amount": 2,
+    "area": 1.2,
+    "speed": 0,
+    "duration": 0,
+    "pierce": 0,
+    "knockback": 1.6,
+    "interval": 0.1
+   },
+   "behavior": {
+    "kind": "strike",
+    "size": 20,
+    "range": 72
+   },
+   "from": "mash-mallet",
+   "catalyst": "masher-grip"
+  },
+  {
    "id": "dynamo-coil",
    "tier": "evolved",
    "base": {
@@ -5234,6 +5522,29 @@
    "catalyst": "bacon-bits"
   },
   {
+   "id": "iron-flail",
+   "tier": "evolved",
+   "base": {
+    "damage": 22,
+    "cooldown": 1.2,
+    "amount": 1,
+    "area": 1.2,
+    "speed": 0,
+    "duration": 0.15,
+    "pierce": 99,
+    "knockback": 2,
+    "interval": 0.12
+   },
+   "behavior": {
+    "kind": "slash",
+    "size": 60,
+    "height": 26,
+    "twin": true
+   },
+   "from": "skillet-flail",
+   "catalyst": "starch-plating"
+  },
+  {
    "id": "kettle-cyclone",
    "tier": "evolved",
    "base": {
@@ -5500,6 +5811,28 @@
    },
    "from": "fry-lance",
    "catalyst": "spud-sneakers"
+  },
+  {
+   "id": "rind-whip",
+   "tier": "evolved",
+   "base": {
+    "damage": 18,
+    "cooldown": 1.2,
+    "amount": 1,
+    "area": 1.15,
+    "speed": 0,
+    "duration": 0,
+    "pierce": 3,
+    "knockback": 0.5,
+    "interval": 0.12
+   },
+   "behavior": {
+    "kind": "chain",
+    "range": 72,
+    "jump": 44
+   },
+   "from": "peel-lash",
+   "catalyst": "salt-shaker"
   },
   {
    "id": "rosti-storm",
@@ -7464,7 +7797,7 @@
      "damage": 14
     }
    ],
-   "weight": 70,
+   "weight": 71,
    "behavior": {
     "kind": "bigUpdate",
     "variant": {
@@ -7726,7 +8059,7 @@
      "damage": 4
     }
    ],
-   "weight": 75,
+   "weight": 78,
    "behavior": {
     "kind": "bigUpdate",
     "variant": {
@@ -8408,6 +8741,28 @@
    "catalyst": "slow-cooker"
   },
   {
+   "id": "crater-pound",
+   "tier": "evolved",
+   "base": {
+    "damage": 36,
+    "cooldown": 1.6,
+    "amount": 2,
+    "area": 1.2,
+    "speed": 0,
+    "duration": 0,
+    "pierce": 0,
+    "knockback": 1.6,
+    "interval": 0.1
+   },
+   "behavior": {
+    "kind": "strike",
+    "size": 20,
+    "range": 72
+   },
+   "from": "mash-mallet",
+   "catalyst": "masher-grip"
+  },
+  {
    "id": "dynamo-coil",
    "tier": "evolved",
    "base": {
@@ -8714,6 +9069,29 @@
    "catalyst": "bacon-bits"
   },
   {
+   "id": "iron-flail",
+   "tier": "evolved",
+   "base": {
+    "damage": 22,
+    "cooldown": 1.2,
+    "amount": 1,
+    "area": 1.2,
+    "speed": 0,
+    "duration": 0.15,
+    "pierce": 99,
+    "knockback": 2,
+    "interval": 0.12
+   },
+   "behavior": {
+    "kind": "slash",
+    "size": 60,
+    "height": 26,
+    "twin": true
+   },
+   "from": "skillet-flail",
+   "catalyst": "starch-plating"
+  },
+  {
    "id": "kettle-cyclone",
    "tier": "evolved",
    "base": {
@@ -8980,6 +9358,28 @@
    },
    "from": "fry-lance",
    "catalyst": "spud-sneakers"
+  },
+  {
+   "id": "rind-whip",
+   "tier": "evolved",
+   "base": {
+    "damage": 18,
+    "cooldown": 1.2,
+    "amount": 1,
+    "area": 1.15,
+    "speed": 0,
+    "duration": 0,
+    "pierce": 3,
+    "knockback": 0.5,
+    "interval": 0.12
+   },
+   "behavior": {
+    "kind": "chain",
+    "range": 72,
+    "jump": 44
+   },
+   "from": "peel-lash",
+   "catalyst": "salt-shaker"
   },
   {
    "id": "rosti-storm",

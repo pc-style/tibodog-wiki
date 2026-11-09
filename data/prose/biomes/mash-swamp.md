@@ -1,6 +1,6 @@
 ## Overview
 
-Mash Swamp is a climate biome covering warm, wet ground (the second-hottest of four temperature bands, wet side). It usually borders [Chip Canyons](/biomes/chip-canyons) on the dry side, [Peel Forest](/biomes/peel-forest) where it gets cooler and [Ketchup Bog](/biomes/ketchup-bog) where it gets hotter. <small>[sim-CE9PZlJN.js: `e<-.22?0:e<.02?1:e<.24?2:3}(a),o<0?0:1)`]</small> Its hazard is patches of knee-deep mash that cut Tibo's walking speed to 55% while he is in them. They do no damage.
+Mash Swamp is a climate biome covering warm, wet ground (the second-hottest of four temperature bands, wet side). It usually borders [Chip Canyons](/biomes/chip-canyons) on the dry side, [Peel Forest](/biomes/peel-forest) where it gets cooler and [Ketchup Bog](/biomes/ketchup-bog) where it gets hotter. <small>[sim-BtJ1ZXuM.js: `e<-.22?0:e<.02?1:e<.24?2:3}(a),o<0?0:1)`]</small> Its hazard is patches of knee-deep mash that cut Tibo's walking speed to 55% while he is in them. They do no damage.
 
 The swamp's pests are slow and sturdy. [Bog Slimes](/enemies/bog-slime) and [Ketchup Drops](/enemies/ketchup-drop) open, followed by [Garden Slugs](/enemies/garden-slug) (tier 2), charging [Bog Toads](/enemies/bog-toad) (tier 3, the only pest of that tier here), [Moles](/enemies/mole) (tier 4) and [Mud Golems](/enemies/mud-golem) (tier 5, 260 base HP). Slugs, moles and golems are all tank-type pests. Gold is ×1.1 and XP ×1.05.
 
@@ -10,15 +10,15 @@ Points of interest are spread evenly. [Crop Patches](/points-of-interest#crop-pa
 
 ### Mash patches
 
-Each chunk centred in the swamp gets 3 or 4 patches, each 0.8–1.3 times the base radius of 30 (the largest hazard patches in the game); patches that would fall outside the swamp are dropped. <small>[sim-CE9PZlJN.js: `a=e.rng.int(Math.max(0,t.perChunk-1),t.perChunk)`]</small> While Tibo is inside one, his movement speed is multiplied by 1 − 0.45 = 0.55. Overlapping slow patches do not stack; the strongest one applies. <small>[sim-CE9PZlJN.js: `` r.kind===`slow`||r.kind===`chill`?b=Math.min(b,1-r.strength):Cu(e,r.strength*t,gD[r.kind],!0,ee) ``]</small> Ground hazards only affect Tibo, so pests cross the mash at full speed.
+Each chunk centred in the swamp gets 3 or 4 patches, each 0.8–1.3 times the base radius of 30 (the largest hazard patches in the game); patches that would fall outside the swamp are dropped. <small>[sim-BtJ1ZXuM.js: `a=e.rng.int(Math.max(0,t.perChunk-1),t.perChunk)`]</small> While Tibo is inside one, his movement speed is multiplied by 1 − 0.45 = 0.55. Overlapping slow patches do not stack; the strongest one applies. <small>[sim-BtJ1ZXuM.js: `` r.kind===`slow`||r.kind===`chill`?b=Math.min(b,1-r.strength):Cu(e,r.strength*t,vD[r.kind],!0,ee) ``]</small> Ground hazards only affect Tibo, so pests cross the mash at full speed.
 
-A dash covers its full distance even in the mash, because dash movement is added separately from walking speed. <small>[sim-CE9PZlJN.js: `let t=Ol(e);v+=r.dashX[i]*t`]</small>
+A dash covers its full distance even in the mash, because dash movement is added separately from walking speed. <small>[sim-BtJ1ZXuM.js: `let t=Ol(e);v+=r.dashX[i]*t`]</small>
 
 ### Pests and loot
 
 Tiers follow the wave row of two minutes earlier (three on Easy; see [Wave schedule](/bosses#wave-schedule)). On Normal, slimes and drops are most spawns until 5:00 and stop at 9:00; slugs lead from 5:00 to 8:00; Bog Toads join at 6:00 and lead from 8:00 to 11:00; Moles join at 9:00 and lead until 18:00; Mud Golems join at 16:00 and are the only wave pest from 21:00. Elites from the swamp are slugs until 5:00, toads until 10:00, Moles until 15:00 and Mud Golems after that.
 
-Pests use the table of the biome just off screen where they spawn, so the swamp's pests start appearing before Tibo crosses the border. <small>[sim-CE9PZlJN.js: `e.scratch.biomeX=n.x[r]+l*s,e.scratch.biomeY=n.y[r]+u*s`]</small> Gold and XP multipliers use the biome where the pest dies.
+Pests use the table of the biome just off screen where they spawn, so the swamp's pests start appearing before Tibo crosses the border. <small>[sim-BtJ1ZXuM.js: `e.scratch.biomeX=n.x[r]+l*s,e.scratch.biomeY=n.y[r]+u*s`]</small> Gold and XP multipliers use the biome where the pest dies.
 
 ## Tips
 

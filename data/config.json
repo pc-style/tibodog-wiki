@@ -170,6 +170,15 @@
    },
    {
     "kind": "evolution",
+    "weapon": "mash-mallet",
+    "catalyst": {
+     "kind": "passive",
+     "id": "masher-grip"
+    },
+    "result": "crater-pound"
+   },
+   {
+    "kind": "evolution",
     "weapon": "spud-dynamo",
     "catalyst": {
      "kind": "passive",
@@ -278,6 +287,15 @@
    },
    {
     "kind": "evolution",
+    "weapon": "skillet-flail",
+    "catalyst": {
+     "kind": "passive",
+     "id": "starch-plating"
+    },
+    "result": "iron-flail"
+   },
+   {
+    "kind": "evolution",
     "weapon": "chip-shuriken",
     "catalyst": {
      "kind": "passive",
@@ -365,6 +383,15 @@
      "id": "spud-sneakers"
     },
     "result": "railfry"
+   },
+   {
+    "kind": "evolution",
+    "weapon": "peel-lash",
+    "catalyst": {
+     "kind": "passive",
+     "id": "salt-shaker"
+    },
+    "result": "rind-whip"
    },
    {
     "kind": "evolution",
