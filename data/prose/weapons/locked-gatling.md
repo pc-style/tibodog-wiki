@@ -6,9 +6,9 @@ At level 1 it fires every 0.14 s during a burst; the measured bursts had 16 shot
 
 ## How it works
 
-- **Locking on.** A burst starts only if a pest is within 220 units. If none is, the gatling checks again every 0.1 s. When it locks, it stores the angle from Tibo to that pest and starts a 2 s burst. The first tot fires immediately. <small>[sim-BsDYg9eQ.js: `a.angle=x(a.lockY-r,a.lockX-n),a.lockAt=e.tick,a.left=D(t.burstSec)`]</small>
+- **Locking on.** A burst starts only if a pest is within 220 units. If none is, the gatling checks again every 0.1 s. When it locks, it stores the angle from Tibo to that pest and starts a 2 s burst. The first tot fires immediately. <small>[sim-Gq0YEAPZ.js: `a.angle=x(a.lockY-r,a.lockX-n),a.lockAt=e.tick,a.left=D(t.burstSec)`]</small>
 - **During the burst.** Tots fire at the weapon's cooldown from Tibo's current position, along the locked angle with up to ±0.03 rad of random spread. Moving Tibo moves the line of fire sideways but does not change its angle.
-- **Lanes.** Each point of amount fires one more tot per shot, so two lanes with no amount bonuses. The tots fly side by side in parallel lanes 7 units apart instead of fanning out. <small>[sim-BsDYg9eQ.js: `c=(i-.5*(r.amount-1))*n.lane`]</small>
+- **Lanes.** Each point of amount fires one more tot per shot, so two lanes with no amount bonuses. The tots fly side by side in parallel lanes 7 units apart instead of fanning out. <small>[sim-Gq0YEAPZ.js: `c=(i-.5*(r.amount-1))*n.lane`]</small>
 - The tots look like [Tot Toss](/weapons/tot-toss) shots. Their damage, speed and pierce come from this weapon.
 
 **Measured** in the headless sim (`tools/play.mjs`, build 41 `main-B2gf34bA.js`, Standard, Normal, god mode, seeds `s1`, `s2` and `s3`; the seeded starting weapon removed, the weapon given with `give`, spawning stopped after 4 s of play and the pests already on the field held at fixed spots with 10⁹ HP; Tibo standing still, facing right, with 8 pests in a line 20 to 90 units to his right): at level 1 a burst was 16 shots (each a pair of tots) about 0.13 s apart over 2 s, and a new burst began every 2.35 s; only the 2 nearest pests were hit (pierce 1). At level 8 bursts had 21 shots 0.1 s apart, every 2.35 s, and the 3 nearest pests were hit. All three seeds gave the same figures.

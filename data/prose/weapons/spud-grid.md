@@ -7,8 +7,8 @@ It clips 3 wires at once (2 plus Tibo's built-in +1 amount, see [Stats](/stats))
 ## How it works
 
 - Wires work as on [Potato Battery](/weapons/potato-battery): ordinary clipped pests are slowed by 85%, but clipping no longer protects them from death. A dead or invalid endpoint triggers another target search from Tibo, with only the wire's remaining duration; without a replacement it disappears. The wire lasts 5 s × Duration or snaps when its target is more than 200 units from Tibo, then discharges in an 18-unit radius. The 1.5 s cooldown starts only after all three wires are gone.
-- **Bosses.** Each wire first looks for the nearest unclipped boss in range, then falls back to the battery's rule: the nearest pest at least 60 units away, otherwise the farthest in range. <small>[sim-BsDYg9eQ.js: `!0===r.clipsBosses&&g<f&&!Ip(e,a)&&(f=g,d=a)`]</small>
-- A clipped boss is not pinned and can still die while wired. The zaps still apply their 0.3 s slow to it. <small>[sim-BsDYg9eQ.js: `Wl(c)||rA(e,c,r.pin[s])`]</small>
+- **Bosses.** Each wire first looks for the nearest unclipped boss in range, then falls back to the battery's rule: the nearest pest at least 60 units away, otherwise the farthest in range. <small>[sim-Gq0YEAPZ.js: `!0===r.clipsBosses&&g<f&&!Ip(e,a)&&(f=g,d=a)`]</small>
+- A clipped boss is not pinned and can still die while wired. The zaps still apply their 0.3 s slow to it. <small>[sim-Gq0YEAPZ.js: `Wl(c)||rA(e,c,r.pin[s])`]</small>
 - Each wire is 12 units wide (8 × its 1.5 Area).
 
 **Measured** in the headless sim (`tools/play.mjs`, build 41 `main-B2gf34bA.js`, Standard, Normal, god mode, seeds `s1`, `s2` and `s3`; the seeded starting weapon removed, the weapon given with `give`, spawning stopped after 4 s of play and the pests already on the field held at fixed spots with 10⁹ HP; pests held 60 to 90 units from Tibo): it clipped 3 wires at once; each lasted 6.25 s (5 s plus the base +25% duration), new wires followed 7.75 s apart, zaps came every 0.2 s for 80 and each release dealt 1,120. All three seeds gave the same figures.
