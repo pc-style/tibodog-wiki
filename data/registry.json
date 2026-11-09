@@ -359,7 +359,7 @@
    "id": "frying-pan",
    "tier": "base",
    "base": {
-    "damage": 18,
+    "damage": 24,
     "cooldown": 1.6,
     "amount": 1,
     "area": 1,
@@ -3420,7 +3420,7 @@
    "id": "frying-pan",
    "tier": "base",
    "base": {
-    "damage": 18,
+    "damage": 24,
     "cooldown": 1.6,
     "amount": 1,
     "area": 1,

@@ -50,6 +50,7 @@
     "dash": "brace",
     "braceSec": 1,
     "braceCut": 0.6,
+    "cooldownBossCap": 0.35,
     "keptWalk": 0.9
    },
    "pieces": 2
