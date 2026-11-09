@@ -1935,5 +1935,16 @@
   "updated": "2026-11-09T21:32:35Z",
   "changes": "The full Buccaneer set adds +15% global Might at strength 1, scaled by worn-set strength and added to other Might. Russet Ricochet's raw base damage rises from 34 to 76; the earlier four-weapon damage note moves into the dated journal.",
   "evidence": "Compared the complete 413→413 reachable graph against delivered176. Four non-locale roles change: sim adds only the approved Buccaneer Might entry; boot changes revision/fingerprint; start-rows changes only Russet Ricochet34→76; journal panel and26 translated journal catalogs change. Exact normalized source restoration proves every strength, sanitizer, global-Might, Bell, offer and weapon-attack consumer unchanged. Registry has exactly2 Ricochet damage occurrences, no other changes; names/icons/English unchanged. Original176/177 constructor/stat/choose paths pass36 supplied-loadout checks, Standard/Normal, seedswiki/s1/s2,0/2/3 normal-quality power0pieces,0/3 granted ButterPat levels. Full-set strength.7 adds.105 Might:1→1.105 or1.3→1.405; partial/no-set and stripped raw40%blast stay unchanged. Not a flat15% final-damage multiplier; no natural acquisition, DPS, survival or server claim. No Ricochet combat replay; historical build102 evidence remains labelled and34-unit fallback distance unchanged. Shadow2026-11-09T21-27-11-018Z-d9f290fe passes both archivedHTML/412assets each, full/panel338notes/9dates/138codes; separate actual expanded live panel agrees.37official resources bindaf9d4efce7da2584fea847ed6e97a25bd4010e50 with equal before/after index hashes; config/difficulty retain extracted fallback. Newnext buccaneer-might/k8BDrZ publication14:49:56Z is separate from observed introduction177. Unchanged hash-boomerang-damage/9W1-Jg graduates toNov9/213432a, retaining publication13:39:06Z and introduction175; all prior collapsed history/order unchanged. Original4f2c8594 archive404deadline remains separate. Sources/hashes/limits in data/journal-audit.md."
+ },
+ {
+  "seen": "2026-11-09",
+  "main": "main-_jhr3yeJ.js",
+  "boot": "boot-Bpc9aS7l.js",
+  "sim": "sim-eSpFSniv.js",
+  "commit": "40a008b34aef",
+  "status": "reviewed",
+  "updated": "2026-11-09T22:08:48Z",
+  "changes": "Existing journal notes moved into a dated release group; no gameplay or wording changes.",
+  "evidence": "Automatic unchanged next-to-dated proof against main-Cg7gqThX.js; all 413 reachable files checked, full/panel browser and official API validated. Original publication timestamps and prior introduction history retained. Proof: .cache/main-_jhr3yeJ/journal-proof.json."
  }
 ]

@@ -1049,3 +1049,13 @@ The whole reachable graph remains **413 → 413**. Sim's only normalized hunk ad
 Original module-bound build-176/177 constructor/stat/choose paths passed **36 loadout checks**, Standard/Normal, seeds `wiki/s1/s2`, zero/two/three supplied normal-quality, power-0 Buccaneer pieces, and zero or three granted Butter Pat levels. Full-set strength **0.7** adds **0.105 Might** through the newly approved path: damage multiplier **1 → 1.105** without other Might, or **1.3 → 1.405** with another +30% Might (about **8.08%** more, not 15%). The sanitizer still strips raw +40% blast damage; it is not added again. Zero/two-piece results stay equal. These are supplied-loadout controls, not naturally acquired gear, combat DPS, survival or server acceptance. Russet Ricochet's raw number imports without combat replay; the build-102 controls retain their historical labels, and its separate **34-unit** untargeted-spud distance is unchanged.
 
 Fresh import shadow **2026-11-09T21-27-11-018Z-d9f290fe** verifies archived HTML and **412 assets per side**, full journal HTML and expanded panel. New manifest archived **21:24:19.476Z**, SHA-256 **22e99b4d652fb4ce436c156e4653c86545ebb298498970452324d33fa3481ed1**. Journal source https://tibo.dog/assets/changelog-panel-DOqUPlYB.js SHA-256 **4fc76e4057333bd7e5e2b8308cb1d7a1aa4c4e13099751f2ee39f41f5b5e79bb**. Full HTML captured **21:27:15.357Z**, SHA-256 **681057ae5fc727c660666a44118b70f0f4043c4bd8f39f1496ed64f101a7dfa8**. Full/panel and a separate actual expanded live panel agree on **338 notes / nine dates / 138 codes**. All **37 official resources** bind `af9d4efce7da2584fea847ed6e97a25bd4010e50`, with matching before/after index SHA-256 **bac005cdb5d85722b1af8bfd4803611eb8a0d28d6978ab7aab93e6ebf5c41b07**; config/difficulty retain the extracted fallback. Original automatic receipt **4f2c8594** in `/tmp/tibodog-auto-flrwAu` remains a separately preserved archive-404 deadline, not relabelled by this fresh success.
+
+
+## Local journal graduation main-_jhr3yeJ.js
+
+Existing journal notes moved from next into a dated release group; no gameplay or note wording changes.
+
+- buccaneer-might (k8BDrZ): original publication 2026-11-09T14:49:56Z; now 2026-11-09/af9d4ef. Source introduction remains in prior build history.
+- iron-skillet-brace (Dw1EG2): original publication 2026-11-09T20:06:00Z; now 2026-11-09/c774a00. Source introduction remains in prior build history.
+
+Sources: https://tibo.dog/assets/changelog-panel-DOqUPlYB.js SHA-256 4fc76e4057333bd7e5e2b8308cb1d7a1aa4c4e13099751f2ee39f41f5b5e79bb; https://tibo.dog/assets/changelog-panel-BlAJ9-rc.js SHA-256 52f0433550995c4d1e47eb71687592e6dd17b27deef468b8880cca73e051ef43. Prior history SHA-256 0fbf2cdd0bd715e37dade9e464687a2541910a2360f3c25290a42aa363901976.
