@@ -4,8 +4,8 @@ Aged Russet adds damage based on levels Tibo has gained in this run, including l
 
 ## How it works
 
-- **Count gained levels, not the displayed level.** At player level 1 the bonus is zero; at level 2 it is +0.5% per passive level. The cap arrives at player level 21. <small>[sim-CPXfSfkD.js: `let t=Math.max(0,e.loadout.level-1),n=0`]</small> At passive level 2, player level 20 gives +19%, while 21 and 22 both give +20%.
-- **It adds to the damage multiplier.** This is a conditional bonus, not the zero `perLevel` value in the raw definition and not a separate ×1.5 multiplier on all other damage bonuses. <small>[sim-CPXfSfkD.js: `n+=Math.min(e.perLevel*i*t,e.capPerLevel*i)`]</small>
+- **Count gained levels, not the displayed level.** At player level 1 the bonus is zero; at level 2 it is +0.5% per passive level. The cap arrives at player level 21. <small>[sim-B2A63Zmq.js: `let t=Math.max(0,e.loadout.level-1),n=0`]</small> At passive level 2, player level 20 gives +19%, while 21 and 22 both give +20%.
+- **It adds to the damage multiplier.** This is a conditional bonus, not the zero `perLevel` value in the raw definition and not a separate ×1.5 multiplier on all other damage bonuses. <small>[sim-B2A63Zmq.js: `n+=Math.min(e.perLevel*i*t,e.capPerLevel*i)`]</small>
 
 ## Tips
 

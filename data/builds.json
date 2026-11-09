@@ -1836,5 +1836,16 @@
   "updated": "2026-11-09T07:17:47Z",
   "changes": "Existing journal notes moved into a dated release group; no gameplay or wording changes.",
   "evidence": "Automatic unchanged next-to-dated proof against main-DI7PwBmz.js; all 413 reachable files checked, full/panel browser and official API validated. Original publication timestamps and prior introduction history retained. Proof: .cache/main-DX2hK_JH/journal-proof.json."
+ },
+ {
+  "seen": "2026-11-09",
+  "main": "main-cl5j-uRS.js",
+  "boot": "boot-CUo1g6rb.js",
+  "sim": "sim-B2A63Zmq.js",
+  "commit": "ea68bf69f75d",
+  "status": "reviewed",
+  "updated": "2026-11-09T11:54:50Z",
+  "changes": "Storm Sage again limits new weapon offers to storm, adds global might and storm attack rate, and triples Static Step forks at strength 1. Julienne Dash, Potato Battery, Spud Dynamo and Starch Puddle gain 15% base damage.",
+  "evidence": "Scoped original168DX→169cl5j review, whole413→413graph: sim3normalized hunks restore three.offers:tag, approve global might.3, add tag.rate.25 and forkDamage2→3; boot revision/fingerprint plus4raw damage values. Changed late-fx-worker embeds the same4base values; normalized diff has exactly those4hunks, not an assumed rename or new rendering behavior. English StaticStep double→triple and26translated content/journal chunks; names/icons equal. 24original-engine Standard/Normal/wiki,s1,s2 controls with0/1/2/3normal-quality power0 pieces: full strength.7 pool58→8, starts preserved level3, global weapondamage1.21x, stormcooldown1/1.175, nonstormcooldown and partialsets unchanged; bans/retired/fullslots/cardcount pass. Raw damage1.4 remains stripped, not an extra2.4x. 36original orbit consumer cases isolate fork/primary2→3 at supplied rule strength1; no-rule/empty/nonstorm controls unchanged. Initial ColdFrame control had extra frost hits, retained as a fixture failure and replaced by plain nonstorm SproutSatellites. No natural acquisition,DPS,survival,serveracceptance or blanket replay. Current Modes/skill guidance repaired while dated meta/history retained. Freshshadow2026-11-09T11-48-50-811Z-3cd90fba verifies bothHTML/412assets each, complete full/panel329notes/9dates/132codes; separate actual expanded panel and37official APIresources bind full ea68bf69f75dd92e399e597d8a3ae99d65004285. New storm-sage-lock/Ofz4yX is officially Nov9/7f8d90c, no added timestamp; source introduction169 separately observed; every older collapsed group/order unchanged. Prior Cbr archive404 and monitor initial shadowfailure retained separately, no approval carryover/cause or speedup claim. Config/difficulty extractedfallback disclosed. Provenance/limits in data/journal-audit.md."
  }
 ]

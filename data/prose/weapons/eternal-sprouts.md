@@ -8,7 +8,7 @@ Six sprouts (raw amount 5 plus Tibo's base +1, see [Stats](/stats)) circle Tibo 
 
 ## How it works
 
-- **Always on.** The weapon is flagged `permanent`, so its active state is set every tick and the duration/cooldown cycle never runs. <small>[sim-CPXfSfkD.js: `` t.firedAt<0&&Qa(t.def.id)===`storm`&&(t.firedAt=e.time),t.active=1 ``]</small> That is why its definition has 0 cooldown and 0 duration. [Duration](/stats) and cooldown bonuses do nothing for it.
+- **Always on.** The weapon is flagged `permanent`, so its active state is set every tick and the duration/cooldown cycle never runs. <small>[sim-B2A63Zmq.js: `` t.firedAt<0&&Qa(t.def.id)===`storm`&&(t.firedAt=e.time),t.active=1 ``]</small> That is why its definition has 0 cooldown and 0 duration. [Duration](/stats) and cooldown bonuses do nothing for it.
 - **Ring size.** The orbit radius is `54 × √area` and each sprout's hit radius is `6 × area`. With the base area of 1.3 that is about 62 units out, with a hit radius of about 7.8. [Area](/stats) bonuses widen the ring and enlarge the sprouts.
 - **Rotation.** 4.4 radians per second, a lap about every 1.4 s. Orbit weapons get only half of the projectile speed bonus.
 - **Hit timer.** As with Sprout Satellites, the 0.35 s timer is per pest for the whole weapon. Six sprouts cover more of the ring but do not hit one pest more often: at most about 2.9 hits per second.

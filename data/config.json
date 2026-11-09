@@ -1037,7 +1037,7 @@
     "sparkEvery": 20,
     "maxSparks": 8,
     "forkReach": 80,
-    "forkDamage": 2,
+    "forkDamage": 3,
     "emptyRecharge": 0.3
    }
   },
@@ -5458,9 +5458,14 @@
     }
    },
    "three": {
+    "offers": "tag",
     "startLevels": 2,
+    "tibo": {
+     "might": 0.3
+    },
     "tag": {
-     "damage": 1.4
+     "damage": 1.4,
+     "rate": 0.25
     },
     "tradeoff": {
      "moveSpeed": -0.05

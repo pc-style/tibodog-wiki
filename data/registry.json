@@ -651,7 +651,7 @@
    "tier": "base",
    "on": "dash",
    "base": {
-    "damage": 30,
+    "damage": 34.5,
     "cooldown": 1,
     "amount": 1,
     "area": 1,
@@ -855,7 +855,7 @@
    "id": "potato-battery",
    "tier": "base",
    "base": {
-    "damage": 7,
+    "damage": 8.05,
     "cooldown": 2,
     "amount": 0,
     "area": 1,
@@ -1429,7 +1429,7 @@
    "id": "spud-dynamo",
    "tier": "base",
    "base": {
-    "damage": 12,
+    "damage": 13.8,
     "cooldown": 4.5,
     "amount": 1,
     "area": 1,
@@ -1609,7 +1609,7 @@
    "id": "starch-puddle",
    "tier": "base",
    "base": {
-    "damage": 8,
+    "damage": 9.2,
     "cooldown": 3.2,
     "amount": 1,
     "area": 1,
@@ -3579,7 +3579,7 @@
    "tier": "base",
    "on": "dash",
    "base": {
-    "damage": 30,
+    "damage": 34.5,
     "cooldown": 1,
     "amount": 1,
     "area": 1,
@@ -3783,7 +3783,7 @@
    "id": "potato-battery",
    "tier": "base",
    "base": {
-    "damage": 7,
+    "damage": 8.05,
     "cooldown": 2,
     "amount": 0,
     "area": 1,
@@ -4357,7 +4357,7 @@
    "id": "spud-dynamo",
    "tier": "base",
    "base": {
-    "damage": 12,
+    "damage": 13.8,
     "cooldown": 4.5,
     "amount": 1,
     "area": 1,
@@ -4537,7 +4537,7 @@
    "id": "starch-puddle",
    "tier": "base",
    "base": {
-    "damage": 8,
+    "damage": 9.2,
     "cooldown": 3.2,
     "amount": 1,
     "area": 1,
