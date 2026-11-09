@@ -988,8 +988,8 @@
     "gapSec": 0.75,
     "heat": 5,
     "ventReach": 64,
-    "rate": 0.5,
-    "buffSec": 4
+    "rate": 0.7,
+    "buffSec": 5
    },
    "pieces": 2
   },
@@ -1025,9 +1025,9 @@
     "size": 0.6,
     "minRadius": 14,
     "sec": 2,
-    "damage": 1.5,
+    "damage": 3,
     "cap": 40,
-    "wade": 0.2
+    "wade": 0.1
    }
   },
   {
@@ -5215,7 +5215,7 @@
    },
    "three": {
     "tag": {
-     "damage": 0.8
+     "damage": 2.4
     },
     "offTagDamage": 0.7,
     "tradeoff": {
@@ -5349,10 +5349,13 @@
     }
    },
    "three": {
+    "tibo": {
+     "might": 0.55
+    },
     "config": {
      "dashCharges": 2,
      "dashCooldownScale": 0.6,
-     "dashDistance": 72,
+     "dashDistance": 84,
      "dashMinCooldownSec": 0.6
     },
     "tradeoff": {
@@ -9460,7 +9463,8 @@
    "newPassiveWeightTotal": 1720,
    "catalystGuaranteeLevel": 4,
    "unionPartnerWeight": 16,
-   "itemCatalystWeight": 4
+   "itemCatalystWeight": 4,
+   "unseenWeaponLean": 16
   },
   "chests": {
    "chanceFive": 0.02,

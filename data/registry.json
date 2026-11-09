@@ -988,7 +988,7 @@
      "cooldown": -4.3
     }
    ],
-   "weight": 65,
+   "weight": 86,
    "behavior": {
     "kind": "nuke"
    }
@@ -1141,7 +1141,7 @@
    "id": "salt-line",
    "tier": "base",
    "base": {
-    "damage": 14,
+    "damage": 16.1,
     "cooldown": 0.2,
     "amount": 1,
     "area": 1,
@@ -1707,7 +1707,7 @@
    "id": "tater-mines",
    "tier": "base",
    "base": {
-    "damage": 36,
+    "damage": 41.4,
     "cooldown": 2.1,
     "amount": 1,
     "area": 1,
@@ -2107,7 +2107,7 @@
    "id": "seed-potato",
    "tier": "base",
    "base": {
-    "damage": 30,
+    "damage": 34.5,
     "cooldown": 0,
     "amount": 1,
     "area": 1,
@@ -2176,7 +2176,7 @@
    "id": "spud-fence",
    "tier": "base",
    "base": {
-    "damage": 20,
+    "damage": 23,
     "cooldown": 0,
     "amount": 1,
     "area": 1,
@@ -3916,7 +3916,7 @@
      "cooldown": -4.3
     }
    ],
-   "weight": 65,
+   "weight": 86,
    "behavior": {
     "kind": "nuke"
    }
@@ -4069,7 +4069,7 @@
    "id": "salt-line",
    "tier": "base",
    "base": {
-    "damage": 14,
+    "damage": 16.1,
     "cooldown": 0.2,
     "amount": 1,
     "area": 1,
@@ -4635,7 +4635,7 @@
    "id": "tater-mines",
    "tier": "base",
    "base": {
-    "damage": 36,
+    "damage": 41.4,
     "cooldown": 2.1,
     "amount": 1,
     "area": 1,
@@ -6459,7 +6459,7 @@
    "id": "seed-potato",
    "tier": "base",
    "base": {
-    "damage": 30,
+    "damage": 34.5,
     "cooldown": 0,
     "amount": 1,
     "area": 1,
@@ -6528,7 +6528,7 @@
    "id": "spud-fence",
    "tier": "base",
    "base": {
-    "damage": 20,
+    "damage": 23,
     "cooldown": 0,
     "amount": 1,
     "area": 1,

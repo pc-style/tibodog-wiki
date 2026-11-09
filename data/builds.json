@@ -1770,5 +1770,27 @@
   "updated": "2026-11-09T01:43:07Z",
   "changes": "Existing journal notes moved into a dated release group; no gameplay or wording changes.",
   "evidence": "Automatic unchanged next-to-dated proof against main-CexksMTV.js; all 413 reachable files checked, full/panel browser and official API validated. Original publication timestamps and prior introduction history retained. Proof: .cache/main-XJzust7P/journal-proof.json."
+ },
+ {
+  "seen": "2026-11-09",
+  "main": "main-C00J3RSu.js",
+  "boot": "boot-B7_B_rEU.js",
+  "sim": "sim-BBg7BUhK.js",
+  "commit": "a13ff8d26a64",
+  "status": "reviewed",
+  "updated": null,
+  "changes": "Superseded before publication; offer changes reviewed retrospectively and folded into build 164; never independently deployed. New-weapon cards prefer weapons not yet offered outside Story; Reset Button's base selection weight rose from 65 to 86.",
+  "evidence": "Source introduction of offered tracking and unseenWeaponLean16 remains163, not the journal publication date or164 delivery. Complete413to413graph: sim9normalized hunks add tracking/weighting and presentation consumers; intro adds lean16; run-drops fingerprints offered IDs; endgame-sim records presented Transmute targets; boot and actual late-fx worker change Reset Button weight65to86, wrapper has no normalized logic difference;27journal catalogs add offer-floor-lift/4ebRJu, publication2026-11-08T13:03:15Z, next. Original162toC00 controls12Standard/Story cases plus6Crossroads/fingerprint cases pass; current-source assessment againstD6 finds no further offer/consumer logic changes, and separate162toD6 controls rerun all18cases. Complete C00 shadow2026-11-09T03-06-43-532Z-39af822a and fresh D6 shadow2026-11-09T03-40-17-617Z-d90fe705 verify both sides' archived HTML/all412assets plus complete journals; D6 actual panel327notes/8dates/129codes and official API agree. Review completed retrospectively only after fresh current proof; no independent C00 deployment, no fabricated delivery timestamp. C00 worker383f6466 remains BLOCKED due supersession; failed archive recovery/proofs remain separate. Details and limits: data/journal-audit.md."
+ },
+ {
+  "seen": "2026-11-09",
+  "main": "main-D6h1Kpri.js",
+  "boot": "boot-w2d7KRJ2.js",
+  "sim": "sim-B9kXbCmK.js",
+  "commit": "fb867e6ca262",
+  "status": "reviewed",
+  "updated": "2026-11-09T03:42:15Z",
+  "changes": "Mech Pilot gains full-set might, farther dashes and a stronger, longer Overdrive burst. Bog Witch's spawned bogs hit harder and slow Tibo less; four base weapons gain damage. Includes build 163's preference for new weapons not yet offered.",
+  "evidence": "Complete413to413graph vsC00:27journal catalogs,sim6normalized gear/data/description hunks,boot revision plus4base-damage changes,actual late-fx worker repeats4values;title-gear-parts0normalized hunks. Names unchanged/icons pixel-identical. Numeric base damage imported and official-catalog validated: SaltLine16.1,TaterMines41.4,SeedPotato34.5,SpudFence23; additive level gains unchanged.36original-engine C00toD6 gear cases: Standard/Normal,wiki/s1/s2,2/3supplied normal-quality power0pieces,no affixes,original optional rules. Strength0.7 Mech full-set might1to1.385,dash64.8to73.2,buff240to300ticks,cooldown ratio1/1.35to1/1.49;two-piece effective might/dash unchanged,SpaceFarmer control1.35 unchanged;description exposes Mech0.55/SpaceFarmer0.5. Supplied17damage pool spawns22.95to40.8damage bogs,chaining preserves damage,inside walk0.8to0.9/outside1;Bog requires3pieces. Raw Bog tag.damage0.8to2.4 remains stripped by active setRules,not an extra3.4x multiplier. No natural acquisition,DPS/survival/server acceptance claim. Preserved C00 controls are not silently reused: source inspection isolates6new gear hunks,unchanged offer consumers assessed,then18original162toD6offer/Crossroads cases rerun separately. Fresh complete shadow2026-11-09T03-40-17-617Z-d90fe705 verifies both archived HTML/all412assets,wholegraph/full-panel327notes/8dates/129codes;actual live panel and37official catalog/locale resources agree withfb867e6ca262. Journal notes mech-pilot-full-set/qfRiAi and bog-witch-buffs/Ya9vrY retain Nov9 publication02:10:25Z/02:14:05Z,next grouping,source introduction164. Initial shadow aborted before receipt on git diff ENOBUFS at1.1MiB;failed import/binding unavailable/empty directory retained. Earlier pass statement misselected an older receipt and was corrected; clean local checkpoint enabled unchanged proof tool. Scratch failures and corrected results retained; no tooling/readiness/acceptance changes. Provenance and limits: data/journal-audit.md."
  }
 ]
