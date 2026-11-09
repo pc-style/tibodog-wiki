@@ -1759,5 +1759,16 @@
   "updated": "2026-11-09T00:54:31Z",
   "changes": "A full Storm Sage set can offer new weapons from every class, rather than restricting them to storm and universal weapons. Storm-matched starts, two extra starting levels and Static Step remain; individual offers are not guaranteed.",
   "evidence": "Complete413to413graph: 26 journal translations plus English panel add storm-sage-offers/teHLIC; sim's sole substantive hunk removes three.offers=tag; boot changes only revision/fingerprint. Registry, names, all other config and icon pixels unchanged. Original old/new engine equal-input Normal/Standard controls: 0/1/2/3 supplied normal-tier normal-quality power0 gear pieces, seeds wiki/s1/s2 (24 cases), original optional rules installed. Full-set initial new-weapon pool8to58, all classes; below threshold pools/draws unchanged; same storm starts at level3 and aggregate bonuses; banished/retired/full-slot exclusions pass; sampled nonstorm draws accepted by original Game.choose. Poteto's configured new-weapon list returns to default without the offer tag. No natural acquisition, survival, server acceptance or draw-probability claim. Dated99-run playing guidance retained unchanged. Fresh shadow2026-11-09T00-45-28-393Z-02a49168 verifies both archived HTML/all412assets per side; revision-bound full/panel324ordered notes/8dates/128codes and separate actual live panel agree. Official catalogs/all locales bind6e71c5d592ef. New journal publication2026-11-08T10:34:52Z, next grouping and source introduction161 remain distinct. Original typed404/deadline exhaustion and later completed archive proof preserved separately; no readiness/tooling/acceptance changes. Provenance and limits: data/journal-audit.md."
+ },
+ {
+  "seen": "2026-11-09",
+  "main": "main-XJzust7P.js",
+  "boot": "boot-B5pkqG5-.js",
+  "sim": "sim-DDrvxPQy.js",
+  "commit": "7b03fed782ca",
+  "status": "reviewed",
+  "updated": "2026-11-09T01:43:07Z",
+  "changes": "Existing journal notes moved into a dated release group; no gameplay or wording changes.",
+  "evidence": "Automatic unchanged next-to-dated proof against main-CexksMTV.js; all 413 reachable files checked, full/panel browser and official API validated. Original publication timestamps and prior introduction history retained. Proof: .cache/main-XJzust7P/journal-proof.json."
  }
 ]

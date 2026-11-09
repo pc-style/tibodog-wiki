@@ -4,7 +4,7 @@ The Aphid is a tier-1 pest of [Potato Field](/biomes/potato-field), [Peel Forest
 
 It has no attack of its own: it walks straight at Tibo and hurts only by touching. With 6 base HP it is tied with the [Crumb Ant](/enemies/crumb-ant) as the most fragile pest in the game, and at speed 42 it is one of the quicker tier-1 pests (only the Crumb Ant and the [Parking Lot Gull](/enemies/parking-gull) are faster). A kill gives 1 XP and a 3% chance of a coin.
 
-[Elites](/bosses#elites) are drawn from tier 2 and up, with one exception that can make an elite Aphid. Crop Circle's only tier-2 pest is the shooting [Spittlebug](/enemies/spittlebug), and when the shooter cap is full (2 shooters before 3:00, 4 before 6:00) the pick falls back to the tier below. <small>[sim-BZUQNEDf.js: `if(Uh[i]===0||qh(e)<Kh(e))return i`]</small>
+[Elites](/bosses#elites) are drawn from tier 2 and up, with one exception that can make an elite Aphid. Crop Circle's only tier-2 pest is the shooting [Spittlebug](/enemies/spittlebug), and when the shooter cap is full (2 shooters before 3:00, 4 before 6:00) the pick falls back to the tier below. <small>[sim-DDrvxPQy.js: `if(Uh[i]===0||qh(e)<Kh(e))return i`]</small>
 
 ## Tips
 

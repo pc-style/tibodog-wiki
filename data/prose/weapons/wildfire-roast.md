@@ -6,7 +6,7 @@ The change is reach. Each flame adds 48% to the slash radius instead of 24%. Wit
 
 ## How it works
 
-Flames, hits and slashes work as described on [Hot Streak](/weapons/hot-streak#how-it-works). The radius is 34 × area × (1 + 0.48 × flames). <small>[sim-BZUQNEDf.js: `return t.size*n.area*(1+t.streak.area*r)`]</small> Dodged hits and hits that a shield soaks fully do not cost flames.
+Flames, hits and slashes work as described on [Hot Streak](/weapons/hot-streak#how-it-works). The radius is 34 × area × (1 + 0.48 × flames). <small>[sim-DDrvxPQy.js: `return t.size*n.area*(1+t.streak.area*r)`]</small> Dodged hits and hits that a shield soaks fully do not cost flames.
 
 **Measured** in the headless sim (`tools/play.mjs`, build 41 `main-B2gf34bA.js`, Standard, Normal, god mode, seeds `s1`, `s2` and `s3`; the seeded starting weapon removed, the weapon given with `give`, spawning stopped after 4 s of play and the pests already on the field held at fixed spots with 10⁹ HP; Tibo walking right the whole time, with pests held at fixed distances to his right): with no flames it reached the pest at 45 units and fired once per second; with five flames it fired every 0.45 s and reached the pest at 140 units but not the one at 145. All three seeds gave the same figures.
 

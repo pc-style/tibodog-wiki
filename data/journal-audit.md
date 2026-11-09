@@ -881,3 +881,12 @@ Original-engine controls use the old and new modules with export-only sibling in
 Fresh shadow **2026-11-09T00-45-28-393Z-02a49168** verifies archived HTML and all **412 assets per side**. New manifest SHA-256 `0299b93c8b8b1ed9e4a7b316df7041105c6d262a02ef50b36aefd99431882406`, archived **00:38:19.441Z**. Journal source https://tibo.dog/assets/changelog-panel-gMtlGWxv.js SHA-256 `d1e3f16419341e73adc57898db47af5fa9a3e87644e90a00725105c3140fe4a8`. Revision-bound full journal captured **00:45:32.644Z**, HTML SHA-256 `833cc09ff64fdb4d0dc860f75aa35f9f0023bb25d96c92c657b769d301d5ce76`. Full/panel captures and a separate actual live panel agree on **324 ordered notes, eight dates and 128 codes**; first-party catalogs and all listed locales validate against this game revision.
 
 The earlier automatic import **c724d835-cd8c-452a-ad97-76d1ea62bce9** stopped safely after typed new-manifest HTTP404, eleven subsequent 404 polls and **180008 ms** recovery. Its deadline expired **00:37:46.663Z**; the archive completed **32.778 seconds later**. The exact asset, crawl limit or caught failure responsible remains unavailable. Existing source confirms notification precedes incremental archive completion, not a timer defect. The read-only dependency diagnostic and original failed attempt remain distinct from the later fresh normal attempt and this semantic review. Later successful proof does not erase earlier failure; no timer, classifier, acceptance, provenance or publishing gate was changed.
+
+
+## Local journal graduation main-XJzust7P.js
+
+Existing journal notes moved from next into a dated release group; no gameplay or note wording changes.
+
+- storm-sage-offers (teHLIC): original publication 2026-11-08T10:34:52Z; now 2026-11-08/6e71c5d. Source introduction remains in prior build history.
+
+Sources: https://tibo.dog/assets/changelog-panel-gMtlGWxv.js SHA-256 d1e3f16419341e73adc57898db47af5fa9a3e87644e90a00725105c3140fe4a8; https://tibo.dog/assets/changelog-panel-C1Dun20M.js SHA-256 a7fb177183b274696a3a958d074334490d0efbf919f8e9573526a976cb46b4de. Prior history SHA-256 c3e517a49d1edcf9c15749bbfc432d78b48559a2479e51c5d0611d7dba8c9717.
