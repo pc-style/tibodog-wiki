@@ -6,7 +6,7 @@ Fry Knives has a base offer weight of 100, shared with [Tater Mines](/weapons/ta
 
 ## How it works
 
-- **Direction**: knives follow Tibo's facing, which is updated whenever he moves and kept when he stops. The first knife of a volley gets a random spread of ±`spread` (0.08 rad); later knives get twice that. <small>[sim-BwchEhls.js: `Ik(e)+e.rng.range(-n.spread,n.spread)*(i>0?2:1)`]</small> Each knife also starts up to 4 units to the side of Tibo, so a volley forms a narrow stream.
+- **Direction**: knives follow Tibo's facing, which is updated whenever he moves and kept when he stops. The first knife of a volley gets a random spread of ±`spread` (0.08 rad); later knives get twice that. <small>[sim-DZHQsQUT.js: `Ik(e)+e.rng.range(-n.spread,n.spread)*(i>0?2:1)`]</small> Each knife also starts up to 4 units to the side of Tibo, so a volley forms a narrow stream.
 - **Always fires**: facing-shot weapons do not wait for a target in range.
 - **Pierce**: a knife with pierce N hits N + 1 pests.
 - **Range**: with speed 260 and duration 1.2 s (times Tibo's duration stat, base +25%), a knife travels about 390 units before disappearing (see [Stats](/stats)).
