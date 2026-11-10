@@ -159,28 +159,37 @@ test('headless runs install the original optional combat rules', () => {
   }
 });
 
-test('dump includes content registered by the lazy endgame loader', () => {
+for (const owner of ['boot', 'sim']) test(`dump includes lazy endgame content owned by ${owner}`, () => {
   const root = mkdtempSync(join(tmpdir(), 'wiki-endgame-'));
   try {
     writeFileSync(join(root, 'package.json'), '{"type":"module"}');
     writeFileSync(join(root, 'content.js'), 'export default {"content.boss.late.name":["Late"]}');
     writeFileSync(join(root, 'catalog.json'), JSON.stringify({ id: 'late', hp: 24000 }));
-    writeFileSync(join(root, 'boot.js'), `
+    const boot = `
       const registry={weapon:()=>{},allWeapons:[],enemies:[],bosses:[],bossOrder:[]};
       export default registry;
+    `;
+    const load = `
       export function register(){const e={beforeSim:true};e.beforeSim&&true}
       class Loader{want(){this.chunks.slot(async()=>{
         const reply=await fetch(new URL('./catalog.json',import.meta.url));
         const boss=JSON.parse(new TextDecoder().decode(await reply.arrayBuffer()));
-        registry.bosses.push(boss);registry.bossOrder.push(boss);
+        registry.bosses.push(boss);registry.bossOrder.push(boss);registry.enemies.push({id:'late-enemy',hp:70});
       }).want()}constructor(e){this.chunks=e.chunks}}
       export function load(q){return new Loader({chunks:q.chunks,view:new Object})}
+    `;
+    writeFileSync(join(root, 'boot.js'), boot + (owner === 'boot' ? load : ''));
+    writeFileSync(join(root, 'sim.js'), `
+      const a={alive:1,floorShare:0,shotPuddleSec:1},b={easy:{...a,alive:.8}};
+      ${owner === 'sim' ? `import registry from './boot.js';${load}
+        export default {runHooks(e){register();const loader=load({chunks:e.chunks});return {endgameHolds(state){if(state.bigUpdate.endgameHunt)loader.want();return !state.endgameLive.built}}}};
+      ` : 'export default {}'}
     `);
-    writeFileSync(join(root, 'sim.js'), 'const a={alive:1,floorShare:0,shotPuddleSec:1},b={easy:{...a,alive:.8}};export default {}');
     execFileSync(process.execPath, [new URL('./dump-build.mjs', import.meta.url).pathname, root, 'boot.js', 'sim.js', 'content.js', join(root, 'out')]);
     const registry = JSON.parse(readFileSync(join(root, 'out', 'registry.json')));
     assert.deepEqual(registry.bosses, [{ id: 'late', hp: 24000 }]);
     assert.deepEqual(registry.bossOrder, registry.bosses);
+    assert.deepEqual(registry.enemies, [{ id: 'late-enemy', hp: 70 }]);
   } finally {
     rmSync(root, { recursive: true, force: true });
   }

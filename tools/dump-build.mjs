@@ -18,7 +18,7 @@ for (const k of ['window', 'document', 'navigator', 'localStorage', 'sessionStor
 const sim = await import(`${dir}/${simF}`);
 const boot = await import(`${dir}/${bootF}`);
 const content = await import(`${dir}/${contentF}`);
-await loadEndgame(boot);
+await loadEndgame(boot, sim);
 
 const seen = new WeakSet();
 const ser = (v, d, max) => {

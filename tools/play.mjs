@@ -33,7 +33,7 @@ export async function loadGame(main = JSON.parse(readFileSync(join(ROOT, 'data/b
   const file = (re) => readdirSync(dir).find((f) => re.test(f));
   const sim = await import(pathToFileURL(join(dir, file(/^sim-[A-Za-z0-9_-]{8}\.js$/))).href);
   const boot = await import(pathToFileURL(join(dir, file(/^boot-[A-Za-z0-9_-]{8}\.js$/))).href);
-  await loadEndgame(boot);
+  await loadEndgame(boot, sim);
   const extrasFile = file(/^run-rules-[A-Za-z0-9_-]{8}\.js$/) ?? file(/^run-extras-[A-Za-z0-9_-]{8}\.js$/);
   const extras = extrasFile ? Object.values(await import(pathToFileURL(join(dir, extrasFile)).href)).find((v) => v?.rules && v?.areas) : undefined;
   const Game = Object.values(sim).find((v) => v && typeof v === 'object' && typeof v.Game === 'function')?.Game;
