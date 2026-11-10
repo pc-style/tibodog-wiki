@@ -2045,5 +2045,16 @@
   "updated": "2026-11-10T18:41:19Z",
   "changes": "Outside Nightmare, ordinary chest weapon evolutions open in stages and ahead-of-pace builds get chest gold. Catalysts appear earlier and late levels need less XP. Single-choice level-ups and Whetstones apply automatically; empty Microwaves explain why.",
   "evidence": "Compared with reviewed186: complete reachable graph416→415; recipe-status moves into sim. Registry, English content, names and icon pixels unchanged. Sim26hunks cover staged weapon evolution gates, recipe priority, chest budget, automatic identical offers/Whetstone and empty Microwave notice; intro config adds spreadBuild/catalystGuaranteeLag/xpExponentRaise. Deferred UI and run-records use recipe-specific ready/opening times; run-extras moves helpers and adds notice handling. Boot revision/fingerprint/dependency changes; remaining changed roles reviewed as import, preload, normalization or journal changes, not blanket gameplay claims.816 original old/current config/consumer cases use supplied seeds wiki/s1/s2, loadouts, history, clocks and some fractional budget totals: before/at/after gate and budget boundaries, repeated recipes, unions, item evolution and poteto exceptions, difficulty/Story configuration, catalyst offers, identical/distinct/empty offers, Whetstones and empty/nonempty Microwaves. General gate0 remains; ordinary weapon gates0/360/600/840/1020/1080 index recorded weapon evolutions, not unions/items. Budget includes current base levels,8 per evolved/union weapon,passive levels;20 before240s,linear20→78 until1080s,then ends. Nightmare disables both arrays and keeps exponent2.5/catalyst4; other Standard difficulties use2.49/1, Story2.49/6. Poteto gift bypasses staged gates. No natural acquisition/pacing,survival,DPS or server claims. Initial scratch duplicate-module and wrong catalyst fixture failures retained, corrected before816-case pass. Fourteen unresolved citation groups repaired at current source owners, including actual weapon dimensions/volley/recharge matches; moved save-code quotes follow BIoFfI4G. Two new next journal notes preserve original publications build-pacing01:12:05Z and microwave-notice02:27:22Z separately from source introduction187 and grouping. Complete archives415old/414new; full and separate actual expanded live panel344notes/10dates/144codes, all older order unchanged.37 official resources bind full68ee510665c82bc617554ac2dea96660930d31c2 with identical before/after index hash; config/difficulty extracted fallback. Provenance and measurement limitations in data/journal-audit.md."
+ },
+ {
+  "seen": "2026-11-10",
+  "main": "main-BQbtTmXt.js",
+  "boot": "boot-DfI3XwLt.js",
+  "sim": "sim-CVTo8bBU.js",
+  "commit": "a1571a921b7a",
+  "status": "reviewed",
+  "updated": "2026-11-10T19:30:46Z",
+  "changes": "Existing journal notes moved into a dated release group; no gameplay or wording changes.",
+  "evidence": "Automatic unchanged next-to-dated proof against main-BqrcdfZ7.js; all 415 reachable files checked, full/panel browser and official API validated. Original publication timestamps and prior introduction history retained. Proof: .cache/main-BQbtTmXt/journal-proof.json."
  }
 ]

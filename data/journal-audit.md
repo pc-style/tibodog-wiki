@@ -1153,3 +1153,13 @@ Worker shadow **2026-11-10T18-22-19-009Z-e2382e42** is COMPLETE with **415 old /
 Current source anchors: https://tibo.dog/assets/sim-BI7WLnza.js SHA-256 **8a63a3875ed2627f29c05612e59b0f46d929f303507d116277ae8e127dc38bb5**, https://tibo.dog/assets/intro-shared-B3jO0fBs.js **3c460b51db12199a70fe3777a97605f27d0782c4fd48c569f7f992484925ba61**, https://tibo.dog/assets/boot-BRrHX4zt.js **9c0e7a0ce18c8bfd86f989a97c233ffb23f64b57c537f89e1ceb973afd354853**, https://tibo.dog/assets/deferred-ui-D-z4zKN6.js **b0cd0a7d048326daa6f058a83388ab509870da15b61e7842a12432154222626d**.
 
 **Measurement caveat:** the existing collector can lose tracked-diff binding when the large imported citation diff exceeds its process buffer. Original unavailable bindings and failed scratch stages are retained, not rewritten into success. Clean postcommit revision-bound gates and delivery evidence remain separately measurable; elapsed review wall time is not active inference time or estimated token cost. The unrelated collector repair is not part of this update.
+
+
+## Local journal graduation main-BQbtTmXt.js
+
+Existing journal notes moved from next into a dated release group; no gameplay or note wording changes.
+
+- build-pacing (sH4xPs): original publication 2026-11-10T01:12:05Z; now 2026-11-10/68ee510. Source introduction remains in prior build history.
+- microwave-notice (6Fk4ry): original publication 2026-11-10T02:27:22Z; now 2026-11-10/68ee510. Source introduction remains in prior build history.
+
+Sources: https://tibo.dog/assets/changelog-panel-970rksAE.js SHA-256 74014500e57824c605dec1c2f6360aca592282663f1adf526267ca4bbd00bc26; https://tibo.dog/assets/changelog-panel-RL37a7a7.js SHA-256 9659d787a0e1dd42c846cf4339b44ebe3fee0f5ad23d56e36ca9fb5df19ac5a9. Prior history SHA-256 a4503151d880418b3f657c5df4d8737d4d18292c3b576ec98b85f30cee0dff58.

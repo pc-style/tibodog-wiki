@@ -8,8 +8,8 @@ With no flames the slash covers a radius of 34 and fires once per second. With f
 
 - **Lighting flames.** A flame is added after each full second in which Tibo moves and is not hurt. Stopping or being hurt restarts that second.
 - **Stopping.** Any tick in which Tibo is not moving puts out every flame.
-- **Getting hit.** Each hit removes two flames. Only hits that deal damage count. A dodged hit (from evasion) returns before the hit is counted, so it costs no flames. <small>[sim-BI7WLnza.js: `!r&&s.evasion>0&&e.rng.chance(s.evasion)`]</small> The same is true of a hit that [Hash Brown Shield](/weapons/hash-brown-shield) soaks fully. Damage from ground hazards is applied without the hit bookkeeping, so it does not put out flames either.
-- **Size and speed.** The radius is 34 × area × (1 + 0.24 × flames), and the time between slashes is 1 s × cooldown multiplier ÷ (1 + 0.24 × flames). <small>[sim-BI7WLnza.js: `return t.size*n.area*(1+t.streak.area*r)`]</small> <small>[sim-BI7WLnza.js: `t.cd=o(n.hitInterval*e.loadout.stats.cooldownMult/f)`]</small>
+- **Getting hit.** Each hit removes two flames. Only hits that deal damage count. A dodged hit (from evasion) returns before the hit is counted, so it costs no flames. <small>[sim-CVTo8bBU.js: `!r&&s.evasion>0&&e.rng.chance(s.evasion)`]</small> The same is true of a hit that [Hash Brown Shield](/weapons/hash-brown-shield) soaks fully. Damage from ground hazards is applied without the hit bookkeeping, so it does not put out flames either.
+- **Size and speed.** The radius is 34 × area × (1 + 0.24 × flames), and the time between slashes is 1 s × cooldown multiplier ÷ (1 + 0.24 × flames). <small>[sim-CVTo8bBU.js: `return t.size*n.area*(1+t.streak.area*r)`]</small> <small>[sim-CVTo8bBU.js: `t.cd=o(n.hitInterval*e.loadout.stats.cooldownMult/f)`]</small>
 - **No target, no slash.** If no pest is inside the circle the slash waits and the timer does not restart. The next slash fires as soon as a pest enters.
 - Amount, speed, duration and pierce have no effect on this weapon.
 
