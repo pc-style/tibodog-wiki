@@ -2056,5 +2056,16 @@
   "updated": "2026-11-10T19:30:46Z",
   "changes": "Existing journal notes moved into a dated release group; no gameplay or wording changes.",
   "evidence": "Automatic unchanged next-to-dated proof against main-BqrcdfZ7.js; all 415 reachable files checked, full/panel browser and official API validated. Original publication timestamps and prior introduction history retained. Proof: .cache/main-BQbtTmXt/journal-proof.json."
+ },
+ {
+  "seen": "2026-11-10",
+  "main": "main-BLsoXtOf.js",
+  "boot": "boot-OirYvoLR.js",
+  "sim": "sim-C5oejjzh.js",
+  "commit": "11ff8a983aa5",
+  "status": "reviewed",
+  "updated": "2026-11-10T21:33:00Z",
+  "changes": "Tibo's hit blink is dark with a bright rim. Weapon evolutions and unions get their own light, sound and shake cue; scenery is muted and large XP gems are purple by default. Gameplay values and recipes are unchanged.",
+  "evidence": "Reviewed against build 188/main-BQbtTmXt.js, not build 187. Whole graph 415→416; complete sim body is equal after asset-filename normalization (521,744 UTF-8 bytes); its retry dependencies change. Registry, difficulty values, English entity text, names and cropped icons unchanged. Reviewed scene/terrain/shader/rim/unbloomed paths, evolution lifecycle/timeline, main/boot, derived helpers, atlas art/tables and endgame frames, late-FX layer/clips/actual worker, actual chip worklet and separate URL wrappers, HD-2D, gear/Daily/endgame roles and journal translations. 80 original-code controls cover pending choices/ticks, evolution/union/coalescing, audio, one-shot shake/expiry, timeline/settings boundaries, old/current hit windows and color-vision exception. Archived original game rendered supplied evolution/hit and flashing-off/reduced-motion states in Chromium/SwiftShader; no natural visibility/performance/GPU/battery or server claim. Controls and Pickups explain effects and default-purple versus tritanopia-red gems. One ambiguous Modes quote repaired at actual beam map; moved save-code quotes follow current owner. Complete archive/full/panel/official API proof plus separate actual expanded live journal match 347 notes/ten dates/145 codes, preserving older display order. Three next notes retain original Nov10 publication clocks separate from source introduction in this build and prior build-188 grouping. Full source hashes/provenance and retained monitor archive/socket failures are in data/journal-audit.md. Scratch fixture/browser failures and any unavailable large-diff measurement bindings remain truthful; no unrelated collector fix."
  }
 ]

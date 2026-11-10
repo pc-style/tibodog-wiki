@@ -6734,7 +6734,8 @@
   "hazardTick",
   "iaiDraw",
   "sheathe",
-  "slice"
+  "slice",
+  "evolution"
  ],
  "boot.Ro": {
   "throwSec": 0.25,
@@ -7090,6 +7091,10 @@
    "hear": "[fn]",
    "frame": "[fn]",
    "strike": "[fn]"
+  },
+  "evolution": {
+   "current": null,
+   "frame": "[fn]"
   }
  },
  "boot.tr": [
@@ -7373,6 +7378,7 @@
    "jackpot": 0.6,
    "triple": 0.3,
    "bossDefeated": 0.8,
+   "evolution": 0.55,
    "landmarkArrival": {
     "strike": 0.55
    },
