@@ -6,7 +6,7 @@ Its raw definition has 36 damage, a 1.6 s cooldown, Amount 2 and Area 1.2. It tr
 
 ## How it works
 
-Mash Crater uses the same targeting and impact consumer as Mash Mallet, with a 72-unit initial search and radius 20 × modified Area. At its raw Area 1.2 that is radius 24 before Tibo's Area bonuses. Each pound selects a different primary target within reach; nearby pests can also be caught in the impact. Raw Amount 2 becomes 3 with Tibo's ordinary +1, rather than a fixed two-hit cap. <small>[sim-CLUJ3aah.js: `let i=nu(e),a=n.size*r.area;for(let o=0;o<r.amount;o++){let o=$l(e,n.range,i);if(o===void 0)return;tu(e,o,i)`]</small>
+Mash Crater uses the same targeting and impact consumer as Mash Mallet, with a 72-unit initial search and radius 20 × modified Area. At its raw Area 1.2 that is radius 24 before Tibo's Area bonuses. Each pound selects a different primary target within reach; nearby pests can also be caught in the impact. Raw Amount 2 becomes 3 with Tibo's ordinary +1, rather than a fixed two-hit cap. <small>[sim-DgGsJ7U5.js: `let i=nu(e),a=n.size*r.area;for(let o=0;o<r.amount;o++){let o=$l(e,n.range,i);if(o===void 0)return;tu(e,o,i)`]</small>
 
 **Controlled checks:** original `main-CAVio-MR.js`, Standard/Normal, seeds `wiki`, `s1`, `s2`, granted weapon, fixed separated high-HP pests and supplied Amount 1/2: one/two primary targets were hit, with the out-of-range control untouched. Chest controls evolved level-8 Mash Mallet with Masher Grip, but not level 7 or a missing catalyst. These are forced-state consumer and recipe checks, not natural acquisition, practical DPS or survival measurements.
 

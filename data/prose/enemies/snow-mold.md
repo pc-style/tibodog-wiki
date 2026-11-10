@@ -6,7 +6,7 @@ It walks straight at Tibo at speed 30 and has 22 HP and 6 contact damage, ordina
 
 ## How it works
 
-When a Snow Mold dies, two copies of it appear in a small ring around the spot, pushed outward. Each copy has 35% of the parent's maximum HP, 70% of its size and 1 XP, and keeps the parent's damage and speed scaling. Copies cannot split again. <small>[sim-CLUJ3aah.js: `e.scratch.hp=n.maxHp[t]/a.hp*(s?.35:1)`]</small> <small>[sim-CLUJ3aah.js: `s&&(n.set(f,b.NoSplit),n.radius[f]=.7*n.radius[f],n.xp[f]=Math.max(1,Math.floor(a.xp/2)))`]</small>
+When a Snow Mold dies, two copies of it appear in a small ring around the spot, pushed outward. Each copy has 35% of the parent's maximum HP, 70% of its size and 1 XP, and keeps the parent's damage and speed scaling. Copies cannot split again. <small>[sim-DgGsJ7U5.js: `e.scratch.hp=n.maxHp[t]/a.hp*(s?.35:1)`]</small> <small>[sim-DgGsJ7U5.js: `s&&(n.set(f,b.NoSplit),n.radius[f]=.7*n.radius[f],n.xp[f]=Math.max(1,Math.floor(a.xp/2)))`]</small>
 
 At base stats that is two 7.7-HP pieces, so the whole mold takes 22 + 15.4 = 37.4 damage to clear. An **elite** Snow Mold (tier 2 is the elite tier from 1:00 to 4:59) splits into ordinary pieces: 35% of a normal pest's HP at that time, not 35% of the elite's.
 
