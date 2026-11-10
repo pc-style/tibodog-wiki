@@ -1,365 +1,14 @@
 {
- "sim.Aa": {
-  "hand": 0,
-  "flying": 1,
-  "planted": 2,
-  "spent": 3
+ "sim.Ao": {
+  "shape": "tall",
+  "color": "#d7b46a",
+  "sprite": "sir-strawman"
  },
- "sim.Ba": [
-  "enemy:aphid",
-  "enemy:beetle-brood",
-  "enemy:blight-spore",
-  "enemy:bog-slime",
-  "enemy:bog-toad",
-  "enemy:bowling-ball",
-  "enemy:bowling-pin",
-  "enemy:cave-grub",
-  "enemy:compost-maggot",
-  "enemy:crumb-ant",
-  "enemy:dumpster-raccoon",
-  "enemy:field-crow",
-  "enemy:field-rat",
-  "enemy:frost-flea",
-  "enemy:fry-fly",
-  "enemy:garden-slug",
-  "enemy:golden-scarab",
-  "enemy:grease-fiend",
-  "enemy:gull-flock",
-  "enemy:harvest-mouse",
-  "enemy:hay-bale",
-  "enemy:ice-imp",
-  "enemy:ketchup-drop",
-  "enemy:lint-bunny",
-  "enemy:little-grey",
-  "enemy:lost-saucer",
-  "enemy:maggot-swarm",
-  "enemy:mole",
-  "enemy:mud-golem",
-  "enemy:oil-drip",
-  "enemy:parking-gull",
-  "enemy:potato-beetle",
-  "enemy:reset-zombie",
-  "enemy:sand-crab",
-  "enemy:sizzle-imp",
-  "enemy:snow-mold",
-  "enemy:sock-pile",
-  "enemy:spittlebug",
-  "enemy:sprout-mite",
-  "enemy:swarm-fly",
-  "enemy:tomato-leech",
-  "enemy:wireworm-larva",
-  "enemy:alley-raccoon",
-  "enemy:crow-elder",
-  "enemy:hunt-crow",
-  "enemy:pack-rat",
-  "enemy:raccoon-boss",
-  "enemy:rat-chief",
-  "enemy:stag-beetle",
-  "enemy:barnacle-troll",
-  "enemy:basilisk",
-  "enemy:coral-golem",
-  "enemy:dune-manticore",
-  "enemy:jelly-wraith",
-  "enemy:mangrove-treant",
-  "enemy:queen-herald",
-  "enemy:queen-seer",
-  "enemy:queen-warden",
-  "enemy:sea-serpent",
-  "enemy:siren-harpy",
-  "enemy:armoured-barnacle-troll",
-  "enemy:armoured-basilisk",
-  "enemy:armoured-coral-golem",
-  "enemy:armoured-dune-manticore",
-  "enemy:armoured-jelly-wraith",
-  "enemy:armoured-mangrove-treant",
-  "enemy:armoured-sea-serpent",
-  "enemy:armoured-siren-harpy",
-  "enemy:fuse-totem"
- ],
- "sim.Ca": [
-  {
-   "id": "bog-witch",
-   "tag": "zone",
-   "pieces": [
-    {
-     "slot": "hat",
-     "id": "bog-witch-hat"
-    },
-    {
-     "slot": "chest",
-     "id": "bog-witch-chest"
-    },
-    {
-     "slot": "legs",
-     "id": "bog-witch-legs"
-    }
-   ],
-   "two": {
-    "tag": {
-     "duration": 0.4,
-     "area": 0.15
-    }
-   },
-   "three": {
-    "tag": {
-     "damage": 0.8
-    },
-    "offTagDamage": 0.7,
-    "tradeoff": {
-     "moveSpeed": -0.1
-    }
-   }
-  },
-  {
-   "id": "buccaneer",
-   "tag": "blast",
-   "pieces": [
-    {
-     "slot": "hat",
-     "id": "buccaneer-hat"
-    },
-    {
-     "slot": "chest",
-     "id": "buccaneer-chest"
-    },
-    {
-     "slot": "boots",
-     "id": "buccaneer-boots"
-    }
-   ],
-   "two": {
-    "tag": {
-     "area": 0.25
-    }
-   },
-   "three": {
-    "offers": "tag",
-    "startLevels": 1,
-    "tag": {
-     "damage": 0.4
-    },
-    "tradeoff": {
-     "maxHpPct": -0.1
-    }
-   }
-  },
-  {
-   "id": "fry-cook",
-   "tag": "shot",
-   "pieces": [
-    {
-     "slot": "hat",
-     "id": "fry-cook-hat"
-    },
-    {
-     "slot": "legs",
-     "id": "fry-cook-legs"
-    },
-    {
-     "slot": "boots",
-     "id": "fry-cook-boots"
-    }
-   ],
-   "two": {
-    "tag": {
-     "amount": 1
-    }
-   },
-   "three": {
-    "offers": "tag",
-    "startLevels": 1,
-    "tag": {
-     "damage": 0.55,
-     "pierce": 2
-    },
-    "tradeoff": {
-     "maxHpPct": -0.15
-    }
-   }
-  },
-  {
-   "id": "iron-skillet",
-   "tag": "melee",
-   "pieces": [
-    {
-     "slot": "hat",
-     "id": "iron-skillet-hat"
-    },
-    {
-     "slot": "chest",
-     "id": "iron-skillet-chest"
-    },
-    {
-     "slot": "legs",
-     "id": "iron-skillet-legs"
-    }
-   ],
-   "two": {
-    "tag": {
-     "area": 0.25,
-     "damage": 0.1
-    }
-   },
-   "three": {
-    "offers": "tag",
-    "startLevels": 1,
-    "tag": {
-     "damage": 0.15
-    },
-    "tradeoff": {
-     "moveSpeed": -0.1
-    }
-   }
-  },
-  {
-   "id": "mech-pilot",
-   "pieces": [
-    {
-     "slot": "chest",
-     "id": "mech-pilot-chest"
-    },
-    {
-     "slot": "legs",
-     "id": "mech-pilot-legs"
-    },
-    {
-     "slot": "boots",
-     "id": "mech-pilot-boots"
-    }
-   ],
-   "two": {
-    "tibo": {
-     "moveSpeed": 0.05
-    },
-    "config": {
-     "dashCooldownScale": 0.7
-    }
-   },
-   "three": {
-    "tibo": {
-     "might": 1
-    },
-    "config": {
-     "dashCharges": 2,
-     "dashCooldownScale": 0.6,
-     "dashDistance": 84,
-     "dashMinCooldownSec": 0.6
-    },
-    "tradeoff": {
-     "maxHpPct": -0.1
-    }
-   }
-  },
-  {
-   "id": "pack-ranger",
-   "tag": "summon",
-   "pieces": [
-    {
-     "slot": "hat",
-     "id": "pack-ranger-hat"
-    },
-    {
-     "slot": "legs",
-     "id": "pack-ranger-legs"
-    },
-    {
-     "slot": "boots",
-     "id": "pack-ranger-boots"
-    }
-   ],
-   "two": {
-    "tag": {
-     "amount": 1,
-     "damage": 0.2
-    }
-   },
-   "three": {
-    "tag": {
-     "damage": 0.5
-    },
-    "offTagDamage": 0.85,
-    "config": {
-     "maxPack": 5,
-     "firstDogDistance": 40
-    }
-   }
-  },
-  {
-   "id": "space-farmer",
-   "tag": "orbit",
-   "pieces": [
-    {
-     "slot": "hat",
-     "id": "space-farmer-hat"
-    },
-    {
-     "slot": "chest",
-     "id": "space-farmer-chest"
-    },
-    {
-     "slot": "boots",
-     "id": "space-farmer-boots"
-    }
-   ],
-   "two": {
-    "tag": {
-     "amount": 1
-    }
-   },
-   "three": {
-    "offers": "tag",
-    "startLevels": 1,
-    "tag": {
-     "damage": 0.8,
-     "area": 0.3
-    },
-    "tibo": {
-     "might": 2.2
-    },
-    "tradeoff": {
-     "moveSpeed": -0.1
-    },
-    "bans": "moveSpeed"
-   }
-  },
-  {
-   "id": "storm-sage",
-   "tag": "storm",
-   "pieces": [
-    {
-     "slot": "chest",
-     "id": "storm-sage-chest"
-    },
-    {
-     "slot": "legs",
-     "id": "storm-sage-legs"
-    },
-    {
-     "slot": "boots",
-     "id": "storm-sage-boots"
-    }
-   ],
-   "two": {
-    "tag": {
-     "rate": 0.25
-    }
-   },
-   "three": {
-    "offers": "tag",
-    "startLevels": 2,
-    "tibo": {
-     "might": 0.3
-    },
-    "tag": {
-     "damage": 1.4,
-     "rate": 0.25
-    },
-    "tradeoff": {
-     "moveSpeed": -0.05
-    }
-   }
-  }
- ],
+ "sim.Bo": {
+  "shape": "plush",
+  "color": "#f3c6c3",
+  "sprite": "amusing"
+ },
  "sim.Cn": {
   "white": "#fffaea",
   "gold": "#ffd04a",
@@ -378,1285 +27,7 @@
   "ochre5": "#f8e3ad",
   "lemon": "#fff08a"
  },
- "sim.Co": {
-  "shape": "box",
-  "color": "#90a4ae",
-  "sprite": "grater-golem"
- },
  "sim.Do": {
-  "shape": "round",
-  "color": "#fbc02d",
-  "sprite": "beetle-queen"
- },
- "sim.Ea": [
-  "melee",
-  "shot",
-  "zone",
-  "storm",
-  "orbit",
-  "blast",
-  "summon",
-  "nova",
-  "any"
- ],
- "sim.Eo": {
-  "shape": "blob",
-  "color": "#5d4037",
-  "sprite": "compost-titan"
- },
- "sim.Fo": {
-  "startChest": {
-   "offset": {
-    "x": 56,
-    "y": 0
-   },
-   "leash": {
-    "radius": 220,
-    "back": 32,
-    "throwSec": 0.25,
-    "pullSec": 1
-   },
-   "nudges": {
-    "lines": [
-     {
-      "afterSec": 8,
-      "line": "openIt"
-     },
-     {
-      "afterSec": 16,
-      "line": "bigBox"
-     },
-     {
-      "afterSec": 24,
-      "line": "asleep"
-     }
-    ],
-    "jail": {
-     "afterSec": 32,
-     "line": "hardWay",
-     "held": "notLeaving",
-     "radius": 12
-    }
-   },
-   "contents": {
-    "weapons": [
-     {
-      "id": "peeler",
-      "level": 4
-     },
-     {
-      "id": "tot-toss",
-      "level": 3
-     }
-    ],
-    "passives": [
-     {
-      "id": "thick-skin",
-      "level": 2
-     }
-    ]
-   }
-  },
-  "firstRush": {
-   "startTicks": 180,
-   "alive": {
-    "from": 10,
-    "to": 200
-   },
-   "everySec": {
-    "from": 0.55,
-    "to": 0.09
-   },
-   "batch": 3,
-   "reach": 250
-  },
-  "boss": {
-   "id": "amusing",
-   "landTicks": 1800,
-   "heal": 1
-  },
-  "secondRush": {
-   "peakTicks": 900,
-   "alive": {
-    "from": 220,
-    "to": 400
-   },
-   "everySec": {
-    "from": 0.2,
-    "to": 0.06
-   },
-   "batch": 3,
-   "reach": 200
-  },
-  "waves": {
-   "rows": [
-    {
-     "minute": 0,
-     "minEnemies": 8,
-     "maxEnemies": 500,
-     "interval": 1.3,
-     "batch": 2,
-     "tiers": [
-      1,
-      0,
-      0,
-      0,
-      0
-     ],
-     "enemy": "reset-zombie"
-    },
-    {
-     "minute": 1,
-     "minEnemies": 8,
-     "maxEnemies": 500,
-     "interval": 1.3,
-     "batch": 2,
-     "tiers": [
-      1,
-      0,
-      0,
-      0,
-      0
-     ],
-     "enemy": "reset-zombie"
-    },
-    {
-     "minute": 2,
-     "minEnemies": 12,
-     "maxEnemies": 500,
-     "interval": 1.1,
-     "batch": 2,
-     "tiers": [
-      1,
-      0,
-      0,
-      0,
-      0
-     ],
-     "enemy": "reset-zombie"
-    },
-    {
-     "minute": 3,
-     "minEnemies": 16,
-     "maxEnemies": 500,
-     "interval": 1,
-     "batch": 3,
-     "tiers": [
-      1,
-      0,
-      0,
-      0,
-      0
-     ],
-     "enemy": "reset-zombie"
-    }
-   ],
-   "afterLast": "hold"
-  },
-  "config": {
-   "spawns": {
-    "earlyCeiling": []
-   },
-   "levelUp": {
-    "catalystGuaranteeLevel": 6
-   },
-   "poteto": {
-    "visitChance": 0
-   },
-   "world": {
-    "landmarkEvents": false,
-    "poiTaperPerMinute": 0,
-    "onlyPois": [
-     "crops",
-     "taterMagnet",
-     "spudFreezer",
-     "frenzyFryer",
-     "botDock",
-     "taterLantern",
-     "seedVault"
-    ],
-    "outOfFirstView": [
-     "paidChest",
-     "seedVault"
-    ]
-   },
-   "alex": {
-    "chance": 1
-   }
-  },
-  "ending": [
-   {
-    "kind": "visit",
-    "afterJoinTicks": 900
-   },
-   {
-    "kind": "line",
-    "line": "inTheGame",
-    "at": "bonk"
-   },
-   {
-    "kind": "line",
-    "line": "foundYou",
-    "at": "bonk"
-   },
-   {
-    "kind": "line",
-    "line": "storyMode",
-    "at": "bonk"
-   },
-   {
-    "kind": "line",
-    "line": "noobs",
-    "at": "bonk"
-   },
-   {
-    "kind": "line",
-    "line": "madeSure",
-    "at": "bonk"
-   },
-   {
-    "kind": "line",
-    "line": "laugh",
-    "at": "bonk"
-   },
-   {
-    "kind": "line",
-    "line": "napTime",
-    "at": "bonk"
-   },
-   {
-    "kind": "knockOut",
-    "alex": true,
-    "alexAfterTicks": 30
-   },
-   {
-    "kind": "line",
-    "line": "realDifficulty",
-    "at": "fall"
-   }
-  ]
- },
- "sim.Gi": {
-  "gold": "#ffd04a",
-  "ochre3": "#d6a556",
-  "amber": "#f2a02c"
- },
- "sim.In": {
-  "mist": "#c8cedc",
-  "white": "#fffaea",
-  "lemon": "#fff08a",
-  "gold": "#ffd04a",
-  "ochre3": "#d6a556",
-  "plum0": "#24112e",
-  "plum1": "#3d1b58",
-  "plum3": "#9258a2",
-  "cyan0": "#2fb8e0",
-  "cyan1": "#8aeaff",
-  "leaf0": "#74ad5c",
-  "leaf1": "#9fcf6e",
-  "moss1": "#4b7a35",
-  "olive3": "#737856",
-  "fog": "#9aa1b8",
-  "sky": "#9cc4ec",
-  "slate": "#2d2c33",
-  "iron": "#47464f",
-  "frost": "#e2ecf4",
-  "fogbank": "#7a7f82",
-  "steel": "#6c7189",
-  "navy2": "#254467",
-  "navy0": "#0c1827"
- },
- "sim.Io": {
-  "fries": "fries-carton",
-  "knockedOut": "tibo-down"
- },
- "sim.Ji": [
-  "mashBomb",
-  "chiliBottle",
-  "lighthouse",
-  "rowboat",
-  "treasure-map",
-  "dig-spot"
- ],
- "sim.Ki": {
-  "enemies": 1024,
-  "bosses": 16,
-  "projectiles": 4096,
-  "pickups": 4096,
-  "zones": 1024,
-  "emitters": 512,
-  "effects": 1024,
-  "pets": 8,
-  "summons": 64,
-  "dashCuts": 32,
-  "grokBots": 32,
-  "wires": 16,
-  "hits": 8192
- },
- "sim.La": [
-  "boss:amusing",
-  "boss:beetle-queen",
-  "boss:compost-titan",
-  "boss:deep-freezer",
-  "boss:fryer-king",
-  "boss:grater-golem",
-  "boss:great-wireworm",
-  "boss:harvester",
-  "boss:ketchup-kraken",
-  "boss:late-blight",
-  "boss:sir-strawman",
-  "boss:the-mandoline",
-  "boss:the-masher",
-  "boss:pack-lord",
-  "boss:root-hydra",
-  "boss:root-hydra-frenzy",
-  "boss:root-hydra-head",
-  "boss:root-hydra-mire",
-  "boss:root-hydra-stump",
-  "boss:queen",
-  "boss:shell-titan"
- ],
- "sim.Ln": {
-  "mist": "#c8cedc",
-  "white": "#fffaea",
-  "lemon": "#fff08a",
-  "gold": "#ffd04a",
-  "ochre3": "#d6a556",
-  "plum0": "#24112e",
-  "plum1": "#3d1b58",
-  "plum3": "#9258a2",
-  "cyan0": "#2fb8e0",
-  "cyan1": "#8aeaff",
-  "leaf0": "#74ad5c",
-  "leaf1": "#9fcf6e",
-  "moss1": "#4b7a35",
-  "olive3": "#737856",
-  "fog": "#9aa1b8",
-  "sky": "#9cc4ec"
- },
- "sim.Oi": [
-  "boss:amusing",
-  "boss:beetle-queen",
-  "boss:compost-titan",
-  "boss:deep-freezer",
-  "boss:fryer-king",
-  "boss:grater-golem",
-  "boss:great-wireworm",
-  "boss:harvester",
-  "boss:ketchup-kraken",
-  "boss:late-blight",
-  "boss:sir-strawman",
-  "boss:the-mandoline",
-  "boss:the-masher",
-  "boss:pack-lord",
-  "boss:root-hydra",
-  "boss:root-hydra-frenzy",
-  "boss:root-hydra-head",
-  "boss:root-hydra-mire",
-  "boss:root-hydra-stump",
-  "boss:queen",
-  "boss:shell-titan"
- ],
- "sim.Oo": {
-  "shape": "plush",
-  "color": "#f3c6c3",
-  "sprite": "amusing"
- },
- "sim.Ra": [
-  "bot:black",
-  "bot:brown",
-  "bot:red",
-  "bot:orange",
-  "bot:yellow",
-  "bot:green",
-  "bot:cyan",
-  "bot:blue",
-  "bot:violet",
-  "bot:magenta",
-  "bot:gray"
- ],
- "sim.Sa": {
-  "easy": 0.5,
-  "normal": 0.7,
-  "hard": 0.85,
-  "nightmare": 1
- },
- "sim.So": {
-  "shape": "segmented",
-  "color": "#ff8f00",
-  "sprite": "great-wireworm"
- },
- "sim.Sr": {
-  "startSec": 1200,
-  "phaseSec": 300,
-  "bossAtSec": 240,
-  "familyStartSec": 60
- },
- "sim.Tn": {
-  "tiers": {
-   "common": {
-    "ink": "white"
-   },
-   "rare": {
-    "ink": "gold"
-   },
-   "set": {
-    "ink": "leaf1",
-    "seen": {
-     "protanopia": "sky",
-     "deuteranopia": "cyan1",
-     "tritanopia": "leaf0"
-    }
-   },
-   "legendary": {
-    "ink": "orange"
-   },
-   "mythic": {
-    "ink": "plum5",
-    "seen": {
-     "protanopia": "plum4",
-     "deuteranopia": "plum4",
-     "tritanopia": "cyan1"
-    }
-   }
-  },
-  "ancestral": {
-   "mark": "word"
-  },
-  "primal": {
-   "mark": "label",
-   "ink": "red",
-   "seen": {
-    "deuteranopia": "teal1",
-    "tritanopia": "teal1"
-   },
-   "text": "white"
-  },
-  "greater": {
-   "star": "red",
-   "core": "white"
-  },
-  "fx": {
-   "light": "white",
-   "gold": "gold",
-   "ember": "amber",
-   "molten": "ochre5",
-   "cool": "sky",
-   "bright": "lemon",
-   "dusk": "plum4",
-   "warm": "ochre4"
-  }
- },
- "sim.To": {
-  "shape": "box",
-  "color": "#81d4fa",
-  "sprite": "deep-freezer"
- },
- "sim.Uo": [
-  "round",
-  "oval",
-  "clover",
-  "splat",
-  "slab",
-  "drop"
- ],
- "sim.Wi": {
-  "rimWidth": 2,
-  "rim": {
-   "lit": "gold",
-   "shade": {
-    "base": "ochre3",
-    "hot": "amber"
-   }
-  },
-  "rimSwatches": {
-   "gold": "#ffd04a",
-   "ochre3": "#d6a556",
-   "amber": "#f2a02c"
-  },
-  "glint": {
-   "base": "white",
-   "hot": "lemon"
-  },
-  "glints": 5,
-  "steam": {
-   "core": "white",
-   "edge": "mist",
-   "tail": "fog"
-  },
-  "mote": {
-   "body": "ochre5",
-   "core": "white"
-  },
-  "riseFrom": 3,
-  "riseBy": 10,
-  "riseSec": 1.3,
-  "hazardBanned": [
-   "gold",
-   "amber",
-   "ochre3",
-   "ochre4",
-   "ochre5",
-   "lemon"
-  ]
- },
- "sim.Wn": [
-  {
-   "set": "space-farmer",
-   "rule": {
-    "kind": "eventHorizon",
-    "maxBulletRadius": 3,
-    "dimSec": 0.5,
-    "stackGain": 0.02,
-    "stackSec": 8,
-    "maxStacks": 50
-   }
-  },
-  {
-   "set": "iron-skillet",
-   "rule": {
-    "kind": "holdTheLine",
-    "reach": 56,
-    "armorPerPest": 3,
-    "twoCap": 12,
-    "fullCap": 30,
-    "swingEverySec": 0.5,
-    "swingOn": "reach",
-    "swingMult": 2,
-    "dash": "brace",
-    "braceSec": 1,
-    "braceCut": 0.6,
-    "cooldownBossCap": 0.35,
-    "keptWalk": 0.9
-   },
-   "pieces": 2
-  },
-  {
-   "set": "mech-pilot",
-   "rule": {
-    "kind": "overdrive",
-    "twoRefund": 0.5,
-    "gapSec": 0.75,
-    "heat": 5,
-    "ventReach": 64,
-    "rate": 0.7,
-    "buffSec": 5
-   },
-   "pieces": 2
-  },
-  {
-   "set": "fry-cook",
-   "rule": {
-    "kind": "ricochet",
-    "jumpsPerPierce": 1,
-    "freeJumps": 1,
-    "setJumps": 2,
-    "maxJumps": 7,
-    "reach": 160,
-    "gain": 0.2,
-    "minSpeed": 120,
-    "hopLifeSec": 0.15,
-    "bounceLifeShare": 0.6
-   }
-  },
-  {
-   "set": "buccaneer",
-   "rule": {
-    "kind": "shipsBell",
-    "periodSec": 4,
-    "dashAfterSec": 1.5,
-    "aimSec": 0.25,
-    "volleys": 1
-   }
-  },
-  {
-   "set": "bog-witch",
-   "rule": {
-    "kind": "spreadingBog",
-    "size": 0.6,
-    "minRadius": 14,
-    "sec": 2,
-    "damage": 3,
-    "cap": 40,
-    "wade": 0.1
-   }
-  },
-  {
-   "set": "storm-sage",
-   "rule": {
-    "kind": "staticStep",
-    "sparkEvery": 20,
-    "maxSparks": 8,
-    "forkReach": 80,
-    "forkDamage": 3,
-    "emptyRecharge": 0.3
-   }
-  },
-  {
-   "set": "pack-ranger",
-   "rule": {
-    "kind": "theHunt",
-    "eliteDamage": 0.3,
-    "quarryDamage": 0.5,
-    "howlRate": 0.1,
-    "howlSec": 1,
-    "rescanSec": 0.5,
-    "emptyRescanSec": 0.1,
-    "bossHitCap": 0.004
-   },
-   "pieces": 2
-  }
- ],
- "sim.Wr": [
-  {
-   "stat": "might",
-   "label": "Damage",
-   "base": 0.06
-  },
-  {
-   "stat": "area",
-   "label": "Area",
-   "base": 0.06
-  },
-  {
-   "stat": "cooldown",
-   "label": "Cooldown",
-   "base": 0.03
-  },
-  {
-   "stat": "moveSpeed",
-   "label": "Move speed",
-   "base": 0.05
-  },
-  {
-   "stat": "maxHp",
-   "label": "Max HP",
-   "base": 12
-  },
-  {
-   "stat": "armor",
-   "label": "Armor",
-   "base": 10
-  },
-  {
-   "stat": "luck",
-   "label": "Luck",
-   "base": 0.06
-  },
-  {
-   "stat": "greed",
-   "label": "Gold gain",
-   "base": 0.1
-  },
-  {
-   "stat": "growth",
-   "label": "XP gain",
-   "base": 0.06
-  },
-  {
-   "stat": "critChance",
-   "label": "Crit",
-   "base": 0.04
-  },
-  {
-   "stat": "duration",
-   "label": "Duration",
-   "base": 0.06
-  },
-  {
-   "stat": "magnet",
-   "label": "Pickup range",
-   "base": 0.15
-  }
- ],
- "sim._o": {
-  "shape": "wide",
-  "color": "#cfd8dc",
-  "sprite": "the-mandoline"
- },
- "sim._r": {
-  "dealtPerLevel": 2.2,
-  "dealtAt20Min": 5500000000,
-  "dealtPerMinute": 1.09,
-  "killsPerMinute": 250000,
-  "killsPerLevel": 1,
-  "margin": 3
- },
- "sim.aa": {
-  "kind": "migration",
-  "every": 60,
-  "count": 36,
-  "halfWidth": 140,
-  "depth": 50,
-  "speed": 70,
-  "xp": 3,
-  "life": 18,
-  "migrant": "beetle-brood"
- },
- "sim.an": {
-  "cap": 0,
-  "heldTick": 1,
-  "chance": 2,
-  "life": 3,
-  "snareSec": 4,
-  "sproutAt": 5
- },
- "sim.bo": {
-  "shape": "tentacled",
-  "color": "#d32f2f",
-  "sprite": "ketchup-kraken"
- },
- "sim.ei": {
-  "evolutions": [
-   {
-    "kind": "evolution",
-    "weapon": "small-fry",
-    "catalyst": {
-     "kind": "passive",
-     "id": "fertilizer"
-    },
-    "result": "big-fry"
-   },
-   {
-    "kind": "evolution",
-    "weapon": "grab-bag",
-    "catalyst": {
-     "kind": "passive",
-     "id": "sprouting-eyes"
-    },
-    "result": "bottomless-sack"
-   },
-   {
-    "kind": "evolution",
-    "weapon": "frying-pan",
-    "catalyst": {
-     "kind": "passive",
-     "id": "starch-plating"
-    },
-    "result": "cast-iron"
-   },
-   {
-    "kind": "evolution",
-    "weapon": "root-cellar",
-    "catalyst": {
-     "kind": "passive",
-     "id": "slow-cooker"
-    },
-    "result": "cold-storage"
-   },
-   {
-    "kind": "evolution",
-    "weapon": "mash-mallet",
-    "catalyst": {
-     "kind": "passive",
-     "id": "masher-grip"
-    },
-    "result": "crater-pound"
-   },
-   {
-    "kind": "evolution",
-    "weapon": "spud-dynamo",
-    "catalyst": {
-     "kind": "passive",
-     "id": "slow-cooker"
-    },
-    "result": "dynamo-coil"
-   },
-   {
-    "kind": "evolution",
-    "weapon": "sprout-satellites",
-    "catalyst": {
-     "kind": "passive",
-     "id": "slow-cooker"
-    },
-    "result": "eternal-sprouts"
-   },
-   {
-    "kind": "evolution",
-    "weapon": "reset-button",
-    "catalyst": {
-     "kind": "passive",
-     "id": "four-eyed-spud"
-    },
-    "result": "factory-reset"
-   },
-   {
-    "kind": "evolution",
-    "weapon": "fry-sentry",
-    "catalyst": {
-     "kind": "passive",
-     "id": "slow-cooker"
-    },
-    "result": "fry-fortress"
-   },
-   {
-    "kind": "evolution",
-    "weapon": "butter-streak",
-    "catalyst": {
-     "kind": "passive",
-     "id": "spud-sneakers"
-    },
-    "result": "ghee-glide"
-   },
-   {
-    "kind": "evolution",
-    "weapon": "potato-rain",
-    "catalyst": {
-     "kind": "passive",
-     "id": "golden-fry"
-    },
-    "result": "golden-harvest"
-   },
-   {
-    "kind": "evolution",
-    "weapon": "starch-chain",
-    "catalyst": {
-     "kind": "passive",
-     "id": "hot-sauce"
-    },
-    "result": "gratin-arc"
-   },
-   {
-    "kind": "evolution",
-    "weapon": "starch-puddle",
-    "catalyst": {
-     "kind": "passive",
-     "id": "butter-pat"
-    },
-    "result": "gratin-puddle"
-   },
-   {
-    "kind": "evolution",
-    "weapon": "gravy-boat",
-    "catalyst": {
-     "kind": "passive",
-     "id": "potato-magnet"
-    },
-    "result": "gravy-flood"
-   },
-   {
-    "kind": "evolution",
-    "weapon": "hash-brown-shield",
-    "catalyst": {
-     "kind": "passive",
-     "id": "starch-plating"
-    },
-    "result": "hash-bulwark"
-   },
-   {
-    "kind": "evolution",
-    "weapon": "hash-boomerang",
-    "catalyst": {
-     "kind": "passive",
-     "id": "sour-cream"
-    },
-    "result": "hashnado"
-   },
-   {
-    "kind": "evolution",
-    "weapon": "deep-fryer",
-    "catalyst": {
-     "kind": "passive",
-     "id": "bacon-bits"
-    },
-    "result": "inferno-basket"
-   },
-   {
-    "kind": "evolution",
-    "weapon": "skillet-flail",
-    "catalyst": {
-     "kind": "passive",
-     "id": "starch-plating"
-    },
-    "result": "iron-flail"
-   },
-   {
-    "kind": "evolution",
-    "weapon": "chip-shuriken",
-    "catalyst": {
-     "kind": "passive",
-     "id": "gpu"
-    },
-    "result": "kettle-cyclone"
-   },
-   {
-    "kind": "evolution",
-    "weapon": "tater-mines",
-    "catalyst": {
-     "kind": "passive",
-     "id": "rotten-spud"
-    },
-    "result": "landmine-harvest"
-   },
-   {
-    "kind": "evolution",
-    "weapon": "spud-dice",
-    "catalyst": {
-     "kind": "passive",
-     "id": "four-eyed-spud"
-    },
-    "result": "loaded-dice"
-   },
-   {
-    "kind": "evolution",
-    "weapon": "peeler",
-    "catalyst": {
-     "kind": "passive",
-     "id": "gravy-heart"
-    },
-    "result": "mandoline-fury"
-   },
-   {
-    "kind": "evolution",
-    "weapon": "mash-wave",
-    "catalyst": {
-     "kind": "passive",
-     "id": "big-bowl"
-    },
-    "result": "mashquake"
-   },
-   {
-    "kind": "evolution",
-    "weapon": "mezzaluna",
-    "catalyst": {
-     "kind": "passive",
-     "id": "rotten-spud"
-    },
-    "result": "moon-cleaver"
-   },
-   {
-    "kind": "evolution",
-    "weapon": "seeker-sprouts",
-    "catalyst": {
-     "kind": "passive",
-     "id": "fertilizer"
-    },
-    "result": "overgrowth"
-   },
-   {
-    "kind": "evolution",
-    "weapon": "frozen-fries",
-    "catalyst": {
-     "kind": "passive",
-     "id": "thick-skin"
-    },
-    "result": "permafrost-fries"
-   },
-   {
-    "kind": "evolution",
-    "weapon": "steam-vent",
-    "catalyst": {
-     "kind": "passive",
-     "id": "root-network"
-    },
-    "result": "pressure-cooker"
-   },
-   {
-    "kind": "evolution",
-    "weapon": "fry-lance",
-    "catalyst": {
-     "kind": "passive",
-     "id": "spud-sneakers"
-    },
-    "result": "railfry"
-   },
-   {
-    "kind": "evolution",
-    "weapon": "peel-lash",
-    "catalyst": {
-     "kind": "passive",
-     "id": "salt-shaker"
-    },
-    "result": "rind-whip"
-   },
-   {
-    "kind": "evolution",
-    "weapon": "rosti-disc",
-    "catalyst": {
-     "kind": "passive",
-     "id": "starch-plating"
-    },
-    "result": "rosti-storm"
-   },
-   {
-    "kind": "evolution",
-    "weapon": "spud-lob",
-    "catalyst": {
-     "kind": "passive",
-     "id": "butter-pat"
-    },
-    "result": "sack-of-russets"
-   },
-   {
-    "kind": "evolution",
-    "weapon": "salt-line",
-    "catalyst": {
-     "kind": "passive",
-     "id": "spud-sneakers"
-    },
-    "result": "salt-flats"
-   },
-   {
-    "kind": "evolution",
-    "weapon": "hot-potato",
-    "catalyst": {
-     "kind": "passive",
-     "id": "hot-sauce"
-    },
-    "result": "spicy-hot-potato"
-   },
-   {
-    "kind": "evolution",
-    "weapon": "potato-battery",
-    "catalyst": {
-     "kind": "passive",
-     "id": "root-network"
-    },
-    "result": "spud-grid"
-   },
-   {
-    "kind": "evolution",
-    "weapon": "spud-cannon",
-    "catalyst": {
-     "kind": "passive",
-     "id": "hot-sauce"
-    },
-    "result": "spudzooka"
-   },
-   {
-    "kind": "evolution",
-    "weapon": "whisk-vortex",
-    "catalyst": {
-     "kind": "passive",
-     "id": "big-bowl"
-    },
-    "result": "stand-mixer"
-   },
-   {
-    "kind": "evolution",
-    "weapon": "root-spikes",
-    "catalyst": {
-     "kind": "passive",
-     "id": "masher-grip"
-    },
-    "result": "taproot-eruption"
-   },
-   {
-    "kind": "evolution",
-    "weapon": "fry-knives",
-    "catalyst": {
-     "kind": "passive",
-     "id": "salt-shaker"
-    },
-    "result": "thousand-fries"
-   },
-   {
-    "kind": "evolution",
-    "weapon": "starch-bolt",
-    "catalyst": {
-     "kind": "passive",
-     "id": "sprouting-eyes"
-    },
-    "result": "thunder-tuber"
-   },
-   {
-    "kind": "evolution",
-    "weapon": "tot-toss",
-    "catalyst": {
-     "kind": "passive",
-     "id": "chives"
-    },
-    "result": "tot-gatling"
-   },
-   {
-    "kind": "evolution",
-    "weapon": "julienne-dash",
-    "catalyst": {
-     "kind": "passive",
-     "id": "butter-socks"
-    },
-    "result": "waffle-cut"
-   }
-  ],
-  "unions": [
-   {
-    "kind": "union",
-    "weapons": [
-     "permafrost-fries",
-     "spicy-hot-potato"
-    ],
-    "result": "baked-alaska"
-   },
-   {
-    "kind": "union",
-    "weapons": [
-     "cold-storage",
-     "eternal-sprouts"
-    ],
-    "result": "cold-frame"
-   },
-   {
-    "kind": "union",
-    "weapons": [
-     "gravy-flood",
-     "stand-mixer"
-    ],
-    "result": "gravy-whirlpool"
-   },
-   {
-    "kind": "union",
-    "weapons": [
-     "cast-iron",
-     "hash-bulwark"
-    ],
-    "result": "griddle-guard"
-   },
-   {
-    "kind": "union",
-    "weapons": [
-     "big-fry",
-     "overgrowth"
-    ],
-    "result": "hungry-sprouts"
-   },
-   {
-    "kind": "union",
-    "weapons": [
-     "mandoline-fury",
-     "moon-cleaver"
-    ],
-    "result": "knife-block"
-   },
-   {
-    "kind": "union",
-    "weapons": [
-     "taproot-eruption",
-     "spud-grid"
-    ],
-    "result": "root-current"
-   },
-   {
-    "kind": "union",
-    "weapons": [
-     "ghee-glide",
-     "salt-flats"
-    ],
-    "result": "salted-butter"
-   },
-   {
-    "kind": "union",
-    "weapons": [
-     "golden-harvest",
-     "landmine-harvest"
-    ],
-    "result": "sowing-season"
-   },
-   {
-    "kind": "union",
-    "weapons": [
-     "sack-of-russets",
-     "spudzooka"
-    ],
-    "result": "spud-artillery"
-   },
-   {
-    "kind": "union",
-    "weapons": [
-     "thunder-tuber",
-     "gratin-arc"
-    ],
-    "result": "starch-supercell"
-   }
-  ],
-  "itemEvolutions": [
-   {
-    "kind": "itemEvolution",
-    "item": "wandering-eyes",
-    "catalyst": "four-eyed-spud",
-    "result": "all-seeing-spud"
-   },
-   {
-    "kind": "itemEvolution",
-    "item": "coal-baked-spud",
-    "catalyst": "hot-sauce",
-    "result": "bonfire-spud"
-   },
-   {
-    "kind": "itemEvolution",
-    "item": "porcupine-spud",
-    "catalyst": "starch-plating",
-    "result": "fry-volcano"
-   },
-   {
-    "kind": "itemEvolution",
-    "item": "freezer-burn",
-    "catalyst": "slow-cooker",
-    "result": "glacier-spud"
-   },
-   {
-    "kind": "itemEvolution",
-    "item": "boom-spud",
-    "catalyst": "rotten-spud",
-    "result": "kaboom-spud"
-   },
-   {
-    "kind": "itemEvolution",
-    "item": "spicy-croquette",
-    "catalyst": "big-bowl",
-    "result": "magma-croquette"
-   },
-   {
-    "kind": "itemEvolution",
-    "item": "heavy-russet",
-    "catalyst": "masher-grip",
-    "result": "meteor-russet"
-   },
-   {
-    "kind": "itemEvolution",
-    "item": "static-tot",
-    "catalyst": "root-network",
-    "result": "storm-tot"
-   }
-  ],
-  "makes": "[fn]",
-  "makesItem": "[fn]",
-  "evolutionOf": "[fn]",
-  "evolutionInto": "[fn]",
-  "itemEvolutionOf": "[fn]",
-  "unionsOf": "[fn]",
-  "evolvedBy": "[fn]",
-  "itemsEvolvedBy": "[fn]"
- },
- "sim.ga": {
-  "melee": 0,
-  "shot": 1,
-  "zone": 2,
-  "storm": 3,
-  "orbit": 4,
-  "blast": 5,
-  "summon": 6,
-  "nova": 7,
-  "any": 8
- },
- "sim.go": {
-  "shape": "tall",
-  "color": "#b0bec5",
-  "sprite": "the-masher"
- },
- "sim.gt": {
-  "fps": 12,
-  "motes": 8,
-  "glints": 3,
-  "reachMin": 0.3,
-  "reachMax": 0.85,
-  "rise": 7,
-  "glintRise": 12,
-  "glintDelay": 0.06,
-  "moteGlow": 0.35,
-  "glintGlow": 1,
-  "shadow": 1
- },
- "sim.ho": {
   "boss": "[fn]",
   "bossAt": "[fn]",
   "bosses": [
@@ -5758,6 +4129,1447 @@
   "run": "[fn]",
   "runOrder": "[fn]"
  },
+ "sim.Fa": [
+  {
+   "id": "bog-witch",
+   "tag": "zone",
+   "pieces": [
+    {
+     "slot": "hat",
+     "id": "bog-witch-hat"
+    },
+    {
+     "slot": "chest",
+     "id": "bog-witch-chest"
+    },
+    {
+     "slot": "legs",
+     "id": "bog-witch-legs"
+    }
+   ],
+   "two": {
+    "tag": {
+     "duration": 0.4,
+     "area": 0.15
+    }
+   },
+   "three": {
+    "tag": {
+     "damage": 0.8
+    },
+    "offTagDamage": 0.7,
+    "tradeoff": {
+     "moveSpeed": -0.1
+    }
+   }
+  },
+  {
+   "id": "buccaneer",
+   "tag": "blast",
+   "pieces": [
+    {
+     "slot": "hat",
+     "id": "buccaneer-hat"
+    },
+    {
+     "slot": "chest",
+     "id": "buccaneer-chest"
+    },
+    {
+     "slot": "boots",
+     "id": "buccaneer-boots"
+    }
+   ],
+   "two": {
+    "tag": {
+     "area": 0.25
+    }
+   },
+   "three": {
+    "offers": "tag",
+    "startLevels": 1,
+    "tag": {
+     "damage": 0.4
+    },
+    "tradeoff": {
+     "maxHpPct": -0.1
+    }
+   }
+  },
+  {
+   "id": "fry-cook",
+   "tag": "shot",
+   "pieces": [
+    {
+     "slot": "hat",
+     "id": "fry-cook-hat"
+    },
+    {
+     "slot": "legs",
+     "id": "fry-cook-legs"
+    },
+    {
+     "slot": "boots",
+     "id": "fry-cook-boots"
+    }
+   ],
+   "two": {
+    "tag": {
+     "amount": 1
+    }
+   },
+   "three": {
+    "offers": "tag",
+    "startLevels": 1,
+    "tag": {
+     "damage": 0.55,
+     "pierce": 2
+    },
+    "tradeoff": {
+     "maxHpPct": -0.15
+    }
+   }
+  },
+  {
+   "id": "iron-skillet",
+   "tag": "melee",
+   "pieces": [
+    {
+     "slot": "hat",
+     "id": "iron-skillet-hat"
+    },
+    {
+     "slot": "chest",
+     "id": "iron-skillet-chest"
+    },
+    {
+     "slot": "legs",
+     "id": "iron-skillet-legs"
+    }
+   ],
+   "two": {
+    "tag": {
+     "area": 0.25,
+     "damage": 0.1
+    }
+   },
+   "three": {
+    "offers": "tag",
+    "startLevels": 1,
+    "tag": {
+     "damage": 0.15
+    },
+    "tradeoff": {
+     "moveSpeed": -0.1
+    }
+   }
+  },
+  {
+   "id": "mech-pilot",
+   "pieces": [
+    {
+     "slot": "chest",
+     "id": "mech-pilot-chest"
+    },
+    {
+     "slot": "legs",
+     "id": "mech-pilot-legs"
+    },
+    {
+     "slot": "boots",
+     "id": "mech-pilot-boots"
+    }
+   ],
+   "two": {
+    "tibo": {
+     "moveSpeed": 0.05
+    },
+    "config": {
+     "dashCooldownScale": 0.7
+    }
+   },
+   "three": {
+    "tibo": {
+     "might": 1
+    },
+    "config": {
+     "dashCharges": 2,
+     "dashCooldownScale": 0.6,
+     "dashDistance": 84,
+     "dashMinCooldownSec": 0.6
+    },
+    "tradeoff": {
+     "maxHpPct": -0.1
+    }
+   }
+  },
+  {
+   "id": "pack-ranger",
+   "tag": "summon",
+   "pieces": [
+    {
+     "slot": "hat",
+     "id": "pack-ranger-hat"
+    },
+    {
+     "slot": "legs",
+     "id": "pack-ranger-legs"
+    },
+    {
+     "slot": "boots",
+     "id": "pack-ranger-boots"
+    }
+   ],
+   "two": {
+    "tag": {
+     "amount": 1,
+     "damage": 0.2
+    }
+   },
+   "three": {
+    "tag": {
+     "damage": 0.5
+    },
+    "offTagDamage": 0.85,
+    "config": {
+     "maxPack": 5,
+     "firstDogDistance": 40
+    }
+   }
+  },
+  {
+   "id": "space-farmer",
+   "tag": "orbit",
+   "pieces": [
+    {
+     "slot": "hat",
+     "id": "space-farmer-hat"
+    },
+    {
+     "slot": "chest",
+     "id": "space-farmer-chest"
+    },
+    {
+     "slot": "boots",
+     "id": "space-farmer-boots"
+    }
+   ],
+   "two": {
+    "tag": {
+     "amount": 1
+    }
+   },
+   "three": {
+    "offers": "tag",
+    "startLevels": 1,
+    "tag": {
+     "damage": 0.8,
+     "area": 0.3
+    },
+    "tibo": {
+     "might": 2.2
+    },
+    "tradeoff": {
+     "moveSpeed": -0.1
+    },
+    "bans": "moveSpeed"
+   }
+  },
+  {
+   "id": "storm-sage",
+   "tag": "storm",
+   "pieces": [
+    {
+     "slot": "chest",
+     "id": "storm-sage-chest"
+    },
+    {
+     "slot": "legs",
+     "id": "storm-sage-legs"
+    },
+    {
+     "slot": "boots",
+     "id": "storm-sage-boots"
+    }
+   ],
+   "two": {
+    "tag": {
+     "rate": 0.25
+    }
+   },
+   "three": {
+    "offers": "tag",
+    "startLevels": 2,
+    "tibo": {
+     "might": 0.3
+    },
+    "tag": {
+     "damage": 1.4,
+     "rate": 0.25
+    },
+    "tradeoff": {
+     "moveSpeed": -0.05
+    }
+   }
+  }
+ ],
+ "sim.Fo": {
+  "shape": "box",
+  "color": "#90a4ae",
+  "sprite": "grater-golem"
+ },
+ "sim.Gi": {
+  "gold": "#ffd04a",
+  "ochre3": "#d6a556",
+  "amber": "#f2a02c"
+ },
+ "sim.Ha": {
+  "hand": 0,
+  "flying": 1,
+  "planted": 2,
+  "spent": 3
+ },
+ "sim.In": {
+  "mist": "#c8cedc",
+  "white": "#fffaea",
+  "lemon": "#fff08a",
+  "gold": "#ffd04a",
+  "ochre3": "#d6a556",
+  "plum0": "#24112e",
+  "plum1": "#3d1b58",
+  "plum3": "#9258a2",
+  "cyan0": "#2fb8e0",
+  "cyan1": "#8aeaff",
+  "leaf0": "#74ad5c",
+  "leaf1": "#9fcf6e",
+  "moss1": "#4b7a35",
+  "olive3": "#737856",
+  "fog": "#9aa1b8",
+  "sky": "#9cc4ec",
+  "slate": "#2d2c33",
+  "iron": "#47464f",
+  "frost": "#e2ecf4",
+  "fogbank": "#7a7f82",
+  "steel": "#6c7189",
+  "navy2": "#254467",
+  "navy0": "#0c1827"
+ },
+ "sim.Io": {
+  "shape": "box",
+  "color": "#ff9800",
+  "sprite": "fryer-king",
+  "puddle": {
+   "body": "#0e0805",
+   "edge": "#3f2a19",
+   "fleck": "#6c7189",
+   "bubble": "#55331c",
+   "boil": {
+    "period": 1.2,
+    "density": 4.5,
+    "glow": 0.6
+   }
+  }
+ },
+ "sim.Ji": [
+  "mashBomb",
+  "chiliBottle",
+  "lighthouse",
+  "rowboat",
+  "treasure-map",
+  "dig-spot"
+ ],
+ "sim.Jo": {
+  "fries": "fries-carton",
+  "knockedOut": "tibo-down"
+ },
+ "sim.Ki": {
+  "enemies": 1024,
+  "bosses": 16,
+  "projectiles": 4096,
+  "pickups": 4096,
+  "zones": 1024,
+  "emitters": 512,
+  "effects": 1024,
+  "pets": 8,
+  "summons": 64,
+  "dashCuts": 32,
+  "grokBots": 32,
+  "wires": 16,
+  "hits": 8192
+ },
+ "sim.Ln": {
+  "mist": "#c8cedc",
+  "white": "#fffaea",
+  "lemon": "#fff08a",
+  "gold": "#ffd04a",
+  "ochre3": "#d6a556",
+  "plum0": "#24112e",
+  "plum1": "#3d1b58",
+  "plum3": "#9258a2",
+  "cyan0": "#2fb8e0",
+  "cyan1": "#8aeaff",
+  "leaf0": "#74ad5c",
+  "leaf1": "#9fcf6e",
+  "moss1": "#4b7a35",
+  "olive3": "#737856",
+  "fog": "#9aa1b8",
+  "sky": "#9cc4ec"
+ },
+ "sim.Lo": {
+  "shape": "box",
+  "color": "#81d4fa",
+  "sprite": "deep-freezer"
+ },
+ "sim.Mo": {
+  "shape": "tentacled",
+  "color": "#d32f2f",
+  "sprite": "ketchup-kraken"
+ },
+ "sim.No": {
+  "shape": "wide",
+  "color": "#c62828",
+  "sprite": "harvester"
+ },
+ "sim.Oa": {
+  "melee": 0,
+  "shot": 1,
+  "zone": 2,
+  "storm": 3,
+  "orbit": 4,
+  "blast": 5,
+  "summon": 6,
+  "nova": 7,
+  "any": 8
+ },
+ "sim.Oi": [
+  "boss:amusing",
+  "boss:beetle-queen",
+  "boss:compost-titan",
+  "boss:deep-freezer",
+  "boss:fryer-king",
+  "boss:grater-golem",
+  "boss:great-wireworm",
+  "boss:harvester",
+  "boss:ketchup-kraken",
+  "boss:late-blight",
+  "boss:sir-strawman",
+  "boss:the-mandoline",
+  "boss:the-masher",
+  "boss:pack-lord",
+  "boss:root-hydra",
+  "boss:root-hydra-frenzy",
+  "boss:root-hydra-head",
+  "boss:root-hydra-mire",
+  "boss:root-hydra-stump",
+  "boss:queen",
+  "boss:shell-titan"
+ ],
+ "sim.Oo": {
+  "shape": "tall",
+  "color": "#b0bec5",
+  "sprite": "the-masher"
+ },
+ "sim.Pa": {
+  "easy": 0.5,
+  "normal": 0.7,
+  "hard": 0.85,
+  "nightmare": 1
+ },
+ "sim.Po": {
+  "shape": "segmented",
+  "color": "#ff8f00",
+  "sprite": "great-wireworm"
+ },
+ "sim.Qa": [
+  "enemy:aphid",
+  "enemy:beetle-brood",
+  "enemy:blight-spore",
+  "enemy:bog-slime",
+  "enemy:bog-toad",
+  "enemy:bowling-ball",
+  "enemy:bowling-pin",
+  "enemy:cave-grub",
+  "enemy:compost-maggot",
+  "enemy:crumb-ant",
+  "enemy:dumpster-raccoon",
+  "enemy:field-crow",
+  "enemy:field-rat",
+  "enemy:frost-flea",
+  "enemy:fry-fly",
+  "enemy:garden-slug",
+  "enemy:golden-scarab",
+  "enemy:grease-fiend",
+  "enemy:gull-flock",
+  "enemy:harvest-mouse",
+  "enemy:hay-bale",
+  "enemy:ice-imp",
+  "enemy:ketchup-drop",
+  "enemy:lint-bunny",
+  "enemy:little-grey",
+  "enemy:lost-saucer",
+  "enemy:maggot-swarm",
+  "enemy:mole",
+  "enemy:mud-golem",
+  "enemy:oil-drip",
+  "enemy:parking-gull",
+  "enemy:potato-beetle",
+  "enemy:reset-zombie",
+  "enemy:sand-crab",
+  "enemy:sizzle-imp",
+  "enemy:snow-mold",
+  "enemy:sock-pile",
+  "enemy:spittlebug",
+  "enemy:sprout-mite",
+  "enemy:swarm-fly",
+  "enemy:tomato-leech",
+  "enemy:wireworm-larva",
+  "enemy:alley-raccoon",
+  "enemy:crow-elder",
+  "enemy:hunt-crow",
+  "enemy:pack-rat",
+  "enemy:raccoon-boss",
+  "enemy:rat-chief",
+  "enemy:stag-beetle",
+  "enemy:barnacle-troll",
+  "enemy:basilisk",
+  "enemy:coral-golem",
+  "enemy:dune-manticore",
+  "enemy:jelly-wraith",
+  "enemy:mangrove-treant",
+  "enemy:queen-herald",
+  "enemy:queen-seer",
+  "enemy:queen-warden",
+  "enemy:sea-serpent",
+  "enemy:siren-harpy",
+  "enemy:armoured-barnacle-troll",
+  "enemy:armoured-basilisk",
+  "enemy:armoured-coral-golem",
+  "enemy:armoured-dune-manticore",
+  "enemy:armoured-jelly-wraith",
+  "enemy:armoured-mangrove-treant",
+  "enemy:armoured-sea-serpent",
+  "enemy:armoured-siren-harpy",
+  "enemy:fuse-totem"
+ ],
+ "sim.Ra": [
+  "melee",
+  "shot",
+  "zone",
+  "storm",
+  "orbit",
+  "blast",
+  "summon",
+  "nova",
+  "any"
+ ],
+ "sim.Ro": {
+  "shape": "blob",
+  "color": "#5d4037",
+  "sprite": "compost-titan"
+ },
+ "sim.Sr": {
+  "startSec": 1200,
+  "phaseSec": 300,
+  "bossAtSec": 240,
+  "familyStartSec": 60
+ },
+ "sim.Tn": {
+  "tiers": {
+   "common": {
+    "ink": "white"
+   },
+   "rare": {
+    "ink": "gold"
+   },
+   "set": {
+    "ink": "leaf1",
+    "seen": {
+     "protanopia": "sky",
+     "deuteranopia": "cyan1",
+     "tritanopia": "leaf0"
+    }
+   },
+   "legendary": {
+    "ink": "orange"
+   },
+   "mythic": {
+    "ink": "plum5",
+    "seen": {
+     "protanopia": "plum4",
+     "deuteranopia": "plum4",
+     "tritanopia": "cyan1"
+    }
+   }
+  },
+  "ancestral": {
+   "mark": "word"
+  },
+  "primal": {
+   "mark": "label",
+   "ink": "red",
+   "seen": {
+    "deuteranopia": "teal1",
+    "tritanopia": "teal1"
+   },
+   "text": "white"
+  },
+  "greater": {
+   "star": "red",
+   "core": "white"
+  },
+  "fx": {
+   "light": "white",
+   "gold": "gold",
+   "ember": "amber",
+   "molten": "ochre5",
+   "cool": "sky",
+   "bright": "lemon",
+   "dusk": "plum4",
+   "warm": "ochre4"
+  }
+ },
+ "sim.Va": {
+  "harvest": 1,
+  "golden": 2,
+  "self": 3,
+  "rearm": 4,
+  "recall": 5
+ },
+ "sim.Wi": {
+  "rimWidth": 2,
+  "rim": {
+   "lit": "gold",
+   "shade": {
+    "base": "ochre3",
+    "hot": "amber"
+   }
+  },
+  "rimSwatches": {
+   "gold": "#ffd04a",
+   "ochre3": "#d6a556",
+   "amber": "#f2a02c"
+  },
+  "glint": {
+   "base": "white",
+   "hot": "lemon"
+  },
+  "glints": 5,
+  "steam": {
+   "core": "white",
+   "edge": "mist",
+   "tail": "fog"
+  },
+  "mote": {
+   "body": "ochre5",
+   "core": "white"
+  },
+  "riseFrom": 3,
+  "riseBy": 10,
+  "riseSec": 1.3,
+  "hazardBanned": [
+   "gold",
+   "amber",
+   "ochre3",
+   "ochre4",
+   "ochre5",
+   "lemon"
+  ]
+ },
+ "sim.Wn": [
+  {
+   "set": "space-farmer",
+   "rule": {
+    "kind": "eventHorizon",
+    "maxBulletRadius": 3,
+    "dimSec": 0.5,
+    "stackGain": 0.02,
+    "stackSec": 8,
+    "maxStacks": 50
+   }
+  },
+  {
+   "set": "iron-skillet",
+   "rule": {
+    "kind": "holdTheLine",
+    "reach": 56,
+    "armorPerPest": 3,
+    "twoCap": 12,
+    "fullCap": 30,
+    "swingEverySec": 0.5,
+    "swingOn": "reach",
+    "swingMult": 2,
+    "dash": "brace",
+    "braceSec": 1,
+    "braceCut": 0.6,
+    "cooldownBossCap": 0.35,
+    "keptWalk": 0.9
+   },
+   "pieces": 2
+  },
+  {
+   "set": "mech-pilot",
+   "rule": {
+    "kind": "overdrive",
+    "twoRefund": 0.5,
+    "gapSec": 0.75,
+    "heat": 5,
+    "ventReach": 64,
+    "rate": 0.7,
+    "buffSec": 5
+   },
+   "pieces": 2
+  },
+  {
+   "set": "fry-cook",
+   "rule": {
+    "kind": "ricochet",
+    "jumpsPerPierce": 1,
+    "freeJumps": 1,
+    "setJumps": 2,
+    "maxJumps": 7,
+    "reach": 160,
+    "gain": 0.2,
+    "minSpeed": 120,
+    "hopLifeSec": 0.15,
+    "bounceLifeShare": 0.6
+   }
+  },
+  {
+   "set": "buccaneer",
+   "rule": {
+    "kind": "shipsBell",
+    "periodSec": 4,
+    "dashAfterSec": 1.5,
+    "aimSec": 0.25,
+    "volleys": 1
+   }
+  },
+  {
+   "set": "bog-witch",
+   "rule": {
+    "kind": "spreadingBog",
+    "size": 0.6,
+    "minRadius": 14,
+    "sec": 2,
+    "damage": 3,
+    "cap": 40,
+    "wade": 0.1
+   }
+  },
+  {
+   "set": "storm-sage",
+   "rule": {
+    "kind": "staticStep",
+    "sparkEvery": 20,
+    "maxSparks": 8,
+    "forkReach": 80,
+    "forkDamage": 3,
+    "emptyRecharge": 0.3
+   }
+  },
+  {
+   "set": "pack-ranger",
+   "rule": {
+    "kind": "theHunt",
+    "eliteDamage": 0.3,
+    "quarryDamage": 0.5,
+    "howlRate": 0.1,
+    "howlSec": 1,
+    "rescanSec": 0.5,
+    "emptyRescanSec": 0.1,
+    "bossHitCap": 0.004
+   },
+   "pieces": 2
+  }
+ ],
+ "sim.Wr": [
+  {
+   "stat": "might",
+   "label": "Damage",
+   "base": 0.06
+  },
+  {
+   "stat": "area",
+   "label": "Area",
+   "base": 0.06
+  },
+  {
+   "stat": "cooldown",
+   "label": "Cooldown",
+   "base": 0.03
+  },
+  {
+   "stat": "moveSpeed",
+   "label": "Move speed",
+   "base": 0.05
+  },
+  {
+   "stat": "maxHp",
+   "label": "Max HP",
+   "base": 12
+  },
+  {
+   "stat": "armor",
+   "label": "Armor",
+   "base": 10
+  },
+  {
+   "stat": "luck",
+   "label": "Luck",
+   "base": 0.06
+  },
+  {
+   "stat": "greed",
+   "label": "Gold gain",
+   "base": 0.1
+  },
+  {
+   "stat": "growth",
+   "label": "XP gain",
+   "base": 0.06
+  },
+  {
+   "stat": "critChance",
+   "label": "Crit",
+   "base": 0.04
+  },
+  {
+   "stat": "duration",
+   "label": "Duration",
+   "base": 0.06
+  },
+  {
+   "stat": "magnet",
+   "label": "Pickup range",
+   "base": 0.15
+  }
+ ],
+ "sim.Xa": [
+  "bot:black",
+  "bot:brown",
+  "bot:red",
+  "bot:orange",
+  "bot:yellow",
+  "bot:green",
+  "bot:cyan",
+  "bot:blue",
+  "bot:violet",
+  "bot:magenta",
+  "bot:gray"
+ ],
+ "sim.Ya": [
+  "boss:amusing",
+  "boss:beetle-queen",
+  "boss:compost-titan",
+  "boss:deep-freezer",
+  "boss:fryer-king",
+  "boss:grater-golem",
+  "boss:great-wireworm",
+  "boss:harvester",
+  "boss:ketchup-kraken",
+  "boss:late-blight",
+  "boss:sir-strawman",
+  "boss:the-mandoline",
+  "boss:the-masher",
+  "boss:pack-lord",
+  "boss:root-hydra",
+  "boss:root-hydra-frenzy",
+  "boss:root-hydra-head",
+  "boss:root-hydra-mire",
+  "boss:root-hydra-stump",
+  "boss:queen",
+  "boss:shell-titan"
+ ],
+ "sim.Za": [
+  "dog:beagle",
+  "dog:collie",
+  "dog:corgi",
+  "dog:dachshund",
+  "dog:greyhound",
+  "dog:pomchi",
+  "dog:pomeranian",
+  "dog:retriever",
+  "dog:saint-bernard",
+  "dog:terrier",
+  "dog:zelda-and-link",
+  "dog:sigkitten",
+  "dog:dalmatian",
+  "dog:husky",
+  "dog:newfoundland",
+  "dog:saluki",
+  "dog:shiba",
+  "dog:whippet"
+ ],
+ "sim._r": {
+  "dealtPerLevel": 2.2,
+  "dealtAt20Min": 5500000000,
+  "dealtPerMinute": 1.09,
+  "killsPerMinute": 250000,
+  "killsPerLevel": 1,
+  "margin": 3
+ },
+ "sim.aa": {
+  "kind": "migration",
+  "every": 60,
+  "count": 36,
+  "halfWidth": 140,
+  "depth": 50,
+  "speed": 70,
+  "xp": 3,
+  "life": 18,
+  "migrant": "beetle-brood"
+ },
+ "sim.an": {
+  "cap": 0,
+  "heldTick": 1,
+  "chance": 2,
+  "life": 3,
+  "snareSec": 4,
+  "sproutAt": 5
+ },
+ "sim.ei": {
+  "evolutions": [
+   {
+    "kind": "evolution",
+    "weapon": "small-fry",
+    "catalyst": {
+     "kind": "passive",
+     "id": "fertilizer"
+    },
+    "result": "big-fry"
+   },
+   {
+    "kind": "evolution",
+    "weapon": "grab-bag",
+    "catalyst": {
+     "kind": "passive",
+     "id": "sprouting-eyes"
+    },
+    "result": "bottomless-sack"
+   },
+   {
+    "kind": "evolution",
+    "weapon": "frying-pan",
+    "catalyst": {
+     "kind": "passive",
+     "id": "starch-plating"
+    },
+    "result": "cast-iron"
+   },
+   {
+    "kind": "evolution",
+    "weapon": "root-cellar",
+    "catalyst": {
+     "kind": "passive",
+     "id": "slow-cooker"
+    },
+    "result": "cold-storage"
+   },
+   {
+    "kind": "evolution",
+    "weapon": "mash-mallet",
+    "catalyst": {
+     "kind": "passive",
+     "id": "masher-grip"
+    },
+    "result": "crater-pound"
+   },
+   {
+    "kind": "evolution",
+    "weapon": "spud-dynamo",
+    "catalyst": {
+     "kind": "passive",
+     "id": "slow-cooker"
+    },
+    "result": "dynamo-coil"
+   },
+   {
+    "kind": "evolution",
+    "weapon": "sprout-satellites",
+    "catalyst": {
+     "kind": "passive",
+     "id": "slow-cooker"
+    },
+    "result": "eternal-sprouts"
+   },
+   {
+    "kind": "evolution",
+    "weapon": "reset-button",
+    "catalyst": {
+     "kind": "passive",
+     "id": "four-eyed-spud"
+    },
+    "result": "factory-reset"
+   },
+   {
+    "kind": "evolution",
+    "weapon": "fry-sentry",
+    "catalyst": {
+     "kind": "passive",
+     "id": "slow-cooker"
+    },
+    "result": "fry-fortress"
+   },
+   {
+    "kind": "evolution",
+    "weapon": "butter-streak",
+    "catalyst": {
+     "kind": "passive",
+     "id": "spud-sneakers"
+    },
+    "result": "ghee-glide"
+   },
+   {
+    "kind": "evolution",
+    "weapon": "potato-rain",
+    "catalyst": {
+     "kind": "passive",
+     "id": "golden-fry"
+    },
+    "result": "golden-harvest"
+   },
+   {
+    "kind": "evolution",
+    "weapon": "starch-chain",
+    "catalyst": {
+     "kind": "passive",
+     "id": "hot-sauce"
+    },
+    "result": "gratin-arc"
+   },
+   {
+    "kind": "evolution",
+    "weapon": "starch-puddle",
+    "catalyst": {
+     "kind": "passive",
+     "id": "butter-pat"
+    },
+    "result": "gratin-puddle"
+   },
+   {
+    "kind": "evolution",
+    "weapon": "gravy-boat",
+    "catalyst": {
+     "kind": "passive",
+     "id": "potato-magnet"
+    },
+    "result": "gravy-flood"
+   },
+   {
+    "kind": "evolution",
+    "weapon": "hash-brown-shield",
+    "catalyst": {
+     "kind": "passive",
+     "id": "starch-plating"
+    },
+    "result": "hash-bulwark"
+   },
+   {
+    "kind": "evolution",
+    "weapon": "hash-boomerang",
+    "catalyst": {
+     "kind": "passive",
+     "id": "sour-cream"
+    },
+    "result": "hashnado"
+   },
+   {
+    "kind": "evolution",
+    "weapon": "deep-fryer",
+    "catalyst": {
+     "kind": "passive",
+     "id": "bacon-bits"
+    },
+    "result": "inferno-basket"
+   },
+   {
+    "kind": "evolution",
+    "weapon": "skillet-flail",
+    "catalyst": {
+     "kind": "passive",
+     "id": "starch-plating"
+    },
+    "result": "iron-flail"
+   },
+   {
+    "kind": "evolution",
+    "weapon": "chip-shuriken",
+    "catalyst": {
+     "kind": "passive",
+     "id": "gpu"
+    },
+    "result": "kettle-cyclone"
+   },
+   {
+    "kind": "evolution",
+    "weapon": "tater-mines",
+    "catalyst": {
+     "kind": "passive",
+     "id": "rotten-spud"
+    },
+    "result": "landmine-harvest"
+   },
+   {
+    "kind": "evolution",
+    "weapon": "spud-dice",
+    "catalyst": {
+     "kind": "passive",
+     "id": "four-eyed-spud"
+    },
+    "result": "loaded-dice"
+   },
+   {
+    "kind": "evolution",
+    "weapon": "peeler",
+    "catalyst": {
+     "kind": "passive",
+     "id": "gravy-heart"
+    },
+    "result": "mandoline-fury"
+   },
+   {
+    "kind": "evolution",
+    "weapon": "mash-wave",
+    "catalyst": {
+     "kind": "passive",
+     "id": "big-bowl"
+    },
+    "result": "mashquake"
+   },
+   {
+    "kind": "evolution",
+    "weapon": "mezzaluna",
+    "catalyst": {
+     "kind": "passive",
+     "id": "rotten-spud"
+    },
+    "result": "moon-cleaver"
+   },
+   {
+    "kind": "evolution",
+    "weapon": "seeker-sprouts",
+    "catalyst": {
+     "kind": "passive",
+     "id": "fertilizer"
+    },
+    "result": "overgrowth"
+   },
+   {
+    "kind": "evolution",
+    "weapon": "frozen-fries",
+    "catalyst": {
+     "kind": "passive",
+     "id": "thick-skin"
+    },
+    "result": "permafrost-fries"
+   },
+   {
+    "kind": "evolution",
+    "weapon": "steam-vent",
+    "catalyst": {
+     "kind": "passive",
+     "id": "root-network"
+    },
+    "result": "pressure-cooker"
+   },
+   {
+    "kind": "evolution",
+    "weapon": "fry-lance",
+    "catalyst": {
+     "kind": "passive",
+     "id": "spud-sneakers"
+    },
+    "result": "railfry"
+   },
+   {
+    "kind": "evolution",
+    "weapon": "peel-lash",
+    "catalyst": {
+     "kind": "passive",
+     "id": "salt-shaker"
+    },
+    "result": "rind-whip"
+   },
+   {
+    "kind": "evolution",
+    "weapon": "rosti-disc",
+    "catalyst": {
+     "kind": "passive",
+     "id": "starch-plating"
+    },
+    "result": "rosti-storm"
+   },
+   {
+    "kind": "evolution",
+    "weapon": "spud-lob",
+    "catalyst": {
+     "kind": "passive",
+     "id": "butter-pat"
+    },
+    "result": "sack-of-russets"
+   },
+   {
+    "kind": "evolution",
+    "weapon": "salt-line",
+    "catalyst": {
+     "kind": "passive",
+     "id": "spud-sneakers"
+    },
+    "result": "salt-flats"
+   },
+   {
+    "kind": "evolution",
+    "weapon": "hot-potato",
+    "catalyst": {
+     "kind": "passive",
+     "id": "hot-sauce"
+    },
+    "result": "spicy-hot-potato"
+   },
+   {
+    "kind": "evolution",
+    "weapon": "potato-battery",
+    "catalyst": {
+     "kind": "passive",
+     "id": "root-network"
+    },
+    "result": "spud-grid"
+   },
+   {
+    "kind": "evolution",
+    "weapon": "spud-cannon",
+    "catalyst": {
+     "kind": "passive",
+     "id": "hot-sauce"
+    },
+    "result": "spudzooka"
+   },
+   {
+    "kind": "evolution",
+    "weapon": "whisk-vortex",
+    "catalyst": {
+     "kind": "passive",
+     "id": "big-bowl"
+    },
+    "result": "stand-mixer"
+   },
+   {
+    "kind": "evolution",
+    "weapon": "root-spikes",
+    "catalyst": {
+     "kind": "passive",
+     "id": "masher-grip"
+    },
+    "result": "taproot-eruption"
+   },
+   {
+    "kind": "evolution",
+    "weapon": "fry-knives",
+    "catalyst": {
+     "kind": "passive",
+     "id": "salt-shaker"
+    },
+    "result": "thousand-fries"
+   },
+   {
+    "kind": "evolution",
+    "weapon": "starch-bolt",
+    "catalyst": {
+     "kind": "passive",
+     "id": "sprouting-eyes"
+    },
+    "result": "thunder-tuber"
+   },
+   {
+    "kind": "evolution",
+    "weapon": "tot-toss",
+    "catalyst": {
+     "kind": "passive",
+     "id": "chives"
+    },
+    "result": "tot-gatling"
+   },
+   {
+    "kind": "evolution",
+    "weapon": "julienne-dash",
+    "catalyst": {
+     "kind": "passive",
+     "id": "butter-socks"
+    },
+    "result": "waffle-cut"
+   }
+  ],
+  "unions": [
+   {
+    "kind": "union",
+    "weapons": [
+     "permafrost-fries",
+     "spicy-hot-potato"
+    ],
+    "result": "baked-alaska"
+   },
+   {
+    "kind": "union",
+    "weapons": [
+     "cold-storage",
+     "eternal-sprouts"
+    ],
+    "result": "cold-frame"
+   },
+   {
+    "kind": "union",
+    "weapons": [
+     "gravy-flood",
+     "stand-mixer"
+    ],
+    "result": "gravy-whirlpool"
+   },
+   {
+    "kind": "union",
+    "weapons": [
+     "cast-iron",
+     "hash-bulwark"
+    ],
+    "result": "griddle-guard"
+   },
+   {
+    "kind": "union",
+    "weapons": [
+     "big-fry",
+     "overgrowth"
+    ],
+    "result": "hungry-sprouts"
+   },
+   {
+    "kind": "union",
+    "weapons": [
+     "mandoline-fury",
+     "moon-cleaver"
+    ],
+    "result": "knife-block"
+   },
+   {
+    "kind": "union",
+    "weapons": [
+     "taproot-eruption",
+     "spud-grid"
+    ],
+    "result": "root-current"
+   },
+   {
+    "kind": "union",
+    "weapons": [
+     "ghee-glide",
+     "salt-flats"
+    ],
+    "result": "salted-butter"
+   },
+   {
+    "kind": "union",
+    "weapons": [
+     "golden-harvest",
+     "landmine-harvest"
+    ],
+    "result": "sowing-season"
+   },
+   {
+    "kind": "union",
+    "weapons": [
+     "sack-of-russets",
+     "spudzooka"
+    ],
+    "result": "spud-artillery"
+   },
+   {
+    "kind": "union",
+    "weapons": [
+     "thunder-tuber",
+     "gratin-arc"
+    ],
+    "result": "starch-supercell"
+   }
+  ],
+  "itemEvolutions": [
+   {
+    "kind": "itemEvolution",
+    "item": "wandering-eyes",
+    "catalyst": "four-eyed-spud",
+    "result": "all-seeing-spud"
+   },
+   {
+    "kind": "itemEvolution",
+    "item": "coal-baked-spud",
+    "catalyst": "hot-sauce",
+    "result": "bonfire-spud"
+   },
+   {
+    "kind": "itemEvolution",
+    "item": "porcupine-spud",
+    "catalyst": "starch-plating",
+    "result": "fry-volcano"
+   },
+   {
+    "kind": "itemEvolution",
+    "item": "freezer-burn",
+    "catalyst": "slow-cooker",
+    "result": "glacier-spud"
+   },
+   {
+    "kind": "itemEvolution",
+    "item": "boom-spud",
+    "catalyst": "rotten-spud",
+    "result": "kaboom-spud"
+   },
+   {
+    "kind": "itemEvolution",
+    "item": "spicy-croquette",
+    "catalyst": "big-bowl",
+    "result": "magma-croquette"
+   },
+   {
+    "kind": "itemEvolution",
+    "item": "heavy-russet",
+    "catalyst": "masher-grip",
+    "result": "meteor-russet"
+   },
+   {
+    "kind": "itemEvolution",
+    "item": "static-tot",
+    "catalyst": "root-network",
+    "result": "storm-tot"
+   }
+  ],
+  "makes": "[fn]",
+  "makesItem": "[fn]",
+  "evolutionOf": "[fn]",
+  "evolutionInto": "[fn]",
+  "itemEvolutionOf": "[fn]",
+  "unionsOf": "[fn]",
+  "evolvedBy": "[fn]",
+  "itemsEvolvedBy": "[fn]"
+ },
+ "sim.gt": {
+  "fps": 12,
+  "motes": 8,
+  "glints": 3,
+  "reachMin": 0.3,
+  "reachMax": 0.85,
+  "rise": 7,
+  "glintRise": 12,
+  "glintDelay": 0.06,
+  "moteGlow": 0.35,
+  "glintGlow": 1,
+  "shadow": 1
+ },
+ "sim.ho": {
+  "critK": 1,
+  "evasionK": 1,
+  "discountK": 1,
+  "explodeK": 1,
+  "cooldownCap": 0.6,
+  "baseCritMult": 2,
+  "curseRewardShare": 0.5
+ },
  "sim.ia": [
   {
    "id": "snow",
@@ -5995,12 +5807,21 @@
   "crit-chance",
   "recovery"
  ],
- "sim.ka": {
-  "harvest": 1,
-  "golden": 2,
-  "self": 3,
-  "rearm": 4,
-  "recall": 5
+ "sim.jo": {
+  "shape": "blob",
+  "color": "#689f38",
+  "sprite": "late-blight",
+  "puddle": {
+   "body": "#3d1b58",
+   "edge": "#050506",
+   "fleck": "#6c7189",
+   "bubble": "#9258a2",
+   "boil": {
+    "period": 2,
+    "density": 4,
+    "glow": 0.4
+   }
+  }
  },
  "sim.ki": [
   "enemy:aphid",
@@ -6073,6 +5894,11 @@
   "enemy:armoured-siren-harpy",
   "enemy:fuse-totem"
  ],
+ "sim.ko": {
+  "shape": "wide",
+  "color": "#cfd8dc",
+  "sprite": "the-mandoline"
+ },
  "sim.la": {
   "spudForge": {
    "color": "#ffe08a",
@@ -6097,7 +5923,7 @@
    "perRank": 0.01
   }
  },
- "sim.no": [
+ "sim.mo": [
   "might",
   "area",
   "cooldown",
@@ -6268,14 +6094,237 @@
    }
   ]
  ],
- "sim.ro": {
-  "critK": 1,
-  "evasionK": 1,
-  "discountK": 1,
-  "explodeK": 1,
-  "cooldownCap": 0.6,
-  "baseCritMult": 2,
-  "curseRewardShare": 0.5
+ "sim.qo": {
+  "startChest": {
+   "offset": {
+    "x": 56,
+    "y": 0
+   },
+   "leash": {
+    "radius": 220,
+    "back": 32,
+    "throwSec": 0.25,
+    "pullSec": 1
+   },
+   "nudges": {
+    "lines": [
+     {
+      "afterSec": 8,
+      "line": "openIt"
+     },
+     {
+      "afterSec": 16,
+      "line": "bigBox"
+     },
+     {
+      "afterSec": 24,
+      "line": "asleep"
+     }
+    ],
+    "jail": {
+     "afterSec": 32,
+     "line": "hardWay",
+     "held": "notLeaving",
+     "radius": 12
+    }
+   },
+   "contents": {
+    "weapons": [
+     {
+      "id": "peeler",
+      "level": 4
+     },
+     {
+      "id": "tot-toss",
+      "level": 3
+     }
+    ],
+    "passives": [
+     {
+      "id": "thick-skin",
+      "level": 2
+     }
+    ]
+   }
+  },
+  "firstRush": {
+   "startTicks": 180,
+   "alive": {
+    "from": 10,
+    "to": 200
+   },
+   "everySec": {
+    "from": 0.55,
+    "to": 0.09
+   },
+   "batch": 3,
+   "reach": 250
+  },
+  "boss": {
+   "id": "amusing",
+   "landTicks": 1800,
+   "heal": 1
+  },
+  "secondRush": {
+   "peakTicks": 900,
+   "alive": {
+    "from": 220,
+    "to": 400
+   },
+   "everySec": {
+    "from": 0.2,
+    "to": 0.06
+   },
+   "batch": 3,
+   "reach": 200
+  },
+  "waves": {
+   "rows": [
+    {
+     "minute": 0,
+     "minEnemies": 8,
+     "maxEnemies": 500,
+     "interval": 1.3,
+     "batch": 2,
+     "tiers": [
+      1,
+      0,
+      0,
+      0,
+      0
+     ],
+     "enemy": "reset-zombie"
+    },
+    {
+     "minute": 1,
+     "minEnemies": 8,
+     "maxEnemies": 500,
+     "interval": 1.3,
+     "batch": 2,
+     "tiers": [
+      1,
+      0,
+      0,
+      0,
+      0
+     ],
+     "enemy": "reset-zombie"
+    },
+    {
+     "minute": 2,
+     "minEnemies": 12,
+     "maxEnemies": 500,
+     "interval": 1.1,
+     "batch": 2,
+     "tiers": [
+      1,
+      0,
+      0,
+      0,
+      0
+     ],
+     "enemy": "reset-zombie"
+    },
+    {
+     "minute": 3,
+     "minEnemies": 16,
+     "maxEnemies": 500,
+     "interval": 1,
+     "batch": 3,
+     "tiers": [
+      1,
+      0,
+      0,
+      0,
+      0
+     ],
+     "enemy": "reset-zombie"
+    }
+   ],
+   "afterLast": "hold"
+  },
+  "config": {
+   "spawns": {
+    "earlyCeiling": []
+   },
+   "levelUp": {
+    "catalystGuaranteeLevel": 6
+   },
+   "poteto": {
+    "visitChance": 0
+   },
+   "world": {
+    "landmarkEvents": false,
+    "poiTaperPerMinute": 0,
+    "onlyPois": [
+     "crops",
+     "taterMagnet",
+     "spudFreezer",
+     "frenzyFryer",
+     "botDock",
+     "taterLantern",
+     "seedVault"
+    ],
+    "outOfFirstView": [
+     "paidChest",
+     "seedVault"
+    ]
+   },
+   "alex": {
+    "chance": 1
+   }
+  },
+  "ending": [
+   {
+    "kind": "visit",
+    "afterJoinTicks": 900
+   },
+   {
+    "kind": "line",
+    "line": "inTheGame",
+    "at": "bonk"
+   },
+   {
+    "kind": "line",
+    "line": "foundYou",
+    "at": "bonk"
+   },
+   {
+    "kind": "line",
+    "line": "storyMode",
+    "at": "bonk"
+   },
+   {
+    "kind": "line",
+    "line": "noobs",
+    "at": "bonk"
+   },
+   {
+    "kind": "line",
+    "line": "madeSure",
+    "at": "bonk"
+   },
+   {
+    "kind": "line",
+    "line": "laugh",
+    "at": "bonk"
+   },
+   {
+    "kind": "line",
+    "line": "napTime",
+    "at": "bonk"
+   },
+   {
+    "kind": "knockOut",
+    "alex": true,
+    "alexAfterTicks": 30
+   },
+   {
+    "kind": "line",
+    "line": "realDifficulty",
+    "at": "fall"
+   }
+  ]
  },
  "sim.rr": {
   "piece": "crown-of-plenty",
@@ -6355,13 +6404,6 @@
   "craterRadius": 34,
   "craterLife": 12,
   "craterPace": 0.5
- },
- "sim.so": {
-  "price": 2500,
-  "priceGrowth": 1.6,
-  "damageGrowth": 1.5,
-  "passiveGrowth": 1.5,
-  "top": 8
  },
  "sim.t": {
   "AlexReveal": "[fn]",
@@ -6451,11 +6493,14 @@
    }
   }
  },
- "sim.vo": {
-  "shape": "tall",
-  "color": "#d7b46a",
-  "sprite": "sir-strawman"
- },
+ "sim.va": [
+  "round",
+  "oval",
+  "clover",
+  "splat",
+  "slab",
+  "drop"
+ ],
  "sim.wn": [
   "common",
   "rare",
@@ -6463,47 +6508,17 @@
   "legendary",
   "mythic"
  ],
- "sim.wo": {
-  "shape": "box",
-  "color": "#ff9800",
-  "sprite": "fryer-king",
-  "puddle": {
-   "body": "#0e0805",
-   "edge": "#3f2a19",
-   "fleck": "#6c7189",
-   "bubble": "#55331c",
-   "boil": {
-    "period": 1.2,
-    "density": 4.5,
-    "glow": 0.6
-   }
-  }
- },
  "sim.wr": {
   "family": "hunt",
   "skill": "positioning",
   "boss": "pack-lord"
  },
- "sim.xo": {
-  "shape": "wide",
-  "color": "#c62828",
-  "sprite": "harvester"
- },
  "sim.yo": {
-  "shape": "blob",
-  "color": "#689f38",
-  "sprite": "late-blight",
-  "puddle": {
-   "body": "#3d1b58",
-   "edge": "#050506",
-   "fleck": "#6c7189",
-   "bubble": "#9258a2",
-   "boil": {
-    "period": 2,
-    "density": 4,
-    "glow": 0.4
-   }
-  }
+  "price": 2500,
+  "priceGrowth": 1.6,
+  "damageGrowth": 1.5,
+  "passiveGrowth": 1.5,
+  "top": 8
  },
  "sim.z": {
   "off": "#eed4ff",
@@ -6511,26 +6526,11 @@
   "deuteranopia": "#fffaea",
   "tritanopia": "#eed4ff"
  },
- "sim.za": [
-  "dog:beagle",
-  "dog:collie",
-  "dog:corgi",
-  "dog:dachshund",
-  "dog:greyhound",
-  "dog:pomchi",
-  "dog:pomeranian",
-  "dog:retriever",
-  "dog:saint-bernard",
-  "dog:terrier",
-  "dog:zelda-and-link",
-  "dog:sigkitten",
-  "dog:dalmatian",
-  "dog:husky",
-  "dog:newfoundland",
-  "dog:saluki",
-  "dog:shiba",
-  "dog:whippet"
- ],
+ "sim.zo": {
+  "shape": "round",
+  "color": "#fbc02d",
+  "sprite": "beetle-queen"
+ },
  "boot.Ai": {
   "circle": 0,
   "line": 1,
@@ -7388,6 +7388,7 @@
   "jackpot": {
    "guardSec": 0.25,
    "coverSec": 0.2,
+   "continueFadeSec": 0.22,
    "tiers": {
     "jackpot": {
      "rewards": 5,
