@@ -9297,6 +9297,12 @@
    "ceilingScale": 1,
    "floorShare": 0
   },
+  "openingPack": {
+   "count": 8,
+   "clearReach": 100,
+   "clearSec": 2.3,
+   "jitter": 0.3
+  },
   "pickups": {
    "maxGems": 350,
    "gemMergeRadius": 120

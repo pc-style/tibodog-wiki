@@ -4,7 +4,7 @@ Lucky Peel is a common stat item that adds 0.05 luck. Copies stack: each one add
 
 Luck does three things (see [Stats](/stats#luck)): it gives a chance of a fourth level-up card equal to your luck, it raises the 3- and 5-reward chances of [chests](/chests), and it multiplies the weight of rarity *n* items by `(1 + luck)^n`. One peel therefore means a 5% chance of a fourth card. On item rolls it raises the Legendary weight by about 22% (1.05⁴).
 
-Lucky Peel is also the game's fallback item. If an item roll finds nothing it is allowed to give, you get a Lucky Peel. <small>[sim-CRdlxLJj.js: `` ??u.item(`lucky-peel`) ``]</small>
+Lucky Peel is also the game's fallback item. If an item roll finds nothing it is allowed to give, you get a Lucky Peel. <small>[sim-CJbdqtVr.js: `` ??u.item(`lucky-peel`) ``]</small>
 
 ## Tips
 
