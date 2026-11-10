@@ -1,5 +1,5 @@
 {
- "_source": "intro-shared-C0r4Tj6Z.js: difficulty defaults and per-level overrides",
+ "_source": "intro-shared-B3jO0fBs.js: difficulty defaults and per-level overrides",
  "defaults": {
   "alive": 1,
   "floorShare": 0,
@@ -36,6 +36,9 @@
   "sharpAttacks": false,
   "areaScale": 1,
   "bossHitShare": null,
+  "spreadBuild": true,
+  "catalystGuaranteeLag": 0,
+  "xpExponentRaise": 0,
   "promises": []
  },
  "easy": {
@@ -194,6 +197,9 @@
   "sharpAttacks": true,
   "areaScale": 1.45,
   "bossHitShare": 0.9,
+  "spreadBuild": false,
+  "catalystGuaranteeLag": 3,
+  "xpExponentRaise": 0.01,
   "crowd": 1.6,
   "promises": [
    {

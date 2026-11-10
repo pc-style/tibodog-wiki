@@ -6,7 +6,7 @@ At level 8, hold [Masher Grip](/passives/masher-grip) at any level and open a [c
 
 ## How it works
 
-The strike searches within 64 units of Tibo. Each pound selects a pest not already selected by that attack, then hits around that pest with radius 16 × modified Area. More Amount adds pounds, subject to having eligible targets; it does not enlarge each impact. Tibo's ordinary +1 Amount makes the raw Amount 1 become 2 before other bonuses. <small>[sim-CJbdqtVr.js: `let i=ou(e),a=n.size*r.area;for(let o=0;o<r.amount;o++){let o=ru(e,n.range,i);if(o===void 0)return;au(e,o,i)`]</small>
+The strike searches within 64 units of Tibo. Each pound selects a pest not already selected by that attack, then hits around that pest with radius 16 × modified Area. More Amount adds pounds, subject to having eligible targets; it does not enlarge each impact. Tibo's ordinary +1 Amount makes the raw Amount 1 become 2 before other bonuses. <small>[sim-BI7WLnza.js: `let i=lu(e),a=n.size*r.area;for(let o=0;o<r.amount;o++){let o=ou(e,n.range,i);if(o===void 0)return;cu(e,o,i)`]</small>
 
 The official description says “nearest”, but the strike picker uses seeded-random selection among nearby candidates, not distance ranking. In the supplied Amount-1 control on `main-CAVio-MR.js`, seed `s1` selected the pest 50 units away while the pest 20 units away remained untouched. The current `main-sYP4bxZZ.js` simulation is source-identical after normalizing asset filenames, so the same targeting contract applies; this is source-equivalence evidence, not a new current-build gameplay run.
 
