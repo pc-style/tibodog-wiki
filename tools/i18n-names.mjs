@@ -14,12 +14,14 @@ let dir = dirArg ?? join(ROOT, '.cache', mainChunk.replace(/\.js$/, ''), 'assets
 if (!existsSync(join(dir, bootChunk))) dir = (await mirror(undefined, mainChunk)).dir;
 
 const boot = readFileSync(join(dir, bootChunk), 'utf8');
+const languageChunk = boot.match(/\.\/(language-ahead-[A-Za-z0-9_-]{8}\.js)/)?.[1];
+const source = boot + (languageChunk ? readFileSync(join(dir, languageChunk), 'utf8') : '');
 // The language list: [{tag, endonym, englishName, dir}, ...] in the order the Settings panel shows it.
-const languages = [...boot.matchAll(/\{tag:`([^`]+)`,endonym:`([^`]+)`,englishName:`([^`]+)`,dir:`(ltr|rtl)`\}/g)].map((m) => ({ tag: m[1], endonym: m[2], englishName: m[3], dir: m[4] }));
+const languages = [...source.matchAll(/\{tag:`([^`]+)`,endonym:`([^`]+)`,englishName:`([^`]+)`,dir:`(ltr|rtl)`\}/g)].map((m) => ({ tag: m[1], endonym: m[2], englishName: m[3], dir: m[4] }));
 if (languages.length < 2 || languages[0].tag !== 'en') throw new Error(`language list not found in ${bootChunk}`);
 // English loads its own content chunk; every other language loads a ui and a content chunk.
 for (const l of languages) {
-  const m = boot.match(new RegExp(`\\./(i18n-${l.tag}-content-[A-Za-z0-9_-]{8}\\.js)`));
+  const m = source.match(new RegExp(`\\./(i18n-${l.tag}-content-[A-Za-z0-9_-]{8}\\.js)`));
   if (!m) throw new Error(`no content chunk for ${l.tag}`);
   l.chunk = m[1];
 }

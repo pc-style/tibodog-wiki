@@ -6,11 +6,11 @@ It is a charger. It rolls towards Tibo at speed 26, the slowest of any charger, 
 
 ## How it works
 
-The timings below are before 20:00. In Standard from 20:00, the windup is 0.6 s instead of 0.5 s; the dash and cooldown do not change. <small>[sim-B1TRz8tn.js: `return!ni(e)||e.runClock<Xr?t:Math.max(t,.6)`]</small>
+The timings below are before 20:00. In Standard from 20:00, the windup is 0.6 s instead of 0.5 s; the dash and cooldown do not change. <small>[sim-C4Oo36Ru.js: `return!ri(e)||e.runClock<Zr?t:Math.max(t,.6)`]</small>
 
-The charge follows the same cycle as every charger: a 0.5 s windup standing still and aimed at Tibo's position at that moment, then a straight dash of 1.3 × `dashRange`, here about 156 units in 0.74 s, then 1.6 s of normal movement before it can charge again. <small>[sim-B1TRz8tn.js: `i.state[t]=2,i.timer[t]=1.3*n/r,i.windup[t]=0`]</small> The dash only deals ordinary contact damage.
+The charge follows the same cycle as every charger: a 0.5 s windup standing still and aimed at Tibo's position at that moment, then a straight dash of 1.3 × `dashRange`, here about 156 units in 0.74 s, then 1.6 s of normal movement before it can charge again. <small>[sim-C4Oo36Ru.js: `i.state[t]=2,i.timer[t]=1.3*n/r,i.windup[t]=0`]</small> The dash only deals ordinary contact damage.
 
-**Strike** spawns a ring of balls 200 units around Tibo. The number is 10 × the level's `wallPests` multiplier: 2 on Easy, 3 on Normal and Hard, 6 on Nightmare (see [Modes](/modes)). Their speed is reset to the base 26, so overtime speed scaling does not apply to them, and any still alive after 16 s vanish without drops. <small>[sim-B1TRz8tn.js: `r.speed[l]=C.enemyAt(n).speed,r.tx[l]=i,r.ty[l]=a,r.despawnAt[l]=e.time+t.life`]</small> Although Strike uses the same “wall” spawner as the [Ring of Hay Bales](/events/bale-ring), the balls do not roll to the ring's centre; they chase and charge Tibo like any other Bowling Ball.
+**Strike** spawns a ring of balls 200 units around Tibo. The number is 10 × the level's `wallPests` multiplier: 2 on Easy, 3 on Normal and Hard, 6 on Nightmare (see [Modes](/modes)). Their speed is reset to the base 26, so overtime speed scaling does not apply to them, and any still alive after 16 s vanish without drops. <small>[sim-C4Oo36Ru.js: `r.speed[l]=w.enemyAt(n).speed,r.tx[l]=i,r.ty[l]=a,r.despawnAt[l]=e.time+t.life`]</small> Although Strike uses the same “wall” spawner as the [Ring of Hay Bales](/events/bale-ring), the balls do not roll to the ring's centre; they chase and charge Tibo like any other Bowling Ball.
 
 ## Tips
 
