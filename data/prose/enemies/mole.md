@@ -6,7 +6,7 @@ It is a slow, heavy pest. With 110 HP and 16 contact damage it has the most HP a
 
 ## How it works
 
-Its `tank` kind has no behaviour of its own: in movement it is identical to a plain chaser and walks straight at Tibo. <small>[sim-eSpFSniv.js: `` case`chase`:case`tank`:case`splitter`:return; ``]</small> What makes it a tank is its stats, including mass 0.6: knockback moves it only 40% as far as a massless pest. <small>[sim-eSpFSniv.js: `f=s*e.loadout.stats.knockbackMult*(1-c)*70`]</small>
+Its `tank` kind has no behaviour of its own: in movement it is identical to a plain chaser and walks straight at Tibo. <small>[sim-B1TRz8tn.js: `` case`chase`:case`tank`:case`splitter`:return; ``]</small> What makes it a tank is its stats, including mass 0.6: knockback moves it only 40% as far as a massless pest. <small>[sim-B1TRz8tn.js: `f=s*e.loadout.stats.knockbackMult*(1-c)*70`]</small>
 
 Tier 4 is the elite tier from 10:00 to 14:59, so elites in these biomes are Moles then (see [Elites](/enemy-scaling#elites)).
 
