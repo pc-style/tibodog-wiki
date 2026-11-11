@@ -1,12 +1,12 @@
 ## Overview
 
-Ghost Pepper is a Rare item that extends Tibo's dash invulnerability. A dash lasts 9 ticks (0.15 s), and Tibo cannot be hit during it. Ghost Pepper keeps him untouchable for another 0.15 s after the dash ends, which doubles the safe window to 0.30 s. <small>[sim-BudLQwEM.js: `t.dashShield[n]=e.cfg.dash.ticks+function(e){return Math.round(60*e.loadout.stats.dashGraceSec)}(e)`]</small>
+Ghost Pepper is a Rare item that extends Tibo's dash invulnerability. A dash lasts 9 ticks (0.15 s), and Tibo cannot be hit during it. Ghost Pepper keeps him untouchable for another 0.15 s after the dash ends, which doubles the safe window to 0.30 s. <small>[sim-PFuQo9mq.js: `t.dashShield[n]=e.cfg.dash.ticks+function(e){return Math.round(60*e.loadout.stats.dashGraceSec)}(e)`]</small>
 
 You can only hold one copy. After you pick it up, it leaves the item pool. It has weight 6 out of 131 among Rare items, about 0.46% of item rolls at luck 0 with the full pool eligible and no weapon-catalyst weight bonuses. It has no evolution.
 
 ## How it works
 
-The dash shield is checked just before the dodge roll and has the same exception: neither one stops damage from biome terrain or hazard pools ([Stats](/stats#dodge)). <small>[sim-BudLQwEM.js: `e.over||!r&&nl(e))return!1;if(!r&&s.evasion>0&&e.rng.chance(s.evasion))`]</small>
+The dash shield is checked just before the dodge roll and has the same exception: neither one stops damage from biome terrain or hazard pools ([Stats](/stats#dodge)). <small>[sim-PFuQo9mq.js: `e.over||!r&&fu(e))return!1;if(!r&&s.evasion>0&&e.rng.chance(s.evasion))`]</small>
 
 ## Tips
 
