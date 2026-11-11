@@ -2089,5 +2089,16 @@
   "updated": "2026-11-10T23:49:00Z",
   "changes": "Weapons give pests distinct finishing effects. Tibo's effects thin out in busy fights before 10:00 too; jackpot Continue accepts input during its final 0.22-second fade. The two art notes move into November 10. Damage and reward rules are unchanged.",
   "evidence": "Imported against delivered189, not superseded190. Whole graph416→417; unchanged registry, English content, names and icon pixels. All changed roles examined: sim death-source tracking, boot/start weapon kill tags, scene occupancy/shot masks and six corpse cues, derived art/actual late-FX worker, spark-inks extraction, HD2D hideKills, run-extras jackpot fade, analytics revision, endgame/run-address equivalence, warm lists and translated journals. Nine sim hunks add presentation source forwarding and move shapes; no whole189/current sim-equality claim. Original189/current82cases cover smoothing/occupancy/distance/disabled-state thresholds, old600s gate removal, death allocation/source fallback, six styles with still/flashing combinations and flash boundaries, jackpot before/at/after fade and skip guard. Standard/Normal seedwiki first-pest forced death matches kills/source/pickups/effectcount; not natural acquisition,DPS,survival or server evidence. Current original game renderer with six supplied corpse states and still/flashes-off settings is inspected separately; not natural visibility/performance/GPU/battery proof. Explicit filename-normalized equality with190 establishes reuse of draft logic/prose, not promotion of old unfinished checks. Full current archive/full/panel/API proof plus separate actual expanded live panel349notes/10dates/146codes. Prior189art notes retain original publication/introduction but groupNov10/11ff8a9; two190next notes now groupNov10/e4281cb, publication/source introduction/grouping kept separate. Current citations repaired at actual owners, save-code followsB2cJQvfx. Original BLOCKED export/patch retained; retrospective190 never-deployed entry has no invented delivery clock. Detailed hashes and retained measurement/scratch-failure limits in data/journal-audit.md."
+ },
+ {
+  "seen": "2026-11-11",
+  "main": "main-B4OnpBr8.js",
+  "boot": "boot-Dfvjme4J.js",
+  "sim": "sim-ByUaSHJI.js",
+  "commit": "0a33b1d01ff2",
+  "status": "reviewed",
+  "updated": "2026-11-11T00:08:00Z",
+  "changes": "No gameplay changes; a rebuild of the same game.",
+  "evidence": "Automatic whole-build comparison (tools/same-build.mjs): all 417 files reachable from the index.html match main-ye5eRKzV.js after mapping file hashes and the build's own commit id."
  }
 ]

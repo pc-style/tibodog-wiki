@@ -7,8 +7,8 @@ Each bonus is added to the same stat as passives and other items before conversi
 ## How it works
 
 - **Damage** multiplies weapon damage and the fixed-damage item effects that use the damage multiplier, such as [Porcupine Spud](/items/porcupine-spud) fries.
-- **Area** scales weapon area. Item blasts and chain ranges grow with the square root of the area multiplier, so +10% area makes them about 5% wider. <small>[sim-DBEflSqk.js: `return Math.sqrt(e.loadout.stats.areaMult)`]</small>
-- **Projectile speed** applies in full to most weapons, but orbiting weapons get only half of the bonus. <small>[sim-DBEflSqk.js: `` n.speed=i.speed*(a===`orbit`?1+.5*(r.projSpeedMult-1):r.projSpeedMult) ``]</small>
+- **Area** scales weapon area. Item blasts and chain ranges grow with the square root of the area multiplier, so +10% area makes them about 5% wider. <small>[sim-ByUaSHJI.js: `return Math.sqrt(e.loadout.stats.areaMult)`]</small>
+- **Projectile speed** applies in full to most weapons, but orbiting weapons get only half of the bonus. <small>[sim-ByUaSHJI.js: `` n.speed=i.speed*(a===`orbit`?1+.5*(r.projSpeedMult-1):r.projSpeedMult) ``]</small>
 
 ## Tips
 

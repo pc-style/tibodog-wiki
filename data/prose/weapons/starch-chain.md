@@ -6,7 +6,7 @@ It is offered on level-up and can be given by [poteto's](/visitors#poteto) gift 
 
 ## How it works
 
-- **Pierce is the jump count.** After the first hit, the spark jumps once per point of pierce, capped at 60, so pierce bonuses from passives and items lengthen the chain. <small>[sim-DBEflSqk.js: `vA(e,c,l,r.pierce===-1?60:Math.min(60,r.pierce),n.jump*Math.sqrt(r.area),s)`]</small>
+- **Pierce is the jump count.** After the first hit, the spark jumps once per point of pierce, capped at 60, so pierce bonuses from passives and items lengthen the chain. <small>[sim-ByUaSHJI.js: `vA(e,c,l,r.pierce===-1?60:Math.min(60,r.pierce),n.jump*Math.sqrt(r.area),s)`]</small>
 - **Each jump goes to the nearest enemy not yet hit by this arc**, as long as it is within 70 units of the previous target. If nothing is close enough, the chain stops early. The jump distance grows with the square root of area: double area gives about 1.4 times the jump distance.
 - **Every link deals full damage.** There is no falloff along the chain.
 - **Arcs are separate.** The arcs of one cast fire 0.2 s apart and each starts again from the nearest enemy, so later arcs can hit the same pests as the first.
