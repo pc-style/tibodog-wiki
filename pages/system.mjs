@@ -183,7 +183,9 @@ export function systemPages(entityPages) {
         ['`/api/v1/config.json`', 'Main game config (player, dash, scaling, economy, …)'],
         ['`/api/v1/difficulty.json`', 'Difficulty multipliers'],
         ['`/api/v1/text.json`', 'English names and descriptions keyed by content id'],
+        ['`/api/v1/localized-text.json`', 'Official names and descriptions in all 27 languages, with source hashes'],
       ]) +
+      `\n## Localized text\n\n[Download localized text](/api/v1/localized-text.json). In the response, \`data.text.fr.weapon.peeler.desc\` is the official French Peeler description. \`data.locales\` lists language tags and directions; \`data.game\` identifies the original revision; \`data.sources\` gives URLs and SHA-256 hashes. Strings, placeholders and absent translations are copied as published, not translated or filled in by the wiki. Interface text and changelogs are not included. The updater refreshes this export alongside the game catalogs.\n\n` +
       `\n## Errors\n\nUnknown endpoints return HTTP 404 with a JSON body:\n\n\`\`\`json\n{"error":{"code":"not_found","status":404,"message":"No API endpoint at /api/x.json.","hint":"GET /api/index.json lists every endpoint; /openapi.json describes them."}}\n\`\`\`\n\n## Example\n\n\`\`\`sh\ncurl -s ${SITE}/api/v1/recipes.json | jq '.data.evolutions[] | select(.catalyst=="hot-sauce")'\n\`\`\`\n\n## Markdown pages\n\nAny wiki page is available as Markdown by adding \`.md\` to its path, or by sending \`Accept: text/markdown\`.\n`,
     sources: [],
     search: 'api json data openapi developers',

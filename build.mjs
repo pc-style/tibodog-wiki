@@ -15,6 +15,8 @@ for (const b of BUILDS) {
 }
 
 const OUT = new URL('./dist/', import.meta.url).pathname;
+const localizedText = JSON.parse(readFileSync(new URL('./data/localized-text.json', import.meta.url)));
+if (!localizedText.game.commit.startsWith(BUILD.commit)) throw new Error('Localized text belongs to another game build; refresh it with tools/official-data.mjs --export-text');
 rmSync(OUT, { recursive: true, force: true });
 mkdirSync(OUT, { recursive: true });
 cpSync(new URL('./public/', import.meta.url).pathname, OUT, { recursive: true });
@@ -152,6 +154,7 @@ const api = {
   'config.json': GAME,
   'difficulty.json': DIFF,
   'text.json': TEXT,
+  'localized-text.json': localizedText,
 };
 const meta = { apiVersion: 'v1', build: BUILD, wiki: { updated: BUILT_AT, commit: WIKI_COMMIT, versions: `${SITE}/versions`, liveCheck: `${SITE}/api/live-build` }, source: 'https://tibo.dog/', license: 'Game data belongs to its owner; provided for reference by an unofficial fan wiki.' };
 const apiPaths = [];

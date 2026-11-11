@@ -24,7 +24,7 @@ import { mirror, ARCHIVE } from './fetch-build.mjs';
 import { compareChangelog, extractChangelog } from './dump-changelog.mjs';
 import { sameBuild } from './same-build.mjs';
 import { numericUpdate } from './numeric-update.mjs';
-import { fetchOfficialData, applyOfficialData } from './official-data.mjs';
+import { fetchOfficialData, applyOfficialData, localizedTextExport } from './official-data.mjs';
 import { measureProcess, importShadow } from './update-measurements.mjs';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
@@ -161,6 +161,7 @@ try {
 // API failures fall through to the existing semantic-review classifier; they
 // never turn a changed journal into an identical/numeric acceptance.
 let journalPlan = null;
+let journalText = null;
 let applyJournalOnlyLocal;
 if (apply && prev && journalEvidence) {
   try {
@@ -173,6 +174,7 @@ if (apply && prev && journalEvidence) {
       content: JSON.parse(readFileSync('data/en-content.json')) }, official));
     plan.officialData = official.provenance;
     writeFileSync(join(cache, 'official-data.json'), JSON.stringify(official, null, 1));
+    journalText = localizedTextExport(official);
     journalPlan = plan;
   } catch (error) {
     measurement.receipt.journalFastPath = { status: 'not-eligible', reason: error.message };
@@ -185,6 +187,7 @@ if (journalPlan) {
   let status = 'needs-review';
   try {
     measurement.sync('journal-prepare', () => applyJournalOnlyLocal(journalPlan, ROOT, cache));
+    writeFileSync('data/localized-text.json', JSON.stringify(journalText, null, 1) + '\n');
     const history = JSON.parse(readFileSync('data/builds.json'));
     const entry = history.at(-1);
     entry.status = 'reviewed';
@@ -241,6 +244,7 @@ const imported = applyOfficialData({
 }, official);
 writeFileSync(join(cache, 'data/registry.json'), JSON.stringify(imported.registry, null, 1));
 writeFileSync(join(cache, 'data/en-content.json'), JSON.stringify(imported.content, null, 1));
+writeFileSync(join(cache, 'data/localized-text.json'), JSON.stringify(localizedTextExport(official), null, 1) + '\n');
 writeFileSync(join(cache, 'official-data.json'), JSON.stringify(official, null, 1));
 report.push(`Game commit: \`${commit ?? 'not found'}\` (was \`${build.commit}\`).`, '', '## Data changes', '');
 if (diff.changes.length) {
@@ -364,7 +368,7 @@ if (apply && auto && !decision.automatic) {
 }
 if (apply) {
   // 5. Write data, icons and build info.
-  for (const f of ['registry.json', 'config.json', 'en-content.json', 'difficulty.json', 'changelog.json', 'i18n-names.json']) cpSync(join(cache, 'data', f), join('data', f));
+  for (const f of ['registry.json', 'config.json', 'en-content.json', 'difficulty.json', 'changelog.json', 'i18n-names.json', 'localized-text.json']) cpSync(join(cache, 'data', f), join('data', f));
   if (iconDiff) cpSync(join(cache, 'icons'), 'public/icons', { recursive: true });
   const renames = Object.fromEntries(
     Object.entries(prev?.chunks ?? {}).filter(([b, f]) => C[b] && C[b] !== f).map(([, f]) => [f, C[base(f)]]),

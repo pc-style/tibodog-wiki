@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { createHash } from 'node:crypto';
-import { fetchOfficialData, applyOfficialData } from './official-data.mjs';
+import { fetchOfficialData, applyOfficialData, localizedTextExport } from './official-data.mjs';
 
 const COMMIT = 'abcdef0123456789abcdef0123456789abcdef01';
 const TYPES = {
@@ -86,6 +86,27 @@ test('rejects wrong, missing, too-short or nonhex expected commits before fetchi
     await assert.rejects(fetchOfficialData(commit, f), /commit/);
     assert.equal(f.calls.length, 1);
   }
+});
+
+test('localized export preserves original descriptions, placeholders, RTL and absent translations with revision hashes', async () => {
+  const f = fixture();
+  f.index.locales.find((l) => l.tag === 'fr').dir = 'rtl';
+  f.rewrite('text/fr.json', (doc) => {
+    doc.texts.weapon.sample.desc = 'بطاطا {gain}% 🥔';
+    return doc;
+  });
+  const fetched = await fetchOfficialData(COMMIT, f);
+  const result = localizedTextExport(fetched);
+  assert.equal(result.game.commit, COMMIT);
+  assert.equal(result.simVersion, 'simulation-1');
+  assert.deepEqual(result.locales, f.index.locales);
+  assert.equal(result.text.fr.weapon.sample.desc, 'بطاطا {gain}% 🥔');
+  assert.equal(result.text.en.setRule.sample.desc, 'Gain {gain}%.');
+  assert.equal(result.text.fr.item, undefined, 'do not invent English fallbacks in upstream exports');
+  assert.equal(result.sources.locales.fr.sha256, createHash('sha256').update(f.bodies['text/fr.json']).digest('hex'));
+  const reordered = { ...fetched, text: { fr: fetched.text.fr, en: fetched.text.en },
+    provenance: { ...fetched.provenance, fetchedAt: 'another fetch time' } };
+  assert.equal(JSON.stringify(localizedTextExport(reordered)), JSON.stringify(result));
 });
 
 test('rejects commit, sim revision, and manifest drift on the final index', async () => {

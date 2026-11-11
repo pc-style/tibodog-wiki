@@ -129,11 +129,13 @@ const SPECIAL_ATTACK = {
   tailgate: ['Cooldown; one fry while still', 'Fires behind Tibo, with a slower drip while still'],
   fryBy: ['Automatic volleys and dashes', 'Backwards fries; dash fans leave hot oil'],
   twirl: ['Continuous; movement sets pace', 'Orbiting wheels spin and hit faster while moving'],
+  sproutSquad: ['Pest deaths', 'Seedlings seek nearby targets and bite'],
 };
 const attackKind = (w) => w.behavior.kind === 'bigUpdate' ? w.behavior.variant.kind : w.behavior.kind;
 const triggerText = (w) => w.on === 'dash' ? 'When Tibo dashes'
   : ['tot-stampede', 'tot-cavalry'].includes(w.id) ? 'Every 40 units walked'
   : w.id === 'loot-sling' ? 'Automatic volleys and XP gem pickups'
+  : attackKind(w) === 'sproutSquad' && w.behavior.variant.rule.sproutSec > 0 ? 'Automatic reinforcements and pest deaths'
   : SPECIAL_ATTACK[attackKind(w)]?.[0] ?? 'Automatic (cooldown)';
 const behaviorText = (w) => {
   const k = attackKind(w);

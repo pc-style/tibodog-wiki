@@ -42,3 +42,12 @@ test('Loot Sling describes automatic copies without changing the pickup-only wed
     }
   }
 });
+
+test('Sprout Squad needs deaths while Root Legion also generates seedlings automatically', () => {
+  const pages = weaponPages();
+  const squad = Object.fromEntries(pages.find((p) => p.path === '/weapons/sprout-squad').infobox.rows);
+  const legion = Object.fromEntries(pages.find((p) => p.path === '/weapons/root-legion').infobox.rows);
+  assert.equal(squad.Trigger, 'Pest deaths');
+  assert.match(squad.Attack, /seek nearby targets and bite/);
+  assert.equal(legion.Trigger, 'Automatic reinforcements and pest deaths');
+});

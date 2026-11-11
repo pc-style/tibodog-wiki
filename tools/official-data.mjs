@@ -2,6 +2,8 @@
 // difficulty deliberately continue to come from dump-build's extracted fallback.
 import { createHash } from 'node:crypto';
 import { isDeepStrictEqual } from 'node:util';
+import { readFileSync, writeFileSync } from 'node:fs';
+import { pathToFileURL } from 'node:url';
 
 const ROOT = 'https://tibo.dog/data/v1/';
 const TYPES = {
@@ -173,6 +175,19 @@ export async function fetchOfficialData(expectedCommit, { request = fetch } = {}
   } };
 }
 
+// Publish upstream text verbatim, including placeholders and missing translations.
+// Stable locale order and content hashes keep rebuilds independent of fetch timing.
+export function localizedTextExport(official) {
+  const { index, text, provenance } = official;
+  validateData(official.catalogs, text, index.locales.map(({ tag }) => tag));
+  return {
+    schema: 1, game: index.game, simVersion: index.simVersion, locales: index.locales,
+    text: Object.fromEntries(index.locales.map(({ tag }) => [tag, text[tag].texts])),
+    sources: { index: provenance.indexBefore,
+      locales: Object.fromEntries(index.locales.map(({ tag, file }) => [tag, provenance.resources[file]])) },
+  };
+}
+
 // Preserve serialized executable fields, but require all data fields to match.
 function preserveFunctions(official, dumped) {
   if (Array.isArray(official)) return official.map((v, i) => preserveFunctions(v, dumped?.[i]));
@@ -238,4 +253,13 @@ export function applyOfficialData(dumped, official) {
     }
   }
   return { ...dumped, registry, content };
+}
+
+if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
+  if (process.argv[2] !== '--export-text') throw new Error('Usage: node tools/official-data.mjs --export-text [output.json]');
+  const build = JSON.parse(readFileSync(new URL('../data/build.json', import.meta.url)));
+  const output = process.argv[3] ?? new URL('../data/localized-text.json', import.meta.url);
+  const exported = localizedTextExport(await fetchOfficialData(build.commit));
+  writeFileSync(output, JSON.stringify(exported, null, 1) + '\n');
+  console.log(`Exported original names and descriptions in ${exported.locales.length} languages for ${exported.game.commit}`);
 }
