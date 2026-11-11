@@ -2475,6 +2475,12 @@
  "content.weapon.mash-meteor.name": [
   "Mash Meteor"
  ],
+ "content.weapon.mash-mortar.desc": [
+  "Sets down a mortar that fires globs of mash at pests far away. Each glob bursts and hits every pest around it."
+ ],
+ "content.weapon.mash-mortar.name": [
+  "Mash Mortar"
+ ],
  "content.weapon.mash-snowball.desc": [
   "A ball of mash rolls behind Tibo and grows with every step he runs. When he stops or turns hard, it surges ahead along his last heading and splatters pests by its size. A full ball lets go on its own."
  ],
@@ -2540,6 +2546,12 @@
  ],
  "content.weapon.permafrost-fries.name": [
   "Permafrost Fries"
+ ],
+ "content.weapon.pestle-barrage.desc": [
+  "Sets down three iron mortars at a time. Their globs burst wider, and each burst throws three small bursts around it."
+ ],
+ "content.weapon.pestle-barrage.name": [
+  "Pestle Barrage"
  ],
  "content.weapon.potato-battery.desc": [
   "Clips a live wire onto a pest. The wire zaps and slows every pest it touches. When the clipped pest dies, the wire jumps to the next one."

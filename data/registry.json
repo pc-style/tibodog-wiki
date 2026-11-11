@@ -736,6 +736,51 @@
    }
   },
   {
+   "id": "mash-mortar",
+   "tier": "base",
+   "base": {
+    "damage": 12,
+    "cooldown": 8,
+    "amount": 1,
+    "area": 1,
+    "speed": 150,
+    "duration": 7,
+    "pierce": 0,
+    "knockback": 1.5,
+    "interval": 1.4
+   },
+   "levels": [
+    {
+     "damage": 5
+    },
+    {
+     "area": 0.2
+    },
+    {
+     "amount": 1
+    },
+    {
+     "damage": 6
+    },
+    {
+     "cooldown": -1.5
+    },
+    {
+     "amount": 1
+    },
+    {
+     "damage": 9
+    }
+   ],
+   "weight": 70,
+   "behavior": {
+    "kind": "turret",
+    "size": 5,
+    "range": 170,
+    "explodeRadius": 24
+   }
+  },
+  {
    "id": "mash-wave",
    "tier": "base",
    "base": {
@@ -3797,6 +3842,51 @@
    }
   },
   {
+   "id": "mash-mortar",
+   "tier": "base",
+   "base": {
+    "damage": 12,
+    "cooldown": 8,
+    "amount": 1,
+    "area": 1,
+    "speed": 150,
+    "duration": 7,
+    "pierce": 0,
+    "knockback": 1.5,
+    "interval": 1.4
+   },
+   "levels": [
+    {
+     "damage": 5
+    },
+    {
+     "area": 0.2
+    },
+    {
+     "amount": 1
+    },
+    {
+     "damage": 6
+    },
+    {
+     "cooldown": -1.5
+    },
+    {
+     "amount": 1
+    },
+    {
+     "damage": 9
+    }
+   ],
+   "weight": 70,
+   "behavior": {
+    "kind": "turret",
+    "size": 5,
+    "range": 170,
+    "explodeRadius": 24
+   }
+  },
+  {
    "id": "mash-wave",
    "tier": "base",
    "base": {
@@ -5765,6 +5855,30 @@
    },
    "from": "frozen-fries",
    "catalyst": "thick-skin"
+  },
+  {
+   "id": "pestle-barrage",
+   "tier": "evolved",
+   "base": {
+    "damage": 30,
+    "cooldown": 6,
+    "amount": 3,
+    "area": 1.5,
+    "speed": 170,
+    "duration": 8,
+    "pierce": 0,
+    "knockback": 2,
+    "interval": 1.3
+   },
+   "behavior": {
+    "kind": "turret",
+    "size": 6,
+    "range": 200,
+    "explodeRadius": 24,
+    "cluster": 3
+   },
+   "from": "mash-mortar",
+   "catalyst": "big-bowl"
   },
   {
    "id": "pressure-cooker",
@@ -9312,6 +9426,30 @@
    },
    "from": "frozen-fries",
    "catalyst": "thick-skin"
+  },
+  {
+   "id": "pestle-barrage",
+   "tier": "evolved",
+   "base": {
+    "damage": 30,
+    "cooldown": 6,
+    "amount": 3,
+    "area": 1.5,
+    "speed": 170,
+    "duration": 8,
+    "pierce": 0,
+    "knockback": 2,
+    "interval": 1.3
+   },
+   "behavior": {
+    "kind": "turret",
+    "size": 6,
+    "range": 200,
+    "explodeRadius": 24,
+    "cluster": 3
+   },
+   "from": "mash-mortar",
+   "catalyst": "big-bowl"
   },
   {
    "id": "pressure-cooker",

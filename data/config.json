@@ -5265,6 +5265,15 @@
    },
    {
     "kind": "evolution",
+    "weapon": "mash-mortar",
+    "catalyst": {
+     "kind": "passive",
+     "id": "big-bowl"
+    },
+    "result": "pestle-barrage"
+   },
+   {
+    "kind": "evolution",
     "weapon": "steam-vent",
     "catalyst": {
      "kind": "passive",

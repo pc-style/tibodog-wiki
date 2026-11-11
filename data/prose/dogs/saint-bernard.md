@@ -6,7 +6,7 @@ When Tibo's health drops below 40% of his max HP, Barrel runs to him and heals 2
 
 ## How it works
 
-- Barrel checks Tibo's health every 0.25 s. The 20 s interval only starts after a rescue, so the first time Tibo falls below 40% after a healthy stretch, Barrel reacts at once. <small>[sim-ByUaSHJI.js: `` case`rescue`:return!(e.player.hp[e.me]>=e.loadout.stats.maxHp*n.threshold ``]</small>
+- Barrel checks Tibo's health every 0.25 s. The 20 s interval only starts after a rescue, so the first time Tibo falls below 40% after a healthy stretch, Barrel reacts at once. <small>[sim-CIWbMQSD.js: `` case`rescue`:return!(e.player.hp[e.me]>=e.loadout.stats.maxHp*n.threshold ``]</small>
 - Barrel runs to the spot where Tibo stood, at twice its speed (150 units per second), for at most 0.5 s. The heal happens when it arrives, without checking HP again.
 - The heal is `25 × power` HP: 25, 35, 49, about 59 and about 71 at levels 1 to 5. Healing never goes above max HP.
 

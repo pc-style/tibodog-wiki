@@ -1,10 +1,10 @@
 {
  "schema": 1,
  "game": {
-  "version": "0a33b1d",
-  "commit": "0a33b1d01ff23be9db120325243d1bc4aea5e3f7"
+  "version": "22460cb",
+  "commit": "22460cb4f0abc55ed99245f266a6ec7f0730c003"
  },
- "simVersion": "09795c45e96c1d9b",
+ "simVersion": "c030cb892479df60",
  "locales": [
   {
    "tag": "en",
@@ -259,6 +259,10 @@
      "name": "Mash Mallet",
      "desc": "A masher pounds the nearest pest at Tibo's feet."
     },
+    "mash-mortar": {
+     "name": "Mash Mortar",
+     "desc": "Sets down a mortar that fires globs of mash at pests far away. Each glob bursts and hits every pest around it."
+    },
     "mash-wave": {
      "name": "Mash Wave",
      "desc": "A ring of mashed potato rolls out from Tibo."
@@ -470,6 +474,10 @@
     "permafrost-fries": {
      "name": "Permafrost Fries",
      "desc": "Freezes longer. Frozen enemies take double damage."
+    },
+    "pestle-barrage": {
+     "name": "Pestle Barrage",
+     "desc": "Sets down three iron mortars at a time. Their globs burst wider, and each burst throws three small bursts around it."
     },
     "pressure-cooker": {
      "name": "Pressure Cooker",
@@ -2231,6 +2239,10 @@
      "name": "土豆锤",
      "desc": "捣薯器砸向Tibo脚边最近的害虫。"
     },
+    "mash-mortar": {
+     "name": "土豆泥臼炮",
+     "desc": "放下一门臼炮，向远处的害虫发射土豆泥团。每团都会爆开，击中周围所有害虫。"
+    },
     "mash-wave": {
      "name": "土豆泥波",
      "desc": "一圈土豆泥从Tibo身边滚开。"
@@ -2442,6 +2454,10 @@
     "permafrost-fries": {
      "name": "永冻薯条",
      "desc": "冻得更久。被冻住的敌人受到双倍伤害。"
+    },
+    "pestle-barrage": {
+     "name": "杵臼齐射",
+     "desc": "一次放下三门铁臼炮。泥团爆开的范围更大，每次爆炸还会向四周抛出三个小爆炸。"
     },
     "pressure-cooker": {
      "name": "高压锅",
@@ -4203,6 +4219,10 @@
      "name": "馬鈴薯槌",
      "desc": "搗薯器砸向Tibo腳邊最近的害蟲。"
     },
+    "mash-mortar": {
+     "name": "薯泥臼砲",
+     "desc": "放下一門臼砲，向遠處的害蟲發射馬鈴薯泥團。每團都會炸開，擊中周圍所有害蟲。"
+    },
     "mash-wave": {
      "name": "薯泥波",
      "desc": "一圈馬鈴薯泥從Tibo身邊滾開。"
@@ -4414,6 +4434,10 @@
     "permafrost-fries": {
      "name": "永凍薯條",
      "desc": "凍得更久。被凍住的敵人受到雙倍傷害。"
+    },
+    "pestle-barrage": {
+     "name": "杵臼齊射",
+     "desc": "一次放下三門鐵臼砲。泥團炸開的範圍更大，每次爆炸還會向四周拋出三個小爆炸。"
     },
     "pressure-cooker": {
      "name": "壓力鍋",
@@ -6175,6 +6199,10 @@
      "name": "マッシュの槌",
      "desc": "マッシャーが、Tiboの足元で一番近い害虫を叩く。"
     },
+    "mash-mortar": {
+     "name": "マッシュ臼砲",
+     "desc": "遠くの害虫にマッシュの塊を撃つ臼砲を置く。塊は破裂して、まわりの害虫すべてに当たる。"
+    },
     "mash-wave": {
      "name": "マッシュ波",
      "desc": "マッシュポテトの輪がTiboから転がり出る。"
@@ -6386,6 +6414,10 @@
     "permafrost-fries": {
      "name": "永久凍土ポテト",
      "desc": "長く凍らせる。凍った敵はダメージ2倍。"
+    },
+    "pestle-barrage": {
+     "name": "杵の弾幕",
+     "desc": "鉄の臼砲を一度に3門置く。塊はより広く破裂し、破裂のたびにまわりで小さな破裂が3つ起きる。"
     },
     "pressure-cooker": {
      "name": "圧力鍋",
@@ -8147,6 +8179,10 @@
      "name": "매시 망치",
      "desc": "으깨는 방망이가 Tibo 발치에서 가장 가까운 해충을 내리칩니다."
     },
+    "mash-mortar": {
+     "name": "으깬 감자 박격포",
+     "desc": "멀리 있는 해충에게 으깬 감자 덩어리를 쏘는 박격포를 놓습니다. 덩어리는 터지면서 주변의 모든 해충을 맞힙니다."
+    },
     "mash-wave": {
      "name": "으깬 감자 파도",
      "desc": "으깬 감자 고리가 Tibo에게서 굴러나갑니다."
@@ -8358,6 +8394,10 @@
     "permafrost-fries": {
      "name": "영구동토 감자튀김",
      "desc": "더 오래 얼립니다. 얼어붙은 적은 피해 2배."
+    },
+    "pestle-barrage": {
+     "name": "절굿공이 포화",
+     "desc": "쇠 박격포를 한 번에 세 문 놓습니다. 덩어리가 더 넓게 터지고, 터질 때마다 주변에 작은 폭발 세 개를 흩뿌립니다."
     },
     "pressure-cooker": {
      "name": "압력솥",
@@ -10119,6 +10159,10 @@
      "name": "Mazo de puré",
      "desc": "Un pisapapas golpea la plaga más cercana a los pies de Tibo."
     },
+    "mash-mortar": {
+     "name": "Mortero de puré",
+     "desc": "Deja un mortero que dispara bolas de puré a las plagas lejanas. Cada bola estalla y golpea a todas las plagas a su alrededor."
+    },
     "mash-wave": {
      "name": "Ola de puré",
      "desc": "Un anillo de puré sale rodando desde Tibo."
@@ -10330,6 +10374,10 @@
     "permafrost-fries": {
      "name": "Papas de permafrost",
      "desc": "Congela más. Enemigos congelados reciben daño doble."
+    },
+    "pestle-barrage": {
+     "name": "Andanada de morteros",
+     "desc": "Deja tres morteros de hierro a la vez. Sus bolas estallan en un área mayor, y cada estallido lanza tres estallidos pequeños a su alrededor."
     },
     "pressure-cooker": {
      "name": "Olla de presión",
@@ -12091,6 +12139,10 @@
      "name": "मैश का हथौड़ा",
      "desc": "एक कूटने वाला Tibo के पैरों के पास सबसे नज़दीकी कीट को पीटता है।"
     },
+    "mash-mortar": {
+     "name": "मैश मोर्टार",
+     "desc": "एक मोर्टार रखता है जो दूर के कीटों पर मैश के गोले दागता है। हर गोला फटता है और आसपास के हर कीट को लगता है।"
+    },
     "mash-wave": {
      "name": "मैश लहर",
      "desc": "मैश आलू की रिंग Tibo से बाहर लुढ़कती है।"
@@ -12302,6 +12354,10 @@
     "permafrost-fries": {
      "name": "परमाफ्रॉस्ट फ्राई",
      "desc": "ज़्यादा देर जमाता है। जमे दुश्मन दोगुना डैमेज लेते हैं।"
+    },
+    "pestle-barrage": {
+     "name": "मूसल बौछार",
+     "desc": "एक साथ लोहे के तीन मोर्टार रखता है। इनके गोले ज़्यादा दूर तक फटते हैं, और हर धमाका अपने आसपास तीन छोटे धमाके फेंकता है।"
     },
     "pressure-cooker": {
      "name": "प्रेशर कुकर",
@@ -14063,6 +14119,10 @@
      "name": "Püreehammer",
      "desc": "Ein Stampfer trifft den nächsten Schädling an den Füßen von Tibo."
     },
+    "mash-mortar": {
+     "name": "Püreemörser",
+     "desc": "Stellt einen Mörser auf, der Püreeklumpen auf ferne Schädlinge feuert. Jeder Klumpen platzt und trifft alle Schädlinge ringsum."
+    },
     "mash-wave": {
      "name": "Püreewelle",
      "desc": "Ein Ring aus Püree rollt von Tibo aus."
@@ -14274,6 +14334,10 @@
     "permafrost-fries": {
      "name": "Permafrost-Pommes",
      "desc": "Friert länger ein. Gefrorene Gegner erleiden doppelten Schaden."
+    },
+    "pestle-barrage": {
+     "name": "Stößelsperrfeuer",
+     "desc": "Stellt drei eiserne Mörser auf einmal auf. Ihre Klumpen platzen in größerem Umkreis, und jede Explosion wirft drei kleine Explosionen um sich."
     },
     "pressure-cooker": {
      "name": "Schnellkochtopf",
@@ -16035,6 +16099,10 @@
      "name": "Maillet à purée",
      "desc": "Un pilon écrase le nuisible le plus proche aux pieds de Tibo."
     },
+    "mash-mortar": {
+     "name": "Mortier à purée",
+     "desc": "Pose un mortier qui tire des boules de purée sur les nuisibles éloignés. Chaque boule éclate et touche tous les nuisibles autour d’elle."
+    },
     "mash-wave": {
      "name": "Vague de purée",
      "desc": "Un anneau de purée roule depuis Tibo."
@@ -16246,6 +16314,10 @@
     "permafrost-fries": {
      "name": "Frites permafrost",
      "desc": "Gèle plus longtemps. Les ennemis gelés prennent dégâts doublés."
+    },
+    "pestle-barrage": {
+     "name": "Barrage de pilons",
+     "desc": "Pose trois mortiers en fer à la fois. Leurs boules éclatent plus largement, et chaque explosion projette trois petites explosions autour d’elle."
     },
     "pressure-cooker": {
      "name": "Cocotte-minute",
@@ -18007,6 +18079,10 @@
      "name": "Marreta de purê",
      "desc": "Um amassador bate na praga mais próxima, aos pés de Tibo."
     },
+    "mash-mortar": {
+     "name": "Morteiro de purê",
+     "desc": "Solta um morteiro que dispara bolas de purê nas pragas distantes. Cada bola estoura e acerta todas as pragas ao redor."
+    },
     "mash-wave": {
      "name": "Onda de purê",
      "desc": "Um anel de purê se espalha a partir do Tibo."
@@ -18218,6 +18294,10 @@
     "permafrost-fries": {
      "name": "Fritas permafrost",
      "desc": "Congela por mais tempo. Inimigos congelados levam dano em dobro."
+    },
+    "pestle-barrage": {
+     "name": "Salva de pilões",
+     "desc": "Solta três morteiros de ferro de uma vez. As bolas estouram em uma área maior, e cada estouro lança três estouros pequenos ao redor."
     },
     "pressure-cooker": {
      "name": "Panela de pressão",
@@ -19979,6 +20059,10 @@
      "name": "Püre tokmağı",
      "desc": "Bir ezici, Tibo ayaklarının dibindeki en yakın haşereyi ezer."
     },
+    "mash-mortar": {
+     "name": "Püre Havanı",
+     "desc": "Uzaktaki haşerelere püre topakları atan bir havan kurar. Her topak patlar ve çevresindeki bütün haşerelere vurur."
+    },
     "mash-wave": {
      "name": "Püre Dalgası",
      "desc": "Tibo'dan dışa doğru bir patates püresi halkası yayılır."
@@ -20190,6 +20274,10 @@
     "permafrost-fries": {
      "name": "Kalıcı Buz Kızartması",
      "desc": "Daha uzun dondurur. Donmuş düşmanlar çift hasar alır."
+    },
+    "pestle-barrage": {
+     "name": "Havaneli Yaylımı",
+     "desc": "Aynı anda üç demir havan kurar. Topakları daha geniş patlar ve her patlama çevresine üç küçük patlama saçar."
     },
     "pressure-cooker": {
      "name": "Düdüklü Tencere",
@@ -21951,6 +22039,10 @@
      "name": "Palu kentang",
      "desc": "Penumbuk menghantam hama terdekat di kaki Tibo."
     },
+    "mash-mortar": {
+     "name": "Mortir Pure",
+     "desc": "Memasang mortir yang menembakkan gumpalan pure ke hama yang jauh. Tiap gumpalan meletus dan mengenai semua hama di sekitarnya."
+    },
     "mash-wave": {
      "name": "Gelombang Pure",
      "desc": "Cincin pure kentang bergulir keluar dari Tibo."
@@ -22162,6 +22254,10 @@
     "permafrost-fries": {
      "name": "Kentang Goreng Permafrost",
      "desc": "Membekukan lebih lama. Musuh beku menerima damage ganda."
+    },
+    "pestle-barrage": {
+     "name": "Rentetan Alu",
+     "desc": "Memasang tiga mortir besi sekaligus. Gumpalannya meletus lebih lebar, dan tiap letusan melontarkan tiga letusan kecil di sekitarnya."
     },
     "pressure-cooker": {
      "name": "Panci Presto",
@@ -23923,6 +24019,10 @@
      "name": "Картофельный молот",
      "desc": "Толкушка бьёт ближайшего вредителя у ног Tibo."
     },
+    "mash-mortar": {
+     "name": "Мортира с пюре",
+     "desc": "Ставит мортиру, которая стреляет комками пюре по дальним вредителям. Каждый комок лопается и бьёт всех вредителей вокруг."
+    },
     "mash-wave": {
      "name": "Волна пюре",
      "desc": "От Tibo катится кольцо пюре."
@@ -24134,6 +24234,10 @@
     "permafrost-fries": {
      "name": "Вечномёрзлая фри",
      "desc": "Морозит дольше. Замороженные враги получают двойной урон."
+    },
+    "pestle-barrage": {
+     "name": "Шквал пестиков",
+     "desc": "Ставит сразу три железные мортиры. Их комки лопаются шире, и каждый взрыв разбрасывает вокруг три маленьких взрыва."
     },
     "pressure-cooker": {
      "name": "Скороварка",
@@ -25895,6 +25999,10 @@
      "name": "Tukul Lembik",
      "desc": "Penumbuk menghentam perosak terdekat di kaki Tibo."
     },
+    "mash-mortar": {
+     "name": "Mortar Lecek",
+     "desc": "Meletakkan mortar yang menembak gumpalan kentang lecek ke arah perosak yang jauh. Setiap gumpalan pecah dan mengenai semua perosak di sekelilingnya."
+    },
     "mash-wave": {
      "name": "Ombak Lecek",
      "desc": "Gelang kentang lecek bergolek keluar daripada Tibo."
@@ -26106,6 +26214,10 @@
     "permafrost-fries": {
      "name": "Goreng Beku Abadi",
      "desc": "Membekukan lebih lama. Musuh yang beku menerima kerosakan berganda."
+    },
+    "pestle-barrage": {
+     "name": "Hujan Antan",
+     "desc": "Meletakkan tiga mortar besi serentak. Gumpalannya pecah lebih luas, dan setiap letupan melontar tiga letupan kecil di sekelilingnya."
     },
     "pressure-cooker": {
      "name": "Periuk Tekanan",
@@ -27867,6 +27979,10 @@
      "name": "Maso ng Dinurog",
      "desc": "Isang panuktok ang bumubog sa pinakamalapit na peste sa paanan ni Tibo."
     },
+    "mash-mortar": {
+     "name": "Mortar ng Mash",
+     "desc": "Naglalapag ng mortar na nagpapaputok ng mga tumpok ng mash sa malalayong peste. Sumasabog ang bawat tumpok at tinatamaan ang lahat ng peste sa paligid nito."
+    },
     "mash-wave": {
      "name": "Alon ng Mash",
      "desc": "Gumugulong palabas mula kay Tibo ang isang bilog ng mashed potato."
@@ -28078,6 +28194,10 @@
     "permafrost-fries": {
      "name": "Permafrost Fries",
      "desc": "Mas matagal mag-freeze. Doble ang damage sa mga nagyelong kalaban."
+    },
+    "pestle-barrage": {
+     "name": "Barrage ng Pambayo",
+     "desc": "Naglalapag ng tatlong bakal na mortar nang sabay-sabay. Mas malawak ang pagsabog ng mga tumpok nito, at bawat pagsabog ay naghahagis ng tatlong maliliit na pagsabog sa paligid nito."
     },
     "pressure-cooker": {
      "name": "Pressure Cooker",
@@ -29839,6 +29959,10 @@
      "name": "मॅशचा हातोडा",
      "desc": "कुटणी Tibo च्या पायाजवळचा सर्वात जवळचा किडा ठेचते."
     },
+    "mash-mortar": {
+     "name": "मॅशची उखळी तोफ",
+     "desc": "दूरच्या किड्यांवर मॅशचे गोळे डागणारी उखळी तोफ ठेवतो. प्रत्येक गोळा फुटतो आणि आजूबाजूच्या प्रत्येक किड्याला लागतो."
+    },
     "mash-wave": {
      "name": "मॅश लाट",
      "desc": "Tibo कडून कुस्करलेल्या बटाट्याचे कडे बाहेर लोटते."
@@ -30050,6 +30174,10 @@
     "permafrost-fries": {
      "name": "चिरहिम फ्राईज",
      "desc": "जास्त वेळ गोठवते. गोठलेल्या शत्रूंना दुप्पट डॅमेज लागतो."
+    },
+    "pestle-barrage": {
+     "name": "मुसळ वर्षाव",
+     "desc": "एकाच वेळी लोखंडाच्या तीन उखळी तोफा ठेवतो. त्यांचे गोळे अधिक रुंद फुटतात, आणि प्रत्येक स्फोट आजूबाजूला तीन छोटे स्फोट फेकतो."
     },
     "pressure-cooker": {
      "name": "प्रेशर कुकर",
@@ -31811,6 +31939,10 @@
      "name": "Búa nghiền",
      "desc": "Cái nghiền đập sâu bọ gần nhất dưới chân Tibo."
     },
+    "mash-mortar": {
+     "name": "Cối Khoai Nghiền",
+     "desc": "Đặt một khẩu cối bắn những cục khoai nghiền vào sâu bọ ở xa. Mỗi cục nổ tung và trúng mọi sâu bọ xung quanh."
+    },
     "mash-wave": {
      "name": "Sóng Khoai Nghiền",
      "desc": "Một vòng khoai nghiền lăn ra từ Tibo."
@@ -32022,6 +32154,10 @@
     "permafrost-fries": {
      "name": "Khoai Băng Vĩnh Cửu",
      "desc": "Đóng băng lâu hơn. Quái bị đóng băng nhận gấp đôi sát thương."
+    },
+    "pestle-barrage": {
+     "name": "Mưa Chày",
+     "desc": "Đặt ba khẩu cối sắt cùng lúc. Những cục khoai của chúng nổ rộng hơn, và mỗi vụ nổ văng ra ba vụ nổ nhỏ xung quanh."
     },
     "pressure-cooker": {
      "name": "Nồi Áp Suất",
@@ -33783,6 +33919,10 @@
      "name": "మ్యాష్ సుత్తి",
      "desc": "ఒక దంచుడు Tibo కాళ్ల దగ్గర ఉన్న దగ్గరి పురుగును కొడుతుంది."
     },
+    "mash-mortar": {
+     "name": "మ్యాష్ మోర్టార్",
+     "desc": "దూరంగా ఉన్న పురుగులపైకి మ్యాష్ ముద్దలను పేల్చే మోర్టార్ ని పెడుతుంది. ప్రతి ముద్ద పేలి, చుట్టూ ఉన్న ప్రతి పురుగును తాకుతుంది."
+    },
     "mash-wave": {
      "name": "మ్యాష్ అల",
      "desc": "Tibo నుంచి ఆలూ ముద్ద వలయం దొర్లుకుంటూ బయటికెళ్తుంది."
@@ -33994,6 +34134,10 @@
     "permafrost-fries": {
      "name": "శాశ్వత మంచు ఫ్రైస్",
      "desc": "ఎక్కువ సేపు గడ్డకట్టిస్తుంది. గడ్డకట్టిన శత్రువులకు డబుల్ డ్యామేజ్."
+    },
+    "pestle-barrage": {
+     "name": "రోకళ్ల వర్షం",
+     "desc": "ఒకేసారి మూడు ఇనుప మోర్టార్లను పెడుతుంది. వాటి ముద్దలు మరింత వెడల్పుగా పేలతాయి, ప్రతి పేలుడు తన చుట్టూ మూడు చిన్న పేలుళ్లను విసురుతుంది."
     },
     "pressure-cooker": {
      "name": "ప్రెషర్ కుక్కర్",
@@ -35755,6 +35899,10 @@
      "name": "பிசைந்த சுத்தியல்",
      "desc": "ஒரு இடிப்பான் Tibo காலடியில் உள்ள அருகிலுள்ள பூச்சியை அடிக்கும்."
     },
+    "mash-mortar": {
+     "name": "மசியல் மோர்ட்டார்",
+     "desc": "தொலைவிலுள்ள பூச்சிகள் மீது மசியல் உருண்டைகளை வீசும் ஒரு மோர்ட்டாரை வைக்கும். ஒவ்வொரு உருண்டையும் வெடித்து, சுற்றியுள்ள எல்லாப் பூச்சிகளையும் தாக்கும்."
+    },
     "mash-wave": {
      "name": "மசியல் அலை",
      "desc": "Tibo-விடமிருந்து உருளை மசியல் வளையம் உருண்டு பரவும்."
@@ -35966,6 +36114,10 @@
     "permafrost-fries": {
      "name": "பனி ஃப்ரைஸ்",
      "desc": "நீண்ட நேரம் உறையவைக்கும். உறைந்த எதிரிகள் இரட்டை டேமேஜ் வாங்கும்."
+    },
+    "pestle-barrage": {
+     "name": "உலக்கைக் குண்டுமழை",
+     "desc": "ஒரே நேரத்தில் மூன்று இரும்பு மோர்ட்டார்களை வைக்கும். அவற்றின் உருண்டைகள் இன்னும் அகலமாக வெடிக்கும், ஒவ்வொரு வெடிப்பும் தன்னைச் சுற்றி மூன்று சிறு வெடிப்புகளை வீசும்."
     },
     "pressure-cooker": {
      "name": "பிரஷர் குக்கர்",
@@ -37727,6 +37879,10 @@
      "name": "ম্যাশের হাতুড়ি",
      "desc": "একটা পিষুনি Tibo-র পায়ের কাছে সবচেয়ে কাছের পোকাকে আঘাত করে।"
     },
+    "mash-mortar": {
+     "name": "ভর্তার মর্টার",
+     "desc": "একটা মর্টার বসায়, যা দূরের পোকাদের দিকে ভর্তার দলা ছোড়ে। প্রতিটা দলা ফেটে আশপাশের সব পোকাকে আঘাত করে।"
+    },
     "mash-wave": {
      "name": "ভর্তার ঢেউ",
      "desc": "Tibo-র চারপাশ থেকে আলুভর্তার এক বলয় গড়িয়ে যায়।"
@@ -37938,6 +38094,10 @@
     "permafrost-fries": {
      "name": "চিরহিম ফ্রাই",
      "desc": "বেশিক্ষণ জমায়। জমাট শত্রুরা দ্বিগুণ ড্যামেজ খায়।"
+    },
+    "pestle-barrage": {
+     "name": "মুষলের গোলাবর্ষণ",
+     "desc": "একসাথে তিনটি লোহার মর্টার বসায়। এদের দলা আরও বড় জায়গা জুড়ে ফাটে, আর প্রতিটা বিস্ফোরণ চারপাশে তিনটি ছোট বিস্ফোরণ ছোড়ে।"
     },
     "pressure-cooker": {
      "name": "প্রেশার কুকার",
@@ -39699,6 +39859,10 @@
      "name": "ค้อนมันบด",
      "desc": "ที่บดทุบศัตรูพืชที่ใกล้ที่สุดตรงเท้า Tibo"
     },
+    "mash-mortar": {
+     "name": "ปืนครกมันบด",
+     "desc": "ตั้งปืนครกที่ยิงก้อนมันบดใส่ศัตรูพืชที่อยู่ไกล แต่ละก้อนแตกกระจายและโดนศัตรูพืชทุกตัวรอบๆ"
+    },
     "mash-wave": {
      "name": "คลื่นมันบด",
      "desc": "วงมันบดกลิ้งออกจากตัว Tibo"
@@ -39910,6 +40074,10 @@
     "permafrost-fries": {
      "name": "มันทอดเยือกแข็ง",
      "desc": "แช่แข็งนานขึ้น ศัตรูที่แข็งอยู่โดนดาเมจ 2 เท่า"
+    },
+    "pestle-barrage": {
+     "name": "ระดมยิงสาก",
+     "desc": "ตั้งปืนครกเหล็กทีละสามกระบอก ก้อนมันบดแตกกระจายเป็นวงกว้างขึ้น และทุกครั้งที่แตกจะมีการแตกกระจายเล็กๆ อีกสามจุดรอบๆ"
     },
     "pressure-cooker": {
      "name": "หม้ออัดแรงดัน",
@@ -41671,6 +41839,10 @@
      "name": "Guduma na daka",
      "desc": "Wani matukin daka yana bugun ƙwaron da ya fi kusa a ƙafafun Tibo."
     },
+    "mash-mortar": {
+     "name": "Turmin Dankali",
+     "desc": "Yana ajiye turmi da ke harba dunƙulen dakakken dankali kan ƙwari na nesa. Kowane dunƙule yana fashewa kuma yana bugun duk ƙwarin da ke kewaye da shi."
+    },
     "mash-wave": {
      "name": "Igiyar Dankali",
      "desc": "Zoben dakakken dankali na birgima daga Tibo."
@@ -41882,6 +42054,10 @@
     "permafrost-fries": {
      "name": "Dankalin Ƙanƙara Har Abada",
      "desc": "Yana daskarewa na tsawon lokaci. Maƙiyan da suka daskare na shan lahani ninki biyu."
+    },
+    "pestle-barrage": {
+     "name": "Ruwan Taɓare",
+     "desc": "Yana ajiye turame uku na ƙarfe a lokaci guda. Dunƙulensu na fashewa da faɗi, kuma kowace fashewa tana jefa ƙananan fashe-fashe uku a kewaye da ita."
     },
     "pressure-cooker": {
      "name": "Tukunyar Matsi",
@@ -43643,6 +43819,10 @@
      "name": "Mash Mallet",
      "desc": "Masher dey pound di nearest pest for Tibo feet."
     },
+    "mash-mortar": {
+     "name": "Mash Mortar",
+     "desc": "E dey drop mortar wey dey fire lumps of mash at pests wey dey far. Each lump dey burst and e dey hit every pest wey dey around am."
+    },
     "mash-wave": {
      "name": "Mash Wave",
      "desc": "Ring of mashed potato dey roll comot from Tibo."
@@ -43854,6 +44034,10 @@
     "permafrost-fries": {
      "name": "Forever Frozen Fries",
      "desc": "E dey freeze long pass. Enemies wey freeze dey take double damage."
+    },
+    "pestle-barrage": {
+     "name": "Pestle Barrage",
+     "desc": "E dey drop three iron mortar at once. Dia lumps dey burst wider, and each burst dey throw three small bursts around am."
     },
     "pressure-cooker": {
      "name": "Pressure Pot",
@@ -45615,6 +45799,10 @@
      "name": "مطرقة الهرس",
      "desc": "مهراس يضرب أقرب آفة عند قدمي Tibo."
     },
+    "mash-mortar": {
+     "name": "هاون الهريس",
+     "desc": "يضع هاونًا يطلق كرات من الهريس على الآفات البعيدة. كل كرة تنفجر وتصيب كل آفة حولها."
+    },
     "mash-wave": {
      "name": "موجة الهريس",
      "desc": "حلقة من الهريس تتدحرج من حول Tibo."
@@ -45826,6 +46014,10 @@
     "permafrost-fries": {
      "name": "مقلية الجليد الأبدي",
      "desc": "تجميد أطول. الأعداء المجمّدون يتلقون ضررًا مضاعفًا."
+    },
+    "pestle-barrage": {
+     "name": "وابل المدقات",
+     "desc": "يضع ثلاثة هواوين حديدية في كل مرة. كراتها تنفجر على مدى أوسع، وكل انفجار يقذف ثلاثة انفجارات صغيرة حوله."
     },
     "pressure-cooker": {
      "name": "طنجرة الضغط",
@@ -47587,6 +47779,10 @@
      "name": "پتک پوره",
      "desc": "کوبنده نزدیک‌ترین آفت را پای Tibo می‌کوبد."
     },
+    "mash-mortar": {
+     "name": "هاون پوره",
+     "desc": "هاونی می‌گذارد که گلوله‌های پوره به آفت‌های دور شلیک می‌کند. هر گلوله می‌ترکد و به همه‌ی آفت‌های دورش می‌خورد."
+    },
     "mash-wave": {
      "name": "موج پوره",
      "desc": "حلقه‌ای از پوره‌ی سیب‌زمینی از Tibo به بیرون می‌غلتد."
@@ -47798,6 +47994,10 @@
     "permafrost-fries": {
      "name": "سرخ‌کرده‌ی یخ‌بندان",
      "desc": "مدت بیشتری منجمد می‌کند. دشمنان منجمد دوبرابر آسیب می‌بینند."
+    },
+    "pestle-barrage": {
+     "name": "رگبار دسته‌هاون",
+     "desc": "هر بار سه هاون آهنی می‌گذارد. گلوله‌هایشان در محدوده‌ی بزرگ‌تری می‌ترکند و هر انفجار سه انفجار کوچک به اطرافش پرت می‌کند."
     },
     "pressure-cooker": {
      "name": "زودپز",
@@ -49559,6 +49759,10 @@
      "name": "פטיש מחית",
      "desc": "מועך מכה במזיק הקרוב ביותר לרגלי Tibo."
     },
+    "mash-mortar": {
+     "name": "מרגמת פירה",
+     "desc": "מציב מרגמה שיורה גושי פירה על מזיקים רחוקים. כל גוש מתפוצץ ופוגע בכל מזיק שסביבו."
+    },
     "mash-wave": {
      "name": "גל פירה",
      "desc": "טבעת פירה מתגלגלת החוצה מ־Tibo."
@@ -49770,6 +49974,10 @@
     "permafrost-fries": {
      "name": "צ׳יפס קפוא לנצח",
      "desc": "הקפאה ארוכה יותר. אויבים קפואים חוטפים נזק כפול."
+    },
+    "pestle-barrage": {
+     "name": "מטח מרגמות",
+     "desc": "מציב שלוש מרגמות ברזל בבת אחת. הגושים שלהן מתפוצצים ברדיוס רחב יותר, וכל פיצוץ משליך שלושה פיצוצים קטנים סביבו."
     },
     "pressure-cooker": {
      "name": "סיר לחץ",
@@ -51531,6 +51739,10 @@
      "name": "میش کا ہتھوڑا",
      "desc": "ایک کُٹنی Tibo کے پاؤں کے قریب ترین کیڑے کو کُوٹتی ہے۔"
     },
+    "mash-mortar": {
+     "name": "بھرتے کا مارٹر",
+     "desc": "ایک مارٹر رکھتا ہے جو دور کے کیڑوں پر بھرتے کے گولے داغتا ہے۔ ہر گولا پھٹتا ہے اور آس پاس کے ہر کیڑے کو لگتا ہے۔"
+    },
     "mash-wave": {
      "name": "بھرتے کی لہر",
      "desc": "آلو کے بھرتے کا گھیرا Tibo سے باہر لڑھکتا ہے۔"
@@ -51742,6 +51954,10 @@
     "permafrost-fries": {
      "name": "سدا جمے فرائز",
      "desc": "دیر تک جماتا ہے۔ جمے دشمنوں کو دگنا نقصان۔"
+    },
+    "pestle-barrage": {
+     "name": "موسل کی بوچھاڑ",
+     "desc": "ایک ساتھ لوہے کے تین مارٹر رکھتا ہے۔ ان کے گولے زیادہ پھیل کر پھٹتے ہیں، اور ہر دھماکا اپنے آس پاس تین چھوٹے دھماکے پھینکتا ہے۔"
     },
     "pressure-cooker": {
      "name": "پریشر ککر",
@@ -53445,144 +53661,144 @@
  "sources": {
   "index": {
    "url": "https://tibo.dog/data/v1/index.json",
-   "bytes": 18844,
-   "sha256": "388e8f5b7a8677d293acd128f536f003705ee2dc038e7fd09af5b059c2711579"
+   "bytes": 18937,
+   "sha256": "203248b8a4f5ac0faff2a8a73259c1f5b1b4a5a79f050ca2c172960ac028c85d"
   },
   "locales": {
    "en": {
     "url": "https://tibo.dog/data/v1/text/en.json",
-    "bytes": 54775,
-    "sha256": "aaf13ab70d908dcb90d4a090240c490094cf83e7edeb7bb4410d955e53a7ee8b"
+    "bytes": 55101,
+    "sha256": "92614dd2df96c63b1d3950b3035d7b2092071755d53f0c8f3377fa03acc6989b"
    },
    "zh-CN": {
     "url": "https://tibo.dog/data/v1/text/zh-CN.json",
-    "bytes": 53876,
-    "sha256": "34027ca6da5e31fc85d3eb99a4e52fdda5a745840d1edd7bd43f170f5283be66"
+    "bytes": 54197,
+    "sha256": "ba8c207932b6f25c56c3748124f987b4bddff30ab11dec36bfacc1d1368407d6"
    },
    "zh-TW": {
     "url": "https://tibo.dog/data/v1/text/zh-TW.json",
-    "bytes": 54122,
-    "sha256": "5f6aab211fee137a1a431bc18a32dcc4b021eb362051a8adb05dba01fe4dcdc0"
+    "bytes": 54443,
+    "sha256": "794283b6c9f4b7b1161804ad6d1543aa306c0d7d433c579c4c52909cc5c6b771"
    },
    "ja": {
     "url": "https://tibo.dog/data/v1/text/ja.json",
-    "bytes": 66049,
-    "sha256": "1be962d0fdc8d75147ddbcfc25f67a5f36f3b6bdbcece2bdd6876e96ee104502"
+    "bytes": 66411,
+    "sha256": "da0ad8f966a4ad24b14e6ca8b69b6e9055d4eeb215c844107de4a3afad8b254d"
    },
    "ko": {
     "url": "https://tibo.dog/data/v1/text/ko.json",
-    "bytes": 66282,
-    "sha256": "15c30baf69e4c6ea53e233d75bb1b81374f309202e73c3c9c3217d60848517aa"
+    "bytes": 66706,
+    "sha256": "a722cf168eaed33310c1b3ab027aa24a3239918b4cb8713d1bdad472fb1f445a"
    },
    "es": {
     "url": "https://tibo.dog/data/v1/text/es.json",
-    "bytes": 62154,
-    "sha256": "1a982d9ad3aeb433b24d759cc3bb6e4b817625e27104d68ee02c57eb5944ee4d"
+    "bytes": 62532,
+    "sha256": "5ce11bed7ccb61c1b7f360f2052e09ef3c825ce6a344c7252c03b8be88ad3b23"
    },
    "hi": {
     "url": "https://tibo.dog/data/v1/text/hi.json",
-    "bytes": 115503,
-    "sha256": "0d8d58e19ebb46b6c03a180f61b1952a02ad23d27079a1e7f9eedc245e1d56b5"
+    "bytes": 116212,
+    "sha256": "375141cae8c1c9061a5971fb9e8d8b246709bfea663cca21ce00d4fd78ec86d7"
    },
    "de": {
     "url": "https://tibo.dog/data/v1/text/de.json",
-    "bytes": 61233,
-    "sha256": "f36db1c25cb81d621e0f8fe7922b8f74cab5c9770a02ae79b7712390c263352e"
+    "bytes": 61615,
+    "sha256": "269149ba261c300cd49cce3760d7bed676b1d08682dfe89f8d620195d4a86d28"
    },
    "fr": {
     "url": "https://tibo.dog/data/v1/text/fr.json",
-    "bytes": 64568,
-    "sha256": "b74af0553afd72f30901ee7277d2633e4aa654bc5ba71acf852406598c4fd522"
+    "bytes": 64967,
+    "sha256": "9edbf75bb76eafae52932414bb5fa8d5be33abbfdc0084313c050639ecda7028"
    },
    "pt": {
     "url": "https://tibo.dog/data/v1/text/pt.json",
-    "bytes": 60829,
-    "sha256": "cee1fbe4c0d8d5aa300489c351aa79488fef0e971244fbfac153f2f294252363"
+    "bytes": 61192,
+    "sha256": "80107f1172c3f1e09293ee90a4620cb5863206ff6c88283d4b1b520b904a5f7e"
    },
    "tr": {
     "url": "https://tibo.dog/data/v1/text/tr.json",
-    "bytes": 63074,
-    "sha256": "53b1aa1b4619ab4edb758cec4419648b3dbc0ef27a28cdbfb4a2bb8b7d15e8cb"
+    "bytes": 63420,
+    "sha256": "a2c8e7f20f3f372f4857719cafe3ffa516cafcb73ba55e8b6e2910ab562c11c0"
    },
    "id": {
     "url": "https://tibo.dog/data/v1/text/id.json",
-    "bytes": 60576,
-    "sha256": "7b69c4b96e2472f2f9f5ae35f21dd17a299a33062888176b75d863ba04189f0c"
+    "bytes": 60932,
+    "sha256": "38651615e5e6a27e6401f1241c6fe835ad7e944a2101b6c37b97d68cbf2c03d4"
    },
    "ru": {
     "url": "https://tibo.dog/data/v1/text/ru.json",
-    "bytes": 90701,
-    "sha256": "9342ad4af7d7b1fca470d4949f07b637d1a2af1d335df40916530a2e77998da2"
+    "bytes": 91263,
+    "sha256": "44281e8d8655dd1ae7cc3ec223d2db17b22224ae3992a91f823cd9640ba25926"
    },
    "ms": {
     "url": "https://tibo.dog/data/v1/text/ms.json",
-    "bytes": 62729,
-    "sha256": "073e3b483fcdb94a02edcac389bcc3982bc4d1844c9e5e925b70908baf248f1f"
+    "bytes": 63107,
+    "sha256": "e312babb6d0a86f2411b23e558e9715befc8a615c8e20c4225f1e50634982302"
    },
    "fil": {
     "url": "https://tibo.dog/data/v1/text/fil.json",
-    "bytes": 66592,
-    "sha256": "78db62e11e470a2c2de0d3b6cb502ed662b8070aafef07fa7e79509e9a105cfd"
+    "bytes": 67036,
+    "sha256": "ff4625d801e2abd8c30a3f0ce499aa0550de45dce5f279cb7744185e65c1548a"
    },
    "mr": {
     "url": "https://tibo.dog/data/v1/text/mr.json",
-    "bytes": 119774,
-    "sha256": "44e34bcf9d62d839d455838c1c9192c4fb0ec5d932803b2394cee22bb70dbb16"
+    "bytes": 120548,
+    "sha256": "95bf513e4d27b954ccfeee3a1f4140bde60f9f9b67679e2363aa7200955653ef"
    },
    "vi": {
     "url": "https://tibo.dog/data/v1/text/vi.json",
-    "bytes": 66981,
-    "sha256": "ff8ed436e2f6390e2d2f68050e3ab88e917910bf1d76a2a9f9213658e3da2374"
+    "bytes": 67381,
+    "sha256": "f80db8f123f6676fa7e8d39743dc7d0f86175ea9217aa868eae594f34f576f52"
    },
    "te": {
     "url": "https://tibo.dog/data/v1/text/te.json",
-    "bytes": 125659,
-    "sha256": "81e3eb813dcb0dea500e30255b5163c0d9edb1ca4cfb24b1404df2a9ad2998be"
+    "bytes": 126513,
+    "sha256": "1ae135345c8c16be4adc62ed29bb0496cce795fcb4df9a1d031cda1d1ab4957f"
    },
    "ta": {
     "url": "https://tibo.dog/data/v1/text/ta.json",
-    "bytes": 137391,
-    "sha256": "50e4a824051afa25d2fcfc56889a9b4841c94cf73fbd72fb0f3d0f32ad66951c"
+    "bytes": 138434,
+    "sha256": "dc01d5e4f2af92c5ebbb13618af87ad4c19d472014d659c71a3b35a00cf2f117"
    },
    "bn": {
     "url": "https://tibo.dog/data/v1/text/bn.json",
-    "bytes": 116532,
-    "sha256": "6db3b9301b1ae628bee3a6b89ff52a0eef6d8ac9821fe63e2d45908f0d2b253b"
+    "bytes": 117289,
+    "sha256": "a7826701e9e73611c35d359fe0f1641fc20d26282842a6e8193639a44b66958a"
    },
    "th": {
     "url": "https://tibo.dog/data/v1/text/th.json",
-    "bytes": 112233,
-    "sha256": "e42e68032135c2feca7d6f15b8a4a4a505f532d0fb5291018d661dfeabd2ad3e"
+    "bytes": 112975,
+    "sha256": "48f3fbf917eaddc77d70e7a55c11fa9bf73d81ee381b1b78d109f618a976f47c"
    },
    "ha": {
     "url": "https://tibo.dog/data/v1/text/ha.json",
-    "bytes": 63093,
-    "sha256": "92cb9c37b34e0966d76db8a327967ada42847335c0f3d0f3964d7fc5b4932c57"
+    "bytes": 63499,
+    "sha256": "e7c05db7454aa44d0e2196e85bde29fd3b301c24625631ff9b14e0cea9ca269c"
    },
    "pcm": {
     "url": "https://tibo.dog/data/v1/text/pcm.json",
-    "bytes": 57740,
-    "sha256": "97f781b3584e712506379c30a96a6099e53a70da6ff002ff15cbabfc50e83dbc"
+    "bytes": 58089,
+    "sha256": "cc16001f56a36b048b2cf1aa28072a23ff9233f5ffe824bb3efe1e89c20813c7"
    },
    "ar": {
     "url": "https://tibo.dog/data/v1/text/ar.json",
-    "bytes": 76042,
-    "sha256": "3112236709fb9cc30f56375b6b977b318b2f646325a540b6074cd944ffcad14f"
+    "bytes": 76498,
+    "sha256": "77553aada32a0b8ef3ead792b1e8a10bc983b5cf24bbe0ff1f84d4d7f132be36"
    },
    "fa": {
     "url": "https://tibo.dog/data/v1/text/fa.json",
-    "bytes": 89587,
-    "sha256": "55a084424568de82a0c5b516f42e8a16c275711c18c5edeecf0f3af8c10b6f51"
+    "bytes": 90143,
+    "sha256": "6c7705c4ff15f5cbeffe57cb41dbe0c5dbec86070957ba989c23cb8a920b5dd1"
    },
    "he": {
     "url": "https://tibo.dog/data/v1/text/he.json",
-    "bytes": 75456,
-    "sha256": "4261a4eb9f0d758169f4344d56f98f896a7554975e51c18977aa795419abee04"
+    "bytes": 75916,
+    "sha256": "8ec771d3788a6509b3743c956021343869905330525528ed08193eb88334046b"
    },
    "ur": {
     "url": "https://tibo.dog/data/v1/text/ur.json",
-    "bytes": 86218,
-    "sha256": "7bc7395ec129ac7601fb3415be58b8844c65d8061d42d3c7b03edd90b7e9c7e7"
+    "bytes": 86771,
+    "sha256": "679cf3a91519a02c8b12be3f934a386d5aab2df4937444639ee537ec3ec9bd8c"
    }
   }
  }

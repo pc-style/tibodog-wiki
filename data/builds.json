@@ -2100,5 +2100,38 @@
   "updated": "2026-11-11T00:08:00Z",
   "changes": "No gameplay changes; a rebuild of the same game.",
   "evidence": "Automatic whole-build comparison (tools/same-build.mjs): all 417 files reachable from the index.html match main-ye5eRKzV.js after mapping file hashes and the build's own commit id."
+ },
+ {
+  "seen": "2026-11-11",
+  "main": "main-RWDoLZR-.js",
+  "boot": "boot-1RWBbi1K.js",
+  "sim": "sim-2osgDNbR.js",
+  "commit": "b531cec7ef32",
+  "status": "reviewed",
+  "updated": null,
+  "changes": "Never independently deployed: superseded before delivery. Weapon-class help added separate weapon, evolution and union lists; reconciled retrospectively with the current update.",
+  "evidence": "Blocked193 session1b94b170-f553-469c-b728-0e58aaf8b7e3 and1181-record export SHA866cd6520f4e96ac29d225790df5e185fabcb44bbede576e778a593310ec926f remain unchanged. Incomplete original controls are not delivery proof. Tooltip note publication2026-11-11T08:49:56Z remains separate from laterNov11/b531cec grouping. Observed BQFOOKPO,BVZpJqtJ,C9g1agbY were held on unavailable archives, not imported or independently deployed; their sources are not inferred. See data/journal-audit.md."
+ },
+ {
+  "seen": "2026-11-11",
+  "main": "main-D8GknfgO.js",
+  "boot": "boot-D9Dacyaz.js",
+  "sim": "sim-B-KheTV1.js",
+  "commit": "aeddba6bea81",
+  "status": "reviewed",
+  "updated": null,
+  "changes": "Never independently deployed: final target guard stopped publication after supersession. Mash Mortar, Pestle Barrage and grouped class help were checked locally; cumulative content is reconciled in the current update.",
+  "evidence": "Preserved unpushed6938cb1c, BLOCKED session85d1f8e0-6178-4a1c-9cdf-dc755f7044e2 and1203-record export SHA5de9df53e03699faa83a797e807b077a0866fc99b7b23015521c102562bbf19a. Both local gates/36controls passed but zero push receipts; no remoteCI/deploy/live evidence exists. Mortar note first observed here with publication2026-11-11T10:09:24Z; current official4e4c1f8 grouping is not new introduction. Current tooltip/render/start-row source equivalence is explicit and current sim/start controls rerun separately. See data/journal-audit.md."
+ },
+ {
+  "seen": "2026-11-11",
+  "main": "main-4ptGHw1e.js",
+  "boot": "boot-RkNy3Uvz.js",
+  "sim": "sim-CIWbMQSD.js",
+  "commit": "22460cb4f0ab",
+  "status": "reviewed",
+  "updated": "2026-11-11T14:47:16Z",
+  "changes": "Mash Mortar evolves with Big Bowl into Pestle Barrage. Class help groups weapons, evolutions and unions. Pack Ranger can start with Hash Hawk; Dailies admit it from November 12 UTC. Earlier unshipped drafts remain retrospective.",
+  "evidence": "Fresh import against canonical reviewed192/B4OnpBr8. Whole graph417→413; new mortar/evolution definitions, names, descriptions, icons and one Big Bowl recipe. Existing recipe index shifts are insertion artifacts. Sim7canonical hunks cover summon IDs/turret burst forwarding and Hash Hawk starter eligibility with Daily20769 boundary. Fresh68original cases:24class-list/12turret runs and32start-pool+selection cases with64seeds each. Supplied states/gear tags/weapon grants/targets are not natural acquisition,DPS,survival,Daily kit guarantees or server validation. Tooltip/scene/start-rows/actual FX worker and CSS match D8 after dependency-name normalization; other changed roles checked at original D8 then explicitly matched, not relabeled old gameplay. Current full/panel plus separate actual expanded live journal352notes/11dates/149codes and37official resources bind22460cb4f0abc55ed99245f266a6ec7f0730c003. Mortar10:09:24Z publication/source-observed194 remains distinct fromNov11/4e4c1f8 grouping; new Hash Hawk note11:35:07Z staysnext; tooltip08:49:56Z/source193 retained. Original193/194blocked exports and stashes retained; no invented unavailable intermediate proof. Current citations repaired at actual owners; localized export integration preserved. Detailed hashes/provenance/limitations in data/journal-audit.md."
  }
 ]
