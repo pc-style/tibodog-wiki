@@ -3,11 +3,12 @@ import { mkdirSync, writeFileSync, rmSync, cpSync, readFileSync, existsSync } fr
 import { dirname, join } from 'node:path';
 import { renderHtml, renderMd, ogPath, SITE, SITE_NAME } from './lib/render.mjs';
 import { ogImage } from './lib/og.mjs';
-import { R, BUILD, BUILDS, BUILT_AT, WIKI_COMMIT, GAME, DIFF, TEXT, ICONS } from './lib/data.mjs';
+import { R, CFG, BUILD, BUILDS, BUILT_AT, WIKI_COMMIT, GAME, DIFF, TEXT, ICONS } from './lib/data.mjs';
 import * as ent from './pages/entities.mjs';
 import { systemPages } from './pages/system.mjs';
 import { guidePages } from './pages/guides.mjs';
 import { MECH } from './pages/mechanics.mjs';
+import { createInventory, coverageMarkdown } from './tools/coverage-inventory.mjs';
 
 // /versions and /history show `changes` to players. Review notes belong in `evidence`, which /versions collapses.
 for (const b of BUILDS) {
@@ -45,6 +46,11 @@ for (const p of pages) {
 }
 pages.push(...guidePages(pages));
 pages.push(...systemPages(pages));
+
+// Recompute documentation coverage from this build, never a hand-maintained count.
+const coverage = createInventory({ registry: R, config: CFG, pages, build: BUILD,
+  evidence: JSON.parse(readFileSync(new URL('./data/coverage-evidence.json', import.meta.url))) });
+pages.find((p) => p.path === '/coverage').body += '\n' + coverageMarkdown(coverage);
 
 // Sanity checks: unique paths, every internal link resolves.
 const paths = new Set();
@@ -155,6 +161,7 @@ const api = {
   'difficulty.json': DIFF,
   'text.json': TEXT,
   'localized-text.json': localizedText,
+  'coverage.json': coverage,
 };
 const meta = { apiVersion: 'v1', build: BUILD, wiki: { updated: BUILT_AT, commit: WIKI_COMMIT, versions: `${SITE}/versions`, liveCheck: `${SITE}/api/live-build` }, source: 'https://tibo.dog/', license: 'Game data belongs to its owner; provided for reference by an unofficial fan wiki.' };
 const apiPaths = [];

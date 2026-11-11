@@ -1,0 +1,22 @@
+{
+  "scenarios": {
+    "weapon:sprout-squad": [
+    {
+      "file": "tools/probe-sprout-squad.mjs",
+      "command": "node tools/probe-sprout-squad.mjs main-4ptGHw1e.js",
+      "main": "main-4ptGHw1e.js",
+      "definitionSha256": "a5dcba853c548238340cd7a49dfbdd4b30e083733c0bd72f082d0faa033aa66f",
+      "scriptSha256": "81c82b756b275113d33db8bded054599b8054502a77a60aad0215f0c9031d717",
+      "scope": "Supplied-state cap saturation, bite interval, expiry and idle controls; not natural acquisition or representative DPS"
+    }
+    ]
+  },
+  "reports": [
+    {
+      "keys": ["gear:space-farmer", "gear:iron-skillet", "gear:mech-pilot", "gear:fry-cook", "gear:buccaneer", "gear:bog-witch", "gear:storm-sage", "gear:pack-ranger"],
+      "path": "/modes",
+      "startsWith": "Original-engine old/new controls ran all eight sets",
+      "scope": "Historical supplied-gear runs and rule fixtures, not natural acquisition or a retained runnable scenario"
+    }
+  ]
+}
