@@ -1,6 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { dogPages, weaponPages } from './entities.mjs';
+import { biomePages, dogPages, enemyPages, passivePages, weaponPages } from './entities.mjs';
 
 test('weapon infobox slow percentages show reduction, not remaining speed', () => {
   const pages = weaponPages();
@@ -50,4 +50,16 @@ test('Sprout Squad needs deaths while Root Legion also generates seedlings autom
   assert.equal(squad.Trigger, 'Pest deaths');
   assert.match(squad.Attack, /seek nearby targets and bite/);
   assert.equal(legion.Trigger, 'Automatic reinforcements and pest deaths');
+});
+
+test('conditional effects and endgame placement keep their meaning after schema promotion', () => {
+  const passive = passivePages().find((p) => p.path === '/passives/couch-potato');
+  assert.match(Object.fromEntries(passive.infobox.rows).Stat, /couchPotato/);
+  assert.match(passive.body, /"rampPerSec": 0.04/);
+  assert.doesNotMatch(passive.body, /undefined/);
+  const biome = biomePages().find((p) => p.path === '/biomes/russet-moor');
+  assert.match(Object.fromEntries(biome.infobox.rows).Placement, /Endgame phase: endgameHunt/);
+  const enemies = enemyPages();
+  assert.match(enemies.find((p) => p.path === '/enemies/hunt-crow').body, /Hunt endgame enemy/);
+  assert.doesNotMatch(enemies.find((p) => p.path === '/enemies/aphid').body, /Hunt endgame enemy/);
 });

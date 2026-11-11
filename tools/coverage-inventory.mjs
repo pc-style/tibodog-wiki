@@ -37,7 +37,7 @@ function measurements(text, path) {
 }
 
 function family(def) {
-  let v = def.behavior ?? def.effect ?? def.flagged ?? def.ability ?? def.attack ?? def.hazard ?? def.help ?? def.rule;
+  let v = def.behavior ?? def.effect ?? def.trick ?? def.flagged ?? def.ability ?? def.attack ?? def.hazard ?? def.help ?? def.rule;
   const parts = [];
   while (v) {
     if (v.kind) parts.push(v.kind);

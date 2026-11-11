@@ -74,3 +74,10 @@ test('scenario evidence stays revision-bound and missing or orphaned evidence fa
   f.evidence = { reports: [{ keys: ['gear:gear-set'], path: '/modes', startsWith: 'Removed evidence' }] };
   assert.throws(() => createInventory(f), /missing shared measurement/);
 });
+
+test('dog families use promoted tricks rather than fallback abilities', () => {
+  const f = fixture();
+  f.registry.dogs = [{ id: 'howler', ability: { kind: 'fetch' }, trick: { kind: 'howl' } }];
+  f.pages.push({ path: '/dogs/howler', title: 'Howler', body: '' });
+  assert.equal(createInventory(f).entries.find((e) => e.key === 'dog:howler').family, 'howl');
+});

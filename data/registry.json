@@ -2102,15 +2102,12 @@
    ],
    "weight": 75,
    "behavior": {
-    "kind": "bigUpdate",
-    "variant": {
-     "kind": "sling",
-     "fan": 0.16,
-     "spread": 0.05,
-     "size": 4,
-     "perTick": 2,
-     "maxQueue": 40
-    }
+    "kind": "sling",
+    "fan": 0.16,
+    "spread": 0.05,
+    "size": 4,
+    "perTick": 2,
+    "maxQueue": 40
    }
   },
   {
@@ -2152,20 +2149,17 @@
    ],
    "weight": 75,
    "behavior": {
-    "kind": "bigUpdate",
-    "variant": {
-     "kind": "hotStreak",
-     "size": 34,
-     "hitInterval": 1,
-     "streak": {
-      "steps": 5,
-      "stepSec": 1,
-      "hitLoss": 2,
-      "stopSec": 0,
-      "area": 0.24,
-      "rate": 0.24,
-      "firstStep": 0
-     }
+    "kind": "hotStreak",
+    "size": 34,
+    "hitInterval": 1,
+    "streak": {
+     "steps": 5,
+     "stepSec": 1,
+     "hitLoss": 2,
+     "stopSec": 0,
+     "area": 0.24,
+     "rate": 0.24,
+     "firstStep": 0
     }
    }
   },
@@ -2208,18 +2202,15 @@
    ],
    "weight": 75,
    "behavior": {
-    "kind": "bigUpdate",
-    "variant": {
-     "kind": "gatling",
-     "burstSec": 2,
-     "gapSec": 0.35,
-     "retrySec": 0.1,
-     "reach": 220,
-     "lane": 7,
-     "spread": 0.03,
-     "size": 4,
-     "shot": "tot-toss"
-    }
+    "kind": "gatling",
+    "burstSec": 2,
+    "gapSec": 0.35,
+    "retrySec": 0.1,
+    "reach": 220,
+    "lane": 7,
+    "spread": 0.03,
+    "size": 4,
+    "shot": "tot-toss"
    }
   },
   {
@@ -2261,24 +2252,21 @@
    ],
    "weight": 75,
    "behavior": {
-    "kind": "bigUpdate",
-    "variant": {
-     "kind": "snowball",
-     "turnDeg": 120,
-     "stopTicks": 4,
-     "minR": 4,
-     "maxR": 14,
-     "growPerUnit": 0.22,
-     "minRelease": 9,
-     "fullSec": 0.25,
-     "surgeSpeed": 220,
-     "surgeBase": 70,
-     "surgePerR": 9,
-     "splatK": 2.5,
-     "trailBase": 8,
-     "trailPerR": 6,
-     "sweepK": 1.4
-    }
+    "kind": "snowball",
+    "turnDeg": 120,
+    "stopTicks": 4,
+    "minR": 4,
+    "maxR": 14,
+    "growPerUnit": 0.22,
+    "minRelease": 9,
+    "fullSec": 0.25,
+    "surgeSpeed": 220,
+    "surgeBase": 70,
+    "surgePerR": 9,
+    "splatK": 2.5,
+    "trailBase": 8,
+    "trailPerR": 6,
+    "sweepK": 1.4
    }
   },
   {
@@ -2322,31 +2310,28 @@
    ],
    "weight": 80,
    "behavior": {
-    "kind": "bigUpdate",
-    "variant": {
-     "kind": "seedPotato",
-     "rule": {
-      "throwSec": 0.25,
-      "minThrow": 30,
-      "maxThrow": 90,
-      "flightSec": 0.35,
-      "stageSec": 1.2,
-      "selfSec": 8,
-      "zapSec": 1,
-      "zapR": 30,
-      "zapK": 0.3,
-      "reach": 24,
-      "reachK": 0.25,
-      "maxReach": 34,
-      "burstR": 30,
-      "stageR": 8,
-      "burstK": 1.5,
-      "selfK": 0.6,
-      "leashR": 160,
-      "maxPlants": 4,
-      "luckK": 0.5,
-      "goldCoins": 4
-     }
+    "kind": "seedPotato",
+    "rule": {
+     "throwSec": 0.25,
+     "minThrow": 30,
+     "maxThrow": 90,
+     "flightSec": 0.35,
+     "stageSec": 1.2,
+     "selfSec": 8,
+     "zapSec": 1,
+     "zapR": 30,
+     "zapK": 0.3,
+     "reach": 24,
+     "reachK": 0.25,
+     "maxReach": 34,
+     "burstR": 30,
+     "stageR": 8,
+     "burstK": 1.5,
+     "selfK": 0.6,
+     "leashR": 160,
+     "maxPlants": 4,
+     "luckK": 0.5,
+     "goldCoins": 4
     }
    }
   },
@@ -2389,17 +2374,14 @@
    ],
    "weight": 75,
    "behavior": {
-    "kind": "bigUpdate",
-    "variant": {
-     "kind": "spudFence",
-     "rule": {
-      "every": 60,
-      "live": 4,
-      "arcWidth": 24,
-      "zapSec": 0.2,
-      "maxSpan": 90,
-      "minLife": 0.5
-     }
+    "kind": "spudFence",
+    "rule": {
+     "every": 60,
+     "live": 4,
+     "arcWidth": 24,
+     "zapSec": 0.2,
+     "maxSpan": 90,
+     "minLife": 0.5
     }
    }
   },
@@ -2444,13 +2426,10 @@
    ],
    "weight": 75,
    "behavior": {
-    "kind": "bigUpdate",
-    "variant": {
-     "kind": "tailgate",
-     "size": 3,
-     "spread": 0.25,
-     "dripSpeed": 0.35
-    }
+    "kind": "tailgate",
+    "size": 3,
+    "spread": 0.25,
+    "dripSpeed": 0.35
    }
   },
   {
@@ -2492,16 +2471,13 @@
    ],
    "weight": 75,
    "behavior": {
-    "kind": "bigUpdate",
-    "variant": {
-     "kind": "twirl",
-     "size": 8,
-     "orbitRadius": 30,
-     "hitInterval": 0.2,
-     "crawl": 0.12,
-     "maxPace": 2,
-     "riseSec": 0.12
-    }
+    "kind": "twirl",
+    "size": 8,
+    "orbitRadius": 30,
+    "hitInterval": 0.2,
+    "crawl": 0.12,
+    "maxPace": 2,
+    "riseSec": 0.12
    }
   },
   {
@@ -2589,13 +2565,10 @@
    ],
    "weight": 75,
    "behavior": {
-    "kind": "bigUpdate",
-    "variant": {
-     "kind": "afterburnerFries",
-     "size": 3,
-     "spread": 1.1,
-     "gap": 10
-    }
+    "kind": "afterburnerFries",
+    "size": 3,
+    "spread": 1.1,
+    "gap": 10
    }
   },
   {
@@ -2637,15 +2610,12 @@
    ],
    "weight": 75,
    "behavior": {
-    "kind": "bigUpdate",
-    "variant": {
-     "kind": "broadside",
-     "size": 3,
-     "explodeRadius": 18,
-     "range": 56,
-     "minFlight": 32,
-     "rowGap": 22
-    }
+    "kind": "broadside",
+    "size": 3,
+    "explodeRadius": 18,
+    "range": 56,
+    "minFlight": 32,
+    "rowGap": 22
    }
   },
   {
@@ -2687,17 +2657,14 @@
    ],
    "weight": 75,
    "behavior": {
-    "kind": "bigUpdate",
-    "variant": {
-     "kind": "cometScythe",
-     "size": 9,
-     "orbitRadius": 34,
-     "hitInterval": 0.3,
-     "reachIn": 0.4,
-     "reachOut": 1.7,
-     "lapsPerSwing": 2,
-     "counterSwing": false
-    }
+    "kind": "cometScythe",
+    "size": 9,
+    "orbitRadius": 34,
+    "hitInterval": 0.3,
+    "reachIn": 0.4,
+    "reachOut": 1.7,
+    "lapsPerSwing": 2,
+    "counterSwing": false
    }
   },
   {
@@ -2739,17 +2706,14 @@
    ],
    "weight": 75,
    "behavior": {
-    "kind": "bigUpdate",
-    "variant": {
-     "kind": "harvestMoon",
-     "size": 6,
-     "orbitRadius": 56,
-     "strikeInterval": 0.5,
-     "grab": 7,
-     "minCarry": 0.4,
-     "regrab": 3,
-     "fling": 240
-    }
+    "kind": "harvestMoon",
+    "size": 6,
+    "orbitRadius": 56,
+    "strikeInterval": 0.5,
+    "grab": 7,
+    "minCarry": 0.4,
+    "regrab": 3,
+    "fling": 240
    }
   },
   {
@@ -2791,21 +2755,18 @@
    ],
    "weight": 71,
    "behavior": {
-    "kind": "bigUpdate",
-    "variant": {
-     "kind": "hashHawk",
-     "rule": {
-      "range": 150,
-      "circleRadius": 36,
-      "circleSquash": 0.55,
-      "circleTurn": 2.4,
-      "returnSpeed": 240,
-      "burstRadius": 12,
-      "retrySec": 0.2,
-      "staggerSec": 0.6,
-      "eliteWeight": 10,
-      "bossWeight": 100
-     }
+    "kind": "hashHawk",
+    "rule": {
+     "range": 150,
+     "circleRadius": 36,
+     "circleSquash": 0.55,
+     "circleTurn": 2.4,
+     "returnSpeed": 240,
+     "burstRadius": 12,
+     "retrySec": 0.2,
+     "staggerSec": 0.6,
+     "eliteWeight": 10,
+     "bossWeight": 100
     }
    }
   },
@@ -2848,18 +2809,15 @@
    ],
    "weight": 75,
    "behavior": {
-    "kind": "bigUpdate",
-    "variant": {
-     "kind": "mashGolem",
-     "lead": 10,
-     "riseSec": 0.3,
-     "body": 11,
-     "pulseSec": 0.15,
-     "fanDeg": 24,
-     "reach": 120,
-     "slamRadius": 28,
-     "slamMult": 2.5
-    }
+    "kind": "mashGolem",
+    "lead": 10,
+    "riseSec": 0.3,
+    "body": 11,
+    "pulseSec": 0.15,
+    "fanDeg": 24,
+    "reach": 120,
+    "slamRadius": 28,
+    "slamMult": 2.5
    }
   },
   {
@@ -2902,11 +2860,8 @@
    ],
    "weight": 75,
    "behavior": {
-    "kind": "bigUpdate",
-    "variant": {
-     "kind": "mashLanding",
-     "radius": 34
-    }
+    "kind": "mashLanding",
+    "radius": 34
    }
   },
   {
@@ -2949,15 +2904,12 @@
    ],
    "weight": 75,
    "behavior": {
-    "kind": "bigUpdate",
-    "variant": {
-     "kind": "peelPhantom",
-     "lure": {
-      "reach": 64
-     },
-     "burst": 24,
-     "spread": 18
-    }
+    "kind": "peelPhantom",
+    "lure": {
+     "reach": 64
+    },
+    "burst": 24,
+    "spread": 18
    }
   },
   {
@@ -2999,18 +2951,15 @@
    ],
    "weight": 75,
    "behavior": {
-    "kind": "bigUpdate",
-    "variant": {
-     "kind": "skippingCannonball",
-     "rule": {
-      "hops": 3,
-      "hopGap": 0.28,
-      "minSpeed": 80,
-      "burstRadius": 23,
-      "burstGrowth": 5,
-      "damageGrowth": 0.25,
-      "settle": 0.45
-     }
+    "kind": "skippingCannonball",
+    "rule": {
+     "hops": 3,
+     "hopGap": 0.28,
+     "minSpeed": 80,
+     "burstRadius": 23,
+     "burstGrowth": 5,
+     "damageGrowth": 0.25,
+     "settle": 0.45
     }
    }
   },
@@ -3053,24 +3002,21 @@
    ],
    "weight": 78,
    "behavior": {
-    "kind": "bigUpdate",
-    "variant": {
-     "kind": "sproutSquad",
-     "rule": {
-      "chance": 0.12,
-      "perAmount": 3,
-      "seekRange": 110,
-      "reach": 3,
-      "heel": 22,
-      "riseSec": 0.3,
-      "wiltSec": 0.35,
-      "hopHz": 2.5,
-      "airShare": 0.6,
-      "sproutSec": 0,
-      "snareRadius": 0,
-      "snareSec": 0,
-      "snareBossSlow": 0
-     }
+    "kind": "sproutSquad",
+    "rule": {
+     "chance": 0.12,
+     "perAmount": 3,
+     "seekRange": 110,
+     "reach": 3,
+     "heel": 22,
+     "riseSec": 0.3,
+     "wiltSec": 0.35,
+     "hopHz": 2.5,
+     "airShare": 0.6,
+     "sproutSec": 0,
+     "snareRadius": 0,
+     "snareSec": 0,
+     "snareBossSlow": 0
     }
    }
   },
@@ -3113,17 +3059,14 @@
    ],
    "weight": 75,
    "behavior": {
-    "kind": "bigUpdate",
-    "variant": {
-     "kind": "spudDecoy",
-     "rule": {
-      "lure": {
-       "reach": 80
-      },
-      "behind": 26,
-      "spread": 1.1,
-      "burstRadius": 30
-     }
+    "kind": "spudDecoy",
+    "rule": {
+     "lure": {
+      "reach": 80
+     },
+     "behind": 26,
+     "spread": 1.1,
+     "burstRadius": 30
     }
    }
   }
@@ -6723,15 +6666,12 @@
    ],
    "weight": 75,
    "behavior": {
-    "kind": "bigUpdate",
-    "variant": {
-     "kind": "sling",
-     "fan": 0.16,
-     "spread": 0.05,
-     "size": 4,
-     "perTick": 2,
-     "maxQueue": 40
-    }
+    "kind": "sling",
+    "fan": 0.16,
+    "spread": 0.05,
+    "size": 4,
+    "perTick": 2,
+    "maxQueue": 40
    }
   },
   {
@@ -6773,20 +6713,17 @@
    ],
    "weight": 75,
    "behavior": {
-    "kind": "bigUpdate",
-    "variant": {
-     "kind": "hotStreak",
-     "size": 34,
-     "hitInterval": 1,
-     "streak": {
-      "steps": 5,
-      "stepSec": 1,
-      "hitLoss": 2,
-      "stopSec": 0,
-      "area": 0.24,
-      "rate": 0.24,
-      "firstStep": 0
-     }
+    "kind": "hotStreak",
+    "size": 34,
+    "hitInterval": 1,
+    "streak": {
+     "steps": 5,
+     "stepSec": 1,
+     "hitLoss": 2,
+     "stopSec": 0,
+     "area": 0.24,
+     "rate": 0.24,
+     "firstStep": 0
     }
    }
   },
@@ -6829,18 +6766,15 @@
    ],
    "weight": 75,
    "behavior": {
-    "kind": "bigUpdate",
-    "variant": {
-     "kind": "gatling",
-     "burstSec": 2,
-     "gapSec": 0.35,
-     "retrySec": 0.1,
-     "reach": 220,
-     "lane": 7,
-     "spread": 0.03,
-     "size": 4,
-     "shot": "tot-toss"
-    }
+    "kind": "gatling",
+    "burstSec": 2,
+    "gapSec": 0.35,
+    "retrySec": 0.1,
+    "reach": 220,
+    "lane": 7,
+    "spread": 0.03,
+    "size": 4,
+    "shot": "tot-toss"
    }
   },
   {
@@ -6882,24 +6816,21 @@
    ],
    "weight": 75,
    "behavior": {
-    "kind": "bigUpdate",
-    "variant": {
-     "kind": "snowball",
-     "turnDeg": 120,
-     "stopTicks": 4,
-     "minR": 4,
-     "maxR": 14,
-     "growPerUnit": 0.22,
-     "minRelease": 9,
-     "fullSec": 0.25,
-     "surgeSpeed": 220,
-     "surgeBase": 70,
-     "surgePerR": 9,
-     "splatK": 2.5,
-     "trailBase": 8,
-     "trailPerR": 6,
-     "sweepK": 1.4
-    }
+    "kind": "snowball",
+    "turnDeg": 120,
+    "stopTicks": 4,
+    "minR": 4,
+    "maxR": 14,
+    "growPerUnit": 0.22,
+    "minRelease": 9,
+    "fullSec": 0.25,
+    "surgeSpeed": 220,
+    "surgeBase": 70,
+    "surgePerR": 9,
+    "splatK": 2.5,
+    "trailBase": 8,
+    "trailPerR": 6,
+    "sweepK": 1.4
    }
   },
   {
@@ -6943,31 +6874,28 @@
    ],
    "weight": 80,
    "behavior": {
-    "kind": "bigUpdate",
-    "variant": {
-     "kind": "seedPotato",
-     "rule": {
-      "throwSec": 0.25,
-      "minThrow": 30,
-      "maxThrow": 90,
-      "flightSec": 0.35,
-      "stageSec": 1.2,
-      "selfSec": 8,
-      "zapSec": 1,
-      "zapR": 30,
-      "zapK": 0.3,
-      "reach": 24,
-      "reachK": 0.25,
-      "maxReach": 34,
-      "burstR": 30,
-      "stageR": 8,
-      "burstK": 1.5,
-      "selfK": 0.6,
-      "leashR": 160,
-      "maxPlants": 4,
-      "luckK": 0.5,
-      "goldCoins": 4
-     }
+    "kind": "seedPotato",
+    "rule": {
+     "throwSec": 0.25,
+     "minThrow": 30,
+     "maxThrow": 90,
+     "flightSec": 0.35,
+     "stageSec": 1.2,
+     "selfSec": 8,
+     "zapSec": 1,
+     "zapR": 30,
+     "zapK": 0.3,
+     "reach": 24,
+     "reachK": 0.25,
+     "maxReach": 34,
+     "burstR": 30,
+     "stageR": 8,
+     "burstK": 1.5,
+     "selfK": 0.6,
+     "leashR": 160,
+     "maxPlants": 4,
+     "luckK": 0.5,
+     "goldCoins": 4
     }
    }
   },
@@ -7010,17 +6938,14 @@
    ],
    "weight": 75,
    "behavior": {
-    "kind": "bigUpdate",
-    "variant": {
-     "kind": "spudFence",
-     "rule": {
-      "every": 60,
-      "live": 4,
-      "arcWidth": 24,
-      "zapSec": 0.2,
-      "maxSpan": 90,
-      "minLife": 0.5
-     }
+    "kind": "spudFence",
+    "rule": {
+     "every": 60,
+     "live": 4,
+     "arcWidth": 24,
+     "zapSec": 0.2,
+     "maxSpan": 90,
+     "minLife": 0.5
     }
    }
   },
@@ -7065,13 +6990,10 @@
    ],
    "weight": 75,
    "behavior": {
-    "kind": "bigUpdate",
-    "variant": {
-     "kind": "tailgate",
-     "size": 3,
-     "spread": 0.25,
-     "dripSpeed": 0.35
-    }
+    "kind": "tailgate",
+    "size": 3,
+    "spread": 0.25,
+    "dripSpeed": 0.35
    }
   },
   {
@@ -7113,16 +7035,13 @@
    ],
    "weight": 75,
    "behavior": {
-    "kind": "bigUpdate",
-    "variant": {
-     "kind": "twirl",
-     "size": 8,
-     "orbitRadius": 30,
-     "hitInterval": 0.2,
-     "crawl": 0.12,
-     "maxPace": 2,
-     "riseSec": 0.12
-    }
+    "kind": "twirl",
+    "size": 8,
+    "orbitRadius": 30,
+    "hitInterval": 0.2,
+    "crawl": 0.12,
+    "maxPace": 2,
+    "riseSec": 0.12
    }
   },
   {
@@ -7185,15 +7104,12 @@
     "interval": 0.1
    },
    "behavior": {
-    "kind": "bigUpdate",
-    "variant": {
-     "kind": "sling",
-     "fan": 0.16,
-     "spread": 0.05,
-     "size": 4,
-     "perTick": 2,
-     "maxQueue": 40
-    }
+    "kind": "sling",
+    "fan": 0.16,
+    "spread": 0.05,
+    "size": 4,
+    "perTick": 2,
+    "maxQueue": 40
    },
    "from": "gem-sling",
    "catalyst": "potato-magnet"
@@ -7213,28 +7129,25 @@
     "interval": 0.1
    },
    "behavior": {
-    "kind": "bigUpdate",
-    "variant": {
-     "kind": "snowball",
-     "turnDeg": 120,
-     "stopTicks": 4,
-     "minR": 4,
-     "maxR": 14,
-     "growPerUnit": 0.22,
-     "minRelease": 9,
-     "fullSec": 0.25,
-     "surgeSpeed": 220,
-     "surgeBase": 70,
-     "surgePerR": 9,
-     "splatK": 2.5,
-     "trailBase": 8,
-     "trailPerR": 6,
-     "sweepK": 1.4,
-     "split": {
-      "count": 3,
-      "size": 0.7,
-      "fanDeg": 30
-     }
+    "kind": "snowball",
+    "turnDeg": 120,
+    "stopTicks": 4,
+    "minR": 4,
+    "maxR": 14,
+    "growPerUnit": 0.22,
+    "minRelease": 9,
+    "fullSec": 0.25,
+    "surgeSpeed": 220,
+    "surgeBase": 70,
+    "surgePerR": 9,
+    "splatK": 2.5,
+    "trailBase": 8,
+    "trailPerR": 6,
+    "sweepK": 1.4,
+    "split": {
+     "count": 3,
+     "size": 0.7,
+     "fanDeg": 30
     }
    },
    "from": "mash-snowball",
@@ -7255,31 +7168,28 @@
     "interval": 0.1
    },
    "behavior": {
-    "kind": "bigUpdate",
-    "variant": {
-     "kind": "seedPotato",
-     "rule": {
-      "throwSec": 0.25,
-      "minThrow": 30,
-      "maxThrow": 90,
-      "flightSec": 0.35,
-      "stageSec": 1.2,
-      "selfSec": 8,
-      "zapSec": 1,
-      "zapR": 30,
-      "zapK": 0.3,
-      "reach": 24,
-      "reachK": 0.25,
-      "maxReach": 34,
-      "burstR": 30,
-      "stageR": 8,
-      "burstK": 1.5,
-      "selfK": 0.6,
-      "leashR": 160,
-      "maxPlants": 6,
-      "luckK": 0.5,
-      "goldCoins": 4
-     }
+    "kind": "seedPotato",
+    "rule": {
+     "throwSec": 0.25,
+     "minThrow": 30,
+     "maxThrow": 90,
+     "flightSec": 0.35,
+     "stageSec": 1.2,
+     "selfSec": 8,
+     "zapSec": 1,
+     "zapR": 30,
+     "zapK": 0.3,
+     "reach": 24,
+     "reachK": 0.25,
+     "maxReach": 34,
+     "burstR": 30,
+     "stageR": 8,
+     "burstK": 1.5,
+     "selfK": 0.6,
+     "leashR": 160,
+     "maxPlants": 6,
+     "luckK": 0.5,
+     "goldCoins": 4
     }
    },
    "from": "seed-potato",
@@ -7300,17 +7210,14 @@
     "interval": 0.1
    },
    "behavior": {
-    "kind": "bigUpdate",
-    "variant": {
-     "kind": "spudFence",
-     "rule": {
-      "every": 60,
-      "live": 4,
-      "arcWidth": 24,
-      "zapSec": 0.2,
-      "maxSpan": 90,
-      "minLife": 0.5
-     }
+    "kind": "spudFence",
+    "rule": {
+     "every": 60,
+     "live": 4,
+     "arcWidth": 24,
+     "zapSec": 0.2,
+     "maxSpan": 90,
+     "minLife": 0.5
     }
    },
    "from": "spud-fence",
@@ -7331,13 +7238,10 @@
     "interval": 0.06
    },
    "behavior": {
-    "kind": "bigUpdate",
-    "variant": {
-     "kind": "tailgate",
-     "size": 3,
-     "spread": 0.25,
-     "dripSpeed": 0.35
-    }
+    "kind": "tailgate",
+    "size": 3,
+    "spread": 0.25,
+    "dripSpeed": 0.35
    },
    "from": "tailgate-fries",
    "catalyst": "butter-pat"
@@ -7357,18 +7261,15 @@
     "interval": 0
    },
    "behavior": {
-    "kind": "bigUpdate",
-    "variant": {
-     "kind": "gatling",
-     "burstSec": 2,
-     "gapSec": 0.35,
-     "retrySec": 0.1,
-     "reach": 220,
-     "lane": 7,
-     "spread": 0.03,
-     "size": 4,
-     "shot": "tot-toss"
-    }
+    "kind": "gatling",
+    "burstSec": 2,
+    "gapSec": 0.35,
+    "retrySec": 0.1,
+    "reach": 220,
+    "lane": 7,
+    "spread": 0.03,
+    "size": 4,
+    "shot": "tot-toss"
    },
    "from": "locked-gatling",
    "catalyst": "masher-grip"
@@ -7388,16 +7289,13 @@
     "interval": 0.1
    },
    "behavior": {
-    "kind": "bigUpdate",
-    "variant": {
-     "kind": "twirl",
-     "size": 8,
-     "orbitRadius": 36,
-     "hitInterval": 0.2,
-     "crawl": 0.12,
-     "maxPace": 2,
-     "riseSec": 0.12
-    }
+    "kind": "twirl",
+    "size": 8,
+    "orbitRadius": 36,
+    "hitInterval": 0.2,
+    "crawl": 0.12,
+    "maxPace": 2,
+    "riseSec": 0.12
    },
    "from": "tater-twirl",
    "catalyst": "salt-shaker"
@@ -7439,20 +7337,17 @@
     "interval": 0
    },
    "behavior": {
-    "kind": "bigUpdate",
-    "variant": {
-     "kind": "hotStreak",
-     "size": 34,
-     "hitInterval": 1,
-     "streak": {
-      "steps": 5,
-      "stepSec": 1,
-      "hitLoss": 2,
-      "stopSec": 0,
-      "area": 0.48,
-      "rate": 0.24,
-      "firstStep": 0
-     }
+    "kind": "hotStreak",
+    "size": 34,
+    "hitInterval": 1,
+    "streak": {
+     "steps": 5,
+     "stepSec": 1,
+     "hitLoss": 2,
+     "stopSec": 0,
+     "area": 0.48,
+     "rate": 0.24,
+     "firstStep": 0
     }
    },
    "from": "hot-streak",
@@ -7473,30 +7368,27 @@
     "interval": 0
    },
    "behavior": {
-    "kind": "bigUpdate",
-    "variant": {
-     "kind": "hotStreak",
-     "size": 44,
-     "hitInterval": 1,
-     "streak": {
-      "steps": 5,
-      "stepSec": 1,
-      "hitLoss": 2,
-      "stopSec": 0,
-      "area": 0.48,
-      "rate": 0.24,
-      "firstStep": 0
-     },
-     "puddle": {
-      "everySec": 0.5,
-      "size": 14,
-      "tickSec": 0.25,
-      "damage": 0.4,
-      "burn": {
-       "kind": "burn",
-       "dps": 40,
-       "seconds": 2
-      }
+    "kind": "hotStreak",
+    "size": 44,
+    "hitInterval": 1,
+    "streak": {
+     "steps": 5,
+     "stepSec": 1,
+     "hitLoss": 2,
+     "stopSec": 0,
+     "area": 0.48,
+     "rate": 0.24,
+     "firstStep": 0
+    },
+    "puddle": {
+     "everySec": 0.5,
+     "size": 14,
+     "tickSec": 0.25,
+     "damage": 0.4,
+     "burn": {
+      "kind": "burn",
+      "dps": 40,
+      "seconds": 2
      }
     }
    },
@@ -7520,23 +7412,20 @@
     "interval": 0.1
    },
    "behavior": {
-    "kind": "bigUpdate",
-    "variant": {
-     "kind": "twirl",
-     "size": 9,
-     "orbitRadius": 38,
-     "hitInterval": 0.2,
-     "crawl": 0.12,
-     "maxPace": 2,
-     "riseSec": 0.12,
-     "toss": {
-      "size": 7,
-      "speed": 220,
-      "returnAccel": 340,
-      "life": 2.8,
-      "share": 0.2,
-      "lead": 0.5
-     }
+    "kind": "twirl",
+    "size": 9,
+    "orbitRadius": 38,
+    "hitInterval": 0.2,
+    "crawl": 0.12,
+    "maxPace": 2,
+    "riseSec": 0.12,
+    "toss": {
+     "size": 7,
+     "speed": 220,
+     "returnAccel": 340,
+     "life": 2.8,
+     "share": 0.2,
+     "lead": 0.5
     }
    },
    "from": [
@@ -7559,18 +7448,15 @@
     "interval": 0.6
    },
    "behavior": {
-    "kind": "bigUpdate",
-    "variant": {
-     "kind": "sling",
-     "fan": 0.16,
-     "spread": 0.05,
-     "size": 4,
-     "perTick": 1,
-     "maxQueue": 30,
-     "mimic": {
-      "count": 2,
-      "evolved": true
-     }
+    "kind": "sling",
+    "fan": 0.16,
+    "spread": 0.05,
+    "size": 4,
+    "perTick": 1,
+    "maxQueue": 30,
+    "mimic": {
+     "count": 2,
+     "evolved": true
     }
    },
    "from": [
@@ -7593,44 +7479,41 @@
     "interval": 0.1
    },
    "behavior": {
-    "kind": "bigUpdate",
-    "variant": {
-     "kind": "seedPotato",
-     "rule": {
-      "throwSec": 0.25,
-      "minThrow": 30,
-      "maxThrow": 90,
-      "flightSec": 0.35,
-      "stageSec": 1.2,
-      "selfSec": 8,
-      "zapSec": 1,
-      "zapR": 30,
-      "zapK": 0.3,
-      "reach": 24,
-      "reachK": 0.25,
-      "maxReach": 34,
-      "burstR": 30,
-      "stageR": 8,
-      "burstK": 1.5,
-      "selfK": 0.6,
-      "leashR": 160,
-      "maxPlants": 6,
-      "luckK": 0.5,
-      "goldCoins": 4
+    "kind": "seedPotato",
+    "rule": {
+     "throwSec": 0.25,
+     "minThrow": 30,
+     "maxThrow": 90,
+     "flightSec": 0.35,
+     "stageSec": 1.2,
+     "selfSec": 8,
+     "zapSec": 1,
+     "zapR": 30,
+     "zapK": 0.3,
+     "reach": 24,
+     "reachK": 0.25,
+     "maxReach": 34,
+     "burstR": 30,
+     "stageR": 8,
+     "burstK": 1.5,
+     "selfK": 0.6,
+     "leashR": 160,
+     "maxPlants": 6,
+     "luckK": 0.5,
+     "goldCoins": 4
+    },
+    "garden": {
+     "fence": {
+      "every": 60,
+      "live": 4,
+      "arcWidth": 54,
+      "zapSec": 0.2,
+      "maxSpan": 90,
+      "minLife": 0.5
      },
-     "garden": {
-      "fence": {
-       "every": 60,
-       "live": 4,
-       "arcWidth": 54,
-       "zapSec": 0.2,
-       "maxSpan": 90,
-       "minLife": 0.5
-      },
-      "postSec": 9,
-      "arcStageK": 0.2,
-      "arcGrowK": 0.25
-     }
+     "postSec": 9,
+     "arcStageK": 0.2,
+     "arcGrowK": 0.25
     }
    },
    "from": [
@@ -7711,13 +7594,10 @@
    ],
    "weight": 75,
    "behavior": {
-    "kind": "bigUpdate",
-    "variant": {
-     "kind": "afterburnerFries",
-     "size": 3,
-     "spread": 1.1,
-     "gap": 10
-    }
+    "kind": "afterburnerFries",
+    "size": 3,
+    "spread": 1.1,
+    "gap": 10
    }
   },
   {
@@ -7759,15 +7639,12 @@
    ],
    "weight": 75,
    "behavior": {
-    "kind": "bigUpdate",
-    "variant": {
-     "kind": "broadside",
-     "size": 3,
-     "explodeRadius": 18,
-     "range": 56,
-     "minFlight": 32,
-     "rowGap": 22
-    }
+    "kind": "broadside",
+    "size": 3,
+    "explodeRadius": 18,
+    "range": 56,
+    "minFlight": 32,
+    "rowGap": 22
    }
   },
   {
@@ -7809,17 +7686,14 @@
    ],
    "weight": 75,
    "behavior": {
-    "kind": "bigUpdate",
-    "variant": {
-     "kind": "cometScythe",
-     "size": 9,
-     "orbitRadius": 34,
-     "hitInterval": 0.3,
-     "reachIn": 0.4,
-     "reachOut": 1.7,
-     "lapsPerSwing": 2,
-     "counterSwing": false
-    }
+    "kind": "cometScythe",
+    "size": 9,
+    "orbitRadius": 34,
+    "hitInterval": 0.3,
+    "reachIn": 0.4,
+    "reachOut": 1.7,
+    "lapsPerSwing": 2,
+    "counterSwing": false
    }
   },
   {
@@ -7861,17 +7735,14 @@
    ],
    "weight": 75,
    "behavior": {
-    "kind": "bigUpdate",
-    "variant": {
-     "kind": "harvestMoon",
-     "size": 6,
-     "orbitRadius": 56,
-     "strikeInterval": 0.5,
-     "grab": 7,
-     "minCarry": 0.4,
-     "regrab": 3,
-     "fling": 240
-    }
+    "kind": "harvestMoon",
+    "size": 6,
+    "orbitRadius": 56,
+    "strikeInterval": 0.5,
+    "grab": 7,
+    "minCarry": 0.4,
+    "regrab": 3,
+    "fling": 240
    }
   },
   {
@@ -7913,21 +7784,18 @@
    ],
    "weight": 71,
    "behavior": {
-    "kind": "bigUpdate",
-    "variant": {
-     "kind": "hashHawk",
-     "rule": {
-      "range": 150,
-      "circleRadius": 36,
-      "circleSquash": 0.55,
-      "circleTurn": 2.4,
-      "returnSpeed": 240,
-      "burstRadius": 12,
-      "retrySec": 0.2,
-      "staggerSec": 0.6,
-      "eliteWeight": 10,
-      "bossWeight": 100
-     }
+    "kind": "hashHawk",
+    "rule": {
+     "range": 150,
+     "circleRadius": 36,
+     "circleSquash": 0.55,
+     "circleTurn": 2.4,
+     "returnSpeed": 240,
+     "burstRadius": 12,
+     "retrySec": 0.2,
+     "staggerSec": 0.6,
+     "eliteWeight": 10,
+     "bossWeight": 100
     }
    }
   },
@@ -7970,18 +7838,15 @@
    ],
    "weight": 75,
    "behavior": {
-    "kind": "bigUpdate",
-    "variant": {
-     "kind": "mashGolem",
-     "lead": 10,
-     "riseSec": 0.3,
-     "body": 11,
-     "pulseSec": 0.15,
-     "fanDeg": 24,
-     "reach": 120,
-     "slamRadius": 28,
-     "slamMult": 2.5
-    }
+    "kind": "mashGolem",
+    "lead": 10,
+    "riseSec": 0.3,
+    "body": 11,
+    "pulseSec": 0.15,
+    "fanDeg": 24,
+    "reach": 120,
+    "slamRadius": 28,
+    "slamMult": 2.5
    }
   },
   {
@@ -8024,11 +7889,8 @@
    ],
    "weight": 75,
    "behavior": {
-    "kind": "bigUpdate",
-    "variant": {
-     "kind": "mashLanding",
-     "radius": 34
-    }
+    "kind": "mashLanding",
+    "radius": 34
    }
   },
   {
@@ -8071,15 +7933,12 @@
    ],
    "weight": 75,
    "behavior": {
-    "kind": "bigUpdate",
-    "variant": {
-     "kind": "peelPhantom",
-     "lure": {
-      "reach": 64
-     },
-     "burst": 24,
-     "spread": 18
-    }
+    "kind": "peelPhantom",
+    "lure": {
+     "reach": 64
+    },
+    "burst": 24,
+    "spread": 18
    }
   },
   {
@@ -8121,18 +7980,15 @@
    ],
    "weight": 75,
    "behavior": {
-    "kind": "bigUpdate",
-    "variant": {
-     "kind": "skippingCannonball",
-     "rule": {
-      "hops": 3,
-      "hopGap": 0.28,
-      "minSpeed": 80,
-      "burstRadius": 23,
-      "burstGrowth": 5,
-      "damageGrowth": 0.25,
-      "settle": 0.45
-     }
+    "kind": "skippingCannonball",
+    "rule": {
+     "hops": 3,
+     "hopGap": 0.28,
+     "minSpeed": 80,
+     "burstRadius": 23,
+     "burstGrowth": 5,
+     "damageGrowth": 0.25,
+     "settle": 0.45
     }
    }
   },
@@ -8175,24 +8031,21 @@
    ],
    "weight": 78,
    "behavior": {
-    "kind": "bigUpdate",
-    "variant": {
-     "kind": "sproutSquad",
-     "rule": {
-      "chance": 0.12,
-      "perAmount": 3,
-      "seekRange": 110,
-      "reach": 3,
-      "heel": 22,
-      "riseSec": 0.3,
-      "wiltSec": 0.35,
-      "hopHz": 2.5,
-      "airShare": 0.6,
-      "sproutSec": 0,
-      "snareRadius": 0,
-      "snareSec": 0,
-      "snareBossSlow": 0
-     }
+    "kind": "sproutSquad",
+    "rule": {
+     "chance": 0.12,
+     "perAmount": 3,
+     "seekRange": 110,
+     "reach": 3,
+     "heel": 22,
+     "riseSec": 0.3,
+     "wiltSec": 0.35,
+     "hopHz": 2.5,
+     "airShare": 0.6,
+     "sproutSec": 0,
+     "snareRadius": 0,
+     "snareSec": 0,
+     "snareBossSlow": 0
     }
    }
   },
@@ -8235,17 +8088,14 @@
    ],
    "weight": 75,
    "behavior": {
-    "kind": "bigUpdate",
-    "variant": {
-     "kind": "spudDecoy",
-     "rule": {
-      "lure": {
-       "reach": 80
-      },
-      "behind": 26,
-      "spread": 1.1,
-      "burstRadius": 30
-     }
+    "kind": "spudDecoy",
+    "rule": {
+     "lure": {
+      "reach": 80
+     },
+     "behind": 26,
+     "spread": 1.1,
+     "burstRadius": 30
     }
    }
   },
@@ -8264,21 +8114,18 @@
     "interval": 0
    },
    "behavior": {
-    "kind": "bigUpdate",
-    "variant": {
-     "kind": "spudDecoy",
-     "rule": {
-      "lure": {
-       "reach": 80
-      },
-      "behind": 26,
-      "spread": 1.1,
-      "burstRadius": 30,
-      "echo": {
-       "reach": 0.6,
-       "wind": 0.45,
-       "damage": 0.8
-      }
+    "kind": "spudDecoy",
+    "rule": {
+     "lure": {
+      "reach": 80
+     },
+     "behind": 26,
+     "spread": 1.1,
+     "burstRadius": 30,
+     "echo": {
+      "reach": 0.6,
+      "wind": 0.45,
+      "damage": 0.8
      }
     }
    },
@@ -8300,17 +8147,14 @@
     "interval": 0
    },
    "behavior": {
-    "kind": "bigUpdate",
-    "variant": {
-     "kind": "cometScythe",
-     "size": 11,
-     "orbitRadius": 36,
-     "hitInterval": 0.25,
-     "reachIn": 0.4,
-     "reachOut": 1.8,
-     "lapsPerSwing": 2,
-     "counterSwing": true
-    }
+    "kind": "cometScythe",
+    "size": 11,
+    "orbitRadius": 36,
+    "hitInterval": 0.25,
+    "reachIn": 0.4,
+    "reachOut": 1.8,
+    "lapsPerSwing": 2,
+    "counterSwing": true
    },
    "from": "comet-scythe",
    "catalyst": "big-bowl"
@@ -8330,28 +8174,25 @@
     "interval": 0.06
    },
    "behavior": {
-    "kind": "bigUpdate",
-    "variant": {
-     "kind": "broadside",
-     "size": 4,
-     "explodeRadius": 20,
-     "range": 56,
-     "minFlight": 32,
-     "rowGap": 22,
-     "rows": {
-      "count": 2,
-      "reach": 28,
-      "stagger": 0.5
-     },
-     "burst": {
-      "count": 3,
-      "fanDeg": 38,
-      "reach": 20,
-      "flight": 0.2,
-      "explodeRadius": 11,
-      "damage": 0.25,
-      "knockback": 0.5
-     }
+    "kind": "broadside",
+    "size": 4,
+    "explodeRadius": 20,
+    "range": 56,
+    "minFlight": 32,
+    "rowGap": 22,
+    "rows": {
+     "count": 2,
+     "reach": 28,
+     "stagger": 0.5
+    },
+    "burst": {
+     "count": 3,
+     "fanDeg": 38,
+     "reach": 20,
+     "flight": 0.2,
+     "explodeRadius": 11,
+     "damage": 0.25,
+     "knockback": 0.5
     }
    },
    "from": "broadside",
@@ -8372,29 +8213,26 @@
     "interval": 0
    },
    "behavior": {
-    "kind": "bigUpdate",
-    "variant": {
-     "kind": "hashHawk",
-     "rule": {
-      "range": 170,
-      "circleRadius": 44,
-      "circleSquash": 0.55,
-      "circleTurn": 2.1,
-      "returnSpeed": 280,
-      "burstRadius": 15,
-      "retrySec": 0.2,
-      "staggerSec": 0.4,
-      "eliteWeight": 10,
-      "bossWeight": 100,
-      "crumbs": {
-       "radius": 20,
-       "tickSec": 0.25,
-       "dpsShare": 0.3,
-       "burn": {
-        "kind": "burn",
-        "dps": 14,
-        "seconds": 1.5
-       }
+    "kind": "hashHawk",
+    "rule": {
+     "range": 170,
+     "circleRadius": 44,
+     "circleSquash": 0.55,
+     "circleTurn": 2.1,
+     "returnSpeed": 280,
+     "burstRadius": 15,
+     "retrySec": 0.2,
+     "staggerSec": 0.4,
+     "eliteWeight": 10,
+     "bossWeight": 100,
+     "crumbs": {
+      "radius": 20,
+      "tickSec": 0.25,
+      "dpsShare": 0.3,
+      "burn": {
+       "kind": "burn",
+       "dps": 14,
+       "seconds": 1.5
       }
      }
     }
@@ -8417,22 +8255,19 @@
     "interval": 0
    },
    "behavior": {
-    "kind": "bigUpdate",
-    "variant": {
-     "kind": "harvestMoon",
-     "size": 7,
-     "orbitRadius": 62,
-     "strikeInterval": 0.5,
-     "grab": 12,
-     "minCarry": 0.4,
-     "regrab": 2,
-     "fling": 300,
-     "burst": {
-      "radius": 30,
-      "share": 0.4,
-      "land": 0.25,
-      "knockback": 1
-     }
+    "kind": "harvestMoon",
+    "size": 7,
+    "orbitRadius": 62,
+    "strikeInterval": 0.5,
+    "grab": 12,
+    "minCarry": 0.4,
+    "regrab": 2,
+    "fling": 300,
+    "burst": {
+     "radius": 30,
+     "share": 0.4,
+     "land": 0.25,
+     "knockback": 1
     }
    },
    "from": "harvest-moon",
@@ -8454,22 +8289,19 @@
     "interval": 0
    },
    "behavior": {
-    "kind": "bigUpdate",
-    "variant": {
-     "kind": "afterburnerFries",
-     "size": 4,
-     "spread": 1.2,
-     "gap": 10,
-     "jet": {
-      "spread": 1.6,
-      "speed": 0.45,
-      "oil": {
-       "shape": "splat",
-       "radius": 12,
-       "sec": 4,
-       "every": 0.25,
-       "share": 1
-      }
+    "kind": "afterburnerFries",
+    "size": 4,
+    "spread": 1.2,
+    "gap": 10,
+    "jet": {
+     "spread": 1.6,
+     "speed": 0.45,
+     "oil": {
+      "shape": "splat",
+      "radius": 12,
+      "sec": 4,
+      "every": 0.25,
+      "share": 1
      }
     }
    },
@@ -8491,33 +8323,30 @@
     "interval": 0.3
    },
    "behavior": {
-    "kind": "bigUpdate",
-    "variant": {
-     "kind": "mashGolem",
-     "lead": 12,
-     "riseSec": 0.3,
-     "body": 16,
-     "pulseSec": 0.15,
-     "fanDeg": 24,
-     "reach": 120,
-     "slamRadius": 38,
-     "slamMult": 5,
-     "patch": {
-      "every": 14,
-      "radius": 16,
-      "sec": 3,
-      "slow": {
-       "kind": "slow",
-       "factor": 0.5,
-       "seconds": 0.4
-      }
-     },
-     "ring": {
-      "reach": 105,
-      "speed": 135,
-      "width": 14,
-      "mult": 2
+    "kind": "mashGolem",
+    "lead": 12,
+    "riseSec": 0.3,
+    "body": 16,
+    "pulseSec": 0.15,
+    "fanDeg": 24,
+    "reach": 120,
+    "slamRadius": 38,
+    "slamMult": 5,
+    "patch": {
+     "every": 14,
+     "radius": 16,
+     "sec": 3,
+     "slow": {
+      "kind": "slow",
+      "factor": 0.5,
+      "seconds": 0.4
      }
+    },
+    "ring": {
+     "reach": 105,
+     "speed": 135,
+     "width": 14,
+     "mult": 2
     }
    },
    "from": "mash-golem",
@@ -8539,15 +8368,12 @@
     "interval": 0
    },
    "behavior": {
-    "kind": "bigUpdate",
-    "variant": {
-     "kind": "mashLanding",
-     "radius": 52,
-     "echo": {
-      "delay": 0.35,
-      "reach": 1.75,
-      "share": 0.9
-     }
+    "kind": "mashLanding",
+    "radius": 52,
+    "echo": {
+     "delay": 0.35,
+     "reach": 1.75,
+     "share": 0.9
     }
    },
    "from": "mash-landing",
@@ -8569,24 +8395,21 @@
     "interval": 0.25
    },
    "behavior": {
-    "kind": "bigUpdate",
-    "variant": {
-     "kind": "peelPhantom",
-     "lure": {
-      "reach": 160
-     },
-     "burst": 30,
-     "spread": 18,
-     "spin": {
-      "radius": 34,
-      "cut": 0.3
-     },
-     "ring": {
-      "peels": 10,
-      "cut": 0.6,
-      "size": 5,
-      "life": 1.4
-     }
+    "kind": "peelPhantom",
+    "lure": {
+     "reach": 160
+    },
+    "burst": 30,
+    "spread": 18,
+    "spin": {
+     "radius": 34,
+     "cut": 0.3
+    },
+    "ring": {
+     "peels": 10,
+     "cut": 0.6,
+     "size": 5,
+     "life": 1.4
     }
    },
    "from": "peel-phantom",
@@ -8607,24 +8430,21 @@
     "interval": 0.35
    },
    "behavior": {
-    "kind": "bigUpdate",
-    "variant": {
-     "kind": "sproutSquad",
-     "rule": {
-      "chance": 0.2,
-      "perAmount": 4,
-      "seekRange": 130,
-      "reach": 3,
-      "heel": 22,
-      "riseSec": 0.3,
-      "wiltSec": 0.35,
-      "hopHz": 2.5,
-      "airShare": 0.6,
-      "sproutSec": 0.5,
-      "snareRadius": 26,
-      "snareSec": 1.2,
-      "snareBossSlow": 0.3
-     }
+    "kind": "sproutSquad",
+    "rule": {
+     "chance": 0.2,
+     "perAmount": 4,
+     "seekRange": 130,
+     "reach": 3,
+     "heel": 22,
+     "riseSec": 0.3,
+     "wiltSec": 0.35,
+     "hopHz": 2.5,
+     "airShare": 0.6,
+     "sproutSec": 0.5,
+     "snareRadius": 26,
+     "snareSec": 1.2,
+     "snareBossSlow": 0.3
     }
    },
    "from": "sprout-squad",
@@ -8645,29 +8465,26 @@
     "interval": 0
    },
    "behavior": {
-    "kind": "bigUpdate",
-    "variant": {
-     "kind": "skippingCannonball",
-     "rule": {
-      "hops": 3,
-      "hopGap": 0.28,
-      "minSpeed": 80,
-      "burstRadius": 23,
-      "burstGrowth": 5,
-      "damageGrowth": 0.25,
-      "settle": 0.45,
-      "fan": {
-       "balls": 2,
-       "spreadDeg": 28
-      },
-      "spud": {
-       "share": 0.6,
-       "radius": 14,
-       "seek": 110,
-       "reach": 34,
-       "flight": 0.25,
-       "turnDeg": 55
-      }
+    "kind": "skippingCannonball",
+    "rule": {
+     "hops": 3,
+     "hopGap": 0.28,
+     "minSpeed": 80,
+     "burstRadius": 23,
+     "burstGrowth": 5,
+     "damageGrowth": 0.25,
+     "settle": 0.45,
+     "fan": {
+      "balls": 2,
+      "spreadDeg": 28
+     },
+     "spud": {
+      "share": 0.6,
+      "radius": 14,
+      "seek": 110,
+      "reach": 34,
+      "flight": 0.25,
+      "turnDeg": 55
      }
     }
    },
@@ -8689,25 +8506,22 @@
     "interval": 0.06
    },
    "behavior": {
-    "kind": "bigUpdate",
-    "variant": {
-     "kind": "fryBy",
-     "size": 3,
-     "spread": 0.3,
-     "dripSpeed": 0.35,
-     "fan": 2.6,
-     "rows": 2,
-     "gap": 8,
-     "innerSpeed": 0.5,
-     "fanLife": 0.22,
-     "fanPierce": 99,
-     "oil": {
-      "shape": "splat",
-      "radius": 12,
-      "sec": 4,
-      "every": 0.25,
-      "share": 1
-     }
+    "kind": "fryBy",
+    "size": 3,
+    "spread": 0.3,
+    "dripSpeed": 0.35,
+    "fan": 2.6,
+    "rows": 2,
+    "gap": 8,
+    "innerSpeed": 0.5,
+    "fanLife": 0.22,
+    "fanPierce": 99,
+    "oil": {
+     "shape": "splat",
+     "radius": 12,
+     "sec": 4,
+     "every": 0.25,
+     "share": 1
     }
    },
    "from": [
@@ -9835,15 +9649,12 @@
     "interval": 0.1
    },
    "behavior": {
-    "kind": "bigUpdate",
-    "variant": {
-     "kind": "sling",
-     "fan": 0.16,
-     "spread": 0.05,
-     "size": 4,
-     "perTick": 2,
-     "maxQueue": 40
-    }
+    "kind": "sling",
+    "fan": 0.16,
+    "spread": 0.05,
+    "size": 4,
+    "perTick": 2,
+    "maxQueue": 40
    },
    "from": "gem-sling",
    "catalyst": "potato-magnet"
@@ -9863,28 +9674,25 @@
     "interval": 0.1
    },
    "behavior": {
-    "kind": "bigUpdate",
-    "variant": {
-     "kind": "snowball",
-     "turnDeg": 120,
-     "stopTicks": 4,
-     "minR": 4,
-     "maxR": 14,
-     "growPerUnit": 0.22,
-     "minRelease": 9,
-     "fullSec": 0.25,
-     "surgeSpeed": 220,
-     "surgeBase": 70,
-     "surgePerR": 9,
-     "splatK": 2.5,
-     "trailBase": 8,
-     "trailPerR": 6,
-     "sweepK": 1.4,
-     "split": {
-      "count": 3,
-      "size": 0.7,
-      "fanDeg": 30
-     }
+    "kind": "snowball",
+    "turnDeg": 120,
+    "stopTicks": 4,
+    "minR": 4,
+    "maxR": 14,
+    "growPerUnit": 0.22,
+    "minRelease": 9,
+    "fullSec": 0.25,
+    "surgeSpeed": 220,
+    "surgeBase": 70,
+    "surgePerR": 9,
+    "splatK": 2.5,
+    "trailBase": 8,
+    "trailPerR": 6,
+    "sweepK": 1.4,
+    "split": {
+     "count": 3,
+     "size": 0.7,
+     "fanDeg": 30
     }
    },
    "from": "mash-snowball",
@@ -9905,31 +9713,28 @@
     "interval": 0.1
    },
    "behavior": {
-    "kind": "bigUpdate",
-    "variant": {
-     "kind": "seedPotato",
-     "rule": {
-      "throwSec": 0.25,
-      "minThrow": 30,
-      "maxThrow": 90,
-      "flightSec": 0.35,
-      "stageSec": 1.2,
-      "selfSec": 8,
-      "zapSec": 1,
-      "zapR": 30,
-      "zapK": 0.3,
-      "reach": 24,
-      "reachK": 0.25,
-      "maxReach": 34,
-      "burstR": 30,
-      "stageR": 8,
-      "burstK": 1.5,
-      "selfK": 0.6,
-      "leashR": 160,
-      "maxPlants": 6,
-      "luckK": 0.5,
-      "goldCoins": 4
-     }
+    "kind": "seedPotato",
+    "rule": {
+     "throwSec": 0.25,
+     "minThrow": 30,
+     "maxThrow": 90,
+     "flightSec": 0.35,
+     "stageSec": 1.2,
+     "selfSec": 8,
+     "zapSec": 1,
+     "zapR": 30,
+     "zapK": 0.3,
+     "reach": 24,
+     "reachK": 0.25,
+     "maxReach": 34,
+     "burstR": 30,
+     "stageR": 8,
+     "burstK": 1.5,
+     "selfK": 0.6,
+     "leashR": 160,
+     "maxPlants": 6,
+     "luckK": 0.5,
+     "goldCoins": 4
     }
    },
    "from": "seed-potato",
@@ -9950,17 +9755,14 @@
     "interval": 0.1
    },
    "behavior": {
-    "kind": "bigUpdate",
-    "variant": {
-     "kind": "spudFence",
-     "rule": {
-      "every": 60,
-      "live": 4,
-      "arcWidth": 24,
-      "zapSec": 0.2,
-      "maxSpan": 90,
-      "minLife": 0.5
-     }
+    "kind": "spudFence",
+    "rule": {
+     "every": 60,
+     "live": 4,
+     "arcWidth": 24,
+     "zapSec": 0.2,
+     "maxSpan": 90,
+     "minLife": 0.5
     }
    },
    "from": "spud-fence",
@@ -9981,13 +9783,10 @@
     "interval": 0.06
    },
    "behavior": {
-    "kind": "bigUpdate",
-    "variant": {
-     "kind": "tailgate",
-     "size": 3,
-     "spread": 0.25,
-     "dripSpeed": 0.35
-    }
+    "kind": "tailgate",
+    "size": 3,
+    "spread": 0.25,
+    "dripSpeed": 0.35
    },
    "from": "tailgate-fries",
    "catalyst": "butter-pat"
@@ -10007,18 +9806,15 @@
     "interval": 0
    },
    "behavior": {
-    "kind": "bigUpdate",
-    "variant": {
-     "kind": "gatling",
-     "burstSec": 2,
-     "gapSec": 0.35,
-     "retrySec": 0.1,
-     "reach": 220,
-     "lane": 7,
-     "spread": 0.03,
-     "size": 4,
-     "shot": "tot-toss"
-    }
+    "kind": "gatling",
+    "burstSec": 2,
+    "gapSec": 0.35,
+    "retrySec": 0.1,
+    "reach": 220,
+    "lane": 7,
+    "spread": 0.03,
+    "size": 4,
+    "shot": "tot-toss"
    },
    "from": "locked-gatling",
    "catalyst": "masher-grip"
@@ -10038,16 +9834,13 @@
     "interval": 0.1
    },
    "behavior": {
-    "kind": "bigUpdate",
-    "variant": {
-     "kind": "twirl",
-     "size": 8,
-     "orbitRadius": 36,
-     "hitInterval": 0.2,
-     "crawl": 0.12,
-     "maxPace": 2,
-     "riseSec": 0.12
-    }
+    "kind": "twirl",
+    "size": 8,
+    "orbitRadius": 36,
+    "hitInterval": 0.2,
+    "crawl": 0.12,
+    "maxPace": 2,
+    "riseSec": 0.12
    },
    "from": "tater-twirl",
    "catalyst": "salt-shaker"
@@ -10089,20 +9882,17 @@
     "interval": 0
    },
    "behavior": {
-    "kind": "bigUpdate",
-    "variant": {
-     "kind": "hotStreak",
-     "size": 34,
-     "hitInterval": 1,
-     "streak": {
-      "steps": 5,
-      "stepSec": 1,
-      "hitLoss": 2,
-      "stopSec": 0,
-      "area": 0.48,
-      "rate": 0.24,
-      "firstStep": 0
-     }
+    "kind": "hotStreak",
+    "size": 34,
+    "hitInterval": 1,
+    "streak": {
+     "steps": 5,
+     "stepSec": 1,
+     "hitLoss": 2,
+     "stopSec": 0,
+     "area": 0.48,
+     "rate": 0.24,
+     "firstStep": 0
     }
    },
    "from": "hot-streak",
@@ -10123,21 +9913,18 @@
     "interval": 0
    },
    "behavior": {
-    "kind": "bigUpdate",
-    "variant": {
-     "kind": "spudDecoy",
-     "rule": {
-      "lure": {
-       "reach": 80
-      },
-      "behind": 26,
-      "spread": 1.1,
-      "burstRadius": 30,
-      "echo": {
-       "reach": 0.6,
-       "wind": 0.45,
-       "damage": 0.8
-      }
+    "kind": "spudDecoy",
+    "rule": {
+     "lure": {
+      "reach": 80
+     },
+     "behind": 26,
+     "spread": 1.1,
+     "burstRadius": 30,
+     "echo": {
+      "reach": 0.6,
+      "wind": 0.45,
+      "damage": 0.8
      }
     }
    },
@@ -10159,17 +9946,14 @@
     "interval": 0
    },
    "behavior": {
-    "kind": "bigUpdate",
-    "variant": {
-     "kind": "cometScythe",
-     "size": 11,
-     "orbitRadius": 36,
-     "hitInterval": 0.25,
-     "reachIn": 0.4,
-     "reachOut": 1.8,
-     "lapsPerSwing": 2,
-     "counterSwing": true
-    }
+    "kind": "cometScythe",
+    "size": 11,
+    "orbitRadius": 36,
+    "hitInterval": 0.25,
+    "reachIn": 0.4,
+    "reachOut": 1.8,
+    "lapsPerSwing": 2,
+    "counterSwing": true
    },
    "from": "comet-scythe",
    "catalyst": "big-bowl"
@@ -10189,28 +9973,25 @@
     "interval": 0.06
    },
    "behavior": {
-    "kind": "bigUpdate",
-    "variant": {
-     "kind": "broadside",
-     "size": 4,
-     "explodeRadius": 20,
-     "range": 56,
-     "minFlight": 32,
-     "rowGap": 22,
-     "rows": {
-      "count": 2,
-      "reach": 28,
-      "stagger": 0.5
-     },
-     "burst": {
-      "count": 3,
-      "fanDeg": 38,
-      "reach": 20,
-      "flight": 0.2,
-      "explodeRadius": 11,
-      "damage": 0.25,
-      "knockback": 0.5
-     }
+    "kind": "broadside",
+    "size": 4,
+    "explodeRadius": 20,
+    "range": 56,
+    "minFlight": 32,
+    "rowGap": 22,
+    "rows": {
+     "count": 2,
+     "reach": 28,
+     "stagger": 0.5
+    },
+    "burst": {
+     "count": 3,
+     "fanDeg": 38,
+     "reach": 20,
+     "flight": 0.2,
+     "explodeRadius": 11,
+     "damage": 0.25,
+     "knockback": 0.5
     }
    },
    "from": "broadside",
@@ -10231,29 +10012,26 @@
     "interval": 0
    },
    "behavior": {
-    "kind": "bigUpdate",
-    "variant": {
-     "kind": "hashHawk",
-     "rule": {
-      "range": 170,
-      "circleRadius": 44,
-      "circleSquash": 0.55,
-      "circleTurn": 2.1,
-      "returnSpeed": 280,
-      "burstRadius": 15,
-      "retrySec": 0.2,
-      "staggerSec": 0.4,
-      "eliteWeight": 10,
-      "bossWeight": 100,
-      "crumbs": {
-       "radius": 20,
-       "tickSec": 0.25,
-       "dpsShare": 0.3,
-       "burn": {
-        "kind": "burn",
-        "dps": 14,
-        "seconds": 1.5
-       }
+    "kind": "hashHawk",
+    "rule": {
+     "range": 170,
+     "circleRadius": 44,
+     "circleSquash": 0.55,
+     "circleTurn": 2.1,
+     "returnSpeed": 280,
+     "burstRadius": 15,
+     "retrySec": 0.2,
+     "staggerSec": 0.4,
+     "eliteWeight": 10,
+     "bossWeight": 100,
+     "crumbs": {
+      "radius": 20,
+      "tickSec": 0.25,
+      "dpsShare": 0.3,
+      "burn": {
+       "kind": "burn",
+       "dps": 14,
+       "seconds": 1.5
       }
      }
     }
@@ -10276,22 +10054,19 @@
     "interval": 0
    },
    "behavior": {
-    "kind": "bigUpdate",
-    "variant": {
-     "kind": "harvestMoon",
-     "size": 7,
-     "orbitRadius": 62,
-     "strikeInterval": 0.5,
-     "grab": 12,
-     "minCarry": 0.4,
-     "regrab": 2,
-     "fling": 300,
-     "burst": {
-      "radius": 30,
-      "share": 0.4,
-      "land": 0.25,
-      "knockback": 1
-     }
+    "kind": "harvestMoon",
+    "size": 7,
+    "orbitRadius": 62,
+    "strikeInterval": 0.5,
+    "grab": 12,
+    "minCarry": 0.4,
+    "regrab": 2,
+    "fling": 300,
+    "burst": {
+     "radius": 30,
+     "share": 0.4,
+     "land": 0.25,
+     "knockback": 1
     }
    },
    "from": "harvest-moon",
@@ -10313,22 +10088,19 @@
     "interval": 0
    },
    "behavior": {
-    "kind": "bigUpdate",
-    "variant": {
-     "kind": "afterburnerFries",
-     "size": 4,
-     "spread": 1.2,
-     "gap": 10,
-     "jet": {
-      "spread": 1.6,
-      "speed": 0.45,
-      "oil": {
-       "shape": "splat",
-       "radius": 12,
-       "sec": 4,
-       "every": 0.25,
-       "share": 1
-      }
+    "kind": "afterburnerFries",
+    "size": 4,
+    "spread": 1.2,
+    "gap": 10,
+    "jet": {
+     "spread": 1.6,
+     "speed": 0.45,
+     "oil": {
+      "shape": "splat",
+      "radius": 12,
+      "sec": 4,
+      "every": 0.25,
+      "share": 1
      }
     }
    },
@@ -10350,33 +10122,30 @@
     "interval": 0.3
    },
    "behavior": {
-    "kind": "bigUpdate",
-    "variant": {
-     "kind": "mashGolem",
-     "lead": 12,
-     "riseSec": 0.3,
-     "body": 16,
-     "pulseSec": 0.15,
-     "fanDeg": 24,
-     "reach": 120,
-     "slamRadius": 38,
-     "slamMult": 5,
-     "patch": {
-      "every": 14,
-      "radius": 16,
-      "sec": 3,
-      "slow": {
-       "kind": "slow",
-       "factor": 0.5,
-       "seconds": 0.4
-      }
-     },
-     "ring": {
-      "reach": 105,
-      "speed": 135,
-      "width": 14,
-      "mult": 2
+    "kind": "mashGolem",
+    "lead": 12,
+    "riseSec": 0.3,
+    "body": 16,
+    "pulseSec": 0.15,
+    "fanDeg": 24,
+    "reach": 120,
+    "slamRadius": 38,
+    "slamMult": 5,
+    "patch": {
+     "every": 14,
+     "radius": 16,
+     "sec": 3,
+     "slow": {
+      "kind": "slow",
+      "factor": 0.5,
+      "seconds": 0.4
      }
+    },
+    "ring": {
+     "reach": 105,
+     "speed": 135,
+     "width": 14,
+     "mult": 2
     }
    },
    "from": "mash-golem",
@@ -10398,15 +10167,12 @@
     "interval": 0
    },
    "behavior": {
-    "kind": "bigUpdate",
-    "variant": {
-     "kind": "mashLanding",
-     "radius": 52,
-     "echo": {
-      "delay": 0.35,
-      "reach": 1.75,
-      "share": 0.9
-     }
+    "kind": "mashLanding",
+    "radius": 52,
+    "echo": {
+     "delay": 0.35,
+     "reach": 1.75,
+     "share": 0.9
     }
    },
    "from": "mash-landing",
@@ -10428,24 +10194,21 @@
     "interval": 0.25
    },
    "behavior": {
-    "kind": "bigUpdate",
-    "variant": {
-     "kind": "peelPhantom",
-     "lure": {
-      "reach": 160
-     },
-     "burst": 30,
-     "spread": 18,
-     "spin": {
-      "radius": 34,
-      "cut": 0.3
-     },
-     "ring": {
-      "peels": 10,
-      "cut": 0.6,
-      "size": 5,
-      "life": 1.4
-     }
+    "kind": "peelPhantom",
+    "lure": {
+     "reach": 160
+    },
+    "burst": 30,
+    "spread": 18,
+    "spin": {
+     "radius": 34,
+     "cut": 0.3
+    },
+    "ring": {
+     "peels": 10,
+     "cut": 0.6,
+     "size": 5,
+     "life": 1.4
     }
    },
    "from": "peel-phantom",
@@ -10466,24 +10229,21 @@
     "interval": 0.35
    },
    "behavior": {
-    "kind": "bigUpdate",
-    "variant": {
-     "kind": "sproutSquad",
-     "rule": {
-      "chance": 0.2,
-      "perAmount": 4,
-      "seekRange": 130,
-      "reach": 3,
-      "heel": 22,
-      "riseSec": 0.3,
-      "wiltSec": 0.35,
-      "hopHz": 2.5,
-      "airShare": 0.6,
-      "sproutSec": 0.5,
-      "snareRadius": 26,
-      "snareSec": 1.2,
-      "snareBossSlow": 0.3
-     }
+    "kind": "sproutSquad",
+    "rule": {
+     "chance": 0.2,
+     "perAmount": 4,
+     "seekRange": 130,
+     "reach": 3,
+     "heel": 22,
+     "riseSec": 0.3,
+     "wiltSec": 0.35,
+     "hopHz": 2.5,
+     "airShare": 0.6,
+     "sproutSec": 0.5,
+     "snareRadius": 26,
+     "snareSec": 1.2,
+     "snareBossSlow": 0.3
     }
    },
    "from": "sprout-squad",
@@ -10504,29 +10264,26 @@
     "interval": 0
    },
    "behavior": {
-    "kind": "bigUpdate",
-    "variant": {
-     "kind": "skippingCannonball",
-     "rule": {
-      "hops": 3,
-      "hopGap": 0.28,
-      "minSpeed": 80,
-      "burstRadius": 23,
-      "burstGrowth": 5,
-      "damageGrowth": 0.25,
-      "settle": 0.45,
-      "fan": {
-       "balls": 2,
-       "spreadDeg": 28
-      },
-      "spud": {
-       "share": 0.6,
-       "radius": 14,
-       "seek": 110,
-       "reach": 34,
-       "flight": 0.25,
-       "turnDeg": 55
-      }
+    "kind": "skippingCannonball",
+    "rule": {
+     "hops": 3,
+     "hopGap": 0.28,
+     "minSpeed": 80,
+     "burstRadius": 23,
+     "burstGrowth": 5,
+     "damageGrowth": 0.25,
+     "settle": 0.45,
+     "fan": {
+      "balls": 2,
+      "spreadDeg": 28
+     },
+     "spud": {
+      "share": 0.6,
+      "radius": 14,
+      "seek": 110,
+      "reach": 34,
+      "flight": 0.25,
+      "turnDeg": 55
      }
     }
    },
@@ -11008,30 +10765,27 @@
     "interval": 0
    },
    "behavior": {
-    "kind": "bigUpdate",
-    "variant": {
-     "kind": "hotStreak",
-     "size": 44,
-     "hitInterval": 1,
-     "streak": {
-      "steps": 5,
-      "stepSec": 1,
-      "hitLoss": 2,
-      "stopSec": 0,
-      "area": 0.48,
-      "rate": 0.24,
-      "firstStep": 0
-     },
-     "puddle": {
-      "everySec": 0.5,
-      "size": 14,
-      "tickSec": 0.25,
-      "damage": 0.4,
-      "burn": {
-       "kind": "burn",
-       "dps": 40,
-       "seconds": 2
-      }
+    "kind": "hotStreak",
+    "size": 44,
+    "hitInterval": 1,
+    "streak": {
+     "steps": 5,
+     "stepSec": 1,
+     "hitLoss": 2,
+     "stopSec": 0,
+     "area": 0.48,
+     "rate": 0.24,
+     "firstStep": 0
+    },
+    "puddle": {
+     "everySec": 0.5,
+     "size": 14,
+     "tickSec": 0.25,
+     "damage": 0.4,
+     "burn": {
+      "kind": "burn",
+      "dps": 40,
+      "seconds": 2
      }
     }
    },
@@ -11055,23 +10809,20 @@
     "interval": 0.1
    },
    "behavior": {
-    "kind": "bigUpdate",
-    "variant": {
-     "kind": "twirl",
-     "size": 9,
-     "orbitRadius": 38,
-     "hitInterval": 0.2,
-     "crawl": 0.12,
-     "maxPace": 2,
-     "riseSec": 0.12,
-     "toss": {
-      "size": 7,
-      "speed": 220,
-      "returnAccel": 340,
-      "life": 2.8,
-      "share": 0.2,
-      "lead": 0.5
-     }
+    "kind": "twirl",
+    "size": 9,
+    "orbitRadius": 38,
+    "hitInterval": 0.2,
+    "crawl": 0.12,
+    "maxPace": 2,
+    "riseSec": 0.12,
+    "toss": {
+     "size": 7,
+     "speed": 220,
+     "returnAccel": 340,
+     "life": 2.8,
+     "share": 0.2,
+     "lead": 0.5
     }
    },
    "from": [
@@ -11094,18 +10845,15 @@
     "interval": 0.6
    },
    "behavior": {
-    "kind": "bigUpdate",
-    "variant": {
-     "kind": "sling",
-     "fan": 0.16,
-     "spread": 0.05,
-     "size": 4,
-     "perTick": 1,
-     "maxQueue": 30,
-     "mimic": {
-      "count": 2,
-      "evolved": true
-     }
+    "kind": "sling",
+    "fan": 0.16,
+    "spread": 0.05,
+    "size": 4,
+    "perTick": 1,
+    "maxQueue": 30,
+    "mimic": {
+     "count": 2,
+     "evolved": true
     }
    },
    "from": [
@@ -11128,44 +10876,41 @@
     "interval": 0.1
    },
    "behavior": {
-    "kind": "bigUpdate",
-    "variant": {
-     "kind": "seedPotato",
-     "rule": {
-      "throwSec": 0.25,
-      "minThrow": 30,
-      "maxThrow": 90,
-      "flightSec": 0.35,
-      "stageSec": 1.2,
-      "selfSec": 8,
-      "zapSec": 1,
-      "zapR": 30,
-      "zapK": 0.3,
-      "reach": 24,
-      "reachK": 0.25,
-      "maxReach": 34,
-      "burstR": 30,
-      "stageR": 8,
-      "burstK": 1.5,
-      "selfK": 0.6,
-      "leashR": 160,
-      "maxPlants": 6,
-      "luckK": 0.5,
-      "goldCoins": 4
+    "kind": "seedPotato",
+    "rule": {
+     "throwSec": 0.25,
+     "minThrow": 30,
+     "maxThrow": 90,
+     "flightSec": 0.35,
+     "stageSec": 1.2,
+     "selfSec": 8,
+     "zapSec": 1,
+     "zapR": 30,
+     "zapK": 0.3,
+     "reach": 24,
+     "reachK": 0.25,
+     "maxReach": 34,
+     "burstR": 30,
+     "stageR": 8,
+     "burstK": 1.5,
+     "selfK": 0.6,
+     "leashR": 160,
+     "maxPlants": 6,
+     "luckK": 0.5,
+     "goldCoins": 4
+    },
+    "garden": {
+     "fence": {
+      "every": 60,
+      "live": 4,
+      "arcWidth": 54,
+      "zapSec": 0.2,
+      "maxSpan": 90,
+      "minLife": 0.5
      },
-     "garden": {
-      "fence": {
-       "every": 60,
-       "live": 4,
-       "arcWidth": 54,
-       "zapSec": 0.2,
-       "maxSpan": 90,
-       "minLife": 0.5
-      },
-      "postSec": 9,
-      "arcStageK": 0.2,
-      "arcGrowK": 0.25
-     }
+     "postSec": 9,
+     "arcStageK": 0.2,
+     "arcGrowK": 0.25
     }
    },
    "from": [
@@ -11221,25 +10966,22 @@
     "interval": 0.06
    },
    "behavior": {
-    "kind": "bigUpdate",
-    "variant": {
-     "kind": "fryBy",
-     "size": 3,
-     "spread": 0.3,
-     "dripSpeed": 0.35,
-     "fan": 2.6,
-     "rows": 2,
-     "gap": 8,
-     "innerSpeed": 0.5,
-     "fanLife": 0.22,
-     "fanPierce": 99,
-     "oil": {
-      "shape": "splat",
-      "radius": 12,
-      "sec": 4,
-      "every": 0.25,
-      "share": 1
-     }
+    "kind": "fryBy",
+    "size": 3,
+    "spread": 0.3,
+    "dripSpeed": 0.35,
+    "fan": 2.6,
+    "rows": 2,
+    "gap": 8,
+    "innerSpeed": 0.5,
+    "fanLife": 0.22,
+    "fanPierce": 99,
+    "oil": {
+     "shape": "splat",
+     "radius": 12,
+     "sec": 4,
+     "every": 0.25,
+     "share": 1
     }
    },
    "from": [
@@ -11308,20 +11050,17 @@
    "maxLevel": 5,
    "weight": 80,
    "effect": {
-    "phase": "gear",
-    "variant": {
-     "kind": "extraProjectile",
-     "tags": [
-      "shot"
-     ],
-     "perLevel": [
-      0,
-      1,
-      1,
-      2,
-      2
-     ]
-    }
+    "kind": "extraProjectile",
+    "tags": [
+     "shot"
+    ],
+    "perLevel": [
+     0,
+     1,
+     1,
+     2,
+     2
+    ]
    }
   },
   {
@@ -11471,13 +11210,10 @@
    "maxLevel": 5,
    "weight": 60,
    "effect": {
-    "phase": "gear",
-    "variant": {
-     "kind": "hotStart",
-     "fireRate": 1.6,
-     "baseSec": 1,
-     "perLevelSec": 0.3
-    }
+    "kind": "hotStart",
+    "fireRate": 1.6,
+    "baseSec": 1,
+    "perLevelSec": 0.3
    }
   },
   {
@@ -11487,12 +11223,9 @@
    "maxLevel": 5,
    "weight": 60,
    "effect": {
-    "phase": "variety",
-    "variant": {
-     "kind": "couchPotato",
-     "rampPerSec": 0.04,
-     "capPerLevel": 0.2
-    }
+    "kind": "couchPotato",
+    "rampPerSec": 0.04,
+    "capPerLevel": 0.2
    }
   },
   {
@@ -11502,13 +11235,10 @@
    "maxLevel": 5,
    "weight": 60,
    "effect": {
-    "phase": "variety",
-    "variant": {
-     "kind": "gravySplash",
-     "share": 1,
-     "everySec": 0.5,
-     "radius": 64
-    }
+    "kind": "gravySplash",
+    "share": 1,
+    "everySec": 0.5,
+    "radius": 64
    }
   },
   {
@@ -11518,13 +11248,10 @@
    "maxLevel": 5,
    "weight": 60,
    "effect": {
-    "phase": "variety",
-    "variant": {
-     "kind": "hashRush",
-     "damagePerDash": 0.04,
-     "windowSec": 4,
-     "maxDashes": 3
-    }
+    "kind": "hashRush",
+    "damagePerDash": 0.04,
+    "windowSec": 4,
+    "maxDashes": 3
    }
   },
   {
@@ -11534,12 +11261,9 @@
    "maxLevel": 5,
    "weight": 60,
    "effect": {
-    "phase": "variety",
-    "variant": {
-     "kind": "heartyHelping",
-     "damagePerStep": 0.02,
-     "hpStep": 50
-    }
+    "kind": "heartyHelping",
+    "damagePerStep": 0.02,
+    "hpStep": 50
    }
   },
   {
@@ -11549,12 +11273,9 @@
    "maxLevel": 5,
    "weight": 70,
    "effect": {
-    "phase": "variety",
-    "variant": {
-     "kind": "leanLunch",
-     "damagePerSlot": 0.04,
-     "cooldownPerSlot": 0.02
-    }
+    "kind": "leanLunch",
+    "damagePerSlot": 0.04,
+    "cooldownPerSlot": 0.02
    }
   },
   {
@@ -11564,13 +11285,10 @@
    "maxLevel": 5,
    "weight": 70,
    "effect": {
-    "phase": "variety",
-    "variant": {
-     "kind": "mashFinisher",
-     "hpSharePerLevel": 0.02,
-     "hpShareCap": 0.15,
-     "eliteShare": 0.5
-    }
+    "kind": "mashFinisher",
+    "hpSharePerLevel": 0.02,
+    "hpShareCap": 0.15,
+    "eliteShare": 0.5
    }
   },
   {
@@ -11580,12 +11298,9 @@
    "maxLevel": 5,
    "weight": 60,
    "effect": {
-    "phase": "variety",
-    "variant": {
-     "kind": "packedPan",
-     "damagePerPest": 0.01,
-     "pestCap": 10
-    }
+    "kind": "packedPan",
+    "damagePerPest": 0.01,
+    "pestCap": 10
    }
   },
   {
@@ -11595,12 +11310,9 @@
    "maxLevel": 5,
    "weight": 60,
    "effect": {
-    "phase": "variety",
-    "variant": {
-     "kind": "peelOut",
-     "mult": 2,
-     "seconds": 2
-    }
+    "kind": "peelOut",
+    "mult": 2,
+    "seconds": 2
    }
   },
   {
@@ -11624,12 +11336,9 @@
    "maxLevel": 5,
    "weight": 60,
    "effect": {
-    "phase": "variety",
-    "variant": {
-     "kind": "taterTrot",
-     "fireRatePerSpeed": 1,
-     "capPerLevel": 0.08
-    }
+    "kind": "taterTrot",
+    "fireRatePerSpeed": 1,
+    "capPerLevel": 0.08
    }
   },
   {
@@ -11639,12 +11348,9 @@
    "maxLevel": 5,
    "weight": 60,
    "effect": {
-    "phase": "moreVariety",
-    "variant": {
-     "kind": "agedRusset",
-     "perLevel": 0.005,
-     "capPerLevel": 0.1
-    }
+    "kind": "agedRusset",
+    "perLevel": 0.005,
+    "capPerLevel": 0.1
    }
   },
   {
@@ -11654,13 +11360,10 @@
    "maxLevel": 2,
    "weight": 60,
    "effect": {
-    "phase": "moreVariety",
-    "variant": {
-     "kind": "cleanPlate",
-     "perLevel": 0.12,
-     "seconds": 5,
-     "shed": 1
-    }
+    "kind": "cleanPlate",
+    "perLevel": 0.12,
+    "seconds": 5,
+    "shed": 1
    }
   }
  ],
@@ -11805,17 +11508,11 @@
    "maxStacks": 2,
    "weight": 6,
    "effect": {
-    "kind": "bigUpdate",
-    "variant": {
-     "phase": "gear",
-     "variant": {
-      "kind": "extraProjectile",
-      "tags": [
-       "shot"
-      ],
-      "amount": 1
-     }
-    }
+    "kind": "extraProjectile",
+    "tags": [
+     "shot"
+    ],
+    "amount": 1
    }
   },
   {
@@ -12089,17 +11786,11 @@
    "maxStacks": 1,
    "weight": 6,
    "effect": {
-    "kind": "bigUpdate",
-    "variant": {
-     "phase": "gear",
-     "variant": {
-      "kind": "staticSocks",
-      "bolts": 3,
-      "damage": 176,
-      "reach": 140,
-      "knockback": 0.4
-     }
-    }
+    "kind": "staticSocks",
+    "bolts": 3,
+    "damage": 176,
+    "reach": 140,
+    "knockback": 0.4
    }
   },
   {
@@ -12109,16 +11800,10 @@
    "mods": {},
    "weight": 8,
    "effect": {
-    "kind": "bigUpdate",
-    "variant": {
-     "phase": "variety",
-     "variant": {
-      "kind": "frozenPea",
-      "chance": 0.08,
-      "freezeSec": 1,
-      "bossSlow": 0.5
-     }
-    }
+    "kind": "frozenPea",
+    "chance": 0.08,
+    "freezeSec": 1,
+    "bossSlow": 0.5
    }
   },
   {
@@ -12129,14 +11814,8 @@
    "maxStacks": 1,
    "weight": 6,
    "effect": {
-    "kind": "bigUpdate",
-    "variant": {
-     "phase": "variety",
-     "variant": {
-      "kind": "fryFuel",
-      "kills": 30
-     }
-    }
+    "kind": "fryFuel",
+    "kills": 30
    }
   },
   {
@@ -12164,20 +11843,14 @@
    "maxStacks": 1,
    "weight": 8,
    "effect": {
-    "kind": "bigUpdate",
-    "variant": {
-     "phase": "variety",
-     "variant": {
-      "kind": "tiboBurst",
-      "on": "dash",
-      "cooldown": 0.5,
-      "damage": 55,
-      "thornsShare": 0,
-      "radius": 52,
-      "share": 1,
-      "knockback": 1
-     }
-    }
+    "kind": "tiboBurst",
+    "on": "dash",
+    "cooldown": 0.5,
+    "damage": 55,
+    "thornsShare": 0,
+    "radius": 52,
+    "share": 1,
+    "knockback": 1
    }
   },
   {
@@ -12190,14 +11863,8 @@
    "maxStacks": 2,
    "weight": 5,
    "effect": {
-    "kind": "bigUpdate",
-    "variant": {
-     "phase": "variety",
-     "variant": {
-      "kind": "overtime",
-      "perMinute": 0.06
-     }
-    }
+    "kind": "overtime",
+    "perMinute": 0.06
    }
   },
   {
@@ -12207,21 +11874,15 @@
    "mods": {},
    "weight": 6,
    "effect": {
-    "kind": "bigUpdate",
-    "variant": {
-     "phase": "variety",
-     "variant": {
-      "kind": "killDust",
-      "chance": 0.15,
-      "perSec": 3,
-      "radius": 40,
-      "share": 0.08,
-      "status": {
-       "kind": "slow",
-       "factor": 0.5,
-       "seconds": 2
-      }
-     }
+    "kind": "killDust",
+    "chance": 0.15,
+    "perSec": 3,
+    "radius": 40,
+    "share": 0.08,
+    "status": {
+     "kind": "slow",
+     "factor": 0.5,
+     "seconds": 2
     }
    }
   },
@@ -12241,14 +11902,8 @@
    "mods": {},
    "weight": 6,
    "effect": {
-    "kind": "bigUpdate",
-    "variant": {
-     "phase": "variety",
-     "variant": {
-      "kind": "receiptSpud",
-      "perOpening": 0.02
-     }
-    }
+    "kind": "receiptSpud",
+    "perOpening": 0.02
    }
   },
   {
@@ -12259,20 +11914,14 @@
    "maxStacks": 1,
    "weight": 8,
    "effect": {
-    "kind": "bigUpdate",
-    "variant": {
-     "phase": "variety",
-     "variant": {
-      "kind": "tiboBurst",
-      "on": "hurt",
-      "cooldown": 2,
-      "damage": 25,
-      "thornsShare": 1,
-      "radius": 60,
-      "share": 1,
-      "knockback": 4
-     }
-    }
+    "kind": "tiboBurst",
+    "on": "hurt",
+    "cooldown": 2,
+    "damage": 25,
+    "thornsShare": 1,
+    "radius": 60,
+    "share": 1,
+    "knockback": 4
    }
   },
   {
@@ -12292,14 +11941,8 @@
    "mods": {},
    "weight": 6,
    "effect": {
-    "kind": "bigUpdate",
-    "variant": {
-     "phase": "variety",
-     "variant": {
-      "kind": "tailwindTater",
-      "perMoveSpeed": 0.5
-     }
-    }
+    "kind": "tailwindTater",
+    "perMoveSpeed": 0.5
    }
   },
   {
@@ -12310,14 +11953,8 @@
    "maxStacks": 3,
    "weight": 8,
    "effect": {
-    "kind": "bigUpdate",
-    "variant": {
-     "phase": "variety",
-     "variant": {
-      "kind": "dogHaste",
-      "haste": 0.25
-     }
-    }
+    "kind": "dogHaste",
+    "haste": 0.25
    }
   },
   {
@@ -12327,16 +11964,10 @@
    "mods": {},
    "weight": 4,
    "effect": {
-    "kind": "bigUpdate",
-    "variant": {
-     "phase": "moreVariety",
-     "variant": {
-      "kind": "copperTot",
-      "chance": 0.25,
-      "damage": 48,
-      "knockback": 0.4
-     }
-    }
+    "kind": "copperTot",
+    "chance": 0.25,
+    "damage": 48,
+    "knockback": 0.4
    }
   },
   {
@@ -12347,19 +11978,13 @@
    "weight": 6,
    "maxStacks": 5,
    "effect": {
-    "kind": "bigUpdate",
-    "variant": {
-     "phase": "moreVariety",
-     "variant": {
-      "kind": "panicFry",
-      "hpShare": 0.5,
-      "minuteSec": 60,
-      "slowFactor": 0.05,
-      "windowSec": 3,
-      "perStackSec": 1,
-      "damageMult": 1.25
-     }
-    }
+    "kind": "panicFry",
+    "hpShare": 0.5,
+    "minuteSec": 60,
+    "slowFactor": 0.05,
+    "windowSec": 3,
+    "perStackSec": 1,
+    "damageMult": 1.25
    }
   },
   {
@@ -12370,15 +11995,9 @@
    "weight": 6,
    "maxStacks": 5,
    "effect": {
-    "kind": "bigUpdate",
-    "variant": {
-     "phase": "moreVariety",
-     "variant": {
-      "kind": "secondHelping",
-      "perSnack": 0.01,
-      "capPerLevel": 0.1
-     }
-    }
+    "kind": "secondHelping",
+    "perSnack": 0.01,
+    "capPerLevel": 0.1
    }
   },
   {
@@ -12388,21 +12007,15 @@
    "mods": {},
    "weight": 6,
    "effect": {
-    "kind": "bigUpdate",
-    "variant": {
-     "phase": "moreVariety",
-     "variant": {
-      "kind": "sparkSpud",
-      "every": 300,
-      "damage": 24,
-      "radius": 48,
-      "stun": {
-       "kind": "freeze",
-       "seconds": 0.35
-      },
-      "knockback": 0
-     }
-    }
+    "kind": "sparkSpud",
+    "every": 300,
+    "damage": 24,
+    "radius": 48,
+    "stun": {
+     "kind": "freeze",
+     "seconds": 0.35
+    },
+    "knockback": 0
    }
   },
   {
@@ -12413,21 +12026,15 @@
    "maxStacks": 5,
    "weight": 6,
    "effect": {
-    "kind": "bigUpdate",
-    "variant": {
-     "phase": "moreVariety",
-     "variant": {
-      "kind": "spudPurse",
-      "every": [
-       100,
-       84,
-       68,
-       52,
-       36
-      ],
-      "ahead": 24
-     }
-    }
+    "kind": "spudPurse",
+    "every": [
+     100,
+     84,
+     68,
+     52,
+     36
+    ],
+    "ahead": 24
    }
   },
   {
@@ -12438,17 +12045,11 @@
    "weight": 6,
    "maxStacks": 5,
    "effect": {
-    "kind": "bigUpdate",
-    "variant": {
-     "phase": "moreVariety",
-     "variant": {
-      "kind": "warmBowl",
-      "healPerSecond": 2,
-      "everySec": 1,
-      "durationSec": 10,
-      "maxStacks": 5
-     }
-    }
+    "kind": "warmBowl",
+    "healPerSecond": 2,
+    "everySec": 1,
+    "durationSec": 10,
+    "maxStacks": 5
    }
   }
  ],
@@ -12644,29 +12245,23 @@
    "rarity": 3,
    "mods": {},
    "effect": {
-    "kind": "bigUpdate",
-    "variant": {
-     "phase": "variety",
-     "variant": {
-      "kind": "tiboBurst",
-      "on": "dash",
-      "cooldown": 0.3,
-      "damage": 40,
-      "thornsShare": 0,
-      "shots": {
-       "kind": "quills",
-       "count": 8,
-       "damage": 40,
-       "thornsShare": 0,
-       "speed": 200,
-       "pierce": 2,
-       "life": 0.5
-      },
-      "radius": 64,
-      "share": 1.2,
-      "knockback": 1.5
-     }
-    }
+    "kind": "tiboBurst",
+    "on": "dash",
+    "cooldown": 0.3,
+    "damage": 40,
+    "thornsShare": 0,
+    "shots": {
+     "kind": "quills",
+     "count": 8,
+     "damage": 40,
+     "thornsShare": 0,
+     "speed": 200,
+     "pierce": 2,
+     "life": 0.5
+    },
+    "radius": 64,
+    "share": 1.2,
+    "knockback": 1.5
    },
    "from": "mash-splat",
    "catalyst": "butter-socks"
@@ -12813,17 +12408,11 @@
    "maxStacks": 2,
    "weight": 6,
    "effect": {
-    "kind": "bigUpdate",
-    "variant": {
-     "phase": "gear",
-     "variant": {
-      "kind": "extraProjectile",
-      "tags": [
-       "shot"
-      ],
-      "amount": 1
-     }
-    }
+    "kind": "extraProjectile",
+    "tags": [
+     "shot"
+    ],
+    "amount": 1
    }
   },
   {
@@ -13282,17 +12871,11 @@
    "maxStacks": 1,
    "weight": 6,
    "effect": {
-    "kind": "bigUpdate",
-    "variant": {
-     "phase": "gear",
-     "variant": {
-      "kind": "staticSocks",
-      "bolts": 3,
-      "damage": 176,
-      "reach": 140,
-      "knockback": 0.4
-     }
-    }
+    "kind": "staticSocks",
+    "bolts": 3,
+    "damage": 176,
+    "reach": 140,
+    "knockback": 0.4
    }
   },
   {
@@ -13302,16 +12885,10 @@
    "mods": {},
    "weight": 8,
    "effect": {
-    "kind": "bigUpdate",
-    "variant": {
-     "phase": "variety",
-     "variant": {
-      "kind": "frozenPea",
-      "chance": 0.08,
-      "freezeSec": 1,
-      "bossSlow": 0.5
-     }
-    }
+    "kind": "frozenPea",
+    "chance": 0.08,
+    "freezeSec": 1,
+    "bossSlow": 0.5
    }
   },
   {
@@ -13322,14 +12899,8 @@
    "maxStacks": 1,
    "weight": 6,
    "effect": {
-    "kind": "bigUpdate",
-    "variant": {
-     "phase": "variety",
-     "variant": {
-      "kind": "fryFuel",
-      "kills": 30
-     }
-    }
+    "kind": "fryFuel",
+    "kills": 30
    }
   },
   {
@@ -13357,20 +12928,14 @@
    "maxStacks": 1,
    "weight": 8,
    "effect": {
-    "kind": "bigUpdate",
-    "variant": {
-     "phase": "variety",
-     "variant": {
-      "kind": "tiboBurst",
-      "on": "dash",
-      "cooldown": 0.5,
-      "damage": 55,
-      "thornsShare": 0,
-      "radius": 52,
-      "share": 1,
-      "knockback": 1
-     }
-    }
+    "kind": "tiboBurst",
+    "on": "dash",
+    "cooldown": 0.5,
+    "damage": 55,
+    "thornsShare": 0,
+    "radius": 52,
+    "share": 1,
+    "knockback": 1
    }
   },
   {
@@ -13383,14 +12948,8 @@
    "maxStacks": 2,
    "weight": 5,
    "effect": {
-    "kind": "bigUpdate",
-    "variant": {
-     "phase": "variety",
-     "variant": {
-      "kind": "overtime",
-      "perMinute": 0.06
-     }
-    }
+    "kind": "overtime",
+    "perMinute": 0.06
    }
   },
   {
@@ -13400,21 +12959,15 @@
    "mods": {},
    "weight": 6,
    "effect": {
-    "kind": "bigUpdate",
-    "variant": {
-     "phase": "variety",
-     "variant": {
-      "kind": "killDust",
-      "chance": 0.15,
-      "perSec": 3,
-      "radius": 40,
-      "share": 0.08,
-      "status": {
-       "kind": "slow",
-       "factor": 0.5,
-       "seconds": 2
-      }
-     }
+    "kind": "killDust",
+    "chance": 0.15,
+    "perSec": 3,
+    "radius": 40,
+    "share": 0.08,
+    "status": {
+     "kind": "slow",
+     "factor": 0.5,
+     "seconds": 2
     }
    }
   },
@@ -13434,14 +12987,8 @@
    "mods": {},
    "weight": 6,
    "effect": {
-    "kind": "bigUpdate",
-    "variant": {
-     "phase": "variety",
-     "variant": {
-      "kind": "receiptSpud",
-      "perOpening": 0.02
-     }
-    }
+    "kind": "receiptSpud",
+    "perOpening": 0.02
    }
   },
   {
@@ -13452,20 +12999,14 @@
    "maxStacks": 1,
    "weight": 8,
    "effect": {
-    "kind": "bigUpdate",
-    "variant": {
-     "phase": "variety",
-     "variant": {
-      "kind": "tiboBurst",
-      "on": "hurt",
-      "cooldown": 2,
-      "damage": 25,
-      "thornsShare": 1,
-      "radius": 60,
-      "share": 1,
-      "knockback": 4
-     }
-    }
+    "kind": "tiboBurst",
+    "on": "hurt",
+    "cooldown": 2,
+    "damage": 25,
+    "thornsShare": 1,
+    "radius": 60,
+    "share": 1,
+    "knockback": 4
    }
   },
   {
@@ -13485,14 +13026,8 @@
    "mods": {},
    "weight": 6,
    "effect": {
-    "kind": "bigUpdate",
-    "variant": {
-     "phase": "variety",
-     "variant": {
-      "kind": "tailwindTater",
-      "perMoveSpeed": 0.5
-     }
-    }
+    "kind": "tailwindTater",
+    "perMoveSpeed": 0.5
    }
   },
   {
@@ -13503,14 +13038,8 @@
    "maxStacks": 3,
    "weight": 8,
    "effect": {
-    "kind": "bigUpdate",
-    "variant": {
-     "phase": "variety",
-     "variant": {
-      "kind": "dogHaste",
-      "haste": 0.25
-     }
-    }
+    "kind": "dogHaste",
+    "haste": 0.25
    }
   },
   {
@@ -13519,29 +13048,23 @@
    "rarity": 3,
    "mods": {},
    "effect": {
-    "kind": "bigUpdate",
-    "variant": {
-     "phase": "variety",
-     "variant": {
-      "kind": "tiboBurst",
-      "on": "dash",
-      "cooldown": 0.3,
-      "damage": 40,
-      "thornsShare": 0,
-      "shots": {
-       "kind": "quills",
-       "count": 8,
-       "damage": 40,
-       "thornsShare": 0,
-       "speed": 200,
-       "pierce": 2,
-       "life": 0.5
-      },
-      "radius": 64,
-      "share": 1.2,
-      "knockback": 1.5
-     }
-    }
+    "kind": "tiboBurst",
+    "on": "dash",
+    "cooldown": 0.3,
+    "damage": 40,
+    "thornsShare": 0,
+    "shots": {
+     "kind": "quills",
+     "count": 8,
+     "damage": 40,
+     "thornsShare": 0,
+     "speed": 200,
+     "pierce": 2,
+     "life": 0.5
+    },
+    "radius": 64,
+    "share": 1.2,
+    "knockback": 1.5
    },
    "from": "mash-splat",
    "catalyst": "butter-socks"
@@ -13553,16 +13076,10 @@
    "mods": {},
    "weight": 4,
    "effect": {
-    "kind": "bigUpdate",
-    "variant": {
-     "phase": "moreVariety",
-     "variant": {
-      "kind": "copperTot",
-      "chance": 0.25,
-      "damage": 48,
-      "knockback": 0.4
-     }
-    }
+    "kind": "copperTot",
+    "chance": 0.25,
+    "damage": 48,
+    "knockback": 0.4
    }
   },
   {
@@ -13573,19 +13090,13 @@
    "weight": 6,
    "maxStacks": 5,
    "effect": {
-    "kind": "bigUpdate",
-    "variant": {
-     "phase": "moreVariety",
-     "variant": {
-      "kind": "panicFry",
-      "hpShare": 0.5,
-      "minuteSec": 60,
-      "slowFactor": 0.05,
-      "windowSec": 3,
-      "perStackSec": 1,
-      "damageMult": 1.25
-     }
-    }
+    "kind": "panicFry",
+    "hpShare": 0.5,
+    "minuteSec": 60,
+    "slowFactor": 0.05,
+    "windowSec": 3,
+    "perStackSec": 1,
+    "damageMult": 1.25
    }
   },
   {
@@ -13596,15 +13107,9 @@
    "weight": 6,
    "maxStacks": 5,
    "effect": {
-    "kind": "bigUpdate",
-    "variant": {
-     "phase": "moreVariety",
-     "variant": {
-      "kind": "secondHelping",
-      "perSnack": 0.01,
-      "capPerLevel": 0.1
-     }
-    }
+    "kind": "secondHelping",
+    "perSnack": 0.01,
+    "capPerLevel": 0.1
    }
   },
   {
@@ -13614,21 +13119,15 @@
    "mods": {},
    "weight": 6,
    "effect": {
-    "kind": "bigUpdate",
-    "variant": {
-     "phase": "moreVariety",
-     "variant": {
-      "kind": "sparkSpud",
-      "every": 300,
-      "damage": 24,
-      "radius": 48,
-      "stun": {
-       "kind": "freeze",
-       "seconds": 0.35
-      },
-      "knockback": 0
-     }
-    }
+    "kind": "sparkSpud",
+    "every": 300,
+    "damage": 24,
+    "radius": 48,
+    "stun": {
+     "kind": "freeze",
+     "seconds": 0.35
+    },
+    "knockback": 0
    }
   },
   {
@@ -13639,21 +13138,15 @@
    "maxStacks": 5,
    "weight": 6,
    "effect": {
-    "kind": "bigUpdate",
-    "variant": {
-     "phase": "moreVariety",
-     "variant": {
-      "kind": "spudPurse",
-      "every": [
-       100,
-       84,
-       68,
-       52,
-       36
-      ],
-      "ahead": 24
-     }
-    }
+    "kind": "spudPurse",
+    "every": [
+     100,
+     84,
+     68,
+     52,
+     36
+    ],
+    "ahead": 24
    }
   },
   {
@@ -13664,17 +13157,11 @@
    "weight": 6,
    "maxStacks": 5,
    "effect": {
-    "kind": "bigUpdate",
-    "variant": {
-     "phase": "moreVariety",
-     "variant": {
-      "kind": "warmBowl",
-      "healPerSecond": 2,
-      "everySec": 1,
-      "durationSec": 10,
-      "maxStacks": 5
-     }
-    }
+    "kind": "warmBowl",
+    "healPerSecond": 2,
+    "everySec": 1,
+    "durationSec": 10,
+    "maxStacks": 5
    }
   }
  ],
@@ -14332,17 +13819,14 @@
   {
    "id": "alley-raccoon",
    "behavior": {
-    "kind": "bigUpdate",
-    "variant": {
-     "kind": "packLunge",
-     "lunge": {
-      "range": 95,
-      "crouch": 0.6,
-      "distance": 115,
-      "speed": 200,
-      "recover": 0.6,
-      "damage": 12
-     }
+    "kind": "packLunge",
+    "lunge": {
+     "range": 95,
+     "crouch": 0.6,
+     "distance": 115,
+     "speed": 200,
+     "recover": 0.6,
+     "damage": 12
     }
    },
    "hp": 54,
@@ -14356,17 +13840,14 @@
   {
    "id": "crow-elder",
    "behavior": {
-    "kind": "bigUpdate",
-    "variant": {
-     "kind": "packLunge",
-     "lunge": {
-      "range": 75,
-      "crouch": 0.8,
-      "distance": 110,
-      "speed": 200,
-      "recover": 0.8,
-      "damage": 16
-     }
+    "kind": "packLunge",
+    "lunge": {
+     "range": 75,
+     "crouch": 0.8,
+     "distance": 110,
+     "speed": 200,
+     "recover": 0.8,
+     "damage": 16
     }
    },
    "hp": 189,
@@ -14380,17 +13861,14 @@
   {
    "id": "hunt-crow",
    "behavior": {
-    "kind": "bigUpdate",
-    "variant": {
-     "kind": "packLunge",
-     "lunge": {
-      "range": 100,
-      "crouch": 0.6,
-      "distance": 120,
-      "speed": 220,
-      "recover": 0.6,
-      "damage": 12
-     }
+    "kind": "packLunge",
+    "lunge": {
+     "range": 100,
+     "crouch": 0.6,
+     "distance": 120,
+     "speed": 220,
+     "recover": 0.6,
+     "damage": 12
     }
    },
    "hp": 27,
@@ -14404,17 +13882,14 @@
   {
    "id": "pack-rat",
    "behavior": {
-    "kind": "bigUpdate",
-    "variant": {
-     "kind": "packLunge",
-     "lunge": {
-      "range": 100,
-      "crouch": 0.6,
-      "distance": 120,
-      "speed": 210,
-      "recover": 0.6,
-      "damage": 12
-     }
+    "kind": "packLunge",
+    "lunge": {
+     "range": 100,
+     "crouch": 0.6,
+     "distance": 120,
+     "speed": 210,
+     "recover": 0.6,
+     "damage": 12
     }
    },
    "hp": 54,
@@ -14428,17 +13903,14 @@
   {
    "id": "raccoon-boss",
    "behavior": {
-    "kind": "bigUpdate",
-    "variant": {
-     "kind": "packLunge",
-     "lunge": {
-      "range": 75,
-      "crouch": 0.8,
-      "distance": 110,
-      "speed": 200,
-      "recover": 0.8,
-      "damage": 16
-     }
+    "kind": "packLunge",
+    "lunge": {
+     "range": 75,
+     "crouch": 0.8,
+     "distance": 110,
+     "speed": 200,
+     "recover": 0.8,
+     "damage": 16
     }
    },
    "hp": 378,
@@ -14452,17 +13924,14 @@
   {
    "id": "rat-chief",
    "behavior": {
-    "kind": "bigUpdate",
-    "variant": {
-     "kind": "packLunge",
-     "lunge": {
-      "range": 75,
-      "crouch": 0.8,
-      "distance": 110,
-      "speed": 200,
-      "recover": 0.8,
-      "damage": 16
-     }
+    "kind": "packLunge",
+    "lunge": {
+     "range": 75,
+     "crouch": 0.8,
+     "distance": 110,
+     "speed": 200,
+     "recover": 0.8,
+     "damage": 16
     }
    },
    "hp": 378,
@@ -14476,17 +13945,14 @@
   {
    "id": "stag-beetle",
    "behavior": {
-    "kind": "bigUpdate",
-    "variant": {
-     "kind": "packLunge",
-     "lunge": {
-      "range": 90,
-      "crouch": 0.6,
-      "distance": 110,
-      "speed": 180,
-      "recover": 0.6,
-      "damage": 12
-     }
+    "kind": "packLunge",
+    "lunge": {
+     "range": 90,
+     "crouch": 0.6,
+     "distance": 110,
+     "speed": 180,
+     "recover": 0.6,
+     "damage": 12
     }
    },
    "hp": 27,
@@ -15505,24 +14971,21 @@
   {
    "id": "russet-moor",
    "placement": {
-    "kind": "bigUpdate",
-    "variant": {
-     "kind": "phase",
-     "phase": "endgameHunt",
-     "land": {
-      "height": {
-       "kind": "ridges",
-       "amp": 30,
-       "scale": 420
-      },
-      "blend": 48,
-      "landmarks": [
-       {
-        "type": "windmill-ruin",
-        "chance": 0.2
-       }
-      ]
-     }
+    "kind": "phase",
+    "phase": "endgameHunt",
+    "land": {
+     "height": {
+      "kind": "ridges",
+      "amp": 30,
+      "scale": 420
+     },
+     "blend": 48,
+     "landmarks": [
+      {
+       "type": "windmill-ruin",
+       "chance": 0.2
+      }
+     ]
     }
    },
    "enemies": [
@@ -15595,24 +15058,21 @@
   {
    "id": "vinegar-shoals",
    "placement": {
-    "kind": "bigUpdate",
-    "variant": {
-     "kind": "phase",
-     "phase": "endgameBurrow",
-     "land": {
-      "height": {
-       "kind": "basins",
-       "amp": 16,
-       "scale": 360
-      },
-      "blend": 48,
-      "landmarks": [
-       {
-        "type": "shipwreck",
-        "chance": 0.28
-       }
-      ]
-     }
+    "kind": "phase",
+    "phase": "endgameBurrow",
+    "land": {
+     "height": {
+      "kind": "basins",
+      "amp": 16,
+      "scale": 360
+     },
+     "blend": 48,
+     "landmarks": [
+      {
+       "type": "shipwreck",
+       "chance": 0.28
+      }
+     ]
     }
    },
    "enemies": [
@@ -15681,23 +15141,20 @@
   {
    "id": "duchess-gardens",
    "placement": {
-    "kind": "bigUpdate",
-    "variant": {
-     "kind": "phase",
-     "phase": "endgameCourt",
-     "land": {
-      "height": {
-       "kind": "flat",
-       "level": 0
-      },
-      "blend": 48,
-      "landmarks": [
-       {
-        "type": "fountain",
-        "chance": 0.28
-       }
-      ]
-     }
+    "kind": "phase",
+    "phase": "endgameCourt",
+    "land": {
+     "height": {
+      "kind": "flat",
+      "level": 0
+     },
+     "blend": 48,
+     "landmarks": [
+      {
+       "type": "fountain",
+       "chance": 0.28
+      }
+     ]
     }
    },
    "enemies": [
@@ -15765,25 +15222,22 @@
   {
    "id": "roast-caldera",
    "placement": {
-    "kind": "bigUpdate",
-    "variant": {
-     "kind": "phase",
-     "phase": "endgameShell",
-     "land": {
-      "height": {
-       "kind": "channels",
-       "depth": 6,
-       "width": 0.07,
-       "scale": 320
-      },
-      "blend": 48,
-      "landmarks": [
-       {
-        "type": "caldera-cone",
-        "chance": 0.28
-       }
-      ]
-     }
+    "kind": "phase",
+    "phase": "endgameShell",
+    "land": {
+     "height": {
+      "kind": "channels",
+      "depth": 6,
+      "width": 0.07,
+      "scale": 320
+     },
+     "blend": 48,
+     "landmarks": [
+      {
+       "type": "caldera-cone",
+       "chance": 0.28
+      }
+     ]
     }
    },
    "enemies": [
@@ -15930,42 +15384,24 @@
   {
    "id": "big-gust",
    "effect": {
-    "kind": "bigUpdate",
-    "variant": {
-     "phase": "moreVariety",
-     "variant": {
-      "kind": "bigGust"
-     }
-    }
+    "kind": "bigGust"
    }
   },
   {
    "id": "fry-rush",
    "effect": {
-    "kind": "bigUpdate",
-    "variant": {
-     "phase": "moreVariety",
-     "variant": {
-      "kind": "fryRush",
-      "seconds": 15,
-      "fireRate": 1.3
-     }
-    }
+    "kind": "fryRush",
+    "seconds": 15,
+    "fireRate": 1.3
    }
   },
   {
    "id": "picnic",
    "effect": {
-    "kind": "bigUpdate",
-    "variant": {
-     "phase": "moreVariety",
-     "variant": {
-      "kind": "picnic",
-      "seconds": 10,
-      "count": 8,
-      "radius": 110
-     }
-    }
+    "kind": "picnic",
+    "seconds": 10,
+    "count": 8,
+    "radius": 110
    }
   }
  ],
@@ -16424,7 +15860,7 @@
     "radius": 0,
     "every": 3
    },
-   "flagged": {
+   "trick": {
     "kind": "sigstop",
     "every": 3,
     "retry": 0.25,
@@ -16472,7 +15908,7 @@
     "every": 2,
     "range": 110
    },
-   "flagged": {
+   "trick": {
     "kind": "spots",
     "burn": {
      "kind": "burn",
@@ -16530,7 +15966,7 @@
     "radius": 0,
     "every": 10
    },
-   "flagged": {
+   "trick": {
     "kind": "howl",
     "every": 10,
     "retry": 0.25
@@ -16571,7 +16007,7 @@
     "radius": 0,
     "every": 1.5
    },
-   "flagged": {
+   "trick": {
     "kind": "catch",
     "every": 1.5,
     "retry": 0.25,
@@ -16616,7 +16052,7 @@
     "every": 2,
     "range": 120
    },
-   "flagged": {
+   "trick": {
     "kind": "gale",
     "perMoveSpeed": 1
    },
@@ -16657,7 +16093,7 @@
     "every": 8,
     "range": 0
    },
-   "flagged": {
+   "trick": {
     "kind": "spirits",
     "count": 2,
     "life": 6,
@@ -16704,7 +16140,7 @@
     "radius": 0,
     "every": 15
    },
-   "flagged": {
+   "trick": {
     "kind": "tug",
     "every": 15,
     "retry": 0.016666666666666666,

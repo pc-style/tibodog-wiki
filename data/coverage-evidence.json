@@ -8,6 +8,14 @@
       "definitionSha256": "a5dcba853c548238340cd7a49dfbdd4b30e083733c0bd72f082d0faa033aa66f",
       "scriptSha256": "81c82b756b275113d33db8bded054599b8054502a77a60aad0215f0c9031d717",
       "scope": "Supplied-state cap saturation, bite interval, expiry and idle controls; not natural acquisition or representative DPS"
+    },
+    {
+      "file": "tools/probe-sprout-squad.mjs",
+      "command": "node tools/probe-sprout-squad.mjs main-Bxpjubhf.js",
+      "main": "main-Bxpjubhf.js",
+      "definitionSha256": "24350fd736eec9892009670b5ec70a7619f1514d833b4a50e71b299baa9a38ef",
+      "scriptSha256": "81c82b756b275113d33db8bded054599b8054502a77a60aad0215f0c9031d717",
+      "scope": "Fresh nine-case original-engine rerun: supplied-state cap saturation, bite interval, expiry and idle controls; not natural acquisition or representative DPS"
     }
     ]
   },
