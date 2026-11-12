@@ -8,7 +8,7 @@ Own Spark Corral and [Potato Patch](/weapons/potato-patch), then open a chest to
 
 The rules are the same as [Spud Fence](/weapons/spud-fence#how-it-works); here is what they work out to with Spark Corral's values.
 
-- **Posts.** The limit is `live` (4) plus the extra Amount, capped at 8. Spark Corral's raw Amount of 4 gives 7 posts, and any +1 Amount, such as the one from GPU, reaches the cap of 8. <small>[sim-BGF0Y8Y5.js: `let r=n.amount-1-e.cfg.player.baseAmount;return Math.min(8,Math.max(2,t.live+r))`]</small>
+- **Posts.** The limit is `live` (4) plus the extra Amount, capped at 8. Spark Corral's raw Amount of 4 gives 7 posts, and any +1 Amount, such as the one from GPU, reaches the cap of 8. <small>[sim-lqgQZqih.js: `let r=n.amount-1-e.cfg.player.baseAmount;return Math.min(8,Math.max(2,t.live+r))`]</small>
 - **Lifetime.** Duration 9 with Tibo's base +25% means each post lasts 11.25 s, longer than the 9 s in the in-game description. At base move speed Tibo plants about one post per second, so the post limit, not the lifetime, usually decides how long the fence is: 8 posts make 7 arcs, about 420 units of wire when walking straight.
 - **Width.** Area 2.25 makes each arc 54 units wide (27 on each side of the line), against 30 for a level 8 Spud Fence.
 - **Hit rate.** Unchanged: a pest touching any arc is zapped at most once every 0.2 s, so 85 damage up to five times a second.

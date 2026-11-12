@@ -10,7 +10,7 @@ The pace, hit-rate and spin rules are the same as [Tater Twirl](/weapons/tater-t
 
 - **Orbit.** 36 units × √Area, about 41 units at its Area of 1.3 (Tater Twirl at level 8: about 34).
 - **Wheel size.** Hit circle of 8 × Area, about 10.4 units.
-- **Spin.** 5.6 rad/s (about 0.9 turns per second) at walking pace, up to twice that at maximum pace. Salt Shaker's projectile speed counts at half strength for the spin. <small>[sim-BGF0Y8Y5.js: `return t.raw.speed*(1+.5*(e.loadout.stats.projSpeedMult-1))}(e,t)*a.pace`]</small>
+- **Spin.** 5.6 rad/s (about 0.9 turns per second) at walking pace, up to twice that at maximum pace. Salt Shaker's projectile speed counts at half strength for the spin. <small>[sim-lqgQZqih.js: `return t.raw.speed*(1+.5*(e.loadout.stats.projSpeedMult-1))}(e,t)*a.pace`]</small>
 - **Hit rate.** Still shared across all wheels: five wheels sweep more ground, but each pest is limited to one hit per `hitInterval` ÷ pace.
 
 **Measured** in the headless sim (`tools/play.mjs`, build 41 `main-B2gf34bA.js`, Standard, Normal, god mode, seeds `s1`, `s2` and `s3`; the seeded starting weapon removed, the weapon given with `give`, spawning stopped after 4 s of play and the pests already on the field held at fixed spots with 10⁹ HP): 5 wheels on a 41-unit orbit. A pest moved along with a wheel every tick was hit every 12 ticks (0.2 s) while Tibo walked and every 100 ticks (1.67 s) while he stood still. All three seeds gave the same figures.

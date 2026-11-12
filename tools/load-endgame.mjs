@@ -20,6 +20,7 @@ export async function loadEndgame(boot, sim = {}) {
       // overlay: a stopped run can prefetch but cannot enter a phase.
       runHooks({ chunks, hud: { root: document.body } }).endgameHolds({
         bigUpdate: { endgameHunt: true }, endgameLive: { built: false },
+        endgameShared: { built: false }, // Current run state; endgameLive above supports older builds.
         over: true, clock: { ticks: 0 },
       });
     } else {

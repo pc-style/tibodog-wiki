@@ -159,7 +159,7 @@ test('headless runs install the original optional combat rules', () => {
   }
 });
 
-for (const owner of ['boot', 'sim']) test(`dump includes lazy endgame content owned by ${owner}`, () => {
+for (const owner of ['boot', 'sim', 'sim-shared']) test(`dump includes lazy endgame content owned by ${owner}`, () => {
   const root = mkdtempSync(join(tmpdir(), 'wiki-endgame-'));
   try {
     writeFileSync(join(root, 'package.json'), '{"type":"module"}');
@@ -181,8 +181,8 @@ for (const owner of ['boot', 'sim']) test(`dump includes lazy endgame content ow
     writeFileSync(join(root, 'boot.js'), boot + (owner === 'boot' ? load : ''));
     writeFileSync(join(root, 'sim.js'), `
       const a={alive:1,floorShare:0,shotPuddleSec:1},b={easy:{...a,alive:.8}};
-      ${owner === 'sim' ? `import registry from './boot.js';${load}
-        export default {runHooks(e){register();const loader=load({chunks:e.chunks});return {endgameHolds(state){if(state.bigUpdate.endgameHunt)loader.want();return !state.endgameLive.built}}}};
+      ${owner !== 'boot' ? `import registry from './boot.js';${load}
+        export default {runHooks(e){register();const loader=load({chunks:e.chunks});return {endgameHolds(state){if(state.bigUpdate.endgameHunt)loader.want();return !state.${owner === 'sim-shared' ? 'endgameShared' : 'endgameLive'}.built}}}};
       ` : 'export default {}'}
     `);
     execFileSync(process.execPath, [new URL('./dump-build.mjs', import.meta.url).pathname, root, 'boot.js', 'sim.js', 'content.js', join(root, 'out')]);

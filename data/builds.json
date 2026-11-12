@@ -2210,5 +2210,16 @@
   "updated": "2026-11-12T05:50:02Z",
   "changes": "No gameplay changes; a rebuild of the same game.",
   "evidence": "Automatic whole-build comparison (tools/same-build.mjs): all 410 files reachable from the index.html match main-DoNTf8Qq.js after mapping file hashes and the build's own commit id."
+ },
+ {
+  "seen": "2026-11-12",
+  "main": "main-RUamO2Cq.js",
+  "boot": "boot-BnZL1ApU.js",
+  "sim": "sim-lqgQZqih.js",
+  "commit": "696e34efa2aa",
+  "status": "reviewed",
+  "updated": "2026-11-12T06:23:26Z",
+  "changes": "No player-facing mechanic change found. Internal endgame state was renamed; wiki extraction now follows it while retaining older-build support.",
+  "evidence": "Canonical202/Cqx/e499ae14 baseline. Graph410→410; five changed source owners: sim7normalized hunks,boot3,run-drops2,late-fx-worker2,endgame-sim1. Endgame built/dt/dropMark state and constructor/readiness/callers consistently rename endgameLive to endgameShared. Other changes are game/sim identifiers and diagnostic Flagged/big-update→Feature wording. Registry,English,config,names,journal and icon pixels unchanged. Current dump failure reproduced before repair; owning load-endgame adds the source-verified current stopped-run field while preserving historical contracts. New catalog-extraction regression fails on original loader; boot-owned,older-sim,current-shared fixtures pass after repair. Fresh64 original baseline/current loader cases use real Game states and supplied readiness/chunk fixtures: Standard/Story,active/stopped,built/unbuilt,ready/unready,ticks71998/71999 around20minutes,repeat slot reuse. These are extraction/readiness controls,not natural endgame acquisition,combat,GPU,overlay or server proof. Strict official catalogs/all27locales and51runes retain export/inventory honesty. Full/archived/separate actual live expanded panel agree354notes/11dates/151codes; no publication/grouping/introduction changes. Complete409asset old/current archive provenance and source-scoped review retained in data/journal-audit.md. No classifier relaxation,ignored errors,broad gameplay or unrelated coverage/dispatcher work. Earlier drafts/stashes/evidence preserved."
  }
 ]
