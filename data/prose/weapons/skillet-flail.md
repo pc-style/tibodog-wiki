@@ -4,7 +4,7 @@ Skillet Flail swings a skillet through pests in front of and behind Tibo. It sta
 
 ## How it works
 
-The `twin` slash consumer emits a pair of opposite swings for each volley entry. Its raw swing dimensions are 52 × 22, scaled by modified Area. Raw Pierce 99 maps to the game's unlimited-pierce sentinel, not a literal 99-pest promise. More Amount adds paired swings through the volley system; it does not turn the attack into a single forward-only slash. <small>[sim-lqgQZqih.js: `!0===n.twin?(_A(e,t,n,r,2*i),_A(e,t,n,r,2*i+1)):_A(e,t,n,r,i)`]</small>
+The `twin` slash consumer emits a pair of opposite swings for each volley entry. Its raw swing dimensions are 52 × 22, scaled by modified Area. Raw Pierce 99 maps to the game's unlimited-pierce sentinel, not a literal 99-pest promise. More Amount adds paired swings through the volley system; it does not turn the attack into a single forward-only slash. <small>[sim-CjfoLCzS.js: `!0===n.twin?(_A(e,t,n,r,2*i),_A(e,t,n,r,2*i+1)):_A(e,t,n,r,i)`]</small>
 
 Skillet Flail is melee-tagged but explicitly excluded from melee-restricted new-weapon offers and melee starter fill. It is eligible in ordinary offers, including Mech Pilot's unrestricted pool. See [Modes](/modes#new-melee-weapons-and-set-restrictions).
 

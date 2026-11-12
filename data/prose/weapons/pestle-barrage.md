@@ -6,7 +6,7 @@ Pestle Barrage evolves [Mash Mortar](/weapons/mash-mortar) with [Big Bowl](/pass
 
 - Raw Amount is 3 mortars per drop, making four with Tibo's built-in +1 before other bonuses. Raw cooldown is 6 s and duration is 8 s. Mortars remain stationary and target pests within 200 units.
 - Raw damage is 30, firing interval is 1.3 s and Area is 1.5. The burst radius is 24 × current Area, giving 36 before global Area bonuses, compared with Mash Mortar's 24.
-- Each main burst creates three smaller bursts at half damage and 60% of its radius. They are placed around the main burst; this is not a promise that all three hit the same pest. <small>[start-rows-CADwPuKv.js: `` kind:`turret`,size:6,range:200,explodeRadius:24,cluster:3 ``]</small><small>[sim-lqgQZqih.js: `e.attack.damage=.5*o,e.attack.kb=.5`]</small><small>[sim-lqgQZqih.js: `$u(e,r+k(t)*a*1.1,i+w(t)*a*1.1,.6*a)`]</small>
+- Each main burst creates three smaller bursts at half damage and 60% of its radius. They are placed around the main burst; this is not a promise that all three hit the same pest. <small>[start-rows-DXdqa7Ea.js: `` kind:`turret`,size:6,range:200,explodeRadius:24,cluster:3 ``]</small><small>[sim-CjfoLCzS.js: `e.attack.damage=.5*o,e.attack.kb=.5`]</small><small>[sim-CjfoLCzS.js: `$u(e,r+k(t)*a*1.1,i+w(t)*a*1.1,.6*a)`]</small>
 
 ## Tips
 
