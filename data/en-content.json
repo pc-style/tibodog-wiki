@@ -1858,6 +1858,312 @@
  "content.rarity.4.name": [
   "Legendary"
  ],
+ "content.rune.deep-fryer-hot-seat.desc": [
+  "Sprays at the biggest pest."
+ ],
+ "content.rune.deep-fryer-hot-seat.name": [
+  "Hot Seat"
+ ],
+ "content.rune.deep-fryer-long-soak.desc": [
+  "Each spray lasts much longer."
+ ],
+ "content.rune.deep-fryer-long-soak.name": [
+  "Long Soak"
+ ],
+ "content.rune.deep-fryer-wide-basket.desc": [
+  "A much wider, shorter spray."
+ ],
+ "content.rune.deep-fryer-wide-basket.name": [
+  "Wide Basket"
+ ],
+ "content.rune.frozen-fries-big-chill.desc": [
+  "Fries aim at the biggest pest."
+ ],
+ "content.rune.frozen-fries-big-chill.name": [
+  "Big Chill"
+ ],
+ "content.rune.frozen-fries-brain-freeze.desc": [
+  "Every third volley hits much harder."
+ ],
+ "content.rune.frozen-fries-brain-freeze.name": [
+  "Brain Freeze"
+ ],
+ "content.rune.frozen-fries-frost-fan.desc": [
+  "Fries fan out all around."
+ ],
+ "content.rune.frozen-fries-frost-fan.name": [
+  "Frost Fan"
+ ],
+ "content.rune.fry-knives-back-knives.desc": [
+  "Every other knife flies backward."
+ ],
+ "content.rune.fry-knives-back-knives.name": [
+  "Back Knives"
+ ],
+ "content.rune.fry-knives-carving-knife.desc": [
+  "One big knife, not many."
+ ],
+ "content.rune.fry-knives-carving-knife.name": [
+  "Carving Knife"
+ ],
+ "content.rune.fry-knives-knife-storm.desc": [
+  "Holds, then throws three volleys at once."
+ ],
+ "content.rune.fry-knives-knife-storm.name": [
+  "Knife Storm"
+ ],
+ "content.rune.fry-lance-heavy-lance.desc": [
+  "Every third beam is huge."
+ ],
+ "content.rune.fry-lance-heavy-lance.name": [
+  "Heavy Lance"
+ ],
+ "content.rune.fry-lance-jouster.desc": [
+  "The lance aims at the biggest pest."
+ ],
+ "content.rune.fry-lance-jouster.name": [
+  "Jouster"
+ ],
+ "content.rune.fry-lance-long-lance.desc": [
+  "A much longer beam."
+ ],
+ "content.rune.fry-lance-long-lance.name": [
+  "Long Lance"
+ ],
+ "content.rune.fry-sentry-head-chef.desc": [
+  "One big sentry, not many."
+ ],
+ "content.rune.fry-sentry-head-chef.name": [
+  "Head Chef"
+ ],
+ "content.rune.fry-sentry-order-up.desc": [
+  "Sentries shoot the biggest pest."
+ ],
+ "content.rune.fry-sentry-order-up.name": [
+  "Order Up"
+ ],
+ "content.rune.fry-sentry-rush-hour.desc": [
+  "Holds, then sets down twice as many."
+ ],
+ "content.rune.fry-sentry-rush-hour.name": [
+  "Rush Hour"
+ ],
+ "content.rune.gravy-boat-big-spill.desc": [
+  "Pools land under the biggest pest."
+ ],
+ "content.rune.gravy-boat-big-spill.name": [
+  "Big Spill"
+ ],
+ "content.rune.gravy-boat-deep-dish.desc": [
+  "One huge pool, not many."
+ ],
+ "content.rune.gravy-boat-deep-dish.name": [
+  "Deep Dish"
+ ],
+ "content.rune.gravy-boat-full-pour.desc": [
+  "Holds, then pours three times at once."
+ ],
+ "content.rune.gravy-boat-full-pour.name": [
+  "Full Pour"
+ ],
+ "content.rune.peeler-backhand.desc": [
+  "Slashes bat bullets back."
+ ],
+ "content.rune.peeler-backhand.name": [
+  "Backhand"
+ ],
+ "content.rune.peeler-haymaker.desc": [
+  "Every third swing is huge."
+ ],
+ "content.rune.peeler-haymaker.name": [
+  "Haymaker"
+ ],
+ "content.rune.peeler-wide-peel.desc": [
+  "Much wider slashes."
+ ],
+ "content.rune.peeler-wide-peel.name": [
+  "Wide Peel"
+ ],
+ "content.rune.root-spikes-big-root.desc": [
+  "One huge spike, not many."
+ ],
+ "content.rune.root-spikes-big-root.name": [
+  "Big Root"
+ ],
+ "content.rune.root-spikes-deep-roots.desc": [
+  "Spikes hit the biggest pests first."
+ ],
+ "content.rune.root-spikes-deep-roots.name": [
+  "Deep Roots"
+ ],
+ "content.rune.root-spikes-root-quake.desc": [
+  "Every third burst is huge."
+ ],
+ "content.rune.root-spikes-root-quake.name": [
+  "Root Quake"
+ ],
+ "content.rune.rosti-disc-big-rosti.desc": [
+  "Much bigger discs."
+ ],
+ "content.rune.rosti-disc-big-rosti.name": [
+  "Big Rösti"
+ ],
+ "content.rune.rosti-disc-disc-wheel.desc": [
+  "Discs fly out evenly all around."
+ ],
+ "content.rune.rosti-disc-disc-wheel.name": [
+  "Disc Wheel"
+ ],
+ "content.rune.rosti-disc-hard-toss.desc": [
+  "Every third toss is huge."
+ ],
+ "content.rune.rosti-disc-hard-toss.name": [
+  "Hard Toss"
+ ],
+ "content.rune.seeker-sprouts-big-game.desc": [
+  "Sprouts hunt the biggest pest."
+ ],
+ "content.rune.seeker-sprouts-big-game.name": [
+  "Big Game"
+ ],
+ "content.rune.seeker-sprouts-burst.desc": [
+  "Holds, then bursts out all around."
+ ],
+ "content.rune.seeker-sprouts-burst.name": [
+  "Sprout Burst"
+ ],
+ "content.rune.seeker-sprouts-hopper.desc": [
+  "Sprouts hop on, then burst."
+ ],
+ "content.rune.seeker-sprouts-hopper.name": [
+  "Hopper"
+ ],
+ "content.rune.sprout-satellites-big-sprout.desc": [
+  "One huge satellite, not many."
+ ],
+ "content.rune.sprout-satellites-big-sprout.name": [
+  "Big Sprout"
+ ],
+ "content.rune.sprout-satellites-spin-cycle.desc": [
+  "Satellites spin much faster."
+ ],
+ "content.rune.sprout-satellites-spin-cycle.name": [
+  "Spin Cycle"
+ ],
+ "content.rune.sprout-satellites-wide-orbit.desc": [
+  "Satellites circle much farther out."
+ ],
+ "content.rune.sprout-satellites-wide-orbit.name": [
+  "Wide Orbit"
+ ],
+ "content.rune.spud-cannon-big-blast.desc": [
+  "Shells burst much wider."
+ ],
+ "content.rune.spud-cannon-big-blast.name": [
+  "Big Blast"
+ ],
+ "content.rune.spud-cannon-bullseye.desc": [
+  "Shells aim at the biggest pest."
+ ],
+ "content.rune.spud-cannon-bullseye.name": [
+  "Bullseye"
+ ],
+ "content.rune.spud-cannon-volley-fire.desc": [
+  "Holds, then fires three volleys at once."
+ ],
+ "content.rune.spud-cannon-volley-fire.name": [
+  "Volley Fire"
+ ],
+ "content.rune.spud-lob-big-bounce.desc": [
+  "Every third lob is huge."
+ ],
+ "content.rune.spud-lob-big-bounce.name": [
+  "Big Bounce"
+ ],
+ "content.rune.spud-lob-hot-landing.desc": [
+  "Potatoes burst where they land."
+ ],
+ "content.rune.spud-lob-hot-landing.name": [
+  "Hot Landing"
+ ],
+ "content.rune.spud-lob-wide-lob.desc": [
+  "Potatoes land much farther apart."
+ ],
+ "content.rune.spud-lob-wide-lob.name": [
+  "Wide Lob"
+ ],
+ "content.rune.starch-bolt-big-bolt.desc": [
+  "One huge bolt, not many."
+ ],
+ "content.rune.starch-bolt-big-bolt.name": [
+  "Big Bolt"
+ ],
+ "content.rune.starch-bolt-lightning-rod.desc": [
+  "Bolts strike the biggest pests first."
+ ],
+ "content.rune.starch-bolt-lightning-rod.name": [
+  "Lightning Rod"
+ ],
+ "content.rune.starch-bolt-storm-front.desc": [
+  "Holds, then strikes three times at once."
+ ],
+ "content.rune.starch-bolt-storm-front.name": [
+  "Storm Front"
+ ],
+ "content.rune.steam-vent-big-pot.desc": [
+  "Steam spreads much wider."
+ ],
+ "content.rune.steam-vent-big-pot.name": [
+  "Big Pot"
+ ],
+ "content.rune.steam-vent-rolling-boil.desc": [
+  "Steam pulses much faster."
+ ],
+ "content.rune.steam-vent-rolling-boil.name": [
+  "Rolling Boil"
+ ],
+ "content.rune.steam-vent-scald.desc": [
+  "Steam hurts elites and bosses much more."
+ ],
+ "content.rune.steam-vent-scald.name": [
+  "Scald"
+ ],
+ "content.rune.tater-pup-big-pup.desc": [
+  "One big pup, not many."
+ ],
+ "content.rune.tater-pup-big-pup.name": [
+  "Big Pup"
+ ],
+ "content.rune.tater-pup-top-dog.desc": [
+  "Pups chase the biggest pest."
+ ],
+ "content.rune.tater-pup-top-dog.name": [
+  "Top Dog"
+ ],
+ "content.rune.tater-pup-zoomies.desc": [
+  "Pups bite much faster."
+ ],
+ "content.rune.tater-pup-zoomies.name": [
+  "Zoomies"
+ ],
+ "content.rune.tot-toss-big-tot.desc": [
+  "One big tot, not many."
+ ],
+ "content.rune.tot-toss-big-tot.name": [
+  "Big Tot"
+ ],
+ "content.rune.tot-toss-tot-pile.desc": [
+  "Holds, then throws three volleys at once."
+ ],
+ "content.rune.tot-toss-tot-pile.name": [
+  "Tot Pile"
+ ],
+ "content.rune.tot-toss-tot-sniper.desc": [
+  "Tots aim at the biggest pest."
+ ],
+ "content.rune.tot-toss-tot-sniper.name": [
+  "Tot Sniper"
+ ],
  "content.setRule.event-horizon.desc": [
   "Event Horizon: orbiting bodies erase small enemy bullets, each once per ",
   [

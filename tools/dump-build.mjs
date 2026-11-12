@@ -47,6 +47,13 @@ if (!Array.isArray(reg.bosses)) {
   registry.bossOrder = ser(bosses.bossOrder, 0, 14);
 }
 
+// Runes are owned by the simulation catalog, not the boot entity registry.
+const runes = Object.values(sim).filter((v) => v && Array.isArray(v.all) &&
+  typeof v.byId === 'function' && typeof v.of === 'function' &&
+  v.all.length && v.all.every((r) => typeof r.weapon === 'string' && Array.isArray(r.effects)));
+if (runes.length > 1) throw new Error('ambiguous rune catalog in sim');
+if (runes.length) registry.runes = ser(runes[0].all, 0, 14);
+
 const config = {};
 const sharedFile = readdirSync(dir).find((f) => /^intro-shared(?:-[A-Za-z0-9_-]{8})?\.js$/.test(f));
 const shared = sharedFile ? await import(pathToFileURL(`${dir}/${sharedFile}`).href) : {};

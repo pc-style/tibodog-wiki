@@ -18807,5 +18807,754 @@
     }
    ]
   }
+ ],
+ "runes": [
+  {
+   "id": "deep-fryer-hot-seat",
+   "weapon": "deep-fryer",
+   "axis": "target",
+   "effects": [
+    {
+     "kind": "toughest"
+    }
+   ],
+   "scale": {
+    "damage": 3
+   }
+  },
+  {
+   "id": "deep-fryer-long-soak",
+   "weapon": "deep-fryer",
+   "axis": "rhythm",
+   "effects": [],
+   "scale": {
+    "damage": 1.05,
+    "duration": 2,
+    "cooldown": 1.3
+   }
+  },
+  {
+   "id": "deep-fryer-wide-basket",
+   "weapon": "deep-fryer",
+   "axis": "shape",
+   "effects": [
+    {
+     "kind": "reshape",
+     "fields": {
+      "angle": 1.9,
+      "size": 0.85
+     }
+    }
+   ],
+   "scale": {
+    "damage": 1.2
+   }
+  },
+  {
+   "id": "frozen-fries-big-chill",
+   "weapon": "frozen-fries",
+   "axis": "target",
+   "effects": [
+    {
+     "kind": "toughest"
+    }
+   ],
+   "scale": {
+    "damage": 1.17
+   }
+  },
+  {
+   "id": "frozen-fries-brain-freeze",
+   "weapon": "frozen-fries",
+   "axis": "rhythm",
+   "effects": [
+    {
+     "kind": "beat",
+     "every": 3,
+     "damage": 2.2,
+     "area": 1.3
+    }
+   ]
+  },
+  {
+   "id": "frozen-fries-frost-fan",
+   "weapon": "frozen-fries",
+   "axis": "shape",
+   "effects": [
+    {
+     "kind": "ring",
+     "spokes": 0
+    }
+   ],
+   "scale": {
+    "damage": 1.14
+   }
+  },
+  {
+   "id": "fry-knives-back-knives",
+   "weapon": "fry-knives",
+   "axis": "target",
+   "effects": [
+    {
+     "kind": "ring",
+     "spokes": 2
+    }
+   ],
+   "scale": {
+    "damage": 0.9
+   }
+  },
+  {
+   "id": "fry-knives-carving-knife",
+   "weapon": "fry-knives",
+   "axis": "shape",
+   "effects": [
+    {
+     "kind": "focus",
+     "damage": 0.55,
+     "area": 0.25
+    }
+   ],
+   "scale": {
+    "damage": 1.7
+   }
+  },
+  {
+   "id": "fry-knives-knife-storm",
+   "weapon": "fry-knives",
+   "axis": "rhythm",
+   "effects": [
+    {
+     "kind": "salvo",
+     "volleys": 3
+    }
+   ]
+  },
+  {
+   "id": "fry-lance-heavy-lance",
+   "weapon": "fry-lance",
+   "axis": "rhythm",
+   "effects": [
+    {
+     "kind": "beat",
+     "every": 3,
+     "damage": 2.2,
+     "area": 1.5
+    }
+   ],
+   "scale": {
+    "damage": 0.92
+   }
+  },
+  {
+   "id": "fry-lance-jouster",
+   "weapon": "fry-lance",
+   "axis": "target",
+   "effects": [
+    {
+     "kind": "toughest"
+    }
+   ],
+   "scale": {
+    "damage": 1.2
+   }
+  },
+  {
+   "id": "fry-lance-long-lance",
+   "weapon": "fry-lance",
+   "axis": "shape",
+   "effects": [
+    {
+     "kind": "reshape",
+     "fields": {
+      "length": 1.6,
+      "size": 0.85
+     }
+    }
+   ],
+   "scale": {
+    "damage": 1.15
+   }
+  },
+  {
+   "id": "fry-sentry-head-chef",
+   "weapon": "fry-sentry",
+   "axis": "shape",
+   "effects": [
+    {
+     "kind": "focus",
+     "damage": 0.9,
+     "area": 0.7
+    }
+   ],
+   "scale": {
+    "damage": 1.6,
+    "interval": 0.62
+   }
+  },
+  {
+   "id": "fry-sentry-order-up",
+   "weapon": "fry-sentry",
+   "axis": "target",
+   "effects": [
+    {
+     "kind": "toughest"
+    }
+   ],
+   "scale": {
+    "damage": 1.24
+   }
+  },
+  {
+   "id": "fry-sentry-rush-hour",
+   "weapon": "fry-sentry",
+   "axis": "rhythm",
+   "effects": [
+    {
+     "kind": "salvo",
+     "volleys": 2
+    }
+   ],
+   "scale": {
+    "damage": 0.78
+   }
+  },
+  {
+   "id": "gravy-boat-big-spill",
+   "weapon": "gravy-boat",
+   "axis": "target",
+   "effects": [
+    {
+     "kind": "toughest"
+    }
+   ],
+   "scale": {
+    "damage": 1.48
+   }
+  },
+  {
+   "id": "gravy-boat-deep-dish",
+   "weapon": "gravy-boat",
+   "axis": "shape",
+   "effects": [
+    {
+     "kind": "focus",
+     "damage": 0.3,
+     "area": 0.45
+    }
+   ],
+   "scale": {
+    "damage": 0.45
+   }
+  },
+  {
+   "id": "gravy-boat-full-pour",
+   "weapon": "gravy-boat",
+   "axis": "rhythm",
+   "effects": [
+    {
+     "kind": "salvo",
+     "volleys": 3
+    }
+   ],
+   "scale": {
+    "damage": 2.4,
+    "cooldown": 0.65
+   }
+  },
+  {
+   "id": "peeler-backhand",
+   "weapon": "peeler",
+   "axis": "target",
+   "effects": [
+    {
+     "kind": "fields",
+     "patch": {
+      "kind": "slash",
+      "reflect": {
+       "mult": 1.5,
+       "pierce": 2
+      }
+     }
+    }
+   ],
+   "scale": {
+    "damage": 1.11
+   }
+  },
+  {
+   "id": "peeler-haymaker",
+   "weapon": "peeler",
+   "axis": "rhythm",
+   "effects": [
+    {
+     "kind": "beat",
+     "every": 3,
+     "damage": 2.2,
+     "area": 1.5
+    }
+   ],
+   "scale": {
+    "damage": 0.86
+   }
+  },
+  {
+   "id": "peeler-wide-peel",
+   "weapon": "peeler",
+   "axis": "shape",
+   "effects": [
+    {
+     "kind": "reshape",
+     "fields": {
+      "size": 1.45,
+      "height": 1.3
+     }
+    }
+   ],
+   "scale": {
+    "damage": 0.79
+   }
+  },
+  {
+   "id": "root-spikes-big-root",
+   "weapon": "root-spikes",
+   "axis": "shape",
+   "effects": [
+    {
+     "kind": "focus",
+     "damage": 0.5,
+     "area": 0.45
+    }
+   ],
+   "scale": {
+    "damage": 1.9
+   }
+  },
+  {
+   "id": "root-spikes-deep-roots",
+   "weapon": "root-spikes",
+   "axis": "target",
+   "effects": [
+    {
+     "kind": "toughest"
+    }
+   ]
+  },
+  {
+   "id": "root-spikes-root-quake",
+   "weapon": "root-spikes",
+   "axis": "rhythm",
+   "effects": [
+    {
+     "kind": "beat",
+     "every": 3,
+     "damage": 2.2,
+     "area": 1.4
+    }
+   ]
+  },
+  {
+   "id": "rosti-disc-big-rosti",
+   "weapon": "rosti-disc",
+   "axis": "shape",
+   "effects": [
+    {
+     "kind": "reshape",
+     "fields": {
+      "size": 1.7
+     }
+    }
+   ],
+   "scale": {
+    "damage": 0.96,
+    "area": 1.3
+   }
+  },
+  {
+   "id": "rosti-disc-disc-wheel",
+   "weapon": "rosti-disc",
+   "axis": "target",
+   "effects": [
+    {
+     "kind": "ring",
+     "spokes": 0
+    }
+   ],
+   "scale": {
+    "damage": 1.09
+   }
+  },
+  {
+   "id": "rosti-disc-hard-toss",
+   "weapon": "rosti-disc",
+   "axis": "rhythm",
+   "effects": [
+    {
+     "kind": "beat",
+     "every": 3,
+     "damage": 2.2,
+     "area": 1.5
+    }
+   ],
+   "scale": {
+    "damage": 0.82
+   }
+  },
+  {
+   "id": "seeker-sprouts-big-game",
+   "weapon": "seeker-sprouts",
+   "axis": "target",
+   "effects": [
+    {
+     "kind": "toughest"
+    }
+   ],
+   "scale": {
+    "damage": 1.18
+   }
+  },
+  {
+   "id": "seeker-sprouts-burst",
+   "weapon": "seeker-sprouts",
+   "axis": "rhythm",
+   "effects": [
+    {
+     "kind": "salvo",
+     "volleys": 3
+    },
+    {
+     "kind": "ring",
+     "spokes": 0
+    }
+   ],
+   "scale": {
+    "damage": 1.29
+   }
+  },
+  {
+   "id": "seeker-sprouts-hopper",
+   "weapon": "seeker-sprouts",
+   "axis": "shape",
+   "effects": [
+    {
+     "kind": "fields",
+     "patch": {
+      "kind": "homing",
+      "fuse": {
+       "blast": 1.5,
+       "radius": 26,
+       "hopRange": 80
+      }
+     }
+    }
+   ],
+   "scale": {
+    "damage": 0.66
+   }
+  },
+  {
+   "id": "sprout-satellites-big-sprout",
+   "weapon": "sprout-satellites",
+   "axis": "shape",
+   "effects": [
+    {
+     "kind": "focus",
+     "damage": 0.3,
+     "area": 0.25
+    }
+   ],
+   "scale": {
+    "damage": 0.2
+   }
+  },
+  {
+   "id": "sprout-satellites-spin-cycle",
+   "weapon": "sprout-satellites",
+   "axis": "rhythm",
+   "effects": [],
+   "scale": {
+    "damage": 0.87,
+    "speed": 2
+   }
+  },
+  {
+   "id": "sprout-satellites-wide-orbit",
+   "weapon": "sprout-satellites",
+   "axis": "target",
+   "effects": [
+    {
+     "kind": "reshape",
+     "fields": {
+      "orbitRadius": 1.6
+     }
+    }
+   ],
+   "scale": {
+    "damage": 0.25
+   }
+  },
+  {
+   "id": "spud-cannon-big-blast",
+   "weapon": "spud-cannon",
+   "axis": "shape",
+   "effects": [
+    {
+     "kind": "reshape",
+     "fields": {
+      "explodeRadius": 1.6
+     }
+    }
+   ],
+   "scale": {
+    "damage": 0.48
+   }
+  },
+  {
+   "id": "spud-cannon-bullseye",
+   "weapon": "spud-cannon",
+   "axis": "target",
+   "effects": [
+    {
+     "kind": "toughest"
+    }
+   ],
+   "scale": {
+    "damage": 1.17
+   }
+  },
+  {
+   "id": "spud-cannon-volley-fire",
+   "weapon": "spud-cannon",
+   "axis": "rhythm",
+   "effects": [
+    {
+     "kind": "salvo",
+     "volleys": 3
+    }
+   ],
+   "scale": {
+    "damage": 1.9,
+    "cooldown": 0.75
+   }
+  },
+  {
+   "id": "spud-lob-big-bounce",
+   "weapon": "spud-lob",
+   "axis": "rhythm",
+   "effects": [
+    {
+     "kind": "beat",
+     "every": 3,
+     "damage": 2.2,
+     "area": 1.5
+    }
+   ],
+   "scale": {
+    "damage": 0.92
+   }
+  },
+  {
+   "id": "spud-lob-hot-landing",
+   "weapon": "spud-lob",
+   "axis": "shape",
+   "effects": [
+    {
+     "kind": "fields",
+     "patch": {
+      "kind": "lob",
+      "explodeRadius": 26
+     }
+    }
+   ],
+   "scale": {
+    "damage": 1.36
+   }
+  },
+  {
+   "id": "spud-lob-wide-lob",
+   "weapon": "spud-lob",
+   "axis": "target",
+   "effects": [
+    {
+     "kind": "reshape",
+     "fields": {
+      "spreadX": 2
+     }
+    }
+   ],
+   "scale": {
+    "damage": 1.04
+   }
+  },
+  {
+   "id": "starch-bolt-big-bolt",
+   "weapon": "starch-bolt",
+   "axis": "shape",
+   "effects": [
+    {
+     "kind": "focus",
+     "damage": 0.5,
+     "area": 0.3
+    }
+   ],
+   "scale": {
+    "damage": 1.05
+   }
+  },
+  {
+   "id": "starch-bolt-lightning-rod",
+   "weapon": "starch-bolt",
+   "axis": "target",
+   "effects": [
+    {
+     "kind": "toughest"
+    }
+   ],
+   "scale": {
+    "damage": 1.18
+   }
+  },
+  {
+   "id": "starch-bolt-storm-front",
+   "weapon": "starch-bolt",
+   "axis": "rhythm",
+   "effects": [
+    {
+     "kind": "salvo",
+     "volleys": 3
+    }
+   ],
+   "scale": {
+    "damage": 1.8,
+    "cooldown": 0.75
+   }
+  },
+  {
+   "id": "steam-vent-big-pot",
+   "weapon": "steam-vent",
+   "axis": "shape",
+   "effects": [
+    {
+     "kind": "reshape",
+     "fields": {
+      "size": 1.45
+     }
+    }
+   ],
+   "scale": {
+    "damage": 0.25
+   }
+  },
+  {
+   "id": "steam-vent-rolling-boil",
+   "weapon": "steam-vent",
+   "axis": "rhythm",
+   "effects": [
+    {
+     "kind": "reshape",
+     "fields": {
+      "hitInterval": 0.55
+     }
+    }
+   ],
+   "scale": {
+    "damage": 0.7
+   }
+  },
+  {
+   "id": "steam-vent-scald",
+   "weapon": "steam-vent",
+   "axis": "target",
+   "effects": [
+    {
+     "kind": "elite",
+     "damage": 2
+    }
+   ],
+   "scale": {
+    "damage": 1.15
+   }
+  },
+  {
+   "id": "tater-pup-big-pup",
+   "weapon": "tater-pup",
+   "axis": "shape",
+   "effects": [
+    {
+     "kind": "focus",
+     "damage": 0.7,
+     "area": 0.6
+    }
+   ],
+   "scale": {
+    "damage": 2.4,
+    "cooldown": 0.4
+   }
+  },
+  {
+   "id": "tater-pup-top-dog",
+   "weapon": "tater-pup",
+   "axis": "target",
+   "effects": [
+    {
+     "kind": "toughest"
+    }
+   ],
+   "scale": {
+    "damage": 1.16
+   }
+  },
+  {
+   "id": "tater-pup-zoomies",
+   "weapon": "tater-pup",
+   "axis": "rhythm",
+   "effects": [],
+   "scale": {
+    "cooldown": 0.6,
+    "damage": 0.66
+   }
+  },
+  {
+   "id": "tot-toss-big-tot",
+   "weapon": "tot-toss",
+   "axis": "shape",
+   "effects": [
+    {
+     "kind": "focus",
+     "damage": 0.6,
+     "area": 0.35
+    }
+   ],
+   "scale": {
+    "damage": 0.74
+   }
+  },
+  {
+   "id": "tot-toss-tot-pile",
+   "weapon": "tot-toss",
+   "axis": "rhythm",
+   "effects": [
+    {
+     "kind": "salvo",
+     "volleys": 3
+    }
+   ],
+   "scale": {
+    "damage": 0.51
+   }
+  },
+  {
+   "id": "tot-toss-tot-sniper",
+   "weapon": "tot-toss",
+   "axis": "target",
+   "effects": [
+    {
+     "kind": "toughest"
+    }
+   ],
+   "scale": {
+    "damage": 1.28
+   }
+  }
  ]
 }

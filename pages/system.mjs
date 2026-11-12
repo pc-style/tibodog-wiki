@@ -5,9 +5,9 @@ import { SITE } from '../lib/render.mjs';
 import { MECH } from './mechanics.mjs';
 import { readFileSync } from 'node:fs';
 
-const SRC_CFG = 'Game config object exported by `intro-shared-DNwA04ci.js` (`view`, `player`, `dash`, `difficulty`, `win`, `scaling`, … keys)';
+const SRC_CFG = 'Game config object exported by `intro-shared-Bt3ay20E.js` (`view`, `player`, `dash`, `difficulty`, `win`, `scaling`, … keys)';
 const SRC_ABOUT = '[About tibo.dog](https://tibo.dog/about/) and [tibo.dog llms.txt](https://tibo.dog/llms.txt), read 2026-11-02';
-const SRC_UI = 'Inline English UI strings in `boot-CNvvRCnc.js`';
+const SRC_UI = 'Inline English UI strings in `boot-DWLgJ_Vk.js`';
 
 const guide = (p) => ({ crumbs: [], ...p });
 
@@ -170,6 +170,7 @@ export function systemPages(entityPages) {
     body: `The wiki publishes the raw game data it was built from as static JSON. No key, no authentication. CORS is open.\n\n- Index: [/api/v1/index.json](/api/v1/index.json)\n- OpenAPI 3.1 description: [/openapi.json](/openapi.json)\n\nEvery response is \`{ "meta": {...}, "data": ... }\`. \`meta.build\` names the game files and research date.\n\n## Versioning\n\nPaths are versioned: \`/api/v1/…\` is stable. \`/api/…\` without a version is an alias of the latest version. Breaking changes will ship under \`/api/v2/\`, and v1 will stay available for at least 90 days with a \`Deprecation\` header. Data changes when the game changes; \`meta.build\` tells you which game build a response reflects.\n\n## Rate limits\n\nThe API is static files on Vercel's CDN. There is no per-client rate limit and no rate-limit headers; please cache responses (they send \`Cache-Control: public, max-age=3600\`).\n\n` +
       table(['Endpoint', 'Contents'], [
         ['`/api/v1/weapons.json`', `All ${R.allWeapons.length} weapons (base, evolved, union)`],
+        ['`/api/v1/runes.json`', `${(R.runes ?? []).length} runes: source weapon families, axes, effects and raw multipliers`],
         ['`/api/v1/passives.json`', `${R.passives.length} passives`],
         ['`/api/v1/items.json`', `${R.allItems.length} items including evolved items`],
         ['`/api/v1/enemies.json`', `${R.enemies.length} enemies`],
@@ -187,7 +188,7 @@ export function systemPages(entityPages) {
         ['`/api/v1/coverage.json`', 'Generated explanation ownership, recorded measurements and retained scenarios for registry entities and gear rules'],
       ]) +
       `\n## Mechanics inventory\n\n[Download the inventory](/api/v1/coverage.json), or run \`node tools/coverage-inventory.mjs --json\` to rebuild it locally. \`data.entries\` includes entity IDs, attack families, definition hashes, explanation links and recorded evidence. \`data.summary\` and \`data.groups\` count missing explanations, partial family guides, entries with no recorded measurement and entries with no retained scenario. These are separate, overlapping categories—not a count of untested game mechanics.\n\nEvery build regenerates the inventory; missing owners, removed evidence targets and missing scenario files fail the build. Scenario evidence is bound to its game build, definition hash and script hash: a mismatch marks it \`needs-rerun\`, not current coverage. Historical prose reports keep their stated build or remain undated. Shared evidence is assigned only to named entities; a global combat report is not a test for every entry. This inventories catalog entities and exported gear rules, not every runtime-only subsystem or every interaction.\n\n` +
-      `\n## Localized text\n\n[Download localized text](/api/v1/localized-text.json). In the response, \`data.text.fr.weapon.peeler.desc\` is the official French Peeler description. \`data.locales\` lists language tags and directions; \`data.game\` identifies the original revision; \`data.sources\` gives URLs and SHA-256 hashes. Strings, placeholders and absent translations are copied as published, not translated or filled in by the wiki. Interface text and changelogs are not included. The updater refreshes this export alongside the game catalogs.\n\n` +
+      `\n## Localized text\n\n[Download localized text](/api/v1/localized-text.json). In the response, \`data.text.fr.weapon.peeler.desc\` is the official French Peeler description; \`data.text.fr.rune\` contains rune names and descriptions. \`data.locales\` lists language tags and directions; \`data.game\` identifies the original revision; \`data.sources\` gives URLs and SHA-256 hashes. Strings, placeholders and absent translations are copied as published, not translated or filled in by the wiki. Interface text and changelogs are not included. The updater refreshes this export alongside the game catalogs.\n\n` +
       `\n## Errors\n\nUnknown endpoints return HTTP 404 with a JSON body:\n\n\`\`\`json\n{"error":{"code":"not_found","status":404,"message":"No API endpoint at /api/x.json.","hint":"GET /api/index.json lists every endpoint; /openapi.json describes them."}}\n\`\`\`\n\n## Example\n\n\`\`\`sh\ncurl -s ${SITE}/api/v1/recipes.json | jq '.data.evolutions[] | select(.catalyst=="hot-sauce")'\n\`\`\`\n\n## Markdown pages\n\nAny wiki page is available as Markdown by adding \`.md\` to its path, or by sending \`Accept: text/markdown\`.\n`,
     sources: [],
     search: 'api json data openapi developers',

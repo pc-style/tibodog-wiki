@@ -6,7 +6,7 @@ It has 2600 base HP, which is 1690 HP on Normal (boss HP ×0.65, see [Modes](/mo
 
 It drops a [chest](/chests), an XP gem worth 90 XP and a 25-gold coin (both multiplied by the biome's XP and gold multipliers).
 
-**Measured** (headless `tools/play.mjs`, build `main-B2gf34bA`, seed `wiki`, standard mode, `--god`; the clock warped to 2 s before each minute and stepped across it; level-up offers taken first-in-order except Rotten Spud, so curse stays at the difficulty's start value): it spawned at exactly 7:00 on all four difficulties, with 1300 HP on Easy, 1690 on Normal, 1820 on Hard and 2717 on Nightmare. The Nightmare figure is 10% above base HP × the difficulty multiplier because Nightmare starts every run with one curse, and boss HP is multiplied by 1 + curse. <small>[intro-shared-DNwA04ci.js: `startCurses:1,tierLag:2,wallPests:.6`]</small> <small>[sim-PFuQo9mq.js: `n.maxHp[r]=i.hp*t.hpMult*(1+e.loadout.stats.curse)`]</small> Seeds `s1` to `s4` gave the same Normal times and HP.
+**Measured** (headless `tools/play.mjs`, build `main-B2gf34bA`, seed `wiki`, standard mode, `--god`; the clock warped to 2 s before each minute and stepped across it; level-up offers taken first-in-order except Rotten Spud, so curse stays at the difficulty's start value): it spawned at exactly 7:00 on all four difficulties, with 1300 HP on Easy, 1690 on Normal, 1820 on Hard and 2717 on Nightmare. The Nightmare figure is 10% above base HP × the difficulty multiplier because Nightmare starts every run with one curse, and boss HP is multiplied by 1 + curse. <small>[intro-shared-Bt3ay20E.js: `startCurses:1,tierLag:2,wallPests:.6`]</small> <small>[sim-Bt1MrMd3.js: `n.maxHp[r]=i.hp*t.hpMult*(1+e.loadout.stats.curse)`]</small> Seeds `s1` to `s4` gave the same Normal times and HP.
 
 ## Fight
 
@@ -14,7 +14,7 @@ Sir Strawman is a smaller version of the Harvester's fight: a short charge and a
 
 ### Lance charge
 
-When the attack is ready, Sir Strawman stops and locks onto the direction Tibo is in at that moment. <small>[sim-PFuQo9mq.js: `o.state[t]=1,o.timer[t]=n.telegraph,o.timer2[t]=n.telegraph,o.tx[t]=r/s,o.ty[t]=i/s`]</small> A 22-unit-wide lane shows its path for 0.8 s, then it rushes along it at speed 280 for 0.7 s, covering about 196 units. The hit comes from touching it during the rush, and contact damage is ×1.5 while charging (27 before time scaling). Its hitbox stays at its normal radius of 15, because the lane is narrower than its body.
+When the attack is ready, Sir Strawman stops and locks onto the direction Tibo is in at that moment. <small>[sim-Bt1MrMd3.js: `o.state[t]=1,o.timer[t]=n.telegraph,o.timer2[t]=n.telegraph,o.tx[t]=r/s,o.ty[t]=i/s`]</small> A 22-unit-wide lane shows its path for 0.8 s, then it rushes along it at speed 280 for 0.7 s, covering about 196 units. The hit comes from touching it during the rush, and contact damage is ×1.5 while charging (27 before time scaling). Its hitbox stays at its normal radius of 15, because the lane is narrower than its body.
 
 ### Straw fan
 

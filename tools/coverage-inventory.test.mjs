@@ -44,7 +44,7 @@ test('inventory counts actual ownership, not files, raw tables, recipe prose or 
   assert.equal(result.summary.total, 9);
   assert.equal(result.summary.missing, 4);
   assert.equal(result.summary.partial, 1);
-  assert.match(coverageMarkdown(result), /4 missing explanations; 1 family-overview-only/);
+  assert.match(coverageMarkdown(result), /4 missing explanations; 1 partial entries/);
   f.config.renamedExport.push({ set: 'new-set', rule: { kind: 'ruleKind' } });
   const next = createInventory(f);
   assert.equal(next.summary.total, 10);
@@ -80,4 +80,18 @@ test('dog families use promoted tricks rather than fallback abilities', () => {
   f.registry.dogs = [{ id: 'howler', ability: { kind: 'fetch' }, trick: { kind: 'howl' } }];
   f.pages.push({ path: '/dogs/howler', title: 'Howler', body: '' });
   assert.equal(createInventory(f).entries.find((e) => e.key === 'dog:howler').family, 'howl');
+});
+
+test('rune catalog presence stays partial and does not inherit its weapon combat measurements', () => {
+  const f = fixture();
+  f.registry.runes = [{ id: 'explained-target', weapon: 'explained', axis: 'target', effects: [{ kind: 'toughest' }] }];
+  f.pages[0].body += '\n## Weapon runes\n\n| Rune | Effect |\n| Target | Biggest pest |';
+  const rune = createInventory(f).entries.find((e) => e.key === 'rune:explained-target');
+  assert.equal(rune.path, '/weapons/explained#weapon-runes');
+  assert.equal(rune.family, 'target/toughest');
+  assert.equal(rune.explanation.status, 'partial');
+  assert.deepEqual(rune.measurements, []);
+  assert.deepEqual(rune.scenarios, []);
+  f.pages[0].body = '';
+  assert.throws(() => createInventory(f), /missing rune section/);
 });

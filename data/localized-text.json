@@ -1,10 +1,10 @@
 {
  "schema": 1,
  "game": {
-  "version": "7995156",
-  "commit": "79951566fb0af98ee9573487567977b8309c8aaa"
+  "version": "571cd97",
+  "commit": "571cd978f745bdfdf966e73cd603981dcd006e87"
  },
- "simVersion": "667ba057b89099ae",
+ "simVersion": "2718f99df152b32c",
  "locales": [
   {
    "tag": "en",
@@ -1806,6 +1806,212 @@
     "zapper": {
      "name": "Zapper Bot",
      "desc": "Zaps the closest bugs. Elites only get a jolt, and bosses are too big to zap."
+    }
+   },
+   "rune": {
+    "deep-fryer-hot-seat": {
+     "name": "Hot Seat",
+     "desc": "Sprays at the biggest pest."
+    },
+    "deep-fryer-long-soak": {
+     "name": "Long Soak",
+     "desc": "Each spray lasts much longer."
+    },
+    "deep-fryer-wide-basket": {
+     "name": "Wide Basket",
+     "desc": "A much wider, shorter spray."
+    },
+    "frozen-fries-big-chill": {
+     "name": "Big Chill",
+     "desc": "Fries aim at the biggest pest."
+    },
+    "frozen-fries-brain-freeze": {
+     "name": "Brain Freeze",
+     "desc": "Every third volley hits much harder."
+    },
+    "frozen-fries-frost-fan": {
+     "name": "Frost Fan",
+     "desc": "Fries fan out all around."
+    },
+    "fry-knives-back-knives": {
+     "name": "Back Knives",
+     "desc": "Every other knife flies backward."
+    },
+    "fry-knives-carving-knife": {
+     "name": "Carving Knife",
+     "desc": "One big knife, not many."
+    },
+    "fry-knives-knife-storm": {
+     "name": "Knife Storm",
+     "desc": "Holds, then throws three volleys at once."
+    },
+    "fry-lance-heavy-lance": {
+     "name": "Heavy Lance",
+     "desc": "Every third beam is huge."
+    },
+    "fry-lance-jouster": {
+     "name": "Jouster",
+     "desc": "The lance aims at the biggest pest."
+    },
+    "fry-lance-long-lance": {
+     "name": "Long Lance",
+     "desc": "A much longer beam."
+    },
+    "fry-sentry-head-chef": {
+     "name": "Head Chef",
+     "desc": "One big sentry, not many."
+    },
+    "fry-sentry-order-up": {
+     "name": "Order Up",
+     "desc": "Sentries shoot the biggest pest."
+    },
+    "fry-sentry-rush-hour": {
+     "name": "Rush Hour",
+     "desc": "Holds, then sets down twice as many."
+    },
+    "gravy-boat-big-spill": {
+     "name": "Big Spill",
+     "desc": "Pools land under the biggest pest."
+    },
+    "gravy-boat-deep-dish": {
+     "name": "Deep Dish",
+     "desc": "One huge pool, not many."
+    },
+    "gravy-boat-full-pour": {
+     "name": "Full Pour",
+     "desc": "Holds, then pours three times at once."
+    },
+    "peeler-backhand": {
+     "name": "Backhand",
+     "desc": "Slashes bat bullets back."
+    },
+    "peeler-haymaker": {
+     "name": "Haymaker",
+     "desc": "Every third swing is huge."
+    },
+    "peeler-wide-peel": {
+     "name": "Wide Peel",
+     "desc": "Much wider slashes."
+    },
+    "root-spikes-big-root": {
+     "name": "Big Root",
+     "desc": "One huge spike, not many."
+    },
+    "root-spikes-deep-roots": {
+     "name": "Deep Roots",
+     "desc": "Spikes hit the biggest pests first."
+    },
+    "root-spikes-root-quake": {
+     "name": "Root Quake",
+     "desc": "Every third burst is huge."
+    },
+    "rosti-disc-big-rosti": {
+     "name": "Big Rösti",
+     "desc": "Much bigger discs."
+    },
+    "rosti-disc-disc-wheel": {
+     "name": "Disc Wheel",
+     "desc": "Discs fly out evenly all around."
+    },
+    "rosti-disc-hard-toss": {
+     "name": "Hard Toss",
+     "desc": "Every third toss is huge."
+    },
+    "seeker-sprouts-big-game": {
+     "name": "Big Game",
+     "desc": "Sprouts hunt the biggest pest."
+    },
+    "seeker-sprouts-burst": {
+     "name": "Sprout Burst",
+     "desc": "Holds, then bursts out all around."
+    },
+    "seeker-sprouts-hopper": {
+     "name": "Hopper",
+     "desc": "Sprouts hop on, then burst."
+    },
+    "sprout-satellites-big-sprout": {
+     "name": "Big Sprout",
+     "desc": "One huge satellite, not many."
+    },
+    "sprout-satellites-spin-cycle": {
+     "name": "Spin Cycle",
+     "desc": "Satellites spin much faster."
+    },
+    "sprout-satellites-wide-orbit": {
+     "name": "Wide Orbit",
+     "desc": "Satellites circle much farther out."
+    },
+    "spud-cannon-big-blast": {
+     "name": "Big Blast",
+     "desc": "Shells burst much wider."
+    },
+    "spud-cannon-bullseye": {
+     "name": "Bullseye",
+     "desc": "Shells aim at the biggest pest."
+    },
+    "spud-cannon-volley-fire": {
+     "name": "Volley Fire",
+     "desc": "Holds, then fires three volleys at once."
+    },
+    "spud-lob-big-bounce": {
+     "name": "Big Bounce",
+     "desc": "Every third lob is huge."
+    },
+    "spud-lob-hot-landing": {
+     "name": "Hot Landing",
+     "desc": "Potatoes burst where they land."
+    },
+    "spud-lob-wide-lob": {
+     "name": "Wide Lob",
+     "desc": "Potatoes land much farther apart."
+    },
+    "starch-bolt-big-bolt": {
+     "name": "Big Bolt",
+     "desc": "One huge bolt, not many."
+    },
+    "starch-bolt-lightning-rod": {
+     "name": "Lightning Rod",
+     "desc": "Bolts strike the biggest pests first."
+    },
+    "starch-bolt-storm-front": {
+     "name": "Storm Front",
+     "desc": "Holds, then strikes three times at once."
+    },
+    "steam-vent-big-pot": {
+     "name": "Big Pot",
+     "desc": "Steam spreads much wider."
+    },
+    "steam-vent-rolling-boil": {
+     "name": "Rolling Boil",
+     "desc": "Steam pulses much faster."
+    },
+    "steam-vent-scald": {
+     "name": "Scald",
+     "desc": "Steam hurts elites and bosses much more."
+    },
+    "tater-pup-big-pup": {
+     "name": "Big Pup",
+     "desc": "One big pup, not many."
+    },
+    "tater-pup-top-dog": {
+     "name": "Top Dog",
+     "desc": "Pups chase the biggest pest."
+    },
+    "tater-pup-zoomies": {
+     "name": "Zoomies",
+     "desc": "Pups bite much faster."
+    },
+    "tot-toss-big-tot": {
+     "name": "Big Tot",
+     "desc": "One big tot, not many."
+    },
+    "tot-toss-tot-pile": {
+     "name": "Tot Pile",
+     "desc": "Holds, then throws three volleys at once."
+    },
+    "tot-toss-tot-sniper": {
+     "name": "Tot Sniper",
+     "desc": "Tots aim at the biggest pest."
     }
    },
    "rarity": {
@@ -3788,6 +3994,212 @@
      "desc": "电击最近的虫子。精英只会被电一下，首领太大电不动。"
     }
    },
+   "rune": {
+    "deep-fryer-hot-seat": {
+     "name": "热锅点名",
+     "desc": "朝最大的害虫喷射。"
+    },
+    "deep-fryer-long-soak": {
+     "name": "慢火久炸",
+     "desc": "每次喷射持续久得多。"
+    },
+    "deep-fryer-wide-basket": {
+     "name": "大号炸篮",
+     "desc": "喷射宽得多，但更短。"
+    },
+    "frozen-fries-big-chill": {
+     "name": "冰封大个",
+     "desc": "薯条瞄准最大的害虫。"
+    },
+    "frozen-fries-brain-freeze": {
+     "name": "透心凉",
+     "desc": "每三轮齐射有一轮伤害大增。"
+    },
+    "frozen-fries-frost-fan": {
+     "name": "寒霜扇",
+     "desc": "薯条向四面八方散开。"
+    },
+    "fry-knives-back-knives": {
+     "name": "回马刀",
+     "desc": "每隔一把飞刀向后飞。"
+    },
+    "fry-knives-carving-knife": {
+     "name": "大砍刀",
+     "desc": "一把大刀，而非多把。"
+    },
+    "fry-knives-knife-storm": {
+     "name": "飞刀风暴",
+     "desc": "蓄力后一次扔出三轮。"
+    },
+    "fry-lance-heavy-lance": {
+     "name": "重型长枪",
+     "desc": "每三道光束有一道超大。"
+    },
+    "fry-lance-jouster": {
+     "name": "骑枪对决",
+     "desc": "长枪瞄准最大的害虫。"
+    },
+    "fry-lance-long-lance": {
+     "name": "加长长枪",
+     "desc": "光束长得多。"
+    },
+    "fry-sentry-head-chef": {
+     "name": "主厨",
+     "desc": "一座大哨塔，而非多座。"
+    },
+    "fry-sentry-order-up": {
+     "name": "上菜啦",
+     "desc": "哨塔射击最大的害虫。"
+    },
+    "fry-sentry-rush-hour": {
+     "name": "高峰时段",
+     "desc": "蓄力后一次放下两倍数量。"
+    },
+    "gravy-boat-big-spill": {
+     "name": "当头一泼",
+     "desc": "肉汁池落在最大的害虫脚下。"
+    },
+    "gravy-boat-deep-dish": {
+     "name": "深盘",
+     "desc": "一个巨大的池，而非多个。"
+    },
+    "gravy-boat-full-pour": {
+     "name": "一倒到底",
+     "desc": "蓄力后一次倒三回。"
+    },
+    "peeler-backhand": {
+     "name": "反手",
+     "desc": "挥砍会把子弹打回去。"
+    },
+    "peeler-haymaker": {
+     "name": "全力一挥",
+     "desc": "每三次挥砍有一次超大。"
+    },
+    "peeler-wide-peel": {
+     "name": "大片削皮",
+     "desc": "挥砍宽得多。"
+    },
+    "root-spikes-big-root": {
+     "name": "大树根",
+     "desc": "一根巨刺，而非多根。"
+    },
+    "root-spikes-deep-roots": {
+     "name": "根深蒂固",
+     "desc": "根刺优先扎最大的害虫。"
+    },
+    "root-spikes-root-quake": {
+     "name": "根震",
+     "desc": "每三次爆发有一次超大。"
+    },
+    "rosti-disc-big-rosti": {
+     "name": "巨型薯饼",
+     "desc": "飞盘大得多。"
+    },
+    "rosti-disc-disc-wheel": {
+     "name": "飞盘转轮",
+     "desc": "飞盘均匀飞向四周。"
+    },
+    "rosti-disc-hard-toss": {
+     "name": "大力飞盘",
+     "desc": "每三次投掷有一次超大。"
+    },
+    "seeker-sprouts-big-game": {
+     "name": "猎大个",
+     "desc": "嫩芽追猎最大的害虫。"
+    },
+    "seeker-sprouts-burst": {
+     "name": "嫩芽爆发",
+     "desc": "蓄力后向四周爆发。"
+    },
+    "seeker-sprouts-hopper": {
+     "name": "跳跳芽",
+     "desc": "嫩芽跳上目标后爆开。"
+    },
+    "sprout-satellites-big-sprout": {
+     "name": "巨芽",
+     "desc": "一颗巨大卫星，而非多颗。"
+    },
+    "sprout-satellites-spin-cycle": {
+     "name": "脱水模式",
+     "desc": "卫星转得快得多。"
+    },
+    "sprout-satellites-wide-orbit": {
+     "name": "远轨道",
+     "desc": "卫星绕得远得多。"
+    },
+    "spud-cannon-big-blast": {
+     "name": "大爆炸",
+     "desc": "炮弹爆炸范围大得多。"
+    },
+    "spud-cannon-bullseye": {
+     "name": "正中靶心",
+     "desc": "炮弹瞄准最大的害虫。"
+    },
+    "spud-cannon-volley-fire": {
+     "name": "齐射",
+     "desc": "蓄力后一次发射三轮。"
+    },
+    "spud-lob-big-bounce": {
+     "name": "大弹跳",
+     "desc": "每三次抛投有一次超大。"
+    },
+    "spud-lob-hot-landing": {
+     "name": "热辣落地",
+     "desc": "土豆落地就爆开。"
+    },
+    "spud-lob-wide-lob": {
+     "name": "广抛",
+     "desc": "土豆落点分得远得多。"
+    },
+    "starch-bolt-big-bolt": {
+     "name": "巨型闪电",
+     "desc": "一道巨型闪电，而非多道。"
+    },
+    "starch-bolt-lightning-rod": {
+     "name": "避雷针",
+     "desc": "闪电优先劈最大的害虫。"
+    },
+    "starch-bolt-storm-front": {
+     "name": "风暴前线",
+     "desc": "蓄力后一次劈三下。"
+    },
+    "steam-vent-big-pot": {
+     "name": "大锅",
+     "desc": "蒸汽扩散得宽得多。"
+    },
+    "steam-vent-rolling-boil": {
+     "name": "大火滚开",
+     "desc": "蒸汽喷发快得多。"
+    },
+    "steam-vent-scald": {
+     "name": "烫伤",
+     "desc": "蒸汽对精英和首领伤害大增。"
+    },
+    "tater-pup-big-pup": {
+     "name": "大狗狗",
+     "desc": "一只大狗，而非多只。"
+    },
+    "tater-pup-top-dog": {
+     "name": "头号狗",
+     "desc": "小狗追咬最大的害虫。"
+    },
+    "tater-pup-zoomies": {
+     "name": "撒欢",
+     "desc": "小狗咬得快得多。"
+    },
+    "tot-toss-big-tot": {
+     "name": "巨型薯球",
+     "desc": "一个大薯球，而非多个。"
+    },
+    "tot-toss-tot-pile": {
+     "name": "薯球堆",
+     "desc": "蓄力后一次扔出三轮。"
+    },
+    "tot-toss-tot-sniper": {
+     "name": "薯球狙击",
+     "desc": "薯球瞄准最大的害虫。"
+    }
+   },
    "rarity": {
     "0": {
      "name": "普通"
@@ -5766,6 +6178,212 @@
     "zapper": {
      "name": "電擊Bot",
      "desc": "電擊最近的蟲子。菁英只會被電一下，頭目太大電不動。"
+    }
+   },
+   "rune": {
+    "deep-fryer-hot-seat": {
+     "name": "熱鍋點名",
+     "desc": "朝最大的害蟲噴灑。"
+    },
+    "deep-fryer-long-soak": {
+     "name": "慢火久炸",
+     "desc": "每次噴灑持續久得多。"
+    },
+    "deep-fryer-wide-basket": {
+     "name": "大號炸籃",
+     "desc": "噴灑寬得多，但更短。"
+    },
+    "frozen-fries-big-chill": {
+     "name": "冰封大隻",
+     "desc": "薯條瞄準最大的害蟲。"
+    },
+    "frozen-fries-brain-freeze": {
+     "name": "透心涼",
+     "desc": "每三輪齊射有一輪傷害大增。"
+    },
+    "frozen-fries-frost-fan": {
+     "name": "寒霜扇",
+     "desc": "薯條向四面八方散開。"
+    },
+    "fry-knives-back-knives": {
+     "name": "回馬刀",
+     "desc": "每隔一把飛刀向後飛。"
+    },
+    "fry-knives-carving-knife": {
+     "name": "大砍刀",
+     "desc": "一把大刀，而非多把。"
+    },
+    "fry-knives-knife-storm": {
+     "name": "飛刀風暴",
+     "desc": "蓄力後一次丟出三輪。"
+    },
+    "fry-lance-heavy-lance": {
+     "name": "重型長槍",
+     "desc": "每三道光束有一道超大。"
+    },
+    "fry-lance-jouster": {
+     "name": "騎槍對決",
+     "desc": "長槍瞄準最大的害蟲。"
+    },
+    "fry-lance-long-lance": {
+     "name": "加長長槍",
+     "desc": "光束長得多。"
+    },
+    "fry-sentry-head-chef": {
+     "name": "主廚",
+     "desc": "一座大哨塔，而非多座。"
+    },
+    "fry-sentry-order-up": {
+     "name": "出餐囉",
+     "desc": "哨塔射擊最大的害蟲。"
+    },
+    "fry-sentry-rush-hour": {
+     "name": "尖峰時段",
+     "desc": "蓄力後一次放下兩倍數量。"
+    },
+    "gravy-boat-big-spill": {
+     "name": "當頭一潑",
+     "desc": "肉汁池落在最大的害蟲腳下。"
+    },
+    "gravy-boat-deep-dish": {
+     "name": "深盤",
+     "desc": "一個巨大的池，而非多個。"
+    },
+    "gravy-boat-full-pour": {
+     "name": "一倒到底",
+     "desc": "蓄力後一次倒三回。"
+    },
+    "peeler-backhand": {
+     "name": "反手",
+     "desc": "揮砍會把子彈打回去。"
+    },
+    "peeler-haymaker": {
+     "name": "全力一揮",
+     "desc": "每三次揮砍有一次超大。"
+    },
+    "peeler-wide-peel": {
+     "name": "大片削皮",
+     "desc": "揮砍寬得多。"
+    },
+    "root-spikes-big-root": {
+     "name": "大樹根",
+     "desc": "一根巨刺，而非多根。"
+    },
+    "root-spikes-deep-roots": {
+     "name": "根深蒂固",
+     "desc": "根刺優先扎最大的害蟲。"
+    },
+    "root-spikes-root-quake": {
+     "name": "根震",
+     "desc": "每三次爆發有一次超大。"
+    },
+    "rosti-disc-big-rosti": {
+     "name": "巨型薯餅",
+     "desc": "飛盤大得多。"
+    },
+    "rosti-disc-disc-wheel": {
+     "name": "飛盤轉輪",
+     "desc": "飛盤均勻飛向四周。"
+    },
+    "rosti-disc-hard-toss": {
+     "name": "大力飛盤",
+     "desc": "每三次投擲有一次超大。"
+    },
+    "seeker-sprouts-big-game": {
+     "name": "獵大隻",
+     "desc": "嫩芽追獵最大的害蟲。"
+    },
+    "seeker-sprouts-burst": {
+     "name": "嫩芽爆發",
+     "desc": "蓄力後向四周爆發。"
+    },
+    "seeker-sprouts-hopper": {
+     "name": "跳跳芽",
+     "desc": "嫩芽跳上目標後炸開。"
+    },
+    "sprout-satellites-big-sprout": {
+     "name": "巨芽",
+     "desc": "一顆巨大衛星，而非多顆。"
+    },
+    "sprout-satellites-spin-cycle": {
+     "name": "脫水模式",
+     "desc": "衛星轉得快得多。"
+    },
+    "sprout-satellites-wide-orbit": {
+     "name": "遠軌道",
+     "desc": "衛星繞得遠得多。"
+    },
+    "spud-cannon-big-blast": {
+     "name": "大爆炸",
+     "desc": "砲彈爆炸範圍大得多。"
+    },
+    "spud-cannon-bullseye": {
+     "name": "正中紅心",
+     "desc": "砲彈瞄準最大的害蟲。"
+    },
+    "spud-cannon-volley-fire": {
+     "name": "齊射",
+     "desc": "蓄力後一次發射三輪。"
+    },
+    "spud-lob-big-bounce": {
+     "name": "大彈跳",
+     "desc": "每三次拋投有一次超大。"
+    },
+    "spud-lob-hot-landing": {
+     "name": "熱辣落地",
+     "desc": "馬鈴薯落地就炸開。"
+    },
+    "spud-lob-wide-lob": {
+     "name": "廣拋",
+     "desc": "馬鈴薯落點分得遠得多。"
+    },
+    "starch-bolt-big-bolt": {
+     "name": "巨型閃電",
+     "desc": "一道巨型閃電，而非多道。"
+    },
+    "starch-bolt-lightning-rod": {
+     "name": "避雷針",
+     "desc": "閃電優先劈最大的害蟲。"
+    },
+    "starch-bolt-storm-front": {
+     "name": "風暴前線",
+     "desc": "蓄力後一次劈三下。"
+    },
+    "steam-vent-big-pot": {
+     "name": "大鍋",
+     "desc": "蒸氣擴散得寬得多。"
+    },
+    "steam-vent-rolling-boil": {
+     "name": "大火滾開",
+     "desc": "蒸氣噴發快得多。"
+    },
+    "steam-vent-scald": {
+     "name": "燙傷",
+     "desc": "蒸氣對菁英和頭目傷害大增。"
+    },
+    "tater-pup-big-pup": {
+     "name": "大狗狗",
+     "desc": "一隻大狗，而非多隻。"
+    },
+    "tater-pup-top-dog": {
+     "name": "頭號狗",
+     "desc": "小狗追咬最大的害蟲。"
+    },
+    "tater-pup-zoomies": {
+     "name": "暴衝模式",
+     "desc": "小狗咬得快得多。"
+    },
+    "tot-toss-big-tot": {
+     "name": "巨型薯球",
+     "desc": "一個大薯球，而非多個。"
+    },
+    "tot-toss-tot-pile": {
+     "name": "薯球堆",
+     "desc": "蓄力後一次丟出三輪。"
+    },
+    "tot-toss-tot-sniper": {
+     "name": "薯球狙擊",
+     "desc": "薯球瞄準最大的害蟲。"
     }
    },
    "rarity": {
@@ -7748,6 +8366,212 @@
      "desc": "一番近い虫をビリッと撃つ。エリートはしびれるだけ、ボスは大きすぎる。"
     }
    },
+   "rune": {
+    "deep-fryer-hot-seat": {
+     "name": "アツアツ指名",
+     "desc": "一番大きい害虫に噴きかける。"
+    },
+    "deep-fryer-long-soak": {
+     "name": "じっくり揚げ",
+     "desc": "噴射がずっと長く続く。"
+    },
+    "deep-fryer-wide-basket": {
+     "name": "ワイドバスケット",
+     "desc": "噴射がずっと広く、短くなる。"
+    },
+    "frozen-fries-big-chill": {
+     "name": "大物冷却",
+     "desc": "ポテトが一番大きい害虫を狙う。"
+    },
+    "frozen-fries-brain-freeze": {
+     "name": "頭キーン",
+     "desc": "3回に1回、斉射がずっと強くなる。"
+    },
+    "frozen-fries-frost-fan": {
+     "name": "フロストファン",
+     "desc": "ポテトが全方位に広がる。"
+    },
+    "fry-knives-back-knives": {
+     "name": "背面ナイフ",
+     "desc": "ナイフが1本おきに後ろへ飛ぶ。"
+    },
+    "fry-knives-carving-knife": {
+     "name": "肉切り包丁",
+     "desc": "たくさんではなく大きな1本。"
+    },
+    "fry-knives-knife-storm": {
+     "name": "ナイフの嵐",
+     "desc": "溜めてから3回分を一度に投げる。"
+    },
+    "fry-lance-heavy-lance": {
+     "name": "ヘビーランス",
+     "desc": "3回に1回、ビームが巨大になる。"
+    },
+    "fry-lance-jouster": {
+     "name": "一騎打ち",
+     "desc": "ランスが一番大きい害虫を狙う。"
+    },
+    "fry-lance-long-lance": {
+     "name": "ロングランス",
+     "desc": "ビームがずっと長くなる。"
+    },
+    "fry-sentry-head-chef": {
+     "name": "料理長",
+     "desc": "たくさんではなく大きな番兵1体。"
+    },
+    "fry-sentry-order-up": {
+     "name": "オーダー！",
+     "desc": "番兵が一番大きい害虫を撃つ。"
+    },
+    "fry-sentry-rush-hour": {
+     "name": "ラッシュアワー",
+     "desc": "溜めてから2倍の数を置く。"
+    },
+    "gravy-boat-big-spill": {
+     "name": "大物ぶっかけ",
+     "desc": "一番大きい害虫の下に池ができる。"
+    },
+    "gravy-boat-deep-dish": {
+     "name": "深皿",
+     "desc": "たくさんではなく巨大な池1つ。"
+    },
+    "gravy-boat-full-pour": {
+     "name": "なみなみ注ぎ",
+     "desc": "溜めてから3回分を一度に注ぐ。"
+    },
+    "peeler-backhand": {
+     "name": "バックハンド",
+     "desc": "斬撃が弾を打ち返す。"
+    },
+    "peeler-haymaker": {
+     "name": "渾身の一振り",
+     "desc": "3回に1回、振りが巨大になる。"
+    },
+    "peeler-wide-peel": {
+     "name": "ワイド皮むき",
+     "desc": "斬撃がずっと広くなる。"
+    },
+    "root-spikes-big-root": {
+     "name": "大根",
+     "desc": "たくさんではなく巨大なトゲ1本。"
+    },
+    "root-spikes-deep-roots": {
+     "name": "根深い",
+     "desc": "トゲが大きい害虫から先に刺す。"
+    },
+    "root-spikes-root-quake": {
+     "name": "根っこ地震",
+     "desc": "3回に1回、噴出が巨大になる。"
+    },
+    "rosti-disc-big-rosti": {
+     "name": "ビッグロスティ",
+     "desc": "ディスクがずっと大きくなる。"
+    },
+    "rosti-disc-disc-wheel": {
+     "name": "ディスクホイール",
+     "desc": "ディスクが全方位に均等に飛ぶ。"
+    },
+    "rosti-disc-hard-toss": {
+     "name": "剛速投",
+     "desc": "3回に1回、投げが巨大になる。"
+    },
+    "seeker-sprouts-big-game": {
+     "name": "大物狩り",
+     "desc": "芽が一番大きい害虫を追う。"
+    },
+    "seeker-sprouts-burst": {
+     "name": "芽吹き爆発",
+     "desc": "溜めてから全方位に一斉に放つ。"
+    },
+    "seeker-sprouts-hopper": {
+     "name": "ぴょん芽",
+     "desc": "芽が飛び乗ってから破裂する。"
+    },
+    "sprout-satellites-big-sprout": {
+     "name": "巨大芽",
+     "desc": "たくさんではなく巨大なサテライト1つ。"
+    },
+    "sprout-satellites-spin-cycle": {
+     "name": "脱水モード",
+     "desc": "サテライトがずっと速く回る。"
+    },
+    "sprout-satellites-wide-orbit": {
+     "name": "ワイド軌道",
+     "desc": "サテライトがずっと遠くを回る。"
+    },
+    "spud-cannon-big-blast": {
+     "name": "ビッグブラスト",
+     "desc": "弾がずっと広く破裂する。"
+    },
+    "spud-cannon-bullseye": {
+     "name": "ど真ん中",
+     "desc": "弾が一番大きい害虫を狙う。"
+    },
+    "spud-cannon-volley-fire": {
+     "name": "一斉射撃",
+     "desc": "溜めてから3回分を一度に撃つ。"
+    },
+    "spud-lob-big-bounce": {
+     "name": "ビッグバウンド",
+     "desc": "3回に1回、投げるイモが巨大になる。"
+    },
+    "spud-lob-hot-landing": {
+     "name": "アツアツ着地",
+     "desc": "ジャガイモが落ちた場所で破裂する。"
+    },
+    "spud-lob-wide-lob": {
+     "name": "ワイド投げ",
+     "desc": "ジャガイモがずっと離れて落ちる。"
+    },
+    "starch-bolt-big-bolt": {
+     "name": "ビッグボルト",
+     "desc": "たくさんではなく巨大なボルト1本。"
+    },
+    "starch-bolt-lightning-rod": {
+     "name": "避雷針",
+     "desc": "ボルトが大きい害虫から先に撃つ。"
+    },
+    "starch-bolt-storm-front": {
+     "name": "雷雲前線",
+     "desc": "溜めてから3回分を一度に落とす。"
+    },
+    "steam-vent-big-pot": {
+     "name": "大鍋",
+     "desc": "蒸気がずっと広がる。"
+    },
+    "steam-vent-rolling-boil": {
+     "name": "グツグツ",
+     "desc": "蒸気がずっと速く噴く。"
+    },
+    "steam-vent-scald": {
+     "name": "やけど",
+     "desc": "蒸気がエリートとボスにずっと効く。"
+    },
+    "tater-pup-big-pup": {
+     "name": "大型犬",
+     "desc": "たくさんではなく大きな1匹。"
+    },
+    "tater-pup-top-dog": {
+     "name": "ボス犬",
+     "desc": "子犬が一番大きい害虫を追う。"
+    },
+    "tater-pup-zoomies": {
+     "name": "大はしゃぎ",
+     "desc": "子犬がずっと速く噛みつく。"
+    },
+    "tot-toss-big-tot": {
+     "name": "特大ポテト",
+     "desc": "たくさんではなく大きな1個。"
+    },
+    "tot-toss-tot-pile": {
+     "name": "山盛り",
+     "desc": "溜めてから3回分を一度に投げる。"
+    },
+    "tot-toss-tot-sniper": {
+     "name": "ポテトスナイパー",
+     "desc": "ミニポテトが一番大きい害虫を狙う。"
+    }
+   },
    "rarity": {
     "0": {
      "name": "コモン"
@@ -9726,6 +10550,212 @@
     "zapper": {
      "name": "재퍼 Bot",
      "desc": "가장 가까운 벌레를 지집니다. 엘리트는 찌릿할 뿐이고, 보스는 너무 큽니다."
+    }
+   },
+   "rune": {
+    "deep-fryer-hot-seat": {
+     "name": "뜨거운 맛",
+     "desc": "가장 큰 해충에게 뿌립니다."
+    },
+    "deep-fryer-long-soak": {
+     "name": "푹 튀기기",
+     "desc": "분사가 훨씬 오래 지속됩니다."
+    },
+    "deep-fryer-wide-basket": {
+     "name": "넓은 바구니",
+     "desc": "훨씬 넓고 짧게 뿌립니다."
+    },
+    "frozen-fries-big-chill": {
+     "name": "큰놈 얼리기",
+     "desc": "감자튀김이 가장 큰 해충을 노립니다."
+    },
+    "frozen-fries-brain-freeze": {
+     "name": "머리 띵!",
+     "desc": "세 번째 일제 사격마다 훨씬 강합니다."
+    },
+    "frozen-fries-frost-fan": {
+     "name": "서리 부채",
+     "desc": "감자튀김이 사방으로 퍼집니다."
+    },
+    "fry-knives-back-knives": {
+     "name": "뒤통수 칼",
+     "desc": "칼이 하나 걸러 하나씩 뒤로 날아갑니다."
+    },
+    "fry-knives-carving-knife": {
+     "name": "식칼",
+     "desc": "여러 개 대신 큰 칼 하나."
+    },
+    "fry-knives-knife-storm": {
+     "name": "칼바람",
+     "desc": "모았다가 3번 분량을 한꺼번에 던집니다."
+    },
+    "fry-lance-heavy-lance": {
+     "name": "육중한 랜스",
+     "desc": "세 번째 광선마다 거대해집니다."
+    },
+    "fry-lance-jouster": {
+     "name": "결투",
+     "desc": "랜스가 가장 큰 해충을 노립니다."
+    },
+    "fry-lance-long-lance": {
+     "name": "긴 랜스",
+     "desc": "광선이 훨씬 길어집니다."
+    },
+    "fry-sentry-head-chef": {
+     "name": "주방장",
+     "desc": "여러 개 대신 큰 보초 하나."
+    },
+    "fry-sentry-order-up": {
+     "name": "주문 완료!",
+     "desc": "보초가 가장 큰 해충을 쏩니다."
+    },
+    "fry-sentry-rush-hour": {
+     "name": "러시아워",
+     "desc": "모았다가 두 배로 놓습니다."
+    },
+    "gravy-boat-big-spill": {
+     "name": "왕창 쏟기",
+     "desc": "가장 큰 해충 밑에 웅덩이가 생깁니다."
+    },
+    "gravy-boat-deep-dish": {
+     "name": "깊은 접시",
+     "desc": "여러 개 대신 거대한 웅덩이 하나."
+    },
+    "gravy-boat-full-pour": {
+     "name": "콸콸 붓기",
+     "desc": "모았다가 3번 분량을 한꺼번에 붓습니다."
+    },
+    "peeler-backhand": {
+     "name": "백핸드",
+     "desc": "베기가 탄환을 되받아칩니다."
+    },
+    "peeler-haymaker": {
+     "name": "회심의 일격",
+     "desc": "세 번째 휘두르기마다 거대해집니다."
+    },
+    "peeler-wide-peel": {
+     "name": "넓게 깎기",
+     "desc": "훨씬 넓게 벱니다."
+    },
+    "root-spikes-big-root": {
+     "name": "왕뿌리",
+     "desc": "여러 개 대신 거대한 가시 하나."
+    },
+    "root-spikes-deep-roots": {
+     "name": "깊은 뿌리",
+     "desc": "가시가 큰 해충부터 찌릅니다."
+    },
+    "root-spikes-root-quake": {
+     "name": "뿌리 지진",
+     "desc": "세 번째 분출마다 거대해집니다."
+    },
+    "rosti-disc-big-rosti": {
+     "name": "왕 뢰스티",
+     "desc": "원반이 훨씬 커집니다."
+    },
+    "rosti-disc-disc-wheel": {
+     "name": "원반 바퀴",
+     "desc": "원반이 사방으로 고르게 날아갑니다."
+    },
+    "rosti-disc-hard-toss": {
+     "name": "강속구",
+     "desc": "세 번째 던지기마다 거대해집니다."
+    },
+    "seeker-sprouts-big-game": {
+     "name": "대물 사냥",
+     "desc": "새싹이 가장 큰 해충을 쫓습니다."
+    },
+    "seeker-sprouts-burst": {
+     "name": "새싹 폭발",
+     "desc": "모았다가 사방으로 터뜨립니다."
+    },
+    "seeker-sprouts-hopper": {
+     "name": "깡충 새싹",
+     "desc": "새싹이 올라탄 뒤 터집니다."
+    },
+    "sprout-satellites-big-sprout": {
+     "name": "왕새싹",
+     "desc": "여러 개 대신 거대한 위성 하나."
+    },
+    "sprout-satellites-spin-cycle": {
+     "name": "탈수 코스",
+     "desc": "위성이 훨씬 빠르게 돕니다."
+    },
+    "sprout-satellites-wide-orbit": {
+     "name": "넓은 궤도",
+     "desc": "위성이 훨씬 멀리서 돕니다."
+    },
+    "spud-cannon-big-blast": {
+     "name": "대폭발",
+     "desc": "포탄이 훨씬 넓게 터집니다."
+    },
+    "spud-cannon-bullseye": {
+     "name": "명중",
+     "desc": "포탄이 가장 큰 해충을 노립니다."
+    },
+    "spud-cannon-volley-fire": {
+     "name": "일제 사격",
+     "desc": "모았다가 3번 분량을 한꺼번에 쏩니다."
+    },
+    "spud-lob-big-bounce": {
+     "name": "왕 바운스",
+     "desc": "세 번째 던지기마다 거대해집니다."
+    },
+    "spud-lob-hot-landing": {
+     "name": "뜨거운 착지",
+     "desc": "감자가 떨어진 곳에서 터집니다."
+    },
+    "spud-lob-wide-lob": {
+     "name": "넓게 던지기",
+     "desc": "감자가 훨씬 멀리 흩어져 떨어집니다."
+    },
+    "starch-bolt-big-bolt": {
+     "name": "왕 번개",
+     "desc": "여러 개 대신 거대한 번개 하나."
+    },
+    "starch-bolt-lightning-rod": {
+     "name": "피뢰침",
+     "desc": "번개가 큰 해충부터 칩니다."
+    },
+    "starch-bolt-storm-front": {
+     "name": "폭풍 전선",
+     "desc": "모았다가 3번을 한꺼번에 내리칩니다."
+    },
+    "steam-vent-big-pot": {
+     "name": "큰 솥",
+     "desc": "증기가 훨씬 넓게 퍼집니다."
+    },
+    "steam-vent-rolling-boil": {
+     "name": "팔팔 끓이기",
+     "desc": "증기가 훨씬 빠르게 뿜어집니다."
+    },
+    "steam-vent-scald": {
+     "name": "화상",
+     "desc": "엘리트와 보스에게 증기 피해가 훨씬 큽니다."
+    },
+    "tater-pup-big-pup": {
+     "name": "큰 강아지",
+     "desc": "여러 마리 대신 큰 강아지 한 마리."
+    },
+    "tater-pup-top-dog": {
+     "name": "대장 개",
+     "desc": "강아지가 가장 큰 해충을 쫓습니다."
+    },
+    "tater-pup-zoomies": {
+     "name": "폭주 본능",
+     "desc": "강아지가 훨씬 빠르게 뭅니다."
+    },
+    "tot-toss-big-tot": {
+     "name": "왕알감자",
+     "desc": "여러 개 대신 큰 알감자 하나."
+    },
+    "tot-toss-tot-pile": {
+     "name": "알감자 더미",
+     "desc": "모았다가 3번 분량을 한꺼번에 던집니다."
+    },
+    "tot-toss-tot-sniper": {
+     "name": "알감자 저격수",
+     "desc": "알감자가 가장 큰 해충을 노립니다."
     }
    },
    "rarity": {
@@ -11708,6 +12738,212 @@
      "desc": "Zapea a los bichos más cercanos. Las élites solo reciben una descarga; los jefes son muy grandes."
     }
    },
+   "rune": {
+    "deep-fryer-hot-seat": {
+     "name": "Silla caliente",
+     "desc": "Rocía a la plaga más grande."
+    },
+    "deep-fryer-long-soak": {
+     "name": "Remojo largo",
+     "desc": "Cada chorro dura mucho más."
+    },
+    "deep-fryer-wide-basket": {
+     "name": "Canasta ancha",
+     "desc": "Un chorro mucho más ancho y corto."
+    },
+    "frozen-fries-big-chill": {
+     "name": "Gran helada",
+     "desc": "Las papas van a la plaga más grande."
+    },
+    "frozen-fries-brain-freeze": {
+     "name": "Cerebro helado",
+     "desc": "Cada tercera ráfaga pega mucho más."
+    },
+    "frozen-fries-frost-fan": {
+     "name": "Abanico helado",
+     "desc": "Las papas salen en abanico alrededor."
+    },
+    "fry-knives-back-knives": {
+     "name": "Puñalada trasera",
+     "desc": "Uno de cada dos va hacia atrás."
+    },
+    "fry-knives-carving-knife": {
+     "name": "Trinchador",
+     "desc": "Un cuchillo grande, no muchos."
+    },
+    "fry-knives-knife-storm": {
+     "name": "Tormenta de filos",
+     "desc": "Espera y lanza tres ráfagas de golpe."
+    },
+    "fry-lance-heavy-lance": {
+     "name": "Lanza pesada",
+     "desc": "Cada tercer rayo es enorme."
+    },
+    "fry-lance-jouster": {
+     "name": "Justador",
+     "desc": "La lanza apunta a la plaga más grande."
+    },
+    "fry-lance-long-lance": {
+     "name": "Lanza larga",
+     "desc": "Un rayo mucho más largo."
+    },
+    "fry-sentry-head-chef": {
+     "name": "Chef en jefe",
+     "desc": "Un centinela grande, no muchos."
+    },
+    "fry-sentry-order-up": {
+     "name": "¡Orden lista!",
+     "desc": "Disparan a la plaga más grande."
+    },
+    "fry-sentry-rush-hour": {
+     "name": "Hora pico",
+     "desc": "Espera y coloca el doble."
+    },
+    "gravy-boat-big-spill": {
+     "name": "Gran derrame",
+     "desc": "Los charcos caen bajo la plaga más grande."
+    },
+    "gravy-boat-deep-dish": {
+     "name": "Plato hondo",
+     "desc": "Un charco enorme, no muchos."
+    },
+    "gravy-boat-full-pour": {
+     "name": "A chorros",
+     "desc": "Espera y vierte tres veces de golpe."
+    },
+    "peeler-backhand": {
+     "name": "Revés",
+     "desc": "Los cortes devuelven las balas."
+    },
+    "peeler-haymaker": {
+     "name": "Mazazo",
+     "desc": "Cada tercer corte es enorme."
+    },
+    "peeler-wide-peel": {
+     "name": "Pelado ancho",
+     "desc": "Cortes mucho más anchos."
+    },
+    "root-spikes-big-root": {
+     "name": "Gran raíz",
+     "desc": "Una púa enorme, no muchas."
+    },
+    "root-spikes-deep-roots": {
+     "name": "Raíces profundas",
+     "desc": "Golpea primero a las plagas más grandes."
+    },
+    "root-spikes-root-quake": {
+     "name": "Sismo de raíz",
+     "desc": "Cada tercera erupción es enorme."
+    },
+    "rosti-disc-big-rosti": {
+     "name": "Gran rösti",
+     "desc": "Discos mucho más grandes."
+    },
+    "rosti-disc-disc-wheel": {
+     "name": "Rueda de discos",
+     "desc": "Los discos salen parejos alrededor."
+    },
+    "rosti-disc-hard-toss": {
+     "name": "Tiro fuerte",
+     "desc": "Cada tercer tiro es enorme."
+    },
+    "seeker-sprouts-big-game": {
+     "name": "Caza mayor",
+     "desc": "Brotes tras la plaga más grande."
+    },
+    "seeker-sprouts-burst": {
+     "name": "Brotazo",
+     "desc": "Espera y estalla alrededor."
+    },
+    "seeker-sprouts-hopper": {
+     "name": "Saltarín",
+     "desc": "Los brotes saltan encima y estallan."
+    },
+    "sprout-satellites-big-sprout": {
+     "name": "Gran brote",
+     "desc": "Un satélite enorme, no muchos."
+    },
+    "sprout-satellites-spin-cycle": {
+     "name": "Centrifugado",
+     "desc": "Los satélites giran mucho más rápido."
+    },
+    "sprout-satellites-wide-orbit": {
+     "name": "Órbita amplia",
+     "desc": "Los satélites giran mucho más lejos."
+    },
+    "spud-cannon-big-blast": {
+     "name": "Bombazo",
+     "desc": "Explosiones mucho más amplias."
+    },
+    "spud-cannon-bullseye": {
+     "name": "Diana",
+     "desc": "Tiros a la plaga más grande."
+    },
+    "spud-cannon-volley-fire": {
+     "name": "Fuego en ráfaga",
+     "desc": "Espera y dispara tres ráfagas de golpe."
+    },
+    "spud-lob-big-bounce": {
+     "name": "Gran rebote",
+     "desc": "Cada tercer lanzamiento es enorme."
+    },
+    "spud-lob-hot-landing": {
+     "name": "Papa caliente",
+     "desc": "Las papas estallan al caer."
+    },
+    "spud-lob-wide-lob": {
+     "name": "Tiro abierto",
+     "desc": "Las papas caen mucho más separadas."
+    },
+    "starch-bolt-big-bolt": {
+     "name": "Gran rayo",
+     "desc": "Un rayo enorme, no muchos."
+    },
+    "starch-bolt-lightning-rod": {
+     "name": "Pararrayos",
+     "desc": "Golpea primero a las plagas más grandes."
+    },
+    "starch-bolt-storm-front": {
+     "name": "Gran tormenta",
+     "desc": "Espera y pega tres veces a la vez."
+    },
+    "steam-vent-big-pot": {
+     "name": "Ollota",
+     "desc": "El vapor se extiende mucho más."
+    },
+    "steam-vent-rolling-boil": {
+     "name": "Hervor a tope",
+     "desc": "El vapor pulsa mucho más rápido."
+    },
+    "steam-vent-scald": {
+     "name": "Escaldada",
+     "desc": "El vapor daña mucho más a élites y jefes."
+    },
+    "tater-pup-big-pup": {
+     "name": "Perrote",
+     "desc": "Un perrito grande, no muchos."
+    },
+    "tater-pup-top-dog": {
+     "name": "Perro alfa",
+     "desc": "Persiguen a la plaga más grande."
+    },
+    "tater-pup-zoomies": {
+     "name": "Modo turbo",
+     "desc": "Mordidas mucho más rápidas."
+    },
+    "tot-toss-big-tot": {
+     "name": "Papota",
+     "desc": "Una papa grande, no muchas."
+    },
+    "tot-toss-tot-pile": {
+     "name": "Montón de papitas",
+     "desc": "Espera y lanza tres ráfagas de golpe."
+    },
+    "tot-toss-tot-sniper": {
+     "name": "Francotirador",
+     "desc": "Las papitas van a la plaga más grande."
+    }
+   },
    "rarity": {
     "0": {
      "name": "Común"
@@ -13686,6 +14922,212 @@
     "zapper": {
      "name": "ज़ैपर Bot",
      "desc": "सबसे पास के कीड़ों को झटका देता है। एलीट को बस झटका, बॉस बहुत बड़े हैं।"
+    }
+   },
+   "rune": {
+    "deep-fryer-hot-seat": {
+     "name": "गरम कुर्सी",
+     "desc": "सबसे बड़े कीट पर छिड़कता है।"
+    },
+    "deep-fryer-long-soak": {
+     "name": "लंबी डुबकी",
+     "desc": "हर छिड़काव बहुत देर तक चलता है।"
+    },
+    "deep-fryer-wide-basket": {
+     "name": "चौड़ी टोकरी",
+     "desc": "बहुत चौड़ा, छोटा छिड़काव।"
+    },
+    "frozen-fries-big-chill": {
+     "name": "बड़ी ठंडक",
+     "desc": "फ्राई सबसे बड़े कीट पर निशाना लगाते हैं।"
+    },
+    "frozen-fries-brain-freeze": {
+     "name": "दिमाग़ जाम",
+     "desc": "हर तीसरी बौछार बहुत ज़ोर से लगती है।"
+    },
+    "frozen-fries-frost-fan": {
+     "name": "पाला पंखा",
+     "desc": "फ्राई चारों ओर पंखे की तरह फैलते हैं।"
+    },
+    "fry-knives-back-knives": {
+     "name": "उल्टे चाकू",
+     "desc": "हर दूसरा चाकू पीछे की ओर उड़ता है।"
+    },
+    "fry-knives-carving-knife": {
+     "name": "बड़ा छुरा",
+     "desc": "कई नहीं, एक बड़ा चाकू।"
+    },
+    "fry-knives-knife-storm": {
+     "name": "चाकू तूफ़ान",
+     "desc": "रुककर एक साथ तीन बौछारें फेंकता है।"
+    },
+    "fry-lance-heavy-lance": {
+     "name": "भारी भाला",
+     "desc": "हर तीसरी किरण बहुत बड़ी होती है।"
+    },
+    "fry-lance-jouster": {
+     "name": "भालाबाज़",
+     "desc": "भाला सबसे बड़े कीट पर निशाना लगाता है।"
+    },
+    "fry-lance-long-lance": {
+     "name": "लंबा भाला",
+     "desc": "बहुत लंबी किरण।"
+    },
+    "fry-sentry-head-chef": {
+     "name": "हेड शेफ",
+     "desc": "कई नहीं, एक बड़ा संतरी।"
+    },
+    "fry-sentry-order-up": {
+     "name": "ऑर्डर तैयार",
+     "desc": "संतरी सबसे बड़े कीट पर गोली चलाते हैं।"
+    },
+    "fry-sentry-rush-hour": {
+     "name": "भीड़ का वक़्त",
+     "desc": "रुककर दोगुने संतरी रखता है।"
+    },
+    "gravy-boat-big-spill": {
+     "name": "बड़ा छलकाव",
+     "desc": "तालाब सबसे बड़े कीट के नीचे गिरते हैं।"
+    },
+    "gravy-boat-deep-dish": {
+     "name": "गहरा कटोरा",
+     "desc": "कई नहीं, एक विशाल तालाब।"
+    },
+    "gravy-boat-full-pour": {
+     "name": "भर-भर धार",
+     "desc": "रुककर एक साथ तीन बार डालता है।"
+    },
+    "peeler-backhand": {
+     "name": "बैकहैंड",
+     "desc": "वार गोलियों को उल्टा लौटाते हैं।"
+    },
+    "peeler-haymaker": {
+     "name": "ज़ोरदार घूँसा",
+     "desc": "हर तीसरा वार विशाल होता है।"
+    },
+    "peeler-wide-peel": {
+     "name": "चौड़ा छिलका",
+     "desc": "बहुत चौड़े वार।"
+    },
+    "root-spikes-big-root": {
+     "name": "बड़ी जड़",
+     "desc": "कई नहीं, एक विशाल कांटा।"
+    },
+    "root-spikes-deep-roots": {
+     "name": "गहरी जड़ें",
+     "desc": "कांटे पहले सबसे बड़े कीटों को मारते हैं।"
+    },
+    "root-spikes-root-quake": {
+     "name": "जड़ भूकंप",
+     "desc": "हर तीसरा धमाका विशाल होता है।"
+    },
+    "rosti-disc-big-rosti": {
+     "name": "बड़ा रॉस्टी",
+     "desc": "बहुत बड़ी डिस्क।"
+    },
+    "rosti-disc-disc-wheel": {
+     "name": "डिस्क चक्र",
+     "desc": "डिस्क चारों ओर बराबर फैलकर उड़ती हैं।"
+    },
+    "rosti-disc-hard-toss": {
+     "name": "ज़ोरदार उछाल",
+     "desc": "हर तीसरा उछाल विशाल होता है।"
+    },
+    "seeker-sprouts-big-game": {
+     "name": "बड़ा शिकार",
+     "desc": "अंकुर सबसे बड़े कीट का शिकार करते हैं।"
+    },
+    "seeker-sprouts-burst": {
+     "name": "अंकुर धमाका",
+     "desc": "रुककर चारों ओर फूट पड़ते हैं।"
+    },
+    "seeker-sprouts-hopper": {
+     "name": "फुदकू",
+     "desc": "अंकुर कीट पर कूदते हैं, फिर फटते हैं।"
+    },
+    "sprout-satellites-big-sprout": {
+     "name": "बड़ा अंकुर",
+     "desc": "कई नहीं, एक विशाल सैटेलाइट।"
+    },
+    "sprout-satellites-spin-cycle": {
+     "name": "फिरकी चक्कर",
+     "desc": "सैटेलाइट बहुत तेज़ घूमते हैं।"
+    },
+    "sprout-satellites-wide-orbit": {
+     "name": "चौड़ी कक्षा",
+     "desc": "सैटेलाइट काफ़ी दूर चक्कर लगाते हैं।"
+    },
+    "spud-cannon-big-blast": {
+     "name": "बड़ा धमाका",
+     "desc": "गोले बहुत चौड़े फटते हैं।"
+    },
+    "spud-cannon-bullseye": {
+     "name": "सटीक निशाना",
+     "desc": "गोले सबसे बड़े कीट पर निशाना लगाते हैं।"
+    },
+    "spud-cannon-volley-fire": {
+     "name": "तोप बौछार",
+     "desc": "रुककर एक साथ तीन बौछारें दागता है।"
+    },
+    "spud-lob-big-bounce": {
+     "name": "बड़ा टप्पा",
+     "desc": "हर तीसरी फेंक विशाल होती है।"
+    },
+    "spud-lob-hot-landing": {
+     "name": "गरम लैंडिंग",
+     "desc": "आलू जहाँ गिरते हैं वहीं फटते हैं।"
+    },
+    "spud-lob-wide-lob": {
+     "name": "चौड़ी फेंक",
+     "desc": "आलू एक-दूसरे से बहुत दूर गिरते हैं।"
+    },
+    "starch-bolt-big-bolt": {
+     "name": "बड़ा बोल्ट",
+     "desc": "कई नहीं, एक विशाल बोल्ट।"
+    },
+    "starch-bolt-lightning-rod": {
+     "name": "तड़ित चालक",
+     "desc": "बोल्ट पहले सबसे बड़े कीटों पर गिरते हैं।"
+    },
+    "starch-bolt-storm-front": {
+     "name": "तूफ़ानी मोर्चा",
+     "desc": "रुककर एक साथ तीन बार गिरता है।"
+    },
+    "steam-vent-big-pot": {
+     "name": "बड़ा पतीला",
+     "desc": "भाप बहुत चौड़ी फैलती है।"
+    },
+    "steam-vent-rolling-boil": {
+     "name": "खौलता उबाल",
+     "desc": "भाप के झोंके बहुत तेज़ी से आते हैं।"
+    },
+    "steam-vent-scald": {
+     "name": "झुलस",
+     "desc": "भाप एलीट और बॉस को बहुत ज़्यादा झुलसाती है।"
+    },
+    "tater-pup-big-pup": {
+     "name": "बड़ा पिल्ला",
+     "desc": "कई नहीं, एक बड़ा पिल्ला।"
+    },
+    "tater-pup-top-dog": {
+     "name": "टॉप डॉग",
+     "desc": "पिल्ले सबसे बड़े कीट का पीछा करते हैं।"
+    },
+    "tater-pup-zoomies": {
+     "name": "धमाचौकड़ी",
+     "desc": "पिल्ले बहुत तेज़ी से काटते हैं।"
+    },
+    "tot-toss-big-tot": {
+     "name": "मोटा आलू",
+     "desc": "कई नहीं, एक बड़ा आलू।"
+    },
+    "tot-toss-tot-pile": {
+     "name": "आलू का ढेर",
+     "desc": "रुककर एक साथ तीन बौछारें फेंकता है।"
+    },
+    "tot-toss-tot-sniper": {
+     "name": "आलू स्नाइपर",
+     "desc": "आलू सबसे बड़े कीट पर निशाना लगाते हैं।"
     }
    },
    "rarity": {
@@ -15668,6 +17110,212 @@
      "desc": "Zappt die nächsten Krabbler. Elites kriegen nur einen Schlag, und Bosse sind zu groß."
     }
    },
+   "rune": {
+    "deep-fryer-hot-seat": {
+     "name": "Heißer Stuhl",
+     "desc": "Sprüht auf den größten Schädling."
+    },
+    "deep-fryer-long-soak": {
+     "name": "Langes Bad",
+     "desc": "Jeder Strahl hält viel länger."
+    },
+    "deep-fryer-wide-basket": {
+     "name": "Breiter Korb",
+     "desc": "Ein viel breiterer, kürzerer Strahl."
+    },
+    "frozen-fries-big-chill": {
+     "name": "Großer Frost",
+     "desc": "Pommes zielen auf den größten Schädling."
+    },
+    "frozen-fries-brain-freeze": {
+     "name": "Hirnfrost",
+     "desc": "Jede dritte Salve trifft viel härter."
+    },
+    "frozen-fries-frost-fan": {
+     "name": "Frostfächer",
+     "desc": "Pommes fächern sich rundum auf."
+    },
+    "fry-knives-back-knives": {
+     "name": "Rückenmesser",
+     "desc": "Jedes zweite Messer fliegt nach hinten."
+    },
+    "fry-knives-carving-knife": {
+     "name": "Tranchiermesser",
+     "desc": "Ein großes Messer statt vieler."
+    },
+    "fry-knives-knife-storm": {
+     "name": "Messersturm",
+     "desc": "Hält inne, wirft dann drei Salven auf einmal."
+    },
+    "fry-lance-heavy-lance": {
+     "name": "Schwere Lanze",
+     "desc": "Jeder dritte Strahl ist riesig."
+    },
+    "fry-lance-jouster": {
+     "name": "Lanzenritter",
+     "desc": "Die Lanze zielt auf den größten Schädling."
+    },
+    "fry-lance-long-lance": {
+     "name": "Lange Lanze",
+     "desc": "Ein viel längerer Strahl."
+    },
+    "fry-sentry-head-chef": {
+     "name": "Chefkoch",
+     "desc": "Ein großer Turm statt vieler."
+    },
+    "fry-sentry-order-up": {
+     "name": "Service!",
+     "desc": "Türme beschießen den größten Schädling."
+    },
+    "fry-sentry-rush-hour": {
+     "name": "Stoßzeit",
+     "desc": "Hält inne, stellt dann doppelt so viele auf."
+    },
+    "gravy-boat-big-spill": {
+     "name": "Großer Klecks",
+     "desc": "Pfützen landen unter dem größten Schädling."
+    },
+    "gravy-boat-deep-dish": {
+     "name": "Tiefer Teller",
+     "desc": "Eine riesige Pfütze statt vieler."
+    },
+    "gravy-boat-full-pour": {
+     "name": "Volle Kelle",
+     "desc": "Hält inne, gießt dann dreimal auf einmal."
+    },
+    "peeler-backhand": {
+     "name": "Rückhand",
+     "desc": "Hiebe schlagen Geschosse zurück."
+    },
+    "peeler-haymaker": {
+     "name": "Schwinger",
+     "desc": "Jeder dritte Hieb ist riesig."
+    },
+    "peeler-wide-peel": {
+     "name": "Breite Schale",
+     "desc": "Viel breitere Hiebe."
+    },
+    "root-spikes-big-root": {
+     "name": "Große Wurzel",
+     "desc": "Ein riesiger Spieß statt vieler."
+    },
+    "root-spikes-deep-roots": {
+     "name": "Tiefe Wurzeln",
+     "desc": "Spieße treffen die größten Schädlinge zuerst."
+    },
+    "root-spikes-root-quake": {
+     "name": "Wurzelbeben",
+     "desc": "Jeder dritte Ausbruch ist riesig."
+    },
+    "rosti-disc-big-rosti": {
+     "name": "Großes Rösti",
+     "desc": "Viel größere Scheiben."
+    },
+    "rosti-disc-disc-wheel": {
+     "name": "Scheibenrad",
+     "desc": "Scheiben fliegen gleichmäßig rundum."
+    },
+    "rosti-disc-hard-toss": {
+     "name": "Harter Wurf",
+     "desc": "Jeder dritte Wurf ist riesig."
+    },
+    "seeker-sprouts-big-game": {
+     "name": "Großwild",
+     "desc": "Keime jagen den größten Schädling."
+    },
+    "seeker-sprouts-burst": {
+     "name": "Keimknall",
+     "desc": "Hält inne, platzt dann rundum auf."
+    },
+    "seeker-sprouts-hopper": {
+     "name": "Hüpfer",
+     "desc": "Keime hüpfen drauf und platzen dann."
+    },
+    "sprout-satellites-big-sprout": {
+     "name": "Großer Keim",
+     "desc": "Ein riesiger Satellit statt vieler."
+    },
+    "sprout-satellites-spin-cycle": {
+     "name": "Schleudergang",
+     "desc": "Satelliten kreisen viel schneller."
+    },
+    "sprout-satellites-wide-orbit": {
+     "name": "Weite Bahn",
+     "desc": "Satelliten kreisen viel weiter außen."
+    },
+    "spud-cannon-big-blast": {
+     "name": "Großer Knall",
+     "desc": "Schüsse platzen viel breiter."
+    },
+    "spud-cannon-bullseye": {
+     "name": "Volltreffer",
+     "desc": "Schüsse zielen auf den größten Schädling."
+    },
+    "spud-cannon-volley-fire": {
+     "name": "Salvenfeuer",
+     "desc": "Hält inne, feuert dann drei Salven auf einmal."
+    },
+    "spud-lob-big-bounce": {
+     "name": "Riesenhopser",
+     "desc": "Jeder dritte Wurf ist riesig."
+    },
+    "spud-lob-hot-landing": {
+     "name": "Heiße Landung",
+     "desc": "Kartoffeln platzen, wo sie landen."
+    },
+    "spud-lob-wide-lob": {
+     "name": "Weiter Wurf",
+     "desc": "Kartoffeln landen viel weiter verteilt."
+    },
+    "starch-bolt-big-bolt": {
+     "name": "Großer Blitz",
+     "desc": "Ein riesiger Blitz statt vieler."
+    },
+    "starch-bolt-lightning-rod": {
+     "name": "Blitzableiter",
+     "desc": "Blitze treffen die größten Schädlinge zuerst."
+    },
+    "starch-bolt-storm-front": {
+     "name": "Sturmfront",
+     "desc": "Hält inne, schlägt dann dreimal auf einmal ein."
+    },
+    "steam-vent-big-pot": {
+     "name": "Großer Topf",
+     "desc": "Dampf wird viel breiter."
+    },
+    "steam-vent-rolling-boil": {
+     "name": "Volldampf",
+     "desc": "Dampf pulsiert viel schneller."
+    },
+    "steam-vent-scald": {
+     "name": "Brühheiß",
+     "desc": "Dampf schadet Eliten und Bossen viel mehr."
+    },
+    "tater-pup-big-pup": {
+     "name": "Großer Welpe",
+     "desc": "Ein großer Welpe statt vieler."
+    },
+    "tater-pup-top-dog": {
+     "name": "Leithund",
+     "desc": "Welpen jagen den größten Schädling."
+    },
+    "tater-pup-zoomies": {
+     "name": "Rennanfall",
+     "desc": "Welpen beißen viel schneller."
+    },
+    "tot-toss-big-tot": {
+     "name": "Riesenkrokette",
+     "desc": "Eine große Krokette statt vieler."
+    },
+    "tot-toss-tot-pile": {
+     "name": "Krokettenberg",
+     "desc": "Hält inne, wirft dann drei Salven auf einmal."
+    },
+    "tot-toss-tot-sniper": {
+     "name": "Scharfschütze",
+     "desc": "Kroketten zielen auf den größten Schädling."
+    }
+   },
    "rarity": {
     "0": {
      "name": "Gewöhnlich"
@@ -17646,6 +19294,212 @@
     "zapper": {
      "name": "Bot zap",
      "desc": "Zappe les insectes les plus proches. Les élites prennent juste une secousse, les boss sont trop gros."
+    }
+   },
+   "rune": {
+    "deep-fryer-hot-seat": {
+     "name": "Sellette",
+     "desc": "Arrose le plus gros nuisible."
+    },
+    "deep-fryer-long-soak": {
+     "name": "Longue trempette",
+     "desc": "Chaque jet dure bien plus longtemps."
+    },
+    "deep-fryer-wide-basket": {
+     "name": "Panier large",
+     "desc": "Un jet bien plus large et plus court."
+    },
+    "frozen-fries-big-chill": {
+     "name": "Grand froid",
+     "desc": "Les frites visent le plus gros nuisible."
+    },
+    "frozen-fries-brain-freeze": {
+     "name": "Cerveau gelé",
+     "desc": "Une salve sur trois frappe bien plus fort."
+    },
+    "frozen-fries-frost-fan": {
+     "name": "Éventail givré",
+     "desc": "Frites en éventail tout autour."
+    },
+    "fry-knives-back-knives": {
+     "name": "Dans le dos",
+     "desc": "Un couteau sur deux part en arrière."
+    },
+    "fry-knives-carving-knife": {
+     "name": "Tranchoir",
+     "desc": "Un seul grand couteau."
+    },
+    "fry-knives-knife-storm": {
+     "name": "Pluie de lames",
+     "desc": "Attend, puis lance trois salves d’un coup."
+    },
+    "fry-lance-heavy-lance": {
+     "name": "Lance lourde",
+     "desc": "Un rayon sur trois est énorme."
+    },
+    "fry-lance-jouster": {
+     "name": "Jouteur",
+     "desc": "La lance vise le plus gros nuisible."
+    },
+    "fry-lance-long-lance": {
+     "name": "Longue lance",
+     "desc": "Un rayon bien plus long."
+    },
+    "fry-sentry-head-chef": {
+     "name": "Chef cuistot",
+     "desc": "Une seule grosse sentinelle."
+    },
+    "fry-sentry-order-up": {
+     "name": "Ça marche !",
+     "desc": "Vise le plus gros nuisible."
+    },
+    "fry-sentry-rush-hour": {
+     "name": "Coup de feu",
+     "desc": "Attend, puis en pose deux fois plus."
+    },
+    "gravy-boat-big-spill": {
+     "name": "Grosse tache",
+     "desc": "Flaques sous le plus gros nuisible."
+    },
+    "gravy-boat-deep-dish": {
+     "name": "Assiette creuse",
+     "desc": "Une seule énorme flaque."
+    },
+    "gravy-boat-full-pour": {
+     "name": "À la louche",
+     "desc": "Attend, puis verse trois fois d’un coup."
+    },
+    "peeler-backhand": {
+     "name": "Revers",
+     "desc": "Renvoie les balles ennemies."
+    },
+    "peeler-haymaker": {
+     "name": "Grosse patate",
+     "desc": "Un coup sur trois est énorme."
+    },
+    "peeler-wide-peel": {
+     "name": "Large épluchure",
+     "desc": "Entailles bien plus larges."
+    },
+    "root-spikes-big-root": {
+     "name": "Grosse racine",
+     "desc": "Un seul pic énorme."
+    },
+    "root-spikes-deep-roots": {
+     "name": "Racines profondes",
+     "desc": "Frappe d’abord les plus gros nuisibles."
+    },
+    "root-spikes-root-quake": {
+     "name": "Séisme racinaire",
+     "desc": "Une éruption sur trois est énorme."
+    },
+    "rosti-disc-big-rosti": {
+     "name": "Gros rösti",
+     "desc": "Des disques bien plus gros."
+    },
+    "rosti-disc-disc-wheel": {
+     "name": "Roue de disques",
+     "desc": "Disques lancés en cercle régulier."
+    },
+    "rosti-disc-hard-toss": {
+     "name": "Lancer puissant",
+     "desc": "Un lancer sur trois est énorme."
+    },
+    "seeker-sprouts-big-game": {
+     "name": "Gros gibier",
+     "desc": "Traque le plus gros nuisible."
+    },
+    "seeker-sprouts-burst": {
+     "name": "Gerbe de germes",
+     "desc": "Attend, puis éclate tout autour."
+    },
+    "seeker-sprouts-hopper": {
+     "name": "Sauteur",
+     "desc": "Germes qui sautent puis éclatent."
+    },
+    "sprout-satellites-big-sprout": {
+     "name": "Gros germe",
+     "desc": "Un seul satellite énorme."
+    },
+    "sprout-satellites-spin-cycle": {
+     "name": "Essorage",
+     "desc": "Les satellites tournent bien plus vite."
+    },
+    "sprout-satellites-wide-orbit": {
+     "name": "Orbite large",
+     "desc": "Les satellites tournent bien plus loin."
+    },
+    "spud-cannon-big-blast": {
+     "name": "Gros boum",
+     "desc": "Les tirs éclatent bien plus large."
+    },
+    "spud-cannon-bullseye": {
+     "name": "Dans le mille",
+     "desc": "Les tirs visent le plus gros nuisible."
+    },
+    "spud-cannon-volley-fire": {
+     "name": "Feu de salve",
+     "desc": "Attend, puis tire trois salves d’un coup."
+    },
+    "spud-lob-big-bounce": {
+     "name": "Gros rebond",
+     "desc": "Un lob sur trois est énorme."
+    },
+    "spud-lob-hot-landing": {
+     "name": "Patate chaude",
+     "desc": "Les patates éclatent à l’atterrissage."
+    },
+    "spud-lob-wide-lob": {
+     "name": "Lob large",
+     "desc": "Les patates tombent bien plus espacées."
+    },
+    "starch-bolt-big-bolt": {
+     "name": "Gros éclair",
+     "desc": "Un seul éclair énorme."
+    },
+    "starch-bolt-lightning-rod": {
+     "name": "Paratonnerre",
+     "desc": "Frappe d’abord les plus gros nuisibles."
+    },
+    "starch-bolt-storm-front": {
+     "name": "Front orageux",
+     "desc": "Attend, puis frappe trois fois d’un coup."
+    },
+    "steam-vent-big-pot": {
+     "name": "Grosse marmite",
+     "desc": "La vapeur s’étend bien plus large."
+    },
+    "steam-vent-rolling-boil": {
+     "name": "À gros bouillons",
+     "desc": "La vapeur pulse bien plus vite."
+    },
+    "steam-vent-scald": {
+     "name": "Brûlure",
+     "desc": "Bien plus de dégâts aux élites et boss."
+    },
+    "tater-pup-big-pup": {
+     "name": "Gros chiot",
+     "desc": "Un seul gros chiot."
+    },
+    "tater-pup-top-dog": {
+     "name": "Chef de meute",
+     "desc": "Chasse le plus gros nuisible."
+    },
+    "tater-pup-zoomies": {
+     "name": "Turbo",
+     "desc": "Morsures bien plus rapides."
+    },
+    "tot-toss-big-tot": {
+     "name": "Patate géante",
+     "desc": "Une seule grosse patate."
+    },
+    "tot-toss-tot-pile": {
+     "name": "Tas de patates",
+     "desc": "Attend, puis lance trois salves d’un coup."
+    },
+    "tot-toss-tot-sniper": {
+     "name": "Tireur d’élite",
+     "desc": "Les patates visent le plus gros nuisible."
     }
    },
    "rarity": {
@@ -19628,6 +21482,212 @@
      "desc": "Dá choque nos insetos mais perto. Elites só levam um susto, e chefes são grandes demais."
     }
    },
+   "rune": {
+    "deep-fryer-hot-seat": {
+     "name": "Na berlinda",
+     "desc": "Espirra na maior praga."
+    },
+    "deep-fryer-long-soak": {
+     "name": "Banho demorado",
+     "desc": "Cada jato dura bem mais."
+    },
+    "deep-fryer-wide-basket": {
+     "name": "Cesto largo",
+     "desc": "Um jato bem mais largo e curto."
+    },
+    "frozen-fries-big-chill": {
+     "name": "Friozão",
+     "desc": "As fritas miram na maior praga."
+    },
+    "frozen-fries-brain-freeze": {
+     "name": "Cuca gelada",
+     "desc": "Cada terceira rajada bate bem mais forte."
+    },
+    "frozen-fries-frost-fan": {
+     "name": "Leque gelado",
+     "desc": "As fritas se abrem em leque ao redor."
+    },
+    "fry-knives-back-knives": {
+     "name": "Pelas costas",
+     "desc": "Facas alternadas voam para trás."
+    },
+    "fry-knives-carving-knife": {
+     "name": "Facão",
+     "desc": "Uma faca grande, não várias."
+    },
+    "fry-knives-knife-storm": {
+     "name": "Chuva de facas",
+     "desc": "Segura e lança três rajadas de uma vez."
+    },
+    "fry-lance-heavy-lance": {
+     "name": "Lança pesada",
+     "desc": "Cada terceiro raio é enorme."
+    },
+    "fry-lance-jouster": {
+     "name": "Cavaleiro",
+     "desc": "A lança mira na maior praga."
+    },
+    "fry-lance-long-lance": {
+     "name": "Lança longa",
+     "desc": "Um raio bem mais longo."
+    },
+    "fry-sentry-head-chef": {
+     "name": "Chefão",
+     "desc": "Uma sentinela grande, não várias."
+    },
+    "fry-sentry-order-up": {
+     "name": "Saindo!",
+     "desc": "As sentinelas atiram na maior praga."
+    },
+    "fry-sentry-rush-hour": {
+     "name": "Hora do rush",
+     "desc": "Segura e põe o dobro."
+    },
+    "gravy-boat-big-spill": {
+     "name": "Lambança",
+     "desc": "As poças caem sob a maior praga."
+    },
+    "gravy-boat-deep-dish": {
+     "name": "Prato fundo",
+     "desc": "Uma poça enorme, não várias."
+    },
+    "gravy-boat-full-pour": {
+     "name": "Concha cheia",
+     "desc": "Segura e despeja três vezes de uma vez."
+    },
+    "peeler-backhand": {
+     "name": "Revés",
+     "desc": "Os cortes rebatem as balas."
+    },
+    "peeler-haymaker": {
+     "name": "Bordoada",
+     "desc": "Cada terceiro golpe é enorme."
+    },
+    "peeler-wide-peel": {
+     "name": "Casca larga",
+     "desc": "Cortes bem mais largos."
+    },
+    "root-spikes-big-root": {
+     "name": "Raizona",
+     "desc": "Um espinho enorme, não vários."
+    },
+    "root-spikes-deep-roots": {
+     "name": "Raízes fundas",
+     "desc": "Acerta primeiro as maiores pragas."
+    },
+    "root-spikes-root-quake": {
+     "name": "Tremor de raiz",
+     "desc": "Cada terceira erupção é enorme."
+    },
+    "rosti-disc-big-rosti": {
+     "name": "Röstizão",
+     "desc": "Discos bem maiores."
+    },
+    "rosti-disc-disc-wheel": {
+     "name": "Roda de discos",
+     "desc": "Os discos saem por igual ao redor."
+    },
+    "rosti-disc-hard-toss": {
+     "name": "Lance forte",
+     "desc": "Cada terceiro arremesso é enorme."
+    },
+    "seeker-sprouts-big-game": {
+     "name": "Caça grossa",
+     "desc": "Os brotos caçam a maior praga."
+    },
+    "seeker-sprouts-burst": {
+     "name": "Brotaço",
+     "desc": "Segura e estoura ao redor."
+    },
+    "seeker-sprouts-hopper": {
+     "name": "Saltador",
+     "desc": "Os brotos pulam em cima e estouram."
+    },
+    "sprout-satellites-big-sprout": {
+     "name": "Brotão",
+     "desc": "Um satélite enorme, não vários."
+    },
+    "sprout-satellites-spin-cycle": {
+     "name": "Centrifugar",
+     "desc": "Os satélites giram bem mais rápido."
+    },
+    "sprout-satellites-wide-orbit": {
+     "name": "Órbita larga",
+     "desc": "Os satélites giram bem mais longe."
+    },
+    "spud-cannon-big-blast": {
+     "name": "Estourão",
+     "desc": "Estouros bem mais largos."
+    },
+    "spud-cannon-bullseye": {
+     "name": "Na mosca",
+     "desc": "Os tiros miram na maior praga."
+    },
+    "spud-cannon-volley-fire": {
+     "name": "Fogo em rajada",
+     "desc": "Segura e dispara três rajadas de uma vez."
+    },
+    "spud-lob-big-bounce": {
+     "name": "Quicão",
+     "desc": "Cada terceiro arremesso é enorme."
+    },
+    "spud-lob-hot-landing": {
+     "name": "Batata quente",
+     "desc": "As batatas estouram onde caem."
+    },
+    "spud-lob-wide-lob": {
+     "name": "Lance aberto",
+     "desc": "As batatas caem bem mais espalhadas."
+    },
+    "starch-bolt-big-bolt": {
+     "name": "Raiozão",
+     "desc": "Um raio enorme, não vários."
+    },
+    "starch-bolt-lightning-rod": {
+     "name": "Para-raios",
+     "desc": "Os raios acertam primeiro as maiores pragas."
+    },
+    "starch-bolt-storm-front": {
+     "name": "Temporal",
+     "desc": "Segura e atinge três vezes de uma vez."
+    },
+    "steam-vent-big-pot": {
+     "name": "Panelão",
+     "desc": "O vapor se espalha bem mais."
+    },
+    "steam-vent-rolling-boil": {
+     "name": "Fervura total",
+     "desc": "O vapor pulsa bem mais rápido."
+    },
+    "steam-vent-scald": {
+     "name": "Escaldante",
+     "desc": "O vapor fere bem mais elites e chefes."
+    },
+    "tater-pup-big-pup": {
+     "name": "Cãozão",
+     "desc": "Um cão grande, não vários."
+    },
+    "tater-pup-top-dog": {
+     "name": "Cão alfa",
+     "desc": "Os cãezinhos caçam a maior praga."
+    },
+    "tater-pup-zoomies": {
+     "name": "Ligadão",
+     "desc": "Mordidas bem mais rápidas."
+    },
+    "tot-toss-big-tot": {
+     "name": "Batatona",
+     "desc": "Uma batata grande, não várias."
+    },
+    "tot-toss-tot-pile": {
+     "name": "Batatada",
+     "desc": "Segura e lança três rajadas de uma vez."
+    },
+    "tot-toss-tot-sniper": {
+     "name": "Sniper",
+     "desc": "As batatinhas miram na maior praga."
+    }
+   },
    "rarity": {
     "0": {
      "name": "Comum"
@@ -21606,6 +23666,212 @@
     "zapper": {
      "name": "Şok Bot",
      "desc": "En yakın böcekleri çarpar. Elitler sadece sarsılır, bosslar ise çarpılamayacak kadar büyük."
+    }
+   },
+   "rune": {
+    "deep-fryer-hot-seat": {
+     "name": "Sıcak Koltuk",
+     "desc": "En büyük haşereye püskürtür."
+    },
+    "deep-fryer-long-soak": {
+     "name": "Uzun Bekletme",
+     "desc": "Her püskürtme çok daha uzun sürer."
+    },
+    "deep-fryer-wide-basket": {
+     "name": "Geniş Sepet",
+     "desc": "Çok daha geniş ama kısa bir püskürtme."
+    },
+    "frozen-fries-big-chill": {
+     "name": "Büyük Ayaz",
+     "desc": "Kızartmalar en büyük haşereyi hedefler."
+    },
+    "frozen-fries-brain-freeze": {
+     "name": "Beyin Donması",
+     "desc": "Her üçüncü yaylım çok daha sert vurur."
+    },
+    "frozen-fries-frost-fan": {
+     "name": "Buz Yelpazesi",
+     "desc": "Kızartmalar her yöne saçılır."
+    },
+    "fry-knives-back-knives": {
+     "name": "Sırttan Bıçak",
+     "desc": "Her iki bıçaktan biri geriye uçar."
+    },
+    "fry-knives-carving-knife": {
+     "name": "Satır",
+     "desc": "Tek ve büyük bir bıçak."
+    },
+    "fry-knives-knife-storm": {
+     "name": "Bıçak Fırtınası",
+     "desc": "Bekler, sonra üç yaylımı birden atar."
+    },
+    "fry-lance-heavy-lance": {
+     "name": "Ağır Mızrak",
+     "desc": "Her üçüncü ışın devasa olur."
+    },
+    "fry-lance-jouster": {
+     "name": "Şövalye",
+     "desc": "Mızrak en büyük haşereyi hedefler."
+    },
+    "fry-lance-long-lance": {
+     "name": "Uzun Mızrak",
+     "desc": "Çok daha uzun bir ışın."
+    },
+    "fry-sentry-head-chef": {
+     "name": "Baş Aşçı",
+     "desc": "Tek ve büyük bir nöbetçi."
+    },
+    "fry-sentry-order-up": {
+     "name": "Sipariş Hazır",
+     "desc": "Nöbetçiler en büyük haşereye ateş eder."
+    },
+    "fry-sentry-rush-hour": {
+     "name": "Öğle Telaşı",
+     "desc": "Bekler, sonra iki katını kurar."
+    },
+    "gravy-boat-big-spill": {
+     "name": "Sos Seli",
+     "desc": "Göller en büyük haşerenin altına düşer."
+    },
+    "gravy-boat-deep-dish": {
+     "name": "Çukur Tabak",
+     "desc": "Tek ve dev bir göl."
+    },
+    "gravy-boat-full-pour": {
+     "name": "Bol Kepçe",
+     "desc": "Bekler, sonra üç kez birden döker."
+    },
+    "peeler-backhand": {
+     "name": "Ters El",
+     "desc": "Kesikler mermileri geri çevirir."
+    },
+    "peeler-haymaker": {
+     "name": "Balyoz",
+     "desc": "Her üçüncü savuruş devasa olur."
+    },
+    "peeler-wide-peel": {
+     "name": "Geniş Kabuk",
+     "desc": "Çok daha geniş kesikler."
+    },
+    "root-spikes-big-root": {
+     "name": "Dev Kök",
+     "desc": "Tek ve dev bir diken."
+    },
+    "root-spikes-deep-roots": {
+     "name": "Derin Kökler",
+     "desc": "Dikenler önce en büyük haşereleri vurur."
+    },
+    "root-spikes-root-quake": {
+     "name": "Kök Depremi",
+     "desc": "Her üçüncü patlama devasa olur."
+    },
+    "rosti-disc-big-rosti": {
+     "name": "Dev Rösti",
+     "desc": "Çok daha büyük diskler."
+    },
+    "rosti-disc-disc-wheel": {
+     "name": "Disk Çarkı",
+     "desc": "Diskler her yöne eşit dağılarak uçar."
+    },
+    "rosti-disc-hard-toss": {
+     "name": "Sert Atış",
+     "desc": "Her üçüncü atış devasa olur."
+    },
+    "seeker-sprouts-big-game": {
+     "name": "Büyük Av",
+     "desc": "Filizler en büyük haşereyi avlar."
+    },
+    "seeker-sprouts-burst": {
+     "name": "Filiz Patlaması",
+     "desc": "Bekler, sonra her yöne patlar."
+    },
+    "seeker-sprouts-hopper": {
+     "name": "Zıpzıp",
+     "desc": "Filizler üstüne zıplar, sonra patlar."
+    },
+    "sprout-satellites-big-sprout": {
+     "name": "Dev Filiz",
+     "desc": "Tek ve dev bir uydu."
+    },
+    "sprout-satellites-spin-cycle": {
+     "name": "Sıkma Programı",
+     "desc": "Uydular çok daha hızlı döner."
+    },
+    "sprout-satellites-wide-orbit": {
+     "name": "Geniş Yörünge",
+     "desc": "Uydular çok daha uzakta döner."
+    },
+    "spud-cannon-big-blast": {
+     "name": "Büyük Patlama",
+     "desc": "Atışlar çok daha geniş patlar."
+    },
+    "spud-cannon-bullseye": {
+     "name": "On İkiden",
+     "desc": "Atışlar en büyük haşereyi hedefler."
+    },
+    "spud-cannon-volley-fire": {
+     "name": "Yaylım Ateşi",
+     "desc": "Bekler, sonra üç yaylımı birden ateşler."
+    },
+    "spud-lob-big-bounce": {
+     "name": "Büyük Sekme",
+     "desc": "Her üçüncü fırlatış devasa olur."
+    },
+    "spud-lob-hot-landing": {
+     "name": "Sıcak Patates",
+     "desc": "Patatesler düştükleri yerde patlar."
+    },
+    "spud-lob-wide-lob": {
+     "name": "Geniş Atış",
+     "desc": "Patatesler çok daha dağınık düşer."
+    },
+    "starch-bolt-big-bolt": {
+     "name": "Dev Şimşek",
+     "desc": "Tek ve dev bir şimşek."
+    },
+    "starch-bolt-lightning-rod": {
+     "name": "Paratoner",
+     "desc": "Şimşekler önce en büyük haşereleri vurur."
+    },
+    "starch-bolt-storm-front": {
+     "name": "Fırtına Cephesi",
+     "desc": "Bekler, sonra üç kez birden çarpar."
+    },
+    "steam-vent-big-pot": {
+     "name": "Kazan",
+     "desc": "Buhar çok daha geniş yayılır."
+    },
+    "steam-vent-rolling-boil": {
+     "name": "Fokur Fokur",
+     "desc": "Buhar çok daha sık püskürür."
+    },
+    "steam-vent-scald": {
+     "name": "Haşlama",
+     "desc": "Buhar elitlere ve bosslara çok daha fazla vurur."
+    },
+    "tater-pup-big-pup": {
+     "name": "Koca Yavru",
+     "desc": "Tek ve büyük bir yavru."
+    },
+    "tater-pup-top-dog": {
+     "name": "Sürü Lideri",
+     "desc": "Yavrular en büyük haşereyi kovalar."
+    },
+    "tater-pup-zoomies": {
+     "name": "Deli Koşu",
+     "desc": "Yavrular çok daha hızlı ısırır."
+    },
+    "tot-toss-big-tot": {
+     "name": "Dev Kroket",
+     "desc": "Tek ve büyük bir kroket."
+    },
+    "tot-toss-tot-pile": {
+     "name": "Kroket Yığını",
+     "desc": "Bekler, sonra üç yaylımı birden atar."
+    },
+    "tot-toss-tot-sniper": {
+     "name": "Keskin Nişancı",
+     "desc": "Kroketler en büyük haşereyi hedefler."
     }
    },
    "rarity": {
@@ -23588,6 +25854,212 @@
      "desc": "Menyetrum serangga terdekat. Elite cuma tersentak, dan bos terlalu besar untuk disetrum."
     }
    },
+   "rune": {
+    "deep-fryer-hot-seat": {
+     "name": "Kursi Panas",
+     "desc": "Menyemprot hama terbesar."
+    },
+    "deep-fryer-long-soak": {
+     "name": "Rendam Lama",
+     "desc": "Tiap semprotan jauh lebih lama."
+    },
+    "deep-fryer-wide-basket": {
+     "name": "Keranjang Lebar",
+     "desc": "Semprotan jauh lebih lebar dan pendek."
+    },
+    "frozen-fries-big-chill": {
+     "name": "Beku Kakap",
+     "desc": "Kentang goreng mengincar hama terbesar."
+    },
+    "frozen-fries-brain-freeze": {
+     "name": "Otak Beku",
+     "desc": "Tiap rentetan ketiga jauh lebih kuat."
+    },
+    "frozen-fries-frost-fan": {
+     "name": "Kipas Beku",
+     "desc": "Menyebar ke segala arah."
+    },
+    "fry-knives-back-knives": {
+     "name": "Pisau Belakang",
+     "desc": "Selang satu pisau terbang ke belakang."
+    },
+    "fry-knives-carving-knife": {
+     "name": "Pisau Jagal",
+     "desc": "Satu pisau besar saja."
+    },
+    "fry-knives-knife-storm": {
+     "name": "Badai Pisau",
+     "desc": "Menahan, lalu melempar tiga rentetan sekaligus."
+    },
+    "fry-lance-heavy-lance": {
+     "name": "Tombak Berat",
+     "desc": "Tiap sinar ketiga jadi raksasa."
+    },
+    "fry-lance-jouster": {
+     "name": "Penombak",
+     "desc": "Tombak mengincar hama terbesar."
+    },
+    "fry-lance-long-lance": {
+     "name": "Tombak Panjang",
+     "desc": "Sinar jauh lebih panjang."
+    },
+    "fry-sentry-head-chef": {
+     "name": "Kepala Koki",
+     "desc": "Satu menara besar saja."
+    },
+    "fry-sentry-order-up": {
+     "name": "Pesanan Siap",
+     "desc": "Menara menembak hama terbesar."
+    },
+    "fry-sentry-rush-hour": {
+     "name": "Jam Sibuk",
+     "desc": "Menahan, lalu memasang dua kali lipat."
+    },
+    "gravy-boat-big-spill": {
+     "name": "Tumpah Besar",
+     "desc": "Genangan jatuh di bawah hama terbesar."
+    },
+    "gravy-boat-deep-dish": {
+     "name": "Mangkuk Jumbo",
+     "desc": "Satu genangan raksasa saja."
+    },
+    "gravy-boat-full-pour": {
+     "name": "Tuang Penuh",
+     "desc": "Menahan, lalu menuang tiga kali sekaligus."
+    },
+    "peeler-backhand": {
+     "name": "Tampik Balik",
+     "desc": "Tebasan memukul balik peluru."
+    },
+    "peeler-haymaker": {
+     "name": "Pukulan Maut",
+     "desc": "Tiap ayunan ketiga jadi raksasa."
+    },
+    "peeler-wide-peel": {
+     "name": "Kupas Lebar",
+     "desc": "Tebasan jauh lebih lebar."
+    },
+    "root-spikes-big-root": {
+     "name": "Akar Besar",
+     "desc": "Satu duri raksasa saja."
+    },
+    "root-spikes-deep-roots": {
+     "name": "Akar Dalam",
+     "desc": "Duri menyerang hama terbesar dulu."
+    },
+    "root-spikes-root-quake": {
+     "name": "Gempa Akar",
+     "desc": "Tiap semburan ketiga jadi raksasa."
+    },
+    "rosti-disc-big-rosti": {
+     "name": "Rösti Jumbo",
+     "desc": "Cakram jauh lebih besar."
+    },
+    "rosti-disc-disc-wheel": {
+     "name": "Roda Cakram",
+     "desc": "Cakram terbang rata ke segala arah."
+    },
+    "rosti-disc-hard-toss": {
+     "name": "Lempar Keras",
+     "desc": "Tiap lemparan ketiga jadi raksasa."
+    },
+    "seeker-sprouts-big-game": {
+     "name": "Buruan Besar",
+     "desc": "Tunas memburu hama terbesar."
+    },
+    "seeker-sprouts-burst": {
+     "name": "Ledakan Tunas",
+     "desc": "Menahan, lalu meledak ke segala arah."
+    },
+    "seeker-sprouts-hopper": {
+     "name": "Pelompat",
+     "desc": "Tunas melompat naik, lalu meledak."
+    },
+    "sprout-satellites-big-sprout": {
+     "name": "Tunas Raksasa",
+     "desc": "Satu satelit raksasa saja."
+    },
+    "sprout-satellites-spin-cycle": {
+     "name": "Putaran Kilat",
+     "desc": "Satelit berputar jauh lebih cepat."
+    },
+    "sprout-satellites-wide-orbit": {
+     "name": "Orbit Lebar",
+     "desc": "Orbit satelit jauh lebih lebar."
+    },
+    "spud-cannon-big-blast": {
+     "name": "Ledakan Besar",
+     "desc": "Peluru meledak jauh lebih lebar."
+    },
+    "spud-cannon-bullseye": {
+     "name": "Tepat Sasaran",
+     "desc": "Peluru mengincar hama terbesar."
+    },
+    "spud-cannon-volley-fire": {
+     "name": "Salvo",
+     "desc": "Menahan, lalu menembak tiga rentetan sekaligus."
+    },
+    "spud-lob-big-bounce": {
+     "name": "Pantulan Besar",
+     "desc": "Tiap lontaran ketiga jadi raksasa."
+    },
+    "spud-lob-hot-landing": {
+     "name": "Mendarat Panas",
+     "desc": "Kentang meledak di tempat jatuhnya."
+    },
+    "spud-lob-wide-lob": {
+     "name": "Lontar Lebar",
+     "desc": "Kentang jatuh jauh lebih menyebar."
+    },
+    "starch-bolt-big-bolt": {
+     "name": "Petir Besar",
+     "desc": "Satu petir raksasa saja."
+    },
+    "starch-bolt-lightning-rod": {
+     "name": "Penangkal Petir",
+     "desc": "Petir menyambar hama terbesar dulu."
+    },
+    "starch-bolt-storm-front": {
+     "name": "Badai Datang",
+     "desc": "Menahan, lalu menyambar tiga kali sekaligus."
+    },
+    "steam-vent-big-pot": {
+     "name": "Panci Besar",
+     "desc": "Uap menyebar jauh lebih lebar."
+    },
+    "steam-vent-rolling-boil": {
+     "name": "Didih Bergolak",
+     "desc": "Uap berdenyut jauh lebih cepat."
+    },
+    "steam-vent-scald": {
+     "name": "Lepuh",
+     "desc": "Uap jauh lebih melukai elite dan bos."
+    },
+    "tater-pup-big-pup": {
+     "name": "Si Gembul",
+     "desc": "Satu anjing besar saja."
+    },
+    "tater-pup-top-dog": {
+     "name": "Anjing Alfa",
+     "desc": "Anjing mengejar hama terbesar."
+    },
+    "tater-pup-zoomies": {
+     "name": "Lari Kilat",
+     "desc": "Gigitan jauh lebih cepat."
+    },
+    "tot-toss-big-tot": {
+     "name": "Kroket Jumbo",
+     "desc": "Satu kroket besar saja."
+    },
+    "tot-toss-tot-pile": {
+     "name": "Bukit Kroket",
+     "desc": "Menahan, lalu melempar tiga rentetan sekaligus."
+    },
+    "tot-toss-tot-sniper": {
+     "name": "Penembak Kroket",
+     "desc": "Kroket mengincar hama terbesar."
+    }
+   },
    "rarity": {
     "0": {
      "name": "Biasa"
@@ -25566,6 +28038,212 @@
     "zapper": {
      "name": "Bot-шокер",
      "desc": "Бьёт током ближайших вредителей. Элиту лишь встряхивает, а боссы ему не по зубам."
+    }
+   },
+   "rune": {
+    "deep-fryer-hot-seat": {
+     "name": "Горячий приём",
+     "desc": "Брызжет в крупнейшего вредителя."
+    },
+    "deep-fryer-long-soak": {
+     "name": "Долгая прожарка",
+     "desc": "Каждая струя длится намного дольше."
+    },
+    "deep-fryer-wide-basket": {
+     "name": "Широкая корзина",
+     "desc": "Струя намного шире, но короче."
+    },
+    "frozen-fries-big-chill": {
+     "name": "Большой мороз",
+     "desc": "Фри бьёт по крупнейшему вредителю."
+    },
+    "frozen-fries-brain-freeze": {
+     "name": "Заморозка мозга",
+     "desc": "Каждый третий залп бьёт намного сильнее."
+    },
+    "frozen-fries-frost-fan": {
+     "name": "Ледяной веер",
+     "desc": "Фри летит веером во все стороны."
+    },
+    "fry-knives-back-knives": {
+     "name": "Нож в спину",
+     "desc": "Каждый второй нож летит назад."
+    },
+    "fry-knives-carving-knife": {
+     "name": "Разделочный нож",
+     "desc": "Один нож, но большой."
+    },
+    "fry-knives-knife-storm": {
+     "name": "Буря ножей",
+     "desc": "Копит, затем мечет три залпа разом."
+    },
+    "fry-lance-heavy-lance": {
+     "name": "Тяжёлое копьё",
+     "desc": "Каждый третий луч огромный."
+    },
+    "fry-lance-jouster": {
+     "name": "Дуэлянт",
+     "desc": "Копьё целится в крупнейшего вредителя."
+    },
+    "fry-lance-long-lance": {
+     "name": "Длинное копьё",
+     "desc": "Луч намного длиннее."
+    },
+    "fry-sentry-head-chef": {
+     "name": "Шеф-повар",
+     "desc": "Один часовой, но большой."
+    },
+    "fry-sentry-order-up": {
+     "name": "Заказ готов!",
+     "desc": "Часовые стреляют в крупнейшего вредителя."
+    },
+    "fry-sentry-rush-hour": {
+     "name": "Час пик",
+     "desc": "Копит, затем ставит вдвое больше."
+    },
+    "gravy-boat-big-spill": {
+     "name": "Большой разлив",
+     "desc": "Лужи падают под крупнейшего вредителя."
+    },
+    "gravy-boat-deep-dish": {
+     "name": "Глубокое блюдо",
+     "desc": "Одна лужа, но огромная."
+    },
+    "gravy-boat-full-pour": {
+     "name": "До краёв",
+     "desc": "Копит, затем льёт три раза разом."
+    },
+    "peeler-backhand": {
+     "name": "Ответка",
+     "desc": "Взмахи отбивают пули обратно."
+    },
+    "peeler-haymaker": {
+     "name": "Коронный удар",
+     "desc": "Каждый третий взмах огромный."
+    },
+    "peeler-wide-peel": {
+     "name": "Широкая чистка",
+     "desc": "Взмахи намного шире."
+    },
+    "root-spikes-big-root": {
+     "name": "Большой корень",
+     "desc": "Один шип, но огромный."
+    },
+    "root-spikes-deep-roots": {
+     "name": "Глубокие корни",
+     "desc": "Шипы бьют сперва крупнейших вредителей."
+    },
+    "root-spikes-root-quake": {
+     "name": "Корнетрясение",
+     "desc": "Каждый третий выброс огромный."
+    },
+    "rosti-disc-big-rosti": {
+     "name": "Большой рёшти",
+     "desc": "Диски намного больше."
+    },
+    "rosti-disc-disc-wheel": {
+     "name": "Колесо дисков",
+     "desc": "Диски летят ровно во все стороны."
+    },
+    "rosti-disc-hard-toss": {
+     "name": "Сильный бросок",
+     "desc": "Каждый третий бросок огромный."
+    },
+    "seeker-sprouts-big-game": {
+     "name": "Крупная дичь",
+     "desc": "Ростки ищут крупнейшего вредителя."
+    },
+    "seeker-sprouts-burst": {
+     "name": "Взрыв ростков",
+     "desc": "Копит, затем бьёт во все стороны."
+    },
+    "seeker-sprouts-hopper": {
+     "name": "Попрыгунчик",
+     "desc": "Ростки прыгают на врага и лопаются."
+    },
+    "sprout-satellites-big-sprout": {
+     "name": "Большой росток",
+     "desc": "Один спутник, но огромный."
+    },
+    "sprout-satellites-spin-cycle": {
+     "name": "Режим отжима",
+     "desc": "Спутники кружат намного быстрее."
+    },
+    "sprout-satellites-wide-orbit": {
+     "name": "Широкая орбита",
+     "desc": "Спутники кружат намного дальше."
+    },
+    "spud-cannon-big-blast": {
+     "name": "Большой бабах",
+     "desc": "Снаряды рвутся намного шире."
+    },
+    "spud-cannon-bullseye": {
+     "name": "В яблочко",
+     "desc": "Снаряды летят в крупнейшего вредителя."
+    },
+    "spud-cannon-volley-fire": {
+     "name": "Залповый огонь",
+     "desc": "Копит, затем даёт три залпа разом."
+    },
+    "spud-lob-big-bounce": {
+     "name": "Большой отскок",
+     "desc": "Каждый третий бросок огромный."
+    },
+    "spud-lob-hot-landing": {
+     "name": "Горячая посадка",
+     "desc": "Картоха взрывается там, где падает."
+    },
+    "spud-lob-wide-lob": {
+     "name": "Широкий бросок",
+     "desc": "Картохи ложатся намного шире."
+    },
+    "starch-bolt-big-bolt": {
+     "name": "Большая молния",
+     "desc": "Одна молния, но огромная."
+    },
+    "starch-bolt-lightning-rod": {
+     "name": "Громоотвод",
+     "desc": "Молнии бьют сперва крупнейших вредителей."
+    },
+    "starch-bolt-storm-front": {
+     "name": "Грозовой фронт",
+     "desc": "Копит, затем бьёт три раза разом."
+    },
+    "steam-vent-big-pot": {
+     "name": "Большая кастрюля",
+     "desc": "Пар расходится намного шире."
+    },
+    "steam-vent-rolling-boil": {
+     "name": "Крутой кипяток",
+     "desc": "Пар бьёт намного чаще."
+    },
+    "steam-vent-scald": {
+     "name": "Ожог",
+     "desc": "Пар жжёт элиту и боссов намного сильнее."
+    },
+    "tater-pup-big-pup": {
+     "name": "Большой щенок",
+     "desc": "Один щенок, но большой."
+    },
+    "tater-pup-top-dog": {
+     "name": "Вожак",
+     "desc": "Щенки гонят крупнейшего вредителя."
+    },
+    "tater-pup-zoomies": {
+     "name": "Тыгыдык",
+     "desc": "Щенки кусают намного чаще."
+    },
+    "tot-toss-big-tot": {
+     "name": "Большая крокета",
+     "desc": "Одна крокета, но большая."
+    },
+    "tot-toss-tot-pile": {
+     "name": "Гора крокет",
+     "desc": "Копит, затем мечет три залпа разом."
+    },
+    "tot-toss-tot-sniper": {
+     "name": "Крокета-снайпер",
+     "desc": "Крокеты бьют крупнейшего вредителя."
     }
    },
    "rarity": {
@@ -27548,6 +30226,212 @@
      "desc": "Merenjat serangga terdekat. Elit cuma tersentak, dan bos terlalu besar untuk direnjat."
     }
    },
+   "rune": {
+    "deep-fryer-hot-seat": {
+     "name": "Kerusi Panas",
+     "desc": "Menyembur perosak terbesar."
+    },
+    "deep-fryer-long-soak": {
+     "name": "Rendam Lama",
+     "desc": "Setiap semburan jauh lebih lama."
+    },
+    "deep-fryer-wide-basket": {
+     "name": "Bakul Lebar",
+     "desc": "Semburan jauh lebih lebar dan pendek."
+    },
+    "frozen-fries-big-chill": {
+     "name": "Beku Gergasi",
+     "desc": "Kentang goreng menyasar perosak terbesar."
+    },
+    "frozen-fries-brain-freeze": {
+     "name": "Otak Beku",
+     "desc": "Setiap voli ketiga jauh lebih kuat."
+    },
+    "frozen-fries-frost-fan": {
+     "name": "Kipas Beku",
+     "desc": "Tersebar ke sekeliling."
+    },
+    "fry-knives-back-knives": {
+     "name": "Pisau Belakang",
+     "desc": "Setiap pisau kedua terbang ke belakang."
+    },
+    "fry-knives-carving-knife": {
+     "name": "Pisau Daging",
+     "desc": "Satu pisau besar sahaja."
+    },
+    "fry-knives-knife-storm": {
+     "name": "Ribut Pisau",
+     "desc": "Menahan, kemudian melontar tiga voli serentak."
+    },
+    "fry-lance-heavy-lance": {
+     "name": "Lembing Berat",
+     "desc": "Setiap pancaran ketiga sangat besar."
+    },
+    "fry-lance-jouster": {
+     "name": "Pendekar",
+     "desc": "Lembing menyasar perosak terbesar."
+    },
+    "fry-lance-long-lance": {
+     "name": "Lembing Panjang",
+     "desc": "Pancaran jauh lebih panjang."
+    },
+    "fry-sentry-head-chef": {
+     "name": "Ketua Cef",
+     "desc": "Satu pengawal besar sahaja."
+    },
+    "fry-sentry-order-up": {
+     "name": "Pesanan Siap",
+     "desc": "Pengawal menembak perosak terbesar."
+    },
+    "fry-sentry-rush-hour": {
+     "name": "Waktu Puncak",
+     "desc": "Menahan, kemudian meletakkan dua kali ganda."
+    },
+    "gravy-boat-big-spill": {
+     "name": "Tumpah Besar",
+     "desc": "Lopak jatuh di bawah perosak terbesar."
+    },
+    "gravy-boat-deep-dish": {
+     "name": "Periuk Dalam",
+     "desc": "Satu lopak gergasi sahaja."
+    },
+    "gravy-boat-full-pour": {
+     "name": "Tuang Penuh",
+     "desc": "Menahan, kemudian menuang tiga kali serentak."
+    },
+    "peeler-backhand": {
+     "name": "Tepis Balik",
+     "desc": "Tetakan memukul balik peluru."
+    },
+    "peeler-haymaker": {
+     "name": "Tumbukan Maut",
+     "desc": "Setiap hayunan ketiga sangat besar."
+    },
+    "peeler-wide-peel": {
+     "name": "Kupas Lebar",
+     "desc": "Tetakan jauh lebih lebar."
+    },
+    "root-spikes-big-root": {
+     "name": "Akar Besar",
+     "desc": "Satu pancang gergasi sahaja."
+    },
+    "root-spikes-deep-roots": {
+     "name": "Akar Dalam",
+     "desc": "Pancang menyerang perosak terbesar dahulu."
+    },
+    "root-spikes-root-quake": {
+     "name": "Gempa Akar",
+     "desc": "Setiap letusan ketiga sangat besar."
+    },
+    "rosti-disc-big-rosti": {
+     "name": "Rosti Gergasi",
+     "desc": "Cakera jauh lebih besar."
+    },
+    "rosti-disc-disc-wheel": {
+     "name": "Roda Cakera",
+     "desc": "Cakera terbang sekata ke sekeliling."
+    },
+    "rosti-disc-hard-toss": {
+     "name": "Balingan Kuat",
+     "desc": "Setiap balingan ketiga sangat besar."
+    },
+    "seeker-sprouts-big-game": {
+     "name": "Buruan Besar",
+     "desc": "Tunas memburu perosak terbesar."
+    },
+    "seeker-sprouts-burst": {
+     "name": "Letupan Tunas",
+     "desc": "Menahan, kemudian meletus ke sekeliling."
+    },
+    "seeker-sprouts-hopper": {
+     "name": "Pelompat",
+     "desc": "Tunas melompat naik, kemudian meletus."
+    },
+    "sprout-satellites-big-sprout": {
+     "name": "Tunas Gergasi",
+     "desc": "Satu satelit gergasi sahaja."
+    },
+    "sprout-satellites-spin-cycle": {
+     "name": "Kitaran Putar",
+     "desc": "Satelit berputar jauh lebih laju."
+    },
+    "sprout-satellites-wide-orbit": {
+     "name": "Orbit Luas",
+     "desc": "Orbit satelit jauh lebih luas."
+    },
+    "spud-cannon-big-blast": {
+     "name": "Letupan Besar",
+     "desc": "Peluru meletup jauh lebih luas."
+    },
+    "spud-cannon-bullseye": {
+     "name": "Tepat Sasaran",
+     "desc": "Peluru menyasar perosak terbesar."
+    },
+    "spud-cannon-volley-fire": {
+     "name": "Tembakan Voli",
+     "desc": "Menahan, kemudian menembak tiga voli serentak."
+    },
+    "spud-lob-big-bounce": {
+     "name": "Lantunan Besar",
+     "desc": "Setiap lambungan ketiga sangat besar."
+    },
+    "spud-lob-hot-landing": {
+     "name": "Mendarat Panas",
+     "desc": "Kentang meletus di tempat ia jatuh."
+    },
+    "spud-lob-wide-lob": {
+     "name": "Lambung Luas",
+     "desc": "Kentang jatuh jauh lebih berselerak."
+    },
+    "starch-bolt-big-bolt": {
+     "name": "Petir Besar",
+     "desc": "Satu petir gergasi sahaja."
+    },
+    "starch-bolt-lightning-rod": {
+     "name": "Penangkal Petir",
+     "desc": "Petir menyambar perosak terbesar dahulu."
+    },
+    "starch-bolt-storm-front": {
+     "name": "Barisan Ribut",
+     "desc": "Menahan, kemudian menyambar tiga kali serentak."
+    },
+    "steam-vent-big-pot": {
+     "name": "Periuk Besar",
+     "desc": "Wap merebak jauh lebih luas."
+    },
+    "steam-vent-rolling-boil": {
+     "name": "Gelegak",
+     "desc": "Wap berdenyut jauh lebih laju."
+    },
+    "steam-vent-scald": {
+     "name": "Lecur",
+     "desc": "Wap jauh lebih mencederakan elit dan bos."
+    },
+    "tater-pup-big-pup": {
+     "name": "Anjing Gemuk",
+     "desc": "Seekor anjing besar sahaja."
+    },
+    "tater-pup-top-dog": {
+     "name": "Anjing Jaguh",
+     "desc": "Anjing mengejar perosak terbesar."
+    },
+    "tater-pup-zoomies": {
+     "name": "Gila Laju",
+     "desc": "Gigitan jauh lebih laju."
+    },
+    "tot-toss-big-tot": {
+     "name": "Bebola Jumbo",
+     "desc": "Satu bebola besar sahaja."
+    },
+    "tot-toss-tot-pile": {
+     "name": "Timbunan Bebola",
+     "desc": "Menahan, kemudian melontar tiga voli serentak."
+    },
+    "tot-toss-tot-sniper": {
+     "name": "Penembak Bebola",
+     "desc": "Bebola menyasar perosak terbesar."
+    }
+   },
    "rarity": {
     "0": {
      "name": "Biasa"
@@ -29526,6 +32410,212 @@
     "zapper": {
      "name": "Zapper Bot",
      "desc": "Kinukuryente ang pinakamalapit na insekto. Bahagya lang nakukuryente ang mga elite, at masyadong malaki ang mga boss para makuryente."
+    }
+   },
+   "rune": {
+    "deep-fryer-hot-seat": {
+     "name": "Hot Seat",
+     "desc": "Saboy sa pinakamalaking peste."
+    },
+    "deep-fryer-long-soak": {
+     "name": "Babad",
+     "desc": "Mas matagal ang bawat saboy."
+    },
+    "deep-fryer-wide-basket": {
+     "name": "Bilao",
+     "desc": "Mas malapad at maikling saboy."
+    },
+    "frozen-fries-big-chill": {
+     "name": "Todo Ginaw",
+     "desc": "Puntirya ang pinakamalaking peste."
+    },
+    "frozen-fries-brain-freeze": {
+     "name": "Utak-Yelo",
+     "desc": "Mas malakas ang bawat ikatlong volley."
+    },
+    "frozen-fries-frost-fan": {
+     "name": "Abanikong Yelo",
+     "desc": "Kumakalat ang fries sa paligid."
+    },
+    "fry-knives-back-knives": {
+     "name": "Saksak-Likod",
+     "desc": "Paatras ang bawat ikalawang kutsilyo."
+    },
+    "fry-knives-carving-knife": {
+     "name": "Panghiwa",
+     "desc": "Isang malaking kutsilyo lang."
+    },
+    "fry-knives-knife-storm": {
+     "name": "Bagyong Talim",
+     "desc": "Ipon muna, saka hagis ng tatlong volley."
+    },
+    "fry-lance-heavy-lance": {
+     "name": "Bigating Sibat",
+     "desc": "Higante ang bawat ikatlong sinag."
+    },
+    "fry-lance-jouster": {
+     "name": "Kabalyero",
+     "desc": "Puntirya ng sibat ang pinakamalaking peste."
+    },
+    "fry-lance-long-lance": {
+     "name": "Mahabang Sibat",
+     "desc": "Mas mahabang sinag."
+    },
+    "fry-sentry-head-chef": {
+     "name": "Punong Chef",
+     "desc": "Isang malaking bantay lang."
+    },
+    "fry-sentry-order-up": {
+     "name": "Order Na!",
+     "desc": "Binabaril ang pinakamalaking peste."
+    },
+    "fry-sentry-rush-hour": {
+     "name": "Rush Hour",
+     "desc": "Ipon muna, saka doble ang ilalapag."
+    },
+    "gravy-boat-big-spill": {
+     "name": "Todo-Tapon",
+     "desc": "Gravy sa ilalim ng pinakamalaking peste."
+    },
+    "gravy-boat-deep-dish": {
+     "name": "Bandehado",
+     "desc": "Isang dambuhalang lawa lang."
+    },
+    "gravy-boat-full-pour": {
+     "name": "Todo-Buhos",
+     "desc": "Ipon muna, saka tatlong buhos nang sabay."
+    },
+    "peeler-backhand": {
+     "name": "Balik-Palo",
+     "desc": "Ibinabalik ng hiwa ang mga bala."
+    },
+    "peeler-haymaker": {
+     "name": "Bigwas",
+     "desc": "Higante ang bawat ikatlong hampas."
+    },
+    "peeler-wide-peel": {
+     "name": "Todo-Talop",
+     "desc": "Mas malalapad na hiwa."
+    },
+    "root-spikes-big-root": {
+     "name": "Ugat-Higante",
+     "desc": "Isang higanteng tusok lang."
+    },
+    "root-spikes-deep-roots": {
+     "name": "Malalim na Ugat",
+     "desc": "Tusok muna sa pinakamalalaking peste."
+    },
+    "root-spikes-root-quake": {
+     "name": "Ugat-Lindol",
+     "desc": "Higante ang bawat ikatlong sabog."
+    },
+    "rosti-disc-big-rosti": {
+     "name": "Jumbo Rosti",
+     "desc": "Mas malalaking plato."
+    },
+    "rosti-disc-disc-wheel": {
+     "name": "Gulong-Plato",
+     "desc": "Pantay na kalat ang plato sa paligid."
+    },
+    "rosti-disc-hard-toss": {
+     "name": "Todo-Hagis",
+     "desc": "Higante ang bawat ikatlong hagis."
+    },
+    "seeker-sprouts-big-game": {
+     "name": "Malaking Huli",
+     "desc": "Habol sa pinakamalaking peste."
+    },
+    "seeker-sprouts-burst": {
+     "name": "Sabog-Usbong",
+     "desc": "Ipon muna, saka sabog sa paligid."
+    },
+    "seeker-sprouts-hopper": {
+     "name": "Lukso",
+     "desc": "Lukso muna, saka sabog."
+    },
+    "sprout-satellites-big-sprout": {
+     "name": "Jumbo Usbong",
+     "desc": "Isang higanteng satelayt lang."
+    },
+    "sprout-satellites-spin-cycle": {
+     "name": "Ikot-Ikot",
+     "desc": "Mas mabilis umikot ang satelayt."
+    },
+    "sprout-satellites-wide-orbit": {
+     "name": "Malayong Ikot",
+     "desc": "Mas malayo ang ikot ng satelayt."
+    },
+    "spud-cannon-big-blast": {
+     "name": "Todo-Sabog",
+     "desc": "Mas malawak na sabog."
+    },
+    "spud-cannon-bullseye": {
+     "name": "Sapul",
+     "desc": "Puntirya ang pinakamalaking peste."
+    },
+    "spud-cannon-volley-fire": {
+     "name": "Ratrat",
+     "desc": "Ipon muna, saka tatlong volley nang sabay."
+    },
+    "spud-lob-big-bounce": {
+     "name": "Todo-Talbog",
+     "desc": "Higante ang bawat ikatlong hagis."
+    },
+    "spud-lob-hot-landing": {
+     "name": "Lagapak",
+     "desc": "Sabog ang patatas pagbagsak."
+    },
+    "spud-lob-wide-lob": {
+     "name": "Kalat-Hagis",
+     "desc": "Mas magkakalayo ang bagsak ng patatas."
+    },
+    "starch-bolt-big-bolt": {
+     "name": "Todo-Kidlat",
+     "desc": "Isang higanteng kidlat lang."
+    },
+    "starch-bolt-lightning-rod": {
+     "name": "Tungkod-Kidlat",
+     "desc": "Tama muna sa pinakamalalaking peste."
+    },
+    "starch-bolt-storm-front": {
+     "name": "Unos",
+     "desc": "Ipon muna, saka tatlong tama nang sabay."
+    },
+    "steam-vent-big-pot": {
+     "name": "Kawa",
+     "desc": "Mas malawak na singaw."
+    },
+    "steam-vent-rolling-boil": {
+     "name": "Todo-Kulo",
+     "desc": "Mas mabilis ang buga ng singaw."
+    },
+    "steam-vent-scald": {
+     "name": "Paso",
+     "desc": "Mas masakit ang singaw sa elite at boss."
+    },
+    "tater-pup-big-pup": {
+     "name": "Jumbo Tuta",
+     "desc": "Isang malaking tuta lang."
+    },
+    "tater-pup-top-dog": {
+     "name": "Bossing",
+     "desc": "Habol sa pinakamalaking peste."
+    },
+    "tater-pup-zoomies": {
+     "name": "Harurot",
+     "desc": "Mas mabilis kumagat."
+    },
+    "tot-toss-big-tot": {
+     "name": "Jumbo Tot",
+     "desc": "Isang malaking tot lang."
+    },
+    "tot-toss-tot-pile": {
+     "name": "Tambak-Tot",
+     "desc": "Ipon muna, saka hagis ng tatlong volley."
+    },
+    "tot-toss-tot-sniper": {
+     "name": "Asintado",
+     "desc": "Puntirya ang pinakamalaking peste."
     }
    },
    "rarity": {
@@ -31508,6 +34598,212 @@
      "desc": "सर्वात जवळच्या किड्यांना शॉक देतो. एलिटला फक्त झटका बसतो, आणि बॉस शॉकसाठी खूपच मोठे आहेत."
     }
    },
+   "rune": {
+    "deep-fryer-hot-seat": {
+     "name": "गरम खुर्ची",
+     "desc": "सर्वात मोठ्या किड्यावर फवारते."
+    },
+    "deep-fryer-long-soak": {
+     "name": "लांब डुबकी",
+     "desc": "प्रत्येक फवारा खूप जास्त वेळ टिकतो."
+    },
+    "deep-fryer-wide-basket": {
+     "name": "रुंद टोपली",
+     "desc": "खूप रुंद, आखूड फवारा."
+    },
+    "frozen-fries-big-chill": {
+     "name": "कडाक्याची थंडी",
+     "desc": "फ्राईज सर्वात मोठ्या किड्यावर नेम धरतात."
+    },
+    "frozen-fries-brain-freeze": {
+     "name": "मेंदू गार",
+     "desc": "प्रत्येक तिसरी फैर खूप जोरात लागते."
+    },
+    "frozen-fries-frost-fan": {
+     "name": "हिम पंखा",
+     "desc": "फ्राईज चारी बाजूंना पंख्यासारखे पसरतात."
+    },
+    "fry-knives-back-knives": {
+     "name": "उलट्या सुऱ्या",
+     "desc": "दर दुसरी सुरी मागच्या दिशेने उडते."
+    },
+    "fry-knives-carving-knife": {
+     "name": "विळी",
+     "desc": "अनेक नव्हे, एकच मोठी सुरी."
+    },
+    "fry-knives-knife-storm": {
+     "name": "सुऱ्यांचे वादळ",
+     "desc": "थांबून एकदम तीन फैरी फेकतो."
+    },
+    "fry-lance-heavy-lance": {
+     "name": "जड भाला",
+     "desc": "प्रत्येक तिसरा झोत प्रचंड असतो."
+    },
+    "fry-lance-jouster": {
+     "name": "भालाईत",
+     "desc": "भाला सर्वात मोठ्या किड्यावर नेम धरतो."
+    },
+    "fry-lance-long-lance": {
+     "name": "लांब भाला",
+     "desc": "खूप लांब झोत."
+    },
+    "fry-sentry-head-chef": {
+     "name": "मुख्य आचारी",
+     "desc": "अनेक नव्हे, एकच मोठा पहारेकरी."
+    },
+    "fry-sentry-order-up": {
+     "name": "ऑर्डर तयार",
+     "desc": "पहारेकरी सर्वात मोठ्या किड्यावर गोळ्या झाडतात."
+    },
+    "fry-sentry-rush-hour": {
+     "name": "गर्दीची वेळ",
+     "desc": "थांबून दुप्पट पहारेकरी ठेवतो."
+    },
+    "gravy-boat-big-spill": {
+     "name": "रस्सा सांड",
+     "desc": "डबकी सर्वात मोठ्या किड्याखाली पडतात."
+    },
+    "gravy-boat-deep-dish": {
+     "name": "खोल वाडगा",
+     "desc": "अनेक नव्हे, एकच प्रचंड डबके."
+    },
+    "gravy-boat-full-pour": {
+     "name": "भरपूर ओत",
+     "desc": "थांबून एकदम तीनदा ओतते."
+    },
+    "peeler-backhand": {
+     "name": "उलटा फटका",
+     "desc": "घाव गोळ्या उलट परतवतात."
+    },
+    "peeler-haymaker": {
+     "name": "जबरी फटका",
+     "desc": "प्रत्येक तिसरा घाव प्रचंड असतो."
+    },
+    "peeler-wide-peel": {
+     "name": "रुंद साल",
+     "desc": "खूप रुंद घाव."
+    },
+    "root-spikes-big-root": {
+     "name": "मोठे मूळ",
+     "desc": "अनेक नव्हे, एकच प्रचंड काटा."
+    },
+    "root-spikes-deep-roots": {
+     "name": "खोल मुळे",
+     "desc": "काटे आधी सर्वात मोठ्या किड्यांना मारतात."
+    },
+    "root-spikes-root-quake": {
+     "name": "मूळकंप",
+     "desc": "प्रत्येक तिसरी उसळी प्रचंड असते."
+    },
+    "rosti-disc-big-rosti": {
+     "name": "मोठे थालीपीठ",
+     "desc": "खूप मोठ्या चकत्या."
+    },
+    "rosti-disc-disc-wheel": {
+     "name": "चकती चक्र",
+     "desc": "चकत्या चारी बाजूंना समान उडतात."
+    },
+    "rosti-disc-hard-toss": {
+     "name": "जोरदार फेक",
+     "desc": "प्रत्येक तिसरी फेक प्रचंड असते."
+    },
+    "seeker-sprouts-big-game": {
+     "name": "मोठी शिकार",
+     "desc": "कोंब सर्वात मोठ्या किड्याची शिकार करतात."
+    },
+    "seeker-sprouts-burst": {
+     "name": "कोंब स्फोट",
+     "desc": "थांबून चारी बाजूंना फुटतात."
+    },
+    "seeker-sprouts-hopper": {
+     "name": "टुणटुण्या",
+     "desc": "कोंब उडी मारून चिकटतात, मग फुटतात."
+    },
+    "sprout-satellites-big-sprout": {
+     "name": "मोठा कोंब",
+     "desc": "अनेक नव्हे, एकच प्रचंड उपग्रह."
+    },
+    "sprout-satellites-spin-cycle": {
+     "name": "गरगर फेरा",
+     "desc": "उपग्रह खूप वेगाने फिरतात."
+    },
+    "sprout-satellites-wide-orbit": {
+     "name": "रुंद कक्षा",
+     "desc": "उपग्रह खूप दूरवरून फेरी मारतात."
+    },
+    "spud-cannon-big-blast": {
+     "name": "मोठा धमाका",
+     "desc": "गोळे खूप रुंद फुटतात."
+    },
+    "spud-cannon-bullseye": {
+     "name": "अचूक नेम",
+     "desc": "गोळे सर्वात मोठ्या किड्यावर नेम धरतात."
+    },
+    "spud-cannon-volley-fire": {
+     "name": "फैरींचा मारा",
+     "desc": "थांबून एकदम तीन फैरी झाडते."
+    },
+    "spud-lob-big-bounce": {
+     "name": "मोठा टप्पा",
+     "desc": "प्रत्येक तिसरा भिरकाव प्रचंड असतो."
+    },
+    "spud-lob-hot-landing": {
+     "name": "गरम लँडिंग",
+     "desc": "बटाटे जिथे पडतात तिथेच फुटतात."
+    },
+    "spud-lob-wide-lob": {
+     "name": "रुंद भिरकाव",
+     "desc": "बटाटे खूप दूर दूर पडतात."
+    },
+    "starch-bolt-big-bolt": {
+     "name": "मोठी वीज",
+     "desc": "अनेक नव्हे, एकच प्रचंड वीज."
+    },
+    "starch-bolt-lightning-rod": {
+     "name": "वीजवाहक",
+     "desc": "वीज आधी सर्वात मोठ्या किड्यांवर कोसळते."
+    },
+    "starch-bolt-storm-front": {
+     "name": "वादळी आघाडी",
+     "desc": "थांबून एकदम तीनदा कोसळते."
+    },
+    "steam-vent-big-pot": {
+     "name": "मोठे पातेले",
+     "desc": "वाफ खूप रुंद पसरते."
+    },
+    "steam-vent-rolling-boil": {
+     "name": "खळखळ उकळी",
+     "desc": "वाफेचे झोत खूप वेगाने येतात."
+    },
+    "steam-vent-scald": {
+     "name": "चटका",
+     "desc": "वाफ एलिट आणि बॉसना खूप जास्त भाजते."
+    },
+    "tater-pup-big-pup": {
+     "name": "मोठे पिल्लू",
+     "desc": "अनेक नव्हे, एकच मोठे पिल्लू."
+    },
+    "tater-pup-top-dog": {
+     "name": "म्होरक्या",
+     "desc": "पिल्ले सर्वात मोठ्या किड्याचा पाठलाग करतात."
+    },
+    "tater-pup-zoomies": {
+     "name": "धुडगूस",
+     "desc": "पिल्ले खूप वेगाने चावतात."
+    },
+    "tot-toss-big-tot": {
+     "name": "जंबो वडा",
+     "desc": "अनेक नव्हे, एकच मोठी बटाटा-गोळी."
+    },
+    "tot-toss-tot-pile": {
+     "name": "वड्यांची रास",
+     "desc": "थांबून एकदम तीन फैरी फेकतो."
+    },
+    "tot-toss-tot-sniper": {
+     "name": "वडा स्नायपर",
+     "desc": "बटाटा-गोळ्या सर्वात मोठ्या किड्यावर नेम धरतात."
+    }
+   },
    "rarity": {
     "0": {
      "name": "सामान्य"
@@ -33486,6 +36782,212 @@
     "zapper": {
      "name": "Bot Chích Điện",
      "desc": "Chích điện lũ sâu gần nhất. Tinh anh chỉ bị giật nhẹ, còn boss thì quá to để chích."
+    }
+   },
+   "rune": {
+    "deep-fryer-hot-seat": {
+     "name": "Ghế Nóng",
+     "desc": "Phun vào quái to nhất."
+    },
+    "deep-fryer-long-soak": {
+     "name": "Ngâm Lâu",
+     "desc": "Mỗi lần phun kéo dài hơn hẳn."
+    },
+    "deep-fryer-wide-basket": {
+     "name": "Rổ Rộng",
+     "desc": "Luồng phun rộng hơn hẳn, ngắn hơn."
+    },
+    "frozen-fries-big-chill": {
+     "name": "Đại Hàn",
+     "desc": "Khoai nhắm vào quái to nhất."
+    },
+    "frozen-fries-brain-freeze": {
+     "name": "Buốt Óc",
+     "desc": "Mỗi loạt thứ ba mạnh hơn hẳn."
+    },
+    "frozen-fries-frost-fan": {
+     "name": "Quạt Băng",
+     "desc": "Khoai tỏa ra khắp xung quanh."
+    },
+    "fry-knives-back-knives": {
+     "name": "Đao Hậu",
+     "desc": "Cứ cách một đao lại bay ra sau."
+    },
+    "fry-knives-carving-knife": {
+     "name": "Dao Phay",
+     "desc": "Một đao lớn thay vì nhiều."
+    },
+    "fry-knives-knife-storm": {
+     "name": "Bão Đao",
+     "desc": "Tụ lực, rồi ném ba loạt cùng lúc."
+    },
+    "fry-lance-heavy-lance": {
+     "name": "Trọng Thương",
+     "desc": "Mỗi tia thứ ba cực lớn."
+    },
+    "fry-lance-jouster": {
+     "name": "Kỵ Sĩ",
+     "desc": "Thương nhắm vào quái to nhất."
+    },
+    "fry-lance-long-lance": {
+     "name": "Trường Thương",
+     "desc": "Tia dài hơn hẳn."
+    },
+    "fry-sentry-head-chef": {
+     "name": "Bếp Trưởng",
+     "desc": "Một tháp lớn thay vì nhiều."
+    },
+    "fry-sentry-order-up": {
+     "name": "Lên Món",
+     "desc": "Tháp bắn quái to nhất."
+    },
+    "fry-sentry-rush-hour": {
+     "name": "Giờ Cao Điểm",
+     "desc": "Tụ lực, rồi đặt gấp đôi số tháp."
+    },
+    "gravy-boat-big-spill": {
+     "name": "Đổ Tràn",
+     "desc": "Vũng sốt rơi dưới quái to nhất."
+    },
+    "gravy-boat-deep-dish": {
+     "name": "Tô Bự",
+     "desc": "Một vũng khổng lồ thay vì nhiều."
+    },
+    "gravy-boat-full-pour": {
+     "name": "Rót Đầy",
+     "desc": "Tụ lực, rồi đổ ba lần cùng lúc."
+    },
+    "peeler-backhand": {
+     "name": "Trái Tay",
+     "desc": "Nhát chém đánh bật đạn trở lại."
+    },
+    "peeler-haymaker": {
+     "name": "Cú Trời Giáng",
+     "desc": "Mỗi nhát thứ ba cực lớn."
+    },
+    "peeler-wide-peel": {
+     "name": "Gọt Rộng",
+     "desc": "Nhát chém rộng hơn hẳn."
+    },
+    "root-spikes-big-root": {
+     "name": "Rễ Cái",
+     "desc": "Một gai khổng lồ thay vì nhiều."
+    },
+    "root-spikes-deep-roots": {
+     "name": "Rễ Sâu",
+     "desc": "Gai đâm quái to nhất trước."
+    },
+    "root-spikes-root-quake": {
+     "name": "Địa Chấn Rễ",
+     "desc": "Mỗi đợt thứ ba cực lớn."
+    },
+    "rosti-disc-big-rosti": {
+     "name": "Rösti Khủng",
+     "desc": "Đĩa to hơn hẳn."
+    },
+    "rosti-disc-disc-wheel": {
+     "name": "Bánh Xe Đĩa",
+     "desc": "Đĩa bay đều ra khắp xung quanh."
+    },
+    "rosti-disc-hard-toss": {
+     "name": "Ném Mạnh",
+     "desc": "Mỗi cú ném thứ ba cực lớn."
+    },
+    "seeker-sprouts-big-game": {
+     "name": "Săn Mồi Lớn",
+     "desc": "Mầm săn quái to nhất."
+    },
+    "seeker-sprouts-burst": {
+     "name": "Mầm Bùng Nổ",
+     "desc": "Tụ lực, rồi bung ra khắp xung quanh."
+    },
+    "seeker-sprouts-hopper": {
+     "name": "Châu Chấu",
+     "desc": "Mầm nhảy bám vào, rồi nổ."
+    },
+    "sprout-satellites-big-sprout": {
+     "name": "Mầm Khổng Lồ",
+     "desc": "Một vệ tinh khổng lồ thay vì nhiều."
+    },
+    "sprout-satellites-spin-cycle": {
+     "name": "Vắt Xoáy",
+     "desc": "Vệ tinh quay nhanh hơn hẳn."
+    },
+    "sprout-satellites-wide-orbit": {
+     "name": "Quỹ Đạo Rộng",
+     "desc": "Vệ tinh bay vòng xa hơn hẳn."
+    },
+    "spud-cannon-big-blast": {
+     "name": "Nổ Lớn",
+     "desc": "Đạn nổ rộng hơn hẳn."
+    },
+    "spud-cannon-bullseye": {
+     "name": "Hồng Tâm",
+     "desc": "Đạn nhắm vào quái to nhất."
+    },
+    "spud-cannon-volley-fire": {
+     "name": "Bắn Loạt",
+     "desc": "Tụ lực, rồi bắn ba loạt cùng lúc."
+    },
+    "spud-lob-big-bounce": {
+     "name": "Nảy Lớn",
+     "desc": "Mỗi cú ném thứ ba cực lớn."
+    },
+    "spud-lob-hot-landing": {
+     "name": "Đáp Nóng",
+     "desc": "Khoai nổ tung nơi rơi xuống."
+    },
+    "spud-lob-wide-lob": {
+     "name": "Vồng Rộng",
+     "desc": "Khoai rơi cách xa nhau hơn hẳn."
+    },
+    "starch-bolt-big-bolt": {
+     "name": "Sét Lớn",
+     "desc": "Một tia sét khổng lồ thay vì nhiều."
+    },
+    "starch-bolt-lightning-rod": {
+     "name": "Cột Thu Lôi",
+     "desc": "Sét đánh quái to nhất trước."
+    },
+    "starch-bolt-storm-front": {
+     "name": "Bão Kéo Đến",
+     "desc": "Tụ lực, rồi đánh ba lần cùng lúc."
+    },
+    "steam-vent-big-pot": {
+     "name": "Nồi Lớn",
+     "desc": "Hơi nước lan rộng hơn hẳn."
+    },
+    "steam-vent-rolling-boil": {
+     "name": "Sôi Sùng Sục",
+     "desc": "Hơi nước xì nhanh hơn hẳn."
+    },
+    "steam-vent-scald": {
+     "name": "Bỏng Rát",
+     "desc": "Hơi đau hơn hẳn với tinh anh và boss."
+    },
+    "tater-pup-big-pup": {
+     "name": "Cún Bự",
+     "desc": "Một cún to thay vì nhiều."
+    },
+    "tater-pup-top-dog": {
+     "name": "Đầu Đàn",
+     "desc": "Cún đuổi theo quái to nhất."
+    },
+    "tater-pup-zoomies": {
+     "name": "Tăng Động",
+     "desc": "Cún cắn nhanh hơn hẳn."
+    },
+    "tot-toss-big-tot": {
+     "name": "Viên Khủng",
+     "desc": "Một viên to thay vì nhiều."
+    },
+    "tot-toss-tot-pile": {
+     "name": "Núi Khoai",
+     "desc": "Tụ lực, rồi ném ba loạt cùng lúc."
+    },
+    "tot-toss-tot-sniper": {
+     "name": "Thiện Xạ",
+     "desc": "Khoai viên nhắm vào quái to nhất."
     }
    },
    "rarity": {
@@ -35468,6 +38970,212 @@
      "desc": "దగ్గరి పురుగులకు షాక్ ఇస్తుంది. ఎలైట్స్ కి చిన్న ఝలక్ మాత్రమే, బాసులు షాక్ కి చాలా పెద్దవి."
     }
    },
+   "rune": {
+    "deep-fryer-hot-seat": {
+     "name": "వేడి కుర్చీ",
+     "desc": "అతి పెద్ద పురుగు మీద చల్లుతుంది."
+    },
+    "deep-fryer-long-soak": {
+     "name": "నిండా మునక",
+     "desc": "ప్రతి జల్లు చాలా ఎక్కువసేపు ఉంటుంది."
+    },
+    "deep-fryer-wide-basket": {
+     "name": "వెడల్పు బుట్ట",
+     "desc": "చాలా వెడల్పైన, పొట్టి జల్లు."
+    },
+    "frozen-fries-big-chill": {
+     "name": "గజగజ చలి",
+     "desc": "ఫ్రైస్ అతి పెద్ద పురుగుకి గురి పెడతాయి."
+    },
+    "frozen-fries-brain-freeze": {
+     "name": "మెదడు గడ్డ",
+     "desc": "ప్రతి మూడో రౌండ్ చాలా గట్టిగా తగులుతుంది."
+    },
+    "frozen-fries-frost-fan": {
+     "name": "మంచు విసనకర్ర",
+     "desc": "ఫ్రైస్ చుట్టూ విసనకర్రలా విచ్చుకుంటాయి."
+    },
+    "fry-knives-back-knives": {
+     "name": "వెనక కత్తులు",
+     "desc": "ప్రతి రెండో కత్తి వెనక్కి ఎగురుతుంది."
+    },
+    "fry-knives-carving-knife": {
+     "name": "కత్తిపీట",
+     "desc": "చాలా కాదు, ఒకే పెద్ద కత్తి."
+    },
+    "fry-knives-knife-storm": {
+     "name": "కత్తుల తుఫాను",
+     "desc": "ఆగి, ఒకేసారి మూడు రౌండ్లు విసురుతుంది."
+    },
+    "fry-lance-heavy-lance": {
+     "name": "బరువు బల్లెం",
+     "desc": "ప్రతి మూడో కిరణం భారీగా ఉంటుంది."
+    },
+    "fry-lance-jouster": {
+     "name": "బల్లెం వీరుడు",
+     "desc": "బల్లెం అతి పెద్ద పురుగుకి గురి పెడుతుంది."
+    },
+    "fry-lance-long-lance": {
+     "name": "పొడవు బల్లెం",
+     "desc": "చాలా పొడవైన కిరణం."
+    },
+    "fry-sentry-head-chef": {
+     "name": "పెద్ద వంటవాడు",
+     "desc": "చాలా కాదు, ఒకే పెద్ద కాపలా."
+    },
+    "fry-sentry-order-up": {
+     "name": "ఆర్డర్ రెడీ",
+     "desc": "కాపలాలు అతి పెద్ద పురుగును కాలుస్తాయి."
+    },
+    "fry-sentry-rush-hour": {
+     "name": "రద్దీ వేళ",
+     "desc": "ఆగి, రెట్టింపు కాపలాలను పెడుతుంది."
+    },
+    "gravy-boat-big-spill": {
+     "name": "పెద్ద ఒలుకు",
+     "desc": "మడుగులు అతి పెద్ద పురుగు కింద పడతాయి."
+    },
+    "gravy-boat-deep-dish": {
+     "name": "లోతు గిన్నె",
+     "desc": "చాలా కాదు, ఒకే భారీ మడుగు."
+    },
+    "gravy-boat-full-pour": {
+     "name": "నిండు ధార",
+     "desc": "ఆగి, ఒకేసారి మూడుసార్లు పోస్తుంది."
+    },
+    "peeler-backhand": {
+     "name": "బ్యాక్హ్యాండ్",
+     "desc": "కోతలు తూటాలను వెనక్కి కొడతాయి."
+    },
+    "peeler-haymaker": {
+     "name": "దిమ్మతిరిగే దెబ్బ",
+     "desc": "ప్రతి మూడో వేటు భారీగా ఉంటుంది."
+    },
+    "peeler-wide-peel": {
+     "name": "వెడల్పు తొక్క",
+     "desc": "చాలా వెడల్పైన కోతలు."
+    },
+    "root-spikes-big-root": {
+     "name": "పెద్ద వేరు",
+     "desc": "చాలా కాదు, ఒకే భారీ ముల్లు."
+    },
+    "root-spikes-deep-roots": {
+     "name": "లోతు వేర్లు",
+     "desc": "ముళ్ళు ముందు అతి పెద్ద పురుగులను కొడతాయి."
+    },
+    "root-spikes-root-quake": {
+     "name": "వేర్ల భూకంపం",
+     "desc": "ప్రతి మూడో పేలుడు భారీగా ఉంటుంది."
+    },
+    "rosti-disc-big-rosti": {
+     "name": "పెద్ద అట్టు",
+     "desc": "చాలా పెద్ద చక్రాలు."
+    },
+    "rosti-disc-disc-wheel": {
+     "name": "చక్రాల వలయం",
+     "desc": "చక్రాలు చుట్టూ సమంగా ఎగురుతాయి."
+    },
+    "rosti-disc-hard-toss": {
+     "name": "బలమైన విసురు",
+     "desc": "ప్రతి మూడో విసురు భారీగా ఉంటుంది."
+    },
+    "seeker-sprouts-big-game": {
+     "name": "పెద్ద వేట",
+     "desc": "మొలకలు అతి పెద్ద పురుగును వేటాడతాయి."
+    },
+    "seeker-sprouts-burst": {
+     "name": "మొలక పేలుడు",
+     "desc": "ఆగి, చుట్టూ పేలి చెదురుతాయి."
+    },
+    "seeker-sprouts-hopper": {
+     "name": "గెంతులోడు",
+     "desc": "మొలకలు గెంతి ఎక్కి, తర్వాత పేలతాయి."
+    },
+    "sprout-satellites-big-sprout": {
+     "name": "పెద్ద మొలక",
+     "desc": "చాలా కాదు, ఒకే భారీ ఉపగ్రహం."
+    },
+    "sprout-satellites-spin-cycle": {
+     "name": "గిరగిర",
+     "desc": "ఉపగ్రహాలు చాలా వేగంగా తిరుగుతాయి."
+    },
+    "sprout-satellites-wide-orbit": {
+     "name": "వెడల్పు కక్ష్య",
+     "desc": "ఉపగ్రహాలు చాలా దూరంగా తిరుగుతాయి."
+    },
+    "spud-cannon-big-blast": {
+     "name": "భారీ పేలుడు",
+     "desc": "గుండ్లు చాలా వెడల్పుగా పేలతాయి."
+    },
+    "spud-cannon-bullseye": {
+     "name": "గురి తప్పదు",
+     "desc": "గుండ్లు అతి పెద్ద పురుగుకి గురి పెడతాయి."
+    },
+    "spud-cannon-volley-fire": {
+     "name": "వరుస కాల్పులు",
+     "desc": "ఆగి, ఒకేసారి మూడు రౌండ్లు పేల్చుతుంది."
+    },
+    "spud-lob-big-bounce": {
+     "name": "పెద్ద గెంతు",
+     "desc": "ప్రతి మూడో విసురు భారీగా ఉంటుంది."
+    },
+    "spud-lob-hot-landing": {
+     "name": "వేడి ల్యాండింగ్",
+     "desc": "ఆలూలు పడిన చోటే పేలతాయి."
+    },
+    "spud-lob-wide-lob": {
+     "name": "వెడల్పు విసురు",
+     "desc": "ఆలూలు చాలా దూరం దూరంగా పడతాయి."
+    },
+    "starch-bolt-big-bolt": {
+     "name": "పెద్ద పిడుగు",
+     "desc": "చాలా కాదు, ఒకే భారీ పిడుగు."
+    },
+    "starch-bolt-lightning-rod": {
+     "name": "పిడుగు కడ్డీ",
+     "desc": "పిడుగులు ముందు అతి పెద్ద పురుగుల మీద పడతాయి."
+    },
+    "starch-bolt-storm-front": {
+     "name": "గాలివాన",
+     "desc": "ఆగి, ఒకేసారి మూడుసార్లు పడుతుంది."
+    },
+    "steam-vent-big-pot": {
+     "name": "పెద్ద గంగాళం",
+     "desc": "ఆవిరి చాలా వెడల్పుగా వ్యాపిస్తుంది."
+    },
+    "steam-vent-rolling-boil": {
+     "name": "కుతకుత",
+     "desc": "ఆవిరి చాలా వేగంగా ఎగజిమ్ముతుంది."
+    },
+    "steam-vent-scald": {
+     "name": "వాత",
+     "desc": "ఆవిరి ఎలైట్స్, బాసులను చాలా ఎక్కువ కాలుస్తుంది."
+    },
+    "tater-pup-big-pup": {
+     "name": "పెద్ద కుక్క",
+     "desc": "చాలా కాదు, ఒకే పెద్ద కుక్కపిల్ల."
+    },
+    "tater-pup-top-dog": {
+     "name": "టాప్ డాగ్",
+     "desc": "కుక్కపిల్లలు అతి పెద్ద పురుగును తరుముతాయి."
+    },
+    "tater-pup-zoomies": {
+     "name": "గంతులు",
+     "desc": "కుక్కపిల్లలు చాలా వేగంగా కరుస్తాయి."
+    },
+    "tot-toss-big-tot": {
+     "name": "పెద్ద బోండా",
+     "desc": "చాలా కాదు, ఒకే పెద్ద బోండా."
+    },
+    "tot-toss-tot-pile": {
+     "name": "బోండాల కుప్ప",
+     "desc": "ఆగి, ఒకేసారి మూడు రౌండ్లు విసురుతుంది."
+    },
+    "tot-toss-tot-sniper": {
+     "name": "బోండా స్నైపర్",
+     "desc": "బోండాలు అతి పెద్ద పురుగుకి గురి పెడతాయి."
+    }
+   },
    "rarity": {
     "0": {
      "name": "సాధారణ"
@@ -37446,6 +41154,212 @@
     "zapper": {
      "name": "ஷாக் Bot",
      "desc": "அருகிலுள்ள பூச்சிகளுக்கு ஷாக் கொடுக்கும். எலைட்களுக்கு லேசான அதிர்ச்சி மட்டும்; பாஸ்கள் ஷாக் கொடுக்க முடியாத அளவு பெரியவை."
+    }
+   },
+   "rune": {
+    "deep-fryer-hot-seat": {
+     "name": "சூடான இருக்கை",
+     "desc": "மிகப் பெரிய பூச்சி மேல் தெளிக்கும்."
+    },
+    "deep-fryer-long-soak": {
+     "name": "நீண்ட ஊறல்",
+     "desc": "ஒவ்வொரு தெளிப்பும் மிக நேரம் நீடிக்கும்."
+    },
+    "deep-fryer-wide-basket": {
+     "name": "அகலக் கூடை",
+     "desc": "மிக அகலமான, குட்டையான தெளிப்பு."
+    },
+    "frozen-fries-big-chill": {
+     "name": "பெருங்குளிர்",
+     "desc": "ஃப்ரைஸ் மிகப் பெரிய பூச்சியைக் குறிவைக்கும்."
+    },
+    "frozen-fries-brain-freeze": {
+     "name": "மூளை உறைவு",
+     "desc": "ஒவ்வொரு மூன்றாம் சுற்றும் மிக வலுவாகத் தாக்கும்."
+    },
+    "frozen-fries-frost-fan": {
+     "name": "பனி விசிறி",
+     "desc": "ஃப்ரைஸ் சுற்றிலும் விசிறி போல் பரவும்."
+    },
+    "fry-knives-back-knives": {
+     "name": "பின் கத்திகள்",
+     "desc": "ஒன்றுவிட்டு ஒரு கத்தி பின்னோக்கிப் பறக்கும்."
+    },
+    "fry-knives-carving-knife": {
+     "name": "அரிவாள்மணை",
+     "desc": "பல அல்ல, ஒரே பெரிய கத்தி."
+    },
+    "fry-knives-knife-storm": {
+     "name": "கத்திப் புயல்",
+     "desc": "காத்திருந்து, மூன்று சுற்றுகளை ஒரேயடியாக எறியும்."
+    },
+    "fry-lance-heavy-lance": {
+     "name": "கன ஈட்டி",
+     "desc": "ஒவ்வொரு மூன்றாம் கற்றையும் ராட்சதம்."
+    },
+    "fry-lance-jouster": {
+     "name": "ஈட்டி வீரன்",
+     "desc": "ஈட்டி மிகப் பெரிய பூச்சியைக் குறிவைக்கும்."
+    },
+    "fry-lance-long-lance": {
+     "name": "நீள ஈட்டி",
+     "desc": "மிக நீளமான கற்றை."
+    },
+    "fry-sentry-head-chef": {
+     "name": "ஹெட் செஃப்",
+     "desc": "பல அல்ல, ஒரே பெரிய காவலன்."
+    },
+    "fry-sentry-order-up": {
+     "name": "ஆர்டர் ரெடி",
+     "desc": "காவலர்கள் மிகப் பெரிய பூச்சியைச் சுடும்."
+    },
+    "fry-sentry-rush-hour": {
+     "name": "நெரிசல் நேரம்",
+     "desc": "காத்திருந்து, இரு மடங்கு காவலர்களை வைக்கும்."
+    },
+    "gravy-boat-big-spill": {
+     "name": "பெரும் சிந்தல்",
+     "desc": "குளங்கள் மிகப் பெரிய பூச்சியின் கீழ் விழும்."
+    },
+    "gravy-boat-deep-dish": {
+     "name": "ஆழக் கிண்ணம்",
+     "desc": "பல அல்ல, ஒரே ராட்சதக் குளம்."
+    },
+    "gravy-boat-full-pour": {
+     "name": "முழு ஊற்று",
+     "desc": "காத்திருந்து, மூன்று முறை ஒரேயடியாக ஊற்றும்."
+    },
+    "peeler-backhand": {
+     "name": "பின்கை அடி",
+     "desc": "வெட்டுகள் குண்டுகளைத் திருப்பி அடிக்கும்."
+    },
+    "peeler-haymaker": {
+     "name": "பேரடி",
+     "desc": "ஒவ்வொரு மூன்றாம் வீச்சும் மிகப் பெரிது."
+    },
+    "peeler-wide-peel": {
+     "name": "அகலத் தோல்",
+     "desc": "மிக அகலமான வெட்டுகள்."
+    },
+    "root-spikes-big-root": {
+     "name": "பெரும் வேர்",
+     "desc": "பல அல்ல, ஒரே ராட்சத முள்."
+    },
+    "root-spikes-deep-roots": {
+     "name": "ஆழ வேர்கள்",
+     "desc": "முட்கள் முதலில் மிகப் பெரிய பூச்சிகளைத் தாக்கும்."
+    },
+    "root-spikes-root-quake": {
+     "name": "வேர் நடுக்கம்",
+     "desc": "ஒவ்வொரு மூன்றாம் வெடிப்பும் மிகப் பெரிது."
+    },
+    "rosti-disc-big-rosti": {
+     "name": "பெரிய அடை",
+     "desc": "மிகப் பெரிய அடைகள்."
+    },
+    "rosti-disc-disc-wheel": {
+     "name": "அடைச் சக்கரம்",
+     "desc": "அடைகள் சுற்றிலும் சமமாகப் பறக்கும்."
+    },
+    "rosti-disc-hard-toss": {
+     "name": "பலத்த வீச்சு",
+     "desc": "ஒவ்வொரு மூன்றாம் வீச்சும் மிகப் பெரிது."
+    },
+    "seeker-sprouts-big-game": {
+     "name": "பெரிய வேட்டை",
+     "desc": "முளைகள் மிகப் பெரிய பூச்சியை வேட்டையாடும்."
+    },
+    "seeker-sprouts-burst": {
+     "name": "முளை வெடிப்பு",
+     "desc": "காத்திருந்து, சுற்றிலும் வெடித்துச் சிதறும்."
+    },
+    "seeker-sprouts-hopper": {
+     "name": "தாவி",
+     "desc": "முளைகள் தாவி ஏறி, பின் வெடிக்கும்."
+    },
+    "sprout-satellites-big-sprout": {
+     "name": "பெரிய முளை",
+     "desc": "பல அல்ல, ஒரே ராட்சதக் கோள்."
+    },
+    "sprout-satellites-spin-cycle": {
+     "name": "சுழல் சுற்று",
+     "desc": "கோள்கள் மிக வேகமாகச் சுழலும்."
+    },
+    "sprout-satellites-wide-orbit": {
+     "name": "அகலச் சுற்று",
+     "desc": "கோள்கள் மிகத் தொலைவில் சுற்றும்."
+    },
+    "spud-cannon-big-blast": {
+     "name": "பெரு வெடி",
+     "desc": "குண்டுகள் மிக அகலமாக வெடிக்கும்."
+    },
+    "spud-cannon-bullseye": {
+     "name": "குறி தவறாது",
+     "desc": "குண்டுகள் மிகப் பெரிய பூச்சியைக் குறிவைக்கும்."
+    },
+    "spud-cannon-volley-fire": {
+     "name": "சரமாரி",
+     "desc": "காத்திருந்து, மூன்று சுற்றுகளை ஒரேயடியாகச் சுடும்."
+    },
+    "spud-lob-big-bounce": {
+     "name": "பெரும் துள்ளல்",
+     "desc": "ஒவ்வொரு மூன்றாம் வீச்சும் மிகப் பெரிது."
+    },
+    "spud-lob-hot-landing": {
+     "name": "சுடச்சுட இறக்கம்",
+     "desc": "உருளைகள் விழும் இடத்தில் வெடிக்கும்."
+    },
+    "spud-lob-wide-lob": {
+     "name": "அகல வீச்சு",
+     "desc": "உருளைகள் மிகத் தள்ளித் தள்ளி விழும்."
+    },
+    "starch-bolt-big-bolt": {
+     "name": "பெரும் இடி",
+     "desc": "பல அல்ல, ஒரே ராட்சத இடி."
+    },
+    "starch-bolt-lightning-rod": {
+     "name": "இடிதாங்கி",
+     "desc": "இடிகள் முதலில் மிகப் பெரிய பூச்சிகளைத் தாக்கும்."
+    },
+    "starch-bolt-storm-front": {
+     "name": "புயல் முனை",
+     "desc": "காத்திருந்து, மூன்று முறை ஒரேயடியாகத் தாக்கும்."
+    },
+    "steam-vent-big-pot": {
+     "name": "பெரிய அண்டா",
+     "desc": "நீராவி மிக அகலமாகப் பரவும்."
+    },
+    "steam-vent-rolling-boil": {
+     "name": "தளதளக் கொதி",
+     "desc": "நீராவி மிக வேகமாகத் துடிக்கும்."
+    },
+    "steam-vent-scald": {
+     "name": "சூட்டுக் காயம்",
+     "desc": "நீராவி எலைட், பாஸ்களை மிக அதிகம் சுடும்."
+    },
+    "tater-pup-big-pup": {
+     "name": "பெரிய குட்டி",
+     "desc": "பல அல்ல, ஒரே பெரிய நாய்க்குட்டி."
+    },
+    "tater-pup-top-dog": {
+     "name": "டாப் டாக்",
+     "desc": "குட்டிகள் மிகப் பெரிய பூச்சியைத் துரத்தும்."
+    },
+    "tater-pup-zoomies": {
+     "name": "துள்ளாட்டம்",
+     "desc": "குட்டிகள் மிக வேகமாகக் கடிக்கும்."
+    },
+    "tot-toss-big-tot": {
+     "name": "பெரிய டாட்",
+     "desc": "பல அல்ல, ஒரே பெரிய டாட்."
+    },
+    "tot-toss-tot-pile": {
+     "name": "டாட் குவியல்",
+     "desc": "காத்திருந்து, மூன்று சுற்றுகளை ஒரேயடியாக எறியும்."
+    },
+    "tot-toss-tot-sniper": {
+     "name": "டாட் ஸ்னைப்பர்",
+     "desc": "டாட்கள் மிகப் பெரிய பூச்சியைக் குறிவைக்கும்."
     }
    },
    "rarity": {
@@ -39428,6 +43342,212 @@
      "desc": "কাছের পোকাদের শক দেয়। এলিটরা শুধু ঝাঁকুনি খায়, বসরা শকের পক্ষে বেশি বড়।"
     }
    },
+   "rune": {
+    "deep-fryer-hot-seat": {
+     "name": "গরম আসন",
+     "desc": "সবচেয়ে বড় পোকার দিকে ছিটায়।"
+    },
+    "deep-fryer-long-soak": {
+     "name": "লম্বা ডুব",
+     "desc": "প্রতিটা ছিটা অনেক বেশিক্ষণ থাকে।"
+    },
+    "deep-fryer-wide-basket": {
+     "name": "চওড়া ঝুড়ি",
+     "desc": "অনেক চওড়া, ছোট ছিটা।"
+    },
+    "frozen-fries-big-chill": {
+     "name": "কনকনে ঠান্ডা",
+     "desc": "ফ্রাই সবচেয়ে বড় পোকাকে তাক করে।"
+    },
+    "frozen-fries-brain-freeze": {
+     "name": "মাথা জমাট",
+     "desc": "প্রতি তৃতীয় ঝাঁক অনেক জোরে লাগে।"
+    },
+    "frozen-fries-frost-fan": {
+     "name": "তুষার পাখা",
+     "desc": "ফ্রাই চারদিকে পাখার মতো ছড়ায়।"
+    },
+    "fry-knives-back-knives": {
+     "name": "উল্টো ছুরি",
+     "desc": "একটা ছাড়া একটা ছুরি পেছনে ওড়ে।"
+    },
+    "fry-knives-carving-knife": {
+     "name": "বঁটি",
+     "desc": "অনেকগুলো নয়, একটা বড় ছুরি।"
+    },
+    "fry-knives-knife-storm": {
+     "name": "ছুরির ঝড়",
+     "desc": "থেমে থেকে একসাথে তিন ঝাঁক ছোড়ে।"
+    },
+    "fry-lance-heavy-lance": {
+     "name": "ভারী বর্শা",
+     "desc": "প্রতি তৃতীয় রশ্মি বিশাল।"
+    },
+    "fry-lance-jouster": {
+     "name": "বর্শাবীর",
+     "desc": "বর্শা সবচেয়ে বড় পোকাকে তাক করে।"
+    },
+    "fry-lance-long-lance": {
+     "name": "লম্বা বর্শা",
+     "desc": "অনেক লম্বা রশ্মি।"
+    },
+    "fry-sentry-head-chef": {
+     "name": "হেড বাবুর্চি",
+     "desc": "অনেকগুলো নয়, একটা বড় প্রহরী।"
+    },
+    "fry-sentry-order-up": {
+     "name": "অর্ডার রেডি",
+     "desc": "প্রহরীরা সবচেয়ে বড় পোকাকে গুলি করে।"
+    },
+    "fry-sentry-rush-hour": {
+     "name": "ভিড়ের সময়",
+     "desc": "থেমে থেকে দ্বিগুণ প্রহরী বসায়।"
+    },
+    "gravy-boat-big-spill": {
+     "name": "উপচে পড়া",
+     "desc": "ডোবা সবচেয়ে বড় পোকার নিচে পড়ে।"
+    },
+    "gravy-boat-deep-dish": {
+     "name": "গভীর বাটি",
+     "desc": "অনেকগুলো নয়, একটা বিশাল ডোবা।"
+    },
+    "gravy-boat-full-pour": {
+     "name": "ভরপুর ঢাল",
+     "desc": "থেমে থেকে একসাথে তিনবার ঢালে।"
+    },
+    "peeler-backhand": {
+     "name": "ব্যাকহ্যান্ড",
+     "desc": "কোপ গুলিকে উল্টো ফিরিয়ে দেয়।"
+    },
+    "peeler-haymaker": {
+     "name": "মোক্ষম কোপ",
+     "desc": "প্রতি তৃতীয় কোপ বিশাল।"
+    },
+    "peeler-wide-peel": {
+     "name": "চওড়া খোসা",
+     "desc": "অনেক চওড়া কোপ।"
+    },
+    "root-spikes-big-root": {
+     "name": "বড় শিকড়",
+     "desc": "অনেকগুলো নয়, একটা বিশাল কাঁটা।"
+    },
+    "root-spikes-deep-roots": {
+     "name": "গভীর শিকড়",
+     "desc": "কাঁটা আগে সবচেয়ে বড় পোকাদের মারে।"
+    },
+    "root-spikes-root-quake": {
+     "name": "শিকড়-কম্প",
+     "desc": "প্রতি তৃতীয় দফা বিশাল।"
+    },
+    "rosti-disc-big-rosti": {
+     "name": "বড় রোস্টি",
+     "desc": "অনেক বড় চাকতি।"
+    },
+    "rosti-disc-disc-wheel": {
+     "name": "চাকতির চাকা",
+     "desc": "চাকতি চারদিকে সমানভাবে ছুটে যায়।"
+    },
+    "rosti-disc-hard-toss": {
+     "name": "জোরালো টস",
+     "desc": "প্রতি তৃতীয় টস বিশাল।"
+    },
+    "seeker-sprouts-big-game": {
+     "name": "বড় শিকার",
+     "desc": "অঙ্কুর সবচেয়ে বড় পোকাকে শিকার করে।"
+    },
+    "seeker-sprouts-burst": {
+     "name": "অঙ্কুর-বিস্ফোরণ",
+     "desc": "থেমে থেকে চারদিকে ফেটে বেরোয়।"
+    },
+    "seeker-sprouts-hopper": {
+     "name": "লাফারু",
+     "desc": "অঙ্কুর লাফিয়ে চড়ে, তারপর ফাটে।"
+    },
+    "sprout-satellites-big-sprout": {
+     "name": "বড় অঙ্কুর",
+     "desc": "অনেকগুলো নয়, একটা বিশাল উপগ্রহ।"
+    },
+    "sprout-satellites-spin-cycle": {
+     "name": "ঘূর্ণি চক্র",
+     "desc": "উপগ্রহ অনেক দ্রুত ঘোরে।"
+    },
+    "sprout-satellites-wide-orbit": {
+     "name": "চওড়া কক্ষপথ",
+     "desc": "উপগ্রহ অনেক দূরে চক্কর কাটে।"
+    },
+    "spud-cannon-big-blast": {
+     "name": "মহা-বিস্ফোরণ",
+     "desc": "গোলা অনেক চওড়া হয়ে ফাটে।"
+    },
+    "spud-cannon-bullseye": {
+     "name": "অব্যর্থ লক্ষ্য",
+     "desc": "গোলা সবচেয়ে বড় পোকাকে তাক করে।"
+    },
+    "spud-cannon-volley-fire": {
+     "name": "ঝাঁক-গোলা",
+     "desc": "থেমে থেকে একসাথে তিন ঝাঁক ছোড়ে।"
+    },
+    "spud-lob-big-bounce": {
+     "name": "বড় লাফ",
+     "desc": "প্রতি তৃতীয় আলু বিশাল।"
+    },
+    "spud-lob-hot-landing": {
+     "name": "গরম অবতরণ",
+     "desc": "আলু যেখানে পড়ে সেখানেই ফাটে।"
+    },
+    "spud-lob-wide-lob": {
+     "name": "চওড়া ছোড়া",
+     "desc": "আলুগুলো অনেক দূরে দূরে পড়ে।"
+    },
+    "starch-bolt-big-bolt": {
+     "name": "বড় বাজ",
+     "desc": "অনেকগুলো নয়, একটা বিশাল বাজ।"
+    },
+    "starch-bolt-lightning-rod": {
+     "name": "বাজের খুঁটি",
+     "desc": "বাজ আগে সবচেয়ে বড় পোকাদের ওপর পড়ে।"
+    },
+    "starch-bolt-storm-front": {
+     "name": "কালবৈশাখী",
+     "desc": "থেমে থেকে একসাথে তিনবার আঘাত করে।"
+    },
+    "steam-vent-big-pot": {
+     "name": "বড় হাঁড়ি",
+     "desc": "ভাপ অনেক বেশি চওড়া ছড়ায়।"
+    },
+    "steam-vent-rolling-boil": {
+     "name": "টগবগে ফোটা",
+     "desc": "ভাপ অনেক দ্রুত দমকে ওঠে।"
+    },
+    "steam-vent-scald": {
+     "name": "ছ্যাঁকা",
+     "desc": "ভাপ এলিট আর বসদের অনেক বেশি আঘাত করে।"
+    },
+    "tater-pup-big-pup": {
+     "name": "বড় ছানা",
+     "desc": "অনেকগুলো নয়, একটা বড় ছানা।"
+    },
+    "tater-pup-top-dog": {
+     "name": "দলের সর্দার",
+     "desc": "ছানারা সবচেয়ে বড় পোকাকে তাড়া করে।"
+    },
+    "tater-pup-zoomies": {
+     "name": "দাপাদাপি",
+     "desc": "ছানারা অনেক দ্রুত কামড়ায়।"
+    },
+    "tot-toss-big-tot": {
+     "name": "বড় বড়া",
+     "desc": "অনেকগুলো নয়, একটা বড় আলুবড়া।"
+    },
+    "tot-toss-tot-pile": {
+     "name": "বড়ার স্তূপ",
+     "desc": "থেমে থেকে একসাথে তিন ঝাঁক ছোড়ে।"
+    },
+    "tot-toss-tot-sniper": {
+     "name": "বড়া স্নাইপার",
+     "desc": "আলুবড়া সবচেয়ে বড় পোকাকে তাক করে।"
+    }
+   },
    "rarity": {
     "0": {
      "name": "কমন"
@@ -41406,6 +45526,212 @@
     "zapper": {
      "name": "Bot ช็อตไฟ",
      "desc": "ช็อตแมลงที่อยู่ใกล้ที่สุด อีลีทแค่สะดุ้ง ส่วนบอสตัวใหญ่เกินจะช็อตไหว"
+    }
+   },
+   "rune": {
+    "deep-fryer-hot-seat": {
+     "name": "เก้าอี้ร้อน",
+     "desc": "พ่นใส่ศัตรูพืชตัวใหญ่สุด"
+    },
+    "deep-fryer-long-soak": {
+     "name": "ทอดยาว",
+     "desc": "พ่นแต่ละครั้งนานขึ้นมาก"
+    },
+    "deep-fryer-wide-basket": {
+     "name": "ตะกร้ากว้าง",
+     "desc": "พ่นกว้างขึ้นมาก แต่สั้นลง"
+    },
+    "frozen-fries-big-chill": {
+     "name": "เย็นเจี๊ยบ",
+     "desc": "มันทอดเล็งศัตรูพืชตัวใหญ่สุด"
+    },
+    "frozen-fries-brain-freeze": {
+     "name": "จี๊ดขึ้นสมอง",
+     "desc": "ทุกชุดยิงที่สามแรงขึ้นมาก"
+    },
+    "frozen-fries-frost-fan": {
+     "name": "พัดน้ำแข็ง",
+     "desc": "มันทอดกระจายออกรอบทิศ"
+    },
+    "fry-knives-back-knives": {
+     "name": "มีดลอบหลัง",
+     "desc": "มีดเล่มเว้นเล่มบินไปข้างหลัง"
+    },
+    "fry-knives-carving-knife": {
+     "name": "มีดแล่เนื้อ",
+     "desc": "มีดใหญ่เล่มเดียวแทนหลายเล่ม"
+    },
+    "fry-knives-knife-storm": {
+     "name": "พายุมีด",
+     "desc": "ชาร์จก่อน แล้วขว้าง 3 ชุดพร้อมกัน"
+    },
+    "fry-lance-heavy-lance": {
+     "name": "หอกหนัก",
+     "desc": "ลำแสงทุกลำที่สามใหญ่ยักษ์"
+    },
+    "fry-lance-jouster": {
+     "name": "ประลองทวน",
+     "desc": "หอกเล็งศัตรูพืชตัวใหญ่สุด"
+    },
+    "fry-lance-long-lance": {
+     "name": "หอกยาว",
+     "desc": "ลำแสงยาวขึ้นมาก"
+    },
+    "fry-sentry-head-chef": {
+     "name": "หัวหน้าเชฟ",
+     "desc": "ป้อมใหญ่ป้อมเดียวแทนหลายป้อม"
+    },
+    "fry-sentry-order-up": {
+     "name": "ออร์เดอร์มาแล้ว",
+     "desc": "ป้อมยิงศัตรูพืชตัวใหญ่สุด"
+    },
+    "fry-sentry-rush-hour": {
+     "name": "ชั่วโมงเร่งด่วน",
+     "desc": "ชาร์จก่อน แล้ววางเพิ่มเป็นสองเท่า"
+    },
+    "gravy-boat-big-spill": {
+     "name": "ราดเต็มๆ",
+     "desc": "แอ่งตกใต้ศัตรูพืชตัวใหญ่สุด"
+    },
+    "gravy-boat-deep-dish": {
+     "name": "จานลึก",
+     "desc": "แอ่งยักษ์แอ่งเดียวแทนหลายแอ่ง"
+    },
+    "gravy-boat-full-pour": {
+     "name": "ราดจุใจ",
+     "desc": "ชาร์จก่อน แล้วราด 3 ครั้งพร้อมกัน"
+    },
+    "peeler-backhand": {
+     "name": "ตีกลับ",
+     "desc": "ฟันตีกระสุนสะท้อนกลับ"
+    },
+    "peeler-haymaker": {
+     "name": "ฟันสุดแรง",
+     "desc": "ฟันทุกครั้งที่สามใหญ่ยักษ์"
+    },
+    "peeler-wide-peel": {
+     "name": "ปอกกว้าง",
+     "desc": "ฟันกว้างขึ้นมาก"
+    },
+    "root-spikes-big-root": {
+     "name": "รากยักษ์",
+     "desc": "หนามยักษ์อันเดียวแทนหลายอัน"
+    },
+    "root-spikes-deep-roots": {
+     "name": "รากลึก",
+     "desc": "หนามแทงศัตรูพืชตัวใหญ่ก่อน"
+    },
+    "root-spikes-root-quake": {
+     "name": "รากสะเทือน",
+     "desc": "พุ่งทุกครั้งที่สามใหญ่ยักษ์"
+    },
+    "rosti-disc-big-rosti": {
+     "name": "รอสตีจัมโบ้",
+     "desc": "จานร่อนใหญ่ขึ้นมาก"
+    },
+    "rosti-disc-disc-wheel": {
+     "name": "วงล้อจานร่อน",
+     "desc": "จานร่อนพุ่งออกรอบทิศเท่าๆ กัน"
+    },
+    "rosti-disc-hard-toss": {
+     "name": "ขว้างเต็มแรง",
+     "desc": "ขว้างทุกครั้งที่สามใหญ่ยักษ์"
+    },
+    "seeker-sprouts-big-game": {
+     "name": "ล่าตัวเบ้ง",
+     "desc": "หน่อไล่ล่าศัตรูพืชตัวใหญ่สุด"
+    },
+    "seeker-sprouts-burst": {
+     "name": "หน่อระเบิด",
+     "desc": "ชาร์จก่อน แล้วระเบิดออกรอบทิศ"
+    },
+    "seeker-sprouts-hopper": {
+     "name": "หน่อกระโดด",
+     "desc": "หน่อกระโดดเกาะ แล้วระเบิด"
+    },
+    "sprout-satellites-big-sprout": {
+     "name": "หน่อยักษ์",
+     "desc": "ดาวเทียมยักษ์ดวงเดียวแทนหลายดวง"
+    },
+    "sprout-satellites-spin-cycle": {
+     "name": "โหมดปั่นแห้ง",
+     "desc": "ดาวเทียมหมุนเร็วขึ้นมาก"
+    },
+    "sprout-satellites-wide-orbit": {
+     "name": "วงโคจรกว้าง",
+     "desc": "ดาวเทียมโคจรห่างออกไปมาก"
+    },
+    "spud-cannon-big-blast": {
+     "name": "บึ้มใหญ่",
+     "desc": "กระสุนแตกกระจายกว้างขึ้นมาก"
+    },
+    "spud-cannon-bullseye": {
+     "name": "เข้าเป้า",
+     "desc": "กระสุนเล็งศัตรูพืชตัวใหญ่สุด"
+    },
+    "spud-cannon-volley-fire": {
+     "name": "ระดมยิง",
+     "desc": "ชาร์จก่อน แล้วยิง 3 ชุดพร้อมกัน"
+    },
+    "spud-lob-big-bounce": {
+     "name": "เด้งสะท้าน",
+     "desc": "โยนทุกครั้งที่สามใหญ่ยักษ์"
+    },
+    "spud-lob-hot-landing": {
+     "name": "ลงจอดร้อนแรง",
+     "desc": "มันฝรั่งแตกตรงจุดที่ตก"
+    },
+    "spud-lob-wide-lob": {
+     "name": "โยนกระจาย",
+     "desc": "มันฝรั่งตกห่างกันมากขึ้น"
+    },
+    "starch-bolt-big-bolt": {
+     "name": "สายฟ้ายักษ์",
+     "desc": "สายฟ้ายักษ์สายเดียวแทนหลายสาย"
+    },
+    "starch-bolt-lightning-rod": {
+     "name": "สายล่อฟ้า",
+     "desc": "สายฟ้าฟาดศัตรูพืชตัวใหญ่ก่อน"
+    },
+    "starch-bolt-storm-front": {
+     "name": "แนวพายุ",
+     "desc": "ชาร์จก่อน แล้วฟาด 3 ครั้งพร้อมกัน"
+    },
+    "steam-vent-big-pot": {
+     "name": "หม้อใหญ่",
+     "desc": "ไอร้อนแผ่กว้างขึ้นมาก"
+    },
+    "steam-vent-rolling-boil": {
+     "name": "เดือดพล่าน",
+     "desc": "ไอร้อนพุ่งถี่ขึ้นมาก"
+    },
+    "steam-vent-scald": {
+     "name": "ลวกเดือด",
+     "desc": "ไอร้อนทำดาเมจอีลีทและบอสมากขึ้นมาก"
+    },
+    "tater-pup-big-pup": {
+     "name": "หมาตัวโต",
+     "desc": "ลูกหมาตัวโตตัวเดียวแทนหลายตัว"
+    },
+    "tater-pup-top-dog": {
+     "name": "จ่าฝูง",
+     "desc": "ลูกหมาไล่ศัตรูพืชตัวใหญ่สุด"
+    },
+    "tater-pup-zoomies": {
+     "name": "วิ่งพล่าน",
+     "desc": "ลูกหมากัดเร็วขึ้นมาก"
+    },
+    "tot-toss-big-tot": {
+     "name": "ทอทยักษ์",
+     "desc": "ทอทใหญ่ลูกเดียวแทนหลายลูก"
+    },
+    "tot-toss-tot-pile": {
+     "name": "ทอทกองโต",
+     "desc": "ชาร์จก่อน แล้วโยน 3 ชุดพร้อมกัน"
+    },
+    "tot-toss-tot-sniper": {
+     "name": "สไนเปอร์ทอท",
+     "desc": "ทอทเล็งศัตรูพืชตัวใหญ่สุด"
     }
    },
    "rarity": {
@@ -43388,6 +47714,212 @@
      "desc": "Yana harbin ƙwari mafi kusa da walƙiya. Gwaraza na samun girgiza kawai, shugabanni kuma sun yi girma da yawa."
     }
    },
+   "rune": {
+    "deep-fryer-hot-seat": {
+     "name": "Kujerar Zafi",
+     "desc": "Yana fesa ƙwaro mafi girma."
+    },
+    "deep-fryer-long-soak": {
+     "name": "Dogon Jiƙa",
+     "desc": "Kowace fesa tana daɗewa sosai."
+    },
+    "deep-fryer-wide-basket": {
+     "name": "Babban Kwando",
+     "desc": "Fesa mai faɗi sosai, gajere."
+    },
+    "frozen-fries-big-chill": {
+     "name": "Babban Sanyi",
+     "desc": "Yana nufar ƙwaro mafi girma."
+    },
+    "frozen-fries-brain-freeze": {
+     "name": "Daskarar Kai",
+     "desc": "Kowane harbi na uku ya fi ƙarfi sosai."
+    },
+    "frozen-fries-frost-fan": {
+     "name": "Fankar Sanyi",
+     "desc": "Yana bazuwa ko’ina a kewaye."
+    },
+    "fry-knives-back-knives": {
+     "name": "Wuƙaƙen Baya",
+     "desc": "Kowace wuƙa ta biyu na tashi baya."
+    },
+    "fry-knives-carving-knife": {
+     "name": "Wuƙar Yanka",
+     "desc": "Babbar wuƙa ɗaya kawai."
+    },
+    "fry-knives-knife-storm": {
+     "name": "Guguwar Wuƙaƙe",
+     "desc": "Yana jira, sai ya jefa harbi uku tare."
+    },
+    "fry-lance-heavy-lance": {
+     "name": "Mashi Mai Nauyi",
+     "desc": "Kowane haske na uku ƙato ne."
+    },
+    "fry-lance-jouster": {
+     "name": "Jarumi",
+     "desc": "Mashin na nufar ƙwaro mafi girma."
+    },
+    "fry-lance-long-lance": {
+     "name": "Dogon Mashi",
+     "desc": "Haske mai tsayi sosai."
+    },
+    "fry-sentry-head-chef": {
+     "name": "Uban Kicin",
+     "desc": "Babban mai gadi ɗaya kawai."
+    },
+    "fry-sentry-order-up": {
+     "name": "Ga Abinci!",
+     "desc": "Masu gadi na harbin ƙwaro mafi girma."
+    },
+    "fry-sentry-rush-hour": {
+     "name": "Cunkoso",
+     "desc": "Yana jira, sai ya ajiye ninki biyu."
+    },
+    "gravy-boat-big-spill": {
+     "name": "Zubar Miya",
+     "desc": "Miya na sauka ƙasan ƙwaro mafi girma."
+    },
+    "gravy-boat-deep-dish": {
+     "name": "Kwano Mai Zurfi",
+     "desc": "Ƙaton kududdufi ɗaya kawai."
+    },
+    "gravy-boat-full-pour": {
+     "name": "Cikakken Zuba",
+     "desc": "Yana jira, sai ya zuba sau uku tare."
+    },
+    "peeler-backhand": {
+     "name": "Marin Baya",
+     "desc": "Sara na mayar da harsasai baya."
+    },
+    "peeler-haymaker": {
+     "name": "Babban Naushi",
+     "desc": "Kowane sara na uku ƙato ne."
+    },
+    "peeler-wide-peel": {
+     "name": "Feɗe Mai Faɗi",
+     "desc": "Sara mai faɗi sosai."
+    },
+    "root-spikes-big-root": {
+     "name": "Babbar Saiwa",
+     "desc": "Ƙatuwar ƙaya ɗaya kawai."
+    },
+    "root-spikes-deep-roots": {
+     "name": "Saiwa Mai Zurfi",
+     "desc": "Ƙaya na fara da ƙwari mafi girma."
+    },
+    "root-spikes-root-quake": {
+     "name": "Girgizar Saiwa",
+     "desc": "Kowace fashewa ta uku ƙatuwa ce."
+    },
+    "rosti-disc-big-rosti": {
+     "name": "Babban Rösti",
+     "desc": "Faifai manya sosai."
+    },
+    "rosti-disc-disc-wheel": {
+     "name": "Kewayen Faifai",
+     "desc": "Faifai na bazuwa daidai a kewaye."
+    },
+    "rosti-disc-hard-toss": {
+     "name": "Jifa Mai Ƙarfi",
+     "desc": "Kowace jifa ta uku ƙatuwa ce."
+    },
+    "seeker-sprouts-big-game": {
+     "name": "Babbar Farauta",
+     "desc": "Toho na farautar ƙwaro mafi girma."
+    },
+    "seeker-sprouts-burst": {
+     "name": "Fashewar Toho",
+     "desc": "Yana jira, sai ya fashe a kewaye."
+    },
+    "seeker-sprouts-hopper": {
+     "name": "Mai Tsalle",
+     "desc": "Yana tsalle kai, sai ya fashe."
+    },
+    "sprout-satellites-big-sprout": {
+     "name": "Babban Toho",
+     "desc": "Ƙaton tauraro ɗaya kawai."
+    },
+    "sprout-satellites-spin-cycle": {
+     "name": "Saurin Juyi",
+     "desc": "Taurari na juyawa da sauri sosai."
+    },
+    "sprout-satellites-wide-orbit": {
+     "name": "Faɗin Kewaye",
+     "desc": "Taurari na kewaye nesa sosai."
+    },
+    "spud-cannon-big-blast": {
+     "name": "Babbar Fashewa",
+     "desc": "Fashewa ta fi faɗi sosai."
+    },
+    "spud-cannon-bullseye": {
+     "name": "Kai Tsaye",
+     "desc": "Harsasai na nufar ƙwaro mafi girma."
+    },
+    "spud-cannon-volley-fire": {
+     "name": "Ruwan Harbi",
+     "desc": "Yana jira, sai ya harba harbi uku tare."
+    },
+    "spud-lob-big-bounce": {
+     "name": "Babban Billa",
+     "desc": "Kowace jifa ta uku ƙatuwa ce."
+    },
+    "spud-lob-hot-landing": {
+     "name": "Saukar Zafi",
+     "desc": "Dankali na fashewa inda ya sauka."
+    },
+    "spud-lob-wide-lob": {
+     "name": "Jifa Mai Faɗi",
+     "desc": "Dankali na sauka nesa da juna sosai."
+    },
+    "starch-bolt-big-bolt": {
+     "name": "Babbar Walƙiya",
+     "desc": "Ƙatuwar walƙiya ɗaya kawai."
+    },
+    "starch-bolt-lightning-rod": {
+     "name": "Sandar Walƙiya",
+     "desc": "Walƙiya na fara bugun ƙwari mafi girma."
+    },
+    "starch-bolt-storm-front": {
+     "name": "Gaban Hadari",
+     "desc": "Yana jira, sai ya buga sau uku tare."
+    },
+    "steam-vent-big-pot": {
+     "name": "Babbar Tukunya",
+     "desc": "Tururi ya fi bazuwa sosai."
+    },
+    "steam-vent-rolling-boil": {
+     "name": "Tafarfasa",
+     "desc": "Tururi na tashi da sauri sosai."
+    },
+    "steam-vent-scald": {
+     "name": "Ƙuna",
+     "desc": "Tururi ya fi cutar gwaraza da shugabanni sosai."
+    },
+    "tater-pup-big-pup": {
+     "name": "Ƙaton Kare",
+     "desc": "Babban kwikwiyo ɗaya kawai."
+    },
+    "tater-pup-top-dog": {
+     "name": "Sarkin Karnuka",
+     "desc": "Kwikwiyoyi na bin ƙwaro mafi girma."
+    },
+    "tater-pup-zoomies": {
+     "name": "Guje-guje",
+     "desc": "Suna cizo da sauri sosai."
+    },
+    "tot-toss-big-tot": {
+     "name": "Ƙaton Dankali",
+     "desc": "Babban dankali ɗaya kawai."
+    },
+    "tot-toss-tot-pile": {
+     "name": "Tulin Dankali",
+     "desc": "Yana jira, sai ya jefa harbi uku tare."
+    },
+    "tot-toss-tot-sniper": {
+     "name": "Gwanin Harbi",
+     "desc": "Yana nufar ƙwaro mafi girma."
+    }
+   },
    "rarity": {
     "0": {
      "name": "Gama-gari"
@@ -45366,6 +49898,212 @@
     "zapper": {
      "name": "Zapper Bot",
      "desc": "E dey zap di bugs wey near pass. Elites go only feel shock, and ogas too big to zap."
+    }
+   },
+   "rune": {
+    "deep-fryer-hot-seat": {
+     "name": "Hot Seat",
+     "desc": "E dey spray di biggest pest."
+    },
+    "deep-fryer-long-soak": {
+     "name": "Long Soak",
+     "desc": "Every spray dey last much longer."
+    },
+    "deep-fryer-wide-basket": {
+     "name": "Wide Basket",
+     "desc": "Spray dey wide well well, but short."
+    },
+    "frozen-fries-big-chill": {
+     "name": "Big Chill",
+     "desc": "Fries dey aim di biggest pest."
+    },
+    "frozen-fries-brain-freeze": {
+     "name": "Brain Freeze",
+     "desc": "Every third volley dey hit well well."
+    },
+    "frozen-fries-frost-fan": {
+     "name": "Frost Fan",
+     "desc": "Fries dey spread go everywhere."
+    },
+    "fry-knives-back-knives": {
+     "name": "Back Knives",
+     "desc": "Every second knife dey fly backward."
+    },
+    "fry-knives-carving-knife": {
+     "name": "Cutlass",
+     "desc": "One big knife, no be plenti."
+    },
+    "fry-knives-knife-storm": {
+     "name": "Knife Storm",
+     "desc": "E go hold, then throw three volleys together."
+    },
+    "fry-lance-heavy-lance": {
+     "name": "Heavy Lance",
+     "desc": "Every third beam big well well."
+    },
+    "fry-lance-jouster": {
+     "name": "Lancer",
+     "desc": "Di lance dey aim di biggest pest."
+    },
+    "fry-lance-long-lance": {
+     "name": "Long Lance",
+     "desc": "Di beam long well well."
+    },
+    "fry-sentry-head-chef": {
+     "name": "Head Cook",
+     "desc": "One big sentry, no be plenti."
+    },
+    "fry-sentry-order-up": {
+     "name": "Food Don Ready",
+     "desc": "Sentries dey shoot di biggest pest."
+    },
+    "fry-sentry-rush-hour": {
+     "name": "Go-Slow",
+     "desc": "E go hold, then drop double."
+    },
+    "gravy-boat-big-spill": {
+     "name": "Big Spill",
+     "desc": "Pools dey land under di biggest pest."
+    },
+    "gravy-boat-deep-dish": {
+     "name": "Big Calabash",
+     "desc": "One huge pool, no be plenti."
+    },
+    "gravy-boat-full-pour": {
+     "name": "Full Pour",
+     "desc": "E go hold, then pour three times together."
+    },
+    "peeler-backhand": {
+     "name": "Backhand",
+     "desc": "Slash dey knock bullets back."
+    },
+    "peeler-haymaker": {
+     "name": "Haymaker",
+     "desc": "Every third swing big well well."
+    },
+    "peeler-wide-peel": {
+     "name": "Wide Peel",
+     "desc": "Slashes wide well well."
+    },
+    "root-spikes-big-root": {
+     "name": "Big Root",
+     "desc": "One huge spike, no be plenti."
+    },
+    "root-spikes-deep-roots": {
+     "name": "Deep Roots",
+     "desc": "Spikes dey hit di biggest pests first."
+    },
+    "root-spikes-root-quake": {
+     "name": "Root Quake",
+     "desc": "Every third burst big well well."
+    },
+    "rosti-disc-big-rosti": {
+     "name": "Big Rösti",
+     "desc": "Discs big well well."
+    },
+    "rosti-disc-disc-wheel": {
+     "name": "Disc Wheel",
+     "desc": "Discs dey fly comot even all around."
+    },
+    "rosti-disc-hard-toss": {
+     "name": "Hard Toss",
+     "desc": "Every third toss big well well."
+    },
+    "seeker-sprouts-big-game": {
+     "name": "Big Game",
+     "desc": "Sprouts dey hunt di biggest pest."
+    },
+    "seeker-sprouts-burst": {
+     "name": "Sprout Burst",
+     "desc": "E go hold, then burst all around."
+    },
+    "seeker-sprouts-hopper": {
+     "name": "Hopper",
+     "desc": "Sprouts dey jump on, then burst."
+    },
+    "sprout-satellites-big-sprout": {
+     "name": "Big Sprout",
+     "desc": "One huge satellite, no be plenti."
+    },
+    "sprout-satellites-spin-cycle": {
+     "name": "Spin Cycle",
+     "desc": "Satellites dey spin faster well well."
+    },
+    "sprout-satellites-wide-orbit": {
+     "name": "Wide Orbit",
+     "desc": "Satellites dey circle far well well."
+    },
+    "spud-cannon-big-blast": {
+     "name": "Big Blast",
+     "desc": "Shells dey burst wide well well."
+    },
+    "spud-cannon-bullseye": {
+     "name": "Bullseye",
+     "desc": "Shells dey aim di biggest pest."
+    },
+    "spud-cannon-volley-fire": {
+     "name": "Volley Fire",
+     "desc": "E go hold, then fire three volleys together."
+    },
+    "spud-lob-big-bounce": {
+     "name": "Big Bounce",
+     "desc": "Every third throw big well well."
+    },
+    "spud-lob-hot-landing": {
+     "name": "Hot Landing",
+     "desc": "Potatoes dey burst where dem land."
+    },
+    "spud-lob-wide-lob": {
+     "name": "Wide Throw",
+     "desc": "Potatoes dey land far from each oda."
+    },
+    "starch-bolt-big-bolt": {
+     "name": "Big Bolt",
+     "desc": "One huge bolt, no be plenti."
+    },
+    "starch-bolt-lightning-rod": {
+     "name": "Lightning Rod",
+     "desc": "Bolts dey strike di biggest pests first."
+    },
+    "starch-bolt-storm-front": {
+     "name": "Storm Front",
+     "desc": "E go hold, then strike three times together."
+    },
+    "steam-vent-big-pot": {
+     "name": "Big Pot",
+     "desc": "Steam dey spread wide well well."
+    },
+    "steam-vent-rolling-boil": {
+     "name": "Rolling Boil",
+     "desc": "Steam dey pulse faster well well."
+    },
+    "steam-vent-scald": {
+     "name": "Scald",
+     "desc": "Steam dey wound elites and ogas well well."
+    },
+    "tater-pup-big-pup": {
+     "name": "Big Puppy",
+     "desc": "One big puppy, no be plenti."
+    },
+    "tater-pup-top-dog": {
+     "name": "Top Dog",
+     "desc": "Puppies dey chase di biggest pest."
+    },
+    "tater-pup-zoomies": {
+     "name": "Zoomies",
+     "desc": "Puppies dey bite much faster."
+    },
+    "tot-toss-big-tot": {
+     "name": "Big Tot",
+     "desc": "One big tot, no be plenti."
+    },
+    "tot-toss-tot-pile": {
+     "name": "Tot Pile",
+     "desc": "E go hold, then throw three volleys together."
+    },
+    "tot-toss-tot-sniper": {
+     "name": "Tot Sniper",
+     "desc": "Tots dey aim di biggest pest."
     }
    },
    "rarity": {
@@ -47348,6 +52086,212 @@
      "desc": "يصعق أقرب الحشرات. النخبة تنال صدمة فقط، والزعماء أكبر من أن يُصعقوا."
     }
    },
+   "rune": {
+    "deep-fryer-hot-seat": {
+     "name": "الكرسي الساخن",
+     "desc": "ترشّ على أكبر آفة."
+    },
+    "deep-fryer-long-soak": {
+     "name": "قلي طويل",
+     "desc": "كل رشّة تدوم أطول بكثير."
+    },
+    "deep-fryer-wide-basket": {
+     "name": "سلة واسعة",
+     "desc": "رشّة أوسع بكثير وأقصر."
+    },
+    "frozen-fries-big-chill": {
+     "name": "برد قارس",
+     "desc": "تصوّب المقلية نحو أكبر آفة."
+    },
+    "frozen-fries-brain-freeze": {
+     "name": "تجمّد الدماغ",
+     "desc": "كل رشقة ثالثة تضرب أقوى بكثير."
+    },
+    "frozen-fries-frost-fan": {
+     "name": "مروحة الصقيع",
+     "desc": "تنتشر المقلية في كل اتجاه."
+    },
+    "fry-knives-back-knives": {
+     "name": "طعنة في الظهر",
+     "desc": "كل سكين ثانية تطير للخلف."
+    },
+    "fry-knives-carving-knife": {
+     "name": "سكين التقطيع",
+     "desc": "سكين واحدة كبيرة بدل الكثير."
+    },
+    "fry-knives-knife-storm": {
+     "name": "عاصفة السكاكين",
+     "desc": "تتمهّل، ثم ترمي ثلاث رشقات معًا."
+    },
+    "fry-lance-heavy-lance": {
+     "name": "رمح ثقيل",
+     "desc": "كل شعاع ثالث ضخم."
+    },
+    "fry-lance-jouster": {
+     "name": "المبارز",
+     "desc": "يصوّب الرمح نحو أكبر آفة."
+    },
+    "fry-lance-long-lance": {
+     "name": "رمح طويل",
+     "desc": "شعاع أطول بكثير."
+    },
+    "fry-sentry-head-chef": {
+     "name": "كبير الطهاة",
+     "desc": "برج واحد كبير بدل الكثير."
+    },
+    "fry-sentry-order-up": {
+     "name": "الطلب جاهز!",
+     "desc": "تطلق الأبراج على أكبر آفة."
+    },
+    "fry-sentry-rush-hour": {
+     "name": "ساعة الذروة",
+     "desc": "يتمهّل، ثم يضع ضعف العدد."
+    },
+    "gravy-boat-big-spill": {
+     "name": "انسكاب كبير",
+     "desc": "تقع البرك تحت أكبر آفة."
+    },
+    "gravy-boat-deep-dish": {
+     "name": "طبق عميق",
+     "desc": "بركة واحدة ضخمة بدل الكثير."
+    },
+    "gravy-boat-full-pour": {
+     "name": "سكبة كاملة",
+     "desc": "يتمهّل، ثم يسكب ثلاث مرات معًا."
+    },
+    "peeler-backhand": {
+     "name": "ردّ الصاع",
+     "desc": "ضرباتها تردّ الرصاص للخلف."
+    },
+    "peeler-haymaker": {
+     "name": "الضربة القاضية",
+     "desc": "كل ضربة ثالثة ضخمة."
+    },
+    "peeler-wide-peel": {
+     "name": "قشر عريض",
+     "desc": "ضربات أعرض بكثير."
+    },
+    "root-spikes-big-root": {
+     "name": "جذر عملاق",
+     "desc": "شوكة واحدة ضخمة بدل الكثير."
+    },
+    "root-spikes-deep-roots": {
+     "name": "جذور عميقة",
+     "desc": "تضرب الأشواك أكبر الآفات أولًا."
+    },
+    "root-spikes-root-quake": {
+     "name": "زلزال الجذور",
+     "desc": "كل انفجار ثالث ضخم."
+    },
+    "rosti-disc-big-rosti": {
+     "name": "روستي كبير",
+     "desc": "أقراص أكبر بكثير."
+    },
+    "rosti-disc-disc-wheel": {
+     "name": "عجلة الأقراص",
+     "desc": "تنطلق الأقراص بالتساوي في كل اتجاه."
+    },
+    "rosti-disc-hard-toss": {
+     "name": "رمية قوية",
+     "desc": "كل رمية ثالثة ضخمة."
+    },
+    "seeker-sprouts-big-game": {
+     "name": "صيد ثمين",
+     "desc": "تطارد البراعم أكبر آفة."
+    },
+    "seeker-sprouts-burst": {
+     "name": "انفجار البراعم",
+     "desc": "تتمهّل، ثم تنفجر في كل اتجاه."
+    },
+    "seeker-sprouts-hopper": {
+     "name": "النطّاط",
+     "desc": "تقفز البراعم على العدو ثم تنفجر."
+    },
+    "sprout-satellites-big-sprout": {
+     "name": "برعم عملاق",
+     "desc": "قمر واحد ضخم بدل الكثير."
+    },
+    "sprout-satellites-spin-cycle": {
+     "name": "دورة العصر",
+     "desc": "تدور الأقمار أسرع بكثير."
+    },
+    "sprout-satellites-wide-orbit": {
+     "name": "مدار واسع",
+     "desc": "تدور الأقمار أبعد بكثير."
+    },
+    "spud-cannon-big-blast": {
+     "name": "انفجار كبير",
+     "desc": "تنفجر القذائف أوسع بكثير."
+    },
+    "spud-cannon-bullseye": {
+     "name": "في الصميم",
+     "desc": "تصوّب القذائف نحو أكبر آفة."
+    },
+    "spud-cannon-volley-fire": {
+     "name": "نيران متتابعة",
+     "desc": "يتمهّل، ثم يطلق ثلاث رشقات معًا."
+    },
+    "spud-lob-big-bounce": {
+     "name": "ارتداد كبير",
+     "desc": "كل قذفة ثالثة ضخمة."
+    },
+    "spud-lob-hot-landing": {
+     "name": "هبوط ساخن",
+     "desc": "تنفجر البطاطس حيث تهبط."
+    },
+    "spud-lob-wide-lob": {
+     "name": "قذفة واسعة",
+     "desc": "تهبط البطاطس متباعدة أكثر بكثير."
+    },
+    "starch-bolt-big-bolt": {
+     "name": "صاعقة عملاقة",
+     "desc": "صاعقة واحدة ضخمة بدل الكثير."
+    },
+    "starch-bolt-lightning-rod": {
+     "name": "مانعة الصواعق",
+     "desc": "تضرب الصواعق أكبر الآفات أولًا."
+    },
+    "starch-bolt-storm-front": {
+     "name": "جبهة العاصفة",
+     "desc": "تتمهّل، ثم تضرب ثلاث مرات معًا."
+    },
+    "steam-vent-big-pot": {
+     "name": "قدر كبير",
+     "desc": "ينتشر البخار أوسع بكثير."
+    },
+    "steam-vent-rolling-boil": {
+     "name": "غليان شديد",
+     "desc": "ينبض البخار أسرع بكثير."
+    },
+    "steam-vent-scald": {
+     "name": "لسعة حارقة",
+     "desc": "يؤذي البخار النخبة والزعماء أكثر بكثير."
+    },
+    "tater-pup-big-pup": {
+     "name": "جرو عملاق",
+     "desc": "جرو واحد كبير بدل الكثير."
+    },
+    "tater-pup-top-dog": {
+     "name": "زعيم القطيع",
+     "desc": "تطارد الجراء أكبر آفة."
+    },
+    "tater-pup-zoomies": {
+     "name": "جنون الجري",
+     "desc": "تعضّ الجراء أسرع بكثير."
+    },
+    "tot-toss-big-tot": {
+     "name": "كرة عملاقة",
+     "desc": "كرة واحدة كبيرة بدل الكثير."
+    },
+    "tot-toss-tot-pile": {
+     "name": "كومة كرات",
+     "desc": "تتمهّل، ثم ترمي ثلاث رشقات معًا."
+    },
+    "tot-toss-tot-sniper": {
+     "name": "قنّاص الكرات",
+     "desc": "تصوّب الكرات نحو أكبر آفة."
+    }
+   },
    "rarity": {
     "0": {
      "name": "شائع"
@@ -49326,6 +54270,212 @@
     "zapper": {
      "name": "Bot شوکر",
      "desc": "به نزدیک‌ترین حشره‌ها شوک می‌دهد. نخبه‌ها فقط تکانی می‌خورند و باس‌ها برای شوک زیادی بزرگ‌اند."
+    }
+   },
+   "rune": {
+    "deep-fryer-hot-seat": {
+     "name": "صندلی داغ",
+     "desc": "به بزرگ‌ترین آفت می‌پاشد."
+    },
+    "deep-fryer-long-soak": {
+     "name": "داغی ماندگار",
+     "desc": "هر پاشش خیلی بیشتر طول می‌کشد."
+    },
+    "deep-fryer-wide-basket": {
+     "name": "سبد پهن",
+     "desc": "پاششی خیلی پهن‌تر و کوتاه‌تر."
+    },
+    "frozen-fries-big-chill": {
+     "name": "سرمای بزرگ",
+     "desc": "سرخ‌کرده‌ها به بزرگ‌ترین آفت می‌خورند."
+    },
+    "frozen-fries-brain-freeze": {
+     "name": "یخ‌زدگی مغز",
+     "desc": "هر رگبار سوم خیلی محکم‌تر می‌زند."
+    },
+    "frozen-fries-frost-fan": {
+     "name": "بادبزن یخی",
+     "desc": "سرخ‌کرده‌ها به همه طرف پخش می‌شوند."
+    },
+    "fry-knives-back-knives": {
+     "name": "خنجر از پشت",
+     "desc": "تیغ‌ها یکی در میان به عقب می‌روند."
+    },
+    "fry-knives-carving-knife": {
+     "name": "کارد قصابی",
+     "desc": "یک تیغ بزرگ، نه چندتا."
+    },
+    "fry-knives-knife-storm": {
+     "name": "طوفان تیغ",
+     "desc": "صبر می‌کند، سپس سه رگبار یک‌جا می‌زند."
+    },
+    "fry-lance-heavy-lance": {
+     "name": "نیزه‌ی سنگین",
+     "desc": "هر پرتو سوم عظیم است."
+    },
+    "fry-lance-jouster": {
+     "name": "شوالیه",
+     "desc": "نیزه بزرگ‌ترین آفت را نشانه می‌گیرد."
+    },
+    "fry-lance-long-lance": {
+     "name": "نیزه‌ی بلند",
+     "desc": "پرتویی خیلی بلندتر."
+    },
+    "fry-sentry-head-chef": {
+     "name": "سرآشپز",
+     "desc": "یک برجک بزرگ، نه چندتا."
+    },
+    "fry-sentry-order-up": {
+     "name": "سفارش آماده!",
+     "desc": "برجک‌ها به بزرگ‌ترین آفت شلیک می‌کنند."
+    },
+    "fry-sentry-rush-hour": {
+     "name": "ساعت شلوغی",
+     "desc": "صبر می‌کند، سپس دو برابر می‌گذارد."
+    },
+    "gravy-boat-big-spill": {
+     "name": "شتک بزرگ",
+     "desc": "برکه‌ها زیر بزرگ‌ترین آفت می‌افتند."
+    },
+    "gravy-boat-deep-dish": {
+     "name": "بشقاب گود",
+     "desc": "یک برکه‌ی عظیم، نه چندتا."
+    },
+    "gravy-boat-full-pour": {
+     "name": "پیمانه‌ی پر",
+     "desc": "صبر می‌کند، سپس سه بار یک‌جا می‌ریزد."
+    },
+    "peeler-backhand": {
+     "name": "ضربه‌ی برگشتی",
+     "desc": "ضربه‌ها گلوله‌ها را برمی‌گردانند."
+    },
+    "peeler-haymaker": {
+     "name": "مشت سنگین",
+     "desc": "هر ضربه‌ی سوم عظیم است."
+    },
+    "peeler-wide-peel": {
+     "name": "پوست‌کنی پهن",
+     "desc": "ضربه‌هایی خیلی پهن‌تر."
+    },
+    "root-spikes-big-root": {
+     "name": "ریشه‌ی بزرگ",
+     "desc": "یک خار عظیم، نه چندتا."
+    },
+    "root-spikes-deep-roots": {
+     "name": "ریشه‌ی عمیق",
+     "desc": "خارها اول به بزرگ‌ترین آفت‌ها می‌زنند."
+    },
+    "root-spikes-root-quake": {
+     "name": "ریشه‌لرزه",
+     "desc": "هر فوران سوم عظیم است."
+    },
+    "rosti-disc-big-rosti": {
+     "name": "کوکوی بزرگ",
+     "desc": "دیسک‌هایی خیلی بزرگ‌تر."
+    },
+    "rosti-disc-disc-wheel": {
+     "name": "چرخ دیسک",
+     "desc": "دیسک‌ها یکنواخت به همه طرف می‌روند."
+    },
+    "rosti-disc-hard-toss": {
+     "name": "پرتاب محکم",
+     "desc": "هر پرتاب سوم عظیم است."
+    },
+    "seeker-sprouts-big-game": {
+     "name": "شکار درشت",
+     "desc": "جوانه‌ها دنبال بزرگ‌ترین آفت‌اند."
+    },
+    "seeker-sprouts-burst": {
+     "name": "انفجار جوانه",
+     "desc": "صبر می‌کند، سپس به همه طرف می‌ترکد."
+    },
+    "seeker-sprouts-hopper": {
+     "name": "جست‌وخیز",
+     "desc": "جوانه‌ها روی دشمن می‌پرند و می‌ترکند."
+    },
+    "sprout-satellites-big-sprout": {
+     "name": "جوانه‌ی بزرگ",
+     "desc": "یک ماهواره‌ی عظیم، نه چندتا."
+    },
+    "sprout-satellites-spin-cycle": {
+     "name": "دور خشک‌کن",
+     "desc": "ماهواره‌ها خیلی سریع‌تر می‌چرخند."
+    },
+    "sprout-satellites-wide-orbit": {
+     "name": "مدار باز",
+     "desc": "ماهواره‌ها خیلی دورتر می‌چرخند."
+    },
+    "spud-cannon-big-blast": {
+     "name": "انفجار بزرگ",
+     "desc": "گلوله‌ها خیلی پهن‌تر می‌ترکند."
+    },
+    "spud-cannon-bullseye": {
+     "name": "وسط خال",
+     "desc": "گلوله‌ها بزرگ‌ترین آفت را نشانه می‌گیرند."
+    },
+    "spud-cannon-volley-fire": {
+     "name": "آتش رگبار",
+     "desc": "صبر می‌کند، سپس سه رگبار یک‌جا شلیک می‌کند."
+    },
+    "spud-lob-big-bounce": {
+     "name": "جهش بزرگ",
+     "desc": "هر پرتاب سوم عظیم است."
+    },
+    "spud-lob-hot-landing": {
+     "name": "فرود داغ",
+     "desc": "سیب‌زمینی‌ها جایی که فرود می‌آیند می‌ترکند."
+    },
+    "spud-lob-wide-lob": {
+     "name": "پرتاب باز",
+     "desc": "سیب‌زمینی‌ها خیلی دورتر از هم فرود می‌آیند."
+    },
+    "starch-bolt-big-bolt": {
+     "name": "صاعقه‌ی بزرگ",
+     "desc": "یک صاعقه‌ی عظیم، نه چندتا."
+    },
+    "starch-bolt-lightning-rod": {
+     "name": "برق‌گیر",
+     "desc": "صاعقه‌ها اول به بزرگ‌ترین آفت‌ها می‌زنند."
+    },
+    "starch-bolt-storm-front": {
+     "name": "جبهه‌ی طوفان",
+     "desc": "صبر می‌کند، سپس سه بار یک‌جا می‌زند."
+    },
+    "steam-vent-big-pot": {
+     "name": "قابلمه‌ی بزرگ",
+     "desc": "بخار خیلی پهن‌تر پخش می‌شود."
+    },
+    "steam-vent-rolling-boil": {
+     "name": "جوش تند",
+     "desc": "بخار خیلی تندتر می‌زند."
+    },
+    "steam-vent-scald": {
+     "name": "سوزش",
+     "desc": "بخار به نخبه‌ها و باس‌ها خیلی بیشتر آسیب می‌زند."
+    },
+    "tater-pup-big-pup": {
+     "name": "توله‌ی بزرگ",
+     "desc": "یک توله‌ی بزرگ، نه چندتا."
+    },
+    "tater-pup-top-dog": {
+     "name": "رئیس گله",
+     "desc": "توله‌ها دنبال بزرگ‌ترین آفت می‌دوند."
+    },
+    "tater-pup-zoomies": {
+     "name": "بدوبدو",
+     "desc": "توله‌ها خیلی تندتر گاز می‌گیرند."
+    },
+    "tot-toss-big-tot": {
+     "name": "ناگت بزرگ",
+     "desc": "یک ناگت بزرگ، نه چندتا."
+    },
+    "tot-toss-tot-pile": {
+     "name": "کپه‌ی ناگت",
+     "desc": "صبر می‌کند، سپس سه رگبار یک‌جا پرتاب می‌کند."
+    },
+    "tot-toss-tot-sniper": {
+     "name": "ناگت تک‌تیرانداز",
+     "desc": "ناگت‌ها بزرگ‌ترین آفت را نشانه می‌گیرند."
     }
    },
    "rarity": {
@@ -51308,6 +56458,212 @@
      "desc": "מחשמל את החרקים הקרובים ביותר. עיליות רק חוטפות זרם קטן, ובוסים גדולים מדי לחישמול."
     }
    },
+   "rune": {
+    "deep-fryer-hot-seat": {
+     "name": "הכיסא החם",
+     "desc": "מתיזה על המזיק הגדול ביותר."
+    },
+    "deep-fryer-long-soak": {
+     "name": "טיגון ארוך",
+     "desc": "כל התזה נמשכת הרבה יותר."
+    },
+    "deep-fryer-wide-basket": {
+     "name": "סל רחב",
+     "desc": "התזה רחבה וקצרה הרבה יותר."
+    },
+    "frozen-fries-big-chill": {
+     "name": "צינה גדולה",
+     "desc": "הצ׳יפס מכוון למזיק הגדול ביותר."
+    },
+    "frozen-fries-brain-freeze": {
+     "name": "הקפאת מוח",
+     "desc": "כל מטח שלישי פוגע הרבה יותר חזק."
+    },
+    "frozen-fries-frost-fan": {
+     "name": "מניפת כפור",
+     "desc": "הצ׳יפס נפרש לכל הכיוונים."
+    },
+    "fry-knives-back-knives": {
+     "name": "סכין בגב",
+     "desc": "כל סכין שנייה עפה אחורה."
+    },
+    "fry-knives-carving-knife": {
+     "name": "סכין קצבים",
+     "desc": "סכין אחת גדולה, לא הרבה."
+    },
+    "fry-knives-knife-storm": {
+     "name": "סערת סכינים",
+     "desc": "מחכה, ואז זורק שלושה מטחים בבת אחת."
+    },
+    "fry-lance-heavy-lance": {
+     "name": "רומח כבד",
+     "desc": "כל קרן שלישית ענקית."
+    },
+    "fry-lance-jouster": {
+     "name": "אביר",
+     "desc": "הרומח מכוון למזיק הגדול ביותר."
+    },
+    "fry-lance-long-lance": {
+     "name": "רומח ארוך",
+     "desc": "קרן ארוכה הרבה יותר."
+    },
+    "fry-sentry-head-chef": {
+     "name": "שף ראשי",
+     "desc": "צריח אחד גדול, לא הרבה."
+    },
+    "fry-sentry-order-up": {
+     "name": "ההזמנה מוכנה!",
+     "desc": "הצריחים יורים במזיק הגדול ביותר."
+    },
+    "fry-sentry-rush-hour": {
+     "name": "שעת עומס",
+     "desc": "מחכה, ואז מציב פי שניים."
+    },
+    "gravy-boat-big-spill": {
+     "name": "שפיכה גדולה",
+     "desc": "שלוליות נוחתות מתחת למזיק הגדול ביותר."
+    },
+    "gravy-boat-deep-dish": {
+     "name": "צלחת עמוקה",
+     "desc": "שלולית ענקית אחת, לא הרבה."
+    },
+    "gravy-boat-full-pour": {
+     "name": "מזיגה מלאה",
+     "desc": "מחכה, ואז מוזגת שלוש פעמים בבת אחת."
+    },
+    "peeler-backhand": {
+     "name": "מחזיר",
+     "desc": "החיתוכים מחזירים כדורים אחורה."
+    },
+    "peeler-haymaker": {
+     "name": "נוקאאוט",
+     "desc": "כל הנפה שלישית ענקית."
+    },
+    "peeler-wide-peel": {
+     "name": "קילוף רחב",
+     "desc": "חיתוכים רחבים הרבה יותר."
+    },
+    "root-spikes-big-root": {
+     "name": "שורש ענק",
+     "desc": "דוקרן ענק אחד, לא הרבה."
+    },
+    "root-spikes-deep-roots": {
+     "name": "שורשים עמוקים",
+     "desc": "הדוקרנים פוגעים קודם במזיקים הגדולים."
+    },
+    "root-spikes-root-quake": {
+     "name": "רעידת שורשים",
+     "desc": "כל פרץ שלישי ענק."
+    },
+    "rosti-disc-big-rosti": {
+     "name": "רוסטי ענק",
+     "desc": "דיסקיות גדולות הרבה יותר."
+    },
+    "rosti-disc-disc-wheel": {
+     "name": "גלגל דיסקיות",
+     "desc": "הדיסקיות עפות שווה בשווה לכל הכיוונים."
+    },
+    "rosti-disc-hard-toss": {
+     "name": "זריקה חזקה",
+     "desc": "כל זריקה שלישית ענקית."
+    },
+    "seeker-sprouts-big-game": {
+     "name": "ציד גדול",
+     "desc": "הנבטים צדים את המזיק הגדול ביותר."
+    },
+    "seeker-sprouts-burst": {
+     "name": "פרץ נבטים",
+     "desc": "מחכים, ואז מתפרצים לכל הכיוונים."
+    },
+    "seeker-sprouts-hopper": {
+     "name": "קפצן",
+     "desc": "הנבטים קופצים על האויב ומתפוצצים."
+    },
+    "sprout-satellites-big-sprout": {
+     "name": "נבט ענק",
+     "desc": "לוויין ענק אחד, לא הרבה."
+    },
+    "sprout-satellites-spin-cycle": {
+     "name": "סחיטה",
+     "desc": "הלוויינים מסתובבים הרבה יותר מהר."
+    },
+    "sprout-satellites-wide-orbit": {
+     "name": "מסלול רחב",
+     "desc": "הלוויינים חגים הרבה יותר רחוק."
+    },
+    "spud-cannon-big-blast": {
+     "name": "פיצוץ גדול",
+     "desc": "פיצוץ הפגזים רחב הרבה יותר."
+    },
+    "spud-cannon-bullseye": {
+     "name": "בול",
+     "desc": "הפגזים מכוונים למזיק הגדול ביותר."
+    },
+    "spud-cannon-volley-fire": {
+     "name": "אש מטחים",
+     "desc": "מחכה, ואז יורה שלושה מטחים בבת אחת."
+    },
+    "spud-lob-big-bounce": {
+     "name": "ניתור גדול",
+     "desc": "כל הטלה שלישית ענקית."
+    },
+    "spud-lob-hot-landing": {
+     "name": "נחיתה חמה",
+     "desc": "התפודים מתפוצצים איפה שהם נוחתים."
+    },
+    "spud-lob-wide-lob": {
+     "name": "קשת רחבה",
+     "desc": "התפודים נוחתים רחוק הרבה יותר זה מזה."
+    },
+    "starch-bolt-big-bolt": {
+     "name": "ברק ענק",
+     "desc": "ברק ענק אחד, לא הרבה."
+    },
+    "starch-bolt-lightning-rod": {
+     "name": "כליא ברק",
+     "desc": "הברקים מכים קודם במזיקים הגדולים."
+    },
+    "starch-bolt-storm-front": {
+     "name": "חזית סערה",
+     "desc": "מחכה, ואז מכה שלוש פעמים בבת אחת."
+    },
+    "steam-vent-big-pot": {
+     "name": "סיר גדול",
+     "desc": "הקיטור מתפשט רחב הרבה יותר."
+    },
+    "steam-vent-rolling-boil": {
+     "name": "רתיחה סוערת",
+     "desc": "הקיטור פועם הרבה יותר מהר."
+    },
+    "steam-vent-scald": {
+     "name": "כווייה",
+     "desc": "הקיטור פוגע הרבה יותר בעילית ובבוסים."
+    },
+    "tater-pup-big-pup": {
+     "name": "גור ענק",
+     "desc": "גור אחד גדול, לא הרבה."
+    },
+    "tater-pup-top-dog": {
+     "name": "מנהיג הלהקה",
+     "desc": "הגורים צדים את המזיק הגדול ביותר."
+    },
+    "tater-pup-zoomies": {
+     "name": "טירוף ריצה",
+     "desc": "הגורים נושכים הרבה יותר מהר."
+    },
+    "tot-toss-big-tot": {
+     "name": "תפודון ענק",
+     "desc": "תפודון אחד גדול, לא הרבה."
+    },
+    "tot-toss-tot-pile": {
+     "name": "ערימת תפודונים",
+     "desc": "מחכה, ואז זורק שלושה מטחים בבת אחת."
+    },
+    "tot-toss-tot-sniper": {
+     "name": "צלף תפודונים",
+     "desc": "התפודונים מכוונים למזיק הגדול ביותר."
+    }
+   },
    "rarity": {
     "0": {
      "name": "נפוץ"
@@ -53288,6 +58644,212 @@
      "desc": "قریب ترین کیڑوں کو کرنٹ لگاتا ہے۔ ایلیٹ کو بس جھٹکا لگتا ہے، اور باس کرنٹ کے لیے بہت بڑے ہیں۔"
     }
    },
+   "rune": {
+    "deep-fryer-hot-seat": {
+     "name": "گرم کرسی",
+     "desc": "سب سے بڑے کیڑے پر پھوار۔"
+    },
+    "deep-fryer-long-soak": {
+     "name": "لمبی تلائی",
+     "desc": "ہر پھوار بہت دیر تک چلتی ہے۔"
+    },
+    "deep-fryer-wide-basket": {
+     "name": "چوڑی ٹوکری",
+     "desc": "کہیں چوڑی، چھوٹی پھوار۔"
+    },
+    "frozen-fries-big-chill": {
+     "name": "کڑاکے کی سردی",
+     "desc": "فرائز سب سے بڑے کیڑے کو تاکتے ہیں۔"
+    },
+    "frozen-fries-brain-freeze": {
+     "name": "دماغ جم گیا",
+     "desc": "ہر تیسری بوچھاڑ کہیں زور سے لگتی ہے۔"
+    },
+    "frozen-fries-frost-fan": {
+     "name": "برفیلا پنکھا",
+     "desc": "فرائز چاروں طرف پھیل جاتے ہیں۔"
+    },
+    "fry-knives-back-knives": {
+     "name": "پیٹھ میں چھرا",
+     "desc": "ہر دوسری چھری پیچھے اڑتی ہے۔"
+    },
+    "fry-knives-carving-knife": {
+     "name": "قصائی چھرا",
+     "desc": "بہت سی نہیں، ایک بڑی چھری۔"
+    },
+    "fry-knives-knife-storm": {
+     "name": "چھریوں کا طوفان",
+     "desc": "رک کر تین بوچھاڑیں ایک ساتھ پھینکتا ہے۔"
+    },
+    "fry-lance-heavy-lance": {
+     "name": "بھاری نیزہ",
+     "desc": "ہر تیسری شعاع بہت بڑی ہوتی ہے۔"
+    },
+    "fry-lance-jouster": {
+     "name": "نیزہ باز",
+     "desc": "نیزہ سب سے بڑے کیڑے کو تاکتا ہے۔"
+    },
+    "fry-lance-long-lance": {
+     "name": "لمبا نیزہ",
+     "desc": "کہیں لمبی شعاع۔"
+    },
+    "fry-sentry-head-chef": {
+     "name": "ہیڈ شیف",
+     "desc": "بہت سے نہیں، ایک بڑا پہرے دار۔"
+    },
+    "fry-sentry-order-up": {
+     "name": "آرڈر تیار!",
+     "desc": "پہرے دار سب سے بڑے کیڑے کو مارتے ہیں۔"
+    },
+    "fry-sentry-rush-hour": {
+     "name": "رش کا وقت",
+     "desc": "رک کر دگنے پہرے دار رکھتا ہے۔"
+    },
+    "gravy-boat-big-spill": {
+     "name": "بڑا چھینٹا",
+     "desc": "تالاب سب سے بڑے کیڑے کے نیچے گرتے ہیں۔"
+    },
+    "gravy-boat-deep-dish": {
+     "name": "گہری پلیٹ",
+     "desc": "بہت سے نہیں، ایک بہت بڑا تالاب۔"
+    },
+    "gravy-boat-full-pour": {
+     "name": "بھرا ڈونگا",
+     "desc": "رک کر تین بار ایک ساتھ انڈیلتا ہے۔"
+    },
+    "peeler-backhand": {
+     "name": "الٹا ہاتھ",
+     "desc": "وار گولیوں کو واپس پلٹ دیتے ہیں۔"
+    },
+    "peeler-haymaker": {
+     "name": "زوردار مکا",
+     "desc": "ہر تیسرا وار بہت بڑا ہوتا ہے۔"
+    },
+    "peeler-wide-peel": {
+     "name": "چوڑا چھلکا",
+     "desc": "کہیں چوڑے وار۔"
+    },
+    "root-spikes-big-root": {
+     "name": "بڑی جڑ",
+     "desc": "بہت سے نہیں، ایک بہت بڑا کانٹا۔"
+    },
+    "root-spikes-deep-roots": {
+     "name": "گہری جڑیں",
+     "desc": "کانٹے پہلے سب سے بڑے کیڑوں کو مارتے ہیں۔"
+    },
+    "root-spikes-root-quake": {
+     "name": "جڑوں کا زلزلہ",
+     "desc": "ہر تیسرا دھماکا بہت بڑا ہوتا ہے۔"
+    },
+    "rosti-disc-big-rosti": {
+     "name": "بڑا روسٹی",
+     "desc": "کہیں بڑی ڈسکیں۔"
+    },
+    "rosti-disc-disc-wheel": {
+     "name": "ڈسک پہیہ",
+     "desc": "ڈسکیں چاروں طرف برابر اڑتی ہیں۔"
+    },
+    "rosti-disc-hard-toss": {
+     "name": "زوردار اچھال",
+     "desc": "ہر تیسرا اچھال بہت بڑا ہوتا ہے۔"
+    },
+    "seeker-sprouts-big-game": {
+     "name": "بڑا شکار",
+     "desc": "کونپلیں سب سے بڑا کیڑا ڈھونڈتی ہیں۔"
+    },
+    "seeker-sprouts-burst": {
+     "name": "کونپل دھماکا",
+     "desc": "رک کر چاروں طرف پھوٹ پڑتی ہیں۔"
+    },
+    "seeker-sprouts-hopper": {
+     "name": "پھدکو",
+     "desc": "کونپلیں دشمن پر کود کر پھٹتی ہیں۔"
+    },
+    "sprout-satellites-big-sprout": {
+     "name": "بڑی کونپل",
+     "desc": "بہت سے نہیں، ایک بہت بڑا سیٹلائٹ۔"
+    },
+    "sprout-satellites-spin-cycle": {
+     "name": "گھن چکر",
+     "desc": "سیٹلائٹ کہیں تیز گھومتے ہیں۔"
+    },
+    "sprout-satellites-wide-orbit": {
+     "name": "چوڑا مدار",
+     "desc": "سیٹلائٹ کہیں دور چکر لگاتے ہیں۔"
+    },
+    "spud-cannon-big-blast": {
+     "name": "بڑا دھماکا",
+     "desc": "گولے کہیں چوڑے پھٹتے ہیں۔"
+    },
+    "spud-cannon-bullseye": {
+     "name": "عین نشانہ",
+     "desc": "گولے سب سے بڑے کیڑے کو تاکتے ہیں۔"
+    },
+    "spud-cannon-volley-fire": {
+     "name": "بوچھاڑ فائر",
+     "desc": "رک کر تین بوچھاڑیں ایک ساتھ چلاتا ہے۔"
+    },
+    "spud-lob-big-bounce": {
+     "name": "بڑا ٹپا",
+     "desc": "ہر تیسرا اچھال بہت بڑا ہوتا ہے۔"
+    },
+    "spud-lob-hot-landing": {
+     "name": "گرم لینڈنگ",
+     "desc": "آلو جہاں گرتے ہیں وہیں پھٹتے ہیں۔"
+    },
+    "spud-lob-wide-lob": {
+     "name": "کھلا اچھال",
+     "desc": "آلو کہیں دور دور گرتے ہیں۔"
+    },
+    "starch-bolt-big-bolt": {
+     "name": "بڑی بجلی",
+     "desc": "بہت سی نہیں، ایک بہت بڑی بجلی۔"
+    },
+    "starch-bolt-lightning-rod": {
+     "name": "بجلی کی سلاخ",
+     "desc": "بجلیاں پہلے سب سے بڑے کیڑوں پر گرتی ہیں۔"
+    },
+    "starch-bolt-storm-front": {
+     "name": "طوفانی محاذ",
+     "desc": "رک کر تین بار ایک ساتھ گرتی ہے۔"
+    },
+    "steam-vent-big-pot": {
+     "name": "بڑی دیگ",
+     "desc": "بھاپ کہیں چوڑی پھیلتی ہے۔"
+    },
+    "steam-vent-rolling-boil": {
+     "name": "تیز ابال",
+     "desc": "بھاپ کہیں جلدی جلدی نکلتی ہے۔"
+    },
+    "steam-vent-scald": {
+     "name": "جھلساؤ",
+     "desc": "بھاپ ایلیٹ اور باس کو کہیں زیادہ نقصان دیتی ہے۔"
+    },
+    "tater-pup-big-pup": {
+     "name": "بڑا پلا",
+     "desc": "بہت سے نہیں، ایک بڑا پلا۔"
+    },
+    "tater-pup-top-dog": {
+     "name": "ٹولی کا سردار",
+     "desc": "پلے سب سے بڑے کیڑے پر جھپٹتے ہیں۔"
+    },
+    "tater-pup-zoomies": {
+     "name": "اچھل کود",
+     "desc": "پلے کہیں تیز کاٹتے ہیں۔"
+    },
+    "tot-toss-big-tot": {
+     "name": "بڑی ٹکی",
+     "desc": "بہت سی نہیں، ایک بڑی ٹکی۔"
+    },
+    "tot-toss-tot-pile": {
+     "name": "ٹکیوں کا ڈھیر",
+     "desc": "رک کر تین بوچھاڑیں ایک ساتھ پھینکتا ہے۔"
+    },
+    "tot-toss-tot-sniper": {
+     "name": "ٹکی اسنائپر",
+     "desc": "ٹکیاں سب سے بڑے کیڑے کو تاکتی ہیں۔"
+    }
+   },
    "rarity": {
     "0": {
      "name": "عام"
@@ -53662,143 +59224,143 @@
   "index": {
    "url": "https://tibo.dog/data/v1/index.json",
    "bytes": 18937,
-   "sha256": "2287bb57e0570348206b7928dac1d0b4f6b52105d4fe98c1f2d411df6c4ada24"
+   "sha256": "6ee728f1cc49d50a4e40fe6f8dc7b7465feea86606000bbfc59b3833ba76416c"
   },
   "locales": {
    "en": {
     "url": "https://tibo.dog/data/v1/text/en.json",
-    "bytes": 55101,
-    "sha256": "92614dd2df96c63b1d3950b3035d7b2092071755d53f0c8f3377fa03acc6989b"
+    "bytes": 59391,
+    "sha256": "84016c3ef7348f6b69a77a4f07016c0fa848f5e1cdeda3c9b43ac50c3f6a600c"
    },
    "zh-CN": {
     "url": "https://tibo.dog/data/v1/text/zh-CN.json",
-    "bytes": 54197,
-    "sha256": "ba8c207932b6f25c56c3748124f987b4bddff30ab11dec36bfacc1d1368407d6"
+    "bytes": 58554,
+    "sha256": "d701bbe7f520b9547dfd1951eeb5fa283864d4a128464b9c3eff9be7f664faa4"
    },
    "zh-TW": {
     "url": "https://tibo.dog/data/v1/text/zh-TW.json",
-    "bytes": 54443,
-    "sha256": "794283b6c9f4b7b1161804ad6d1543aa306c0d7d433c579c4c52909cc5c6b771"
+    "bytes": 58812,
+    "sha256": "55b9215e5e0aecec216658688924a0cba5093d807ee90a7ccf3dc72a9520fd8a"
    },
    "ja": {
     "url": "https://tibo.dog/data/v1/text/ja.json",
-    "bytes": 66411,
-    "sha256": "da0ad8f966a4ad24b14e6ca8b69b6e9055d4eeb215c844107de4a3afad8b254d"
+    "bytes": 71656,
+    "sha256": "490aace5ea3db41c7797ad778f95323dfc9df043154ee14631ffe7b0783f1c88"
    },
    "ko": {
     "url": "https://tibo.dog/data/v1/text/ko.json",
-    "bytes": 66706,
-    "sha256": "a722cf168eaed33310c1b3ab027aa24a3239918b4cb8713d1bdad472fb1f445a"
+    "bytes": 71840,
+    "sha256": "7ccfe4294ed6c2612ba1ebaac6383ceb9835b86216a54ebbd19b8ef4ad5c7fd8"
    },
    "es": {
     "url": "https://tibo.dog/data/v1/text/es.json",
-    "bytes": 62532,
-    "sha256": "5ce11bed7ccb61c1b7f360f2052e09ef3c825ce6a344c7252c03b8be88ad3b23"
+    "bytes": 67101,
+    "sha256": "a8de2795dbd61dcb375befdcd58f21c613c4e2a564f5406df91ba25855d5732e"
    },
    "hi": {
     "url": "https://tibo.dog/data/v1/text/hi.json",
-    "bytes": 116212,
-    "sha256": "375141cae8c1c9061a5971fb9e8d8b246709bfea663cca21ce00d4fd78ec86d7"
+    "bytes": 124084,
+    "sha256": "12f823a570e10c96dc5904d745998ca0684dee1b305aac7012484f1f5e21cf79"
    },
    "de": {
     "url": "https://tibo.dog/data/v1/text/de.json",
-    "bytes": 61615,
-    "sha256": "269149ba261c300cd49cce3760d7bed676b1d08682dfe89f8d620195d4a86d28"
+    "bytes": 66382,
+    "sha256": "2530315435fe8b11febf5adb3aff81b5fd927706516846cf9ad4542efc63d242"
    },
    "fr": {
     "url": "https://tibo.dog/data/v1/text/fr.json",
-    "bytes": 64967,
-    "sha256": "9edbf75bb76eafae52932414bb5fa8d5be33abbfdc0084313c050639ecda7028"
+    "bytes": 69621,
+    "sha256": "5a055e04b49e14620c3c91e7a5bc08e9ffdfaa220ba3c3d05bbef6e28890690b"
    },
    "pt": {
     "url": "https://tibo.dog/data/v1/text/pt.json",
-    "bytes": 61192,
-    "sha256": "80107f1172c3f1e09293ee90a4620cb5863206ff6c88283d4b1b520b904a5f7e"
+    "bytes": 65669,
+    "sha256": "8ba18cf203ce4a2b17d00cb2e681eab08b443d597cd6b12d336298f68c312399"
    },
    "tr": {
     "url": "https://tibo.dog/data/v1/text/tr.json",
-    "bytes": 63420,
-    "sha256": "a2c8e7f20f3f372f4857719cafe3ffa516cafcb73ba55e8b6e2910ab562c11c0"
+    "bytes": 68162,
+    "sha256": "0cba7603d7ef6ae06ab6f7f5255baf5bf2fbe0a05d9f13357203baa2663a7af0"
    },
    "id": {
     "url": "https://tibo.dog/data/v1/text/id.json",
-    "bytes": 60932,
-    "sha256": "38651615e5e6a27e6401f1241c6fe835ad7e944a2101b6c37b97d68cbf2c03d4"
+    "bytes": 65479,
+    "sha256": "ba1af4f4ef465e8c0f5f55b47e8b35271dfeb4cded43e54627af8c7a7a6044d0"
    },
    "ru": {
     "url": "https://tibo.dog/data/v1/text/ru.json",
-    "bytes": 91263,
-    "sha256": "44281e8d8655dd1ae7cc3ec223d2db17b22224ae3992a91f823cd9640ba25926"
+    "bytes": 97683,
+    "sha256": "ebcda5e2a71bf6879687520e6c14ec93fea64c6ea827f57d856539f1b2c4a9f9"
    },
    "ms": {
     "url": "https://tibo.dog/data/v1/text/ms.json",
-    "bytes": 63107,
-    "sha256": "e312babb6d0a86f2411b23e558e9715befc8a615c8e20c4225f1e50634982302"
+    "bytes": 67752,
+    "sha256": "0d56b8514bf23696b51722bc3cb8d0663d00cb012c278810692120bbedda70a7"
    },
    "fil": {
     "url": "https://tibo.dog/data/v1/text/fil.json",
-    "bytes": 67036,
-    "sha256": "ff4625d801e2abd8c30a3f0ce499aa0550de45dce5f279cb7744185e65c1548a"
+    "bytes": 71469,
+    "sha256": "cd01aedb65bab98d9b08796eb00099d71bc5cf5c07fe7c761a8a1c3a5239c68a"
    },
    "mr": {
     "url": "https://tibo.dog/data/v1/text/mr.json",
-    "bytes": 120548,
-    "sha256": "95bf513e4d27b954ccfeee3a1f4140bde60f9f9b67679e2363aa7200955653ef"
+    "bytes": 128315,
+    "sha256": "d2740c7c7b69c1c9aae41361db9ffed5482597f1b9e29a323b71d6fb923df595"
    },
    "vi": {
     "url": "https://tibo.dog/data/v1/text/vi.json",
-    "bytes": 67381,
-    "sha256": "f80db8f123f6676fa7e8d39743dc7d0f86175ea9217aa868eae594f34f576f52"
+    "bytes": 72184,
+    "sha256": "be4abdb089d10060371b84d426403f78c621cb0805a3d3b3128e0d3bb5aa3780"
    },
    "te": {
     "url": "https://tibo.dog/data/v1/text/te.json",
-    "bytes": 126513,
-    "sha256": "1ae135345c8c16be4adc62ed29bb0496cce795fcb4df9a1d031cda1d1ab4957f"
+    "bytes": 134970,
+    "sha256": "7099faa6fea2655d6ef6900f55f3b41eba7751d524aaa8fb6b9b69ac86fcd9b8"
    },
    "ta": {
     "url": "https://tibo.dog/data/v1/text/ta.json",
-    "bytes": 138434,
-    "sha256": "dc01d5e4f2af92c5ebbb13618af87ad4c19d472014d659c71a3b35a00cf2f117"
+    "bytes": 147433,
+    "sha256": "4bcf527d9958f626a261c3d0f9ccf2f5226201c1a34ccf37c8ff21fc7f895966"
    },
    "bn": {
     "url": "https://tibo.dog/data/v1/text/bn.json",
-    "bytes": 117289,
-    "sha256": "a7826701e9e73611c35d359fe0f1641fc20d26282842a6e8193639a44b66958a"
+    "bytes": 125060,
+    "sha256": "75a06fd75484facd003efbb07e8a6268538b8d40db12e7ca5ab7473c801b9c85"
    },
    "th": {
     "url": "https://tibo.dog/data/v1/text/th.json",
-    "bytes": 112975,
-    "sha256": "48f3fbf917eaddc77d70e7a55c11fa9bf73d81ee381b1b78d109f618a976f47c"
+    "bytes": 120660,
+    "sha256": "98392c9dc0e8cac3abb59eac0a9b70f11ffa3dac968fb96245cc73c32c1cef80"
    },
    "ha": {
     "url": "https://tibo.dog/data/v1/text/ha.json",
-    "bytes": 63499,
-    "sha256": "e7c05db7454aa44d0e2196e85bde29fd3b301c24625631ff9b14e0cea9ca269c"
+    "bytes": 68055,
+    "sha256": "dbfac7f4e6136a94a07752e3aa5caf35bf03043045bf96ddd303279fa0c0230f"
    },
    "pcm": {
     "url": "https://tibo.dog/data/v1/text/pcm.json",
-    "bytes": 58089,
-    "sha256": "cc16001f56a36b048b2cf1aa28072a23ff9233f5ffe824bb3efe1e89c20813c7"
+    "bytes": 62573,
+    "sha256": "c8027fedbe8bb30561fb23d8f443ed8d4af7d661cddf3b14d342446bdc0c687d"
    },
    "ar": {
     "url": "https://tibo.dog/data/v1/text/ar.json",
-    "bytes": 76498,
-    "sha256": "77553aada32a0b8ef3ead792b1e8a10bc983b5cf24bbe0ff1f84d4d7f132be36"
+    "bytes": 82187,
+    "sha256": "206d2d677c0730dffbc2c861a41317a94bcd52110ca37d66e891e0ca66e833ff"
    },
    "fa": {
     "url": "https://tibo.dog/data/v1/text/fa.json",
-    "bytes": 90143,
-    "sha256": "6c7705c4ff15f5cbeffe57cb41dbe0c5dbec86070957ba989c23cb8a920b5dd1"
+    "bytes": 96479,
+    "sha256": "980f10428c9541ceaa7e6464facc722835cdaeed99754eee6270fc27d802791b"
    },
    "he": {
     "url": "https://tibo.dog/data/v1/text/he.json",
-    "bytes": 75916,
-    "sha256": "8ec771d3788a6509b3743c956021343869905330525528ed08193eb88334046b"
+    "bytes": 81740,
+    "sha256": "8c40fddecb0b16512e10c2fd6c59db8ebe5f0e87e75492b277d7f04632e1d0f2"
    },
    "ur": {
     "url": "https://tibo.dog/data/v1/text/ur.json",
-    "bytes": 86771,
-    "sha256": "679cf3a91519a02c8b12be3f934a386d5aab2df4937444639ee537ec3ec9bd8c"
+    "bytes": 92829,
+    "sha256": "09ff0a7dafe1691503158fe55c27a370a795a51fd151e495b5baa9c5c3672d4f"
    }
   }
  }

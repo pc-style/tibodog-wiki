@@ -147,6 +147,7 @@ write('llms-full.txt', pages.map((p) => renderMd(p)).join('\n\n---\n\n'));
 // Data API (static JSON).
 const api = {
   'weapons.json': R.allWeapons,
+  'runes.json': R.runes ?? [],
   'passives.json': R.passives,
   'items.json': R.allItems,
   'enemies.json': R.enemies,
@@ -223,6 +224,7 @@ function openapi(files) {
     'dogs.json': obj('A dog definition', { id: str('Dog id'), ability: anyObj('Ability parameters'), aura: anyObj('Aura stat bonuses'), levelUps: { type: 'array', items: anyObj('Training multipliers'), description: 'Training level multipliers' }, weight: num('Spawn weight'), legendary: { type: 'boolean', description: 'Legendary dog' } }, ['id', 'ability', 'aura']),
     'pois.json': obj('A point-of-interest kind', { kind: str('POI kind'), radius: num('Radius') }, ['kind']),
     'grok-bots.json': obj('A Grok Bot helper', { id: str('Bot id'), help: anyObj('Help effect'), weight: num('Spawn weight') }, ['id', 'help']),
+    'runes.json': obj('A source-extracted weapon rune', { id: str('Rune id'), weapon: str('Starting weapon family id'), axis: { type: 'string', enum: ['shape', 'target', 'rhythm'] }, effects: { type: 'array', items: anyObj('Rune effect parameters') }, scale: anyObj('Multipliers applied when the rune fits the attack') }, ['id', 'weapon', 'axis', 'effects']),
   };
   const errorResponses = {
     '4XX': { description: 'Client error, e.g. unknown endpoint (404)', content: { 'application/json': { schema: { $ref: '#/components/schemas/Error' } } } },

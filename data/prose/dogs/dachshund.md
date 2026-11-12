@@ -7,7 +7,7 @@ Every 6 seconds Frank digs and scatters 6 coins around itself. Each dig also has
 ## How it works
 
 - The coin count is `round(6 × power)`: 6, 8, 12, 14 and 17 at levels 1 to 5. Each coin is a normal gold pickup worth 1 gold before gold gain. That is 1 gold per second at level 1 and about 5.5 per second at level 5.
-- The 20% bonus chance does not grow with training, but faster digging means more rolls. At level 1 that is about 1.4 snacks and 0.6 rerolls a minute; at level 5 about 2.7 snacks and 1.2 rerolls. <small>[sim-PFuQo9mq.js: `` e.lootRng.chance(n.bonusChance)&&(z(e,e.lootRng.chance(.7)?`heal`:`reroll`,a,o-6,30) ``]</small>
+- The 20% bonus chance does not grow with training, but faster digging means more rolls. At level 1 that is about 1.4 snacks and 0.6 rerolls a minute; at level 5 about 2.7 snacks and 1.2 rerolls. <small>[sim-Bt1MrMd3.js: `` e.lootRng.chance(n.bonusChance)&&(B(e,e.lootRng.chance(.7)?`heal`:`reroll`,a,o-6,30) ``]</small>
 - A dig always succeeds, so Frank's timer never stalls.
 
 **Measured** (build 41 `main-B2gf34bA.js`, headless `tools/play.mjs`, seed `wiki`, standard mode, normal difficulty; Frank added at Tibo's side and trained with the sim's own dog-join and dog-level-up functions; HP refilled every tick; Tibo standing still; level-ups taking the first offer; 150 s; digs timed from the game's `dogAbility` events): the first dig came 1 s after joining, then one every 6 s at level 1 (24 of 24 gaps) and every 3.11–3.12 s at level 5 (47 of 47). The level 5 interval is 3.11 s rounded to whole 1/60 s ticks. The timer never stalled.

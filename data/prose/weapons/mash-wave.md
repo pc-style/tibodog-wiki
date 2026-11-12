@@ -6,7 +6,7 @@ It is offered as a level-up card, and it is on the list of new weapons [poteto's
 
 ## How it works
 
-- Each ring is centred where Tibo stood when it was released and does not move with him. It starts at a radius of 4 and grows at the weapon's speed (160 units/s, at least 60, scaled by projectile speed), so a level-1 ring reaches its edge in about 0.55 s. <small>[sim-PFuQo9mq.js: `i.maxRadius[a]=n.size*r.area,i.growSpeed[a]=Math.max(60,r.speed)`]</small>
+- Each ring is centred where Tibo stood when it was released and does not move with him. It starts at a radius of 4 and grows at the weapon's speed (160 units/s, at least 60, scaled by projectile speed), so a level-1 ring reaches its edge in about 0.55 s. <small>[sim-Bt1MrMd3.js: `i.maxRadius[a]=n.size*r.area,i.growSpeed[a]=Math.max(60,r.speed)`]</small>
 - The ring's edge is a band `thickness` × √Area + 6 units deep (16 at level 1). A pest is hit when the band reaches it, and each ring hits each pest only once.
 - Area scales the final radius directly, so +15% Area means a 15% wider ring.
 

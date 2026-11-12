@@ -11,6 +11,17 @@ test('weapon infobox slow percentages show reduction, not remaining speed', () =
   }
 });
 
+test('weapon rune sections follow source associations, not prefixes or evolved names', () => {
+  const pages = weaponPages();
+  const peeler = pages.find((p) => p.path === '/weapons/peeler').body;
+  assert.match(peeler, /Backhand/);
+  assert.match(peeler, /Haymaker/);
+  assert.match(peeler, /Wide Peel/);
+  assert.doesNotMatch(peeler, /Tot Sniper/);
+  assert.match(pages.find((p) => p.path === '/weapons/tot-toss').body, /Tot Sniper/);
+  assert.doesNotMatch(pages.find((p) => p.path === '/weapons/mandoline-fury').body, /## Weapon runes/);
+});
+
 test('dog pages describe active special abilities, not zero-radius fetch fallbacks', () => {
   const pages = dogPages();
   for (const [id, ability] of [['sigkitten', 'sigstop'], ['husky', 'howl'], ['newfoundland', 'catch'], ['retriever', 'fetch'], ['saluki', 'gale'], ['shiba', 'spirits'], ['whippet', 'tug']]) {

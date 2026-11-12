@@ -37,6 +37,7 @@ function measurements(text, path) {
 }
 
 function family(def) {
+  if (Array.isArray(def.effects) && def.axis) return [def.axis, ...def.effects.map((e) => e.kind)].join('/');
   let v = def.behavior ?? def.effect ?? def.trick ?? def.flagged ?? def.ability ?? def.attack ?? def.hazard ?? def.help ?? def.rule;
   const parts = [];
   while (v) {
@@ -111,6 +112,12 @@ export function createInventory({ registry, config, pages, build, evidence = {},
       add(kind, def, path, label, shared);
     }
   }
+  for (const def of registry.runes ?? []) {
+    const path = `/weapons/${def.weapon}#weapon-runes`;
+    if (!byPath.get(`/weapons/${def.weapon}`)?.body.includes('## Weapon runes\n')) throw new Error(`Coverage: missing rune section for ${def.id}`);
+    add('rune', def, path, def.id, { status: 'partial', path, source: 'pages/entities.mjs',
+      reason: 'Published text, raw definition and shared effect rules; not a per-rune combat walkthrough' });
+  }
   const sets = Object.entries(config).filter(([, v]) => Array.isArray(v) && v[0]?.set && v[0]?.rule);
   if (sets.length !== 1) throw new Error('Coverage: expected one exported gear-rule catalog');
   const modes = byPath.get('/modes');
@@ -141,11 +148,11 @@ export function coverageMarkdown(inventory) {
   const recipeOnly = weapons.filter((e) => e.proseFile && e.explanation.status === 'missing');
   const link = (e) => `[${e.name}](${e.path})`;
   const table = (fields) => `| Kind | ${fields.map(([label]) => label).join(' | ')} |\n|---|${fields.map(() => '---|').join('')}\n${Object.entries(inventory.groups).map(([k, n]) => `| ${k} | ${fields.map(([, field]) => n[field]).join(' | ')} |`).join('\n')}\n`;
-  return `## Mechanics inventory\n\n**${summary.missing} missing explanations; ${summary.partial} family-overview-only entries**, out of ${summary.total} registry entities and gear rules. [Download every entry and its evidence](/api/v1/coverage.json). Generated on every build from the current registry, exported gear rules and page sections; not a model review.\n\n` +
+  return `## Mechanics inventory\n\n**${summary.missing} missing explanations; ${summary.partial} partial entries**, out of ${summary.total} registry entities, runes and gear rules. Partial entries include family guides and rune catalogs, not complete combat walkthroughs. [Download every entry and its evidence](/api/v1/coverage.json). Generated on every build from the current registry, exported gear rules and page sections; not a model review.\n\n` +
     `An explanation can live on the entity page or a shared guide; it need not be titled “How it works”. Flat-stat tables linked to Stats are not missing prose. Presence is not a check of every parameter or interaction.\n\n` + table([['Entries', 'total'], ['Missing', 'missing'], ['Partial', 'partial']]) +
     `\n### Weapon prose scan, triaged\n\n${noProse.length} of ${weapons.length} weapons have no dedicated prose file; ${noProse.filter((e) => ['shared', 'generated-stat'].includes(e.explanation.status)).length} of those have a full shared explanation. ${recipeOnly.length} more have a file but no attack walkthrough${recipeOnly.length ? ` (${recipeOnly.map(link).join(', ')})` : ''}. Gear rules are checked separately against Modes, not counted as missing weapon prose.\n\n` +
     `\n### Missing explanations\n\n${Object.keys(inventory.groups).map((k) => { const rows = entries.filter((e) => e.kind === k && e.explanation.status === 'missing'); return rows.length ? `- **${k}:** ${rows.map(link).join(', ')}.\n` : ''; }).join('')}\n` +
-    `<details><summary>Family overviews needing entity attack detail (${summary.partial})</summary>\n\n${entries.filter((e) => e.explanation.status === 'partial').map(link).join(', ')}.\n\n</details>\n\n` +
+    `<details><summary>Partial explanations needing attack detail (${summary.partial})</summary>\n\n${entries.filter((e) => e.explanation.status === 'partial').map(link).join(', ')}.\n\n</details>\n\n` +
     `<details><summary>Recorded evidence and missing reports (${summary.noRecordedMeasurement})</summary>\n\n“No report” means no located measurement; “No scenario” means no registered runnable script. These overlap and do not mean the entities were never tested.\n\n${table([['No report', 'noRecordedMeasurement'], ['No scenario', 'noRetainedScenario']])}\n${Object.keys(inventory.groups).map((k) => { const rows = entries.filter((e) => e.kind === k && !e.measurements.length && !e.scenarios.length); return rows.length ? `- **${k}:** ${rows.map(link).join(', ')}.\n` : ''; }).join('')}\n</details>\n\n` +
     `### Reading the evidence\n\nRetained scenarios: **${summary.currentScenario} entries with current-build results; ${summary.scenarioNeedsRerun} needing a rerun** after a game, definition or script change. This build generates the inventory; it does not rerun gameplay.\n\n“No recorded measurement” means none was found in the linked entity prose or explicitly mapped shared report—not proof nobody tested it. Old or unnamed builds stay historical or undated. The JSON includes each report's text, stated build, scenario command and revision status. Runtime-only systems and unrecorded scratch tests are outside this inventory.\n\n` +
     `### Cheapest next work\n\nReuse shared stat and attack-family explanations before writing more prose. New attack explanations need source-consumer reading; targeting, timing, proc caps and family attacks need controlled original-engine scenarios. Scripts can keep the inventory and parameter tables current, but cannot turn a raw table into a verified behavioral explanation. Private reward rules, natural survival and physical-device savings remain separate limits.\n`;

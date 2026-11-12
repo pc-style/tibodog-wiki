@@ -120,6 +120,38 @@ test('rejects commit, sim revision, and manifest drift on the final index', asyn
   }
 });
 
+test('rune text exports verbatim and maps compiled English while rejecting unknown or malformed fields', async () => {
+  const f = fixture();
+  f.rewrite('text/en.json', (doc) => {
+    doc.texts.rune = { 'peeler-backhand': { name: 'Backhand', desc: 'Slashes bat bullets back.' } };
+    return doc;
+  });
+  f.rewrite('text/fr.json', (doc) => {
+    doc.texts.rune = { 'peeler-backhand': { name: 'Revers' } };
+    return doc;
+  });
+  const result = await fetchOfficialData(COMMIT, f);
+  assert.deepEqual(localizedTextExport(result).text.fr.rune, { 'peeler-backhand': { name: 'Revers' } });
+  assert.equal(localizedTextExport(result).text.en.rune['peeler-backhand'].desc, 'Slashes bat bullets back.');
+  f.dumped.content['content.rune.peeler-backhand.name'] = ['Backhand'];
+  f.dumped.content['content.rune.peeler-backhand.desc'] = ['Slashes bat bullets back.'];
+  assert.throws(() => applyOfficialData(f.dumped, result), /registry.runes: English IDs differ/);
+  f.dumped.registry.runes = [{ id: 'peeler-backhand', weapon: 'sample', axis: 'target', effects: [] }];
+  assert.deepEqual(applyOfficialData(f.dumped, result), f.dumped);
+  for (const runes of [[], [...f.dumped.registry.runes, ...f.dumped.registry.runes],
+    [{ id: 'peeler-backhand', weapon: 'unknown', effects: [] }]]) {
+    assert.throws(() => applyOfficialData({ ...f.dumped, registry: { ...f.dumped.registry, runes } }, result), /registry.runes/);
+  }
+  for (const fields of [{ damage: 1 }, { name: 3 }, { desc: null }, [], {}, { name: 'Backhand' }, { desc: 'Reflects' }, { name: 'Backhand', extra: 'No' }]) {
+    const g = fixture();
+    g.rewrite('text/en.json', (doc) => { doc.texts.rune = { 'peeler-backhand': fields }; return doc; });
+    await assert.rejects(fetchOfficialData(COMMIT, g), /official data:/);
+  }
+  const g = fixture();
+  g.rewrite('text/fr.json', (doc) => { doc.texts.rune = { 'peeler-backhand': { name: 'Revers' } }; return doc; });
+  await assert.rejects(fetchOfficialData(COMMIT, g), /unknown English mapping/);
+});
+
 test('required catalog or locale HTTP403 fails rather than falling back', async () => {
   for (const path of ['weapons.json', 'text/fr.json']) {
     const f = fixture(); f.forbidden = path;

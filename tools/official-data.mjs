@@ -21,6 +21,7 @@ const TEXT_FIELDS = {
   poi: ['name', 'desc'], botHelp: ['name', 'desc'], rarity: ['name'],
   shrine: ['label'], dailyWeather: ['name', 'desc'], gear: ['name', 'desc'],
   gearSet: ['name'], varietyPlace: ['name', 'desc'], setRule: ['label', 'desc'],
+  rune: ['name', 'desc'],
 };
 const fail = (message) => { throw new Error(`official data: ${message}`); };
 const object = (v) => v !== null && typeof v === 'object' && !Array.isArray(v);
@@ -124,6 +125,7 @@ function validateData(catalogs, text, locales) {
         if (!idOK(id)) fail(`text/${tag}/${type}: invalid ID`);
         keys(fields, TEXT_FIELDS[type], `text/${tag}/${type}/${id}`);
         if (!Object.keys(fields).length || Object.values(fields).some((v) => typeof v !== 'string')) fail(`text/${tag}/${type}/${id}: invalid fields`);
+        if (tag === 'en' && type === 'rune' && TEXT_FIELDS.rune.some((field) => typeof fields[field] !== 'string')) fail(`text/en/rune/${id}: missing name or desc`);
         if (tag !== 'en') {
           for (const field of Object.keys(fields)) if (!Object.hasOwn(text.en.texts[type]?.[id] ?? {}, field)) fail(`text/${tag}/${type}/${id}: unknown English mapping`);
         }
@@ -236,6 +238,13 @@ export function applyOfficialData(dumped, official) {
   }
   if (registry.bossIds !== undefined && (!Array.isArray(registry.bossIds) ||
       !isDeepStrictEqual([...registry.bossIds].sort(), Object.keys(official.catalogs.bosses.entries).sort()))) fail('registry.bossIds: IDs differ');
+  if (official.text.en.texts.rune) {
+    if (!Array.isArray(registry.runes) || !isDeepStrictEqual(registry.runes.map((r) => r.id).sort(),
+      Object.keys(official.text.en.texts.rune).sort())) fail('registry.runes: English IDs differ');
+    for (const rune of registry.runes) {
+      if (!registry.allWeapons.some((w) => w.id === rune.weapon)) fail(`registry.runes.${rune.id}: unknown weapon`);
+    }
+  }
   for (const [type, entries] of Object.entries(official.text.en.texts)) {
     for (const [id, fields] of Object.entries(entries)) for (const [field, value] of Object.entries(fields)) {
       const key = `content.${type}.${id}.${field}`;
