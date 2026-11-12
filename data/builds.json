@@ -2188,5 +2188,16 @@
   "updated": "2026-11-12T02:46:30Z",
   "changes": "Full Pack Ranger gear can start Open World with Mash Mortar. Pack Ranger Dailies add it from 20 November 2026 UTC, not the journal's earlier publication date; starter selection still does not guarantee it on every seed.",
   "evidence": "Canonical199/C2/5737b946 baseline; graph410→410,66changed files. Registry,English,config,names and icon pixels unchanged. Single normalized sim hunk adds mash-mortar to starter allowlist and Daily threshold20777. Fresh74 original old/current controls:48pool/selector cases with64fixed seeds each,16gear-tag and10picked/config/kit/Daily/Story precedence cases. Boundaries include20768/20769 and20776/20777/20778 plus no day; summon,zone,no-tag and missing-tag fallback inputs. Only current eligible pools contain/select Mash Mortar; Hash Hawk boundary and Peeler no-tag controls remain. Supplied inputs are not natural gear acquisition,guaranteed Daily kits,drop odds,DPS or server acceptance. Boot7hunks and changed DJ consumers consistently separate runMusic audio-port state from follower moodTracker; renderer/boot atlas diagnostics say feature instead of big update. Run-summary and run-address readers rename option to devRuns and refusal fault to dev-run while serialized bigUpdateRun field remains. Source-scoped inspection,not audible/performance/server or whole-runtime equivalence proof. Journal pack-ranger-mash-mortar-start/M_QNT9 is next,published2026-11-11T22:24:17Z,first observed in this imported200sequence; publication differs from Daily eligibility. Full/archived and separate actual live expanded panel agree354notes/11dates/151codes. Owning Modes citation refreshed;199rune API/27locale export/inventory honesty preserved. Prior drafts/stashes/D8ref/blocked exports retained; no classifier relaxation,dispatcher change or unrelated coverage batch. Provenance and limits in data/journal-audit.md."
+ },
+ {
+  "seen": "2026-11-12",
+  "main": "main-DoNTf8Qq.js",
+  "boot": "boot-BTD9Ldgb.js",
+  "sim": "sim-CnCw_hkt.js",
+  "commit": "93261e4cb47f",
+  "status": "reviewed",
+  "updated": "2026-11-12T03:59:53Z",
+  "changes": "Existing journal notes moved into a dated release group; no gameplay or wording changes.",
+  "evidence": "Automatic unchanged next-to-dated proof against main-Dalr_IKi.js; all 410 reachable files checked, full/panel browser and official API validated. Original publication timestamps and prior introduction history retained. Proof: .cache/main-DoNTf8Qq/journal-proof.json."
  }
 ]

@@ -8,7 +8,7 @@ It is the catalyst for [Mandoline Fury](/weapons/mandoline-fury), the evolution 
 
 Max HP is `(100 + flat max HP) × (1 + percent max HP) × difficulty max HP` (see [Stats](/stats)). Gravy Heart is the only source of percent max HP. Flat bonuses, from [Spud Muffin](/items/spud-muffin) (+10) and [Spud Shrine](/points-of-interest#spud-shrine) blessings, are added first, so Gravy Heart multiplies them too.
 
-When max HP goes up, current HP goes up by the same amount, so taking a level of Gravy Heart also heals.<small>[sim-BDMSZToz.js: `n.hp[e.me]=Math.min(r,(n.hp[e.me]??0)+Math.max(0,t))`]</small>
+When max HP goes up, current HP goes up by the same amount, so taking a level of Gravy Heart also heals.<small>[sim-CnCw_hkt.js: `n.hp[e.me]=Math.min(r,(n.hp[e.me]??0)+Math.max(0,t))`]</small>
 
 ## Tips
 
