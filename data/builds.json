@@ -2199,5 +2199,16 @@
   "updated": "2026-11-12T03:59:53Z",
   "changes": "Existing journal notes moved into a dated release group; no gameplay or wording changes.",
   "evidence": "Automatic unchanged next-to-dated proof against main-Dalr_IKi.js; all 410 reachable files checked, full/panel browser and official API validated. Original publication timestamps and prior introduction history retained. Proof: .cache/main-DoNTf8Qq/journal-proof.json."
+ },
+ {
+  "seen": "2026-11-12",
+  "main": "main-Cqx7XaN_.js",
+  "boot": "boot-CQO3S6bI.js",
+  "sim": "sim-BGF0Y8Y5.js",
+  "commit": "74641611456f",
+  "status": "reviewed",
+  "updated": "2026-11-12T05:50:02Z",
+  "changes": "No gameplay changes; a rebuild of the same game.",
+  "evidence": "Automatic whole-build comparison (tools/same-build.mjs): all 410 files reachable from the index.html match main-DoNTf8Qq.js after mapping file hashes and the build's own commit id."
  }
 ]

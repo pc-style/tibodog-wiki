@@ -7,7 +7,7 @@ Compared with a max-level Potato Rain (14 potatoes, 64 damage, every 3.3 s), it 
 ## How it works
 
 - Potatoes land the same way as Potato Rain's: random points around Tibo, each after 0.4 s plus a random time of up to the weapon's duration (2 s, or 2.5 s with Tibo's base +25% duration).
-- **Gold on kill.** Each potato hit tags the pest with `goldOnKill` 0.1. When the pest dies, that value is added to its normal gold-drop chance, so a golden potato kill has a 10-percentage-point higher chance to drop a gold coin. <small>[sim-CnCw_hkt.js: `r.next()<n.goldChance[t]+n.killGold[t]`]</small>
+- **Gold on kill.** Each potato hit tags the pest with `goldOnKill` 0.1. When the pest dies, that value is added to its normal gold-drop chance, so a golden potato kill has a 10-percentage-point higher chance to drop a gold coin. <small>[sim-BGF0Y8Y5.js: `r.next()<n.goldChance[t]+n.killGold[t]`]</small>
 - The tag is overwritten by each later hit, so only the last hit before the pest dies decides whether the bonus applies. A pest that a golden potato damages but another weapon finishes off does not get it.
 
 **Measured** in the headless sim (`tools/play.mjs`, build 41 `main-B2gf34bA.js`, Standard, Normal, god mode, seeds `s1`, `s2` and `s3`; the seeded starting weapon removed, the weapon given with `give`, spawning stopped after 4 s of play and the pests already on the field held at fixed spots with 10⁹ HP; Tibo standing still, facing right, with 8 pests in a line 20 to 90 units to his right): it called 21 potatoes on the same tick every 3 s, each with a blast radius of 25.2 and 110 damage. All three seeds gave the same figures.
