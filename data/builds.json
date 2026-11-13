@@ -2232,5 +2232,16 @@
   "updated": "2026-11-12T07:46:05Z",
   "changes": "No gameplay changes; a rebuild of the same game.",
   "evidence": "Automatic whole-build comparison (tools/same-build.mjs): all 410 files reachable from the index.html match main-RUamO2Cq.js after mapping file hashes and the build's own commit id."
+ },
+ {
+  "seen": "2026-11-13",
+  "main": "main-D7hEofEZ.js",
+  "boot": "boot-Bm3x3QN9.js",
+  "sim": "sim-CteDA9xy.js",
+  "commit": "0642262a48b8",
+  "status": "reviewed",
+  "updated": "2026-11-13T02:24:34Z",
+  "changes": "No gameplay changes; a rebuild of the same game.",
+  "evidence": "Automatic whole-build comparison (tools/same-build.mjs): all 410 files reachable from the index.html match main-DtNUKdA1.js after mapping file hashes and the build's own commit id."
  }
 ]
