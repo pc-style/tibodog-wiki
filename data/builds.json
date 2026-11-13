@@ -2243,5 +2243,16 @@
   "updated": "2026-11-13T02:24:34Z",
   "changes": "No gameplay changes; a rebuild of the same game.",
   "evidence": "Automatic whole-build comparison (tools/same-build.mjs): all 410 files reachable from the index.html match main-DtNUKdA1.js after mapping file hashes and the build's own commit id."
+ },
+ {
+  "seen": "2026-11-13",
+  "main": "main-CrJIatJG.js",
+  "boot": "boot-CIIIT2l9.js",
+  "sim": "sim-lhAs_O8g.js",
+  "commit": "444c2c78bb72",
+  "status": "reviewed",
+  "updated": "2026-11-13T04:25:22Z",
+  "changes": "Busy-fight shot masking moves from the CPU to a GPU texture. Graphics-preparation shader clones now share live uniform updates; no performance improvement was measured.",
+  "evidence": "Compared main-D7hEofEZ.js to main-CrJIatJG.js: 410→410 reachable files; only the scene owner changes after graph mapping. Registry, English/config, journal, localized names and icon pixels match; sim/boot have zero normalized hunks. Inspected all 19 scene hunks, mask producers/consumers, GPU preparation/draw/disposal and material-clone consumers. Original previous/current Chromium SwiftShader controls cover 16 supplied screen-space mask cases (262144 texels: max one byte difference), empty/zero/partial/full weights, edges, asymmetric overlap and wide/narrow aspect ratios; original GPU draw restores render target/clear state and mask capacity is bounded. Two original shader-material controls verify isolated old versus shared current uniform updates. Complete archived/full and expanded actual live journal evidence: 354 records, 11 dates, 151 codes; no publication/grouping changes. These are isolated supplied-state mask/material controls, not full-scene equivalence, natural crowded gameplay, frame-rate, loading-speed or battery measurements. Prior rune, locale, inventory and historical evidence retained; current scene citations refreshed."
  }
 ]

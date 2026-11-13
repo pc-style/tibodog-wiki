@@ -1,6 +1,6 @@
 ## Overview
 
-Grater Golem is the tenth boss. It arrives at 16:00 on the [wave schedule](/bosses#wave-schedule), with a [Ring of Hay Bales](/events/bale-ring). It is the first boss after the ×3 boss HP step at minute 16, so its 7400 base HP becomes 22,200. That is about 14,430 on Normal (boss HP ×0.65, see [Modes](/modes)) and 21,090 on Nightmare before [curse](/curse). Nightmare starts every run with one curse, which adds 10% to boss HP, so there it actually has about 23,199. <small>[intro-shared-B7v_WfRS.js: `startCurses:1,tierLag:2,wallPests:.6`]</small> <small>[sim-CteDA9xy.js: `n.maxHp[r]=i.hp*t.hpMult*(1+e.loadout.stats.curse)`]</small> Its contact damage of 40 is the second highest of any boss, after [The Harvester](/bosses/harvester). It walks at speed 34.
+Grater Golem is the tenth boss. It arrives at 16:00 on the [wave schedule](/bosses#wave-schedule), with a [Ring of Hay Bales](/events/bale-ring). It is the first boss after the ×3 boss HP step at minute 16, so its 7400 base HP becomes 22,200. That is about 14,430 on Normal (boss HP ×0.65, see [Modes](/modes)) and 21,090 on Nightmare before [curse](/curse). Nightmare starts every run with one curse, which adds 10% to boss HP, so there it actually has about 23,199. <small>[intro-shared-1u-i-U-u.js: `startCurses:1,tierLag:2,wallPests:.6`]</small> <small>[sim-lhAs_O8g.js: `n.maxHp[r]=i.hp*t.hpMult*(1+e.loadout.stats.curse)`]</small> Its contact damage of 40 is the second highest of any boss, after [The Harvester](/bosses/harvester). It walks at speed 34.
 
 It is part of the post-20:00 rotation, so a long run meets it again at 24:00, 31:00 and every 7 minutes after that ([After 20:00](/bosses#after-20-00)). A [Boss Lair](/points-of-interest#boss-lair) can also wake it. It drops an XP gem worth 170, a 25-gold coin and a chest ([Chests](/chests)). It has no Nightmare variants.
 
@@ -8,17 +8,17 @@ It is part of the post-20:00 rotation, so a long run meets it again at 24:00, 31
 
 ## Fight
 
-The Golem walks towards Tibo and fires weaving rings. Every 3 s it stops and charges along a marked line. One charge cycle is 4.9 s: 3 s of walking, 1 s of warning and a 0.9 s dash. The ring timer is paused during the warning and the dash. <small>[sim-CteDA9xy.js: `d===0?(VE(e,o,s,c,l,u),BE(e,o,s,t)):d===1?HE(e,o,s,t):UE(e,o,s,t)`]</small>
+The Golem walks towards Tibo and fires weaving rings. Every 3 s it stops and charges along a marked line. One charge cycle is 4.9 s: 3 s of walking, 1 s of warning and a 0.9 s dash. The ring timer is paused during the warning and the dash. <small>[sim-lhAs_O8g.js: `d===0?(VE(e,o,s,c,l,u),BE(e,o,s,t)):d===1?HE(e,o,s,t):UE(e,o,s,t)`]</small>
 
 ### Charge
 
-When the charge starts, a line 26 units wide is drawn from the Golem in Tibo's direction. It is 288 units long, the distance of the dash (speed 320 for 0.9 s). <small>[sim-CteDA9xy.js: `e.zones.length[o]=a.dashSpeed*a.dashTime`]</small> The Golem stands still for 1 s, then dashes along the line. The direction is fixed when the line appears and does not follow Tibo.
+When the charge starts, a line 26 units wide is drawn from the Golem in Tibo's direction. It is 288 units long, the distance of the dash (speed 320 for 0.9 s). <small>[sim-lhAs_O8g.js: `e.zones.length[o]=a.dashSpeed*a.dashTime`]</small> The Golem stands still for 1 s, then dashes along the line. The direction is fixed when the line appears and does not follow Tibo.
 
-The line itself deals no damage; the Golem's body does. During the dash its contact damage is multiplied by 1.5, so 60 at base before time scaling. <small>[sim-CteDA9xy.js: `` return e.bosses.state[t]===2&&r.attack.kind===`charge`?1.5:1 ``]</small> Its body is wider than the line (radius 16 against a half-width of 13), so with Tibo's own size the danger reaches about 21 units from the centre of the line.
+The line itself deals no damage; the Golem's body does. During the dash its contact damage is multiplied by 1.5, so 60 at base before time scaling. <small>[sim-lhAs_O8g.js: `` return e.bosses.state[t]===2&&r.attack.kind===`charge`?1.5:1 ``]</small> Its body is wider than the line (radius 16 against a half-width of 13), so with Tibo's own size the danger reaches about 21 units from the centre of the line.
 
 ### Weaving ring
 
-Every 3 s at base, the Golem fires one ring of 14 shots at speed 90, 14 damage each, after a 0.8 s warning. Each shot sways from side to side as it flies, about 10 units either way, 1.2 times a second. Neighbouring shots sway in opposite directions, so the gaps between them keep opening and closing. <small>[sim-CteDA9xy.js: `let n=N*e.hz;return e.px*n*k(n*t)`]</small>
+Every 3 s at base, the Golem fires one ring of 14 shots at speed 90, 14 damage each, after a 0.8 s warning. Each shot sways from side to side as it flies, about 10 units either way, 1.2 times a second. Neighbouring shots sway in opposite directions, so the gaps between them keep opening and closing. <small>[sim-lhAs_O8g.js: `let n=N*e.hz;return e.px*n*k(n*t)`]</small>
 
 Enemy bullets scale with time ([Enemy scaling](/enemy-scaling#enemy-bullets)). At 16:00 each ring has 23 shots (14 × 1.64, rounded), they fly at about 112, and a ring comes about every 2 s.
 
