@@ -1,0 +1,15 @@
+## Overview
+
+Spud Decoy plants timed lures behind Tibo's facing direction. They attract nearby pests and explode when they expire. They do not burst early just because a pest reaches them.
+
+## How it works
+
+- Each cast plants decoys 26 units from Tibo, centered behind his facing direction. Extra Amount fans them out with an angular spacing of 1.1 radians. Level 1 has raw Amount 1 plus Tibo's +1, giving two decoys per cast. Raw cooldown is 7 s. <small>[start-rows-B9k6AWP1.js: ``I={lure:{reach:80},behind:26,spread:1.1,burstRadius:30}``]</small> <small>[sim-lhAs_O8g.js: ``o=E(a.fy[e.me],a.fx[e.me])+Math.PI+(i-(r.amount-1)/2)*n.spread``]</small> <small>[sim-lhAs_O8g.js: ``qd(e,a.x[e.me]+k(o)*n.behind,a.y[e.me]+w(o)*n.behind,Kd(n.lure,r.area),j(r.duration),t.slot)``]</small>
+- Lure reach is `80 × sqrt(effective Area)`, measured between centers. Only enemies strictly inside qualify; the nearest active lure wins. Lure steering stops them within 7 units. This is the same shared lure system as [Peel Phantom](/weapons/peel-phantom), including its limits: enemy behavior runs afterward and can override movement, and this enemy-loop redirect is not a boss taunt. <small>[sim-lhAs_O8g.js: ``function Kd(e,t){return e.reach*Math.sqrt(t)}``]</small> <small>[sim-lhAs_O8g.js: ``u>=d*d||u>=a||(i=s,a=u)``]</small> <small>[sim-lhAs_O8g.js: ``a&&ox(e,s),Zd(e,s),n.timer[s]=zE(n.timer[s],t),VO(e,s,b.enemyAt(n.def[s]).behavior,u)``]</small>
+- Raw duration is 4 s, or 5 s with Tibo's base ×1.25 Duration. At the end tick the decoy stops attracting and explodes for weapon damage in radius `30 × sqrt(effective Area)`. Its owner's weapon processes the explosion, then removes the lure. Base Spud Decoy does not leave the second, smaller decoy produced by [Clockwork Spud](/weapons/clockwork-spud). <small>[sim-lhAs_O8g.js: ``if(i.owner[o]!==t.slot||!Yd(e,o))continue;``]</small> <small>[sim-lhAs_O8g.js: ``$u(e,i.x[o],i.y[o],n.burstRadius*Math.sqrt(r.area)*c),Ob(e,t,n,r,o),Xd(e,o)``]</small> <small>[sim-lhAs_O8g.js: ``let a=n.echo,o=H(e).lures;if(a===void 0||o.echo[i]===1)return;``]</small>
+
+## Controlled checks
+
+Controlled original-engine checks passed on build 206 (`main-CrJIatJG.js`), Standard/Normal, seeds `s1`, `s2`, `s3`, using `node tools/probe-targeting-lures.mjs main-CrJIatJG.js`. Six Decoy scenario groups covered two level-1 decoys planted behind the facing direction at distance 26, a 300-tick life, no early contact damage and an explosion on the exact end tick. Isolated original-client steering fixtures checked sqrt(Area) reach, strict range equality, nearest-lure selection, the inner stop and expired-lure exclusion.
+
+The script grants level-1 Spud Decoy, inserts fixed-HP aphids and suppresses replacement casts while checking the first generation's expiry. Cast and explosion checks step the original Game; steering fixtures use an export-only, source-hashed bridge. It uses no gear, clock warp or HP refill. It does not measure natural acquisition, practical survival value, every enemy AI interaction or server behavior. See the revision-bound [coverage inventory](/coverage#mechanics-inventory).

@@ -1,5 +1,41 @@
 {
   "scenarios": {
+    "item:lightning-spud": [{
+      "file": "tools/probe-targeting-lures.mjs",
+      "command": "node tools/probe-targeting-lures.mjs main-CrJIatJG.js",
+      "main": "main-CrJIatJG.js",
+      "definitionSha256": "a6f1716ab87cfc5b6e4a9f9b7e7c8169fb9e3b5efa91f87528947bb791ddc070",
+      "scriptSha256": "246b19b8f2987254a428fad648f2b38101c952366cb6925f8ba2fc16531c2697",
+      "source": { "url": "https://tibo.dog/assets/sim-lhAs_O8g.js", "sha256": "d379edc61c6a1451bb0ad62f8aa5606cdbdf8671c6d6b60d1de935aca5793376" },
+      "scope": "Build 206, Standard/Normal, s1/s2/s3: six scenario groups. Original gate/hit fixtures check chance boundaries, failed-roll token preservation, burst/refill/cap, three-stack formula, slot/zero controls, splash damage/body-range and no recursion; full Game seeded fixed-target integrations. Forced RNG only in rule fixtures. Not natural proc/drop rates, representative DPS or server behavior."
+    }],
+    "weapon:hash-hawk": [{
+      "file": "tools/probe-targeting-lures.mjs",
+      "command": "node tools/probe-targeting-lures.mjs main-CrJIatJG.js",
+      "main": "main-CrJIatJG.js",
+      "definitionSha256": "2d92cb9c41c9981f4cef336d303d76fb5046795608cff1b1ae943a45b8da4714",
+      "scriptSha256": "246b19b8f2987254a428fad648f2b38101c952366cb6925f8ba2fc16531c2697",
+      "source": { "url": "https://tibo.dog/assets/sim-lhAs_O8g.js", "sha256": "d379edc61c6a1451bb0ad62f8aa5606cdbdf8671c6d6b60d1de935aca5793376" },
+      "scope": "Build 206, Standard/Normal, s1/s2/s3: six scenario groups. Original targeting fixtures check weighted current HP, elite/boss/hidden, body-range boundary, tracked/reused targets; full Game two-bird stagger, impact, post-impact cooldown, no crumbs and supplied Amount pool cap. Not every aiming/rune interaction, natural acquisition or representative DPS."
+    }],
+    "weapon:peel-phantom": [{
+      "file": "tools/probe-targeting-lures.mjs",
+      "command": "node tools/probe-targeting-lures.mjs main-CrJIatJG.js",
+      "main": "main-CrJIatJG.js",
+      "definitionSha256": "28fdfe0d98d1afdf48542deb10f81ef5d07be1b3640b7478cb75bfec3f97c904",
+      "scriptSha256": "246b19b8f2987254a428fad648f2b38101c952366cb6925f8ba2fc16531c2697",
+      "source": { "url": "https://tibo.dog/assets/sim-lhAs_O8g.js", "sha256": "d379edc61c6a1451bb0ad62f8aa5606cdbdf8671c6d6b60d1de935aca5793376" },
+      "scope": "Build 206, Standard/Normal, s1/s2/s3: six scenario groups. Full Game idle/dash, one-husk dash-start placement, 113-tick expiry explosion and no early contact damage/projectiles; original steering fixtures test sqrt Area, strict boundary, nearest lure, inner stop and expired control. Supplied aphids, not every AI, natural survival or server behavior."
+    }],
+    "weapon:spud-decoy": [{
+      "file": "tools/probe-targeting-lures.mjs",
+      "command": "node tools/probe-targeting-lures.mjs main-CrJIatJG.js",
+      "main": "main-CrJIatJG.js",
+      "definitionSha256": "f7c17ee9f63572496b0ad863b217b11aa65a1fb4fcc90cd86377cfb4505e9cf4",
+      "scriptSha256": "246b19b8f2987254a428fad648f2b38101c952366cb6925f8ba2fc16531c2697",
+      "source": { "url": "https://tibo.dog/assets/sim-lhAs_O8g.js", "sha256": "d379edc61c6a1451bb0ad62f8aa5606cdbdf8671c6d6b60d1de935aca5793376" },
+      "scope": "Build 206, Standard/Normal, s1/s2/s3: six scenario groups. Full Game two decoys behind facing at distance 26, 300-tick expiry explosion and no early contact damage; original steering fixtures test sqrt Area, strict boundary, nearest lure, inner stop and expired control. Replacement casts suppressed. Not every AI, natural survival or server behavior."
+    }],
     "weapon:sprout-squad": [
     {
       "file": "tools/probe-sprout-squad.mjs",
