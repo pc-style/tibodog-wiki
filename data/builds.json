@@ -2254,5 +2254,16 @@
   "updated": "2026-11-13T04:25:22Z",
   "changes": "Busy-fight shot masking moves from the CPU to a GPU texture. Graphics-preparation shader clones now share live uniform updates; no performance improvement was measured.",
   "evidence": "Compared main-D7hEofEZ.js to main-CrJIatJG.js: 410→410 reachable files; only the scene owner changes after graph mapping. Registry, English/config, journal, localized names and icon pixels match; sim/boot have zero normalized hunks. Inspected all 19 scene hunks, mask producers/consumers, GPU preparation/draw/disposal and material-clone consumers. Original previous/current Chromium SwiftShader controls cover 16 supplied screen-space mask cases (262144 texels: max one byte difference), empty/zero/partial/full weights, edges, asymmetric overlap and wide/narrow aspect ratios; original GPU draw restores render target/clear state and mask capacity is bounded. Two original shader-material controls verify isolated old versus shared current uniform updates. Complete archived/full and expanded actual live journal evidence: 354 records, 11 dates, 151 codes; no publication/grouping changes. These are isolated supplied-state mask/material controls, not full-scene equivalence, natural crowded gameplay, frame-rate, loading-speed or battery measurements. Prior rune, locale, inventory and historical evidence retained; current scene citations refreshed."
+ },
+ {
+  "seen": "2026-11-13",
+  "main": "main-Bl0GPkcU.js",
+  "boot": "boot-R9cefr3R.js",
+  "sim": "sim-B7Rtlarz.js",
+  "commit": "8075d51b5253",
+  "status": "reviewed",
+  "updated": "2026-11-13T11:26:44Z",
+  "changes": "Daily runs now finish at 90:00 with The clock as killer and a success-ending music cue. The client bounds the claim log to that limit; the journal says these scores now reach the board, but server acceptance was not independently tested.",
+  "evidence": "Canonical CrJI→Bl0 comparison: 410→408 reachable files; daily.endTicks=324000 is the sole gameplay-config addition, with unchanged catalogs, names and icon pixels. Inspected all five sim and eight boot hunks plus Daily log/claim, score/summary, board, death-flow, rules, music and rendering consumers. Fresh source-bound original old/current controls pass125 cases: ticks323999/324000/324001 across Daily/Standard/Story and three seeds, paused/choice/over/dead/downed/pending/held-clock paths, visitor cleanup, clock versus actual death ordering, original music selection, explicit log limits/serialization and equal client scores at elapsed-time boundaries. Fixtures supply clocks, HP, visitors and a shortened config cap; no natural90-minute play, audible playback or server claims. Full-page/archived and separate actual expanded live panel agree355records/12dates/152codes. Official daily-ends-at-90 note is grouped2026-11-13/5a9fc7d; original publication remains2026-11-13T06:51:32Z. The same stop logic was observed in blocked mms, never published by this worker; mms→Bl0 differs only in journal owner content after graph mapping, and fresh Bl0 controls establish current binding. Prior four-mechanic CrJI probe/registrations stay historical, not current controls;27locales,51runes,inventory and blocked drafts retained. No classifier or check relaxed."
  }
 ]
