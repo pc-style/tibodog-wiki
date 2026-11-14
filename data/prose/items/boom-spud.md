@@ -2,7 +2,7 @@
 
 Boom Spud is a Rare item that gives killed enemies a chance to explode. Each copy adds 0.12 to the explode-on-kill stat. The stat goes through the game's diminishing-returns curve `x / (1 + x)` ([Stats](/stats#diminishing-returns)), so one copy gives a 10.7% chance, two give 19.4% and three give 26.5%.
 
-The explosion deals a flat 20 damage, multiplied by Tibo's damage stat, to every enemy within 22 units of the corpse. It works on pests and elites but not on bosses. <small>[sim-hRkN1bXa.js: `` n.explodeOnKillChance>0&&e.rng.next()<n.explodeOnKillChance&&(Y(e,20*n.damageMult,N(e,`boom-spud`,Sa(`boom-spud`)),-1,1),ed(e,a,o,22)) ``]</small>
+The explosion deals a flat 20 damage, multiplied by Tibo's damage stat, to every enemy within 22 units of the corpse. It works on pests and elites but not on bosses. <small>[sim--p06GhX-.js: `` n.explodeOnKillChance>0&&e.rng.next()<n.explodeOnKillChance&&(Y(e,20*n.damageMult,P(e,`boom-spud`,xa(`boom-spud`)),-1,1),ed(e,a,o,22)) ``]</small>
 
 Boom Spud has weight 16 out of 131 across the 21 Rare items in the complete pool. At luck 0, the rarity roll is 10% Rare, then Boom Spud gets 16/131 of that rarity's weight: about 1.22% of random item rolls. This assumes every item is eligible and no missing weapon-catalyst weight bonus applies; bans, stack caps and owned evolutions can change the eligible pool (see [Chests](/chests#item-rarity)). With [Rotten Spud](/passives/rotten-spud) at level 5, the next chest turns it into [Kaboom Spud](/items/kaboom-spud).
 
