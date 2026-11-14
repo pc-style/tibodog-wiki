@@ -2,13 +2,13 @@
 
 Hay Bales come only from the [Ring of Hay Bales](/events/bale-ring) event (“Hay bales close in!”). The [wave schedule](/bosses#wave-schedule) fires it at 4:30, 6:45, 9:45, 12:00 and 14:15; overtime uses the separate [endgame director](/endgame). The event surrounds Tibo with a ring of bales that slowly closes in.
 
-A bale is a moving wall, not a hunter. It has 400 base HP, the most of any pest, before [curse](/curse) and the current [time/difficulty scaling](/enemy-scaling). It deals 14 contact damage and crawls at speed 9. With mass 1 it ignores knockback completely. <small>[sim-rGD56OmB.js: `if(o<=0||i||s>=1)return`]</small> A destroyed bale gives 3 XP and a 5% chance of a coin.
+A bale is a moving wall, not a hunter. It has 400 base HP, the most of any pest, before [curse](/curse) and the current [time/difficulty scaling](/enemy-scaling). It deals 14 contact damage and crawls at speed 9. With mass 1 it ignores knockback completely. <small>[sim-DUXHKfs3.js: `if(o<=0||i||s>=1)return`]</small> A destroyed bale gives 3 XP and a 5% chance of a coin.
 
 ## How it works
 
-- **Count.** The ring has 36 × the level's `wallPests` multiplier bales: 5 on Easy, 11 on Normal and Hard, 22 on Nightmare (see [Modes](/modes)). They are spaced evenly on a circle of radius 170 around Tibo. <small>[sim-rGD56OmB.js: `o=Math.max(1,Math.round(t.count*e.cfg.level.wallPests))`]</small>
-- **Movement.** Each bale heads for the ring's centre, which is where Tibo stood when the event fired, not Tibo's current position. A bale stops once it is within 20 units of that point. Its speed is reset to the base 9, so overtime speed scaling does not apply, and it needs about 17 s to close the ring. <small>[sim-rGD56OmB.js: `a=Kt(r,i),o=a<20?0:n.speed[t]`]</small>
-- **Lifetime.** Bales disappear without drops 22 s after the event. <small>[sim-rGD56OmB.js: `r.speed[l]=v.enemyAt(n).speed,r.tx[l]=i,r.ty[l]=a,r.despawnAt[l]=e.time+t.life`]</small>
+- **Count.** The ring has 36 × the level's `wallPests` multiplier bales: 5 on Easy, 11 on Normal and Hard, 22 on Nightmare (see [Modes](/modes)). They are spaced evenly on a circle of radius 170 around Tibo. <small>[sim-DUXHKfs3.js: `o=Math.max(1,Math.round(t.count*e.cfg.level.wallPests))`]</small>
+- **Movement.** Each bale heads for the ring's centre, which is where Tibo stood when the event fired, not Tibo's current position. A bale stops once it is within 20 units of that point. Its speed is reset to the base 9, so overtime speed scaling does not apply, and it needs about 17 s to close the ring. <small>[sim-DUXHKfs3.js: `a=Kt(r,i),o=a<20?0:n.speed[t]`]</small>
+- **Lifetime.** Bales disappear without drops 22 s after the event. <small>[sim-DUXHKfs3.js: `r.speed[l]=b.enemyAt(n).speed,r.tx[l]=i,r.ty[l]=a,r.despawnAt[l]=e.time+t.life`]</small>
 
 ## Tips
 

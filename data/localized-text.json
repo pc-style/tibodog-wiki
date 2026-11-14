@@ -1,8 +1,8 @@
 {
  "schema": 1,
  "game": {
-  "version": "ac9c916",
-  "commit": "ac9c916a31b67acb78975f8f645c529ee75adce5"
+  "version": "20674ce",
+  "commit": "20674ce3a5efada3368ca4ed2010fe5afbf087a5"
  },
  "simVersion": "190c1ab50f0d66ac",
  "locales": [
@@ -1121,7 +1121,7 @@
     },
     "midnight-fries": {
      "name": "Midnight Fries",
-     "desc": "+5% damage. After 15:00, damage grows 6% more every 45 s."
+     "desc": "+5% damage. After {time}, damage grows {growth}% more every {seconds} s."
     },
     "moon-dust": {
      "name": "Moon Dust",
@@ -3307,7 +3307,7 @@
     },
     "midnight-fries": {
      "name": "夜宵薯条",
-     "desc": "伤害+5%。15:00后，伤害每45秒再提高6%。"
+     "desc": "伤害+5%。{time}后，伤害每{seconds}秒再提高{growth}%。"
     },
     "moon-dust": {
      "name": "月光淀粉",
@@ -5493,7 +5493,7 @@
     },
     "midnight-fries": {
      "name": "宵夜薯條",
-     "desc": "傷害+5%。15:00後，傷害每45秒再提高6%。"
+     "desc": "傷害+5%。{time}後，傷害每{seconds}秒再提高{growth}%。"
     },
     "moon-dust": {
      "name": "月光澱粉",
@@ -7679,7 +7679,7 @@
     },
     "midnight-fries": {
      "name": "夜食ポテト",
-     "desc": "ダメージ+5%。15:00を過ぎると、45秒ごとにダメージがさらに6%上がる。"
+     "desc": "ダメージ+5%。{time}を過ぎると、{seconds}秒ごとにダメージがさらに{growth}%上がる。"
     },
     "moon-dust": {
      "name": "月のでんぷん",
@@ -9865,7 +9865,7 @@
     },
     "midnight-fries": {
      "name": "야식 감자튀김",
-     "desc": "피해 +5%. 15:00 이후에는 45초마다 피해가 6%씩 더 늘어납니다."
+     "desc": "피해 +5%. {time} 이후에는 {seconds}초마다 피해가 {growth}%씩 더 늘어납니다."
     },
     "moon-dust": {
      "name": "달빛 전분",
@@ -12051,7 +12051,7 @@
     },
     "midnight-fries": {
      "name": "Papas de medianoche",
-     "desc": "+5% de daño. Pasados los 15:00, el daño sube un 6% más cada 45 s."
+     "desc": "+5% de daño. Después de {time}, el daño sube un {growth}% más cada {seconds} s."
     },
     "moon-dust": {
      "name": "Polvo lunar",
@@ -14237,7 +14237,7 @@
     },
     "midnight-fries": {
      "name": "आधी रात के फ्राई",
-     "desc": "+5% डैमेज। 15:00 के बाद डैमेज हर 45 सेकंड में 6% और बढ़ता है।"
+     "desc": "+5% डैमेज। {time} के बाद डैमेज हर {seconds} सेकंड में {growth}% और बढ़ता है।"
     },
     "moon-dust": {
      "name": "चाँद की धूल",
@@ -16423,7 +16423,7 @@
     },
     "midnight-fries": {
      "name": "Mitternachtspommes",
-     "desc": "+5 % Schaden. Nach 15:00 wächst der Schaden alle 45 s um weitere 6 %."
+     "desc": "+5 % Schaden. Nach {time} wächst der Schaden alle {seconds} s um weitere {growth} %."
     },
     "moon-dust": {
      "name": "Mondstaub",
@@ -18609,7 +18609,7 @@
     },
     "midnight-fries": {
      "name": "Frites de minuit",
-     "desc": "+5% dégâts. Après 15:00, les dégâts augmentent encore de 6% toutes les 45 s."
+     "desc": "+5% dégâts. Après {time}, les dégâts augmentent encore de {growth}% toutes les {seconds} s."
     },
     "moon-dust": {
      "name": "Poussière de lune",
@@ -20795,7 +20795,7 @@
     },
     "midnight-fries": {
      "name": "Fritas da meia-noite",
-     "desc": "+5% de dano. Depois de 15:00, o dano cresce mais 6% a cada 45 s."
+     "desc": "+5% de dano. Depois de {time}, o dano cresce mais {growth}% a cada {seconds} s."
     },
     "moon-dust": {
      "name": "Poeira lunar",
@@ -22981,7 +22981,7 @@
     },
     "midnight-fries": {
      "name": "Gece Yarısı Kızartması",
-     "desc": "+%5 hasar. 15:00'ten sonra hasar her 45 sn'de %6 daha artar."
+     "desc": "+%5 hasar. {time} sonrası hasar her {seconds} sn'de %{growth} daha artar."
     },
     "moon-dust": {
      "name": "Ay Tozu",
@@ -25167,7 +25167,7 @@
     },
     "midnight-fries": {
      "name": "Kentang Goreng Tengah Malam",
-     "desc": "+5% damage. Setelah 15:00, damage naik 6% lagi tiap 45 dtk."
+     "desc": "+5% damage. Setelah {time}, damage naik {growth}% lagi tiap {seconds} dtk."
     },
     "moon-dust": {
      "name": "Debu Bulan",
@@ -27353,7 +27353,7 @@
     },
     "midnight-fries": {
      "name": "Полночная фри",
-     "desc": "+5% к урону. После 15:00 урон растёт ещё на 6% каждые 45 с."
+     "desc": "+5% к урону. После {time} урон растёт ещё на {growth}% каждые {seconds} с."
     },
     "moon-dust": {
      "name": "Лунная пыль",
@@ -29539,7 +29539,7 @@
     },
     "midnight-fries": {
      "name": "Kentang Goreng Tengah Malam",
-     "desc": "+5% kerosakan. Selepas 15:00, kerosakan bertambah 6% lagi setiap 45 s."
+     "desc": "+5% kerosakan. Selepas {time}, kerosakan bertambah {growth}% lagi setiap {seconds} s."
     },
     "moon-dust": {
      "name": "Debu Bulan",
@@ -31725,7 +31725,7 @@
     },
     "midnight-fries": {
      "name": "Fries sa Hatinggabi",
-     "desc": "+5% damage. Pagkalipas ng 15:00, lumalaki pa nang 6% ang damage bawat 45 s."
+     "desc": "+5% damage. Pagkalipas ng {time}, lumalaki pa nang {growth}% ang damage bawat {seconds} s."
     },
     "moon-dust": {
      "name": "Alikabok ng Buwan",
@@ -33911,7 +33911,7 @@
     },
     "midnight-fries": {
      "name": "मध्यरात्रीचे फ्राईज",
-     "desc": "+5% डॅमेज. 15:00 नंतर डॅमेज दर 45 सेकंदांनी आणखी 6% वाढतो."
+     "desc": "+5% डॅमेज. {time} नंतर डॅमेज दर {seconds} सेकंदांनी आणखी {growth}% वाढतो."
     },
     "moon-dust": {
      "name": "चंद्रधूळ",
@@ -36097,7 +36097,7 @@
     },
     "midnight-fries": {
      "name": "Khoai Chiên Khuya",
-     "desc": "+5% sát thương. Sau 15:00, sát thương tăng thêm 6% mỗi 45 giây."
+     "desc": "+5% sát thương. Sau {time}, sát thương tăng thêm {growth}% mỗi {seconds} giây."
     },
     "moon-dust": {
      "name": "Bụi Trăng",
@@ -38283,7 +38283,7 @@
     },
     "midnight-fries": {
      "name": "అర్ధరాత్రి ఫ్రైస్",
-     "desc": "+5% డ్యామేజ్. 15:00 తర్వాత ప్రతి 45 సెకన్లకు డ్యామేజ్ ఇంకో 6% పెరుగుతుంది."
+     "desc": "+5% డ్యామేజ్. {time} తర్వాత ప్రతి {seconds} సెకన్లకు డ్యామేజ్ ఇంకో {growth}% పెరుగుతుంది."
     },
     "moon-dust": {
      "name": "చందమామ ధూళి",
@@ -40469,7 +40469,7 @@
     },
     "midnight-fries": {
      "name": "நள்ளிரவு ஃப்ரைஸ்",
-     "desc": "+5% டேமேஜ். 15:00-க்குப் பிறகு ஒவ்வொரு 45 வினாடிக்கும் டேமேஜ் இன்னும் 6% கூடும்."
+     "desc": "+5% டேமேஜ். {time}-க்குப் பிறகு ஒவ்வொரு {seconds} வினாடிக்கும் டேமேஜ் இன்னும் {growth}% கூடும்."
     },
     "moon-dust": {
      "name": "நிலாத் தூசு",
@@ -42655,7 +42655,7 @@
     },
     "midnight-fries": {
      "name": "মাঝরাতের ফ্রাই",
-     "desc": "+5% ড্যামেজ। 15:00-এর পর প্রতি 45 সেকেন্ডে ড্যামেজ আরও 6% বাড়ে।"
+     "desc": "+5% ড্যামেজ। {time}-এর পর প্রতি {seconds} সেকেন্ডে ড্যামেজ আরও {growth}% বাড়ে।"
     },
     "moon-dust": {
      "name": "চাঁদের গুঁড়ো",
@@ -44841,7 +44841,7 @@
     },
     "midnight-fries": {
      "name": "มันทอดเที่ยงคืน",
-     "desc": "ดาเมจ +5% หลัง 15:00 ดาเมจเพิ่มอีก 6% ทุก 45 วินาที"
+     "desc": "ดาเมจ +5% หลัง {time} ดาเมจเพิ่มอีก {growth}% ทุก {seconds} วินาที"
     },
     "moon-dust": {
      "name": "ฝุ่นจันทร์",
@@ -47027,7 +47027,7 @@
     },
     "midnight-fries": {
      "name": "Dankalin Soya na Tsakar Dare",
-     "desc": "+5% lahani. Bayan 15:00, lahani na ƙara ƙaruwa da 6% kowane 45 s."
+     "desc": "+5% lahani. Bayan {time}, lahani na ƙara ƙaruwa da {growth}% kowane {seconds} s."
     },
     "moon-dust": {
      "name": "Ƙurar Wata",
@@ -49213,7 +49213,7 @@
     },
     "midnight-fries": {
      "name": "Midnight Fries",
-     "desc": "+5% damage. After 15:00, damage dey grow 6% more every 45 s."
+     "desc": "+5% damage. After {time}, damage dey grow {growth}% more every {seconds} s."
     },
     "moon-dust": {
      "name": "Moon Dust",
@@ -51399,7 +51399,7 @@
     },
     "midnight-fries": {
      "name": "مقليات منتصف الليل",
-     "desc": "‎+‎5%‎ ضرر. بعد 15:00، يزداد الضرر 6%‎ إضافية كل 45 ث."
+     "desc": "‎+‎5%‎ ضرر. بعد {time}، يزداد الضرر {growth}%‎ إضافية كل {seconds} ث."
     },
     "moon-dust": {
      "name": "غبار القمر",
@@ -53585,7 +53585,7 @@
     },
     "midnight-fries": {
      "name": "سرخ‌کرده‌ی نیمه‌شب",
-     "desc": "‎+‎5%‎ آسیب. بعد از 15:00، آسیب هر 45 ثانیه 6%‎ دیگر بیشتر می‌شود."
+     "desc": "‎+‎5%‎ آسیب. بعد از {time}، آسیب هر {seconds} ثانیه {growth}%‎ دیگر بیشتر می‌شود."
     },
     "moon-dust": {
      "name": "گرد ماه",
@@ -55771,7 +55771,7 @@
     },
     "midnight-fries": {
      "name": "צ׳יפס של חצות",
-     "desc": "‎+5%‎ נזק. אחרי 15:00, הנזק גדל ב־‎6%‎ נוספים כל 45 שניות."
+     "desc": "‎+5%‎ נזק. אחרי {time}, הנזק גדל ב־‎{growth}%‎ נוספים כל {seconds} שניות."
     },
     "moon-dust": {
      "name": "אבק ירח",
@@ -57957,7 +57957,7 @@
     },
     "midnight-fries": {
      "name": "آدھی رات کے فرائز",
-     "desc": "‎+‎5%‎ نقصان۔ 15:00 کے بعد نقصان ہر 45 سیکنڈ میں مزید 6%‎ بڑھتا ہے۔"
+     "desc": "‎+‎5%‎ نقصان۔ {time} کے بعد نقصان ہر {seconds} سیکنڈ میں مزید {growth}%‎ بڑھتا ہے۔"
     },
     "moon-dust": {
      "name": "چاند کی دھول",
@@ -59224,143 +59224,143 @@
   "index": {
    "url": "https://tibo.dog/data/v1/index.json",
    "bytes": 18937,
-   "sha256": "4b7fff1191fde3b778051a88f4e9811226fe13793ef232c0777e64e8cecdcd4d"
+   "sha256": "98d60d6a9f44b84035cad61a88513edc2d1b203e81c19f9909689bd56b6a0c75"
   },
   "locales": {
    "en": {
     "url": "https://tibo.dog/data/v1/text/en.json",
-    "bytes": 59387,
-    "sha256": "7c260e7904400cfc66067bfe46b2e917bcaa79caaf286ea018ecf2c6daa9f6ac"
+    "bytes": 59402,
+    "sha256": "87683d02fb7c6007d957a8df98ddd735cbb0e3567b4e6fccbb426742f4b24525"
    },
    "zh-CN": {
     "url": "https://tibo.dog/data/v1/text/zh-CN.json",
-    "bytes": 58554,
-    "sha256": "03fa8ddecaf1e52b4a483c84402a71b44ba424e2a8e6e21ceb7c041a7fbf7841"
+    "bytes": 58569,
+    "sha256": "78161f0830de2da41312e4b89113a3d683a329c120b278758892adb31b8d4dfc"
    },
    "zh-TW": {
     "url": "https://tibo.dog/data/v1/text/zh-TW.json",
-    "bytes": 58812,
-    "sha256": "f2ce7bfd3e595a4a38ee4bec55df685cd617d28e6d43d3c5500ede37134b198c"
+    "bytes": 58827,
+    "sha256": "4c7956d871a54adefb19eb0d875c34ea864f0ac7e68fac45cabdeb9cad8f3b89"
    },
    "ja": {
     "url": "https://tibo.dog/data/v1/text/ja.json",
-    "bytes": 71668,
-    "sha256": "d7cda9820ed4d3c8e896f1d79f7a3edead9882a95edeaf576bfc423213c53ef9"
+    "bytes": 71683,
+    "sha256": "7b0e16643aa3b7e1e69a37b9b89130afacbf118c83bf2e7412febc0abaa3572c"
    },
    "ko": {
     "url": "https://tibo.dog/data/v1/text/ko.json",
-    "bytes": 71846,
-    "sha256": "71588782cfa1dd3fe39b1925f4b9ac9be0788c8d824b9b43822b843c8998324a"
+    "bytes": 71861,
+    "sha256": "7c8d4eaeaa75655cdbf5f6a6b1cd20e0e845654449b0e4176ad416076bc9f355"
    },
    "es": {
     "url": "https://tibo.dog/data/v1/text/es.json",
-    "bytes": 67098,
-    "sha256": "f029fe4afdc13b1935ac2b2e6a82aed3d575c51f4c84a7073c0eb705830ae11c"
+    "bytes": 67113,
+    "sha256": "5402a08174b63e80c40f20be94ba2fc6d72015741b5c0a41a723c2bfe881f73b"
    },
    "hi": {
     "url": "https://tibo.dog/data/v1/text/hi.json",
-    "bytes": 124107,
-    "sha256": "0aa76339a5a25536400bd28ad6b863236b9011af796ffe05e8591fbdb8054529"
+    "bytes": 124122,
+    "sha256": "0bc0e5628770b9e96d8b3f8b663bd70a9c493eb01410d62426de75a6ffc300ae"
    },
    "de": {
     "url": "https://tibo.dog/data/v1/text/de.json",
-    "bytes": 66379,
-    "sha256": "5c2d7b64421cd1ca7dfad0d03ecf6874064aadf1550e123ebc76c2ef28532dd9"
+    "bytes": 66394,
+    "sha256": "bbb2d0411641cc15612fae187653b4f8ece4a53c33fee176d7d77113f541c27c"
    },
    "fr": {
     "url": "https://tibo.dog/data/v1/text/fr.json",
-    "bytes": 69624,
-    "sha256": "74dc951082956018f43c1fc9fb596c04ae4005163d5e6f5ad9cad1330da8f5aa"
+    "bytes": 69639,
+    "sha256": "cbaa9bf80159654baa0e4a87fdfe28f926b68e54b50d5febc0d4bac68dab3d73"
    },
    "pt": {
     "url": "https://tibo.dog/data/v1/text/pt.json",
-    "bytes": 65668,
-    "sha256": "aa2b84c8356ab4ff401285d10d957d103a64b026049f85b23b53a27b81b417fb"
+    "bytes": 65683,
+    "sha256": "34b17f500bbdac3e4b3e55910acf5f1660b1e826562784fd77a3fa1521cffebc"
    },
    "tr": {
     "url": "https://tibo.dog/data/v1/text/tr.json",
-    "bytes": 68164,
-    "sha256": "dc1e3968343e45bccadf77ed4c80895959e532738b0617a19c7ea2799b8b9dcb"
+    "bytes": 68178,
+    "sha256": "9a76d1805e9001d1f0b87eb02d85d2b408bcd0bb4b832c93823f277ebe1e8920"
    },
    "id": {
     "url": "https://tibo.dog/data/v1/text/id.json",
-    "bytes": 65477,
-    "sha256": "adffb06998196572b6d7de0ab3ff6abd8ef2074613277c513818042dcf02fe00"
+    "bytes": 65492,
+    "sha256": "eead696465a661fd73e2513dc07524793f5cdc049b00e925052306890ccbe9dd"
    },
    "ru": {
     "url": "https://tibo.dog/data/v1/text/ru.json",
-    "bytes": 97678,
-    "sha256": "62eee96feeb3568465755005f9d3340b352146c9ed75670cee46bb53f31f4fca"
+    "bytes": 97693,
+    "sha256": "41200809a8d1e78a5593bbdacc36591ac67cc8904d234c72517ccb86a91de0c1"
    },
    "ms": {
     "url": "https://tibo.dog/data/v1/text/ms.json",
-    "bytes": 67746,
-    "sha256": "b2aad92c20d814863b3061f75a8c01a653919ffc266a8735eb553479e1d99445"
+    "bytes": 67761,
+    "sha256": "8e0564b6911ecfff804e28b0d7c29ffb1047cecf966b723c3b8c7c9fb4d078ac"
    },
    "fil": {
     "url": "https://tibo.dog/data/v1/text/fil.json",
-    "bytes": 71465,
-    "sha256": "7daaa3870a9e923fd9edea8304923495dfd7476926f5b3be32925045ba3f016e"
+    "bytes": 71480,
+    "sha256": "66e444c71ed315c8f06e9244cd283159b7a70a1873a8f86aa1d6b87fc95b4291"
    },
    "mr": {
     "url": "https://tibo.dog/data/v1/text/mr.json",
-    "bytes": 128315,
-    "sha256": "477ec1b0d490e1805000f314099dd37e275b2728601a08b5199e989d43b4fa2d"
+    "bytes": 128330,
+    "sha256": "316d941b072c3ebdc0efd411a09e77c410df65874c4079600708ebecf6a0e84e"
    },
    "vi": {
     "url": "https://tibo.dog/data/v1/text/vi.json",
-    "bytes": 72185,
-    "sha256": "00ac70fcb3736130f83c25e03d9d9de07b35bd8e55abfe593dd2ba0f2e3ae7d7"
+    "bytes": 72200,
+    "sha256": "323a775a60ca3ae664576469bd4c1b2f4954ddec042f6b2a793b9431821d1802"
    },
    "te": {
     "url": "https://tibo.dog/data/v1/text/te.json",
-    "bytes": 134985,
-    "sha256": "5263a92cd69ab53203217246cd4e2562d746e8fe267bf6e18c6d606a75643618"
+    "bytes": 135000,
+    "sha256": "99c40935edcb00dd6ed7f8a217adf038856697a96f8427455b3d4ea2f9240b1a"
    },
    "ta": {
     "url": "https://tibo.dog/data/v1/text/ta.json",
-    "bytes": 147451,
-    "sha256": "5f932667caf1e10d0f62d43256f122cdfe82330302ca5bf38c20b07954340513"
+    "bytes": 147466,
+    "sha256": "fb5de69ee10de99cee64187939010a304690b7f89851b534f43a281b78f13f93"
    },
    "bn": {
     "url": "https://tibo.dog/data/v1/text/bn.json",
-    "bytes": 125066,
-    "sha256": "94bb4dbdb9dee2fd534a7620fa8679446e3b5c26a382efcb51160b9667278165"
+    "bytes": 125081,
+    "sha256": "64984e200a448c86233dd2e5691a24a50fc85baba1fba2732e2597746236ee06"
    },
    "th": {
     "url": "https://tibo.dog/data/v1/text/th.json",
-    "bytes": 120681,
-    "sha256": "033d17d83356fde1027849bc61b0e3d64734586db61bf342974df47c3a9fa25d"
+    "bytes": 120696,
+    "sha256": "703dad8e5010e67a00e32f228b59bda122ae9b5b91b883312d1b3f28301e833a"
    },
    "ha": {
     "url": "https://tibo.dog/data/v1/text/ha.json",
-    "bytes": 68055,
-    "sha256": "e18e40943935e57a967e4a6a1fb72f20aa69b7d06d6b829621d1d57074fb1b36"
+    "bytes": 68070,
+    "sha256": "4549b44f56ea88bdc70740beb649fb12eabfcbf7c4b388910b7101c20fc2b6b5"
    },
    "pcm": {
     "url": "https://tibo.dog/data/v1/text/pcm.json",
-    "bytes": 62567,
-    "sha256": "085c97961a25d93670b34197d019e7bf3ce9e3c880eb8767de9220b19efc6a0c"
+    "bytes": 62582,
+    "sha256": "13b49e932f5828734ffad2e5ba9877b34df8a6ac5bf2d07e769af8b0c2d6d0e2"
    },
    "ar": {
     "url": "https://tibo.dog/data/v1/text/ar.json",
-    "bytes": 82182,
-    "sha256": "382649f785e9a59ee99966edf1804397471e2704101fc889bb0953bec1f4e853"
+    "bytes": 82197,
+    "sha256": "1974f15223c3bfaaf22dc254f4eeb3ef2374cf528354207fe31565a682549ea9"
    },
    "fa": {
     "url": "https://tibo.dog/data/v1/text/fa.json",
-    "bytes": 96485,
-    "sha256": "3191e6f54858a1574f0e073e71056b2644d3f19ba5af51cdf7e1fd78c224ff53"
+    "bytes": 96500,
+    "sha256": "95d21325d08b6d61e8f31b9e06447bb29b088f6f80e709e81644ff20b36ae738"
    },
    "he": {
     "url": "https://tibo.dog/data/v1/text/he.json",
-    "bytes": 81747,
-    "sha256": "ff90e8033eac75905d837b427a09b86a73a4096a9eec4f27cd2741705816eb55"
+    "bytes": 81762,
+    "sha256": "70fd76f026e76a0579e8a4e60248d0c7206c96008066e45eec3ff16485ceecbf"
    },
    "ur": {
     "url": "https://tibo.dog/data/v1/text/ur.json",
-    "bytes": 92842,
-    "sha256": "0f5835d80e22b50ae2f82d59698bf64faaae1813f37b55b2f015a3def4f07f8a"
+    "bytes": 92857,
+    "sha256": "6977fef8e6d6630d1d26ab762ad35614cee015e9853967d25b6d06e46b7f862e"
    }
   }
  }

@@ -1310,7 +1310,19 @@
   "Meteor Russet"
  ],
  "content.item.midnight-fries.desc": [
-  "+5% damage. After 15:00, damage grows 6% more every 45 s."
+  "+5% damage. After ",
+  [
+   "time"
+  ],
+  ", damage grows ",
+  [
+   "growth"
+  ],
+  "% more every ",
+  [
+   "seconds"
+  ],
+  " s."
  ],
  "content.item.midnight-fries.name": [
   "Midnight Fries"

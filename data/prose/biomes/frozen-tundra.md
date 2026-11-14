@@ -1,6 +1,6 @@
 ## Overview
 
-Frozen-Fries Tundra is a climate biome covering the coldest dry parts of the map (the bottom of four temperature bands, dry side). It usually borders [Potato Field](/biomes/potato-field) where it gets warmer and [Compost Caves](/biomes/compost-caves), the cold wet biome. <small>[sim-rGD56OmB.js: `e<-.22?0:e<.02?1:e<.24?2:3}(o),s<0?0:1)`]</small> Its hazard is frost patches that cut Tibo's walking speed to 70% while he is on them. They do no damage.
+Frozen-Fries Tundra is a climate biome covering the coldest dry parts of the map (the bottom of four temperature bands, dry side). It usually borders [Potato Field](/biomes/potato-field) where it gets warmer and [Compost Caves](/biomes/compost-caves), the cold wet biome. <small>[sim-DUXHKfs3.js: `e<-.22?0:e<.02?1:e<.24?2:3}(o),s<0?0:1)`]</small> Its hazard is frost patches that cut Tibo's walking speed to 70% while he is on them. They do no damage.
 
 [Frost Fleas](/enemies/frost-flea) open the run, then [Snow Molds](/enemies/snow-mold) that split in two (tier 2), fast [Field Rats](/enemies/field-rat) and charging [Field Crows](/enemies/field-crow) (tier 3), the ranged [Ice Imp](/enemies/ice-imp) as the only tier 4 pest, and [Mud Golems](/enemies/mud-golem) (tier 5). Gold is ×1, but XP is ×1.15, which only [Crop Circle](/biomes/crop-circle) beats.
 
@@ -10,13 +10,13 @@ Frozen-Fries Tundra is a climate biome covering the coldest dry parts of the map
 
 ### Frost patches
 
-Each chunk centred in the tundra gets 3 or 4 frost patches, each 0.8–1.3 times the base radius of 28; patches that would fall outside the tundra are dropped. <small>[sim-rGD56OmB.js: `a=e.rng.int(Math.max(0,t.perChunk-1),t.perChunk)`]</small> On a patch, Tibo's movement speed is multiplied by 1 − 0.3 = 0.7. The simulation handles `chill` exactly like the mash in [Mash Swamp](/biomes/mash-swamp): it only slows, and overlapping patches do not stack. <small>[sim-rGD56OmB.js: `` r.kind===`slow`||r.kind===`chill`?ne=Math.min(ne,1-r.strength):ld(e,r.strength*t,CO[r.kind],!0,ae) ``]</small> Pests are not slowed, and a dash still covers its full distance. <small>[sim-rGD56OmB.js: `let t=Cu(e);ee+=n.dashX[r]*t`]</small>
+Each chunk centred in the tundra gets 3 or 4 frost patches, each 0.8–1.3 times the base radius of 28; patches that would fall outside the tundra are dropped. <small>[sim-DUXHKfs3.js: `a=e.rng.int(Math.max(0,t.perChunk-1),t.perChunk)`]</small> On a patch, Tibo's movement speed is multiplied by 1 − 0.3 = 0.7. The simulation handles `chill` exactly like the mash in [Mash Swamp](/biomes/mash-swamp): it only slows, and overlapping patches do not stack. <small>[sim-DUXHKfs3.js: `` r.kind===`slow`||r.kind===`chill`?te=Math.min(te,1-r.strength):dd(e,r.strength*t,OO[r.kind],!0,ie) ``]</small> Pests are not slowed, and a dash still covers its full distance. <small>[sim-DUXHKfs3.js: `let t=wu(e);v+=n.dashX[r]*t`]</small>
 
 ### Pests and loot
 
-Tiers follow the wave row of two minutes earlier (three on Easy; see [Wave schedule](/bosses#wave-schedule)). On Normal, Frost Fleas are most spawns until 5:00 and stop at 9:00; Snow Molds lead from 5:00 to 8:00; rats and crows join at 6:00 and lead from 8:00 to 11:00; Ice Imps join at 9:00 and lead until 18:00; Mud Golems join at 16:00 and are the only wave pest from 21:00. When the shooter cap is full (see [Crowd limits](/enemy-scaling#crowd-limits)), a tier 4 roll falls back to a rat or crow. <small>[sim-rGD56OmB.js: `if(gm[i]===0||bm(e)<ym(e))return i`]</small>
+Tiers follow the wave row of two minutes earlier (three on Easy; see [Wave schedule](/bosses#wave-schedule)). On Normal, Frost Fleas are most spawns until 5:00 and stop at 9:00; Snow Molds lead from 5:00 to 8:00; rats and crows join at 6:00 and lead from 8:00 to 11:00; Ice Imps join at 9:00 and lead until 18:00; Mud Golems join at 16:00 and are the only wave pest from 21:00. When the shooter cap is full (see [Crowd limits](/enemy-scaling#crowd-limits)), a tier 4 roll falls back to a rat or crow. <small>[sim-DUXHKfs3.js: `if(vm[i]===0||Sm(e)<xm(e))return i`]</small>
 
-Elites from the tundra are Snow Molds until 5:00, rats or crows until 10:00, Ice Imps until 15:00 and Mud Golems after that. The ×1.15 XP applies to pests that die inside the tundra. <small>[sim-rGD56OmB.js: `a=n.y[t],o=n.has(t,w.Elite),s=e.world.biomeAt(i,a)`]</small> <small>[sim-rGD56OmB.js: `n.xp[t]*s.xpMult`]</small> Standard's [late-run XP step](/enemy-scaling#late-run-xp-drops) multiplies pest XP before this biome bonus.
+Elites from the tundra are Snow Molds until 5:00, rats or crows until 10:00, Ice Imps until 15:00 and Mud Golems after that. The ×1.15 XP applies to pests that die inside the tundra. <small>[sim-DUXHKfs3.js: `a=n.y[t],o=n.has(t,E.Elite),s=e.world.biomeAt(i,a)`]</small> <small>[sim-DUXHKfs3.js: `n.xp[t]*s.xpMult`]</small> Standard's [late-run XP step](/enemy-scaling#late-run-xp-drops) multiplies pest XP before this biome bonus.
 
 ## Tips
 

@@ -4,9 +4,9 @@ Clean Plate builds temporary crit points while Tibo avoids damage. It has **two 
 
 ## How it works
 
-- **Build one tier at a time.** At passive level 2, a fresh empty plate reaches one tier at 5 seconds and two at 10 seconds. With no other crit sources these give about 10.7% and 19.4% actual crit chance, not 12% and 24%. <small>[sim-rGD56OmB.js: `i<n.level&&e.tick-t.since>=y(r.seconds)&&(i+=1,t.since=e.tick)`]</small>
-- **Use the shared crit curve.** Charged points join [Hot Sauce](/passives/hot-sauce), items and blessings before diminishing returns. Weapon-specific crit bonuses, such as [Gratin Arc's](/weapons/gratin-arc), are added afterwards. <small>[sim-rGD56OmB.js: `Ut(e.loadout.totals.critChance+t.critRaw,Kr.critK)`]</small>
-- **Avoid actual HP loss.** Invulnerable or rejected hits do not shed a tier. Positive damage does, including terrain/hazard damage; this differs from [Whip's](/dogs/whippet) normal-hit tug trigger. One hit at two charged tiers leaves one. Further damage at zero cannot make the bonus negative. <small>[sim-rGD56OmB.js: `e.moreVariety!==void 0&&d>0&&ac().hurt(e)`]</small>
+- **Build one tier at a time.** At passive level 2, a fresh empty plate reaches one tier at 5 seconds and two at 10 seconds. With no other crit sources these give about 10.7% and 19.4% actual crit chance, not 12% and 24%. <small>[sim-DUXHKfs3.js: `i<n.level&&e.tick-t.since>=x(r.seconds)&&(i+=1,t.since=e.tick)`]</small>
+- **Use the shared crit curve.** Charged points join [Hot Sauce](/passives/hot-sauce), items and blessings before diminishing returns. Weapon-specific crit bonuses, such as [Gratin Arc's](/weapons/gratin-arc), are added afterwards. <small>[sim-DUXHKfs3.js: `Ut(e.loadout.totals.critChance+t.critRaw,Kr.critK)`]</small>
+- **Avoid actual HP loss.** Invulnerable or rejected hits do not shed a tier. Positive damage does, including terrain/hazard damage; this differs from [Whip's](/dogs/whippet) normal-hit tug trigger. One hit at two charged tiers leaves one. Further damage at zero cannot make the bonus negative. <small>[sim-DUXHKfs3.js: `e.moreVariety!==void 0&&d>0&&ac().hurt(e)`]</small>
 
 ## Tips
 

@@ -1,6 +1,25 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { biomePages, bossPages, dogPages, enemyPages, passivePages, weaponPages } from './entities.mjs';
+import { biomePages, bossPages, dogPages, enemyPages, itemIndex, itemPages, passivePages, weaponPages } from './entities.mjs';
+import { GAME, I } from '../lib/data.mjs';
+
+test('item descriptions resolve overtime values in pages and the index', () => {
+  const item = I['midnight-fries'];
+  const oldTime = GAME.win.timeSec, oldGrowth = item.effect.perWaveStep;
+  try {
+    for (const [time, growth, expected] of [[900, .06, 'After 15:00, damage grows 6% more every 45 s.'], [842, .074, 'After 14:02, damage grows 7% more every 45 s.']]) {
+      GAME.win.timeSec = time;
+      item.effect.perWaveStep = growth;
+      const page = itemPages().find((p) => p.path === '/items/midnight-fries');
+      assert.ok(page.description.includes(expected), page.description);
+      assert.ok(page.lead.includes(expected), page.lead);
+      assert.ok(itemIndex().body.includes(expected));
+    }
+  } finally {
+    GAME.win.timeSec = oldTime;
+    item.effect.perWaveStep = oldGrowth;
+  }
+});
 
 test('boss HP tables show second-based schedule boundaries in minutes', () => {
   const body = bossPages().find((p) => p.path === '/bosses/harvester').body;

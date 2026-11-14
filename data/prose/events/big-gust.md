@@ -4,7 +4,7 @@ Big Gust starts at 3:00 and 9:00 with the active more-variety rules. It marks ev
 
 ## How it works
 
-- **Supplies other than snacks stay put.** Magnets, rerolls, chests and items are not included. Unlike the ordinary magnet effect, Big Gust explicitly includes heal pickups. <small>[sim-rGD56OmB.js: `t.pool.isAlive(n)&&t.kind[n]===i.heal&&(t.vacuum[n]=1)`]</small>
+- **Supplies other than snacks stay put.** Magnets, rerolls, chests and items are not included. Unlike the ordinary magnet effect, Big Gust explicitly includes heal pickups. <small>[sim-DUXHKfs3.js: `t.pool.isAlive(n)&&t.kind[n]===a.heal&&(t.vacuum[n]=1)`]</small>
 - Vacuumed pickups still travel and must reach Tibo to be collected; the event does not immediately credit the whole map's gold or XP. Coins can trigger [Copper Tot](/items/copper-tot) on arrival, and full-HP snacks can feed [Second Helping](/items/second-helping).
 
 ## Tips
