@@ -8235,6 +8235,7 @@
  },
  "boot.ms": {
   "probe": {
+   "beforeStep": "[fn]",
    "frame": "[fn]",
    "traceNow": "[fn]",
    "trace": "[fn]"

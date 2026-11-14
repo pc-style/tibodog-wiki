@@ -8,8 +8,8 @@ It is the catalyst for [Mashquake](/weapons/mashquake) (from [Mash Wave](/weapon
 
 Each weapon's area is its own area times the area multiplier. Most attacks then use that value directly, for example a ground pool's radius is its size times area. Some effects use the square root instead, so they grow more slowly:
 
-- Comet Scythe and Eclipse Scythe multiply their changing orbit radius by √area.<small>[sim-B7Rtlarz.js: `function Av(e,t,n,r){return e.orbitRadius*Math.sqrt(t.area)*kv(e,n,r)}`]</small> At level 5 the orbit is about 22% wider, not 50%.
-- Item blasts and chains scale by √(area multiplier).<small>[sim-B7Rtlarz.js: `return Math.sqrt(e.loadout.stats.areaMult)`]</small>
+- Comet Scythe and Eclipse Scythe multiply their changing orbit radius by √area.<small>[sim-hRkN1bXa.js: `function Av(e,t,n,r){return e.orbitRadius*Math.sqrt(t.area)*kv(e,n,r)}`]</small> At level 5 the orbit is about 22% wider, not 50%.
+- Item blasts and chains scale by √(area multiplier).<small>[sim-hRkN1bXa.js: `return Math.sqrt(e.loadout.stats.areaMult)`]</small>
 
 Other area sources are [Wide Ladle](/items/wide-ladle) (+0.06), [Philosopher's Potato](/items/philosophers-potato) (+0.1) and [Spud Shrine](/points-of-interest#spud-shrine) blessings. All sources are added together before the multiplier is applied.
 
