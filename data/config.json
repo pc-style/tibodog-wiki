@@ -9058,7 +9058,10 @@
      "atSec": 225,
      "hpScale": 1
     }
-   ]
+   ],
+   "damageScale": {
+    "ketchup-kraken": 0.7058823529411765
+   }
   },
   "armor": {
    "k": 5,
