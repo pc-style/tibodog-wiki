@@ -2298,5 +2298,16 @@
   "updated": "2026-11-14T06:26:46Z",
   "changes": "Reset stays still as the Daily window closes on a small screen. The compact heading rule now targets dialogs instead of also resizing the start screen; this is separate from the earlier countdown-loading fix.",
   "evidence": "Canonical209BZA→DCo:408→408 reachable files. Beyond26localized journals, only English journal and main CSS own content changes; registry/config/English/names/icon pixels unchanged; sim/boot0normalized hunks. Exact sole CSS change replaces root-has-nonstart-panel heading selector with [role=dialog][aria-labelledby]>.ui-title under width<=360px. Read original overlay role assignment/skip-ui-start, title sizing/refit, Daily direct title and Back restoration consumers.14original archived old/current English gilded Chromium keyboard Daily→Back cases at1280×900,390×844,361×740,360×740,320×640,360×280,900×280, with equal supplied Date.now. Mutation samples cover coexisting/removed/restored start and departing dialog, not only final bounds. Old closing Reset moves down3.953125/1.296875/3.625CSSpx at360×740/320×640/360×280 as the dialog disappears; current0. Wider/361boundary controls0; final-vs-initial x/y/width/height0 in both. No permanent displacement, every-locale/phone/touch, performance, gameplay or server claim. Pointer attempts did not open Daily and timed out; keyboard activation exercised original dialog without source edits or DOM synthesis. New daily-dialog-reset-shift/E5YsjN stays next with original publication2026-11-14T04:10:36Z; source introduction first observed210, not209countdown or208healing. Full/archive and separately expanded actual live journal agree358records/12dates/155codes; all older groups and display order unchanged.407assets+HTML guards, current exact JS quotes and manually verified exact CSS source. Prior Daily90min/client-server, healed56case and209loading limits,27locales/51runes/inventory/historical CrJI four-mechanic probe/registrations/drafts retained, with no current-coverage promotion. No extraction/classification/tool changes or relaxed checks."
+ },
+ {
+  "seen": "2026-11-14",
+  "main": "main-8dcxYI31.js",
+  "boot": "boot-CpOMD0SD.js",
+  "sim": "sim-nIcq_DHZ.js",
+  "commit": "9d1de90e3620",
+  "status": "reviewed",
+  "updated": "2026-11-14T07:27:14Z",
+  "changes": "Existing journal notes moved into a dated release group; no gameplay or wording changes.",
+  "evidence": "Automatic unchanged next-to-dated proof against main-DCoZK6G-.js; all 408 reachable files checked, full/panel browser and official API validated. Original publication timestamps and prior introduction history retained. Proof: .cache/main-8dcxYI31/journal-proof.json."
  }
 ]

@@ -1,6 +1,6 @@
 ## Overview
 
-The Great Wireworm is the seventh boss. It arrives at 10:00 on the [wave schedule](/bosses#wave-schedule), alongside a [Golden Scarab](/events/golden-scarab). It has 4200 base HP: about 2730 on Normal (boss HP ×0.65, see [Modes](/modes)) and 3990 on Nightmare before [curse](/curse). Nightmare starts every run with one curse, which adds 10% to boss HP, so there it actually has about 4389. <small>[intro-shared-DTjSqM-S.js: `startCurses:1,tierLag:2,wallPests:.6`]</small> <small>[sim-DvRnAb2l.js: `n.maxHp[r]=i.hp*t.hpMult*(1+e.loadout.stats.curse)`]</small> At speed 40 it is the fastest boss in the game, but still slower than Tibo's base 62. Its contact damage is 26.
+The Great Wireworm is the seventh boss. It arrives at 10:00 on the [wave schedule](/bosses#wave-schedule), alongside a [Golden Scarab](/events/golden-scarab). It has 4200 base HP: about 2730 on Normal (boss HP ×0.65, see [Modes](/modes)) and 3990 on Nightmare before [curse](/curse). Nightmare starts every run with one curse, which adds 10% to boss HP, so there it actually has about 4389. <small>[intro-shared-Cy9oIPG8.js: `startCurses:1,tierLag:2,wallPests:.6`]</small> <small>[sim-nIcq_DHZ.js: `n.maxHp[r]=i.hp*t.hpMult*(1+e.loadout.stats.curse)`]</small> At speed 40 it is the fastest boss in the game, but still slower than Tibo's base 62. Its contact damage is 26.
 
 It is not in the post-20:00 rotation; a [Boss Lair](/points-of-interest#boss-lair) can wake it. It drops an XP gem worth 120, a 25-gold coin and a chest ([Chests](/chests)).
 
@@ -8,13 +8,13 @@ It is not in the post-20:00 rotation; a [Boss Lair](/points-of-interest#boss-lai
 
 ## Fight
 
-The Wireworm crawls towards Tibo and fires a beetle-shaped fan between dives. Every 4 s it burrows and bursts up under where Tibo was. Its fan timer is paused for the whole dive. <small>[sim-DvRnAb2l.js: `d===0?(KE(e,o,s,c,l,u),GE(e,o,s,t)):d===1?qE(e,o,s,t):JE(e,o,s,t)`]</small> Its first dive comes about 2.4 s after it appears.
+The Wireworm crawls towards Tibo and fires a beetle-shaped fan between dives. Every 4 s it burrows and bursts up under where Tibo was. Its fan timer is paused for the whole dive. <small>[sim-nIcq_DHZ.js: `d===0?(KE(e,o,s,c,l,u),GE(e,o,s,t)):d===1?qE(e,o,s,t):JE(e,o,s,t)`]</small> Its first dive comes about 2.4 s after it appears.
 
 ### Burrow
 
-When the dive starts, the game marks a circle of radius 40 on Tibo's position, and the Wireworm goes underground at once. It travels under the ground to the mark and erupts 2.2 s later (1 s warning plus 1.2 s underground), dealing its contact damage to Tibo if he is inside the circle. <small>[sim-DvRnAb2l.js: `let n=r.telegraph+o.under`]</small>
+When the dive starts, the game marks a circle of radius 40 on Tibo's position, and the Wireworm goes underground at once. It travels under the ground to the mark and erupts 2.2 s later (1 s warning plus 1.2 s underground), dealing its contact damage to Tibo if he is inside the circle. <small>[sim-nIcq_DHZ.js: `let n=r.telegraph+o.under`]</small>
 
-While it is underground, the Wireworm is out of reach: it is left out of the lookup weapons use to find targets, it deals no contact damage, and any bullet pattern it was still winding up is cancelled. <small>[sim-DvRnAb2l.js: `r.pool.isAlive(n)&&!r.has(n,T.Hidden)&&pc(t,yu+n,r.x[n],r.y[n])`]</small> A full cycle is 6.2 s, so it spends about a third of the fight underground.
+While it is underground, the Wireworm is out of reach: it is left out of the lookup weapons use to find targets, it deals no contact damage, and any bullet pattern it was still winding up is cancelled. <small>[sim-nIcq_DHZ.js: `r.pool.isAlive(n)&&!r.has(n,T.Hidden)&&pc(t,yu+n,r.x[n],r.y[n])`]</small> A full cycle is 6.2 s, so it spends about a third of the fight underground.
 
 ### Click-beetle fan
 
