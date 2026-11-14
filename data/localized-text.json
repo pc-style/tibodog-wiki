@@ -1,8 +1,8 @@
 {
  "schema": 1,
  "game": {
-  "version": "20674ce",
-  "commit": "20674ce3a5efada3368ca4ed2010fe5afbf087a5"
+  "version": "96873c3",
+  "commit": "96873c3262ae9a43e8c783ed4220ba3b607cdfed"
  },
  "simVersion": "190c1ab50f0d66ac",
  "locales": [
@@ -2351,6 +2351,14 @@
     "treasure-map": {
      "name": "Treasure Map",
      "desc": "Read it to mark an X. Dig at the X for a chest."
+    },
+    "mash-pylon": {
+     "name": "Mash Pylon",
+     "desc": "Reach it before it sinks: your hits deal triple damage and grow bigger for 30 s."
+    },
+    "volt-pylon": {
+     "name": "Volt Pylon",
+     "desc": "Reach it before it sinks: lightning zaps the pests around you for 30 s."
     }
    },
    "setRule": {
@@ -4537,6 +4545,14 @@
     "treasure-map": {
      "name": "藏宝图",
      "desc": "读一读，标出一个X。在X处挖出宝箱。"
+    },
+    "mash-pylon": {
+     "name": "薯泥塔",
+     "desc": "在它沉下前赶到：30 秒内你的攻击造成三倍伤害并变大。"
+    },
+    "volt-pylon": {
+     "name": "电压塔",
+     "desc": "在它沉下前赶到：30 秒内闪电劈向你周围的害虫。"
     }
    },
    "setRule": {
@@ -6723,6 +6739,14 @@
     "treasure-map": {
      "name": "藏寶圖",
      "desc": "讀一讀，標出一個X。在X處挖出寶箱。"
+    },
+    "mash-pylon": {
+     "name": "薯泥塔",
+     "desc": "在它沉下前趕到：30 秒內你的攻擊造成三倍傷害並變大。"
+    },
+    "volt-pylon": {
+     "name": "電壓塔",
+     "desc": "在它沉下前趕到：30 秒內閃電劈向你周圍的害蟲。"
     }
    },
    "setRule": {
@@ -8909,6 +8933,14 @@
     "treasure-map": {
      "name": "宝の地図",
      "desc": "読むとXの印がつく。Xを掘ると宝箱が出る。"
+    },
+    "mash-pylon": {
+     "name": "マッシュの柱",
+     "desc": "沈む前にたどり着こう：30秒間、攻撃のダメージが3倍になり大きくなる。"
+    },
+    "volt-pylon": {
+     "name": "ボルトの柱",
+     "desc": "沈む前にたどり着こう：30秒間、周りの害虫に雷が落ちる。"
     }
    },
    "setRule": {
@@ -11095,6 +11127,14 @@
     "treasure-map": {
      "name": "보물 지도",
      "desc": "읽으면 X 표시가 생깁니다. X를 파면 상자가 나옵니다."
+    },
+    "mash-pylon": {
+     "name": "매시 기둥",
+     "desc": "가라앉기 전에 도착하세요: 30초 동안 공격이 3배 피해를 주고 커집니다."
+    },
+    "volt-pylon": {
+     "name": "볼트 기둥",
+     "desc": "가라앉기 전에 도착하세요: 30초 동안 주변 해충에게 번개가 칩니다."
     }
    },
    "setRule": {
@@ -13281,6 +13321,14 @@
     "treasure-map": {
      "name": "Mapa del tesoro",
      "desc": "Léelo para marcar una X. Cava en la X para sacar un cofre."
+    },
+    "mash-pylon": {
+     "name": "Pilón de puré",
+     "desc": "Llega antes de que se hunda: tus golpes hacen el triple de daño y crecen durante 30 s."
+    },
+    "volt-pylon": {
+     "name": "Pilón voltio",
+     "desc": "Llega antes de que se hunda: los rayos electrocutan a las plagas a tu alrededor durante 30 s."
     }
    },
    "setRule": {
@@ -15467,6 +15515,14 @@
     "treasure-map": {
      "name": "खज़ाने का नक्शा",
      "desc": "X का निशान लगाने के लिए इसे पढ़ें। संदूक के लिए X पर खोदें।"
+    },
+    "mash-pylon": {
+     "name": "मैश पायलन",
+     "desc": "डूबने से पहले पहुँचें: 30 से॰ तक आपके वार तिगुना नुकसान करते हैं और बड़े हो जाते हैं।"
+    },
+    "volt-pylon": {
+     "name": "वोल्ट पायलन",
+     "desc": "डूबने से पहले पहुँचें: 30 से॰ तक बिजली आपके आसपास के कीड़ों पर गिरती है।"
     }
    },
    "setRule": {
@@ -17653,6 +17709,14 @@
     "treasure-map": {
      "name": "Schatzkarte",
      "desc": "Lies sie, um ein X zu markieren. Grab am X nach einer Truhe."
+    },
+    "mash-pylon": {
+     "name": "Brei-Pylon",
+     "desc": "Erreiche ihn, bevor er versinkt: Deine Treffer verursachen 30 s lang dreifachen Schaden und werden größer."
+    },
+    "volt-pylon": {
+     "name": "Volt-Pylon",
+     "desc": "Erreiche ihn, bevor er versinkt: Blitze treffen 30 s lang die Schädlinge um dich herum."
     }
    },
    "setRule": {
@@ -19839,6 +19903,14 @@
     "treasure-map": {
      "name": "Carte au trésor",
      "desc": "Lis-la pour marquer un X. Creuse au X pour trouver un coffre."
+    },
+    "mash-pylon": {
+     "name": "Pylône purée",
+     "desc": "Atteins-le avant qu'il s'enfonce : tes coups infligent le triple de dégâts et grossissent pendant 30 s."
+    },
+    "volt-pylon": {
+     "name": "Pylône volt",
+     "desc": "Atteins-le avant qu'il s'enfonce : la foudre frappe les nuisibles autour de toi pendant 30 s."
     }
    },
    "setRule": {
@@ -22025,6 +22097,14 @@
     "treasure-map": {
      "name": "Mapa do tesouro",
      "desc": "Leia para marcar um X. Cave no X para achar um baú."
+    },
+    "mash-pylon": {
+     "name": "Pilar de Purê",
+     "desc": "Alcance antes que afunde: seus golpes causam dano triplo e ficam maiores por 30 s."
+    },
+    "volt-pylon": {
+     "name": "Pilar Volt",
+     "desc": "Alcance antes que afunde: raios atingem as pragas ao seu redor por 30 s."
     }
    },
    "setRule": {
@@ -24211,6 +24291,14 @@
     "treasure-map": {
      "name": "Hazine Haritası",
      "desc": "Bir X işaretlemek için oku. Sandık için X’te kaz."
+    },
+    "mash-pylon": {
+     "name": "Püre Pilonu",
+     "desc": "Batmadan ulaş: vuruşların 30 sn boyunca üç kat hasar verir ve büyür."
+    },
+    "volt-pylon": {
+     "name": "Volt Pilonu",
+     "desc": "Batmadan ulaş: şimşekler 30 sn boyunca etrafındaki zararlıları çarpar."
     }
    },
    "setRule": {
@@ -26397,6 +26485,14 @@
     "treasure-map": {
      "name": "Peta Harta Karun",
      "desc": "Baca untuk menandai sebuah X. Gali di X untuk mendapat peti."
+    },
+    "mash-pylon": {
+     "name": "Pilon Tumbuk",
+     "desc": "Capai sebelum tenggelam: seranganmu memberi tiga kali kerusakan dan membesar selama 30 dtk."
+    },
+    "volt-pylon": {
+     "name": "Pilon Volt",
+     "desc": "Capai sebelum tenggelam: petir menyambar hama di sekitarmu selama 30 dtk."
     }
    },
    "setRule": {
@@ -28583,6 +28679,14 @@
     "treasure-map": {
      "name": "Карта сокровищ",
      "desc": "Прочитай её, чтобы отметить X. Копай в точке X, чтобы найти сундук."
+    },
+    "mash-pylon": {
+     "name": "Пюре-пилон",
+     "desc": "Успей, пока он не ушёл под землю: твои удары наносят тройной урон и становятся больше на 30 с."
+    },
+    "volt-pylon": {
+     "name": "Вольт-пилон",
+     "desc": "Успей, пока он не ушёл под землю: молнии бьют вредителей вокруг тебя 30 с."
     }
    },
    "setRule": {
@@ -30769,6 +30873,14 @@
     "treasure-map": {
      "name": "Peta Harta Karun",
      "desc": "Baca untuk menanda sebuah X. Gali di X untuk mendapat peti."
+    },
+    "mash-pylon": {
+     "name": "Pilon Lecek",
+     "desc": "Sampai sebelum ia tenggelam: pukulan anda memberi kerosakan tiga kali ganda dan membesar selama 30 s."
+    },
+    "volt-pylon": {
+     "name": "Pilon Volt",
+     "desc": "Sampai sebelum ia tenggelam: kilat menyambar perosak di sekeliling anda selama 30 s."
     }
    },
    "setRule": {
@@ -32955,6 +33067,14 @@
     "treasure-map": {
      "name": "Mapa ng Kayamanan",
      "desc": "Basahin ito para markahan ang isang X. Maghukay sa X para sa isang chest."
+    },
+    "mash-pylon": {
+     "name": "Mash Pylon",
+     "desc": "Abutin bago lumubog: triple ang damage ng mga tama mo at lumalaki ang mga ito nang 30 s."
+    },
+    "volt-pylon": {
+     "name": "Volt Pylon",
+     "desc": "Abutin bago lumubog: kinukuryente ng kidlat ang mga peste sa paligid mo nang 30 s."
     }
    },
    "setRule": {
@@ -35141,6 +35261,14 @@
     "treasure-map": {
      "name": "खजिन्याचा नकाशा",
      "desc": "X ची खूण करण्यासाठी तो वाचा. पेटीसाठी X वर खणा."
+    },
+    "mash-pylon": {
+     "name": "मॅश पायलन",
+     "desc": "बुडण्यापूर्वी पोहोचा: 30 सेकंद आपले वार तिप्पट नुकसान करतात आणि मोठे होतात."
+    },
+    "volt-pylon": {
+     "name": "व्होल्ट पायलन",
+     "desc": "बुडण्यापूर्वी पोहोचा: 30 सेकंद आपल्या भोवतीच्या किडींवर वीज पडते."
     }
    },
    "setRule": {
@@ -37327,6 +37455,14 @@
     "treasure-map": {
      "name": "Bản đồ kho báu",
      "desc": "Đọc để đánh dấu một chữ X. Đào ở chữ X để lấy rương."
+    },
+    "mash-pylon": {
+     "name": "Trụ Nghiền",
+     "desc": "Tới trước khi nó chìm: đòn đánh của bạn gây gấp ba sát thương và to hơn trong 30 giây."
+    },
+    "volt-pylon": {
+     "name": "Trụ Điện",
+     "desc": "Tới trước khi nó chìm: sét đánh lũ sâu bọ quanh bạn trong 30 giây."
     }
    },
    "setRule": {
@@ -39513,6 +39649,14 @@
     "treasure-map": {
      "name": "నిధి పటం",
      "desc": "ఒక X గుర్తు వేయడానికి దాన్ని చదవండి. పెట్టె కోసం X దగ్గర తవ్వండి."
+    },
+    "mash-pylon": {
+     "name": "మాష్ పైలాన్",
+     "desc": "మునిగే ముందు చేరండి: 30 సె మీ దెబ్బలు మూడు రెట్లు నష్టం చేసి పెద్దవవుతాయి."
+    },
+    "volt-pylon": {
+     "name": "వోల్ట్ పైలాన్",
+     "desc": "మునిగే ముందు చేరండి: 30 సె మీ చుట్టూ ఉన్న పురుగులపై పిడుగు పడుతుంది."
     }
    },
    "setRule": {
@@ -41699,6 +41843,14 @@
     "treasure-map": {
      "name": "புதையல் வரைபடம்",
      "desc": "ஒரு X குறிக்க இதைப் படிக்கவும். பெட்டிக்கு X-இல் தோண்டவும்."
+    },
+    "mash-pylon": {
+     "name": "மசியல் தூண்",
+     "desc": "மூழ்கும் முன் அடையுங்கள்: 30 வி உங்கள் அடிகள் மும்மடங்கு சேதம் செய்து பெரிதாகும்."
+    },
+    "volt-pylon": {
+     "name": "வோல்ட் தூண்",
+     "desc": "மூழ்கும் முன் அடையுங்கள்: 30 வி உங்களைச் சுற்றியுள்ள பூச்சிகள் மீது மின்னல் தாக்கும்."
     }
    },
    "setRule": {
@@ -43885,6 +44037,14 @@
     "treasure-map": {
      "name": "গুপ্তধনের মানচিত্র",
      "desc": "একটা X চিহ্ন দিতে এটা পড়ুন। সিন্দুক পেতে X-এ খুঁড়ুন।"
+    },
+    "mash-pylon": {
+     "name": "ম্যাশ পাইলন",
+     "desc": "ডোবার আগে পৌঁছান: 30 সেকেন্ড আপনার আঘাত তিনগুণ ক্ষতি করে আর বড় হয়।"
+    },
+    "volt-pylon": {
+     "name": "ভোল্ট পাইলন",
+     "desc": "ডোবার আগে পৌঁছান: 30 সেকেন্ড আপনার চারপাশের পোকাদের উপর বাজ পড়ে।"
     }
    },
    "setRule": {
@@ -46071,6 +46231,14 @@
     "treasure-map": {
      "name": "แผนที่สมบัติ",
      "desc": "อ่านเพื่อปักหมุด X ขุดที่ X เพื่อหาหีบ"
+    },
+    "mash-pylon": {
+     "name": "เสาบด",
+     "desc": "ไปให้ถึงก่อนมันจม: การโจมตีของคุณแรงขึ้นสามเท่าและใหญ่ขึ้นเป็นเวลา 30 วิ"
+    },
+    "volt-pylon": {
+     "name": "เสาโวลต์",
+     "desc": "ไปให้ถึงก่อนมันจม: สายฟ้าฟาดศัตรูพืชรอบตัวคุณเป็นเวลา 30 วิ"
     }
    },
    "setRule": {
@@ -48257,6 +48425,14 @@
     "treasure-map": {
      "name": "Taswirar Dukiya",
      "desc": "Karanta ta don yin alamar X. Tona a wurin X don samun akwati."
+    },
+    "mash-pylon": {
+     "name": "Ginshiƙin Dakakke",
+     "desc": "Isa gare shi kafin ya nutse: bugunka zai yi lahani sau uku kuma ya ƙara girma na daƙiƙa 30."
+    },
+    "volt-pylon": {
+     "name": "Ginshiƙin Volt",
+     "desc": "Isa gare shi kafin ya nutse: walƙiya za ta harbi ƙwari da ke kusa da kai na daƙiƙa 30."
     }
    },
    "setRule": {
@@ -50443,6 +50619,14 @@
     "treasure-map": {
      "name": "Treasure Map",
      "desc": "Read am to mark one X. Dig for the X to find box."
+    },
+    "mash-pylon": {
+     "name": "Mash Pylon",
+     "desc": "Reach am before e sink: your hit go do three times damage and grow big for 30 s."
+    },
+    "volt-pylon": {
+     "name": "Volt Pylon",
+     "desc": "Reach am before e sink: thunder go shock the pests wey dey near you for 30 s."
     }
    },
    "setRule": {
@@ -52629,6 +52813,14 @@
     "treasure-map": {
      "name": "خريطة كنز",
      "desc": "اقرأها لتضع علامة X. احفر عند X لتجد صندوقًا."
+    },
+    "mash-pylon": {
+     "name": "عمود الهريس",
+     "desc": "اصل إليه قبل أن يغرق: تُحدث ضرباتك ضررًا ثلاثيًا وتكبر لمدة 30 ث."
+    },
+    "volt-pylon": {
+     "name": "عمود الفولت",
+     "desc": "اصل إليه قبل أن يغرق: يصعق البرق الآفات حولك لمدة 30 ث."
     }
    },
    "setRule": {
@@ -54815,6 +55007,14 @@
     "treasure-map": {
      "name": "نقشه‌ی گنج",
      "desc": "بخوانیدش تا یک X علامت بخورد. سر X را بکنید تا به صندوق برسید."
+    },
+    "mash-pylon": {
+     "name": "ستون پوره",
+     "desc": "پیش از فرو رفتن برس: ضربه‌هایت تا 30 ثانیه سه برابر آسیب می‌زنند و بزرگ‌تر می‌شوند."
+    },
+    "volt-pylon": {
+     "name": "ستون ولت",
+     "desc": "پیش از فرو رفتن برس: تا 30 ثانیه آذرخش به آفت‌های اطرافت می‌زند."
     }
    },
    "setRule": {
@@ -57001,6 +57201,14 @@
     "treasure-map": {
      "name": "מפת אוצר",
      "desc": "קוראים אותה כדי לסמן X. חופרים ב־X כדי למצוא תיבה."
+    },
+    "mash-pylon": {
+     "name": "עמוד מחית",
+     "desc": "הגיעו לפני שהוא שוקע: המכות שלכם גורמות נזק משולש וגדלות למשך 30 שנ׳."
+    },
+    "volt-pylon": {
+     "name": "עמוד וולט",
+     "desc": "הגיעו לפני שהוא שוקע: ברקים מכים במזיקים סביבכם למשך 30 שנ׳."
     }
    },
    "setRule": {
@@ -59187,6 +59395,14 @@
     "treasure-map": {
      "name": "خزانے کا نقشہ",
      "desc": "X کا نشان لگانے کے لیے اسے پڑھیں۔ صندوق کے لیے X پر کھودیں۔"
+    },
+    "mash-pylon": {
+     "name": "میش پائلن",
+     "desc": "ڈوبنے سے پہلے پہنچیں: 30 سیکنڈ تک آپ کے وار تین گنا نقصان کرتے ہیں اور بڑے ہو جاتے ہیں۔"
+    },
+    "volt-pylon": {
+     "name": "وولٹ پائلن",
+     "desc": "ڈوبنے سے پہلے پہنچیں: 30 سیکنڈ تک آپ کے آس پاس کے کیڑوں پر بجلی گرتی ہے۔"
     }
    },
    "setRule": {
@@ -59224,143 +59440,143 @@
   "index": {
    "url": "https://tibo.dog/data/v1/index.json",
    "bytes": 18937,
-   "sha256": "98d60d6a9f44b84035cad61a88513edc2d1b203e81c19f9909689bd56b6a0c75"
+   "sha256": "9646718b73ec868bf6feab9d1076b2ba40cba1c92147759894abff7052211f3b"
   },
   "locales": {
    "en": {
     "url": "https://tibo.dog/data/v1/text/en.json",
-    "bytes": 59402,
-    "sha256": "87683d02fb7c6007d957a8df98ddd735cbb0e3567b4e6fccbb426742f4b24525"
+    "bytes": 59643,
+    "sha256": "c38b5eae3d4830786c2bd5590a8d48d9929f3797196dbc56ec7c61ee94b0111a"
    },
    "zh-CN": {
     "url": "https://tibo.dog/data/v1/text/zh-CN.json",
-    "bytes": 58569,
-    "sha256": "78161f0830de2da41312e4b89113a3d683a329c120b278758892adb31b8d4dfc"
+    "bytes": 58798,
+    "sha256": "0ccd0054039c13211a7ece6bdb19fdf96fe010236bba454d92858b720dfae205"
    },
    "zh-TW": {
     "url": "https://tibo.dog/data/v1/text/zh-TW.json",
-    "bytes": 58827,
-    "sha256": "4c7956d871a54adefb19eb0d875c34ea864f0ac7e68fac45cabdeb9cad8f3b89"
+    "bytes": 59056,
+    "sha256": "b7c45f7b157e0d155cb56f2d0eac491831e3cac312b2b46f65363bd5bded6925"
    },
    "ja": {
     "url": "https://tibo.dog/data/v1/text/ja.json",
-    "bytes": 71683,
-    "sha256": "7b0e16643aa3b7e1e69a37b9b89130afacbf118c83bf2e7412febc0abaa3572c"
+    "bytes": 71965,
+    "sha256": "2f1286243d806e2578e11bef4fd33dd85c76c49110b33dabe3a76607fb31ff3b"
    },
    "ko": {
     "url": "https://tibo.dog/data/v1/text/ko.json",
-    "bytes": 71861,
-    "sha256": "7c8d4eaeaa75655cdbf5f6a6b1cd20e0e845654449b0e4176ad416076bc9f355"
+    "bytes": 72142,
+    "sha256": "8e439acc33d318b90b6ff09d06dd912f8c9ab51aacdb441e0fa3581e4c7165ac"
    },
    "es": {
     "url": "https://tibo.dog/data/v1/text/es.json",
-    "bytes": 67113,
-    "sha256": "5402a08174b63e80c40f20be94ba2fc6d72015741b5c0a41a723c2bfe881f73b"
+    "bytes": 67391,
+    "sha256": "531b5e8054ee5f4d0e85c34448dac7122266178d4503c13563ae574f73323d23"
    },
    "hi": {
     "url": "https://tibo.dog/data/v1/text/hi.json",
-    "bytes": 124122,
-    "sha256": "0bc0e5628770b9e96d8b3f8b663bd70a9c493eb01410d62426de75a6ffc300ae"
+    "bytes": 124645,
+    "sha256": "c9695b154bbbc20aa69d68d8a68d6230f3a44ca75702d24a2b4ebb8977bba0b5"
    },
    "de": {
     "url": "https://tibo.dog/data/v1/text/de.json",
-    "bytes": 66394,
-    "sha256": "bbb2d0411641cc15612fae187653b4f8ece4a53c33fee176d7d77113f541c27c"
+    "bytes": 66680,
+    "sha256": "a7f939349b7d7cb2c1ac8936b564b6f1782a6baa8366db3a2ba08976a117a04a"
    },
    "fr": {
     "url": "https://tibo.dog/data/v1/text/fr.json",
-    "bytes": 69639,
-    "sha256": "cbaa9bf80159654baa0e4a87fdfe28f926b68e54b50d5febc0d4bac68dab3d73"
+    "bytes": 69937,
+    "sha256": "48c637e57810b4328bd2f96f2253ac2b1de865f91bcf8651c732728540693646"
    },
    "pt": {
     "url": "https://tibo.dog/data/v1/text/pt.json",
-    "bytes": 65683,
-    "sha256": "34b17f500bbdac3e4b3e55910acf5f1660b1e826562784fd77a3fa1521cffebc"
+    "bytes": 65931,
+    "sha256": "2cd4df0a933fa3ce937518f6503c6e4470409e1e0cacdb75ef68cb898b738393"
    },
    "tr": {
     "url": "https://tibo.dog/data/v1/text/tr.json",
-    "bytes": 68178,
-    "sha256": "9a76d1805e9001d1f0b87eb02d85d2b408bcd0bb4b832c93823f277ebe1e8920"
+    "bytes": 68423,
+    "sha256": "49be6b2dbcf7537311f504b9931793559e576301c8bdd252dacbf3d69b8fb3db"
    },
    "id": {
     "url": "https://tibo.dog/data/v1/text/id.json",
-    "bytes": 65492,
-    "sha256": "eead696465a661fd73e2513dc07524793f5cdc049b00e925052306890ccbe9dd"
+    "bytes": 65748,
+    "sha256": "4161e4daf08b7ff3036a0eafe471b68b3f3bde8165ca7d4391a562c3c81d7305"
    },
    "ru": {
     "url": "https://tibo.dog/data/v1/text/ru.json",
-    "bytes": 97693,
-    "sha256": "41200809a8d1e78a5593bbdacc36591ac67cc8904d234c72517ccb86a91de0c1"
+    "bytes": 98099,
+    "sha256": "eb39b6b862a3bba7db23d5212697593bb55a335ce9ef66aae5cac2cb0a6dcc33"
    },
    "ms": {
     "url": "https://tibo.dog/data/v1/text/ms.json",
-    "bytes": 67761,
-    "sha256": "8e0564b6911ecfff804e28b0d7c29ffb1047cecf966b723c3b8c7c9fb4d078ac"
+    "bytes": 68037,
+    "sha256": "977cc4063bf05bc9662582af7978159303854c20de40e6833905c3dd19b9c526"
    },
    "fil": {
     "url": "https://tibo.dog/data/v1/text/fil.json",
-    "bytes": 71480,
-    "sha256": "66e444c71ed315c8f06e9244cd283159b7a70a1873a8f86aa1d6b87fc95b4291"
+    "bytes": 71740,
+    "sha256": "120bd723e00f5dcd911f243869b573e353259d5e5f58b74e217390ac2487de7d"
    },
    "mr": {
     "url": "https://tibo.dog/data/v1/text/mr.json",
-    "bytes": 128330,
-    "sha256": "316d941b072c3ebdc0efd411a09e77c410df65874c4079600708ebecf6a0e84e"
+    "bytes": 128828,
+    "sha256": "f87bb0f17cdff0461866c37c3035da5aa7a3ca5b0a5e58353f617aa20511f3d0"
    },
    "vi": {
     "url": "https://tibo.dog/data/v1/text/vi.json",
-    "bytes": 72200,
-    "sha256": "323a775a60ca3ae664576469bd4c1b2f4954ddec042f6b2a793b9431821d1802"
+    "bytes": 72490,
+    "sha256": "1ea1d91c8c5a64a1b5bbdc67a77f2daed2337aab2cf27063b675b5d680cb7802"
    },
    "te": {
     "url": "https://tibo.dog/data/v1/text/te.json",
-    "bytes": 135000,
-    "sha256": "99c40935edcb00dd6ed7f8a217adf038856697a96f8427455b3d4ea2f9240b1a"
+    "bytes": 135506,
+    "sha256": "5cd04a5cd147e9349d35539f8874ce206d7798aa68c4d4182a8318b0eb3490a3"
    },
    "ta": {
     "url": "https://tibo.dog/data/v1/text/ta.json",
-    "bytes": 147466,
-    "sha256": "fb5de69ee10de99cee64187939010a304690b7f89851b534f43a281b78f13f93"
+    "bytes": 148040,
+    "sha256": "af8499d2b4bf87cb9919ea79e44e1e9ba36ede9060e98317871d5cccf88c8420"
    },
    "bn": {
     "url": "https://tibo.dog/data/v1/text/bn.json",
-    "bytes": 125081,
-    "sha256": "64984e200a448c86233dd2e5691a24a50fc85baba1fba2732e2597746236ee06"
+    "bytes": 125556,
+    "sha256": "c1f6b1a4c57f531c58350b4c5d0bd68409a6fd244c49a52f3150c15125e7e64f"
    },
    "th": {
     "url": "https://tibo.dog/data/v1/text/th.json",
-    "bytes": 120696,
-    "sha256": "703dad8e5010e67a00e32f228b59bda122ae9b5b91b883312d1b3f28301e833a"
+    "bytes": 121174,
+    "sha256": "55cf1e2f9b68b3b9f6f9342cbc639aa69a3b5717f8685b649ed225dd80ffcd47"
    },
    "ha": {
     "url": "https://tibo.dog/data/v1/text/ha.json",
-    "bytes": 68070,
-    "sha256": "4549b44f56ea88bdc70740beb649fb12eabfcbf7c4b388910b7101c20fc2b6b5"
+    "bytes": 68357,
+    "sha256": "43519dbae4a65d7a6f97f10e8d8aebde805f586fe065a1e43aa366754080f78b"
    },
    "pcm": {
     "url": "https://tibo.dog/data/v1/text/pcm.json",
-    "bytes": 62582,
-    "sha256": "13b49e932f5828734ffad2e5ba9877b34df8a6ac5bf2d07e769af8b0c2d6d0e2"
+    "bytes": 62829,
+    "sha256": "dedd6dbc21a04d4c7e033bd6964c4b58ded65e38181dbc6f652b1b9230959ec5"
    },
    "ar": {
     "url": "https://tibo.dog/data/v1/text/ar.json",
-    "bytes": 82197,
-    "sha256": "1974f15223c3bfaaf22dc254f4eeb3ef2374cf528354207fe31565a682549ea9"
+    "bytes": 82518,
+    "sha256": "bd76a6fb3af0f491d6d38fb9ef30a1015c895ef2731a92cd3da58d4454fb9ce9"
    },
    "fa": {
     "url": "https://tibo.dog/data/v1/text/fa.json",
-    "bytes": 96500,
-    "sha256": "95d21325d08b6d61e8f31b9e06447bb29b088f6f80e709e81644ff20b36ae738"
+    "bytes": 96867,
+    "sha256": "6e040405258af50cfa9345dd4e969881ca0e52d5e1375121807acbb7cd312277"
    },
    "he": {
     "url": "https://tibo.dog/data/v1/text/he.json",
-    "bytes": 81762,
-    "sha256": "70fd76f026e76a0579e8a4e60248d0c7206c96008066e45eec3ff16485ceecbf"
+    "bytes": 82094,
+    "sha256": "148d49e288e7c44225ef0b8097fc1379f80980c29883a08caafff02c7f86d8da"
    },
    "ur": {
     "url": "https://tibo.dog/data/v1/text/ur.json",
-    "bytes": 92857,
-    "sha256": "6977fef8e6d6630d1d26ab762ad35614cee015e9853967d25b6d06e46b7f862e"
+    "bytes": 93240,
+    "sha256": "3f187c7b809b30c30cf7285442a061bb5e85a010cf06f533fbdd83c14de05fd8"
    }
   }
  }

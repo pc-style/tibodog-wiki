@@ -2367,6 +2367,12 @@
  "content.varietyPlace.mash-bomb.name": [
   "Mash Bomb"
  ],
+ "content.varietyPlace.mash-pylon.desc": [
+  "Reach it before it sinks: your hits deal triple damage and grow bigger for 30 s."
+ ],
+ "content.varietyPlace.mash-pylon.name": [
+  "Mash Pylon"
+ ],
  "content.varietyPlace.rowboat.desc": [
   "Stand in it to row to the far shore."
  ],
@@ -2378,6 +2384,12 @@
  ],
  "content.varietyPlace.treasure-map.name": [
   "Treasure Map"
+ ],
+ "content.varietyPlace.volt-pylon.desc": [
+  "Reach it before it sinks: lightning zaps the pests around you for 30 s."
+ ],
+ "content.varietyPlace.volt-pylon.name": [
+  "Volt Pylon"
  ],
  "content.weapon.afterburner-fries.desc": [
   "Each dash blasts a fan of hot fries backward from where the dash started."
