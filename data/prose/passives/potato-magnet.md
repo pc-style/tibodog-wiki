@@ -6,9 +6,9 @@ It is the catalyst for [Gravy Flood](/weapons/gravy-flood) (from [Gravy Boat](/w
 
 ## How it works
 
-Pickup range is `40 × max(0.2, 1 + pickup range bonus)` (see [Stats](/stats)). Once a pickup enters the range it is marked and flies toward Tibo at 300 units per second, even if he moves away again.<small>[sim-nIcq_DHZ.js: `if(n.vacuum[s]===1||p&&g<c){n.vacuum[s]=1;let e=Math.max(.001,Math.sqrt(g));n.x[s]=u+m/e*300*t`]</small> Chests and items are never pulled; Tibo has to walk onto them (see [Pickups](/pickups)).
+Pickup range is `40 × max(0.2, 1 + pickup range bonus)` (see [Stats](/stats)). Once a pickup enters the range it is marked and flies toward Tibo at 300 units per second, even if he moves away again.<small>[sim-rGD56OmB.js: `if(n.vacuum[s]===1||p&&g<c){n.vacuum[s]=1;let e=Math.max(.001,Math.sqrt(g));n.x[s]=u+m/e*300*t`]</small> Chests and items are never pulled; Tibo has to walk onto them (see [Pickups](/pickups)).
 
-Pickup range also sets how close Tibo must be to harvest a [Seed Potato](/weapons/seed-potato) or [Potato Patch](/weapons/potato-patch) plant: 24 units plus a quarter of the range above 40, up to 34.<small>[sim-nIcq_DHZ.js: `return Math.min(t.maxReach,t.reach+t.reachK*n)`]</small> That is 26.5 units at Potato Magnet level 1 and the full 34 from level 4.
+Pickup range also sets how close Tibo must be to harvest a [Seed Potato](/weapons/seed-potato) or [Potato Patch](/weapons/potato-patch) plant: 24 units plus a quarter of the range above 40, up to 34.<small>[sim-rGD56OmB.js: `return Math.min(t.maxReach,t.reach+t.reachK*n)`]</small> That is 26.5 units at Potato Magnet level 1 and the full 34 from level 4.
 
 Other sources are [Copper Spoon](/items/copper-spoon) (+0.1), the aura of the dog [Biscuit](/dogs/retriever) and [Spud Shrine](/points-of-interest#spud-shrine) blessings.
 

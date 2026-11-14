@@ -1,6 +1,14 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { biomePages, dogPages, enemyPages, passivePages, weaponPages } from './entities.mjs';
+import { biomePages, bossPages, dogPages, enemyPages, passivePages, weaponPages } from './entities.mjs';
+
+test('boss HP tables show second-based schedule boundaries in minutes', () => {
+  const body = bossPages().find((p) => p.path === '/bosses/harvester').body;
+  assert.match(body, /\| 12 \| 3 \|/);
+  assert.match(body, /\| 13\.5 \| 4 \|/);
+  assert.match(body, /\| 15 \| 6 \|/);
+  assert.doesNotMatch(body, /undefined|NaN/);
+});
 
 test('weapon infobox slow percentages show reduction, not remaining speed', () => {
   const pages = weaponPages();

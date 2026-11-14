@@ -11864,7 +11864,7 @@
    "weight": 5,
    "effect": {
     "kind": "overtime",
-    "perMinute": 0.06
+    "perWaveStep": 0.06
    }
   },
   {
@@ -11980,7 +11980,7 @@
    "effect": {
     "kind": "panicFry",
     "hpShare": 0.5,
-    "minuteSec": 60,
+    "bucketSec": 60,
     "slowFactor": 0.05,
     "windowSec": 3,
     "perStackSec": 1,
@@ -12949,7 +12949,7 @@
    "weight": 5,
    "effect": {
     "kind": "overtime",
-    "perMinute": 0.06
+    "perWaveStep": 0.06
    }
   },
   {
@@ -13092,7 +13092,7 @@
    "effect": {
     "kind": "panicFry",
     "hpShare": 0.5,
-    "minuteSec": 60,
+    "bucketSec": 60,
     "slowFactor": 0.05,
     "windowSec": 3,
     "perStackSec": 1,
@@ -16280,7 +16280,7 @@
    "help": {
     "kind": "gift",
     "coins": 6,
-    "coinsPerMin": 1.5,
+    "coinsPerStep": 1.5,
     "levelFraction": 0.4,
     "beaconChance": 0.05
    },

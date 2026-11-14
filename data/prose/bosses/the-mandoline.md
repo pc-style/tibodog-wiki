@@ -1,12 +1,12 @@
 ## Overview
 
-The Mandoline is the eighth boss in the boss order and the 12:00 boss on the [wave schedule](/bosses#wave-schedule), between [The Great Wireworm](/bosses/great-wireworm) at 10:00 and [The Deep Freezer](/bosses/deep-freezer) at 14:00. It is the second boss in the overtime cycle after 20:00, first at 22:00 and then every seven minutes (see [After 20:00](/bosses#after-20-00)). A [Boss Lair](/points-of-interest#boss-lair) can also wake it.
+The Mandoline is the eighth boss in the boss order and the 9:00 boss on the [wave schedule](/bosses#wave-schedule), between [The Great Wireworm](/bosses/great-wireworm) at 7:30 and [The Deep Freezer](/bosses/deep-freezer) at 10:30. It is also in the overtime director's cycle after 15:00, subject to the [endgame encounter rules](/endgame), rather than a guaranteed repeated encounter. A [Boss Lair](/points-of-interest#boss-lair) can also wake it.
 
 It has 5200 base HP, which is 3380 HP on Normal (boss HP ×0.65, see [Modes](/modes)), plus [curse](/curse). Contact damage is 34 before time scaling, a big jump from the 26 of the boss before it. It walks at speed 32, about half of Tibo's base speed of 62.
 
 It drops a [chest](/chests), an XP gem worth 140 XP and a 25-gold coin (both multiplied by the biome's XP and gold multipliers).
 
-**Measured** (headless `tools/play.mjs`, build `main-B2gf34bA`, seed `wiki`, standard mode, `--god`; the clock warped to 2 s before each minute and stepped across it; level-up offers taken first-in-order except Rotten Spud, so curse stays at the difficulty's start value): it spawned at exactly 12:00 on all four difficulties, with 2600 HP on Easy, 3380 on Normal, 3640 on Hard and 5434 on Nightmare. The Nightmare figure is 10% above base HP × the difficulty multiplier because Nightmare starts every run with one curse, and boss HP is multiplied by 1 + curse. <small>[intro-shared-Cy9oIPG8.js: `startCurses:1,tierLag:2,wallPests:.6`]</small> <small>[sim-nIcq_DHZ.js: `n.maxHp[r]=i.hp*t.hpMult*(1+e.loadout.stats.curse)`]</small> Seeds `s1` to `s4` gave the same Normal times and HP.
+**Measured** (headless `tools/play.mjs`, build `main-B2gf34bA`, seed `wiki`, standard mode, `--god`; the clock warped to 2 s before each minute and stepped across it; level-up offers taken first-in-order except Rotten Spud, so curse stays at the difficulty's start value): it spawned at exactly 12:00 on all four difficulties, with 2600 HP on Easy, 3380 on Normal, 3640 on Hard and 5434 on Nightmare. The Nightmare figure is 10% above base HP × the difficulty multiplier because Nightmare starts every run with one curse, and boss HP is multiplied by 1 + curse. <small>[intro-shared-DbM02O_T.js: `startCurses:1,tierLag:2,wallPests:.6`]</small> <small>[sim-rGD56OmB.js: `n.maxHp[r]=i.hp*t.hpMult*(1+e.loadout.stats.curse)`]</small> Seeds `s1` to `s4` gave the same Normal times and HP.
 
 ## Fight
 
@@ -14,7 +14,7 @@ The Mandoline walks towards Tibo, fires a fast-spinning spiral, and every 3.4 s 
 
 ### Three-lane slice
 
-When the attack starts, the Mandoline locks the direction from itself to Tibo and marks three parallel lines across that direction, each 360 units long and 22 units wide. The middle line runs through Tibo's position; the other two run 57.2 units nearer to the boss and 57.2 units further away. <small>[sim-nIcq_DHZ.js: `let p=(f-(a.lanes-1)/2)*a.width*2.6`]</small> The lines strike one after another, starting with the one nearest the boss: at 1.1 s, 1.25 s and 1.4 s. Each deals the Mandoline's contact damage. <small>[sim-nIcq_DHZ.js: `a.width/2,r.telegraph+.15*f,o.damage[t]`]</small>
+When the attack starts, the Mandoline locks the direction from itself to Tibo and marks three parallel lines across that direction, each 360 units long and 22 units wide. The middle line runs through Tibo's position; the other two run 57.2 units nearer to the boss and 57.2 units further away. <small>[sim-rGD56OmB.js: `let p=(f-(a.lanes-1)/2)*a.width*2.6`]</small> The lines strike one after another, starting with the one nearest the boss: at 1.1 s, 1.25 s and 1.4 s. Each deals the Mandoline's contact damage. <small>[sim-rGD56OmB.js: `a.width/2,r.telegraph+.15*f,o.damage[n]`]</small>
 
 ### Slicer spiral
 

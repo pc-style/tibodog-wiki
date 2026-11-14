@@ -213,7 +213,7 @@
   "Five Heads"
  ],
  "content.boss.root-hydra-head.desc": [
-  "One of the Hydra's heads bursts from the ground, spits mud and sinks again. Every hit it takes now weakens the Hydra at 29:00."
+  "One of the Hydra's heads bursts from the ground, spits mud and sinks again. Every hit it takes now weakens the Hydra later."
  ],
  "content.boss.root-hydra-head.name": [
   "Root Hydra Head"
@@ -1310,7 +1310,7 @@
   "Meteor Russet"
  ],
  "content.item.midnight-fries.desc": [
-  "+5% damage. After 20:00, damage grows 6% more each minute."
+  "+5% damage. After 15:00, damage grows 6% more every 45 s."
  ],
  "content.item.midnight-fries.name": [
   "Midnight Fries"

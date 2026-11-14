@@ -1,10 +1,10 @@
 {
  "schema": 1,
  "game": {
-  "version": "9d1de90",
-  "commit": "9d1de90e3620e12254ad53cf2d85eae885ae006e"
+  "version": "ac9c916",
+  "commit": "ac9c916a31b67acb78975f8f645c529ee75adce5"
  },
- "simVersion": "96a3a727e9e6ab20",
+ "simVersion": "190c1ab50f0d66ac",
  "locales": [
   {
    "tag": "en",
@@ -1121,7 +1121,7 @@
     },
     "midnight-fries": {
      "name": "Midnight Fries",
-     "desc": "+5% damage. After 20:00, damage grows 6% more each minute."
+     "desc": "+5% damage. After 15:00, damage grows 6% more every 45 s."
     },
     "moon-dust": {
      "name": "Moon Dust",
@@ -1473,7 +1473,7 @@
     "root-hydra-head": {
      "name": "Root Hydra Head",
      "title": "Burrowing",
-     "desc": "One of the Hydra's heads bursts from the ground, spits mud and sinks again. Every hit it takes now weakens the Hydra at 29:00."
+     "desc": "One of the Hydra's heads bursts from the ground, spits mud and sinks again. Every hit it takes now weakens the Hydra later."
     },
     "root-hydra-mire": {
      "name": "The Root Hydra",
@@ -3307,7 +3307,7 @@
     },
     "midnight-fries": {
      "name": "夜宵薯条",
-     "desc": "伤害+5%。20:00后，伤害每分钟再提高6%。"
+     "desc": "伤害+5%。15:00后，伤害每45秒再提高6%。"
     },
     "moon-dust": {
      "name": "月光淀粉",
@@ -3659,7 +3659,7 @@
     "root-hydra-head": {
      "name": "根须九头蛇之首",
      "title": "潜地",
-     "desc": "九头蛇的一个头破土而出，喷出泥浆后又沉回地下。它现在受到的每一击都会削弱29:00出现的九头蛇。"
+     "desc": "九头蛇的一个头破土而出，喷出泥浆后又沉回地下。它现在受到的每一击都会削弱之后出现的九头蛇。"
     },
     "root-hydra-mire": {
      "name": "根须九头蛇",
@@ -5493,7 +5493,7 @@
     },
     "midnight-fries": {
      "name": "宵夜薯條",
-     "desc": "傷害+5%。20:00後，傷害每分鐘再提高6%。"
+     "desc": "傷害+5%。15:00後，傷害每45秒再提高6%。"
     },
     "moon-dust": {
      "name": "月光澱粉",
@@ -5845,7 +5845,7 @@
     "root-hydra-head": {
      "name": "根鬚九頭蛇之首",
      "title": "潛地",
-     "desc": "九頭蛇的一個頭破土而出，噴出泥漿後又沉回地底。它現在受到的每一擊都會削弱29:00出現的九頭蛇。"
+     "desc": "九頭蛇的一個頭破土而出，噴出泥漿後又沉回地底。它現在受到的每一擊都會削弱之後出現的九頭蛇。"
     },
     "root-hydra-mire": {
      "name": "根鬚九頭蛇",
@@ -7679,7 +7679,7 @@
     },
     "midnight-fries": {
      "name": "夜食ポテト",
-     "desc": "ダメージ+5%。20:00を過ぎると、毎分ダメージがさらに6%上がる。"
+     "desc": "ダメージ+5%。15:00を過ぎると、45秒ごとにダメージがさらに6%上がる。"
     },
     "moon-dust": {
      "name": "月のでんぷん",
@@ -8031,7 +8031,7 @@
     "root-hydra-head": {
      "name": "根のヒドラの首",
      "title": "潜行",
-     "desc": "ヒドラの首のひとつが地面から飛び出し、泥を吐いてまた潜る。今受けた攻撃はすべて29:00のヒドラを弱らせる。"
+     "desc": "ヒドラの首のひとつが地面から飛び出し、泥を吐いてまた潜る。今受けた攻撃はすべて、あとでヒドラを弱らせる。"
     },
     "root-hydra-mire": {
      "name": "根のヒドラ",
@@ -9865,7 +9865,7 @@
     },
     "midnight-fries": {
      "name": "야식 감자튀김",
-     "desc": "피해 +5%. 20:00 이후에는 매분 피해가 6%씩 더 늘어납니다."
+     "desc": "피해 +5%. 15:00 이후에는 45초마다 피해가 6%씩 더 늘어납니다."
     },
     "moon-dust": {
      "name": "달빛 전분",
@@ -10217,7 +10217,7 @@
     "root-hydra-head": {
      "name": "뿌리 히드라 머리",
      "title": "땅속",
-     "desc": "히드라의 머리 하나가 땅에서 솟아 진흙을 뱉고 다시 가라앉습니다. 지금 받는 모든 공격이 29:00의 히드라를 약하게 만듭니다."
+     "desc": "히드라의 머리 하나가 땅에서 솟아 진흙을 뱉고 다시 가라앉습니다. 지금 받는 모든 공격이 나중에 히드라를 약하게 만듭니다."
     },
     "root-hydra-mire": {
      "name": "뿌리 히드라",
@@ -12051,7 +12051,7 @@
     },
     "midnight-fries": {
      "name": "Papas de medianoche",
-     "desc": "+5% de daño. Pasados los 20:00, el daño sube un 6% más cada minuto."
+     "desc": "+5% de daño. Pasados los 15:00, el daño sube un 6% más cada 45 s."
     },
     "moon-dust": {
      "name": "Polvo lunar",
@@ -12403,7 +12403,7 @@
     "root-hydra-head": {
      "name": "Cabeza de hidra de raíces",
      "title": "Bajo tierra",
-     "desc": "Una de las cabezas de la hidra brota del suelo, escupe lodo y vuelve a hundirse. Cada golpe que recibe ahora debilita a la hidra que aparece a los 29:00."
+     "desc": "Una de las cabezas de la hidra brota del suelo, escupe lodo y vuelve a hundirse. Cada golpe que recibe ahora debilita a la hidra que aparece más tarde."
     },
     "root-hydra-mire": {
      "name": "La hidra de raíces",
@@ -14237,7 +14237,7 @@
     },
     "midnight-fries": {
      "name": "आधी रात के फ्राई",
-     "desc": "+5% डैमेज। 20:00 के बाद डैमेज हर मिनट 6% और बढ़ता है।"
+     "desc": "+5% डैमेज। 15:00 के बाद डैमेज हर 45 सेकंड में 6% और बढ़ता है।"
     },
     "moon-dust": {
      "name": "चाँद की धूल",
@@ -14589,7 +14589,7 @@
     "root-hydra-head": {
      "name": "जड़ हाइड्रा का सिर",
      "title": "खुदाई",
-     "desc": "हाइड्रा का एक सिर ज़मीन से फूटता है, कीचड़ थूकता है और फिर डूब जाता है। अभी इस पर पड़ा हर वार 29:00 की हाइड्रा को कमज़ोर करता है।"
+     "desc": "हाइड्रा का एक सिर ज़मीन से फूटता है, कीचड़ थूकता है और फिर डूब जाता है। अभी इस पर पड़ा हर वार बाद में हाइड्रा को कमज़ोर करता है।"
     },
     "root-hydra-mire": {
      "name": "जड़ हाइड्रा",
@@ -16423,7 +16423,7 @@
     },
     "midnight-fries": {
      "name": "Mitternachtspommes",
-     "desc": "+5 % Schaden. Nach 20:00 wächst der Schaden jede Minute um weitere 6 %."
+     "desc": "+5 % Schaden. Nach 15:00 wächst der Schaden alle 45 s um weitere 6 %."
     },
     "moon-dust": {
      "name": "Mondstaub",
@@ -16775,7 +16775,7 @@
     "root-hydra-head": {
      "name": "Wurzelhydra-Kopf",
      "title": "Im Untergrund",
-     "desc": "Einer der Köpfe der Hydra bricht aus dem Boden, spuckt Schlamm und taucht wieder ab. Jeder Treffer, den er jetzt einsteckt, schwächt die Hydra um 29:00."
+     "desc": "Einer der Köpfe der Hydra bricht aus dem Boden, spuckt Schlamm und taucht wieder ab. Jeder Treffer, den er jetzt einsteckt, schwächt die Hydra später."
     },
     "root-hydra-mire": {
      "name": "Die Wurzelhydra",
@@ -18609,7 +18609,7 @@
     },
     "midnight-fries": {
      "name": "Frites de minuit",
-     "desc": "+5% dégâts. Après 20:00, les dégâts augmentent encore de 6% chaque minute."
+     "desc": "+5% dégâts. Après 15:00, les dégâts augmentent encore de 6% toutes les 45 s."
     },
     "moon-dust": {
      "name": "Poussière de lune",
@@ -18961,7 +18961,7 @@
     "root-hydra-head": {
      "name": "Tête d’hydre des racines",
      "title": "Enfouie",
-     "desc": "Une des têtes de l’hydre jaillit du sol, crache de la boue et replonge. Chaque coup qu’elle prend affaiblit désormais l’hydre qui surgit à 29:00."
+     "desc": "Une des têtes de l’hydre jaillit du sol, crache de la boue et replonge. Chaque coup qu’elle prend affaiblit désormais l’hydre qui surgit plus tard."
     },
     "root-hydra-mire": {
      "name": "L’hydre des racines",
@@ -20795,7 +20795,7 @@
     },
     "midnight-fries": {
      "name": "Fritas da meia-noite",
-     "desc": "+5% de dano. Depois de 20:00, o dano cresce mais 6% a cada minuto."
+     "desc": "+5% de dano. Depois de 15:00, o dano cresce mais 6% a cada 45 s."
     },
     "moon-dust": {
      "name": "Poeira lunar",
@@ -21147,7 +21147,7 @@
     "root-hydra-head": {
      "name": "Cabeça da Hidra de raízes",
      "title": "Subterrânea",
-     "desc": "Uma das cabeças da Hidra irrompe do chão, cospe lama e afunda de novo. Cada golpe que ela leva agora enfraquece a Hidra que aparece às 29:00."
+     "desc": "Uma das cabeças da Hidra irrompe do chão, cospe lama e afunda de novo. Cada golpe que ela leva agora enfraquece a Hidra que aparece mais tarde."
     },
     "root-hydra-mire": {
      "name": "A Hidra de raízes",
@@ -22981,7 +22981,7 @@
     },
     "midnight-fries": {
      "name": "Gece Yarısı Kızartması",
-     "desc": "+%5 hasar. 20:00'dan sonra hasar her dakika %6 daha artar."
+     "desc": "+%5 hasar. 15:00'ten sonra hasar her 45 sn'de %6 daha artar."
     },
     "moon-dust": {
      "name": "Ay Tozu",
@@ -23333,7 +23333,7 @@
     "root-hydra-head": {
      "name": "Kök Hidrası Başı",
      "title": "Toprak Altında",
-     "desc": "Hidra'nın başlarından biri topraktan fırlar, çamur tükürür ve yeniden batar. Şimdi aldığı her darbe, 29:00'daki Hidra'yı zayıflatır."
+     "desc": "Hidra'nın başlarından biri topraktan fırlar, çamur tükürür ve yeniden batar. Şimdi aldığı her darbe, Hidra'yı daha sonra zayıflatır."
     },
     "root-hydra-mire": {
      "name": "Kök Hidrası",
@@ -25167,7 +25167,7 @@
     },
     "midnight-fries": {
      "name": "Kentang Goreng Tengah Malam",
-     "desc": "+5% damage. Setelah 20:00, damage naik 6% lagi tiap menit."
+     "desc": "+5% damage. Setelah 15:00, damage naik 6% lagi tiap 45 dtk."
     },
     "moon-dust": {
      "name": "Debu Bulan",
@@ -25519,7 +25519,7 @@
     "root-hydra-head": {
      "name": "Kepala Hidra Akar",
      "title": "Menggali",
-     "desc": "Salah satu kepala Hidra menyembul dari tanah, menyemburkan lumpur, lalu tenggelam lagi. Setiap serangan yang diterimanya sekarang melemahkan Hidra di 29:00."
+     "desc": "Salah satu kepala Hidra menyembul dari tanah, menyemburkan lumpur, lalu tenggelam lagi. Setiap serangan yang diterimanya sekarang melemahkan Hidra nanti."
     },
     "root-hydra-mire": {
      "name": "Hidra Akar",
@@ -27353,7 +27353,7 @@
     },
     "midnight-fries": {
      "name": "Полночная фри",
-     "desc": "+5% к урону. После 20:00 урон растёт ещё на 6% каждую минуту."
+     "desc": "+5% к урону. После 15:00 урон растёт ещё на 6% каждые 45 с."
     },
     "moon-dust": {
      "name": "Лунная пыль",
@@ -27705,7 +27705,7 @@
     "root-hydra-head": {
      "name": "Голова корневой гидры",
      "title": "Под землёй",
-     "desc": "Одна из голов гидры вырывается из земли, плюётся грязью и снова уходит вниз. Каждый удар по ней теперь ослабит гидру в 29:00."
+     "desc": "Одна из голов гидры вырывается из земли, плюётся грязью и снова уходит вниз. Каждый удар по ней теперь ослабит гидру позже."
     },
     "root-hydra-mire": {
      "name": "Корневая гидра",
@@ -29539,7 +29539,7 @@
     },
     "midnight-fries": {
      "name": "Kentang Goreng Tengah Malam",
-     "desc": "+5% kerosakan. Selepas 20:00, kerosakan bertambah 6% lagi setiap minit."
+     "desc": "+5% kerosakan. Selepas 15:00, kerosakan bertambah 6% lagi setiap 45 s."
     },
     "moon-dust": {
      "name": "Debu Bulan",
@@ -29891,7 +29891,7 @@
     "root-hydra-head": {
      "name": "Kepala Hidra Akar",
      "title": "Menggali",
-     "desc": "Salah satu kepala Hidra menerjah keluar dari tanah, meludah lumpur dan tenggelam semula. Setiap serangan yang diterimanya kini melemahkan Hidra pada 29:00."
+     "desc": "Salah satu kepala Hidra menerjah keluar dari tanah, meludah lumpur dan tenggelam semula. Setiap serangan yang diterimanya kini melemahkan Hidra nanti."
     },
     "root-hydra-mire": {
      "name": "Sang Hidra Akar",
@@ -31725,7 +31725,7 @@
     },
     "midnight-fries": {
      "name": "Fries sa Hatinggabi",
-     "desc": "+5% damage. Pagkalipas ng 20:00, lumalaki pa nang 6% ang damage bawat minuto."
+     "desc": "+5% damage. Pagkalipas ng 15:00, lumalaki pa nang 6% ang damage bawat 45 s."
     },
     "moon-dust": {
      "name": "Alikabok ng Buwan",
@@ -32077,7 +32077,7 @@
     "root-hydra-head": {
      "name": "Ulo ng Hydra ng Ugat",
      "title": "Ang Paghuhukay",
-     "desc": "Lumilitaw mula sa lupa ang isa sa mga ulo ng Hydra, dumudura ng putik at lumulubog muli. Bawat tama rito ngayon ay nagpapahina sa Hydra sa 29:00."
+     "desc": "Lumilitaw mula sa lupa ang isa sa mga ulo ng Hydra, dumudura ng putik at lumulubog muli. Bawat tama rito ngayon ay nagpapahina sa Hydra mamaya."
     },
     "root-hydra-mire": {
      "name": "Hydra ng Ugat",
@@ -33911,7 +33911,7 @@
     },
     "midnight-fries": {
      "name": "मध्यरात्रीचे फ्राईज",
-     "desc": "+5% डॅमेज. 20:00 नंतर डॅमेज दर मिनिटाला आणखी 6% वाढतो."
+     "desc": "+5% डॅमेज. 15:00 नंतर डॅमेज दर 45 सेकंदांनी आणखी 6% वाढतो."
     },
     "moon-dust": {
      "name": "चंद्रधूळ",
@@ -34263,7 +34263,7 @@
     "root-hydra-head": {
      "name": "मुळांच्या हायड्राचे डोके",
      "title": "जमिनीखाली",
-     "desc": "हायड्राचे एक डोके जमिनीतून उसळते, चिखल थुंकते आणि पुन्हा बुडते. आता त्याला बसणारा प्रत्येक घाव 29:00 च्या हायड्राला कमकुवत करतो."
+     "desc": "हायड्राचे एक डोके जमिनीतून उसळते, चिखल थुंकते आणि पुन्हा बुडते. आता त्याला बसणारा प्रत्येक घाव नंतर हायड्राला कमकुवत करतो."
     },
     "root-hydra-mire": {
      "name": "मुळांचा हायड्रा",
@@ -36097,7 +36097,7 @@
     },
     "midnight-fries": {
      "name": "Khoai Chiên Khuya",
-     "desc": "+5% sát thương. Sau 20:00, sát thương tăng thêm 6% mỗi phút."
+     "desc": "+5% sát thương. Sau 15:00, sát thương tăng thêm 6% mỗi 45 giây."
     },
     "moon-dust": {
      "name": "Bụi Trăng",
@@ -36449,7 +36449,7 @@
     "root-hydra-head": {
      "name": "Đầu Hydra Rễ Cây",
      "title": "Đào Đất",
-     "desc": "Một cái đầu của Hydra trồi lên từ lòng đất, phun bùn rồi lặn xuống lại. Mỗi đòn nó nhận lúc này làm Hydra lúc 29:00 yếu đi."
+     "desc": "Một cái đầu của Hydra trồi lên từ lòng đất, phun bùn rồi lặn xuống lại. Mỗi đòn nó nhận lúc này làm Hydra yếu đi về sau."
     },
     "root-hydra-mire": {
      "name": "Hydra Rễ Cây",
@@ -38283,7 +38283,7 @@
     },
     "midnight-fries": {
      "name": "అర్ధరాత్రి ఫ్రైస్",
-     "desc": "+5% డ్యామేజ్. 20:00 తర్వాత ప్రతి నిమిషం డ్యామేజ్ ఇంకో 6% పెరుగుతుంది."
+     "desc": "+5% డ్యామేజ్. 15:00 తర్వాత ప్రతి 45 సెకన్లకు డ్యామేజ్ ఇంకో 6% పెరుగుతుంది."
     },
     "moon-dust": {
      "name": "చందమామ ధూళి",
@@ -38635,7 +38635,7 @@
     "root-hydra-head": {
      "name": "వేరు హైడ్రా తల",
      "title": "నేల లోపల",
-     "desc": "హైడ్రా తలల్లో ఒకటి నేలలోంచి దూసుకొచ్చి, బురద ఉమ్మి, మళ్ళీ మునిగిపోతుంది. ఇప్పుడు దానికి తగిలే ప్రతి దెబ్బ 29:00 కి వచ్చే హైడ్రాను బలహీనపరుస్తుంది."
+     "desc": "హైడ్రా తలల్లో ఒకటి నేలలోంచి దూసుకొచ్చి, బురద ఉమ్మి, మళ్ళీ మునిగిపోతుంది. ఇప్పుడు దానికి తగిలే ప్రతి దెబ్బ తర్వాత వచ్చే హైడ్రాను బలహీనపరుస్తుంది."
     },
     "root-hydra-mire": {
      "name": "వేరు హైడ్రా",
@@ -40469,7 +40469,7 @@
     },
     "midnight-fries": {
      "name": "நள்ளிரவு ஃப்ரைஸ்",
-     "desc": "+5% டேமேஜ். 20:00-க்குப் பிறகு ஒவ்வொரு நிமிடமும் டேமேஜ் இன்னும் 6% கூடும்."
+     "desc": "+5% டேமேஜ். 15:00-க்குப் பிறகு ஒவ்வொரு 45 வினாடிக்கும் டேமேஜ் இன்னும் 6% கூடும்."
     },
     "moon-dust": {
      "name": "நிலாத் தூசு",
@@ -40821,7 +40821,7 @@
     "root-hydra-head": {
      "name": "வேர் ஹைட்ரா தலை",
      "title": "நிலத்தடி",
-     "desc": "ஹைட்ராவின் ஒரு தலை நிலத்திலிருந்து வெடித்து எழுந்து, சேற்றைத் துப்பி, மீண்டும் மூழ்கும். இப்போது அது வாங்கும் ஒவ்வொரு அடியும் 29:00-இல் வரும் ஹைட்ராவை பலவீனமாக்கும்."
+     "desc": "ஹைட்ராவின் ஒரு தலை நிலத்திலிருந்து வெடித்து எழுந்து, சேற்றைத் துப்பி, மீண்டும் மூழ்கும். இப்போது அது வாங்கும் ஒவ்வொரு அடியும் பின்னர் வரும் ஹைட்ராவை பலவீனமாக்கும்."
     },
     "root-hydra-mire": {
      "name": "வேர் ஹைட்ரா",
@@ -42655,7 +42655,7 @@
     },
     "midnight-fries": {
      "name": "মাঝরাতের ফ্রাই",
-     "desc": "+5% ড্যামেজ। 20:00-এর পর প্রতি মিনিটে ড্যামেজ আরও 6% বাড়ে।"
+     "desc": "+5% ড্যামেজ। 15:00-এর পর প্রতি 45 সেকেন্ডে ড্যামেজ আরও 6% বাড়ে।"
     },
     "moon-dust": {
      "name": "চাঁদের গুঁড়ো",
@@ -43007,7 +43007,7 @@
     "root-hydra-head": {
      "name": "শিকড় হাইড্রার মাথা",
      "title": "মাটির নিচে",
-     "desc": "হাইড্রার একটা মাথা মাটি ফুঁড়ে ওঠে, কাদা ছোড়ে, আবার ডুবে যায়। এখন এর গায়ে লাগা প্রতিটা আঘাত 29:00-এর হাইড্রাকে দুর্বল করে।"
+     "desc": "হাইড্রার একটা মাথা মাটি ফুঁড়ে ওঠে, কাদা ছোড়ে, আবার ডুবে যায়। এখন এর গায়ে লাগা প্রতিটা আঘাত পরে হাইড্রাকে দুর্বল করে।"
     },
     "root-hydra-mire": {
      "name": "শিকড় হাইড্রা",
@@ -44841,7 +44841,7 @@
     },
     "midnight-fries": {
      "name": "มันทอดเที่ยงคืน",
-     "desc": "ดาเมจ +5% หลัง 20:00 ดาเมจเพิ่มอีก 6% ทุกนาที"
+     "desc": "ดาเมจ +5% หลัง 15:00 ดาเมจเพิ่มอีก 6% ทุก 45 วินาที"
     },
     "moon-dust": {
      "name": "ฝุ่นจันทร์",
@@ -45193,7 +45193,7 @@
     "root-hydra-head": {
      "name": "หัวไฮดรารากไม้",
      "title": "มุดดิน",
-     "desc": "หัวหนึ่งของไฮดราโผล่พรวดจากดิน พ่นโคลน แล้วมุดลงไปอีก ทุกการโจมตีที่มันโดนตอนนี้จะทำให้ไฮดราตอน 29:00 อ่อนลง"
+     "desc": "หัวหนึ่งของไฮดราโผล่พรวดจากดิน พ่นโคลน แล้วมุดลงไปอีก ทุกการโจมตีที่มันโดนตอนนี้จะทำให้ไฮดราอ่อนลงในภายหลัง"
     },
     "root-hydra-mire": {
      "name": "ไฮดรารากไม้",
@@ -47027,7 +47027,7 @@
     },
     "midnight-fries": {
      "name": "Dankalin Soya na Tsakar Dare",
-     "desc": "+5% lahani. Bayan 20:00, lahani na ƙara ƙaruwa da 6% kowane minti."
+     "desc": "+5% lahani. Bayan 15:00, lahani na ƙara ƙaruwa da 6% kowane 45 s."
     },
     "moon-dust": {
      "name": "Ƙurar Wata",
@@ -47379,7 +47379,7 @@
     "root-hydra-head": {
      "name": "Kan Dodon Saiwa",
      "title": "Haƙa Ƙasa",
-     "desc": "Ɗaya daga cikin kawunan dodon yana fitowa daga ƙasa, ya tofa laka, sannan ya sake nutsewa. Kowane bugu da ya sha yanzu yana raunana dodon na 29:00."
+     "desc": "Ɗaya daga cikin kawunan dodon yana fitowa daga ƙasa, ya tofa laka, sannan ya sake nutsewa. Kowane bugu da ya sha yanzu yana raunana dodon daga baya."
     },
     "root-hydra-mire": {
      "name": "Dodon Saiwa",
@@ -49213,7 +49213,7 @@
     },
     "midnight-fries": {
      "name": "Midnight Fries",
-     "desc": "+5% damage. After 20:00, damage dey grow 6% more every minute."
+     "desc": "+5% damage. After 15:00, damage dey grow 6% more every 45 s."
     },
     "moon-dust": {
      "name": "Moon Dust",
@@ -49565,7 +49565,7 @@
     "root-hydra-head": {
      "name": "Root Hydra Head",
      "title": "Under Ground",
-     "desc": "One of di Hydra heads dey burst comot from ground, spit mud, then sink again. Every hit wey e take now go weaken di Hydra wey dey come for 29:00."
+     "desc": "One of di Hydra heads dey burst comot from ground, spit mud, then sink again. Every hit wey e take now go weaken di Hydra wey dey come later."
     },
     "root-hydra-mire": {
      "name": "Di Root Hydra",
@@ -51399,7 +51399,7 @@
     },
     "midnight-fries": {
      "name": "مقليات منتصف الليل",
-     "desc": "‎+‎5%‎ ضرر. بعد 20:00، يزداد الضرر 6%‎ إضافية كل دقيقة."
+     "desc": "‎+‎5%‎ ضرر. بعد 15:00، يزداد الضرر 6%‎ إضافية كل 45 ث."
     },
     "moon-dust": {
      "name": "غبار القمر",
@@ -51751,7 +51751,7 @@
     "root-hydra-head": {
      "name": "رأس هيدرا الجذور",
      "title": "الحفر",
-     "desc": "ينبثق أحد رؤوس الهيدرا من الأرض، يبصق الطين ثم يغوص من جديد. كل ضربة يتلقاها الآن تُضعف الهيدرا عند 29:00."
+     "desc": "ينبثق أحد رؤوس الهيدرا من الأرض، يبصق الطين ثم يغوص من جديد. كل ضربة يتلقاها الآن تُضعف الهيدرا لاحقًا."
     },
     "root-hydra-mire": {
      "name": "هيدرا الجذور",
@@ -53585,7 +53585,7 @@
     },
     "midnight-fries": {
      "name": "سرخ‌کرده‌ی نیمه‌شب",
-     "desc": "‎+‎5%‎ آسیب. بعد از 20:00، آسیب هر دقیقه 6%‎ دیگر بیشتر می‌شود."
+     "desc": "‎+‎5%‎ آسیب. بعد از 15:00، آسیب هر 45 ثانیه 6%‎ دیگر بیشتر می‌شود."
     },
     "moon-dust": {
      "name": "گرد ماه",
@@ -53937,7 +53937,7 @@
     "root-hydra-head": {
      "name": "سر هیدرای ریشه",
      "title": "نقب‌زن",
-     "desc": "یکی از سرهای هیدرا از زمین بیرون می‌زند، گل تف می‌کند و دوباره فرو می‌رود. هر ضربه‌ای که الان می‌خورد هیدرای 29:00 را ضعیف‌تر می‌کند."
+     "desc": "یکی از سرهای هیدرا از زمین بیرون می‌زند، گل تف می‌کند و دوباره فرو می‌رود. هر ضربه‌ای که الان می‌خورد هیدرا را بعداً ضعیف‌تر می‌کند."
     },
     "root-hydra-mire": {
      "name": "هیدرای ریشه",
@@ -55771,7 +55771,7 @@
     },
     "midnight-fries": {
      "name": "צ׳יפס של חצות",
-     "desc": "‎+5%‎ נזק. אחרי 20:00, הנזק גדל ב־‎6%‎ נוספים כל דקה."
+     "desc": "‎+5%‎ נזק. אחרי 15:00, הנזק גדל ב־‎6%‎ נוספים כל 45 שניות."
     },
     "moon-dust": {
      "name": "אבק ירח",
@@ -56123,7 +56123,7 @@
     "root-hydra-head": {
      "name": "ראש הידרת השורשים",
      "title": "חפירה",
-     "desc": "אחד מראשי ההידרה מתפרץ מהאדמה, יורק בוץ ושוקע שוב. כל פגיעה שהוא סופג עכשיו מחלישה את ההידרה של 29:00."
+     "desc": "אחד מראשי ההידרה מתפרץ מהאדמה, יורק בוץ ושוקע שוב. כל פגיעה שהוא סופג עכשיו מחלישה את ההידרה בהמשך."
     },
     "root-hydra-mire": {
      "name": "הידרת השורשים",
@@ -57957,7 +57957,7 @@
     },
     "midnight-fries": {
      "name": "آدھی رات کے فرائز",
-     "desc": "‎+‎5%‎ نقصان۔ 20:00 کے بعد نقصان ہر منٹ مزید 6%‎ بڑھتا ہے۔"
+     "desc": "‎+‎5%‎ نقصان۔ 15:00 کے بعد نقصان ہر 45 سیکنڈ میں مزید 6%‎ بڑھتا ہے۔"
     },
     "moon-dust": {
      "name": "چاند کی دھول",
@@ -58309,7 +58309,7 @@
     "root-hydra-head": {
      "name": "جڑوں والے ہائیڈرا کا سر",
      "title": "کھدائی",
-     "desc": "ہائیڈرا کا ایک سر زمین سے پھوٹتا ہے، کیچڑ تھوکتا ہے اور پھر ڈوب جاتا ہے۔ ابھی اس پر پڑنے والا ہر وار 29:00 والے ہائیڈرا کو کمزور کرتا ہے۔"
+     "desc": "ہائیڈرا کا ایک سر زمین سے پھوٹتا ہے، کیچڑ تھوکتا ہے اور پھر ڈوب جاتا ہے۔ ابھی اس پر پڑنے والا ہر وار بعد میں ہائیڈرا کو کمزور کرتا ہے۔"
     },
     "root-hydra-mire": {
      "name": "جڑوں والا ہائیڈرا",
@@ -59224,143 +59224,143 @@
   "index": {
    "url": "https://tibo.dog/data/v1/index.json",
    "bytes": 18937,
-   "sha256": "861ef0c9c9d5562897e120080f91af6790198a6753c5a0ca001514ed27e4a128"
+   "sha256": "4b7fff1191fde3b778051a88f4e9811226fe13793ef232c0777e64e8cecdcd4d"
   },
   "locales": {
    "en": {
     "url": "https://tibo.dog/data/v1/text/en.json",
-    "bytes": 59391,
-    "sha256": "84016c3ef7348f6b69a77a4f07016c0fa848f5e1cdeda3c9b43ac50c3f6a600c"
+    "bytes": 59387,
+    "sha256": "7c260e7904400cfc66067bfe46b2e917bcaa79caaf286ea018ecf2c6daa9f6ac"
    },
    "zh-CN": {
     "url": "https://tibo.dog/data/v1/text/zh-CN.json",
     "bytes": 58554,
-    "sha256": "d701bbe7f520b9547dfd1951eeb5fa283864d4a128464b9c3eff9be7f664faa4"
+    "sha256": "03fa8ddecaf1e52b4a483c84402a71b44ba424e2a8e6e21ceb7c041a7fbf7841"
    },
    "zh-TW": {
     "url": "https://tibo.dog/data/v1/text/zh-TW.json",
     "bytes": 58812,
-    "sha256": "55b9215e5e0aecec216658688924a0cba5093d807ee90a7ccf3dc72a9520fd8a"
+    "sha256": "f2ce7bfd3e595a4a38ee4bec55df685cd617d28e6d43d3c5500ede37134b198c"
    },
    "ja": {
     "url": "https://tibo.dog/data/v1/text/ja.json",
-    "bytes": 71656,
-    "sha256": "490aace5ea3db41c7797ad778f95323dfc9df043154ee14631ffe7b0783f1c88"
+    "bytes": 71668,
+    "sha256": "d7cda9820ed4d3c8e896f1d79f7a3edead9882a95edeaf576bfc423213c53ef9"
    },
    "ko": {
     "url": "https://tibo.dog/data/v1/text/ko.json",
-    "bytes": 71840,
-    "sha256": "7ccfe4294ed6c2612ba1ebaac6383ceb9835b86216a54ebbd19b8ef4ad5c7fd8"
+    "bytes": 71846,
+    "sha256": "71588782cfa1dd3fe39b1925f4b9ac9be0788c8d824b9b43822b843c8998324a"
    },
    "es": {
     "url": "https://tibo.dog/data/v1/text/es.json",
-    "bytes": 67101,
-    "sha256": "a8de2795dbd61dcb375befdcd58f21c613c4e2a564f5406df91ba25855d5732e"
+    "bytes": 67098,
+    "sha256": "f029fe4afdc13b1935ac2b2e6a82aed3d575c51f4c84a7073c0eb705830ae11c"
    },
    "hi": {
     "url": "https://tibo.dog/data/v1/text/hi.json",
-    "bytes": 124084,
-    "sha256": "12f823a570e10c96dc5904d745998ca0684dee1b305aac7012484f1f5e21cf79"
+    "bytes": 124107,
+    "sha256": "0aa76339a5a25536400bd28ad6b863236b9011af796ffe05e8591fbdb8054529"
    },
    "de": {
     "url": "https://tibo.dog/data/v1/text/de.json",
-    "bytes": 66382,
-    "sha256": "2530315435fe8b11febf5adb3aff81b5fd927706516846cf9ad4542efc63d242"
+    "bytes": 66379,
+    "sha256": "5c2d7b64421cd1ca7dfad0d03ecf6874064aadf1550e123ebc76c2ef28532dd9"
    },
    "fr": {
     "url": "https://tibo.dog/data/v1/text/fr.json",
-    "bytes": 69621,
-    "sha256": "5a055e04b49e14620c3c91e7a5bc08e9ffdfaa220ba3c3d05bbef6e28890690b"
+    "bytes": 69624,
+    "sha256": "74dc951082956018f43c1fc9fb596c04ae4005163d5e6f5ad9cad1330da8f5aa"
    },
    "pt": {
     "url": "https://tibo.dog/data/v1/text/pt.json",
-    "bytes": 65669,
-    "sha256": "8ba18cf203ce4a2b17d00cb2e681eab08b443d597cd6b12d336298f68c312399"
+    "bytes": 65668,
+    "sha256": "aa2b84c8356ab4ff401285d10d957d103a64b026049f85b23b53a27b81b417fb"
    },
    "tr": {
     "url": "https://tibo.dog/data/v1/text/tr.json",
-    "bytes": 68162,
-    "sha256": "0cba7603d7ef6ae06ab6f7f5255baf5bf2fbe0a05d9f13357203baa2663a7af0"
+    "bytes": 68164,
+    "sha256": "dc1e3968343e45bccadf77ed4c80895959e532738b0617a19c7ea2799b8b9dcb"
    },
    "id": {
     "url": "https://tibo.dog/data/v1/text/id.json",
-    "bytes": 65479,
-    "sha256": "ba1af4f4ef465e8c0f5f55b47e8b35271dfeb4cded43e54627af8c7a7a6044d0"
+    "bytes": 65477,
+    "sha256": "adffb06998196572b6d7de0ab3ff6abd8ef2074613277c513818042dcf02fe00"
    },
    "ru": {
     "url": "https://tibo.dog/data/v1/text/ru.json",
-    "bytes": 97683,
-    "sha256": "ebcda5e2a71bf6879687520e6c14ec93fea64c6ea827f57d856539f1b2c4a9f9"
+    "bytes": 97678,
+    "sha256": "62eee96feeb3568465755005f9d3340b352146c9ed75670cee46bb53f31f4fca"
    },
    "ms": {
     "url": "https://tibo.dog/data/v1/text/ms.json",
-    "bytes": 67752,
-    "sha256": "0d56b8514bf23696b51722bc3cb8d0663d00cb012c278810692120bbedda70a7"
+    "bytes": 67746,
+    "sha256": "b2aad92c20d814863b3061f75a8c01a653919ffc266a8735eb553479e1d99445"
    },
    "fil": {
     "url": "https://tibo.dog/data/v1/text/fil.json",
-    "bytes": 71469,
-    "sha256": "cd01aedb65bab98d9b08796eb00099d71bc5cf5c07fe7c761a8a1c3a5239c68a"
+    "bytes": 71465,
+    "sha256": "7daaa3870a9e923fd9edea8304923495dfd7476926f5b3be32925045ba3f016e"
    },
    "mr": {
     "url": "https://tibo.dog/data/v1/text/mr.json",
     "bytes": 128315,
-    "sha256": "d2740c7c7b69c1c9aae41361db9ffed5482597f1b9e29a323b71d6fb923df595"
+    "sha256": "477ec1b0d490e1805000f314099dd37e275b2728601a08b5199e989d43b4fa2d"
    },
    "vi": {
     "url": "https://tibo.dog/data/v1/text/vi.json",
-    "bytes": 72184,
-    "sha256": "be4abdb089d10060371b84d426403f78c621cb0805a3d3b3128e0d3bb5aa3780"
+    "bytes": 72185,
+    "sha256": "00ac70fcb3736130f83c25e03d9d9de07b35bd8e55abfe593dd2ba0f2e3ae7d7"
    },
    "te": {
     "url": "https://tibo.dog/data/v1/text/te.json",
-    "bytes": 134970,
-    "sha256": "7099faa6fea2655d6ef6900f55f3b41eba7751d524aaa8fb6b9b69ac86fcd9b8"
+    "bytes": 134985,
+    "sha256": "5263a92cd69ab53203217246cd4e2562d746e8fe267bf6e18c6d606a75643618"
    },
    "ta": {
     "url": "https://tibo.dog/data/v1/text/ta.json",
-    "bytes": 147433,
-    "sha256": "4bcf527d9958f626a261c3d0f9ccf2f5226201c1a34ccf37c8ff21fc7f895966"
+    "bytes": 147451,
+    "sha256": "5f932667caf1e10d0f62d43256f122cdfe82330302ca5bf38c20b07954340513"
    },
    "bn": {
     "url": "https://tibo.dog/data/v1/text/bn.json",
-    "bytes": 125060,
-    "sha256": "75a06fd75484facd003efbb07e8a6268538b8d40db12e7ca5ab7473c801b9c85"
+    "bytes": 125066,
+    "sha256": "94bb4dbdb9dee2fd534a7620fa8679446e3b5c26a382efcb51160b9667278165"
    },
    "th": {
     "url": "https://tibo.dog/data/v1/text/th.json",
-    "bytes": 120660,
-    "sha256": "98392c9dc0e8cac3abb59eac0a9b70f11ffa3dac968fb96245cc73c32c1cef80"
+    "bytes": 120681,
+    "sha256": "033d17d83356fde1027849bc61b0e3d64734586db61bf342974df47c3a9fa25d"
    },
    "ha": {
     "url": "https://tibo.dog/data/v1/text/ha.json",
     "bytes": 68055,
-    "sha256": "dbfac7f4e6136a94a07752e3aa5caf35bf03043045bf96ddd303279fa0c0230f"
+    "sha256": "e18e40943935e57a967e4a6a1fb72f20aa69b7d06d6b829621d1d57074fb1b36"
    },
    "pcm": {
     "url": "https://tibo.dog/data/v1/text/pcm.json",
-    "bytes": 62573,
-    "sha256": "c8027fedbe8bb30561fb23d8f443ed8d4af7d661cddf3b14d342446bdc0c687d"
+    "bytes": 62567,
+    "sha256": "085c97961a25d93670b34197d019e7bf3ce9e3c880eb8767de9220b19efc6a0c"
    },
    "ar": {
     "url": "https://tibo.dog/data/v1/text/ar.json",
-    "bytes": 82187,
-    "sha256": "206d2d677c0730dffbc2c861a41317a94bcd52110ca37d66e891e0ca66e833ff"
+    "bytes": 82182,
+    "sha256": "382649f785e9a59ee99966edf1804397471e2704101fc889bb0953bec1f4e853"
    },
    "fa": {
     "url": "https://tibo.dog/data/v1/text/fa.json",
-    "bytes": 96479,
-    "sha256": "980f10428c9541ceaa7e6464facc722835cdaeed99754eee6270fc27d802791b"
+    "bytes": 96485,
+    "sha256": "3191e6f54858a1574f0e073e71056b2644d3f19ba5af51cdf7e1fd78c224ff53"
    },
    "he": {
     "url": "https://tibo.dog/data/v1/text/he.json",
-    "bytes": 81740,
-    "sha256": "8c40fddecb0b16512e10c2fd6c59db8ebe5f0e87e75492b277d7f04632e1d0f2"
+    "bytes": 81747,
+    "sha256": "ff90e8033eac75905d837b427a09b86a73a4096a9eec4f27cd2741705816eb55"
    },
    "ur": {
     "url": "https://tibo.dog/data/v1/text/ur.json",
-    "bytes": 92829,
-    "sha256": "09ff0a7dafe1691503158fe55c27a370a795a51fd151e495b5baa9c5c3672d4f"
+    "bytes": 92842,
+    "sha256": "0f5835d80e22b50ae2f82d59698bf64faaae1813f37b55b2f015a3def4f07f8a"
    }
   }
  }

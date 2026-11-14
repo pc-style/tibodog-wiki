@@ -5,9 +5,9 @@ import { SITE } from '../lib/render.mjs';
 import { MECH } from './mechanics.mjs';
 import { readFileSync } from 'node:fs';
 
-const SRC_CFG = 'Game config object exported by `intro-shared-Cy9oIPG8.js` (`view`, `player`, `dash`, `difficulty`, `win`, `scaling`, … keys)';
+const SRC_CFG = 'Game config object exported by `intro-shared-DbM02O_T.js` (`view`, `player`, `dash`, `difficulty`, `win`, `scaling`, … keys)';
 const SRC_ABOUT = '[About tibo.dog](https://tibo.dog/about/) and [tibo.dog llms.txt](https://tibo.dog/llms.txt), read 2026-11-02';
-const SRC_UI = 'Inline English UI strings in `boot-CpOMD0SD.js`';
+const SRC_UI = 'Inline English UI strings in `boot-fEiqF3qx.js`';
 
 const guide = (p) => ({ crumbs: [], ...p });
 
@@ -31,7 +31,7 @@ export function systemPages(entityPages) {
     // Short, so the task cards arrive in the first phone screen; how a run works is on Getting started.
     lead: `The unofficial fan wiki for [tibo.dog](https://tibo.dog/), a free survivors-like by [poteto](https://x.com/poteto) that plays in the browser and inside X posts. Stats come from the game's own code, and every page lists its sources.`,
     body: `## Start here\n\n<div class="cards tasks">\n${[
-      card('/getting-started', 'New to the game?', 'How a run works, from the first dash to 20:00', 'dog/corgi'),
+      card('/getting-started', 'New to the game?', 'How a run works, from the first dash to 15:00', 'dog/corgi'),
       card('/strategy', 'Plan a build', 'Weapons, evolutions and passives that work together', 'weapon/mashquake'),
       card('/guides/bosses', 'Beat the next boss', 'Every boss in arrival order, with the move that saves you', 'boss/harvester'),
     ].join('\n')}\n</div>\n\n## Browse\n\n<div class="cards">\n${[
@@ -53,8 +53,8 @@ export function systemPages(entityPages) {
         ['Genre', 'Survivors-like, 2.5D pixel art'],
         ['Platform', 'Web browser and X posts (installable web app)'],
         ['Price', 'Free, no account'],
-        ['Goal', `Survive ${GAME.win.timeSec / 60} minutes. No win screen: the run keeps going after 20:00 (\`win.mode\`: \`${GAME.win.mode}\`) and counts as survived`],
-        ['Boss at 20:00', ilink('boss', GAME.win.finalBoss)],
+        ['Goal', `Survive ${GAME.win.timeSec / 60} minutes. No win screen: the run keeps going after 15:00 (\`win.mode\`: \`${GAME.win.mode}\`) and counts as survived`],
+        ['Boss at 15:00', ilink('boss', GAME.win.finalBoss)],
         ['Weapon / passive slots', `${GAME.player.weaponSlots} / ${GAME.player.passiveSlots}`],
         ['Dog pack', `Up to ${GAME.dogs.maxPack}`],
         ['Languages', '27'],
@@ -69,7 +69,7 @@ export function systemPages(entityPages) {
   add({
     path: '/getting-started',
     title: 'Getting started',
-    description: 'How a tibo.dog run works: movement, dashing, level-ups, chests, dogs and the 20-minute goal.',
+    description: 'How a tibo.dog run works: movement, dashing, level-ups, chests, dogs and the 15-minute goal.',
     body: MECH.gettingStarted(),
     sources: [SRC_ABOUT, SRC_CFG, SRC_UI],
     search: 'beginner guide how to play basics',

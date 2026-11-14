@@ -1,5 +1,5 @@
 {
- "_source": "intro-shared-Cy9oIPG8.js: difficulty defaults and per-level overrides",
+ "_source": "intro-shared-DbM02O_T.js: difficulty defaults and per-level overrides",
  "defaults": {
   "alive": 1,
   "floorShare": 0,
@@ -53,7 +53,7 @@
   "addedRevives": 2,
   "tierLag": 3,
   "wallPests": 0.15,
-  "overtimeHoldSec": 60,
+  "overtimeHoldSec": 45,
   "orbitHz": 0.6,
   "shotPuddleRadius": 1.3,
   "shotPuddleSec": 1.5,
@@ -69,7 +69,7 @@
  "normal": {
   "alive": 0.7,
   "pestHp": 0.65,
-  "damage": 0.55,
+  "damage": 0.45,
   "bossHp": 0.65,
   "earlyBossRaise": 1,
   "eliteHp": 0.65,
@@ -101,17 +101,17 @@
      "alive": 25
     },
     {
-     "atSec": 80,
+     "atSec": 60,
      "alive": 35
     },
     {
-     "atSec": 230,
+     "atSec": 172.5,
      "alive": 150
     }
    ]
   },
   "pestHp": 0.65,
-  "damage": 0.6,
+  "damage": 0.5,
   "bossHp": 0.7,
   "earlyBossRaise": 1,
   "eliteHp": 0.65,
@@ -136,9 +136,9 @@
      "practiced",
      "expert"
     ],
-    "minutes": {
-     "first": 18,
-     "last": 19
+    "window": {
+     "fromSec": 810,
+     "toSec": 855
     },
     "minAlive": 15,
     "min": 650,
@@ -161,15 +161,15 @@
      "alive": 10
     },
     {
-     "atSec": 60,
+     "atSec": 45,
      "alive": 25
     },
     {
-     "atSec": 130,
+     "atSec": 97.5,
      "alive": 70
     },
     {
-     "atSec": 200,
+     "atSec": 150,
      "alive": 150
     }
    ]
@@ -217,9 +217,9 @@
      "practiced",
      "expert"
     ],
-    "minutes": {
-     "first": 18,
-     "last": 19
+    "window": {
+     "fromSec": 810,
+     "toSec": 855
     },
     "minAlive": 15,
     "min": 800,

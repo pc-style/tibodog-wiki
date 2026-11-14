@@ -1,6 +1,6 @@
 ## Overview
 
-The Parking Lot Gull is a tier-1 pest of the [Fry Palace Drive-Thru](/biomes/fry-palace) landmark, alongside the [Crumb Ant](/enemies/crumb-ant) (“Gulls and raccoons rule the parking lot.”). Tier 1 makes up most spawns in the opening minutes and leaves the wave table after minute 6; with Normal's two-minute [tier lag](/modes) that means up to about 8:59.
+The Parking Lot Gull is a tier-1 pest of the [Fry Palace Drive-Thru](/biomes/fry-palace) landmark, alongside the [Crumb Ant](/enemies/crumb-ant) (“Gulls and raccoons rule the parking lot.”). Tier 1 makes up most spawns in the opening steps and leaves the wave table after step 6; with Normal's two-step [tier lag](/modes), at 45 seconds per step, that means before 6:45.
 
 It is the fastest tier-1 pest at speed 48 and one of the frailest at 7 HP, with 3 contact damage. It gives 1 XP and has a 4% chance to drop gold; Fry Palace coins are worth ×1.2.
 
@@ -8,7 +8,7 @@ It is a different enemy from the [Gull Flock](/enemies/gull-flock) that crosses 
 
 ## How it works
 
-It has no special behaviour: the `chase` kind just uses the default movement straight towards Tibo. <small>[sim-nIcq_DHZ.js: `` case`chase`:case`tank`:case`splitter`:return; ``]</small> With mass 0 it takes full knockback.
+It has no special behaviour: the `chase` kind just uses the default movement straight towards Tibo. <small>[sim-rGD56OmB.js: `` case`chase`:case`tank`:case`splitter`:return; ``]</small> With mass 0 it takes full knockback.
 
 ## Tips
 

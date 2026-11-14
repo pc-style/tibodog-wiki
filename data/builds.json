@@ -2309,5 +2309,16 @@
   "updated": "2026-11-14T07:27:14Z",
   "changes": "Existing journal notes moved into a dated release group; no gameplay or wording changes.",
   "evidence": "Automatic unchanged next-to-dated proof against main-DCoZK6G-.js; all 408 reachable files checked, full/panel browser and official API validated. Original publication timestamps and prior introduction history retained. Proof: .cache/main-8dcxYI31/journal-proof.json."
+ },
+ {
+  "seen": "2026-11-14",
+  "main": "main-BAgnyUzD.js",
+  "boot": "boot-fEiqF3qx.js",
+  "sim": "sim-rGD56OmB.js",
+  "commit": "ac9c916a31b6",
+  "status": "reviewed",
+  "updated": "2026-11-14T11:18:15Z",
+  "changes": "Open World reaches its goal at 15 minutes, with 45-second wave steps and earlier bosses, gear gates and endgame phases. Coins and XP gems gain a third; Normal/Hard hits are lighter and maps fuller. Earlier Dailies retain dated compatibility rules.",
+  "evidence": "Canonical211 8dc→BAg,408→408 reachable files,416 changed-file entries/278 extracted data changes,111 sim/11 boot normalized hunks. Scoped timing/config/score/Daily consumers inspected; citation fanout is not blanket gameplay coverage. Original old/current controls:51 Panic bucket/score/version/Game.step rows;164 configuration/scale/Midnight rows (scale rows observations);24 pickup/experimental-constructor rows;110 independently asserted dodge-rate/version cases. Panic ordinary/current-Daily60s/3s versus earlier-Daily45s/2.25s; Midnight recomputed director19/20/21/22 factors1.05/1.05/1.113/1.17978; asymmetric score totals at900/1200/2700/2701/3600 use independent per-second sums and piecewise-linear damage doublings. Current score mode predicate is Standard, not a late-content switch; earlier-Daily score versions/constants remain distinct from current Daily dodge-rate constants. Update2 hooks source-inspected with original Standard/Story constructors, not hazard/elite combat or online-score acceptance proof. Boss HP atSec table contract repaired with regression. Full/archive and expanded actual live journal provenance retained separately from source introduction. Current publication adds four notes: coin-gem-worth next plus fifteen-minute-runs/daily-score/pest-damage-and-pois officially2026-11-14/eac3a94. Prior Daily90min/ledger/layout limits,27locales/51runes/inventory and historical CrJI four-mechanic evidence/drafts preserved; older forced measurements labelled historical, not current natural gameplay. No classifier or checks relaxed."
  }
 ]

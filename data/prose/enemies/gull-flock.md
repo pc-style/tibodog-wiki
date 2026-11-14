@@ -6,9 +6,9 @@ Each gull is weak, with 10 base HP and 5 contact damage, but at speed 105 it is 
 
 ## How it works
 
-Lunch Rush spawns 24 gulls, multiplied by the enemy-count multiplier up to ×2. That multiplier only rises in overtime (see [Enemy scaling](/enemy-scaling)), so the flock has 24 gulls before 20:00 and up to 48 after. The flock starts just beyond the edge of the screen on a random side. It forms a band 280 units wide, centred on Tibo's position when the event fired, and up to 60 units deep. Every gull flies in the same fixed direction, across Tibo's position and out the other side. Gulls never steer, and any still alive 14 s after spawning disappear without drops. <small>[sim-nIcq_DHZ.js: `r.tx[f]=c,r.ty[f]=l,r.despawnAt[f]=e.time+14`]</small>
+Lunch Rush spawns 24 gulls, multiplied by the enemy-count multiplier up to ×2. Standard's count multiplier stays at 1, so the requested flock remains 24 gulls in overtime too (see [Enemy scaling](/enemy-scaling)); a full pool can reduce the actual spawn. The flock starts just beyond the edge of the screen on a random side. It forms a band 280 units wide, centred on Tibo's position when the event fired, and up to 60 units deep. Every gull flies in the same fixed direction, across Tibo's position and out the other side. Gulls never steer, and any still alive 14 s after spawning disappear without drops. <small>[sim-rGD56OmB.js: `r.tx[f]=c,r.ty[f]=l,r.despawnAt[f]=e.time+14`]</small>
 
-A gull touches Tibo if its line passes within 9 units of Tibo's centre (4 for the gull, 6 for Tibo, less 1). Each enemy can hurt Tibo at most once every 0.5 s, and at speed 105 a gull crosses Tibo in well under that, so each gull hits at most once per pass. <small>[sim-nIcq_DHZ.js: `o=e.cfg.player.contactCooldown`]</small>
+A gull touches Tibo if its line passes within 9 units of Tibo's centre (4 for the gull, 6 for Tibo, less 1). Each enemy can hurt Tibo at most once every 0.5 s, and at speed 105 a gull crosses Tibo in well under that, so each gull hits at most once per pass. <small>[sim-rGD56OmB.js: `o=e.cfg.player.contactCooldown`]</small>
 
 ## Tips
 

@@ -18,7 +18,7 @@ const BASICS = [
   ['/strategy', 'Strategy', 'Build advice grounded in the game data'],
   ['/controls', 'Controls', 'Keys, touch, dash and settings'],
   ['/story-mode', 'Story mode', 'The short first game'],
-  ['/endgame', 'Endgame', 'What changes after 20:00'],
+  ['/endgame', 'Endgame', 'What changes after 15:00'],
 ];
 
 const SOURCE = 'Tips sections of the linked wiki pages; each page lists its own sources';
