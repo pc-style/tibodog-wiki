@@ -4,9 +4,9 @@ Copper Tot rolls a 25% chance each time Tibo collects a gold pickup. On success 
 
 ## How it works
 
-- **Pick up gold, rather than just earn it.** The trigger is in the gold-pickup path, not the generic gold balance update. [Spud Purse](/items/spud-purse) coins qualify when collected; directly credited chest gold is not a gold pickup. <small>[sim--p06GhX-.js: `e.counters.coins++,e.moreVariety!==void 0&&Qs().gold(e)`]</small>
-- **It needs a visible pest.** Bosses are excluded. Hidden, invalid and off-screen targets are filtered before the chance roll. One successful pickup hits one target, not every pest, and the coin's value does not increase the number of rolls. <small>[sim--p06GhX-.js: `!wu(r)&&Du(e,r)&&zu(e,q(e,r),J(e,r),Pu(e,r))`]</small>
-- **Its base hit is not item-time scaling.** The queued damage is `48 × copies`, without the time/global-damage factor used by Spark Spud. Later shared hit modifiers still apply. <small>[sim--p06GhX-.js: `n.damage*r`]</small>
+- **Pick up gold, rather than just earn it.** The trigger is in the gold-pickup path, not the generic gold balance update. [Spud Purse](/items/spud-purse) coins qualify when collected; directly credited chest gold is not a gold pickup. <small>[sim-DvRnAb2l.js: `e.counters.coins++,e.moreVariety!==void 0&&Qs().gold(e)`]</small>
+- **It needs a visible pest.** Bosses are excluded. Hidden, invalid and off-screen targets are filtered before the chance roll. One successful pickup hits one target, not every pest, and the coin's value does not increase the number of rolls. <small>[sim-DvRnAb2l.js: `!wu(r)&&Du(e,r)&&zu(e,q(e,r),J(e,r),Pu(e,r))`]</small>
+- **Its base hit is not item-time scaling.** The queued damage is `48 × copies`, without the time/global-damage factor used by Spark Spud. Later shared hit modifiers still apply. <small>[sim-DvRnAb2l.js: `n.damage*r`]</small>
 
 ## Tips
 

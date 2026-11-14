@@ -6,10 +6,10 @@ It runs at Tibo at speed 48, quicker than most pests of its tier, and blows itse
 
 ## How it works
 
-1. When the imp is within 18 units of Tibo, it lights a 0.6 s fuse. <small>[sim--p06GhX-.js: `a.state[t]===0&&n<18&&(a.state[t]=1,a.timer[t]=r)`]</small>
+1. When the imp is within 18 units of Tibo, it lights a 0.6 s fuse. <small>[sim-DvRnAb2l.js: `a.state[t]===0&&n<18&&(a.state[t]=1,a.timer[t]=r)`]</small>
 2. While the fuse burns it keeps following Tibo at only 20% of its speed.
-3. When the fuse runs out it explodes. Tibo takes its damage only if he is closer than 26 units plus his own body radius (6), so 32 units centre to centre. Moving away does not cancel the fuse. <small>[sim--p06GhX-.js: `n<i+e.player.radius[e.me]&&rd(e,a.damage[t],Zl[a.def[t]],!1,a.level[t])`]</small>
-4. The imp is then removed without the normal death rewards: no XP gem, no gold, and no kill counted. Only an elite's chest still drops. The blast checks Tibo only; it does not hurt other pests. <small>[sim--p06GhX-.js: `Jb(e,t),a.pool.kill(t)))})(e,t,r,n.fuse`]</small>
+3. When the fuse runs out it explodes. Tibo takes its damage only if he is closer than 26 units plus his own body radius (6), so 32 units centre to centre. Moving away does not cancel the fuse. <small>[sim-DvRnAb2l.js: `n<i+e.player.radius[e.me]&&rd(e,a.damage[t],Zl[a.def[t]],!1,a.level[t])`]</small>
+4. The imp is then removed without the normal death rewards: no XP gem, no gold, and no kill counted. Only an elite's chest still drops. The blast checks Tibo only; it does not hurt other pests. <small>[sim-DvRnAb2l.js: `Jb(e,t),a.pool.kill(t)))})(e,t,r,n.fuse`]</small>
 
 The explosion uses the imp's scaled damage, so it follows the usual [enemy damage scaling](/enemy-scaling), and elites (tier 3 from 5:00 to 9:59) hit harder.
 
