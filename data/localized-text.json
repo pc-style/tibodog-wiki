@@ -1,8 +1,8 @@
 {
  "schema": 1,
  "game": {
-  "version": "5387685",
-  "commit": "5387685427fe9a92510619ab425cef4cee9244c4"
+  "version": "8a8c6dc",
+  "commit": "8a8c6dc82530ed9486d6cf86c91fd10bd8da785d"
  },
  "simVersion": "df0e6168e3ba1f8b",
  "locales": [
@@ -780,10 +780,20 @@
      "desc": "Rings of frost roll out from Tibo and freeze the pests they pass. Bosses are only slowed.",
      "where": "A boss chest, from a full Flash Freeze and Thick Skin."
     },
+    "walk-the-dog": {
+     "name": "Walk the Dog",
+     "desc": "Roasted yo-yos roll along the ground after the nearest pests and grind them, then snap back to Tibo.",
+     "where": "A boss chest, from a full Spud Yo-Yo and Slow Cooker."
+    },
     "flash-freeze": {
      "name": "Flash Freeze",
      "desc": "A ring of frost rolls out from Tibo and slows every pest it passes.",
      "where": "A level-up card in your first minutes."
+    },
+    "spud-yo-yo": {
+     "name": "Spud Yo-Yo",
+     "desc": "Tibo throws a spud on a string at the nearest pest. It hangs there spinning and grinds every pest it touches, then snaps back to him.",
+     "where": "A level-up card in your first minutes, or your starting weapon in Open World."
     }
    },
    "passive": {
@@ -2984,10 +2994,20 @@
      "desc": "一圈圈寒霜从Tibo身边滚开，冻住经过的害虫。首领只会减速。",
      "where": "首领宝箱，由满级急冻和厚脸皮进化。"
     },
+    "walk-the-dog": {
+     "name": "遛狗",
+     "desc": "烤溜溜球贴地滚动，追着最近的害虫碾过去，然后猛地弹回Tibo手里。",
+     "where": "首领宝箱，由满级土豆溜溜球和慢炖锅进化。"
+    },
     "flash-freeze": {
      "name": "急冻",
      "desc": "一圈寒霜从Tibo身边滚开，减速经过的每只害虫。",
      "where": "开局几分钟内的升级卡。"
+    },
+    "spud-yo-yo": {
+     "name": "土豆溜溜球",
+     "desc": "Tibo把拴着绳子的土豆甩向最近的害虫。土豆悬在那里飞转，碾碎碰到的每只害虫，然后猛地弹回他手里。",
+     "where": "开局几分钟内的升级卡，或开放世界的初始武器。"
     }
    },
    "passive": {
@@ -5188,10 +5208,20 @@
      "desc": "一圈圈寒霜從Tibo身邊滾開，凍住經過的害蟲。頭目只會減速。",
      "where": "頭目寶箱，由滿級急凍和厚臉皮進化。"
     },
+    "walk-the-dog": {
+     "name": "遛狗",
+     "desc": "烤溜溜球貼地滾動，追著最近的害蟲輾過去，然後猛地彈回Tibo手裡。",
+     "where": "頭目寶箱，由滿級馬鈴薯溜溜球和慢燉鍋進化。"
+    },
     "flash-freeze": {
      "name": "急凍",
      "desc": "一圈寒霜從Tibo身邊滾開，讓經過的每隻害蟲減速。",
      "where": "開局幾分鐘內的升級卡。"
+    },
+    "spud-yo-yo": {
+     "name": "馬鈴薯溜溜球",
+     "desc": "Tibo把綁著繩子的馬鈴薯甩向最近的害蟲。馬鈴薯懸在那裡飛轉，輾碎碰到的每隻害蟲，然後猛地彈回他手裡。",
+     "where": "開局幾分鐘內的升級卡，或開放世界的起始武器。"
     }
    },
    "passive": {
@@ -7392,10 +7422,20 @@
      "desc": "霜の輪がTiboから転がり出て、通り過ぎた害虫を凍らせる。ボスは鈍るだけ。",
      "where": "ボスの宝箱。最大レベルの瞬間冷凍と厚い皮から。"
     },
+    "walk-the-dog": {
+     "name": "犬の散歩",
+     "desc": "焼けたヨーヨーが地面を転がって近くの害虫を追い、すりつぶしてから、Tiboの手元へ一気に戻る。",
+     "where": "ボスの宝箱。最大レベルのポテトヨーヨーとスロークッカーから。"
+    },
     "flash-freeze": {
      "name": "瞬間冷凍",
      "desc": "霜の輪がTiboから転がり出て、通り過ぎた害虫をすべて鈍らせる。",
      "where": "序盤のレベルアップカード。"
+    },
+    "spud-yo-yo": {
+     "name": "ポテトヨーヨー",
+     "desc": "Tiboが糸につないだ芋をいちばん近い害虫へ投げる。芋はそこで回りながら宙に留まり、触れた害虫をすべてすりつぶしてから、Tiboの手元へ一気に戻る。",
+     "where": "序盤のレベルアップカード。またはオープンワールドの初期武器。"
     }
    },
    "passive": {
@@ -9596,10 +9636,20 @@
      "desc": "서리 고리들이 Tibo에게서 굴러나가며 지나치는 해충을 얼립니다. 보스는 느려지기만 합니다.",
      "where": "보스 상자에서, 최대 레벨 순간 냉동과 두꺼운 껍질로."
     },
+    "walk-the-dog": {
+     "name": "강아지 산책",
+     "desc": "구운 요요들이 땅을 굴러 가장 가까운 해충들을 쫓아가 갈아 버린 뒤, Tibo에게 휙 돌아옵니다.",
+     "where": "보스 상자에서, 최대 레벨 요요 감자와 슬로 쿠커로."
+    },
     "flash-freeze": {
      "name": "순간 냉동",
      "desc": "서리 고리가 Tibo에게서 굴러나가며 지나치는 해충을 모두 느리게 합니다.",
      "where": "처음 몇 분 동안 나오는 레벨업 카드."
+    },
+    "spud-yo-yo": {
+     "name": "요요 감자",
+     "desc": "Tibo가 줄에 묶은 감자를 가장 가까운 해충에게 던집니다. 감자는 그 자리에 매달려 돌며 닿는 해충을 모두 갈아 버린 뒤, Tibo에게 휙 돌아옵니다.",
+     "where": "처음 몇 분 동안 나오는 레벨업 카드, 또는 오픈 월드의 시작 무기."
     }
    },
    "passive": {
@@ -11800,10 +11850,20 @@
      "desc": "Anillos de escarcha salen rodando desde Tibo y congelan a las plagas por las que pasan. A los jefes solo los frenan.",
      "where": "Un cofre de jefe, con Congelado exprés al máximo y Cáscara gruesa."
     },
+    "walk-the-dog": {
+     "name": "Pasear al perro",
+     "desc": "Yoyós tostados ruedan por el suelo tras las plagas más cercanas y las muelen, y luego vuelven de golpe a Tibo.",
+     "where": "Un cofre de jefe, con Yoyó de papa al máximo y Olla lenta."
+    },
     "flash-freeze": {
      "name": "Congelado exprés",
      "desc": "Un anillo de escarcha sale rodando desde Tibo y frena a cada plaga por la que pasa.",
      "where": "Una carta de subida de nivel en tus primeros minutos."
+    },
+    "spud-yo-yo": {
+     "name": "Yoyó de papa",
+     "desc": "Tibo lanza una papa atada a un hilo hacia la plaga más cercana. Se queda ahí girando y muele a cada plaga que toca, y luego vuelve de golpe a él.",
+     "where": "Una carta de subida de nivel en tus primeros minutos, o tu arma inicial en Mundo abierto."
     }
    },
    "passive": {
@@ -14004,10 +14064,20 @@
      "desc": "पाले की रिंगें Tibo से बाहर लुढ़कती हैं और जिन कीटों से गुज़रती हैं उन्हें जमा देती हैं। बॉस सिर्फ़ धीमे होते हैं।",
      "where": "बॉस संदूक, पूरे फटाफट फ्रीज़ और मोटे छिलके से।"
     },
+    "walk-the-dog": {
+     "name": "कुत्ते की सैर",
+     "desc": "भुने यो-यो ज़मीन पर लुढ़कते हुए सबसे पास वाले कीटों के पीछे जाते हैं और उन्हें पीस देते हैं, फिर झटके से Tibo के पास लौट आते हैं।",
+     "where": "बॉस संदूक, पूरे आलू यो-यो और स्लो कुकर से।"
+    },
     "flash-freeze": {
      "name": "फटाफट फ्रीज़",
      "desc": "पाले की रिंग Tibo से बाहर लुढ़कती है और जिस कीट से गुज़रती है उसे धीमा करती है।",
      "where": "शुरुआती मिनटों में लेवल-अप कार्ड।"
+    },
+    "spud-yo-yo": {
+     "name": "आलू यो-यो",
+     "desc": "Tibo धागे से बंधा एक आलू सबसे पास वाले कीट की ओर फेंकता है। वह वहीं लटककर घूमता रहता है और छूने वाले हर कीट को पीस देता है, फिर झटके से उसके पास लौट आता है।",
+     "where": "शुरुआती मिनटों में लेवल-अप कार्ड, या ओपन वर्ल्ड में शुरुआती हथियार।"
     }
    },
    "passive": {
@@ -16208,10 +16278,20 @@
      "desc": "Frostringe rollen von Tibo aus und frieren die Schädlinge ein, die sie passieren. Bosse werden nur gebremst.",
      "where": "Eine Bosstruhe, aus vollem Schockfrost und Harter Schale."
     },
+    "walk-the-dog": {
+     "name": "Gassi gehen",
+     "desc": "Geröstete Jo-Jos rollen über den Boden den nächsten Schädlingen nach und zermahlen sie, dann schnellen sie zu Tibo zurück.",
+     "where": "Eine Bosstruhe, aus vollem Knollen-Jo-Jo und Schmortopf."
+    },
     "flash-freeze": {
      "name": "Schockfrost",
      "desc": "Ein Frostring rollt von Tibo aus und bremst jeden Schädling, den er passiert.",
      "where": "Eine Level-up-Karte in deinen ersten Minuten."
+    },
+    "spud-yo-yo": {
+     "name": "Knollen-Jo-Jo",
+     "desc": "Tibo wirft eine Knolle an einer Schnur auf den nächsten Schädling. Dort hängt sie kreiselnd, zermahlt jeden Schädling, den sie berührt, und schnellt dann zu ihm zurück.",
+     "where": "Eine Level-up-Karte in deinen ersten Minuten oder deine Startwaffe in der Offenen Welt."
     }
    },
    "passive": {
@@ -18412,10 +18492,20 @@
      "desc": "Des anneaux de givre roulent depuis Tibo et gèlent les nuisibles qu’ils traversent. Les boss sont seulement ralentis.",
      "where": "Un coffre de boss, avec Surgélation au maximum et Peau épaisse."
     },
+    "walk-the-dog": {
+     "name": "Promener le chien",
+     "desc": "Des yo-yos grillés roulent au sol vers les nuisibles les plus proches et les broient, puis reviennent d’un coup vers Tibo.",
+     "where": "Un coffre de boss, avec Yo-yo patate au maximum et Mijoteuse."
+    },
     "flash-freeze": {
      "name": "Surgélation",
      "desc": "Un anneau de givre roule depuis Tibo et ralentit chaque nuisible qu’il traverse.",
      "where": "Une carte de niveau dans tes premières minutes."
+    },
+    "spud-yo-yo": {
+     "name": "Yo-yo patate",
+     "desc": "Tibo lance une patate au bout d’une ficelle sur le nuisible le plus proche. Elle reste suspendue là en tournoyant et broie chaque nuisible qu’elle touche, puis revient d’un coup vers lui.",
+     "where": "Une carte de niveau dans tes premières minutes, ou ton arme de départ en Monde ouvert."
     }
    },
    "passive": {
@@ -20616,10 +20706,20 @@
      "desc": "Anéis de geada se espalham a partir do Tibo e congelam as pragas por onde passam. Chefes só ficam lentos.",
      "where": "Um baú de chefe, com Congelamento relâmpago no máximo e Casca grossa."
     },
+    "walk-the-dog": {
+     "name": "Passear com o cachorro",
+     "desc": "Ioiôs tostados rolam pelo chão atrás das pragas mais próximas e as moem, depois voltam num tranco até o Tibo.",
+     "where": "Um baú de chefe, com Ioiô de batata no máximo e Fogo brando."
+    },
     "flash-freeze": {
      "name": "Congelamento relâmpago",
      "desc": "Um anel de geada se espalha a partir do Tibo e deixa lenta toda praga por onde passa.",
      "where": "Uma carta de subir de nível nos primeiros minutos."
+    },
+    "spud-yo-yo": {
+     "name": "Ioiô de batata",
+     "desc": "Tibo lança uma batata presa num barbante na praga mais próxima. Ela fica pendurada ali girando e mói toda praga que encosta nela, depois volta num tranco até ele.",
+     "where": "Uma carta de subir de nível nos primeiros minutos, ou sua arma inicial no Mundo aberto."
     }
    },
    "passive": {
@@ -22820,10 +22920,20 @@
      "desc": "Tibo'dan dışa doğru kırağı halkaları yayılır ve geçtikleri haşereleri dondurur. Bosslar yalnızca yavaşlar.",
      "where": "Bir boss sandığı, tam Şok Dondurma ve Kalın Kabuk'tan."
     },
+    "walk-the-dog": {
+     "name": "Köpeği Gezdir",
+     "desc": "Kızarmış yoyolar yerde yuvarlanarak en yakın haşerelerin peşine düşer ve onları öğütür, sonra bir çırpıda Tibo'ya geri döner.",
+     "where": "Bir boss sandığı, tam Patates Yoyo ve Yavaş Pişirici'den."
+    },
     "flash-freeze": {
      "name": "Şok Dondurma",
      "desc": "Tibo'dan dışa doğru bir kırağı halkası yayılır ve geçtiği her haşereyi yavaşlatır.",
      "where": "İlk dakikalarında bir seviye atlama kartı."
+    },
+    "spud-yo-yo": {
+     "name": "Patates Yoyo",
+     "desc": "Tibo ipe bağlı bir patatesi en yakın haşereye fırlatır. Patates orada dönerek asılı kalır, değdiği her haşereyi öğütür, sonra bir çırpıda ona geri döner.",
+     "where": "İlk dakikalarında bir seviye atlama kartı ya da Açık dünyada başlangıç silahın."
     }
    },
    "passive": {
@@ -25024,10 +25134,20 @@
      "desc": "Cincin embun beku bergulir keluar dari Tibo dan membekukan hama yang dilewatinya. Bos hanya diperlambat.",
      "where": "Peti bos, dari Beku Kilat penuh dan Kulit Tebal."
     },
+    "walk-the-dog": {
+     "name": "Ajak Anjing Jalan",
+     "desc": "Yoyo panggang menggelinding di tanah mengejar hama terdekat dan menggilingnya, lalu melesat kembali ke Tibo.",
+     "where": "Peti bos, dari Yoyo Kentang penuh dan Panci Masak Lambat."
+    },
     "flash-freeze": {
      "name": "Beku Kilat",
      "desc": "Cincin embun beku bergulir keluar dari Tibo dan memperlambat setiap hama yang dilewatinya.",
      "where": "Kartu naik level di menit-menit awal."
+    },
+    "spud-yo-yo": {
+     "name": "Yoyo Kentang",
+     "desc": "Tibo melempar kentang bertali ke hama terdekat. Kentang itu menggantung di sana sambil berputar dan menggiling setiap hama yang menyentuhnya, lalu melesat kembali kepadanya.",
+     "where": "Kartu naik level di menit-menit awal, atau senjata awal di Dunia terbuka."
     }
    },
    "passive": {
@@ -27228,10 +27348,20 @@
      "desc": "От Tibo катятся кольца инея и замораживают вредителей на своём пути. Боссы только замедляются.",
      "where": "Сундук босса, из полной Шоковой заморозки и Толстой кожуры."
     },
+    "walk-the-dog": {
+     "name": "Прогулка с собакой",
+     "desc": "Запечённые йо-йо катятся по земле за ближайшими вредителями и перемалывают их, а потом рывком возвращаются к Tibo.",
+     "where": "Сундук босса, из полного Картофельного йо-йо и Мультиварки."
+    },
     "flash-freeze": {
      "name": "Шоковая заморозка",
      "desc": "От Tibo катится кольцо инея и замедляет каждого вредителя на своём пути.",
      "where": "Карта уровня в первые минуты."
+    },
+    "spud-yo-yo": {
+     "name": "Картофельное йо-йо",
+     "desc": "Tibo бросает картоху на нитке в ближайшего вредителя. Она висит там, крутится и перемалывает каждого вредителя, которого касается, а потом рывком возвращается к нему.",
+     "where": "Карта уровня в первые минуты или стартовое оружие в Открытом мире."
     }
    },
    "passive": {
@@ -29432,10 +29562,20 @@
      "desc": "Gelang fros bergolek keluar daripada Tibo dan membekukan perosak yang dilaluinya. Bos hanya diperlahankan.",
      "where": "Peti bos, daripada Beku Kilat penuh dan Kulit Tebal."
     },
+    "walk-the-dog": {
+     "name": "Bawa Anjing Berjalan",
+     "desc": "Yoyo panggang bergolek di tanah mengejar perosak terdekat dan mengisarnya, kemudian melantun kembali kepada Tibo.",
+     "where": "Peti bos, daripada Yoyo Ubi penuh dan Periuk Perlahan."
+    },
     "flash-freeze": {
      "name": "Beku Kilat",
      "desc": "Gelang fros bergolek keluar daripada Tibo dan melambatkan setiap perosak yang dilaluinya.",
      "where": "Kad naik tahap pada minit-minit awal anda."
+    },
+    "spud-yo-yo": {
+     "name": "Yoyo Ubi",
+     "desc": "Tibo membaling ubi bertali ke arah perosak terdekat. Ubi itu tergantung di situ sambil berputar dan mengisar setiap perosak yang menyentuhnya, kemudian melantun kembali kepadanya.",
+     "where": "Kad naik tahap pada minit-minit awal anda, atau senjata permulaan anda dalam Dunia Terbuka."
     }
    },
    "passive": {
@@ -31636,10 +31776,20 @@
      "desc": "Gumugulong palabas mula kay Tibo ang mga bilog ng yelo at pinapalamig nito ang mga pesteng madaanan. Pinababagal lang ang mga boss.",
      "where": "Isang boss chest, mula sa buong Flash Freeze at Makapal na Balat."
     },
+    "walk-the-dog": {
+     "name": "Ipasyal ang Aso",
+     "desc": "Gumugulong sa lupa ang mga inihaw na yoyo papunta sa pinakamalapit na mga peste at dinudurog ang mga ito, saka biglang bumabalik kay Tibo.",
+     "where": "Isang boss chest, mula sa naka-max na Yoyong Patatas at Mabagal na Kaldero."
+    },
     "flash-freeze": {
      "name": "Flash Freeze",
      "desc": "Gumugulong palabas mula kay Tibo ang isang bilog ng yelo at pinababagal nito ang bawat pesteng madaanan.",
      "where": "Isang level-up card sa mga unang minuto mo."
+    },
+    "spud-yo-yo": {
+     "name": "Yoyong Patatas",
+     "desc": "Ibinabato ni Tibo ang isang patatas na nakatali sa sinulid sa pinakamalapit na peste. Nakabitin ito roon habang umiikot at dinudurog ang bawat pesteng madikit dito, saka biglang bumabalik sa kanya.",
+     "where": "Isang level-up card sa mga unang minuto mo, o ang panimulang armas mo sa Open World."
     }
    },
    "passive": {
@@ -33840,10 +33990,20 @@
      "desc": "Tibo कडून दवाची कडी बाहेर लोटतात आणि ज्या किड्यांजवळून जातात त्यांना गोठवतात. बॉस फक्त मंद होतात.",
      "where": "बॉसची पेटी, पूर्ण झटपट गोठण आणि जाड सालीपासून."
     },
+    "walk-the-dog": {
+     "name": "कुत्र्याला फिरवणे",
+     "desc": "भाजलेले यो-यो जमिनीवरून घरंगळत सर्वात जवळच्या किड्यांच्या मागे जातात आणि त्यांना दळून काढतात, मग झटक्यात Tibo कडे परत येतात.",
+     "where": "बॉसची पेटी, पूर्ण बटाटा यो-यो आणि मंद आचेपासून."
+    },
     "flash-freeze": {
      "name": "झटपट गोठण",
      "desc": "Tibo कडून दवबिंदूंचे कडे बाहेर लोटते आणि ज्या किड्याजवळून जाते त्याला मंद करते.",
      "where": "सुरुवातीच्या मिनिटांत लेव्हल-अप कार्ड."
+    },
+    "spud-yo-yo": {
+     "name": "बटाटा यो-यो",
+     "desc": "Tibo दोऱ्याला बांधलेला बटाटा सर्वात जवळच्या किड्याकडे फेकतो. तो तिथेच लटकत गरगर फिरतो आणि स्पर्श करणाऱ्या प्रत्येक किड्याला दळून काढतो, मग झटक्यात त्याच्याकडे परत येतो.",
+     "where": "सुरुवातीच्या मिनिटांत लेव्हल-अप कार्ड, किंवा खुल्या जगातील सुरुवातीचे शस्त्र."
     }
    },
    "passive": {
@@ -36044,10 +36204,20 @@
      "desc": "Những vòng sương giá lăn ra từ Tibo và đóng băng những con sâu chúng đi qua. Boss chỉ bị làm chậm.",
      "where": "Rương boss, từ Đông Chớp Nhoáng tối đa và Vỏ Dày."
     },
+    "walk-the-dog": {
+     "name": "Dắt Chó Đi Dạo",
+     "desc": "Những yo-yo nướng lăn trên mặt đất đuổi theo những con sâu gần nhất và nghiền chúng, rồi giật phắt về với Tibo.",
+     "where": "Rương boss, từ Yo-yo Khoai tối đa và Nồi Nấu Chậm."
+    },
     "flash-freeze": {
      "name": "Đông Chớp Nhoáng",
      "desc": "Một vòng sương giá lăn ra từ Tibo và làm chậm mọi con sâu nó đi qua.",
      "where": "Một thẻ lên cấp trong mấy phút đầu."
+    },
+    "spud-yo-yo": {
+     "name": "Yo-yo Khoai",
+     "desc": "Tibo ném một củ khoai buộc dây vào con sâu gần nhất. Củ khoai treo lơ lửng ở đó, xoay tít và nghiền mọi con sâu chạm vào, rồi giật phắt về với Tibo.",
+     "where": "Một thẻ lên cấp trong mấy phút đầu, hoặc vũ khí khởi đầu trong Thế giới mở."
     }
    },
    "passive": {
@@ -38248,10 +38418,20 @@
      "desc": "Tibo నుంచి మంచు వలయాలు దొర్లుకుంటూ బయటికెళ్లి, దాటిన పురుగులను గడ్డకట్టిస్తాయి. బాసులు నెమ్మదిస్తాయి మాత్రమే.",
      "where": "బాస్ పెట్టె, పూర్తి మెరుపు గడ్డకట్టు, మందపాటి తొక్కల నుంచి."
     },
+    "walk-the-dog": {
+     "name": "కుక్కతో షికారు",
+     "desc": "కాల్చిన యో-యోలు నేలమీద దొర్లుతూ దగ్గర్లోని పురుగుల వెంటపడి వాటిని నూరేస్తాయి, తర్వాత ఒక్క ఉదుటున Tibo దగ్గరికి తిరిగొస్తాయి.",
+     "where": "బాస్ పెట్టె, పూర్తి ఆలూ యో-యో మరియు స్లో కుక్కర్ నుంచి."
+    },
     "flash-freeze": {
      "name": "మెరుపు గడ్డకట్టు",
      "desc": "Tibo నుంచి మంచు వలయం దొర్లుకుంటూ బయటికెళ్లి, దాటిన ప్రతి పురుగునీ నెమ్మదింపజేస్తుంది.",
      "where": "మొదటి కొన్ని నిమిషాల్లో ఒక లెవల్-అప్ కార్డ్."
+    },
+    "spud-yo-yo": {
+     "name": "ఆలూ యో-యో",
+     "desc": "Tibo దారానికి కట్టిన ఆలూని దగ్గర్లోని పురుగు వైపు విసురుతాడు. అది అక్కడే వేలాడుతూ గిరగిరా తిరుగుతూ తాకిన ప్రతి పురుగునీ నూరేస్తుంది, తర్వాత ఒక్క ఉదుటున అతని దగ్గరికి తిరిగొస్తుంది.",
+     "where": "మొదటి కొన్ని నిమిషాల్లో ఒక లెవెల్-అప్ కార్డు, లేదా ఓపెన్ వరల్డ్ లో మొదటి ఆయుధం."
     }
    },
    "passive": {
@@ -40452,10 +40632,20 @@
      "desc": "Tibo-விடமிருந்து பனி வளையங்கள் உருண்டு பரவி, கடந்து போகும் பூச்சிகளை உறைய வைக்கும். பாஸ்கள் மெதுவாக மட்டுமே ஆகும்.",
      "where": "பாஸ் பெட்டி, முழு மின்னல் உறைவு மற்றும் தடித்த தோலிலிருந்து."
     },
+    "walk-the-dog": {
+     "name": "நாயுடன் நடை",
+     "desc": "வறுத்த யோ-யோக்கள் தரையில் உருண்டு அருகிலுள்ள பூச்சிகளைத் துரத்தி அரைத்துவிட்டு, பிறகு வெடுக்கென்று Tibo-விடம் திரும்புகின்றன.",
+     "where": "பாஸ் பெட்டி, முழு உருளை யோ-யோ மற்றும் ஸ்லோ குக்கரிலிருந்து."
+    },
     "flash-freeze": {
      "name": "மின்னல் உறைவு",
      "desc": "Tibo-விடமிருந்து பனி வளையம் உருண்டு பரவி, கடந்து போகும் ஒவ்வொரு பூச்சியையும் மெதுவாக்கும்.",
      "where": "முதல் சில நிமிடங்களில் ஒரு லெவல்-அப் கார்டு."
+    },
+    "spud-yo-yo": {
+     "name": "உருளை யோ-யோ",
+     "desc": "நூலில் கட்டிய ஒரு உருளையை Tibo அருகிலுள்ள பூச்சியை நோக்கி வீசும். அது அங்கேயே சுழன்றபடி தொங்கி, தொடும் ஒவ்வொரு பூச்சியையும் அரைத்துவிட்டு, பிறகு வெடுக்கென்று Tibo-விடம் திரும்பும்.",
+     "where": "முதல் சில நிமிடங்களில் ஒரு லெவல்-அப் கார்டு, அல்லது திறந்த உலகத்தில் தொடக்க ஆயுதம்."
     }
    },
    "passive": {
@@ -42656,10 +42846,20 @@
      "desc": "Tibo-র চারপাশ থেকে তুষারের বলয় গড়িয়ে যায়, যে পোকার পাশ দিয়ে যায় তাকে জমিয়ে দেয়। বসরা শুধু ধীর হয়।",
      "where": "বসের সিন্দুক, পুরো ঝটপট বরফ আর মোটা খোসা থেকে।"
     },
+    "walk-the-dog": {
+     "name": "কুকুর হাঁটানো",
+     "desc": "সেঁকা ইয়ো-ইয়োগুলো মাটিতে গড়িয়ে সবচেয়ে কাছের পোকাদের পিছু নেয় আর পিষে দেয়, তারপর ঝটকা দিয়ে Tibo-র কাছে ফিরে আসে।",
+     "where": "বসের সিন্দুক, পুরো আলু ইয়ো-ইয়ো আর ঢিমে আঁচ থেকে।"
+    },
     "flash-freeze": {
      "name": "ঝটপট বরফ",
      "desc": "Tibo-র চারপাশ থেকে তুষারের এক বলয় গড়িয়ে যায়, যে পোকার পাশ দিয়ে যায় তাকেই ধীর করে।",
      "where": "প্রথম কয়েক মিনিটে একটা লেভেল-আপ কার্ড।"
+    },
+    "spud-yo-yo": {
+     "name": "আলু ইয়ো-ইয়ো",
+     "desc": "Tibo সুতোয় বাঁধা একটা আলু সবচেয়ে কাছের পোকার দিকে ছুড়ে দেয়। সেটা সেখানে ঝুলে ঘুরতে থাকে, যে পোকা ছোঁয় তাকেই পিষে দেয়, তারপর ঝটকা দিয়ে তার কাছে ফিরে আসে।",
+     "where": "প্রথম কয়েক মিনিটে একটা লেভেল-আপ কার্ড, বা ওপেন ওয়ার্ল্ডে শুরুর অস্ত্র।"
     }
    },
    "passive": {
@@ -44860,10 +45060,20 @@
      "desc": "วงน้ำค้างแข็งกลิ้งออกจากตัว Tibo แช่แข็งศัตรูพืชที่ผ่าน บอสแค่ช้าลง",
      "where": "หีบบอส จากแช่แข็งฉับพลันเต็มขั้นกับเปลือกหนา"
     },
+    "walk-the-dog": {
+     "name": "พาหมาเดินเล่น",
+     "desc": "โยโย่อบกลิ้งไปตามพื้นไล่ตามศัตรูพืชที่ใกล้ที่สุดและบดพวกมัน แล้วดีดกลับมาหา Tibo",
+     "where": "หีบบอส จากโยโย่มันฝรั่งเต็มขั้นกับหม้อตุ๋น"
+    },
     "flash-freeze": {
      "name": "แช่แข็งฉับพลัน",
      "desc": "วงน้ำค้างแข็งกลิ้งออกจากตัว Tibo ทำให้ศัตรูพืชทุกตัวที่ผ่านช้าลง",
      "where": "การ์ดเลเวลอัปในช่วงนาทีแรกๆ"
+    },
+    "spud-yo-yo": {
+     "name": "โยโย่มันฝรั่ง",
+     "desc": "Tibo ขว้างมันฝรั่งผูกเชือกไปหาศัตรูพืชตัวที่ใกล้ที่สุด มันห้อยหมุนอยู่ตรงนั้นและบดศัตรูพืชทุกตัวที่แตะ แล้วดีดกลับมาหาเขา",
+     "where": "การ์ดเลเวลอัปในช่วงนาทีแรกๆ หรืออาวุธเริ่มต้นในโลกเปิด"
     }
    },
    "passive": {
@@ -47064,10 +47274,20 @@
      "desc": "Zoben sanyi na birgima daga Tibo kuma suna daskarar da ƙwarin da suka wuce. Shugabanni kawai ana rage musu gudu.",
      "where": "Akwatin shugaba, daga cikakken Daskarewa Nan Take da Fata Mai Kauri."
     },
+    "walk-the-dog": {
+     "name": "Yawo da Kare",
+     "desc": "Yoyo da aka gasa suna birgima a ƙasa suna bin ƙwarin da suka fi kusa suna niƙa su, sannan su dawo wurin Tibo da sauri.",
+     "where": "Akwatin shugaba, daga cikakken Yoyon Dankali da Tukunyar Jinkiri."
+    },
     "flash-freeze": {
      "name": "Daskarewa Nan Take",
      "desc": "Zoben sanyi na birgima daga Tibo kuma yana rage gudun kowane ƙwaro da ya wuce.",
      "where": "Katin ƙarin mataki a mintunan farko."
+    },
+    "spud-yo-yo": {
+     "name": "Yoyon Dankali",
+     "desc": "Tibo yana jefa dankali da aka ɗaura da zare zuwa ƙwaron da ya fi kusa. Yana rataye a can yana juyawa, yana niƙa kowane ƙwaro da ya taɓa shi, sannan ya dawo wurinsa da sauri.",
+     "where": "Katin hawan mataki a mintunan farko, ko makamin farko a Duniya a Buɗe."
     }
    },
    "passive": {
@@ -49268,10 +49488,20 @@
      "desc": "Rings of frost dey roll comot from Tibo and dem dey freeze di pests wey dem pass. Ogas only slow down.",
      "where": "Oga box, from full Quick Freeze and Thick Skin."
     },
+    "walk-the-dog": {
+     "name": "Waka di Dog",
+     "desc": "Roast yo-yo dey roll for ground dey follow di pests wey near pass, dey grind dem, then dem go snap come back to Tibo.",
+     "where": "Oga box, from full Potato Yo-Yo and Slow Cooker."
+    },
     "flash-freeze": {
      "name": "Quick Freeze",
      "desc": "Ring of frost dey roll comot from Tibo and e dey slow every pest wey e pass.",
      "where": "Level-up card for your first few minutes."
+    },
+    "spud-yo-yo": {
+     "name": "Potato Yo-Yo",
+     "desc": "Tibo dey throw potato wey dem tie with rope go meet di pest wey near pass. E go hang for there dey spin, dey grind every pest wey touch am, then e go snap come back to am.",
+     "where": "Level-up card for your first few minutes, or your first weapon for Open World."
     }
    },
    "passive": {
@@ -51472,10 +51702,20 @@
      "desc": "حلقات صقيع تتدحرج من حول Tibo وتجمّد الآفات التي تمر بها. الزعماء يتباطؤون فقط.",
      "where": "صندوق زعيم، من تجميد خاطف كامل وقشرة سميكة."
     },
+    "walk-the-dog": {
+     "name": "تمشية الكلب",
+     "desc": "يويوهات محمّصة تتدحرج على الأرض خلف أقرب الآفات وتطحنها، ثم ترتدّ إلى Tibo.",
+     "where": "صندوق زعيم، من يويو البطاطس في أعلى مستوى وطباخ بطيء."
+    },
     "flash-freeze": {
      "name": "تجميد خاطف",
      "desc": "حلقة صقيع تتدحرج من حول Tibo وتبطئ كل آفة تمر بها.",
      "where": "بطاقة ترقية في دقائقك الأولى."
+    },
+    "spud-yo-yo": {
+     "name": "يويو البطاطس",
+     "desc": "يرمي Tibo حبة بطاطس مربوطة بخيط نحو أقرب آفة. تبقى معلّقة هناك تدور وتطحن كل آفة تلمسها، ثم ترتدّ إليه.",
+     "where": "بطاقة ترقية في دقائقك الأولى، أو سلاح البداية في العالم المفتوح."
     }
    },
    "passive": {
@@ -53676,10 +53916,20 @@
      "desc": "حلقه‌های یخ‌زدگی از Tibo به بیرون می‌غلتند و آفت‌هایی را که از کنارشان بگذرند منجمد می‌کنند. باس‌ها فقط کند می‌شوند.",
      "where": "صندوق باس، از یخ‌زدگی آنیِ کامل و پوست‌کلفت."
     },
+    "walk-the-dog": {
+     "name": "سگ‌گردانی",
+     "desc": "یویوهای برشته روی زمین دنبال نزدیک‌ترین آفت‌ها می‌غلتند و آن‌ها را می‌سایند، بعد یک‌ضرب به سمت Tibo برمی‌گردند.",
+     "where": "صندوق باس، از یویوی سیب‌زمینیِ کامل و آرام‌پز."
+    },
     "flash-freeze": {
      "name": "یخ‌زدگی آنی",
      "desc": "حلقه‌ای از یخ‌زدگی از Tibo به بیرون می‌غلتد و هر آفتی را که از کنارش بگذرد کند می‌کند.",
      "where": "کارت ارتقای سطح در دقیقه‌های اول."
+    },
+    "spud-yo-yo": {
+     "name": "یویوی سیب‌زمینی",
+     "desc": "Tibo یک سیب‌زمینیِ بسته به نخ را به سمت نزدیک‌ترین آفت پرتاب می‌کند. همان‌جا آویزان می‌ماند و می‌چرخد و هر آفتی را که به آن بخورد می‌ساید، بعد یک‌ضرب به سمت او برمی‌گردد.",
+     "where": "کارت ارتقای سطح در دقیقه‌های اول، یا سلاح شروع در جهان باز."
     }
    },
    "passive": {
@@ -55880,10 +56130,20 @@
      "desc": "טבעות כפור מתגלגלות החוצה מ־Tibo ומקפיאות את המזיקים שהן עוברות בהם. בוסים רק מואטים.",
      "where": "תיבת בוס, מהקפאת בזק מלאה וקליפה עבה."
     },
+    "walk-the-dog": {
+     "name": "לטייל עם הכלב",
+     "desc": "יו־יו קלויים מתגלגלים על הקרקע אחרי המזיקים הקרובים ביותר וטוחנים אותם, ואז נחטפים בחזרה אל Tibo.",
+     "where": "תיבת בוס, מיו־יו תפוד מלא וסיר בישול איטי."
+    },
     "flash-freeze": {
      "name": "הקפאת בזק",
      "desc": "טבעת כפור מתגלגלת החוצה מ־Tibo ומאטה כל מזיק שהיא עוברת בו.",
      "where": "קלף עליית רמה בדקות הראשונות."
+    },
+    "spud-yo-yo": {
+     "name": "יו־יו תפוד",
+     "desc": "Tibo זורק תפוד קשור בחוט אל המזיק הקרוב ביותר. הוא נשאר תלוי שם, מסתובב וטוחן כל מזיק שנוגע בו, ואז נחטף בחזרה אליו.",
+     "where": "קלף עליית רמה בדקות הראשונות, או נשק הפתיחה בעולם פתוח."
     }
    },
    "passive": {
@@ -58084,10 +58344,20 @@
      "desc": "پالے کے گھیرے Tibo سے باہر لڑھکتے ہیں اور جن کیڑوں سے گزریں انہیں جما دیتے ہیں۔ باس صرف سست ہوتے ہیں۔",
      "where": "باس کا صندوق، مکمل فوری جماؤ اور موٹے چھلکے سے۔"
     },
+    "walk-the-dog": {
+     "name": "کتے کی سیر",
+     "desc": "بھنے ہوئے یو یو زمین پر لڑھکتے ہوئے قریب ترین کیڑوں کا پیچھا کرتے ہیں اور انہیں پیس ڈالتے ہیں، پھر جھٹکے سے Tibo کے پاس لوٹ آتے ہیں۔",
+     "where": "باس کا صندوق، مکمل آلو یو یو اور دھیمی آنچ سے۔"
+    },
     "flash-freeze": {
      "name": "فوری جماؤ",
      "desc": "پالے کا گھیرا Tibo سے باہر لڑھکتا ہے اور جس کیڑے سے گزرے اسے سست کر دیتا ہے۔",
      "where": "شروع کے منٹوں میں لیول اپ کارڈ۔"
+    },
+    "spud-yo-yo": {
+     "name": "آلو یو یو",
+     "desc": "Tibo دھاگے سے بندھا ایک آلو سب سے قریب کیڑے کی طرف پھینکتا ہے۔ وہ وہیں لٹک کر گھومتا رہتا ہے اور چھونے والے ہر کیڑے کو پیس ڈالتا ہے، پھر جھٹکے سے اس کے پاس لوٹ آتا ہے۔",
+     "where": "شروع کے منٹوں میں لیول اپ کارڈ، یا کھلی دنیا میں ابتدائی ہتھیار۔"
     }
    },
    "passive": {
@@ -59710,143 +59980,143 @@
   "index": {
    "url": "https://tibo.dog/data/v1/index.json",
    "bytes": 18937,
-   "sha256": "6e15e1498b181dcc2be39baa82f8073bbc7437bb3ec5b2d9306b613c118a9f16"
+   "sha256": "bfff55c60f72013da2e157b1dfadba97e11d817ef85d2668d97564fc5c6de8c9"
   },
   "locales": {
    "en": {
     "url": "https://tibo.dog/data/v1/text/en.json",
-    "bytes": 60007,
-    "sha256": "3dac939d15ff530f6be2952b1a3a67441b6fc8f33d265b3639db2c674be002ce"
+    "bytes": 60486,
+    "sha256": "8e4e7b62fd7ac2d9134d12c5958da02f2664eb600a10098f22e80fb1f2cb5cd9"
    },
    "zh-CN": {
     "url": "https://tibo.dog/data/v1/text/zh-CN.json",
-    "bytes": 59134,
-    "sha256": "5a067bba73b5f01a28267cf63161bbd2ed54ebb5525e1631576aeec94273e2f6"
+    "bytes": 59605,
+    "sha256": "ff70215338dab34bbdc8d52670d8b04cca482b07ee35da4483fa1afeb5affedb"
    },
    "zh-TW": {
     "url": "https://tibo.dog/data/v1/text/zh-TW.json",
-    "bytes": 59395,
-    "sha256": "75ea13bb2170a7f73166416ce82a94950b20f0d8ddf073194f026360773cb013"
+    "bytes": 59878,
+    "sha256": "f72ad64c823ac5d91caca3fd2f9244a20366c6e41811a33fe5faf94e77eddee6"
    },
    "ja": {
     "url": "https://tibo.dog/data/v1/text/ja.json",
-    "bytes": 72376,
-    "sha256": "15308f3fd8efb30fbb14e51292ed98ea5a355fc7eacf68ebad2235b81e295ec5"
+    "bytes": 73022,
+    "sha256": "4b2fa3c07ee9befaf7a2443564b2c390a5af0f9b6c086ed48f7feb9a964e467e"
    },
    "ko": {
     "url": "https://tibo.dog/data/v1/text/ko.json",
-    "bytes": 72603,
-    "sha256": "e94a8bd8fed373b527eba0584937089b43a16e2b5c38342493d9e6837d2cdad4"
+    "bytes": 73198,
+    "sha256": "a6241e2a229351a1679e29b3554078ecfc4b80253d3ff94f80e85c2a3c8df3f5"
    },
    "es": {
     "url": "https://tibo.dog/data/v1/text/es.json",
-    "bytes": 67834,
-    "sha256": "004f32b234543186ac3e805921e6084bfadcbae9c0ac65b46f49f3481ff04cc2"
+    "bytes": 68365,
+    "sha256": "ab1a8568b4b302745d87a4c341e282d2f48f667c9f5aae3028c0c1150c9ae284"
    },
    "hi": {
     "url": "https://tibo.dog/data/v1/text/hi.json",
-    "bytes": 125492,
-    "sha256": "5374899f24acae658239a4660c1f21a4a50f881b2f4d7acd2206ac86d6163cbf"
+    "bytes": 126634,
+    "sha256": "02d45b5aead89e03b0a1bba263712e373e6b1a64d43703374bfdd214795ecd21"
    },
    "de": {
     "url": "https://tibo.dog/data/v1/text/de.json",
-    "bytes": 67084,
-    "sha256": "7b6f9599df5d67e6f9dc4a3a62340e7dbc30c1bc4890d6a904a6c2012285857f"
+    "bytes": 67646,
+    "sha256": "f35ae89cde18ad26dea7a9f1fab14376723a0dffc33ad87d444fe8da38d3edf8"
    },
    "fr": {
     "url": "https://tibo.dog/data/v1/text/fr.json",
-    "bytes": 70369,
-    "sha256": "9e01b2dd200b658915f51cad1306e4a6741061440b150e9cd0d0bf66efbc71f3"
+    "bytes": 70960,
+    "sha256": "b3bbd686625b4285e4e7e208920125a551aed2b64f1426b4da4a77e2181da792"
    },
    "pt": {
     "url": "https://tibo.dog/data/v1/text/pt.json",
-    "bytes": 66373,
-    "sha256": "6d88a7b9079602dbd180b058f8cd9c0c35ca332f89cf28fd35025179afb9aaf7"
+    "bytes": 66935,
+    "sha256": "81b61864faa67f9f511f40b734a2c12f9b0c535dede02928802d29625daf845c"
    },
    "tr": {
     "url": "https://tibo.dog/data/v1/text/tr.json",
-    "bytes": 68858,
-    "sha256": "512ab44f48c9e7d4b7267801d16d2913c66613bb1e51e091d56124e6b04d5aba"
+    "bytes": 69446,
+    "sha256": "abdc1d10a2265eab8db462283a5a62425a68a2d7f0413e4d67f3486b75869631"
    },
    "id": {
     "url": "https://tibo.dog/data/v1/text/id.json",
-    "bytes": 66141,
-    "sha256": "20ed5344d5c3545ed3ad44fada91f894ad2d38c3d8acbf149fd32bef62867f34"
+    "bytes": 66675,
+    "sha256": "d6d55c4c856507c20c9b2b81d2445a6df63f07b947f4e4c223df6358c71389e3"
    },
    "ru": {
     "url": "https://tibo.dog/data/v1/text/ru.json",
-    "bytes": 98709,
-    "sha256": "b7c5f25d45c30018e7586b1cec51507b7ef7257abf9de3da6e2417e0429b3873"
+    "bytes": 99605,
+    "sha256": "98c3f36b9301ec0dede77725e4509cf57b3347b0575b4ceb05c432338a9573c7"
    },
    "ms": {
     "url": "https://tibo.dog/data/v1/text/ms.json",
-    "bytes": 68440,
-    "sha256": "243e051ff5c7edda8fbc48fef1f9a1b35def231b17737ff262da003c0880a9eb"
+    "bytes": 68999,
+    "sha256": "b50a0a03fd1daba0bc4982fd620643c5f61b14375e2ffde66aeea330366db26c"
    },
    "fil": {
     "url": "https://tibo.dog/data/v1/text/fil.json",
-    "bytes": 72199,
-    "sha256": "7ab5574d1895f359dacfd9c0433800ca4e14848b79b8529a7cbb67a1f6389d06"
+    "bytes": 72816,
+    "sha256": "02c0102a69b61eda674cfc661ffc3cdffe5512339762619ccf3aefee8f578e3e"
    },
    "mr": {
     "url": "https://tibo.dog/data/v1/text/mr.json",
-    "bytes": 129639,
-    "sha256": "8712865f8295f0cf05ce716f8eeed117a37cac1c816dd1796dc01b7fa19a58f6"
+    "bytes": 130905,
+    "sha256": "752e0264571cc674cdfc8f52553eae4f7c5f3ff209c147a3c8ded84e6d3947e9"
    },
    "vi": {
     "url": "https://tibo.dog/data/v1/text/vi.json",
-    "bytes": 72944,
-    "sha256": "f24381bfd82f22a7da452cf82beb04bcaf2233c1630cf2759a7648c262ac189e"
+    "bytes": 73574,
+    "sha256": "cd230268a77e3e181e9af2287363180fd909f79ceaa5b7d25df4d6d8cceeb54d"
    },
    "te": {
     "url": "https://tibo.dog/data/v1/text/te.json",
-    "bytes": 136465,
-    "sha256": "a3e110a1fd6f879fd7d923f162765d6bda715eefdfbff5399303e38edc67b0ac"
+    "bytes": 137786,
+    "sha256": "b7ad69d87af436aa728a89a225d71dcff45a386e6f1f8bcab8047a067f118788"
    },
    "ta": {
     "url": "https://tibo.dog/data/v1/text/ta.json",
-    "bytes": 149014,
-    "sha256": "2854bd91babb8ef55ddb782cbea4613e229cff252ef572cd428dc9c0f25140b1"
+    "bytes": 150359,
+    "sha256": "c61b6a88fdd2a0a961209a3382badb924cd970415448b56c71c7a4bc51259788"
    },
    "bn": {
     "url": "https://tibo.dog/data/v1/text/bn.json",
-    "bytes": 126414,
-    "sha256": "b47316e3f9250c6c76b86d416f6813a5b730d95aec73c8ec9fa1d5765f930a6a"
+    "bytes": 127618,
+    "sha256": "4d9e8323bf0bf226ffbc8c194a0a626815aa7e434bdde834a2c5d2c749657b1e"
    },
    "th": {
     "url": "https://tibo.dog/data/v1/text/th.json",
-    "bytes": 121933,
-    "sha256": "f33cc068188a0eaccac2d0d6c787745b98d184699d0c8438d235a8516fd8d217"
+    "bytes": 122966,
+    "sha256": "40944c6fb50d2c5bbecf921c9c2f46280d5e2c26b024be9dc72a4644216975ac"
    },
    "ha": {
     "url": "https://tibo.dog/data/v1/text/ha.json",
-    "bytes": 68787,
-    "sha256": "270ffb15b68a968589a50e89e2d81d62b675f7f97c9a1a873fb10021d85074a6"
+    "bytes": 69341,
+    "sha256": "1d95280b9240a5e30fac269da03a1512ed1854926566e2af8fc9d10bce80fb53"
    },
    "pcm": {
     "url": "https://tibo.dog/data/v1/text/pcm.json",
-    "bytes": 63211,
-    "sha256": "cb8013ac890eefde2b4851aa494b5f7b764cb89d2f2d431c3c9e8b77c2287506"
+    "bytes": 63742,
+    "sha256": "6b73c8d43fd5fa02b11192b98ff8a33c55d2f3c8979cf0ea00444b6e6d634645"
    },
    "ar": {
     "url": "https://tibo.dog/data/v1/text/ar.json",
-    "bytes": 83003,
-    "sha256": "d80df9d0e37c83d6adbbbe58ad55bc9a27b2240a13c495fa924b4bd04ca12401"
+    "bytes": 83668,
+    "sha256": "a967ac769fe486fe2411972d45ced754dc36e5615c7f792063b9c65202c6c7bc"
    },
    "fa": {
     "url": "https://tibo.dog/data/v1/text/fa.json",
-    "bytes": 97515,
-    "sha256": "4354410d1bc47d364110ea3e8df65ad98b714ad5000ff4e9f450f10a2e438568"
+    "bytes": 98369,
+    "sha256": "1b375e260feb524ce155350fb52d3a87d75ca814094aa6b79d3b60b0990f6f92"
    },
    "he": {
     "url": "https://tibo.dog/data/v1/text/he.json",
-    "bytes": 82593,
-    "sha256": "96e1dad29f70a4197d75340aec455c4fdd45c0d12a9094e487c18a19ad8a3b44"
+    "bytes": 83279,
+    "sha256": "aff39ad0e3f51357c7fc2515cf2ffa37f8b54799aea5d755d21e4c549697dba7"
    },
    "ur": {
     "url": "https://tibo.dog/data/v1/text/ur.json",
-    "bytes": 93815,
-    "sha256": "daad3679e52dedba740efc6b2058ff38f28e5d330792e8fce9b094ea0397e5d4"
+    "bytes": 94665,
+    "sha256": "f6418fe7b4aad93724650dca2e4f995835d3b9d4e162503d5af3fd2b49d8d3df"
    }
   }
  }

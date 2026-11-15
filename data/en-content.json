@@ -3117,6 +3117,15 @@
  "content.weapon.spud-lob.name": [
   "Spud Lob"
  ],
+ "content.weapon.spud-yo-yo.desc": [
+  "Tibo throws a spud on a string at the nearest pest. It hangs there spinning and grinds every pest it touches, then snaps back to him."
+ ],
+ "content.weapon.spud-yo-yo.name": [
+  "Spud Yo-Yo"
+ ],
+ "content.weapon.spud-yo-yo.where": [
+  "A level-up card in your first minutes, or your starting weapon in Open World."
+ ],
  "content.weapon.spudzooka.desc": [
   "Big potato rockets that split into cluster bursts."
  ],
@@ -3260,6 +3269,15 @@
  ],
  "content.weapon.waffle-cut.name": [
   "Waffle Cut"
+ ],
+ "content.weapon.walk-the-dog.desc": [
+  "Roasted yo-yos roll along the ground after the nearest pests and grind them, then snap back to Tibo."
+ ],
+ "content.weapon.walk-the-dog.name": [
+  "Walk the Dog"
+ ],
+ "content.weapon.walk-the-dog.where": [
+  "A boss chest, from a full Spud Yo-Yo and Slow Cooker."
  ],
  "content.weapon.whisk-vortex.desc": [
   "Spins a whisk whirlpool under the biggest crowd and drags pests into it."

@@ -2529,5 +2529,16 @@
   "updated": "2026-11-15T20:35:46Z",
   "changes": "No gameplay changes; a rebuild of the same game.",
   "evidence": "Automatic whole-build comparison (tools/same-build.mjs): all 424 files reachable from the index.html match main-piq2EmBg.js after mapping file hashes and the build's own commit id."
+ },
+ {
+  "seen": "2026-11-15",
+  "main": "main-C_M0WQVG.js",
+  "boot": "boot-aQSv8Chr.js",
+  "sim": "sim-B59jwzXJ.js",
+  "commit": "8a8c6dc82530",
+  "status": "reviewed",
+  "updated": "2026-11-15T23:27:30Z",
+  "changes": "The opt-in content playtest adds Spud Yo-Yo and Walk the Dog, with a throw, linger and return cycle. Their custom behavior stays out of mimic and flung pools; ordinary weapon catalogs are unchanged.",
+  "evidence": "B7EZ231→C_M232 whole424→424 graph; all423old+423newasset hashes and HTML, full officialAPI/source English equality and full+expanded archived journal verified. Independent live expanded panel matches368orderedrecords/14dates/163codes; no journal changes or publication/introduction relabeling. Scoped sim7/intro6/scene4 normalized hunks implement separate experimental definitions, custom yo-yo pool/consumer, mimic/flung behavior-override filtering and conditional renderer; generated playtest/feature atlas adds pair art, ordinary extracted icons unchanged. Other normalized role changes are language text or build-id propagation; no classifier/schema widening. Ordinary registry/API144 versus148EnglishweapontextIDs remains source-bound. Thirty-six original old/new constructors (3seeds,Standard/Story/Daily,contenton/off) verify active-only base/evolution pools despite shared registration. Sixteen original filter cases use ordinary and synthetic override definitions, including an inherited evolution exclusion. Six current originalGame600tick supplied-start runs (both weapons,seedsyo-a/b/c,Standard/Normal,HP refills,first-card choices) visit thrown/asleep/snapping; only WalktheDog records rolling. No natural acquisition, recipe success, damage/DPS, GPU output, server or performance claim. Historical coverage/prose outsideSecrets and all231priorrecords retained; citation ambiguities resolved by old/new caller context, not arbitrary fuzzy hits. Proof .cache/cm-*,shadow2026-11-15T23-15-12-802Z-961ef0ce. Earlier automatic archive-readiness failure remains failed; first scratch config locator failure retained and corrected without changing original engine bodies."
  }
 ]
