@@ -8498,23 +8498,6 @@
    "desc": "Reach it before it sinks: lightning zaps the pests around you for 30 s."
   }
  },
- "intro-shared.M": {
-  "moreElites": {
-   "startCurses": 1,
-   "extraBosses": 2
-  },
-  "fasterShots": {
-   "bulletSpeedRamp": 1.6,
-   "bulletSpeedCap": 1.25
-  },
-  "moreShooters": {
-   "bulletRateRamp": 1.5,
-   "maxShooters": 1.5
-  },
-  "earlyTiers": {
-   "tierLagCut": 2
-  }
- },
  "intro-shared.Q": [
   {
    "id": "bog-witch",
@@ -8897,6 +8880,7 @@
     "normal": 0.55,
     "hard": 0.6
    },
+   "twentyMinuteLadderExtraBosses": 2,
    "endTicks": 324000
   },
   "dash": {
