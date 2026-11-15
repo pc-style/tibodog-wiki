@@ -1303,6 +1303,422 @@
         ],
         "scope": "Standard/Normal s1/s2/s3; original pack spawners/steering with supplied member/leader/elite roles, positions, clocks, empty props and attack timers. No natural encounter, reward writes, survival/DPS/server/device or Nightmare claims. Checks for this entity: [\"leader role: spawn stats, outside/equal range, crouch boundary, locked lane, invincibility and damage swap, duration/recovery, retry delay, supplied boulder interrupt with .8s recovery\",\"elite role: spawn stats, outside/equal range, crouch boundary, locked lane, invincibility and damage swap, duration/recovery, retry delay, supplied boulder interrupt with .8s recovery\",\"leader: elite-only emitter creation/first pattern, alpha death scatters, member flee duration\",\"elite: elite-only emitter creation/first pattern, alpha death scatters, member flee duration\"]"
       }
+    ],
+    "boss:pack-lord": [
+      {
+        "file": "tools/probe-endgame-bosses.mjs",
+        "command": "node tools/probe-endgame-bosses.mjs main-8zbhOvtE.js",
+        "main": "main-8zbhOvtE.js",
+        "definitionSha256": "5a47e99bae3b5cb22545de04d2f7d446c8df7b6e2daf512fcf26574dcfd6ecb0",
+        "scriptSha256": "304c349e573253cb2a2e8e4bd8def1cf34b612df27fbaefc3722a0aadc2c1c47",
+        "source": {
+          "url": "https://tibo.dog/assets/main-8zbhOvtE.js",
+          "sha256": "7ff8520c6503b9052f8b53013c30af37b5c452ecea7a0d0ed5584eb4f2010478"
+        },
+        "sources": [
+          {
+            "url": "https://tibo.dog/assets/main-8zbhOvtE.js",
+            "sha256": "7ff8520c6503b9052f8b53013c30af37b5c452ecea7a0d0ed5584eb4f2010478"
+          },
+          {
+            "url": "https://tibo.dog/assets/intro-shared-BzGhBf9a.js",
+            "sha256": "24beb3e16e8da35dea12ed278b80cc83ede70173b8052d97b77c96592421483e"
+          },
+          {
+            "url": "https://tibo.dog/assets/sim-DpazMjS2.js",
+            "sha256": "f6bc620d2ea311a52f90cc280b32c73a2769707859ea1e33c20943b74588677e"
+          },
+          {
+            "url": "https://tibo.dog/assets/endgame-sim-C0aS1dIG.js",
+            "sha256": "d29a669e399399ae1414fdab2355f0fe43d65c5db70fd9f73ddd52fee2bf4920"
+          },
+          {
+            "url": "https://tibo.dog/assets/shell-DMm1Ns3S.js",
+            "sha256": "bd531b4b4ec2317fe4133e8d31c9c4279375631123b5ea63fd42da1c8da9638c"
+          },
+          {
+            "url": "https://tibo.dog/assets/titan.hot-BQuNhy4d.js",
+            "sha256": "7504a096b5f07edf68439770874d57f467abf856e6a255a7629fdb48d1bd2983"
+          },
+          {
+            "url": "https://tibo.dog/assets/shell-state-C9zMbdgQ.js",
+            "sha256": "d7dea47a4dca86d955298480a04093368282d9d653851603cd7f1e4d87b6b9ba"
+          },
+          {
+            "url": "https://tibo.dog/assets/court-BZmFCheB.js",
+            "sha256": "2796f7087ac198b5de71b315f85b1700092bc073a147ce8f02bad329dc702d5b"
+          },
+          {
+            "url": "https://tibo.dog/assets/shell-CR6f_8vs.js",
+            "sha256": "afb04ee679c9726686c827bc3767708e0f44b235fcf63d3604a8105c1bb675c6"
+          }
+        ],
+        "scope": "Standard/Normal,s1/s2/s3; original spawners and attack/family consumers with supplied clocks,timers,positions,roles,boulder and selected first-tier Mud Bloom plan;1000headHP/1000chip basis. Starting weapon removed;no give/god/warp,reward-service writes or natural encounter claims. Only selected head emitter parameters,not bullet travel/other volleys,natural plan frequencies,full movement integration,damage-hit resolver,Nightmare,survival/DPS/server/device behavior. Checks for this entity: [[\"original family boss spawn; attack windup boundary and moved-player captured-direction control\",\"charge speed/duration and attack-end transition through original consumers\",\"three-charge chain (.3/.3/3.4 recovery) and supplied-boulder charge interruption\"],[\"original family boss spawn; attack windup boundary and moved-player captured-direction control\",\"charge speed/duration and attack-end transition through original consumers\",\"three-charge chain (.3/.3/3.4 recovery) and supplied-boulder charge interruption\"],[\"original family boss spawn; attack windup boundary and moved-player captured-direction control\",\"charge speed/duration and attack-end transition through original consumers\",\"three-charge chain (.3/.3/3.4 recovery) and supplied-boulder charge interruption\"]]"
+      }
+    ],
+    "boss:queen": [
+      {
+        "file": "tools/probe-endgame-bosses.mjs",
+        "command": "node tools/probe-endgame-bosses.mjs main-8zbhOvtE.js",
+        "main": "main-8zbhOvtE.js",
+        "definitionSha256": "2b7249828fc00942171f869b405f5b89d44f28d22a0a00528f67578ecabf885d",
+        "scriptSha256": "304c349e573253cb2a2e8e4bd8def1cf34b612df27fbaefc3722a0aadc2c1c47",
+        "source": {
+          "url": "https://tibo.dog/assets/main-8zbhOvtE.js",
+          "sha256": "7ff8520c6503b9052f8b53013c30af37b5c452ecea7a0d0ed5584eb4f2010478"
+        },
+        "sources": [
+          {
+            "url": "https://tibo.dog/assets/main-8zbhOvtE.js",
+            "sha256": "7ff8520c6503b9052f8b53013c30af37b5c452ecea7a0d0ed5584eb4f2010478"
+          },
+          {
+            "url": "https://tibo.dog/assets/intro-shared-BzGhBf9a.js",
+            "sha256": "24beb3e16e8da35dea12ed278b80cc83ede70173b8052d97b77c96592421483e"
+          },
+          {
+            "url": "https://tibo.dog/assets/sim-DpazMjS2.js",
+            "sha256": "f6bc620d2ea311a52f90cc280b32c73a2769707859ea1e33c20943b74588677e"
+          },
+          {
+            "url": "https://tibo.dog/assets/endgame-sim-C0aS1dIG.js",
+            "sha256": "d29a669e399399ae1414fdab2355f0fe43d65c5db70fd9f73ddd52fee2bf4920"
+          },
+          {
+            "url": "https://tibo.dog/assets/shell-DMm1Ns3S.js",
+            "sha256": "bd531b4b4ec2317fe4133e8d31c9c4279375631123b5ea63fd42da1c8da9638c"
+          },
+          {
+            "url": "https://tibo.dog/assets/titan.hot-BQuNhy4d.js",
+            "sha256": "7504a096b5f07edf68439770874d57f467abf856e6a255a7629fdb48d1bd2983"
+          },
+          {
+            "url": "https://tibo.dog/assets/shell-state-C9zMbdgQ.js",
+            "sha256": "d7dea47a4dca86d955298480a04093368282d9d653851603cd7f1e4d87b6b9ba"
+          },
+          {
+            "url": "https://tibo.dog/assets/court-BZmFCheB.js",
+            "sha256": "2796f7087ac198b5de71b315f85b1700092bc073a147ce8f02bad329dc702d5b"
+          },
+          {
+            "url": "https://tibo.dog/assets/shell-CR6f_8vs.js",
+            "sha256": "afb04ee679c9726686c827bc3767708e0f44b235fcf63d3604a8105c1bb675c6"
+          }
+        ],
+        "scope": "Standard/Normal,s1/s2/s3; original spawners and attack/family consumers with supplied clocks,timers,positions,roles,boulder and selected first-tier Mud Bloom plan;1000headHP/1000chip basis. Starting weapon removed;no give/god/warp,reward-service writes or natural encounter claims. Only selected head emitter parameters,not bullet travel/other volleys,natural plan frequencies,full movement integration,damage-hit resolver,Nightmare,survival/DPS/server/device behavior. Checks for this entity: [[\"original family boss spawn; attack windup boundary and moved-player captured-direction control\",\"three staggered sweep lanes; one/all attendants protection;18.75s return/.8s warning boundaries and protection restored\"],[\"original family boss spawn; attack windup boundary and moved-player captured-direction control\",\"three staggered sweep lanes; one/all attendants protection;18.75s return/.8s warning boundaries and protection restored\"],[\"original family boss spawn; attack windup boundary and moved-player captured-direction control\",\"three staggered sweep lanes; one/all attendants protection;18.75s return/.8s warning boundaries and protection restored\"]]"
+      }
+    ],
+    "boss:shell-titan": [
+      {
+        "file": "tools/probe-endgame-bosses.mjs",
+        "command": "node tools/probe-endgame-bosses.mjs main-8zbhOvtE.js",
+        "main": "main-8zbhOvtE.js",
+        "definitionSha256": "3dc7d99e63a7f3c825f02dca343c946c8feb24a2718646181e023831714d154e",
+        "scriptSha256": "304c349e573253cb2a2e8e4bd8def1cf34b612df27fbaefc3722a0aadc2c1c47",
+        "source": {
+          "url": "https://tibo.dog/assets/main-8zbhOvtE.js",
+          "sha256": "7ff8520c6503b9052f8b53013c30af37b5c452ecea7a0d0ed5584eb4f2010478"
+        },
+        "sources": [
+          {
+            "url": "https://tibo.dog/assets/main-8zbhOvtE.js",
+            "sha256": "7ff8520c6503b9052f8b53013c30af37b5c452ecea7a0d0ed5584eb4f2010478"
+          },
+          {
+            "url": "https://tibo.dog/assets/intro-shared-BzGhBf9a.js",
+            "sha256": "24beb3e16e8da35dea12ed278b80cc83ede70173b8052d97b77c96592421483e"
+          },
+          {
+            "url": "https://tibo.dog/assets/sim-DpazMjS2.js",
+            "sha256": "f6bc620d2ea311a52f90cc280b32c73a2769707859ea1e33c20943b74588677e"
+          },
+          {
+            "url": "https://tibo.dog/assets/endgame-sim-C0aS1dIG.js",
+            "sha256": "d29a669e399399ae1414fdab2355f0fe43d65c5db70fd9f73ddd52fee2bf4920"
+          },
+          {
+            "url": "https://tibo.dog/assets/shell-DMm1Ns3S.js",
+            "sha256": "bd531b4b4ec2317fe4133e8d31c9c4279375631123b5ea63fd42da1c8da9638c"
+          },
+          {
+            "url": "https://tibo.dog/assets/titan.hot-BQuNhy4d.js",
+            "sha256": "7504a096b5f07edf68439770874d57f467abf856e6a255a7629fdb48d1bd2983"
+          },
+          {
+            "url": "https://tibo.dog/assets/shell-state-C9zMbdgQ.js",
+            "sha256": "d7dea47a4dca86d955298480a04093368282d9d653851603cd7f1e4d87b6b9ba"
+          },
+          {
+            "url": "https://tibo.dog/assets/court-BZmFCheB.js",
+            "sha256": "2796f7087ac198b5de71b315f85b1700092bc073a147ce8f02bad329dc702d5b"
+          },
+          {
+            "url": "https://tibo.dog/assets/shell-CR6f_8vs.js",
+            "sha256": "afb04ee679c9726686c827bc3767708e0f44b235fcf63d3604a8105c1bb675c6"
+          }
+        ],
+        "scope": "Standard/Normal,s1/s2/s3; original spawners and attack/family consumers with supplied clocks,timers,positions,roles,boulder and selected first-tier Mud Bloom plan;1000headHP/1000chip basis. Starting weapon removed;no give/god/warp,reward-service writes or natural encounter claims. Only selected head emitter parameters,not bullet travel/other volleys,natural plan frequencies,full movement integration,damage-hit resolver,Nightmare,survival/DPS/server/device behavior. Checks for this entity: [[\"original family boss spawn; attack windup boundary and moved-player captured-direction control\",\"charge speed/duration and attack-end transition through original consumers\",\"post-charge 3s full-damage gate; strict expiry/.1 protection; all three plate transitions and wrap; inactive control\"],[\"original family boss spawn; attack windup boundary and moved-player captured-direction control\",\"charge speed/duration and attack-end transition through original consumers\",\"post-charge 3s full-damage gate; strict expiry/.1 protection; all three plate transitions and wrap; inactive control\"],[\"original family boss spawn; attack windup boundary and moved-player captured-direction control\",\"charge speed/duration and attack-end transition through original consumers\",\"post-charge 3s full-damage gate; strict expiry/.1 protection; all three plate transitions and wrap; inactive control\"]]"
+      }
+    ],
+    "boss:root-hydra": [
+      {
+        "file": "tools/probe-endgame-bosses.mjs",
+        "command": "node tools/probe-endgame-bosses.mjs main-8zbhOvtE.js",
+        "main": "main-8zbhOvtE.js",
+        "definitionSha256": "90f41fa56167e74e0f546e1a365a582433246078b30609aa2e2f54c0adf6a704",
+        "scriptSha256": "304c349e573253cb2a2e8e4bd8def1cf34b612df27fbaefc3722a0aadc2c1c47",
+        "source": {
+          "url": "https://tibo.dog/assets/main-8zbhOvtE.js",
+          "sha256": "7ff8520c6503b9052f8b53013c30af37b5c452ecea7a0d0ed5584eb4f2010478"
+        },
+        "sources": [
+          {
+            "url": "https://tibo.dog/assets/main-8zbhOvtE.js",
+            "sha256": "7ff8520c6503b9052f8b53013c30af37b5c452ecea7a0d0ed5584eb4f2010478"
+          },
+          {
+            "url": "https://tibo.dog/assets/intro-shared-BzGhBf9a.js",
+            "sha256": "24beb3e16e8da35dea12ed278b80cc83ede70173b8052d97b77c96592421483e"
+          },
+          {
+            "url": "https://tibo.dog/assets/sim-DpazMjS2.js",
+            "sha256": "f6bc620d2ea311a52f90cc280b32c73a2769707859ea1e33c20943b74588677e"
+          },
+          {
+            "url": "https://tibo.dog/assets/endgame-sim-C0aS1dIG.js",
+            "sha256": "d29a669e399399ae1414fdab2355f0fe43d65c5db70fd9f73ddd52fee2bf4920"
+          },
+          {
+            "url": "https://tibo.dog/assets/shell-DMm1Ns3S.js",
+            "sha256": "bd531b4b4ec2317fe4133e8d31c9c4279375631123b5ea63fd42da1c8da9638c"
+          },
+          {
+            "url": "https://tibo.dog/assets/titan.hot-BQuNhy4d.js",
+            "sha256": "7504a096b5f07edf68439770874d57f467abf856e6a255a7629fdb48d1bd2983"
+          },
+          {
+            "url": "https://tibo.dog/assets/shell-state-C9zMbdgQ.js",
+            "sha256": "d7dea47a4dca86d955298480a04093368282d9d653851603cd7f1e4d87b6b9ba"
+          },
+          {
+            "url": "https://tibo.dog/assets/court-BZmFCheB.js",
+            "sha256": "2796f7087ac198b5de71b315f85b1700092bc073a147ce8f02bad329dc702d5b"
+          },
+          {
+            "url": "https://tibo.dog/assets/shell-CR6f_8vs.js",
+            "sha256": "afb04ee679c9726686c827bc3767708e0f44b235fcf63d3604a8105c1bb675c6"
+          }
+        ],
+        "scope": "Standard/Normal,s1/s2/s3; original spawners and attack/family consumers with supplied clocks,timers,positions,roles,boulder and selected first-tier Mud Bloom plan;1000headHP/1000chip basis. Starting weapon removed;no give/god/warp,reward-service writes or natural encounter claims. Only selected head emitter parameters,not bullet travel/other volleys,natural plan frequencies,full movement integration,damage-hit resolver,Nightmare,survival/DPS/server/device behavior. Checks for this entity: [\"hp-driven original form sequence; persistent HP/slot/stored speed and damage factors1/1/3/4.25; original sweep attack construction and windup boundary (not actual hits or summon completion)\",\"time-driven original form sequence; persistent HP/slot/stored speed and damage factors1/1/3/4.25; original sweep attack construction and windup boundary (not actual hits or summon completion)\",\"original head schedule;1s splash/.6s rise and stationary body;first-tier original14shot/speed62/1swarning emitter;supplied1000headHP/1000chip basis;HP-delta counted once/capped .25;main Hydra consumes chip/removes heads;spawnedHP75%of unchipped control (not hit resolver or reward defeat)\"]"
+      }
+    ],
+    "boss:root-hydra-mire": [
+      {
+        "file": "tools/probe-endgame-bosses.mjs",
+        "command": "node tools/probe-endgame-bosses.mjs main-8zbhOvtE.js",
+        "main": "main-8zbhOvtE.js",
+        "definitionSha256": "552eb2e1be4cc4be2dd8dc063c6e2f25bca058a30b79aadac59b686f7576a4ef",
+        "scriptSha256": "304c349e573253cb2a2e8e4bd8def1cf34b612df27fbaefc3722a0aadc2c1c47",
+        "source": {
+          "url": "https://tibo.dog/assets/main-8zbhOvtE.js",
+          "sha256": "7ff8520c6503b9052f8b53013c30af37b5c452ecea7a0d0ed5584eb4f2010478"
+        },
+        "sources": [
+          {
+            "url": "https://tibo.dog/assets/main-8zbhOvtE.js",
+            "sha256": "7ff8520c6503b9052f8b53013c30af37b5c452ecea7a0d0ed5584eb4f2010478"
+          },
+          {
+            "url": "https://tibo.dog/assets/intro-shared-BzGhBf9a.js",
+            "sha256": "24beb3e16e8da35dea12ed278b80cc83ede70173b8052d97b77c96592421483e"
+          },
+          {
+            "url": "https://tibo.dog/assets/sim-DpazMjS2.js",
+            "sha256": "f6bc620d2ea311a52f90cc280b32c73a2769707859ea1e33c20943b74588677e"
+          },
+          {
+            "url": "https://tibo.dog/assets/endgame-sim-C0aS1dIG.js",
+            "sha256": "d29a669e399399ae1414fdab2355f0fe43d65c5db70fd9f73ddd52fee2bf4920"
+          },
+          {
+            "url": "https://tibo.dog/assets/shell-DMm1Ns3S.js",
+            "sha256": "bd531b4b4ec2317fe4133e8d31c9c4279375631123b5ea63fd42da1c8da9638c"
+          },
+          {
+            "url": "https://tibo.dog/assets/titan.hot-BQuNhy4d.js",
+            "sha256": "7504a096b5f07edf68439770874d57f467abf856e6a255a7629fdb48d1bd2983"
+          },
+          {
+            "url": "https://tibo.dog/assets/shell-state-C9zMbdgQ.js",
+            "sha256": "d7dea47a4dca86d955298480a04093368282d9d653851603cd7f1e4d87b6b9ba"
+          },
+          {
+            "url": "https://tibo.dog/assets/court-BZmFCheB.js",
+            "sha256": "2796f7087ac198b5de71b315f85b1700092bc073a147ce8f02bad329dc702d5b"
+          },
+          {
+            "url": "https://tibo.dog/assets/shell-CR6f_8vs.js",
+            "sha256": "afb04ee679c9726686c827bc3767708e0f44b235fcf63d3604a8105c1bb675c6"
+          }
+        ],
+        "scope": "Standard/Normal,s1/s2/s3; original spawners and attack/family consumers with supplied clocks,timers,positions,roles,boulder and selected first-tier Mud Bloom plan;1000headHP/1000chip basis. Starting weapon removed;no give/god/warp,reward-service writes or natural encounter claims. Only selected head emitter parameters,not bullet travel/other volleys,natural plan frequencies,full movement integration,damage-hit resolver,Nightmare,survival/DPS/server/device behavior. Checks for this entity: [\"hp-driven original form sequence; persistent HP/slot/stored speed and damage factors1/1/3/4.25; original pools attack construction and windup boundary (not actual hits or summon completion)\",\"time-driven original form sequence; persistent HP/slot/stored speed and damage factors1/1/3/4.25; original pools attack construction and windup boundary (not actual hits or summon completion)\"]"
+      }
+    ],
+    "boss:root-hydra-stump": [
+      {
+        "file": "tools/probe-endgame-bosses.mjs",
+        "command": "node tools/probe-endgame-bosses.mjs main-8zbhOvtE.js",
+        "main": "main-8zbhOvtE.js",
+        "definitionSha256": "00de1bdb44c32929f9525512d587ff020258d9e59dfc9db6f78918900f2117bb",
+        "scriptSha256": "304c349e573253cb2a2e8e4bd8def1cf34b612df27fbaefc3722a0aadc2c1c47",
+        "source": {
+          "url": "https://tibo.dog/assets/main-8zbhOvtE.js",
+          "sha256": "7ff8520c6503b9052f8b53013c30af37b5c452ecea7a0d0ed5584eb4f2010478"
+        },
+        "sources": [
+          {
+            "url": "https://tibo.dog/assets/main-8zbhOvtE.js",
+            "sha256": "7ff8520c6503b9052f8b53013c30af37b5c452ecea7a0d0ed5584eb4f2010478"
+          },
+          {
+            "url": "https://tibo.dog/assets/intro-shared-BzGhBf9a.js",
+            "sha256": "24beb3e16e8da35dea12ed278b80cc83ede70173b8052d97b77c96592421483e"
+          },
+          {
+            "url": "https://tibo.dog/assets/sim-DpazMjS2.js",
+            "sha256": "f6bc620d2ea311a52f90cc280b32c73a2769707859ea1e33c20943b74588677e"
+          },
+          {
+            "url": "https://tibo.dog/assets/endgame-sim-C0aS1dIG.js",
+            "sha256": "d29a669e399399ae1414fdab2355f0fe43d65c5db70fd9f73ddd52fee2bf4920"
+          },
+          {
+            "url": "https://tibo.dog/assets/shell-DMm1Ns3S.js",
+            "sha256": "bd531b4b4ec2317fe4133e8d31c9c4279375631123b5ea63fd42da1c8da9638c"
+          },
+          {
+            "url": "https://tibo.dog/assets/titan.hot-BQuNhy4d.js",
+            "sha256": "7504a096b5f07edf68439770874d57f467abf856e6a255a7629fdb48d1bd2983"
+          },
+          {
+            "url": "https://tibo.dog/assets/shell-state-C9zMbdgQ.js",
+            "sha256": "d7dea47a4dca86d955298480a04093368282d9d653851603cd7f1e4d87b6b9ba"
+          },
+          {
+            "url": "https://tibo.dog/assets/court-BZmFCheB.js",
+            "sha256": "2796f7087ac198b5de71b315f85b1700092bc073a147ce8f02bad329dc702d5b"
+          },
+          {
+            "url": "https://tibo.dog/assets/shell-CR6f_8vs.js",
+            "sha256": "afb04ee679c9726686c827bc3767708e0f44b235fcf63d3604a8105c1bb675c6"
+          }
+        ],
+        "scope": "Standard/Normal,s1/s2/s3; original spawners and attack/family consumers with supplied clocks,timers,positions,roles,boulder and selected first-tier Mud Bloom plan;1000headHP/1000chip basis. Starting weapon removed;no give/god/warp,reward-service writes or natural encounter claims. Only selected head emitter parameters,not bullet travel/other volleys,natural plan frequencies,full movement integration,damage-hit resolver,Nightmare,survival/DPS/server/device behavior. Checks for this entity: [\"hp-driven original form sequence; persistent HP/slot/stored speed and damage factors1/1/3/4.25; original summon attack construction and windup boundary (not actual hits or summon completion)\",\"time-driven original form sequence; persistent HP/slot/stored speed and damage factors1/1/3/4.25; original summon attack construction and windup boundary (not actual hits or summon completion)\"]"
+      }
+    ],
+    "boss:root-hydra-frenzy": [
+      {
+        "file": "tools/probe-endgame-bosses.mjs",
+        "command": "node tools/probe-endgame-bosses.mjs main-8zbhOvtE.js",
+        "main": "main-8zbhOvtE.js",
+        "definitionSha256": "f260ff57009651e4c085cf2409af355fcc23df6cc3be60b506f6bc84b44e110e",
+        "scriptSha256": "304c349e573253cb2a2e8e4bd8def1cf34b612df27fbaefc3722a0aadc2c1c47",
+        "source": {
+          "url": "https://tibo.dog/assets/main-8zbhOvtE.js",
+          "sha256": "7ff8520c6503b9052f8b53013c30af37b5c452ecea7a0d0ed5584eb4f2010478"
+        },
+        "sources": [
+          {
+            "url": "https://tibo.dog/assets/main-8zbhOvtE.js",
+            "sha256": "7ff8520c6503b9052f8b53013c30af37b5c452ecea7a0d0ed5584eb4f2010478"
+          },
+          {
+            "url": "https://tibo.dog/assets/intro-shared-BzGhBf9a.js",
+            "sha256": "24beb3e16e8da35dea12ed278b80cc83ede70173b8052d97b77c96592421483e"
+          },
+          {
+            "url": "https://tibo.dog/assets/sim-DpazMjS2.js",
+            "sha256": "f6bc620d2ea311a52f90cc280b32c73a2769707859ea1e33c20943b74588677e"
+          },
+          {
+            "url": "https://tibo.dog/assets/endgame-sim-C0aS1dIG.js",
+            "sha256": "d29a669e399399ae1414fdab2355f0fe43d65c5db70fd9f73ddd52fee2bf4920"
+          },
+          {
+            "url": "https://tibo.dog/assets/shell-DMm1Ns3S.js",
+            "sha256": "bd531b4b4ec2317fe4133e8d31c9c4279375631123b5ea63fd42da1c8da9638c"
+          },
+          {
+            "url": "https://tibo.dog/assets/titan.hot-BQuNhy4d.js",
+            "sha256": "7504a096b5f07edf68439770874d57f467abf856e6a255a7629fdb48d1bd2983"
+          },
+          {
+            "url": "https://tibo.dog/assets/shell-state-C9zMbdgQ.js",
+            "sha256": "d7dea47a4dca86d955298480a04093368282d9d653851603cd7f1e4d87b6b9ba"
+          },
+          {
+            "url": "https://tibo.dog/assets/court-BZmFCheB.js",
+            "sha256": "2796f7087ac198b5de71b315f85b1700092bc073a147ce8f02bad329dc702d5b"
+          },
+          {
+            "url": "https://tibo.dog/assets/shell-CR6f_8vs.js",
+            "sha256": "afb04ee679c9726686c827bc3767708e0f44b235fcf63d3604a8105c1bb675c6"
+          }
+        ],
+        "scope": "Standard/Normal,s1/s2/s3; original spawners and attack/family consumers with supplied clocks,timers,positions,roles,boulder and selected first-tier Mud Bloom plan;1000headHP/1000chip basis. Starting weapon removed;no give/god/warp,reward-service writes or natural encounter claims. Only selected head emitter parameters,not bullet travel/other volleys,natural plan frequencies,full movement integration,damage-hit resolver,Nightmare,survival/DPS/server/device behavior. Checks for this entity: [\"hp-driven original form sequence; persistent HP/slot/stored speed and damage factors1/1/3/4.25; original charge attack construction and windup boundary (not actual hits or summon completion)\",\"time-driven original form sequence; persistent HP/slot/stored speed and damage factors1/1/3/4.25; original charge attack construction and windup boundary (not actual hits or summon completion)\"]"
+      }
+    ],
+    "boss:root-hydra-head": [
+      {
+        "file": "tools/probe-endgame-bosses.mjs",
+        "command": "node tools/probe-endgame-bosses.mjs main-8zbhOvtE.js",
+        "main": "main-8zbhOvtE.js",
+        "definitionSha256": "253cdbc0e86cc71d40108f5daaea21a3cda30f46575e034fb7a1af76d765d49a",
+        "scriptSha256": "304c349e573253cb2a2e8e4bd8def1cf34b612df27fbaefc3722a0aadc2c1c47",
+        "source": {
+          "url": "https://tibo.dog/assets/main-8zbhOvtE.js",
+          "sha256": "7ff8520c6503b9052f8b53013c30af37b5c452ecea7a0d0ed5584eb4f2010478"
+        },
+        "sources": [
+          {
+            "url": "https://tibo.dog/assets/main-8zbhOvtE.js",
+            "sha256": "7ff8520c6503b9052f8b53013c30af37b5c452ecea7a0d0ed5584eb4f2010478"
+          },
+          {
+            "url": "https://tibo.dog/assets/intro-shared-BzGhBf9a.js",
+            "sha256": "24beb3e16e8da35dea12ed278b80cc83ede70173b8052d97b77c96592421483e"
+          },
+          {
+            "url": "https://tibo.dog/assets/sim-DpazMjS2.js",
+            "sha256": "f6bc620d2ea311a52f90cc280b32c73a2769707859ea1e33c20943b74588677e"
+          },
+          {
+            "url": "https://tibo.dog/assets/endgame-sim-C0aS1dIG.js",
+            "sha256": "d29a669e399399ae1414fdab2355f0fe43d65c5db70fd9f73ddd52fee2bf4920"
+          },
+          {
+            "url": "https://tibo.dog/assets/shell-DMm1Ns3S.js",
+            "sha256": "bd531b4b4ec2317fe4133e8d31c9c4279375631123b5ea63fd42da1c8da9638c"
+          },
+          {
+            "url": "https://tibo.dog/assets/titan.hot-BQuNhy4d.js",
+            "sha256": "7504a096b5f07edf68439770874d57f467abf856e6a255a7629fdb48d1bd2983"
+          },
+          {
+            "url": "https://tibo.dog/assets/shell-state-C9zMbdgQ.js",
+            "sha256": "d7dea47a4dca86d955298480a04093368282d9d653851603cd7f1e4d87b6b9ba"
+          },
+          {
+            "url": "https://tibo.dog/assets/court-BZmFCheB.js",
+            "sha256": "2796f7087ac198b5de71b315f85b1700092bc073a147ce8f02bad329dc702d5b"
+          },
+          {
+            "url": "https://tibo.dog/assets/shell-CR6f_8vs.js",
+            "sha256": "afb04ee679c9726686c827bc3767708e0f44b235fcf63d3604a8105c1bb675c6"
+          }
+        ],
+        "scope": "Standard/Normal,s1/s2/s3; original spawners and attack/family consumers with supplied clocks,timers,positions,roles,boulder and selected first-tier Mud Bloom plan;1000headHP/1000chip basis. Starting weapon removed;no give/god/warp,reward-service writes or natural encounter claims. Only selected head emitter parameters,not bullet travel/other volleys,natural plan frequencies,full movement integration,damage-hit resolver,Nightmare,survival/DPS/server/device behavior. Checks for this entity: [\"original head schedule;1s splash/.6s rise and stationary body;first-tier original14shot/speed62/1swarning emitter;supplied1000headHP/1000chip basis;HP-delta counted once/capped .25;main Hydra consumes chip/removes heads;spawnedHP75%of unchipped control (not hit resolver or reward defeat)\"]"
+      }
     ]
   },
   "reports": [
