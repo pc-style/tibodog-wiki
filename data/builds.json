@@ -2452,5 +2452,16 @@
   "updated": "2026-11-15T13:40:00Z",
   "changes": "The Nightmare extra-boss note has moved from “next” into the November 15 journal group. Its wording and gameplay rules are unchanged; it first appeared in build 222 and still applies to Dailies from November 23.",
   "evidence": "Canonical1c0bc824/build2238z→C0 whole417→417/416paired assets:412byte-identical/import-filename-equivalent. Exact residual:boot/death-flow/run-analytics known full/12char commit literals; journal data graduation plus local changelog-row binding D→C at declaration+2references. Known journal skeleton otherwise byte-identical after paired imports. Fast path conservatively refused that binding rename; no classifier/schema/check change. Entire sim, rune stat/emission/zone/target/hit consumers, intro-shared, run-rules, gear-sim-parts and endgame-sim import-equivalent; no gameplay rerun or new behavior claim. Registry/English/config/names/icons unchanged. ladder-one-extra-boss/bS8p7C unchanged next→2026-11-15/84adcb9; publication2026-11-15T08:16:02Z, source introduction222 and Daily activation20780 remain separate. Full/archive journal and independently expanded live panel366records/14dates/161codes/all older display sorting agree. Current citations2323/0unresolved, Hydra/Shell owner names and2save-code moves repaired normally. Shell positional alias fork is6references in unordered parallel retry-fetch lists in page-hold/sim, not executable import-role swaps; existing graph verifier passes all417nodes after the exact journal-only rename proof. All shipped Hunt/boss/18projectile-rune prose/evidence preserved. Baseline partial33/current33/needs-rerun45 stays historical; new revision correctly reports partial33/current0/needs-rerun71 without promoting old measurements. Unpublishedfd374441 beam/strike/pool work not incorporated. No natural gameplay, combat/DPS/performance/server/reward inference. Proof .cache/updateC0-*.{mjs,json,log},shadow2026-11-15T13-27-19-416Z-ae7ee579; journal-audit.md source hashes."
+ },
+ {
+  "seen": "2026-11-15",
+  "main": "main-BDQvha6l.js",
+  "boot": "boot-CRGHO9d3.js",
+  "sim": "sim-BF7yetWo.js",
+  "commit": "a608e67b687d",
+  "status": "reviewed",
+  "updated": "2026-11-15T14:09:28Z",
+  "changes": "No gameplay changes; a rebuild of the same game.",
+  "evidence": "Automatic whole-build comparison (tools/same-build.mjs): all 417 files reachable from the index.html match main-C0RlIzyD.js after mapping file hashes and the build's own commit id."
  }
 ]
