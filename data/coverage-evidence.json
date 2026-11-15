@@ -3039,6 +3039,294 @@
         ],
         "scope": "Standard/Normal,s1/s2/s3; supplied level-one rune cards,Amount bonus0/3,crit0. Six original attack volleys; stationary aphids,maxHP1m/3m,currentHP1m/10k,radius4. Original resolver,beam geometry,distinct strike picks,Root warning and Gravy pulse/expiration/both body-overlap boundaries. Zone lifetime fixtures isolate one emitted zone. No full-world stepping,natural acquisition,max-level/evolved/union equivalence,moving-target combat,status advancement,DPS,survival,server/device or reward claims. Network blocked; no deaths,pickups or reward handling."
       }
+    ],
+    "rune:deep-fryer-hot-seat": [
+      {
+        "file": "tools/probe-continuous-runes.mjs",
+        "command": "node tools/probe-continuous-runes.mjs main-BDQvha6l.js",
+        "main": "main-BDQvha6l.js",
+        "definitionSha256": "30276fc916b3fe934f169c0106faf615af0995ab6f99e6eec951b50980651a82",
+        "scriptSha256": "b842b4ee119b21c7af9e546980ccdbfbe6a05df9e611d5f08d8ba92766d35214",
+        "source": {
+          "url": "https://tibo.dog/assets/sim-BF7yetWo.js",
+          "sha256": "6eb5a335759b8ce4e6f75858ca2e658097fa0480b8b93fc90a204ba5158a689f"
+        },
+        "sources": [
+          {
+            "url": "https://tibo.dog/assets/main-BDQvha6l.js",
+            "sha256": "beae5deefc4c95be49e17ead8d2c16152188fcb7bc974f8673697e4b64a6b5d8"
+          },
+          {
+            "url": "https://tibo.dog/assets/sim-BF7yetWo.js",
+            "sha256": "6eb5a335759b8ce4e6f75858ca2e658097fa0480b8b93fc90a204ba5158a689f"
+          },
+          {
+            "url": "https://tibo.dog/assets/boot-CRGHO9d3.js",
+            "sha256": "b8d0847ab6499b53c12a4f27f0c04ecc8148c2d0f72d56168bc42647e965cc7d"
+          },
+          {
+            "url": "https://tibo.dog/assets/intro-shared-B31C189v.js",
+            "sha256": "3fa8a7357a23f6d3509b879f35609443d0ac9ad76ae9dc0833a4aa22c4c03f20"
+          }
+        ],
+        "scope": "Standard/Normal,s1/s2/s3,supplied level-one weapon+rune card,Amount bonus0/3,crit0. Original weapon and hit systems only. Cone retarget/angular boundary/three on-off cycles; aura body boundary,pulse timer,ordinary-vs-elite HP loss; orbit tracked contact,body boundary,rotation,three on-off cycles; separate supplied Area400 coincident-satellite shared lockout. High-HP aphids,no deaths,pickups,reward handlers,full-world stepping or network. Not natural acquisition,max-level/evolved/union,status progression,DPS,survival,server/device proof."
+      }
+    ],
+    "rune:deep-fryer-long-soak": [
+      {
+        "file": "tools/probe-continuous-runes.mjs",
+        "command": "node tools/probe-continuous-runes.mjs main-BDQvha6l.js",
+        "main": "main-BDQvha6l.js",
+        "definitionSha256": "78e137beaa9c181883f817099e2de8c20e06d5b32ddff5514f9ae381d4e0879b",
+        "scriptSha256": "b842b4ee119b21c7af9e546980ccdbfbe6a05df9e611d5f08d8ba92766d35214",
+        "source": {
+          "url": "https://tibo.dog/assets/sim-BF7yetWo.js",
+          "sha256": "6eb5a335759b8ce4e6f75858ca2e658097fa0480b8b93fc90a204ba5158a689f"
+        },
+        "sources": [
+          {
+            "url": "https://tibo.dog/assets/main-BDQvha6l.js",
+            "sha256": "beae5deefc4c95be49e17ead8d2c16152188fcb7bc974f8673697e4b64a6b5d8"
+          },
+          {
+            "url": "https://tibo.dog/assets/sim-BF7yetWo.js",
+            "sha256": "6eb5a335759b8ce4e6f75858ca2e658097fa0480b8b93fc90a204ba5158a689f"
+          },
+          {
+            "url": "https://tibo.dog/assets/boot-CRGHO9d3.js",
+            "sha256": "b8d0847ab6499b53c12a4f27f0c04ecc8148c2d0f72d56168bc42647e965cc7d"
+          },
+          {
+            "url": "https://tibo.dog/assets/intro-shared-B31C189v.js",
+            "sha256": "3fa8a7357a23f6d3509b879f35609443d0ac9ad76ae9dc0833a4aa22c4c03f20"
+          }
+        ],
+        "scope": "Standard/Normal,s1/s2/s3,supplied level-one weapon+rune card,Amount bonus0/3,crit0. Original weapon and hit systems only. Cone retarget/angular boundary/three on-off cycles; aura body boundary,pulse timer,ordinary-vs-elite HP loss; orbit tracked contact,body boundary,rotation,three on-off cycles; separate supplied Area400 coincident-satellite shared lockout. High-HP aphids,no deaths,pickups,reward handlers,full-world stepping or network. Not natural acquisition,max-level/evolved/union,status progression,DPS,survival,server/device proof."
+      }
+    ],
+    "rune:deep-fryer-wide-basket": [
+      {
+        "file": "tools/probe-continuous-runes.mjs",
+        "command": "node tools/probe-continuous-runes.mjs main-BDQvha6l.js",
+        "main": "main-BDQvha6l.js",
+        "definitionSha256": "0def6ae3597f41d6ac56b207aff35037756013ac3e1c1770368dcfa9b402dd84",
+        "scriptSha256": "b842b4ee119b21c7af9e546980ccdbfbe6a05df9e611d5f08d8ba92766d35214",
+        "source": {
+          "url": "https://tibo.dog/assets/sim-BF7yetWo.js",
+          "sha256": "6eb5a335759b8ce4e6f75858ca2e658097fa0480b8b93fc90a204ba5158a689f"
+        },
+        "sources": [
+          {
+            "url": "https://tibo.dog/assets/main-BDQvha6l.js",
+            "sha256": "beae5deefc4c95be49e17ead8d2c16152188fcb7bc974f8673697e4b64a6b5d8"
+          },
+          {
+            "url": "https://tibo.dog/assets/sim-BF7yetWo.js",
+            "sha256": "6eb5a335759b8ce4e6f75858ca2e658097fa0480b8b93fc90a204ba5158a689f"
+          },
+          {
+            "url": "https://tibo.dog/assets/boot-CRGHO9d3.js",
+            "sha256": "b8d0847ab6499b53c12a4f27f0c04ecc8148c2d0f72d56168bc42647e965cc7d"
+          },
+          {
+            "url": "https://tibo.dog/assets/intro-shared-B31C189v.js",
+            "sha256": "3fa8a7357a23f6d3509b879f35609443d0ac9ad76ae9dc0833a4aa22c4c03f20"
+          }
+        ],
+        "scope": "Standard/Normal,s1/s2/s3,supplied level-one weapon+rune card,Amount bonus0/3,crit0. Original weapon and hit systems only. Cone retarget/angular boundary/three on-off cycles; aura body boundary,pulse timer,ordinary-vs-elite HP loss; orbit tracked contact,body boundary,rotation,three on-off cycles; separate supplied Area400 coincident-satellite shared lockout. High-HP aphids,no deaths,pickups,reward handlers,full-world stepping or network. Not natural acquisition,max-level/evolved/union,status progression,DPS,survival,server/device proof."
+      }
+    ],
+    "rune:steam-vent-big-pot": [
+      {
+        "file": "tools/probe-continuous-runes.mjs",
+        "command": "node tools/probe-continuous-runes.mjs main-BDQvha6l.js",
+        "main": "main-BDQvha6l.js",
+        "definitionSha256": "a3e1c3449364087c954bce8eb72a8b17245bd26f2e4f4af3df65c959e133104b",
+        "scriptSha256": "b842b4ee119b21c7af9e546980ccdbfbe6a05df9e611d5f08d8ba92766d35214",
+        "source": {
+          "url": "https://tibo.dog/assets/sim-BF7yetWo.js",
+          "sha256": "6eb5a335759b8ce4e6f75858ca2e658097fa0480b8b93fc90a204ba5158a689f"
+        },
+        "sources": [
+          {
+            "url": "https://tibo.dog/assets/main-BDQvha6l.js",
+            "sha256": "beae5deefc4c95be49e17ead8d2c16152188fcb7bc974f8673697e4b64a6b5d8"
+          },
+          {
+            "url": "https://tibo.dog/assets/sim-BF7yetWo.js",
+            "sha256": "6eb5a335759b8ce4e6f75858ca2e658097fa0480b8b93fc90a204ba5158a689f"
+          },
+          {
+            "url": "https://tibo.dog/assets/boot-CRGHO9d3.js",
+            "sha256": "b8d0847ab6499b53c12a4f27f0c04ecc8148c2d0f72d56168bc42647e965cc7d"
+          },
+          {
+            "url": "https://tibo.dog/assets/intro-shared-B31C189v.js",
+            "sha256": "3fa8a7357a23f6d3509b879f35609443d0ac9ad76ae9dc0833a4aa22c4c03f20"
+          }
+        ],
+        "scope": "Standard/Normal,s1/s2/s3,supplied level-one weapon+rune card,Amount bonus0/3,crit0. Original weapon and hit systems only. Cone retarget/angular boundary/three on-off cycles; aura body boundary,pulse timer,ordinary-vs-elite HP loss; orbit tracked contact,body boundary,rotation,three on-off cycles; separate supplied Area400 coincident-satellite shared lockout. High-HP aphids,no deaths,pickups,reward handlers,full-world stepping or network. Not natural acquisition,max-level/evolved/union,status progression,DPS,survival,server/device proof."
+      }
+    ],
+    "rune:steam-vent-rolling-boil": [
+      {
+        "file": "tools/probe-continuous-runes.mjs",
+        "command": "node tools/probe-continuous-runes.mjs main-BDQvha6l.js",
+        "main": "main-BDQvha6l.js",
+        "definitionSha256": "d3c42833fbcc768487309a375aa5d24f3e049088fb1324201b375efd9d35c47d",
+        "scriptSha256": "b842b4ee119b21c7af9e546980ccdbfbe6a05df9e611d5f08d8ba92766d35214",
+        "source": {
+          "url": "https://tibo.dog/assets/sim-BF7yetWo.js",
+          "sha256": "6eb5a335759b8ce4e6f75858ca2e658097fa0480b8b93fc90a204ba5158a689f"
+        },
+        "sources": [
+          {
+            "url": "https://tibo.dog/assets/main-BDQvha6l.js",
+            "sha256": "beae5deefc4c95be49e17ead8d2c16152188fcb7bc974f8673697e4b64a6b5d8"
+          },
+          {
+            "url": "https://tibo.dog/assets/sim-BF7yetWo.js",
+            "sha256": "6eb5a335759b8ce4e6f75858ca2e658097fa0480b8b93fc90a204ba5158a689f"
+          },
+          {
+            "url": "https://tibo.dog/assets/boot-CRGHO9d3.js",
+            "sha256": "b8d0847ab6499b53c12a4f27f0c04ecc8148c2d0f72d56168bc42647e965cc7d"
+          },
+          {
+            "url": "https://tibo.dog/assets/intro-shared-B31C189v.js",
+            "sha256": "3fa8a7357a23f6d3509b879f35609443d0ac9ad76ae9dc0833a4aa22c4c03f20"
+          }
+        ],
+        "scope": "Standard/Normal,s1/s2/s3,supplied level-one weapon+rune card,Amount bonus0/3,crit0. Original weapon and hit systems only. Cone retarget/angular boundary/three on-off cycles; aura body boundary,pulse timer,ordinary-vs-elite HP loss; orbit tracked contact,body boundary,rotation,three on-off cycles; separate supplied Area400 coincident-satellite shared lockout. High-HP aphids,no deaths,pickups,reward handlers,full-world stepping or network. Not natural acquisition,max-level/evolved/union,status progression,DPS,survival,server/device proof."
+      }
+    ],
+    "rune:steam-vent-scald": [
+      {
+        "file": "tools/probe-continuous-runes.mjs",
+        "command": "node tools/probe-continuous-runes.mjs main-BDQvha6l.js",
+        "main": "main-BDQvha6l.js",
+        "definitionSha256": "77a17f49942d5fb3d04c4598ecb71e9ebdf6d2e1470d51b78725439fe393a5a7",
+        "scriptSha256": "b842b4ee119b21c7af9e546980ccdbfbe6a05df9e611d5f08d8ba92766d35214",
+        "source": {
+          "url": "https://tibo.dog/assets/sim-BF7yetWo.js",
+          "sha256": "6eb5a335759b8ce4e6f75858ca2e658097fa0480b8b93fc90a204ba5158a689f"
+        },
+        "sources": [
+          {
+            "url": "https://tibo.dog/assets/main-BDQvha6l.js",
+            "sha256": "beae5deefc4c95be49e17ead8d2c16152188fcb7bc974f8673697e4b64a6b5d8"
+          },
+          {
+            "url": "https://tibo.dog/assets/sim-BF7yetWo.js",
+            "sha256": "6eb5a335759b8ce4e6f75858ca2e658097fa0480b8b93fc90a204ba5158a689f"
+          },
+          {
+            "url": "https://tibo.dog/assets/boot-CRGHO9d3.js",
+            "sha256": "b8d0847ab6499b53c12a4f27f0c04ecc8148c2d0f72d56168bc42647e965cc7d"
+          },
+          {
+            "url": "https://tibo.dog/assets/intro-shared-B31C189v.js",
+            "sha256": "3fa8a7357a23f6d3509b879f35609443d0ac9ad76ae9dc0833a4aa22c4c03f20"
+          }
+        ],
+        "scope": "Standard/Normal,s1/s2/s3,supplied level-one weapon+rune card,Amount bonus0/3,crit0. Original weapon and hit systems only. Cone retarget/angular boundary/three on-off cycles; aura body boundary,pulse timer,ordinary-vs-elite HP loss; orbit tracked contact,body boundary,rotation,three on-off cycles; separate supplied Area400 coincident-satellite shared lockout. High-HP aphids,no deaths,pickups,reward handlers,full-world stepping or network. Not natural acquisition,max-level/evolved/union,status progression,DPS,survival,server/device proof."
+      }
+    ],
+    "rune:sprout-satellites-big-sprout": [
+      {
+        "file": "tools/probe-continuous-runes.mjs",
+        "command": "node tools/probe-continuous-runes.mjs main-BDQvha6l.js",
+        "main": "main-BDQvha6l.js",
+        "definitionSha256": "d8a401b790c0e88d14d20d81a409ff4c0602908cf88eca3c2dc431d044e6c4b8",
+        "scriptSha256": "b842b4ee119b21c7af9e546980ccdbfbe6a05df9e611d5f08d8ba92766d35214",
+        "source": {
+          "url": "https://tibo.dog/assets/sim-BF7yetWo.js",
+          "sha256": "6eb5a335759b8ce4e6f75858ca2e658097fa0480b8b93fc90a204ba5158a689f"
+        },
+        "sources": [
+          {
+            "url": "https://tibo.dog/assets/main-BDQvha6l.js",
+            "sha256": "beae5deefc4c95be49e17ead8d2c16152188fcb7bc974f8673697e4b64a6b5d8"
+          },
+          {
+            "url": "https://tibo.dog/assets/sim-BF7yetWo.js",
+            "sha256": "6eb5a335759b8ce4e6f75858ca2e658097fa0480b8b93fc90a204ba5158a689f"
+          },
+          {
+            "url": "https://tibo.dog/assets/boot-CRGHO9d3.js",
+            "sha256": "b8d0847ab6499b53c12a4f27f0c04ecc8148c2d0f72d56168bc42647e965cc7d"
+          },
+          {
+            "url": "https://tibo.dog/assets/intro-shared-B31C189v.js",
+            "sha256": "3fa8a7357a23f6d3509b879f35609443d0ac9ad76ae9dc0833a4aa22c4c03f20"
+          }
+        ],
+        "scope": "Standard/Normal,s1/s2/s3,supplied level-one weapon+rune card,Amount bonus0/3,crit0. Original weapon and hit systems only. Cone retarget/angular boundary/three on-off cycles; aura body boundary,pulse timer,ordinary-vs-elite HP loss; orbit tracked contact,body boundary,rotation,three on-off cycles; separate supplied Area400 coincident-satellite shared lockout. High-HP aphids,no deaths,pickups,reward handlers,full-world stepping or network. Not natural acquisition,max-level/evolved/union,status progression,DPS,survival,server/device proof."
+      }
+    ],
+    "rune:sprout-satellites-spin-cycle": [
+      {
+        "file": "tools/probe-continuous-runes.mjs",
+        "command": "node tools/probe-continuous-runes.mjs main-BDQvha6l.js",
+        "main": "main-BDQvha6l.js",
+        "definitionSha256": "e4b2a896fcc75935fd83fddb3a28abe960c90f0f0008964ab9b52026433b9c76",
+        "scriptSha256": "b842b4ee119b21c7af9e546980ccdbfbe6a05df9e611d5f08d8ba92766d35214",
+        "source": {
+          "url": "https://tibo.dog/assets/sim-BF7yetWo.js",
+          "sha256": "6eb5a335759b8ce4e6f75858ca2e658097fa0480b8b93fc90a204ba5158a689f"
+        },
+        "sources": [
+          {
+            "url": "https://tibo.dog/assets/main-BDQvha6l.js",
+            "sha256": "beae5deefc4c95be49e17ead8d2c16152188fcb7bc974f8673697e4b64a6b5d8"
+          },
+          {
+            "url": "https://tibo.dog/assets/sim-BF7yetWo.js",
+            "sha256": "6eb5a335759b8ce4e6f75858ca2e658097fa0480b8b93fc90a204ba5158a689f"
+          },
+          {
+            "url": "https://tibo.dog/assets/boot-CRGHO9d3.js",
+            "sha256": "b8d0847ab6499b53c12a4f27f0c04ecc8148c2d0f72d56168bc42647e965cc7d"
+          },
+          {
+            "url": "https://tibo.dog/assets/intro-shared-B31C189v.js",
+            "sha256": "3fa8a7357a23f6d3509b879f35609443d0ac9ad76ae9dc0833a4aa22c4c03f20"
+          }
+        ],
+        "scope": "Standard/Normal,s1/s2/s3,supplied level-one weapon+rune card,Amount bonus0/3,crit0. Original weapon and hit systems only. Cone retarget/angular boundary/three on-off cycles; aura body boundary,pulse timer,ordinary-vs-elite HP loss; orbit tracked contact,body boundary,rotation,three on-off cycles; separate supplied Area400 coincident-satellite shared lockout. High-HP aphids,no deaths,pickups,reward handlers,full-world stepping or network. Not natural acquisition,max-level/evolved/union,status progression,DPS,survival,server/device proof."
+      }
+    ],
+    "rune:sprout-satellites-wide-orbit": [
+      {
+        "file": "tools/probe-continuous-runes.mjs",
+        "command": "node tools/probe-continuous-runes.mjs main-BDQvha6l.js",
+        "main": "main-BDQvha6l.js",
+        "definitionSha256": "19dc1c0169269f85e045e717c3e7228edd37e884f3b19430b53e4b70e3889818",
+        "scriptSha256": "b842b4ee119b21c7af9e546980ccdbfbe6a05df9e611d5f08d8ba92766d35214",
+        "source": {
+          "url": "https://tibo.dog/assets/sim-BF7yetWo.js",
+          "sha256": "6eb5a335759b8ce4e6f75858ca2e658097fa0480b8b93fc90a204ba5158a689f"
+        },
+        "sources": [
+          {
+            "url": "https://tibo.dog/assets/main-BDQvha6l.js",
+            "sha256": "beae5deefc4c95be49e17ead8d2c16152188fcb7bc974f8673697e4b64a6b5d8"
+          },
+          {
+            "url": "https://tibo.dog/assets/sim-BF7yetWo.js",
+            "sha256": "6eb5a335759b8ce4e6f75858ca2e658097fa0480b8b93fc90a204ba5158a689f"
+          },
+          {
+            "url": "https://tibo.dog/assets/boot-CRGHO9d3.js",
+            "sha256": "b8d0847ab6499b53c12a4f27f0c04ecc8148c2d0f72d56168bc42647e965cc7d"
+          },
+          {
+            "url": "https://tibo.dog/assets/intro-shared-B31C189v.js",
+            "sha256": "3fa8a7357a23f6d3509b879f35609443d0ac9ad76ae9dc0833a4aa22c4c03f20"
+          }
+        ],
+        "scope": "Standard/Normal,s1/s2/s3,supplied level-one weapon+rune card,Amount bonus0/3,crit0. Original weapon and hit systems only. Cone retarget/angular boundary/three on-off cycles; aura body boundary,pulse timer,ordinary-vs-elite HP loss; orbit tracked contact,body boundary,rotation,three on-off cycles; separate supplied Area400 coincident-satellite shared lockout. High-HP aphids,no deaths,pickups,reward handlers,full-world stepping or network. Not natural acquisition,max-level/evolved/union,status progression,DPS,survival,server/device proof."
+      }
     ]
   },
   "reports": [
