@@ -2496,5 +2496,16 @@
   "updated": "2026-11-15T16:35:59Z",
   "changes": "Existing journal notes moved into a dated release group; no gameplay or wording changes.",
   "evidence": "Automatic unchanged next-to-dated proof against main-B67kp1Pu.js; all 417 reachable files checked, full/panel browser and official API validated. Original publication timestamps and prior introduction history retained. Proof: .cache/main-BAMvA1vp/journal-proof.json."
+ },
+ {
+  "seen": "2026-11-15",
+  "main": "main-BJRGKhZ3.js",
+  "boot": "boot-CdMCkZnU.js",
+  "sim": "sim-C-tamJE5.js",
+  "commit": "934390b838a0",
+  "status": "reviewed",
+  "updated": "2026-11-15T17:46:18Z",
+  "changes": "Impact frames now stop camera shake and hold the rendered scene. Turning Flashing effects off keeps their gray presentation but removes speed lines.",
+  "evidence": "Scoped BAM→BJRG whole417→417/416assets comparison: sim0, boot2, run-rules1, scene2 and entry1 normalized hunks; remaining changes are English/26translated journals. New impact-frames-hold-still/ztstiy note published2026-11-15T12:25:00Z, not a backdated source introduction. Complete old/new archive hashes, officialAPI, full journal and archived expanded panel; independent live expanded panel matches368orderedrecords/14dates/163codes with target before/after. Thirty-six original old/new impact-controller/boot-frame/entry-gate controls cover Flashing effects/reduced motion, frame0/held/expiry, pause/choice/overlay visibility, new-run clearing, camera stop and retained death/jackpot/forced-refresh boundaries. Four original old/new game-frame controls with Flashing effects on/off measure old draws1→2 versus current1→1 over frame0→1; current shake is0/0, and speed-line draws are0 with flashes off versus old1→2. Actual archived textures/renderer run in Chromium SwiftShader atDPR2, with only app-reference/counter instrumentation. Supplied boss impact/focus=tibo/shake and stopped initialized sim; old/new base ticks154/162, not pixel-matched natural encounters. Reduced-motion variants use the separate function controls, not renderer captures. Current speed-line drawing is gated by flashes; gray filter remains when disabled. Prior prose/history and coverage provenance preserved; no gameplay scenario promotion, classifier relaxation, damage/targeting, server, performance or battery claim. Initial browser session flag reset/timeout retained and recovered with consistent flags. Proof .cache/BJRG-* and shadow2026-11-15T17-29-31-568Z-8afd8c95; monitor archive-readiness failures retained separately, not relabeled success."
  }
 ]

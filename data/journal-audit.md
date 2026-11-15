@@ -1465,3 +1465,11 @@ Existing journal notes moved from next into a dated release group; no gameplay o
 - outline-own-sprites (YAWLQz): original publication 2026-11-15T10:49:07Z; now 2026-11-15/477a734. Source introduction remains in prior build history.
 
 Sources: https://tibo.dog/assets/changelog-panel-BFbVP1ol.js SHA-256 f3df51fd869cfd4e215a3b0ad9e4e3b6f4f34c78804bfed6a95233f3a176a4bd; https://tibo.dog/assets/changelog-panel-BDQYoLAe.js SHA-256 f9c4735cf5d54723ae15613a491f90b9e01b8699ff6dfabfc232a4d14d4e08ca. Prior history SHA-256 c5c44efe4eeacd3399427f3e2f6f9e5d95aae975d5b42d8ca453ebd7c4e17927.
+
+## Impact-frame stillness — main-BJRGKhZ3.js
+
+The new next note **impact-frames-hold-still / ztstiy** has official publication **2026-11-15T12:25:00Z**. Source comparison first observes these changes in build 229, game **934390b838a0d957f1e2eed08309b0d232565ac7**, against documented BAM/build 228; the publication time is not a source-introduction timestamp. Existing dated groups and prior notes remain unchanged.
+
+Current journal https://tibo.dog/assets/changelog-panel-DQUj-fvh.js SHA-256 **e0b724a76f648691c9ecc2d802b95802305c4c21e4947ba859ad81cc0a922c73**. Shadow **2026-11-15T17-29-31-568Z-8afd8c95** binds both archived HTML/416-asset sets and the current full journal HTML. Archived expanded panel/full-page and independent expanded live panel agree on **368 ordered records / 14 dates / 163 codes**. New manifest SHA-256 **95f06632d0c7a419441e4b317583734ae030391c2c83d098ef8707790fa90308**; its manifest records archivedAt **2026-11-15T17:25:18.216Z**, without erasing the monitor's earlier failed readiness attempts.
+
+Scoped original old/new controls distinguish impact camera stopping and scene reuse from a simulation pause, and check Flashing effects, reduced motion, first/held/expired frames, hidden presentation and new-run reset. Source-built renderer fixtures use supplied impact/shake states, not a naturally defeated boss or evidence of combat timing, performance or visibility. Historical coverage and all earlier measurement limits remain intact.

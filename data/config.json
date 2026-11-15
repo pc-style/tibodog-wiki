@@ -7954,6 +7954,8 @@
    "current": null,
    "holdsCutIn": false,
    "holdsReveal": false,
+   "stillsCamera": false,
+   "holdsScene": false,
    "hear": "[fn]",
    "frame": "[fn]",
    "strike": "[fn]"
