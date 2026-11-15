@@ -1,8 +1,8 @@
 {
  "schema": 1,
  "game": {
-  "version": "934390b",
-  "commit": "934390b838a0d957f1e2eed08309b0d232565ac7"
+  "version": "d0be015",
+  "commit": "d0be01518b547904b8ecea4913bddb2cdb06b9fd"
  },
  "simVersion": "df0e6168e3ba1f8b",
  "locales": [
@@ -774,6 +774,16 @@
     "gravy-pack": {
      "name": "Gravy Pack",
      "desc": "Four gravy-glazed tot pups run with Tibo. Each bite heals him 0.05 HP."
+    },
+    "hard-frost": {
+     "name": "Hard Frost",
+     "desc": "Rings of frost roll out from Tibo and freeze the pests they pass. Bosses are only slowed.",
+     "where": "A boss chest, from a full Flash Freeze and Thick Skin."
+    },
+    "flash-freeze": {
+     "name": "Flash Freeze",
+     "desc": "A ring of frost rolls out from Tibo and slows every pest it passes.",
+     "where": "A level-up card in your first minutes."
     }
    },
    "passive": {
@@ -2968,6 +2978,16 @@
     "gravy-pack": {
      "name": "肉汁狗群",
      "desc": "四只裹着肉汁的薯球小狗跟着Tibo跑。每咬一口给Tibo恢复0.05生命。"
+    },
+    "hard-frost": {
+     "name": "严霜",
+     "desc": "一圈圈寒霜从Tibo身边滚开，冻住经过的害虫。首领只会减速。",
+     "where": "首领宝箱，由满级急冻和厚脸皮进化。"
+    },
+    "flash-freeze": {
+     "name": "急冻",
+     "desc": "一圈寒霜从Tibo身边滚开，减速经过的每只害虫。",
+     "where": "开局几分钟内的升级卡。"
     }
    },
    "passive": {
@@ -5162,6 +5182,16 @@
     "gravy-pack": {
      "name": "肉汁狗群",
      "desc": "四隻裹著肉汁的薯球小狗跟著Tibo跑。每咬一口幫Tibo恢復0.05生命值。"
+    },
+    "hard-frost": {
+     "name": "嚴霜",
+     "desc": "一圈圈寒霜從Tibo身邊滾開，凍住經過的害蟲。頭目只會減速。",
+     "where": "頭目寶箱，由滿級急凍和厚臉皮進化。"
+    },
+    "flash-freeze": {
+     "name": "急凍",
+     "desc": "一圈寒霜從Tibo身邊滾開，讓經過的每隻害蟲減速。",
+     "where": "開局幾分鐘內的升級卡。"
     }
    },
    "passive": {
@@ -7356,6 +7386,16 @@
     "gravy-pack": {
      "name": "グレービー犬団",
      "desc": "グレービーをまとったミニポテト犬4匹がTiboと走る。噛みつくたびにTiboのHP0.05回復。"
+    },
+    "hard-frost": {
+     "name": "厳霜",
+     "desc": "霜の輪がTiboから転がり出て、通り過ぎた害虫を凍らせる。ボスは鈍るだけ。",
+     "where": "ボスの宝箱。最大レベルの瞬間冷凍と厚い皮から。"
+    },
+    "flash-freeze": {
+     "name": "瞬間冷凍",
+     "desc": "霜の輪がTiboから転がり出て、通り過ぎた害虫をすべて鈍らせる。",
+     "where": "序盤のレベルアップカード。"
     }
    },
    "passive": {
@@ -9550,6 +9590,16 @@
     "gravy-pack": {
      "name": "그레이비 무리",
      "desc": "그레이비를 두른 알감자 강아지 네 마리가 Tibo와 함께 달립니다. 물 때마다 Tibo가 체력 0.05를 회복합니다."
+    },
+    "hard-frost": {
+     "name": "혹한 서리",
+     "desc": "서리 고리들이 Tibo에게서 굴러나가며 지나치는 해충을 얼립니다. 보스는 느려지기만 합니다.",
+     "where": "보스 상자에서, 최대 레벨 순간 냉동과 두꺼운 껍질로."
+    },
+    "flash-freeze": {
+     "name": "순간 냉동",
+     "desc": "서리 고리가 Tibo에게서 굴러나가며 지나치는 해충을 모두 느리게 합니다.",
+     "where": "처음 몇 분 동안 나오는 레벨업 카드."
     }
    },
    "passive": {
@@ -11744,6 +11794,16 @@
     "gravy-pack": {
      "name": "Jauría de salsa",
      "desc": "Cuatro perritos papa bañados en salsa corren con Tibo. Cada mordisco lo cura 0.05 PV."
+    },
+    "hard-frost": {
+     "name": "Helada dura",
+     "desc": "Anillos de escarcha salen rodando desde Tibo y congelan a las plagas por las que pasan. A los jefes solo los frenan.",
+     "where": "Un cofre de jefe, con Congelado exprés al máximo y Cáscara gruesa."
+    },
+    "flash-freeze": {
+     "name": "Congelado exprés",
+     "desc": "Un anillo de escarcha sale rodando desde Tibo y frena a cada plaga por la que pasa.",
+     "where": "Una carta de subida de nivel en tus primeros minutos."
     }
    },
    "passive": {
@@ -13938,6 +13998,16 @@
     "gravy-pack": {
      "name": "ग्रेवी झुंड",
      "desc": "ग्रेवी में लिपटे चार आलू पिल्ले Tibo के साथ दौड़ते हैं। हर काट Tibo का 0.05 HP भरती है।"
+    },
+    "hard-frost": {
+     "name": "कड़ा पाला",
+     "desc": "पाले की रिंगें Tibo से बाहर लुढ़कती हैं और जिन कीटों से गुज़रती हैं उन्हें जमा देती हैं। बॉस सिर्फ़ धीमे होते हैं।",
+     "where": "बॉस संदूक, पूरे फटाफट फ्रीज़ और मोटे छिलके से।"
+    },
+    "flash-freeze": {
+     "name": "फटाफट फ्रीज़",
+     "desc": "पाले की रिंग Tibo से बाहर लुढ़कती है और जिस कीट से गुज़रती है उसे धीमा करती है।",
+     "where": "शुरुआती मिनटों में लेवल-अप कार्ड।"
     }
    },
    "passive": {
@@ -16132,6 +16202,16 @@
     "gravy-pack": {
      "name": "Soßenrudel",
      "desc": "Vier soßenglasierte Krokettenwelpen laufen mit Tibo. Jeder Biss heilt ihn um 0,05 LP."
+    },
+    "hard-frost": {
+     "name": "Dauerfrost",
+     "desc": "Frostringe rollen von Tibo aus und frieren die Schädlinge ein, die sie passieren. Bosse werden nur gebremst.",
+     "where": "Eine Bosstruhe, aus vollem Schockfrost und Harter Schale."
+    },
+    "flash-freeze": {
+     "name": "Schockfrost",
+     "desc": "Ein Frostring rollt von Tibo aus und bremst jeden Schädling, den er passiert.",
+     "where": "Eine Level-up-Karte in deinen ersten Minuten."
     }
    },
    "passive": {
@@ -18326,6 +18406,16 @@
     "gravy-pack": {
      "name": "Meute en sauce",
      "desc": "Quatre chiots-patates nappés de sauce courent avec Tibo. Chaque morsure le soigne de 0,05 PV."
+    },
+    "hard-frost": {
+     "name": "Gel profond",
+     "desc": "Des anneaux de givre roulent depuis Tibo et gèlent les nuisibles qu’ils traversent. Les boss sont seulement ralentis.",
+     "where": "Un coffre de boss, avec Surgélation au maximum et Peau épaisse."
+    },
+    "flash-freeze": {
+     "name": "Surgélation",
+     "desc": "Un anneau de givre roule depuis Tibo et ralentit chaque nuisible qu’il traverse.",
+     "where": "Une carte de niveau dans tes premières minutes."
     }
    },
    "passive": {
@@ -20520,6 +20610,16 @@
     "gravy-pack": {
      "name": "Matilha de molho",
      "desc": "Quatro cãozinhos-batata cobertos de molho correm com o Tibo. Cada mordida cura 0,05 HP do Tibo."
+    },
+    "hard-frost": {
+     "name": "Geada dura",
+     "desc": "Anéis de geada se espalham a partir do Tibo e congelam as pragas por onde passam. Chefes só ficam lentos.",
+     "where": "Um baú de chefe, com Congelamento relâmpago no máximo e Casca grossa."
+    },
+    "flash-freeze": {
+     "name": "Congelamento relâmpago",
+     "desc": "Um anel de geada se espalha a partir do Tibo e deixa lenta toda praga por onde passa.",
+     "where": "Uma carta de subir de nível nos primeiros minutos."
     }
    },
    "passive": {
@@ -22714,6 +22814,16 @@
     "gravy-pack": {
      "name": "Sos Sürüsü",
      "desc": "Sosa bulanmış dört kroket yavrusu Tibo'yla koşar. Her ısırık Tibo'ya 0,05 can yeniler."
+    },
+    "hard-frost": {
+     "name": "Sert Ayaz",
+     "desc": "Tibo'dan dışa doğru kırağı halkaları yayılır ve geçtikleri haşereleri dondurur. Bosslar yalnızca yavaşlar.",
+     "where": "Bir boss sandığı, tam Şok Dondurma ve Kalın Kabuk'tan."
+    },
+    "flash-freeze": {
+     "name": "Şok Dondurma",
+     "desc": "Tibo'dan dışa doğru bir kırağı halkası yayılır ve geçtiği her haşereyi yavaşlatır.",
+     "where": "İlk dakikalarında bir seviye atlama kartı."
     }
    },
    "passive": {
@@ -24908,6 +25018,16 @@
     "gravy-pack": {
      "name": "Kawanan Saus",
      "desc": "Empat anak anjing kroket berlapis saus berlari bersama Tibo. Tiap gigitan memulihkan 0,05 HP Tibo."
+    },
+    "hard-frost": {
+     "name": "Beku Keras",
+     "desc": "Cincin embun beku bergulir keluar dari Tibo dan membekukan hama yang dilewatinya. Bos hanya diperlambat.",
+     "where": "Peti bos, dari Beku Kilat penuh dan Kulit Tebal."
+    },
+    "flash-freeze": {
+     "name": "Beku Kilat",
+     "desc": "Cincin embun beku bergulir keluar dari Tibo dan memperlambat setiap hama yang dilewatinya.",
+     "where": "Kartu naik level di menit-menit awal."
     }
    },
    "passive": {
@@ -27102,6 +27222,16 @@
     "gravy-pack": {
      "name": "Стая в подливе",
      "desc": "Четыре щенка-крокеты в подливе бегают за Tibo. Каждый укус лечит Tibo на 0,05 ОЗ."
+    },
+    "hard-frost": {
+     "name": "Крепкий мороз",
+     "desc": "От Tibo катятся кольца инея и замораживают вредителей на своём пути. Боссы только замедляются.",
+     "where": "Сундук босса, из полной Шоковой заморозки и Толстой кожуры."
+    },
+    "flash-freeze": {
+     "name": "Шоковая заморозка",
+     "desc": "От Tibo катится кольцо инея и замедляет каждого вредителя на своём пути.",
+     "where": "Карта уровня в первые минуты."
     }
    },
    "passive": {
@@ -29296,6 +29426,16 @@
     "gravy-pack": {
      "name": "Kawanan Berkuah",
      "desc": "Empat anak anjing kentang bersalut kuah berlari bersama Tibo. Setiap gigitan memulihkan 0.05 HP Tibo."
+    },
+    "hard-frost": {
+     "name": "Fros Keras",
+     "desc": "Gelang fros bergolek keluar daripada Tibo dan membekukan perosak yang dilaluinya. Bos hanya diperlahankan.",
+     "where": "Peti bos, daripada Beku Kilat penuh dan Kulit Tebal."
+    },
+    "flash-freeze": {
+     "name": "Beku Kilat",
+     "desc": "Gelang fros bergolek keluar daripada Tibo dan melambatkan setiap perosak yang dilaluinya.",
+     "where": "Kad naik tahap pada minit-minit awal anda."
     }
    },
    "passive": {
@@ -31490,6 +31630,16 @@
     "gravy-pack": {
      "name": "Tropang Gravy",
      "desc": "Apat na tutang patatas na may gravy ang tumatakbo kasama ni Tibo. Bawat kagat ay nagpapagaling ng 0.05 HP kay Tibo."
+    },
+    "hard-frost": {
+     "name": "Hard Frost",
+     "desc": "Gumugulong palabas mula kay Tibo ang mga bilog ng yelo at pinapalamig nito ang mga pesteng madaanan. Pinababagal lang ang mga boss.",
+     "where": "Isang boss chest, mula sa buong Flash Freeze at Makapal na Balat."
+    },
+    "flash-freeze": {
+     "name": "Flash Freeze",
+     "desc": "Gumugulong palabas mula kay Tibo ang isang bilog ng yelo at pinababagal nito ang bawat pesteng madaanan.",
+     "where": "Isang level-up card sa mga unang minuto mo."
     }
    },
    "passive": {
@@ -33684,6 +33834,16 @@
     "gravy-pack": {
      "name": "रस्सा टोळी",
      "desc": "रश्शात माखलेली चार बटाटा-पिल्ले Tibo सोबत धावतात. प्रत्येक चावा Tibo चे 0.05 HP भरतो."
+    },
+    "hard-frost": {
+     "name": "कडक दव",
+     "desc": "Tibo कडून दवाची कडी बाहेर लोटतात आणि ज्या किड्यांजवळून जातात त्यांना गोठवतात. बॉस फक्त मंद होतात.",
+     "where": "बॉसची पेटी, पूर्ण झटपट गोठण आणि जाड सालीपासून."
+    },
+    "flash-freeze": {
+     "name": "झटपट गोठण",
+     "desc": "Tibo कडून दवबिंदूंचे कडे बाहेर लोटते आणि ज्या किड्याजवळून जाते त्याला मंद करते.",
+     "where": "सुरुवातीच्या मिनिटांत लेव्हल-अप कार्ड."
     }
    },
    "passive": {
@@ -35878,6 +36038,16 @@
     "gravy-pack": {
      "name": "Bầy Nước Sốt",
      "desc": "Bốn cún khoai viên phủ nước sốt chạy cùng Tibo. Mỗi cú cắn hồi cho Tibo 0,05 HP."
+    },
+    "hard-frost": {
+     "name": "Băng Giá Cứng",
+     "desc": "Những vòng sương giá lăn ra từ Tibo và đóng băng những con sâu chúng đi qua. Boss chỉ bị làm chậm.",
+     "where": "Rương boss, từ Đông Chớp Nhoáng tối đa và Vỏ Dày."
+    },
+    "flash-freeze": {
+     "name": "Đông Chớp Nhoáng",
+     "desc": "Một vòng sương giá lăn ra từ Tibo và làm chậm mọi con sâu nó đi qua.",
+     "where": "Một thẻ lên cấp trong mấy phút đầu."
     }
    },
    "passive": {
@@ -38072,6 +38242,16 @@
     "gravy-pack": {
      "name": "గ్రేవీ గుంపు",
      "desc": "గ్రేవీ పూసిన నాలుగు బోండా కుక్కపిల్లలు Tibo తో పరుగెడతాయి. ప్రతి కాటు Tibo కి 0.05 HP హీల్ చేస్తుంది."
+    },
+    "hard-frost": {
+     "name": "గట్టి మంచు",
+     "desc": "Tibo నుంచి మంచు వలయాలు దొర్లుకుంటూ బయటికెళ్లి, దాటిన పురుగులను గడ్డకట్టిస్తాయి. బాసులు నెమ్మదిస్తాయి మాత్రమే.",
+     "where": "బాస్ పెట్టె, పూర్తి మెరుపు గడ్డకట్టు, మందపాటి తొక్కల నుంచి."
+    },
+    "flash-freeze": {
+     "name": "మెరుపు గడ్డకట్టు",
+     "desc": "Tibo నుంచి మంచు వలయం దొర్లుకుంటూ బయటికెళ్లి, దాటిన ప్రతి పురుగునీ నెమ్మదింపజేస్తుంది.",
+     "where": "మొదటి కొన్ని నిమిషాల్లో ఒక లెవల్-అప్ కార్డ్."
     }
    },
    "passive": {
@@ -40266,6 +40446,16 @@
     "gravy-pack": {
      "name": "குழம்பு கூட்டம்",
      "desc": "குழம்பு பூசிய நான்கு டாட் நாய்க்குட்டிகள் Tibo-வுடன் ஓடும். ஒவ்வொரு கடியும் Tibo-வுக்கு 0.05 HP குணம் தரும்."
+    },
+    "hard-frost": {
+     "name": "கடும் பனி",
+     "desc": "Tibo-விடமிருந்து பனி வளையங்கள் உருண்டு பரவி, கடந்து போகும் பூச்சிகளை உறைய வைக்கும். பாஸ்கள் மெதுவாக மட்டுமே ஆகும்.",
+     "where": "பாஸ் பெட்டி, முழு மின்னல் உறைவு மற்றும் தடித்த தோலிலிருந்து."
+    },
+    "flash-freeze": {
+     "name": "மின்னல் உறைவு",
+     "desc": "Tibo-விடமிருந்து பனி வளையம் உருண்டு பரவி, கடந்து போகும் ஒவ்வொரு பூச்சியையும் மெதுவாக்கும்.",
+     "where": "முதல் சில நிமிடங்களில் ஒரு லெவல்-அப் கார்டு."
     }
    },
    "passive": {
@@ -42460,6 +42650,16 @@
     "gravy-pack": {
      "name": "ঝোলভরা ছানার দল",
      "desc": "ঝোলে মাখা চারটে আলুবড়া ছানা Tibo-র সঙ্গে ছোটে। প্রতিটা কামড়ে Tibo 0.05 HP সারে।"
+    },
+    "hard-frost": {
+     "name": "কড়া তুষার",
+     "desc": "Tibo-র চারপাশ থেকে তুষারের বলয় গড়িয়ে যায়, যে পোকার পাশ দিয়ে যায় তাকে জমিয়ে দেয়। বসরা শুধু ধীর হয়।",
+     "where": "বসের সিন্দুক, পুরো ঝটপট বরফ আর মোটা খোসা থেকে।"
+    },
+    "flash-freeze": {
+     "name": "ঝটপট বরফ",
+     "desc": "Tibo-র চারপাশ থেকে তুষারের এক বলয় গড়িয়ে যায়, যে পোকার পাশ দিয়ে যায় তাকেই ধীর করে।",
+     "where": "প্রথম কয়েক মিনিটে একটা লেভেল-আপ কার্ড।"
     }
    },
    "passive": {
@@ -44654,6 +44854,16 @@
     "gravy-pack": {
      "name": "ฝูงเกรวี่",
      "desc": "ลูกหมาทอทเคลือบเกรวี่สี่ตัววิ่งไปกับ Tibo กัดแต่ละครั้งฮีล Tibo 0.05 HP"
+    },
+    "hard-frost": {
+     "name": "น้ำแข็งเกาะหนัก",
+     "desc": "วงน้ำค้างแข็งกลิ้งออกจากตัว Tibo แช่แข็งศัตรูพืชที่ผ่าน บอสแค่ช้าลง",
+     "where": "หีบบอส จากแช่แข็งฉับพลันเต็มขั้นกับเปลือกหนา"
+    },
+    "flash-freeze": {
+     "name": "แช่แข็งฉับพลัน",
+     "desc": "วงน้ำค้างแข็งกลิ้งออกจากตัว Tibo ทำให้ศัตรูพืชทุกตัวที่ผ่านช้าลง",
+     "where": "การ์ดเลเวลอัปในช่วงนาทีแรกๆ"
     }
    },
    "passive": {
@@ -46848,6 +47058,16 @@
     "gravy-pack": {
      "name": "Garken Miya",
      "desc": "Kwikwiyon dankali huɗu masu miya suna gudu tare da Tibo. Kowane cizo na warkar da Tibo 0.05 HP."
+    },
+    "hard-frost": {
+     "name": "Ƙanƙara Mai Tsanani",
+     "desc": "Zoben sanyi na birgima daga Tibo kuma suna daskarar da ƙwarin da suka wuce. Shugabanni kawai ana rage musu gudu.",
+     "where": "Akwatin shugaba, daga cikakken Daskarewa Nan Take da Fata Mai Kauri."
+    },
+    "flash-freeze": {
+     "name": "Daskarewa Nan Take",
+     "desc": "Zoben sanyi na birgima daga Tibo kuma yana rage gudun kowane ƙwaro da ya wuce.",
+     "where": "Katin ƙarin mataki a mintunan farko."
     }
    },
    "passive": {
@@ -49042,6 +49262,16 @@
     "gravy-pack": {
      "name": "Stew Squad",
      "desc": "Four potato puppy wey stew rub body dey run with Tibo. Every bite dey heal Tibo 0.05 HP."
+    },
+    "hard-frost": {
+     "name": "Hard Frost",
+     "desc": "Rings of frost dey roll comot from Tibo and dem dey freeze di pests wey dem pass. Ogas only slow down.",
+     "where": "Oga box, from full Quick Freeze and Thick Skin."
+    },
+    "flash-freeze": {
+     "name": "Quick Freeze",
+     "desc": "Ring of frost dey roll comot from Tibo and e dey slow every pest wey e pass.",
+     "where": "Level-up card for your first few minutes."
     }
    },
    "passive": {
@@ -51236,6 +51466,16 @@
     "gravy-pack": {
      "name": "قطيع المرق",
      "desc": "أربعة جراء بطاطس مغطاة بالمرق تجري مع Tibo. كل عضة تستعيد له 0.05 صحة."
+    },
+    "hard-frost": {
+     "name": "صقيع قاسٍ",
+     "desc": "حلقات صقيع تتدحرج من حول Tibo وتجمّد الآفات التي تمر بها. الزعماء يتباطؤون فقط.",
+     "where": "صندوق زعيم، من تجميد خاطف كامل وقشرة سميكة."
+    },
+    "flash-freeze": {
+     "name": "تجميد خاطف",
+     "desc": "حلقة صقيع تتدحرج من حول Tibo وتبطئ كل آفة تمر بها.",
+     "where": "بطاقة ترقية في دقائقك الأولى."
     }
    },
    "passive": {
@@ -53430,6 +53670,16 @@
     "gravy-pack": {
      "name": "گله‌ی گریوی",
      "desc": "چهار توله‌ناگت گریوی‌خورده همراه Tibo می‌دوند. هر گاز 0.05 جان Tibo را درمان می‌کند."
+    },
+    "hard-frost": {
+     "name": "یخبندان سخت",
+     "desc": "حلقه‌های یخ‌زدگی از Tibo به بیرون می‌غلتند و آفت‌هایی را که از کنارشان بگذرند منجمد می‌کنند. باس‌ها فقط کند می‌شوند.",
+     "where": "صندوق باس، از یخ‌زدگی آنیِ کامل و پوست‌کلفت."
+    },
+    "flash-freeze": {
+     "name": "یخ‌زدگی آنی",
+     "desc": "حلقه‌ای از یخ‌زدگی از Tibo به بیرون می‌غلتد و هر آفتی را که از کنارش بگذرد کند می‌کند.",
+     "where": "کارت ارتقای سطح در دقیقه‌های اول."
     }
    },
    "passive": {
@@ -55624,6 +55874,16 @@
     "gravy-pack": {
      "name": "להקת רוטב",
      "desc": "ארבעה גורי תפודון מזוגגים ברוטב רצים עם Tibo. כל נשיכה מרפאה 0.05 חיים של Tibo."
+    },
+    "hard-frost": {
+     "name": "כפור קשה",
+     "desc": "טבעות כפור מתגלגלות החוצה מ־Tibo ומקפיאות את המזיקים שהן עוברות בהם. בוסים רק מואטים.",
+     "where": "תיבת בוס, מהקפאת בזק מלאה וקליפה עבה."
+    },
+    "flash-freeze": {
+     "name": "הקפאת בזק",
+     "desc": "טבעת כפור מתגלגלת החוצה מ־Tibo ומאטה כל מזיק שהיא עוברת בו.",
+     "where": "קלף עליית רמה בדקות הראשונות."
     }
    },
    "passive": {
@@ -57818,6 +58078,16 @@
     "gravy-pack": {
      "name": "شوربا ٹولی",
      "desc": "شوربے میں لپٹے چار ٹکی پلے Tibo کے ساتھ دوڑتے ہیں۔ ہر کاٹ پر Tibo کی 0.05 HP بحال۔"
+    },
+    "hard-frost": {
+     "name": "سخت پالا",
+     "desc": "پالے کے گھیرے Tibo سے باہر لڑھکتے ہیں اور جن کیڑوں سے گزریں انہیں جما دیتے ہیں۔ باس صرف سست ہوتے ہیں۔",
+     "where": "باس کا صندوق، مکمل فوری جماؤ اور موٹے چھلکے سے۔"
+    },
+    "flash-freeze": {
+     "name": "فوری جماؤ",
+     "desc": "پالے کا گھیرا Tibo سے باہر لڑھکتا ہے اور جس کیڑے سے گزرے اسے سست کر دیتا ہے۔",
+     "where": "شروع کے منٹوں میں لیول اپ کارڈ۔"
     }
    },
    "passive": {
@@ -59440,143 +59710,143 @@
   "index": {
    "url": "https://tibo.dog/data/v1/index.json",
    "bytes": 18937,
-   "sha256": "0833331e55d50430c9f4b2e73e61076aa958f576a2edaf5b6c057e52dd1eb320"
+   "sha256": "ea3efbc074770c49a807cadde8db0bc6fa1e179b083a05ed872807258f6aa02f"
   },
   "locales": {
    "en": {
     "url": "https://tibo.dog/data/v1/text/en.json",
-    "bytes": 59643,
-    "sha256": "c38b5eae3d4830786c2bd5590a8d48d9929f3797196dbc56ec7c61ee94b0111a"
+    "bytes": 60007,
+    "sha256": "3dac939d15ff530f6be2952b1a3a67441b6fc8f33d265b3639db2c674be002ce"
    },
    "zh-CN": {
     "url": "https://tibo.dog/data/v1/text/zh-CN.json",
-    "bytes": 58798,
-    "sha256": "0ccd0054039c13211a7ece6bdb19fdf96fe010236bba454d92858b720dfae205"
+    "bytes": 59134,
+    "sha256": "5a067bba73b5f01a28267cf63161bbd2ed54ebb5525e1631576aeec94273e2f6"
    },
    "zh-TW": {
     "url": "https://tibo.dog/data/v1/text/zh-TW.json",
-    "bytes": 59056,
-    "sha256": "b7c45f7b157e0d155cb56f2d0eac491831e3cac312b2b46f65363bd5bded6925"
+    "bytes": 59395,
+    "sha256": "75ea13bb2170a7f73166416ce82a94950b20f0d8ddf073194f026360773cb013"
    },
    "ja": {
     "url": "https://tibo.dog/data/v1/text/ja.json",
-    "bytes": 71965,
-    "sha256": "2f1286243d806e2578e11bef4fd33dd85c76c49110b33dabe3a76607fb31ff3b"
+    "bytes": 72376,
+    "sha256": "15308f3fd8efb30fbb14e51292ed98ea5a355fc7eacf68ebad2235b81e295ec5"
    },
    "ko": {
     "url": "https://tibo.dog/data/v1/text/ko.json",
-    "bytes": 72142,
-    "sha256": "8e439acc33d318b90b6ff09d06dd912f8c9ab51aacdb441e0fa3581e4c7165ac"
+    "bytes": 72603,
+    "sha256": "e94a8bd8fed373b527eba0584937089b43a16e2b5c38342493d9e6837d2cdad4"
    },
    "es": {
     "url": "https://tibo.dog/data/v1/text/es.json",
-    "bytes": 67391,
-    "sha256": "531b5e8054ee5f4d0e85c34448dac7122266178d4503c13563ae574f73323d23"
+    "bytes": 67834,
+    "sha256": "004f32b234543186ac3e805921e6084bfadcbae9c0ac65b46f49f3481ff04cc2"
    },
    "hi": {
     "url": "https://tibo.dog/data/v1/text/hi.json",
-    "bytes": 124645,
-    "sha256": "c9695b154bbbc20aa69d68d8a68d6230f3a44ca75702d24a2b4ebb8977bba0b5"
+    "bytes": 125492,
+    "sha256": "5374899f24acae658239a4660c1f21a4a50f881b2f4d7acd2206ac86d6163cbf"
    },
    "de": {
     "url": "https://tibo.dog/data/v1/text/de.json",
-    "bytes": 66680,
-    "sha256": "a7f939349b7d7cb2c1ac8936b564b6f1782a6baa8366db3a2ba08976a117a04a"
+    "bytes": 67084,
+    "sha256": "7b6f9599df5d67e6f9dc4a3a62340e7dbc30c1bc4890d6a904a6c2012285857f"
    },
    "fr": {
     "url": "https://tibo.dog/data/v1/text/fr.json",
-    "bytes": 69937,
-    "sha256": "48c637e57810b4328bd2f96f2253ac2b1de865f91bcf8651c732728540693646"
+    "bytes": 70369,
+    "sha256": "9e01b2dd200b658915f51cad1306e4a6741061440b150e9cd0d0bf66efbc71f3"
    },
    "pt": {
     "url": "https://tibo.dog/data/v1/text/pt.json",
-    "bytes": 65931,
-    "sha256": "2cd4df0a933fa3ce937518f6503c6e4470409e1e0cacdb75ef68cb898b738393"
+    "bytes": 66373,
+    "sha256": "6d88a7b9079602dbd180b058f8cd9c0c35ca332f89cf28fd35025179afb9aaf7"
    },
    "tr": {
     "url": "https://tibo.dog/data/v1/text/tr.json",
-    "bytes": 68423,
-    "sha256": "49be6b2dbcf7537311f504b9931793559e576301c8bdd252dacbf3d69b8fb3db"
+    "bytes": 68858,
+    "sha256": "512ab44f48c9e7d4b7267801d16d2913c66613bb1e51e091d56124e6b04d5aba"
    },
    "id": {
     "url": "https://tibo.dog/data/v1/text/id.json",
-    "bytes": 65748,
-    "sha256": "4161e4daf08b7ff3036a0eafe471b68b3f3bde8165ca7d4391a562c3c81d7305"
+    "bytes": 66141,
+    "sha256": "20ed5344d5c3545ed3ad44fada91f894ad2d38c3d8acbf149fd32bef62867f34"
    },
    "ru": {
     "url": "https://tibo.dog/data/v1/text/ru.json",
-    "bytes": 98099,
-    "sha256": "eb39b6b862a3bba7db23d5212697593bb55a335ce9ef66aae5cac2cb0a6dcc33"
+    "bytes": 98709,
+    "sha256": "b7c5f25d45c30018e7586b1cec51507b7ef7257abf9de3da6e2417e0429b3873"
    },
    "ms": {
     "url": "https://tibo.dog/data/v1/text/ms.json",
-    "bytes": 68037,
-    "sha256": "977cc4063bf05bc9662582af7978159303854c20de40e6833905c3dd19b9c526"
+    "bytes": 68440,
+    "sha256": "243e051ff5c7edda8fbc48fef1f9a1b35def231b17737ff262da003c0880a9eb"
    },
    "fil": {
     "url": "https://tibo.dog/data/v1/text/fil.json",
-    "bytes": 71740,
-    "sha256": "120bd723e00f5dcd911f243869b573e353259d5e5f58b74e217390ac2487de7d"
+    "bytes": 72199,
+    "sha256": "7ab5574d1895f359dacfd9c0433800ca4e14848b79b8529a7cbb67a1f6389d06"
    },
    "mr": {
     "url": "https://tibo.dog/data/v1/text/mr.json",
-    "bytes": 128828,
-    "sha256": "f87bb0f17cdff0461866c37c3035da5aa7a3ca5b0a5e58353f617aa20511f3d0"
+    "bytes": 129639,
+    "sha256": "8712865f8295f0cf05ce716f8eeed117a37cac1c816dd1796dc01b7fa19a58f6"
    },
    "vi": {
     "url": "https://tibo.dog/data/v1/text/vi.json",
-    "bytes": 72490,
-    "sha256": "1ea1d91c8c5a64a1b5bbdc67a77f2daed2337aab2cf27063b675b5d680cb7802"
+    "bytes": 72944,
+    "sha256": "f24381bfd82f22a7da452cf82beb04bcaf2233c1630cf2759a7648c262ac189e"
    },
    "te": {
     "url": "https://tibo.dog/data/v1/text/te.json",
-    "bytes": 135506,
-    "sha256": "5cd04a5cd147e9349d35539f8874ce206d7798aa68c4d4182a8318b0eb3490a3"
+    "bytes": 136465,
+    "sha256": "a3e110a1fd6f879fd7d923f162765d6bda715eefdfbff5399303e38edc67b0ac"
    },
    "ta": {
     "url": "https://tibo.dog/data/v1/text/ta.json",
-    "bytes": 148040,
-    "sha256": "af8499d2b4bf87cb9919ea79e44e1e9ba36ede9060e98317871d5cccf88c8420"
+    "bytes": 149014,
+    "sha256": "2854bd91babb8ef55ddb782cbea4613e229cff252ef572cd428dc9c0f25140b1"
    },
    "bn": {
     "url": "https://tibo.dog/data/v1/text/bn.json",
-    "bytes": 125556,
-    "sha256": "c1f6b1a4c57f531c58350b4c5d0bd68409a6fd244c49a52f3150c15125e7e64f"
+    "bytes": 126414,
+    "sha256": "b47316e3f9250c6c76b86d416f6813a5b730d95aec73c8ec9fa1d5765f930a6a"
    },
    "th": {
     "url": "https://tibo.dog/data/v1/text/th.json",
-    "bytes": 121174,
-    "sha256": "55cf1e2f9b68b3b9f6f9342cbc639aa69a3b5717f8685b649ed225dd80ffcd47"
+    "bytes": 121933,
+    "sha256": "f33cc068188a0eaccac2d0d6c787745b98d184699d0c8438d235a8516fd8d217"
    },
    "ha": {
     "url": "https://tibo.dog/data/v1/text/ha.json",
-    "bytes": 68357,
-    "sha256": "43519dbae4a65d7a6f97f10e8d8aebde805f586fe065a1e43aa366754080f78b"
+    "bytes": 68787,
+    "sha256": "270ffb15b68a968589a50e89e2d81d62b675f7f97c9a1a873fb10021d85074a6"
    },
    "pcm": {
     "url": "https://tibo.dog/data/v1/text/pcm.json",
-    "bytes": 62829,
-    "sha256": "dedd6dbc21a04d4c7e033bd6964c4b58ded65e38181dbc6f652b1b9230959ec5"
+    "bytes": 63211,
+    "sha256": "cb8013ac890eefde2b4851aa494b5f7b764cb89d2f2d431c3c9e8b77c2287506"
    },
    "ar": {
     "url": "https://tibo.dog/data/v1/text/ar.json",
-    "bytes": 82518,
-    "sha256": "bd76a6fb3af0f491d6d38fb9ef30a1015c895ef2731a92cd3da58d4454fb9ce9"
+    "bytes": 83003,
+    "sha256": "d80df9d0e37c83d6adbbbe58ad55bc9a27b2240a13c495fa924b4bd04ca12401"
    },
    "fa": {
     "url": "https://tibo.dog/data/v1/text/fa.json",
-    "bytes": 96867,
-    "sha256": "6e040405258af50cfa9345dd4e969881ca0e52d5e1375121807acbb7cd312277"
+    "bytes": 97515,
+    "sha256": "4354410d1bc47d364110ea3e8df65ad98b714ad5000ff4e9f450f10a2e438568"
    },
    "he": {
     "url": "https://tibo.dog/data/v1/text/he.json",
-    "bytes": 82094,
-    "sha256": "148d49e288e7c44225ef0b8097fc1379f80980c29883a08caafff02c7f86d8da"
+    "bytes": 82593,
+    "sha256": "96e1dad29f70a4197d75340aec455c4fdd45c0d12a9094e487c18a19ad8a3b44"
    },
    "ur": {
     "url": "https://tibo.dog/data/v1/text/ur.json",
-    "bytes": 93240,
-    "sha256": "3f187c7b809b30c30cf7285442a061bb5e85a010cf06f533fbdd83c14de05fd8"
+    "bytes": 93815,
+    "sha256": "daad3679e52dedba740efc6b2058ff38f28e5d330792e8fce9b094ea0397e5d4"
    }
   }
  }

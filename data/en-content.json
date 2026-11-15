@@ -2499,6 +2499,15 @@
  "content.weapon.factory-reset.name": [
   "Factory Reset"
  ],
+ "content.weapon.flash-freeze.desc": [
+  "A ring of frost rolls out from Tibo and slows every pest it passes."
+ ],
+ "content.weapon.flash-freeze.name": [
+  "Flash Freeze"
+ ],
+ "content.weapon.flash-freeze.where": [
+  "A level-up card in your first minutes."
+ ],
  "content.weapon.frozen-fries.desc": [
   "Shoots frozen fries that freeze enemies in place."
  ],
@@ -2630,6 +2639,15 @@
  ],
  "content.weapon.griddle-guard.name": [
   "Griddle Guard"
+ ],
+ "content.weapon.hard-frost.desc": [
+  "Rings of frost roll out from Tibo and freeze the pests they pass. Bosses are only slowed."
+ ],
+ "content.weapon.hard-frost.name": [
+  "Hard Frost"
+ ],
+ "content.weapon.hard-frost.where": [
+  "A boss chest, from a full Flash Freeze and Thick Skin."
  ],
  "content.weapon.harvest-moon.desc": [
   "A moon spud circles Tibo. Each pest it touches rides its orbit for a moment, then is flung out and hit. A flung pest cannot be caught again for a few seconds, and bosses are too heavy to catch."
