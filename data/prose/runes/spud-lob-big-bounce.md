@@ -2,7 +2,7 @@
 
 Big Bounce strengthens the **third lob volley**, not every third floor bounce. The increased Area enlarges the emitted projectile body and also enters the lob’s horizontal-velocity spread formula. These fixtures do not advance gravity, bounces or impact damage. <small>[sim-DpazMjS2.js: `` id:`spud-lob-big-bounce` ``]</small>
 
-Every **3th started volley** gets **×2.2 damage and ×1.5 Area**. Starting a volley increments the beat counter once; its remaining shots keep that same beat. Larger Area means ×√1.5 body radius, not ×1.5 radius. <small>[sim-DpazMjS2.js: `` (e.volleyLeft>0?n.beats:n.beats+1)%r.beatEvery===0 ``]</small> <small>[sim-DpazMjS2.js: `` e.runes.beats++ ``]</small>
+Each **3-volley cycle** ends with **×2.2 damage and ×1.5 Area**. Starting a volley increments the beat counter once; its remaining shots keep that same beat. Larger Area means ×√1.5 body radius, not ×1.5 radius. <small>[sim-DpazMjS2.js: `` (e.volleyLeft>0?n.beats:n.beats+1)%r.beatEvery===0 ``]</small> <small>[sim-DpazMjS2.js: `` e.runes.beats++ ``]</small>
 
 Other rune scales: **damage ×0.92**. These apply to the computed weapon values before focus/salvo/beat conversion. They are not a measured DPS ratio. <small>[sim-DpazMjS2.js: `` t.damage*=r.damage,t.cooldown*=r.cooldown,t.area*=r.area ``]</small>
 
