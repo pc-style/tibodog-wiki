@@ -1456,3 +1456,12 @@ The entire simulation, including rune stats/emission, zone, targeting and hit co
 Shadow **2026-11-15T13-27-19-416Z-ae7ee579** checks both archived HTML/416-asset sets, full journal HTML and actual expanded archived panel. Independently expanded live panel agrees **366 ordered records / 14 dates / 161 codes**, including every older collapsed group in display order, with the target checked before and after. Current journal https://tibo.dog/assets/changelog-panel-CnxNJ0vD.js SHA-256 **be6c8a0add96d94e184d82e50d341961e5391fbc391c47b56007e14852329c0e**; prior journal SHA-256 **8c78edc143cdfed6716e3091913924abfb617caaf96c77b50e05660e1ca27e4d**. Raw archive manifest SHA-256 **bb21e86191362e4f5a843c01eb516f5b226d961b0a4a22d62b86ff4df7df88f1**; current full journal HTML SHA-256 **66ba18eed4fc24c36f6bfe16e402e9edc7df9b70d47dde730c941ccc5a2c5bb4**.
 
 Hydra/Shell citation owners and two save-code moves are rebound through the existing checker, with no unresolved quotes. Previous playtest, historical CrJI, blocked drafts and every earlier measurement limit remain intact. No new combat, natural progression, DPS, performance, server or reward inference is added; existing header/Sections/table clipping remains outside scope.
+
+
+## Local journal graduation main-BAMvA1vp.js
+
+Existing journal notes moved from next into a dated release group; no gameplay or note wording changes.
+
+- outline-own-sprites (YAWLQz): original publication 2026-11-15T10:49:07Z; now 2026-11-15/477a734. Source introduction remains in prior build history.
+
+Sources: https://tibo.dog/assets/changelog-panel-BFbVP1ol.js SHA-256 f3df51fd869cfd4e215a3b0ad9e4e3b6f4f34c78804bfed6a95233f3a176a4bd; https://tibo.dog/assets/changelog-panel-BDQYoLAe.js SHA-256 f9c4735cf5d54723ae15613a491f90b9e01b8699ff6dfabfc232a4d14d4e08ca. Prior history SHA-256 c5c44efe4eeacd3399427f3e2f6f9e5d95aae975d5b42d8ca453ebd7c4e17927.
