@@ -1037,6 +1037,272 @@
         ],
         "scope": "s1/s2/s3; original phase constructors, spawners and ticks with supplied roles, positions, clocks, armor generations and HP. No gear/god mode/reward writes. Not natural acquisition, survival, Nightmare timing, server behavior, complete maze pathfinding or attendant-return animation. Checks for this entity: [\"original totem spawn, stationary, six-second fuse boundary, destroyed-totem cancellation\"]"
       }
+    ],
+    "enemy:pack-rat": [
+      {
+        "file": "tools/probe-hunt-packs.mjs",
+        "command": "node tools/probe-hunt-packs.mjs main-DwGb2BE_.js",
+        "main": "main-DwGb2BE_.js",
+        "definitionSha256": "ca916ecd9a84d69cc6dcdb8a8670075477d1c7a0238889e0d3ba6c2c89ff62a7",
+        "scriptSha256": "dd8a8c04e58a6a54da24821c69469932fd8e2f7df27d6f0754732471e4c7fd6a",
+        "source": {
+          "url": "https://tibo.dog/assets/endgame-sim-CefNBFg5.js",
+          "sha256": "d78e5134bfbe144cfb38da9b10648d55d40119d47ac7f2b09b697193b182dd9b"
+        },
+        "sources": [
+          {
+            "url": "https://tibo.dog/assets/endgame-sim-CefNBFg5.js",
+            "sha256": "d78e5134bfbe144cfb38da9b10648d55d40119d47ac7f2b09b697193b182dd9b"
+          }
+        ],
+        "scope": "Standard/Normal s1/s2/s3; original pack spawners/steering with supplied member/leader/elite roles, positions, clocks, empty props and attack timers. No natural encounter, reward writes, survival/DPS/server/device or Nightmare claims. Checks for this entity: [\"none role: spawn stats, outside/equal range, crouch boundary, locked lane, invincibility and damage swap, duration/recovery, retry delay, supplied boulder interrupt with .8s recovery\",\"leader: elite-only emitter creation/first pattern, alpha death scatters, member flee duration\",\"elite: elite-only emitter creation/first pattern, alpha death scatters, member flee duration\"]"
+      },
+      {
+        "file": "tools/probe-hunt-packs.mjs",
+        "command": "node tools/probe-hunt-packs.mjs main-8zbhOvtE.js",
+        "main": "main-8zbhOvtE.js",
+        "definitionSha256": "ca916ecd9a84d69cc6dcdb8a8670075477d1c7a0238889e0d3ba6c2c89ff62a7",
+        "scriptSha256": "dd8a8c04e58a6a54da24821c69469932fd8e2f7df27d6f0754732471e4c7fd6a",
+        "source": {
+          "url": "https://tibo.dog/assets/endgame-sim-C0aS1dIG.js",
+          "sha256": "d29a669e399399ae1414fdab2355f0fe43d65c5db70fd9f73ddd52fee2bf4920"
+        },
+        "sources": [
+          {
+            "url": "https://tibo.dog/assets/endgame-sim-C0aS1dIG.js",
+            "sha256": "d29a669e399399ae1414fdab2355f0fe43d65c5db70fd9f73ddd52fee2bf4920"
+          }
+        ],
+        "scope": "Standard/Normal s1/s2/s3; original pack spawners/steering with supplied member/leader/elite roles, positions, clocks, empty props and attack timers. No natural encounter, reward writes, survival/DPS/server/device or Nightmare claims. Checks for this entity: [\"none role: spawn stats, outside/equal range, crouch boundary, locked lane, invincibility and damage swap, duration/recovery, retry delay, supplied boulder interrupt with .8s recovery\",\"leader: elite-only emitter creation/first pattern, alpha death scatters, member flee duration\",\"elite: elite-only emitter creation/first pattern, alpha death scatters, member flee duration\"]"
+      }
+    ],
+    "enemy:rat-chief": [
+      {
+        "file": "tools/probe-hunt-packs.mjs",
+        "command": "node tools/probe-hunt-packs.mjs main-DwGb2BE_.js",
+        "main": "main-DwGb2BE_.js",
+        "definitionSha256": "f8232f4ff25612a22deaa0bcdba901c31b0abaa3365ee6b3342012afa6995ff4",
+        "scriptSha256": "dd8a8c04e58a6a54da24821c69469932fd8e2f7df27d6f0754732471e4c7fd6a",
+        "source": {
+          "url": "https://tibo.dog/assets/endgame-sim-CefNBFg5.js",
+          "sha256": "d78e5134bfbe144cfb38da9b10648d55d40119d47ac7f2b09b697193b182dd9b"
+        },
+        "sources": [
+          {
+            "url": "https://tibo.dog/assets/endgame-sim-CefNBFg5.js",
+            "sha256": "d78e5134bfbe144cfb38da9b10648d55d40119d47ac7f2b09b697193b182dd9b"
+          }
+        ],
+        "scope": "Standard/Normal s1/s2/s3; original pack spawners/steering with supplied member/leader/elite roles, positions, clocks, empty props and attack timers. No natural encounter, reward writes, survival/DPS/server/device or Nightmare claims. Checks for this entity: [\"leader role: spawn stats, outside/equal range, crouch boundary, locked lane, invincibility and damage swap, duration/recovery, retry delay, supplied boulder interrupt with .8s recovery\",\"elite role: spawn stats, outside/equal range, crouch boundary, locked lane, invincibility and damage swap, duration/recovery, retry delay, supplied boulder interrupt with .8s recovery\",\"leader: elite-only emitter creation/first pattern, alpha death scatters, member flee duration\",\"elite: elite-only emitter creation/first pattern, alpha death scatters, member flee duration\"]"
+      },
+      {
+        "file": "tools/probe-hunt-packs.mjs",
+        "command": "node tools/probe-hunt-packs.mjs main-8zbhOvtE.js",
+        "main": "main-8zbhOvtE.js",
+        "definitionSha256": "f8232f4ff25612a22deaa0bcdba901c31b0abaa3365ee6b3342012afa6995ff4",
+        "scriptSha256": "dd8a8c04e58a6a54da24821c69469932fd8e2f7df27d6f0754732471e4c7fd6a",
+        "source": {
+          "url": "https://tibo.dog/assets/endgame-sim-C0aS1dIG.js",
+          "sha256": "d29a669e399399ae1414fdab2355f0fe43d65c5db70fd9f73ddd52fee2bf4920"
+        },
+        "sources": [
+          {
+            "url": "https://tibo.dog/assets/endgame-sim-C0aS1dIG.js",
+            "sha256": "d29a669e399399ae1414fdab2355f0fe43d65c5db70fd9f73ddd52fee2bf4920"
+          }
+        ],
+        "scope": "Standard/Normal s1/s2/s3; original pack spawners/steering with supplied member/leader/elite roles, positions, clocks, empty props and attack timers. No natural encounter, reward writes, survival/DPS/server/device or Nightmare claims. Checks for this entity: [\"leader role: spawn stats, outside/equal range, crouch boundary, locked lane, invincibility and damage swap, duration/recovery, retry delay, supplied boulder interrupt with .8s recovery\",\"elite role: spawn stats, outside/equal range, crouch boundary, locked lane, invincibility and damage swap, duration/recovery, retry delay, supplied boulder interrupt with .8s recovery\",\"leader: elite-only emitter creation/first pattern, alpha death scatters, member flee duration\",\"elite: elite-only emitter creation/first pattern, alpha death scatters, member flee duration\"]"
+      }
+    ],
+    "enemy:hunt-crow": [
+      {
+        "file": "tools/probe-hunt-packs.mjs",
+        "command": "node tools/probe-hunt-packs.mjs main-DwGb2BE_.js",
+        "main": "main-DwGb2BE_.js",
+        "definitionSha256": "e7387e89af639b3168c9fabf70ce2eaa015aa3c4cd6244c68d158b522a398eee",
+        "scriptSha256": "dd8a8c04e58a6a54da24821c69469932fd8e2f7df27d6f0754732471e4c7fd6a",
+        "source": {
+          "url": "https://tibo.dog/assets/endgame-sim-CefNBFg5.js",
+          "sha256": "d78e5134bfbe144cfb38da9b10648d55d40119d47ac7f2b09b697193b182dd9b"
+        },
+        "sources": [
+          {
+            "url": "https://tibo.dog/assets/endgame-sim-CefNBFg5.js",
+            "sha256": "d78e5134bfbe144cfb38da9b10648d55d40119d47ac7f2b09b697193b182dd9b"
+          }
+        ],
+        "scope": "Standard/Normal s1/s2/s3; original pack spawners/steering with supplied member/leader/elite roles, positions, clocks, empty props and attack timers. No natural encounter, reward writes, survival/DPS/server/device or Nightmare claims. Checks for this entity: [\"none role: spawn stats, outside/equal range, crouch boundary, locked lane, invincibility and damage swap, duration/recovery, retry delay, supplied boulder interrupt with .8s recovery\",\"leader: elite-only emitter creation/first pattern, alpha death scatters, member flee duration\",\"elite: elite-only emitter creation/first pattern, alpha death scatters, member flee duration\"]"
+      },
+      {
+        "file": "tools/probe-hunt-packs.mjs",
+        "command": "node tools/probe-hunt-packs.mjs main-8zbhOvtE.js",
+        "main": "main-8zbhOvtE.js",
+        "definitionSha256": "e7387e89af639b3168c9fabf70ce2eaa015aa3c4cd6244c68d158b522a398eee",
+        "scriptSha256": "dd8a8c04e58a6a54da24821c69469932fd8e2f7df27d6f0754732471e4c7fd6a",
+        "source": {
+          "url": "https://tibo.dog/assets/endgame-sim-C0aS1dIG.js",
+          "sha256": "d29a669e399399ae1414fdab2355f0fe43d65c5db70fd9f73ddd52fee2bf4920"
+        },
+        "sources": [
+          {
+            "url": "https://tibo.dog/assets/endgame-sim-C0aS1dIG.js",
+            "sha256": "d29a669e399399ae1414fdab2355f0fe43d65c5db70fd9f73ddd52fee2bf4920"
+          }
+        ],
+        "scope": "Standard/Normal s1/s2/s3; original pack spawners/steering with supplied member/leader/elite roles, positions, clocks, empty props and attack timers. No natural encounter, reward writes, survival/DPS/server/device or Nightmare claims. Checks for this entity: [\"none role: spawn stats, outside/equal range, crouch boundary, locked lane, invincibility and damage swap, duration/recovery, retry delay, supplied boulder interrupt with .8s recovery\",\"leader: elite-only emitter creation/first pattern, alpha death scatters, member flee duration\",\"elite: elite-only emitter creation/first pattern, alpha death scatters, member flee duration\"]"
+      }
+    ],
+    "enemy:crow-elder": [
+      {
+        "file": "tools/probe-hunt-packs.mjs",
+        "command": "node tools/probe-hunt-packs.mjs main-DwGb2BE_.js",
+        "main": "main-DwGb2BE_.js",
+        "definitionSha256": "6c7ca434825848f3360a0183ef2c0b6509d4e7f1cb6c4c05ec4ebc465af2e60d",
+        "scriptSha256": "dd8a8c04e58a6a54da24821c69469932fd8e2f7df27d6f0754732471e4c7fd6a",
+        "source": {
+          "url": "https://tibo.dog/assets/endgame-sim-CefNBFg5.js",
+          "sha256": "d78e5134bfbe144cfb38da9b10648d55d40119d47ac7f2b09b697193b182dd9b"
+        },
+        "sources": [
+          {
+            "url": "https://tibo.dog/assets/endgame-sim-CefNBFg5.js",
+            "sha256": "d78e5134bfbe144cfb38da9b10648d55d40119d47ac7f2b09b697193b182dd9b"
+          }
+        ],
+        "scope": "Standard/Normal s1/s2/s3; original pack spawners/steering with supplied member/leader/elite roles, positions, clocks, empty props and attack timers. No natural encounter, reward writes, survival/DPS/server/device or Nightmare claims. Checks for this entity: [\"leader role: spawn stats, outside/equal range, crouch boundary, locked lane, invincibility and damage swap, duration/recovery, retry delay, supplied boulder interrupt with .8s recovery\",\"elite role: spawn stats, outside/equal range, crouch boundary, locked lane, invincibility and damage swap, duration/recovery, retry delay, supplied boulder interrupt with .8s recovery\",\"leader: elite-only emitter creation/first pattern, alpha death scatters, member flee duration\",\"elite: elite-only emitter creation/first pattern, alpha death scatters, member flee duration\"]"
+      },
+      {
+        "file": "tools/probe-hunt-packs.mjs",
+        "command": "node tools/probe-hunt-packs.mjs main-8zbhOvtE.js",
+        "main": "main-8zbhOvtE.js",
+        "definitionSha256": "6c7ca434825848f3360a0183ef2c0b6509d4e7f1cb6c4c05ec4ebc465af2e60d",
+        "scriptSha256": "dd8a8c04e58a6a54da24821c69469932fd8e2f7df27d6f0754732471e4c7fd6a",
+        "source": {
+          "url": "https://tibo.dog/assets/endgame-sim-C0aS1dIG.js",
+          "sha256": "d29a669e399399ae1414fdab2355f0fe43d65c5db70fd9f73ddd52fee2bf4920"
+        },
+        "sources": [
+          {
+            "url": "https://tibo.dog/assets/endgame-sim-C0aS1dIG.js",
+            "sha256": "d29a669e399399ae1414fdab2355f0fe43d65c5db70fd9f73ddd52fee2bf4920"
+          }
+        ],
+        "scope": "Standard/Normal s1/s2/s3; original pack spawners/steering with supplied member/leader/elite roles, positions, clocks, empty props and attack timers. No natural encounter, reward writes, survival/DPS/server/device or Nightmare claims. Checks for this entity: [\"leader role: spawn stats, outside/equal range, crouch boundary, locked lane, invincibility and damage swap, duration/recovery, retry delay, supplied boulder interrupt with .8s recovery\",\"elite role: spawn stats, outside/equal range, crouch boundary, locked lane, invincibility and damage swap, duration/recovery, retry delay, supplied boulder interrupt with .8s recovery\",\"leader: elite-only emitter creation/first pattern, alpha death scatters, member flee duration\",\"elite: elite-only emitter creation/first pattern, alpha death scatters, member flee duration\"]"
+      }
+    ],
+    "enemy:stag-beetle": [
+      {
+        "file": "tools/probe-hunt-packs.mjs",
+        "command": "node tools/probe-hunt-packs.mjs main-DwGb2BE_.js",
+        "main": "main-DwGb2BE_.js",
+        "definitionSha256": "cc83877a2cc6c3f6638ee051d42806a9d768ede6cf1104bdf45f3d0d2f52cdc6",
+        "scriptSha256": "dd8a8c04e58a6a54da24821c69469932fd8e2f7df27d6f0754732471e4c7fd6a",
+        "source": {
+          "url": "https://tibo.dog/assets/endgame-sim-CefNBFg5.js",
+          "sha256": "d78e5134bfbe144cfb38da9b10648d55d40119d47ac7f2b09b697193b182dd9b"
+        },
+        "sources": [
+          {
+            "url": "https://tibo.dog/assets/endgame-sim-CefNBFg5.js",
+            "sha256": "d78e5134bfbe144cfb38da9b10648d55d40119d47ac7f2b09b697193b182dd9b"
+          }
+        ],
+        "scope": "Standard/Normal s1/s2/s3; original pack spawners/steering with supplied member/leader/elite roles, positions, clocks, empty props and attack timers. No natural encounter, reward writes, survival/DPS/server/device or Nightmare claims. Checks for this entity: [\"none role: spawn stats, outside/equal range, crouch boundary, locked lane, invincibility and damage swap, duration/recovery, retry delay, supplied boulder interrupt with .8s recovery\"]"
+      },
+      {
+        "file": "tools/probe-hunt-packs.mjs",
+        "command": "node tools/probe-hunt-packs.mjs main-8zbhOvtE.js",
+        "main": "main-8zbhOvtE.js",
+        "definitionSha256": "cc83877a2cc6c3f6638ee051d42806a9d768ede6cf1104bdf45f3d0d2f52cdc6",
+        "scriptSha256": "dd8a8c04e58a6a54da24821c69469932fd8e2f7df27d6f0754732471e4c7fd6a",
+        "source": {
+          "url": "https://tibo.dog/assets/endgame-sim-C0aS1dIG.js",
+          "sha256": "d29a669e399399ae1414fdab2355f0fe43d65c5db70fd9f73ddd52fee2bf4920"
+        },
+        "sources": [
+          {
+            "url": "https://tibo.dog/assets/endgame-sim-C0aS1dIG.js",
+            "sha256": "d29a669e399399ae1414fdab2355f0fe43d65c5db70fd9f73ddd52fee2bf4920"
+          }
+        ],
+        "scope": "Standard/Normal s1/s2/s3; original pack spawners/steering with supplied member/leader/elite roles, positions, clocks, empty props and attack timers. No natural encounter, reward writes, survival/DPS/server/device or Nightmare claims. Checks for this entity: [\"none role: spawn stats, outside/equal range, crouch boundary, locked lane, invincibility and damage swap, duration/recovery, retry delay, supplied boulder interrupt with .8s recovery\"]"
+      }
+    ],
+    "enemy:alley-raccoon": [
+      {
+        "file": "tools/probe-hunt-packs.mjs",
+        "command": "node tools/probe-hunt-packs.mjs main-DwGb2BE_.js",
+        "main": "main-DwGb2BE_.js",
+        "definitionSha256": "aee23d68377e78b632a8bdf699b2c43edc2902af4fbc598ff529e02fdee1bf69",
+        "scriptSha256": "dd8a8c04e58a6a54da24821c69469932fd8e2f7df27d6f0754732471e4c7fd6a",
+        "source": {
+          "url": "https://tibo.dog/assets/endgame-sim-CefNBFg5.js",
+          "sha256": "d78e5134bfbe144cfb38da9b10648d55d40119d47ac7f2b09b697193b182dd9b"
+        },
+        "sources": [
+          {
+            "url": "https://tibo.dog/assets/endgame-sim-CefNBFg5.js",
+            "sha256": "d78e5134bfbe144cfb38da9b10648d55d40119d47ac7f2b09b697193b182dd9b"
+          }
+        ],
+        "scope": "Standard/Normal s1/s2/s3; original pack spawners/steering with supplied member/leader/elite roles, positions, clocks, empty props and attack timers. No natural encounter, reward writes, survival/DPS/server/device or Nightmare claims. Checks for this entity: [\"none role: spawn stats, outside/equal range, crouch boundary, locked lane, invincibility and damage swap, duration/recovery, retry delay, supplied boulder interrupt with .8s recovery\",\"leader: elite-only emitter creation/first pattern, alpha death scatters, member flee duration\",\"elite: elite-only emitter creation/first pattern, alpha death scatters, member flee duration\"]"
+      },
+      {
+        "file": "tools/probe-hunt-packs.mjs",
+        "command": "node tools/probe-hunt-packs.mjs main-8zbhOvtE.js",
+        "main": "main-8zbhOvtE.js",
+        "definitionSha256": "aee23d68377e78b632a8bdf699b2c43edc2902af4fbc598ff529e02fdee1bf69",
+        "scriptSha256": "dd8a8c04e58a6a54da24821c69469932fd8e2f7df27d6f0754732471e4c7fd6a",
+        "source": {
+          "url": "https://tibo.dog/assets/endgame-sim-C0aS1dIG.js",
+          "sha256": "d29a669e399399ae1414fdab2355f0fe43d65c5db70fd9f73ddd52fee2bf4920"
+        },
+        "sources": [
+          {
+            "url": "https://tibo.dog/assets/endgame-sim-C0aS1dIG.js",
+            "sha256": "d29a669e399399ae1414fdab2355f0fe43d65c5db70fd9f73ddd52fee2bf4920"
+          }
+        ],
+        "scope": "Standard/Normal s1/s2/s3; original pack spawners/steering with supplied member/leader/elite roles, positions, clocks, empty props and attack timers. No natural encounter, reward writes, survival/DPS/server/device or Nightmare claims. Checks for this entity: [\"none role: spawn stats, outside/equal range, crouch boundary, locked lane, invincibility and damage swap, duration/recovery, retry delay, supplied boulder interrupt with .8s recovery\",\"leader: elite-only emitter creation/first pattern, alpha death scatters, member flee duration\",\"elite: elite-only emitter creation/first pattern, alpha death scatters, member flee duration\"]"
+      }
+    ],
+    "enemy:raccoon-boss": [
+      {
+        "file": "tools/probe-hunt-packs.mjs",
+        "command": "node tools/probe-hunt-packs.mjs main-DwGb2BE_.js",
+        "main": "main-DwGb2BE_.js",
+        "definitionSha256": "20bb1c67f2e8d1c557bae19bfd85e5db84fe301b57c3ca4a90256baee9895c45",
+        "scriptSha256": "dd8a8c04e58a6a54da24821c69469932fd8e2f7df27d6f0754732471e4c7fd6a",
+        "source": {
+          "url": "https://tibo.dog/assets/endgame-sim-CefNBFg5.js",
+          "sha256": "d78e5134bfbe144cfb38da9b10648d55d40119d47ac7f2b09b697193b182dd9b"
+        },
+        "sources": [
+          {
+            "url": "https://tibo.dog/assets/endgame-sim-CefNBFg5.js",
+            "sha256": "d78e5134bfbe144cfb38da9b10648d55d40119d47ac7f2b09b697193b182dd9b"
+          }
+        ],
+        "scope": "Standard/Normal s1/s2/s3; original pack spawners/steering with supplied member/leader/elite roles, positions, clocks, empty props and attack timers. No natural encounter, reward writes, survival/DPS/server/device or Nightmare claims. Checks for this entity: [\"leader role: spawn stats, outside/equal range, crouch boundary, locked lane, invincibility and damage swap, duration/recovery, retry delay, supplied boulder interrupt with .8s recovery\",\"elite role: spawn stats, outside/equal range, crouch boundary, locked lane, invincibility and damage swap, duration/recovery, retry delay, supplied boulder interrupt with .8s recovery\",\"leader: elite-only emitter creation/first pattern, alpha death scatters, member flee duration\",\"elite: elite-only emitter creation/first pattern, alpha death scatters, member flee duration\"]"
+      },
+      {
+        "file": "tools/probe-hunt-packs.mjs",
+        "command": "node tools/probe-hunt-packs.mjs main-8zbhOvtE.js",
+        "main": "main-8zbhOvtE.js",
+        "definitionSha256": "20bb1c67f2e8d1c557bae19bfd85e5db84fe301b57c3ca4a90256baee9895c45",
+        "scriptSha256": "dd8a8c04e58a6a54da24821c69469932fd8e2f7df27d6f0754732471e4c7fd6a",
+        "source": {
+          "url": "https://tibo.dog/assets/endgame-sim-C0aS1dIG.js",
+          "sha256": "d29a669e399399ae1414fdab2355f0fe43d65c5db70fd9f73ddd52fee2bf4920"
+        },
+        "sources": [
+          {
+            "url": "https://tibo.dog/assets/endgame-sim-C0aS1dIG.js",
+            "sha256": "d29a669e399399ae1414fdab2355f0fe43d65c5db70fd9f73ddd52fee2bf4920"
+          }
+        ],
+        "scope": "Standard/Normal s1/s2/s3; original pack spawners/steering with supplied member/leader/elite roles, positions, clocks, empty props and attack timers. No natural encounter, reward writes, survival/DPS/server/device or Nightmare claims. Checks for this entity: [\"leader role: spawn stats, outside/equal range, crouch boundary, locked lane, invincibility and damage swap, duration/recovery, retry delay, supplied boulder interrupt with .8s recovery\",\"elite role: spawn stats, outside/equal range, crouch boundary, locked lane, invincibility and damage swap, duration/recovery, retry delay, supplied boulder interrupt with .8s recovery\",\"leader: elite-only emitter creation/first pattern, alpha death scatters, member flee duration\",\"elite: elite-only emitter creation/first pattern, alpha death scatters, member flee duration\"]"
+      }
     ]
   },
   "reports": [

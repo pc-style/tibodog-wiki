@@ -7,19 +7,21 @@ import { join } from 'node:path';
 const read = (p) => readFileSync(p, 'utf8');
 const hash = (s) => createHash('sha256').update(s).digest('hex');
 const build = JSON.parse(read('data/build.json'));
-assert.equal(build.main, 'main-DwGb2BE_.js', 'templates require a consumer review on a new build');
+const huntOnly = process.argv.includes('--hunt-only');
+assert.ok(build.main === 'main-DwGb2BE_.js' || (huntOnly && build.main === 'main-8zbhOvtE.js'), 'templates require a consumer review on a new build');
 const registry = JSON.parse(read('data/registry.json'));
 const write = process.argv.includes('--write');
-const inputs = process.argv.slice(2).filter((s) => s !== '--write');
-assert.equal(inputs.length, 2, 'pass mechanics and endgame probe JSON results');
+const inputs = process.argv.slice(2).filter((s) => !['--write', '--hunt-only'].includes(s));
+assert.ok(huntOnly ? inputs.length === 1 : inputs.length === 2 || inputs.length === 3, 'pass mechanics/endgame results, or --hunt-only and one Hunt result');
 const outputs = new Map();
 const assets = join('.cache', build.main.replace('.js', ''), 'assets');
 const cite = (file, quote) => {
+  if (build.main === 'main-8zbhOvtE.js' && file === 'titan.hot-CjjRSbsl.js') file = 'titan.hot-BQuNhy4d.js';
   assert.ok(read(join(assets, file)).includes(quote), `missing source quote: ${file}: ${quote}`);
   return ` <small>[${file}: \`\` ${quote} \`\`]</small>`;
 };
 const sim = (q) => cite('sim-QJ0yqR8B.js', q);
-const end = (q) => cite('endgame-sim-CefNBFg5.js', q);
+const end = (q) => cite(build.main === 'main-DwGb2BE_.js' ? 'endgame-sim-CefNBFg5.js' : 'endgame-sim-C0aS1dIG.js', q);
 const shell = (q) => cite('shell-DIs0xeJm.js', q);
 const court = (q) => cite('court-CdeOBUZA.js', q);
 const controls = 'Controlled checks on `main-DwGb2BE_.js`, Standard/Normal, seeds `s1/s2/s3`: `node tools/probe-endgame-roles.mjs` used original phase constructors, spawners and consumers with supplied roles, clocks, positions and HP. These are client-rule checks, not a naturally reached encounter, survival advice, Nightmare timing or server verification.';
@@ -28,7 +30,7 @@ const evidence = JSON.parse(read('data/coverage-evidence.json'));
 const records = new Map();
 for (const [index, input] of inputs.entries()) {
   const result = JSON.parse(read(input));
-  const file = index === 0 ? 'tools/probe-mechanics-groups.mjs' : 'tools/probe-endgame-roles.mjs';
+  const file = huntOnly ? 'tools/probe-hunt-packs.mjs' : ['tools/probe-mechanics-groups.mjs', 'tools/probe-endgame-roles.mjs', 'tools/probe-hunt-packs.mjs'][index];
   assert.equal(result.main, build.main);
   assert.equal(result.scriptSha256, hash(read(file)), 'results must match retained script');
   assert.equal(result.cases, result.rows.length);
@@ -39,14 +41,16 @@ for (const [index, input] of inputs.entries()) {
     assert.deepEqual([...new Set(rows.map((r) => r.seed))].sort(), ['s1', 's2', 's3']);
     const [kind, id] = key.split(':');
     const def = registry[groups[kind]].find((e) => e.id === id); assert.ok(def, key);
+    if (result.definitions) assert.equal(result.definitions[key], hash(JSON.stringify(def)), `original-client definition differs: ${key}`);
     const entry = { file, command: `node ${file} ${build.main}`, main: build.main,
       definitionSha256: hash(JSON.stringify(def)), scriptSha256: result.scriptSha256,
-      source: sources[0], sources, scope: `${result.setup} Checks for this entity: ${JSON.stringify(rows[0].checks)}` };
+      source: sources[0], sources, scope: `${result.setup} Checks for this entity: ${JSON.stringify(result.definitions ? [...new Set(rows.map((r) => r.checks))] : rows[0].checks)}` };
     const old = (evidence.scenarios[key] ?? []).filter((e) => e.main !== build.main || e.file !== file);
     evidence.scenarios[key] = [...old, entry];
     records.set(key, [...(records.get(key) ?? []), entry]);
   }
 }
+if (!huntOnly) {
 for (const b of registry.biomes.filter((b) => ['russet-moor', 'vinegar-shoals', 'duchess-gardens', 'roast-caldera'].includes(b.id))) {
   const h = b.hazard, slow = h.kind === 'slow';
   const effect = slow
@@ -84,6 +88,28 @@ for (const d of registry.enemies.filter((d) => d.id.startsWith('armoured-'))) {
   outputs.set(`data/prose/enemies/${d.id}.md`, `## How it works\n\nThis is a **Shell beast**, not the Court version of this species. It chases until Tibo is strictly inside **${b.dashRange} units** and its attack timer is ready. It then stops for a 0.5-second Normal windup, locks the direction toward Tibo, and charges at **${b.dashSpeed} units/s** for about **${(1.3 * b.dashRange / b.dashSpeed).toFixed(3)} s**. Moving sideways after the lock does not turn the charge. The nominal charge travel is 1.3 times the trigger range (${1.3 * b.dashRange} units); it is not the trigger range itself. After charging, it returns to chasing with a 1.6-second attack retry timer.${sim('if(s>=n||o>0)return;')}${sim('i.timer[t]=1.3*n/r')}${sim('i.state[t]=0,i.timer[t]=1.6')}\n\nWhile registered and protected in Shell, it takes **10% of ordinary incoming damage**. The attack-state transition from charging back to chasing opens a **1.2-second full-damage window**, then armour returns; exactly at the closing deadline it is protected again. This is not permanent damage resistance attached to any enemy with the same catalog definition.${shell('protectedDamage:.1,beastOpeningSec:1.2')}${end('a===2&&o===0&&(t.openUntil[i]=e.runClock+Pt(e).beastOpeningSec,t.stats.openings++)')}\n\nControlled checks on \`main-DwGb2BE_.js\`, Standard/Normal, seeds \`s1/s2/s3\`: \`node tools/probe-mechanics-groups.mjs\` tested this species' strict range boundary, windup, charge duration, moved-player locked-aim control and recovery. \`node tools/probe-endgame-roles.mjs\` checked protected/open damage factors, the attack-end transition and both sides of armour expiry. These are supplied original-client fixtures, not naturally reached Shell fights, Nightmare timings, DPS or survival comparisons. Phase spawning can replace catalog HP; use [Shell](/endgame#shell), not the raw HP alone.\n`);
 }
 outputs.set('data/prose/enemies/fuse-totem.md', `## How it works\n\nFuse Totem is a stationary Shell hazard. Its phase spawner starts a **six-second fuse** and sets speed to zero; the catalog \`tank\` behavior is not a walking attack. At the fuse deadline it explodes once, then removes itself. Destroying the registered totem before that deadline cancels the explosion; a reused pool slot does not inherit its fuse.${cite('shell-CHXbzErl.js', 'n.fuseUntil[t]=e.runClock+X(e).fuseSec,r.speed[t]=0')}\n\nThe blast checks Tibo’s **centre within radius 180, including equality**, not his body radius. It attempts the totem’s scaled damage through the normal hit resolver, so avoidance and dash shielding still matter; this is not guaranteed damage or an unavoidable server effect. The warning begins before detonation, not at spawn.${shell('fuseSec:6,blastLeadSec:.8,blastRadius:180')}${cite('titan.hot-CjjRSbsl.js', 'a*a+s*s<=T.blastRadius*T.blastRadius')}\n\n${controls} The fixture checked original totem spawning, zero speed, no early blast, detonation at the six-second boundary and destroyed-totem cancellation. Blast damage, warning rendering and natural-run survival were not measured.\n`);
+}
+if (huntOnly || inputs.length === 3) {
+  const families = {
+    'pack-rat': ['rat pack', 85], 'hunt-crow': ['crow murder', 90],
+    'stag-beetle': ['beetle band', 90], 'alley-raccoon': ['raccoon gang', 80],
+    'rat-chief': ['rat pack', 105], 'crow-elder': ['crow murder', 130], 'raccoon-boss': ['raccoon gang', 95],
+  };
+  const patterns = {
+    'rat-chief': 'Rat Chief alternates three aimed single shots (speed 120, 0.3 s apart) with a three-shot fan (speed 110, total arc 0.7 radians). The rest after the final scheduled burst is 1.4 s. It only starts a volley at distances 60–170.',
+    'crow-elder': 'Crow Elder alternates clockwise and anticlockwise spirals: four arms, six bursts at 0.3 s intervals, speed 66. The bullets curve at ±0.8 radians/s for the first 1.6 s. The rest after the final scheduled burst is 1.5 s. It can start a volley up to distance 170.',
+    'raccoon-boss': 'Raccoon Boss alternates a 12-shot ring at speed 62 with a 14-shot ring at speed 74. The rest after each ring is 1.6 s. It only starts a volley at distances 50–170.',
+  };
+  for (const d of registry.enemies.filter((d) => families[d.id])) {
+    const b = d.behavior.lunge, alpha = !!patterns[d.id], [family, ring] = families[d.id];
+    const role = alpha
+      ? `This is the **${family}'s alpha**, despite the catalog placing it among ordinary enemies${d.id === 'raccoon-boss' ? ' and its name saying “Boss”' : ''}. It can spawn as an ordinary leader or as an elite. It circles and strafes around a standoff distance of ${ring} rather than blindly walking into Tibo. Both roles can lunge; **only the elite fires the projectile pattern below**.`
+      : `This is a **${family} member**, not an independent always-chasing pest. It first approaches a slot around Tibo at radius ${ring}. A pack without a surviving alpha closes in; a pack with an alpha holds its formation and chooses lungers. Members entering close mode receive an initial 0–0.35 s stagger. A pack-wide crouch guard and a 0.3-second planned-leap separation gate prevent unrestricted simultaneous lunges; nearby members on sufficiently separated sides can join a volley.`;
+    const detail = alpha ? `\n\n### Elite projectile attack\n\n${patterns[d.id]} Every pattern has a **0.8-second telegraph**. The first engagement within 170 units delays firing by at least 0.4 s. Shots use the ordinary emitter/bullet path; they are not instant damage. The ordinary path admits a volley only when **currently visible bullets + proposed count × bursts ≤ 45**. This does not reserve all other pending emitters or guarantee a global maximum of 45 bullets. The separate Burrow budget applies when active; a refused volley retries after 0.5 s. After a successful cast the alpha reduces its steering-speed factor to 30% through the scheduled firing period plus 0.2 s; the added player-velocity lead is separate. Normal leaders have none of these projectile volleys.${end('if(n.alphaKind[i]===gt.elite&&p&&se(e,u,d)&&Br(e,t,n,r)')}${end('me(e)+t.count*n<=45')}${end('n.patternNext[i]=t.time+.5')}${end('telegraph:Or')}\n\nThe retained fixture checks the **first** pattern's original emitter parameters and the normal-leader no-projectile control. Alternation, curve travel, bullet-admission saturation, and real hit damage are source-audited, not measured by this fixture.` : '';
+    const text = `## How it works\n\n${role}${end(alpha ? 'i.nextLunge[c]=e.time+3.5' : 'Math.abs(Jn(h-Wn[e]))<1.2')}\n\nWhen the relevant pack/individual timers permit, a target **at or inside ${b.range} units** starts a stationary ${b.crouch}-second Normal crouch. Aim is fixed then, with a lead from Tibo's velocity (sampled and capped at 70 units/s), not continuously homed during flight. The leap's distance is the predicted target distance plus 20, clamped between 90 and ${b.distance}; its speed is **${b.speed} units/s**, so ${b.distance} is a maximum travel distance, not the trigger range.${end('c.leapLen[n]=_e(f+20,90,i.distance),c.leapSpeed[n]=i.speed')}${end('c>70&&(a*=70/c,s*=70/c)')}\n\nDuring the leap it is **invincible** and contact damage switches to its scaled lunge damage (raw ${b.damage}, versus ordinary raw contact ${d.damage}). At the end it loses invincibility, restores ordinary contact damage and stops for ${b.recover} s of recovery. ${alpha ? 'An alpha gets a further 3.5-second individual lunge delay after recovery.' : 'A member gets a further random 3.6–5.4-second individual lunge delay after recovery; pack timing can postpone it more.'} A recognised solid prop in the next movement step interrupts a leap and uses a separate **0.8-second recovery**. This does not mean every decorative object or every obstruction blocks it.${end('r.damage[o]=i.leapDmg[o],r.set(o,a.Invincible)')}${end('ir(e,n,r)}(t,n,r,M.rockStunSec)')}\n\nKilling an alpha scatters its surviving pack: members initially flee for 1.5–2 s at 55% speed, then may circle at 25% speed before resuming chase/lunge. The return is staggered by member order (0.45 s per earlier member), not a permanent fear effect. A slot-generation check prevents a replacement enemy from inheriting a dead pack member's role.${end('n.chaseAt[r]=n.fleeUntil[r]+.45*n.order[a]')}${cite('titan.hot-CjjRSbsl.js', 'e.memberId[n]!==t.enemies.pool.id(n)?v.none:e.role[n]')}\n\nThe catalog HP/speed is not the whole Hunt encounter. The actual Hunt release spawner applies a speed floor of 1.1 × Tibo's configured walking speed × movement multiplier and replaces member HP with a difficulty/time/ladder-scaled Hunt budget. Alpha HP also depends on leader versus elite status and curse. These spawn overrides do not change the lunge's listed speed.${end('r.speed[o]=Math.max(r.speed[o]??0,i)')}${end('tt(n,e,o)===S.member&&(r.maxHp[o]=Cr(e),r.hp[o]=r.maxHp[o]??0)')}${detail}\n\nControlled checks on \`main-DwGb2BE_.js\`, Standard/Normal, seeds \`s1/s2/s3\`: \`node tools/probe-hunt-packs.mjs\` uses original pack spawners and steering with supplied roles, clocks, attack timers and positions. It checks outside/equal trigger range, crouch deadline, moved-player locked aim, invincibility/damage restoration, recovery/retry and a supplied boulder interruption${alpha ? ', plus leader versus elite emitter creation and first-volley parameters' : ''}. Alpha-loss/flee controls cover rat, crow and raccoon packs; beetles have no alpha. These are client-rule fixtures, not naturally reached encounters, survival/DPS, reward/server/device or Nightmare verification. Natural formations, cooperative volley selection, phase spawn scaling and complete obstacle routing remain source-audited rather than measured here.\n`;
+    outputs.set(`data/prose/enemies/${d.id}.md`, text.replaceAll('main-DwGb2BE_.js', build.main));
+  }
+}
 outputs.set('data/coverage-evidence.json', JSON.stringify(evidence, null, 2) + '\n');
 for (const [file, text] of outputs) {
   if (write) writeFileSync(file, text);
