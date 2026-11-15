@@ -2295,6 +2295,750 @@
         ],
         "scope": "Standard/Normal,s1/s2/s3; supplied level-one base weapon and rune card; Amount bonus0/3; two static targets at30/70 with maxHP100/300,currentHP100/1. Original selection, stat computation and tick/dispatch consumers; six volleys each, original cooldowns. Not natural acquisition,max-level/evolved/union behavior,projectile movement/collision/status/bounce/landing hits,DPS,survival,server or device validation. No reward writes; network forbidden."
       }
+    ],
+    "rune:fry-lance-heavy-lance": [
+      {
+        "file": "tools/probe-area-runes.mjs",
+        "command": "node tools/probe-area-runes.mjs main-8zbhOvtE.js",
+        "main": "main-8zbhOvtE.js",
+        "definitionSha256": "87e4d2f0881b9f2da77407f5d12b467d853a795934ec69f22483300a3f0a273b",
+        "scriptSha256": "f01ab6495473046cf957e7795cde7c1f59281d84231589c6344c8917c453dde0",
+        "source": {
+          "url": "https://tibo.dog/assets/sim-DpazMjS2.js",
+          "sha256": "f6bc620d2ea311a52f90cc280b32c73a2769707859ea1e33c20943b74588677e"
+        },
+        "sources": [
+          {
+            "url": "https://tibo.dog/assets/main-8zbhOvtE.js",
+            "sha256": "7ff8520c6503b9052f8b53013c30af37b5c452ecea7a0d0ed5584eb4f2010478"
+          },
+          {
+            "url": "https://tibo.dog/assets/sim-DpazMjS2.js",
+            "sha256": "f6bc620d2ea311a52f90cc280b32c73a2769707859ea1e33c20943b74588677e"
+          },
+          {
+            "url": "https://tibo.dog/assets/boot-BnSaTwvC.js",
+            "sha256": "41750d41565912ea467fded28ab76b0bf04e4b53a121072de902522550efd4fd"
+          },
+          {
+            "url": "https://tibo.dog/assets/intro-shared-BzGhBf9a.js",
+            "sha256": "24beb3e16e8da35dea12ed278b80cc83ede70173b8052d97b77c96592421483e"
+          }
+        ],
+        "scope": "Standard/Normal,s1/s2/s3; supplied level-one rune cards,Amount bonus0/3,crit0. Six original attack volleys; stationary aphids,maxHP1m/3m,currentHP1m/10k,radius4. Original resolver,beam geometry,distinct strike picks,Root warning and Gravy pulse/expiration/both body-overlap boundaries. Zone lifetime fixtures isolate one emitted zone. No full-world stepping,natural acquisition,max-level/evolved/union equivalence,moving-target combat,status advancement,DPS,survival,server/device or reward claims. Network blocked; no deaths,pickups or reward handling."
+      },
+      {
+        "file": "tools/probe-area-runes.mjs",
+        "command": "node tools/probe-area-runes.mjs main-C0RlIzyD.js",
+        "main": "main-C0RlIzyD.js",
+        "definitionSha256": "87e4d2f0881b9f2da77407f5d12b467d853a795934ec69f22483300a3f0a273b",
+        "scriptSha256": "062b1994042ea641fab6bedc45b04473e87bd06d2a72adc82cf22ea84a74f78c",
+        "source": {
+          "url": "https://tibo.dog/assets/sim-DfBcZSG3.js",
+          "sha256": "de06b7796c62b4151d54923f0ecce9865da302c7eb72cda63d8e78aa23ce0334"
+        },
+        "sources": [
+          {
+            "url": "https://tibo.dog/assets/main-C0RlIzyD.js",
+            "sha256": "41f1628ed0f8b91ea3d137e62d7b3b624ded1fc1943ab730568b23e9be8d08e5"
+          },
+          {
+            "url": "https://tibo.dog/assets/sim-DfBcZSG3.js",
+            "sha256": "de06b7796c62b4151d54923f0ecce9865da302c7eb72cda63d8e78aa23ce0334"
+          },
+          {
+            "url": "https://tibo.dog/assets/boot-CBEpjPO8.js",
+            "sha256": "fa499d669a1af6f87231bd67b018e386bd070d24c12c36309a5af4409fb17680"
+          },
+          {
+            "url": "https://tibo.dog/assets/intro-shared-BR4uNCoI.js",
+            "sha256": "6756ce430f6a64fe60f129d9b995cf9216d1f3606055ff4f2ad4feea38f8f38f"
+          }
+        ],
+        "scope": "Standard/Normal,s1/s2/s3; supplied level-one rune cards,Amount bonus0/3,crit0. Six original attack volleys; stationary aphids,maxHP1m/3m,currentHP1m/10k,radius4. Original resolver,beam geometry,distinct strike picks,Root warning and Gravy pulse/expiration/both body-overlap boundaries. Zone lifetime fixtures isolate one emitted zone. No full-world stepping,natural acquisition,max-level/evolved/union equivalence,moving-target combat,status advancement,DPS,survival,server/device or reward claims. Network blocked; no deaths,pickups or reward handling."
+      }
+    ],
+    "rune:fry-lance-jouster": [
+      {
+        "file": "tools/probe-area-runes.mjs",
+        "command": "node tools/probe-area-runes.mjs main-8zbhOvtE.js",
+        "main": "main-8zbhOvtE.js",
+        "definitionSha256": "67df8178ec760de7b3a0aaeb2c86331bd7315e46a3949240d6702acddbe4a539",
+        "scriptSha256": "f01ab6495473046cf957e7795cde7c1f59281d84231589c6344c8917c453dde0",
+        "source": {
+          "url": "https://tibo.dog/assets/sim-DpazMjS2.js",
+          "sha256": "f6bc620d2ea311a52f90cc280b32c73a2769707859ea1e33c20943b74588677e"
+        },
+        "sources": [
+          {
+            "url": "https://tibo.dog/assets/main-8zbhOvtE.js",
+            "sha256": "7ff8520c6503b9052f8b53013c30af37b5c452ecea7a0d0ed5584eb4f2010478"
+          },
+          {
+            "url": "https://tibo.dog/assets/sim-DpazMjS2.js",
+            "sha256": "f6bc620d2ea311a52f90cc280b32c73a2769707859ea1e33c20943b74588677e"
+          },
+          {
+            "url": "https://tibo.dog/assets/boot-BnSaTwvC.js",
+            "sha256": "41750d41565912ea467fded28ab76b0bf04e4b53a121072de902522550efd4fd"
+          },
+          {
+            "url": "https://tibo.dog/assets/intro-shared-BzGhBf9a.js",
+            "sha256": "24beb3e16e8da35dea12ed278b80cc83ede70173b8052d97b77c96592421483e"
+          }
+        ],
+        "scope": "Standard/Normal,s1/s2/s3; supplied level-one rune cards,Amount bonus0/3,crit0. Six original attack volleys; stationary aphids,maxHP1m/3m,currentHP1m/10k,radius4. Original resolver,beam geometry,distinct strike picks,Root warning and Gravy pulse/expiration/both body-overlap boundaries. Zone lifetime fixtures isolate one emitted zone. No full-world stepping,natural acquisition,max-level/evolved/union equivalence,moving-target combat,status advancement,DPS,survival,server/device or reward claims. Network blocked; no deaths,pickups or reward handling."
+      },
+      {
+        "file": "tools/probe-area-runes.mjs",
+        "command": "node tools/probe-area-runes.mjs main-C0RlIzyD.js",
+        "main": "main-C0RlIzyD.js",
+        "definitionSha256": "67df8178ec760de7b3a0aaeb2c86331bd7315e46a3949240d6702acddbe4a539",
+        "scriptSha256": "062b1994042ea641fab6bedc45b04473e87bd06d2a72adc82cf22ea84a74f78c",
+        "source": {
+          "url": "https://tibo.dog/assets/sim-DfBcZSG3.js",
+          "sha256": "de06b7796c62b4151d54923f0ecce9865da302c7eb72cda63d8e78aa23ce0334"
+        },
+        "sources": [
+          {
+            "url": "https://tibo.dog/assets/main-C0RlIzyD.js",
+            "sha256": "41f1628ed0f8b91ea3d137e62d7b3b624ded1fc1943ab730568b23e9be8d08e5"
+          },
+          {
+            "url": "https://tibo.dog/assets/sim-DfBcZSG3.js",
+            "sha256": "de06b7796c62b4151d54923f0ecce9865da302c7eb72cda63d8e78aa23ce0334"
+          },
+          {
+            "url": "https://tibo.dog/assets/boot-CBEpjPO8.js",
+            "sha256": "fa499d669a1af6f87231bd67b018e386bd070d24c12c36309a5af4409fb17680"
+          },
+          {
+            "url": "https://tibo.dog/assets/intro-shared-BR4uNCoI.js",
+            "sha256": "6756ce430f6a64fe60f129d9b995cf9216d1f3606055ff4f2ad4feea38f8f38f"
+          }
+        ],
+        "scope": "Standard/Normal,s1/s2/s3; supplied level-one rune cards,Amount bonus0/3,crit0. Six original attack volleys; stationary aphids,maxHP1m/3m,currentHP1m/10k,radius4. Original resolver,beam geometry,distinct strike picks,Root warning and Gravy pulse/expiration/both body-overlap boundaries. Zone lifetime fixtures isolate one emitted zone. No full-world stepping,natural acquisition,max-level/evolved/union equivalence,moving-target combat,status advancement,DPS,survival,server/device or reward claims. Network blocked; no deaths,pickups or reward handling."
+      }
+    ],
+    "rune:fry-lance-long-lance": [
+      {
+        "file": "tools/probe-area-runes.mjs",
+        "command": "node tools/probe-area-runes.mjs main-8zbhOvtE.js",
+        "main": "main-8zbhOvtE.js",
+        "definitionSha256": "9262fa37dd4fb7af9b6684f8c2bdf31326369864a41b3b1b230e7bfbc3fa5303",
+        "scriptSha256": "f01ab6495473046cf957e7795cde7c1f59281d84231589c6344c8917c453dde0",
+        "source": {
+          "url": "https://tibo.dog/assets/sim-DpazMjS2.js",
+          "sha256": "f6bc620d2ea311a52f90cc280b32c73a2769707859ea1e33c20943b74588677e"
+        },
+        "sources": [
+          {
+            "url": "https://tibo.dog/assets/main-8zbhOvtE.js",
+            "sha256": "7ff8520c6503b9052f8b53013c30af37b5c452ecea7a0d0ed5584eb4f2010478"
+          },
+          {
+            "url": "https://tibo.dog/assets/sim-DpazMjS2.js",
+            "sha256": "f6bc620d2ea311a52f90cc280b32c73a2769707859ea1e33c20943b74588677e"
+          },
+          {
+            "url": "https://tibo.dog/assets/boot-BnSaTwvC.js",
+            "sha256": "41750d41565912ea467fded28ab76b0bf04e4b53a121072de902522550efd4fd"
+          },
+          {
+            "url": "https://tibo.dog/assets/intro-shared-BzGhBf9a.js",
+            "sha256": "24beb3e16e8da35dea12ed278b80cc83ede70173b8052d97b77c96592421483e"
+          }
+        ],
+        "scope": "Standard/Normal,s1/s2/s3; supplied level-one rune cards,Amount bonus0/3,crit0. Six original attack volleys; stationary aphids,maxHP1m/3m,currentHP1m/10k,radius4. Original resolver,beam geometry,distinct strike picks,Root warning and Gravy pulse/expiration/both body-overlap boundaries. Zone lifetime fixtures isolate one emitted zone. No full-world stepping,natural acquisition,max-level/evolved/union equivalence,moving-target combat,status advancement,DPS,survival,server/device or reward claims. Network blocked; no deaths,pickups or reward handling."
+      },
+      {
+        "file": "tools/probe-area-runes.mjs",
+        "command": "node tools/probe-area-runes.mjs main-C0RlIzyD.js",
+        "main": "main-C0RlIzyD.js",
+        "definitionSha256": "9262fa37dd4fb7af9b6684f8c2bdf31326369864a41b3b1b230e7bfbc3fa5303",
+        "scriptSha256": "062b1994042ea641fab6bedc45b04473e87bd06d2a72adc82cf22ea84a74f78c",
+        "source": {
+          "url": "https://tibo.dog/assets/sim-DfBcZSG3.js",
+          "sha256": "de06b7796c62b4151d54923f0ecce9865da302c7eb72cda63d8e78aa23ce0334"
+        },
+        "sources": [
+          {
+            "url": "https://tibo.dog/assets/main-C0RlIzyD.js",
+            "sha256": "41f1628ed0f8b91ea3d137e62d7b3b624ded1fc1943ab730568b23e9be8d08e5"
+          },
+          {
+            "url": "https://tibo.dog/assets/sim-DfBcZSG3.js",
+            "sha256": "de06b7796c62b4151d54923f0ecce9865da302c7eb72cda63d8e78aa23ce0334"
+          },
+          {
+            "url": "https://tibo.dog/assets/boot-CBEpjPO8.js",
+            "sha256": "fa499d669a1af6f87231bd67b018e386bd070d24c12c36309a5af4409fb17680"
+          },
+          {
+            "url": "https://tibo.dog/assets/intro-shared-BR4uNCoI.js",
+            "sha256": "6756ce430f6a64fe60f129d9b995cf9216d1f3606055ff4f2ad4feea38f8f38f"
+          }
+        ],
+        "scope": "Standard/Normal,s1/s2/s3; supplied level-one rune cards,Amount bonus0/3,crit0. Six original attack volleys; stationary aphids,maxHP1m/3m,currentHP1m/10k,radius4. Original resolver,beam geometry,distinct strike picks,Root warning and Gravy pulse/expiration/both body-overlap boundaries. Zone lifetime fixtures isolate one emitted zone. No full-world stepping,natural acquisition,max-level/evolved/union equivalence,moving-target combat,status advancement,DPS,survival,server/device or reward claims. Network blocked; no deaths,pickups or reward handling."
+      }
+    ],
+    "rune:root-spikes-big-root": [
+      {
+        "file": "tools/probe-area-runes.mjs",
+        "command": "node tools/probe-area-runes.mjs main-8zbhOvtE.js",
+        "main": "main-8zbhOvtE.js",
+        "definitionSha256": "bd189eb7fb3c6fd0c8f786ec2392c39446501a23e81acd541f88d7dc8f9339c3",
+        "scriptSha256": "f01ab6495473046cf957e7795cde7c1f59281d84231589c6344c8917c453dde0",
+        "source": {
+          "url": "https://tibo.dog/assets/sim-DpazMjS2.js",
+          "sha256": "f6bc620d2ea311a52f90cc280b32c73a2769707859ea1e33c20943b74588677e"
+        },
+        "sources": [
+          {
+            "url": "https://tibo.dog/assets/main-8zbhOvtE.js",
+            "sha256": "7ff8520c6503b9052f8b53013c30af37b5c452ecea7a0d0ed5584eb4f2010478"
+          },
+          {
+            "url": "https://tibo.dog/assets/sim-DpazMjS2.js",
+            "sha256": "f6bc620d2ea311a52f90cc280b32c73a2769707859ea1e33c20943b74588677e"
+          },
+          {
+            "url": "https://tibo.dog/assets/boot-BnSaTwvC.js",
+            "sha256": "41750d41565912ea467fded28ab76b0bf04e4b53a121072de902522550efd4fd"
+          },
+          {
+            "url": "https://tibo.dog/assets/intro-shared-BzGhBf9a.js",
+            "sha256": "24beb3e16e8da35dea12ed278b80cc83ede70173b8052d97b77c96592421483e"
+          }
+        ],
+        "scope": "Standard/Normal,s1/s2/s3; supplied level-one rune cards,Amount bonus0/3,crit0. Six original attack volleys; stationary aphids,maxHP1m/3m,currentHP1m/10k,radius4. Original resolver,beam geometry,distinct strike picks,Root warning and Gravy pulse/expiration/both body-overlap boundaries. Zone lifetime fixtures isolate one emitted zone. No full-world stepping,natural acquisition,max-level/evolved/union equivalence,moving-target combat,status advancement,DPS,survival,server/device or reward claims. Network blocked; no deaths,pickups or reward handling."
+      },
+      {
+        "file": "tools/probe-area-runes.mjs",
+        "command": "node tools/probe-area-runes.mjs main-C0RlIzyD.js",
+        "main": "main-C0RlIzyD.js",
+        "definitionSha256": "bd189eb7fb3c6fd0c8f786ec2392c39446501a23e81acd541f88d7dc8f9339c3",
+        "scriptSha256": "062b1994042ea641fab6bedc45b04473e87bd06d2a72adc82cf22ea84a74f78c",
+        "source": {
+          "url": "https://tibo.dog/assets/sim-DfBcZSG3.js",
+          "sha256": "de06b7796c62b4151d54923f0ecce9865da302c7eb72cda63d8e78aa23ce0334"
+        },
+        "sources": [
+          {
+            "url": "https://tibo.dog/assets/main-C0RlIzyD.js",
+            "sha256": "41f1628ed0f8b91ea3d137e62d7b3b624ded1fc1943ab730568b23e9be8d08e5"
+          },
+          {
+            "url": "https://tibo.dog/assets/sim-DfBcZSG3.js",
+            "sha256": "de06b7796c62b4151d54923f0ecce9865da302c7eb72cda63d8e78aa23ce0334"
+          },
+          {
+            "url": "https://tibo.dog/assets/boot-CBEpjPO8.js",
+            "sha256": "fa499d669a1af6f87231bd67b018e386bd070d24c12c36309a5af4409fb17680"
+          },
+          {
+            "url": "https://tibo.dog/assets/intro-shared-BR4uNCoI.js",
+            "sha256": "6756ce430f6a64fe60f129d9b995cf9216d1f3606055ff4f2ad4feea38f8f38f"
+          }
+        ],
+        "scope": "Standard/Normal,s1/s2/s3; supplied level-one rune cards,Amount bonus0/3,crit0. Six original attack volleys; stationary aphids,maxHP1m/3m,currentHP1m/10k,radius4. Original resolver,beam geometry,distinct strike picks,Root warning and Gravy pulse/expiration/both body-overlap boundaries. Zone lifetime fixtures isolate one emitted zone. No full-world stepping,natural acquisition,max-level/evolved/union equivalence,moving-target combat,status advancement,DPS,survival,server/device or reward claims. Network blocked; no deaths,pickups or reward handling."
+      }
+    ],
+    "rune:root-spikes-deep-roots": [
+      {
+        "file": "tools/probe-area-runes.mjs",
+        "command": "node tools/probe-area-runes.mjs main-8zbhOvtE.js",
+        "main": "main-8zbhOvtE.js",
+        "definitionSha256": "4a8f2660bff2ca8b8196861dbb3cfb3145d73100e9457364ba256f2925ed4e01",
+        "scriptSha256": "f01ab6495473046cf957e7795cde7c1f59281d84231589c6344c8917c453dde0",
+        "source": {
+          "url": "https://tibo.dog/assets/sim-DpazMjS2.js",
+          "sha256": "f6bc620d2ea311a52f90cc280b32c73a2769707859ea1e33c20943b74588677e"
+        },
+        "sources": [
+          {
+            "url": "https://tibo.dog/assets/main-8zbhOvtE.js",
+            "sha256": "7ff8520c6503b9052f8b53013c30af37b5c452ecea7a0d0ed5584eb4f2010478"
+          },
+          {
+            "url": "https://tibo.dog/assets/sim-DpazMjS2.js",
+            "sha256": "f6bc620d2ea311a52f90cc280b32c73a2769707859ea1e33c20943b74588677e"
+          },
+          {
+            "url": "https://tibo.dog/assets/boot-BnSaTwvC.js",
+            "sha256": "41750d41565912ea467fded28ab76b0bf04e4b53a121072de902522550efd4fd"
+          },
+          {
+            "url": "https://tibo.dog/assets/intro-shared-BzGhBf9a.js",
+            "sha256": "24beb3e16e8da35dea12ed278b80cc83ede70173b8052d97b77c96592421483e"
+          }
+        ],
+        "scope": "Standard/Normal,s1/s2/s3; supplied level-one rune cards,Amount bonus0/3,crit0. Six original attack volleys; stationary aphids,maxHP1m/3m,currentHP1m/10k,radius4. Original resolver,beam geometry,distinct strike picks,Root warning and Gravy pulse/expiration/both body-overlap boundaries. Zone lifetime fixtures isolate one emitted zone. No full-world stepping,natural acquisition,max-level/evolved/union equivalence,moving-target combat,status advancement,DPS,survival,server/device or reward claims. Network blocked; no deaths,pickups or reward handling."
+      },
+      {
+        "file": "tools/probe-area-runes.mjs",
+        "command": "node tools/probe-area-runes.mjs main-C0RlIzyD.js",
+        "main": "main-C0RlIzyD.js",
+        "definitionSha256": "4a8f2660bff2ca8b8196861dbb3cfb3145d73100e9457364ba256f2925ed4e01",
+        "scriptSha256": "062b1994042ea641fab6bedc45b04473e87bd06d2a72adc82cf22ea84a74f78c",
+        "source": {
+          "url": "https://tibo.dog/assets/sim-DfBcZSG3.js",
+          "sha256": "de06b7796c62b4151d54923f0ecce9865da302c7eb72cda63d8e78aa23ce0334"
+        },
+        "sources": [
+          {
+            "url": "https://tibo.dog/assets/main-C0RlIzyD.js",
+            "sha256": "41f1628ed0f8b91ea3d137e62d7b3b624ded1fc1943ab730568b23e9be8d08e5"
+          },
+          {
+            "url": "https://tibo.dog/assets/sim-DfBcZSG3.js",
+            "sha256": "de06b7796c62b4151d54923f0ecce9865da302c7eb72cda63d8e78aa23ce0334"
+          },
+          {
+            "url": "https://tibo.dog/assets/boot-CBEpjPO8.js",
+            "sha256": "fa499d669a1af6f87231bd67b018e386bd070d24c12c36309a5af4409fb17680"
+          },
+          {
+            "url": "https://tibo.dog/assets/intro-shared-BR4uNCoI.js",
+            "sha256": "6756ce430f6a64fe60f129d9b995cf9216d1f3606055ff4f2ad4feea38f8f38f"
+          }
+        ],
+        "scope": "Standard/Normal,s1/s2/s3; supplied level-one rune cards,Amount bonus0/3,crit0. Six original attack volleys; stationary aphids,maxHP1m/3m,currentHP1m/10k,radius4. Original resolver,beam geometry,distinct strike picks,Root warning and Gravy pulse/expiration/both body-overlap boundaries. Zone lifetime fixtures isolate one emitted zone. No full-world stepping,natural acquisition,max-level/evolved/union equivalence,moving-target combat,status advancement,DPS,survival,server/device or reward claims. Network blocked; no deaths,pickups or reward handling."
+      }
+    ],
+    "rune:root-spikes-root-quake": [
+      {
+        "file": "tools/probe-area-runes.mjs",
+        "command": "node tools/probe-area-runes.mjs main-8zbhOvtE.js",
+        "main": "main-8zbhOvtE.js",
+        "definitionSha256": "0caa4dc3ed40c613ec9e7685095dd6a3ab3e970d050256d0e8dbe2a7ce41ba41",
+        "scriptSha256": "f01ab6495473046cf957e7795cde7c1f59281d84231589c6344c8917c453dde0",
+        "source": {
+          "url": "https://tibo.dog/assets/sim-DpazMjS2.js",
+          "sha256": "f6bc620d2ea311a52f90cc280b32c73a2769707859ea1e33c20943b74588677e"
+        },
+        "sources": [
+          {
+            "url": "https://tibo.dog/assets/main-8zbhOvtE.js",
+            "sha256": "7ff8520c6503b9052f8b53013c30af37b5c452ecea7a0d0ed5584eb4f2010478"
+          },
+          {
+            "url": "https://tibo.dog/assets/sim-DpazMjS2.js",
+            "sha256": "f6bc620d2ea311a52f90cc280b32c73a2769707859ea1e33c20943b74588677e"
+          },
+          {
+            "url": "https://tibo.dog/assets/boot-BnSaTwvC.js",
+            "sha256": "41750d41565912ea467fded28ab76b0bf04e4b53a121072de902522550efd4fd"
+          },
+          {
+            "url": "https://tibo.dog/assets/intro-shared-BzGhBf9a.js",
+            "sha256": "24beb3e16e8da35dea12ed278b80cc83ede70173b8052d97b77c96592421483e"
+          }
+        ],
+        "scope": "Standard/Normal,s1/s2/s3; supplied level-one rune cards,Amount bonus0/3,crit0. Six original attack volleys; stationary aphids,maxHP1m/3m,currentHP1m/10k,radius4. Original resolver,beam geometry,distinct strike picks,Root warning and Gravy pulse/expiration/both body-overlap boundaries. Zone lifetime fixtures isolate one emitted zone. No full-world stepping,natural acquisition,max-level/evolved/union equivalence,moving-target combat,status advancement,DPS,survival,server/device or reward claims. Network blocked; no deaths,pickups or reward handling."
+      },
+      {
+        "file": "tools/probe-area-runes.mjs",
+        "command": "node tools/probe-area-runes.mjs main-C0RlIzyD.js",
+        "main": "main-C0RlIzyD.js",
+        "definitionSha256": "0caa4dc3ed40c613ec9e7685095dd6a3ab3e970d050256d0e8dbe2a7ce41ba41",
+        "scriptSha256": "062b1994042ea641fab6bedc45b04473e87bd06d2a72adc82cf22ea84a74f78c",
+        "source": {
+          "url": "https://tibo.dog/assets/sim-DfBcZSG3.js",
+          "sha256": "de06b7796c62b4151d54923f0ecce9865da302c7eb72cda63d8e78aa23ce0334"
+        },
+        "sources": [
+          {
+            "url": "https://tibo.dog/assets/main-C0RlIzyD.js",
+            "sha256": "41f1628ed0f8b91ea3d137e62d7b3b624ded1fc1943ab730568b23e9be8d08e5"
+          },
+          {
+            "url": "https://tibo.dog/assets/sim-DfBcZSG3.js",
+            "sha256": "de06b7796c62b4151d54923f0ecce9865da302c7eb72cda63d8e78aa23ce0334"
+          },
+          {
+            "url": "https://tibo.dog/assets/boot-CBEpjPO8.js",
+            "sha256": "fa499d669a1af6f87231bd67b018e386bd070d24c12c36309a5af4409fb17680"
+          },
+          {
+            "url": "https://tibo.dog/assets/intro-shared-BR4uNCoI.js",
+            "sha256": "6756ce430f6a64fe60f129d9b995cf9216d1f3606055ff4f2ad4feea38f8f38f"
+          }
+        ],
+        "scope": "Standard/Normal,s1/s2/s3; supplied level-one rune cards,Amount bonus0/3,crit0. Six original attack volleys; stationary aphids,maxHP1m/3m,currentHP1m/10k,radius4. Original resolver,beam geometry,distinct strike picks,Root warning and Gravy pulse/expiration/both body-overlap boundaries. Zone lifetime fixtures isolate one emitted zone. No full-world stepping,natural acquisition,max-level/evolved/union equivalence,moving-target combat,status advancement,DPS,survival,server/device or reward claims. Network blocked; no deaths,pickups or reward handling."
+      }
+    ],
+    "rune:starch-bolt-big-bolt": [
+      {
+        "file": "tools/probe-area-runes.mjs",
+        "command": "node tools/probe-area-runes.mjs main-8zbhOvtE.js",
+        "main": "main-8zbhOvtE.js",
+        "definitionSha256": "35127ee019dfd3abaffef96b94c15e4ef12944902270bd83e32bf9cf183d5332",
+        "scriptSha256": "f01ab6495473046cf957e7795cde7c1f59281d84231589c6344c8917c453dde0",
+        "source": {
+          "url": "https://tibo.dog/assets/sim-DpazMjS2.js",
+          "sha256": "f6bc620d2ea311a52f90cc280b32c73a2769707859ea1e33c20943b74588677e"
+        },
+        "sources": [
+          {
+            "url": "https://tibo.dog/assets/main-8zbhOvtE.js",
+            "sha256": "7ff8520c6503b9052f8b53013c30af37b5c452ecea7a0d0ed5584eb4f2010478"
+          },
+          {
+            "url": "https://tibo.dog/assets/sim-DpazMjS2.js",
+            "sha256": "f6bc620d2ea311a52f90cc280b32c73a2769707859ea1e33c20943b74588677e"
+          },
+          {
+            "url": "https://tibo.dog/assets/boot-BnSaTwvC.js",
+            "sha256": "41750d41565912ea467fded28ab76b0bf04e4b53a121072de902522550efd4fd"
+          },
+          {
+            "url": "https://tibo.dog/assets/intro-shared-BzGhBf9a.js",
+            "sha256": "24beb3e16e8da35dea12ed278b80cc83ede70173b8052d97b77c96592421483e"
+          }
+        ],
+        "scope": "Standard/Normal,s1/s2/s3; supplied level-one rune cards,Amount bonus0/3,crit0. Six original attack volleys; stationary aphids,maxHP1m/3m,currentHP1m/10k,radius4. Original resolver,beam geometry,distinct strike picks,Root warning and Gravy pulse/expiration/both body-overlap boundaries. Zone lifetime fixtures isolate one emitted zone. No full-world stepping,natural acquisition,max-level/evolved/union equivalence,moving-target combat,status advancement,DPS,survival,server/device or reward claims. Network blocked; no deaths,pickups or reward handling."
+      },
+      {
+        "file": "tools/probe-area-runes.mjs",
+        "command": "node tools/probe-area-runes.mjs main-C0RlIzyD.js",
+        "main": "main-C0RlIzyD.js",
+        "definitionSha256": "35127ee019dfd3abaffef96b94c15e4ef12944902270bd83e32bf9cf183d5332",
+        "scriptSha256": "062b1994042ea641fab6bedc45b04473e87bd06d2a72adc82cf22ea84a74f78c",
+        "source": {
+          "url": "https://tibo.dog/assets/sim-DfBcZSG3.js",
+          "sha256": "de06b7796c62b4151d54923f0ecce9865da302c7eb72cda63d8e78aa23ce0334"
+        },
+        "sources": [
+          {
+            "url": "https://tibo.dog/assets/main-C0RlIzyD.js",
+            "sha256": "41f1628ed0f8b91ea3d137e62d7b3b624ded1fc1943ab730568b23e9be8d08e5"
+          },
+          {
+            "url": "https://tibo.dog/assets/sim-DfBcZSG3.js",
+            "sha256": "de06b7796c62b4151d54923f0ecce9865da302c7eb72cda63d8e78aa23ce0334"
+          },
+          {
+            "url": "https://tibo.dog/assets/boot-CBEpjPO8.js",
+            "sha256": "fa499d669a1af6f87231bd67b018e386bd070d24c12c36309a5af4409fb17680"
+          },
+          {
+            "url": "https://tibo.dog/assets/intro-shared-BR4uNCoI.js",
+            "sha256": "6756ce430f6a64fe60f129d9b995cf9216d1f3606055ff4f2ad4feea38f8f38f"
+          }
+        ],
+        "scope": "Standard/Normal,s1/s2/s3; supplied level-one rune cards,Amount bonus0/3,crit0. Six original attack volleys; stationary aphids,maxHP1m/3m,currentHP1m/10k,radius4. Original resolver,beam geometry,distinct strike picks,Root warning and Gravy pulse/expiration/both body-overlap boundaries. Zone lifetime fixtures isolate one emitted zone. No full-world stepping,natural acquisition,max-level/evolved/union equivalence,moving-target combat,status advancement,DPS,survival,server/device or reward claims. Network blocked; no deaths,pickups or reward handling."
+      }
+    ],
+    "rune:starch-bolt-lightning-rod": [
+      {
+        "file": "tools/probe-area-runes.mjs",
+        "command": "node tools/probe-area-runes.mjs main-8zbhOvtE.js",
+        "main": "main-8zbhOvtE.js",
+        "definitionSha256": "27bf6eab8ac807076cbfc88f94cf463c23103dfd5418e7571c6f685602ab07ba",
+        "scriptSha256": "f01ab6495473046cf957e7795cde7c1f59281d84231589c6344c8917c453dde0",
+        "source": {
+          "url": "https://tibo.dog/assets/sim-DpazMjS2.js",
+          "sha256": "f6bc620d2ea311a52f90cc280b32c73a2769707859ea1e33c20943b74588677e"
+        },
+        "sources": [
+          {
+            "url": "https://tibo.dog/assets/main-8zbhOvtE.js",
+            "sha256": "7ff8520c6503b9052f8b53013c30af37b5c452ecea7a0d0ed5584eb4f2010478"
+          },
+          {
+            "url": "https://tibo.dog/assets/sim-DpazMjS2.js",
+            "sha256": "f6bc620d2ea311a52f90cc280b32c73a2769707859ea1e33c20943b74588677e"
+          },
+          {
+            "url": "https://tibo.dog/assets/boot-BnSaTwvC.js",
+            "sha256": "41750d41565912ea467fded28ab76b0bf04e4b53a121072de902522550efd4fd"
+          },
+          {
+            "url": "https://tibo.dog/assets/intro-shared-BzGhBf9a.js",
+            "sha256": "24beb3e16e8da35dea12ed278b80cc83ede70173b8052d97b77c96592421483e"
+          }
+        ],
+        "scope": "Standard/Normal,s1/s2/s3; supplied level-one rune cards,Amount bonus0/3,crit0. Six original attack volleys; stationary aphids,maxHP1m/3m,currentHP1m/10k,radius4. Original resolver,beam geometry,distinct strike picks,Root warning and Gravy pulse/expiration/both body-overlap boundaries. Zone lifetime fixtures isolate one emitted zone. No full-world stepping,natural acquisition,max-level/evolved/union equivalence,moving-target combat,status advancement,DPS,survival,server/device or reward claims. Network blocked; no deaths,pickups or reward handling."
+      },
+      {
+        "file": "tools/probe-area-runes.mjs",
+        "command": "node tools/probe-area-runes.mjs main-C0RlIzyD.js",
+        "main": "main-C0RlIzyD.js",
+        "definitionSha256": "27bf6eab8ac807076cbfc88f94cf463c23103dfd5418e7571c6f685602ab07ba",
+        "scriptSha256": "062b1994042ea641fab6bedc45b04473e87bd06d2a72adc82cf22ea84a74f78c",
+        "source": {
+          "url": "https://tibo.dog/assets/sim-DfBcZSG3.js",
+          "sha256": "de06b7796c62b4151d54923f0ecce9865da302c7eb72cda63d8e78aa23ce0334"
+        },
+        "sources": [
+          {
+            "url": "https://tibo.dog/assets/main-C0RlIzyD.js",
+            "sha256": "41f1628ed0f8b91ea3d137e62d7b3b624ded1fc1943ab730568b23e9be8d08e5"
+          },
+          {
+            "url": "https://tibo.dog/assets/sim-DfBcZSG3.js",
+            "sha256": "de06b7796c62b4151d54923f0ecce9865da302c7eb72cda63d8e78aa23ce0334"
+          },
+          {
+            "url": "https://tibo.dog/assets/boot-CBEpjPO8.js",
+            "sha256": "fa499d669a1af6f87231bd67b018e386bd070d24c12c36309a5af4409fb17680"
+          },
+          {
+            "url": "https://tibo.dog/assets/intro-shared-BR4uNCoI.js",
+            "sha256": "6756ce430f6a64fe60f129d9b995cf9216d1f3606055ff4f2ad4feea38f8f38f"
+          }
+        ],
+        "scope": "Standard/Normal,s1/s2/s3; supplied level-one rune cards,Amount bonus0/3,crit0. Six original attack volleys; stationary aphids,maxHP1m/3m,currentHP1m/10k,radius4. Original resolver,beam geometry,distinct strike picks,Root warning and Gravy pulse/expiration/both body-overlap boundaries. Zone lifetime fixtures isolate one emitted zone. No full-world stepping,natural acquisition,max-level/evolved/union equivalence,moving-target combat,status advancement,DPS,survival,server/device or reward claims. Network blocked; no deaths,pickups or reward handling."
+      }
+    ],
+    "rune:starch-bolt-storm-front": [
+      {
+        "file": "tools/probe-area-runes.mjs",
+        "command": "node tools/probe-area-runes.mjs main-8zbhOvtE.js",
+        "main": "main-8zbhOvtE.js",
+        "definitionSha256": "eb78e8d9623b551105e1d4120967064876e094df66feac43dce3d9214d59a00d",
+        "scriptSha256": "f01ab6495473046cf957e7795cde7c1f59281d84231589c6344c8917c453dde0",
+        "source": {
+          "url": "https://tibo.dog/assets/sim-DpazMjS2.js",
+          "sha256": "f6bc620d2ea311a52f90cc280b32c73a2769707859ea1e33c20943b74588677e"
+        },
+        "sources": [
+          {
+            "url": "https://tibo.dog/assets/main-8zbhOvtE.js",
+            "sha256": "7ff8520c6503b9052f8b53013c30af37b5c452ecea7a0d0ed5584eb4f2010478"
+          },
+          {
+            "url": "https://tibo.dog/assets/sim-DpazMjS2.js",
+            "sha256": "f6bc620d2ea311a52f90cc280b32c73a2769707859ea1e33c20943b74588677e"
+          },
+          {
+            "url": "https://tibo.dog/assets/boot-BnSaTwvC.js",
+            "sha256": "41750d41565912ea467fded28ab76b0bf04e4b53a121072de902522550efd4fd"
+          },
+          {
+            "url": "https://tibo.dog/assets/intro-shared-BzGhBf9a.js",
+            "sha256": "24beb3e16e8da35dea12ed278b80cc83ede70173b8052d97b77c96592421483e"
+          }
+        ],
+        "scope": "Standard/Normal,s1/s2/s3; supplied level-one rune cards,Amount bonus0/3,crit0. Six original attack volleys; stationary aphids,maxHP1m/3m,currentHP1m/10k,radius4. Original resolver,beam geometry,distinct strike picks,Root warning and Gravy pulse/expiration/both body-overlap boundaries. Zone lifetime fixtures isolate one emitted zone. No full-world stepping,natural acquisition,max-level/evolved/union equivalence,moving-target combat,status advancement,DPS,survival,server/device or reward claims. Network blocked; no deaths,pickups or reward handling."
+      },
+      {
+        "file": "tools/probe-area-runes.mjs",
+        "command": "node tools/probe-area-runes.mjs main-C0RlIzyD.js",
+        "main": "main-C0RlIzyD.js",
+        "definitionSha256": "eb78e8d9623b551105e1d4120967064876e094df66feac43dce3d9214d59a00d",
+        "scriptSha256": "062b1994042ea641fab6bedc45b04473e87bd06d2a72adc82cf22ea84a74f78c",
+        "source": {
+          "url": "https://tibo.dog/assets/sim-DfBcZSG3.js",
+          "sha256": "de06b7796c62b4151d54923f0ecce9865da302c7eb72cda63d8e78aa23ce0334"
+        },
+        "sources": [
+          {
+            "url": "https://tibo.dog/assets/main-C0RlIzyD.js",
+            "sha256": "41f1628ed0f8b91ea3d137e62d7b3b624ded1fc1943ab730568b23e9be8d08e5"
+          },
+          {
+            "url": "https://tibo.dog/assets/sim-DfBcZSG3.js",
+            "sha256": "de06b7796c62b4151d54923f0ecce9865da302c7eb72cda63d8e78aa23ce0334"
+          },
+          {
+            "url": "https://tibo.dog/assets/boot-CBEpjPO8.js",
+            "sha256": "fa499d669a1af6f87231bd67b018e386bd070d24c12c36309a5af4409fb17680"
+          },
+          {
+            "url": "https://tibo.dog/assets/intro-shared-BR4uNCoI.js",
+            "sha256": "6756ce430f6a64fe60f129d9b995cf9216d1f3606055ff4f2ad4feea38f8f38f"
+          }
+        ],
+        "scope": "Standard/Normal,s1/s2/s3; supplied level-one rune cards,Amount bonus0/3,crit0. Six original attack volleys; stationary aphids,maxHP1m/3m,currentHP1m/10k,radius4. Original resolver,beam geometry,distinct strike picks,Root warning and Gravy pulse/expiration/both body-overlap boundaries. Zone lifetime fixtures isolate one emitted zone. No full-world stepping,natural acquisition,max-level/evolved/union equivalence,moving-target combat,status advancement,DPS,survival,server/device or reward claims. Network blocked; no deaths,pickups or reward handling."
+      }
+    ],
+    "rune:gravy-boat-big-spill": [
+      {
+        "file": "tools/probe-area-runes.mjs",
+        "command": "node tools/probe-area-runes.mjs main-8zbhOvtE.js",
+        "main": "main-8zbhOvtE.js",
+        "definitionSha256": "b5c0e8d438f17842e3bf859c686db86fd0521f98d1587310297bd08d9c6f8a04",
+        "scriptSha256": "f01ab6495473046cf957e7795cde7c1f59281d84231589c6344c8917c453dde0",
+        "source": {
+          "url": "https://tibo.dog/assets/sim-DpazMjS2.js",
+          "sha256": "f6bc620d2ea311a52f90cc280b32c73a2769707859ea1e33c20943b74588677e"
+        },
+        "sources": [
+          {
+            "url": "https://tibo.dog/assets/main-8zbhOvtE.js",
+            "sha256": "7ff8520c6503b9052f8b53013c30af37b5c452ecea7a0d0ed5584eb4f2010478"
+          },
+          {
+            "url": "https://tibo.dog/assets/sim-DpazMjS2.js",
+            "sha256": "f6bc620d2ea311a52f90cc280b32c73a2769707859ea1e33c20943b74588677e"
+          },
+          {
+            "url": "https://tibo.dog/assets/boot-BnSaTwvC.js",
+            "sha256": "41750d41565912ea467fded28ab76b0bf04e4b53a121072de902522550efd4fd"
+          },
+          {
+            "url": "https://tibo.dog/assets/intro-shared-BzGhBf9a.js",
+            "sha256": "24beb3e16e8da35dea12ed278b80cc83ede70173b8052d97b77c96592421483e"
+          }
+        ],
+        "scope": "Standard/Normal,s1/s2/s3; supplied level-one rune cards,Amount bonus0/3,crit0. Six original attack volleys; stationary aphids,maxHP1m/3m,currentHP1m/10k,radius4. Original resolver,beam geometry,distinct strike picks,Root warning and Gravy pulse/expiration/both body-overlap boundaries. Zone lifetime fixtures isolate one emitted zone. No full-world stepping,natural acquisition,max-level/evolved/union equivalence,moving-target combat,status advancement,DPS,survival,server/device or reward claims. Network blocked; no deaths,pickups or reward handling."
+      },
+      {
+        "file": "tools/probe-area-runes.mjs",
+        "command": "node tools/probe-area-runes.mjs main-C0RlIzyD.js",
+        "main": "main-C0RlIzyD.js",
+        "definitionSha256": "b5c0e8d438f17842e3bf859c686db86fd0521f98d1587310297bd08d9c6f8a04",
+        "scriptSha256": "062b1994042ea641fab6bedc45b04473e87bd06d2a72adc82cf22ea84a74f78c",
+        "source": {
+          "url": "https://tibo.dog/assets/sim-DfBcZSG3.js",
+          "sha256": "de06b7796c62b4151d54923f0ecce9865da302c7eb72cda63d8e78aa23ce0334"
+        },
+        "sources": [
+          {
+            "url": "https://tibo.dog/assets/main-C0RlIzyD.js",
+            "sha256": "41f1628ed0f8b91ea3d137e62d7b3b624ded1fc1943ab730568b23e9be8d08e5"
+          },
+          {
+            "url": "https://tibo.dog/assets/sim-DfBcZSG3.js",
+            "sha256": "de06b7796c62b4151d54923f0ecce9865da302c7eb72cda63d8e78aa23ce0334"
+          },
+          {
+            "url": "https://tibo.dog/assets/boot-CBEpjPO8.js",
+            "sha256": "fa499d669a1af6f87231bd67b018e386bd070d24c12c36309a5af4409fb17680"
+          },
+          {
+            "url": "https://tibo.dog/assets/intro-shared-BR4uNCoI.js",
+            "sha256": "6756ce430f6a64fe60f129d9b995cf9216d1f3606055ff4f2ad4feea38f8f38f"
+          }
+        ],
+        "scope": "Standard/Normal,s1/s2/s3; supplied level-one rune cards,Amount bonus0/3,crit0. Six original attack volleys; stationary aphids,maxHP1m/3m,currentHP1m/10k,radius4. Original resolver,beam geometry,distinct strike picks,Root warning and Gravy pulse/expiration/both body-overlap boundaries. Zone lifetime fixtures isolate one emitted zone. No full-world stepping,natural acquisition,max-level/evolved/union equivalence,moving-target combat,status advancement,DPS,survival,server/device or reward claims. Network blocked; no deaths,pickups or reward handling."
+      }
+    ],
+    "rune:gravy-boat-deep-dish": [
+      {
+        "file": "tools/probe-area-runes.mjs",
+        "command": "node tools/probe-area-runes.mjs main-8zbhOvtE.js",
+        "main": "main-8zbhOvtE.js",
+        "definitionSha256": "100c5a7cfc1b5275ef4ce5736669022f55d41d0f61fe5817b3d04a65748f907d",
+        "scriptSha256": "f01ab6495473046cf957e7795cde7c1f59281d84231589c6344c8917c453dde0",
+        "source": {
+          "url": "https://tibo.dog/assets/sim-DpazMjS2.js",
+          "sha256": "f6bc620d2ea311a52f90cc280b32c73a2769707859ea1e33c20943b74588677e"
+        },
+        "sources": [
+          {
+            "url": "https://tibo.dog/assets/main-8zbhOvtE.js",
+            "sha256": "7ff8520c6503b9052f8b53013c30af37b5c452ecea7a0d0ed5584eb4f2010478"
+          },
+          {
+            "url": "https://tibo.dog/assets/sim-DpazMjS2.js",
+            "sha256": "f6bc620d2ea311a52f90cc280b32c73a2769707859ea1e33c20943b74588677e"
+          },
+          {
+            "url": "https://tibo.dog/assets/boot-BnSaTwvC.js",
+            "sha256": "41750d41565912ea467fded28ab76b0bf04e4b53a121072de902522550efd4fd"
+          },
+          {
+            "url": "https://tibo.dog/assets/intro-shared-BzGhBf9a.js",
+            "sha256": "24beb3e16e8da35dea12ed278b80cc83ede70173b8052d97b77c96592421483e"
+          }
+        ],
+        "scope": "Standard/Normal,s1/s2/s3; supplied level-one rune cards,Amount bonus0/3,crit0. Six original attack volleys; stationary aphids,maxHP1m/3m,currentHP1m/10k,radius4. Original resolver,beam geometry,distinct strike picks,Root warning and Gravy pulse/expiration/both body-overlap boundaries. Zone lifetime fixtures isolate one emitted zone. No full-world stepping,natural acquisition,max-level/evolved/union equivalence,moving-target combat,status advancement,DPS,survival,server/device or reward claims. Network blocked; no deaths,pickups or reward handling."
+      },
+      {
+        "file": "tools/probe-area-runes.mjs",
+        "command": "node tools/probe-area-runes.mjs main-C0RlIzyD.js",
+        "main": "main-C0RlIzyD.js",
+        "definitionSha256": "100c5a7cfc1b5275ef4ce5736669022f55d41d0f61fe5817b3d04a65748f907d",
+        "scriptSha256": "062b1994042ea641fab6bedc45b04473e87bd06d2a72adc82cf22ea84a74f78c",
+        "source": {
+          "url": "https://tibo.dog/assets/sim-DfBcZSG3.js",
+          "sha256": "de06b7796c62b4151d54923f0ecce9865da302c7eb72cda63d8e78aa23ce0334"
+        },
+        "sources": [
+          {
+            "url": "https://tibo.dog/assets/main-C0RlIzyD.js",
+            "sha256": "41f1628ed0f8b91ea3d137e62d7b3b624ded1fc1943ab730568b23e9be8d08e5"
+          },
+          {
+            "url": "https://tibo.dog/assets/sim-DfBcZSG3.js",
+            "sha256": "de06b7796c62b4151d54923f0ecce9865da302c7eb72cda63d8e78aa23ce0334"
+          },
+          {
+            "url": "https://tibo.dog/assets/boot-CBEpjPO8.js",
+            "sha256": "fa499d669a1af6f87231bd67b018e386bd070d24c12c36309a5af4409fb17680"
+          },
+          {
+            "url": "https://tibo.dog/assets/intro-shared-BR4uNCoI.js",
+            "sha256": "6756ce430f6a64fe60f129d9b995cf9216d1f3606055ff4f2ad4feea38f8f38f"
+          }
+        ],
+        "scope": "Standard/Normal,s1/s2/s3; supplied level-one rune cards,Amount bonus0/3,crit0. Six original attack volleys; stationary aphids,maxHP1m/3m,currentHP1m/10k,radius4. Original resolver,beam geometry,distinct strike picks,Root warning and Gravy pulse/expiration/both body-overlap boundaries. Zone lifetime fixtures isolate one emitted zone. No full-world stepping,natural acquisition,max-level/evolved/union equivalence,moving-target combat,status advancement,DPS,survival,server/device or reward claims. Network blocked; no deaths,pickups or reward handling."
+      }
+    ],
+    "rune:gravy-boat-full-pour": [
+      {
+        "file": "tools/probe-area-runes.mjs",
+        "command": "node tools/probe-area-runes.mjs main-8zbhOvtE.js",
+        "main": "main-8zbhOvtE.js",
+        "definitionSha256": "f14b3fb52b38128f0f452b00c11b3fd10b3afddc79af6b78e294b8449965bed1",
+        "scriptSha256": "f01ab6495473046cf957e7795cde7c1f59281d84231589c6344c8917c453dde0",
+        "source": {
+          "url": "https://tibo.dog/assets/sim-DpazMjS2.js",
+          "sha256": "f6bc620d2ea311a52f90cc280b32c73a2769707859ea1e33c20943b74588677e"
+        },
+        "sources": [
+          {
+            "url": "https://tibo.dog/assets/main-8zbhOvtE.js",
+            "sha256": "7ff8520c6503b9052f8b53013c30af37b5c452ecea7a0d0ed5584eb4f2010478"
+          },
+          {
+            "url": "https://tibo.dog/assets/sim-DpazMjS2.js",
+            "sha256": "f6bc620d2ea311a52f90cc280b32c73a2769707859ea1e33c20943b74588677e"
+          },
+          {
+            "url": "https://tibo.dog/assets/boot-BnSaTwvC.js",
+            "sha256": "41750d41565912ea467fded28ab76b0bf04e4b53a121072de902522550efd4fd"
+          },
+          {
+            "url": "https://tibo.dog/assets/intro-shared-BzGhBf9a.js",
+            "sha256": "24beb3e16e8da35dea12ed278b80cc83ede70173b8052d97b77c96592421483e"
+          }
+        ],
+        "scope": "Standard/Normal,s1/s2/s3; supplied level-one rune cards,Amount bonus0/3,crit0. Six original attack volleys; stationary aphids,maxHP1m/3m,currentHP1m/10k,radius4. Original resolver,beam geometry,distinct strike picks,Root warning and Gravy pulse/expiration/both body-overlap boundaries. Zone lifetime fixtures isolate one emitted zone. No full-world stepping,natural acquisition,max-level/evolved/union equivalence,moving-target combat,status advancement,DPS,survival,server/device or reward claims. Network blocked; no deaths,pickups or reward handling."
+      },
+      {
+        "file": "tools/probe-area-runes.mjs",
+        "command": "node tools/probe-area-runes.mjs main-C0RlIzyD.js",
+        "main": "main-C0RlIzyD.js",
+        "definitionSha256": "f14b3fb52b38128f0f452b00c11b3fd10b3afddc79af6b78e294b8449965bed1",
+        "scriptSha256": "062b1994042ea641fab6bedc45b04473e87bd06d2a72adc82cf22ea84a74f78c",
+        "source": {
+          "url": "https://tibo.dog/assets/sim-DfBcZSG3.js",
+          "sha256": "de06b7796c62b4151d54923f0ecce9865da302c7eb72cda63d8e78aa23ce0334"
+        },
+        "sources": [
+          {
+            "url": "https://tibo.dog/assets/main-C0RlIzyD.js",
+            "sha256": "41f1628ed0f8b91ea3d137e62d7b3b624ded1fc1943ab730568b23e9be8d08e5"
+          },
+          {
+            "url": "https://tibo.dog/assets/sim-DfBcZSG3.js",
+            "sha256": "de06b7796c62b4151d54923f0ecce9865da302c7eb72cda63d8e78aa23ce0334"
+          },
+          {
+            "url": "https://tibo.dog/assets/boot-CBEpjPO8.js",
+            "sha256": "fa499d669a1af6f87231bd67b018e386bd070d24c12c36309a5af4409fb17680"
+          },
+          {
+            "url": "https://tibo.dog/assets/intro-shared-BR4uNCoI.js",
+            "sha256": "6756ce430f6a64fe60f129d9b995cf9216d1f3606055ff4f2ad4feea38f8f38f"
+          }
+        ],
+        "scope": "Standard/Normal,s1/s2/s3; supplied level-one rune cards,Amount bonus0/3,crit0. Six original attack volleys; stationary aphids,maxHP1m/3m,currentHP1m/10k,radius4. Original resolver,beam geometry,distinct strike picks,Root warning and Gravy pulse/expiration/both body-overlap boundaries. Zone lifetime fixtures isolate one emitted zone. No full-world stepping,natural acquisition,max-level/evolved/union equivalence,moving-target combat,status advancement,DPS,survival,server/device or reward claims. Network blocked; no deaths,pickups or reward handling."
+      }
     ]
   },
   "reports": [
