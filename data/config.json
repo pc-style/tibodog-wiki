@@ -61,16 +61,6 @@
   "pickupPush": 27,
   "turnEvery": 30
  },
- "sim.En": {
-  "fps": 14,
-  "dollops": 8,
-  "dollopRadius": 42,
-  "mostDollops": 16,
-  "hop": 10,
-  "reachMin": 0.5,
-  "reachMax": 0.85,
-  "shadow": 2
- },
  "sim.Fi": [
   "enemy:aphid",
   "enemy:beetle-brood",
@@ -142,10 +132,75 @@
   "enemy:armoured-siren-harpy",
   "enemy:fuse-totem"
  ],
+ "sim.Ft": {
+  "rimWidth": 2,
+  "rim": {
+   "lit": "gold",
+   "shade": {
+    "base": "ochre3",
+    "hot": "amber"
+   }
+  },
+  "rimSwatches": {
+   "gold": "#ffd04a",
+   "ochre3": "#d6a556",
+   "amber": "#f2a02c"
+  },
+  "glint": {
+   "base": "white",
+   "hot": "lemon"
+  },
+  "glints": 5,
+  "steam": {
+   "core": "white",
+   "edge": "mist",
+   "tail": "fog"
+  },
+  "mote": {
+   "body": "ochre5",
+   "core": "white"
+  },
+  "riseFrom": 3,
+  "riseBy": 10,
+  "riseSec": 1.3,
+  "hazardBanned": [
+   "gold",
+   "amber",
+   "ochre3",
+   "ochre4",
+   "ochre5",
+   "lemon"
+  ]
+ },
  "sim.Go": {
   "shape": "tall",
   "color": "#b0bec5",
   "sprite": "the-masher"
+ },
+ "sim.Gt": {
+  "mist": "#c8cedc",
+  "white": "#fffaea",
+  "lemon": "#fff08a",
+  "gold": "#ffd04a",
+  "ochre3": "#d6a556",
+  "plum0": "#24112e",
+  "plum1": "#3d1b58",
+  "plum3": "#9258a2",
+  "cyan0": "#2fb8e0",
+  "cyan1": "#8aeaff",
+  "leaf0": "#74ad5c",
+  "leaf1": "#9fcf6e",
+  "moss1": "#4b7a35",
+  "olive3": "#737856",
+  "fog": "#9aa1b8",
+  "sky": "#9cc4ec",
+  "slate": "#2d2c33",
+  "iron": "#47464f",
+  "frost": "#e2ecf4",
+  "fogbank": "#7a7f82",
+  "steel": "#6c7189",
+  "navy2": "#254467",
+  "navy0": "#0c1827"
  },
  "sim.Ho": {
   "startChest": {
@@ -382,44 +437,9 @@
   ]
  },
  "sim.It": {
-  "rimWidth": 2,
-  "rim": {
-   "lit": "gold",
-   "shade": {
-    "base": "ochre3",
-    "hot": "amber"
-   }
-  },
-  "rimSwatches": {
-   "gold": "#ffd04a",
-   "ochre3": "#d6a556",
-   "amber": "#f2a02c"
-  },
-  "glint": {
-   "base": "white",
-   "hot": "lemon"
-  },
-  "glints": 5,
-  "steam": {
-   "core": "white",
-   "edge": "mist",
-   "tail": "fog"
-  },
-  "mote": {
-   "body": "ochre5",
-   "core": "white"
-  },
-  "riseFrom": 3,
-  "riseBy": 10,
-  "riseSec": 1.3,
-  "hazardBanned": [
-   "gold",
-   "amber",
-   "ochre3",
-   "ochre4",
-   "ochre5",
-   "lemon"
-  ]
+  "gold": "#ffd04a",
+  "ochre3": "#d6a556",
+  "amber": "#f2a02c"
  },
  "sim.Ja": [
   "bot:black",
@@ -471,14 +491,7 @@
   "moss1": "#4b7a35",
   "olive3": "#737856",
   "fog": "#9aa1b8",
-  "sky": "#9cc4ec",
-  "slate": "#2d2c33",
-  "iron": "#47464f",
-  "frost": "#e2ecf4",
-  "fogbank": "#7a7f82",
-  "steel": "#6c7189",
-  "navy2": "#254467",
-  "navy0": "#0c1827"
+  "sky": "#9cc4ec"
  },
  "sim.Ln": {
   "radius": [
@@ -523,11 +536,6 @@
   "bossAtSec": 180,
   "familyStartSec": 45
  },
- "sim.Lt": {
-  "gold": "#ffd04a",
-  "ochre3": "#d6a556",
-  "amber": "#f2a02c"
- },
  "sim.Pi": [
   "boss:amusing",
   "boss:beetle-queen",
@@ -556,113 +564,6 @@
   "color": "#90a4ae",
   "sprite": "grater-golem"
  },
- "sim.Qt": [
-  {
-   "set": "space-farmer",
-   "rule": {
-    "kind": "eventHorizon",
-    "maxBulletRadius": 3,
-    "dimSec": 0.5,
-    "stackGain": 0.02,
-    "stackSec": 8,
-    "maxStacks": 50
-   }
-  },
-  {
-   "set": "iron-skillet",
-   "rule": {
-    "kind": "holdTheLine",
-    "reach": 56,
-    "armorPerPest": 3,
-    "twoCap": 12,
-    "fullCap": 30,
-    "swingEverySec": 0.5,
-    "swingOn": "reach",
-    "swingMult": 2,
-    "dash": "brace",
-    "braceSec": 1,
-    "braceCut": 0.6,
-    "cooldownBossCap": 0.35,
-    "keptWalk": 0.9
-   },
-   "pieces": 2
-  },
-  {
-   "set": "mech-pilot",
-   "rule": {
-    "kind": "overdrive",
-    "twoRefund": 0.5,
-    "gapSec": 0.75,
-    "heat": 5,
-    "ventReach": 64,
-    "rate": 0.7,
-    "buffSec": 5
-   },
-   "pieces": 2
-  },
-  {
-   "set": "fry-cook",
-   "rule": {
-    "kind": "ricochet",
-    "jumpsPerPierce": 1,
-    "freeJumps": 1,
-    "setJumps": 2,
-    "maxJumps": 7,
-    "reach": 160,
-    "gain": 0.2,
-    "minSpeed": 120,
-    "hopLifeSec": 0.15,
-    "bounceLifeShare": 0.6
-   }
-  },
-  {
-   "set": "buccaneer",
-   "rule": {
-    "kind": "shipsBell",
-    "periodSec": 4,
-    "dashAfterSec": 1.5,
-    "aimSec": 0.25,
-    "volleys": 1
-   }
-  },
-  {
-   "set": "bog-witch",
-   "rule": {
-    "kind": "spreadingBog",
-    "size": 0.6,
-    "minRadius": 14,
-    "sec": 2,
-    "damage": 3,
-    "cap": 40,
-    "wade": 0.1
-   }
-  },
-  {
-   "set": "storm-sage",
-   "rule": {
-    "kind": "staticStep",
-    "sparkEvery": 20,
-    "maxSparks": 8,
-    "forkReach": 80,
-    "forkDamage": 3,
-    "emptyRecharge": 0.3
-   }
-  },
-  {
-   "set": "pack-ranger",
-   "rule": {
-    "kind": "theHunt",
-    "eliteDamage": 0.3,
-    "quarryDamage": 0.5,
-    "howlRate": 0.1,
-    "howlSec": 1,
-    "rescanSec": 0.5,
-    "emptyRescanSec": 0.1,
-    "bossHitCap": 0.004
-   },
-   "pieces": 2
-  }
- ],
  "sim.Ta": {
   "kind": "migration",
   "every": 60,
@@ -673,6 +574,16 @@
   "xp": 3,
   "life": 18,
   "migrant": "beetle-brood"
+ },
+ "sim.Tn": {
+  "fps": 14,
+  "dollops": 8,
+  "dollopRadius": 42,
+  "mostDollops": 16,
+  "hop": 10,
+  "reachMin": 0.5,
+  "reachMax": 0.85,
+  "shadow": 2
  },
  "sim.To": {
   "critK": 1,
@@ -5657,6 +5568,113 @@
   "byId": "[fn]",
   "of": "[fn]"
  },
+ "sim.Zt": [
+  {
+   "set": "space-farmer",
+   "rule": {
+    "kind": "eventHorizon",
+    "maxBulletRadius": 3,
+    "dimSec": 0.5,
+    "stackGain": 0.02,
+    "stackSec": 8,
+    "maxStacks": 50
+   }
+  },
+  {
+   "set": "iron-skillet",
+   "rule": {
+    "kind": "holdTheLine",
+    "reach": 56,
+    "armorPerPest": 3,
+    "twoCap": 12,
+    "fullCap": 30,
+    "swingEverySec": 0.5,
+    "swingOn": "reach",
+    "swingMult": 2,
+    "dash": "brace",
+    "braceSec": 1,
+    "braceCut": 0.6,
+    "cooldownBossCap": 0.35,
+    "keptWalk": 0.9
+   },
+   "pieces": 2
+  },
+  {
+   "set": "mech-pilot",
+   "rule": {
+    "kind": "overdrive",
+    "twoRefund": 0.5,
+    "gapSec": 0.75,
+    "heat": 5,
+    "ventReach": 64,
+    "rate": 0.7,
+    "buffSec": 5
+   },
+   "pieces": 2
+  },
+  {
+   "set": "fry-cook",
+   "rule": {
+    "kind": "ricochet",
+    "jumpsPerPierce": 1,
+    "freeJumps": 1,
+    "setJumps": 2,
+    "maxJumps": 7,
+    "reach": 160,
+    "gain": 0.2,
+    "minSpeed": 120,
+    "hopLifeSec": 0.15,
+    "bounceLifeShare": 0.6
+   }
+  },
+  {
+   "set": "buccaneer",
+   "rule": {
+    "kind": "shipsBell",
+    "periodSec": 4,
+    "dashAfterSec": 1.5,
+    "aimSec": 0.25,
+    "volleys": 1
+   }
+  },
+  {
+   "set": "bog-witch",
+   "rule": {
+    "kind": "spreadingBog",
+    "size": 0.6,
+    "minRadius": 14,
+    "sec": 2,
+    "damage": 3,
+    "cap": 40,
+    "wade": 0.1
+   }
+  },
+  {
+   "set": "storm-sage",
+   "rule": {
+    "kind": "staticStep",
+    "sparkEvery": 20,
+    "maxSparks": 8,
+    "forkReach": 80,
+    "forkDamage": 3,
+    "emptyRecharge": 0.3
+   }
+  },
+  {
+   "set": "pack-ranger",
+   "rule": {
+    "kind": "theHunt",
+    "eliteDamage": 0.3,
+    "quarryDamage": 0.5,
+    "howlRate": 0.1,
+    "howlSec": 1,
+    "rescanSec": 0.5,
+    "emptyRescanSec": 0.1,
+    "bossHitCap": 0.004
+   },
+   "pieces": 2
+  }
+ ],
  "sim.at": [
   "common",
   "rare",
@@ -5664,6 +5682,14 @@
   "legendary",
   "mythic"
  ],
+ "sim.bn": {
+  "cap": 0,
+  "heldTick": 1,
+  "chance": 2,
+  "life": 3,
+  "snareSec": 4,
+  "sproutAt": 5
+ },
  "sim.ca": {
   "evolutions": [
    {
@@ -6357,6 +6383,16 @@
   "color": "#fbc02d",
   "sprite": "beetle-queen"
  },
+ "sim.on": [
+  "might",
+  "area",
+  "cooldown",
+  "max-hp",
+  "armor",
+  "move-speed",
+  "crit-chance",
+  "recovery"
+ ],
  "sim.ot": {
   "tiers": {
    "common": {
@@ -6582,24 +6618,6 @@
   "color": "#d7b46a",
   "sprite": "sir-strawman"
  },
- "sim.qt": {
-  "mist": "#c8cedc",
-  "white": "#fffaea",
-  "lemon": "#fff08a",
-  "gold": "#ffd04a",
-  "ochre3": "#d6a556",
-  "plum0": "#24112e",
-  "plum1": "#3d1b58",
-  "plum3": "#9258a2",
-  "cyan0": "#2fb8e0",
-  "cyan1": "#8aeaff",
-  "leaf0": "#74ad5c",
-  "leaf1": "#9fcf6e",
-  "moss1": "#4b7a35",
-  "olive3": "#737856",
-  "fog": "#9aa1b8",
-  "sky": "#9cc4ec"
- },
  "sim.rs": {
   "shape": "plush",
   "color": "#f3c6c3",
@@ -6658,16 +6676,6 @@
    "len": 64
   }
  },
- "sim.sn": [
-  "might",
-  "area",
-  "cooldown",
-  "max-hp",
-  "armor",
-  "move-speed",
-  "crit-chance",
-  "recovery"
- ],
  "sim.t": {
   "AlexReveal": "[fn]",
   "ChargeSound": "[fn]",
@@ -7024,14 +7032,6 @@
   "dashCooldown",
   "dashGrace"
  ],
- "sim.xn": {
-  "cap": 0,
-  "heldTick": 1,
-  "chance": 2,
-  "life": 3,
-  "snareSec": 4,
-  "sproutAt": 5
- },
  "sim.zr": {
   "family": "hunt",
   "skill": "positioning",
