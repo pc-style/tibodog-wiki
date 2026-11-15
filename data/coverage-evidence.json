@@ -1,63 +1,1056 @@
 {
   "scenarios": {
-    "item:lightning-spud": [{
-      "file": "tools/probe-targeting-lures.mjs",
-      "command": "node tools/probe-targeting-lures.mjs main-CrJIatJG.js",
-      "main": "main-CrJIatJG.js",
-      "definitionSha256": "a6f1716ab87cfc5b6e4a9f9b7e7c8169fb9e3b5efa91f87528947bb791ddc070",
-      "scriptSha256": "246b19b8f2987254a428fad648f2b38101c952366cb6925f8ba2fc16531c2697",
-      "source": { "url": "https://tibo.dog/assets/sim-lhAs_O8g.js", "sha256": "d379edc61c6a1451bb0ad62f8aa5606cdbdf8671c6d6b60d1de935aca5793376" },
-      "scope": "Build 206, Standard/Normal, s1/s2/s3: six scenario groups. Original gate/hit fixtures check chance boundaries, failed-roll token preservation, burst/refill/cap, three-stack formula, slot/zero controls, splash damage/body-range and no recursion; full Game seeded fixed-target integrations. Forced RNG only in rule fixtures. Not natural proc/drop rates, representative DPS or server behavior."
-    }],
-    "weapon:hash-hawk": [{
-      "file": "tools/probe-targeting-lures.mjs",
-      "command": "node tools/probe-targeting-lures.mjs main-CrJIatJG.js",
-      "main": "main-CrJIatJG.js",
-      "definitionSha256": "2d92cb9c41c9981f4cef336d303d76fb5046795608cff1b1ae943a45b8da4714",
-      "scriptSha256": "246b19b8f2987254a428fad648f2b38101c952366cb6925f8ba2fc16531c2697",
-      "source": { "url": "https://tibo.dog/assets/sim-lhAs_O8g.js", "sha256": "d379edc61c6a1451bb0ad62f8aa5606cdbdf8671c6d6b60d1de935aca5793376" },
-      "scope": "Build 206, Standard/Normal, s1/s2/s3: six scenario groups. Original targeting fixtures check weighted current HP, elite/boss/hidden, body-range boundary, tracked/reused targets; full Game two-bird stagger, impact, post-impact cooldown, no crumbs and supplied Amount pool cap. Not every aiming/rune interaction, natural acquisition or representative DPS."
-    }],
-    "weapon:peel-phantom": [{
-      "file": "tools/probe-targeting-lures.mjs",
-      "command": "node tools/probe-targeting-lures.mjs main-CrJIatJG.js",
-      "main": "main-CrJIatJG.js",
-      "definitionSha256": "28fdfe0d98d1afdf48542deb10f81ef5d07be1b3640b7478cb75bfec3f97c904",
-      "scriptSha256": "246b19b8f2987254a428fad648f2b38101c952366cb6925f8ba2fc16531c2697",
-      "source": { "url": "https://tibo.dog/assets/sim-lhAs_O8g.js", "sha256": "d379edc61c6a1451bb0ad62f8aa5606cdbdf8671c6d6b60d1de935aca5793376" },
-      "scope": "Build 206, Standard/Normal, s1/s2/s3: six scenario groups. Full Game idle/dash, one-husk dash-start placement, 113-tick expiry explosion and no early contact damage/projectiles; original steering fixtures test sqrt Area, strict boundary, nearest lure, inner stop and expired control. Supplied aphids, not every AI, natural survival or server behavior."
-    }],
-    "weapon:spud-decoy": [{
-      "file": "tools/probe-targeting-lures.mjs",
-      "command": "node tools/probe-targeting-lures.mjs main-CrJIatJG.js",
-      "main": "main-CrJIatJG.js",
-      "definitionSha256": "f7c17ee9f63572496b0ad863b217b11aa65a1fb4fcc90cd86377cfb4505e9cf4",
-      "scriptSha256": "246b19b8f2987254a428fad648f2b38101c952366cb6925f8ba2fc16531c2697",
-      "source": { "url": "https://tibo.dog/assets/sim-lhAs_O8g.js", "sha256": "d379edc61c6a1451bb0ad62f8aa5606cdbdf8671c6d6b60d1de935aca5793376" },
-      "scope": "Build 206, Standard/Normal, s1/s2/s3: six scenario groups. Full Game two decoys behind facing at distance 26, 300-tick expiry explosion and no early contact damage; original steering fixtures test sqrt Area, strict boundary, nearest lure, inner stop and expired control. Replacement casts suppressed. Not every AI, natural survival or server behavior."
-    }],
+    "item:lightning-spud": [
+      {
+        "file": "tools/probe-targeting-lures.mjs",
+        "command": "node tools/probe-targeting-lures.mjs main-CrJIatJG.js",
+        "main": "main-CrJIatJG.js",
+        "definitionSha256": "a6f1716ab87cfc5b6e4a9f9b7e7c8169fb9e3b5efa91f87528947bb791ddc070",
+        "scriptSha256": "246b19b8f2987254a428fad648f2b38101c952366cb6925f8ba2fc16531c2697",
+        "source": {
+          "url": "https://tibo.dog/assets/sim-lhAs_O8g.js",
+          "sha256": "d379edc61c6a1451bb0ad62f8aa5606cdbdf8671c6d6b60d1de935aca5793376"
+        },
+        "scope": "Build 206, Standard/Normal, s1/s2/s3: six scenario groups. Original gate/hit fixtures check chance boundaries, failed-roll token preservation, burst/refill/cap, three-stack formula, slot/zero controls, splash damage/body-range and no recursion; full Game seeded fixed-target integrations. Forced RNG only in rule fixtures. Not natural proc/drop rates, representative DPS or server behavior."
+      }
+    ],
+    "weapon:hash-hawk": [
+      {
+        "file": "tools/probe-targeting-lures.mjs",
+        "command": "node tools/probe-targeting-lures.mjs main-CrJIatJG.js",
+        "main": "main-CrJIatJG.js",
+        "definitionSha256": "2d92cb9c41c9981f4cef336d303d76fb5046795608cff1b1ae943a45b8da4714",
+        "scriptSha256": "246b19b8f2987254a428fad648f2b38101c952366cb6925f8ba2fc16531c2697",
+        "source": {
+          "url": "https://tibo.dog/assets/sim-lhAs_O8g.js",
+          "sha256": "d379edc61c6a1451bb0ad62f8aa5606cdbdf8671c6d6b60d1de935aca5793376"
+        },
+        "scope": "Build 206, Standard/Normal, s1/s2/s3: six scenario groups. Original targeting fixtures check weighted current HP, elite/boss/hidden, body-range boundary, tracked/reused targets; full Game two-bird stagger, impact, post-impact cooldown, no crumbs and supplied Amount pool cap. Not every aiming/rune interaction, natural acquisition or representative DPS."
+      }
+    ],
+    "weapon:peel-phantom": [
+      {
+        "file": "tools/probe-targeting-lures.mjs",
+        "command": "node tools/probe-targeting-lures.mjs main-CrJIatJG.js",
+        "main": "main-CrJIatJG.js",
+        "definitionSha256": "28fdfe0d98d1afdf48542deb10f81ef5d07be1b3640b7478cb75bfec3f97c904",
+        "scriptSha256": "246b19b8f2987254a428fad648f2b38101c952366cb6925f8ba2fc16531c2697",
+        "source": {
+          "url": "https://tibo.dog/assets/sim-lhAs_O8g.js",
+          "sha256": "d379edc61c6a1451bb0ad62f8aa5606cdbdf8671c6d6b60d1de935aca5793376"
+        },
+        "scope": "Build 206, Standard/Normal, s1/s2/s3: six scenario groups. Full Game idle/dash, one-husk dash-start placement, 113-tick expiry explosion and no early contact damage/projectiles; original steering fixtures test sqrt Area, strict boundary, nearest lure, inner stop and expired control. Supplied aphids, not every AI, natural survival or server behavior."
+      }
+    ],
+    "weapon:spud-decoy": [
+      {
+        "file": "tools/probe-targeting-lures.mjs",
+        "command": "node tools/probe-targeting-lures.mjs main-CrJIatJG.js",
+        "main": "main-CrJIatJG.js",
+        "definitionSha256": "f7c17ee9f63572496b0ad863b217b11aa65a1fb4fcc90cd86377cfb4505e9cf4",
+        "scriptSha256": "246b19b8f2987254a428fad648f2b38101c952366cb6925f8ba2fc16531c2697",
+        "source": {
+          "url": "https://tibo.dog/assets/sim-lhAs_O8g.js",
+          "sha256": "d379edc61c6a1451bb0ad62f8aa5606cdbdf8671c6d6b60d1de935aca5793376"
+        },
+        "scope": "Build 206, Standard/Normal, s1/s2/s3: six scenario groups. Full Game two decoys behind facing at distance 26, 300-tick expiry explosion and no early contact damage; original steering fixtures test sqrt Area, strict boundary, nearest lure, inner stop and expired control. Replacement casts suppressed. Not every AI, natural survival or server behavior."
+      }
+    ],
     "weapon:sprout-squad": [
-    {
-      "file": "tools/probe-sprout-squad.mjs",
-      "command": "node tools/probe-sprout-squad.mjs main-4ptGHw1e.js",
-      "main": "main-4ptGHw1e.js",
-      "definitionSha256": "a5dcba853c548238340cd7a49dfbdd4b30e083733c0bd72f082d0faa033aa66f",
-      "scriptSha256": "81c82b756b275113d33db8bded054599b8054502a77a60aad0215f0c9031d717",
-      "scope": "Supplied-state cap saturation, bite interval, expiry and idle controls; not natural acquisition or representative DPS"
-    },
-    {
-      "file": "tools/probe-sprout-squad.mjs",
-      "command": "node tools/probe-sprout-squad.mjs main-Bxpjubhf.js",
-      "main": "main-Bxpjubhf.js",
-      "definitionSha256": "24350fd736eec9892009670b5ec70a7619f1514d833b4a50e71b299baa9a38ef",
-      "scriptSha256": "81c82b756b275113d33db8bded054599b8054502a77a60aad0215f0c9031d717",
-      "scope": "Fresh nine-case original-engine rerun: supplied-state cap saturation, bite interval, expiry and idle controls; not natural acquisition or representative DPS"
-    }
+      {
+        "file": "tools/probe-sprout-squad.mjs",
+        "command": "node tools/probe-sprout-squad.mjs main-4ptGHw1e.js",
+        "main": "main-4ptGHw1e.js",
+        "definitionSha256": "a5dcba853c548238340cd7a49dfbdd4b30e083733c0bd72f082d0faa033aa66f",
+        "scriptSha256": "81c82b756b275113d33db8bded054599b8054502a77a60aad0215f0c9031d717",
+        "scope": "Supplied-state cap saturation, bite interval, expiry and idle controls; not natural acquisition or representative DPS"
+      },
+      {
+        "file": "tools/probe-sprout-squad.mjs",
+        "command": "node tools/probe-sprout-squad.mjs main-Bxpjubhf.js",
+        "main": "main-Bxpjubhf.js",
+        "definitionSha256": "24350fd736eec9892009670b5ec70a7619f1514d833b4a50e71b299baa9a38ef",
+        "scriptSha256": "81c82b756b275113d33db8bded054599b8054502a77a60aad0215f0c9031d717",
+        "scope": "Fresh nine-case original-engine rerun: supplied-state cap saturation, bite interval, expiry and idle controls; not natural acquisition or representative DPS"
+      }
+    ],
+    "weapon:afterburner-fries": [
+      {
+        "file": "tools/probe-mechanics-groups.mjs",
+        "command": "node tools/probe-mechanics-groups.mjs main-DwGb2BE_.js",
+        "main": "main-DwGb2BE_.js",
+        "definitionSha256": "96823e7cdf0cf076c22b0a542cd7e7fde99dffc2b94e8d6518af9efb95513027",
+        "scriptSha256": "3e700ea7ced1d2db1da60c6f476404e4344c86f07e378680b6973425a108771c",
+        "source": {
+          "url": "https://tibo.dog/assets/sim-QJ0yqR8B.js",
+          "sha256": "5c2767b8384ac256c5de8c2482520cf6a9835b9484723b4357aa11bcf976d1fb"
+        },
+        "sources": [
+          {
+            "url": "https://tibo.dog/assets/sim-QJ0yqR8B.js",
+            "sha256": "5c2767b8384ac256c5de8c2482520cf6a9835b9484723b4357aa11bcf976d1fb"
+          }
+        ],
+        "scope": "s1/s2/s3; granted level-one loadouts, supplied fixed enemies/HP/positions and director steps; isolated export-only original rules plus full Game casts. No gear, god mode, reward writes or natural-run claims. Hazard fixtures use circular patches to isolate the consumer, not natural splat/oval/clover generation. Checks for this entity: \"idle/dash control; five backwards fries; fan width; speed/radius; expiry; no evolution oil\""
+      }
+    ],
+    "weapon:broadside": [
+      {
+        "file": "tools/probe-mechanics-groups.mjs",
+        "command": "node tools/probe-mechanics-groups.mjs main-DwGb2BE_.js",
+        "main": "main-DwGb2BE_.js",
+        "definitionSha256": "e7dd9691ce05fd70b263bee3d9ffe07f8e8376122fdde86dbb47302d8e4159de",
+        "scriptSha256": "3e700ea7ced1d2db1da60c6f476404e4344c86f07e378680b6973425a108771c",
+        "source": {
+          "url": "https://tibo.dog/assets/sim-QJ0yqR8B.js",
+          "sha256": "5c2767b8384ac256c5de8c2482520cf6a9835b9484723b4357aa11bcf976d1fb"
+        },
+        "sources": [
+          {
+            "url": "https://tibo.dog/assets/sim-QJ0yqR8B.js",
+            "sha256": "5c2767b8384ac256c5de8c2482520cf6a9835b9484723b4357aa11bcf976d1fb"
+          }
+        ],
+        "scope": "s1/s2/s3; granted level-one loadouts, supplied fixed enemies/HP/positions and director steps; isolated export-only original rules plus full Game casts. No gear, god mode, reward writes or natural-run claims. Hazard fixtures use circular patches to isolate the consumer, not natural splat/oval/clover generation. Checks for this entity: \"original casts: paired perpendicular shots, asymmetric row offsets, arming/flight, distinct Area scalings; full Game six-shell volley\""
+      }
+    ],
+    "weapon:comet-scythe": [
+      {
+        "file": "tools/probe-mechanics-groups.mjs",
+        "command": "node tools/probe-mechanics-groups.mjs main-DwGb2BE_.js",
+        "main": "main-DwGb2BE_.js",
+        "definitionSha256": "60f5e2ca0ab06a08b609397cd8e964d23d45a764606fa6d2fe2a2ee3c85d821b",
+        "scriptSha256": "3e700ea7ced1d2db1da60c6f476404e4344c86f07e378680b6973425a108771c",
+        "source": {
+          "url": "https://tibo.dog/assets/sim-QJ0yqR8B.js",
+          "sha256": "5c2767b8384ac256c5de8c2482520cf6a9835b9484723b4357aa11bcf976d1fb"
+        },
+        "sources": [
+          {
+            "url": "https://tibo.dog/assets/sim-QJ0yqR8B.js",
+            "sha256": "5c2767b8384ac256c5de8c2482520cf6a9835b9484723b4357aa11bcf976d1fb"
+          }
+        ],
+        "scope": "s1/s2/s3; granted level-one loadouts, supplied fixed enemies/HP/positions and director steps; isolated export-only original rules plus full Game casts. No gear, god mode, reward writes or natural-run claims. Hazard fixtures use circular patches to isolate the consumer, not natural splat/oval/clover generation. Checks for this entity: \"0.4/1.7 reach extremes; identical radial swing parity; 18-tick per-target cadence and outside control\""
+      }
+    ],
+    "weapon:harvest-moon": [
+      {
+        "file": "tools/probe-mechanics-groups.mjs",
+        "command": "node tools/probe-mechanics-groups.mjs main-DwGb2BE_.js",
+        "main": "main-DwGb2BE_.js",
+        "definitionSha256": "1acc7f72ce085a4f9a9d8dd0fde2d637148c01a0772da163a10ec449dec4dfc9",
+        "scriptSha256": "3e700ea7ced1d2db1da60c6f476404e4344c86f07e378680b6973425a108771c",
+        "source": {
+          "url": "https://tibo.dog/assets/sim-QJ0yqR8B.js",
+          "sha256": "5c2767b8384ac256c5de8c2482520cf6a9835b9484723b4357aa11bcf976d1fb"
+        },
+        "sources": [
+          {
+            "url": "https://tibo.dog/assets/sim-QJ0yqR8B.js",
+            "sha256": "5c2767b8384ac256c5de8c2482520cf6a9835b9484723b4357aa11bcf976d1fb"
+          }
+        ],
+        "scope": "s1/s2/s3; granted level-one loadouts, supplied fixed enemies/HP/positions and director steps; isolated export-only original rules plus full Game casts. No gear, god mode, reward writes or natural-run claims. Hazard fixtures use circular patches to isolate the consumer, not natural splat/oval/clover generation. Checks for this entity: \"light/heavy carry control; rounded lifetime; regrab lock; moving carry; release hit and mass-scaled fling\""
+      }
+    ],
+    "weapon:mash-golem": [
+      {
+        "file": "tools/probe-mechanics-groups.mjs",
+        "command": "node tools/probe-mechanics-groups.mjs main-DwGb2BE_.js",
+        "main": "main-DwGb2BE_.js",
+        "definitionSha256": "47d1ab363a44e230d11cdf4ff0a394a927596dc8172e36e7762f8f6fcf24c704",
+        "scriptSha256": "3e700ea7ced1d2db1da60c6f476404e4344c86f07e378680b6973425a108771c",
+        "source": {
+          "url": "https://tibo.dog/assets/sim-QJ0yqR8B.js",
+          "sha256": "5c2767b8384ac256c5de8c2482520cf6a9835b9484723b4357aa11bcf976d1fb"
+        },
+        "sources": [
+          {
+            "url": "https://tibo.dog/assets/sim-QJ0yqR8B.js",
+            "sha256": "5c2767b8384ac256c5de8c2482520cf6a9835b9484723b4357aa11bcf976d1fb"
+          }
+        ],
+        "scope": "s1/s2/s3; granted level-one loadouts, supplied fixed enemies/HP/positions and director steps; isolated export-only original rules plus full Game casts. No gear, god mode, reward writes or natural-run claims. Hazard fixtures use circular patches to isolate the consumer, not natural splat/oval/clover generation. Checks for this entity: \"target-required cast; staggered pair; rise then walk; two terminal slams; fixed eight-golem capacity\""
+      }
+    ],
+    "weapon:mash-landing": [
+      {
+        "file": "tools/probe-mechanics-groups.mjs",
+        "command": "node tools/probe-mechanics-groups.mjs main-DwGb2BE_.js",
+        "main": "main-DwGb2BE_.js",
+        "definitionSha256": "2cb595825143b53ef6f05646700102b2c91d59fc4dd6f6d81efa36d0d7a22144",
+        "scriptSha256": "3e700ea7ced1d2db1da60c6f476404e4344c86f07e378680b6973425a108771c",
+        "source": {
+          "url": "https://tibo.dog/assets/sim-QJ0yqR8B.js",
+          "sha256": "5c2767b8384ac256c5de8c2482520cf6a9835b9484723b4357aa11bcf976d1fb"
+        },
+        "sources": [
+          {
+            "url": "https://tibo.dog/assets/sim-QJ0yqR8B.js",
+            "sha256": "5c2767b8384ac256c5de8c2482520cf6a9835b9484723b4357aa11bcf976d1fb"
+          }
+        ],
+        "scope": "s1/s2/s3; granted level-one loadouts, supplied fixed enemies/HP/positions and director steps; isolated export-only original rules plus full Game casts. No gear, god mode, reward writes or natural-run claims. Hazard fixtures use circular patches to isolate the consumer, not natural splat/oval/clover generation. Checks for this entity: \"idle/start/end timing; one slam irrespective of amount; radius sqrt Area\""
+      }
+    ],
+    "weapon:gravy-pack": [
+      {
+        "file": "tools/probe-mechanics-groups.mjs",
+        "command": "node tools/probe-mechanics-groups.mjs main-DwGb2BE_.js",
+        "main": "main-DwGb2BE_.js",
+        "definitionSha256": "3204d9e66284f51cdda7fd8852011c7ca908deb19a55860e97ffc9121e5acf52",
+        "scriptSha256": "3e700ea7ced1d2db1da60c6f476404e4344c86f07e378680b6973425a108771c",
+        "source": {
+          "url": "https://tibo.dog/assets/sim-QJ0yqR8B.js",
+          "sha256": "5c2767b8384ac256c5de8c2482520cf6a9835b9484723b4357aa11bcf976d1fb"
+        },
+        "sources": [
+          {
+            "url": "https://tibo.dog/assets/sim-QJ0yqR8B.js",
+            "sha256": "5c2767b8384ac256c5de8c2482520cf6a9835b9484723b4357aa11bcf976d1fb"
+          }
+        ],
+        "scope": "s1/s2/s3; granted level-one loadouts, supplied fixed enemies/HP/positions and director steps; isolated export-only original rules plus full Game casts. No gear, god mode, reward writes or natural-run claims. Hazard fixtures use circular patches to isolate the consumer, not natural splat/oval/clover generation. Checks for this entity: \"five persistent familiars; no target no shots; real Game shots and healing; amount-reduction control\""
+      }
+    ],
+    "item:midnight-fries": [
+      {
+        "file": "tools/probe-mechanics-groups.mjs",
+        "command": "node tools/probe-mechanics-groups.mjs main-DwGb2BE_.js",
+        "main": "main-DwGb2BE_.js",
+        "definitionSha256": "21403138f7fdee9d87f00f9ebfc824ff131d400277bfd51d5dd0c3bb3a73cdfa",
+        "scriptSha256": "3e700ea7ced1d2db1da60c6f476404e4344c86f07e378680b6973425a108771c",
+        "source": {
+          "url": "https://tibo.dog/assets/sim-QJ0yqR8B.js",
+          "sha256": "5c2767b8384ac256c5de8c2482520cf6a9835b9484723b4357aa11bcf976d1fb"
+        },
+        "sources": [
+          {
+            "url": "https://tibo.dog/assets/sim-QJ0yqR8B.js",
+            "sha256": "5c2767b8384ac256c5de8c2482520cf6a9835b9484723b4357aa11bcf976d1fb"
+          }
+        ],
+        "scope": "s1/s2/s3; granted level-one loadouts, supplied fixed enemies/HP/positions and director steps; isolated export-only original rules plus full Game casts. No gear, god mode, reward writes or natural-run claims. Hazard fixtures use circular patches to isolate the consumer, not natural splat/oval/clover generation. Checks for this entity: \"before/at/after win step; compounding; two-stack sum before exponentiation\""
+      }
+    ],
+    "biome:russet-moor": [
+      {
+        "file": "tools/probe-mechanics-groups.mjs",
+        "command": "node tools/probe-mechanics-groups.mjs main-DwGb2BE_.js",
+        "main": "main-DwGb2BE_.js",
+        "definitionSha256": "854f205d37d0516178ebc38e53d5ad49d91bb02091aeb13b01c962b3f14d2ce2",
+        "scriptSha256": "3e700ea7ced1d2db1da60c6f476404e4344c86f07e378680b6973425a108771c",
+        "source": {
+          "url": "https://tibo.dog/assets/sim-QJ0yqR8B.js",
+          "sha256": "5c2767b8384ac256c5de8c2482520cf6a9835b9484723b4357aa11bcf976d1fb"
+        },
+        "sources": [
+          {
+            "url": "https://tibo.dog/assets/sim-QJ0yqR8B.js",
+            "sha256": "5c2767b8384ac256c5de8c2482520cf6a9835b9484723b4357aa11bcf976d1fb"
+          }
+        ],
+        "scope": "s1/s2/s3; granted level-one loadouts, supplied fixed enemies/HP/positions and director steps; isolated export-only original rules plus full Game casts. No gear, god mode, reward writes or natural-run claims. Hazard fixtures use circular patches to isolate the consumer, not natural splat/oval/clover generation. Checks for this entity: \"original movement system: inside slow, no damage, outside center control\""
+      }
+    ],
+    "biome:vinegar-shoals": [
+      {
+        "file": "tools/probe-mechanics-groups.mjs",
+        "command": "node tools/probe-mechanics-groups.mjs main-DwGb2BE_.js",
+        "main": "main-DwGb2BE_.js",
+        "definitionSha256": "4ac2fb048da99f92ddee639b3727f32909dd25bff8e6873bd48bbab3a48646eb",
+        "scriptSha256": "3e700ea7ced1d2db1da60c6f476404e4344c86f07e378680b6973425a108771c",
+        "source": {
+          "url": "https://tibo.dog/assets/sim-QJ0yqR8B.js",
+          "sha256": "5c2767b8384ac256c5de8c2482520cf6a9835b9484723b4357aa11bcf976d1fb"
+        },
+        "sources": [
+          {
+            "url": "https://tibo.dog/assets/sim-QJ0yqR8B.js",
+            "sha256": "5c2767b8384ac256c5de8c2482520cf6a9835b9484723b4357aa11bcf976d1fb"
+          }
+        ],
+        "scope": "s1/s2/s3; granted level-one loadouts, supplied fixed enemies/HP/positions and director steps; isolated export-only original rules plus full Game casts. No gear, god mode, reward writes or natural-run claims. Hazard fixtures use circular patches to isolate the consumer, not natural splat/oval/clover generation. Checks for this entity: \"original movement system: inside slow, no damage, outside center control\""
+      }
+    ],
+    "biome:duchess-gardens": [
+      {
+        "file": "tools/probe-mechanics-groups.mjs",
+        "command": "node tools/probe-mechanics-groups.mjs main-DwGb2BE_.js",
+        "main": "main-DwGb2BE_.js",
+        "definitionSha256": "fd166aba860733f3a0f16141db4c438945373ad98476b8696af3551b3f120da6",
+        "scriptSha256": "3e700ea7ced1d2db1da60c6f476404e4344c86f07e378680b6973425a108771c",
+        "source": {
+          "url": "https://tibo.dog/assets/sim-QJ0yqR8B.js",
+          "sha256": "5c2767b8384ac256c5de8c2482520cf6a9835b9484723b4357aa11bcf976d1fb"
+        },
+        "sources": [
+          {
+            "url": "https://tibo.dog/assets/sim-QJ0yqR8B.js",
+            "sha256": "5c2767b8384ac256c5de8c2482520cf6a9835b9484723b4357aa11bcf976d1fb"
+          }
+        ],
+        "scope": "s1/s2/s3; granted level-one loadouts, supplied fixed enemies/HP/positions and director steps; isolated export-only original rules plus full Game casts. No gear, god mode, reward writes or natural-run claims. Hazard fixtures use circular patches to isolate the consumer, not natural splat/oval/clover generation. Checks for this entity: \"original movement system: one-tick continuous damage, outside control; not natural hazard layout or survival\""
+      }
+    ],
+    "biome:roast-caldera": [
+      {
+        "file": "tools/probe-mechanics-groups.mjs",
+        "command": "node tools/probe-mechanics-groups.mjs main-DwGb2BE_.js",
+        "main": "main-DwGb2BE_.js",
+        "definitionSha256": "19e629dc4299b855c3262a12ea66bc93466e0be6595e06f6adf0a56d9acd9ebd",
+        "scriptSha256": "3e700ea7ced1d2db1da60c6f476404e4344c86f07e378680b6973425a108771c",
+        "source": {
+          "url": "https://tibo.dog/assets/sim-QJ0yqR8B.js",
+          "sha256": "5c2767b8384ac256c5de8c2482520cf6a9835b9484723b4357aa11bcf976d1fb"
+        },
+        "sources": [
+          {
+            "url": "https://tibo.dog/assets/sim-QJ0yqR8B.js",
+            "sha256": "5c2767b8384ac256c5de8c2482520cf6a9835b9484723b4357aa11bcf976d1fb"
+          }
+        ],
+        "scope": "s1/s2/s3; granted level-one loadouts, supplied fixed enemies/HP/positions and director steps; isolated export-only original rules plus full Game casts. No gear, god mode, reward writes or natural-run claims. Hazard fixtures use circular patches to isolate the consumer, not natural splat/oval/clover generation. Checks for this entity: \"original movement system: one-tick continuous damage, outside control; not natural hazard layout or survival\""
+      }
+    ],
+    "event:crab-tide": [
+      {
+        "file": "tools/probe-mechanics-groups.mjs",
+        "command": "node tools/probe-mechanics-groups.mjs main-DwGb2BE_.js",
+        "main": "main-DwGb2BE_.js",
+        "definitionSha256": "1f45f434c290c1f04c9e41096e977071255259cb43e13ae3fb80f0be5ce4e2ec",
+        "scriptSha256": "3e700ea7ced1d2db1da60c6f476404e4344c86f07e378680b6973425a108771c",
+        "source": {
+          "url": "https://tibo.dog/assets/sim-QJ0yqR8B.js",
+          "sha256": "5c2767b8384ac256c5de8c2482520cf6a9835b9484723b4357aa11bcf976d1fb"
+        },
+        "sources": [
+          {
+            "url": "https://tibo.dog/assets/sim-QJ0yqR8B.js",
+            "sha256": "5c2767b8384ac256c5de8c2482520cf6a9835b9484723b4357aa11bcf976d1fb"
+          }
+        ],
+        "scope": "s1/s2/s3; granted level-one loadouts, supplied fixed enemies/HP/positions and director steps; isolated export-only original rules plus full Game casts. No gear, god mode, reward writes or natural-run claims. Hazard fixtures use circular patches to isolate the consumer, not natural splat/oval/clover generation. Checks for this entity: \"nine-crab Normal ring (raw 30 × .3); radius/lifetime/fixed center; moved-player control; strict stopping boundary\""
+      }
+    ],
+    "enemy:armoured-barnacle-troll": [
+      {
+        "file": "tools/probe-mechanics-groups.mjs",
+        "command": "node tools/probe-mechanics-groups.mjs main-DwGb2BE_.js",
+        "main": "main-DwGb2BE_.js",
+        "definitionSha256": "1ed04d2cc05a4bf75eb7329ade67fbfd975518098bf97ea427acb53c48efe1f0",
+        "scriptSha256": "3e700ea7ced1d2db1da60c6f476404e4344c86f07e378680b6973425a108771c",
+        "source": {
+          "url": "https://tibo.dog/assets/sim-QJ0yqR8B.js",
+          "sha256": "5c2767b8384ac256c5de8c2482520cf6a9835b9484723b4357aa11bcf976d1fb"
+        },
+        "sources": [
+          {
+            "url": "https://tibo.dog/assets/sim-QJ0yqR8B.js",
+            "sha256": "5c2767b8384ac256c5de8c2482520cf6a9835b9484723b4357aa11bcf976d1fb"
+          }
+        ],
+        "scope": "s1/s2/s3; granted level-one loadouts, supplied fixed enemies/HP/positions and director steps; isolated export-only original rules plus full Game casts. No gear, god mode, reward writes or natural-run claims. Hazard fixtures use circular patches to isolate the consumer, not natural splat/oval/clover generation. Checks for this entity: \"original charger: strict trigger range, windup, duration, moved-player locked-aim control, recovery\""
+      },
+      {
+        "file": "tools/probe-endgame-roles.mjs",
+        "command": "node tools/probe-endgame-roles.mjs main-DwGb2BE_.js",
+        "main": "main-DwGb2BE_.js",
+        "definitionSha256": "1ed04d2cc05a4bf75eb7329ade67fbfd975518098bf97ea427acb53c48efe1f0",
+        "scriptSha256": "aeb84e13f25cd06852dcfb5c8e00a147d3b954bdda4cfa64dd5d75f7e3edcfef",
+        "source": {
+          "url": "https://tibo.dog/assets/endgame-sim-CefNBFg5.js",
+          "sha256": "d78e5134bfbe144cfb38da9b10648d55d40119d47ac7f2b09b697193b182dd9b"
+        },
+        "sources": [
+          {
+            "url": "https://tibo.dog/assets/endgame-sim-CefNBFg5.js",
+            "sha256": "d78e5134bfbe144cfb38da9b10648d55d40119d47ac7f2b09b697193b182dd9b"
+          },
+          {
+            "url": "https://tibo.dog/assets/shell-CHXbzErl.js",
+            "sha256": "b64d49c1f14a85557015354c3cde2d2f694bba443c6499a9652ec1228211f585"
+          },
+          {
+            "url": "https://tibo.dog/assets/titan.hot-CjjRSbsl.js",
+            "sha256": "f60c8400eb3d17492e7265fb11e3aa28df2781e759c72b894c05e894b8c2ad05"
+          }
+        ],
+        "scope": "s1/s2/s3; original phase constructors, spawners and ticks with supplied roles, positions, clocks, armor generations and HP. No gear/god mode/reward writes. Not natural acquisition, survival, Nightmare timing, server behavior, complete maze pathfinding or attendant-return animation. Checks for this entity: [\"phase protection .1 during attack, transition-driven opening, 1.2-second strict expiry\"]"
+      }
+    ],
+    "enemy:armoured-basilisk": [
+      {
+        "file": "tools/probe-mechanics-groups.mjs",
+        "command": "node tools/probe-mechanics-groups.mjs main-DwGb2BE_.js",
+        "main": "main-DwGb2BE_.js",
+        "definitionSha256": "d5a546d4760b417edbfd4c861cb9471f7a481bfc0824d78808411b557c03510d",
+        "scriptSha256": "3e700ea7ced1d2db1da60c6f476404e4344c86f07e378680b6973425a108771c",
+        "source": {
+          "url": "https://tibo.dog/assets/sim-QJ0yqR8B.js",
+          "sha256": "5c2767b8384ac256c5de8c2482520cf6a9835b9484723b4357aa11bcf976d1fb"
+        },
+        "sources": [
+          {
+            "url": "https://tibo.dog/assets/sim-QJ0yqR8B.js",
+            "sha256": "5c2767b8384ac256c5de8c2482520cf6a9835b9484723b4357aa11bcf976d1fb"
+          }
+        ],
+        "scope": "s1/s2/s3; granted level-one loadouts, supplied fixed enemies/HP/positions and director steps; isolated export-only original rules plus full Game casts. No gear, god mode, reward writes or natural-run claims. Hazard fixtures use circular patches to isolate the consumer, not natural splat/oval/clover generation. Checks for this entity: \"original charger: strict trigger range, windup, duration, moved-player locked-aim control, recovery\""
+      },
+      {
+        "file": "tools/probe-endgame-roles.mjs",
+        "command": "node tools/probe-endgame-roles.mjs main-DwGb2BE_.js",
+        "main": "main-DwGb2BE_.js",
+        "definitionSha256": "d5a546d4760b417edbfd4c861cb9471f7a481bfc0824d78808411b557c03510d",
+        "scriptSha256": "aeb84e13f25cd06852dcfb5c8e00a147d3b954bdda4cfa64dd5d75f7e3edcfef",
+        "source": {
+          "url": "https://tibo.dog/assets/endgame-sim-CefNBFg5.js",
+          "sha256": "d78e5134bfbe144cfb38da9b10648d55d40119d47ac7f2b09b697193b182dd9b"
+        },
+        "sources": [
+          {
+            "url": "https://tibo.dog/assets/endgame-sim-CefNBFg5.js",
+            "sha256": "d78e5134bfbe144cfb38da9b10648d55d40119d47ac7f2b09b697193b182dd9b"
+          },
+          {
+            "url": "https://tibo.dog/assets/shell-CHXbzErl.js",
+            "sha256": "b64d49c1f14a85557015354c3cde2d2f694bba443c6499a9652ec1228211f585"
+          },
+          {
+            "url": "https://tibo.dog/assets/titan.hot-CjjRSbsl.js",
+            "sha256": "f60c8400eb3d17492e7265fb11e3aa28df2781e759c72b894c05e894b8c2ad05"
+          }
+        ],
+        "scope": "s1/s2/s3; original phase constructors, spawners and ticks with supplied roles, positions, clocks, armor generations and HP. No gear/god mode/reward writes. Not natural acquisition, survival, Nightmare timing, server behavior, complete maze pathfinding or attendant-return animation. Checks for this entity: [\"phase protection .1 during attack, transition-driven opening, 1.2-second strict expiry\"]"
+      }
+    ],
+    "enemy:armoured-coral-golem": [
+      {
+        "file": "tools/probe-mechanics-groups.mjs",
+        "command": "node tools/probe-mechanics-groups.mjs main-DwGb2BE_.js",
+        "main": "main-DwGb2BE_.js",
+        "definitionSha256": "f6c0be5b81eafbeef01289d820f4fd2d98c0a765de43f92483b70918d97b7479",
+        "scriptSha256": "3e700ea7ced1d2db1da60c6f476404e4344c86f07e378680b6973425a108771c",
+        "source": {
+          "url": "https://tibo.dog/assets/sim-QJ0yqR8B.js",
+          "sha256": "5c2767b8384ac256c5de8c2482520cf6a9835b9484723b4357aa11bcf976d1fb"
+        },
+        "sources": [
+          {
+            "url": "https://tibo.dog/assets/sim-QJ0yqR8B.js",
+            "sha256": "5c2767b8384ac256c5de8c2482520cf6a9835b9484723b4357aa11bcf976d1fb"
+          }
+        ],
+        "scope": "s1/s2/s3; granted level-one loadouts, supplied fixed enemies/HP/positions and director steps; isolated export-only original rules plus full Game casts. No gear, god mode, reward writes or natural-run claims. Hazard fixtures use circular patches to isolate the consumer, not natural splat/oval/clover generation. Checks for this entity: \"original charger: strict trigger range, windup, duration, moved-player locked-aim control, recovery\""
+      },
+      {
+        "file": "tools/probe-endgame-roles.mjs",
+        "command": "node tools/probe-endgame-roles.mjs main-DwGb2BE_.js",
+        "main": "main-DwGb2BE_.js",
+        "definitionSha256": "f6c0be5b81eafbeef01289d820f4fd2d98c0a765de43f92483b70918d97b7479",
+        "scriptSha256": "aeb84e13f25cd06852dcfb5c8e00a147d3b954bdda4cfa64dd5d75f7e3edcfef",
+        "source": {
+          "url": "https://tibo.dog/assets/endgame-sim-CefNBFg5.js",
+          "sha256": "d78e5134bfbe144cfb38da9b10648d55d40119d47ac7f2b09b697193b182dd9b"
+        },
+        "sources": [
+          {
+            "url": "https://tibo.dog/assets/endgame-sim-CefNBFg5.js",
+            "sha256": "d78e5134bfbe144cfb38da9b10648d55d40119d47ac7f2b09b697193b182dd9b"
+          },
+          {
+            "url": "https://tibo.dog/assets/shell-CHXbzErl.js",
+            "sha256": "b64d49c1f14a85557015354c3cde2d2f694bba443c6499a9652ec1228211f585"
+          },
+          {
+            "url": "https://tibo.dog/assets/titan.hot-CjjRSbsl.js",
+            "sha256": "f60c8400eb3d17492e7265fb11e3aa28df2781e759c72b894c05e894b8c2ad05"
+          }
+        ],
+        "scope": "s1/s2/s3; original phase constructors, spawners and ticks with supplied roles, positions, clocks, armor generations and HP. No gear/god mode/reward writes. Not natural acquisition, survival, Nightmare timing, server behavior, complete maze pathfinding or attendant-return animation. Checks for this entity: [\"phase protection .1 during attack, transition-driven opening, 1.2-second strict expiry\"]"
+      }
+    ],
+    "enemy:armoured-dune-manticore": [
+      {
+        "file": "tools/probe-mechanics-groups.mjs",
+        "command": "node tools/probe-mechanics-groups.mjs main-DwGb2BE_.js",
+        "main": "main-DwGb2BE_.js",
+        "definitionSha256": "9c688e9e71283a5311bb5bf7bb6706f6bb958c755a97740e443d5e65d5255362",
+        "scriptSha256": "3e700ea7ced1d2db1da60c6f476404e4344c86f07e378680b6973425a108771c",
+        "source": {
+          "url": "https://tibo.dog/assets/sim-QJ0yqR8B.js",
+          "sha256": "5c2767b8384ac256c5de8c2482520cf6a9835b9484723b4357aa11bcf976d1fb"
+        },
+        "sources": [
+          {
+            "url": "https://tibo.dog/assets/sim-QJ0yqR8B.js",
+            "sha256": "5c2767b8384ac256c5de8c2482520cf6a9835b9484723b4357aa11bcf976d1fb"
+          }
+        ],
+        "scope": "s1/s2/s3; granted level-one loadouts, supplied fixed enemies/HP/positions and director steps; isolated export-only original rules plus full Game casts. No gear, god mode, reward writes or natural-run claims. Hazard fixtures use circular patches to isolate the consumer, not natural splat/oval/clover generation. Checks for this entity: \"original charger: strict trigger range, windup, duration, moved-player locked-aim control, recovery\""
+      },
+      {
+        "file": "tools/probe-endgame-roles.mjs",
+        "command": "node tools/probe-endgame-roles.mjs main-DwGb2BE_.js",
+        "main": "main-DwGb2BE_.js",
+        "definitionSha256": "9c688e9e71283a5311bb5bf7bb6706f6bb958c755a97740e443d5e65d5255362",
+        "scriptSha256": "aeb84e13f25cd06852dcfb5c8e00a147d3b954bdda4cfa64dd5d75f7e3edcfef",
+        "source": {
+          "url": "https://tibo.dog/assets/endgame-sim-CefNBFg5.js",
+          "sha256": "d78e5134bfbe144cfb38da9b10648d55d40119d47ac7f2b09b697193b182dd9b"
+        },
+        "sources": [
+          {
+            "url": "https://tibo.dog/assets/endgame-sim-CefNBFg5.js",
+            "sha256": "d78e5134bfbe144cfb38da9b10648d55d40119d47ac7f2b09b697193b182dd9b"
+          },
+          {
+            "url": "https://tibo.dog/assets/shell-CHXbzErl.js",
+            "sha256": "b64d49c1f14a85557015354c3cde2d2f694bba443c6499a9652ec1228211f585"
+          },
+          {
+            "url": "https://tibo.dog/assets/titan.hot-CjjRSbsl.js",
+            "sha256": "f60c8400eb3d17492e7265fb11e3aa28df2781e759c72b894c05e894b8c2ad05"
+          }
+        ],
+        "scope": "s1/s2/s3; original phase constructors, spawners and ticks with supplied roles, positions, clocks, armor generations and HP. No gear/god mode/reward writes. Not natural acquisition, survival, Nightmare timing, server behavior, complete maze pathfinding or attendant-return animation. Checks for this entity: [\"phase protection .1 during attack, transition-driven opening, 1.2-second strict expiry\"]"
+      }
+    ],
+    "enemy:armoured-jelly-wraith": [
+      {
+        "file": "tools/probe-mechanics-groups.mjs",
+        "command": "node tools/probe-mechanics-groups.mjs main-DwGb2BE_.js",
+        "main": "main-DwGb2BE_.js",
+        "definitionSha256": "bc2ce2c0d726df35e725df7539101745b1654ffad8ccd43a7ae28a7f27554f88",
+        "scriptSha256": "3e700ea7ced1d2db1da60c6f476404e4344c86f07e378680b6973425a108771c",
+        "source": {
+          "url": "https://tibo.dog/assets/sim-QJ0yqR8B.js",
+          "sha256": "5c2767b8384ac256c5de8c2482520cf6a9835b9484723b4357aa11bcf976d1fb"
+        },
+        "sources": [
+          {
+            "url": "https://tibo.dog/assets/sim-QJ0yqR8B.js",
+            "sha256": "5c2767b8384ac256c5de8c2482520cf6a9835b9484723b4357aa11bcf976d1fb"
+          }
+        ],
+        "scope": "s1/s2/s3; granted level-one loadouts, supplied fixed enemies/HP/positions and director steps; isolated export-only original rules plus full Game casts. No gear, god mode, reward writes or natural-run claims. Hazard fixtures use circular patches to isolate the consumer, not natural splat/oval/clover generation. Checks for this entity: \"original charger: strict trigger range, windup, duration, moved-player locked-aim control, recovery\""
+      },
+      {
+        "file": "tools/probe-endgame-roles.mjs",
+        "command": "node tools/probe-endgame-roles.mjs main-DwGb2BE_.js",
+        "main": "main-DwGb2BE_.js",
+        "definitionSha256": "bc2ce2c0d726df35e725df7539101745b1654ffad8ccd43a7ae28a7f27554f88",
+        "scriptSha256": "aeb84e13f25cd06852dcfb5c8e00a147d3b954bdda4cfa64dd5d75f7e3edcfef",
+        "source": {
+          "url": "https://tibo.dog/assets/endgame-sim-CefNBFg5.js",
+          "sha256": "d78e5134bfbe144cfb38da9b10648d55d40119d47ac7f2b09b697193b182dd9b"
+        },
+        "sources": [
+          {
+            "url": "https://tibo.dog/assets/endgame-sim-CefNBFg5.js",
+            "sha256": "d78e5134bfbe144cfb38da9b10648d55d40119d47ac7f2b09b697193b182dd9b"
+          },
+          {
+            "url": "https://tibo.dog/assets/shell-CHXbzErl.js",
+            "sha256": "b64d49c1f14a85557015354c3cde2d2f694bba443c6499a9652ec1228211f585"
+          },
+          {
+            "url": "https://tibo.dog/assets/titan.hot-CjjRSbsl.js",
+            "sha256": "f60c8400eb3d17492e7265fb11e3aa28df2781e759c72b894c05e894b8c2ad05"
+          }
+        ],
+        "scope": "s1/s2/s3; original phase constructors, spawners and ticks with supplied roles, positions, clocks, armor generations and HP. No gear/god mode/reward writes. Not natural acquisition, survival, Nightmare timing, server behavior, complete maze pathfinding or attendant-return animation. Checks for this entity: [\"phase protection .1 during attack, transition-driven opening, 1.2-second strict expiry\"]"
+      }
+    ],
+    "enemy:armoured-mangrove-treant": [
+      {
+        "file": "tools/probe-mechanics-groups.mjs",
+        "command": "node tools/probe-mechanics-groups.mjs main-DwGb2BE_.js",
+        "main": "main-DwGb2BE_.js",
+        "definitionSha256": "ace6917c9427b0815e9dae233979b22e4e4d98e53ef76d58a4ae4581130a7032",
+        "scriptSha256": "3e700ea7ced1d2db1da60c6f476404e4344c86f07e378680b6973425a108771c",
+        "source": {
+          "url": "https://tibo.dog/assets/sim-QJ0yqR8B.js",
+          "sha256": "5c2767b8384ac256c5de8c2482520cf6a9835b9484723b4357aa11bcf976d1fb"
+        },
+        "sources": [
+          {
+            "url": "https://tibo.dog/assets/sim-QJ0yqR8B.js",
+            "sha256": "5c2767b8384ac256c5de8c2482520cf6a9835b9484723b4357aa11bcf976d1fb"
+          }
+        ],
+        "scope": "s1/s2/s3; granted level-one loadouts, supplied fixed enemies/HP/positions and director steps; isolated export-only original rules plus full Game casts. No gear, god mode, reward writes or natural-run claims. Hazard fixtures use circular patches to isolate the consumer, not natural splat/oval/clover generation. Checks for this entity: \"original charger: strict trigger range, windup, duration, moved-player locked-aim control, recovery\""
+      },
+      {
+        "file": "tools/probe-endgame-roles.mjs",
+        "command": "node tools/probe-endgame-roles.mjs main-DwGb2BE_.js",
+        "main": "main-DwGb2BE_.js",
+        "definitionSha256": "ace6917c9427b0815e9dae233979b22e4e4d98e53ef76d58a4ae4581130a7032",
+        "scriptSha256": "aeb84e13f25cd06852dcfb5c8e00a147d3b954bdda4cfa64dd5d75f7e3edcfef",
+        "source": {
+          "url": "https://tibo.dog/assets/endgame-sim-CefNBFg5.js",
+          "sha256": "d78e5134bfbe144cfb38da9b10648d55d40119d47ac7f2b09b697193b182dd9b"
+        },
+        "sources": [
+          {
+            "url": "https://tibo.dog/assets/endgame-sim-CefNBFg5.js",
+            "sha256": "d78e5134bfbe144cfb38da9b10648d55d40119d47ac7f2b09b697193b182dd9b"
+          },
+          {
+            "url": "https://tibo.dog/assets/shell-CHXbzErl.js",
+            "sha256": "b64d49c1f14a85557015354c3cde2d2f694bba443c6499a9652ec1228211f585"
+          },
+          {
+            "url": "https://tibo.dog/assets/titan.hot-CjjRSbsl.js",
+            "sha256": "f60c8400eb3d17492e7265fb11e3aa28df2781e759c72b894c05e894b8c2ad05"
+          }
+        ],
+        "scope": "s1/s2/s3; original phase constructors, spawners and ticks with supplied roles, positions, clocks, armor generations and HP. No gear/god mode/reward writes. Not natural acquisition, survival, Nightmare timing, server behavior, complete maze pathfinding or attendant-return animation. Checks for this entity: [\"phase protection .1 during attack, transition-driven opening, 1.2-second strict expiry\"]"
+      }
+    ],
+    "enemy:armoured-sea-serpent": [
+      {
+        "file": "tools/probe-mechanics-groups.mjs",
+        "command": "node tools/probe-mechanics-groups.mjs main-DwGb2BE_.js",
+        "main": "main-DwGb2BE_.js",
+        "definitionSha256": "871c9acd19728ee1d99c992fcdb839d058b80146e8989f1aae287c1322442b85",
+        "scriptSha256": "3e700ea7ced1d2db1da60c6f476404e4344c86f07e378680b6973425a108771c",
+        "source": {
+          "url": "https://tibo.dog/assets/sim-QJ0yqR8B.js",
+          "sha256": "5c2767b8384ac256c5de8c2482520cf6a9835b9484723b4357aa11bcf976d1fb"
+        },
+        "sources": [
+          {
+            "url": "https://tibo.dog/assets/sim-QJ0yqR8B.js",
+            "sha256": "5c2767b8384ac256c5de8c2482520cf6a9835b9484723b4357aa11bcf976d1fb"
+          }
+        ],
+        "scope": "s1/s2/s3; granted level-one loadouts, supplied fixed enemies/HP/positions and director steps; isolated export-only original rules plus full Game casts. No gear, god mode, reward writes or natural-run claims. Hazard fixtures use circular patches to isolate the consumer, not natural splat/oval/clover generation. Checks for this entity: \"original charger: strict trigger range, windup, duration, moved-player locked-aim control, recovery\""
+      },
+      {
+        "file": "tools/probe-endgame-roles.mjs",
+        "command": "node tools/probe-endgame-roles.mjs main-DwGb2BE_.js",
+        "main": "main-DwGb2BE_.js",
+        "definitionSha256": "871c9acd19728ee1d99c992fcdb839d058b80146e8989f1aae287c1322442b85",
+        "scriptSha256": "aeb84e13f25cd06852dcfb5c8e00a147d3b954bdda4cfa64dd5d75f7e3edcfef",
+        "source": {
+          "url": "https://tibo.dog/assets/endgame-sim-CefNBFg5.js",
+          "sha256": "d78e5134bfbe144cfb38da9b10648d55d40119d47ac7f2b09b697193b182dd9b"
+        },
+        "sources": [
+          {
+            "url": "https://tibo.dog/assets/endgame-sim-CefNBFg5.js",
+            "sha256": "d78e5134bfbe144cfb38da9b10648d55d40119d47ac7f2b09b697193b182dd9b"
+          },
+          {
+            "url": "https://tibo.dog/assets/shell-CHXbzErl.js",
+            "sha256": "b64d49c1f14a85557015354c3cde2d2f694bba443c6499a9652ec1228211f585"
+          },
+          {
+            "url": "https://tibo.dog/assets/titan.hot-CjjRSbsl.js",
+            "sha256": "f60c8400eb3d17492e7265fb11e3aa28df2781e759c72b894c05e894b8c2ad05"
+          }
+        ],
+        "scope": "s1/s2/s3; original phase constructors, spawners and ticks with supplied roles, positions, clocks, armor generations and HP. No gear/god mode/reward writes. Not natural acquisition, survival, Nightmare timing, server behavior, complete maze pathfinding or attendant-return animation. Checks for this entity: [\"phase protection .1 during attack, transition-driven opening, 1.2-second strict expiry\"]"
+      }
+    ],
+    "enemy:armoured-siren-harpy": [
+      {
+        "file": "tools/probe-mechanics-groups.mjs",
+        "command": "node tools/probe-mechanics-groups.mjs main-DwGb2BE_.js",
+        "main": "main-DwGb2BE_.js",
+        "definitionSha256": "27adec2a188e6cdcff6b7afb926086f385d259738fa0bccd5682a57b71dbe084",
+        "scriptSha256": "3e700ea7ced1d2db1da60c6f476404e4344c86f07e378680b6973425a108771c",
+        "source": {
+          "url": "https://tibo.dog/assets/sim-QJ0yqR8B.js",
+          "sha256": "5c2767b8384ac256c5de8c2482520cf6a9835b9484723b4357aa11bcf976d1fb"
+        },
+        "sources": [
+          {
+            "url": "https://tibo.dog/assets/sim-QJ0yqR8B.js",
+            "sha256": "5c2767b8384ac256c5de8c2482520cf6a9835b9484723b4357aa11bcf976d1fb"
+          }
+        ],
+        "scope": "s1/s2/s3; granted level-one loadouts, supplied fixed enemies/HP/positions and director steps; isolated export-only original rules plus full Game casts. No gear, god mode, reward writes or natural-run claims. Hazard fixtures use circular patches to isolate the consumer, not natural splat/oval/clover generation. Checks for this entity: \"original charger: strict trigger range, windup, duration, moved-player locked-aim control, recovery\""
+      },
+      {
+        "file": "tools/probe-endgame-roles.mjs",
+        "command": "node tools/probe-endgame-roles.mjs main-DwGb2BE_.js",
+        "main": "main-DwGb2BE_.js",
+        "definitionSha256": "27adec2a188e6cdcff6b7afb926086f385d259738fa0bccd5682a57b71dbe084",
+        "scriptSha256": "aeb84e13f25cd06852dcfb5c8e00a147d3b954bdda4cfa64dd5d75f7e3edcfef",
+        "source": {
+          "url": "https://tibo.dog/assets/endgame-sim-CefNBFg5.js",
+          "sha256": "d78e5134bfbe144cfb38da9b10648d55d40119d47ac7f2b09b697193b182dd9b"
+        },
+        "sources": [
+          {
+            "url": "https://tibo.dog/assets/endgame-sim-CefNBFg5.js",
+            "sha256": "d78e5134bfbe144cfb38da9b10648d55d40119d47ac7f2b09b697193b182dd9b"
+          },
+          {
+            "url": "https://tibo.dog/assets/shell-CHXbzErl.js",
+            "sha256": "b64d49c1f14a85557015354c3cde2d2f694bba443c6499a9652ec1228211f585"
+          },
+          {
+            "url": "https://tibo.dog/assets/titan.hot-CjjRSbsl.js",
+            "sha256": "f60c8400eb3d17492e7265fb11e3aa28df2781e759c72b894c05e894b8c2ad05"
+          }
+        ],
+        "scope": "s1/s2/s3; original phase constructors, spawners and ticks with supplied roles, positions, clocks, armor generations and HP. No gear/god mode/reward writes. Not natural acquisition, survival, Nightmare timing, server behavior, complete maze pathfinding or attendant-return animation. Checks for this entity: [\"phase protection .1 during attack, transition-driven opening, 1.2-second strict expiry\"]"
+      }
+    ],
+    "enemy:sea-serpent": [
+      {
+        "file": "tools/probe-endgame-roles.mjs",
+        "command": "node tools/probe-endgame-roles.mjs main-DwGb2BE_.js",
+        "main": "main-DwGb2BE_.js",
+        "definitionSha256": "3ef49b8ebfeb54b9e6396696c872bda978866603981e404eaffd1fa83500b924",
+        "scriptSha256": "aeb84e13f25cd06852dcfb5c8e00a147d3b954bdda4cfa64dd5d75f7e3edcfef",
+        "source": {
+          "url": "https://tibo.dog/assets/endgame-sim-CefNBFg5.js",
+          "sha256": "d78e5134bfbe144cfb38da9b10648d55d40119d47ac7f2b09b697193b182dd9b"
+        },
+        "sources": [
+          {
+            "url": "https://tibo.dog/assets/endgame-sim-CefNBFg5.js",
+            "sha256": "d78e5134bfbe144cfb38da9b10648d55d40119d47ac7f2b09b697193b182dd9b"
+          },
+          {
+            "url": "https://tibo.dog/assets/shell-CHXbzErl.js",
+            "sha256": "b64d49c1f14a85557015354c3cde2d2f694bba443c6499a9652ec1228211f585"
+          },
+          {
+            "url": "https://tibo.dog/assets/titan.hot-CjjRSbsl.js",
+            "sha256": "f60c8400eb3d17492e7265fb11e3aa28df2781e759c72b894c05e894b8c2ad05"
+          }
+        ],
+        "scope": "s1/s2/s3; original phase constructors, spawners and ticks with supplied roles, positions, clocks, armor generations and HP. No gear/god mode/reward writes. Not natural acquisition, survival, Nightmare timing, server behavior, complete maze pathfinding or attendant-return animation. Checks for this entity: [\"original phase spawning and role-specific speed\"]"
+      }
+    ],
+    "enemy:jelly-wraith": [
+      {
+        "file": "tools/probe-endgame-roles.mjs",
+        "command": "node tools/probe-endgame-roles.mjs main-DwGb2BE_.js",
+        "main": "main-DwGb2BE_.js",
+        "definitionSha256": "c480d80680231e4d071fcd3f7414c28965de49bff817881fadb8eddf7761362b",
+        "scriptSha256": "aeb84e13f25cd06852dcfb5c8e00a147d3b954bdda4cfa64dd5d75f7e3edcfef",
+        "source": {
+          "url": "https://tibo.dog/assets/endgame-sim-CefNBFg5.js",
+          "sha256": "d78e5134bfbe144cfb38da9b10648d55d40119d47ac7f2b09b697193b182dd9b"
+        },
+        "sources": [
+          {
+            "url": "https://tibo.dog/assets/endgame-sim-CefNBFg5.js",
+            "sha256": "d78e5134bfbe144cfb38da9b10648d55d40119d47ac7f2b09b697193b182dd9b"
+          },
+          {
+            "url": "https://tibo.dog/assets/shell-CHXbzErl.js",
+            "sha256": "b64d49c1f14a85557015354c3cde2d2f694bba443c6499a9652ec1228211f585"
+          },
+          {
+            "url": "https://tibo.dog/assets/titan.hot-CjjRSbsl.js",
+            "sha256": "f60c8400eb3d17492e7265fb11e3aa28df2781e759c72b894c05e894b8c2ad05"
+          }
+        ],
+        "scope": "s1/s2/s3; original phase constructors, spawners and ticks with supplied roles, positions, clocks, armor generations and HP. No gear/god mode/reward writes. Not natural acquisition, survival, Nightmare timing, server behavior, complete maze pathfinding or attendant-return animation. Checks for this entity: [\"original phase spawning and role-specific speed\"]"
+      }
+    ],
+    "enemy:dune-manticore": [
+      {
+        "file": "tools/probe-endgame-roles.mjs",
+        "command": "node tools/probe-endgame-roles.mjs main-DwGb2BE_.js",
+        "main": "main-DwGb2BE_.js",
+        "definitionSha256": "f63aa116c727be56c061becf823360818e78eb41bdc4cfca483720d947d6a5d9",
+        "scriptSha256": "aeb84e13f25cd06852dcfb5c8e00a147d3b954bdda4cfa64dd5d75f7e3edcfef",
+        "source": {
+          "url": "https://tibo.dog/assets/endgame-sim-CefNBFg5.js",
+          "sha256": "d78e5134bfbe144cfb38da9b10648d55d40119d47ac7f2b09b697193b182dd9b"
+        },
+        "sources": [
+          {
+            "url": "https://tibo.dog/assets/endgame-sim-CefNBFg5.js",
+            "sha256": "d78e5134bfbe144cfb38da9b10648d55d40119d47ac7f2b09b697193b182dd9b"
+          },
+          {
+            "url": "https://tibo.dog/assets/shell-CHXbzErl.js",
+            "sha256": "b64d49c1f14a85557015354c3cde2d2f694bba443c6499a9652ec1228211f585"
+          },
+          {
+            "url": "https://tibo.dog/assets/titan.hot-CjjRSbsl.js",
+            "sha256": "f60c8400eb3d17492e7265fb11e3aa28df2781e759c72b894c05e894b8c2ad05"
+          }
+        ],
+        "scope": "s1/s2/s3; original phase constructors, spawners and ticks with supplied roles, positions, clocks, armor generations and HP. No gear/god mode/reward writes. Not natural acquisition, survival, Nightmare timing, server behavior, complete maze pathfinding or attendant-return animation. Checks for this entity: [\"original phase spawning and role-specific speed\"]"
+      }
+    ],
+    "enemy:basilisk": [
+      {
+        "file": "tools/probe-endgame-roles.mjs",
+        "command": "node tools/probe-endgame-roles.mjs main-DwGb2BE_.js",
+        "main": "main-DwGb2BE_.js",
+        "definitionSha256": "15790b24ee5303642d6dd9caa8b17ebc6d71d1a2bf85be2ceec732af9aeaee86",
+        "scriptSha256": "aeb84e13f25cd06852dcfb5c8e00a147d3b954bdda4cfa64dd5d75f7e3edcfef",
+        "source": {
+          "url": "https://tibo.dog/assets/endgame-sim-CefNBFg5.js",
+          "sha256": "d78e5134bfbe144cfb38da9b10648d55d40119d47ac7f2b09b697193b182dd9b"
+        },
+        "sources": [
+          {
+            "url": "https://tibo.dog/assets/endgame-sim-CefNBFg5.js",
+            "sha256": "d78e5134bfbe144cfb38da9b10648d55d40119d47ac7f2b09b697193b182dd9b"
+          },
+          {
+            "url": "https://tibo.dog/assets/shell-CHXbzErl.js",
+            "sha256": "b64d49c1f14a85557015354c3cde2d2f694bba443c6499a9652ec1228211f585"
+          },
+          {
+            "url": "https://tibo.dog/assets/titan.hot-CjjRSbsl.js",
+            "sha256": "f60c8400eb3d17492e7265fb11e3aa28df2781e759c72b894c05e894b8c2ad05"
+          }
+        ],
+        "scope": "s1/s2/s3; original phase constructors, spawners and ticks with supplied roles, positions, clocks, armor generations and HP. No gear/god mode/reward writes. Not natural acquisition, survival, Nightmare timing, server behavior, complete maze pathfinding or attendant-return animation. Checks for this entity: [\"original phase spawning and role-specific speed\"]"
+      }
+    ],
+    "enemy:siren-harpy": [
+      {
+        "file": "tools/probe-endgame-roles.mjs",
+        "command": "node tools/probe-endgame-roles.mjs main-DwGb2BE_.js",
+        "main": "main-DwGb2BE_.js",
+        "definitionSha256": "ed7e7e8a80f40c572e3fedfcebc487e7c999d09f4beac130e4d0ba5108563078",
+        "scriptSha256": "aeb84e13f25cd06852dcfb5c8e00a147d3b954bdda4cfa64dd5d75f7e3edcfef",
+        "source": {
+          "url": "https://tibo.dog/assets/endgame-sim-CefNBFg5.js",
+          "sha256": "d78e5134bfbe144cfb38da9b10648d55d40119d47ac7f2b09b697193b182dd9b"
+        },
+        "sources": [
+          {
+            "url": "https://tibo.dog/assets/endgame-sim-CefNBFg5.js",
+            "sha256": "d78e5134bfbe144cfb38da9b10648d55d40119d47ac7f2b09b697193b182dd9b"
+          },
+          {
+            "url": "https://tibo.dog/assets/shell-CHXbzErl.js",
+            "sha256": "b64d49c1f14a85557015354c3cde2d2f694bba443c6499a9652ec1228211f585"
+          },
+          {
+            "url": "https://tibo.dog/assets/titan.hot-CjjRSbsl.js",
+            "sha256": "f60c8400eb3d17492e7265fb11e3aa28df2781e759c72b894c05e894b8c2ad05"
+          }
+        ],
+        "scope": "s1/s2/s3; original phase constructors, spawners and ticks with supplied roles, positions, clocks, armor generations and HP. No gear/god mode/reward writes. Not natural acquisition, survival, Nightmare timing, server behavior, complete maze pathfinding or attendant-return animation. Checks for this entity: [\"original phase spawning and role-specific speed\",\"inside/outside aura controls, self exclusion\"]"
+      }
+    ],
+    "enemy:barnacle-troll": [
+      {
+        "file": "tools/probe-endgame-roles.mjs",
+        "command": "node tools/probe-endgame-roles.mjs main-DwGb2BE_.js",
+        "main": "main-DwGb2BE_.js",
+        "definitionSha256": "b83926cc4b55f4607554689aa235793577ad1fffcdb17001731071deebe1c736",
+        "scriptSha256": "aeb84e13f25cd06852dcfb5c8e00a147d3b954bdda4cfa64dd5d75f7e3edcfef",
+        "source": {
+          "url": "https://tibo.dog/assets/endgame-sim-CefNBFg5.js",
+          "sha256": "d78e5134bfbe144cfb38da9b10648d55d40119d47ac7f2b09b697193b182dd9b"
+        },
+        "sources": [
+          {
+            "url": "https://tibo.dog/assets/endgame-sim-CefNBFg5.js",
+            "sha256": "d78e5134bfbe144cfb38da9b10648d55d40119d47ac7f2b09b697193b182dd9b"
+          },
+          {
+            "url": "https://tibo.dog/assets/shell-CHXbzErl.js",
+            "sha256": "b64d49c1f14a85557015354c3cde2d2f694bba443c6499a9652ec1228211f585"
+          },
+          {
+            "url": "https://tibo.dog/assets/titan.hot-CjjRSbsl.js",
+            "sha256": "f60c8400eb3d17492e7265fb11e3aa28df2781e759c72b894c05e894b8c2ad05"
+          }
+        ],
+        "scope": "s1/s2/s3; original phase constructors, spawners and ticks with supplied roles, positions, clocks, armor generations and HP. No gear/god mode/reward writes. Not natural acquisition, survival, Nightmare timing, server behavior, complete maze pathfinding or attendant-return animation. Checks for this entity: [\"original phase spawning and role-specific speed\",\"inside/outside aura controls, self exclusion\"]"
+      }
+    ],
+    "enemy:coral-golem": [
+      {
+        "file": "tools/probe-endgame-roles.mjs",
+        "command": "node tools/probe-endgame-roles.mjs main-DwGb2BE_.js",
+        "main": "main-DwGb2BE_.js",
+        "definitionSha256": "917c1b54763bc03b87e55b2eaf4da765d9d49b3af2bc5ac7d2638d23980ff21e",
+        "scriptSha256": "aeb84e13f25cd06852dcfb5c8e00a147d3b954bdda4cfa64dd5d75f7e3edcfef",
+        "source": {
+          "url": "https://tibo.dog/assets/endgame-sim-CefNBFg5.js",
+          "sha256": "d78e5134bfbe144cfb38da9b10648d55d40119d47ac7f2b09b697193b182dd9b"
+        },
+        "sources": [
+          {
+            "url": "https://tibo.dog/assets/endgame-sim-CefNBFg5.js",
+            "sha256": "d78e5134bfbe144cfb38da9b10648d55d40119d47ac7f2b09b697193b182dd9b"
+          },
+          {
+            "url": "https://tibo.dog/assets/shell-CHXbzErl.js",
+            "sha256": "b64d49c1f14a85557015354c3cde2d2f694bba443c6499a9652ec1228211f585"
+          },
+          {
+            "url": "https://tibo.dog/assets/titan.hot-CjjRSbsl.js",
+            "sha256": "f60c8400eb3d17492e7265fb11e3aa28df2781e759c72b894c05e894b8c2ad05"
+          }
+        ],
+        "scope": "s1/s2/s3; original phase constructors, spawners and ticks with supplied roles, positions, clocks, armor generations and HP. No gear/god mode/reward writes. Not natural acquisition, survival, Nightmare timing, server behavior, complete maze pathfinding or attendant-return animation. Checks for this entity: [\"original phase spawning and role-specific speed\",\"brood due-time boundary, two-child count, no repeated tick spawn, one remaining place and saturated 40-member cap\"]"
+      }
+    ],
+    "enemy:mangrove-treant": [
+      {
+        "file": "tools/probe-endgame-roles.mjs",
+        "command": "node tools/probe-endgame-roles.mjs main-DwGb2BE_.js",
+        "main": "main-DwGb2BE_.js",
+        "definitionSha256": "e89679d6d9ede655c6bd7970704a8c913fbfb8f1b8dddc9c4101b273468f005f",
+        "scriptSha256": "aeb84e13f25cd06852dcfb5c8e00a147d3b954bdda4cfa64dd5d75f7e3edcfef",
+        "source": {
+          "url": "https://tibo.dog/assets/endgame-sim-CefNBFg5.js",
+          "sha256": "d78e5134bfbe144cfb38da9b10648d55d40119d47ac7f2b09b697193b182dd9b"
+        },
+        "sources": [
+          {
+            "url": "https://tibo.dog/assets/endgame-sim-CefNBFg5.js",
+            "sha256": "d78e5134bfbe144cfb38da9b10648d55d40119d47ac7f2b09b697193b182dd9b"
+          },
+          {
+            "url": "https://tibo.dog/assets/shell-CHXbzErl.js",
+            "sha256": "b64d49c1f14a85557015354c3cde2d2f694bba443c6499a9652ec1228211f585"
+          },
+          {
+            "url": "https://tibo.dog/assets/titan.hot-CjjRSbsl.js",
+            "sha256": "f60c8400eb3d17492e7265fb11e3aa28df2781e759c72b894c05e894b8c2ad05"
+          }
+        ],
+        "scope": "s1/s2/s3; original phase constructors, spawners and ticks with supplied roles, positions, clocks, armor generations and HP. No gear/god mode/reward writes. Not natural acquisition, survival, Nightmare timing, server behavior, complete maze pathfinding or attendant-return animation. Checks for this entity: [\"original phase spawning and role-specific speed\",\"inside/outside aura controls, self exclusion\"]"
+      }
+    ],
+    "enemy:queen-herald": [
+      {
+        "file": "tools/probe-endgame-roles.mjs",
+        "command": "node tools/probe-endgame-roles.mjs main-DwGb2BE_.js",
+        "main": "main-DwGb2BE_.js",
+        "definitionSha256": "28a4a716cd787478652330eee17924b81bdd17d88f8bc82c69381f83cafa6ff7",
+        "scriptSha256": "aeb84e13f25cd06852dcfb5c8e00a147d3b954bdda4cfa64dd5d75f7e3edcfef",
+        "source": {
+          "url": "https://tibo.dog/assets/endgame-sim-CefNBFg5.js",
+          "sha256": "d78e5134bfbe144cfb38da9b10648d55d40119d47ac7f2b09b697193b182dd9b"
+        },
+        "sources": [
+          {
+            "url": "https://tibo.dog/assets/endgame-sim-CefNBFg5.js",
+            "sha256": "d78e5134bfbe144cfb38da9b10648d55d40119d47ac7f2b09b697193b182dd9b"
+          },
+          {
+            "url": "https://tibo.dog/assets/shell-CHXbzErl.js",
+            "sha256": "b64d49c1f14a85557015354c3cde2d2f694bba443c6499a9652ec1228211f585"
+          },
+          {
+            "url": "https://tibo.dog/assets/titan.hot-CjjRSbsl.js",
+            "sha256": "f60c8400eb3d17492e7265fb11e3aa28df2781e759c72b894c05e894b8c2ad05"
+          }
+        ],
+        "scope": "s1/s2/s3; original phase constructors, spawners and ticks with supplied roles, positions, clocks, armor generations and HP. No gear/god mode/reward writes. Not natural acquisition, survival, Nightmare timing, server behavior, complete maze pathfinding or attendant-return animation. Checks for this entity: [\"original phase spawning and role-specific speed\",\"real Queen spawn; attendant death opens Queen; 18.75-second return scheduling (return animation not exercised)\"]"
+      }
+    ],
+    "enemy:queen-seer": [
+      {
+        "file": "tools/probe-endgame-roles.mjs",
+        "command": "node tools/probe-endgame-roles.mjs main-DwGb2BE_.js",
+        "main": "main-DwGb2BE_.js",
+        "definitionSha256": "eea9eb15929dbadff97f93873da47e6d45ab8498900093bea7c91bdb55c4adc3",
+        "scriptSha256": "aeb84e13f25cd06852dcfb5c8e00a147d3b954bdda4cfa64dd5d75f7e3edcfef",
+        "source": {
+          "url": "https://tibo.dog/assets/endgame-sim-CefNBFg5.js",
+          "sha256": "d78e5134bfbe144cfb38da9b10648d55d40119d47ac7f2b09b697193b182dd9b"
+        },
+        "sources": [
+          {
+            "url": "https://tibo.dog/assets/endgame-sim-CefNBFg5.js",
+            "sha256": "d78e5134bfbe144cfb38da9b10648d55d40119d47ac7f2b09b697193b182dd9b"
+          },
+          {
+            "url": "https://tibo.dog/assets/shell-CHXbzErl.js",
+            "sha256": "b64d49c1f14a85557015354c3cde2d2f694bba443c6499a9652ec1228211f585"
+          },
+          {
+            "url": "https://tibo.dog/assets/titan.hot-CjjRSbsl.js",
+            "sha256": "f60c8400eb3d17492e7265fb11e3aa28df2781e759c72b894c05e894b8c2ad05"
+          }
+        ],
+        "scope": "s1/s2/s3; original phase constructors, spawners and ticks with supplied roles, positions, clocks, armor generations and HP. No gear/god mode/reward writes. Not natural acquisition, survival, Nightmare timing, server behavior, complete maze pathfinding or attendant-return animation. Checks for this entity: [\"original phase spawning and role-specific speed\",\"real Queen spawn; attendant death opens Queen; 18.75-second return scheduling (return animation not exercised)\"]"
+      }
+    ],
+    "enemy:queen-warden": [
+      {
+        "file": "tools/probe-endgame-roles.mjs",
+        "command": "node tools/probe-endgame-roles.mjs main-DwGb2BE_.js",
+        "main": "main-DwGb2BE_.js",
+        "definitionSha256": "d13f9be2c22bc9a500872468add573ccb1dd7a37421ecc9d84fc499f25e06da0",
+        "scriptSha256": "aeb84e13f25cd06852dcfb5c8e00a147d3b954bdda4cfa64dd5d75f7e3edcfef",
+        "source": {
+          "url": "https://tibo.dog/assets/endgame-sim-CefNBFg5.js",
+          "sha256": "d78e5134bfbe144cfb38da9b10648d55d40119d47ac7f2b09b697193b182dd9b"
+        },
+        "sources": [
+          {
+            "url": "https://tibo.dog/assets/endgame-sim-CefNBFg5.js",
+            "sha256": "d78e5134bfbe144cfb38da9b10648d55d40119d47ac7f2b09b697193b182dd9b"
+          },
+          {
+            "url": "https://tibo.dog/assets/shell-CHXbzErl.js",
+            "sha256": "b64d49c1f14a85557015354c3cde2d2f694bba443c6499a9652ec1228211f585"
+          },
+          {
+            "url": "https://tibo.dog/assets/titan.hot-CjjRSbsl.js",
+            "sha256": "f60c8400eb3d17492e7265fb11e3aa28df2781e759c72b894c05e894b8c2ad05"
+          }
+        ],
+        "scope": "s1/s2/s3; original phase constructors, spawners and ticks with supplied roles, positions, clocks, armor generations and HP. No gear/god mode/reward writes. Not natural acquisition, survival, Nightmare timing, server behavior, complete maze pathfinding or attendant-return animation. Checks for this entity: [\"original phase spawning and role-specific speed\",\"real Queen spawn; attendant death opens Queen; 18.75-second return scheduling (return animation not exercised)\"]"
+      }
+    ],
+    "enemy:fuse-totem": [
+      {
+        "file": "tools/probe-endgame-roles.mjs",
+        "command": "node tools/probe-endgame-roles.mjs main-DwGb2BE_.js",
+        "main": "main-DwGb2BE_.js",
+        "definitionSha256": "50003b775a9b097419b6df45427565f3d10a3701fcef4b2e78142716b26629cc",
+        "scriptSha256": "aeb84e13f25cd06852dcfb5c8e00a147d3b954bdda4cfa64dd5d75f7e3edcfef",
+        "source": {
+          "url": "https://tibo.dog/assets/endgame-sim-CefNBFg5.js",
+          "sha256": "d78e5134bfbe144cfb38da9b10648d55d40119d47ac7f2b09b697193b182dd9b"
+        },
+        "sources": [
+          {
+            "url": "https://tibo.dog/assets/endgame-sim-CefNBFg5.js",
+            "sha256": "d78e5134bfbe144cfb38da9b10648d55d40119d47ac7f2b09b697193b182dd9b"
+          },
+          {
+            "url": "https://tibo.dog/assets/shell-CHXbzErl.js",
+            "sha256": "b64d49c1f14a85557015354c3cde2d2f694bba443c6499a9652ec1228211f585"
+          },
+          {
+            "url": "https://tibo.dog/assets/titan.hot-CjjRSbsl.js",
+            "sha256": "f60c8400eb3d17492e7265fb11e3aa28df2781e759c72b894c05e894b8c2ad05"
+          }
+        ],
+        "scope": "s1/s2/s3; original phase constructors, spawners and ticks with supplied roles, positions, clocks, armor generations and HP. No gear/god mode/reward writes. Not natural acquisition, survival, Nightmare timing, server behavior, complete maze pathfinding or attendant-return animation. Checks for this entity: [\"original totem spawn, stationary, six-second fuse boundary, destroyed-totem cancellation\"]"
+      }
     ]
   },
   "reports": [
     {
-      "keys": ["gear:space-farmer", "gear:iron-skillet", "gear:mech-pilot", "gear:fry-cook", "gear:buccaneer", "gear:bog-witch", "gear:storm-sage", "gear:pack-ranger"],
+      "keys": [
+        "gear:space-farmer",
+        "gear:iron-skillet",
+        "gear:mech-pilot",
+        "gear:fry-cook",
+        "gear:buccaneer",
+        "gear:bog-witch",
+        "gear:storm-sage",
+        "gear:pack-ranger"
+      ],
       "path": "/modes",
       "startsWith": "Original-engine old/new controls ran all eight sets",
       "scope": "Historical supplied-gear runs and rule fixtures, not natural acquisition or a retained runnable scenario"
