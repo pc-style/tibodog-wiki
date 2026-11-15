@@ -8138,35 +8138,331 @@
   "luckK": 0.5,
   "goldCoins": 4
  },
- "intro-shared.A": {
-  "baseHp": 2.5,
-  "baseHpRampSec": 360,
-  "hpPerLevel": 1.11,
-  "damagePerLevel": 1.044,
-  "lateCurvePerLevel": 0.087,
-  "bossHitSharePerLevel": 0,
-  "bossAttackRatePerLevel": 1.001,
-  "stacking": {
-   "weaponLevel": 1.2,
-   "evolvedRanks": 7,
-   "passiveRank": 2,
-   "mightFloor": 0.1,
-   "setBonus": 3,
-   "greaterLine": 1.3,
-   "ancestral": 1.1,
-   "primal": 1.175,
-   "dropLevel": 1
+ "intro-shared.$": [
+  {
+   "id": "bog-witch",
+   "tag": "zone",
+   "pieces": [
+    {
+     "slot": "hat",
+     "id": "bog-witch-hat"
+    },
+    {
+     "slot": "chest",
+     "id": "bog-witch-chest"
+    },
+    {
+     "slot": "legs",
+     "id": "bog-witch-legs"
+    }
+   ],
+   "two": {
+    "tag": {
+     "duration": 0.4,
+     "area": 0.15
+    }
+   },
+   "three": {
+    "tag": {
+     "damage": 0.8
+    },
+    "offTagDamage": 0.7,
+    "tradeoff": {
+     "moveSpeed": -0.1
+    }
+   }
+  },
+  {
+   "id": "buccaneer",
+   "tag": "blast",
+   "pieces": [
+    {
+     "slot": "hat",
+     "id": "buccaneer-hat"
+    },
+    {
+     "slot": "chest",
+     "id": "buccaneer-chest"
+    },
+    {
+     "slot": "boots",
+     "id": "buccaneer-boots"
+    }
+   ],
+   "two": {
+    "tag": {
+     "area": 0.25
+    }
+   },
+   "three": {
+    "offers": "tag",
+    "startLevels": 1,
+    "tag": {
+     "damage": 0.4
+    },
+    "tradeoff": {
+     "maxHpPct": -0.1
+    }
+   }
+  },
+  {
+   "id": "fry-cook",
+   "tag": "shot",
+   "pieces": [
+    {
+     "slot": "hat",
+     "id": "fry-cook-hat"
+    },
+    {
+     "slot": "legs",
+     "id": "fry-cook-legs"
+    },
+    {
+     "slot": "boots",
+     "id": "fry-cook-boots"
+    }
+   ],
+   "two": {
+    "tag": {
+     "amount": 1
+    }
+   },
+   "three": {
+    "offers": "tag",
+    "startLevels": 1,
+    "tag": {
+     "damage": 0.55,
+     "pierce": 2
+    },
+    "tradeoff": {
+     "maxHpPct": -0.15
+    }
+   }
+  },
+  {
+   "id": "iron-skillet",
+   "tag": "melee",
+   "pieces": [
+    {
+     "slot": "hat",
+     "id": "iron-skillet-hat"
+    },
+    {
+     "slot": "chest",
+     "id": "iron-skillet-chest"
+    },
+    {
+     "slot": "legs",
+     "id": "iron-skillet-legs"
+    }
+   ],
+   "two": {
+    "tag": {
+     "area": 0.25,
+     "damage": 0.1
+    }
+   },
+   "three": {
+    "offers": "tag",
+    "startLevels": 1,
+    "tag": {
+     "damage": 0.15
+    },
+    "tradeoff": {
+     "moveSpeed": -0.1
+    }
+   }
+  },
+  {
+   "id": "mech-pilot",
+   "pieces": [
+    {
+     "slot": "chest",
+     "id": "mech-pilot-chest"
+    },
+    {
+     "slot": "legs",
+     "id": "mech-pilot-legs"
+    },
+    {
+     "slot": "boots",
+     "id": "mech-pilot-boots"
+    }
+   ],
+   "two": {
+    "tibo": {
+     "moveSpeed": 0.05
+    },
+    "config": {
+     "dashCooldownScale": 0.7
+    }
+   },
+   "three": {
+    "tibo": {
+     "might": 1
+    },
+    "config": {
+     "dashCharges": 2,
+     "dashCooldownScale": 0.6,
+     "dashDistance": 84,
+     "dashMinCooldownSec": 0.6
+    },
+    "tradeoff": {
+     "maxHpPct": -0.1
+    }
+   }
+  },
+  {
+   "id": "pack-ranger",
+   "tag": "summon",
+   "pieces": [
+    {
+     "slot": "hat",
+     "id": "pack-ranger-hat"
+    },
+    {
+     "slot": "legs",
+     "id": "pack-ranger-legs"
+    },
+    {
+     "slot": "boots",
+     "id": "pack-ranger-boots"
+    }
+   ],
+   "two": {
+    "tag": {
+     "amount": 1,
+     "damage": 0.2
+    }
+   },
+   "three": {
+    "tag": {
+     "damage": 0.5
+    },
+    "offTagDamage": 0.85,
+    "config": {
+     "maxPack": 5,
+     "firstDogDistance": 40
+    }
+   }
+  },
+  {
+   "id": "space-farmer",
+   "tag": "orbit",
+   "pieces": [
+    {
+     "slot": "hat",
+     "id": "space-farmer-hat"
+    },
+    {
+     "slot": "chest",
+     "id": "space-farmer-chest"
+    },
+    {
+     "slot": "boots",
+     "id": "space-farmer-boots"
+    }
+   ],
+   "two": {
+    "tag": {
+     "amount": 1
+    }
+   },
+   "three": {
+    "offers": "tag",
+    "startLevels": 1,
+    "tag": {
+     "damage": 0.8,
+     "area": 0.3
+    },
+    "tibo": {
+     "might": 2.2
+    },
+    "tradeoff": {
+     "moveSpeed": -0.1
+    },
+    "bans": "moveSpeed"
+   }
+  },
+  {
+   "id": "storm-sage",
+   "tag": "storm",
+   "pieces": [
+    {
+     "slot": "chest",
+     "id": "storm-sage-chest"
+    },
+    {
+     "slot": "legs",
+     "id": "storm-sage-legs"
+    },
+    {
+     "slot": "boots",
+     "id": "storm-sage-boots"
+    }
+   ],
+   "two": {
+    "tag": {
+     "rate": 0.25
+    }
+   },
+   "three": {
+    "offers": "tag",
+    "startLevels": 2,
+    "tibo": {
+     "might": 0.3
+    },
+    "tag": {
+     "damage": 1.4,
+     "rate": 0.25
+    },
+    "tradeoff": {
+     "moveSpeed": -0.05
+    }
+   }
   }
- },
- "intro-shared.E": {
+ ],
+ "intro-shared.D": {
   "lifeSec": 50,
   "buffSec": 30,
   "bossLeadSec": 40,
   "minDist": 650,
   "maxDist": 900,
-  "fromRunShare": 0.5
+  "fromRunShare": 0.5,
+  "firstAtSec": 45,
+  "firstDist": {
+   "min": 220,
+   "max": 300
+  }
+ },
+ "intro-shared.E": {
+  "shrineAtSec": 15,
+  "shrineDist": {
+   "min": 170,
+   "max": 230
+  },
+  "poolAtSec": 30,
+  "poolDist": {
+   "min": 90,
+   "max": 130
+  },
+  "poolRadius": 72,
+  "poolStrength": 0.5,
+  "hintSec": 8
  },
  "intro-shared.G": {
+  "id": "volt-pylon",
+  "radius": 16,
+  "chargeSec": 0.25,
+  "weights": {}
+ },
+ "intro-shared.J": {
+  "id": "mash-pylon",
+  "radius": 16,
+  "chargeSec": 0.25,
+  "weights": {}
+ },
+ "intro-shared.K": {
   "look": {
    "color": "#8aeaff",
    "sprite": "poi-volt-pylon",
@@ -8202,58 +8498,21 @@
    "desc": "Reach it before it sinks: lightning zaps the pests around you for 30 s."
   }
  },
- "intro-shared.K": {
-  "look": {
-   "color": "#ffd04a",
-   "sprite": "poi-mash-pylon",
-   "usedClip": null,
-   "pinRank": 0.05,
-   "pin": [
-    {
-     "path": "M4.5 15.5L5.6 9H10.4L11.5 15.5Z",
-     "ink": "#6c7189"
-    },
-    {
-     "path": "M3.5 15.5H12.5V14.2H3.5Z",
-     "ink": "#47464f"
-    },
-    {
-     "path": "M8 1A3.6 4.6 0 1 1 7.99 1Z",
-     "ink": "#ffd04a"
-    },
-    {
-     "path": "M6.8 3.2A1 1.4 0 1 1 6.79 3.2Z",
-     "ink": "#fffaea"
-    }
-   ]
+ "intro-shared.M": {
+  "moreElites": {
+   "startCurses": 1,
+   "extraBosses": 2
   },
-  "place": {
-   "id": "mash-pylon",
-   "radius": 16,
-   "chargeSec": 0.25,
-   "weights": {}
+  "fasterShots": {
+   "bulletSpeedRamp": 1.6,
+   "bulletSpeedCap": 1.25
   },
-  "text": {
-   "name": "Mash Pylon",
-   "desc": "Reach it before it sinks: your hits deal triple damage and grow bigger for 30 s."
-  }
- },
- "intro-shared.O": {
-  "mash": {
-   "damageMult": 3,
-   "areaMult": 1.6
+  "moreShooters": {
+   "bulletRateRamp": 1.5,
+   "maxShooters": 1.5
   },
-  "aura": {
-   "everySec": 0.5,
-   "radius": 56
-  },
-  "volt": {
-   "zapsPerSec": 20,
-   "radius": 170,
-   "jumps": 2,
-   "jumpRadius": 60,
-   "eliteHpFraction": 0.06,
-   "bossHpFraction": 0.004
+  "earlyTiers": {
+   "tierLagCut": 2
   }
  },
  "intro-shared.Q": [
@@ -8540,302 +8799,12 @@
    }
   }
  ],
- "intro-shared.W": {
-  "id": "volt-pylon",
-  "radius": 16,
-  "chargeSec": 0.25,
-  "weights": {}
- },
- "intro-shared.X": {
+ "intro-shared.Z": {
   "easy": 0.5,
   "normal": 0.7,
   "hard": 0.85,
   "nightmare": 1
  },
- "intro-shared.Z": [
-  {
-   "id": "bog-witch",
-   "tag": "zone",
-   "pieces": [
-    {
-     "slot": "hat",
-     "id": "bog-witch-hat"
-    },
-    {
-     "slot": "chest",
-     "id": "bog-witch-chest"
-    },
-    {
-     "slot": "legs",
-     "id": "bog-witch-legs"
-    }
-   ],
-   "two": {
-    "tag": {
-     "duration": 0.4,
-     "area": 0.15
-    }
-   },
-   "three": {
-    "tag": {
-     "damage": 0.8
-    },
-    "offTagDamage": 0.7,
-    "tradeoff": {
-     "moveSpeed": -0.1
-    }
-   }
-  },
-  {
-   "id": "buccaneer",
-   "tag": "blast",
-   "pieces": [
-    {
-     "slot": "hat",
-     "id": "buccaneer-hat"
-    },
-    {
-     "slot": "chest",
-     "id": "buccaneer-chest"
-    },
-    {
-     "slot": "boots",
-     "id": "buccaneer-boots"
-    }
-   ],
-   "two": {
-    "tag": {
-     "area": 0.25
-    }
-   },
-   "three": {
-    "offers": "tag",
-    "startLevels": 1,
-    "tag": {
-     "damage": 0.4
-    },
-    "tradeoff": {
-     "maxHpPct": -0.1
-    }
-   }
-  },
-  {
-   "id": "fry-cook",
-   "tag": "shot",
-   "pieces": [
-    {
-     "slot": "hat",
-     "id": "fry-cook-hat"
-    },
-    {
-     "slot": "legs",
-     "id": "fry-cook-legs"
-    },
-    {
-     "slot": "boots",
-     "id": "fry-cook-boots"
-    }
-   ],
-   "two": {
-    "tag": {
-     "amount": 1
-    }
-   },
-   "three": {
-    "offers": "tag",
-    "startLevels": 1,
-    "tag": {
-     "damage": 0.55,
-     "pierce": 2
-    },
-    "tradeoff": {
-     "maxHpPct": -0.15
-    }
-   }
-  },
-  {
-   "id": "iron-skillet",
-   "tag": "melee",
-   "pieces": [
-    {
-     "slot": "hat",
-     "id": "iron-skillet-hat"
-    },
-    {
-     "slot": "chest",
-     "id": "iron-skillet-chest"
-    },
-    {
-     "slot": "legs",
-     "id": "iron-skillet-legs"
-    }
-   ],
-   "two": {
-    "tag": {
-     "area": 0.25,
-     "damage": 0.1
-    }
-   },
-   "three": {
-    "offers": "tag",
-    "startLevels": 1,
-    "tag": {
-     "damage": 0.15
-    },
-    "tradeoff": {
-     "moveSpeed": -0.1
-    }
-   }
-  },
-  {
-   "id": "mech-pilot",
-   "pieces": [
-    {
-     "slot": "chest",
-     "id": "mech-pilot-chest"
-    },
-    {
-     "slot": "legs",
-     "id": "mech-pilot-legs"
-    },
-    {
-     "slot": "boots",
-     "id": "mech-pilot-boots"
-    }
-   ],
-   "two": {
-    "tibo": {
-     "moveSpeed": 0.05
-    },
-    "config": {
-     "dashCooldownScale": 0.7
-    }
-   },
-   "three": {
-    "tibo": {
-     "might": 1
-    },
-    "config": {
-     "dashCharges": 2,
-     "dashCooldownScale": 0.6,
-     "dashDistance": 84,
-     "dashMinCooldownSec": 0.6
-    },
-    "tradeoff": {
-     "maxHpPct": -0.1
-    }
-   }
-  },
-  {
-   "id": "pack-ranger",
-   "tag": "summon",
-   "pieces": [
-    {
-     "slot": "hat",
-     "id": "pack-ranger-hat"
-    },
-    {
-     "slot": "legs",
-     "id": "pack-ranger-legs"
-    },
-    {
-     "slot": "boots",
-     "id": "pack-ranger-boots"
-    }
-   ],
-   "two": {
-    "tag": {
-     "amount": 1,
-     "damage": 0.2
-    }
-   },
-   "three": {
-    "tag": {
-     "damage": 0.5
-    },
-    "offTagDamage": 0.85,
-    "config": {
-     "maxPack": 5,
-     "firstDogDistance": 40
-    }
-   }
-  },
-  {
-   "id": "space-farmer",
-   "tag": "orbit",
-   "pieces": [
-    {
-     "slot": "hat",
-     "id": "space-farmer-hat"
-    },
-    {
-     "slot": "chest",
-     "id": "space-farmer-chest"
-    },
-    {
-     "slot": "boots",
-     "id": "space-farmer-boots"
-    }
-   ],
-   "two": {
-    "tag": {
-     "amount": 1
-    }
-   },
-   "three": {
-    "offers": "tag",
-    "startLevels": 1,
-    "tag": {
-     "damage": 0.8,
-     "area": 0.3
-    },
-    "tibo": {
-     "might": 2.2
-    },
-    "tradeoff": {
-     "moveSpeed": -0.1
-    },
-    "bans": "moveSpeed"
-   }
-  },
-  {
-   "id": "storm-sage",
-   "tag": "storm",
-   "pieces": [
-    {
-     "slot": "chest",
-     "id": "storm-sage-chest"
-    },
-    {
-     "slot": "legs",
-     "id": "storm-sage-legs"
-    },
-    {
-     "slot": "boots",
-     "id": "storm-sage-boots"
-    }
-   ],
-   "two": {
-    "tag": {
-     "rate": 0.25
-    }
-   },
-   "three": {
-    "offers": "tag",
-    "startLevels": 2,
-    "tibo": {
-     "might": 0.3
-    },
-    "tag": {
-     "damage": 1.4,
-     "rate": 0.25
-    },
-    "tradeoff": {
-     "moveSpeed": -0.05
-    }
-   }
-  }
- ],
  "intro-shared._": {
   "piece": "crown-of-plenty",
   "effect": {
@@ -8846,6 +8815,15 @@
    "amount": 1
   }
  },
+ "intro-shared._t": [
+  "fryer-king",
+  "the-mandoline",
+  "the-masher",
+  "grater-golem",
+  "compost-titan",
+  "ketchup-kraken",
+  "harvester"
+ ],
  "intro-shared.b": {
   "mult": 8,
   "radius": 16,
@@ -8857,7 +8835,7 @@
   "botLean": 2,
   "ink": "#ffe17a"
  },
- "intro-shared.dt": {
+ "intro-shared.ft": {
   "view": {
    "shortSide": 320,
    "maxAspect": 2,
@@ -9565,23 +9543,7 @@
    "amount": 1
   }
  },
- "intro-shared.gt": [
-  "fryer-king",
-  "the-mandoline",
-  "the-masher",
-  "grater-golem",
-  "compost-titan",
-  "ketchup-kraken",
-  "harvester"
- ],
- "intro-shared.h": {
-  "piece": "starch-mail",
-  "effect": {
-   "kind": "area",
-   "mult": 1.12
-  }
- },
- "intro-shared.ht": {
+ "intro-shared.gt": {
   "rows": [
    {
     "step": 0,
@@ -9957,280 +9919,14 @@
   "stepSec": 45,
   "afterLast": "postWin"
  },
- "intro-shared.j": {
-  "moreElites": {
-   "startCurses": 1,
-   "extraBosses": 2
-  },
-  "fasterShots": {
-   "bulletSpeedRamp": 1.6,
-   "bulletSpeedCap": 1.25
-  },
-  "moreShooters": {
-   "bulletRateRamp": 1.5,
-   "maxShooters": 1.5
-  },
-  "earlyTiers": {
-   "tierLagCut": 2
+ "intro-shared.h": {
+  "piece": "starch-mail",
+  "effect": {
+   "kind": "area",
+   "mult": 1.12
   }
  },
- "intro-shared.lt": {
-  "easy": {
-   "alive": 0.55,
-   "floorShare": 0,
-   "shooterCap": 1,
-   "earlyRamp": 1,
-   "earlyRampTime": 1,
-   "lateRamp": 1,
-   "lateRampTime": 1,
-   "crowdRamp": {
-    "kind": "normal"
-   },
-   "opening": "main",
-   "pestHp": 0.5,
-   "damage": 0.4,
-   "bossHp": 0.5,
-   "earlyBossRaise": 0.5,
-   "earlyBossDamage": 1,
-   "eliteHp": 0.5,
-   "maxHp": 2,
-   "xp": 1.5,
-   "healDrops": 1,
-   "addedRevives": 2,
-   "allowRevives": true,
-   "startCurses": 0,
-   "tierLag": 3,
-   "wallPests": 0.15,
-   "overtimeHoldSec": 45,
-   "sharpPatterns": false,
-   "orbitPx": 1,
-   "orbitHz": 0.6,
-   "shotPuddleRadius": 1.3,
-   "shotPuddleSec": 1.5,
-   "returnSpeed": 0.7,
-   "sharpAttacks": false,
-   "areaScale": 1,
-   "bossHitShare": null,
-   "spreadBuild": true,
-   "catalystGuaranteeLag": 0,
-   "xpExponentRaise": 0,
-   "promises": [
-    {
-     "kind": "mixReach",
-     "min": 0.65,
-     "max": 0.75
-    }
-   ]
-  },
-  "normal": {
-   "alive": 0.7,
-   "floorShare": 0,
-   "shooterCap": 1,
-   "earlyRamp": 1,
-   "earlyRampTime": 1,
-   "lateRamp": 1,
-   "lateRampTime": 1,
-   "crowdRamp": {
-    "kind": "normal"
-   },
-   "opening": "main",
-   "pestHp": 0.65,
-   "damage": 0.45,
-   "bossHp": 0.65,
-   "earlyBossRaise": 1,
-   "earlyBossDamage": 1,
-   "eliteHp": 0.65,
-   "maxHp": 1.5,
-   "xp": 1.3,
-   "healDrops": 1,
-   "addedRevives": 1,
-   "allowRevives": true,
-   "startCurses": 0,
-   "tierLag": 2,
-   "wallPests": 0.3,
-   "overtimeHoldSec": 0,
-   "sharpPatterns": false,
-   "orbitPx": 1,
-   "orbitHz": 0.8,
-   "shotPuddleRadius": 1.45,
-   "shotPuddleSec": 1.65,
-   "returnSpeed": 1.05,
-   "sharpAttacks": false,
-   "areaScale": 1,
-   "bossHitShare": null,
-   "spreadBuild": true,
-   "catalystGuaranteeLag": 0,
-   "xpExponentRaise": 0,
-   "promises": [
-    {
-     "kind": "mixReach",
-     "min": 0.4,
-     "max": 0.5
-    }
-   ]
-  },
-  "hard": {
-   "alive": 0.75,
-   "floorShare": 0.25,
-   "shooterCap": 1,
-   "earlyRamp": 1,
-   "earlyRampTime": 1,
-   "lateRamp": 1,
-   "lateRampTime": 1,
-   "crowdRamp": {
-    "kind": "own",
-    "points": [
-     {
-      "atSec": 0,
-      "alive": 25
-     },
-     {
-      "atSec": 60,
-      "alive": 35
-     },
-     {
-      "atSec": 172.5,
-      "alive": 150
-     }
-    ]
-   },
-   "opening": "main",
-   "pestHp": 0.65,
-   "damage": 0.5,
-   "bossHp": 0.7,
-   "earlyBossRaise": 1,
-   "earlyBossDamage": 1,
-   "eliteHp": 0.65,
-   "maxHp": 1.5,
-   "xp": 1.3,
-   "healDrops": 1,
-   "addedRevives": 0,
-   "allowRevives": true,
-   "startCurses": 0,
-   "tierLag": 2,
-   "wallPests": 0.3,
-   "overtimeHoldSec": 0,
-   "sharpPatterns": false,
-   "orbitPx": 1,
-   "orbitHz": 0.6,
-   "shotPuddleRadius": 1.5,
-   "shotPuddleSec": 1.65,
-   "returnSpeed": 1.05,
-   "sharpAttacks": false,
-   "areaScale": 1,
-   "bossHitShare": null,
-   "spreadBuild": true,
-   "catalystGuaranteeLag": 0,
-   "xpExponentRaise": 0,
-   "promises": [
-    {
-     "kind": "mixReach",
-     "min": 0.25,
-     "max": 0.35
-    },
-    {
-     "kind": "lateCrowd",
-     "skills": [
-      "practiced",
-      "expert"
-     ],
-     "window": {
-      "fromSec": 810,
-      "toSec": 855
-     },
-     "minAlive": 15,
-     "min": 650,
-     "max": 700
-    }
-   ],
-   "crowd": 1.3
-  },
-  "nightmare": {
-   "alive": 1.05,
-   "floorShare": 0.65,
-   "shooterCap": 1,
-   "earlyRamp": 1,
-   "earlyRampTime": 0.45,
-   "lateRamp": 0.32,
-   "lateRampTime": 0.3333333333333333,
-   "crowdRamp": {
-    "kind": "own",
-    "points": [
-     {
-      "atSec": 0,
-      "alive": 10
-     },
-     {
-      "atSec": 45,
-      "alive": 25
-     },
-     {
-      "atSec": 97.5,
-      "alive": 70
-     },
-     {
-      "atSec": 150,
-      "alive": 150
-     }
-    ]
-   },
-   "opening": "classic",
-   "pestHp": 1.2,
-   "damage": 0.95,
-   "bossHp": 0.95,
-   "earlyBossRaise": 0.7,
-   "earlyBossDamage": 0.25,
-   "eliteHp": 1.3,
-   "maxHp": 1.2,
-   "xp": 1.5,
-   "healDrops": 0.8,
-   "addedRevives": 0,
-   "allowRevives": false,
-   "startCurses": 1,
-   "tierLag": 2,
-   "wallPests": 0.6,
-   "overtimeHoldSec": 0,
-   "sharpPatterns": true,
-   "orbitPx": 1.2,
-   "orbitHz": 1.1,
-   "shotPuddleRadius": 1.6,
-   "shotPuddleSec": 1.65,
-   "returnSpeed": 1.05,
-   "sharpAttacks": true,
-   "areaScale": 1.45,
-   "bossHitShare": 0.9,
-   "spreadBuild": false,
-   "catalystGuaranteeLag": 3,
-   "xpExponentRaise": 0.01,
-   "promises": [
-    {
-     "kind": "mixReach",
-     "min": 0.03,
-     "max": 0.15
-    },
-    {
-     "kind": "bossOneShots",
-     "max": 0
-    },
-    {
-     "kind": "lateCrowd",
-     "skills": [
-      "practiced",
-      "expert"
-     ],
-     "window": {
-      "fromSec": 810,
-      "toSec": 855
-     },
-     "minAlive": 15,
-     "min": 800,
-     "max": 850
-    }
-   ],
-   "crowd": 1.6
-  }
- },
- "intro-shared.mt": {
+ "intro-shared.ht": {
   "rows": [
    {
     "step": 0,
@@ -10606,6 +10302,44 @@
   "stepSec": 45,
   "afterLast": "postWin"
  },
+ "intro-shared.j": {
+  "baseHp": 2.5,
+  "baseHpRampSec": 360,
+  "hpPerLevel": 1.11,
+  "damagePerLevel": 1.044,
+  "lateCurvePerLevel": 0.087,
+  "bossHitSharePerLevel": 0,
+  "bossAttackRatePerLevel": 1.001,
+  "stacking": {
+   "weaponLevel": 1.2,
+   "evolvedRanks": 7,
+   "passiveRank": 2,
+   "mightFloor": 0.1,
+   "setBonus": 3,
+   "greaterLine": 1.3,
+   "ancestral": 1.1,
+   "primal": 1.175,
+   "dropLevel": 1
+  }
+ },
+ "intro-shared.k": {
+  "mash": {
+   "damageMult": 3,
+   "areaMult": 1.6
+  },
+  "aura": {
+   "everySec": 0.5,
+   "radius": 56
+  },
+  "volt": {
+   "zapsPerSec": 20,
+   "radius": 170,
+   "jumps": 2,
+   "jumpRadius": 60,
+   "eliteHpFraction": 0.06,
+   "bossHpFraction": 0.004
+  }
+ },
  "intro-shared.p": [
   {
    "piece": "comet-treads",
@@ -10647,12 +10381,298 @@
   }
  ],
  "intro-shared.q": {
-  "id": "mash-pylon",
-  "radius": 16,
-  "chargeSec": 0.25,
-  "weights": {}
+  "look": {
+   "color": "#ffd04a",
+   "sprite": "poi-mash-pylon",
+   "usedClip": null,
+   "pinRank": 0.05,
+   "pin": [
+    {
+     "path": "M4.5 15.5L5.6 9H10.4L11.5 15.5Z",
+     "ink": "#6c7189"
+    },
+    {
+     "path": "M3.5 15.5H12.5V14.2H3.5Z",
+     "ink": "#47464f"
+    },
+    {
+     "path": "M8 1A3.6 4.6 0 1 1 7.99 1Z",
+     "ink": "#ffd04a"
+    },
+    {
+     "path": "M6.8 3.2A1 1.4 0 1 1 6.79 3.2Z",
+     "ink": "#fffaea"
+    }
+   ]
+  },
+  "place": {
+   "id": "mash-pylon",
+   "radius": 16,
+   "chargeSec": 0.25,
+   "weights": {}
+  },
+  "text": {
+   "name": "Mash Pylon",
+   "desc": "Reach it before it sinks: your hits deal triple damage and grow bigger for 30 s."
+  }
  },
- "intro-shared.vt": [
+ "intro-shared.ut": {
+  "easy": {
+   "alive": 0.55,
+   "floorShare": 0,
+   "shooterCap": 1,
+   "earlyRamp": 1,
+   "earlyRampTime": 1,
+   "lateRamp": 1,
+   "lateRampTime": 1,
+   "crowdRamp": {
+    "kind": "normal"
+   },
+   "opening": "main",
+   "pestHp": 0.5,
+   "damage": 0.4,
+   "bossHp": 0.5,
+   "earlyBossRaise": 0.5,
+   "earlyBossDamage": 1,
+   "eliteHp": 0.5,
+   "maxHp": 2,
+   "xp": 1.5,
+   "healDrops": 1,
+   "addedRevives": 2,
+   "allowRevives": true,
+   "startCurses": 0,
+   "tierLag": 3,
+   "wallPests": 0.15,
+   "overtimeHoldSec": 45,
+   "sharpPatterns": false,
+   "orbitPx": 1,
+   "orbitHz": 0.6,
+   "shotPuddleRadius": 1.3,
+   "shotPuddleSec": 1.5,
+   "returnSpeed": 0.7,
+   "sharpAttacks": false,
+   "areaScale": 1,
+   "bossHitShare": null,
+   "spreadBuild": true,
+   "catalystGuaranteeLag": 0,
+   "xpExponentRaise": 0,
+   "promises": [
+    {
+     "kind": "mixReach",
+     "min": 0.65,
+     "max": 0.75
+    }
+   ]
+  },
+  "normal": {
+   "alive": 0.7,
+   "floorShare": 0,
+   "shooterCap": 1,
+   "earlyRamp": 1,
+   "earlyRampTime": 1,
+   "lateRamp": 1,
+   "lateRampTime": 1,
+   "crowdRamp": {
+    "kind": "normal"
+   },
+   "opening": "main",
+   "pestHp": 0.65,
+   "damage": 0.45,
+   "bossHp": 0.65,
+   "earlyBossRaise": 1,
+   "earlyBossDamage": 1,
+   "eliteHp": 0.65,
+   "maxHp": 1.5,
+   "xp": 1.3,
+   "healDrops": 1,
+   "addedRevives": 1,
+   "allowRevives": true,
+   "startCurses": 0,
+   "tierLag": 2,
+   "wallPests": 0.3,
+   "overtimeHoldSec": 0,
+   "sharpPatterns": false,
+   "orbitPx": 1,
+   "orbitHz": 0.8,
+   "shotPuddleRadius": 1.45,
+   "shotPuddleSec": 1.65,
+   "returnSpeed": 1.05,
+   "sharpAttacks": false,
+   "areaScale": 1,
+   "bossHitShare": null,
+   "spreadBuild": true,
+   "catalystGuaranteeLag": 0,
+   "xpExponentRaise": 0,
+   "promises": [
+    {
+     "kind": "mixReach",
+     "min": 0.4,
+     "max": 0.5
+    }
+   ]
+  },
+  "hard": {
+   "alive": 0.75,
+   "floorShare": 0.25,
+   "shooterCap": 1,
+   "earlyRamp": 1,
+   "earlyRampTime": 1,
+   "lateRamp": 1,
+   "lateRampTime": 1,
+   "crowdRamp": {
+    "kind": "own",
+    "points": [
+     {
+      "atSec": 0,
+      "alive": 25
+     },
+     {
+      "atSec": 60,
+      "alive": 35
+     },
+     {
+      "atSec": 172.5,
+      "alive": 150
+     }
+    ]
+   },
+   "opening": "main",
+   "pestHp": 0.65,
+   "damage": 0.5,
+   "bossHp": 0.7,
+   "earlyBossRaise": 1,
+   "earlyBossDamage": 1,
+   "eliteHp": 0.65,
+   "maxHp": 1.5,
+   "xp": 1.3,
+   "healDrops": 1,
+   "addedRevives": 0,
+   "allowRevives": true,
+   "startCurses": 0,
+   "tierLag": 2,
+   "wallPests": 0.3,
+   "overtimeHoldSec": 0,
+   "sharpPatterns": false,
+   "orbitPx": 1,
+   "orbitHz": 0.6,
+   "shotPuddleRadius": 1.5,
+   "shotPuddleSec": 1.65,
+   "returnSpeed": 1.05,
+   "sharpAttacks": false,
+   "areaScale": 1,
+   "bossHitShare": null,
+   "spreadBuild": true,
+   "catalystGuaranteeLag": 0,
+   "xpExponentRaise": 0,
+   "promises": [
+    {
+     "kind": "mixReach",
+     "min": 0.25,
+     "max": 0.35
+    },
+    {
+     "kind": "lateCrowd",
+     "skills": [
+      "practiced",
+      "expert"
+     ],
+     "window": {
+      "fromSec": 810,
+      "toSec": 855
+     },
+     "minAlive": 15,
+     "min": 650,
+     "max": 700
+    }
+   ],
+   "crowd": 1.3
+  },
+  "nightmare": {
+   "alive": 1.05,
+   "floorShare": 0.65,
+   "shooterCap": 1,
+   "earlyRamp": 1,
+   "earlyRampTime": 0.45,
+   "lateRamp": 0.32,
+   "lateRampTime": 0.3333333333333333,
+   "crowdRamp": {
+    "kind": "own",
+    "points": [
+     {
+      "atSec": 0,
+      "alive": 10
+     },
+     {
+      "atSec": 45,
+      "alive": 25
+     },
+     {
+      "atSec": 97.5,
+      "alive": 70
+     },
+     {
+      "atSec": 150,
+      "alive": 150
+     }
+    ]
+   },
+   "opening": "classic",
+   "pestHp": 1.2,
+   "damage": 0.95,
+   "bossHp": 0.95,
+   "earlyBossRaise": 0.7,
+   "earlyBossDamage": 0.25,
+   "eliteHp": 1.3,
+   "maxHp": 1.2,
+   "xp": 1.5,
+   "healDrops": 0.8,
+   "addedRevives": 0,
+   "allowRevives": false,
+   "startCurses": 1,
+   "tierLag": 2,
+   "wallPests": 0.6,
+   "overtimeHoldSec": 0,
+   "sharpPatterns": true,
+   "orbitPx": 1.2,
+   "orbitHz": 1.1,
+   "shotPuddleRadius": 1.6,
+   "shotPuddleSec": 1.65,
+   "returnSpeed": 1.05,
+   "sharpAttacks": true,
+   "areaScale": 1.45,
+   "bossHitShare": 0.9,
+   "spreadBuild": false,
+   "catalystGuaranteeLag": 3,
+   "xpExponentRaise": 0.01,
+   "promises": [
+    {
+     "kind": "mixReach",
+     "min": 0.03,
+     "max": 0.15
+    },
+    {
+     "kind": "bossOneShots",
+     "max": 0
+    },
+    {
+     "kind": "lateCrowd",
+     "skills": [
+      "practiced",
+      "expert"
+     ],
+     "window": {
+      "fromSec": 810,
+      "toSec": 855
+     },
+     "minAlive": 15,
+     "min": 800,
+     "max": 850
+    }
+   ],
+   "crowd": 1.6
+  }
+ },
+ "intro-shared.yt": [
   {
    "step": 0,
    "minEnemies": 22,

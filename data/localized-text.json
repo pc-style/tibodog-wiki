@@ -1,8 +1,8 @@
 {
  "schema": 1,
  "game": {
-  "version": "983052c",
-  "commit": "983052cf6af0013d34ab1daf9ef29020a5c7558e"
+  "version": "0a7bbc8",
+  "commit": "0a7bbc8cbec5082a38bd7c4a82b03d0e94da3219"
  },
  "simVersion": "2566278ae7c18c10",
  "locales": [
@@ -59440,7 +59440,7 @@
   "index": {
    "url": "https://tibo.dog/data/v1/index.json",
    "bytes": 18937,
-   "sha256": "9d21d6e2c46bef94b9c797aaf7f7f217b5c5752ca2a8edc92e5066faf6a329f3"
+   "sha256": "d481faa7b5100622c2e116d2b8f430351ac6355aae52485e300d9c69f0964159"
   },
   "locales": {
    "en": {
