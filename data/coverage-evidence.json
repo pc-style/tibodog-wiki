@@ -1719,6 +1719,582 @@
         ],
         "scope": "Standard/Normal,s1/s2/s3; original spawners and attack/family consumers with supplied clocks,timers,positions,roles,boulder and selected first-tier Mud Bloom plan;1000headHP/1000chip basis. Starting weapon removed;no give/god/warp,reward-service writes or natural encounter claims. Only selected head emitter parameters,not bullet travel/other volleys,natural plan frequencies,full movement integration,damage-hit resolver,Nightmare,survival/DPS/server/device behavior. Checks for this entity: [\"original head schedule;1s splash/.6s rise and stationary body;first-tier original14shot/speed62/1swarning emitter;supplied1000headHP/1000chip basis;HP-delta counted once/capped .25;main Hydra consumes chip/removes heads;spawnedHP75%of unchipped control (not hit resolver or reward defeat)\"]"
       }
+    ],
+    "rune:frozen-fries-big-chill": [
+      {
+        "file": "tools/probe-projectile-runes.mjs",
+        "command": "node tools/probe-projectile-runes.mjs main-8zbhOvtE.js",
+        "main": "main-8zbhOvtE.js",
+        "definitionSha256": "be7dca361fba1fff653ae18023115e14a8ce68893caa080e47eb2ef0f559da96",
+        "scriptSha256": "815dfc08f5033247200c36d8e9723bb928e13e77be128f5b5dc4be8fbd677be9",
+        "source": {
+          "url": "https://tibo.dog/assets/sim-DpazMjS2.js",
+          "sha256": "f6bc620d2ea311a52f90cc280b32c73a2769707859ea1e33c20943b74588677e"
+        },
+        "sources": [
+          {
+            "url": "https://tibo.dog/assets/main-8zbhOvtE.js",
+            "sha256": "7ff8520c6503b9052f8b53013c30af37b5c452ecea7a0d0ed5584eb4f2010478"
+          },
+          {
+            "url": "https://tibo.dog/assets/sim-DpazMjS2.js",
+            "sha256": "f6bc620d2ea311a52f90cc280b32c73a2769707859ea1e33c20943b74588677e"
+          },
+          {
+            "url": "https://tibo.dog/assets/boot-BnSaTwvC.js",
+            "sha256": "41750d41565912ea467fded28ab76b0bf04e4b53a121072de902522550efd4fd"
+          },
+          {
+            "url": "https://tibo.dog/assets/intro-shared-BzGhBf9a.js",
+            "sha256": "24beb3e16e8da35dea12ed278b80cc83ede70173b8052d97b77c96592421483e"
+          }
+        ],
+        "scope": "Standard/Normal,s1/s2/s3; supplied level-one base weapon and rune card; Amount bonus0/3; two static targets at30/70 with maxHP100/300,currentHP100/1. Original selection, stat computation and tick/dispatch consumers; six volleys each, original cooldowns. Not natural acquisition,max-level/evolved/union behavior,projectile movement/collision/status/bounce/landing hits,DPS,survival,server or device validation. No reward writes; network forbidden."
+      }
+    ],
+    "rune:frozen-fries-brain-freeze": [
+      {
+        "file": "tools/probe-projectile-runes.mjs",
+        "command": "node tools/probe-projectile-runes.mjs main-8zbhOvtE.js",
+        "main": "main-8zbhOvtE.js",
+        "definitionSha256": "df60e59de0a796c38be7be670ea5202078e56e6a5aced1a7e02c5b11e40c8b4a",
+        "scriptSha256": "815dfc08f5033247200c36d8e9723bb928e13e77be128f5b5dc4be8fbd677be9",
+        "source": {
+          "url": "https://tibo.dog/assets/sim-DpazMjS2.js",
+          "sha256": "f6bc620d2ea311a52f90cc280b32c73a2769707859ea1e33c20943b74588677e"
+        },
+        "sources": [
+          {
+            "url": "https://tibo.dog/assets/main-8zbhOvtE.js",
+            "sha256": "7ff8520c6503b9052f8b53013c30af37b5c452ecea7a0d0ed5584eb4f2010478"
+          },
+          {
+            "url": "https://tibo.dog/assets/sim-DpazMjS2.js",
+            "sha256": "f6bc620d2ea311a52f90cc280b32c73a2769707859ea1e33c20943b74588677e"
+          },
+          {
+            "url": "https://tibo.dog/assets/boot-BnSaTwvC.js",
+            "sha256": "41750d41565912ea467fded28ab76b0bf04e4b53a121072de902522550efd4fd"
+          },
+          {
+            "url": "https://tibo.dog/assets/intro-shared-BzGhBf9a.js",
+            "sha256": "24beb3e16e8da35dea12ed278b80cc83ede70173b8052d97b77c96592421483e"
+          }
+        ],
+        "scope": "Standard/Normal,s1/s2/s3; supplied level-one base weapon and rune card; Amount bonus0/3; two static targets at30/70 with maxHP100/300,currentHP100/1. Original selection, stat computation and tick/dispatch consumers; six volleys each, original cooldowns. Not natural acquisition,max-level/evolved/union behavior,projectile movement/collision/status/bounce/landing hits,DPS,survival,server or device validation. No reward writes; network forbidden."
+      }
+    ],
+    "rune:frozen-fries-frost-fan": [
+      {
+        "file": "tools/probe-projectile-runes.mjs",
+        "command": "node tools/probe-projectile-runes.mjs main-8zbhOvtE.js",
+        "main": "main-8zbhOvtE.js",
+        "definitionSha256": "5a78d5b091be31eb8fa26b22af67ccff74036d38cf379033ce866f5f9d9436e6",
+        "scriptSha256": "815dfc08f5033247200c36d8e9723bb928e13e77be128f5b5dc4be8fbd677be9",
+        "source": {
+          "url": "https://tibo.dog/assets/sim-DpazMjS2.js",
+          "sha256": "f6bc620d2ea311a52f90cc280b32c73a2769707859ea1e33c20943b74588677e"
+        },
+        "sources": [
+          {
+            "url": "https://tibo.dog/assets/main-8zbhOvtE.js",
+            "sha256": "7ff8520c6503b9052f8b53013c30af37b5c452ecea7a0d0ed5584eb4f2010478"
+          },
+          {
+            "url": "https://tibo.dog/assets/sim-DpazMjS2.js",
+            "sha256": "f6bc620d2ea311a52f90cc280b32c73a2769707859ea1e33c20943b74588677e"
+          },
+          {
+            "url": "https://tibo.dog/assets/boot-BnSaTwvC.js",
+            "sha256": "41750d41565912ea467fded28ab76b0bf04e4b53a121072de902522550efd4fd"
+          },
+          {
+            "url": "https://tibo.dog/assets/intro-shared-BzGhBf9a.js",
+            "sha256": "24beb3e16e8da35dea12ed278b80cc83ede70173b8052d97b77c96592421483e"
+          }
+        ],
+        "scope": "Standard/Normal,s1/s2/s3; supplied level-one base weapon and rune card; Amount bonus0/3; two static targets at30/70 with maxHP100/300,currentHP100/1. Original selection, stat computation and tick/dispatch consumers; six volleys each, original cooldowns. Not natural acquisition,max-level/evolved/union behavior,projectile movement/collision/status/bounce/landing hits,DPS,survival,server or device validation. No reward writes; network forbidden."
+      }
+    ],
+    "rune:fry-knives-back-knives": [
+      {
+        "file": "tools/probe-projectile-runes.mjs",
+        "command": "node tools/probe-projectile-runes.mjs main-8zbhOvtE.js",
+        "main": "main-8zbhOvtE.js",
+        "definitionSha256": "4cb710eec1567cf3363ab16fb21864ab9ac54c445417418e7078229a06e1eb71",
+        "scriptSha256": "815dfc08f5033247200c36d8e9723bb928e13e77be128f5b5dc4be8fbd677be9",
+        "source": {
+          "url": "https://tibo.dog/assets/sim-DpazMjS2.js",
+          "sha256": "f6bc620d2ea311a52f90cc280b32c73a2769707859ea1e33c20943b74588677e"
+        },
+        "sources": [
+          {
+            "url": "https://tibo.dog/assets/main-8zbhOvtE.js",
+            "sha256": "7ff8520c6503b9052f8b53013c30af37b5c452ecea7a0d0ed5584eb4f2010478"
+          },
+          {
+            "url": "https://tibo.dog/assets/sim-DpazMjS2.js",
+            "sha256": "f6bc620d2ea311a52f90cc280b32c73a2769707859ea1e33c20943b74588677e"
+          },
+          {
+            "url": "https://tibo.dog/assets/boot-BnSaTwvC.js",
+            "sha256": "41750d41565912ea467fded28ab76b0bf04e4b53a121072de902522550efd4fd"
+          },
+          {
+            "url": "https://tibo.dog/assets/intro-shared-BzGhBf9a.js",
+            "sha256": "24beb3e16e8da35dea12ed278b80cc83ede70173b8052d97b77c96592421483e"
+          }
+        ],
+        "scope": "Standard/Normal,s1/s2/s3; supplied level-one base weapon and rune card; Amount bonus0/3; two static targets at30/70 with maxHP100/300,currentHP100/1. Original selection, stat computation and tick/dispatch consumers; six volleys each, original cooldowns. Not natural acquisition,max-level/evolved/union behavior,projectile movement/collision/status/bounce/landing hits,DPS,survival,server or device validation. No reward writes; network forbidden."
+      }
+    ],
+    "rune:fry-knives-carving-knife": [
+      {
+        "file": "tools/probe-projectile-runes.mjs",
+        "command": "node tools/probe-projectile-runes.mjs main-8zbhOvtE.js",
+        "main": "main-8zbhOvtE.js",
+        "definitionSha256": "8c460039d873fd20795d5a81a3c3493222de1fb1c85080b9d61b2293cf3fcd1a",
+        "scriptSha256": "815dfc08f5033247200c36d8e9723bb928e13e77be128f5b5dc4be8fbd677be9",
+        "source": {
+          "url": "https://tibo.dog/assets/sim-DpazMjS2.js",
+          "sha256": "f6bc620d2ea311a52f90cc280b32c73a2769707859ea1e33c20943b74588677e"
+        },
+        "sources": [
+          {
+            "url": "https://tibo.dog/assets/main-8zbhOvtE.js",
+            "sha256": "7ff8520c6503b9052f8b53013c30af37b5c452ecea7a0d0ed5584eb4f2010478"
+          },
+          {
+            "url": "https://tibo.dog/assets/sim-DpazMjS2.js",
+            "sha256": "f6bc620d2ea311a52f90cc280b32c73a2769707859ea1e33c20943b74588677e"
+          },
+          {
+            "url": "https://tibo.dog/assets/boot-BnSaTwvC.js",
+            "sha256": "41750d41565912ea467fded28ab76b0bf04e4b53a121072de902522550efd4fd"
+          },
+          {
+            "url": "https://tibo.dog/assets/intro-shared-BzGhBf9a.js",
+            "sha256": "24beb3e16e8da35dea12ed278b80cc83ede70173b8052d97b77c96592421483e"
+          }
+        ],
+        "scope": "Standard/Normal,s1/s2/s3; supplied level-one base weapon and rune card; Amount bonus0/3; two static targets at30/70 with maxHP100/300,currentHP100/1. Original selection, stat computation and tick/dispatch consumers; six volleys each, original cooldowns. Not natural acquisition,max-level/evolved/union behavior,projectile movement/collision/status/bounce/landing hits,DPS,survival,server or device validation. No reward writes; network forbidden."
+      }
+    ],
+    "rune:fry-knives-knife-storm": [
+      {
+        "file": "tools/probe-projectile-runes.mjs",
+        "command": "node tools/probe-projectile-runes.mjs main-8zbhOvtE.js",
+        "main": "main-8zbhOvtE.js",
+        "definitionSha256": "7ee96f440ed7b8a90caea29a54d7c665e70b082c66ef21d009da275bc8e38580",
+        "scriptSha256": "815dfc08f5033247200c36d8e9723bb928e13e77be128f5b5dc4be8fbd677be9",
+        "source": {
+          "url": "https://tibo.dog/assets/sim-DpazMjS2.js",
+          "sha256": "f6bc620d2ea311a52f90cc280b32c73a2769707859ea1e33c20943b74588677e"
+        },
+        "sources": [
+          {
+            "url": "https://tibo.dog/assets/main-8zbhOvtE.js",
+            "sha256": "7ff8520c6503b9052f8b53013c30af37b5c452ecea7a0d0ed5584eb4f2010478"
+          },
+          {
+            "url": "https://tibo.dog/assets/sim-DpazMjS2.js",
+            "sha256": "f6bc620d2ea311a52f90cc280b32c73a2769707859ea1e33c20943b74588677e"
+          },
+          {
+            "url": "https://tibo.dog/assets/boot-BnSaTwvC.js",
+            "sha256": "41750d41565912ea467fded28ab76b0bf04e4b53a121072de902522550efd4fd"
+          },
+          {
+            "url": "https://tibo.dog/assets/intro-shared-BzGhBf9a.js",
+            "sha256": "24beb3e16e8da35dea12ed278b80cc83ede70173b8052d97b77c96592421483e"
+          }
+        ],
+        "scope": "Standard/Normal,s1/s2/s3; supplied level-one base weapon and rune card; Amount bonus0/3; two static targets at30/70 with maxHP100/300,currentHP100/1. Original selection, stat computation and tick/dispatch consumers; six volleys each, original cooldowns. Not natural acquisition,max-level/evolved/union behavior,projectile movement/collision/status/bounce/landing hits,DPS,survival,server or device validation. No reward writes; network forbidden."
+      }
+    ],
+    "rune:rosti-disc-big-rosti": [
+      {
+        "file": "tools/probe-projectile-runes.mjs",
+        "command": "node tools/probe-projectile-runes.mjs main-8zbhOvtE.js",
+        "main": "main-8zbhOvtE.js",
+        "definitionSha256": "009bbb74d681849fdb10e063f29b045a33e473336e600c68679aa0a264df0fbb",
+        "scriptSha256": "815dfc08f5033247200c36d8e9723bb928e13e77be128f5b5dc4be8fbd677be9",
+        "source": {
+          "url": "https://tibo.dog/assets/sim-DpazMjS2.js",
+          "sha256": "f6bc620d2ea311a52f90cc280b32c73a2769707859ea1e33c20943b74588677e"
+        },
+        "sources": [
+          {
+            "url": "https://tibo.dog/assets/main-8zbhOvtE.js",
+            "sha256": "7ff8520c6503b9052f8b53013c30af37b5c452ecea7a0d0ed5584eb4f2010478"
+          },
+          {
+            "url": "https://tibo.dog/assets/sim-DpazMjS2.js",
+            "sha256": "f6bc620d2ea311a52f90cc280b32c73a2769707859ea1e33c20943b74588677e"
+          },
+          {
+            "url": "https://tibo.dog/assets/boot-BnSaTwvC.js",
+            "sha256": "41750d41565912ea467fded28ab76b0bf04e4b53a121072de902522550efd4fd"
+          },
+          {
+            "url": "https://tibo.dog/assets/intro-shared-BzGhBf9a.js",
+            "sha256": "24beb3e16e8da35dea12ed278b80cc83ede70173b8052d97b77c96592421483e"
+          }
+        ],
+        "scope": "Standard/Normal,s1/s2/s3; supplied level-one base weapon and rune card; Amount bonus0/3; two static targets at30/70 with maxHP100/300,currentHP100/1. Original selection, stat computation and tick/dispatch consumers; six volleys each, original cooldowns. Not natural acquisition,max-level/evolved/union behavior,projectile movement/collision/status/bounce/landing hits,DPS,survival,server or device validation. No reward writes; network forbidden."
+      }
+    ],
+    "rune:rosti-disc-disc-wheel": [
+      {
+        "file": "tools/probe-projectile-runes.mjs",
+        "command": "node tools/probe-projectile-runes.mjs main-8zbhOvtE.js",
+        "main": "main-8zbhOvtE.js",
+        "definitionSha256": "7aa1293c5c3c5d138ea4032468e8a712caa9877a486f5b73e73fd7d5d2ad0305",
+        "scriptSha256": "815dfc08f5033247200c36d8e9723bb928e13e77be128f5b5dc4be8fbd677be9",
+        "source": {
+          "url": "https://tibo.dog/assets/sim-DpazMjS2.js",
+          "sha256": "f6bc620d2ea311a52f90cc280b32c73a2769707859ea1e33c20943b74588677e"
+        },
+        "sources": [
+          {
+            "url": "https://tibo.dog/assets/main-8zbhOvtE.js",
+            "sha256": "7ff8520c6503b9052f8b53013c30af37b5c452ecea7a0d0ed5584eb4f2010478"
+          },
+          {
+            "url": "https://tibo.dog/assets/sim-DpazMjS2.js",
+            "sha256": "f6bc620d2ea311a52f90cc280b32c73a2769707859ea1e33c20943b74588677e"
+          },
+          {
+            "url": "https://tibo.dog/assets/boot-BnSaTwvC.js",
+            "sha256": "41750d41565912ea467fded28ab76b0bf04e4b53a121072de902522550efd4fd"
+          },
+          {
+            "url": "https://tibo.dog/assets/intro-shared-BzGhBf9a.js",
+            "sha256": "24beb3e16e8da35dea12ed278b80cc83ede70173b8052d97b77c96592421483e"
+          }
+        ],
+        "scope": "Standard/Normal,s1/s2/s3; supplied level-one base weapon and rune card; Amount bonus0/3; two static targets at30/70 with maxHP100/300,currentHP100/1. Original selection, stat computation and tick/dispatch consumers; six volleys each, original cooldowns. Not natural acquisition,max-level/evolved/union behavior,projectile movement/collision/status/bounce/landing hits,DPS,survival,server or device validation. No reward writes; network forbidden."
+      }
+    ],
+    "rune:rosti-disc-hard-toss": [
+      {
+        "file": "tools/probe-projectile-runes.mjs",
+        "command": "node tools/probe-projectile-runes.mjs main-8zbhOvtE.js",
+        "main": "main-8zbhOvtE.js",
+        "definitionSha256": "1e3dc75f1c418ec6795a9d79039894a32163e43284ae2bbc99b282cb2700334e",
+        "scriptSha256": "815dfc08f5033247200c36d8e9723bb928e13e77be128f5b5dc4be8fbd677be9",
+        "source": {
+          "url": "https://tibo.dog/assets/sim-DpazMjS2.js",
+          "sha256": "f6bc620d2ea311a52f90cc280b32c73a2769707859ea1e33c20943b74588677e"
+        },
+        "sources": [
+          {
+            "url": "https://tibo.dog/assets/main-8zbhOvtE.js",
+            "sha256": "7ff8520c6503b9052f8b53013c30af37b5c452ecea7a0d0ed5584eb4f2010478"
+          },
+          {
+            "url": "https://tibo.dog/assets/sim-DpazMjS2.js",
+            "sha256": "f6bc620d2ea311a52f90cc280b32c73a2769707859ea1e33c20943b74588677e"
+          },
+          {
+            "url": "https://tibo.dog/assets/boot-BnSaTwvC.js",
+            "sha256": "41750d41565912ea467fded28ab76b0bf04e4b53a121072de902522550efd4fd"
+          },
+          {
+            "url": "https://tibo.dog/assets/intro-shared-BzGhBf9a.js",
+            "sha256": "24beb3e16e8da35dea12ed278b80cc83ede70173b8052d97b77c96592421483e"
+          }
+        ],
+        "scope": "Standard/Normal,s1/s2/s3; supplied level-one base weapon and rune card; Amount bonus0/3; two static targets at30/70 with maxHP100/300,currentHP100/1. Original selection, stat computation and tick/dispatch consumers; six volleys each, original cooldowns. Not natural acquisition,max-level/evolved/union behavior,projectile movement/collision/status/bounce/landing hits,DPS,survival,server or device validation. No reward writes; network forbidden."
+      }
+    ],
+    "rune:spud-cannon-big-blast": [
+      {
+        "file": "tools/probe-projectile-runes.mjs",
+        "command": "node tools/probe-projectile-runes.mjs main-8zbhOvtE.js",
+        "main": "main-8zbhOvtE.js",
+        "definitionSha256": "c7b6ba837cee1ca91983974aaa02e78fc0221e6ddd90ed408a666e3e1ab1d2e9",
+        "scriptSha256": "815dfc08f5033247200c36d8e9723bb928e13e77be128f5b5dc4be8fbd677be9",
+        "source": {
+          "url": "https://tibo.dog/assets/sim-DpazMjS2.js",
+          "sha256": "f6bc620d2ea311a52f90cc280b32c73a2769707859ea1e33c20943b74588677e"
+        },
+        "sources": [
+          {
+            "url": "https://tibo.dog/assets/main-8zbhOvtE.js",
+            "sha256": "7ff8520c6503b9052f8b53013c30af37b5c452ecea7a0d0ed5584eb4f2010478"
+          },
+          {
+            "url": "https://tibo.dog/assets/sim-DpazMjS2.js",
+            "sha256": "f6bc620d2ea311a52f90cc280b32c73a2769707859ea1e33c20943b74588677e"
+          },
+          {
+            "url": "https://tibo.dog/assets/boot-BnSaTwvC.js",
+            "sha256": "41750d41565912ea467fded28ab76b0bf04e4b53a121072de902522550efd4fd"
+          },
+          {
+            "url": "https://tibo.dog/assets/intro-shared-BzGhBf9a.js",
+            "sha256": "24beb3e16e8da35dea12ed278b80cc83ede70173b8052d97b77c96592421483e"
+          }
+        ],
+        "scope": "Standard/Normal,s1/s2/s3; supplied level-one base weapon and rune card; Amount bonus0/3; two static targets at30/70 with maxHP100/300,currentHP100/1. Original selection, stat computation and tick/dispatch consumers; six volleys each, original cooldowns. Not natural acquisition,max-level/evolved/union behavior,projectile movement/collision/status/bounce/landing hits,DPS,survival,server or device validation. No reward writes; network forbidden."
+      }
+    ],
+    "rune:spud-cannon-bullseye": [
+      {
+        "file": "tools/probe-projectile-runes.mjs",
+        "command": "node tools/probe-projectile-runes.mjs main-8zbhOvtE.js",
+        "main": "main-8zbhOvtE.js",
+        "definitionSha256": "9ab6a883e2949d6622f1bc646ce372a7ce1aeb8009a5081e37235df7efcf5c98",
+        "scriptSha256": "815dfc08f5033247200c36d8e9723bb928e13e77be128f5b5dc4be8fbd677be9",
+        "source": {
+          "url": "https://tibo.dog/assets/sim-DpazMjS2.js",
+          "sha256": "f6bc620d2ea311a52f90cc280b32c73a2769707859ea1e33c20943b74588677e"
+        },
+        "sources": [
+          {
+            "url": "https://tibo.dog/assets/main-8zbhOvtE.js",
+            "sha256": "7ff8520c6503b9052f8b53013c30af37b5c452ecea7a0d0ed5584eb4f2010478"
+          },
+          {
+            "url": "https://tibo.dog/assets/sim-DpazMjS2.js",
+            "sha256": "f6bc620d2ea311a52f90cc280b32c73a2769707859ea1e33c20943b74588677e"
+          },
+          {
+            "url": "https://tibo.dog/assets/boot-BnSaTwvC.js",
+            "sha256": "41750d41565912ea467fded28ab76b0bf04e4b53a121072de902522550efd4fd"
+          },
+          {
+            "url": "https://tibo.dog/assets/intro-shared-BzGhBf9a.js",
+            "sha256": "24beb3e16e8da35dea12ed278b80cc83ede70173b8052d97b77c96592421483e"
+          }
+        ],
+        "scope": "Standard/Normal,s1/s2/s3; supplied level-one base weapon and rune card; Amount bonus0/3; two static targets at30/70 with maxHP100/300,currentHP100/1. Original selection, stat computation and tick/dispatch consumers; six volleys each, original cooldowns. Not natural acquisition,max-level/evolved/union behavior,projectile movement/collision/status/bounce/landing hits,DPS,survival,server or device validation. No reward writes; network forbidden."
+      }
+    ],
+    "rune:spud-cannon-volley-fire": [
+      {
+        "file": "tools/probe-projectile-runes.mjs",
+        "command": "node tools/probe-projectile-runes.mjs main-8zbhOvtE.js",
+        "main": "main-8zbhOvtE.js",
+        "definitionSha256": "990ecf78b4b47570c0a31fa08ff9dcc823bd275810cf24a20e6738deb4c3af07",
+        "scriptSha256": "815dfc08f5033247200c36d8e9723bb928e13e77be128f5b5dc4be8fbd677be9",
+        "source": {
+          "url": "https://tibo.dog/assets/sim-DpazMjS2.js",
+          "sha256": "f6bc620d2ea311a52f90cc280b32c73a2769707859ea1e33c20943b74588677e"
+        },
+        "sources": [
+          {
+            "url": "https://tibo.dog/assets/main-8zbhOvtE.js",
+            "sha256": "7ff8520c6503b9052f8b53013c30af37b5c452ecea7a0d0ed5584eb4f2010478"
+          },
+          {
+            "url": "https://tibo.dog/assets/sim-DpazMjS2.js",
+            "sha256": "f6bc620d2ea311a52f90cc280b32c73a2769707859ea1e33c20943b74588677e"
+          },
+          {
+            "url": "https://tibo.dog/assets/boot-BnSaTwvC.js",
+            "sha256": "41750d41565912ea467fded28ab76b0bf04e4b53a121072de902522550efd4fd"
+          },
+          {
+            "url": "https://tibo.dog/assets/intro-shared-BzGhBf9a.js",
+            "sha256": "24beb3e16e8da35dea12ed278b80cc83ede70173b8052d97b77c96592421483e"
+          }
+        ],
+        "scope": "Standard/Normal,s1/s2/s3; supplied level-one base weapon and rune card; Amount bonus0/3; two static targets at30/70 with maxHP100/300,currentHP100/1. Original selection, stat computation and tick/dispatch consumers; six volleys each, original cooldowns. Not natural acquisition,max-level/evolved/union behavior,projectile movement/collision/status/bounce/landing hits,DPS,survival,server or device validation. No reward writes; network forbidden."
+      }
+    ],
+    "rune:spud-lob-big-bounce": [
+      {
+        "file": "tools/probe-projectile-runes.mjs",
+        "command": "node tools/probe-projectile-runes.mjs main-8zbhOvtE.js",
+        "main": "main-8zbhOvtE.js",
+        "definitionSha256": "9e4360bef5c26e45d3594d795cf106e085000b479c1b91b9aba7230e3bea5880",
+        "scriptSha256": "815dfc08f5033247200c36d8e9723bb928e13e77be128f5b5dc4be8fbd677be9",
+        "source": {
+          "url": "https://tibo.dog/assets/sim-DpazMjS2.js",
+          "sha256": "f6bc620d2ea311a52f90cc280b32c73a2769707859ea1e33c20943b74588677e"
+        },
+        "sources": [
+          {
+            "url": "https://tibo.dog/assets/main-8zbhOvtE.js",
+            "sha256": "7ff8520c6503b9052f8b53013c30af37b5c452ecea7a0d0ed5584eb4f2010478"
+          },
+          {
+            "url": "https://tibo.dog/assets/sim-DpazMjS2.js",
+            "sha256": "f6bc620d2ea311a52f90cc280b32c73a2769707859ea1e33c20943b74588677e"
+          },
+          {
+            "url": "https://tibo.dog/assets/boot-BnSaTwvC.js",
+            "sha256": "41750d41565912ea467fded28ab76b0bf04e4b53a121072de902522550efd4fd"
+          },
+          {
+            "url": "https://tibo.dog/assets/intro-shared-BzGhBf9a.js",
+            "sha256": "24beb3e16e8da35dea12ed278b80cc83ede70173b8052d97b77c96592421483e"
+          }
+        ],
+        "scope": "Standard/Normal,s1/s2/s3; supplied level-one base weapon and rune card; Amount bonus0/3; two static targets at30/70 with maxHP100/300,currentHP100/1. Original selection, stat computation and tick/dispatch consumers; six volleys each, original cooldowns. Not natural acquisition,max-level/evolved/union behavior,projectile movement/collision/status/bounce/landing hits,DPS,survival,server or device validation. No reward writes; network forbidden."
+      }
+    ],
+    "rune:spud-lob-hot-landing": [
+      {
+        "file": "tools/probe-projectile-runes.mjs",
+        "command": "node tools/probe-projectile-runes.mjs main-8zbhOvtE.js",
+        "main": "main-8zbhOvtE.js",
+        "definitionSha256": "4799d05d448220aec5ccd130e2530ddb3d01c9a5d11676ef589050f79274d5cd",
+        "scriptSha256": "815dfc08f5033247200c36d8e9723bb928e13e77be128f5b5dc4be8fbd677be9",
+        "source": {
+          "url": "https://tibo.dog/assets/sim-DpazMjS2.js",
+          "sha256": "f6bc620d2ea311a52f90cc280b32c73a2769707859ea1e33c20943b74588677e"
+        },
+        "sources": [
+          {
+            "url": "https://tibo.dog/assets/main-8zbhOvtE.js",
+            "sha256": "7ff8520c6503b9052f8b53013c30af37b5c452ecea7a0d0ed5584eb4f2010478"
+          },
+          {
+            "url": "https://tibo.dog/assets/sim-DpazMjS2.js",
+            "sha256": "f6bc620d2ea311a52f90cc280b32c73a2769707859ea1e33c20943b74588677e"
+          },
+          {
+            "url": "https://tibo.dog/assets/boot-BnSaTwvC.js",
+            "sha256": "41750d41565912ea467fded28ab76b0bf04e4b53a121072de902522550efd4fd"
+          },
+          {
+            "url": "https://tibo.dog/assets/intro-shared-BzGhBf9a.js",
+            "sha256": "24beb3e16e8da35dea12ed278b80cc83ede70173b8052d97b77c96592421483e"
+          }
+        ],
+        "scope": "Standard/Normal,s1/s2/s3; supplied level-one base weapon and rune card; Amount bonus0/3; two static targets at30/70 with maxHP100/300,currentHP100/1. Original selection, stat computation and tick/dispatch consumers; six volleys each, original cooldowns. Not natural acquisition,max-level/evolved/union behavior,projectile movement/collision/status/bounce/landing hits,DPS,survival,server or device validation. No reward writes; network forbidden."
+      }
+    ],
+    "rune:spud-lob-wide-lob": [
+      {
+        "file": "tools/probe-projectile-runes.mjs",
+        "command": "node tools/probe-projectile-runes.mjs main-8zbhOvtE.js",
+        "main": "main-8zbhOvtE.js",
+        "definitionSha256": "29b88be3001e61cf8fe92b85a1e2a39bd7bba4f819f6dd07a18f87474e267a87",
+        "scriptSha256": "815dfc08f5033247200c36d8e9723bb928e13e77be128f5b5dc4be8fbd677be9",
+        "source": {
+          "url": "https://tibo.dog/assets/sim-DpazMjS2.js",
+          "sha256": "f6bc620d2ea311a52f90cc280b32c73a2769707859ea1e33c20943b74588677e"
+        },
+        "sources": [
+          {
+            "url": "https://tibo.dog/assets/main-8zbhOvtE.js",
+            "sha256": "7ff8520c6503b9052f8b53013c30af37b5c452ecea7a0d0ed5584eb4f2010478"
+          },
+          {
+            "url": "https://tibo.dog/assets/sim-DpazMjS2.js",
+            "sha256": "f6bc620d2ea311a52f90cc280b32c73a2769707859ea1e33c20943b74588677e"
+          },
+          {
+            "url": "https://tibo.dog/assets/boot-BnSaTwvC.js",
+            "sha256": "41750d41565912ea467fded28ab76b0bf04e4b53a121072de902522550efd4fd"
+          },
+          {
+            "url": "https://tibo.dog/assets/intro-shared-BzGhBf9a.js",
+            "sha256": "24beb3e16e8da35dea12ed278b80cc83ede70173b8052d97b77c96592421483e"
+          }
+        ],
+        "scope": "Standard/Normal,s1/s2/s3; supplied level-one base weapon and rune card; Amount bonus0/3; two static targets at30/70 with maxHP100/300,currentHP100/1. Original selection, stat computation and tick/dispatch consumers; six volleys each, original cooldowns. Not natural acquisition,max-level/evolved/union behavior,projectile movement/collision/status/bounce/landing hits,DPS,survival,server or device validation. No reward writes; network forbidden."
+      }
+    ],
+    "rune:tot-toss-big-tot": [
+      {
+        "file": "tools/probe-projectile-runes.mjs",
+        "command": "node tools/probe-projectile-runes.mjs main-8zbhOvtE.js",
+        "main": "main-8zbhOvtE.js",
+        "definitionSha256": "2f8cfe25a0cb978360507e4d1b2eab1758331e6078b105f1efb0d02431fb3494",
+        "scriptSha256": "815dfc08f5033247200c36d8e9723bb928e13e77be128f5b5dc4be8fbd677be9",
+        "source": {
+          "url": "https://tibo.dog/assets/sim-DpazMjS2.js",
+          "sha256": "f6bc620d2ea311a52f90cc280b32c73a2769707859ea1e33c20943b74588677e"
+        },
+        "sources": [
+          {
+            "url": "https://tibo.dog/assets/main-8zbhOvtE.js",
+            "sha256": "7ff8520c6503b9052f8b53013c30af37b5c452ecea7a0d0ed5584eb4f2010478"
+          },
+          {
+            "url": "https://tibo.dog/assets/sim-DpazMjS2.js",
+            "sha256": "f6bc620d2ea311a52f90cc280b32c73a2769707859ea1e33c20943b74588677e"
+          },
+          {
+            "url": "https://tibo.dog/assets/boot-BnSaTwvC.js",
+            "sha256": "41750d41565912ea467fded28ab76b0bf04e4b53a121072de902522550efd4fd"
+          },
+          {
+            "url": "https://tibo.dog/assets/intro-shared-BzGhBf9a.js",
+            "sha256": "24beb3e16e8da35dea12ed278b80cc83ede70173b8052d97b77c96592421483e"
+          }
+        ],
+        "scope": "Standard/Normal,s1/s2/s3; supplied level-one base weapon and rune card; Amount bonus0/3; two static targets at30/70 with maxHP100/300,currentHP100/1. Original selection, stat computation and tick/dispatch consumers; six volleys each, original cooldowns. Not natural acquisition,max-level/evolved/union behavior,projectile movement/collision/status/bounce/landing hits,DPS,survival,server or device validation. No reward writes; network forbidden."
+      }
+    ],
+    "rune:tot-toss-tot-pile": [
+      {
+        "file": "tools/probe-projectile-runes.mjs",
+        "command": "node tools/probe-projectile-runes.mjs main-8zbhOvtE.js",
+        "main": "main-8zbhOvtE.js",
+        "definitionSha256": "58bf7468cf121baf1ea88a65dca14a883348e527f9cdac3a55a181a941d76b69",
+        "scriptSha256": "815dfc08f5033247200c36d8e9723bb928e13e77be128f5b5dc4be8fbd677be9",
+        "source": {
+          "url": "https://tibo.dog/assets/sim-DpazMjS2.js",
+          "sha256": "f6bc620d2ea311a52f90cc280b32c73a2769707859ea1e33c20943b74588677e"
+        },
+        "sources": [
+          {
+            "url": "https://tibo.dog/assets/main-8zbhOvtE.js",
+            "sha256": "7ff8520c6503b9052f8b53013c30af37b5c452ecea7a0d0ed5584eb4f2010478"
+          },
+          {
+            "url": "https://tibo.dog/assets/sim-DpazMjS2.js",
+            "sha256": "f6bc620d2ea311a52f90cc280b32c73a2769707859ea1e33c20943b74588677e"
+          },
+          {
+            "url": "https://tibo.dog/assets/boot-BnSaTwvC.js",
+            "sha256": "41750d41565912ea467fded28ab76b0bf04e4b53a121072de902522550efd4fd"
+          },
+          {
+            "url": "https://tibo.dog/assets/intro-shared-BzGhBf9a.js",
+            "sha256": "24beb3e16e8da35dea12ed278b80cc83ede70173b8052d97b77c96592421483e"
+          }
+        ],
+        "scope": "Standard/Normal,s1/s2/s3; supplied level-one base weapon and rune card; Amount bonus0/3; two static targets at30/70 with maxHP100/300,currentHP100/1. Original selection, stat computation and tick/dispatch consumers; six volleys each, original cooldowns. Not natural acquisition,max-level/evolved/union behavior,projectile movement/collision/status/bounce/landing hits,DPS,survival,server or device validation. No reward writes; network forbidden."
+      }
+    ],
+    "rune:tot-toss-tot-sniper": [
+      {
+        "file": "tools/probe-projectile-runes.mjs",
+        "command": "node tools/probe-projectile-runes.mjs main-8zbhOvtE.js",
+        "main": "main-8zbhOvtE.js",
+        "definitionSha256": "9d6dfec121010195b45890ec61bc7399510367529df7bec902be87cf7f3af66d",
+        "scriptSha256": "815dfc08f5033247200c36d8e9723bb928e13e77be128f5b5dc4be8fbd677be9",
+        "source": {
+          "url": "https://tibo.dog/assets/sim-DpazMjS2.js",
+          "sha256": "f6bc620d2ea311a52f90cc280b32c73a2769707859ea1e33c20943b74588677e"
+        },
+        "sources": [
+          {
+            "url": "https://tibo.dog/assets/main-8zbhOvtE.js",
+            "sha256": "7ff8520c6503b9052f8b53013c30af37b5c452ecea7a0d0ed5584eb4f2010478"
+          },
+          {
+            "url": "https://tibo.dog/assets/sim-DpazMjS2.js",
+            "sha256": "f6bc620d2ea311a52f90cc280b32c73a2769707859ea1e33c20943b74588677e"
+          },
+          {
+            "url": "https://tibo.dog/assets/boot-BnSaTwvC.js",
+            "sha256": "41750d41565912ea467fded28ab76b0bf04e4b53a121072de902522550efd4fd"
+          },
+          {
+            "url": "https://tibo.dog/assets/intro-shared-BzGhBf9a.js",
+            "sha256": "24beb3e16e8da35dea12ed278b80cc83ede70173b8052d97b77c96592421483e"
+          }
+        ],
+        "scope": "Standard/Normal,s1/s2/s3; supplied level-one base weapon and rune card; Amount bonus0/3; two static targets at30/70 with maxHP100/300,currentHP100/1. Original selection, stat computation and tick/dispatch consumers; six volleys each, original cooldowns. Not natural acquisition,max-level/evolved/union behavior,projectile movement/collision/status/bounce/landing hits,DPS,survival,server or device validation. No reward writes; network forbidden."
+      }
     ]
   },
   "reports": [

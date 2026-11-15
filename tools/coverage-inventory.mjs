@@ -58,10 +58,14 @@ export function createInventory({ registry, config, pages, build, evidence = {},
     const key = `${kind}:${id}`;
     const page = byPath.get(path.split('#')[0]);
     if (!page) throw new Error(`Coverage: no owning page for ${key} (${path})`);
-    const prosePath = `data/prose${path}.md`;
-    const prose = path.includes('#') ? null : readFile(prosePath);
+    const prosePath = kind === 'rune' ? `data/prose/runes/${id}.md` : `data/prose${path}.md`;
+    const prose = kind === 'rune' || !path.includes('#') ? readFile(prosePath) : null;
     const own = sections(prose ?? '').filter((s) => /^(?:How it works|Overview|Fight|Measured trigger|Measured ability|Extra dash)$/.test(s.heading) && narrative(s.text));
-    let explanation = own.length ? { status: 'present', path: `${path}#${slug(own.find((s) => s.heading === 'How it works')?.heading ?? own[0].heading)}`,
+    if (kind === 'rune' && own.length) {
+      path = `${path.split('#')[0]}#rune-${id}`;
+      if (!page.body.includes(`id="rune-${id}"`)) throw new Error(`Coverage: missing rune walkthrough for ${id}`);
+    }
+    let explanation = own.length ? { status: 'present', path: kind === 'rune' ? path : `${path}#${slug(own.find((s) => s.heading === 'How it works')?.heading ?? own[0].heading)}`,
       source: prosePath, sha256: hash(prose) } : { status: 'missing', path };
     // A flat modifier already has a generated level/stat table and shared conversion formulas.
     // Conditional effects and GPU heat must not get this exemption.
@@ -115,8 +119,10 @@ export function createInventory({ registry, config, pages, build, evidence = {},
   for (const def of registry.runes ?? []) {
     const path = `/weapons/${def.weapon}#weapon-runes`;
     if (!byPath.get(`/weapons/${def.weapon}`)?.body.includes('## Weapon runes\n')) throw new Error(`Coverage: missing rune section for ${def.id}`);
-    add('rune', def, path, def.id, { status: 'partial', path, source: 'pages/entities.mjs',
-      reason: 'Published text, raw definition and shared effect rules; not a per-rune combat walkthrough' });
+    add('rune', def, path, def.id);
+    const entry = entries.at(-1);
+    if (entry.explanation.status === 'missing') entry.explanation = { status: 'partial', path, source: 'pages/entities.mjs',
+      reason: 'Published text, raw definition and shared effect rules; not a per-rune combat walkthrough' };
   }
   const sets = Object.entries(config).filter(([, v]) => Array.isArray(v) && v[0]?.set && v[0]?.rule);
   if (sets.length !== 1) throw new Error('Coverage: expected one exported gear-rule catalog');

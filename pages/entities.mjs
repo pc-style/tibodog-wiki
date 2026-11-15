@@ -215,6 +215,12 @@ export function weaponPages() {
       body += `## Weapon runes\n\nFrom 6:45 outside Story, an eligible maxed weapon can replace a level-up hand with its three runes. Pick one; it stays through evolution. See [Weapon runes](/level-up#weapon-runes) for eligibility, timing and effect rules. Descriptions below are the game's wording, not measured damage rankings.\n\n`;
       body += table(['Rune', 'Axis', 'In-game effect'], runes.map((r) => [t(`rune.${r.id}.name`), r.axis, t(`rune.${r.id}.desc`)])) + '\n';
       body += `<details class="raw"><summary>Raw rune definitions</summary>\n\n\`\`\`json\n${JSON.stringify(runes, null, 2)}\n\`\`\`\n\n</details>\n\n`;
+      for (const r of runes) {
+        let prose;
+        try { prose = readFileSync(new URL(`../data/prose/runes/${r.id}.md`, import.meta.url), 'utf8'); }
+        catch (error) { if (error.code === 'ENOENT') continue; throw error; }
+        body += `### ${t(`rune.${r.id}.name`)}\n\n<a id="rune-${r.id}"></a>\n\n${prose.replace(/^## How it works\n\n/, '')}\n\n`;
+      }
     }
 
     if (evo.length || unions.length) {

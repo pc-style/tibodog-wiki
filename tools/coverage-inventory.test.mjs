@@ -92,6 +92,20 @@ test('rune catalog presence stays partial and does not inherit its weapon combat
   assert.equal(rune.explanation.status, 'partial');
   assert.deepEqual(rune.measurements, []);
   assert.deepEqual(rune.scenarios, []);
+  f.files['data/prose/runes/explained-target.md'] = '## How it works\n\n| Target | HP |\n|---|---|\n| Biggest | 300 |';
+  assert.equal(createInventory(f).entries.find((e) => e.key === 'rune:explained-target').explanation.status, 'partial', 'a rune table alone is still partial');
+  f.files['data/prose/runes/explained-target.md'] = '## How it works\n\nSelects greatest maximum HP, not current HP; equal maximum HP prefers nearer targets.\n\nControlled checks on `main-87654321.js`: supplied maximum HP 100/300 and current HP 100/1 selected the farther target.';
+  assert.throws(() => createInventory(f), /missing rune walkthrough/, 'an unpublished prose file does not count');
+  f.pages[0].body += '\n<a id="rune-explained-target"></a>\n\nSelects greatest maximum HP, not current HP.';
+  f.evidence = { scenarios: { 'rune:explained-target': [{ file: 'tools/scenario.mjs', main: f.build.main,
+    definitionSha256: hash(JSON.stringify(f.registry.runes[0])), scriptSha256: hash(f.files['tools/scenario.mjs']) }] } };
+  const explained = createInventory(f).entries.find((e) => e.key === 'rune:explained-target');
+  assert.equal(explained.path, '/weapons/explained#rune-explained-target');
+  assert.equal(explained.explanation.status, 'present');
+  assert.equal(explained.explanation.source, 'data/prose/runes/explained-target.md');
+  assert.equal(explained.measurements.length, 1);
+  assert.match(explained.measurements[0].text, /maximum HP 100\/300/);
+  assert.equal(explained.scenarios[0].status, 'recorded-current');
   f.pages[0].body = '';
   assert.throws(() => createInventory(f), /missing rune section/);
 });
