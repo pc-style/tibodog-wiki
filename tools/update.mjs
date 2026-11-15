@@ -170,11 +170,12 @@ if (apply && prev && journalEvidence) {
     const plan = measurement.sync('journal-graduation-proof', () => journal.prepareJournalOnly(dirname(prev.dir), cache, journalEvidence,
       builds, JSON.parse(readFileSync('data/changelog.json', 'utf8'))));
     const official = await measurement.async('journal-official-data', () => fetchOfficialData(plan.gameCommit));
-    measurement.sync('journal-catalog-consistency', () => applyOfficialData({ registry: JSON.parse(readFileSync('data/registry.json')),
-      content: JSON.parse(readFileSync('data/en-content.json')) }, official));
+    const dumped = { registry: JSON.parse(readFileSync('data/registry.json')),
+      content: JSON.parse(readFileSync('data/en-content.json')) };
+    measurement.sync('journal-catalog-consistency', () => applyOfficialData(dumped, official));
     plan.officialData = official.provenance;
     writeFileSync(join(cache, 'official-data.json'), JSON.stringify(official, null, 1));
-    journalText = localizedTextExport(official);
+    journalText = localizedTextExport(official, dumped);
     journalPlan = plan;
   } catch (error) {
     measurement.receipt.journalFastPath = { status: 'not-eligible', reason: error.message };
@@ -244,7 +245,7 @@ const imported = applyOfficialData({
 }, official);
 writeFileSync(join(cache, 'data/registry.json'), JSON.stringify(imported.registry, null, 1));
 writeFileSync(join(cache, 'data/en-content.json'), JSON.stringify(imported.content, null, 1));
-writeFileSync(join(cache, 'data/localized-text.json'), JSON.stringify(localizedTextExport(official), null, 1) + '\n');
+writeFileSync(join(cache, 'data/localized-text.json'), JSON.stringify(localizedTextExport(official, imported), null, 1) + '\n');
 writeFileSync(join(cache, 'official-data.json'), JSON.stringify(official, null, 1));
 report.push(`Game commit: \`${commit ?? 'not found'}\` (was \`${build.commit}\`).`, '', '## Data changes', '');
 if (diff.changes.length) {

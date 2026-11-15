@@ -96,7 +96,7 @@ test('localized export preserves original descriptions, placeholders, RTL and ab
     return doc;
   });
   const fetched = await fetchOfficialData(COMMIT, f);
-  const result = localizedTextExport(fetched);
+  const result = localizedTextExport(fetched, f.dumped);
   assert.equal(result.game.commit, COMMIT);
   assert.equal(result.simVersion, 'simulation-1');
   assert.deepEqual(result.locales, f.index.locales);
@@ -106,7 +106,7 @@ test('localized export preserves original descriptions, placeholders, RTL and ab
   assert.equal(result.sources.locales.fr.sha256, createHash('sha256').update(f.bodies['text/fr.json']).digest('hex'));
   const reordered = { ...fetched, text: { fr: fetched.text.fr, en: fetched.text.en },
     provenance: { ...fetched.provenance, fetchedAt: 'another fetch time' } };
-  assert.equal(JSON.stringify(localizedTextExport(reordered)), JSON.stringify(result));
+  assert.equal(JSON.stringify(localizedTextExport(reordered, f.dumped)), JSON.stringify(result));
 });
 
 test('rejects commit, sim revision, and manifest drift on the final index', async () => {
@@ -131,12 +131,12 @@ test('rune text exports verbatim and maps compiled English while rejecting unkno
     return doc;
   });
   const result = await fetchOfficialData(COMMIT, f);
-  assert.deepEqual(localizedTextExport(result).text.fr.rune, { 'peeler-backhand': { name: 'Revers' } });
-  assert.equal(localizedTextExport(result).text.en.rune['peeler-backhand'].desc, 'Slashes bat bullets back.');
   f.dumped.content['content.rune.peeler-backhand.name'] = ['Backhand'];
   f.dumped.content['content.rune.peeler-backhand.desc'] = ['Slashes bat bullets back.'];
   assert.throws(() => applyOfficialData(f.dumped, result), /registry.runes: English IDs differ/);
   f.dumped.registry.runes = [{ id: 'peeler-backhand', weapon: 'sample', axis: 'target', effects: [] }];
+  assert.deepEqual(localizedTextExport(result, f.dumped).text.fr.rune, { 'peeler-backhand': { name: 'Revers' } });
+  assert.equal(localizedTextExport(result, f.dumped).text.en.rune['peeler-backhand'].desc, 'Slashes bat bullets back.');
   assert.deepEqual(applyOfficialData(f.dumped, result), f.dumped);
   for (const runes of [[], [...f.dumped.registry.runes, ...f.dumped.registry.runes],
     [{ id: 'peeler-backhand', weapon: 'unknown', effects: [] }]]) {
@@ -150,6 +150,80 @@ test('rune text exports verbatim and maps compiled English while rejecting unkno
   const g = fixture();
   g.rewrite('text/fr.json', (doc) => { doc.texts.rune = { 'peeler-backhand': { name: 'Revers' } }; return doc; });
   await assert.rejects(fetchOfficialData(COMMIT, g), /unknown English mapping/);
+});
+
+test('optional weapon text and localization-only IDs survive without catalog or registry promotion', async () => {
+  const f = fixture();
+  const extra = { name: 'Unregistered text', desc: 'Keeps {gain}% 🥔.', where: 'A source string, not a verified acquisition rule.' };
+  f.rewrite('text/en.json', (doc) => {
+    doc.texts.weapon.sample.where = 'Optional registered-weapon text';
+    doc.texts.weapon['text-only'] = extra;
+    return doc;
+  });
+  f.rewrite('text/fr.json', (doc) => {
+    doc.texts.weapon['text-only'] = { name: 'Texte seulement', where: 'Garde {gain}%.' };
+    return doc;
+  });
+  f.dumped.content['content.weapon.sample.where'] = ['Optional registered-weapon text'];
+  for (const [field, value] of Object.entries(extra)) {
+    f.dumped.content[`content.weapon.text-only.${field}`] = field === 'desc' ? ['Keeps ', ['gain'], '% 🥔.'] : [value];
+  }
+  const fetched = await fetchOfficialData(COMMIT, f);
+  const imported = applyOfficialData(f.dumped, fetched);
+  assert.deepEqual(imported, f.dumped);
+  assert.deepEqual(Object.keys(fetched.catalogs.weapons.entries), ['sample']);
+  assert.deepEqual(imported.registry.allWeapons.map((w) => w.id), ['sample']);
+  assert.equal(fetched.catalogs.weapons.entries.sample.where, undefined);
+  const exported = localizedTextExport(fetched, f.dumped);
+  assert.deepEqual(exported.text.en.weapon['text-only'], extra);
+  assert.equal(exported.text.en.weapon.sample.where, 'Optional registered-weapon text');
+  assert.deepEqual(exported.text.fr.weapon['text-only'], { name: 'Texte seulement', where: 'Garde {gain}%.' });
+  assert.equal(exported.text.fr.weapon.sample.where, undefined);
+
+  for (const id of ['sample', 'text-only']) {
+    for (const bad of [undefined, ['Wrong source'], [[1, 'gain']]]) {
+      const dumped = structuredClone(f.dumped);
+      if (bad === undefined) delete dumped.content[`content.weapon.${id}.where`];
+      else dumped.content[`content.weapon.${id}.where`] = bad;
+      assert.throws(() => applyOfficialData(dumped, fetched), /unmapped English|English mismatch|unsupported compiled/);
+      assert.throws(() => localizedTextExport(fetched, dumped), /unmapped English|English mismatch|unsupported compiled/);
+    }
+  }
+  assert.throws(() => localizedTextExport(fetched), /dumped/);
+  const promoted = structuredClone(fetched);
+  promoted.catalogs.weapons.entries['text-only'] = { ...extra, id: 'text-only', def: {} };
+  delete promoted.catalogs.weapons.entries['text-only'].where;
+  assert.throws(() => applyOfficialData(f.dumped, promoted), /unmapped official/);
+});
+
+test('weapon text extensions still reject missing registered English, unsupported values and invalid translated mappings', async () => {
+  for (const id of ['sample', 'text-only']) {
+    for (const fields of [{ name: 7, desc: 'Text' }, { name: 'Text', desc: null },
+      { name: 'Text', desc: 'Text', where: ['Array'] }, { name: 'Text', desc: 'Text', where: {} },
+      { name: 'Text', desc: 'Text', damage: 'Unknown' }, {}, []]) {
+      const f = fixture();
+      f.rewrite('text/en.json', (doc) => { doc.texts.weapon[id] = fields; return doc; });
+      await assert.rejects(fetchOfficialData(COMMIT, f), /official data:/);
+    }
+  }
+  for (const mutate of [
+    (doc) => { delete doc.texts.weapon.sample.name; },
+    (doc) => { delete doc.texts.weapon.sample.desc; },
+    (doc) => { doc.texts.weapon = { 'text-only': { name: 'Text', desc: 'Text' } }; },
+  ]) {
+    const f = fixture();
+    f.rewrite('text/en.json', (doc) => { mutate(doc); return doc; });
+    await assert.rejects(fetchOfficialData(COMMIT, f), /official data:/);
+  }
+  for (const [id, fields] of [['sample', { where: 'No English field' }],
+    ['text-only', { name: 'No English ID' }], ['sample', { name: 7 }]]) {
+    const f = fixture();
+    f.rewrite('text/fr.json', (doc) => { doc.texts.weapon[id] = fields; return doc; });
+    await assert.rejects(fetchOfficialData(COMMIT, f), /unknown English mapping|invalid fields/);
+  }
+  const f = fixture();
+  f.rewrite('weapons.json', (doc) => { doc.entries.sample.where = 'Not a catalog field'; return doc; });
+  await assert.rejects(fetchOfficialData(COMMIT, f), /unknown field where/);
 });
 
 test('required catalog or locale HTTP403 fails rather than falling back', async () => {

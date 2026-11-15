@@ -123,7 +123,8 @@ function validateData(catalogs, text, locales) {
       requireObject(entries, `text/${tag}/${type}`);
       for (const [id, fields] of Object.entries(entries)) {
         if (!idOK(id)) fail(`text/${tag}/${type}: invalid ID`);
-        keys(fields, TEXT_FIELDS[type], `text/${tag}/${type}/${id}`);
+        // Acquisition hints belong to localization, never the playable catalog.
+        keys(fields, type === 'weapon' ? [...TEXT_FIELDS.weapon, 'where'] : TEXT_FIELDS[type], `text/${tag}/${type}/${id}`);
         if (!Object.keys(fields).length || Object.values(fields).some((v) => typeof v !== 'string')) fail(`text/${tag}/${type}/${id}: invalid fields`);
         if (tag === 'en' && type === 'rune' && TEXT_FIELDS.rune.some((field) => typeof fields[field] !== 'string')) fail(`text/en/rune/${id}: missing name or desc`);
         if (tag !== 'en') {
@@ -134,7 +135,11 @@ function validateData(catalogs, text, locales) {
   }
   for (const [kind, [type]] of Object.entries(TYPES)) {
     const entries = catalogs[kind].entries;
-    if (!isDeepStrictEqual(Object.keys(entries).sort(), Object.keys(text.en.texts[type] ?? {}).sort())) fail(`${kind}: English IDs differ`);
+    const english = text.en.texts[type] ?? {};
+    // Weapon localization may precede registration. Missing registered English
+    // still fails; extra strings must pass compiled-source equality on apply/export.
+    if (type === 'weapon' ? Object.keys(entries).some((id) => !Object.hasOwn(english, id))
+      : !isDeepStrictEqual(Object.keys(entries).sort(), Object.keys(english).sort())) fail(`${kind}: English IDs differ`);
     for (const [id, entry] of Object.entries(entries)) {
       const fields = text.en.texts[type][id];
       for (const field of TEXT_FIELDS[type]) {
@@ -179,9 +184,12 @@ export async function fetchOfficialData(expectedCommit, { request = fetch } = {}
 
 // Publish upstream text verbatim, including placeholders and missing translations.
 // Stable locale order and content hashes keep rebuilds independent of fetch timing.
-export function localizedTextExport(official) {
+export function localizedTextExport(official, dumped) {
   const { index, text, provenance } = official;
   validateData(official.catalogs, text, index.locales.map(({ tag }) => tag));
+  // Export is also an ingestion boundary, including direct CLI use. Neither
+  // registered nor localization-only English may escape the source guard.
+  applyOfficialData(dumped, official);
   return {
     schema: 1, game: index.game, simVersion: index.simVersion, locales: index.locales,
     text: Object.fromEntries(index.locales.map(({ tag }) => [tag, text[tag].texts])),
@@ -203,6 +211,7 @@ function preserveFunctions(official, dumped) {
 
 // The dump is also the schema/mapping guard. No guessed IDs or unverified text.
 export function applyOfficialData(dumped, official) {
+  requireObject(dumped, 'dumped');
   requireObject(dumped.registry, 'dumped.registry');
   requireObject(dumped.content, 'dumped.content');
   validateData(official.catalogs, official.text, Object.keys(official.text));
@@ -268,7 +277,11 @@ if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) 
   if (process.argv[2] !== '--export-text') throw new Error('Usage: node tools/official-data.mjs --export-text [output.json]');
   const build = JSON.parse(readFileSync(new URL('../data/build.json', import.meta.url)));
   const output = process.argv[3] ?? new URL('../data/localized-text.json', import.meta.url);
-  const exported = localizedTextExport(await fetchOfficialData(build.commit));
+  const dumped = {
+    registry: JSON.parse(readFileSync(new URL('../data/registry.json', import.meta.url))),
+    content: JSON.parse(readFileSync(new URL('../data/en-content.json', import.meta.url))),
+  };
+  const exported = localizedTextExport(await fetchOfficialData(build.commit), dumped);
   writeFileSync(output, JSON.stringify(exported, null, 1) + '\n');
   console.log(`Exported original names and descriptions in ${exported.locales.length} languages for ${exported.game.commit}`);
 }
