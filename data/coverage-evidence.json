@@ -3327,6 +3327,390 @@
         ],
         "scope": "Standard/Normal,s1/s2/s3,supplied level-one weapon+rune card,Amount bonus0/3,crit0. Original weapon and hit systems only. Cone retarget/angular boundary/three on-off cycles; aura body boundary,pulse timer,ordinary-vs-elite HP loss; orbit tracked contact,body boundary,rotation,three on-off cycles; separate supplied Area400 coincident-satellite shared lockout. High-HP aphids,no deaths,pickups,reward handlers,full-world stepping or network. Not natural acquisition,max-level/evolved/union,status progression,DPS,survival,server/device proof."
       }
+    ],
+    "rune:peeler-backhand": [
+      {
+        "file": "tools/probe-special-runes.mjs",
+        "command": "node tools/probe-special-runes.mjs main-BDQvha6l.js",
+        "main": "main-BDQvha6l.js",
+        "definitionSha256": "b633484129c0c973df9a9a1ce880999b67c52f83afe930f6c47f1ec98d6b05b4",
+        "scriptSha256": "2aaf2955d978ffb80e653a1f10ac018032280c1c9a203138b6af735bf49843d8",
+        "source": {
+          "url": "https://tibo.dog/assets/sim-BF7yetWo.js",
+          "sha256": "6eb5a335759b8ce4e6f75858ca2e658097fa0480b8b93fc90a204ba5158a689f"
+        },
+        "sources": [
+          {
+            "url": "https://tibo.dog/assets/main-BDQvha6l.js",
+            "sha256": "beae5deefc4c95be49e17ead8d2c16152188fcb7bc974f8673697e4b64a6b5d8"
+          },
+          {
+            "url": "https://tibo.dog/assets/sim-BF7yetWo.js",
+            "sha256": "6eb5a335759b8ce4e6f75858ca2e658097fa0480b8b93fc90a204ba5158a689f"
+          },
+          {
+            "url": "https://tibo.dog/assets/boot-CRGHO9d3.js",
+            "sha256": "b8d0847ab6499b53c12a4f27f0c04ecc8148c2d0f72d56168bc42647e965cc7d"
+          },
+          {
+            "url": "https://tibo.dog/assets/intro-shared-B31C189v.js",
+            "sha256": "3fa8a7357a23f6d3509b879f35609443d0ac9ad76ae9dc0833a4aa22c4c03f20"
+          }
+        ],
+        "scope": "Standard/Normal,s1/s2/s3,supplied level-one weapon+rune card,Amount0/3,crit0. Original attack/projectile/summon/hit consumers only. Six slash/homing/turret dispatches; slash boxes/beat/isolated bullet reflection; homing one-tick target+turn,ring emissions,Hopper forced contacts with Pierce0/2 and expiry; summon six shots/target/HP loss,live stat reread,lifetime/count. HighHP aphids,no deaths,pickups,reward handlers,full-world stepping or network. Not natural acquisition,maxlevel/evolved/union,autonomous trajectory/combat,status progression,DPS/survival,server/device proof."
+      }
+    ],
+    "rune:peeler-haymaker": [
+      {
+        "file": "tools/probe-special-runes.mjs",
+        "command": "node tools/probe-special-runes.mjs main-BDQvha6l.js",
+        "main": "main-BDQvha6l.js",
+        "definitionSha256": "9a57eb857b7c9dd0e8500cc8c079f54477a50a601e0321f61bbd2664fb8ec8f7",
+        "scriptSha256": "2aaf2955d978ffb80e653a1f10ac018032280c1c9a203138b6af735bf49843d8",
+        "source": {
+          "url": "https://tibo.dog/assets/sim-BF7yetWo.js",
+          "sha256": "6eb5a335759b8ce4e6f75858ca2e658097fa0480b8b93fc90a204ba5158a689f"
+        },
+        "sources": [
+          {
+            "url": "https://tibo.dog/assets/main-BDQvha6l.js",
+            "sha256": "beae5deefc4c95be49e17ead8d2c16152188fcb7bc974f8673697e4b64a6b5d8"
+          },
+          {
+            "url": "https://tibo.dog/assets/sim-BF7yetWo.js",
+            "sha256": "6eb5a335759b8ce4e6f75858ca2e658097fa0480b8b93fc90a204ba5158a689f"
+          },
+          {
+            "url": "https://tibo.dog/assets/boot-CRGHO9d3.js",
+            "sha256": "b8d0847ab6499b53c12a4f27f0c04ecc8148c2d0f72d56168bc42647e965cc7d"
+          },
+          {
+            "url": "https://tibo.dog/assets/intro-shared-B31C189v.js",
+            "sha256": "3fa8a7357a23f6d3509b879f35609443d0ac9ad76ae9dc0833a4aa22c4c03f20"
+          }
+        ],
+        "scope": "Standard/Normal,s1/s2/s3,supplied level-one weapon+rune card,Amount0/3,crit0. Original attack/projectile/summon/hit consumers only. Six slash/homing/turret dispatches; slash boxes/beat/isolated bullet reflection; homing one-tick target+turn,ring emissions,Hopper forced contacts with Pierce0/2 and expiry; summon six shots/target/HP loss,live stat reread,lifetime/count. HighHP aphids,no deaths,pickups,reward handlers,full-world stepping or network. Not natural acquisition,maxlevel/evolved/union,autonomous trajectory/combat,status progression,DPS/survival,server/device proof."
+      }
+    ],
+    "rune:peeler-wide-peel": [
+      {
+        "file": "tools/probe-special-runes.mjs",
+        "command": "node tools/probe-special-runes.mjs main-BDQvha6l.js",
+        "main": "main-BDQvha6l.js",
+        "definitionSha256": "2a0b89196130021961eef7731a8605919df5f4fca18bb382290661623e90f8cd",
+        "scriptSha256": "2aaf2955d978ffb80e653a1f10ac018032280c1c9a203138b6af735bf49843d8",
+        "source": {
+          "url": "https://tibo.dog/assets/sim-BF7yetWo.js",
+          "sha256": "6eb5a335759b8ce4e6f75858ca2e658097fa0480b8b93fc90a204ba5158a689f"
+        },
+        "sources": [
+          {
+            "url": "https://tibo.dog/assets/main-BDQvha6l.js",
+            "sha256": "beae5deefc4c95be49e17ead8d2c16152188fcb7bc974f8673697e4b64a6b5d8"
+          },
+          {
+            "url": "https://tibo.dog/assets/sim-BF7yetWo.js",
+            "sha256": "6eb5a335759b8ce4e6f75858ca2e658097fa0480b8b93fc90a204ba5158a689f"
+          },
+          {
+            "url": "https://tibo.dog/assets/boot-CRGHO9d3.js",
+            "sha256": "b8d0847ab6499b53c12a4f27f0c04ecc8148c2d0f72d56168bc42647e965cc7d"
+          },
+          {
+            "url": "https://tibo.dog/assets/intro-shared-B31C189v.js",
+            "sha256": "3fa8a7357a23f6d3509b879f35609443d0ac9ad76ae9dc0833a4aa22c4c03f20"
+          }
+        ],
+        "scope": "Standard/Normal,s1/s2/s3,supplied level-one weapon+rune card,Amount0/3,crit0. Original attack/projectile/summon/hit consumers only. Six slash/homing/turret dispatches; slash boxes/beat/isolated bullet reflection; homing one-tick target+turn,ring emissions,Hopper forced contacts with Pierce0/2 and expiry; summon six shots/target/HP loss,live stat reread,lifetime/count. HighHP aphids,no deaths,pickups,reward handlers,full-world stepping or network. Not natural acquisition,maxlevel/evolved/union,autonomous trajectory/combat,status progression,DPS/survival,server/device proof."
+      }
+    ],
+    "rune:seeker-sprouts-big-game": [
+      {
+        "file": "tools/probe-special-runes.mjs",
+        "command": "node tools/probe-special-runes.mjs main-BDQvha6l.js",
+        "main": "main-BDQvha6l.js",
+        "definitionSha256": "f29649b00e56098cb9a3b9e66f05ba47afb18fa609b872a6ee1bde118ad82132",
+        "scriptSha256": "2aaf2955d978ffb80e653a1f10ac018032280c1c9a203138b6af735bf49843d8",
+        "source": {
+          "url": "https://tibo.dog/assets/sim-BF7yetWo.js",
+          "sha256": "6eb5a335759b8ce4e6f75858ca2e658097fa0480b8b93fc90a204ba5158a689f"
+        },
+        "sources": [
+          {
+            "url": "https://tibo.dog/assets/main-BDQvha6l.js",
+            "sha256": "beae5deefc4c95be49e17ead8d2c16152188fcb7bc974f8673697e4b64a6b5d8"
+          },
+          {
+            "url": "https://tibo.dog/assets/sim-BF7yetWo.js",
+            "sha256": "6eb5a335759b8ce4e6f75858ca2e658097fa0480b8b93fc90a204ba5158a689f"
+          },
+          {
+            "url": "https://tibo.dog/assets/boot-CRGHO9d3.js",
+            "sha256": "b8d0847ab6499b53c12a4f27f0c04ecc8148c2d0f72d56168bc42647e965cc7d"
+          },
+          {
+            "url": "https://tibo.dog/assets/intro-shared-B31C189v.js",
+            "sha256": "3fa8a7357a23f6d3509b879f35609443d0ac9ad76ae9dc0833a4aa22c4c03f20"
+          }
+        ],
+        "scope": "Standard/Normal,s1/s2/s3,supplied level-one weapon+rune card,Amount0/3,crit0. Original attack/projectile/summon/hit consumers only. Six slash/homing/turret dispatches; slash boxes/beat/isolated bullet reflection; homing one-tick target+turn,ring emissions,Hopper forced contacts with Pierce0/2 and expiry; summon six shots/target/HP loss,live stat reread,lifetime/count. HighHP aphids,no deaths,pickups,reward handlers,full-world stepping or network. Not natural acquisition,maxlevel/evolved/union,autonomous trajectory/combat,status progression,DPS/survival,server/device proof."
+      }
+    ],
+    "rune:seeker-sprouts-burst": [
+      {
+        "file": "tools/probe-special-runes.mjs",
+        "command": "node tools/probe-special-runes.mjs main-BDQvha6l.js",
+        "main": "main-BDQvha6l.js",
+        "definitionSha256": "1b5ff0ada4155a828685ed461796ea455adf18ee4310bb7679f5c2af8e16cc75",
+        "scriptSha256": "2aaf2955d978ffb80e653a1f10ac018032280c1c9a203138b6af735bf49843d8",
+        "source": {
+          "url": "https://tibo.dog/assets/sim-BF7yetWo.js",
+          "sha256": "6eb5a335759b8ce4e6f75858ca2e658097fa0480b8b93fc90a204ba5158a689f"
+        },
+        "sources": [
+          {
+            "url": "https://tibo.dog/assets/main-BDQvha6l.js",
+            "sha256": "beae5deefc4c95be49e17ead8d2c16152188fcb7bc974f8673697e4b64a6b5d8"
+          },
+          {
+            "url": "https://tibo.dog/assets/sim-BF7yetWo.js",
+            "sha256": "6eb5a335759b8ce4e6f75858ca2e658097fa0480b8b93fc90a204ba5158a689f"
+          },
+          {
+            "url": "https://tibo.dog/assets/boot-CRGHO9d3.js",
+            "sha256": "b8d0847ab6499b53c12a4f27f0c04ecc8148c2d0f72d56168bc42647e965cc7d"
+          },
+          {
+            "url": "https://tibo.dog/assets/intro-shared-B31C189v.js",
+            "sha256": "3fa8a7357a23f6d3509b879f35609443d0ac9ad76ae9dc0833a4aa22c4c03f20"
+          }
+        ],
+        "scope": "Standard/Normal,s1/s2/s3,supplied level-one weapon+rune card,Amount0/3,crit0. Original attack/projectile/summon/hit consumers only. Six slash/homing/turret dispatches; slash boxes/beat/isolated bullet reflection; homing one-tick target+turn,ring emissions,Hopper forced contacts with Pierce0/2 and expiry; summon six shots/target/HP loss,live stat reread,lifetime/count. HighHP aphids,no deaths,pickups,reward handlers,full-world stepping or network. Not natural acquisition,maxlevel/evolved/union,autonomous trajectory/combat,status progression,DPS/survival,server/device proof."
+      }
+    ],
+    "rune:seeker-sprouts-hopper": [
+      {
+        "file": "tools/probe-special-runes.mjs",
+        "command": "node tools/probe-special-runes.mjs main-BDQvha6l.js",
+        "main": "main-BDQvha6l.js",
+        "definitionSha256": "b18443222788d96fa3fc641966c1a4331aaf93eed591e129fbdcbfbeed96984f",
+        "scriptSha256": "2aaf2955d978ffb80e653a1f10ac018032280c1c9a203138b6af735bf49843d8",
+        "source": {
+          "url": "https://tibo.dog/assets/sim-BF7yetWo.js",
+          "sha256": "6eb5a335759b8ce4e6f75858ca2e658097fa0480b8b93fc90a204ba5158a689f"
+        },
+        "sources": [
+          {
+            "url": "https://tibo.dog/assets/main-BDQvha6l.js",
+            "sha256": "beae5deefc4c95be49e17ead8d2c16152188fcb7bc974f8673697e4b64a6b5d8"
+          },
+          {
+            "url": "https://tibo.dog/assets/sim-BF7yetWo.js",
+            "sha256": "6eb5a335759b8ce4e6f75858ca2e658097fa0480b8b93fc90a204ba5158a689f"
+          },
+          {
+            "url": "https://tibo.dog/assets/boot-CRGHO9d3.js",
+            "sha256": "b8d0847ab6499b53c12a4f27f0c04ecc8148c2d0f72d56168bc42647e965cc7d"
+          },
+          {
+            "url": "https://tibo.dog/assets/intro-shared-B31C189v.js",
+            "sha256": "3fa8a7357a23f6d3509b879f35609443d0ac9ad76ae9dc0833a4aa22c4c03f20"
+          }
+        ],
+        "scope": "Standard/Normal,s1/s2/s3,supplied level-one weapon+rune card,Amount0/3,crit0. Original attack/projectile/summon/hit consumers only. Six slash/homing/turret dispatches; slash boxes/beat/isolated bullet reflection; homing one-tick target+turn,ring emissions,Hopper forced contacts with Pierce0/2 and expiry; summon six shots/target/HP loss,live stat reread,lifetime/count. HighHP aphids,no deaths,pickups,reward handlers,full-world stepping or network. Not natural acquisition,maxlevel/evolved/union,autonomous trajectory/combat,status progression,DPS/survival,server/device proof."
+      }
+    ],
+    "rune:fry-sentry-head-chef": [
+      {
+        "file": "tools/probe-special-runes.mjs",
+        "command": "node tools/probe-special-runes.mjs main-BDQvha6l.js",
+        "main": "main-BDQvha6l.js",
+        "definitionSha256": "2757544f984c88e6a477a387f019d0776180b4a358492a677d5972e472242c09",
+        "scriptSha256": "2aaf2955d978ffb80e653a1f10ac018032280c1c9a203138b6af735bf49843d8",
+        "source": {
+          "url": "https://tibo.dog/assets/sim-BF7yetWo.js",
+          "sha256": "6eb5a335759b8ce4e6f75858ca2e658097fa0480b8b93fc90a204ba5158a689f"
+        },
+        "sources": [
+          {
+            "url": "https://tibo.dog/assets/main-BDQvha6l.js",
+            "sha256": "beae5deefc4c95be49e17ead8d2c16152188fcb7bc974f8673697e4b64a6b5d8"
+          },
+          {
+            "url": "https://tibo.dog/assets/sim-BF7yetWo.js",
+            "sha256": "6eb5a335759b8ce4e6f75858ca2e658097fa0480b8b93fc90a204ba5158a689f"
+          },
+          {
+            "url": "https://tibo.dog/assets/boot-CRGHO9d3.js",
+            "sha256": "b8d0847ab6499b53c12a4f27f0c04ecc8148c2d0f72d56168bc42647e965cc7d"
+          },
+          {
+            "url": "https://tibo.dog/assets/intro-shared-B31C189v.js",
+            "sha256": "3fa8a7357a23f6d3509b879f35609443d0ac9ad76ae9dc0833a4aa22c4c03f20"
+          }
+        ],
+        "scope": "Standard/Normal,s1/s2/s3,supplied level-one weapon+rune card,Amount0/3,crit0. Original attack/projectile/summon/hit consumers only. Six slash/homing/turret dispatches; slash boxes/beat/isolated bullet reflection; homing one-tick target+turn,ring emissions,Hopper forced contacts with Pierce0/2 and expiry; summon six shots/target/HP loss,live stat reread,lifetime/count. HighHP aphids,no deaths,pickups,reward handlers,full-world stepping or network. Not natural acquisition,maxlevel/evolved/union,autonomous trajectory/combat,status progression,DPS/survival,server/device proof."
+      }
+    ],
+    "rune:fry-sentry-order-up": [
+      {
+        "file": "tools/probe-special-runes.mjs",
+        "command": "node tools/probe-special-runes.mjs main-BDQvha6l.js",
+        "main": "main-BDQvha6l.js",
+        "definitionSha256": "4279b8928d1ea2fefe4ef577afff86ee1e2a6a25ff48ce6258f388a7d65331c1",
+        "scriptSha256": "2aaf2955d978ffb80e653a1f10ac018032280c1c9a203138b6af735bf49843d8",
+        "source": {
+          "url": "https://tibo.dog/assets/sim-BF7yetWo.js",
+          "sha256": "6eb5a335759b8ce4e6f75858ca2e658097fa0480b8b93fc90a204ba5158a689f"
+        },
+        "sources": [
+          {
+            "url": "https://tibo.dog/assets/main-BDQvha6l.js",
+            "sha256": "beae5deefc4c95be49e17ead8d2c16152188fcb7bc974f8673697e4b64a6b5d8"
+          },
+          {
+            "url": "https://tibo.dog/assets/sim-BF7yetWo.js",
+            "sha256": "6eb5a335759b8ce4e6f75858ca2e658097fa0480b8b93fc90a204ba5158a689f"
+          },
+          {
+            "url": "https://tibo.dog/assets/boot-CRGHO9d3.js",
+            "sha256": "b8d0847ab6499b53c12a4f27f0c04ecc8148c2d0f72d56168bc42647e965cc7d"
+          },
+          {
+            "url": "https://tibo.dog/assets/intro-shared-B31C189v.js",
+            "sha256": "3fa8a7357a23f6d3509b879f35609443d0ac9ad76ae9dc0833a4aa22c4c03f20"
+          }
+        ],
+        "scope": "Standard/Normal,s1/s2/s3,supplied level-one weapon+rune card,Amount0/3,crit0. Original attack/projectile/summon/hit consumers only. Six slash/homing/turret dispatches; slash boxes/beat/isolated bullet reflection; homing one-tick target+turn,ring emissions,Hopper forced contacts with Pierce0/2 and expiry; summon six shots/target/HP loss,live stat reread,lifetime/count. HighHP aphids,no deaths,pickups,reward handlers,full-world stepping or network. Not natural acquisition,maxlevel/evolved/union,autonomous trajectory/combat,status progression,DPS/survival,server/device proof."
+      }
+    ],
+    "rune:fry-sentry-rush-hour": [
+      {
+        "file": "tools/probe-special-runes.mjs",
+        "command": "node tools/probe-special-runes.mjs main-BDQvha6l.js",
+        "main": "main-BDQvha6l.js",
+        "definitionSha256": "0ee1789e6205b46a0c769fa4f6e785be0789452be2b7dea8976e8998ea2cf95e",
+        "scriptSha256": "2aaf2955d978ffb80e653a1f10ac018032280c1c9a203138b6af735bf49843d8",
+        "source": {
+          "url": "https://tibo.dog/assets/sim-BF7yetWo.js",
+          "sha256": "6eb5a335759b8ce4e6f75858ca2e658097fa0480b8b93fc90a204ba5158a689f"
+        },
+        "sources": [
+          {
+            "url": "https://tibo.dog/assets/main-BDQvha6l.js",
+            "sha256": "beae5deefc4c95be49e17ead8d2c16152188fcb7bc974f8673697e4b64a6b5d8"
+          },
+          {
+            "url": "https://tibo.dog/assets/sim-BF7yetWo.js",
+            "sha256": "6eb5a335759b8ce4e6f75858ca2e658097fa0480b8b93fc90a204ba5158a689f"
+          },
+          {
+            "url": "https://tibo.dog/assets/boot-CRGHO9d3.js",
+            "sha256": "b8d0847ab6499b53c12a4f27f0c04ecc8148c2d0f72d56168bc42647e965cc7d"
+          },
+          {
+            "url": "https://tibo.dog/assets/intro-shared-B31C189v.js",
+            "sha256": "3fa8a7357a23f6d3509b879f35609443d0ac9ad76ae9dc0833a4aa22c4c03f20"
+          }
+        ],
+        "scope": "Standard/Normal,s1/s2/s3,supplied level-one weapon+rune card,Amount0/3,crit0. Original attack/projectile/summon/hit consumers only. Six slash/homing/turret dispatches; slash boxes/beat/isolated bullet reflection; homing one-tick target+turn,ring emissions,Hopper forced contacts with Pierce0/2 and expiry; summon six shots/target/HP loss,live stat reread,lifetime/count. HighHP aphids,no deaths,pickups,reward handlers,full-world stepping or network. Not natural acquisition,maxlevel/evolved/union,autonomous trajectory/combat,status progression,DPS/survival,server/device proof."
+      }
+    ],
+    "rune:tater-pup-big-pup": [
+      {
+        "file": "tools/probe-special-runes.mjs",
+        "command": "node tools/probe-special-runes.mjs main-BDQvha6l.js",
+        "main": "main-BDQvha6l.js",
+        "definitionSha256": "aad7c669f812bf302f82b99b5d234ef83df94e253ac6f7e0819bfbe6d4ee6769",
+        "scriptSha256": "2aaf2955d978ffb80e653a1f10ac018032280c1c9a203138b6af735bf49843d8",
+        "source": {
+          "url": "https://tibo.dog/assets/sim-BF7yetWo.js",
+          "sha256": "6eb5a335759b8ce4e6f75858ca2e658097fa0480b8b93fc90a204ba5158a689f"
+        },
+        "sources": [
+          {
+            "url": "https://tibo.dog/assets/main-BDQvha6l.js",
+            "sha256": "beae5deefc4c95be49e17ead8d2c16152188fcb7bc974f8673697e4b64a6b5d8"
+          },
+          {
+            "url": "https://tibo.dog/assets/sim-BF7yetWo.js",
+            "sha256": "6eb5a335759b8ce4e6f75858ca2e658097fa0480b8b93fc90a204ba5158a689f"
+          },
+          {
+            "url": "https://tibo.dog/assets/boot-CRGHO9d3.js",
+            "sha256": "b8d0847ab6499b53c12a4f27f0c04ecc8148c2d0f72d56168bc42647e965cc7d"
+          },
+          {
+            "url": "https://tibo.dog/assets/intro-shared-B31C189v.js",
+            "sha256": "3fa8a7357a23f6d3509b879f35609443d0ac9ad76ae9dc0833a4aa22c4c03f20"
+          }
+        ],
+        "scope": "Standard/Normal,s1/s2/s3,supplied level-one weapon+rune card,Amount0/3,crit0. Original attack/projectile/summon/hit consumers only. Six slash/homing/turret dispatches; slash boxes/beat/isolated bullet reflection; homing one-tick target+turn,ring emissions,Hopper forced contacts with Pierce0/2 and expiry; summon six shots/target/HP loss,live stat reread,lifetime/count. HighHP aphids,no deaths,pickups,reward handlers,full-world stepping or network. Not natural acquisition,maxlevel/evolved/union,autonomous trajectory/combat,status progression,DPS/survival,server/device proof."
+      }
+    ],
+    "rune:tater-pup-top-dog": [
+      {
+        "file": "tools/probe-special-runes.mjs",
+        "command": "node tools/probe-special-runes.mjs main-BDQvha6l.js",
+        "main": "main-BDQvha6l.js",
+        "definitionSha256": "b4ebc6112f7e37b47b59176b437c33d5026717ebb6ea88b0fd3826223fcf98c6",
+        "scriptSha256": "2aaf2955d978ffb80e653a1f10ac018032280c1c9a203138b6af735bf49843d8",
+        "source": {
+          "url": "https://tibo.dog/assets/sim-BF7yetWo.js",
+          "sha256": "6eb5a335759b8ce4e6f75858ca2e658097fa0480b8b93fc90a204ba5158a689f"
+        },
+        "sources": [
+          {
+            "url": "https://tibo.dog/assets/main-BDQvha6l.js",
+            "sha256": "beae5deefc4c95be49e17ead8d2c16152188fcb7bc974f8673697e4b64a6b5d8"
+          },
+          {
+            "url": "https://tibo.dog/assets/sim-BF7yetWo.js",
+            "sha256": "6eb5a335759b8ce4e6f75858ca2e658097fa0480b8b93fc90a204ba5158a689f"
+          },
+          {
+            "url": "https://tibo.dog/assets/boot-CRGHO9d3.js",
+            "sha256": "b8d0847ab6499b53c12a4f27f0c04ecc8148c2d0f72d56168bc42647e965cc7d"
+          },
+          {
+            "url": "https://tibo.dog/assets/intro-shared-B31C189v.js",
+            "sha256": "3fa8a7357a23f6d3509b879f35609443d0ac9ad76ae9dc0833a4aa22c4c03f20"
+          }
+        ],
+        "scope": "Standard/Normal,s1/s2/s3,supplied level-one weapon+rune card,Amount0/3,crit0. Original attack/projectile/summon/hit consumers only. Six slash/homing/turret dispatches; slash boxes/beat/isolated bullet reflection; homing one-tick target+turn,ring emissions,Hopper forced contacts with Pierce0/2 and expiry; summon six shots/target/HP loss,live stat reread,lifetime/count. HighHP aphids,no deaths,pickups,reward handlers,full-world stepping or network. Not natural acquisition,maxlevel/evolved/union,autonomous trajectory/combat,status progression,DPS/survival,server/device proof."
+      }
+    ],
+    "rune:tater-pup-zoomies": [
+      {
+        "file": "tools/probe-special-runes.mjs",
+        "command": "node tools/probe-special-runes.mjs main-BDQvha6l.js",
+        "main": "main-BDQvha6l.js",
+        "definitionSha256": "800f50086348689f68cd8df80393da5bb486545b968c7608dfcaed1485d459a4",
+        "scriptSha256": "2aaf2955d978ffb80e653a1f10ac018032280c1c9a203138b6af735bf49843d8",
+        "source": {
+          "url": "https://tibo.dog/assets/sim-BF7yetWo.js",
+          "sha256": "6eb5a335759b8ce4e6f75858ca2e658097fa0480b8b93fc90a204ba5158a689f"
+        },
+        "sources": [
+          {
+            "url": "https://tibo.dog/assets/main-BDQvha6l.js",
+            "sha256": "beae5deefc4c95be49e17ead8d2c16152188fcb7bc974f8673697e4b64a6b5d8"
+          },
+          {
+            "url": "https://tibo.dog/assets/sim-BF7yetWo.js",
+            "sha256": "6eb5a335759b8ce4e6f75858ca2e658097fa0480b8b93fc90a204ba5158a689f"
+          },
+          {
+            "url": "https://tibo.dog/assets/boot-CRGHO9d3.js",
+            "sha256": "b8d0847ab6499b53c12a4f27f0c04ecc8148c2d0f72d56168bc42647e965cc7d"
+          },
+          {
+            "url": "https://tibo.dog/assets/intro-shared-B31C189v.js",
+            "sha256": "3fa8a7357a23f6d3509b879f35609443d0ac9ad76ae9dc0833a4aa22c4c03f20"
+          }
+        ],
+        "scope": "Standard/Normal,s1/s2/s3,supplied level-one weapon+rune card,Amount0/3,crit0. Original attack/projectile/summon/hit consumers only. Six slash/homing/turret dispatches; slash boxes/beat/isolated bullet reflection; homing one-tick target+turn,ring emissions,Hopper forced contacts with Pierce0/2 and expiry; summon six shots/target/HP loss,live stat reread,lifetime/count. HighHP aphids,no deaths,pickups,reward handlers,full-world stepping or network. Not natural acquisition,maxlevel/evolved/union,autonomous trajectory/combat,status progression,DPS/survival,server/device proof."
+      }
     ]
   },
   "reports": [

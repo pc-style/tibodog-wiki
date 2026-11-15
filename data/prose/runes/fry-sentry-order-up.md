@@ -1,0 +1,16 @@
+## How it works
+
+Order Up changes **each turret’s firing target**, not just its initial placement target. It prefers the highest-maximum-HP eligible pest within range of that turret and scales bolt damage ×1.24. Turrets still drop in random directions near Tibo and remain where they landed. The retained shots aim toward a farther, high-maximum-HP pest even though a nearer pest has more remaining HP. Each isolated turret is tested separately; this is not proof of aggregate damage from overlapping turret drops. <small>[sim-BF7yetWo.js: `` id:`fry-sentry-order-up` ``]</small>
+
+The summon system reads the weapon’s **current stats when firing**, not a damage snapshot from when it spawned. Changing supplied damage multiplier to 1.5 affects the same retained summon’s next bolt. Each summon emits **one bolt** when its timer is ready; Amount controls summon count, not bolts per summon shot. No eligible target means a **6-tick retry**, verified by removing all targets and returning them during the wait. Six shots per group check real aim, shot spacing, payload and original-resolver HP loss; projectile contacts are forced at the chosen pest, not natural flight. <small>[sim-BF7yetWo.js: `` c!==i&&(Uj(e,c,oM),i=c) ``]</small> <small>[sim-BF7yetWo.js: `` if(m===void 0){n.t[o]=sM;continue} ``]</small>
+
+Each drop places all computed Amount turrets **18 units from Tibo** in random directions; there are no within-drop timed waves. A turret stays still and expires before shooting once its lifetime runs out. Bolts have **1.2 s lifetime** regardless of the turret’s own Duration. The firing timer uses **max(0.1 × the ordinary mode floor, computed Interval)**, not the drop cooldown; the fixture uses the ordinary floor of 1. Lifetime controls isolate one retained turret rather than claiming natural overlap totals. <small>[sim-BF7yetWo.js: `` for(let i=0;i<n.amount;i++) ``]</small> <small>[sim-BF7yetWo.js: `` r.x[a]=e.player.x[e.me]+18*x(o) ``]</small> <small>[sim-BF7yetWo.js: `` let h=u?Math.max(.1*My(e),oM.interval):oM.cooldown ``]</small> <small>[sim-BF7yetWo.js: `` e.projectiles.life[g]=1.2,e.projectiles.maxLife[g]=1.2 ``]</small>
+
+Retained command: `node tools/probe-special-runes.mjs main-BDQvha6l.js`. **Six supplied-state groups per rune**, Standard/Normal, seeds `s1/s2/s3`, Amount bonus 0/3, crit chance 0. Original choice handling receives a supplied level-one rune card, bypassing ordinary max-level acquisition. Original consumers are isolated; no full-world/death/drop stepping or network, and high-HP aphids never die. Backhand uses supplied enemy bullets; Hopper additionally uses supplied Pierce 0/2 and forced contacts/expiry; summon checks isolate one emitted unit after recording the full count. No natural acquisition, max-level/evolved/union equivalence, autonomous projectile trajectories, moving-pest combat, status progression, DPS/survival, private-server or device proof. Prior scenarios remain separately labeled history.
+
+Examples are **s1 supplied level-one fixtures**, not ordinary max-level builds. Bonus is supplied Amount bonus; damage is per hit/bolt, not DPS.
+
+| Bonus | Summons | Damage | Shot gap (ticks) | Area |
+|---|---|---|---|---|
+| 0 | 1 | 8.68 | 21 | 1 |
+| 3 | 4 | 8.68 | 21 | 1 |
