@@ -2518,5 +2518,16 @@
   "updated": "2026-11-15T20:14:09Z",
   "changes": "The opt-in Update 2 playtest adds a content part with a separate experimental weapon pool. The impact-frame note moves into its dated release group; ordinary weapon catalogs stay unchanged.",
   "evidence": "BJRG229→piq230 whole417→424 graph, archivedHTML/416old+423newasset digests, full+expanded archived journal and independent live expanded panel agree368orderedrecords/14dates/163codes. Impact note ztstiy graduates unchanged to2026-11-15/934390b; publication2026-11-15T12:25:00Z and introductionBJRG229 retained. Actual scoped change is opt-in content pools, registration, offers/mimic/companion pool consumers and conditional art loading; no ordinary catalog expansion or automatic-classifier widening. OfficialAPI/source ordinary registry144 versus146EnglishweapontextIDs; optional where/localization-only text preserved verbatim under source equality, exact registered definitions/IDs and requiredEnglish, translated mapping and malformed-field gates. Direct export shares these guards; reproduced unknown-field failure, targeted16tests pass after repair. Thirty-six original old/new constructor contexts over3seeds/Standard/Story/Daily/contentoff+on and16originalparser controls verify seven-part default/unknown handling and active-only FlashFreeze pool, including disabled contexts after shared registration. First mixed-module fixture failed truthfully and was corrected to same original namespace. Separate experimental FlashFreeze/HardFrost definitions support only scoped Secrets explanation, not ordinary pages, natural acquisition/evolution, combat/damage, fullUI, replay/server or performance claims. Source/quote rebinding preserves prior prose outside Secrets, all229historicalrecords and byte-unchanged coverage. Shadow2026-11-15T19-58-01-173Z-cc460889; controls/schema/API/live-panel evidence .cache/piq-*. Initial readiness/schema/browser failures remain failed, distinct from checked recovery; no coverage promotion."
+ },
+ {
+  "seen": "2026-11-15",
+  "main": "main-B7EZyvnn.js",
+  "boot": "boot-Dq8RWGKQ.js",
+  "sim": "sim-D0P76sgA.js",
+  "commit": "5387685427fe",
+  "status": "reviewed",
+  "updated": "2026-11-15T20:35:46Z",
+  "changes": "No gameplay changes; a rebuild of the same game.",
+  "evidence": "Automatic whole-build comparison (tools/same-build.mjs): all 424 files reachable from the index.html match main-piq2EmBg.js after mapping file hashes and the build's own commit id."
  }
 ]
