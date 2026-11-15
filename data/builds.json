@@ -2397,5 +2397,16 @@
   "updated": "2026-11-15T06:16:17Z",
   "changes": "Hash Hawk and Hash Harrier dive strikes have wider base radii, while Dailies before November 23 keep their old strikes. Target size still adds to the hit radius; Harrier crumbs are unchanged.",
   "evidence": "Fresh canonical218 Dup→czd whole414→414 comparison/52owner pairs: Hawk base12→36,Harrier15→45,earlier-Daily fallback12/15; sim3 normalized hunks include predicate relocation,boot/run-analytics identifiers only. All26 changed locale dictionaries add only SuvjMZ; config/English/names/icons unchanged; other lazy/UI/Shell owners normalize to reference changes. Original Dup/czd120 supplied-state select/impact controls,seed hawk-radius,Normal,2weapons×3Areas(.5625/1.5625/2.25)×2locked-target radii(8/30)×ordinary Standard/Story and Standard Daily20779/20780/20781×2builds verify sqrtArea plus half target size,earlierDaily compatibility,inclusive8-radius neighbor overlap,.02outside,and asymmetric extra coverage. Granted weapons,fixed HP/positions/Area and bird impact position; not damage resolution,DPS,natural acquisition/survival,all-targeting or server proof. Initial30-radius-neighbor boundary fixture failed and is preserved; final neighbor radius8,not oversized-body broadphase proof. HistoricalCrJI targeting/lure and earlierHarrier DPS/recipe evidence stay historical,coverage not promoted. Full/archive and independent expanded actual live journal365orderedrecords/13dates/160codes; allolder sorting intact,only hash-hawk-wider-strike/SuvjMZ added under next,publication2026-11-14T19:51:15Z/sourceintroduction219/Dailyactivation20780 separate. Four failed citation groups and movedShell owner repaired normally; classifier/schema/checks unchanged. PriorKraken/revive/pylon/Stockpot/Daily/score/ledger/locale/rune/inventory and historical/blocked drafts/limits preserved; unrelated timing/overlay fixes excluded."
+ },
+ {
+  "seen": "2026-11-15",
+  "main": "main-CC19VY1l.js",
+  "boot": "boot-CL0iQQCD.js",
+  "sim": "sim-art6lZE-.js",
+  "commit": "983052cf6af0",
+  "status": "reviewed",
+  "updated": "2026-11-15T06:58:50Z",
+  "changes": "Existing journal notes moved into a dated release group; no gameplay or wording changes.",
+  "evidence": "Automatic unchanged next-to-dated proof against main-czdspc5P.js; all 414 reachable files checked, full/panel browser and official API validated. Original publication timestamps and prior introduction history retained. Proof: .cache/main-CC19VY1l/journal-proof.json."
  }
 ]

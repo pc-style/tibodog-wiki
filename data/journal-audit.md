@@ -1399,3 +1399,12 @@ Original Dup/czd controls compare **120 supplied-state strike cases**, seed `haw
 Shadow **2026-11-15T06-04-36-740Z-9c831f14** verifies both 413-asset archives/HTML, full journal and archived panel. Independent expanded actual live panel agrees **365 ordered records / 13 dates / 160 codes**, including every older collapsed group and display sorting, with czd checked before and after; only the Hawk note is added. Prior Kraken/Bico publication/introduction histories, blocked drafts and all measurement limits remain intact.
 
 Source https://tibo.dog/assets/sim-lzu7eOh3.js SHA-256 **153527c009788022882ed443f287ce074a61a988aba9cb09fb7a139f19e18e80**; registry owner https://tibo.dog/assets/start-rows-DX2OZLe7.js SHA-256 **dd5270c3c459463f353cc92ab526b207e74f83bdc2324a294c8130140c109a5e**; journal https://tibo.dog/assets/changelog-panel-D0C6NiTD.js SHA-256 **0aab4d8fa508540e0993d854df5434cfeeb5d8cc3f71faaa366ac29466438433**. Raw archive manifest SHA-256 **80fa88a84576061b0a45b9b91c71b361981df6758f3a332dbee939c234babda4**; saved manifest JSON SHA-256 **b5fdd8bd8ff49ad64466919b32d4bcce50bf25975fd95a8accb291aa4f07fe10**; full journal HTML SHA-256 **ba6c9c8840dd8089ad00a648574a878912441c4f64a3cd828bb8dba05b7d0928**. Existing arrival-time/header/Sections/overflow limitations remain outside this update; no full-page correctness or readability claim.
+
+
+## Local journal graduation main-CC19VY1l.js
+
+Existing journal notes moved from next into a dated release group; no gameplay or note wording changes.
+
+- hash-hawk-wider-strike (SuvjMZ): original publication 2026-11-14T19:51:15Z; now 2026-11-14/1ff37eb. Source introduction remains in prior build history.
+
+Sources: https://tibo.dog/assets/changelog-panel-D0C6NiTD.js SHA-256 0aab4d8fa508540e0993d854df5434cfeeb5d8cc3f71faaa366ac29466438433; https://tibo.dog/assets/changelog-panel-C-JcqEKd.js SHA-256 27add2100786bff8feae99f1a4237941e0e71fc046d16f11e71d8a12ea31222d. Prior history SHA-256 8e4c3a5fc296e406ab4699fe6ce6b0adeeff82fed758f198c6450d45c28b33be.
