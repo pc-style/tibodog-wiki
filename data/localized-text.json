@@ -1,8 +1,8 @@
 {
  "schema": 1,
  "game": {
-  "version": "e9b1ecc",
-  "commit": "e9b1ecc15f29aa255e160e4d0f821055236f2428"
+  "version": "d359e74",
+  "commit": "d359e74f6cd9023c39ba927b73cd4f3a89369a55"
  },
  "simVersion": "df0e6168e3ba1f8b",
  "locales": [
@@ -2421,7 +2421,7 @@
    },
    "affix": {
     "rimed": {
-     "name": "Rimed",
+     "name": "Chilling",
      "desc": "Drops frost orbs at Tibo's feet that burst after 1.5 s.",
      "where": "On elites from 0:45."
     },
@@ -4666,7 +4666,7 @@
    },
    "affix": {
     "rimed": {
-     "name": "霜冻",
+     "name": "刺骨",
      "desc": "在Tibo脚下丢下霜球，1.5秒后爆开。",
      "where": "0:45起出现在精英身上。"
     },
@@ -6911,7 +6911,7 @@
    },
    "affix": {
     "rimed": {
-     "name": "霜凍",
+     "name": "刺骨",
      "desc": "在Tibo腳下丟下霜球，1.5秒後爆開。",
      "where": "0:45起出現在菁英身上。"
     },
@@ -9156,7 +9156,7 @@
    },
    "affix": {
     "rimed": {
-     "name": "氷結",
+     "name": "極寒",
      "desc": "Tiboの足元に霜の玉を落とし、1.5秒後に破裂させる。",
      "where": "0:45以降のエリートに付く。"
     },
@@ -11401,7 +11401,7 @@
    },
    "affix": {
     "rimed": {
-     "name": "서리",
+     "name": "오한",
      "desc": "Tibo의 발밑에 1.5초 뒤 터지는 서리 구슬을 떨어뜨립니다.",
      "where": "0:45부터 엘리트에게 붙습니다."
     },
@@ -13646,7 +13646,7 @@
    },
    "affix": {
     "rimed": {
-     "name": "Escarchado",
+     "name": "Gélido",
      "desc": "Suelta orbes de escarcha a los pies de Tibo que estallan tras 1.5 s.",
      "where": "En élites desde 0:45."
     },
@@ -15891,7 +15891,7 @@
    },
    "affix": {
     "rimed": {
-     "name": "बर्फीला",
+     "name": "ठिठुराने वाला",
      "desc": "Tibo के पैरों के पास बर्फ के गोले गिराता है जो 1.5 सेकंड बाद फटते हैं।",
      "where": "0:45 से एलीट पर।"
     },
@@ -18136,7 +18136,7 @@
    },
    "affix": {
     "rimed": {
-     "name": "Vereist",
+     "name": "Unterkühlend",
      "desc": "Wirft Tibo Frostkugeln vor die Füße, die nach 1,5 s platzen.",
      "where": "Bei Elites ab 0:45."
     },
@@ -20381,7 +20381,7 @@
    },
    "affix": {
     "rimed": {
-     "name": "Givrée",
+     "name": "Glaçante",
      "desc": "Lâche des orbes de givre aux pieds de Tibo, qui éclatent après 1,5 s.",
      "where": "Sur les élites dès 0:45."
     },
@@ -22626,7 +22626,7 @@
    },
    "affix": {
     "rimed": {
-     "name": "Gélida",
+     "name": "Polar",
      "desc": "Solta orbes de geada aos pés do Tibo que explodem após 1,5 s.",
      "where": "Em elites a partir de 0:45."
     },
@@ -24871,7 +24871,7 @@
    },
    "affix": {
     "rimed": {
-     "name": "Kırağılı",
+     "name": "Üşütücü",
      "desc": "Tibo'nun ayağının dibine 1,5 sn sonra patlayan buz küreleri bırakır.",
      "where": "0:45'ten itibaren elitlerde."
     },
@@ -27116,7 +27116,7 @@
    },
    "affix": {
     "rimed": {
-     "name": "Membeku",
+     "name": "Menggigilkan",
      "desc": "Menjatuhkan bola es di kaki Tibo yang meledak setelah 1,5 dtk.",
      "where": "Pada elite mulai 0:45."
     },
@@ -29361,7 +29361,7 @@
    },
    "affix": {
     "rimed": {
-     "name": "Морозный",
+     "name": "Леденящий",
      "desc": "Бросает к ногам Tibo ледяные шары, которые лопаются через 1,5 с.",
      "where": "У элиты с 0:45."
     },
@@ -31606,7 +31606,7 @@
    },
    "affix": {
     "rimed": {
-     "name": "Membeku",
+     "name": "Menggigilkan",
      "desc": "Menjatuhkan bebola ais di kaki Tibo yang meletup selepas 1.5 s.",
      "where": "Pada elit mulai 0:45."
     },
@@ -33851,7 +33851,7 @@
    },
    "affix": {
     "rimed": {
-     "name": "Nagyeyelo",
+     "name": "Nagpapaginaw",
      "desc": "Naghuhulog ng bolang yelo sa paanan ni Tibo. Puputok ito sa 1.5 s.",
      "where": "Sa mga elite mula 0:45."
     },
@@ -36096,7 +36096,7 @@
    },
    "affix": {
     "rimed": {
-     "name": "बर्फाळ",
+     "name": "गारठवणारा",
      "desc": "Tibo च्या पायाशी बर्फाचे गोळे टाकतो, जे 1.5 सेकंदांनी फुटतात.",
      "where": "0:45 पासून एलिटवर."
     },
@@ -38341,7 +38341,7 @@
    },
    "affix": {
     "rimed": {
-     "name": "Băng Giá",
+     "name": "Rét Buốt",
      "desc": "Thả cầu băng dưới chân Tibo, nổ sau 1,5 giây.",
      "where": "Trên tinh anh từ 0:45."
     },
@@ -40586,7 +40586,7 @@
    },
    "affix": {
     "rimed": {
-     "name": "మంచుకప్పిన",
+     "name": "వణికించే",
      "desc": "Tibo కాళ్ల దగ్గర మంచు గోళాలు వేస్తుంది, అవి 1.5 సె తర్వాత పేలతాయి.",
      "where": "0:45 నుంచి ఎలైట్స్ పై."
     },
@@ -42831,7 +42831,7 @@
    },
    "affix": {
     "rimed": {
-     "name": "பனிபடர்ந்த",
+     "name": "சில்லிடவைக்கும்",
      "desc": "Tibo-வின் காலடியில் பனி உருண்டை போடும்; 1.5 வினாடியில் வெடிக்கும்.",
      "where": "0:45 முதல் எலைட்களிடம்."
     },
@@ -45076,7 +45076,7 @@
    },
    "affix": {
     "rimed": {
-     "name": "হিমশীতল",
+     "name": "হাড়কাঁপানো",
      "desc": "Tibo-র পায়ের কাছে বরফের গোলা ফেলে, যা 1.5 সেকেন্ড পরে ফাটে।",
      "where": "0:45 থেকে এলিটদের গায়ে।"
     },
@@ -47321,7 +47321,7 @@
    },
    "affix": {
     "rimed": {
-     "name": "เยือกแข็ง",
+     "name": "หนาวสะท้าน",
      "desc": "ปล่อยลูกน้ำแข็งไว้ใต้เท้า Tibo ซึ่งระเบิดหลัง 1.5 วินาที",
      "where": "พบในอีลีทตั้งแต่ 0:45"
     },
@@ -49566,7 +49566,7 @@
    },
    "affix": {
     "rimed": {
-     "name": "Mai Ƙanƙara",
+     "name": "Mai Hunturu",
      "desc": "Yana jefa ƙwallayen ƙanƙara a ƙafafun Tibo da ke fashewa bayan 1.5 s.",
      "where": "A kan gwaraza daga 0:45."
     },
@@ -51811,7 +51811,7 @@
    },
    "affix": {
     "rimed": {
-     "name": "Icy",
+     "name": "Harmattan",
      "desc": "E dey drop ice balls for Tibo leg wey go burst after 1.5 s.",
      "where": "For elites from 0:45."
     },
@@ -54056,7 +54056,7 @@
    },
    "affix": {
     "rimed": {
-     "name": "صقيعي",
+     "name": "قارس",
      "desc": "يُسقط عند قدمي Tibo كرات صقيع تنفجر بعد 1.5 ث.",
      "where": "لدى النخبة بدءًا من 0:45."
     },
@@ -56301,7 +56301,7 @@
    },
    "affix": {
     "rimed": {
-     "name": "یخ‌زده",
+     "name": "زمهریری",
      "desc": "زیر پای Tibo گوی‌های یخ می‌اندازد که پس از 1.5 ثانیه می‌ترکند.",
      "where": "روی نخبه‌ها از 0:45."
     },
@@ -58546,7 +58546,7 @@
    },
    "affix": {
     "rimed": {
-     "name": "קפואה",
+     "name": "מצמררת",
      "desc": "מפילה לרגלי Tibo כדורי כפור שמתפוצצים אחרי 1.5 שנ׳.",
      "where": "אצל עיליות מ־0:45."
     },
@@ -60791,7 +60791,7 @@
    },
    "affix": {
     "rimed": {
-     "name": "برفیلا",
+     "name": "ٹھٹھرانے والا",
      "desc": "Tibo کے قدموں میں برف کے گولے گراتا ہے جو 1.5 سیکنڈ بعد پھٹتے ہیں۔",
      "where": "0:45 سے ایلیٹ پر۔"
     },
@@ -60817,143 +60817,143 @@
   "index": {
    "url": "https://tibo.dog/data/v1/index.json",
    "bytes": 18938,
-   "sha256": "9a3ca69790476de721b1e9a8d0c6f6318c1311b2c0b4a36a1b83503eff19e357"
+   "sha256": "17ac6d34920b4c0879f45dc2a67b5b5bad395ae2a285ba9bda897b34c103c6d7"
   },
   "locales": {
    "en": {
     "url": "https://tibo.dog/data/v1/text/en.json",
-    "bytes": 61353,
-    "sha256": "30a5a84afda4dbe7f9e37bd5dbc817b5d802c1656b728a34a1ef02a8d20ca03f"
+    "bytes": 61356,
+    "sha256": "bfd4d2916b5cbf86d883b5d2b11db4ee209ad1bd41cd1179bfa6011f014e4b65"
    },
    "zh-CN": {
     "url": "https://tibo.dog/data/v1/text/zh-CN.json",
     "bytes": 60496,
-    "sha256": "7c9e981cf0fc566360558de53b08bda80651c996f9948e5f041ac9e24400672e"
+    "sha256": "49f59f8b5bdb8a563179ff7a9e77d1779f5666a6e06e759b9ffb3eb5bfbcbfc2"
    },
    "zh-TW": {
     "url": "https://tibo.dog/data/v1/text/zh-TW.json",
     "bytes": 60769,
-    "sha256": "303200bd15a4e924e9d174f398a1b96b245c86767c41c696365094fa25db51e7"
+    "sha256": "70c940a0dfe4a3d6e9b81b02c1d9f353e375b53562b39d27a7031a1d4d3394b9"
    },
    "ja": {
     "url": "https://tibo.dog/data/v1/text/ja.json",
     "bytes": 74072,
-    "sha256": "64e445819d0098c30b67db35677a12b2a9a6b19e2d7a49b62a19eceda762ec93"
+    "sha256": "4099b38892c1e2738ddedd5b613bdf33a699867b5cb418a6f0607075a69c082e"
    },
    "ko": {
     "url": "https://tibo.dog/data/v1/text/ko.json",
     "bytes": 74344,
-    "sha256": "2e751b6545609335ae2c89c228da528f3665b4e96e2c74d5824e5c3d868e9ace"
+    "sha256": "58db7fae4f7f68bcb2647b85cf3cf2311cf42dd27e2e7f1aedb66c533dcb2989"
    },
    "es": {
     "url": "https://tibo.dog/data/v1/text/es.json",
-    "bytes": 69332,
-    "sha256": "c14cd7e2409af10b29f2eb0c3fd52e6ca43db127402fabd84941f26db726c8df"
+    "bytes": 69329,
+    "sha256": "b0288bf3ba44c437e1fd1f8655c9f22ada390a2f731b1921af0e930a38b74ff1"
    },
    "hi": {
     "url": "https://tibo.dog/data/v1/text/hi.json",
-    "bytes": 128398,
-    "sha256": "7ac5f94f0cef34c6abce482990a8012216d9e5d983741f184f6397613a7f81ae"
+    "bytes": 128414,
+    "sha256": "93f8dae51a4eede7bae75989637e644a1f687ddc422156a0c63dc02479b11749"
    },
    "de": {
     "url": "https://tibo.dog/data/v1/text/de.json",
-    "bytes": 68531,
-    "sha256": "1241c2c6154019455c575f8340214539dab59af84fbff841d48128bb605f89e1"
+    "bytes": 68537,
+    "sha256": "c24423792e146bd620bdb1e93cb6d12af9b8fc5101409b1f1f1713187f076cae"
    },
    "fr": {
     "url": "https://tibo.dog/data/v1/text/fr.json",
-    "bytes": 71950,
-    "sha256": "2e710aae3458c4c744fd751ab7bffa99bc0a8b08c7d44b2c4acb3a6625798316"
+    "bytes": 71952,
+    "sha256": "3f50a8c60304d715c7b88b0cfa5459097585b5a6746664f084f49ab3a206b4b4"
    },
    "pt": {
     "url": "https://tibo.dog/data/v1/text/pt.json",
-    "bytes": 67895,
-    "sha256": "c06519d4b1fe875563961d026604efa82220c3f6f01fbebc0b95bdd998d4ef79"
+    "bytes": 67893,
+    "sha256": "2eda87c59b132848cd00b0da834f8766049dcd86ef1a15f4a65ea06c0ff5f0e2"
    },
    "tr": {
     "url": "https://tibo.dog/data/v1/text/tr.json",
     "bytes": 70416,
-    "sha256": "20692138ecb2734ddeb3032c88de7ac4c3b812580d15f5688bc85c516b62d903"
+    "sha256": "3220b7bbddf7e43677b19cad6e15dc72b65e8fe60b18ba601239d4c8e5116ad0"
    },
    "id": {
     "url": "https://tibo.dog/data/v1/text/id.json",
-    "bytes": 67606,
-    "sha256": "dfebbe7caade86936506f9dfe2471b94819efab189383275229e5681f4e97e94"
+    "bytes": 67611,
+    "sha256": "4cf6a5f45f51e3ba2c17832d8bb0c65530bde3b1c60d94b791c8ded43d2ddf3f"
    },
    "ru": {
     "url": "https://tibo.dog/data/v1/text/ru.json",
-    "bytes": 100896,
-    "sha256": "7003fa7c1c5d55423cfba2e5af606b3aaf15084ab71435b0ccf4954d1244e65c"
+    "bytes": 100898,
+    "sha256": "0715f0b06738d7b0448ad2ba9278f110ca9f072515f8fe62f8dedb86389885a7"
    },
    "ms": {
     "url": "https://tibo.dog/data/v1/text/ms.json",
-    "bytes": 69918,
-    "sha256": "47fca9e932e67c91f56c3b233baf076c6cbd5b5294907c10c1ac2ef878c3d833"
+    "bytes": 69923,
+    "sha256": "0a039a17bc3faae5fa78df9beea3a0362275fa9571944c6b1c50785436249dc2"
    },
    "fil": {
     "url": "https://tibo.dog/data/v1/text/fil.json",
-    "bytes": 73808,
-    "sha256": "f254bdaf498050d512d130d29c99b1bfbaf19ef387e7ecdce9c6697082a9ba76"
+    "bytes": 73811,
+    "sha256": "5e9a0563ed5c83733389007675cbf513630d1bdb15555a26a5a330c2589b7cf1"
    },
    "mr": {
     "url": "https://tibo.dog/data/v1/text/mr.json",
-    "bytes": 132621,
-    "sha256": "60f9dd274a5ab4e1df86dbedea9023eeeaba71e7d4c0a60cfbd4b03490b0f4cc"
+    "bytes": 132630,
+    "sha256": "eb32261e01894ecdf433ac15f82482975c1011dd3fa0bc9db1cfc55df86b2b5b"
    },
    "vi": {
     "url": "https://tibo.dog/data/v1/text/vi.json",
-    "bytes": 74587,
-    "sha256": "b42f80d6ba7c1247e9d1199fedb87d13e0d7566bef51f0aa69eea9de4ca9930e"
+    "bytes": 74588,
+    "sha256": "b9c2061bf8986910343152b17e3a57dc1bb28e8d65d2f88791d137786b3ac40b"
    },
    "te": {
     "url": "https://tibo.dog/data/v1/text/te.json",
-    "bytes": 139711,
-    "sha256": "5bd3a1a750cd7e35fc3daf87ca1546aeb68220e5282250d00445aef6cea26b4d"
+    "bytes": 139705,
+    "sha256": "11b6885eb5338e63f725713f02acb703e966e108bfc904c80e59e8e93fb8ac44"
    },
    "ta": {
     "url": "https://tibo.dog/data/v1/text/ta.json",
-    "bytes": 152484,
-    "sha256": "71cb94151e1a57240185086f2bca10612559c6e9e1134cf27dc3ac10f977d31f"
+    "bytes": 152499,
+    "sha256": "8c12d109d68d9d47d602c18db42c981c6042facc59c22008b4dbe3c9c03ec9c6"
    },
    "bn": {
     "url": "https://tibo.dog/data/v1/text/bn.json",
-    "bytes": 129471,
-    "sha256": "ce5fe186a4279ff9a70c78bec5bbdf3d7ce83fcca01877905388882d972d937a"
+    "bytes": 129483,
+    "sha256": "a2d429822b3cc63b132561b652f6bc71ddaf444290a393559422275f3802cc28"
    },
    "th": {
     "url": "https://tibo.dog/data/v1/text/th.json",
-    "bytes": 124732,
-    "sha256": "564a4e6ed7e75f3de4e708e408bb1a0887e83f31b10852a1536fe92360e11a1b"
+    "bytes": 124735,
+    "sha256": "a3855a59382dba08eb47f1c2591aeb3a145053db05b7c03950c8320241abe9a6"
    },
    "ha": {
     "url": "https://tibo.dog/data/v1/text/ha.json",
-    "bytes": 70319,
-    "sha256": "dd00c6d73ba5233c1114f11c5a5b9f8d37d6730daaf2a949bd20e58fb3b7343d"
+    "bytes": 70317,
+    "sha256": "f35ef7dc8378338f702af4e3cf91ae241ef4b732abb966ff40359e8e8d5af8aa"
    },
    "pcm": {
     "url": "https://tibo.dog/data/v1/text/pcm.json",
-    "bytes": 64650,
-    "sha256": "62a9e35d28e1e78880102f46855064abe6b00da2accb2db90659316482ab51bd"
+    "bytes": 64656,
+    "sha256": "8f0500c3d73da68b882426494025647d2e75b274e5c3eaffa4d46e0489cebf91"
    },
    "ar": {
     "url": "https://tibo.dog/data/v1/text/ar.json",
-    "bytes": 84828,
-    "sha256": "5bc24cb0d801f12223a72095ec5e2e7c7f06abf176e9b12cbc3d39168ff3e210"
+    "bytes": 84826,
+    "sha256": "3836bb7c8247490a1fb320172f49f745626badc8e0e7803174100576412b4b24"
    },
    "fa": {
     "url": "https://tibo.dog/data/v1/text/fa.json",
-    "bytes": 99725,
-    "sha256": "499acb75958349f5fa929b7836e839c106113523bdc568a1b53a0f893b307bdf"
+    "bytes": 99726,
+    "sha256": "2291443f77400ae15aac5142c0c5934e93e058d0bd6132b1e53ce728eb7994d4"
    },
    "he": {
     "url": "https://tibo.dog/data/v1/text/he.json",
-    "bytes": 84430,
-    "sha256": "ea740d82da377af189001e9e637552b31a905949790e816583dd86999b60f157"
+    "bytes": 84432,
+    "sha256": "22ef7be8bd2945ba2392ff523099bf87adf2b83735cfe6a40cabdb8d8cd4a036"
    },
    "ur": {
     "url": "https://tibo.dog/data/v1/text/ur.json",
-    "bytes": 96008,
-    "sha256": "31bf6bc48b275dce81025bd6bedcc2779e4a82e3eb58ed3c8d44f3c2fde41562"
+    "bytes": 96021,
+    "sha256": "b36d1ca846e829f01c05c927254aa3302421398cc2afbdab9fb44c2345866709"
    }
   }
  }
