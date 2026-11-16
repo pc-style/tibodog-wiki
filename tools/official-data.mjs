@@ -20,7 +20,7 @@ const TEXT_FIELDS = {
   event: ['name', 'announce'], dog: ['name', 'breed', 'desc'],
   poi: ['name', 'desc'], botHelp: ['name', 'desc'], rarity: ['name'],
   shrine: ['label'], dailyWeather: ['name', 'desc'], gear: ['name', 'desc'],
-  gearSet: ['name'], varietyPlace: ['name', 'desc'], setRule: ['label', 'desc'],
+  gearSet: ['name'], varietyPlace: ['name', 'desc', 'where'], setRule: ['label', 'desc'],
   rune: ['name', 'desc'],
 };
 const fail = (message) => { throw new Error(`official data: ${message}`); };
@@ -124,7 +124,7 @@ function validateData(catalogs, text, locales) {
       for (const [id, fields] of Object.entries(entries)) {
         if (!idOK(id)) fail(`text/${tag}/${type}: invalid ID`);
         // Acquisition hints belong to localization, never the playable catalog.
-        keys(fields, type === 'weapon' ? [...TEXT_FIELDS.weapon, 'where'] : TEXT_FIELDS[type], `text/${tag}/${type}/${id}`);
+        keys(fields, type === 'weapon' || type === 'enemy' ? [...TEXT_FIELDS[type], 'where'] : TEXT_FIELDS[type], `text/${tag}/${type}/${id}`);
         if (!Object.keys(fields).length || Object.values(fields).some((v) => typeof v !== 'string')) fail(`text/${tag}/${type}/${id}: invalid fields`);
         if (tag === 'en' && type === 'rune' && TEXT_FIELDS.rune.some((field) => typeof fields[field] !== 'string')) fail(`text/en/rune/${id}: missing name or desc`);
         if (tag !== 'en') {
@@ -136,9 +136,9 @@ function validateData(catalogs, text, locales) {
   for (const [kind, [type]] of Object.entries(TYPES)) {
     const entries = catalogs[kind].entries;
     const english = text.en.texts[type] ?? {};
-    // Weapon localization may precede registration. Missing registered English
-    // still fails; extra strings must pass compiled-source equality on apply/export.
-    if (type === 'weapon' ? Object.keys(entries).some((id) => !Object.hasOwn(english, id))
+    // Weapon and enemy localization may precede registration. Missing registered
+    // English still fails; extra strings must pass compiled-source equality on apply/export.
+    if (type === 'weapon' || type === 'enemy' ? Object.keys(entries).some((id) => !Object.hasOwn(english, id))
       : !isDeepStrictEqual(Object.keys(entries).sort(), Object.keys(english).sort())) fail(`${kind}: English IDs differ`);
     for (const [id, entry] of Object.entries(entries)) {
       const fields = text.en.texts[type][id];

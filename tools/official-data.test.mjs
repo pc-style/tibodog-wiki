@@ -226,6 +226,87 @@ test('weapon text extensions still reject missing registered English, unsupporte
   await assert.rejects(fetchOfficialData(COMMIT, f), /unknown field where/);
 });
 
+test('enemy hints and text-only IDs stay source-bound without playable catalog promotion', async () => {
+  const f = fixture();
+  const extra = { name: 'Gilded Magpie', where: 'Calls {count} birds.' };
+  f.rewrite('text/en.json', (doc) => {
+    doc.texts.enemy.sample.where = 'Optional registered hint';
+    doc.texts.enemy['text-only'] = extra;
+    return doc;
+  });
+  f.rewrite('text/fr.json', (doc) => {
+    doc.texts.enemy = { 'text-only': { where: 'Appelle {count} oiseaux.' } };
+    return doc;
+  });
+  f.dumped.content['content.enemy.sample.where'] = ['Optional registered hint'];
+  f.dumped.content['content.enemy.text-only.name'] = ['Gilded Magpie'];
+  f.dumped.content['content.enemy.text-only.where'] = ['Calls ', ['count'], ' birds.'];
+  const fetched = await fetchOfficialData(COMMIT, f);
+  assert.deepEqual(applyOfficialData(f.dumped, fetched), f.dumped);
+  const exported = localizedTextExport(fetched, f.dumped);
+  assert.deepEqual(exported.text.en.enemy['text-only'], extra);
+  assert.deepEqual(exported.text.fr.enemy, { 'text-only': { where: 'Appelle {count} oiseaux.' } });
+  assert.equal(exported.text.en.enemy.sample.where, 'Optional registered hint');
+  assert.deepEqual(Object.keys(fetched.catalogs.enemies.entries), ['sample']);
+  assert.deepEqual(f.dumped.registry.enemies.map((e) => e.id), ['sample']);
+  assert.equal(fetched.catalogs.enemies.entries.sample.where, undefined);
+  for (const id of ['sample', 'text-only']) for (const bad of [undefined, ['Wrong'], [[1, 'count']]]) {
+    const dumped = structuredClone(f.dumped);
+    if (bad === undefined) delete dumped.content[`content.enemy.${id}.where`];
+    else dumped.content[`content.enemy.${id}.where`] = bad;
+    assert.throws(() => applyOfficialData(dumped, fetched), /unmapped English|English mismatch|unsupported compiled/);
+    assert.throws(() => localizedTextExport(fetched, dumped), /unmapped English|English mismatch|unsupported compiled/);
+  }
+  const promoted = structuredClone(fetched);
+  promoted.catalogs.enemies.entries['text-only'] = { id: 'text-only', name: extra.name, def: {} };
+  assert.throws(() => applyOfficialData(f.dumped, promoted), /unmapped official/);
+  assert.throws(() => localizedTextExport(promoted, f.dumped), /unmapped official/);
+  for (const [path, mutate] of [
+    ['text/en.json', (d) => { delete d.texts.enemy.sample; }],
+    ['text/en.json', (d) => { d.texts.enemy.sample = { where: 'Missing name' }; }],
+    ['text/en.json', (d) => { d.texts.enemy.sample.where = ['Not a string']; }],
+    ['text/en.json', (d) => { d.texts.enemy['text-only'] = { name: 'Name', damage: 'Unknown' }; }],
+    ['text/fr.json', (d) => { d.texts.enemy = { sample: { where: 'Missing English field' } }; }],
+    ['text/fr.json', (d) => { d.texts.enemy = { unknown: { name: 'Unknown English ID' } }; }],
+    ['enemies.json', (d) => { d.entries.sample.where = 'Not a catalog field'; }],
+    ['text/en.json', (d) => { d.texts.boss['text-only'] = { name: 'No', title: 'No', desc: 'No' }; }],
+  ]) {
+    const g = fixture();
+    g.rewrite(path, (d) => { mutate(d); return d; });
+    await assert.rejects(fetchOfficialData(COMMIT, g), /official data:/);
+  }
+});
+
+test('optional variety-place hints export verbatim only with compiled English equality', async () => {
+  const f = fixture();
+  f.rewrite('text/en.json', (doc) => {
+    doc.texts.varietyPlace = { shrine: { name: 'Shrine', desc: 'Calls birds.', where: 'Beside you.' } };
+    return doc;
+  });
+  f.rewrite('text/fr.json', (doc) => {
+    doc.texts.varietyPlace = { shrine: { where: 'À côté de vous.' } };
+    return doc;
+  });
+  for (const [field, value] of Object.entries({ name: 'Shrine', desc: 'Calls birds.', where: 'Beside you.' })) {
+    f.dumped.content[`content.varietyPlace.shrine.${field}`] = [value];
+  }
+  const result = await fetchOfficialData(COMMIT, f);
+  assert.deepEqual(applyOfficialData(f.dumped, result), f.dumped);
+  assert.deepEqual(localizedTextExport(result, f.dumped).text.fr.varietyPlace.shrine, { where: 'À côté de vous.' });
+  for (const bad of [undefined, ['Wrong']]) {
+    const dumped = structuredClone(f.dumped);
+    if (bad === undefined) delete dumped.content['content.varietyPlace.shrine.where'];
+    else dumped.content['content.varietyPlace.shrine.where'] = bad;
+    assert.throws(() => applyOfficialData(dumped, result), /unmapped English|English mismatch/);
+    assert.throws(() => localizedTextExport(result, dumped), /unmapped English|English mismatch/);
+  }
+  for (const where of [[], null, 4]) {
+    const g = fixture();
+    g.rewrite('text/en.json', (doc) => { doc.texts.varietyPlace = { shrine: { where } }; return doc; });
+    await assert.rejects(fetchOfficialData(COMMIT, g), /invalid fields/);
+  }
+});
+
 test('required catalog or locale HTTP403 fails rather than falling back', async () => {
   for (const path of ['weapons.json', 'text/fr.json']) {
     const f = fixture(); f.forbidden = path;
