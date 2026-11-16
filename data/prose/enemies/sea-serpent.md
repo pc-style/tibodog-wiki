@@ -1,6 +1,6 @@
 ## How it works
 
-This is a **Court crowd member**, not its armoured Shell namesake. It walks toward Tibo and can route around Court maze walls; its catalog `chase` behavior adds no separate projectile, windup or charge. Court spawning replaces its catalog speed with **36**, base HP with **7200 × the spawn HP scale**, and XP with 18. Its body/contact damage still passes through the ordinary enemy systems. <small>[endgame-sim-2ESvoe_w.js: `` c=j.crowdHp,l=j.crowdSpeed,u=j.crowdXp ``]</small> <small>[court-DTda18ia.js: `` crowdHp:7200,helperHp:18e3,attendantHp:12e3,crowdSpeed:36 ``]</small>
+This is a **Court crowd member**, not its armoured Shell namesake. It walks toward Tibo and can route around Court maze walls; its catalog `chase` behavior adds no separate projectile, windup or charge. Court spawning replaces its catalog speed with **36**, base HP with **7200 × the spawn HP scale**, and XP with 18. Its body/contact damage still passes through the ordinary enemy systems. <small>[endgame-sim-CMzcbCZD.js: `` c=j.crowdHp,l=j.crowdSpeed,u=j.crowdXp ``]</small> <small>[court-Cmz7Nj_d.js: `` crowdHp:7200,helperHp:18e3,attendantHp:12e3,crowdSpeed:36 ``]</small>
 
 Nearby banner, mender and shell helpers can speed it up, heal it or protect it. Those are roles of the nearby helper, not extra innate attacks for this species. Separating it from helpers removes their range-limited support; see [Court](/endgame#court).
 

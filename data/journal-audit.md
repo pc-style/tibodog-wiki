@@ -1490,3 +1490,12 @@ Existing journal notes moved from next into a dated release group; no gameplay o
 - starburst-five-spokes-held-ring (XVxyfH): original publication 2026-11-15T20:59:50Z; now 2026-11-15/ea883ce. Source introduction remains in prior build history.
 
 Sources: https://tibo.dog/assets/changelog-panel-CIY9-uRP.js SHA-256 8f2b340e18173fa109067ef5c15f898b381e9d26a2e56de1598b411291e3644e; https://tibo.dog/assets/changelog-panel-CBp_twBk.js SHA-256 425cc6c9c464b624d2df919612ebdcc5f1f01a96075a2cc885af10dfdcccd093. Prior history SHA-256 fff03a61a452b40fc4fee5826b54a3f0c97bf018288e1c7ceba16fb9521435dd.
+
+
+## Local journal graduation main-DLk00Ai3.js
+
+Existing journal notes moved from next into a dated release group; no gameplay or note wording changes.
+
+- impact-frame-clears-level-up (3Xa6U2): original publication 2026-11-15T23:09:53Z; now 2026-11-15/8a10aac. Source introduction remains in prior build history.
+
+Sources: https://tibo.dog/assets/changelog-panel-BYigUdJ8.js SHA-256 0c6d69abb336042db2073b9c102b76d79d177962fcddd94c17422f4cb14c7ace; https://tibo.dog/assets/changelog-panel-apAXRXs3.js SHA-256 cb22124fc9bf62edc15e2a7c2ebd038522db1c6b0f177c8f36bb0feb75368fd3. Prior history SHA-256 f652d995b5586b0c8eeab6c5fbb97bf61e28eed5ccce0db0a10011e559cbf247.
