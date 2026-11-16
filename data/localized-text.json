@@ -1,8 +1,8 @@
 {
  "schema": 1,
  "game": {
-  "version": "75075fe",
-  "commit": "75075fefcff21200e58e9d16b32df7d9b7511435"
+  "version": "0fdf1e7",
+  "commit": "0fdf1e7fc2b16bf63dbbdd0dd8fbf54af9f3934b"
  },
  "simVersion": "df0e6168e3ba1f8b",
  "locales": [
@@ -2418,6 +2418,28 @@
      "desc": "The Hunt: summons and dogs hunt the toughest pest in view for {quarry}% more damage. Its fall speeds them up {howl}% for {seconds} s",
      "label": "Summons and dogs deal {elite}% more damage to elites and bosses"
     }
+   },
+   "affix": {
+    "rimed": {
+     "name": "Rimed",
+     "desc": "Drops frost orbs at Tibo's feet that burst after 1.5 s.",
+     "where": "On elites from 0:45."
+    },
+    "scorching": {
+     "name": "Scorching",
+     "desc": "Leaves a burning trail behind it.",
+     "where": "On elites from 0:45."
+    },
+    "snaring": {
+     "name": "Snaring",
+     "desc": "Roots Tibo in place for 1 s, once every 8 s. A dash breaks free.",
+     "where": "On elites from 0:45."
+    },
+    "tugging": {
+     "name": "Tugging",
+     "desc": "Pulls Tibo toward it every 5 s. A dash escapes the pull.",
+     "where": "On elites from 0:45."
+    }
    }
   },
   "zh-CN": {
@@ -4640,6 +4662,28 @@
     "the-hunt": {
      "desc": "狩猎：召唤物和狗狗追猎视野内最耐打的害虫，伤害提高{quarry}%。它倒下后，它们加速{howl}%，持续{seconds}秒",
      "label": "召唤物和狗狗对精英和首领的伤害提高{elite}%"
+    }
+   },
+   "affix": {
+    "rimed": {
+     "name": "霜冻",
+     "desc": "在Tibo脚下丢下霜球，1.5秒后爆开。",
+     "where": "0:45起出现在精英身上。"
+    },
+    "scorching": {
+     "name": "灼热",
+     "desc": "身后留下一道燃烧的痕迹。",
+     "where": "0:45起出现在精英身上。"
+    },
+    "snaring": {
+     "name": "束缚",
+     "desc": "将Tibo定在原地1秒，每8秒一次。冲刺可以挣脱。",
+     "where": "0:45起出现在精英身上。"
+    },
+    "tugging": {
+     "name": "牵引",
+     "desc": "每5秒把Tibo拉向自己。冲刺可以摆脱拉扯。",
+     "where": "0:45起出现在精英身上。"
     }
    }
   },
@@ -6864,6 +6908,28 @@
      "desc": "狩獵：召喚物和狗狗追獵視野內最耐打的害蟲，傷害提高{quarry}%。牠倒下後，牠們加速{howl}%，持續{seconds}秒",
      "label": "召喚物和狗狗對菁英和首領的傷害提高{elite}%"
     }
+   },
+   "affix": {
+    "rimed": {
+     "name": "霜凍",
+     "desc": "在Tibo腳下丟下霜球，1.5秒後爆開。",
+     "where": "0:45起出現在菁英身上。"
+    },
+    "scorching": {
+     "name": "灼熱",
+     "desc": "身後留下一道燃燒的痕跡。",
+     "where": "0:45起出現在菁英身上。"
+    },
+    "snaring": {
+     "name": "束縛",
+     "desc": "將Tibo定在原地1秒，每8秒一次。衝刺可以掙脫。",
+     "where": "0:45起出現在菁英身上。"
+    },
+    "tugging": {
+     "name": "牽引",
+     "desc": "每5秒把Tibo拉向自己。衝刺可以擺脫拉扯。",
+     "where": "0:45起出現在菁英身上。"
+    }
    }
   },
   "ja": {
@@ -9086,6 +9152,28 @@
     "the-hunt": {
      "desc": "狩り：召喚と犬が画面内で最もタフな害虫を狩り、ダメージ{quarry}%アップ。倒すと{seconds}秒間{howl}%速くなる",
      "label": "召喚と犬のエリートとボスへのダメージ{elite}%アップ"
+    }
+   },
+   "affix": {
+    "rimed": {
+     "name": "氷結",
+     "desc": "Tiboの足元に霜の玉を落とし、1.5秒後に破裂させる。",
+     "where": "0:45以降のエリートに付く。"
+    },
+    "scorching": {
+     "name": "灼熱",
+     "desc": "後ろに燃える跡を残す。",
+     "where": "0:45以降のエリートに付く。"
+    },
+    "snaring": {
+     "name": "拘束",
+     "desc": "Tiboをその場に1秒拘束する。8秒に1回。ダッシュで抜け出せる。",
+     "where": "0:45以降のエリートに付く。"
+    },
+    "tugging": {
+     "name": "引き寄せ",
+     "desc": "5秒ごとにTiboを引き寄せる。ダッシュで逃れられる。",
+     "where": "0:45以降のエリートに付く。"
     }
    }
   },
@@ -11310,6 +11398,28 @@
      "desc": "사냥: 소환수와 개가 시야에서 가장 질긴 해충을 {quarry}% 더 큰 피해로 사냥합니다. 쓰러뜨리면 {seconds}초 동안 {howl}% 빨라집니다",
      "label": "소환수와 개가 엘리트와 보스에게 {elite}% 더 큰 피해를 줍니다"
     }
+   },
+   "affix": {
+    "rimed": {
+     "name": "서리",
+     "desc": "Tibo의 발밑에 1.5초 뒤 터지는 서리 구슬을 떨어뜨립니다.",
+     "where": "0:45부터 엘리트에게 붙습니다."
+    },
+    "scorching": {
+     "name": "작열",
+     "desc": "지나간 자리에 불타는 흔적을 남깁니다.",
+     "where": "0:45부터 엘리트에게 붙습니다."
+    },
+    "snaring": {
+     "name": "속박",
+     "desc": "8초마다 한 번 Tibo를 1초 동안 그 자리에 묶습니다. 대시로 풀려납니다.",
+     "where": "0:45부터 엘리트에게 붙습니다."
+    },
+    "tugging": {
+     "name": "끌어당김",
+     "desc": "5초마다 Tibo를 자기 쪽으로 끌어당깁니다. 대시로 벗어날 수 있습니다.",
+     "where": "0:45부터 엘리트에게 붙습니다."
+    }
    }
   },
   "es": {
@@ -13532,6 +13642,28 @@
     "the-hunt": {
      "desc": "La Cacería: las invocaciones y los perros cazan a la plaga más dura a la vista con un {quarry}% más de daño. Su caída los acelera un {howl}% durante {seconds} s",
      "label": "Las invocaciones y los perros hacen un {elite}% más de daño a élites y jefes"
+    }
+   },
+   "affix": {
+    "rimed": {
+     "name": "Escarchado",
+     "desc": "Suelta orbes de escarcha a los pies de Tibo que estallan tras 1.5 s.",
+     "where": "En élites desde 0:45."
+    },
+    "scorching": {
+     "name": "Abrasador",
+     "desc": "Deja un rastro ardiente a su paso.",
+     "where": "En élites desde 0:45."
+    },
+    "snaring": {
+     "name": "Atrapador",
+     "desc": "Inmoviliza a Tibo 1 s, una vez cada 8 s. Un impulso lo libera.",
+     "where": "En élites desde 0:45."
+    },
+    "tugging": {
+     "name": "Arrastrador",
+     "desc": "Tira de Tibo hacia sí cada 5 s. Un impulso escapa del tirón.",
+     "where": "En élites desde 0:45."
     }
    }
   },
@@ -15756,6 +15888,28 @@
      "desc": "शिकार: समन और कुत्ते नज़र में सबसे सख़्त कीट का {quarry}% ज़्यादा नुकसान से शिकार करते हैं। उसके गिरने पर वे {seconds} से. तक {howl}% तेज़ होते हैं",
      "label": "समन और कुत्ते एलीट और बॉस को {elite}% ज़्यादा नुकसान देते हैं"
     }
+   },
+   "affix": {
+    "rimed": {
+     "name": "बर्फीला",
+     "desc": "Tibo के पैरों के पास बर्फ के गोले गिराता है जो 1.5 सेकंड बाद फटते हैं।",
+     "where": "0:45 से एलीट पर।"
+    },
+    "scorching": {
+     "name": "दहकता",
+     "desc": "अपने पीछे जलती लकीर छोड़ता है।",
+     "where": "0:45 से एलीट पर।"
+    },
+    "snaring": {
+     "name": "जकड़ने वाला",
+     "desc": "Tibo को 1 सेकंड के लिए जकड़ लेता है, हर 8 सेकंड में एक बार। डैश करके छूटें।",
+     "where": "0:45 से एलीट पर।"
+    },
+    "tugging": {
+     "name": "खींचने वाला",
+     "desc": "हर 5 सेकंड Tibo को अपनी ओर खींचता है। डैश करके खिंचाव से बचें।",
+     "where": "0:45 से एलीट पर।"
+    }
    }
   },
   "de": {
@@ -17978,6 +18132,28 @@
     "the-hunt": {
      "desc": "Die Jagd: Beschwörungen und Hunde jagen den zähesten Schädling in Sicht mit {quarry} % mehr Schaden. Sein Fall macht sie {seconds} s lang {howl} % schneller",
      "label": "Beschwörungen und Hunde verursachen {elite} % mehr Schaden an Elite-Gegnern und Bossen"
+    }
+   },
+   "affix": {
+    "rimed": {
+     "name": "Vereist",
+     "desc": "Wirft Tibo Frostkugeln vor die Füße, die nach 1,5 s platzen.",
+     "where": "Bei Elites ab 0:45."
+    },
+    "scorching": {
+     "name": "Sengend",
+     "desc": "Hinterlässt eine brennende Spur.",
+     "where": "Bei Elites ab 0:45."
+    },
+    "snaring": {
+     "name": "Fesselnd",
+     "desc": "Hält Tibo 1 s lang fest, einmal alle 8 s. Ein Spurt befreit ihn.",
+     "where": "Bei Elites ab 0:45."
+    },
+    "tugging": {
+     "name": "Zerrend",
+     "desc": "Zieht Tibo alle 5 s zu sich. Ein Spurt entkommt dem Sog.",
+     "where": "Bei Elites ab 0:45."
     }
    }
   },
@@ -20202,6 +20378,28 @@
      "desc": "La Traque : invocations et chiens traquent le nuisible le plus coriace en vue avec {quarry} % de dégâts en plus. Sa chute les accélère de {howl} % pendant {seconds} s",
      "label": "Invocations et chiens infligent {elite} % de dégâts en plus aux élites et aux boss"
     }
+   },
+   "affix": {
+    "rimed": {
+     "name": "Givrée",
+     "desc": "Lâche des orbes de givre aux pieds de Tibo, qui éclatent après 1,5 s.",
+     "where": "Sur les élites dès 0:45."
+    },
+    "scorching": {
+     "name": "Brûlante",
+     "desc": "Laisse une traînée de feu derrière elle.",
+     "where": "Sur les élites dès 0:45."
+    },
+    "snaring": {
+     "name": "Entravante",
+     "desc": "Immobilise Tibo 1 s, une fois toutes les 8 s. Une ruée le libère.",
+     "where": "Sur les élites dès 0:45."
+    },
+    "tugging": {
+     "name": "Attractrice",
+     "desc": "Attire Tibo vers elle toutes les 5 s. Une ruée y échappe.",
+     "where": "Sur les élites dès 0:45."
+    }
    }
   },
   "pt": {
@@ -22424,6 +22622,28 @@
     "the-hunt": {
      "desc": "A Caçada: invocações e cães caçam a praga mais dura à vista com {quarry}% mais dano. A queda dela os acelera em {howl}% por {seconds} s",
      "label": "Invocações e cães causam {elite}% mais dano a elites e chefes"
+    }
+   },
+   "affix": {
+    "rimed": {
+     "name": "Gélida",
+     "desc": "Solta orbes de geada aos pés do Tibo que explodem após 1,5 s.",
+     "where": "Em elites a partir de 0:45."
+    },
+    "scorching": {
+     "name": "Escaldante",
+     "desc": "Deixa um rastro de fogo por onde passa.",
+     "where": "Em elites a partir de 0:45."
+    },
+    "snaring": {
+     "name": "Aprisionante",
+     "desc": "Prende o Tibo no lugar por 1 s, uma vez a cada 8 s. Um impulso o solta.",
+     "where": "Em elites a partir de 0:45."
+    },
+    "tugging": {
+     "name": "Atratora",
+     "desc": "Puxa o Tibo até ela a cada 5 s. Um impulso escapa do puxão.",
+     "where": "Em elites a partir de 0:45."
     }
    }
   },
@@ -24648,6 +24868,28 @@
      "desc": "Av: çağrılanlar ve köpekler görüşteki en dayanıklı haşereyi %{quarry} fazla hasarla avlar. Düşüşü onları {seconds} sn boyunca %{howl} hızlandırır",
      "label": "Çağrılanlar ve köpekler seçkinlere ve bosslara %{elite} fazla hasar verir"
     }
+   },
+   "affix": {
+    "rimed": {
+     "name": "Kırağılı",
+     "desc": "Tibo'nun ayağının dibine 1,5 sn sonra patlayan buz küreleri bırakır.",
+     "where": "0:45'ten itibaren elitlerde."
+    },
+    "scorching": {
+     "name": "Kavurucu",
+     "desc": "Arkasında yanan bir iz bırakır.",
+     "where": "0:45'ten itibaren elitlerde."
+    },
+    "snaring": {
+     "name": "Tuzakçı",
+     "desc": "Tibo'yu 8 sn'de bir, 1 sn yerine çiviler. Atılma onu kurtarır.",
+     "where": "0:45'ten itibaren elitlerde."
+    },
+    "tugging": {
+     "name": "Sürükleyen",
+     "desc": "Tibo'yu 5 sn'de bir kendine çeker. Atılma bu çekişten kurtarır.",
+     "where": "0:45'ten itibaren elitlerde."
+    }
    }
   },
   "id": {
@@ -26870,6 +27112,28 @@
     "the-hunt": {
      "desc": "Perburuan: summon dan anjing memburu hama terkuat yang terlihat dengan damage {quarry}% lebih besar. Jatuhnya membuat mereka {howl}% lebih cepat selama {seconds} dtk",
      "label": "Summon dan anjing memberi damage {elite}% lebih besar ke elite dan bos"
+    }
+   },
+   "affix": {
+    "rimed": {
+     "name": "Membeku",
+     "desc": "Menjatuhkan bola es di kaki Tibo yang meledak setelah 1,5 dtk.",
+     "where": "Pada elite mulai 0:45."
+    },
+    "scorching": {
+     "name": "Membara",
+     "desc": "Meninggalkan jejak api di belakangnya.",
+     "where": "Pada elite mulai 0:45."
+    },
+    "snaring": {
+     "name": "Menjerat",
+     "desc": "Menahan Tibo di tempat selama 1 dtk, sekali tiap 8 dtk. Lesat membebaskannya.",
+     "where": "Pada elite mulai 0:45."
+    },
+    "tugging": {
+     "name": "Menyeret",
+     "desc": "Menarik Tibo ke arahnya tiap 5 dtk. Lesat melepaskannya dari tarikan.",
+     "where": "Pada elite mulai 0:45."
     }
    }
   },
@@ -29094,6 +29358,28 @@
      "desc": "Охота: призванные и собаки охотятся на самого живучего вредителя в поле зрения с уроном выше на {quarry}%. Его гибель ускоряет их на {howl}% на {seconds} с",
      "label": "Призванные и собаки наносят элите и боссам на {elite}% больше урона"
     }
+   },
+   "affix": {
+    "rimed": {
+     "name": "Морозный",
+     "desc": "Бросает к ногам Tibo ледяные шары, которые лопаются через 1,5 с.",
+     "where": "У элиты с 0:45."
+    },
+    "scorching": {
+     "name": "Палящий",
+     "desc": "Оставляет за собой огненный след.",
+     "where": "У элиты с 0:45."
+    },
+    "snaring": {
+     "name": "Сковывающий",
+     "desc": "Сковывает Tibo на месте на 1 с, раз в 8 с. Рывок освобождает.",
+     "where": "У элиты с 0:45."
+    },
+    "tugging": {
+     "name": "Притягивающий",
+     "desc": "Притягивает Tibo к себе каждые 5 с. Рывком можно вырваться.",
+     "where": "У элиты с 0:45."
+    }
    }
   },
   "ms": {
@@ -31316,6 +31602,28 @@
     "the-hunt": {
      "desc": "Pemburuan: panggilan dan anjing memburu perosak paling tegar yang kelihatan dengan {quarry}% lebih kerosakan. Kejatuhannya mempercepat mereka {howl}% selama {seconds} s",
      "label": "Panggilan dan anjing memberi {elite}% lebih kerosakan kepada elit dan bos"
+    }
+   },
+   "affix": {
+    "rimed": {
+     "name": "Membeku",
+     "desc": "Menjatuhkan bebola ais di kaki Tibo yang meletup selepas 1.5 s.",
+     "where": "Pada elit mulai 0:45."
+    },
+    "scorching": {
+     "name": "Membara",
+     "desc": "Meninggalkan jejak api di belakangnya.",
+     "where": "Pada elit mulai 0:45."
+    },
+    "snaring": {
+     "name": "Menjerat",
+     "desc": "Menahan Tibo di tempatnya selama 1 s, sekali setiap 8 s. Pecutan membebaskannya.",
+     "where": "Pada elit mulai 0:45."
+    },
+    "tugging": {
+     "name": "Menyeret",
+     "desc": "Menarik Tibo kepadanya setiap 5 s. Pecutan memutuskan tarikan.",
+     "where": "Pada elit mulai 0:45."
     }
    }
   },
@@ -33540,6 +33848,28 @@
      "desc": "Ang Pangangaso: hinahabol ng mga summon at aso ang pinakamatibay na peste sa tanaw nang may {quarry}% dagdag na pinsala. Pagbagsak nito, {howl}% silang bibilis nang {seconds} s",
      "label": "Ang mga summon at aso ay {elite}% dagdag na pinsala sa mga elite at boss"
     }
+   },
+   "affix": {
+    "rimed": {
+     "name": "Nagyeyelo",
+     "desc": "Naghuhulog ng bolang yelo sa paanan ni Tibo. Puputok ito sa 1.5 s.",
+     "where": "Sa mga elite mula 0:45."
+    },
+    "scorching": {
+     "name": "Nagliliyab",
+     "desc": "Nag-iiwan ng bakas ng apoy sa likod nito.",
+     "where": "Sa mga elite mula 0:45."
+    },
+    "snaring": {
+     "name": "Nambibitag",
+     "desc": "Binibitag si Tibo nang 1 s, isang beses bawat 8 s. Mag-dash para kumawala.",
+     "where": "Sa mga elite mula 0:45."
+    },
+    "tugging": {
+     "name": "Nanghihila",
+     "desc": "Hinihila si Tibo palapit dito bawat 5 s. Mag-dash para makatakas.",
+     "where": "Sa mga elite mula 0:45."
+    }
    }
   },
   "mr": {
@@ -35762,6 +36092,28 @@
     "the-hunt": {
      "desc": "शिकार: समन आणि कुत्रे दिसणाऱ्या सर्वात चिवट किडीची {quarry}% जास्त नुकसानाने शिकार करतात. ती पडल्यावर ते {seconds} से. {howl}% वेगवान होतात",
      "label": "समन आणि कुत्रे एलिट आणि बॉसना {elite}% जास्त नुकसान करतात"
+    }
+   },
+   "affix": {
+    "rimed": {
+     "name": "बर्फाळ",
+     "desc": "Tibo च्या पायाशी बर्फाचे गोळे टाकतो, जे 1.5 सेकंदांनी फुटतात.",
+     "where": "0:45 पासून एलिटवर."
+    },
+    "scorching": {
+     "name": "धगधगता",
+     "desc": "मागे जळता माग सोडतो.",
+     "where": "0:45 पासून एलिटवर."
+    },
+    "snaring": {
+     "name": "जखडणारा",
+     "desc": "Tibo ला 1 सेकंद जागीच जखडतो, दर 8 सेकंदांनी एकदा. डॅशने सुटका होते.",
+     "where": "0:45 पासून एलिटवर."
+    },
+    "tugging": {
+     "name": "ओढणारा",
+     "desc": "दर 5 सेकंदांनी Tibo ला स्वतःकडे ओढतो. डॅशने ओढीतून सुटका होते.",
+     "where": "0:45 पासून एलिटवर."
     }
    }
   },
@@ -37986,6 +38338,28 @@
      "desc": "Cuộc Săn: triệu hồi và chó săn con sâu bọ lì nhất trong tầm nhìn, gây thêm {quarry}% sát thương. Khi nó gục, chúng nhanh hơn {howl}% trong {seconds} giây",
      "label": "Triệu hồi và chó gây thêm {elite}% sát thương lên tinh anh và trùm"
     }
+   },
+   "affix": {
+    "rimed": {
+     "name": "Băng Giá",
+     "desc": "Thả cầu băng dưới chân Tibo, nổ sau 1,5 giây.",
+     "where": "Trên tinh anh từ 0:45."
+    },
+    "scorching": {
+     "name": "Thiêu Đốt",
+     "desc": "Để lại một vệt lửa phía sau.",
+     "where": "Trên tinh anh từ 0:45."
+    },
+    "snaring": {
+     "name": "Trói Buộc",
+     "desc": "Trói Tibo tại chỗ 1 giây, mỗi 8 giây một lần. Lướt để thoát ra.",
+     "where": "Trên tinh anh từ 0:45."
+    },
+    "tugging": {
+     "name": "Lôi Kéo",
+     "desc": "Kéo Tibo về phía nó mỗi 5 giây. Lướt để thoát lực kéo.",
+     "where": "Trên tinh anh từ 0:45."
+    }
    }
   },
   "te": {
@@ -40208,6 +40582,28 @@
     "the-hunt": {
      "desc": "వేట: సమన్లు, కుక్కలు కనిపించే అత్యంత గట్టి పురుగును {quarry}% ఎక్కువ నష్టంతో వేటాడతాయి. అది పడితే {seconds} సె. పాటు {howl}% వేగంగా ఉంటాయి",
      "label": "సమన్లు, కుక్కలు ఎలీట్లకు, బాస్లకు {elite}% ఎక్కువ నష్టం చేస్తాయి"
+    }
+   },
+   "affix": {
+    "rimed": {
+     "name": "మంచుకప్పిన",
+     "desc": "Tibo కాళ్ల దగ్గర మంచు గోళాలు వేస్తుంది, అవి 1.5 సె తర్వాత పేలతాయి.",
+     "where": "0:45 నుంచి ఎలైట్స్ పై."
+    },
+    "scorching": {
+     "name": "మండించే",
+     "desc": "వెనకాల మండే దారిని వదులుతుంది.",
+     "where": "0:45 నుంచి ఎలైట్స్ పై."
+    },
+    "snaring": {
+     "name": "బంధించే",
+     "desc": "Tibo ని 1 సె పాటు ఉన్నచోటే బంధిస్తుంది, 8 సె కి ఒకసారి. డాష్ తో విడిపించుకోవచ్చు.",
+     "where": "0:45 నుంచి ఎలైట్స్ పై."
+    },
+    "tugging": {
+     "name": "లాగే",
+     "desc": "5 సె కి ఒకసారి Tibo ని తన వైపు లాగుతుంది. డాష్ తో తప్పించుకోవచ్చు.",
+     "where": "0:45 నుంచి ఎలైట్స్ పై."
     }
    }
   },
@@ -42432,6 +42828,28 @@
      "desc": "வேட்டை: அழைப்புகளும் நாய்களும் பார்வையில் உள்ள மிகக் கடினமான பூச்சியை {quarry}% அதிக சேதத்துடன் வேட்டையாடும். அது விழுந்தால் {seconds} வி. {howl}% வேகமாகும்",
      "label": "அழைப்புகளும் நாய்களும் சிறப்பு எதிரிகளுக்கும் பாஸ்களுக்கும் {elite}% அதிக சேதம் செய்யும்"
     }
+   },
+   "affix": {
+    "rimed": {
+     "name": "பனிபடர்ந்த",
+     "desc": "Tibo-வின் காலடியில் பனி உருண்டை போடும்; 1.5 வினாடியில் வெடிக்கும்.",
+     "where": "0:45 முதல் எலைட்களிடம்."
+    },
+    "scorching": {
+     "name": "தகிக்கும்",
+     "desc": "பின்னால் எரியும் தடத்தை விட்டுச் செல்லும்.",
+     "where": "0:45 முதல் எலைட்களிடம்."
+    },
+    "snaring": {
+     "name": "கட்டிப்போடும்",
+     "desc": "8 வினாடிக்கு ஒருமுறை Tibo-வை 1 வினாடி கட்டிப்போடும். டேஷ் செய்தால் விடுபடலாம்.",
+     "where": "0:45 முதல் எலைட்களிடம்."
+    },
+    "tugging": {
+     "name": "இழுக்கும்",
+     "desc": "5 வினாடிக்கு ஒருமுறை Tibo-வைத் தன்பக்கம் இழுக்கும். டேஷ் செய்தால் தப்பலாம்.",
+     "where": "0:45 முதல் எலைட்களிடம்."
+    }
    }
   },
   "bn": {
@@ -44654,6 +45072,28 @@
     "the-hunt": {
      "desc": "শিকার: সমন আর কুকুরেরা দৃশ্যের সবচেয়ে শক্ত পোকাকে {quarry}% বেশি ক্ষতিতে শিকার করে। সেটি পড়লে তারা {seconds} সে. {howl}% দ্রুত হয়",
      "label": "সমন আর কুকুরেরা এলিট ও বসদের {elite}% বেশি ক্ষতি করে"
+    }
+   },
+   "affix": {
+    "rimed": {
+     "name": "হিমশীতল",
+     "desc": "Tibo-র পায়ের কাছে বরফের গোলা ফেলে, যা 1.5 সেকেন্ড পরে ফাটে।",
+     "where": "0:45 থেকে এলিটদের গায়ে।"
+    },
+    "scorching": {
+     "name": "জ্বলন্ত",
+     "desc": "পেছনে জ্বলন্ত রেখা রেখে যায়।",
+     "where": "0:45 থেকে এলিটদের গায়ে।"
+    },
+    "snaring": {
+     "name": "আবদ্ধকারী",
+     "desc": "প্রতি 8 সেকেন্ডে একবার Tibo-কে 1 সেকেন্ড জায়গায় আটকে রাখে। ড্যাশ দিলে ছাড়া পায়।",
+     "where": "0:45 থেকে এলিটদের গায়ে।"
+    },
+    "tugging": {
+     "name": "আকর্ষী",
+     "desc": "প্রতি 5 সেকেন্ডে Tibo-কে নিজের দিকে টানে। ড্যাশ দিলে ছাড়া পায়।",
+     "where": "0:45 থেকে এলিটদের গায়ে।"
     }
    }
   },
@@ -46878,6 +47318,28 @@
      "desc": "การล่า: ตัวอัญเชิญและหมาไล่ล่าศัตรูพืชที่ทนที่สุดในจอ สร้างความเสียหายเพิ่ม {quarry}% เมื่อมันล้ม พวกมันเร็วขึ้น {howl}% นาน {seconds} วิ",
      "label": "ตัวอัญเชิญและหมาสร้างความเสียหายต่ออีลีตและบอสเพิ่ม {elite}%"
     }
+   },
+   "affix": {
+    "rimed": {
+     "name": "เยือกแข็ง",
+     "desc": "ปล่อยลูกน้ำแข็งไว้ใต้เท้า Tibo ซึ่งระเบิดหลัง 1.5 วินาที",
+     "where": "พบในอีลีทตั้งแต่ 0:45"
+    },
+    "scorching": {
+     "name": "แผดเผา",
+     "desc": "ทิ้งรอยไฟไว้ข้างหลัง",
+     "where": "พบในอีลีทตั้งแต่ 0:45"
+    },
+    "snaring": {
+     "name": "พันธนาการ",
+     "desc": "ตรึง Tibo ไว้กับที่ 1 วินาที ครั้งเดียวทุก 8 วินาที แดชเพื่อหลุดออก",
+     "where": "พบในอีลีทตั้งแต่ 0:45"
+    },
+    "tugging": {
+     "name": "กระชาก",
+     "desc": "ดึง Tibo เข้าหาตัวทุก 5 วินาที แดชเพื่อหนีแรงดึง",
+     "where": "พบในอีลีทตั้งแต่ 0:45"
+    }
    }
   },
   "ha": {
@@ -49100,6 +49562,28 @@
     "the-hunt": {
      "desc": "Farauta: kiraye-kiraye da karnuka suna farautar ƙwaro mafi ƙarfi a gani da ƙarin lahani {quarry}%. Faɗuwarsa tana ƙara musu sauri {howl}% na daƙiƙa {seconds}",
      "label": "Kiraye-kiraye da karnuka suna ƙara lahani {elite}% ga zaɓaɓɓu da shugabanni"
+    }
+   },
+   "affix": {
+    "rimed": {
+     "name": "Mai Ƙanƙara",
+     "desc": "Yana jefa ƙwallayen ƙanƙara a ƙafafun Tibo da ke fashewa bayan 1.5 s.",
+     "where": "A kan gwaraza daga 0:45."
+    },
+    "scorching": {
+     "name": "Mai Ƙuna",
+     "desc": "Yana barin layin wuta a bayansa.",
+     "where": "A kan gwaraza daga 0:45."
+    },
+    "snaring": {
+     "name": "Mai Tarko",
+     "desc": "Yana kama Tibo a wurinsa na 1 s, sau ɗaya a kowace 8 s. Zabura na kuɓutar da shi.",
+     "where": "A kan gwaraza daga 0:45."
+    },
+    "tugging": {
+     "name": "Mai Jawowa",
+     "desc": "Yana jan Tibo zuwa gare shi a kowace 5 s. Zabura na kuɓutar da shi.",
+     "where": "A kan gwaraza daga 0:45."
     }
    }
   },
@@ -51324,6 +51808,28 @@
      "desc": "Di Hunt: summons and dogs go hunt di strongest pest wey dey for view with {quarry}% more damage. When e fall, dem go fast {howl}% for {seconds} s",
      "label": "Summons and dogs dey do {elite}% more damage to elites and bosses"
     }
+   },
+   "affix": {
+    "rimed": {
+     "name": "Icy",
+     "desc": "E dey drop ice balls for Tibo leg wey go burst after 1.5 s.",
+     "where": "For elites from 0:45."
+    },
+    "scorching": {
+     "name": "Burning",
+     "desc": "E dey leave burning trail for im back.",
+     "where": "For elites from 0:45."
+    },
+    "snaring": {
+     "name": "Trapping",
+     "desc": "E dey hold Tibo for one place for 1 s, once every 8 s. Rush go free am.",
+     "where": "For elites from 0:45."
+    },
+    "tugging": {
+     "name": "Pulling",
+     "desc": "E dey pull Tibo come im side every 5 s. Rush go comot am from di pull.",
+     "where": "For elites from 0:45."
+    }
    }
   },
   "ar": {
@@ -53546,6 +54052,28 @@
     "the-hunt": {
      "desc": "الصيد: تطارد الاستدعاءات والكلاب أقوى آفة في المشهد بضرر أكبر بنسبة {quarry}%. سقوطها يسرّعها {howl}% لمدة {seconds} ث",
      "label": "تُلحق الاستدعاءات والكلاب ضررًا أكبر بنسبة {elite}% بالنخبة والزعماء"
+    }
+   },
+   "affix": {
+    "rimed": {
+     "name": "صقيعي",
+     "desc": "يُسقط عند قدمي Tibo كرات صقيع تنفجر بعد 1.5 ث.",
+     "where": "لدى النخبة بدءًا من 0:45."
+    },
+    "scorching": {
+     "name": "حارق",
+     "desc": "يترك خلفه أثرًا مشتعلًا.",
+     "where": "لدى النخبة بدءًا من 0:45."
+    },
+    "snaring": {
+     "name": "مُقيِّد",
+     "desc": "يثبّت Tibo في مكانه لمدة 1 ث، مرة كل 8 ث. الاندفاع يحرّره.",
+     "where": "لدى النخبة بدءًا من 0:45."
+    },
+    "tugging": {
+     "name": "ساحب",
+     "desc": "يسحب Tibo نحوه كل 5 ث. الاندفاع يفلته من السحب.",
+     "where": "لدى النخبة بدءًا من 0:45."
     }
    }
   },
@@ -55770,6 +56298,28 @@
      "desc": "شکار: احضارها و سگ‌ها سرسخت‌ترین آفت در دید را با {quarry}٪ آسیب بیشتر شکار می‌کنند. افتادنش آن‌ها را {seconds} ثانیه {howl}٪ سریع‌تر می‌کند",
      "label": "احضارها و سگ‌ها {elite}٪ آسیب بیشتر به نخبه‌ها و غول‌ها می‌زنند"
     }
+   },
+   "affix": {
+    "rimed": {
+     "name": "یخ‌زده",
+     "desc": "زیر پای Tibo گوی‌های یخ می‌اندازد که پس از 1.5 ثانیه می‌ترکند.",
+     "where": "روی نخبه‌ها از 0:45."
+    },
+    "scorching": {
+     "name": "سوزان",
+     "desc": "پشت سرش ردی سوزان به جا می‌گذارد.",
+     "where": "روی نخبه‌ها از 0:45."
+    },
+    "snaring": {
+     "name": "دام‌گذار",
+     "desc": "Tibo را 1 ثانیه درجا میخکوب می‌کند، هر 8 ثانیه یک بار. خیز او را آزاد می‌کند.",
+     "where": "روی نخبه‌ها از 0:45."
+    },
+    "tugging": {
+     "name": "کشاننده",
+     "desc": "هر 5 ثانیه Tibo را به سمت خود می‌کشد. خیز او را از کشش رها می‌کند.",
+     "where": "روی نخبه‌ها از 0:45."
+    }
    }
   },
   "he": {
@@ -57992,6 +58542,28 @@
     "the-hunt": {
      "desc": "הציד: זימונים וכלבים צדים את המזיק הקשוח ביותר בטווח הראייה עם {quarry}% יותר נזק. נפילתו מאיצה אותם ב־{howl}% למשך {seconds} שנ׳",
      "label": "זימונים וכלבים גורמים {elite}% יותר נזק לעילית ולבוסים"
+    }
+   },
+   "affix": {
+    "rimed": {
+     "name": "קפואה",
+     "desc": "מפילה לרגלי Tibo כדורי כפור שמתפוצצים אחרי 1.5 שנ׳.",
+     "where": "אצל עיליות מ־0:45."
+    },
+    "scorching": {
+     "name": "לוהטת",
+     "desc": "משאירה אחריה שובל בוער.",
+     "where": "אצל עיליות מ־0:45."
+    },
+    "snaring": {
+     "name": "לוכדת",
+     "desc": "מקבעת את Tibo במקום למשך 1 שנ׳, פעם ב־8 שנ׳. זינוק משחרר אותו.",
+     "where": "אצל עיליות מ־0:45."
+    },
+    "tugging": {
+     "name": "גוררת",
+     "desc": "מושכת את Tibo אליה כל 5 שנ׳. בזינוק נחלצים מהמשיכה.",
+     "where": "אצל עיליות מ־0:45."
     }
    }
   },
@@ -60216,6 +60788,28 @@
      "desc": "شکار: طلبی مخلوق اور کتے نظر میں سب سے سخت کیڑے کا {quarry}% زیادہ نقصان سے شکار کرتے ہیں۔ اس کے گرنے پر وہ {seconds} سیکنڈ تک {howl}% تیز ہو جاتے ہیں",
      "label": "طلبی مخلوق اور کتے ایلیٹ اور باسز کو {elite}% زیادہ نقصان دیتے ہیں"
     }
+   },
+   "affix": {
+    "rimed": {
+     "name": "برفیلا",
+     "desc": "Tibo کے قدموں میں برف کے گولے گراتا ہے جو 1.5 سیکنڈ بعد پھٹتے ہیں۔",
+     "where": "0:45 سے ایلیٹ پر۔"
+    },
+    "scorching": {
+     "name": "آتشیں",
+     "desc": "اپنے پیچھے جلتی لکیر چھوڑ جاتا ہے۔",
+     "where": "0:45 سے ایلیٹ پر۔"
+    },
+    "snaring": {
+     "name": "جکڑنے والا",
+     "desc": "Tibo کو 1 سیکنڈ کے لیے جکڑ لیتا ہے، ہر 8 سیکنڈ میں ایک بار۔ ڈیش سے چھٹکارا ملتا ہے۔",
+     "where": "0:45 سے ایلیٹ پر۔"
+    },
+    "tugging": {
+     "name": "کھینچنے والا",
+     "desc": "ہر 5 سیکنڈ Tibo کو اپنی طرف کھینچتا ہے۔ ڈیش اس کھنچاؤ سے بچا لیتا ہے۔",
+     "where": "0:45 سے ایلیٹ پر۔"
+    }
    }
   }
  },
@@ -60223,143 +60817,143 @@
   "index": {
    "url": "https://tibo.dog/data/v1/index.json",
    "bytes": 18938,
-   "sha256": "2bb0f59da91423219fad3778dbfd0ffc9dc568da6b1433f810dfc06c83fff450"
+   "sha256": "11bf7655372938b390707a3117624a61e5577afb866f0add08d316bb1dfe2787"
   },
   "locales": {
    "en": {
     "url": "https://tibo.dog/data/v1/text/en.json",
-    "bytes": 60855,
-    "sha256": "9821793c4118c86f824a9cdc728fbd578a34407e8a0d55b4018102399d0c730a"
+    "bytes": 61353,
+    "sha256": "30a5a84afda4dbe7f9e37bd5dbc817b5d802c1656b728a34a1ef02a8d20ca03f"
    },
    "zh-CN": {
     "url": "https://tibo.dog/data/v1/text/zh-CN.json",
-    "bytes": 59965,
-    "sha256": "f531983c52aef5f8971847cff7199b71aac747568e1446514f1cee454b6b08b4"
+    "bytes": 60496,
+    "sha256": "7c9e981cf0fc566360558de53b08bda80651c996f9948e5f041ac9e24400672e"
    },
    "zh-TW": {
     "url": "https://tibo.dog/data/v1/text/zh-TW.json",
-    "bytes": 60238,
-    "sha256": "1a64c4f541e5bf649da31d8f5a7401efca378095786a4125a96f6a8e19bbb51d"
+    "bytes": 60769,
+    "sha256": "303200bd15a4e924e9d174f398a1b96b245c86767c41c696365094fa25db51e7"
    },
    "ja": {
     "url": "https://tibo.dog/data/v1/text/ja.json",
-    "bytes": 73453,
-    "sha256": "8c657387659d1d4c545fa8da05dda6289200b93c00133c612755a5b3467f0602"
+    "bytes": 74072,
+    "sha256": "64e445819d0098c30b67db35677a12b2a9a6b19e2d7a49b62a19eceda762ec93"
    },
    "ko": {
     "url": "https://tibo.dog/data/v1/text/ko.json",
-    "bytes": 73658,
-    "sha256": "fda62d7f6cf99fc79e4089f41dc0c2a75692386a0c8a78f8a90dd4e1b87472c6"
+    "bytes": 74344,
+    "sha256": "2e751b6545609335ae2c89c228da528f3665b4e96e2c74d5824e5c3d868e9ace"
    },
    "es": {
     "url": "https://tibo.dog/data/v1/text/es.json",
-    "bytes": 68797,
-    "sha256": "bbb40fbde2166289b27f3a44f54d5106dbef9c6cdeb9e82684467ca31b5116a2"
+    "bytes": 69332,
+    "sha256": "c14cd7e2409af10b29f2eb0c3fd52e6ca43db127402fabd84941f26db726c8df"
    },
    "hi": {
     "url": "https://tibo.dog/data/v1/text/hi.json",
-    "bytes": 127409,
-    "sha256": "e12fba404584792326d762141597e92cb0a766a5d688220acd141855ed5ea477"
+    "bytes": 128398,
+    "sha256": "7ac5f94f0cef34c6abce482990a8012216d9e5d983741f184f6397613a7f81ae"
    },
    "de": {
     "url": "https://tibo.dog/data/v1/text/de.json",
-    "bytes": 68028,
-    "sha256": "399f3e53c7bfa98a431c13a07955513c14d92f68c4088c2c47b73409e0645106"
+    "bytes": 68531,
+    "sha256": "1241c2c6154019455c575f8340214539dab59af84fbff841d48128bb605f89e1"
    },
    "fr": {
     "url": "https://tibo.dog/data/v1/text/fr.json",
-    "bytes": 71386,
-    "sha256": "52df2c98301c7ec02a2c67adcfd9ae880436e5d3b4fb74ad25b426c5e4076bb4"
+    "bytes": 71950,
+    "sha256": "2e710aae3458c4c744fd751ab7bffa99bc0a8b08c7d44b2c4acb3a6625798316"
    },
    "pt": {
     "url": "https://tibo.dog/data/v1/text/pt.json",
-    "bytes": 67334,
-    "sha256": "4daa54bb33d2b52c0098360b133c0b0799bd7a84e11671744dd1f39a1c8d5203"
+    "bytes": 67895,
+    "sha256": "c06519d4b1fe875563961d026604efa82220c3f6f01fbebc0b95bdd998d4ef79"
    },
    "tr": {
     "url": "https://tibo.dog/data/v1/text/tr.json",
-    "bytes": 69840,
-    "sha256": "62761a2fe36457c49374cc5a9c44c67703198f88e558b4389b708bff1a2ba336"
+    "bytes": 70416,
+    "sha256": "20692138ecb2734ddeb3032c88de7ac4c3b812580d15f5688bc85c516b62d903"
    },
    "id": {
     "url": "https://tibo.dog/data/v1/text/id.json",
-    "bytes": 67060,
-    "sha256": "4b66825fee171095fa1fea2b21feddc38f5038211c200608a3337c7a0faf53d8"
+    "bytes": 67606,
+    "sha256": "dfebbe7caade86936506f9dfe2471b94819efab189383275229e5681f4e97e94"
    },
    "ru": {
     "url": "https://tibo.dog/data/v1/text/ru.json",
-    "bytes": 100175,
-    "sha256": "b5be02703302260485300072a0dfc31ffb763e6f912b3f1f6f9dc25b8309fbaf"
+    "bytes": 100896,
+    "sha256": "7003fa7c1c5d55423cfba2e5af606b3aaf15084ab71435b0ccf4954d1244e65c"
    },
    "ms": {
     "url": "https://tibo.dog/data/v1/text/ms.json",
-    "bytes": 69379,
-    "sha256": "e370ca2b1b38616089d3af9a826d15462efa294e9863509a1e3126a35be914fa"
+    "bytes": 69918,
+    "sha256": "47fca9e932e67c91f56c3b233baf076c6cbd5b5294907c10c1ac2ef878c3d833"
    },
    "fil": {
     "url": "https://tibo.dog/data/v1/text/fil.json",
-    "bytes": 73249,
-    "sha256": "2607c7e963e83a8640598a3a864496360959f80c86f19c1e4423e1dceae90490"
+    "bytes": 73808,
+    "sha256": "f254bdaf498050d512d130d29c99b1bfbaf19ef387e7ecdce9c6697082a9ba76"
    },
    "mr": {
     "url": "https://tibo.dog/data/v1/text/mr.json",
-    "bytes": 131694,
-    "sha256": "04efcfc9c25cb824303b8dd488a19f48ac9963754a594f331c6e81c333b7ac9f"
+    "bytes": 132621,
+    "sha256": "60f9dd274a5ab4e1df86dbedea9023eeeaba71e7d4c0a60cfbd4b03490b0f4cc"
    },
    "vi": {
     "url": "https://tibo.dog/data/v1/text/vi.json",
-    "bytes": 74009,
-    "sha256": "d15cbaaa75d486e94e5d90510512780079bddc97aaea5084c40bacf6eff99dd3"
+    "bytes": 74587,
+    "sha256": "b42f80d6ba7c1247e9d1199fedb87d13e0d7566bef51f0aa69eea9de4ca9930e"
    },
    "te": {
     "url": "https://tibo.dog/data/v1/text/te.json",
-    "bytes": 138642,
-    "sha256": "05f243317bb7db020515e66624c8724616ff599ca76628cdf411f839049ece92"
+    "bytes": 139711,
+    "sha256": "5bd3a1a750cd7e35fc3daf87ca1546aeb68220e5282250d00445aef6cea26b4d"
    },
    "ta": {
     "url": "https://tibo.dog/data/v1/text/ta.json",
-    "bytes": 151288,
-    "sha256": "6bacc28f011be55fecfc7bbf7cfdcb0caceffe793c8da7ac110136a522eae0d1"
+    "bytes": 152484,
+    "sha256": "71cb94151e1a57240185086f2bca10612559c6e9e1134cf27dc3ac10f977d31f"
    },
    "bn": {
     "url": "https://tibo.dog/data/v1/text/bn.json",
-    "bytes": 128380,
-    "sha256": "bcb6883711b9a69237a1f7da643a7f1cb7aadc94b60f1443713fc41747a05092"
+    "bytes": 129471,
+    "sha256": "ce5fe186a4279ff9a70c78bec5bbdf3d7ce83fcca01877905388882d972d937a"
    },
    "th": {
     "url": "https://tibo.dog/data/v1/text/th.json",
-    "bytes": 123745,
-    "sha256": "70128800ae7137cdede0cdf80f46f83f86a3e786b63673f5218a84ad5a766312"
+    "bytes": 124732,
+    "sha256": "564a4e6ed7e75f3de4e708e408bb1a0887e83f31b10852a1536fe92360e11a1b"
    },
    "ha": {
     "url": "https://tibo.dog/data/v1/text/ha.json",
-    "bytes": 69744,
-    "sha256": "0de09438cb0fc1a1b13a2b70dc9fc0bb034db0555dff15c02aab6351f621e221"
+    "bytes": 70319,
+    "sha256": "dd00c6d73ba5233c1114f11c5a5b9f8d37d6730daaf2a949bd20e58fb3b7343d"
    },
    "pcm": {
     "url": "https://tibo.dog/data/v1/text/pcm.json",
-    "bytes": 64121,
-    "sha256": "abe83396ffc1d1dd44b42b8f487d6f2d97869dc76cb4a75d4f1e0f2c7c6dd13f"
+    "bytes": 64650,
+    "sha256": "62a9e35d28e1e78880102f46855064abe6b00da2accb2db90659316482ab51bd"
    },
    "ar": {
     "url": "https://tibo.dog/data/v1/text/ar.json",
-    "bytes": 84149,
-    "sha256": "78f4d1fd14c2e21733a2b0cd60aa135523922363dc2723e19831f68753391ceb"
+    "bytes": 84828,
+    "sha256": "5bc24cb0d801f12223a72095ec5e2e7c7f06abf176e9b12cbc3d39168ff3e210"
    },
    "fa": {
     "url": "https://tibo.dog/data/v1/text/fa.json",
-    "bytes": 98945,
-    "sha256": "ab97a8a389dd5052c58f407b8c117bfbb478ec472f7eccdc0cf71c115a4720f7"
+    "bytes": 99725,
+    "sha256": "499acb75958349f5fa929b7836e839c106113523bdc568a1b53a0f893b307bdf"
    },
    "he": {
     "url": "https://tibo.dog/data/v1/text/he.json",
-    "bytes": 83775,
-    "sha256": "5c88b727f316a9908390e0d2c4457148a5a4b46286507266274ebdb1d1a414ff"
+    "bytes": 84430,
+    "sha256": "ea740d82da377af189001e9e637552b31a905949790e816583dd86999b60f157"
    },
    "ur": {
     "url": "https://tibo.dog/data/v1/text/ur.json",
-    "bytes": 95222,
-    "sha256": "907866f22a36c415e393b6a86fd702a88fcce7dbbfc4151cc62d11e38e9f9512"
+    "bytes": 96008,
+    "sha256": "31bf6bc48b275dce81025bd6bedcc2779e4a82e3eb58ed3c8d44f3c2fde41562"
    }
   }
  }

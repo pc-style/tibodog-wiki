@@ -4,8 +4,8 @@ Fry Rush starts at 8:15 and 13:30 with the active more-variety rules. It multipl
 
 ## How it works
 
-- **It stacks with the existing timer modifiers.** The game applies the ×1.3 after gear/variety timer rules, including the GPU throttle contribution. It is separate from the cooldown stat's diminishing returns and cap. <small>[sim-DKo2qdWE.js: `n!==void 0&&e.time<n.fryRushUntil?Eb(e,t*bb(e))*n.fireRate:Eb(e,t*bb(e))`]</small>
-- **The time limit is strict.** The bonus applies while current simulation time is less than its expiry and is gone at exactly 15 seconds. It does not promise a faster independent attack timer on every effect, such as Steam Vent's separate aura pulses. <small>[sim-DKo2qdWE.js: `e.time<n.fryRushUntil?Eb(e,t*bb(e))*n.fireRate`]</small>
+- **It stacks with the existing timer modifiers.** The game applies the ×1.3 after gear/variety timer rules, including the GPU throttle contribution. It is separate from the cooldown stat's diminishing returns and cap. <small>[sim-Cb_K_V3L.js: `n!==void 0&&e.time<n.fryRushUntil?vx(e,t*fx(e))*n.fireRate:vx(e,t*fx(e))`]</small>
+- **The time limit is strict.** The bonus applies while current simulation time is less than its expiry and is gone at exactly 15 seconds. It does not promise a faster independent attack timer on every effect, such as Steam Vent's separate aura pulses. <small>[sim-Cb_K_V3L.js: `e.time<n.fryRushUntil?vx(e,t*fx(e))*n.fireRate`]</small>
 
 ## Tips
 

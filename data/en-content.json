@@ -1,4 +1,40 @@
 {
+ "content.affix.rimed.desc": [
+  "Drops frost orbs at Tibo's feet that burst after 1.5 s."
+ ],
+ "content.affix.rimed.name": [
+  "Rimed"
+ ],
+ "content.affix.rimed.where": [
+  "On elites from 0:45."
+ ],
+ "content.affix.scorching.desc": [
+  "Leaves a burning trail behind it."
+ ],
+ "content.affix.scorching.name": [
+  "Scorching"
+ ],
+ "content.affix.scorching.where": [
+  "On elites from 0:45."
+ ],
+ "content.affix.snaring.desc": [
+  "Roots Tibo in place for 1 s, once every 8 s. A dash breaks free."
+ ],
+ "content.affix.snaring.name": [
+  "Snaring"
+ ],
+ "content.affix.snaring.where": [
+  "On elites from 0:45."
+ ],
+ "content.affix.tugging.desc": [
+  "Pulls Tibo toward it every 5 s. A dash escapes the pull."
+ ],
+ "content.affix.tugging.name": [
+  "Tugging"
+ ],
+ "content.affix.tugging.where": [
+  "On elites from 0:45."
+ ],
  "content.biome.chip-canyons.desc": [
   "Cliffs of stacked potato chips. Crabs scuttle in the cracks."
  ],

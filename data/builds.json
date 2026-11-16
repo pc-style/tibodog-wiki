@@ -2595,5 +2595,16 @@
   "updated": "2026-11-16T04:50:00Z",
   "changes": "The opt-in content playtest adds Gilded Magpies and a Thief’s Shrine that calls three. Ordinary enemy and weapon catalogs are unchanged.",
   "evidence": "DLk→CsY source introduction observed 2026-11-16; no new official journal note or publication timestamp for this addition. Full 424→424 reachable-build/archive/digests, expanded journal/full-page browser and all official API resources checked. Optional enemy/varietyPlace where fields and source-bound enemy localization-only IDs accepted without catalog promotion; red/green regressions retain strict source equality, required English and registered catalogs. Original-engine controls: 36 old/new Standard/Story/Daily content-off/on constructors across mag-a/b/c, Normal; current schedule/placement boundaries, live-Magpie retry, 15-second spawn deadline, shrine calls/capacity, and six direct catch cases (16 pickups at 1.5/4.5 input value). Supplied clocks/pools/activation/catch calls are not natural acquisition, completed shrine charge, full death/drop pipeline, rendering, practical rewards, DPS, server or performance proof. Earlier measurements remain historical; original archive/schema/fixture failures retained. Scope: Secrets and citation relocation only; unchanged ordinary catalogs (69 enemies,144 weapons)."
+ },
+ {
+  "seen": "2026-11-16",
+  "main": "main-nRETxu1b.js",
+  "boot": "boot-xNWdaof7.js",
+  "sim": "sim-Cb_K_V3L.js",
+  "commit": "0fdf1e7fc2b1",
+  "status": "reviewed",
+  "updated": "2026-11-16T08:06:29Z",
+  "changes": "The opt-in content playtest adds Scorching, Rimed, Snaring and Tugging elite modifiers. Ordinary enemy and weapon catalogs are unchanged.",
+  "evidence": "CsY→nRET source introduction observed 2026-11-16; official journal unchanged, not a publication date. Full 424→424 reachable-build/archive/full and expanded journal/browser/official API proof. Narrow affix name/desc/where localization allowlist with source-equal compiled English, strict malformed/translation/unknown-field controls and no entity catalog promotion; red failed on unknown affix, green passed. Whole changed-code scan identifies affix sim/config/card/scene additions and commit/renaming changes; unchanged ordinary registry (144 weapons,69 enemies). Original CsY/nRET controls: 36 constructor contexts, seeds affix-a/b/c, Standard/Story/Daily20780 content off/on;12 current elite assignment cases across Easy/Normal/Hard/Nightmare;3 Normal supplied-state consumer groups check Scorch distance/timing, Rime range/scatter/fuse/repeat, Snare initiation/repeat, Tug minimum range/windup/window. These are not natural encounters, actual damage, root completion/dash escape, pull movement, full fights, rendered gameplay, all-locale, performance or server proof. Renderer additions and card group are source observations only. Prior prose/evidence/history/coverage retained; current citations repaired. Original automatic archive timeout and schema rejection remain failed evidence; broader workflow audit incomplete."
  }
 ]
