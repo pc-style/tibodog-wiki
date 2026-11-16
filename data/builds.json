@@ -2562,5 +2562,16 @@
   "updated": "2026-11-16T00:54:52Z",
   "changes": "Existing journal notes moved into a dated release group; no gameplay or wording changes.",
   "evidence": "Automatic unchanged next-to-dated proof against main-DQQR-mGj.js; all 424 reachable files checked, full/panel browser and official API validated. Original publication timestamps and prior introduction history retained. Proof: .cache/main-C0o7SeQv/journal-proof.json."
+ },
+ {
+  "seen": "2026-11-16",
+  "main": "main-DOSuScm3.js",
+  "boot": "boot-g10yNjVV.js",
+  "sim": "sim-MzgJYBwV.js",
+  "commit": "8a10aac167d1",
+  "status": "reviewed",
+  "updated": "2026-11-16T03:31:00Z",
+  "changes": "A boss impact frame now removes closing level-up cards before showing the scene. Active cards and pending choices still block the impact; ordinary card closing without an impact is unchanged.",
+  "evidence": "C0o234→DOS235 whole424→424 graph; all423old+423newasset hashes+HTML/full+expanded journal/officialAPI and source-bound apply+export proof. Registry/English/config identical, sim0normalized hunks, icons pixel-identical. Boot1hunk adds finishLeaving: advance closing top to leaving, remove leaving DOM nodes and clear map. Run-rules1hunk invokes it only after impact visibility guard, before filter/first-frame rendering; unchanged main caller advances effects before scene draw and later overlay.frame. Independent live expanded panel370records/14dates/165codes matches current journal order. New next note impact-frame-clears-level-up/3Xa6U2 retains official publication2026-11-15T23:09:53Z separately from DOS source introduction observed2026-11-16. Twenty-two original old/new Overlay/Offers.choose/Impact/filter controls cover closing before or after overlay.frame, first0/held1frames, active panel/pendingchoice/pause/noimpact/newrunreset/expiry/FlashingOff. Chromium original CSS/SVG filter renders and actual close/impact clip use supplied panel nodes, game choice/boss event and canvas scene, not full game renderer or natural boss/acquisition/combat/performance/device evidence. Frozen30ms screenshots distinguish retained old cards versus DOS removal; not continuous timing proof. Prior234history/prose/coverage retained with source-bound citations; no schema/classifier/tool changes. Initial automatic archive-readiness failure remains failed in monitor; first scratch source locator failed and first recorder captured blank after restore/session relaunch, both rejected rather than approval. First gate build was killed with exit137 during concurrent recording/encoding; original incomplete receipt retained, subsequent serial build and full gates passed. Proof .cache/dos-*,shadow2026-11-16T03-21-51-857Z-f402406e."
  }
 ]
