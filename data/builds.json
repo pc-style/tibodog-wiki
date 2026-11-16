@@ -2551,5 +2551,16 @@
   "updated": "2026-11-16T00:25:00Z",
   "changes": "Weapon evolution and union celebrations now use five broad starburst spokes and a ring that holds its radius while fading. Flashing effects Off keeps the celebration without its flash pulses; evolution and union rules are unchanged.",
   "evidence": "C_M232→DQQR233 whole424→424 graph, all423old+423newasset hashes+HTML/full+expanded journal/officialAPI and source-bound apply+export proof. Registry/English/config identical, sim0/boot0normalized hunks, icons pixel-identical. run-rules0normalized hunks (timeline import dependency), evolution-timeline4 and scene1 implement held radius/five spokes with aligned lit layer. Live expanded panel369records/14dates/164codes; new next note starburst-five-spokes-held-ring/XVxyfH preserves official publication2026-11-15T20:59:50Z separately from DQQR source introduction observed2026-11-16. Original module namespace-only exports:112timeline samples (old/new,14ages,flasheson/off,stillinputon/off),4controller cases (evolution/union old/new,queue/tick release,coordinates,expiry),48native renderer samples and4hidden/opacity controls=168. Additional cross-build assertions verify old ring sweeps/new holds118units with7.6band and unchanged star motion. Native shader/geometry rendered atDPR2 in Chromium SwiftShader on flat ground; no crest/glint sprites,bloom/fullscene,natural acquisition,combat/performance/server/medical-safety claim. Full geometric cycle captured; failed directNode import (browser globals) and first boundary fixture (floatingpoint0.22s) retained, subsequent strict interior checks pass; original automatic archive-readiness failure remains failed in monitor. Prior232history/prose/coverage retained, citations source-bound; no schema/classifier changes. Proof .cache/dqqr-*,shadow2026-11-16T00-12-02-375Z-9a04278e."
+ },
+ {
+  "seen": "2026-11-16",
+  "main": "main-C0o7SeQv.js",
+  "boot": "boot-B-I4tOiB.js",
+  "sim": "sim-B3FDQRPx.js",
+  "commit": "ec0ba60b424f",
+  "status": "reviewed",
+  "updated": "2026-11-16T00:54:52Z",
+  "changes": "Existing journal notes moved into a dated release group; no gameplay or wording changes.",
+  "evidence": "Automatic unchanged next-to-dated proof against main-DQQR-mGj.js; all 424 reachable files checked, full/panel browser and official API validated. Original publication timestamps and prior introduction history retained. Proof: .cache/main-C0o7SeQv/journal-proof.json."
  }
 ]

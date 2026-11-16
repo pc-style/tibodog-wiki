@@ -1481,3 +1481,12 @@ Build 230, game **d0be01518b547904b8ecea4913bddb2cdb06b9fd**, moves **impact-fra
 Whole-build evidence covers **417→424** reachable files, both archived HTML sets and **416 old / 423 new** asset hashes. Shadow **2026-11-15T19-58-01-173Z-cc460889** verifies complete official full-journal HTML and expanded archived panel; the independent live expanded panel agrees on **368 ordered records / 14 dates / 163 codes**, including all older collapsed groups, with the target checked before and after. Current journal https://tibo.dog/assets/changelog-panel-BImdVSdL.js SHA-256 **c61e1be56e25af8cbcac88a50b074912d37b2e9cda685e650837bc48912d7ee9**; current raw archive manifest SHA-256 **55813b97555e666cdc97c4140813be01d4983804fd7d6233f51307b69235e8a0**, archivedAt **2026-11-15T19:43:16.585Z**. Earlier readiness/schema/browser failures remain failures, not successful attempts.
 
 The official API and original ordinary registry both retain **144 weapons**; compiled English and official localization contain **146 weapon-text IDs**. Optional `where` and localization-only IDs are preserved verbatim, including placeholders, only after compiled-English equality; registered definitions/IDs and required English fields remain strict. Direct localized-text export uses that same source guard. Separate experimental definitions and original pool controls support only the scoped Secrets explanation, not ordinary weapon pages or inferred acquisition/combat outcomes. Thirty-six old/new constructor contexts and sixteen parser controls use supplied Standard/Story/Daily settings and three seeds. No natural acquisition, damage, full UI, replay/server, performance or historical-coverage promotion is claimed. Previous build records and coverage provenance remain intact.
+
+
+## Local journal graduation main-C0o7SeQv.js
+
+Existing journal notes moved from next into a dated release group; no gameplay or note wording changes.
+
+- starburst-five-spokes-held-ring (XVxyfH): original publication 2026-11-15T20:59:50Z; now 2026-11-15/ea883ce. Source introduction remains in prior build history.
+
+Sources: https://tibo.dog/assets/changelog-panel-CIY9-uRP.js SHA-256 8f2b340e18173fa109067ef5c15f898b381e9d26a2e56de1598b411291e3644e; https://tibo.dog/assets/changelog-panel-CBp_twBk.js SHA-256 425cc6c9c464b624d2df919612ebdcc5f1f01a96075a2cc885af10dfdcccd093. Prior history SHA-256 fff03a61a452b40fc4fee5826b54a3f0c97bf018288e1c7ceba16fb9521435dd.
