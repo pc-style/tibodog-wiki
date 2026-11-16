@@ -20,9 +20,9 @@
   "dog:whippet"
  ],
  "sim.$o": {
-  "shape": "segmented",
-  "color": "#ff8f00",
-  "sprite": "great-wireworm"
+  "shape": "tentacled",
+  "color": "#d32f2f",
+  "sprite": "ketchup-kraken"
  },
  "sim.$r": {
   "all": [
@@ -900,56 +900,11 @@
   "reachMax": 0.85,
   "shadow": 2
  },
- "sim.Do": {
-  "critK": 1,
-  "evasionK": 1,
-  "discountK": 1,
-  "explodeK": 1,
-  "cooldownCap": 0.6,
-  "baseCritMult": 2,
-  "curseRewardShare": 0.5
- },
- "sim.Eo": [
-  "might",
-  "area",
-  "cooldown",
-  "amount",
-  "duration",
-  "speed",
-  "moveSpeed",
-  "maxHp",
-  "maxHpPct",
-  "recovery",
-  "armor",
-  "magnet",
-  "luck",
-  "growth",
-  "greed",
-  "curse",
-  "critChance",
-  "critDamage",
-  "evasion",
-  "knockback",
-  "pierce",
-  "revival",
-  "eliteDamage",
-  "healOnKill",
-  "explodeOnKill",
-  "thorns",
-  "chestDiscount",
-  "dashCharges",
-  "dashCooldown",
-  "dashGrace"
- ],
  "sim.Fa": {
   "spudForge": {
    "color": "#ffe08a",
    "pin": "anvil"
   }
- },
- "sim.Go": {
-  "fries": "fries-carton",
-  "knockedOut": "tibo-down"
  },
  "sim.Hn": {
   "fps": 12,
@@ -1005,29 +960,6 @@
   ]
  },
  "sim.Jo": {
-  "shape": "wide",
-  "color": "#cfd8dc",
-  "sprite": "the-mandoline"
- },
- "sim.Jt": {
-  "mist": "#c8cedc",
-  "white": "#fffaea",
-  "lemon": "#fff08a",
-  "gold": "#ffd04a",
-  "ochre3": "#d6a556",
-  "plum0": "#24112e",
-  "plum1": "#3d1b58",
-  "plum3": "#9258a2",
-  "cyan0": "#2fb8e0",
-  "cyan1": "#8aeaff",
-  "leaf0": "#74ad5c",
-  "leaf1": "#9fcf6e",
-  "moss1": "#4b7a35",
-  "olive3": "#737856",
-  "fog": "#9aa1b8",
-  "sky": "#9cc4ec"
- },
- "sim.Ko": {
   "boss": "[fn]",
   "bossAt": "[fn]",
   "bosses": [
@@ -5129,301 +5061,25 @@
   "run": "[fn]",
   "runOrder": "[fn]"
  },
- "sim.Lt": {
+ "sim.Jt": {
+  "mist": "#c8cedc",
+  "white": "#fffaea",
+  "lemon": "#fff08a",
   "gold": "#ffd04a",
   "ochre3": "#d6a556",
-  "amber": "#f2a02c"
+  "plum0": "#24112e",
+  "plum1": "#3d1b58",
+  "plum3": "#9258a2",
+  "cyan0": "#2fb8e0",
+  "cyan1": "#8aeaff",
+  "leaf0": "#74ad5c",
+  "leaf1": "#9fcf6e",
+  "moss1": "#4b7a35",
+  "olive3": "#737856",
+  "fog": "#9aa1b8",
+  "sky": "#9cc4ec"
  },
- "sim.Oa": [
-  {
-   "id": "snow",
-   "rules": {
-    "startBiome": "frozen-tundra",
-    "startRadius": 1600,
-    "zones": {
-     "chill": {
-      "weight": 2,
-      "grow": 1
-     }
-    },
-    "pace": {
-     "tibo": 0.9,
-     "pests": 0.9
-    }
-   }
-  },
-  {
-   "id": "rain",
-   "rules": {
-    "startBiome": "mash-swamp",
-    "startRadius": 1600,
-    "zones": {
-     "slow": {
-      "weight": 2,
-      "grow": 1.3
-     }
-    }
-   }
-  },
-  {
-   "id": "heat",
-   "rules": {
-    "startBiome": "fry-oil-desert",
-    "startRadius": 1600,
-    "zones": {
-     "burn": {
-      "weight": 2,
-      "grow": 1
-     }
-    }
-   }
-  },
-  {
-   "id": "fog",
-   "since": 20765,
-   "rules": {
-    "startBiome": "compost-caves",
-    "startRadius": 1600,
-    "sight": {
-     "radius": 90,
-     "pace": 0.6
-    }
-   }
-  },
-  {
-   "id": "hail",
-   "since": 20765,
-   "rules": {
-    "startBiome": "peel-forest",
-    "startRadius": 1600,
-    "strikes": {
-     "every": 0.4,
-     "reach": 150,
-     "radius": 9,
-     "share": 0.3,
-     "crowd": false,
-     "bolt": false,
-     "source": "weather-hail",
-     "ink": "frost"
-    }
-   }
-  },
-  {
-   "id": "night",
-   "since": 20765,
-   "rules": {
-    "startBiome": "potato-field",
-    "startRadius": 1600,
-    "sight": {
-     "radius": 105,
-     "pace": 1.2
-    }
-   }
-  },
-  {
-   "id": "storm",
-   "since": 20765,
-   "rules": {
-    "startBiome": "ketchup-bog",
-    "startRadius": 1600,
-    "strikes": {
-     "every": 8,
-     "reach": 170,
-     "radius": 45,
-     "share": 1,
-     "crowd": true,
-     "bolt": true,
-     "source": "weather-lightning",
-     "ink": "frost"
-    }
-   }
-  },
-  {
-   "id": "sandstorm",
-   "since": 20765,
-   "rules": {
-    "startBiome": "fry-oil-desert",
-    "startRadius": 1600,
-    "drifts": {
-     "kind": "slow",
-     "perChunk": 3,
-     "radius": 28,
-     "strength": 0.35
-    }
-   }
-  },
-  {
-   "id": "meteors",
-   "since": 20765,
-   "rules": {
-    "startBiome": "chip-canyons",
-    "startRadius": 1600
-   }
-  },
-  {
-   "id": "bloodmoon",
-   "since": 20765,
-   "rules": {
-    "startBiome": "mash-swamp",
-    "startRadius": 1600
-   }
-  },
-  {
-   "id": "drop",
-   "since": 20765,
-   "rules": {
-    "startBiome": "fry-oil-desert",
-    "startRadius": 1600
-   }
-  },
-  {
-   "id": "tilt",
-   "since": 20765,
-   "rules": {
-    "startBiome": "chip-canyons",
-    "startRadius": 1600
-   }
-  },
-  {
-   "id": "echo",
-   "since": 20765,
-   "rules": {
-    "startBiome": "peel-forest",
-    "startRadius": 1600
-   }
-  },
-  {
-   "id": "eclipse",
-   "since": 20765,
-   "rules": {
-    "startBiome": "compost-caves",
-    "startRadius": 1600
-   }
-  },
-  {
-   "id": "aurora",
-   "since": 20765,
-   "rules": {
-    "startBiome": "potato-field",
-    "startRadius": 1600
-   }
-  },
-  {
-   "id": "sizes",
-   "since": 20765,
-   "rules": {
-    "startBiome": "crop-circle",
-    "startRadius": 1600
-   }
-  },
-  {
-   "id": "migration",
-   "since": 20765,
-   "rules": {
-    "startBiome": "peel-forest",
-    "startRadius": 1600
-   }
-  },
-  {
-   "id": "warp",
-   "since": 20765,
-   "rules": {
-    "startBiome": "compost-caves",
-    "startRadius": 1600
-   }
-  },
-  {
-   "id": "swarm",
-   "since": 20765,
-   "rules": {
-    "startBiome": "potato-field",
-    "startRadius": 1600,
-    "crowd": {
-     "cap": 540,
-     "ceiling": 2
-    }
-   }
-  },
-  {
-   "id": "rings",
-   "since": 20765,
-   "rules": {
-    "startBiome": "mash-swamp",
-    "startRadius": 1600
-   }
-  },
-  {
-   "id": "blizzard",
-   "since": 20765,
-   "rules": {
-    "startBiome": "frozen-tundra",
-    "startRadius": 1600
-   }
-  }
- ],
- "sim.Qa": [
-  "bot:black",
-  "bot:brown",
-  "bot:red",
-  "bot:orange",
-  "bot:yellow",
-  "bot:green",
-  "bot:cyan",
-  "bot:blue",
-  "bot:violet",
-  "bot:magenta",
-  "bot:gray"
- ],
- "sim.Qo": {
-  "shape": "wide",
-  "color": "#c62828",
-  "sprite": "harvester"
- },
- "sim.Ri": [
-  "boss:amusing",
-  "boss:beetle-queen",
-  "boss:compost-titan",
-  "boss:deep-freezer",
-  "boss:fryer-king",
-  "boss:grater-golem",
-  "boss:great-wireworm",
-  "boss:harvester",
-  "boss:ketchup-kraken",
-  "boss:late-blight",
-  "boss:sir-strawman",
-  "boss:the-mandoline",
-  "boss:the-masher",
-  "boss:pack-lord",
-  "boss:root-hydra",
-  "boss:root-hydra-frenzy",
-  "boss:root-hydra-head",
-  "boss:root-hydra-mire",
-  "boss:root-hydra-stump",
-  "boss:queen",
-  "boss:shell-titan"
- ],
- "sim.Sn": {
-  "cap": 0,
-  "heldTick": 1,
-  "chance": 2,
-  "life": 3,
-  "snareSec": 4,
-  "sproutAt": 5
- },
- "sim.Vr": {
-  "family": "hunt",
-  "skill": "positioning",
-  "boss": "pack-lord"
- },
- "sim.Wa": [
-  "round",
-  "oval",
-  "clover",
-  "splat",
-  "slab",
-  "drop"
- ],
- "sim.Wo": {
+ "sim.Ko": {
   "startChest": {
    "offset": {
     "x": 56,
@@ -5657,7 +5313,284 @@
    }
   ]
  },
- "sim.Xo": {
+ "sim.Lt": {
+  "gold": "#ffd04a",
+  "ochre3": "#d6a556",
+  "amber": "#f2a02c"
+ },
+ "sim.Oa": [
+  {
+   "id": "snow",
+   "rules": {
+    "startBiome": "frozen-tundra",
+    "startRadius": 1600,
+    "zones": {
+     "chill": {
+      "weight": 2,
+      "grow": 1
+     }
+    },
+    "pace": {
+     "tibo": 0.9,
+     "pests": 0.9
+    }
+   }
+  },
+  {
+   "id": "rain",
+   "rules": {
+    "startBiome": "mash-swamp",
+    "startRadius": 1600,
+    "zones": {
+     "slow": {
+      "weight": 2,
+      "grow": 1.3
+     }
+    }
+   }
+  },
+  {
+   "id": "heat",
+   "rules": {
+    "startBiome": "fry-oil-desert",
+    "startRadius": 1600,
+    "zones": {
+     "burn": {
+      "weight": 2,
+      "grow": 1
+     }
+    }
+   }
+  },
+  {
+   "id": "fog",
+   "since": 20765,
+   "rules": {
+    "startBiome": "compost-caves",
+    "startRadius": 1600,
+    "sight": {
+     "radius": 90,
+     "pace": 0.6
+    }
+   }
+  },
+  {
+   "id": "hail",
+   "since": 20765,
+   "rules": {
+    "startBiome": "peel-forest",
+    "startRadius": 1600,
+    "strikes": {
+     "every": 0.4,
+     "reach": 150,
+     "radius": 9,
+     "share": 0.3,
+     "crowd": false,
+     "bolt": false,
+     "source": "weather-hail",
+     "ink": "frost"
+    }
+   }
+  },
+  {
+   "id": "night",
+   "since": 20765,
+   "rules": {
+    "startBiome": "potato-field",
+    "startRadius": 1600,
+    "sight": {
+     "radius": 105,
+     "pace": 1.2
+    }
+   }
+  },
+  {
+   "id": "storm",
+   "since": 20765,
+   "rules": {
+    "startBiome": "ketchup-bog",
+    "startRadius": 1600,
+    "strikes": {
+     "every": 8,
+     "reach": 170,
+     "radius": 45,
+     "share": 1,
+     "crowd": true,
+     "bolt": true,
+     "source": "weather-lightning",
+     "ink": "frost"
+    }
+   }
+  },
+  {
+   "id": "sandstorm",
+   "since": 20765,
+   "rules": {
+    "startBiome": "fry-oil-desert",
+    "startRadius": 1600,
+    "drifts": {
+     "kind": "slow",
+     "perChunk": 3,
+     "radius": 28,
+     "strength": 0.35
+    }
+   }
+  },
+  {
+   "id": "meteors",
+   "since": 20765,
+   "rules": {
+    "startBiome": "chip-canyons",
+    "startRadius": 1600
+   }
+  },
+  {
+   "id": "bloodmoon",
+   "since": 20765,
+   "rules": {
+    "startBiome": "mash-swamp",
+    "startRadius": 1600
+   }
+  },
+  {
+   "id": "drop",
+   "since": 20765,
+   "rules": {
+    "startBiome": "fry-oil-desert",
+    "startRadius": 1600
+   }
+  },
+  {
+   "id": "tilt",
+   "since": 20765,
+   "rules": {
+    "startBiome": "chip-canyons",
+    "startRadius": 1600
+   }
+  },
+  {
+   "id": "echo",
+   "since": 20765,
+   "rules": {
+    "startBiome": "peel-forest",
+    "startRadius": 1600
+   }
+  },
+  {
+   "id": "eclipse",
+   "since": 20765,
+   "rules": {
+    "startBiome": "compost-caves",
+    "startRadius": 1600
+   }
+  },
+  {
+   "id": "aurora",
+   "since": 20765,
+   "rules": {
+    "startBiome": "potato-field",
+    "startRadius": 1600
+   }
+  },
+  {
+   "id": "sizes",
+   "since": 20765,
+   "rules": {
+    "startBiome": "crop-circle",
+    "startRadius": 1600
+   }
+  },
+  {
+   "id": "migration",
+   "since": 20765,
+   "rules": {
+    "startBiome": "peel-forest",
+    "startRadius": 1600
+   }
+  },
+  {
+   "id": "warp",
+   "since": 20765,
+   "rules": {
+    "startBiome": "compost-caves",
+    "startRadius": 1600
+   }
+  },
+  {
+   "id": "swarm",
+   "since": 20765,
+   "rules": {
+    "startBiome": "potato-field",
+    "startRadius": 1600,
+    "crowd": {
+     "cap": 540,
+     "ceiling": 2
+    }
+   }
+  },
+  {
+   "id": "rings",
+   "since": 20765,
+   "rules": {
+    "startBiome": "mash-swamp",
+    "startRadius": 1600
+   }
+  },
+  {
+   "id": "blizzard",
+   "since": 20765,
+   "rules": {
+    "startBiome": "frozen-tundra",
+    "startRadius": 1600
+   }
+  }
+ ],
+ "sim.Oo": [
+  "might",
+  "area",
+  "cooldown",
+  "amount",
+  "duration",
+  "speed",
+  "moveSpeed",
+  "maxHp",
+  "maxHpPct",
+  "recovery",
+  "armor",
+  "magnet",
+  "luck",
+  "growth",
+  "greed",
+  "curse",
+  "critChance",
+  "critDamage",
+  "evasion",
+  "knockback",
+  "pierce",
+  "revival",
+  "eliteDamage",
+  "healOnKill",
+  "explodeOnKill",
+  "thorns",
+  "chestDiscount",
+  "dashCharges",
+  "dashCooldown",
+  "dashGrace"
+ ],
+ "sim.Qa": [
+  "bot:black",
+  "bot:brown",
+  "bot:red",
+  "bot:orange",
+  "bot:yellow",
+  "bot:green",
+  "bot:cyan",
+  "bot:blue",
+  "bot:violet",
+  "bot:magenta",
+  "bot:gray"
+ ],
+ "sim.Qo": {
   "shape": "blob",
   "color": "#689f38",
   "sprite": "late-blight",
@@ -5673,6 +5606,86 @@
    }
   }
  },
+ "sim.Ri": [
+  "boss:amusing",
+  "boss:beetle-queen",
+  "boss:compost-titan",
+  "boss:deep-freezer",
+  "boss:fryer-king",
+  "boss:grater-golem",
+  "boss:great-wireworm",
+  "boss:harvester",
+  "boss:ketchup-kraken",
+  "boss:late-blight",
+  "boss:sir-strawman",
+  "boss:the-mandoline",
+  "boss:the-masher",
+  "boss:pack-lord",
+  "boss:root-hydra",
+  "boss:root-hydra-frenzy",
+  "boss:root-hydra-head",
+  "boss:root-hydra-mire",
+  "boss:root-hydra-stump",
+  "boss:queen",
+  "boss:shell-titan"
+ ],
+ "sim.Sn": {
+  "cap": 0,
+  "heldTick": 1,
+  "chance": 2,
+  "life": 3,
+  "snareSec": 4,
+  "sproutAt": 5
+ },
+ "sim.So": [
+  "melee",
+  "shot",
+  "zone",
+  "storm",
+  "orbit",
+  "blast",
+  "summon",
+  "nova",
+  "any"
+ ],
+ "sim.Vo": {
+  "lateGrowthPct": 50,
+  "damagePctPerDoubling": 5,
+  "damageMaxPct": 100,
+  "bossPct": 2,
+  "bossMaxPct": 30,
+  "cursePctPerHeldPct": 0.5,
+  "levelTenths": {
+   "easy": 10,
+   "normal": 15,
+   "hard": 20,
+   "nightmare": 30
+  },
+  "pointsPerSecond": 10,
+  "lateAfterSec": 1200,
+  "lateStepSec": 60,
+  "damageBasePerSecond": 10,
+  "dodgeZeroPerMinute": 120,
+  "dodgeFullStepsPerMinute": 120
+ },
+ "sim.Vr": {
+  "family": "hunt",
+  "skill": "positioning",
+  "boss": "pack-lord"
+ },
+ "sim.Wa": [
+  "round",
+  "oval",
+  "clover",
+  "splat",
+  "slab",
+  "drop"
+ ],
+ "sim.Xo": {
+  "shape": "wide",
+  "color": "#cfd8dc",
+  "sprite": "the-mandoline"
+ },
  "sim.Y": {
   "dealtPerLevel": 2.2,
   "dealtAtWin": 5500000000,
@@ -5684,8 +5697,8 @@
  },
  "sim.Yo": {
   "shape": "tall",
-  "color": "#d7b46a",
-  "sprite": "sir-strawman"
+  "color": "#b0bec5",
+  "sprite": "the-masher"
  },
  "sim.Za": [
   "boss:amusing",
@@ -5711,9 +5724,9 @@
   "boss:shell-titan"
  ],
  "sim.Zo": {
-  "shape": "tentacled",
-  "color": "#d32f2f",
-  "sprite": "ketchup-kraken"
+  "shape": "tall",
+  "color": "#d7b46a",
+  "sprite": "sir-strawman"
  },
  "sim._a": [
   [
@@ -5880,9 +5893,9 @@
   ]
  ],
  "sim.as": {
-  "shape": "plush",
-  "color": "#f3c6c3",
-  "sprite": "amusing"
+  "shape": "blob",
+  "color": "#5d4037",
+  "sprite": "compost-titan"
  },
  "sim.at": [
   "common",
@@ -5973,9 +5986,9 @@
   "enemy:fuse-totem"
  ],
  "sim.es": {
-  "shape": "box",
-  "color": "#90a4ae",
-  "sprite": "grater-golem"
+  "shape": "wide",
+  "color": "#c62828",
+  "sprite": "harvester"
  },
  "sim.fa": {
   "evolutions": [
@@ -6541,9 +6554,9 @@
   "any": 8
  },
  "sim.is": {
-  "shape": "round",
-  "color": "#fbc02d",
-  "sprite": "beetle-queen"
+  "shape": "box",
+  "color": "#81d4fa",
+  "sprite": "deep-freezer"
  },
  "sim.it": {
   "white": "#fffaea",
@@ -6585,6 +6598,15 @@
   "xp": 3,
   "life": 18,
   "migrant": "beetle-brood"
+ },
+ "sim.ko": {
+  "critK": 1,
+  "evasionK": 1,
+  "discountK": 1,
+  "explodeK": 1,
+  "cooldownCap": 0.6,
+  "baseCritMult": 2,
+  "curseRewardShare": 0.5
  },
  "sim.li": [
   {
@@ -6656,8 +6678,13 @@
  },
  "sim.ns": {
   "shape": "box",
-  "color": "#81d4fa",
-  "sprite": "deep-freezer"
+  "color": "#90a4ae",
+  "sprite": "grater-golem"
+ },
+ "sim.os": {
+  "shape": "round",
+  "color": "#fbc02d",
+  "sprite": "beetle-queen"
  },
  "sim.ot": {
   "tiers": {
@@ -6715,9 +6742,8 @@
   }
  },
  "sim.qo": {
-  "shape": "tall",
-  "color": "#b0bec5",
-  "sprite": "the-masher"
+  "fries": "fries-carton",
+  "knockedOut": "tibo-down"
  },
  "sim.qt": {
   "mist": "#c8cedc",
@@ -6745,9 +6771,20 @@
   "navy0": "#0c1827"
  },
  "sim.rs": {
-  "shape": "blob",
-  "color": "#5d4037",
-  "sprite": "compost-titan"
+  "shape": "box",
+  "color": "#ff9800",
+  "sprite": "fryer-king",
+  "puddle": {
+   "body": "#0e0805",
+   "edge": "#3f2a19",
+   "fleck": "#6c7189",
+   "bubble": "#55331c",
+   "boil": {
+    "period": 1.2,
+    "density": 4.5,
+    "glow": 0.6
+   }
+  }
  },
  "sim.rt": {
   "off": "#eed4ff",
@@ -6802,6 +6839,11 @@
    "len": 64
   }
  },
+ "sim.ss": {
+  "shape": "plush",
+  "color": "#f3c6c3",
+  "sprite": "amusing"
+ },
  "sim.t": {
   "AlexReveal": "[fn]",
   "ChargeSound": "[fn]",
@@ -6829,20 +6871,9 @@
   "recall": 5
  },
  "sim.ts": {
-  "shape": "box",
-  "color": "#ff9800",
-  "sprite": "fryer-king",
-  "puddle": {
-   "body": "#0e0805",
-   "edge": "#3f2a19",
-   "fleck": "#6c7189",
-   "bubble": "#55331c",
-   "boil": {
-    "period": 1.2,
-    "density": 4.5,
-    "glow": 0.6
-   }
-  }
+  "shape": "segmented",
+  "color": "#ff8f00",
+  "sprite": "great-wireworm"
  },
  "sim.u": {
   "gain": 1,
@@ -7022,26 +7053,6 @@
   "trail": 3,
   "trailStep": 0.16,
   "trailLift": 4
- },
- "sim.zo": {
-  "lateGrowthPct": 50,
-  "damagePctPerDoubling": 5,
-  "damageMaxPct": 100,
-  "bossPct": 2,
-  "bossMaxPct": 30,
-  "cursePctPerHeldPct": 0.5,
-  "levelTenths": {
-   "easy": 10,
-   "normal": 15,
-   "hard": 20,
-   "nightmare": 30
-  },
-  "pointsPerSecond": 10,
-  "lateAfterSec": 1200,
-  "lateStepSec": 60,
-  "damageBasePerSecond": 10,
-  "dodgeZeroPerMinute": 120,
-  "dodgeFullStepsPerMinute": 120
  },
  "sim.zr": {
   "startSec": 900,
@@ -8152,2140 +8163,7 @@
   "drop": 6,
   "dawn": 7
  },
- "intro-shared.D": {
-  "lifeSec": 50,
-  "buffSec": 30,
-  "bossLeadSec": 40,
-  "minDist": 650,
-  "maxDist": 900,
-  "fromRunShare": 0.5,
-  "firstAtSec": 45,
-  "firstDist": {
-   "min": 220,
-   "max": 300
-  }
- },
- "intro-shared.E": {
-  "shrineAtSec": 15,
-  "shrineDist": {
-   "min": 170,
-   "max": 230
-  },
-  "poolAtSec": 30,
-  "poolDist": {
-   "min": 90,
-   "max": 130
-  },
-  "poolRadius": 72,
-  "poolStrength": 0.5,
-  "hintSec": 8
- },
- "intro-shared.F": {
-  "id": "tugging",
-  "everySec": 5,
-  "firstSec": 0.6,
-  "firstSpreadSec": 1.5,
-  "reach": 170,
-  "nearest": 40,
-  "windupSec": 0.5,
-  "pullSec": 0.3,
-  "pullSpeed": 150,
-  "stopGap": 6
- },
- "intro-shared.Ft": {
-  "rows": [
-   {
-    "step": 0,
-    "minEnemies": 22,
-    "maxEnemies": 35,
-    "interval": 0.75,
-    "batch": 3,
-    "tiers": [
-     8,
-     1,
-     0,
-     0,
-     0
-    ]
-   },
-   {
-    "step": 1,
-    "minEnemies": 32,
-    "maxEnemies": 35,
-    "interval": 0.7,
-    "batch": 3,
-    "tiers": [
-     8,
-     1,
-     0,
-     0,
-     0
-    ],
-    "elite": true
-   },
-   {
-    "step": 2,
-    "minEnemies": 45,
-    "maxEnemies": 100,
-    "interval": 0.65,
-    "batch": 4,
-    "tiers": [
-     5,
-     1,
-     0,
-     0,
-     0
-    ],
-    "boss": "amusing",
-    "events": [
-     "fly-swarm"
-    ]
-   },
-   {
-    "step": 3,
-    "minEnemies": 90,
-    "maxEnemies": 150,
-    "interval": 0.6,
-    "batch": 5,
-    "tiers": [
-     1,
-     2,
-     0,
-     0,
-     0
-    ],
-    "elite": true,
-    "boss": "beetle-queen",
-    "events": [
-     "golden-scarab"
-    ]
-   },
-   {
-    "step": 4,
-    "minEnemies": 85,
-    "maxEnemies": 150,
-    "interval": 0.6,
-    "batch": 4,
-    "tiers": [
-     1,
-     2,
-     1,
-     0,
-     0
-    ],
-    "boss": "the-masher"
-   },
-   {
-    "step": 5,
-    "minEnemies": 105,
-    "maxEnemies": 165,
-    "interval": 0.55,
-    "batch": 5,
-    "tiers": [
-     1,
-     2,
-     1,
-     0,
-     0
-    ],
-    "elite": true,
-    "events": [
-     "fly-swarm"
-    ]
-   },
-   {
-    "step": 6,
-    "minEnemies": 125,
-    "maxEnemies": 180,
-    "interval": 0.5,
-    "batch": 5,
-    "tiers": [
-     1,
-     1,
-     2,
-     0,
-     0
-    ],
-    "boss": "late-blight",
-    "events": [
-     "bale-ring"
-    ]
-   },
-   {
-    "step": 7,
-    "minEnemies": 145,
-    "maxEnemies": 240,
-    "interval": 0.45,
-    "batch": 6,
-    "tiers": [
-     0,
-     1,
-     2,
-     1,
-     0
-    ],
-    "elite": true,
-    "boss": "sir-strawman",
-    "events": [
-     "golden-scarab"
-    ]
-   },
-   {
-    "step": 8,
-    "minEnemies": 165,
-    "maxEnemies": 250,
-    "interval": 0.42,
-    "batch": 6,
-    "tiers": [
-     0,
-     1,
-     2,
-     1,
-     0
-    ],
-    "boss": "fryer-king",
-    "events": [
-     "fly-swarm",
-     "harvest-moon"
-    ]
-   },
-   {
-    "step": 9,
-    "minEnemies": 185,
-    "maxEnemies": 260,
-    "interval": 0.38,
-    "batch": 7,
-    "tiers": [
-     0,
-     1,
-     1,
-     2,
-     0
-    ],
-    "elite": true,
-    "events": [
-     "bale-ring"
-    ]
-   },
-   {
-    "step": 10,
-    "minEnemies": 210,
-    "maxEnemies": 270,
-    "interval": 0.35,
-    "batch": 7,
-    "tiers": [
-     0,
-     0,
-     2,
-     2,
-     0
-    ],
-    "boss": "great-wireworm",
-    "events": [
-     "golden-scarab"
-    ]
-   },
-   {
-    "step": 11,
-    "minEnemies": 235,
-    "maxEnemies": 280,
-    "interval": 0.32,
-    "batch": 8,
-    "tiers": [
-     0,
-     0,
-     1,
-     2,
-     0
-    ],
-    "elite": true,
-    "events": [
-     "fly-swarm"
-    ]
-   },
-   {
-    "step": 12,
-    "minEnemies": 260,
-    "maxEnemies": 290,
-    "interval": 0.3,
-    "batch": 8,
-    "tiers": [
-     0,
-     0,
-     1,
-     2,
-     0
-    ],
-    "boss": "the-mandoline"
-   },
-   {
-    "step": 13,
-    "minEnemies": 285,
-    "maxEnemies": 300,
-    "interval": 0.28,
-    "batch": 9,
-    "tiers": [
-     0,
-     0,
-     1,
-     2,
-     0
-    ],
-    "elite": true,
-    "events": [
-     "bale-ring"
-    ]
-   },
-   {
-    "step": 14,
-    "minEnemies": 305,
-    "maxEnemies": 320,
-    "interval": 0.26,
-    "batch": 9,
-    "tiers": [
-     0,
-     0,
-     1,
-     4,
-     1
-    ],
-    "boss": "deep-freezer",
-    "events": [
-     "golden-scarab"
-    ]
-   },
-   {
-    "step": 15,
-    "minEnemies": 330,
-    "maxEnemies": 350,
-    "interval": 0.24,
-    "batch": 10,
-    "tiers": [
-     0,
-     0,
-     0,
-     2,
-     1
-    ],
-    "elite": true,
-    "events": [
-     "fly-swarm",
-     "harvest-moon"
-    ]
-   },
-   {
-    "step": 16,
-    "minEnemies": 360,
-    "maxEnemies": 380,
-    "interval": 0.22,
-    "batch": 10,
-    "tiers": [
-     0,
-     0,
-     0,
-     1,
-     1
-    ],
-    "boss": "grater-golem",
-    "events": [
-     "bale-ring"
-    ]
-   },
-   {
-    "step": 17,
-    "minEnemies": 390,
-    "maxEnemies": 420,
-    "interval": 0.2,
-    "batch": 11,
-    "tiers": [
-     0,
-     0,
-     0,
-     1,
-     2
-    ],
-    "elite": true,
-    "boss": "compost-titan",
-    "events": [
-     "golden-scarab"
-    ]
-   },
-   {
-    "step": 18,
-    "minEnemies": 420,
-    "maxEnemies": 450,
-    "interval": 0.18,
-    "batch": 12,
-    "tiers": [
-     0,
-     0,
-     0,
-     1,
-     3
-    ],
-    "boss": "ketchup-kraken",
-    "events": [
-     "fly-swarm"
-    ]
-   },
-   {
-    "step": 19,
-    "minEnemies": 450,
-    "maxEnemies": 480,
-    "interval": 0.16,
-    "batch": 12,
-    "tiers": [
-     0,
-     0,
-     0,
-     0,
-     1
-    ],
-    "elite": true,
-    "events": [
-     "bale-ring"
-    ]
-   },
-   {
-    "step": 20,
-    "minEnemies": 480,
-    "maxEnemies": 500,
-    "interval": 0.14,
-    "batch": 14,
-    "tiers": [
-     0,
-     0,
-     0,
-     0,
-     1
-    ],
-    "boss": "harvester",
-    "events": [
-     "fly-swarm"
-    ]
-   }
-  ],
-  "stepSec": 45,
-  "afterLast": "postWin"
- },
- "intro-shared.G": {
-  "rises": [
-   {
-    "atSec": 8,
-    "minDist": 130,
-    "maxDist": 160
-   },
-   {
-    "atSec": 360,
-    "minDist": 400,
-    "maxDist": 560
-   },
-   {
-    "atSec": 660,
-    "minDist": 400,
-    "maxDist": 560
-   }
-  ],
-  "riseJitterSec": 4,
-  "calls": 3,
-  "callReach": 130
- },
- "intro-shared.H": {
-  "baseWeapons": [
-   {
-    "id": "flash-freeze",
-    "tier": "base",
-    "base": {
-     "damage": 19,
-     "cooldown": 4,
-     "amount": 1,
-     "area": 1,
-     "speed": 150,
-     "duration": 0,
-     "pierce": 0,
-     "knockback": 0.5,
-     "interval": 0.35
-    },
-    "levels": [
-     {
-      "area": 0.15
-     },
-     {
-      "cooldown": -0.4
-     },
-     {
-      "damage": 12
-     },
-     {
-      "amount": 1
-     },
-     {
-      "area": 0.15
-     },
-     {
-      "cooldown": -0.4
-     },
-     {
-      "damage": 16
-     }
-    ],
-    "weight": 80,
-    "behavior": {
-     "kind": "nova",
-     "size": 80,
-     "thickness": 10,
-     "onHit": {
-      "kind": "slow",
-      "factor": 0.5,
-      "seconds": 1.5
-     }
-    },
-    "playtest": {
-     "tag": "nova"
-    }
-   },
-   {
-    "id": "spud-yo-yo",
-    "tier": "base",
-    "base": {
-     "damage": 20,
-     "cooldown": 2.6,
-     "amount": 1,
-     "area": 1,
-     "speed": 320,
-     "duration": 1.2,
-     "pierce": 99,
-     "knockback": 0.3,
-     "interval": 0
-    },
-    "levels": [
-     {
-      "damage": 5
-     },
-     {
-      "duration": 0.3
-     },
-     {
-      "amount": 1
-     },
-     {
-      "damage": 6
-     },
-     {
-      "area": 0.2
-     },
-     {
-      "duration": 0.3
-     },
-     {
-      "damage": 8
-     }
-    ],
-    "weight": 75,
-    "behavior": {
-     "kind": "boomerang",
-     "size": 9,
-     "returnAccel": 360
-    },
-    "playtest": {
-     "tag": "orbit",
-     "start": true,
-     "behavior": {
-      "kind": "spudYoYo",
-      "size": 13,
-      "reach": 110,
-      "leash": 150,
-      "rehit": 0.2,
-      "snap": 420,
-      "snapAccel": 1400
-     }
-    }
-   }
-  ],
-  "evolvedWeapons": [
-   {
-    "id": "hard-frost",
-    "tier": "evolved",
-    "base": {
-     "damage": 42,
-     "cooldown": 2.8,
-     "amount": 2,
-     "area": 1.4,
-     "speed": 170,
-     "duration": 0,
-     "pierce": 0,
-     "knockback": 0.5,
-     "interval": 0.4
-    },
-    "behavior": {
-     "kind": "nova",
-     "size": 80,
-     "thickness": 12,
-     "onHit": {
-      "kind": "freeze",
-      "seconds": 0.6
-     }
-    },
-    "playtest": {
-     "tag": "nova",
-     "bossOnHit": {
-      "kind": "slow",
-      "factor": 0.5,
-      "seconds": 1
-     }
-    },
-    "from": "flash-freeze",
-    "catalyst": "thick-skin"
-   },
-   {
-    "id": "walk-the-dog",
-    "tier": "evolved",
-    "base": {
-     "damage": 60,
-     "cooldown": 2.8,
-     "amount": 3,
-     "area": 1.5,
-     "speed": 340,
-     "duration": 1.6,
-     "pierce": 99,
-     "knockback": 0.3,
-     "interval": 0
-    },
-    "behavior": {
-     "kind": "boomerang",
-     "size": 9,
-     "returnAccel": 360
-    },
-    "playtest": {
-     "tag": "orbit",
-     "behavior": {
-      "kind": "spudYoYo",
-      "size": 13,
-      "reach": 110,
-      "leash": 150,
-      "rehit": 0.15,
-      "snap": 420,
-      "snapAccel": 1400,
-      "roll": {
-       "speed": 75,
-       "seek": 100
-      }
-     }
-    },
-    "from": "spud-yo-yo",
-    "catalyst": "slow-cooker"
-   }
-  ],
-  "unionWeapons": [],
-  "passives": [],
-  "items": [],
-  "evolvedItems": [],
-  "enemies": [
-   {
-    "id": "gilded-magpie",
-    "behavior": {
-     "kind": "flee",
-     "goldPerHit": 1,
-     "escapeAfter": 15
-    },
-    "hp": 100,
-    "speed": 72,
-    "damage": 0,
-    "radius": 7,
-    "xp": 0,
-    "goldChance": 0,
-    "mass": 0.7
-   }
-  ],
-  "bosses": [],
-  "biomes": [],
-  "pets": [],
-  "events": [],
-  "grokBotHelps": []
- },
- "intro-shared.I": {
-  "id": "snaring",
-  "everySec": 8,
-  "firstSec": 0.6,
-  "firstSpreadSec": 1.5,
-  "reach": 180,
-  "closeSec": 0.6,
-  "radius": 16,
-  "rootSec": 1,
-  "guardSec": 1.5
- },
- "intro-shared.It": [
-  "fryer-king",
-  "the-mandoline",
-  "the-masher",
-  "grater-golem",
-  "compost-titan",
-  "ketchup-kraken",
-  "harvester"
- ],
- "intro-shared.K": {
-  "baseHp": 2.5,
-  "baseHpRampSec": 360,
-  "hpPerLevel": 1.11,
-  "damagePerLevel": 1.044,
-  "lateCurvePerLevel": 0.087,
-  "bossHitSharePerLevel": 0,
-  "bossAttackRatePerLevel": 1.001,
-  "stacking": {
-   "weaponLevel": 1.2,
-   "evolvedRanks": 7,
-   "passiveRank": 2,
-   "mightFloor": 0.1,
-   "setBonus": 3,
-   "greaterLine": 1.3,
-   "ancestral": 1.1,
-   "primal": 1.175,
-   "dropLevel": 1
-  }
- },
- "intro-shared.L": {
-  "id": "rimed",
-  "everySec": 3.5,
-  "firstSec": 0.4,
-  "firstSpreadSec": 1,
-  "reach": 170,
-  "scatter": 10,
-  "fuseSec": 1.5,
-  "radius": 20,
-  "damageShare": 1,
-  "slow": 0.35,
-  "slowSec": 1.2
- },
- "intro-shared.M": {
-  "scorching": 1,
-  "rimed": 2,
-  "snaring": 4,
-  "tugging": 8
- },
- "intro-shared.N": [
-  "scorching",
-  "rimed",
-  "snaring",
-  "tugging"
- ],
- "intro-shared.Pt": {
-  "rows": [
-   {
-    "step": 0,
-    "minEnemies": 34,
-    "maxEnemies": 35,
-    "interval": 0.75,
-    "batch": 3,
-    "tiers": [
-     8,
-     1,
-     0,
-     0,
-     0
-    ]
-   },
-   {
-    "step": 1,
-    "minEnemies": 75,
-    "maxEnemies": 100,
-    "interval": 0.6,
-    "batch": 5,
-    "tiers": [
-     2,
-     2,
-     0,
-     0,
-     0
-    ],
-    "elite": true
-   },
-   {
-    "step": 2,
-    "minEnemies": 75,
-    "maxEnemies": 100,
-    "interval": 0.65,
-    "batch": 4,
-    "tiers": [
-     2,
-     1,
-     0,
-     0,
-     0
-    ],
-    "boss": "amusing",
-    "events": [
-     "fly-swarm"
-    ]
-   },
-   {
-    "step": 3,
-    "minEnemies": 90,
-    "maxEnemies": 150,
-    "interval": 0.6,
-    "batch": 5,
-    "tiers": [
-     1,
-     2,
-     0,
-     0,
-     0
-    ],
-    "elite": true,
-    "boss": "beetle-queen",
-    "events": [
-     "golden-scarab"
-    ]
-   },
-   {
-    "step": 4,
-    "minEnemies": 85,
-    "maxEnemies": 150,
-    "interval": 0.6,
-    "batch": 4,
-    "tiers": [
-     1,
-     2,
-     1,
-     0,
-     0
-    ],
-    "boss": "the-masher"
-   },
-   {
-    "step": 5,
-    "minEnemies": 105,
-    "maxEnemies": 165,
-    "interval": 0.55,
-    "batch": 5,
-    "tiers": [
-     1,
-     2,
-     1,
-     0,
-     0
-    ],
-    "elite": true,
-    "events": [
-     "fly-swarm"
-    ]
-   },
-   {
-    "step": 6,
-    "minEnemies": 125,
-    "maxEnemies": 180,
-    "interval": 0.5,
-    "batch": 5,
-    "tiers": [
-     1,
-     1,
-     2,
-     0,
-     0
-    ],
-    "boss": "late-blight",
-    "events": [
-     "bale-ring"
-    ]
-   },
-   {
-    "step": 7,
-    "minEnemies": 145,
-    "maxEnemies": 240,
-    "interval": 0.45,
-    "batch": 6,
-    "tiers": [
-     0,
-     1,
-     2,
-     1,
-     0
-    ],
-    "elite": true,
-    "boss": "sir-strawman",
-    "events": [
-     "golden-scarab"
-    ]
-   },
-   {
-    "step": 8,
-    "minEnemies": 165,
-    "maxEnemies": 250,
-    "interval": 0.42,
-    "batch": 6,
-    "tiers": [
-     0,
-     1,
-     2,
-     1,
-     0
-    ],
-    "boss": "fryer-king",
-    "events": [
-     "fly-swarm",
-     "harvest-moon"
-    ]
-   },
-   {
-    "step": 9,
-    "minEnemies": 185,
-    "maxEnemies": 260,
-    "interval": 0.38,
-    "batch": 7,
-    "tiers": [
-     0,
-     1,
-     1,
-     2,
-     0
-    ],
-    "elite": true,
-    "events": [
-     "bale-ring"
-    ]
-   },
-   {
-    "step": 10,
-    "minEnemies": 210,
-    "maxEnemies": 270,
-    "interval": 0.35,
-    "batch": 7,
-    "tiers": [
-     0,
-     0,
-     2,
-     2,
-     0
-    ],
-    "boss": "great-wireworm",
-    "events": [
-     "golden-scarab"
-    ]
-   },
-   {
-    "step": 11,
-    "minEnemies": 235,
-    "maxEnemies": 280,
-    "interval": 0.32,
-    "batch": 8,
-    "tiers": [
-     0,
-     0,
-     1,
-     2,
-     0
-    ],
-    "elite": true,
-    "events": [
-     "fly-swarm"
-    ]
-   },
-   {
-    "step": 12,
-    "minEnemies": 260,
-    "maxEnemies": 290,
-    "interval": 0.3,
-    "batch": 8,
-    "tiers": [
-     0,
-     0,
-     1,
-     2,
-     0
-    ],
-    "boss": "the-mandoline"
-   },
-   {
-    "step": 13,
-    "minEnemies": 285,
-    "maxEnemies": 300,
-    "interval": 0.28,
-    "batch": 9,
-    "tiers": [
-     0,
-     0,
-     1,
-     2,
-     0
-    ],
-    "elite": true,
-    "events": [
-     "bale-ring"
-    ]
-   },
-   {
-    "step": 14,
-    "minEnemies": 305,
-    "maxEnemies": 320,
-    "interval": 0.26,
-    "batch": 9,
-    "tiers": [
-     0,
-     0,
-     1,
-     4,
-     1
-    ],
-    "boss": "deep-freezer",
-    "events": [
-     "golden-scarab"
-    ]
-   },
-   {
-    "step": 15,
-    "minEnemies": 330,
-    "maxEnemies": 350,
-    "interval": 0.24,
-    "batch": 10,
-    "tiers": [
-     0,
-     0,
-     0,
-     2,
-     1
-    ],
-    "elite": true,
-    "events": [
-     "fly-swarm",
-     "harvest-moon"
-    ]
-   },
-   {
-    "step": 16,
-    "minEnemies": 360,
-    "maxEnemies": 380,
-    "interval": 0.22,
-    "batch": 10,
-    "tiers": [
-     0,
-     0,
-     0,
-     1,
-     1
-    ],
-    "boss": "grater-golem",
-    "events": [
-     "bale-ring"
-    ]
-   },
-   {
-    "step": 17,
-    "minEnemies": 390,
-    "maxEnemies": 420,
-    "interval": 0.2,
-    "batch": 11,
-    "tiers": [
-     0,
-     0,
-     0,
-     1,
-     2
-    ],
-    "elite": true,
-    "boss": "compost-titan",
-    "events": [
-     "golden-scarab"
-    ]
-   },
-   {
-    "step": 18,
-    "minEnemies": 420,
-    "maxEnemies": 450,
-    "interval": 0.18,
-    "batch": 12,
-    "tiers": [
-     0,
-     0,
-     0,
-     1,
-     3
-    ],
-    "boss": "ketchup-kraken",
-    "events": [
-     "fly-swarm"
-    ]
-   },
-   {
-    "step": 19,
-    "minEnemies": 450,
-    "maxEnemies": 480,
-    "interval": 0.16,
-    "batch": 12,
-    "tiers": [
-     0,
-     0,
-     0,
-     0,
-     1
-    ],
-    "elite": true,
-    "events": [
-     "bale-ring"
-    ]
-   },
-   {
-    "step": 20,
-    "minEnemies": 480,
-    "maxEnemies": 500,
-    "interval": 0.14,
-    "batch": 14,
-    "tiers": [
-     0,
-     0,
-     0,
-     0,
-     1
-    ],
-    "boss": "harvester",
-    "events": [
-     "fly-swarm"
-    ]
-   }
-  ],
-  "stepSec": 45,
-  "afterLast": "postWin"
- },
- "intro-shared.R": {
-  "id": "scorching",
-  "dropSec": 0.2,
-  "dropGap": 6,
-  "lifeSec": 3,
-  "radiusShare": 0.75,
-  "minRadius": 7,
-  "maxRadius": 13,
-  "dpsShare": 0.5,
-  "bootsEveryTicks": 10
- },
- "intro-shared.Rt": [
-  {
-   "step": 0,
-   "minEnemies": 22,
-   "maxEnemies": 35,
-   "interval": 0.75,
-   "batch": 3,
-   "tiers": [
-    8,
-    1,
-    0,
-    0,
-    0
-   ]
-  },
-  {
-   "step": 1,
-   "minEnemies": 32,
-   "maxEnemies": 35,
-   "interval": 0.7,
-   "batch": 3,
-   "tiers": [
-    8,
-    1,
-    0,
-    0,
-    0
-   ],
-   "elite": true
-  },
-  {
-   "step": 2,
-   "minEnemies": 45,
-   "maxEnemies": 100,
-   "interval": 0.65,
-   "batch": 4,
-   "tiers": [
-    5,
-    1,
-    0,
-    0,
-    0
-   ],
-   "boss": "amusing",
-   "events": [
-    "fly-swarm"
-   ]
-  },
-  {
-   "step": 3,
-   "minEnemies": 90,
-   "maxEnemies": 150,
-   "interval": 0.6,
-   "batch": 5,
-   "tiers": [
-    1,
-    2,
-    0,
-    0,
-    0
-   ],
-   "elite": true,
-   "boss": "beetle-queen",
-   "events": [
-    "golden-scarab"
-   ]
-  },
-  {
-   "step": 4,
-   "minEnemies": 85,
-   "maxEnemies": 150,
-   "interval": 0.6,
-   "batch": 4,
-   "tiers": [
-    1,
-    2,
-    1,
-    0,
-    0
-   ],
-   "boss": "the-masher"
-  },
-  {
-   "step": 5,
-   "minEnemies": 105,
-   "maxEnemies": 165,
-   "interval": 0.55,
-   "batch": 5,
-   "tiers": [
-    1,
-    2,
-    1,
-    0,
-    0
-   ],
-   "elite": true,
-   "events": [
-    "fly-swarm"
-   ]
-  },
-  {
-   "step": 6,
-   "minEnemies": 125,
-   "maxEnemies": 180,
-   "interval": 0.5,
-   "batch": 5,
-   "tiers": [
-    1,
-    1,
-    2,
-    0,
-    0
-   ],
-   "boss": "late-blight",
-   "events": [
-    "bale-ring"
-   ]
-  },
-  {
-   "step": 7,
-   "minEnemies": 145,
-   "maxEnemies": 240,
-   "interval": 0.45,
-   "batch": 6,
-   "tiers": [
-    0,
-    1,
-    2,
-    1,
-    0
-   ],
-   "elite": true,
-   "boss": "sir-strawman",
-   "events": [
-    "golden-scarab"
-   ]
-  },
-  {
-   "step": 8,
-   "minEnemies": 165,
-   "maxEnemies": 250,
-   "interval": 0.42,
-   "batch": 6,
-   "tiers": [
-    0,
-    1,
-    2,
-    1,
-    0
-   ],
-   "boss": "fryer-king",
-   "events": [
-    "fly-swarm",
-    "harvest-moon"
-   ]
-  },
-  {
-   "step": 9,
-   "minEnemies": 185,
-   "maxEnemies": 260,
-   "interval": 0.38,
-   "batch": 7,
-   "tiers": [
-    0,
-    1,
-    1,
-    2,
-    0
-   ],
-   "elite": true,
-   "events": [
-    "bale-ring"
-   ]
-  },
-  {
-   "step": 10,
-   "minEnemies": 210,
-   "maxEnemies": 270,
-   "interval": 0.35,
-   "batch": 7,
-   "tiers": [
-    0,
-    0,
-    2,
-    2,
-    0
-   ],
-   "boss": "great-wireworm",
-   "events": [
-    "golden-scarab"
-   ]
-  },
-  {
-   "step": 11,
-   "minEnemies": 235,
-   "maxEnemies": 280,
-   "interval": 0.32,
-   "batch": 8,
-   "tiers": [
-    0,
-    0,
-    1,
-    2,
-    0
-   ],
-   "elite": true,
-   "events": [
-    "fly-swarm"
-   ]
-  },
-  {
-   "step": 12,
-   "minEnemies": 260,
-   "maxEnemies": 290,
-   "interval": 0.3,
-   "batch": 8,
-   "tiers": [
-    0,
-    0,
-    1,
-    2,
-    0
-   ],
-   "boss": "the-mandoline"
-  },
-  {
-   "step": 13,
-   "minEnemies": 285,
-   "maxEnemies": 300,
-   "interval": 0.28,
-   "batch": 9,
-   "tiers": [
-    0,
-    0,
-    1,
-    2,
-    0
-   ],
-   "elite": true,
-   "events": [
-    "bale-ring"
-   ]
-  },
-  {
-   "step": 14,
-   "minEnemies": 305,
-   "maxEnemies": 320,
-   "interval": 0.26,
-   "batch": 9,
-   "tiers": [
-    0,
-    0,
-    1,
-    4,
-    1
-   ],
-   "boss": "deep-freezer",
-   "events": [
-    "golden-scarab"
-   ]
-  },
-  {
-   "step": 15,
-   "minEnemies": 330,
-   "maxEnemies": 350,
-   "interval": 0.24,
-   "batch": 10,
-   "tiers": [
-    0,
-    0,
-    0,
-    2,
-    1
-   ],
-   "elite": true,
-   "events": [
-    "fly-swarm",
-    "harvest-moon"
-   ]
-  },
-  {
-   "step": 16,
-   "minEnemies": 360,
-   "maxEnemies": 380,
-   "interval": 0.22,
-   "batch": 10,
-   "tiers": [
-    0,
-    0,
-    0,
-    1,
-    1
-   ],
-   "boss": "grater-golem",
-   "events": [
-    "bale-ring"
-   ]
-  },
-  {
-   "step": 17,
-   "minEnemies": 390,
-   "maxEnemies": 420,
-   "interval": 0.2,
-   "batch": 11,
-   "tiers": [
-    0,
-    0,
-    0,
-    1,
-    2
-   ],
-   "elite": true,
-   "boss": "compost-titan",
-   "events": [
-    "golden-scarab"
-   ]
-  },
-  {
-   "step": 18,
-   "minEnemies": 420,
-   "maxEnemies": 450,
-   "interval": 0.18,
-   "batch": 12,
-   "tiers": [
-    0,
-    0,
-    0,
-    1,
-    3
-   ],
-   "boss": "ketchup-kraken",
-   "events": [
-    "fly-swarm"
-   ]
-  },
-  {
-   "step": 19,
-   "minEnemies": 450,
-   "maxEnemies": 480,
-   "interval": 0.16,
-   "batch": 12,
-   "tiers": [
-    0,
-    0,
-    0,
-    0,
-    1
-   ],
-   "elite": true,
-   "events": [
-    "bale-ring"
-   ]
-  },
-  {
-   "step": 20,
-   "minEnemies": 480,
-   "maxEnemies": 500,
-   "interval": 0.14,
-   "batch": 14,
-   "tiers": [
-    0,
-    0,
-    0,
-    0,
-    1
-   ],
-   "boss": "harvester",
-   "events": [
-    "fly-swarm"
-   ]
-  }
- ],
- "intro-shared.Tt": [
-  "melee",
-  "shot",
-  "zone",
-  "storm",
-  "orbit",
-  "blast",
-  "summon",
-  "nova",
-  "any"
- ],
- "intro-shared.U": {
-  "id": "gilded-magpie",
-  "firstMinSec": 100,
-  "firstMaxSec": 160,
-  "everyMinSec": 210,
-  "everyMaxSec": 300,
-  "busyRetrySec": 6,
-  "lifeSec": 15,
-  "edge": 150,
-  "burstCoins": 16,
-  "burstCoinPerMinute": 1.5,
-  "burstFloorMinutes": 1,
-  "burstSpread": 16,
-  "ink": "#ffd04a"
- },
- "intro-shared.W": {
-  "reach": 200,
-  "safeHp": 0.5,
-  "weight": 2,
-  "chaseReach": 40,
-  "shrineWant": 0.5,
-  "shrineReach": 260
- },
- "intro-shared._": {
-  "piece": "crown-of-plenty",
-  "effect": {
-   "kind": "extraProjectile",
-   "tags": [
-    "shot"
-   ],
-   "amount": 1
-  }
- },
- "intro-shared.b": {
-  "mult": 8,
-  "radius": 16,
-  "radiusPerKind": 6,
-  "windowSec": 1,
-  "cooldownSec": 1,
-  "kindsNeeded": 2,
-  "capPerSec": 6,
-  "botLean": 2,
-  "ink": "#ffe17a"
- },
- "intro-shared.ct": {
-  "id": "volt-pylon",
-  "radius": 16,
-  "chargeSec": 0.25,
-  "weights": {}
- },
- "intro-shared.dt": {
-  "id": "mash-pylon",
-  "radius": 16,
-  "chargeSec": 0.25,
-  "weights": {}
- },
- "intro-shared.g": {
-  "piece": "ember-striders",
-  "effect": {
-   "kind": "pierce",
-   "tags": [
-    "shot"
-   ],
-   "amount": 1
-  }
- },
- "intro-shared.gt": [
-  {
-   "id": "bog-witch",
-   "tag": "zone",
-   "pieces": [
-    {
-     "slot": "hat",
-     "id": "bog-witch-hat"
-    },
-    {
-     "slot": "chest",
-     "id": "bog-witch-chest"
-    },
-    {
-     "slot": "legs",
-     "id": "bog-witch-legs"
-    }
-   ],
-   "two": {
-    "tag": {
-     "duration": 0.4,
-     "area": 0.15
-    }
-   },
-   "three": {
-    "tag": {
-     "damage": 0.8
-    },
-    "offTagDamage": 0.7,
-    "tradeoff": {
-     "moveSpeed": -0.1
-    }
-   }
-  },
-  {
-   "id": "buccaneer",
-   "tag": "blast",
-   "pieces": [
-    {
-     "slot": "hat",
-     "id": "buccaneer-hat"
-    },
-    {
-     "slot": "chest",
-     "id": "buccaneer-chest"
-    },
-    {
-     "slot": "boots",
-     "id": "buccaneer-boots"
-    }
-   ],
-   "two": {
-    "tag": {
-     "area": 0.25
-    }
-   },
-   "three": {
-    "offers": "tag",
-    "startLevels": 1,
-    "tag": {
-     "damage": 0.4
-    },
-    "tradeoff": {
-     "maxHpPct": -0.1
-    }
-   }
-  },
-  {
-   "id": "fry-cook",
-   "tag": "shot",
-   "pieces": [
-    {
-     "slot": "hat",
-     "id": "fry-cook-hat"
-    },
-    {
-     "slot": "legs",
-     "id": "fry-cook-legs"
-    },
-    {
-     "slot": "boots",
-     "id": "fry-cook-boots"
-    }
-   ],
-   "two": {
-    "tag": {
-     "amount": 1
-    }
-   },
-   "three": {
-    "offers": "tag",
-    "startLevels": 1,
-    "tag": {
-     "damage": 0.55,
-     "pierce": 2
-    },
-    "tradeoff": {
-     "maxHpPct": -0.15
-    }
-   }
-  },
-  {
-   "id": "iron-skillet",
-   "tag": "melee",
-   "pieces": [
-    {
-     "slot": "hat",
-     "id": "iron-skillet-hat"
-    },
-    {
-     "slot": "chest",
-     "id": "iron-skillet-chest"
-    },
-    {
-     "slot": "legs",
-     "id": "iron-skillet-legs"
-    }
-   ],
-   "two": {
-    "tag": {
-     "area": 0.25,
-     "damage": 0.1
-    }
-   },
-   "three": {
-    "offers": "tag",
-    "startLevels": 1,
-    "tag": {
-     "damage": 0.15
-    },
-    "tradeoff": {
-     "moveSpeed": -0.1
-    }
-   }
-  },
-  {
-   "id": "mech-pilot",
-   "pieces": [
-    {
-     "slot": "chest",
-     "id": "mech-pilot-chest"
-    },
-    {
-     "slot": "legs",
-     "id": "mech-pilot-legs"
-    },
-    {
-     "slot": "boots",
-     "id": "mech-pilot-boots"
-    }
-   ],
-   "two": {
-    "tibo": {
-     "moveSpeed": 0.05
-    },
-    "config": {
-     "dashCooldownScale": 0.7
-    }
-   },
-   "three": {
-    "tibo": {
-     "might": 1
-    },
-    "config": {
-     "dashCharges": 2,
-     "dashCooldownScale": 0.6,
-     "dashDistance": 84,
-     "dashMinCooldownSec": 0.6
-    },
-    "tradeoff": {
-     "maxHpPct": -0.1
-    }
-   }
-  },
-  {
-   "id": "pack-ranger",
-   "tag": "summon",
-   "pieces": [
-    {
-     "slot": "hat",
-     "id": "pack-ranger-hat"
-    },
-    {
-     "slot": "legs",
-     "id": "pack-ranger-legs"
-    },
-    {
-     "slot": "boots",
-     "id": "pack-ranger-boots"
-    }
-   ],
-   "two": {
-    "tag": {
-     "amount": 1,
-     "damage": 0.2
-    }
-   },
-   "three": {
-    "tag": {
-     "damage": 0.5
-    },
-    "offTagDamage": 0.85,
-    "config": {
-     "maxPack": 5,
-     "firstDogDistance": 40
-    }
-   }
-  },
-  {
-   "id": "space-farmer",
-   "tag": "orbit",
-   "pieces": [
-    {
-     "slot": "hat",
-     "id": "space-farmer-hat"
-    },
-    {
-     "slot": "chest",
-     "id": "space-farmer-chest"
-    },
-    {
-     "slot": "boots",
-     "id": "space-farmer-boots"
-    }
-   ],
-   "two": {
-    "tag": {
-     "amount": 1
-    }
-   },
-   "three": {
-    "offers": "tag",
-    "startLevels": 1,
-    "tag": {
-     "damage": 0.8,
-     "area": 0.3
-    },
-    "tibo": {
-     "might": 2.2
-    },
-    "tradeoff": {
-     "moveSpeed": -0.1
-    },
-    "bans": "moveSpeed"
-   }
-  },
-  {
-   "id": "storm-sage",
-   "tag": "storm",
-   "pieces": [
-    {
-     "slot": "chest",
-     "id": "storm-sage-chest"
-    },
-    {
-     "slot": "legs",
-     "id": "storm-sage-legs"
-    },
-    {
-     "slot": "boots",
-     "id": "storm-sage-boots"
-    }
-   ],
-   "two": {
-    "tag": {
-     "rate": 0.25
-    }
-   },
-   "three": {
-    "offers": "tag",
-    "startLevels": 2,
-    "tibo": {
-     "might": 0.3
-    },
-    "tag": {
-     "damage": 1.4,
-     "rate": 0.25
-    },
-    "tradeoff": {
-     "moveSpeed": -0.05
-    }
-   }
-  }
- ],
- "intro-shared.h": {
-  "piece": "starch-mail",
-  "effect": {
-   "kind": "area",
-   "mult": 1.12
-  }
- },
- "intro-shared.ht": [
-  {
-   "id": "bog-witch",
-   "tag": "zone",
-   "pieces": [
-    {
-     "slot": "hat",
-     "id": "bog-witch-hat"
-    },
-    {
-     "slot": "chest",
-     "id": "bog-witch-chest"
-    },
-    {
-     "slot": "legs",
-     "id": "bog-witch-legs"
-    }
-   ],
-   "two": {
-    "tag": {
-     "duration": 0.4,
-     "area": 0.15
-    }
-   },
-   "three": {
-    "tag": {
-     "damage": 0.8
-    },
-    "offTagDamage": 0.7,
-    "tradeoff": {
-     "moveSpeed": -0.1
-    }
-   }
-  },
-  {
-   "id": "buccaneer",
-   "tag": "blast",
-   "pieces": [
-    {
-     "slot": "hat",
-     "id": "buccaneer-hat"
-    },
-    {
-     "slot": "chest",
-     "id": "buccaneer-chest"
-    },
-    {
-     "slot": "boots",
-     "id": "buccaneer-boots"
-    }
-   ],
-   "two": {
-    "tag": {
-     "area": 0.25
-    }
-   },
-   "three": {
-    "offers": "tag",
-    "startLevels": 1,
-    "tag": {
-     "damage": 0.4
-    },
-    "tradeoff": {
-     "maxHpPct": -0.1
-    }
-   }
-  },
-  {
-   "id": "fry-cook",
-   "tag": "shot",
-   "pieces": [
-    {
-     "slot": "hat",
-     "id": "fry-cook-hat"
-    },
-    {
-     "slot": "legs",
-     "id": "fry-cook-legs"
-    },
-    {
-     "slot": "boots",
-     "id": "fry-cook-boots"
-    }
-   ],
-   "two": {
-    "tag": {
-     "amount": 1
-    }
-   },
-   "three": {
-    "offers": "tag",
-    "startLevels": 1,
-    "tag": {
-     "damage": 0.55,
-     "pierce": 2
-    },
-    "tradeoff": {
-     "maxHpPct": -0.15
-    }
-   }
-  },
-  {
-   "id": "iron-skillet",
-   "tag": "melee",
-   "pieces": [
-    {
-     "slot": "hat",
-     "id": "iron-skillet-hat"
-    },
-    {
-     "slot": "chest",
-     "id": "iron-skillet-chest"
-    },
-    {
-     "slot": "legs",
-     "id": "iron-skillet-legs"
-    }
-   ],
-   "two": {
-    "tag": {
-     "area": 0.25,
-     "damage": 0.1
-    }
-   },
-   "three": {
-    "offers": "tag",
-    "startLevels": 1,
-    "tag": {
-     "damage": 0.15
-    },
-    "tradeoff": {
-     "moveSpeed": -0.1
-    }
-   }
-  },
-  {
-   "id": "mech-pilot",
-   "pieces": [
-    {
-     "slot": "chest",
-     "id": "mech-pilot-chest"
-    },
-    {
-     "slot": "legs",
-     "id": "mech-pilot-legs"
-    },
-    {
-     "slot": "boots",
-     "id": "mech-pilot-boots"
-    }
-   ],
-   "two": {
-    "tibo": {
-     "moveSpeed": 0.05
-    },
-    "config": {
-     "dashCooldownScale": 0.7
-    }
-   },
-   "three": {
-    "tibo": {
-     "might": 1
-    },
-    "config": {
-     "dashCharges": 2,
-     "dashCooldownScale": 0.6,
-     "dashDistance": 84,
-     "dashMinCooldownSec": 0.6
-    },
-    "tradeoff": {
-     "maxHpPct": -0.1
-    }
-   }
-  },
-  {
-   "id": "pack-ranger",
-   "tag": "summon",
-   "pieces": [
-    {
-     "slot": "hat",
-     "id": "pack-ranger-hat"
-    },
-    {
-     "slot": "legs",
-     "id": "pack-ranger-legs"
-    },
-    {
-     "slot": "boots",
-     "id": "pack-ranger-boots"
-    }
-   ],
-   "two": {
-    "tag": {
-     "amount": 1,
-     "damage": 0.2
-    }
-   },
-   "three": {
-    "tag": {
-     "damage": 0.5
-    },
-    "offTagDamage": 0.85,
-    "config": {
-     "maxPack": 5,
-     "firstDogDistance": 40
-    }
-   }
-  },
-  {
-   "id": "space-farmer",
-   "tag": "orbit",
-   "pieces": [
-    {
-     "slot": "hat",
-     "id": "space-farmer-hat"
-    },
-    {
-     "slot": "chest",
-     "id": "space-farmer-chest"
-    },
-    {
-     "slot": "boots",
-     "id": "space-farmer-boots"
-    }
-   ],
-   "two": {
-    "tag": {
-     "amount": 1
-    }
-   },
-   "three": {
-    "offers": "tag",
-    "startLevels": 1,
-    "tag": {
-     "damage": 0.8,
-     "area": 0.3
-    },
-    "tibo": {
-     "might": 2.2
-    },
-    "tradeoff": {
-     "moveSpeed": -0.1
-    },
-    "bans": "moveSpeed"
-   }
-  },
-  {
-   "id": "storm-sage",
-   "tag": "storm",
-   "pieces": [
-    {
-     "slot": "chest",
-     "id": "storm-sage-chest"
-    },
-    {
-     "slot": "legs",
-     "id": "storm-sage-legs"
-    },
-    {
-     "slot": "boots",
-     "id": "storm-sage-boots"
-    }
-   ],
-   "two": {
-    "tag": {
-     "rate": 0.25
-    }
-   },
-   "three": {
-    "offers": "tag",
-    "startLevels": 2,
-    "tibo": {
-     "might": 0.3
-    },
-    "tag": {
-     "damage": 1.4,
-     "rate": 0.25
-    },
-    "tradeoff": {
-     "moveSpeed": -0.05
-    }
-   }
-  }
- ],
- "intro-shared.j": {
-  "easy": 1,
-  "normal": 1,
-  "hard": 2,
-  "nightmare": 3
- },
- "intro-shared.jt": {
+ "intro-shared.At": {
   "view": {
    "shortSide": 320,
    "maxAspect": 2,
@@ -10984,25 +8862,1095 @@
    "areaScale": 1
   }
  },
- "intro-shared.k": {
-  "mash": {
-   "damageMult": 3,
-   "areaMult": 1.6
-  },
-  "aura": {
-   "everySec": 0.5,
-   "radius": 56
-  },
-  "volt": {
-   "zapsPerSec": 20,
-   "radius": 170,
-   "jumps": 2,
-   "jumpRadius": 60,
-   "eliteHpFraction": 0.06,
-   "bossHpFraction": 0.004
+ "intro-shared.D": {
+  "lifeSec": 50,
+  "buffSec": 30,
+  "bossLeadSec": 40,
+  "minDist": 650,
+  "maxDist": 900,
+  "fromRunShare": 0.5,
+  "firstAtSec": 45,
+  "firstDist": {
+   "min": 220,
+   "max": 300
   }
  },
- "intro-shared.kt": {
+ "intro-shared.E": {
+  "shrineAtSec": 15,
+  "shrineDist": {
+   "min": 170,
+   "max": 230
+  },
+  "poolAtSec": 30,
+  "poolDist": {
+   "min": 90,
+   "max": 130
+  },
+  "poolRadius": 72,
+  "poolStrength": 0.5,
+  "hintSec": 8
+ },
+ "intro-shared.F": {
+  "id": "tugging",
+  "everySec": 5,
+  "firstSec": 0.6,
+  "firstSpreadSec": 1.5,
+  "reach": 170,
+  "nearest": 40,
+  "windupSec": 0.5,
+  "pullSec": 0.3,
+  "pullSpeed": 150,
+  "stopGap": 6
+ },
+ "intro-shared.Ft": [
+  "fryer-king",
+  "the-mandoline",
+  "the-masher",
+  "grater-golem",
+  "compost-titan",
+  "ketchup-kraken",
+  "harvester"
+ ],
+ "intro-shared.G": {
+  "rises": [
+   {
+    "atSec": 8,
+    "minDist": 130,
+    "maxDist": 160
+   },
+   {
+    "atSec": 360,
+    "minDist": 400,
+    "maxDist": 560
+   },
+   {
+    "atSec": 660,
+    "minDist": 400,
+    "maxDist": 560
+   }
+  ],
+  "riseJitterSec": 4,
+  "calls": 3,
+  "callReach": 130
+ },
+ "intro-shared.H": {
+  "baseWeapons": [
+   {
+    "id": "flash-freeze",
+    "tier": "base",
+    "base": {
+     "damage": 19,
+     "cooldown": 4,
+     "amount": 1,
+     "area": 1,
+     "speed": 150,
+     "duration": 0,
+     "pierce": 0,
+     "knockback": 0.5,
+     "interval": 0.35
+    },
+    "levels": [
+     {
+      "area": 0.15
+     },
+     {
+      "cooldown": -0.4
+     },
+     {
+      "damage": 12
+     },
+     {
+      "amount": 1
+     },
+     {
+      "area": 0.15
+     },
+     {
+      "cooldown": -0.4
+     },
+     {
+      "damage": 16
+     }
+    ],
+    "weight": 80,
+    "behavior": {
+     "kind": "nova",
+     "size": 80,
+     "thickness": 10,
+     "onHit": {
+      "kind": "slow",
+      "factor": 0.5,
+      "seconds": 1.5
+     }
+    },
+    "playtest": {
+     "tag": "nova"
+    }
+   },
+   {
+    "id": "spud-yo-yo",
+    "tier": "base",
+    "base": {
+     "damage": 20,
+     "cooldown": 2.6,
+     "amount": 1,
+     "area": 1,
+     "speed": 320,
+     "duration": 1.2,
+     "pierce": 99,
+     "knockback": 0.3,
+     "interval": 0
+    },
+    "levels": [
+     {
+      "damage": 5
+     },
+     {
+      "duration": 0.3
+     },
+     {
+      "amount": 1
+     },
+     {
+      "damage": 6
+     },
+     {
+      "area": 0.2
+     },
+     {
+      "duration": 0.3
+     },
+     {
+      "damage": 8
+     }
+    ],
+    "weight": 75,
+    "behavior": {
+     "kind": "boomerang",
+     "size": 9,
+     "returnAccel": 360
+    },
+    "playtest": {
+     "tag": "orbit",
+     "start": true,
+     "behavior": {
+      "kind": "spudYoYo",
+      "size": 13,
+      "reach": 110,
+      "leash": 150,
+      "rehit": 0.2,
+      "snap": 420,
+      "snapAccel": 1400
+     }
+    }
+   }
+  ],
+  "evolvedWeapons": [
+   {
+    "id": "hard-frost",
+    "tier": "evolved",
+    "base": {
+     "damage": 42,
+     "cooldown": 2.8,
+     "amount": 2,
+     "area": 1.4,
+     "speed": 170,
+     "duration": 0,
+     "pierce": 0,
+     "knockback": 0.5,
+     "interval": 0.4
+    },
+    "behavior": {
+     "kind": "nova",
+     "size": 80,
+     "thickness": 12,
+     "onHit": {
+      "kind": "freeze",
+      "seconds": 0.6
+     }
+    },
+    "playtest": {
+     "tag": "nova",
+     "bossOnHit": {
+      "kind": "slow",
+      "factor": 0.5,
+      "seconds": 1
+     }
+    },
+    "from": "flash-freeze",
+    "catalyst": "thick-skin"
+   },
+   {
+    "id": "walk-the-dog",
+    "tier": "evolved",
+    "base": {
+     "damage": 60,
+     "cooldown": 2.8,
+     "amount": 3,
+     "area": 1.5,
+     "speed": 340,
+     "duration": 1.6,
+     "pierce": 99,
+     "knockback": 0.3,
+     "interval": 0
+    },
+    "behavior": {
+     "kind": "boomerang",
+     "size": 9,
+     "returnAccel": 360
+    },
+    "playtest": {
+     "tag": "orbit",
+     "behavior": {
+      "kind": "spudYoYo",
+      "size": 13,
+      "reach": 110,
+      "leash": 150,
+      "rehit": 0.15,
+      "snap": 420,
+      "snapAccel": 1400,
+      "roll": {
+       "speed": 75,
+       "seek": 100
+      }
+     }
+    },
+    "from": "spud-yo-yo",
+    "catalyst": "slow-cooker"
+   }
+  ],
+  "unionWeapons": [],
+  "passives": [],
+  "items": [],
+  "evolvedItems": [],
+  "enemies": [
+   {
+    "id": "gilded-magpie",
+    "behavior": {
+     "kind": "flee",
+     "goldPerHit": 1,
+     "escapeAfter": 15
+    },
+    "hp": 100,
+    "speed": 72,
+    "damage": 0,
+    "radius": 7,
+    "xp": 0,
+    "goldChance": 0,
+    "mass": 0.7
+   }
+  ],
+  "bosses": [],
+  "biomes": [],
+  "pets": [],
+  "events": [],
+  "grokBotHelps": []
+ },
+ "intro-shared.I": {
+  "id": "snaring",
+  "everySec": 8,
+  "firstSec": 0.6,
+  "firstSpreadSec": 1.5,
+  "reach": 180,
+  "closeSec": 0.6,
+  "radius": 16,
+  "rootSec": 1,
+  "guardSec": 1.5
+ },
+ "intro-shared.K": {
+  "baseHp": 2.5,
+  "baseHpRampSec": 360,
+  "hpPerLevel": 1.11,
+  "damagePerLevel": 1.044,
+  "lateCurvePerLevel": 0.087,
+  "bossHitSharePerLevel": 0,
+  "bossAttackRatePerLevel": 1.001,
+  "stacking": {
+   "weaponLevel": 1.2,
+   "evolvedRanks": 7,
+   "passiveRank": 2,
+   "mightFloor": 0.1,
+   "setBonus": 3,
+   "greaterLine": 1.3,
+   "ancestral": 1.1,
+   "primal": 1.175,
+   "dropLevel": 1
+  }
+ },
+ "intro-shared.L": {
+  "id": "rimed",
+  "everySec": 3.5,
+  "firstSec": 0.4,
+  "firstSpreadSec": 1,
+  "reach": 170,
+  "scatter": 10,
+  "fuseSec": 1.5,
+  "radius": 20,
+  "damageShare": 1,
+  "slow": 0.35,
+  "slowSec": 1.2
+ },
+ "intro-shared.Lt": [
+  {
+   "step": 0,
+   "minEnemies": 22,
+   "maxEnemies": 35,
+   "interval": 0.75,
+   "batch": 3,
+   "tiers": [
+    8,
+    1,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "step": 1,
+   "minEnemies": 32,
+   "maxEnemies": 35,
+   "interval": 0.7,
+   "batch": 3,
+   "tiers": [
+    8,
+    1,
+    0,
+    0,
+    0
+   ],
+   "elite": true
+  },
+  {
+   "step": 2,
+   "minEnemies": 45,
+   "maxEnemies": 100,
+   "interval": 0.65,
+   "batch": 4,
+   "tiers": [
+    5,
+    1,
+    0,
+    0,
+    0
+   ],
+   "boss": "amusing",
+   "events": [
+    "fly-swarm"
+   ]
+  },
+  {
+   "step": 3,
+   "minEnemies": 90,
+   "maxEnemies": 150,
+   "interval": 0.6,
+   "batch": 5,
+   "tiers": [
+    1,
+    2,
+    0,
+    0,
+    0
+   ],
+   "elite": true,
+   "boss": "beetle-queen",
+   "events": [
+    "golden-scarab"
+   ]
+  },
+  {
+   "step": 4,
+   "minEnemies": 85,
+   "maxEnemies": 150,
+   "interval": 0.6,
+   "batch": 4,
+   "tiers": [
+    1,
+    2,
+    1,
+    0,
+    0
+   ],
+   "boss": "the-masher"
+  },
+  {
+   "step": 5,
+   "minEnemies": 105,
+   "maxEnemies": 165,
+   "interval": 0.55,
+   "batch": 5,
+   "tiers": [
+    1,
+    2,
+    1,
+    0,
+    0
+   ],
+   "elite": true,
+   "events": [
+    "fly-swarm"
+   ]
+  },
+  {
+   "step": 6,
+   "minEnemies": 125,
+   "maxEnemies": 180,
+   "interval": 0.5,
+   "batch": 5,
+   "tiers": [
+    1,
+    1,
+    2,
+    0,
+    0
+   ],
+   "boss": "late-blight",
+   "events": [
+    "bale-ring"
+   ]
+  },
+  {
+   "step": 7,
+   "minEnemies": 145,
+   "maxEnemies": 240,
+   "interval": 0.45,
+   "batch": 6,
+   "tiers": [
+    0,
+    1,
+    2,
+    1,
+    0
+   ],
+   "elite": true,
+   "boss": "sir-strawman",
+   "events": [
+    "golden-scarab"
+   ]
+  },
+  {
+   "step": 8,
+   "minEnemies": 165,
+   "maxEnemies": 250,
+   "interval": 0.42,
+   "batch": 6,
+   "tiers": [
+    0,
+    1,
+    2,
+    1,
+    0
+   ],
+   "boss": "fryer-king",
+   "events": [
+    "fly-swarm",
+    "harvest-moon"
+   ]
+  },
+  {
+   "step": 9,
+   "minEnemies": 185,
+   "maxEnemies": 260,
+   "interval": 0.38,
+   "batch": 7,
+   "tiers": [
+    0,
+    1,
+    1,
+    2,
+    0
+   ],
+   "elite": true,
+   "events": [
+    "bale-ring"
+   ]
+  },
+  {
+   "step": 10,
+   "minEnemies": 210,
+   "maxEnemies": 270,
+   "interval": 0.35,
+   "batch": 7,
+   "tiers": [
+    0,
+    0,
+    2,
+    2,
+    0
+   ],
+   "boss": "great-wireworm",
+   "events": [
+    "golden-scarab"
+   ]
+  },
+  {
+   "step": 11,
+   "minEnemies": 235,
+   "maxEnemies": 280,
+   "interval": 0.32,
+   "batch": 8,
+   "tiers": [
+    0,
+    0,
+    1,
+    2,
+    0
+   ],
+   "elite": true,
+   "events": [
+    "fly-swarm"
+   ]
+  },
+  {
+   "step": 12,
+   "minEnemies": 260,
+   "maxEnemies": 290,
+   "interval": 0.3,
+   "batch": 8,
+   "tiers": [
+    0,
+    0,
+    1,
+    2,
+    0
+   ],
+   "boss": "the-mandoline"
+  },
+  {
+   "step": 13,
+   "minEnemies": 285,
+   "maxEnemies": 300,
+   "interval": 0.28,
+   "batch": 9,
+   "tiers": [
+    0,
+    0,
+    1,
+    2,
+    0
+   ],
+   "elite": true,
+   "events": [
+    "bale-ring"
+   ]
+  },
+  {
+   "step": 14,
+   "minEnemies": 305,
+   "maxEnemies": 320,
+   "interval": 0.26,
+   "batch": 9,
+   "tiers": [
+    0,
+    0,
+    1,
+    4,
+    1
+   ],
+   "boss": "deep-freezer",
+   "events": [
+    "golden-scarab"
+   ]
+  },
+  {
+   "step": 15,
+   "minEnemies": 330,
+   "maxEnemies": 350,
+   "interval": 0.24,
+   "batch": 10,
+   "tiers": [
+    0,
+    0,
+    0,
+    2,
+    1
+   ],
+   "elite": true,
+   "events": [
+    "fly-swarm",
+    "harvest-moon"
+   ]
+  },
+  {
+   "step": 16,
+   "minEnemies": 360,
+   "maxEnemies": 380,
+   "interval": 0.22,
+   "batch": 10,
+   "tiers": [
+    0,
+    0,
+    0,
+    1,
+    1
+   ],
+   "boss": "grater-golem",
+   "events": [
+    "bale-ring"
+   ]
+  },
+  {
+   "step": 17,
+   "minEnemies": 390,
+   "maxEnemies": 420,
+   "interval": 0.2,
+   "batch": 11,
+   "tiers": [
+    0,
+    0,
+    0,
+    1,
+    2
+   ],
+   "elite": true,
+   "boss": "compost-titan",
+   "events": [
+    "golden-scarab"
+   ]
+  },
+  {
+   "step": 18,
+   "minEnemies": 420,
+   "maxEnemies": 450,
+   "interval": 0.18,
+   "batch": 12,
+   "tiers": [
+    0,
+    0,
+    0,
+    1,
+    3
+   ],
+   "boss": "ketchup-kraken",
+   "events": [
+    "fly-swarm"
+   ]
+  },
+  {
+   "step": 19,
+   "minEnemies": 450,
+   "maxEnemies": 480,
+   "interval": 0.16,
+   "batch": 12,
+   "tiers": [
+    0,
+    0,
+    0,
+    0,
+    1
+   ],
+   "elite": true,
+   "events": [
+    "bale-ring"
+   ]
+  },
+  {
+   "step": 20,
+   "minEnemies": 480,
+   "maxEnemies": 500,
+   "interval": 0.14,
+   "batch": 14,
+   "tiers": [
+    0,
+    0,
+    0,
+    0,
+    1
+   ],
+   "boss": "harvester",
+   "events": [
+    "fly-swarm"
+   ]
+  }
+ ],
+ "intro-shared.M": {
+  "scorching": 1,
+  "rimed": 2,
+  "snaring": 4,
+  "tugging": 8
+ },
+ "intro-shared.N": [
+  "scorching",
+  "rimed",
+  "snaring",
+  "tugging"
+ ],
+ "intro-shared.Nt": {
+  "rows": [
+   {
+    "step": 0,
+    "minEnemies": 34,
+    "maxEnemies": 35,
+    "interval": 0.75,
+    "batch": 3,
+    "tiers": [
+     8,
+     1,
+     0,
+     0,
+     0
+    ]
+   },
+   {
+    "step": 1,
+    "minEnemies": 75,
+    "maxEnemies": 100,
+    "interval": 0.6,
+    "batch": 5,
+    "tiers": [
+     2,
+     2,
+     0,
+     0,
+     0
+    ],
+    "elite": true
+   },
+   {
+    "step": 2,
+    "minEnemies": 75,
+    "maxEnemies": 100,
+    "interval": 0.65,
+    "batch": 4,
+    "tiers": [
+     2,
+     1,
+     0,
+     0,
+     0
+    ],
+    "boss": "amusing",
+    "events": [
+     "fly-swarm"
+    ]
+   },
+   {
+    "step": 3,
+    "minEnemies": 90,
+    "maxEnemies": 150,
+    "interval": 0.6,
+    "batch": 5,
+    "tiers": [
+     1,
+     2,
+     0,
+     0,
+     0
+    ],
+    "elite": true,
+    "boss": "beetle-queen",
+    "events": [
+     "golden-scarab"
+    ]
+   },
+   {
+    "step": 4,
+    "minEnemies": 85,
+    "maxEnemies": 150,
+    "interval": 0.6,
+    "batch": 4,
+    "tiers": [
+     1,
+     2,
+     1,
+     0,
+     0
+    ],
+    "boss": "the-masher"
+   },
+   {
+    "step": 5,
+    "minEnemies": 105,
+    "maxEnemies": 165,
+    "interval": 0.55,
+    "batch": 5,
+    "tiers": [
+     1,
+     2,
+     1,
+     0,
+     0
+    ],
+    "elite": true,
+    "events": [
+     "fly-swarm"
+    ]
+   },
+   {
+    "step": 6,
+    "minEnemies": 125,
+    "maxEnemies": 180,
+    "interval": 0.5,
+    "batch": 5,
+    "tiers": [
+     1,
+     1,
+     2,
+     0,
+     0
+    ],
+    "boss": "late-blight",
+    "events": [
+     "bale-ring"
+    ]
+   },
+   {
+    "step": 7,
+    "minEnemies": 145,
+    "maxEnemies": 240,
+    "interval": 0.45,
+    "batch": 6,
+    "tiers": [
+     0,
+     1,
+     2,
+     1,
+     0
+    ],
+    "elite": true,
+    "boss": "sir-strawman",
+    "events": [
+     "golden-scarab"
+    ]
+   },
+   {
+    "step": 8,
+    "minEnemies": 165,
+    "maxEnemies": 250,
+    "interval": 0.42,
+    "batch": 6,
+    "tiers": [
+     0,
+     1,
+     2,
+     1,
+     0
+    ],
+    "boss": "fryer-king",
+    "events": [
+     "fly-swarm",
+     "harvest-moon"
+    ]
+   },
+   {
+    "step": 9,
+    "minEnemies": 185,
+    "maxEnemies": 260,
+    "interval": 0.38,
+    "batch": 7,
+    "tiers": [
+     0,
+     1,
+     1,
+     2,
+     0
+    ],
+    "elite": true,
+    "events": [
+     "bale-ring"
+    ]
+   },
+   {
+    "step": 10,
+    "minEnemies": 210,
+    "maxEnemies": 270,
+    "interval": 0.35,
+    "batch": 7,
+    "tiers": [
+     0,
+     0,
+     2,
+     2,
+     0
+    ],
+    "boss": "great-wireworm",
+    "events": [
+     "golden-scarab"
+    ]
+   },
+   {
+    "step": 11,
+    "minEnemies": 235,
+    "maxEnemies": 280,
+    "interval": 0.32,
+    "batch": 8,
+    "tiers": [
+     0,
+     0,
+     1,
+     2,
+     0
+    ],
+    "elite": true,
+    "events": [
+     "fly-swarm"
+    ]
+   },
+   {
+    "step": 12,
+    "minEnemies": 260,
+    "maxEnemies": 290,
+    "interval": 0.3,
+    "batch": 8,
+    "tiers": [
+     0,
+     0,
+     1,
+     2,
+     0
+    ],
+    "boss": "the-mandoline"
+   },
+   {
+    "step": 13,
+    "minEnemies": 285,
+    "maxEnemies": 300,
+    "interval": 0.28,
+    "batch": 9,
+    "tiers": [
+     0,
+     0,
+     1,
+     2,
+     0
+    ],
+    "elite": true,
+    "events": [
+     "bale-ring"
+    ]
+   },
+   {
+    "step": 14,
+    "minEnemies": 305,
+    "maxEnemies": 320,
+    "interval": 0.26,
+    "batch": 9,
+    "tiers": [
+     0,
+     0,
+     1,
+     4,
+     1
+    ],
+    "boss": "deep-freezer",
+    "events": [
+     "golden-scarab"
+    ]
+   },
+   {
+    "step": 15,
+    "minEnemies": 330,
+    "maxEnemies": 350,
+    "interval": 0.24,
+    "batch": 10,
+    "tiers": [
+     0,
+     0,
+     0,
+     2,
+     1
+    ],
+    "elite": true,
+    "events": [
+     "fly-swarm",
+     "harvest-moon"
+    ]
+   },
+   {
+    "step": 16,
+    "minEnemies": 360,
+    "maxEnemies": 380,
+    "interval": 0.22,
+    "batch": 10,
+    "tiers": [
+     0,
+     0,
+     0,
+     1,
+     1
+    ],
+    "boss": "grater-golem",
+    "events": [
+     "bale-ring"
+    ]
+   },
+   {
+    "step": 17,
+    "minEnemies": 390,
+    "maxEnemies": 420,
+    "interval": 0.2,
+    "batch": 11,
+    "tiers": [
+     0,
+     0,
+     0,
+     1,
+     2
+    ],
+    "elite": true,
+    "boss": "compost-titan",
+    "events": [
+     "golden-scarab"
+    ]
+   },
+   {
+    "step": 18,
+    "minEnemies": 420,
+    "maxEnemies": 450,
+    "interval": 0.18,
+    "batch": 12,
+    "tiers": [
+     0,
+     0,
+     0,
+     1,
+     3
+    ],
+    "boss": "ketchup-kraken",
+    "events": [
+     "fly-swarm"
+    ]
+   },
+   {
+    "step": 19,
+    "minEnemies": 450,
+    "maxEnemies": 480,
+    "interval": 0.16,
+    "batch": 12,
+    "tiers": [
+     0,
+     0,
+     0,
+     0,
+     1
+    ],
+    "elite": true,
+    "events": [
+     "bale-ring"
+    ]
+   },
+   {
+    "step": 20,
+    "minEnemies": 480,
+    "maxEnemies": 500,
+    "interval": 0.14,
+    "batch": 14,
+    "tiers": [
+     0,
+     0,
+     0,
+     0,
+     1
+    ],
+    "boss": "harvester",
+    "events": [
+     "fly-swarm"
+    ]
+   }
+  ],
+  "stepSec": 45,
+  "afterLast": "postWin"
+ },
+ "intro-shared.Ot": {
   "easy": {
    "alive": 0.55,
    "floorShare": 0,
@@ -11256,6 +10204,1058 @@
     }
    ],
    "crowd": 1.6
+  }
+ },
+ "intro-shared.Pt": {
+  "rows": [
+   {
+    "step": 0,
+    "minEnemies": 22,
+    "maxEnemies": 35,
+    "interval": 0.75,
+    "batch": 3,
+    "tiers": [
+     8,
+     1,
+     0,
+     0,
+     0
+    ]
+   },
+   {
+    "step": 1,
+    "minEnemies": 32,
+    "maxEnemies": 35,
+    "interval": 0.7,
+    "batch": 3,
+    "tiers": [
+     8,
+     1,
+     0,
+     0,
+     0
+    ],
+    "elite": true
+   },
+   {
+    "step": 2,
+    "minEnemies": 45,
+    "maxEnemies": 100,
+    "interval": 0.65,
+    "batch": 4,
+    "tiers": [
+     5,
+     1,
+     0,
+     0,
+     0
+    ],
+    "boss": "amusing",
+    "events": [
+     "fly-swarm"
+    ]
+   },
+   {
+    "step": 3,
+    "minEnemies": 90,
+    "maxEnemies": 150,
+    "interval": 0.6,
+    "batch": 5,
+    "tiers": [
+     1,
+     2,
+     0,
+     0,
+     0
+    ],
+    "elite": true,
+    "boss": "beetle-queen",
+    "events": [
+     "golden-scarab"
+    ]
+   },
+   {
+    "step": 4,
+    "minEnemies": 85,
+    "maxEnemies": 150,
+    "interval": 0.6,
+    "batch": 4,
+    "tiers": [
+     1,
+     2,
+     1,
+     0,
+     0
+    ],
+    "boss": "the-masher"
+   },
+   {
+    "step": 5,
+    "minEnemies": 105,
+    "maxEnemies": 165,
+    "interval": 0.55,
+    "batch": 5,
+    "tiers": [
+     1,
+     2,
+     1,
+     0,
+     0
+    ],
+    "elite": true,
+    "events": [
+     "fly-swarm"
+    ]
+   },
+   {
+    "step": 6,
+    "minEnemies": 125,
+    "maxEnemies": 180,
+    "interval": 0.5,
+    "batch": 5,
+    "tiers": [
+     1,
+     1,
+     2,
+     0,
+     0
+    ],
+    "boss": "late-blight",
+    "events": [
+     "bale-ring"
+    ]
+   },
+   {
+    "step": 7,
+    "minEnemies": 145,
+    "maxEnemies": 240,
+    "interval": 0.45,
+    "batch": 6,
+    "tiers": [
+     0,
+     1,
+     2,
+     1,
+     0
+    ],
+    "elite": true,
+    "boss": "sir-strawman",
+    "events": [
+     "golden-scarab"
+    ]
+   },
+   {
+    "step": 8,
+    "minEnemies": 165,
+    "maxEnemies": 250,
+    "interval": 0.42,
+    "batch": 6,
+    "tiers": [
+     0,
+     1,
+     2,
+     1,
+     0
+    ],
+    "boss": "fryer-king",
+    "events": [
+     "fly-swarm",
+     "harvest-moon"
+    ]
+   },
+   {
+    "step": 9,
+    "minEnemies": 185,
+    "maxEnemies": 260,
+    "interval": 0.38,
+    "batch": 7,
+    "tiers": [
+     0,
+     1,
+     1,
+     2,
+     0
+    ],
+    "elite": true,
+    "events": [
+     "bale-ring"
+    ]
+   },
+   {
+    "step": 10,
+    "minEnemies": 210,
+    "maxEnemies": 270,
+    "interval": 0.35,
+    "batch": 7,
+    "tiers": [
+     0,
+     0,
+     2,
+     2,
+     0
+    ],
+    "boss": "great-wireworm",
+    "events": [
+     "golden-scarab"
+    ]
+   },
+   {
+    "step": 11,
+    "minEnemies": 235,
+    "maxEnemies": 280,
+    "interval": 0.32,
+    "batch": 8,
+    "tiers": [
+     0,
+     0,
+     1,
+     2,
+     0
+    ],
+    "elite": true,
+    "events": [
+     "fly-swarm"
+    ]
+   },
+   {
+    "step": 12,
+    "minEnemies": 260,
+    "maxEnemies": 290,
+    "interval": 0.3,
+    "batch": 8,
+    "tiers": [
+     0,
+     0,
+     1,
+     2,
+     0
+    ],
+    "boss": "the-mandoline"
+   },
+   {
+    "step": 13,
+    "minEnemies": 285,
+    "maxEnemies": 300,
+    "interval": 0.28,
+    "batch": 9,
+    "tiers": [
+     0,
+     0,
+     1,
+     2,
+     0
+    ],
+    "elite": true,
+    "events": [
+     "bale-ring"
+    ]
+   },
+   {
+    "step": 14,
+    "minEnemies": 305,
+    "maxEnemies": 320,
+    "interval": 0.26,
+    "batch": 9,
+    "tiers": [
+     0,
+     0,
+     1,
+     4,
+     1
+    ],
+    "boss": "deep-freezer",
+    "events": [
+     "golden-scarab"
+    ]
+   },
+   {
+    "step": 15,
+    "minEnemies": 330,
+    "maxEnemies": 350,
+    "interval": 0.24,
+    "batch": 10,
+    "tiers": [
+     0,
+     0,
+     0,
+     2,
+     1
+    ],
+    "elite": true,
+    "events": [
+     "fly-swarm",
+     "harvest-moon"
+    ]
+   },
+   {
+    "step": 16,
+    "minEnemies": 360,
+    "maxEnemies": 380,
+    "interval": 0.22,
+    "batch": 10,
+    "tiers": [
+     0,
+     0,
+     0,
+     1,
+     1
+    ],
+    "boss": "grater-golem",
+    "events": [
+     "bale-ring"
+    ]
+   },
+   {
+    "step": 17,
+    "minEnemies": 390,
+    "maxEnemies": 420,
+    "interval": 0.2,
+    "batch": 11,
+    "tiers": [
+     0,
+     0,
+     0,
+     1,
+     2
+    ],
+    "elite": true,
+    "boss": "compost-titan",
+    "events": [
+     "golden-scarab"
+    ]
+   },
+   {
+    "step": 18,
+    "minEnemies": 420,
+    "maxEnemies": 450,
+    "interval": 0.18,
+    "batch": 12,
+    "tiers": [
+     0,
+     0,
+     0,
+     1,
+     3
+    ],
+    "boss": "ketchup-kraken",
+    "events": [
+     "fly-swarm"
+    ]
+   },
+   {
+    "step": 19,
+    "minEnemies": 450,
+    "maxEnemies": 480,
+    "interval": 0.16,
+    "batch": 12,
+    "tiers": [
+     0,
+     0,
+     0,
+     0,
+     1
+    ],
+    "elite": true,
+    "events": [
+     "bale-ring"
+    ]
+   },
+   {
+    "step": 20,
+    "minEnemies": 480,
+    "maxEnemies": 500,
+    "interval": 0.14,
+    "batch": 14,
+    "tiers": [
+     0,
+     0,
+     0,
+     0,
+     1
+    ],
+    "boss": "harvester",
+    "events": [
+     "fly-swarm"
+    ]
+   }
+  ],
+  "stepSec": 45,
+  "afterLast": "postWin"
+ },
+ "intro-shared.R": {
+  "id": "scorching",
+  "dropSec": 0.2,
+  "dropGap": 6,
+  "lifeSec": 3,
+  "radiusShare": 0.75,
+  "minRadius": 7,
+  "maxRadius": 13,
+  "dpsShare": 0.5,
+  "bootsEveryTicks": 10
+ },
+ "intro-shared.U": {
+  "id": "gilded-magpie",
+  "firstMinSec": 100,
+  "firstMaxSec": 160,
+  "everyMinSec": 210,
+  "everyMaxSec": 300,
+  "busyRetrySec": 6,
+  "lifeSec": 15,
+  "edge": 150,
+  "burstCoins": 16,
+  "burstCoinPerMinute": 1.5,
+  "burstFloorMinutes": 1,
+  "burstSpread": 16,
+  "ink": "#ffd04a"
+ },
+ "intro-shared.W": {
+  "reach": 200,
+  "safeHp": 0.5,
+  "weight": 2,
+  "chaseReach": 40,
+  "shrineWant": 0.5,
+  "shrineReach": 260
+ },
+ "intro-shared._": {
+  "piece": "crown-of-plenty",
+  "effect": {
+   "kind": "extraProjectile",
+   "tags": [
+    "shot"
+   ],
+   "amount": 1
+  }
+ },
+ "intro-shared.b": {
+  "mult": 8,
+  "radius": 16,
+  "radiusPerKind": 6,
+  "windowSec": 1,
+  "cooldownSec": 1,
+  "kindsNeeded": 2,
+  "capPerSec": 6,
+  "botLean": 2,
+  "ink": "#ffe17a"
+ },
+ "intro-shared.ct": {
+  "id": "volt-pylon",
+  "radius": 16,
+  "chargeSec": 0.25,
+  "weights": {}
+ },
+ "intro-shared.dt": {
+  "id": "mash-pylon",
+  "radius": 16,
+  "chargeSec": 0.25,
+  "weights": {}
+ },
+ "intro-shared.g": {
+  "piece": "ember-striders",
+  "effect": {
+   "kind": "pierce",
+   "tags": [
+    "shot"
+   ],
+   "amount": 1
+  }
+ },
+ "intro-shared.gt": [
+  {
+   "id": "bog-witch",
+   "tag": "zone",
+   "pieces": [
+    {
+     "slot": "hat",
+     "id": "bog-witch-hat"
+    },
+    {
+     "slot": "chest",
+     "id": "bog-witch-chest"
+    },
+    {
+     "slot": "legs",
+     "id": "bog-witch-legs"
+    }
+   ],
+   "two": {
+    "tag": {
+     "duration": 0.4,
+     "area": 0.15
+    }
+   },
+   "three": {
+    "tag": {
+     "damage": 0.8
+    },
+    "offTagDamage": 0.7,
+    "tradeoff": {
+     "moveSpeed": -0.1
+    }
+   }
+  },
+  {
+   "id": "buccaneer",
+   "tag": "blast",
+   "pieces": [
+    {
+     "slot": "hat",
+     "id": "buccaneer-hat"
+    },
+    {
+     "slot": "chest",
+     "id": "buccaneer-chest"
+    },
+    {
+     "slot": "boots",
+     "id": "buccaneer-boots"
+    }
+   ],
+   "two": {
+    "tag": {
+     "area": 0.25
+    }
+   },
+   "three": {
+    "offers": "tag",
+    "startLevels": 1,
+    "tag": {
+     "damage": 0.4
+    },
+    "tradeoff": {
+     "maxHpPct": -0.1
+    }
+   }
+  },
+  {
+   "id": "fry-cook",
+   "tag": "shot",
+   "pieces": [
+    {
+     "slot": "hat",
+     "id": "fry-cook-hat"
+    },
+    {
+     "slot": "legs",
+     "id": "fry-cook-legs"
+    },
+    {
+     "slot": "boots",
+     "id": "fry-cook-boots"
+    }
+   ],
+   "two": {
+    "tag": {
+     "amount": 1
+    }
+   },
+   "three": {
+    "offers": "tag",
+    "startLevels": 1,
+    "tag": {
+     "damage": 0.55,
+     "pierce": 2
+    },
+    "tradeoff": {
+     "maxHpPct": -0.15
+    }
+   }
+  },
+  {
+   "id": "iron-skillet",
+   "tag": "melee",
+   "pieces": [
+    {
+     "slot": "hat",
+     "id": "iron-skillet-hat"
+    },
+    {
+     "slot": "chest",
+     "id": "iron-skillet-chest"
+    },
+    {
+     "slot": "legs",
+     "id": "iron-skillet-legs"
+    }
+   ],
+   "two": {
+    "tag": {
+     "area": 0.25,
+     "damage": 0.1
+    }
+   },
+   "three": {
+    "offers": "tag",
+    "startLevels": 1,
+    "tag": {
+     "damage": 0.15
+    },
+    "tradeoff": {
+     "moveSpeed": -0.1
+    }
+   }
+  },
+  {
+   "id": "mech-pilot",
+   "pieces": [
+    {
+     "slot": "chest",
+     "id": "mech-pilot-chest"
+    },
+    {
+     "slot": "legs",
+     "id": "mech-pilot-legs"
+    },
+    {
+     "slot": "boots",
+     "id": "mech-pilot-boots"
+    }
+   ],
+   "two": {
+    "tibo": {
+     "moveSpeed": 0.05
+    },
+    "config": {
+     "dashCooldownScale": 0.7
+    }
+   },
+   "three": {
+    "tibo": {
+     "might": 1
+    },
+    "config": {
+     "dashCharges": 2,
+     "dashCooldownScale": 0.6,
+     "dashDistance": 84,
+     "dashMinCooldownSec": 0.6
+    },
+    "tradeoff": {
+     "maxHpPct": -0.1
+    }
+   }
+  },
+  {
+   "id": "pack-ranger",
+   "tag": "summon",
+   "pieces": [
+    {
+     "slot": "hat",
+     "id": "pack-ranger-hat"
+    },
+    {
+     "slot": "legs",
+     "id": "pack-ranger-legs"
+    },
+    {
+     "slot": "boots",
+     "id": "pack-ranger-boots"
+    }
+   ],
+   "two": {
+    "tag": {
+     "amount": 1,
+     "damage": 0.2
+    }
+   },
+   "three": {
+    "tag": {
+     "damage": 0.5
+    },
+    "offTagDamage": 0.85,
+    "config": {
+     "maxPack": 5,
+     "firstDogDistance": 40
+    }
+   }
+  },
+  {
+   "id": "space-farmer",
+   "tag": "orbit",
+   "pieces": [
+    {
+     "slot": "hat",
+     "id": "space-farmer-hat"
+    },
+    {
+     "slot": "chest",
+     "id": "space-farmer-chest"
+    },
+    {
+     "slot": "boots",
+     "id": "space-farmer-boots"
+    }
+   ],
+   "two": {
+    "tag": {
+     "amount": 1
+    }
+   },
+   "three": {
+    "offers": "tag",
+    "startLevels": 1,
+    "tag": {
+     "damage": 0.8,
+     "area": 0.3
+    },
+    "tibo": {
+     "might": 2.2
+    },
+    "tradeoff": {
+     "moveSpeed": -0.1
+    },
+    "bans": "moveSpeed"
+   }
+  },
+  {
+   "id": "storm-sage",
+   "tag": "storm",
+   "pieces": [
+    {
+     "slot": "chest",
+     "id": "storm-sage-chest"
+    },
+    {
+     "slot": "legs",
+     "id": "storm-sage-legs"
+    },
+    {
+     "slot": "boots",
+     "id": "storm-sage-boots"
+    }
+   ],
+   "two": {
+    "tag": {
+     "rate": 0.25
+    }
+   },
+   "three": {
+    "offers": "tag",
+    "startLevels": 2,
+    "tibo": {
+     "might": 0.3
+    },
+    "tag": {
+     "damage": 1.4,
+     "rate": 0.25
+    },
+    "tradeoff": {
+     "moveSpeed": -0.05
+    }
+   }
+  }
+ ],
+ "intro-shared.h": {
+  "piece": "starch-mail",
+  "effect": {
+   "kind": "area",
+   "mult": 1.12
+  }
+ },
+ "intro-shared.ht": [
+  {
+   "id": "bog-witch",
+   "tag": "zone",
+   "pieces": [
+    {
+     "slot": "hat",
+     "id": "bog-witch-hat"
+    },
+    {
+     "slot": "chest",
+     "id": "bog-witch-chest"
+    },
+    {
+     "slot": "legs",
+     "id": "bog-witch-legs"
+    }
+   ],
+   "two": {
+    "tag": {
+     "duration": 0.4,
+     "area": 0.15
+    }
+   },
+   "three": {
+    "tag": {
+     "damage": 0.8
+    },
+    "offTagDamage": 0.7,
+    "tradeoff": {
+     "moveSpeed": -0.1
+    }
+   }
+  },
+  {
+   "id": "buccaneer",
+   "tag": "blast",
+   "pieces": [
+    {
+     "slot": "hat",
+     "id": "buccaneer-hat"
+    },
+    {
+     "slot": "chest",
+     "id": "buccaneer-chest"
+    },
+    {
+     "slot": "boots",
+     "id": "buccaneer-boots"
+    }
+   ],
+   "two": {
+    "tag": {
+     "area": 0.25
+    }
+   },
+   "three": {
+    "offers": "tag",
+    "startLevels": 1,
+    "tag": {
+     "damage": 0.4
+    },
+    "tradeoff": {
+     "maxHpPct": -0.1
+    }
+   }
+  },
+  {
+   "id": "fry-cook",
+   "tag": "shot",
+   "pieces": [
+    {
+     "slot": "hat",
+     "id": "fry-cook-hat"
+    },
+    {
+     "slot": "legs",
+     "id": "fry-cook-legs"
+    },
+    {
+     "slot": "boots",
+     "id": "fry-cook-boots"
+    }
+   ],
+   "two": {
+    "tag": {
+     "amount": 1
+    }
+   },
+   "three": {
+    "offers": "tag",
+    "startLevels": 1,
+    "tag": {
+     "damage": 0.55,
+     "pierce": 2
+    },
+    "tradeoff": {
+     "maxHpPct": -0.15
+    }
+   }
+  },
+  {
+   "id": "iron-skillet",
+   "tag": "melee",
+   "pieces": [
+    {
+     "slot": "hat",
+     "id": "iron-skillet-hat"
+    },
+    {
+     "slot": "chest",
+     "id": "iron-skillet-chest"
+    },
+    {
+     "slot": "legs",
+     "id": "iron-skillet-legs"
+    }
+   ],
+   "two": {
+    "tag": {
+     "area": 0.25,
+     "damage": 0.1
+    }
+   },
+   "three": {
+    "offers": "tag",
+    "startLevels": 1,
+    "tag": {
+     "damage": 0.15
+    },
+    "tradeoff": {
+     "moveSpeed": -0.1
+    }
+   }
+  },
+  {
+   "id": "mech-pilot",
+   "pieces": [
+    {
+     "slot": "chest",
+     "id": "mech-pilot-chest"
+    },
+    {
+     "slot": "legs",
+     "id": "mech-pilot-legs"
+    },
+    {
+     "slot": "boots",
+     "id": "mech-pilot-boots"
+    }
+   ],
+   "two": {
+    "tibo": {
+     "moveSpeed": 0.05
+    },
+    "config": {
+     "dashCooldownScale": 0.7
+    }
+   },
+   "three": {
+    "tibo": {
+     "might": 1
+    },
+    "config": {
+     "dashCharges": 2,
+     "dashCooldownScale": 0.6,
+     "dashDistance": 84,
+     "dashMinCooldownSec": 0.6
+    },
+    "tradeoff": {
+     "maxHpPct": -0.1
+    }
+   }
+  },
+  {
+   "id": "pack-ranger",
+   "tag": "summon",
+   "pieces": [
+    {
+     "slot": "hat",
+     "id": "pack-ranger-hat"
+    },
+    {
+     "slot": "legs",
+     "id": "pack-ranger-legs"
+    },
+    {
+     "slot": "boots",
+     "id": "pack-ranger-boots"
+    }
+   ],
+   "two": {
+    "tag": {
+     "amount": 1,
+     "damage": 0.2
+    }
+   },
+   "three": {
+    "tag": {
+     "damage": 0.5
+    },
+    "offTagDamage": 0.85,
+    "config": {
+     "maxPack": 5,
+     "firstDogDistance": 40
+    }
+   }
+  },
+  {
+   "id": "space-farmer",
+   "tag": "orbit",
+   "pieces": [
+    {
+     "slot": "hat",
+     "id": "space-farmer-hat"
+    },
+    {
+     "slot": "chest",
+     "id": "space-farmer-chest"
+    },
+    {
+     "slot": "boots",
+     "id": "space-farmer-boots"
+    }
+   ],
+   "two": {
+    "tag": {
+     "amount": 1
+    }
+   },
+   "three": {
+    "offers": "tag",
+    "startLevels": 1,
+    "tag": {
+     "damage": 0.8,
+     "area": 0.3
+    },
+    "tibo": {
+     "might": 2.2
+    },
+    "tradeoff": {
+     "moveSpeed": -0.1
+    },
+    "bans": "moveSpeed"
+   }
+  },
+  {
+   "id": "storm-sage",
+   "tag": "storm",
+   "pieces": [
+    {
+     "slot": "chest",
+     "id": "storm-sage-chest"
+    },
+    {
+     "slot": "legs",
+     "id": "storm-sage-legs"
+    },
+    {
+     "slot": "boots",
+     "id": "storm-sage-boots"
+    }
+   ],
+   "two": {
+    "tag": {
+     "rate": 0.25
+    }
+   },
+   "three": {
+    "offers": "tag",
+    "startLevels": 2,
+    "tibo": {
+     "might": 0.3
+    },
+    "tag": {
+     "damage": 1.4,
+     "rate": 0.25
+    },
+    "tradeoff": {
+     "moveSpeed": -0.05
+    }
+   }
+  }
+ ],
+ "intro-shared.j": {
+  "easy": 1,
+  "normal": 1,
+  "hard": 2,
+  "nightmare": 3
+ },
+ "intro-shared.k": {
+  "mash": {
+   "damageMult": 3,
+   "areaMult": 1.6
+  },
+  "aura": {
+   "everySec": 0.5,
+   "radius": 56
+  },
+  "volt": {
+   "zapsPerSec": 20,
+   "radius": 170,
+   "jumps": 2,
+   "jumpRadius": 60,
+   "eliteHpFraction": 0.06,
+   "bossHpFraction": 0.004
   }
  },
  "intro-shared.lt": {
