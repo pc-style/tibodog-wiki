@@ -1,8 +1,8 @@
 {
  "schema": 1,
  "game": {
-  "version": "3b11537",
-  "commit": "3b11537929a386bfaf8f0524bc084dc5172ddb82"
+  "version": "75075fe",
+  "commit": "75075fefcff21200e58e9d16b32df7d9b7511435"
  },
  "simVersion": "df0e6168e3ba1f8b",
  "locales": [
@@ -1407,6 +1407,10 @@
     },
     "fuse-totem": {
      "name": "Fuse Totem"
+    },
+    "gilded-magpie": {
+     "name": "Gilded Magpie",
+     "where": "Flies in at the screen edge before 3:00 and every few minutes after. A Thief's Shrine calls three."
     }
    },
    "boss": {
@@ -2375,6 +2379,11 @@
     "mash-pylon": {
      "name": "Mash Pylon",
      "desc": "Reach it before it sinks: your hits deal triple damage and grow bigger for 30 s."
+    },
+    "thiefs-shrine": {
+     "name": "Thief's Shrine",
+     "desc": "Charge it to call three Gilded Magpies. Catch them before they fly off with their gold.",
+     "where": "Rises beside you in the first seconds of a run, and twice more later."
     },
     "volt-pylon": {
      "name": "Volt Pylon",
@@ -3621,6 +3630,10 @@
     },
     "fuse-totem": {
      "name": "引信图腾"
+    },
+    "gilded-magpie": {
+     "name": "镀金喜鹊",
+     "where": "3:00 前从屏幕边缘飞来，之后每隔几分钟出现。窃贼神龛会召来三只。"
     }
    },
    "boss": {
@@ -4589,6 +4602,11 @@
     "mash-pylon": {
      "name": "薯泥塔",
      "desc": "在它沉下前赶到：30 秒内你的攻击造成三倍伤害并变大。"
+    },
+    "thiefs-shrine": {
+     "name": "窃贼神龛",
+     "desc": "充能后召来三只镀金喜鹊。趁它们带着金币飞走前抓住它们。",
+     "where": "在一局开始的头几秒出现在你身边，之后还会出现两次。"
     },
     "volt-pylon": {
      "name": "电压塔",
@@ -5835,6 +5853,10 @@
     },
     "fuse-totem": {
      "name": "引信圖騰"
+    },
+    "gilded-magpie": {
+     "name": "鍍金喜鵲",
+     "where": "3:00 前從螢幕邊緣飛來，之後每隔幾分鐘出現。竊賊神龕會召來三隻。"
     }
    },
    "boss": {
@@ -6803,6 +6825,11 @@
     "mash-pylon": {
      "name": "薯泥塔",
      "desc": "在它沉下前趕到：30 秒內你的攻擊造成三倍傷害並變大。"
+    },
+    "thiefs-shrine": {
+     "name": "竊賊神龕",
+     "desc": "充能後召來三隻鍍金喜鵲。趁牠們帶著金幣飛走前抓住牠們。",
+     "where": "在一局開始的頭幾秒出現在你身邊，之後還會出現兩次。"
     },
     "volt-pylon": {
      "name": "電壓塔",
@@ -8049,6 +8076,10 @@
     },
     "fuse-totem": {
      "name": "導火線トーテム"
+    },
+    "gilded-magpie": {
+     "name": "黄金カササギ",
+     "where": "3:00までに画面の端から飛んできて、その後も数分ごとに現れる。盗人の祠は3羽呼ぶ。"
     }
    },
    "boss": {
@@ -9017,6 +9048,11 @@
     "mash-pylon": {
      "name": "マッシュの柱",
      "desc": "沈む前にたどり着こう：30秒間、攻撃のダメージが3倍になり大きくなる。"
+    },
+    "thiefs-shrine": {
+     "name": "盗人の祠",
+     "desc": "チャージすると黄金カササギを3羽呼ぶ。ゴールドを持って飛び去る前に捕まえよう。",
+     "where": "プレイの最初の数秒でそばに現れ、そのあともう2回現れる。"
     },
     "volt-pylon": {
      "name": "ボルトの柱",
@@ -10263,6 +10299,10 @@
     },
     "fuse-totem": {
      "name": "도화선 토템"
+    },
+    "gilded-magpie": {
+     "name": "황금 까치",
+     "where": "3:00 전에 화면 가장자리에서 날아오고, 그 뒤로 몇 분마다 나타납니다. 도둑의 제단은 세 마리를 부릅니다."
     }
    },
    "boss": {
@@ -11231,6 +11271,11 @@
     "mash-pylon": {
      "name": "매시 기둥",
      "desc": "가라앉기 전에 도착하세요: 30초 동안 공격이 3배 피해를 주고 커집니다."
+    },
+    "thiefs-shrine": {
+     "name": "도둑의 제단",
+     "desc": "충전하면 황금 까치 세 마리를 부릅니다. 골드를 들고 날아가기 전에 잡으십시오.",
+     "where": "판이 시작되고 몇 초 안에 곁에 나타나고, 나중에 두 번 더 나타납니다."
     },
     "volt-pylon": {
      "name": "볼트 기둥",
@@ -12477,6 +12522,10 @@
     },
     "fuse-totem": {
      "name": "Tótem de mecha"
+    },
+    "gilded-magpie": {
+     "name": "Urraca dorada",
+     "where": "Llega volando por el borde de la pantalla antes de las 3:00 y cada pocos minutos después. Un Santuario del ladrón llama a tres."
     }
    },
    "boss": {
@@ -13445,6 +13494,11 @@
     "mash-pylon": {
      "name": "Pilón de puré",
      "desc": "Llega antes de que se hunda: tus golpes hacen el triple de daño y crecen durante 30 s."
+    },
+    "thiefs-shrine": {
+     "name": "Santuario del ladrón",
+     "desc": "Cárgalo para llamar a tres Urracas doradas. Atrápalas antes de que se vayan volando con su oro.",
+     "where": "Aparece a tu lado en los primeros segundos de la partida, y dos veces más después."
     },
     "volt-pylon": {
      "name": "Pilón voltio",
@@ -14691,6 +14745,10 @@
     },
     "fuse-totem": {
      "name": "फ़्यूज़ टोटेम"
+    },
+    "gilded-magpie": {
+     "name": "सुनहरा मैगपाई",
+     "where": "3:00 से पहले स्क्रीन के किनारे से उड़कर आता है, फिर हर कुछ मिनट में। चोर की वेदी तीन बुलाती है।"
     }
    },
    "boss": {
@@ -15659,6 +15717,11 @@
     "mash-pylon": {
      "name": "मैश पायलन",
      "desc": "डूबने से पहले पहुँचें: 30 से॰ तक आपके वार तिगुना नुकसान करते हैं और बड़े हो जाते हैं।"
+    },
+    "thiefs-shrine": {
+     "name": "चोर की वेदी",
+     "desc": "इसे चार्ज करके तीन सुनहरे मैगपाई बुलाएँ। गोल्ड लेकर उड़ने से पहले उन्हें पकड़ें।",
+     "where": "राउंड के पहले कुछ सेकंड में आपके पास उभरती है, और बाद में दो बार और।"
     },
     "volt-pylon": {
      "name": "वोल्ट पायलन",
@@ -16905,6 +16968,10 @@
     },
     "fuse-totem": {
      "name": "Zündtotem"
+    },
+    "gilded-magpie": {
+     "name": "Goldelster",
+     "where": "Fliegt vor 3:00 am Bildschirmrand herein und danach alle paar Minuten. Ein Diebesschrein ruft drei."
     }
    },
    "boss": {
@@ -17873,6 +17940,11 @@
     "mash-pylon": {
      "name": "Brei-Pylon",
      "desc": "Erreiche ihn, bevor er versinkt: Deine Treffer verursachen 30 s lang dreifachen Schaden und werden größer."
+    },
+    "thiefs-shrine": {
+     "name": "Diebesschrein",
+     "desc": "Lade ihn auf, um drei Goldelstern zu rufen. Fang sie, bevor sie mit ihrem Gold davonfliegen.",
+     "where": "Erscheint in den ersten Sekunden einer Runde neben dir und später noch zweimal."
     },
     "volt-pylon": {
      "name": "Volt-Pylon",
@@ -19119,6 +19191,10 @@
     },
     "fuse-totem": {
      "name": "Totem à mèche"
+    },
+    "gilded-magpie": {
+     "name": "Pie dorée",
+     "where": "Arrive en volant par le bord de l'écran avant 3:00, puis toutes les quelques minutes. Un Autel du voleur en appelle trois."
     }
    },
    "boss": {
@@ -20087,6 +20163,11 @@
     "mash-pylon": {
      "name": "Pylône purée",
      "desc": "Atteins-le avant qu'il s'enfonce : tes coups infligent le triple de dégâts et grossissent pendant 30 s."
+    },
+    "thiefs-shrine": {
+     "name": "Autel du voleur",
+     "desc": "Charge-le pour appeler trois Pies dorées. Attrape-les avant qu'elles s'envolent avec leur or.",
+     "where": "Apparaît près de toi dans les premières secondes d'une partie, et deux autres fois plus tard."
     },
     "volt-pylon": {
      "name": "Pylône volt",
@@ -21333,6 +21414,10 @@
     },
     "fuse-totem": {
      "name": "Totem-pavio"
+    },
+    "gilded-magpie": {
+     "name": "Pega dourada",
+     "where": "Chega voando pela borda da tela antes de 3:00 e a cada poucos minutos depois. Um Santuário do ladrão chama três."
     }
    },
    "boss": {
@@ -22301,6 +22386,11 @@
     "mash-pylon": {
      "name": "Pilar de Purê",
      "desc": "Alcance antes que afunde: seus golpes causam dano triplo e ficam maiores por 30 s."
+    },
+    "thiefs-shrine": {
+     "name": "Santuário do ladrão",
+     "desc": "Carregue para chamar três Pegas douradas. Pegue-as antes que voem embora com o ouro.",
+     "where": "Surge ao seu lado nos primeiros segundos da partida, e mais duas vezes depois."
     },
     "volt-pylon": {
      "name": "Pilar Volt",
@@ -23547,6 +23637,10 @@
     },
     "fuse-totem": {
      "name": "Fitilli Totem"
+    },
+    "gilded-magpie": {
+     "name": "Yaldızlı Saksağan",
+     "where": "3:00'ten önce ekranın kenarından uçarak gelir, sonra birkaç dakikada bir. Hırsız Sunağı üç tane çağırır."
     }
    },
    "boss": {
@@ -24515,6 +24609,11 @@
     "mash-pylon": {
      "name": "Püre Pilonu",
      "desc": "Batmadan ulaş: vuruşların 30 sn boyunca üç kat hasar verir ve büyür."
+    },
+    "thiefs-shrine": {
+     "name": "Hırsız Sunağı",
+     "desc": "Üç Yaldızlı Saksağan çağırmak için doldur. Altınlarıyla uçup gitmeden yakala.",
+     "where": "Turun ilk saniyelerinde yanında belirir, sonra iki kez daha."
     },
     "volt-pylon": {
      "name": "Volt Pilonu",
@@ -25761,6 +25860,10 @@
     },
     "fuse-totem": {
      "name": "Totem Sumbu"
+    },
+    "gilded-magpie": {
+     "name": "Murai Emas",
+     "where": "Terbang masuk dari tepi layar sebelum 3:00 dan setiap beberapa menit setelahnya. Kuil Pencuri memanggil tiga."
     }
    },
    "boss": {
@@ -26729,6 +26832,11 @@
     "mash-pylon": {
      "name": "Pilon Tumbuk",
      "desc": "Capai sebelum tenggelam: seranganmu memberi tiga kali kerusakan dan membesar selama 30 dtk."
+    },
+    "thiefs-shrine": {
+     "name": "Kuil Pencuri",
+     "desc": "Isi dayanya untuk memanggil tiga Murai Emas. Tangkap sebelum mereka terbang membawa emasnya.",
+     "where": "Muncul di sampingmu pada detik-detik awal ronde, lalu dua kali lagi nanti."
     },
     "volt-pylon": {
      "name": "Pilon Volt",
@@ -27975,6 +28083,10 @@
     },
     "fuse-totem": {
      "name": "Тотем с фитилём"
+    },
+    "gilded-magpie": {
+     "name": "Золотая сорока",
+     "where": "Прилетает с края экрана до 3:00 и потом каждые несколько минут. Алтарь вора зовёт трёх."
     }
    },
    "boss": {
@@ -28943,6 +29055,11 @@
     "mash-pylon": {
      "name": "Пюре-пилон",
      "desc": "Успей, пока он не ушёл под землю: твои удары наносят тройной урон и становятся больше на 30 с."
+    },
+    "thiefs-shrine": {
+     "name": "Алтарь вора",
+     "desc": "Заряди его, чтобы позвать трёх золотых сорок. Поймай их, пока они не улетели с золотом.",
+     "where": "Появляется рядом с тобой в первые секунды забега и ещё дважды позже."
     },
     "volt-pylon": {
      "name": "Вольт-пилон",
@@ -30189,6 +30306,10 @@
     },
     "fuse-totem": {
      "name": "Totem Sumbu"
+    },
+    "gilded-magpie": {
+     "name": "Murai Emas",
+     "where": "Terbang masuk dari tepi skrin sebelum 3:00 dan setiap beberapa minit selepas itu. Kuil Pencuri memanggil tiga."
     }
    },
    "boss": {
@@ -31157,6 +31278,11 @@
     "mash-pylon": {
      "name": "Pilon Lecek",
      "desc": "Sampai sebelum ia tenggelam: pukulan anda memberi kerosakan tiga kali ganda dan membesar selama 30 s."
+    },
+    "thiefs-shrine": {
+     "name": "Kuil Pencuri",
+     "desc": "Cas untuk memanggil tiga Murai Emas. Tangkap sebelum ia terbang membawa emasnya.",
+     "where": "Muncul di sebelah anda pada saat-saat awal pusingan, dan dua kali lagi kemudian."
     },
     "volt-pylon": {
      "name": "Pilon Volt",
@@ -32403,6 +32529,10 @@
     },
     "fuse-totem": {
      "name": "Totem na Mitsa"
+    },
+    "gilded-magpie": {
+     "name": "Gintong Magpie",
+     "where": "Lumilipad mula sa gilid ng screen bago mag-3:00 at bawat ilang minuto pagkatapos. Tatlo ang tinatawag ng Dambana ng Magnanakaw."
     }
    },
    "boss": {
@@ -33371,6 +33501,11 @@
     "mash-pylon": {
      "name": "Mash Pylon",
      "desc": "Abutin bago lumubog: triple ang damage ng mga tama mo at lumalaki ang mga ito nang 30 s."
+    },
+    "thiefs-shrine": {
+     "name": "Dambana ng Magnanakaw",
+     "desc": "I-charge ito para tumawag ng tatlong Gintong Magpie. Hulihin sila bago lumipad palayo dala ang gold nila.",
+     "where": "Lumilitaw sa tabi mo sa mga unang segundo ng run, at dalawang beses pa mamaya."
     },
     "volt-pylon": {
      "name": "Volt Pylon",
@@ -34617,6 +34752,10 @@
     },
     "fuse-totem": {
      "name": "फ्यूज टोटेम"
+    },
+    "gilded-magpie": {
+     "name": "सोनेरी मॅगपाय",
+     "where": "3:00 आधी स्क्रीनच्या कडेने उडत येतो, नंतर दर काही मिनिटांनी. चोराचा देव्हारा तीन बोलावतो."
     }
    },
    "boss": {
@@ -35585,6 +35724,11 @@
     "mash-pylon": {
      "name": "मॅश पायलन",
      "desc": "बुडण्यापूर्वी पोहोचा: 30 सेकंद आपले वार तिप्पट नुकसान करतात आणि मोठे होतात."
+    },
+    "thiefs-shrine": {
+     "name": "चोराचा देव्हारा",
+     "desc": "चार्ज करून तीन सोनेरी मॅगपाय बोलवा. गोल्ड घेऊन उडून जाण्यापूर्वी त्यांना पकडा.",
+     "where": "फेरीच्या पहिल्या काही सेकंदांत आपल्याजवळ वर येतो, आणि नंतर आणखी दोनदा."
     },
     "volt-pylon": {
      "name": "व्होल्ट पायलन",
@@ -36831,6 +36975,10 @@
     },
     "fuse-totem": {
      "name": "Totem Ngòi Nổ"
+    },
+    "gilded-magpie": {
+     "name": "Ác Là Vàng",
+     "where": "Bay vào từ mép màn hình trước 3:00 và vài phút một lần sau đó. Miếu Kẻ Trộm gọi ba con."
     }
    },
    "boss": {
@@ -37799,6 +37947,11 @@
     "mash-pylon": {
      "name": "Trụ Nghiền",
      "desc": "Tới trước khi nó chìm: đòn đánh của bạn gây gấp ba sát thương và to hơn trong 30 giây."
+    },
+    "thiefs-shrine": {
+     "name": "Miếu Kẻ Trộm",
+     "desc": "Nạp đầy để gọi ba con Ác Là Vàng. Bắt chúng trước khi chúng bay đi cùng vàng.",
+     "where": "Hiện ra cạnh bạn trong vài giây đầu của lượt chơi, và thêm hai lần nữa sau đó."
     },
     "volt-pylon": {
      "name": "Trụ Điện",
@@ -39045,6 +39198,10 @@
     },
     "fuse-totem": {
      "name": "ఫ్యూజ్ టోటెమ్"
+    },
+    "gilded-magpie": {
+     "name": "బంగారు మాగ్పై",
+     "where": "3:00 లోపు తెర అంచు నుంచి ఎగిరి వస్తుంది, తర్వాత కొన్ని నిమిషాలకు ఒకసారి. దొంగ గుడి మూడింటిని పిలుస్తుంది."
     }
    },
    "boss": {
@@ -40013,6 +40170,11 @@
     "mash-pylon": {
      "name": "మాష్ పైలాన్",
      "desc": "మునిగే ముందు చేరండి: 30 సె మీ దెబ్బలు మూడు రెట్లు నష్టం చేసి పెద్దవవుతాయి."
+    },
+    "thiefs-shrine": {
+     "name": "దొంగ గుడి",
+     "desc": "దీన్ని ఛార్జ్ చేసి మూడు బంగారు మాగ్పైలను పిలవండి. గోల్డ్ తో ఎగిరిపోయే ముందు పట్టుకోండి.",
+     "where": "రన్ మొదటి కొన్ని సెకన్లలో మీ పక్కన పైకి వస్తుంది, తర్వాత ఇంకో రెండుసార్లు."
     },
     "volt-pylon": {
      "name": "వోల్ట్ పైలాన్",
@@ -41259,6 +41421,10 @@
     },
     "fuse-totem": {
      "name": "திரி டோட்டம்"
+    },
+    "gilded-magpie": {
+     "name": "தங்க மேக்பை",
+     "where": "3:00-க்கு முன் திரையின் ஓரத்திலிருந்து பறந்து வரும், பிறகு சில நிமிடங்களுக்கு ஒருமுறை. திருடன் பீடம் மூன்றை அழைக்கும்."
     }
    },
    "boss": {
@@ -42227,6 +42393,11 @@
     "mash-pylon": {
      "name": "மசியல் தூண்",
      "desc": "மூழ்கும் முன் அடையுங்கள்: 30 வி உங்கள் அடிகள் மும்மடங்கு சேதம் செய்து பெரிதாகும்."
+    },
+    "thiefs-shrine": {
+     "name": "திருடன் பீடம்",
+     "desc": "இதை சார்ஜ் செய்து மூன்று தங்க மேக்பைகளை அழைக்கவும். தங்கத்துடன் பறந்துவிடும் முன் பிடிக்கவும்.",
+     "where": "ஆட்டத்தின் முதல் சில விநாடிகளில் உங்கள் அருகே எழும், பிறகு இன்னும் இருமுறை."
     },
     "volt-pylon": {
      "name": "வோல்ட் தூண்",
@@ -43473,6 +43644,10 @@
     },
     "fuse-totem": {
      "name": "ফিউজ টোটেম"
+    },
+    "gilded-magpie": {
+     "name": "সোনালি ম্যাগপাই",
+     "where": "3:00-এর আগে স্ক্রিনের কিনারা থেকে উড়ে আসে, তারপর কয়েক মিনিট পরপর। চোরের বেদি তিনটিকে ডাকে।"
     }
    },
    "boss": {
@@ -44441,6 +44616,11 @@
     "mash-pylon": {
      "name": "ম্যাশ পাইলন",
      "desc": "ডোবার আগে পৌঁছান: 30 সেকেন্ড আপনার আঘাত তিনগুণ ক্ষতি করে আর বড় হয়।"
+    },
+    "thiefs-shrine": {
+     "name": "চোরের বেদি",
+     "desc": "এটি চার্জ করে তিনটি সোনালি ম্যাগপাই ডাকুন। গোল্ড নিয়ে উড়ে যাওয়ার আগে ধরুন।",
+     "where": "রাউন্ডের প্রথম কয়েক সেকেন্ডে আপনার পাশে ওঠে, পরে আরও দুবার।"
     },
     "volt-pylon": {
      "name": "ভোল্ট পাইলন",
@@ -45687,6 +45867,10 @@
     },
     "fuse-totem": {
      "name": "โทเท็มชนวน"
+    },
+    "gilded-magpie": {
+     "name": "นกสาลิกาทองคำ",
+     "where": "บินเข้ามาจากขอบจอก่อน 3:00 และทุกๆ ไม่กี่นาทีหลังจากนั้น ศาลเจ้าหัวขโมยเรียกมาสามตัว"
     }
    },
    "boss": {
@@ -46655,6 +46839,11 @@
     "mash-pylon": {
      "name": "เสาบด",
      "desc": "ไปให้ถึงก่อนมันจม: การโจมตีของคุณแรงขึ้นสามเท่าและใหญ่ขึ้นเป็นเวลา 30 วิ"
+    },
+    "thiefs-shrine": {
+     "name": "ศาลเจ้าหัวขโมย",
+     "desc": "ชาร์จเพื่อเรียกนกสาลิกาทองคำสามตัว จับให้ได้ก่อนพวกมันบินหนีไปพร้อมทอง",
+     "where": "โผล่ข้างคุณในไม่กี่วินาทีแรกของรอบ และอีกสองครั้งภายหลัง"
     },
     "volt-pylon": {
      "name": "เสาโวลต์",
@@ -47901,6 +48090,10 @@
     },
     "fuse-totem": {
      "name": "Sandar Fiyus"
+    },
+    "gilded-magpie": {
+     "name": "Hankakan Zinariya",
+     "where": "Yana tashi zuwa ciki daga gefen allo kafin 3:00, sannan duk bayan ’yan mintuna. Rumfar Ɓarawo tana kiran guda uku."
     }
    },
    "boss": {
@@ -48869,6 +49062,11 @@
     "mash-pylon": {
      "name": "Ginshiƙin Dakakke",
      "desc": "Isa gare shi kafin ya nutse: bugunka zai yi lahani sau uku kuma ya ƙara girma na daƙiƙa 30."
+    },
+    "thiefs-shrine": {
+     "name": "Rumfar Ɓarawo",
+     "desc": "Caja ta don kiran Hankakan Zinariya guda uku. Kama su kafin su tashi da zinariyarsu.",
+     "where": "Tana bayyana kusa da kai a daƙiƙoƙin farko na zagaye, sannan sau biyu daga baya."
     },
     "volt-pylon": {
      "name": "Ginshiƙin Volt",
@@ -50115,6 +50313,10 @@
     },
     "fuse-totem": {
      "name": "Fuse Totem"
+    },
+    "gilded-magpie": {
+     "name": "Gold Magpie",
+     "where": "E dey fly enter from screen edge before 3:00 and every few minutes after. Thief Shrine dey call three."
     }
    },
    "boss": {
@@ -51083,6 +51285,11 @@
     "mash-pylon": {
      "name": "Mash Pylon",
      "desc": "Reach am before e sink: your hit go do three times damage and grow big for 30 s."
+    },
+    "thiefs-shrine": {
+     "name": "Thief Shrine",
+     "desc": "Charge am make e call three Gold Magpie. Catch dem before dem fly go with dem gold.",
+     "where": "E dey show for your side for di first seconds of di game, and two more times later."
     },
     "volt-pylon": {
      "name": "Volt Pylon",
@@ -52329,6 +52536,10 @@
     },
     "fuse-totem": {
      "name": "طوطم الفتيل"
+    },
+    "gilded-magpie": {
+     "name": "العقعق المذهّب",
+     "where": "يحلّق من حافة الشاشة قبل 3:00 وكل بضع دقائق بعدها. يستدعي مزار اللص ثلاثة منه."
     }
    },
    "boss": {
@@ -53297,6 +53508,11 @@
     "mash-pylon": {
      "name": "عمود الهريس",
      "desc": "اصل إليه قبل أن يغرق: تُحدث ضرباتك ضررًا ثلاثيًا وتكبر لمدة 30 ث."
+    },
+    "thiefs-shrine": {
+     "name": "مزار اللص",
+     "desc": "اشحنه لتستدعي ثلاثة عقاعق مذهّبة. أمسك بها قبل أن تطير بذهبها.",
+     "where": "يظهر بجانبك في الثواني الأولى من الجولة، ومرتين لاحقًا."
     },
     "volt-pylon": {
      "name": "عمود الفولت",
@@ -54543,6 +54759,10 @@
     },
     "fuse-totem": {
      "name": "توتم فتیله‌ای"
+    },
+    "gilded-magpie": {
+     "name": "زاغی طلایی",
+     "where": "پیش از 3:00 با پرواز از لبه‌ی صفحه می‌آید و بعد هر چند دقیقه یک بار. معبد دزد سه تا را فرا می‌خواند."
     }
    },
    "boss": {
@@ -55511,6 +55731,11 @@
     "mash-pylon": {
      "name": "ستون پوره",
      "desc": "پیش از فرو رفتن برس: ضربه‌هایت تا 30 ثانیه سه برابر آسیب می‌زنند و بزرگ‌تر می‌شوند."
+    },
+    "thiefs-shrine": {
+     "name": "معبد دزد",
+     "desc": "شارژش کنید تا سه زاغی طلایی را فرا بخوانید. پیش از آن‌که با طلایشان پرواز کنند بگیریدشان.",
+     "where": "در ثانیه‌های اول هر دور کنار شما ظاهر می‌شود و بعداً دو بار دیگر."
     },
     "volt-pylon": {
      "name": "ستون ولت",
@@ -56757,6 +56982,10 @@
     },
     "fuse-totem": {
      "name": "טוטם פתיל"
+    },
+    "gilded-magpie": {
+     "name": "עקעק מוזהב",
+     "where": "עף פנימה משולי המסך לפני 3:00 ואחר כך כל כמה דקות. מקדש הגנב קורא לשלושה."
     }
    },
    "boss": {
@@ -57725,6 +57954,11 @@
     "mash-pylon": {
      "name": "עמוד מחית",
      "desc": "הגיעו לפני שהוא שוקע: המכות שלכם גורמות נזק משולש וגדלות למשך 30 שנ׳."
+    },
+    "thiefs-shrine": {
+     "name": "מקדש הגנב",
+     "desc": "טענו אותו כדי לקרוא לשלושה עקעקים מוזהבים. תפסו אותם לפני שהם עפים עם הזהב.",
+     "where": "מופיע לידכם בשניות הראשונות של הריצה, ועוד פעמיים מאוחר יותר."
     },
     "volt-pylon": {
      "name": "עמוד וולט",
@@ -58971,6 +59205,10 @@
     },
     "fuse-totem": {
      "name": "فیوز ٹوٹم"
+    },
+    "gilded-magpie": {
+     "name": "سنہرا میگپائی",
+     "where": "3:00 سے پہلے اسکرین کے کنارے سے اڑ کر آتا ہے، پھر ہر چند منٹ بعد۔ چور کا طلسم تین بلاتا ہے۔"
     }
    },
    "boss": {
@@ -59940,6 +60178,11 @@
      "name": "میش پائلن",
      "desc": "ڈوبنے سے پہلے پہنچیں: 30 سیکنڈ تک آپ کے وار تین گنا نقصان کرتے ہیں اور بڑے ہو جاتے ہیں۔"
     },
+    "thiefs-shrine": {
+     "name": "چور کا طلسم",
+     "desc": "اسے چارج کر کے تین سنہرے میگپائی بلائیں۔ سونا لے کر اڑنے سے پہلے انہیں پکڑیں۔",
+     "where": "راؤنڈ کے پہلے چند سیکنڈ میں آپ کے پاس ابھرتا ہے، اور بعد میں دو بار اور۔"
+    },
     "volt-pylon": {
      "name": "وولٹ پائلن",
      "desc": "ڈوبنے سے پہلے پہنچیں: 30 سیکنڈ تک آپ کے آس پاس کے کیڑوں پر بجلی گرتی ہے۔"
@@ -59979,144 +60222,144 @@
  "sources": {
   "index": {
    "url": "https://tibo.dog/data/v1/index.json",
-   "bytes": 18937,
-   "sha256": "821ba142b4f02ae44b9f02268baba6a298b2b9079aadfa4170994b8a11145353"
+   "bytes": 18938,
+   "sha256": "2bb0f59da91423219fad3778dbfd0ffc9dc568da6b1433f810dfc06c83fff450"
   },
   "locales": {
    "en": {
     "url": "https://tibo.dog/data/v1/text/en.json",
-    "bytes": 60486,
-    "sha256": "8e4e7b62fd7ac2d9134d12c5958da02f2664eb600a10098f22e80fb1f2cb5cd9"
+    "bytes": 60855,
+    "sha256": "9821793c4118c86f824a9cdc728fbd578a34407e8a0d55b4018102399d0c730a"
    },
    "zh-CN": {
     "url": "https://tibo.dog/data/v1/text/zh-CN.json",
-    "bytes": 59605,
-    "sha256": "ff70215338dab34bbdc8d52670d8b04cca482b07ee35da4483fa1afeb5affedb"
+    "bytes": 59965,
+    "sha256": "f531983c52aef5f8971847cff7199b71aac747568e1446514f1cee454b6b08b4"
    },
    "zh-TW": {
     "url": "https://tibo.dog/data/v1/text/zh-TW.json",
-    "bytes": 59878,
-    "sha256": "f72ad64c823ac5d91caca3fd2f9244a20366c6e41811a33fe5faf94e77eddee6"
+    "bytes": 60238,
+    "sha256": "1a64c4f541e5bf649da31d8f5a7401efca378095786a4125a96f6a8e19bbb51d"
    },
    "ja": {
     "url": "https://tibo.dog/data/v1/text/ja.json",
-    "bytes": 73022,
-    "sha256": "4b2fa3c07ee9befaf7a2443564b2c390a5af0f9b6c086ed48f7feb9a964e467e"
+    "bytes": 73453,
+    "sha256": "8c657387659d1d4c545fa8da05dda6289200b93c00133c612755a5b3467f0602"
    },
    "ko": {
     "url": "https://tibo.dog/data/v1/text/ko.json",
-    "bytes": 73198,
-    "sha256": "a6241e2a229351a1679e29b3554078ecfc4b80253d3ff94f80e85c2a3c8df3f5"
+    "bytes": 73658,
+    "sha256": "fda62d7f6cf99fc79e4089f41dc0c2a75692386a0c8a78f8a90dd4e1b87472c6"
    },
    "es": {
     "url": "https://tibo.dog/data/v1/text/es.json",
-    "bytes": 68365,
-    "sha256": "ab1a8568b4b302745d87a4c341e282d2f48f667c9f5aae3028c0c1150c9ae284"
+    "bytes": 68797,
+    "sha256": "bbb40fbde2166289b27f3a44f54d5106dbef9c6cdeb9e82684467ca31b5116a2"
    },
    "hi": {
     "url": "https://tibo.dog/data/v1/text/hi.json",
-    "bytes": 126634,
-    "sha256": "02d45b5aead89e03b0a1bba263712e373e6b1a64d43703374bfdd214795ecd21"
+    "bytes": 127409,
+    "sha256": "e12fba404584792326d762141597e92cb0a766a5d688220acd141855ed5ea477"
    },
    "de": {
     "url": "https://tibo.dog/data/v1/text/de.json",
-    "bytes": 67646,
-    "sha256": "f35ae89cde18ad26dea7a9f1fab14376723a0dffc33ad87d444fe8da38d3edf8"
+    "bytes": 68028,
+    "sha256": "399f3e53c7bfa98a431c13a07955513c14d92f68c4088c2c47b73409e0645106"
    },
    "fr": {
     "url": "https://tibo.dog/data/v1/text/fr.json",
-    "bytes": 70960,
-    "sha256": "b3bbd686625b4285e4e7e208920125a551aed2b64f1426b4da4a77e2181da792"
+    "bytes": 71386,
+    "sha256": "52df2c98301c7ec02a2c67adcfd9ae880436e5d3b4fb74ad25b426c5e4076bb4"
    },
    "pt": {
     "url": "https://tibo.dog/data/v1/text/pt.json",
-    "bytes": 66935,
-    "sha256": "81b61864faa67f9f511f40b734a2c12f9b0c535dede02928802d29625daf845c"
+    "bytes": 67334,
+    "sha256": "4daa54bb33d2b52c0098360b133c0b0799bd7a84e11671744dd1f39a1c8d5203"
    },
    "tr": {
     "url": "https://tibo.dog/data/v1/text/tr.json",
-    "bytes": 69446,
-    "sha256": "abdc1d10a2265eab8db462283a5a62425a68a2d7f0413e4d67f3486b75869631"
+    "bytes": 69840,
+    "sha256": "62761a2fe36457c49374cc5a9c44c67703198f88e558b4389b708bff1a2ba336"
    },
    "id": {
     "url": "https://tibo.dog/data/v1/text/id.json",
-    "bytes": 66675,
-    "sha256": "d6d55c4c856507c20c9b2b81d2445a6df63f07b947f4e4c223df6358c71389e3"
+    "bytes": 67060,
+    "sha256": "4b66825fee171095fa1fea2b21feddc38f5038211c200608a3337c7a0faf53d8"
    },
    "ru": {
     "url": "https://tibo.dog/data/v1/text/ru.json",
-    "bytes": 99605,
-    "sha256": "98c3f36b9301ec0dede77725e4509cf57b3347b0575b4ceb05c432338a9573c7"
+    "bytes": 100175,
+    "sha256": "b5be02703302260485300072a0dfc31ffb763e6f912b3f1f6f9dc25b8309fbaf"
    },
    "ms": {
     "url": "https://tibo.dog/data/v1/text/ms.json",
-    "bytes": 68999,
-    "sha256": "b50a0a03fd1daba0bc4982fd620643c5f61b14375e2ffde66aeea330366db26c"
+    "bytes": 69379,
+    "sha256": "e370ca2b1b38616089d3af9a826d15462efa294e9863509a1e3126a35be914fa"
    },
    "fil": {
     "url": "https://tibo.dog/data/v1/text/fil.json",
-    "bytes": 72816,
-    "sha256": "02c0102a69b61eda674cfc661ffc3cdffe5512339762619ccf3aefee8f578e3e"
+    "bytes": 73249,
+    "sha256": "2607c7e963e83a8640598a3a864496360959f80c86f19c1e4423e1dceae90490"
    },
    "mr": {
     "url": "https://tibo.dog/data/v1/text/mr.json",
-    "bytes": 130905,
-    "sha256": "752e0264571cc674cdfc8f52553eae4f7c5f3ff209c147a3c8ded84e6d3947e9"
+    "bytes": 131694,
+    "sha256": "04efcfc9c25cb824303b8dd488a19f48ac9963754a594f331c6e81c333b7ac9f"
    },
    "vi": {
     "url": "https://tibo.dog/data/v1/text/vi.json",
-    "bytes": 73574,
-    "sha256": "cd230268a77e3e181e9af2287363180fd909f79ceaa5b7d25df4d6d8cceeb54d"
+    "bytes": 74009,
+    "sha256": "d15cbaaa75d486e94e5d90510512780079bddc97aaea5084c40bacf6eff99dd3"
    },
    "te": {
     "url": "https://tibo.dog/data/v1/text/te.json",
-    "bytes": 137786,
-    "sha256": "b7ad69d87af436aa728a89a225d71dcff45a386e6f1f8bcab8047a067f118788"
+    "bytes": 138642,
+    "sha256": "05f243317bb7db020515e66624c8724616ff599ca76628cdf411f839049ece92"
    },
    "ta": {
     "url": "https://tibo.dog/data/v1/text/ta.json",
-    "bytes": 150359,
-    "sha256": "c61b6a88fdd2a0a961209a3382badb924cd970415448b56c71c7a4bc51259788"
+    "bytes": 151288,
+    "sha256": "6bacc28f011be55fecfc7bbf7cfdcb0caceffe793c8da7ac110136a522eae0d1"
    },
    "bn": {
     "url": "https://tibo.dog/data/v1/text/bn.json",
-    "bytes": 127618,
-    "sha256": "4d9e8323bf0bf226ffbc8c194a0a626815aa7e434bdde834a2c5d2c749657b1e"
+    "bytes": 128380,
+    "sha256": "bcb6883711b9a69237a1f7da643a7f1cb7aadc94b60f1443713fc41747a05092"
    },
    "th": {
     "url": "https://tibo.dog/data/v1/text/th.json",
-    "bytes": 122966,
-    "sha256": "40944c6fb50d2c5bbecf921c9c2f46280d5e2c26b024be9dc72a4644216975ac"
+    "bytes": 123745,
+    "sha256": "70128800ae7137cdede0cdf80f46f83f86a3e786b63673f5218a84ad5a766312"
    },
    "ha": {
     "url": "https://tibo.dog/data/v1/text/ha.json",
-    "bytes": 69341,
-    "sha256": "1d95280b9240a5e30fac269da03a1512ed1854926566e2af8fc9d10bce80fb53"
+    "bytes": 69744,
+    "sha256": "0de09438cb0fc1a1b13a2b70dc9fc0bb034db0555dff15c02aab6351f621e221"
    },
    "pcm": {
     "url": "https://tibo.dog/data/v1/text/pcm.json",
-    "bytes": 63742,
-    "sha256": "6b73c8d43fd5fa02b11192b98ff8a33c55d2f3c8979cf0ea00444b6e6d634645"
+    "bytes": 64121,
+    "sha256": "abe83396ffc1d1dd44b42b8f487d6f2d97869dc76cb4a75d4f1e0f2c7c6dd13f"
    },
    "ar": {
     "url": "https://tibo.dog/data/v1/text/ar.json",
-    "bytes": 83668,
-    "sha256": "a967ac769fe486fe2411972d45ced754dc36e5615c7f792063b9c65202c6c7bc"
+    "bytes": 84149,
+    "sha256": "78f4d1fd14c2e21733a2b0cd60aa135523922363dc2723e19831f68753391ceb"
    },
    "fa": {
     "url": "https://tibo.dog/data/v1/text/fa.json",
-    "bytes": 98369,
-    "sha256": "1b375e260feb524ce155350fb52d3a87d75ca814094aa6b79d3b60b0990f6f92"
+    "bytes": 98945,
+    "sha256": "ab97a8a389dd5052c58f407b8c117bfbb478ec472f7eccdc0cf71c115a4720f7"
    },
    "he": {
     "url": "https://tibo.dog/data/v1/text/he.json",
-    "bytes": 83279,
-    "sha256": "aff39ad0e3f51357c7fc2515cf2ffa37f8b54799aea5d755d21e4c549697dba7"
+    "bytes": 83775,
+    "sha256": "5c88b727f316a9908390e0d2c4457148a5a4b46286507266274ebdb1d1a414ff"
    },
    "ur": {
     "url": "https://tibo.dog/data/v1/text/ur.json",
-    "bytes": 94665,
-    "sha256": "f6418fe7b4aad93724650dca2e4f995835d3b9d4e162503d5af3fd2b49d8d3df"
+    "bytes": 95222,
+    "sha256": "907866f22a36c415e393b6a86fd702a88fcce7dbbfc4151cc62d11e38e9f9512"
    }
   }
  }

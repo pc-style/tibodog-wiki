@@ -689,6 +689,12 @@
  "content.enemy.garden-slug.name": [
   "Garden Slug"
  ],
+ "content.enemy.gilded-magpie.name": [
+  "Gilded Magpie"
+ ],
+ "content.enemy.gilded-magpie.where": [
+  "Flies in at the screen edge before 3:00 and every few minutes after. A Thief's Shrine calls three."
+ ],
  "content.enemy.golden-scarab.name": [
   "Golden Scarab"
  ],
@@ -2378,6 +2384,15 @@
  ],
  "content.varietyPlace.rowboat.name": [
   "Rowboat"
+ ],
+ "content.varietyPlace.thiefs-shrine.desc": [
+  "Charge it to call three Gilded Magpies. Catch them before they fly off with their gold."
+ ],
+ "content.varietyPlace.thiefs-shrine.name": [
+  "Thief's Shrine"
+ ],
+ "content.varietyPlace.thiefs-shrine.where": [
+  "Rises beside you in the first seconds of a run, and twice more later."
  ],
  "content.varietyPlace.treasure-map.desc": [
   "Read it to mark an X. Dig at the X for a chest."

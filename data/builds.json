@@ -2584,5 +2584,16 @@
   "updated": "2026-11-16T04:03:45Z",
   "changes": "Existing journal notes moved into a dated release group; no gameplay or wording changes.",
   "evidence": "Automatic unchanged next-to-dated proof against main-DOSuScm3.js; all 424 reachable files checked, full/panel browser and official API validated. Original publication timestamps and prior introduction history retained. Proof: .cache/main-DLk00Ai3/journal-proof.json."
+ },
+ {
+  "seen": "2026-11-16",
+  "main": "main-CsYbQ9QV.js",
+  "boot": "boot-DLu-tNM9.js",
+  "sim": "sim-DKo2qdWE.js",
+  "commit": "75075fefcff2",
+  "status": "reviewed",
+  "updated": "2026-11-16T04:50:00Z",
+  "changes": "The opt-in content playtest adds Gilded Magpies and a Thief’s Shrine that calls three. Ordinary enemy and weapon catalogs are unchanged.",
+  "evidence": "DLk→CsY source introduction observed 2026-11-16; no new official journal note or publication timestamp for this addition. Full 424→424 reachable-build/archive/digests, expanded journal/full-page browser and all official API resources checked. Optional enemy/varietyPlace where fields and source-bound enemy localization-only IDs accepted without catalog promotion; red/green regressions retain strict source equality, required English and registered catalogs. Original-engine controls: 36 old/new Standard/Story/Daily content-off/on constructors across mag-a/b/c, Normal; current schedule/placement boundaries, live-Magpie retry, 15-second spawn deadline, shrine calls/capacity, and six direct catch cases (16 pickups at 1.5/4.5 input value). Supplied clocks/pools/activation/catch calls are not natural acquisition, completed shrine charge, full death/drop pipeline, rendering, practical rewards, DPS, server or performance proof. Earlier measurements remain historical; original archive/schema/fixture failures retained. Scope: Secrets and citation relocation only; unchanged ordinary catalogs (69 enemies,144 weapons)."
  }
 ]
