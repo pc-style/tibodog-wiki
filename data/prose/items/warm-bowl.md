@@ -4,8 +4,8 @@ Warm Bowl leaves a healing pool when Tibo finishes charging an activation ring. 
 
 ## How it works
 
-- **Finish the activation.** Both world-POI activations and charged pickup activations call the pool hook. The pool stays at the activated ring's position, with its activation radius plus Tibo's radius. <small>[sim-jaWRJZTO.js: `Rc().charged(e,n.x[t]??0,n.y[t]??0,r)`]</small>
-- **Stand inside to heal.** The edge counts as inside. Healing can start immediately, then repeats once per second; at exactly 10 seconds the pool is expired. Healing is capped at max HP and does not count as eating a snack for [Second Helping](/items/second-helping). <small>[sim-jaWRJZTO.js: `l*l+u*u>r*r||(qd(e,i),n.next[t]=c+LE)`]</small>
+- **Finish the activation.** Both world-POI activations and charged pickup activations call the pool hook. The pool stays at the activated ring's position, with its activation radius plus Tibo's radius. <small>[sim-DjGCECGk.js: `Rc().charged(e,n.x[t]??0,n.y[t]??0,r)`]</small>
+- **Stand inside to heal.** The edge counts as inside. Healing can start immediately, then repeats once per second; at exactly 10 seconds the pool is expired. Healing is capped at max HP and does not count as eating a snack for [Second Helping](/items/second-helping). <small>[sim-DjGCECGk.js: `l*l+u*u>r*r||(qd(e,i),n.next[t]=c+LE)`]</small>
 - **Several pools can coexist.** Each has its own pulse timer. The game stores at most 16, reusing expired slots or replacing the oldest pool when full. Copies increase healing, not duration.
 
 ## Tips

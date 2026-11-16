@@ -2661,5 +2661,16 @@
   "updated": "2026-11-16T20:03:00Z",
   "changes": "Shared gear and playtest settings moved into the simulation, with some constants inlined. Reviewed values and affected consumers retain their rules; source citations now follow their current owners. The official journal is unchanged.",
   "evidence": "BDa→Dm0 source reorganization observed 2026-11-16, not a new journal publication or demonstrated balance change. Programmatic needs-review retained; no classifier/schema/extractor/tool changes. Whole425→425 reachable archive/HTML/full/panel/official API proof,87 changed JS pairs inspected;77 have zero identifier-normalized statement hunks,10 contain relocation/inlining/import/preload/own-commit differences. This screen does not establish import-binding or whole-program semantic equality. All138 retained config exports match exact serialized values across owners;8 former shared wrappers/groups disappear as exports or split into private fields. The reported scalar difficulty→object-map change is a greedy same-module shape match: the scalar map exactly equals current sim.Vo, and extracted complete difficulty tables are equal. Seven scoped original-source AST/literal checks cover affix allocations, Volt hit inputs, pylon stepping, Mash weapon runtime, Scorching patch creation, gear-line rate and inlined Medley selection; moved slots/tier tables also match. These checks preserve literals/properties/control structure after explicit constant substitutions; identifier normalization alone is not a free-binding proof. Scorching numeric-product reordering uses original typed-array radius/damage values; the tick-remainder comparison changes strict to loose inequality against0, with the same numeric result for the engine's numeric ticks. Remaining source review covers moved config/functions/registry refresh registration, bootstrap imports and nine changed preload records, not loading performance, all initialization/error ordering or arbitrary external mutation equivalence. Current pylon/affix citation owners repaired and20 unresolved source quotes disambiguated in their original consumer contexts, including Hydra timing and Fertilizer XP. Full registry/English/difficulty/names/icons/journal and428 prior prose/242 history records preserved; existing behavioral measurements remain historical, with no unchanged gameplay rerun or new natural acquisition/combat/GPU/performance/server proof. Original monitor network archive-recovery failure and bounded successful retry remain distinct. A slow quadratic scratch signature scan was terminated143 and replaced by indexed comparison; an ad hoc null-initializer inspection failed then was corrected. Neither is a passing semantic gate. Broader original workflow audit remains incomplete."
+ },
+ {
+  "seen": "2026-11-16",
+  "main": "main-C1o5Te3S.js",
+  "boot": "boot-ISf8zxwQ.js",
+  "sim": "sim-DjGCECGk.js",
+  "commit": "c05b2bd0106f",
+  "status": "reviewed",
+  "updated": "2026-11-16T20:23:46Z",
+  "changes": "No gameplay changes; a rebuild of the same game.",
+  "evidence": "Automatic whole-build comparison (tools/same-build.mjs): all 425 files reachable from the index.html match main-Dm0TmZt1.js after mapping file hashes and the build's own commit id."
  }
 ]
