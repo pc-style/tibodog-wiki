@@ -21,7 +21,7 @@ const TEXT_FIELDS = {
   poi: ['name', 'desc'], botHelp: ['name', 'desc'], rarity: ['name'],
   shrine: ['label'], dailyWeather: ['name', 'desc'], gear: ['name', 'desc'],
   gearSet: ['name'], varietyPlace: ['name', 'desc', 'where'], setRule: ['label', 'desc'],
-  rune: ['name', 'desc'],
+  rune: ['name', 'desc'], affix: ['name', 'desc', 'where'],
 };
 const fail = (message) => { throw new Error(`official data: ${message}`); };
 const object = (v) => v !== null && typeof v === 'object' && !Array.isArray(v);

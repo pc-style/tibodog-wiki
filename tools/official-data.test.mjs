@@ -307,6 +307,39 @@ test('optional variety-place hints export verbatim only with compiled English eq
   }
 });
 
+test('affix localization exports only known string fields with compiled English equality and no catalog promotion', async () => {
+  const f = fixture();
+  const fields = { name: 'Rimed', desc: 'Bursts after {seconds} s.', where: 'On elites.' };
+  f.rewrite('text/en.json', (doc) => { doc.texts.affix = { rimed: fields }; return doc; });
+  f.rewrite('text/fr.json', (doc) => { doc.texts.affix = { rimed: { name: 'Givré', where: 'Sur les élites.' } }; return doc; });
+  for (const [field, value] of Object.entries(fields)) f.dumped.content[`content.affix.rimed.${field}`] = [value];
+  f.dumped.content['content.affix.rimed.desc'] = ['Bursts after ', ['seconds'], ' s.'];
+  const official = await fetchOfficialData(COMMIT, f);
+  assert.deepEqual(applyOfficialData(f.dumped, official), f.dumped);
+  const exported = localizedTextExport(official, f.dumped);
+  assert.deepEqual(exported.text.en.affix.rimed, fields);
+  assert.equal(exported.text.fr.affix.rimed.name, 'Givré');
+  assert.deepEqual(Object.keys(official.catalogs).sort(), Object.keys(TYPES).sort());
+  for (const value of [undefined, ['Wrong']]) {
+    const dumped = structuredClone(f.dumped);
+    if (value === undefined) delete dumped.content['content.affix.rimed.where'];
+    else dumped.content['content.affix.rimed.where'] = value;
+    assert.throws(() => applyOfficialData(dumped, official), /unmapped English|English mismatch/);
+    assert.throws(() => localizedTextExport(official, dumped), /unmapped English|English mismatch/);
+  }
+  for (const [path, affix] of [
+    ['text/en.json', { rimed: { damage: 'Unknown' } }],
+    ['text/en.json', { rimed: { where: 45 } }],
+    ['text/en.json', { 'bad/id': { name: 'Bad' } }],
+    ['text/fr.json', { unknown: { name: 'Unknown English ID' } }],
+    ['text/fr.json', { sample: { where: 'Missing English field' } }],
+  ]) {
+    const g = fixture();
+    g.rewrite(path, (doc) => { doc.texts.affix = affix; return doc; });
+    await assert.rejects(fetchOfficialData(COMMIT, g), /official data:/);
+  }
+});
+
 test('required catalog or locale HTTP403 fails rather than falling back', async () => {
   for (const path of ['weapons.json', 'text/fr.json']) {
     const f = fixture(); f.forbidden = path;
