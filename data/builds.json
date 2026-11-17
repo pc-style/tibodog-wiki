@@ -2716,5 +2716,16 @@
   "updated": "2026-11-17T06:10:36Z",
   "changes": "The opt-in endgame playtest now offers only Dig. Old Heat/Bounty links fall back according to recognized parts; ordinary endgame phases remain. Pack Lord and Hydra source owners moved, and citations now follow them. The official journal is unchanged.",
   "evidence": "Whole reachable-build comparison: 431→431; sim8hunks, boot normalized0, ordinary registry/English/names and icon pixels unchanged. Original old/new controls: 18query forms,48constructor contexts and9loop-transition groups per build, seeds end-a/b/c, Normal with Story/Daily exclusions. Old Heat/Bounty-only links select those loops; new fall back to all7+Dig; pylons,heat keeps pylons/no loop; heat,dig selects Dig. Direct defined legacy options initialize Dig only in new. Both preserve survival/credit499→500,1/40fill,boss lock,exact60s timeout retaining250,and cleared level2/need800. Supplied clocks/fill/max weapon/pool removals; no natural acquisition, complete death/reward pipeline, fights, renderer, performance or server claim. Four old missing sim config exports exactly match relocated original endgame objects; loop color/reward maps narrow to Dig, Heat/Bounty configs and dispatch/UI consumers removed. Hydra/Pack Lord and ambiguous ordinary citations traced to actual owners. Full current/older journal proof and prior history retained; historical Heat/Bounty evidence labeled rather than erased. Original archive timeout and monitor needs-review receipts remain separate. No classifier/schema/tool change; identifier-normalized screening is not whole-program equivalence."
+ },
+ {
+  "seen": "2026-11-17",
+  "main": "main-gxU8KLI0.js",
+  "boot": "boot-BB75v3OX.js",
+  "sim": "sim-Cs-XuDWj.js",
+  "commit": "60d513628bb3",
+  "status": "reviewed",
+  "updated": "2026-11-17T06:32:48Z",
+  "changes": "Existing journal notes moved into a dated release group; no gameplay or wording changes.",
+  "evidence": "Automatic unchanged next-to-dated proof against main-DsaNAQx7.js; all 431 reachable files checked, full/panel browser and official API validated. Original publication timestamps and prior introduction history retained. Proof: .cache/main-gxU8KLI0/journal-proof.json."
  }
 ]

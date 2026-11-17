@@ -1499,3 +1499,12 @@ Existing journal notes moved from next into a dated release group; no gameplay o
 - impact-frame-clears-level-up (3Xa6U2): original publication 2026-11-15T23:09:53Z; now 2026-11-15/8a10aac. Source introduction remains in prior build history.
 
 Sources: https://tibo.dog/assets/changelog-panel-BYigUdJ8.js SHA-256 0c6d69abb336042db2073b9c102b76d79d177962fcddd94c17422f4cb14c7ace; https://tibo.dog/assets/changelog-panel-apAXRXs3.js SHA-256 cb22124fc9bf62edc15e2a7c2ebd038522db1c6b0f177c8f36bb0feb75368fd3. Prior history SHA-256 f652d995b5586b0c8eeab6c5fbb97bf61e28eed5ccce0db0a10011e559cbf247.
+
+
+## Local journal graduation main-gxU8KLI0.js
+
+Existing journal notes moved from next into a dated release group; no gameplay or note wording changes.
+
+- end-screen-real-level (49vY8J): original publication 2026-11-17T03:01:49Z; now 2026-11-16/c8d7000. Source introduction remains in prior build history.
+
+Sources: https://tibo.dog/assets/changelog-panel-BQOUiNY_.js SHA-256 f62ea08dbd9d9d8c038c1dc9cf2ea6c8996d0d04a45d0674b3768e656d6ed5c4; https://tibo.dog/assets/changelog-panel-BtMaOmkQ.js SHA-256 cdd83db1800ad9979f33cab7d520ecfed83d065b3f3e72e755a33734b87455d8. Prior history SHA-256 d643160d3356d56512ab13585d3dd6c0c911d868a7c4e8a4b5165b16f07f1693.
