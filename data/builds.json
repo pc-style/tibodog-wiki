@@ -2683,5 +2683,16 @@
   "updated": "2026-11-16T21:16:09Z",
   "changes": "No gameplay changes; a rebuild of the same game.",
   "evidence": "Automatic whole-build comparison (tools/same-build.mjs): all 425 files reachable from the index.html match main-C1o5Te3S.js after mapping file hashes and the build's own commit id."
+ },
+ {
+  "seen": "2026-11-17",
+  "main": "main-JtUZCejA.js",
+  "boot": "boot-DVvY3z-j.js",
+  "sim": "sim-AgMQUe4J.js",
+  "commit": "dfddfe823907",
+  "status": "reviewed",
+  "updated": "2026-11-17T03:21:54Z",
+  "changes": "The content playtest adds Hoarfrost Mantle, a legendary chest piece: Flash Freeze marks foes for 25% more weapon damage. Playtest armory art loads separately. Ordinary catalogs and the journal are unchanged.",
+  "evidence": "Whole reachable-build comparison: 425→431 files; changed-source screening found the mantle's content-gated registration, frost identity/deadline state, damage consumer and presentation, localized hints, armory boot/loading and optional atlas composition. Registry/difficulty/names and ordinary icons are unchanged; config adds the mantle definition. Original old/new hit-resolver controls: three seeds × content on/off × worn/not worn, 12 cases per build. Supplied 80-damage first hits and item hits remain 80; only new/content/worn subsequent weapon hits become 100 before tick190, returning to80 at190. Export-only bridges restored original source hashes. No spread, bosses, natural acquisition, full fights, rendering/loading performance or server proof; identifier-normalized screening is not whole-program equivalence. Official gear.where now accepts only source-matched string localization, with negative field/type/English/source regressions and no catalog promotion. Prior historical evidence and the full journal are preserved; citations refreshed. Original archive-readiness and unknown-field failures remain failed receipts."
  }
 ]

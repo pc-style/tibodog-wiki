@@ -19,7 +19,7 @@ const TEXT_FIELDS = {
   enemy: ['name'], boss: ['name', 'title', 'desc'], biome: ['name', 'desc'],
   event: ['name', 'announce'], dog: ['name', 'breed', 'desc'],
   poi: ['name', 'desc'], botHelp: ['name', 'desc'], rarity: ['name'],
-  shrine: ['label'], dailyWeather: ['name', 'desc'], gear: ['name', 'desc'],
+  shrine: ['label'], dailyWeather: ['name', 'desc'], gear: ['name', 'desc', 'where'],
   gearSet: ['name'], varietyPlace: ['name', 'desc', 'where'], setRule: ['label', 'desc'],
   rune: ['name', 'desc'], affix: ['name', 'desc', 'where'],
 };

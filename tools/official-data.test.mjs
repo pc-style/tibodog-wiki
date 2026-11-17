@@ -340,6 +340,41 @@ test('affix localization exports only known string fields with compiled English 
   }
 });
 
+test('gear hints export only as source-matched localization without promoting gear into catalogs', async () => {
+  const f = fixture();
+  const fields = { name: 'Hoarfrost Mantle', desc: 'Rimes nearby pests for {seconds} s.', where: 'On the Loadout, in the chest slot.' };
+  f.rewrite('text/en.json', (doc) => { doc.texts.gear = { 'hoarfrost-mantle': fields, 'text-only': { name: 'Unregistered gear text' } }; return doc; });
+  f.rewrite('text/fr.json', (doc) => { doc.texts.gear = { 'hoarfrost-mantle': { where: 'Dans le logement de torse.' } }; return doc; });
+  for (const [field, value] of Object.entries(fields)) f.dumped.content[`content.gear.hoarfrost-mantle.${field}`] = [value];
+  f.dumped.content['content.gear.hoarfrost-mantle.desc'] = ['Rimes nearby pests for ', ['seconds'], ' s.'];
+  f.dumped.content['content.gear.text-only.name'] = ['Unregistered gear text'];
+  const official = await fetchOfficialData(COMMIT, f);
+  assert.deepEqual(applyOfficialData(f.dumped, official), f.dumped);
+  const exported = localizedTextExport(official, f.dumped);
+  assert.deepEqual(exported.text.en.gear['hoarfrost-mantle'], fields);
+  assert.deepEqual(exported.text.fr.gear['hoarfrost-mantle'], { where: 'Dans le logement de torse.' });
+  assert.deepEqual(exported.text.en.gear['text-only'], { name: 'Unregistered gear text' });
+  assert.deepEqual(Object.keys(official.catalogs).sort(), Object.keys(TYPES).sort());
+  for (const value of [undefined, ['Wrong']]) {
+    const dumped = structuredClone(f.dumped);
+    if (value === undefined) delete dumped.content['content.gear.hoarfrost-mantle.where'];
+    else dumped.content['content.gear.hoarfrost-mantle.where'] = value;
+    assert.throws(() => applyOfficialData(dumped, official), /unmapped English|English mismatch/);
+    assert.throws(() => localizedTextExport(official, dumped), /unmapped English|English mismatch/);
+  }
+  for (const [path, gear] of [
+    ['text/en.json', { sample: { damage: 'Unknown' } }],
+    ...[45, [], {}, null].map((where) => ['text/en.json', { sample: { where } }]),
+    ['text/fr.json', { unknown: { where: 'Unknown English ID' } }],
+    ['text/fr.json', { sample: { where: 'Missing English field' } }],
+  ]) {
+    const g = fixture();
+    g.rewrite('text/en.json', (doc) => { doc.texts.gear = { sample: { name: 'Sample without a hint' } }; return doc; });
+    g.rewrite(path, (doc) => { doc.texts.gear = gear; return doc; });
+    await assert.rejects(fetchOfficialData(COMMIT, g), /official data:/);
+  }
+});
+
 test('required catalog or locale HTTP403 fails rather than falling back', async () => {
   for (const path of ['weapons.json', 'text/fr.json']) {
     const f = fixture(); f.forbidden = path;

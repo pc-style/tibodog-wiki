@@ -1007,6 +1007,15 @@
  "content.gear.harvest-vest.name": [
   "Harvest Vest"
  ],
+ "content.gear.hoarfrost-mantle.desc": [
+  "Each Flash Freeze hit rimes its target and nearby pests while the frost lasts. Rimed foes take 25% more damage from every weapon."
+ ],
+ "content.gear.hoarfrost-mantle.name": [
+  "Hoarfrost Mantle"
+ ],
+ "content.gear.hoarfrost-mantle.where": [
+  "On the Loadout of a playtest page, in the chest slot."
+ ],
  "content.gear.iron-skillet-chest.name": [
   "Skillet Cuirass"
  ],

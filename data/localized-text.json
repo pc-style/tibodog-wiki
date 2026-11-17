@@ -1,8 +1,8 @@
 {
  "schema": 1,
  "game": {
-  "version": "2d39cdb",
-  "commit": "2d39cdb1da1f5353202a2a9f18b1a99f540e4902"
+  "version": "dfddfe8",
+  "commit": "dfddfe823907002f4634a33e7083680b296a992c"
  },
  "simVersion": "df0e6168e3ba1f8b",
  "locales": [
@@ -2323,6 +2323,11 @@
     },
     "straw-hat": {
      "name": "Straw Hat"
+    },
+    "hoarfrost-mantle": {
+     "name": "Hoarfrost Mantle",
+     "desc": "Each Flash Freeze hit rimes its target and nearby pests while the frost lasts. Rimed foes take 25% more damage from every weapon.",
+     "where": "On the Loadout of a playtest page, in the chest slot."
     }
    },
    "gearSet": {
@@ -4568,6 +4573,11 @@
     },
     "straw-hat": {
      "name": "草帽"
+    },
+    "hoarfrost-mantle": {
+     "name": "霜华斗篷",
+     "desc": "急冻每次命中，都会在寒气持续时让目标和附近害虫结霜。结霜的敌人受到所有武器的伤害增加25%。",
+     "where": "试玩页面的配装中，上衣栏位。"
     }
    },
    "gearSet": {
@@ -6813,6 +6823,11 @@
     },
     "straw-hat": {
      "name": "草帽"
+    },
+    "hoarfrost-mantle": {
+     "name": "霜華斗篷",
+     "desc": "急凍每次命中，都會在寒氣持續時讓目標和附近害蟲結霜。結霜的敵人受到所有武器的傷害增加25%。",
+     "where": "試玩頁面的配裝中，上衣欄位。"
     }
    },
    "gearSet": {
@@ -9058,6 +9073,11 @@
     },
     "straw-hat": {
      "name": "麦わら帽子"
+    },
+    "hoarfrost-mantle": {
+     "name": "霜の外套",
+     "desc": "瞬間冷凍が当たるたび、冷気が続く間、標的と周りの害虫に霜が降りる。霜の降りた敵は、全武器から受けるダメージが25%増える。",
+     "where": "プレイテストページの編成、胴の枠。"
     }
    },
    "gearSet": {
@@ -11303,6 +11323,11 @@
     },
     "straw-hat": {
      "name": "밀짚모자"
+    },
+    "hoarfrost-mantle": {
+     "name": "서리 망토",
+     "desc": "순간 냉동이 적중할 때마다 냉기가 남아 있는 동안 대상과 주변 해충에 서리가 내립니다. 서리 내린 적은 모든 무기에게서 25% 더 많은 피해를 받습니다.",
+     "where": "플레이테스트 페이지의 로드아웃, 상의 슬롯에 있습니다."
     }
    },
    "gearSet": {
@@ -13548,6 +13573,11 @@
     },
     "straw-hat": {
      "name": "Sombrero de paja"
+    },
+    "hoarfrost-mantle": {
+     "name": "Manto de escarcha",
+     "desc": "Cada golpe de Congelado exprés cubre de escarcha a su objetivo y a las plagas cercanas mientras dura el frío. Los enemigos escarchados reciben un 25 % más de daño de todas las armas.",
+     "where": "En el Equipo de una página de prueba, en la ranura de pecho."
     }
    },
    "gearSet": {
@@ -15793,6 +15823,11 @@
     },
     "straw-hat": {
      "name": "फूस की टोपी"
+    },
+    "hoarfrost-mantle": {
+     "name": "पाले का लबादा",
+     "desc": "फटाफट फ्रीज़ का हर वार, जब तक ठंड रहती है, अपने निशाने और पास के कीटों पर पाला जमा देता है। पाले से ढके दुश्मनों को हर हथियार से 25% ज़्यादा डैमेज होता है।",
+     "where": "प्लेटेस्ट पेज के लोडआउट में, सीने वाले स्लॉट में।"
     }
    },
    "gearSet": {
@@ -18038,6 +18073,11 @@
     },
     "straw-hat": {
      "name": "Strohhut"
+    },
+    "hoarfrost-mantle": {
+     "name": "Raureifmantel",
+     "desc": "Jeder Treffer von Schockfrost überzieht sein Ziel und Schädlinge in der Nähe mit Raureif, solange der Frost anhält. Bereifte Gegner nehmen von jeder Waffe 25 % mehr Schaden.",
+     "where": "Im Loadout einer Playtest-Seite, im Brust-Platz."
     }
    },
    "gearSet": {
@@ -20283,6 +20323,11 @@
     },
     "straw-hat": {
      "name": "Chapeau de paille"
+    },
+    "hoarfrost-mantle": {
+     "name": "Manteau de givre",
+     "desc": "Chaque coup de Surgélation couvre de givre sa cible et les nuisibles proches tant que le froid dure. Les ennemis givrés subissent 25 % de dégâts en plus de toutes les armes.",
+     "where": "Dans le Paquetage d’une page de test, à l’emplacement du torse."
     }
    },
    "gearSet": {
@@ -22528,6 +22573,11 @@
     },
     "straw-hat": {
      "name": "Chapéu de palha"
+    },
+    "hoarfrost-mantle": {
+     "name": "Manto de geada",
+     "desc": "Cada golpe do Congelamento relâmpago cobre de geada o alvo e as pragas próximas enquanto o frio dura. Inimigos com geada levam 25% a mais de dano de todas as armas.",
+     "where": "No Arsenal de uma página de teste, no espaço do peito."
     }
    },
    "gearSet": {
@@ -24773,6 +24823,11 @@
     },
     "straw-hat": {
      "name": "Hasır Şapka"
+    },
+    "hoarfrost-mantle": {
+     "name": "Kırağı Pelerini",
+     "desc": "Her Şok Dondurma vuruşu, soğuk sürdükçe hedefini ve yakındaki haşereleri kırağıyla kaplar. Kırağılı düşmanlar her silahtan %25 daha fazla hasar alır.",
+     "where": "Test sayfasının Donanım ekranında, gövde yuvasında."
     }
    },
    "gearSet": {
@@ -27018,6 +27073,11 @@
     },
     "straw-hat": {
      "name": "Topi Jerami"
+    },
+    "hoarfrost-mantle": {
+     "name": "Jubah Embun Beku",
+     "desc": "Setiap serangan Beku Kilat menyelimuti sasarannya dan hama di dekatnya dengan embun beku selama dinginnya bertahan. Musuh berembun beku menerima 25% damage lebih banyak dari setiap senjata.",
+     "where": "Di Loadout halaman uji coba, di slot baju."
     }
    },
    "gearSet": {
@@ -29263,6 +29323,11 @@
     },
     "straw-hat": {
      "name": "Соломенная шляпа"
+    },
+    "hoarfrost-mantle": {
+     "name": "Мантия инея",
+     "desc": "Каждый удар Шоковой заморозки покрывает инеем цель и ближайших вредителей, пока держится холод. Покрытые инеем враги получают на 25% больше урона от любого оружия.",
+     "where": "В экипировке на странице теста, в слоте торса."
     }
    },
    "gearSet": {
@@ -31508,6 +31573,11 @@
     },
     "straw-hat": {
      "name": "Topi Jerami"
+    },
+    "hoarfrost-mantle": {
+     "name": "Jubah Fros",
+     "desc": "Setiap pukulan Beku Kilat menyelubungi sasarannya dan perosak berdekatan dengan fros selagi sejuknya kekal. Musuh berfros menerima 25% lebih kerosakan daripada setiap senjata.",
+     "where": "Dalam Kelengkapan halaman ujian main, di slot baju."
     }
    },
    "gearSet": {
@@ -33753,6 +33823,11 @@
     },
     "straw-hat": {
      "name": "Salakot"
+    },
+    "hoarfrost-mantle": {
+     "name": "Balabal ng Hamog na Yelo",
+     "desc": "Bawat tama ng Flash Freeze ay nagbabalot ng hamog na yelo sa target at kalapit na peste habang may lamig. Ang may hamog na yelo ay may 25% dagdag na damage sa bawat armas.",
+     "where": "Sa Loadout ng playtest page, sa slot ng dibdib."
     }
    },
    "gearSet": {
@@ -35998,6 +36073,11 @@
     },
     "straw-hat": {
      "name": "गवती टोपी"
+    },
+    "hoarfrost-mantle": {
+     "name": "हिमकणांचा झगा",
+     "desc": "झटपट गोठणचा प्रत्येक प्रहार, थंडी टिकेपर्यंत, लक्ष्य आणि जवळच्या किड्यांवर हिमकण चढवतो. हिमकणांनी झाकलेल्या शत्रूंना प्रत्येक शस्त्राकडून 25% अधिक डॅमेज होतो.",
+     "where": "प्लेटेस्ट पेजच्या लोडआउटमध्ये, छातीच्या स्लॉटमध्ये."
     }
    },
    "gearSet": {
@@ -38243,6 +38323,11 @@
     },
     "straw-hat": {
      "name": "Mũ Rơm"
+    },
+    "hoarfrost-mantle": {
+     "name": "Áo Choàng Sương Giá",
+     "desc": "Mỗi đòn Đông Chớp Nhoáng phủ sương giá lên mục tiêu và sâu bọ quanh đó khi cái lạnh còn kéo dài. Kẻ địch bị phủ sương giá chịu thêm 25% sát thương từ mọi vũ khí.",
+     "where": "Trong Hành trang của trang chơi thử, ở ô áo."
     }
    },
    "gearSet": {
@@ -40488,6 +40573,11 @@
     },
     "straw-hat": {
      "name": "గడ్డి టోపీ"
+    },
+    "hoarfrost-mantle": {
+     "name": "హిమపు అంగీ",
+     "desc": "మెరుపు గడ్డకట్టు ప్రతి దెబ్బ, చలి ఉన్నంతసేపు, లక్ష్యాన్నీ దగ్గరి పురుగులనూ హిమంతో కప్పుతుంది. హిమం కప్పిన శత్రువులు ప్రతి ఆయుధం నుండి 25% ఎక్కువ డ్యామేజ్ పొందుతాయి.",
+     "where": "ప్లేటెస్ట్ పేజీ లోడౌట్ లో, ఛాతీ స్లాట్ లో."
     }
    },
    "gearSet": {
@@ -42733,6 +42823,11 @@
     },
     "straw-hat": {
      "name": "வைக்கோல் தொப்பி"
+    },
+    "hoarfrost-mantle": {
+     "name": "உறைபனி மேலங்கி",
+     "desc": "மின்னல் உறைவின் இலக்கையும் அருகிலுள்ள பூச்சிகளையும் குளிர் உள்ளவரை உறைபனி மூடும். அவை எல்லா ஆயுதங்களாலும் 25% கூடுதல் டேமேஜ் பெறும்.",
+     "where": "சோதனை ஆட்டப் பக்கத்தின் லோட்அவுட்டில், மார்பு இடத்தில்."
     }
    },
    "gearSet": {
@@ -44978,6 +45073,11 @@
     },
     "straw-hat": {
      "name": "খড়ের টুপি"
+    },
+    "hoarfrost-mantle": {
+     "name": "হিমকণার আলখাল্লা",
+     "desc": "ঝটপট বরফের প্রতিটা আঘাত, যতক্ষণ ঠান্ডা থাকে, লক্ষ্য আর আশপাশের পোকাদের হিমকণায় ঢেকে দেয়। হিমকণায় ঢাকা শত্রুরা প্রতিটা অস্ত্র থেকে 25% বেশি ড্যামেজ পায়।",
+     "where": "প্লেটেস্ট পেজের লোডআউটে, বুকের স্লটে।"
     }
    },
    "gearSet": {
@@ -47223,6 +47323,11 @@
     },
     "straw-hat": {
      "name": "หมวกฟาง"
+    },
+    "hoarfrost-mantle": {
+     "name": "เสื้อคลุมน้ำค้างแข็ง",
+     "desc": "ทุกครั้งที่แช่แข็งฉับพลันโดนเป้า จะเคลือบน้ำค้างแข็งให้เป้าและศัตรูพืชรอบๆ ตราบที่ความเย็นยังอยู่ ศัตรูที่ถูกเคลือบน้ำค้างแข็งจะรับดาเมจจากอาวุธทุกชิ้นเพิ่ม 25%",
+     "where": "ในหน้าจัดชุดของหน้าทดลองเล่น ช่องเสื้อ"
     }
    },
    "gearSet": {
@@ -49468,6 +49573,11 @@
     },
     "straw-hat": {
      "name": "Malafa"
+    },
+    "hoarfrost-mantle": {
+     "name": "Mayafin Ƙanƙara",
+     "desc": "Kowane bugun Daskarewa Nan Take yana lulluɓe abin da ya buga da ƙwarin da ke kusa da ƙanƙara muddin sanyin yana nan. Maƙiyan da ƙanƙara ta lulluɓe suna shan ƙarin lahani 25% daga kowane makami.",
+     "where": "A cikin Shiri na shafin gwaji, a gurbin ƙirji."
     }
    },
    "gearSet": {
@@ -51713,6 +51823,11 @@
     },
     "straw-hat": {
      "name": "Straw Hat"
+    },
+    "hoarfrost-mantle": {
+     "name": "Hoarfrost Mantle",
+     "desc": "Every Quick Freeze hit dey cover im target and pests wey near with frost as long as the cold still dey. Enemies wey frost cover dey take 25% more damage from every weapon.",
+     "where": "For the Kit for playtest page, for the body slot."
     }
    },
    "gearSet": {
@@ -53958,6 +54073,11 @@
     },
     "straw-hat": {
      "name": "قبعة القش"
+    },
+    "hoarfrost-mantle": {
+     "name": "عباءة الصقيع",
+     "desc": "كل ضربة من التجميد الخاطف تكسو هدفها والآفات القريبة بالصقيع ما دام البرد باقيًا. الأعداء المكسوّون بالصقيع يتلقون ضررًا أكبر بنسبة ‎25%‎ من كل سلاح.",
+     "where": "في العُدّة على صفحة تجربة اللعب، في خانة الصدر."
     }
    },
    "gearSet": {
@@ -56203,6 +56323,11 @@
     },
     "straw-hat": {
      "name": "کلاه حصیری"
+    },
+    "hoarfrost-mantle": {
+     "name": "ردای برفک",
+     "desc": "هر ضربه‌ی یخ‌زدگی آنی، تا وقتی سرما باقی است، هدفش و آفت‌های نزدیک را برفک‌زده می‌کند. دشمنان برفک‌زده از هر سلاحی ‎25%‎ آسیب بیشتر می‌گیرند.",
+     "where": "در کوله‌بار صفحه‌ی تست بازی، در خانه‌ی سینه."
     }
    },
    "gearSet": {
@@ -58448,6 +58573,11 @@
     },
     "straw-hat": {
      "name": "כובע קש"
+    },
+    "hoarfrost-mantle": {
+     "name": "גלימת כפור",
+     "desc": "כל פגיעה של הקפאת בזק מכסה בכפור את המטרה שלה ואת המזיקים הקרובים כל עוד הקור נמשך. אויבים מכוסי כפור חוטפים ‎25%‎ יותר נזק מכל נשק.",
+     "where": "בערכה של עמוד בדיקת משחק, בחריץ החזה."
     }
    },
    "gearSet": {
@@ -60693,6 +60823,11 @@
     },
     "straw-hat": {
      "name": "تنکوں کی ٹوپی"
+    },
+    "hoarfrost-mantle": {
+     "name": "پالے کا چوغہ",
+     "desc": "فوری جماؤ کا ہر وار، جب تک ٹھنڈ رہے، اپنے نشانے اور قریبی کیڑوں پر پالا جما دیتا ہے۔ پالے سے ڈھکے دشمنوں کو ہر ہتھیار سے ‎25%‎ زیادہ نقصان ہوتا ہے۔",
+     "where": "پلے ٹیسٹ صفحے کے لوڈ آؤٹ میں، سینے کے خانے میں۔"
     }
    },
    "gearSet": {
@@ -60816,144 +60951,144 @@
  "sources": {
   "index": {
    "url": "https://tibo.dog/data/v1/index.json",
-   "bytes": 18938,
-   "sha256": "cb586206f3e145d0629104c403c133bb3c0f9794f9f8316e5a14e4e4d40b3d0c"
+   "bytes": 18939,
+   "sha256": "e26940c540a41ba260abc1f486e1eae8cb2f2da981411b66c6ee915ed29c9d3b"
   },
   "locales": {
    "en": {
     "url": "https://tibo.dog/data/v1/text/en.json",
-    "bytes": 61356,
-    "sha256": "bfd4d2916b5cbf86d883b5d2b11db4ee209ad1bd41cd1179bfa6011f014e4b65"
+    "bytes": 61606,
+    "sha256": "0d5a7c4f7df86ca36756deaea8fc0d00297df71d4d11893db1ea70e405a44d80"
    },
    "zh-CN": {
     "url": "https://tibo.dog/data/v1/text/zh-CN.json",
-    "bytes": 60496,
-    "sha256": "49f59f8b5bdb8a563179ff7a9e77d1779f5666a6e06e759b9ffb3eb5bfbcbfc2"
+    "bytes": 60734,
+    "sha256": "3e1d4546486a8be91dfefab62a89cc882fcb6cd944954ef27e89e6478e2de911"
    },
    "zh-TW": {
     "url": "https://tibo.dog/data/v1/text/zh-TW.json",
-    "bytes": 60769,
-    "sha256": "70c940a0dfe4a3d6e9b81b02c1d9f353e375b53562b39d27a7031a1d4d3394b9"
+    "bytes": 61007,
+    "sha256": "8c8b6e15cda77c21233db94cc68cbf8fdc32ed39e1855e98a4f010d30667ed82"
    },
    "ja": {
     "url": "https://tibo.dog/data/v1/text/ja.json",
-    "bytes": 74072,
-    "sha256": "4099b38892c1e2738ddedd5b613bdf33a699867b5cb418a6f0607075a69c082e"
+    "bytes": 74364,
+    "sha256": "418e4350a0fabe9268fce5d25215d2ff19021fa3a6bb0f3e1690011c8ea2f5b5"
    },
    "ko": {
     "url": "https://tibo.dog/data/v1/text/ko.json",
-    "bytes": 74344,
-    "sha256": "58db7fae4f7f68bcb2647b85cf3cf2311cf42dd27e2e7f1aedb66c533dcb2989"
+    "bytes": 74686,
+    "sha256": "a49651c1321c7273d3691a12cacc6676939b8adc6cc7dba255bde93a469c9ff9"
    },
    "es": {
     "url": "https://tibo.dog/data/v1/text/es.json",
-    "bytes": 69329,
-    "sha256": "b0288bf3ba44c437e1fd1f8655c9f22ada390a2f731b1921af0e930a38b74ff1"
+    "bytes": 69645,
+    "sha256": "aed0bd68d20f955ee51ce64c0589b5ed77942ca392413924a0790425e54d68a5"
    },
    "hi": {
     "url": "https://tibo.dog/data/v1/text/hi.json",
-    "bytes": 128414,
-    "sha256": "93f8dae51a4eede7bae75989637e644a1f687ddc422156a0c63dc02479b11749"
+    "bytes": 129019,
+    "sha256": "95402bc451d134e74b06766ef2b0facbc15cc1f82fe5617d78937228e3c4beea"
    },
    "de": {
     "url": "https://tibo.dog/data/v1/text/de.json",
-    "bytes": 68537,
-    "sha256": "c24423792e146bd620bdb1e93cb6d12af9b8fc5101409b1f1f1713187f076cae"
+    "bytes": 68827,
+    "sha256": "b6a1891af892cf0ca001c0b78f45fc811ce9f3f819d5d1de25f653720d640888"
    },
    "fr": {
     "url": "https://tibo.dog/data/v1/text/fr.json",
-    "bytes": 71952,
-    "sha256": "3f50a8c60304d715c7b88b0cfa5459097585b5a6746664f084f49ab3a206b4b4"
+    "bytes": 72267,
+    "sha256": "04eee6cc0f29d0312195f5b9d2b842420e8f5e3d4a2a703674f904a23bee4639"
    },
    "pt": {
     "url": "https://tibo.dog/data/v1/text/pt.json",
-    "bytes": 67893,
-    "sha256": "2eda87c59b132848cd00b0da834f8766049dcd86ef1a15f4a65ea06c0ff5f0e2"
+    "bytes": 68181,
+    "sha256": "e9cc11fd4260ffc05510fa65973f128aa739f882d70ac83a61aada88c4f9f7d5"
    },
    "tr": {
     "url": "https://tibo.dog/data/v1/text/tr.json",
-    "bytes": 70416,
-    "sha256": "3220b7bbddf7e43677b19cad6e15dc72b65e8fe60b18ba601239d4c8e5116ad0"
+    "bytes": 70710,
+    "sha256": "fabf653047c95efc5db0d18c0e3e9c40b57bb348688fbd6afd54d65f4194104d"
    },
    "id": {
     "url": "https://tibo.dog/data/v1/text/id.json",
-    "bytes": 67611,
-    "sha256": "4cf6a5f45f51e3ba2c17832d8bb0c65530bde3b1c60d94b791c8ded43d2ddf3f"
+    "bytes": 67910,
+    "sha256": "a8b39ec25e1af0b205b19b7743092aa082783f7947e4b32d90f0f91cfc3c905c"
    },
    "ru": {
     "url": "https://tibo.dog/data/v1/text/ru.json",
-    "bytes": 100898,
-    "sha256": "0715f0b06738d7b0448ad2ba9278f110ca9f072515f8fe62f8dedb86389885a7"
+    "bytes": 101351,
+    "sha256": "a0df34ac3eebcafc0ef7ca70f35cb042065d1885667295b135b073721cd156cf"
    },
    "ms": {
     "url": "https://tibo.dog/data/v1/text/ms.json",
-    "bytes": 69923,
-    "sha256": "0a039a17bc3faae5fa78df9beea3a0362275fa9571944c6b1c50785436249dc2"
+    "bytes": 70211,
+    "sha256": "c998ba00b97bd7a5cd979b153dbbfc1a02f8e492b70487a7ae13e9887a628d8c"
    },
    "fil": {
     "url": "https://tibo.dog/data/v1/text/fil.json",
-    "bytes": 73811,
-    "sha256": "5e9a0563ed5c83733389007675cbf513630d1bdb15555a26a5a330c2589b7cf1"
+    "bytes": 74105,
+    "sha256": "785096bab4be54f10fd4db275027b729b80d9d055a22ab063a5d9de511a632f1"
    },
    "mr": {
     "url": "https://tibo.dog/data/v1/text/mr.json",
-    "bytes": 132630,
-    "sha256": "eb32261e01894ecdf433ac15f82482975c1011dd3fa0bc9db1cfc55df86b2b5b"
+    "bytes": 133280,
+    "sha256": "dd832cdc6c97c697ce2404ab7aa9be8c7621f2f27a500bf7aa3bc8b7aaaf90ab"
    },
    "vi": {
     "url": "https://tibo.dog/data/v1/text/vi.json",
-    "bytes": 74588,
-    "sha256": "b9c2061bf8986910343152b17e3a57dc1bb28e8d65d2f88791d137786b3ac40b"
+    "bytes": 74933,
+    "sha256": "9da0f1620bc547ed63bb0d5dedb7d9791a0c226f5cff1026968f7dc53fb68484"
    },
    "te": {
     "url": "https://tibo.dog/data/v1/text/te.json",
-    "bytes": 139705,
-    "sha256": "11b6885eb5338e63f725713f02acb703e966e108bfc904c80e59e8e93fb8ac44"
+    "bytes": 140333,
+    "sha256": "eb14a940f203c12dfd821465ec4a8239947014bf09e6cb8cecee2d1bacc65443"
    },
    "ta": {
     "url": "https://tibo.dog/data/v1/text/ta.json",
-    "bytes": 152499,
-    "sha256": "8c12d109d68d9d47d602c18db42c981c6042facc59c22008b4dbe3c9c03ec9c6"
+    "bytes": 153098,
+    "sha256": "50f0295a792bb32fdfa3a4554057137a1da085ff93c2a6c389fb02967dcdc0c4"
    },
    "bn": {
     "url": "https://tibo.dog/data/v1/text/bn.json",
-    "bytes": 129483,
-    "sha256": "a2d429822b3cc63b132561b652f6bc71ddaf444290a393559422275f3802cc28"
+    "bytes": 130091,
+    "sha256": "dab25c1c987b8786fc2935a9027bfb5560eb7af23c3674ee7a668933d31d102c"
    },
    "th": {
     "url": "https://tibo.dog/data/v1/text/th.json",
-    "bytes": 124735,
-    "sha256": "a3855a59382dba08eb47f1c2591aeb3a145053db05b7c03950c8320241abe9a6"
+    "bytes": 125425,
+    "sha256": "784e957c788ce1ea95fb87d6425daf78059419cabaa9687c2968a0e4295a9e33"
    },
    "ha": {
     "url": "https://tibo.dog/data/v1/text/ha.json",
-    "bytes": 70317,
-    "sha256": "f35ef7dc8378338f702af4e3cf91ae241ef4b732abb966ff40359e8e8d5af8aa"
+    "bytes": 70635,
+    "sha256": "8fc542c39db252891c53c8052731b339a566379a0ea63eeff5f0e4a455824cfc"
    },
    "pcm": {
     "url": "https://tibo.dog/data/v1/text/pcm.json",
-    "bytes": 64656,
-    "sha256": "8f0500c3d73da68b882426494025647d2e75b274e5c3eaffa4d46e0489cebf91"
+    "bytes": 64944,
+    "sha256": "79918ff2efa308689077137a41df12a797f67f86dbf086c4e6a2efdfc5d6be02"
    },
    "ar": {
     "url": "https://tibo.dog/data/v1/text/ar.json",
-    "bytes": 84826,
-    "sha256": "3836bb7c8247490a1fb320172f49f745626badc8e0e7803174100576412b4b24"
+    "bytes": 85257,
+    "sha256": "74fe17a98cf822de15955997949012160ad8de30200f90ce652be6c91bbcdd8c"
    },
    "fa": {
     "url": "https://tibo.dog/data/v1/text/fa.json",
-    "bytes": 99726,
-    "sha256": "2291443f77400ae15aac5142c0c5934e93e058d0bd6132b1e53ce728eb7994d4"
+    "bytes": 100140,
+    "sha256": "9e5ceea509f14997480586481aea3f63e924293c9d741a93ab9058ef44d5ab65"
    },
    "he": {
     "url": "https://tibo.dog/data/v1/text/he.json",
-    "bytes": 84432,
-    "sha256": "22ef7be8bd2945ba2392ff523099bf87adf2b83735cfe6a40cabdb8d8cd4a036"
+    "bytes": 84805,
+    "sha256": "cce37eba9926dfdd25e489ce0b0084f58f86cdf17f88f3e89f87d077275b85b0"
    },
    "ur": {
     "url": "https://tibo.dog/data/v1/text/ur.json",
-    "bytes": 96021,
-    "sha256": "b36d1ca846e829f01c05c927254aa3302421398cc2afbdab9fb44c2345866709"
+    "bytes": 96441,
+    "sha256": "10129e91e25b08d3eb4cfc6d4cec86df43b887c8f01cf7f46100489f4728b3ca"
    }
   }
  }
