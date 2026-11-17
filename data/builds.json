@@ -2694,5 +2694,16 @@
   "updated": "2026-11-17T03:21:54Z",
   "changes": "The content playtest adds Hoarfrost Mantle, a legendary chest piece: Flash Freeze marks foes for 25% more weapon damage. Playtest armory art loads separately. Ordinary catalogs and the journal are unchanged.",
   "evidence": "Whole reachable-build comparison: 425→431 files; changed-source screening found the mantle's content-gated registration, frost identity/deadline state, damage consumer and presentation, localized hints, armory boot/loading and optional atlas composition. Registry/difficulty/names and ordinary icons are unchanged; config adds the mantle definition. Original old/new hit-resolver controls: three seeds × content on/off × worn/not worn, 12 cases per build. Supplied 80-damage first hits and item hits remain 80; only new/content/worn subsequent weapon hits become 100 before tick190, returning to80 at190. Export-only bridges restored original source hashes. No spread, bosses, natural acquisition, full fights, rendering/loading performance or server proof; identifier-normalized screening is not whole-program equivalence. Official gear.where now accepts only source-matched string localization, with negative field/type/English/source regressions and no catalog promotion. Prior historical evidence and the full journal are preserved; citations refreshed. Original archive-readiness and unknown-field failures remain failed receipts."
+ },
+ {
+  "seen": "2026-11-17",
+  "main": "main-DN8vO-Um.js",
+  "boot": "boot-elAHiI-P.js",
+  "sim": "sim-59_D3BWK.js",
+  "commit": "c8d7000abeb7",
+  "status": "reviewed",
+  "updated": "2026-11-17T05:06:00Z",
+  "changes": "Finished-run stats and shared links retain levels beyond 10,000 through the existing exact-amount extension. The official journal also announces the share-card correction; this is a summary representation fix, not a gameplay level-cap change.",
+  "evidence": "Whole reachable-build comparison: 431→431; only run-summary-state, the English journal and 26 journal translations differ. Registry/English/config/names and normalized sim/boot are unchanged. Original old/new public summary generator, address constructor/writer, full extension reader and card resolver: five supplied Standard/Normal levels per build (9999,10000,10001,12347,98765); old truncates above10000, new preserves each input, base-only reader remains capped. Thirteen asymmetric unrelated counters including pre-existing damage overflow remain equal. Stats/shared-run consumers use resolved card.level; share-image descriptor carries encoded stats. No natural level acquisition, gameplay-cap, remote image rendering or server acceptance claim. Full official current/older journal browser proof and prior history retained; next/end-screen-real-level publication2026-11-17T03:01:49Z is not proof of source introduction. Original archive timeout and the interrupted first probe remain failed/interrupted, followed by separately successful attempts. Current citations refreshed; no classifier/schema/tool changes."
  }
 ]

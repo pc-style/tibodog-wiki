@@ -4,8 +4,8 @@ Kiko the Shiba calls two spirit pups whenever an elite or boss dies while Kiko i
 
 ## How it works
 
-- **Look for elite and boss deaths.** Both death-processing branches call the spirit hook; ordinary pest deaths do not. It is not restricted to kills credited to Kiko. <small>[sim-AgMQUe4J.js: `` e.run.bossesKilled++,Rd(e,`boss`),e.moreVariety!==void 0&&Bc().eliteDown(e) ``]</small>
-- **Spirits are temporary attackers.** They start to either side of Tibo, move at 100 units/s towards targets within 150 units, and bite within 16 units. Bites repeat every 0.4 s; the second pup starts with a 0.15 s stagger. Spawn capacity can reduce the requested pair. <small>[sim-AgMQUe4J.js: `e.tick>=r.plantIn[t]?(r.pool.kill(t),!0)`]</small>
+- **Look for elite and boss deaths.** Both death-processing branches call the spirit hook; ordinary pest deaths do not. It is not restricted to kills credited to Kiko. <small>[sim-59_D3BWK.js: `` e.run.bossesKilled++,Rd(e,`boss`),e.moreVariety!==void 0&&Bc().eliteDown(e) ``]</small>
+- **Spirits are temporary attackers.** They start to either side of Tibo, move at 100 units/s towards targets within 150 units, and bite within 16 units. Bites repeat every 0.4 s; the second pup starts with a 0.15 s stagger. Spawn capacity can reduce the requested pair. <small>[sim-59_D3BWK.js: `e.tick>=r.plantIn[t]?(r.pool.kill(t),!0)`]</small>
 - **Train for bite damage.** Training power multiplies the 14 base damage. The spirit hit is queued without Tibo's global damage multiplier; shared hit modifiers such as crits can still apply. The fallback eight-second bite interval is not a cooldown between elite-triggered summons.
 
 ## Tips
