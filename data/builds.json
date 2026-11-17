@@ -2738,5 +2738,16 @@
   "updated": "2026-11-17T07:43:30Z",
   "changes": "The Dig playtest now waits for boss capacity instead of skipping bosses when the pool is full. Its deadline starts on a successful spawn; ordinary Boss Lair capacity rules and the official journal are unchanged.",
   "evidence": "Scoped whole431→431 review: only sim changes, three normalized hunks add a shared pool.count<capacity predicate, guard Dig spawn attempts and reuse the existing Boss Lair check. Boot normalized0; registry/config/English/names/journal and icon pixels unchanged. Matched original old/new Standard/Normal consumers, seeds cap-a/b/c, 39groups per build: empty/one-free/full at fill499/500/537, repeated saturation, dead-unreleased/released slots, active lock, before-survival boundary, exact60s timeout retaining250fill, ordinary lair readiness and isolated spawn action. Old four blocked attempts skip to GreatWireworm; new waits then calls Masher with a fresh60s deadline. pool.kill does not release count until pool.release. Supplied occupancy/fill/clocks/POI, isolated original consumers; lair action excludes outer charge observer. No natural saturation/acquisition, full simulation/death/reward pipeline, fights, renderer, performance or server proof. Eight ambiguous citations resolved by actual consumer contexts, not fuzzy selection; current shell/save-code owners followed. Prior history/prose/measurement limits and full official journal provenance preserved; original monitor archive failure and bounded needs-review retry remain separate. Scratch harness failures retained; no classifier/schema/tool change or broader workflow audit completion claim."
+ },
+ {
+  "seen": "2026-11-17",
+  "main": "main-CnQn6lCQ.js",
+  "boot": "boot-DZSkPvaU.js",
+  "sim": "sim-w2ssE-IM.js",
+  "commit": "43b914030104",
+  "status": "reviewed",
+  "updated": "2026-11-17T08:20:37Z",
+  "changes": "No gameplay changes; a rebuild of the same game.",
+  "evidence": "Automatic whole-build comparison (tools/same-build.mjs): all 431 files reachable from the index.html match main-BTy3K5aR.js after mapping file hashes and the build's own commit id."
  }
 ]
