@@ -1519,3 +1519,16 @@ Sources: https://tibo.dog/assets/changelog-panel-BQOUiNY_.js SHA-256 f62ea08dbd9
 - Full live journal captured `2026-11-17T07:31:35.388Z`, HTML SHA-256 `1c98471f33c9fdcb0f81187d12038472550944960b493955dec76b42af332f0d`.
 
 Reproducible source/measurement evidence: shadow `2026-11-17T07-31-27-341Z-992b65d8`, worker session `73db7eea-3bc0-4624-869d-de5df6f92ffe`, event `bdd4eb60-b1f9-42a3-9ca2-649f3591d633`. Matched original isolated consumers pass 39 groups per build over three seeds; supplied occupancy/fill/clocks and lair action exclude natural gameplay, full death/reward sequencing, rendering, performance and server proof. The original monitor archive-timeout failure and bounded needs-review retry remain separate from this worker session. Failed scratch harness attempts remain failed measurement records; no timing or approval is borrowed from them.
+
+## Build 253: art notes and playtest client presentation
+
+`main-CIdMQv3M.js` → `main-w35iMA4h.js` adds `moor-mud-pools` and `floor-rings-pixel-art` to the official **17 November 2026 / 552073a** group. They describe painted Russet Moor mud pools and pixel-art visitor rings, Warm Bowl pool and gift chest shadow. This grouping is official publication, not proof that all artwork first appeared in this build. Every prior dated group and the prior build history are preserved. The new playtest release card is inserted separately before the dated journal; it is not another dated release note.
+
+The importer checked the live full journal and every expanded panel date in display order: 373 notes, 16 dates, 167 codes. Whole-build evidence covers 431→434 reachable files and 430→433 archived assets. The original Medley consumers agree in 54 matched cases per build; the removed config export is inlining, not a journal-announced mechanics removal. Supplied client fixtures cover release-card filtering and optional atlas loading; they are not natural navigation or pixel-equivalence proof.
+
+- Old journal: https://tibo.dog/assets/changelog-panel-BbRQMdus.js — SHA-256 `39133d6343b5a61639cf8ef228c98d6c285a7436b7f219717893e140a06d346e`.
+- Current journal: https://tibo.dog/assets/changelog-panel-CVLPuRE0.js — SHA-256 `8ea93b2fb227f579e65763eef8f8a36a642203b578037639d8c8166d4d7994f8`.
+- Current archive manifest: https://tibodog-game-detector.pcstyle.workers.dev/archive/main-w35iMA4h.js/manifest.json — SHA-256 `3a30d7a915d4565557cc443a432038430fcfdaf7bc9a841c69ce32f35ece207e`; archived at `2026-11-17T23:17:21.977Z`.
+- Full live journal captured `2026-11-17T23:25:19.182Z`, HTML SHA-256 `a075e8a63f76570080d36e5510511747908bacc0961acd9e10161c974b434d99`.
+
+Reproducible evidence: shadow `2026-11-17T23-25-09-930Z-dbceeb9d`, worker session `ea7a9f2d-20c9-464f-a531-ef4efa3c658e`, event `76f0d986-3a17-48bb-a882-c7dc8fe32c71`. Earlier automatic timeout/retry receipts and failed scratch fixtures remain separate failures, not successful worker timings. No natural acquisition, full-fight, final resolved damage, pixel-equivalence, performance or server claim is made; the monthly media restriction no longer blocks documentation screenshot inspection in this session. Seven sections across five wiki pages were rendered at desktop/390px Chromium widths and inspected, without treating them as gameplay art proof.

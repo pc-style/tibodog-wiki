@@ -2760,5 +2760,16 @@
   "updated": "2026-11-17T09:23:05Z",
   "changes": "No gameplay changes; a rebuild of the same game.",
   "evidence": "Automatic whole-build comparison (tools/same-build.mjs): all 431 files reachable from the index.html match main-CnQn6lCQ.js after mapping file hashes and the build's own commit id."
+ },
+ {
+  "seen": "2026-11-17",
+  "main": "main-w35iMA4h.js",
+  "boot": "boot-at8ri8Y1.js",
+  "sim": "sim-BuaMELT8.js",
+  "commit": "89af9abe5999",
+  "status": "reviewed",
+  "updated": "2026-11-17T23:44:00Z",
+  "changes": "Russet Moor mud, visitor rings and Warm Bowl get pixel art. Playtest pages add an Update 2 journal card and load experimental artwork with boots alone; Medley's numeric rules are unchanged.",
+  "evidence": "Scoped CIdMQv3M→w35 comparison: 431→434 reachable files, archive 430→433 verified assets; unchanged ordinary registry, English, names and 343 icon PNGs. Official 2026-11-17/552073a adds moor-mud-pools and floor-rings-pixel-art; prior groups/history preserved, publication not source introduction. Complete shadow/full/expanded-panel proof: 373 notes, 16 dates, 167 codes. Original Medley initializer/hit consumers: 54 matched cases per build, seeds medley-a/b/c, Standard/Normal; supplied pest/boss pools, clocks, Area/strength and granted Peeler/Starch Bolt/optional Tater Pup. Window59/60/61, cooldown59/60, same/mixed tags, pool reuse, six-token budget/refill/cap, radius, splash input and effect payload agree. Removed config export is inlining, not removed mechanics; unused botLean has no remaining reference. Normalized draw.hot and pool-painter modules have zero hunks, not pixel-equivalence proof. Sixteen original browser-component/gate/style fixtures cover boots/content atlas loading, release-card filtering and inject-once styles; fallback glyphs/supplied options, not natural menu navigation. Scene source replaces showcase sprite fallback with stepped amber/gold pool; normal terrain/visitor/Warm Bowl rendering source inspected. Seven documentation sections across five pages rendered at desktop/390px widths and screenshots inspected; existing fixed header/Sections overlays remain unchanged. Stale quotes repaired at actual consumers, including shell/save-code owners. Prior measurements retained. No natural acquisition, full fights, final resolved Medley damage, practical DPS, pixel-equivalence, performance or server proof; documentation screenshots are not a game-render or pixel-equivalence pass. Session ea7a9f2d-20c9-464f-a531-ef4efa3c658e; monitor failures and scratch failed fixtures remain separate."
  }
 ]
