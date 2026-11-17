@@ -1508,3 +1508,14 @@ Existing journal notes moved from next into a dated release group; no gameplay o
 - end-screen-real-level (49vY8J): original publication 2026-11-17T03:01:49Z; now 2026-11-16/c8d7000. Source introduction remains in prior build history.
 
 Sources: https://tibo.dog/assets/changelog-panel-BQOUiNY_.js SHA-256 f62ea08dbd9d9d8c038c1dc9cf2ea6c8996d0d04a45d0674b3768e656d6ed5c4; https://tibo.dog/assets/changelog-panel-BtMaOmkQ.js SHA-256 cdd83db1800ad9979f33cab7d520ecfed83d065b3f3e72e755a33734b87455d8. Prior history SHA-256 d643160d3356d56512ab13585d3dd6c0c911d868a7c4e8a4b5165b16f07f1693.
+
+## Build 250: Dig boss-capacity source change, unchanged journal
+
+`main-gxU8KLI0.js` → `main-BTy3K5aR.js` changes the Dig spawn-capacity guard, not the official journal. Full current/older groups retain their publication, grouping and source-introduction history. The importer collected the actual full `/changelog` page and expanded panel in display order; the archive/shadow proof binds baseline `d6e604b92806918b8df6fd88b19272415aa9ff4d`, both original HTML documents and all 430 assets per build. Prior history is unchanged. Source introduction is observed in build 250, not inferred from a new journal announcement.
+
+- Old journal: https://tibo.dog/assets/changelog-panel-BtMaOmkQ.js — SHA-256 `cdd83db1800ad9979f33cab7d520ecfed83d065b3f3e72e755a33734b87455d8`.
+- Current journal: https://tibo.dog/assets/changelog-panel-DYz0FyQX.js — SHA-256 `65c5a9dec7f5004aa87f423f69a44443357b746d3b92d042dcc18a8c2861e0ad`.
+- Current archive manifest: https://tibodog-game-detector.pcstyle.workers.dev/archive/main-BTy3K5aR.js/manifest.json — SHA-256 `c0f99dc022d9ed7150e54ef0a11a4eed67c898cb04e1a53b6c4e7f7fbbeb5b13`; archived at `2026-11-17T07:27:19.805Z`.
+- Full live journal captured `2026-11-17T07:31:35.388Z`, HTML SHA-256 `1c98471f33c9fdcb0f81187d12038472550944960b493955dec76b42af332f0d`.
+
+Reproducible source/measurement evidence: shadow `2026-11-17T07-31-27-341Z-992b65d8`, worker session `73db7eea-3bc0-4624-869d-de5df6f92ffe`, event `bdd4eb60-b1f9-42a3-9ca2-649f3591d633`. Matched original isolated consumers pass 39 groups per build over three seeds; supplied occupancy/fill/clocks and lair action exclude natural gameplay, full death/reward sequencing, rendering, performance and server proof. The original monitor archive-timeout failure and bounded needs-review retry remain separate from this worker session. Failed scratch harness attempts remain failed measurement records; no timing or approval is borrowed from them.

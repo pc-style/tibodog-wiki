@@ -6,7 +6,7 @@ The evolved definition has 22 raw damage, a 1.2 s cooldown, Area 1.2 and knockba
 
 ## How it works
 
-Each volley entry emits opposite swings, using the same twin-slash consumer as Skillet Flail. Raw swing dimensions 60 × 26 scale with modified Area; the weapon's own Area 1.2 applies before other Area bonuses. Raw Pierce 99 maps to unlimited pierce. Extra Amount adds paired swings rather than extending one swing's reach. <small>[sim-Cs-XuDWj.js: `!0===n.twin?(jN(e,t,n,r,2*i),jN(e,t,n,r,2*i+1)):jN(e,t,n,r,i)`]</small> <small>[sim-Cs-XuDWj.js: `AN.width=n.size*r.area*c,AN.height=n.height*r.area*c`]</small>
+Each volley entry emits opposite swings, using the same twin-slash consumer as Skillet Flail. Raw swing dimensions 60 × 26 scale with modified Area; the weapon's own Area 1.2 applies before other Area bonuses. Raw Pierce 99 maps to unlimited pierce. Extra Amount adds paired swings rather than extending one swing's reach. <small>[sim-BluGyCqn.js: `!0===n.twin?(MN(e,t,n,r,2*i),MN(e,t,n,r,2*i+1)):MN(e,t,n,r,i)`]</small> <small>[sim-BluGyCqn.js: `jN.width=n.size*r.area*c,jN.height=n.height*r.area*c`]</small>
 
 **Controlled checks:** original `main-CAVio-MR.js`, Standard/Normal, seeds `wiki`, `s1`, `s2`, granted weapon and fixed high-HP pests on either side: one emitted volley entry hit both side targets, not the distant control. Chest fixtures evolved level-8 Skillet Flail with Starch Plating, but not level 7 or a missing catalyst. These are forced-state consumer and recipe checks, not natural acquisition, practical DPS or survival measurements.
 
