@@ -2705,5 +2705,16 @@
   "updated": "2026-11-17T05:06:00Z",
   "changes": "Finished-run stats and shared links retain levels beyond 10,000 through the existing exact-amount extension. The official journal also announces the share-card correction; this is a summary representation fix, not a gameplay level-cap change.",
   "evidence": "Whole reachable-build comparison: 431→431; only run-summary-state, the English journal and 26 journal translations differ. Registry/English/config/names and normalized sim/boot are unchanged. Original old/new public summary generator, address constructor/writer, full extension reader and card resolver: five supplied Standard/Normal levels per build (9999,10000,10001,12347,98765); old truncates above10000, new preserves each input, base-only reader remains capped. Thirteen asymmetric unrelated counters including pre-existing damage overflow remain equal. Stats/shared-run consumers use resolved card.level; share-image descriptor carries encoded stats. No natural level acquisition, gameplay-cap, remote image rendering or server acceptance claim. Full official current/older journal browser proof and prior history retained; next/end-screen-real-level publication2026-11-17T03:01:49Z is not proof of source introduction. Original archive timeout and the interrupted first probe remain failed/interrupted, followed by separately successful attempts. Current citations refreshed; no classifier/schema/tool changes."
+ },
+ {
+  "seen": "2026-11-17",
+  "main": "main-DsaNAQx7.js",
+  "boot": "boot-DhvvJ5vT.js",
+  "sim": "sim-DtAHT1Aj.js",
+  "commit": "3b035ffad008",
+  "status": "reviewed",
+  "updated": "2026-11-17T06:10:36Z",
+  "changes": "The opt-in endgame playtest now offers only Dig. Old Heat/Bounty links fall back according to recognized parts; ordinary endgame phases remain. Pack Lord and Hydra source owners moved, and citations now follow them. The official journal is unchanged.",
+  "evidence": "Whole reachable-build comparison: 431→431; sim8hunks, boot normalized0, ordinary registry/English/names and icon pixels unchanged. Original old/new controls: 18query forms,48constructor contexts and9loop-transition groups per build, seeds end-a/b/c, Normal with Story/Daily exclusions. Old Heat/Bounty-only links select those loops; new fall back to all7+Dig; pylons,heat keeps pylons/no loop; heat,dig selects Dig. Direct defined legacy options initialize Dig only in new. Both preserve survival/credit499→500,1/40fill,boss lock,exact60s timeout retaining250,and cleared level2/need800. Supplied clocks/fill/max weapon/pool removals; no natural acquisition, complete death/reward pipeline, fights, renderer, performance or server claim. Four old missing sim config exports exactly match relocated original endgame objects; loop color/reward maps narrow to Dig, Heat/Bounty configs and dispatch/UI consumers removed. Hydra/Pack Lord and ambiguous ordinary citations traced to actual owners. Full current/older journal proof and prior history retained; historical Heat/Bounty evidence labeled rather than erased. Original archive timeout and monitor needs-review receipts remain separate. No classifier/schema/tool change; identifier-normalized screening is not whole-program equivalence."
  }
 ]

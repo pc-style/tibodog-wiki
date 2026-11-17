@@ -4,8 +4,8 @@ Second Helping turns snacks eaten while already at full HP into a lasting damage
 
 ## How it works
 
-- **Be full before the snack heals.** The pickup calls the full-snack check before healing. A snack that takes Tibo from 149 to 150 HP does not count; the next snack at 150 does. <small>[sim-59_D3BWK.js: `e.moreVariety!==void 0&&Bc().fullSnack(e),Jd(e,a)`]</small>
-- **Fill each new cap.** One copy needs 10 qualifying snacks; five copies need 50 total. Picking up another copy does not multiply damage already earned. <small>[sim-59_D3BWK.js: `return Math.round(e.cap/e.perSnack)`]</small>
+- **Be full before the snack heals.** The pickup calls the full-snack check before healing. A snack that takes Tibo from 149 to 150 HP does not count; the next snack at 150 does. <small>[sim-DtAHT1Aj.js: `e.moreVariety!==void 0&&Rc().fullSnack(e),Kd(e,a)`]</small>
+- **Fill each new cap.** One copy needs 10 qualifying snacks; five copies need 50 total. Picking up another copy does not multiply damage already earned. <small>[sim-DtAHT1Aj.js: `return Math.round(e.cap/e.perSnack)`]</small>
 - [Picnic](/events/picnic) produces eligible snacks. [Warm Bowl](/items/warm-bowl) heals directly, so standing in its pool does not itself award snack stacks, though it can help Tibo reach full HP first.
 
 ## Tips
