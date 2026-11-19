@@ -4,9 +4,9 @@ Peel Lash cracks a nearby pest with a long peel, then jumps to another pest. Its
 
 ## How it works
 
-Each lash starts at the nearest pest within 64 units of Tibo. Pierce counts **additional jumps**, not total targets: raw Pierce 1 allows the first target plus one jump. Each jump picks a nearby pest not yet hit by that lash, within 36 × √modified Area units of the previous target. More Amount adds separate lashes through the ordinary volley system. <small>[sim-Dk46XOqX.js: `kP(e,c,l,r.pierce===-1?60:Math.min(60,r.pierce),n.jump*Math.sqrt(r.area),s)`]</small>
+Each lash starts at the nearest pest within 64 units of Tibo. Pierce counts **additional jumps**, not total targets: raw Pierce 1 allows the first target plus one jump. Each jump picks a nearby pest not yet hit by that lash, within 36 × √modified Area units of the previous target. More Amount adds separate lashes through the ordinary volley system. <small>[sim-B6U_pHtd.js: `kP(e,c,l,r.pierce===-1?60:Math.min(60,r.pierce),n.jump*Math.sqrt(r.area),s)`]</small>
 
-The renderer uses a dedicated peel arc for Peel Lash and Rind Whip rather than the ordinary lightning arc. That is a visual distinction, not extra damage. <small>[scene-BGG9vnr0.js: `` sprite:$L,names:[`arc-peel`] ``]</small>
+The renderer uses a dedicated peel arc for Peel Lash and Rind Whip rather than the ordinary lightning arc. That is a visual distinction, not extra damage. <small>[scene-7rhBYiF0.js: `` sprite:fR,names:[`arc-peel`] ``]</small>
 
 This is a melee-tagged weapon, but it is excluded from melee-restricted new-weapon offers and melee starter fill. Ordinary offers, including Mech Pilot's unrestricted pool, can include it. See [Modes](/modes#new-melee-weapons-and-set-restrictions).
 
