@@ -9,7 +9,7 @@
   "On elites from 0:45."
  ],
  "content.affix.scorching.desc": [
-  "Leaves a burning trail behind it."
+  "Sets fire under Tibo every 3.5 s and leaves a burning trail."
  ],
  "content.affix.scorching.name": [
   "Scorching"
@@ -1014,7 +1014,7 @@
   "Hoarfrost Mantle"
  ],
  "content.gear.hoarfrost-mantle.where": [
-  "On the Loadout of a playtest page, in the chest slot."
+  "On the Loadout, in the chest slot."
  ],
  "content.gear.iron-skillet-chest.name": [
   "Skillet Cuirass"

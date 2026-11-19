@@ -32,6 +32,21 @@ test('journal extraction preserves all days, render sorting, text and source pro
     assert.deepEqual(routeResult.unreleased, result.unreleased);
     writeFileSync(join(root, chunk), journalSource.replace('id:`NEW`', 'id:`OLD`'));
     assert.throws(() => extractChangelog(root, 'main-fixture1.js'), /duplicate note msgId/);
+    // A bundled async locale loader (its import.meta cannot parse in a plain vm script) before the
+    // notes is skipped whole; extraction results are unchanged.
+    const loader = 'async function s(){let m=await import.meta.url;return m}';
+    writeFileSync(join(root, chunk), loader + journalSource);
+    const loaderResult = extractChangelog(root, 'main-fixture1.js');
+    assert.deepEqual(loaderResult.days, result.days);
+    assert.deepEqual(loaderResult.unreleased, result.unreleased);
+    // The route var between the loader and the notes must not shift closeOf's indices.
+    writeFileSync(join(root, chunk), 'var route=`/changelog`;' + loader + argumentSource);
+    const aligned = extractChangelog(root, 'main-fixture1.js');
+    assert.deepEqual(aligned.days, result.days);
+    assert.deepEqual(aligned.unreleased, result.unreleased);
+    // Any other unexpected code before the notes still fails loudly.
+    writeFileSync(join(root, chunk), 'let q=1;' + journalSource);
+    assert.throws(() => extractChangelog(root, 'main-fixture1.js'), /unexpected code before the notes/);
   } finally {
     rmSync(root, { recursive: true, force: true });
   }

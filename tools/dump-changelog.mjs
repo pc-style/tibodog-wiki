@@ -76,11 +76,39 @@ export function extractChangelog(dir, main) {
   const inlineStart = inline.index + inline[0].indexOf('[');
   const days = src.slice(inlineStart, closeOf(inlineStart));
   // Helper functions (kind/text, about, id) sit between the imports and the unreleased array.
+  // A bundled async locale loader may also sit there; extraction never calls it and a plain vm
+  // script cannot parse its `import.meta`, so whole top-level async function blocks are skipped.
+  // Anything else unexpected still fails the guard below.
   const importsEnd = [...src.matchAll(/import\{[^}]*\}from"[^"]+";/g)].at(-1);
-  const helpers = src.slice(
-    importsEnd ? importsEnd.index + importsEnd[0].length : 0,
-    src.search(new RegExp(`var ${unreleasedName.replace('$', '\\$')}=\\[`)),
-  ).replace(/^var [\w$]+=`\/changelog`;/, '');
+  const helperStart = importsEnd ? importsEnd.index + importsEnd[0].length : 0;
+  const helperEnd = src.search(new RegExp(`var ${unreleasedName.replace('$', '\\$')}=\\[`));
+  let helpers = src.slice(helperStart, helperEnd);
+  {
+    // Indices stay in src coordinates: closeOf reads the whole file, so every skip keeps `at`
+    // relative to helperStart and converts through closeOf's absolute result.
+    let kept = '';
+    for (let at = 0; at < helpers.length; ) {
+      const rest = helpers.slice(at);
+      const routeVar = rest.match(/^var [\w$]+=`\/changelog`;/);
+      if (routeVar) {
+        at += routeVar[0].length;
+        continue;
+      }
+      const loader = rest.match(/^async function [\w$]+\([^)]*\)\{/);
+      if (loader) {
+        at = closeOf(helperStart + at + loader[0].length - 1) - helperStart;
+        continue;
+      }
+      const skip = rest.indexOf('async function');
+      if (skip === -1) {
+        kept += rest;
+        break;
+      }
+      kept += rest.slice(0, skip);
+      at += skip;
+    }
+    helpers = kept;
+  }
   if (!/^(function [\w$]+\([^)]*\)\{[^]*?\})+$/.test(helpers))
     throw new Error(`unexpected code before the notes in ${chunk}; update tools/dump-changelog.mjs`);
 

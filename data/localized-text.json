@@ -1,8 +1,8 @@
 {
  "schema": 1,
  "game": {
-  "version": "25fcb5b",
-  "commit": "25fcb5b5bd4591426421afaa4f03a233fd05d53a"
+  "version": "5a3fe5d",
+  "commit": "5a3fe5dd91ad4da0a43ebf8140e3ff617a82c9fe"
  },
  "simVersion": "df0e6168e3ba1f8b",
  "locales": [
@@ -2327,7 +2327,7 @@
     "hoarfrost-mantle": {
      "name": "Hoarfrost Mantle",
      "desc": "Each Flash Freeze hit rimes its target and nearby pests while the frost lasts. Rimed foes take 25% more damage from every weapon.",
-     "where": "On the Loadout of a playtest page, in the chest slot."
+     "where": "On the Loadout, in the chest slot."
     }
    },
    "gearSet": {
@@ -2432,7 +2432,7 @@
     },
     "scorching": {
      "name": "Scorching",
-     "desc": "Leaves a burning trail behind it.",
+     "desc": "Sets fire under Tibo every 3.5 s and leaves a burning trail.",
      "where": "On elites from 0:45."
     },
     "snaring": {
@@ -4577,7 +4577,7 @@
     "hoarfrost-mantle": {
      "name": "霜华斗篷",
      "desc": "急冻每次命中，都会在寒气持续时让目标和附近害虫结霜。结霜的敌人受到所有武器的伤害增加25%。",
-     "where": "试玩页面的配装中，上衣栏位。"
+     "where": "配装中的上衣栏位。"
     }
    },
    "gearSet": {
@@ -4682,7 +4682,7 @@
     },
     "scorching": {
      "name": "灼热",
-     "desc": "身后留下一道燃烧的痕迹。",
+     "desc": "每3.5秒在Tibo脚下点火，身后留下一道燃烧的痕迹。",
      "where": "0:45起出现在精英身上。"
     },
     "snaring": {
@@ -6827,7 +6827,7 @@
     "hoarfrost-mantle": {
      "name": "霜華斗篷",
      "desc": "急凍每次命中，都會在寒氣持續時讓目標和附近害蟲結霜。結霜的敵人受到所有武器的傷害增加25%。",
-     "where": "試玩頁面的配裝中，上衣欄位。"
+     "where": "配裝中的上衣欄位。"
     }
    },
    "gearSet": {
@@ -6932,7 +6932,7 @@
     },
     "scorching": {
      "name": "灼熱",
-     "desc": "身後留下一道燃燒的痕跡。",
+     "desc": "每3.5秒在Tibo腳下點火，身後留下一道燃燒的痕跡。",
      "where": "0:45起出現在菁英身上。"
     },
     "snaring": {
@@ -9077,7 +9077,7 @@
     "hoarfrost-mantle": {
      "name": "霜の外套",
      "desc": "瞬間冷凍が当たるたび、冷気が続く間、標的と周りの害虫に霜が降りる。霜の降りた敵は、全武器から受けるダメージが25%増える。",
-     "where": "プレイテストページの編成、胴の枠。"
+     "where": "編成の胴の枠。"
     }
    },
    "gearSet": {
@@ -9182,7 +9182,7 @@
     },
     "scorching": {
      "name": "灼熱",
-     "desc": "後ろに燃える跡を残す。",
+     "desc": "3.5秒ごとにTiboの足元に火をつけ、燃える跡を残す。",
      "where": "0:45以降のエリートに付く。"
     },
     "snaring": {
@@ -11327,7 +11327,7 @@
     "hoarfrost-mantle": {
      "name": "서리 망토",
      "desc": "순간 냉동이 적중할 때마다 냉기가 남아 있는 동안 대상과 주변 해충에 서리가 내립니다. 서리 내린 적은 모든 무기에게서 25% 더 많은 피해를 받습니다.",
-     "where": "플레이테스트 페이지의 로드아웃, 상의 슬롯에 있습니다."
+     "where": "로드아웃의 상의 슬롯에 있습니다."
     }
    },
    "gearSet": {
@@ -11432,7 +11432,7 @@
     },
     "scorching": {
      "name": "작열",
-     "desc": "지나간 자리에 불타는 흔적을 남깁니다.",
+     "desc": "3.5초마다 Tibo의 발밑에 불을 붙이고 불타는 흔적을 남깁니다.",
      "where": "0:45부터 엘리트에게 붙습니다."
     },
     "snaring": {
@@ -13577,7 +13577,7 @@
     "hoarfrost-mantle": {
      "name": "Manto de escarcha",
      "desc": "Cada golpe de Congelado exprés cubre de escarcha a su objetivo y a las plagas cercanas mientras dura el frío. Los enemigos escarchados reciben un 25 % más de daño de todas las armas.",
-     "where": "En el Equipo de una página de prueba, en la ranura de pecho."
+     "where": "En el Equipo, en la ranura de pecho."
     }
    },
    "gearSet": {
@@ -13682,7 +13682,7 @@
     },
     "scorching": {
      "name": "Abrasador",
-     "desc": "Deja un rastro ardiente a su paso.",
+     "desc": "Prende fuego bajo Tibo cada 3,5 s y deja un rastro ardiente.",
      "where": "En élites desde 0:45."
     },
     "snaring": {
@@ -15827,7 +15827,7 @@
     "hoarfrost-mantle": {
      "name": "पाले का लबादा",
      "desc": "फटाफट फ्रीज़ का हर वार, जब तक ठंड रहती है, अपने निशाने और पास के कीटों पर पाला जमा देता है। पाले से ढके दुश्मनों को हर हथियार से 25% ज़्यादा डैमेज होता है।",
-     "where": "प्लेटेस्ट पेज के लोडआउट में, सीने वाले स्लॉट में।"
+     "where": "लोडआउट में, सीने वाले स्लॉट में।"
     }
    },
    "gearSet": {
@@ -15932,7 +15932,7 @@
     },
     "scorching": {
      "name": "दहकता",
-     "desc": "अपने पीछे जलती लकीर छोड़ता है।",
+     "desc": "हर 3.5 सेकंड में Tibo के नीचे आग लगाता है और पीछे जलती लकीर छोड़ता है।",
      "where": "0:45 से एलीट पर।"
     },
     "snaring": {
@@ -18077,7 +18077,7 @@
     "hoarfrost-mantle": {
      "name": "Raureifmantel",
      "desc": "Jeder Treffer von Schockfrost überzieht sein Ziel und Schädlinge in der Nähe mit Raureif, solange der Frost anhält. Bereifte Gegner nehmen von jeder Waffe 25 % mehr Schaden.",
-     "where": "Im Loadout einer Playtest-Seite, im Brust-Platz."
+     "where": "Im Loadout, im Brust-Platz."
     }
    },
    "gearSet": {
@@ -18182,7 +18182,7 @@
     },
     "scorching": {
      "name": "Sengend",
-     "desc": "Hinterlässt eine brennende Spur.",
+     "desc": "Legt alle 3,5 s Feuer unter Tibo und hinterlässt eine brennende Spur.",
      "where": "Bei Elites ab 0:45."
     },
     "snaring": {
@@ -20327,7 +20327,7 @@
     "hoarfrost-mantle": {
      "name": "Manteau de givre",
      "desc": "Chaque coup de Surgélation couvre de givre sa cible et les nuisibles proches tant que le froid dure. Les ennemis givrés subissent 25 % de dégâts en plus de toutes les armes.",
-     "where": "Dans le Paquetage d’une page de test, à l’emplacement du torse."
+     "where": "Dans le Paquetage, à l’emplacement du torse."
     }
    },
    "gearSet": {
@@ -20432,7 +20432,7 @@
     },
     "scorching": {
      "name": "Brûlante",
-     "desc": "Laisse une traînée de feu derrière elle.",
+     "desc": "Met le feu sous Tibo toutes les 3,5 s et laisse une traînée brûlante.",
      "where": "Sur les élites dès 0:45."
     },
     "snaring": {
@@ -22577,7 +22577,7 @@
     "hoarfrost-mantle": {
      "name": "Manto de geada",
      "desc": "Cada golpe do Congelamento relâmpago cobre de geada o alvo e as pragas próximas enquanto o frio dura. Inimigos com geada levam 25% a mais de dano de todas as armas.",
-     "where": "No Arsenal de uma página de teste, no espaço do peito."
+     "where": "No Arsenal, no espaço do peito."
     }
    },
    "gearSet": {
@@ -22682,7 +22682,7 @@
     },
     "scorching": {
      "name": "Escaldante",
-     "desc": "Deixa um rastro de fogo por onde passa.",
+     "desc": "Ateia fogo sob o Tibo a cada 3,5 s e deixa um rastro ardente.",
      "where": "Em elites a partir de 0:45."
     },
     "snaring": {
@@ -24827,7 +24827,7 @@
     "hoarfrost-mantle": {
      "name": "Kırağı Pelerini",
      "desc": "Her Şok Dondurma vuruşu, soğuk sürdükçe hedefini ve yakındaki haşereleri kırağıyla kaplar. Kırağılı düşmanlar her silahtan %25 daha fazla hasar alır.",
-     "where": "Test sayfasının Donanım ekranında, gövde yuvasında."
+     "where": "Donanım ekranında, gövde yuvasında."
     }
    },
    "gearSet": {
@@ -24932,7 +24932,7 @@
     },
     "scorching": {
      "name": "Kavurucu",
-     "desc": "Arkasında yanan bir iz bırakır.",
+     "desc": "Her 3,5 sn'de Tibo'nun altında ateş yakar ve arkasında yanan bir iz bırakır.",
      "where": "0:45'ten itibaren elitlerde."
     },
     "snaring": {
@@ -27077,7 +27077,7 @@
     "hoarfrost-mantle": {
      "name": "Jubah Embun Beku",
      "desc": "Setiap serangan Beku Kilat menyelimuti sasarannya dan hama di dekatnya dengan embun beku selama dinginnya bertahan. Musuh berembun beku menerima 25% damage lebih banyak dari setiap senjata.",
-     "where": "Di Loadout halaman uji coba, di slot baju."
+     "where": "Di Loadout, di slot baju."
     }
    },
    "gearSet": {
@@ -27182,7 +27182,7 @@
     },
     "scorching": {
      "name": "Membara",
-     "desc": "Meninggalkan jejak api di belakangnya.",
+     "desc": "Membakar tanah di bawah Tibo tiap 3,5 dtk dan meninggalkan jejak api.",
      "where": "Pada elite mulai 0:45."
     },
     "snaring": {
@@ -29327,7 +29327,7 @@
     "hoarfrost-mantle": {
      "name": "Мантия инея",
      "desc": "Каждый удар Шоковой заморозки покрывает инеем цель и ближайших вредителей, пока держится холод. Покрытые инеем враги получают на 25% больше урона от любого оружия.",
-     "where": "В экипировке на странице теста, в слоте торса."
+     "where": "В экипировке, в слоте торса."
     }
    },
    "gearSet": {
@@ -29432,7 +29432,7 @@
     },
     "scorching": {
      "name": "Палящий",
-     "desc": "Оставляет за собой огненный след.",
+     "desc": "Каждые 3,5 с поджигает землю под Tibo и оставляет за собой огненный след.",
      "where": "У элиты с 0:45."
     },
     "snaring": {
@@ -31577,7 +31577,7 @@
     "hoarfrost-mantle": {
      "name": "Jubah Fros",
      "desc": "Setiap pukulan Beku Kilat menyelubungi sasarannya dan perosak berdekatan dengan fros selagi sejuknya kekal. Musuh berfros menerima 25% lebih kerosakan daripada setiap senjata.",
-     "where": "Dalam Kelengkapan halaman ujian main, di slot baju."
+     "where": "Dalam Kelengkapan, di slot baju."
     }
    },
    "gearSet": {
@@ -31682,7 +31682,7 @@
     },
     "scorching": {
      "name": "Membara",
-     "desc": "Meninggalkan jejak api di belakangnya.",
+     "desc": "Membakar tanah di bawah Tibo setiap 3.5 s dan meninggalkan jejak api.",
      "where": "Pada elit mulai 0:45."
     },
     "snaring": {
@@ -33827,7 +33827,7 @@
     "hoarfrost-mantle": {
      "name": "Balabal ng Hamog na Yelo",
      "desc": "Bawat tama ng Flash Freeze ay nagbabalot ng hamog na yelo sa target at kalapit na peste habang may lamig. Ang may hamog na yelo ay may 25% dagdag na damage sa bawat armas.",
-     "where": "Sa Loadout ng playtest page, sa slot ng dibdib."
+     "where": "Sa Loadout, sa slot ng dibdib."
     }
    },
    "gearSet": {
@@ -33932,7 +33932,7 @@
     },
     "scorching": {
      "name": "Nagliliyab",
-     "desc": "Nag-iiwan ng bakas ng apoy sa likod nito.",
+     "desc": "Nagsisindi ng apoy sa ilalim ni Tibo bawat 3.5 s at nag-iiwan ng nagliliyab na bakas.",
      "where": "Sa mga elite mula 0:45."
     },
     "snaring": {
@@ -36077,7 +36077,7 @@
     "hoarfrost-mantle": {
      "name": "हिमकणांचा झगा",
      "desc": "झटपट गोठणचा प्रत्येक प्रहार, थंडी टिकेपर्यंत, लक्ष्य आणि जवळच्या किड्यांवर हिमकण चढवतो. हिमकणांनी झाकलेल्या शत्रूंना प्रत्येक शस्त्राकडून 25% अधिक डॅमेज होतो.",
-     "where": "प्लेटेस्ट पेजच्या लोडआउटमध्ये, छातीच्या स्लॉटमध्ये."
+     "where": "लोडआउटमध्ये, छातीच्या स्लॉटमध्ये."
     }
    },
    "gearSet": {
@@ -36182,7 +36182,7 @@
     },
     "scorching": {
      "name": "धगधगता",
-     "desc": "मागे जळता माग सोडतो.",
+     "desc": "दर 3.5 से. Tibo च्या खाली आग लावतो आणि मागे जळता माग सोडतो.",
      "where": "0:45 पासून एलिटवर."
     },
     "snaring": {
@@ -38327,7 +38327,7 @@
     "hoarfrost-mantle": {
      "name": "Áo Choàng Sương Giá",
      "desc": "Mỗi đòn Đông Chớp Nhoáng phủ sương giá lên mục tiêu và sâu bọ quanh đó khi cái lạnh còn kéo dài. Kẻ địch bị phủ sương giá chịu thêm 25% sát thương từ mọi vũ khí.",
-     "where": "Trong Hành trang của trang chơi thử, ở ô áo."
+     "where": "Trong Hành trang, ở ô áo."
     }
    },
    "gearSet": {
@@ -38432,7 +38432,7 @@
     },
     "scorching": {
      "name": "Thiêu Đốt",
-     "desc": "Để lại một vệt lửa phía sau.",
+     "desc": "Cứ mỗi 3,5 giây lại châm lửa dưới chân Tibo và để lại một vệt lửa phía sau.",
      "where": "Trên tinh anh từ 0:45."
     },
     "snaring": {
@@ -40577,7 +40577,7 @@
     "hoarfrost-mantle": {
      "name": "హిమపు అంగీ",
      "desc": "మెరుపు గడ్డకట్టు ప్రతి దెబ్బ, చలి ఉన్నంతసేపు, లక్ష్యాన్నీ దగ్గరి పురుగులనూ హిమంతో కప్పుతుంది. హిమం కప్పిన శత్రువులు ప్రతి ఆయుధం నుండి 25% ఎక్కువ డ్యామేజ్ పొందుతాయి.",
-     "where": "ప్లేటెస్ట్ పేజీ లోడౌట్ లో, ఛాతీ స్లాట్ లో."
+     "where": "లోడౌట్ లో, ఛాతీ స్లాట్ లో."
     }
    },
    "gearSet": {
@@ -40682,7 +40682,7 @@
     },
     "scorching": {
      "name": "మండించే",
-     "desc": "వెనకాల మండే దారిని వదులుతుంది.",
+     "desc": "ప్రతి 3.5 సె కి Tibo కింద నిప్పు పెడుతుంది, వెనకాల మండే దారిని వదులుతుంది.",
      "where": "0:45 నుంచి ఎలైట్స్ పై."
     },
     "snaring": {
@@ -42827,7 +42827,7 @@
     "hoarfrost-mantle": {
      "name": "உறைபனி மேலங்கி",
      "desc": "மின்னல் உறைவின் இலக்கையும் அருகிலுள்ள பூச்சிகளையும் குளிர் உள்ளவரை உறைபனி மூடும். அவை எல்லா ஆயுதங்களாலும் 25% கூடுதல் டேமேஜ் பெறும்.",
-     "where": "சோதனை ஆட்டப் பக்கத்தின் லோட்அவுட்டில், மார்பு இடத்தில்."
+     "where": "லோட்அவுட்டில், மார்பு இடத்தில்."
     }
    },
    "gearSet": {
@@ -42932,7 +42932,7 @@
     },
     "scorching": {
      "name": "தகிக்கும்",
-     "desc": "பின்னால் எரியும் தடத்தை விட்டுச் செல்லும்.",
+     "desc": "ஒவ்வொரு 3.5 வினாடிக்கும் Tibo-வின் கீழ் தீ மூட்டும், பின்னால் எரியும் தடத்தையும் விட்டுச் செல்லும்.",
      "where": "0:45 முதல் எலைட்களிடம்."
     },
     "snaring": {
@@ -45077,7 +45077,7 @@
     "hoarfrost-mantle": {
      "name": "হিমকণার আলখাল্লা",
      "desc": "ঝটপট বরফের প্রতিটা আঘাত, যতক্ষণ ঠান্ডা থাকে, লক্ষ্য আর আশপাশের পোকাদের হিমকণায় ঢেকে দেয়। হিমকণায় ঢাকা শত্রুরা প্রতিটা অস্ত্র থেকে 25% বেশি ড্যামেজ পায়।",
-     "where": "প্লেটেস্ট পেজের লোডআউটে, বুকের স্লটে।"
+     "where": "লোডআউটে, বুকের স্লটে।"
     }
    },
    "gearSet": {
@@ -45182,7 +45182,7 @@
     },
     "scorching": {
      "name": "জ্বলন্ত",
-     "desc": "পেছনে জ্বলন্ত রেখা রেখে যায়।",
+     "desc": "প্রতি 3.5 সেকেন্ডে Tibo-র নিচে আগুন ধরায় এবং পেছনে জ্বলন্ত রেখা রেখে যায়।",
      "where": "0:45 থেকে এলিটদের গায়ে।"
     },
     "snaring": {
@@ -47327,7 +47327,7 @@
     "hoarfrost-mantle": {
      "name": "เสื้อคลุมน้ำค้างแข็ง",
      "desc": "ทุกครั้งที่แช่แข็งฉับพลันโดนเป้า จะเคลือบน้ำค้างแข็งให้เป้าและศัตรูพืชรอบๆ ตราบที่ความเย็นยังอยู่ ศัตรูที่ถูกเคลือบน้ำค้างแข็งจะรับดาเมจจากอาวุธทุกชิ้นเพิ่ม 25%",
-     "where": "ในหน้าจัดชุดของหน้าทดลองเล่น ช่องเสื้อ"
+     "where": "ในหน้าจัดชุด ช่องเสื้อ"
     }
    },
    "gearSet": {
@@ -47432,7 +47432,7 @@
     },
     "scorching": {
      "name": "แผดเผา",
-     "desc": "ทิ้งรอยไฟไว้ข้างหลัง",
+     "desc": "จุดไฟใต้ตัว Tibo ทุก 3.5 วินาที และทิ้งรอยไฟไว้ข้างหลัง",
      "where": "พบในอีลีทตั้งแต่ 0:45"
     },
     "snaring": {
@@ -49577,7 +49577,7 @@
     "hoarfrost-mantle": {
      "name": "Mayafin Ƙanƙara",
      "desc": "Kowane bugun Daskarewa Nan Take yana lulluɓe abin da ya buga da ƙwarin da ke kusa da ƙanƙara muddin sanyin yana nan. Maƙiyan da ƙanƙara ta lulluɓe suna shan ƙarin lahani 25% daga kowane makami.",
-     "where": "A cikin Shiri na shafin gwaji, a gurbin ƙirji."
+     "where": "A cikin Shiri, a gurbin ƙirji."
     }
    },
    "gearSet": {
@@ -49682,7 +49682,7 @@
     },
     "scorching": {
      "name": "Mai Ƙuna",
-     "desc": "Yana barin layin wuta a bayansa.",
+     "desc": "Yana kunna wuta a ƙarƙashin Tibo kowane 3.5 s, kuma yana barin layin wuta.",
      "where": "A kan gwaraza daga 0:45."
     },
     "snaring": {
@@ -51827,7 +51827,7 @@
     "hoarfrost-mantle": {
      "name": "Hoarfrost Mantle",
      "desc": "Every Quick Freeze hit dey cover im target and pests wey near with frost as long as the cold still dey. Enemies wey frost cover dey take 25% more damage from every weapon.",
-     "where": "For the Kit for playtest page, for the body slot."
+     "where": "For the Kit, for the body slot."
     }
    },
    "gearSet": {
@@ -51932,7 +51932,7 @@
     },
     "scorching": {
      "name": "Burning",
-     "desc": "E dey leave burning trail for im back.",
+     "desc": "E dey set fire under Tibo every 3.5 s and e dey leave burning trail.",
      "where": "For elites from 0:45."
     },
     "snaring": {
@@ -54077,7 +54077,7 @@
     "hoarfrost-mantle": {
      "name": "عباءة الصقيع",
      "desc": "كل ضربة من التجميد الخاطف تكسو هدفها والآفات القريبة بالصقيع ما دام البرد باقيًا. الأعداء المكسوّون بالصقيع يتلقون ضررًا أكبر بنسبة ‎25%‎ من كل سلاح.",
-     "where": "في العُدّة على صفحة تجربة اللعب، في خانة الصدر."
+     "where": "في العُدّة، في خانة الصدر."
     }
    },
    "gearSet": {
@@ -54182,7 +54182,7 @@
     },
     "scorching": {
      "name": "حارق",
-     "desc": "يترك خلفه أثرًا مشتعلًا.",
+     "desc": "يُشعل النار تحت Tibo كل 3.5 ث ويترك خلفه أثرًا مشتعلًا.",
      "where": "لدى النخبة بدءًا من 0:45."
     },
     "snaring": {
@@ -56327,7 +56327,7 @@
     "hoarfrost-mantle": {
      "name": "ردای برفک",
      "desc": "هر ضربه‌ی یخ‌زدگی آنی، تا وقتی سرما باقی است، هدفش و آفت‌های نزدیک را برفک‌زده می‌کند. دشمنان برفک‌زده از هر سلاحی ‎25%‎ آسیب بیشتر می‌گیرند.",
-     "where": "در کوله‌بار صفحه‌ی تست بازی، در خانه‌ی سینه."
+     "where": "در کوله‌بار، در خانه‌ی سینه."
     }
    },
    "gearSet": {
@@ -56432,7 +56432,7 @@
     },
     "scorching": {
      "name": "سوزان",
-     "desc": "پشت سرش ردی سوزان به جا می‌گذارد.",
+     "desc": "هر 3.5 ثانیه زیر پای Tibo آتش روشن می‌کند و ردی سوزان به جا می‌گذارد.",
      "where": "روی نخبه‌ها از 0:45."
     },
     "snaring": {
@@ -58577,7 +58577,7 @@
     "hoarfrost-mantle": {
      "name": "גלימת כפור",
      "desc": "כל פגיעה של הקפאת בזק מכסה בכפור את המטרה שלה ואת המזיקים הקרובים כל עוד הקור נמשך. אויבים מכוסי כפור חוטפים ‎25%‎ יותר נזק מכל נשק.",
-     "where": "בערכה של עמוד בדיקת משחק, בחריץ החזה."
+     "where": "בערכה, בחריץ החזה."
     }
    },
    "gearSet": {
@@ -58682,7 +58682,7 @@
     },
     "scorching": {
      "name": "לוהטת",
-     "desc": "משאירה אחריה שובל בוער.",
+     "desc": "מציתה אש מתחת ל־Tibo כל 3.5 שנ׳ ומשאירה אחריה שובל בוער.",
      "where": "אצל עיליות מ־0:45."
     },
     "snaring": {
@@ -60827,7 +60827,7 @@
     "hoarfrost-mantle": {
      "name": "پالے کا چوغہ",
      "desc": "فوری جماؤ کا ہر وار، جب تک ٹھنڈ رہے، اپنے نشانے اور قریبی کیڑوں پر پالا جما دیتا ہے۔ پالے سے ڈھکے دشمنوں کو ہر ہتھیار سے ‎25%‎ زیادہ نقصان ہوتا ہے۔",
-     "where": "پلے ٹیسٹ صفحے کے لوڈ آؤٹ میں، سینے کے خانے میں۔"
+     "where": "لوڈ آؤٹ میں، سینے کے خانے میں۔"
     }
    },
    "gearSet": {
@@ -60932,7 +60932,7 @@
     },
     "scorching": {
      "name": "آتشیں",
-     "desc": "اپنے پیچھے جلتی لکیر چھوڑ جاتا ہے۔",
+     "desc": "ہر 3.5 سیکنڈ بعد Tibo کے نیچے آگ لگاتا ہے اور اپنے پیچھے جلتی لکیر چھوڑ جاتا ہے۔",
      "where": "0:45 سے ایلیٹ پر۔"
     },
     "snaring": {
@@ -60952,143 +60952,143 @@
   "index": {
    "url": "https://tibo.dog/data/v1/index.json",
    "bytes": 18939,
-   "sha256": "725df17ba0d51c7bd090518309d8a931866932476d1397f54784a283ae12a26c"
+   "sha256": "3b5a8676081f1c56d364a4fa0d7907dc8d87ac1d6a99fa435e98b90bfb44f187"
   },
   "locales": {
    "en": {
     "url": "https://tibo.dog/data/v1/text/en.json",
-    "bytes": 61606,
-    "sha256": "0d5a7c4f7df86ca36756deaea8fc0d00297df71d4d11893db1ea70e405a44d80"
+    "bytes": 61614,
+    "sha256": "35d56f19d9559726e720c4725e3cce8797abee397fc37ca96feb09f134268012"
    },
    "zh-CN": {
     "url": "https://tibo.dog/data/v1/text/zh-CN.json",
-    "bytes": 60734,
-    "sha256": "3e1d4546486a8be91dfefab62a89cc882fcb6cd944954ef27e89e6478e2de911"
+    "bytes": 60750,
+    "sha256": "6d5733f4b9661f07c1412f92321ac29750a822d3bade0f8000e96561842c4c09"
    },
    "zh-TW": {
     "url": "https://tibo.dog/data/v1/text/zh-TW.json",
-    "bytes": 61007,
-    "sha256": "8c8b6e15cda77c21233db94cc68cbf8fdc32ed39e1855e98a4f010d30667ed82"
+    "bytes": 61023,
+    "sha256": "af6f53ee786771a0dd9c843cf44988c67dcee2d57642ccd7d8ff4d71d4cf318b"
    },
    "ja": {
     "url": "https://tibo.dog/data/v1/text/ja.json",
-    "bytes": 74364,
-    "sha256": "418e4350a0fabe9268fce5d25215d2ff19021fa3a6bb0f3e1690011c8ea2f5b5"
+    "bytes": 74371,
+    "sha256": "b441124bb881ab063390751efe590276ff9adda2bf039f38b11b28ada714edfc"
    },
    "ko": {
     "url": "https://tibo.dog/data/v1/text/ko.json",
-    "bytes": 74686,
-    "sha256": "a49651c1321c7273d3691a12cacc6676939b8adc6cc7dba255bde93a469c9ff9"
+    "bytes": 74684,
+    "sha256": "f5f9d8ab12e5ad5bff1b55626f7a0e9af15cb4cf6b1af7c8541f525b7aaf10f9"
    },
    "es": {
     "url": "https://tibo.dog/data/v1/text/es.json",
-    "bytes": 69645,
-    "sha256": "aed0bd68d20f955ee51ce64c0589b5ed77942ca392413924a0790425e54d68a5"
+    "bytes": 69646,
+    "sha256": "024d328439e7fec0ab8cdf0c797f1ae447ab66d6c8e88ec8d2e3ac873913561b"
    },
    "hi": {
     "url": "https://tibo.dog/data/v1/text/hi.json",
-    "bytes": 129019,
-    "sha256": "95402bc451d134e74b06766ef2b0facbc15cc1f82fe5617d78937228e3c4beea"
+    "bytes": 129060,
+    "sha256": "fe7b8b9923c7357e5ed6f86d6048ba3e53872667cab47527c8b8be416585afc5"
    },
    "de": {
     "url": "https://tibo.dog/data/v1/text/de.json",
-    "bytes": 68827,
-    "sha256": "b6a1891af892cf0ca001c0b78f45fc811ce9f3f819d5d1de25f653720d640888"
+    "bytes": 68843,
+    "sha256": "fa23db13b1532e9ea087e1e8f45cd32fefa82d87e5c68b6ee60f4308fd989815"
    },
    "fr": {
     "url": "https://tibo.dog/data/v1/text/fr.json",
-    "bytes": 72267,
-    "sha256": "04eee6cc0f29d0312195f5b9d2b842420e8f5e3d4a2a703674f904a23bee4639"
+    "bytes": 72275,
+    "sha256": "2fb1ac923ff9e8fd71a7115bc666df321988c7c328fc554093a98731a18f56a4"
    },
    "pt": {
     "url": "https://tibo.dog/data/v1/text/pt.json",
-    "bytes": 68181,
-    "sha256": "e9cc11fd4260ffc05510fa65973f128aa739f882d70ac83a61aada88c4f9f7d5"
+    "bytes": 68179,
+    "sha256": "3def3c8e387588b434520d847184dfce88fcd11747f723933b91f4029d5a0488"
    },
    "tr": {
     "url": "https://tibo.dog/data/v1/text/tr.json",
-    "bytes": 70710,
-    "sha256": "fabf653047c95efc5db0d18c0e3e9c40b57bb348688fbd6afd54d65f4194104d"
+    "bytes": 70739,
+    "sha256": "3138f8ef38ce28da5c01887d21d8a896312b6dce528c06e449e20542ccda6f7f"
    },
    "id": {
     "url": "https://tibo.dog/data/v1/text/id.json",
-    "bytes": 67910,
-    "sha256": "a8b39ec25e1af0b205b19b7743092aa082783f7947e4b32d90f0f91cfc3c905c"
+    "bytes": 67924,
+    "sha256": "1f47cd7063f6999f4dbaa17cc9abdb28e333fad9057848c4bde422f3fae66cb4"
    },
    "ru": {
     "url": "https://tibo.dog/data/v1/text/ru.json",
-    "bytes": 101351,
-    "sha256": "a0df34ac3eebcafc0ef7ca70f35cb042065d1885667295b135b073721cd156cf"
+    "bytes": 101383,
+    "sha256": "3c891e7f8664d27cfb030e1ea2907da751c1ae3230f3333ef22c3e1d366dbf4d"
    },
    "ms": {
     "url": "https://tibo.dog/data/v1/text/ms.json",
-    "bytes": 70211,
-    "sha256": "c998ba00b97bd7a5cd979b153dbbfc1a02f8e492b70487a7ae13e9887a628d8c"
+    "bytes": 70223,
+    "sha256": "3fae890608a7228a447f4a54b514cab7b9ccbaf3c99a9595a6bb6ed64ba6ac2a"
    },
    "fil": {
     "url": "https://tibo.dog/data/v1/text/fil.json",
-    "bytes": 74105,
-    "sha256": "785096bab4be54f10fd4db275027b729b80d9d055a22ab063a5d9de511a632f1"
+    "bytes": 74132,
+    "sha256": "6d8cfdefa0a328bf0103abf291d8c6b69663323fc0d6cd710d8f663bc025ced9"
    },
    "mr": {
     "url": "https://tibo.dog/data/v1/text/mr.json",
-    "bytes": 133280,
-    "sha256": "dd832cdc6c97c697ce2404ab7aa9be8c7621f2f27a500bf7aa3bc8b7aaaf90ab"
+    "bytes": 133313,
+    "sha256": "419d671a97475a8cdbd893433956c82aea9ccc5785ff7de225262775ae7268f0"
    },
    "vi": {
     "url": "https://tibo.dog/data/v1/text/vi.json",
-    "bytes": 74933,
-    "sha256": "9da0f1620bc547ed63bb0d5dedb7d9791a0c226f5cff1026968f7dc53fb68484"
+    "bytes": 74971,
+    "sha256": "828359f7bad07b82db102567a6ba86e6a02486b7910ae77d1eb12589095dc41a"
    },
    "te": {
     "url": "https://tibo.dog/data/v1/text/te.json",
-    "bytes": 140333,
-    "sha256": "eb14a940f203c12dfd821465ec4a8239947014bf09e6cb8cecee2d1bacc65443"
+    "bytes": 140389,
+    "sha256": "ba471ceee141edd2db469cd7b4e4c51b8c2b42abea43ad5dac193db5e5b7c8bd"
    },
    "ta": {
     "url": "https://tibo.dog/data/v1/text/ta.json",
-    "bytes": 153098,
-    "sha256": "50f0295a792bb32fdfa3a4554057137a1da085ff93c2a6c389fb02967dcdc0c4"
+    "bytes": 153171,
+    "sha256": "a43d1a54551a5ab60ec2971763d8ec9448c1a89302d72df748a8464d8d873421"
    },
    "bn": {
     "url": "https://tibo.dog/data/v1/text/bn.json",
-    "bytes": 130091,
-    "sha256": "dab25c1c987b8786fc2935a9027bfb5560eb7af23c3674ee7a668933d31d102c"
+    "bytes": 130153,
+    "sha256": "2f50b39b2716eca9431a6fcf9f51fb16feab3de5ac8cbb9f35f1d8172aaeee6a"
    },
    "th": {
     "url": "https://tibo.dog/data/v1/text/th.json",
-    "bytes": 125425,
-    "sha256": "784e957c788ce1ea95fb87d6425daf78059419cabaa9687c2968a0e4295a9e33"
+    "bytes": 125458,
+    "sha256": "9145e178d3b515eb3fe008613e99a3a23a5af52f4cc07a661896d4f893e093f4"
    },
    "ha": {
     "url": "https://tibo.dog/data/v1/text/ha.json",
-    "bytes": 70635,
-    "sha256": "8fc542c39db252891c53c8052731b339a566379a0ea63eeff5f0e4a455824cfc"
+    "bytes": 70663,
+    "sha256": "f20a24356342e21ba8b2c3268e5177d5595f557d0aac6e8e825b9895eeaf35bc"
    },
    "pcm": {
     "url": "https://tibo.dog/data/v1/text/pcm.json",
-    "bytes": 64944,
-    "sha256": "79918ff2efa308689077137a41df12a797f67f86dbf086c4e6a2efdfc5d6be02"
+    "bytes": 64956,
+    "sha256": "8af51fd2706666e304769b06085c600fffb3fc39acffbb4f6c23410e6ed8e693"
    },
    "ar": {
     "url": "https://tibo.dog/data/v1/text/ar.json",
-    "bytes": 85257,
-    "sha256": "74fe17a98cf822de15955997949012160ad8de30200f90ce652be6c91bbcdd8c"
+    "bytes": 85267,
+    "sha256": "0b71079623fd5daeafa436fad6ccfd85b6968453958b87267433bc0d86d03360"
    },
    "fa": {
     "url": "https://tibo.dog/data/v1/text/fa.json",
-    "bytes": 100140,
-    "sha256": "9e5ceea509f14997480586481aea3f63e924293c9d741a93ab9058ef44d5ab65"
+    "bytes": 100168,
+    "sha256": "aebb43571ea8dc79ab8b4db7be439e5432a3def8748744743956182a37d13fa5"
    },
    "he": {
     "url": "https://tibo.dog/data/v1/text/he.json",
-    "bytes": 84805,
-    "sha256": "cce37eba9926dfdd25e489ce0b0084f58f86cdf17f88f3e89f87d077275b85b0"
+    "bytes": 84823,
+    "sha256": "912e8a290baacac3b25f2ae8961ffead079e699c0a2883cffae795848b67beee"
    },
    "ur": {
     "url": "https://tibo.dog/data/v1/text/ur.json",
-    "bytes": 96441,
-    "sha256": "10129e91e25b08d3eb4cfc6d4cec86df43b887c8f01cf7f46100489f4728b3ca"
+    "bytes": 96485,
+    "sha256": "62bc7c0e40c04420330e9e9f73a4bfb75737512e9816b0c30a66cdfe5291acd1"
    }
   }
  }
