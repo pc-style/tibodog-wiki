@@ -54,15 +54,23 @@ export function verifyFullSnapshot(journal, prior, html) {
 
 // The same selector contract is used for archived replays and live captures.
 // Clicking collapsed toggles deliberately checks the game's actual render path.
-const captureScript = (surface) => `(() => {
+// The Update 2 release card is a day-styled group (changelog-day u2-release) but
+// not a dated journal entry: it carries no date button (panel) or time (full page)
+// and its waves carry no version code. It is excluded from the dated capture; the
+// journal verifier still compares the captured dated days against the whole
+// journal, so any other carrier-less day group must fail loudly here.
+export const captureScript = (surface) => `(() => {
   const panel = ${JSON.stringify(surface)} === 'panel';
   const prefix = panel ? 'changelog' : 'changes';
   const days = [...document.querySelectorAll('.' + prefix + '-day')];
+  const dated = days.filter(d => panel ? d.querySelector('button') : d.querySelector('time'));
+  const skipped = days.filter(d => !dated.includes(d));
+  if (skipped.some(d => !d.classList.contains('u2-release'))) throw new Error('Journal day without a date carrier');
   const date = d => panel ? d.querySelector('button').getAttribute('aria-controls').replace('changelog-day-', '') : d.querySelector('time').dateTime;
   return { surface: ${JSON.stringify(surface)}, url: location.href,
     main: [...document.scripts].map(s => s.src.match(/\\/(main-[A-Za-z0-9_-]{8}\\.js)(?:[?]|$)/)?.[1]).find(Boolean),
-    dates: days.map(date), expanded: [...document.querySelectorAll('.changelog-toggle')].map(e => e.getAttribute('aria-expanded')),
-    rows: days.flatMap(d => [...d.querySelectorAll('.' + prefix + '-wave')].flatMap(w => [...w.querySelectorAll('.' + prefix + '-line')].map(l => ({
+    dates: dated.map(date), expanded: [...document.querySelectorAll('.changelog-toggle')].map(e => e.getAttribute('aria-expanded')),
+    rows: dated.flatMap(d => [...d.querySelectorAll('.' + prefix + '-wave')].flatMap(w => [...w.querySelectorAll('.' + prefix + '-line')].map(l => ({
       date: date(d), version: w.querySelector('code').textContent, kind: l.dataset.kind, text: l.querySelector('.' + prefix + '-text').textContent
     })))) };
 })()`;

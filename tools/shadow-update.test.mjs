@@ -5,7 +5,7 @@ import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { execFileSync, spawnSync } from 'node:child_process';
 import { createHash } from 'node:crypto';
-import { journalRows, verifyJournalCapture, verifyFullSnapshot } from './shadow-update.mjs';
+import { journalRows, verifyJournalCapture, verifyFullSnapshot, captureScript } from './shadow-update.mjs';
 
 const journal = {
   build: 'main-fixture1.js',
@@ -46,6 +46,62 @@ test('journal verifier checks complete ordered records, current code, build and 
     const wrong = structuredClone(capture); mutate(wrong);
     assert.throws(() => verifyJournalCapture(journal, 'newcode', wrong));
   }
+});
+
+test("the capture script excludes only the Update 2 release card from dated days and fails on any other carrier-less day", () => {
+  const el = ({ classes = [], queries = {}, attrs = {}, dataset = {}, props = {} } = {}) => ({
+    classList: { contains: c => classes.includes(c) },
+    querySelector: sel => queries[sel] ?? null,
+    querySelectorAll: sel => queries[sel] ?? [],
+    getAttribute: name => attrs[name] ?? null,
+    dataset,
+    ...props,
+  });
+  const run = (surface, dayGroups, toggles = []) => {
+    const document = {
+      querySelectorAll: sel => sel === `.${surface === 'panel' ? 'changelog' : 'changes'}-day` ? dayGroups : sel === '.changelog-toggle' ? toggles : [],
+      scripts: [],
+    };
+    const body = captureScript(surface).replace(/^\(\(\) => \{/, '').replace(/\}\)\(\)$/, '');
+    return new Function('document', 'location', body)(document, { href: `http://localhost/${surface === 'panel' ? '' : 'changelog'}` });
+  };
+  const text = value => ({ textContent: value });
+  const datedDay = (surface, date, waves) => el({
+    queries: {
+      [surface === 'panel' ? 'button' : 'time']: surface === 'panel'
+        ? el({ attrs: { 'aria-controls': `changelog-day-${date}` } })
+        : el({ attrs: { datetime: date }, props: { dateTime: date } }),
+      ...waves,
+    },
+  });
+  const wave = (surface, lines, code = 'oldcode') => el({ queries: { code: text(code), [`.${surface === 'panel' ? 'changelog' : 'changes'}-line`]: lines } });
+  const line = (surface, kind, value) => el({ dataset: { kind }, queries: { [`.${surface === 'panel' ? 'changelog' : 'changes'}-text`]: text(value) } });
+  const releaseCard = el({
+    classes: ['u2-release'],
+    queries: { [`.changelog-wave`]: [wave('panel', [line('panel', 'item', 'Card line one'), line('panel', 'item', 'Card line two')], undefined)] },
+  });
+  const panelDays = [
+    datedDay('panel', '2026-11-07', { '.changelog-wave': [wave('panel', [line('panel', 'fix', 'Fix')])] }),
+    datedDay('panel', '2026-11-06', { '.changelog-wave': [wave('panel', [line('panel', 'ui', 'Older')], 'older12')] }),
+    releaseCard,
+  ];
+  const capture = run('panel', panelDays, [el({ attrs: { 'aria-expanded': 'true' } }), el({ attrs: { 'aria-expanded': 'true' } })]);
+  // The release card's waves are real journal-shaped rows; excluding the group must drop them.
+  assert.deepEqual(capture.dates, ['2026-11-07', '2026-11-06']);
+  assert.deepEqual(capture.rows, [
+    { date: '2026-11-07', version: 'oldcode', kind: 'fix', text: 'Fix' },
+    { date: '2026-11-06', version: 'older12', kind: 'ui', text: 'Older' },
+  ]);
+  assert.deepEqual(capture.expanded, ['true', 'true']);
+  // Only the release card may lack a date carrier; any other day group fails loudly.
+  assert.throws(() => run('panel', [...panelDays, el({ queries: {} })]), /date carrier/);
+  // A dated day that loses its button is also caught: it becomes carrier-less and non-release.
+  assert.throws(() => run('panel', [...panelDays.slice(0, 2), el({ classes: [], queries: {} })]), /date carrier/);
+  // The full page uses time carriers, and the card's changelog-day class stays outside the changes-day query.
+  const full = run('full', [datedDay('full', '2026-11-07', { '.changes-wave': [wave('full', [line('full', 'fix', 'Fix')])] })]);
+  assert.deepEqual(full.dates, ['2026-11-07']);
+  assert.deepEqual(full.rows, [{ date: '2026-11-07', version: 'oldcode', kind: 'fix', text: 'Fix' }]);
+  assert.throws(() => run('full', [el({ queries: {} })]), /date carrier/);
 });
 
 test('saved full pages require matching revision, source, digest and a successful capture stage', () => {
