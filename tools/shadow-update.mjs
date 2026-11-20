@@ -54,18 +54,20 @@ export function verifyFullSnapshot(journal, prior, html) {
 
 // The same selector contract is used for archived replays and live captures.
 // Clicking collapsed toggles deliberately checks the game's actual render path.
-// The Update 2 release card is a day-styled group (changelog-day u2-release) but
-// not a dated journal entry: it carries no date button (panel) or time (full page)
-// and its waves carry no version code. It is excluded from the dated capture; the
-// journal verifier still compares the captured dated days against the whole
-// journal, so any other carrier-less day group must fail loudly here.
+// The Update 2 release card is a day-styled group but not a dated journal
+// entry: it carries no date button (panel) or time (full page) and its waves
+// carry no version code. On the panel it is marked changelog-day u2-release;
+// on the full page it is a bare changes-day, so the shared structural signal
+// is the absence of a version code. A group that carries version codes but
+// lost its date carrier must still fail loudly here, and the journal verifier
+// compares the captured dated days against the whole journal.
 export const captureScript = (surface) => `(() => {
   const panel = ${JSON.stringify(surface)} === 'panel';
   const prefix = panel ? 'changelog' : 'changes';
   const days = [...document.querySelectorAll('.' + prefix + '-day')];
   const dated = days.filter(d => panel ? d.querySelector('button') : d.querySelector('time'));
   const skipped = days.filter(d => !dated.includes(d));
-  if (skipped.some(d => !d.classList.contains('u2-release'))) throw new Error('Journal day without a date carrier');
+  if (skipped.some(d => d.querySelector('code'))) throw new Error('Journal day without a date carrier');
   const date = d => panel ? d.querySelector('button').getAttribute('aria-controls').replace('changelog-day-', '') : d.querySelector('time').dateTime;
   return { surface: ${JSON.stringify(surface)}, url: location.href,
     main: [...document.scripts].map(s => s.src.match(/\\/(main-[A-Za-z0-9_-]{8}\\.js)(?:[?]|$)/)?.[1]).find(Boolean),

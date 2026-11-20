@@ -48,7 +48,7 @@ test('journal verifier checks complete ordered records, current code, build and 
   }
 });
 
-test("the capture script excludes only the Update 2 release card from dated days and fails on any other carrier-less day", () => {
+test("the capture script excludes only code-less day groups from dated days and fails on any other carrier-less day", () => {
   const el = ({ classes = [], queries = {}, attrs = {}, dataset = {}, props = {} } = {}) => ({
     classList: { contains: c => classes.includes(c) },
     querySelector: sel => queries[sel] ?? null,
@@ -76,9 +76,11 @@ test("the capture script excludes only the Update 2 release card from dated days
   });
   const wave = (surface, lines, code = 'oldcode') => el({ queries: { code: text(code), [`.${surface === 'panel' ? 'changelog' : 'changes'}-line`]: lines } });
   const line = (surface, kind, value) => el({ dataset: { kind }, queries: { [`.${surface === 'panel' ? 'changelog' : 'changes'}-text`]: text(value) } });
+  // The release card's waves carry no version code on either surface: that is
+  // the structural signal that exempts a carrier-less day group.
   const releaseCard = el({
     classes: ['u2-release'],
-    queries: { [`.changelog-wave`]: [wave('panel', [line('panel', 'item', 'Card line one'), line('panel', 'item', 'Card line two')], undefined)] },
+    queries: { [`.changelog-wave`]: [el({ queries: { [`.changelog-line`]: [line('panel', 'item', 'Card line one'), line('panel', 'item', 'Card line two')] } })] },
   });
   const panelDays = [
     datedDay('panel', '2026-11-07', { '.changelog-wave': [wave('panel', [line('panel', 'fix', 'Fix')])] }),
@@ -93,15 +95,19 @@ test("the capture script excludes only the Update 2 release card from dated days
     { date: '2026-11-06', version: 'older12', kind: 'ui', text: 'Older' },
   ]);
   assert.deepEqual(capture.expanded, ['true', 'true']);
-  // Only the release card may lack a date carrier; any other day group fails loudly.
-  assert.throws(() => run('panel', [...panelDays, el({ queries: {} })]), /date carrier/);
-  // A dated day that loses its button is also caught: it becomes carrier-less and non-release.
-  assert.throws(() => run('panel', [...panelDays.slice(0, 2), el({ classes: [], queries: {} })]), /date carrier/);
-  // The full page uses time carriers, and the card's changelog-day class stays outside the changes-day query.
-  const full = run('full', [datedDay('full', '2026-11-07', { '.changes-wave': [wave('full', [line('full', 'fix', 'Fix')])] })]);
+  // A carrier-less group that still carries version codes fails loudly.
+  assert.throws(() => run('panel', [...panelDays, el({ queries: { code: text('lost1') } })]), /date carrier/);
+  // A dated day that loses its button keeps its codes, so it is caught too.
+  assert.throws(() => run('panel', [...panelDays.slice(0, 2), el({ queries: { code: text('oldcode') } })]), /date carrier/);
+  // On the full page the card is a bare changes-day: time carriers, no code.
+  const fullCard = el({ queries: { '.changes-wave': [el({ queries: { '.changes-line': [line('full', 'item', 'Card line')] } })] } });
+  const full = run('full', [
+    datedDay('full', '2026-11-07', { '.changes-wave': [wave('full', [line('full', 'fix', 'Fix')])] }),
+    fullCard,
+  ]);
   assert.deepEqual(full.dates, ['2026-11-07']);
   assert.deepEqual(full.rows, [{ date: '2026-11-07', version: 'oldcode', kind: 'fix', text: 'Fix' }]);
-  assert.throws(() => run('full', [el({ queries: {} })]), /date carrier/);
+  assert.throws(() => run('full', [datedDay('full', '2026-11-07', { '.changes-wave': [wave('full', [line('full', 'fix', 'Fix')])] }), el({ queries: { code: text('lost1') } })]), /date carrier/);
 });
 
 test('saved full pages require matching revision, source, digest and a successful capture stage', () => {
