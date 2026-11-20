@@ -2877,9 +2877,10 @@
   "boot": "boot-o7YAko2A.js",
   "sim": "sim-2O5M3LAY.js",
   "commit": "90476dfed36a",
-  "status": "unreviewed",
-  "updated": "2026-11-20T02:01:41Z",
-  "changes": "Detected: 447 changed file(s); 8 data change(s); 4 journal change(s), including removals/revisions/regrouping; sim: 7 logic hunk(s); boot: 22 logic hunk(s); quoted code no longer found."
+  "status": "reviewed",
+  "updated": "2026-11-20T02:43:50Z",
+  "changes": "Superseded before publication; its Update 2 GA review is folded into build 263 (main-C-tAxecw.js), which serves the same change plus the Daily graduation.",
+  "evidence": "Session ce059122-f8f5-4621-a7c7-3811c01aad16 (event d030dcac-96b9-4bb3-83c1-4b04bd2df826) applied and reviewed the GA change (game commit 90476dfed36a) but was closed blocked when the live game moved to main-C-tAxecw.js; the full review is delivered as build 263 in session 30f4393d (event 78d8eda3), which verifies every B7OAS9Hc claim against C-tAxecw assets (C-tAxecw vs B7OAS9Hc differs only by the journal graduation of daily-update-two and chunk renames). See build 263's evidence."
  },
  {
   "seen": "2026-11-20",
