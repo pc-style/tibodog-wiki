@@ -1,10 +1,10 @@
 {
- "researched": "2026-11-19",
- "updated": "2026-11-19T16:05:00Z",
+ "researched": "2026-11-20",
+ "updated": "2026-11-20T02:38:56Z",
  "site": "https://tibo.dog/",
- "commit": "8a9cfe76b007",
- "main": "main-6qxI6Kfc.js",
- "boot": "boot-zMh5JLa5.js",
- "sim": "sim-CTsQMfaf.js",
+ "commit": "efd51c5cd59d",
+ "main": "main-C-tAxecw.js",
+ "boot": "boot-CaSxqXQm.js",
+ "sim": "sim-CSAZ0MJi.js",
  "content": "i18n-en-content-BvUOu5yh.js"
 }
