@@ -1,10 +1,10 @@
 {
  "schema": 1,
  "game": {
-  "version": "7d546c8",
-  "commit": "7d546c804bbb92b135dacfaf68997d5eb1360562"
+  "version": "ac58f52",
+  "commit": "ac58f522d7b5737feea5bffb290567cdb39400f1"
  },
- "simVersion": "db20c52e01f670ae",
+ "simVersion": "e8c64987feebfbb0",
  "locales": [
   {
    "tag": "en",
@@ -1231,6 +1231,9 @@
     "crumb-ant": {
      "name": "Crumb Ant"
     },
+    "drummer-cicada": {
+     "name": "Drummer Cicada"
+    },
     "dumpster-raccoon": {
      "name": "Dumpster Raccoon"
     },
@@ -2377,6 +2380,10 @@
      "name": "Rowboat",
      "desc": "Stand in it to row to the far shore."
     },
+    "trading-post": {
+     "name": "Trading Post",
+     "desc": "Stand by it to trade one of your weapons for one of three new ones, 2 levels lower."
+    },
     "treasure-map": {
      "name": "Treasure Map",
      "desc": "Read it to mark an X. Dig at the X for a chest."
@@ -3480,6 +3487,9 @@
     },
     "crumb-ant": {
      "name": "碎屑蚁"
+    },
+    "drummer-cicada": {
+     "name": "鼓手蝉"
     },
     "dumpster-raccoon": {
      "name": "垃圾桶浣熊"
@@ -4627,6 +4637,10 @@
      "name": "划艇",
      "desc": "站进船里，划到对岸。"
     },
+    "trading-post": {
+     "name": "交易站",
+     "desc": "站在旁边，用一把武器换三把新武器中的一把，等级降2级。"
+    },
     "treasure-map": {
      "name": "藏宝图",
      "desc": "读一读，标出一个X。在X处挖出宝箱。"
@@ -5730,6 +5744,9 @@
     },
     "crumb-ant": {
      "name": "碎屑蟻"
+    },
+    "drummer-cicada": {
+     "name": "鼓手蟬"
     },
     "dumpster-raccoon": {
      "name": "垃圾桶浣熊"
@@ -6877,6 +6894,10 @@
      "name": "划艇",
      "desc": "站進船裡，划到對岸。"
     },
+    "trading-post": {
+     "name": "交易站",
+     "desc": "站在旁邊，用一把武器換三把新武器中的一把，等級降2級。"
+    },
     "treasure-map": {
      "name": "藏寶圖",
      "desc": "讀一讀，標出一個X。在X處挖出寶箱。"
@@ -7980,6 +8001,9 @@
     },
     "crumb-ant": {
      "name": "パンくずアリ"
+    },
+    "drummer-cicada": {
+     "name": "タイコゼミ"
     },
     "dumpster-raccoon": {
      "name": "ゴミ箱アライグマ"
@@ -9127,6 +9151,10 @@
      "name": "手こぎボート",
      "desc": "乗りこむと向こう岸までこいで渡る。"
     },
+    "trading-post": {
+     "name": "交易所",
+     "desc": "そばに立つと、武器を1つ、新しい3つのうちの1つと交換できる。レベルは2下がる。"
+    },
     "treasure-map": {
      "name": "宝の地図",
      "desc": "読むとXの印がつく。Xを掘ると宝箱が出る。"
@@ -10230,6 +10258,9 @@
     },
     "crumb-ant": {
      "name": "부스러기 개미"
+    },
+    "drummer-cicada": {
+     "name": "북치는 매미"
     },
     "dumpster-raccoon": {
      "name": "쓰레기통 라쿤"
@@ -11377,6 +11408,10 @@
      "name": "나룻배",
      "desc": "안에 서면 건너편 기슭까지 노를 저어 갑니다."
     },
+    "trading-post": {
+     "name": "교역소",
+     "desc": "곁에 서면 무기 하나를 새 무기 셋 중 하나와 교환합니다. 레벨은 2 낮아집니다."
+    },
     "treasure-map": {
      "name": "보물 지도",
      "desc": "읽으면 X 표시가 생깁니다. X를 파면 상자가 나옵니다."
@@ -12480,6 +12515,9 @@
     },
     "crumb-ant": {
      "name": "Hormiga de migas"
+    },
+    "drummer-cicada": {
+     "name": "Cigarra tamborilera"
     },
     "dumpster-raccoon": {
      "name": "Mapache de contenedor"
@@ -13627,6 +13665,10 @@
      "name": "Bote de remos",
      "desc": "Súbete para remar hasta la otra orilla."
     },
+    "trading-post": {
+     "name": "Puesto de trueque",
+     "desc": "Quédate cerca para cambiar una de tus armas por una de tres nuevas, 2 niveles más baja."
+    },
     "treasure-map": {
      "name": "Mapa del tesoro",
      "desc": "Léelo para marcar una X. Cava en la X para sacar un cofre."
@@ -14730,6 +14772,9 @@
     },
     "crumb-ant": {
      "name": "टुकड़ा चींटी"
+    },
+    "drummer-cicada": {
+     "name": "ढोलकिया झींगुर"
     },
     "dumpster-raccoon": {
      "name": "कूड़ेदान रैकून"
@@ -15877,6 +15922,10 @@
      "name": "चप्पू वाली नाव",
      "desc": "दूसरे किनारे तक चप्पू चलाने के लिए इसमें खड़े रहें।"
     },
+    "trading-post": {
+     "name": "व्यापार चौकी",
+     "desc": "पास खड़े रहें और अपना एक हथियार तीन नए हथियारों में से एक से बदलें, 2 लेवल कम।"
+    },
     "treasure-map": {
      "name": "खज़ाने का नक्शा",
      "desc": "X का निशान लगाने के लिए इसे पढ़ें। संदूक के लिए X पर खोदें।"
@@ -16980,6 +17029,9 @@
     },
     "crumb-ant": {
      "name": "Krümelameise"
+    },
+    "drummer-cicada": {
+     "name": "Trommelzikade"
     },
     "dumpster-raccoon": {
      "name": "Müllwaschbär"
@@ -18127,6 +18179,10 @@
      "name": "Ruderboot",
      "desc": "Stell dich hinein, um ans andere Ufer zu rudern."
     },
+    "trading-post": {
+     "name": "Handelsposten",
+     "desc": "Stell dich daneben, um eine deiner Waffen gegen eine von drei neuen zu tauschen, 2 Stufen niedriger."
+    },
     "treasure-map": {
      "name": "Schatzkarte",
      "desc": "Lies sie, um ein X zu markieren. Grab am X nach einer Truhe."
@@ -19230,6 +19286,9 @@
     },
     "crumb-ant": {
      "name": "Fourmi à miettes"
+    },
+    "drummer-cicada": {
+     "name": "Cigale tambour"
     },
     "dumpster-raccoon": {
      "name": "Raton de benne"
@@ -20377,6 +20436,10 @@
      "name": "Barque",
      "desc": "Monte dedans pour ramer jusqu’à l’autre rive."
     },
+    "trading-post": {
+     "name": "Comptoir d’échange",
+     "desc": "Reste près de lui pour échanger une de tes armes contre une de trois nouvelles, 2 niveaux plus bas."
+    },
     "treasure-map": {
      "name": "Carte au trésor",
      "desc": "Lis-la pour marquer un X. Creuse au X pour trouver un coffre."
@@ -21480,6 +21543,9 @@
     },
     "crumb-ant": {
      "name": "Formiga de farelo"
+    },
+    "drummer-cicada": {
+     "name": "Cigarra tamborileira"
     },
     "dumpster-raccoon": {
      "name": "Guaxinim de lixeira"
@@ -22627,6 +22693,10 @@
      "name": "Barco a remo",
      "desc": "Fique dentro dele para remar até a outra margem."
     },
+    "trading-post": {
+     "name": "Posto de Troca",
+     "desc": "Fique perto para trocar uma das suas armas por uma de três novas, 2 níveis abaixo."
+    },
     "treasure-map": {
      "name": "Mapa do tesouro",
      "desc": "Leia para marcar um X. Cave no X para achar um baú."
@@ -23730,6 +23800,9 @@
     },
     "crumb-ant": {
      "name": "Kırıntı Karıncası"
+    },
+    "drummer-cicada": {
+     "name": "Davulcu Ağustosböceği"
     },
     "dumpster-raccoon": {
      "name": "Çöp Rakunu"
@@ -24877,6 +24950,10 @@
      "name": "Kayık",
      "desc": "Karşı kıyıya kürek çekmek için içinde dur."
     },
+    "trading-post": {
+     "name": "Takas Tezgahı",
+     "desc": "Yanında durup silahlarından birini üç yeni silahtan biriyle takas et, 2 seviye düşük gelir."
+    },
     "treasure-map": {
      "name": "Hazine Haritası",
      "desc": "Bir X işaretlemek için oku. Sandık için X’te kaz."
@@ -25980,6 +26057,9 @@
     },
     "crumb-ant": {
      "name": "Semut Remah"
+    },
+    "drummer-cicada": {
+     "name": "Tonggeret Penabuh"
     },
     "dumpster-raccoon": {
      "name": "Rakun Tong Sampah"
@@ -27127,6 +27207,10 @@
      "name": "Perahu Dayung",
      "desc": "Berdiri di dalamnya untuk mendayung ke seberang."
     },
+    "trading-post": {
+     "name": "Pos Dagang",
+     "desc": "Berdiri di dekatnya untuk menukar salah satu senjatamu dengan satu dari tiga senjata baru, 2 level lebih rendah."
+    },
     "treasure-map": {
      "name": "Peta Harta Karun",
      "desc": "Baca untuk menandai sebuah X. Gali di X untuk mendapat peti."
@@ -28230,6 +28314,9 @@
     },
     "crumb-ant": {
      "name": "Муравей-крошкоед"
+    },
+    "drummer-cicada": {
+     "name": "Цикада-барабанщица"
     },
     "dumpster-raccoon": {
      "name": "Помоечный енот"
@@ -29377,6 +29464,10 @@
      "name": "Лодка",
      "desc": "Встань в неё, чтобы переплыть на дальний берег."
     },
+    "trading-post": {
+     "name": "Меновая лавка",
+     "desc": "Встань рядом, чтобы обменять одно оружие на одно из трёх новых, на 2 уровня ниже."
+    },
     "treasure-map": {
      "name": "Карта сокровищ",
      "desc": "Прочитай её, чтобы отметить X. Копай в точке X, чтобы найти сундук."
@@ -30480,6 +30571,9 @@
     },
     "crumb-ant": {
      "name": "Semut Serdak"
+    },
+    "drummer-cicada": {
+     "name": "Riang-riang Gendang"
     },
     "dumpster-raccoon": {
      "name": "Rakun Tong Sampah"
@@ -31627,6 +31721,10 @@
      "name": "Sampan",
      "desc": "Berdiri di dalamnya untuk berdayung ke seberang."
     },
+    "trading-post": {
+     "name": "Pos Dagangan",
+     "desc": "Berdiri di sebelahnya untuk menukar satu senjata anda dengan satu daripada tiga senjata baharu, 2 tahap lebih rendah."
+    },
     "treasure-map": {
      "name": "Peta Harta Karun",
      "desc": "Baca untuk menanda sebuah X. Gali di X untuk mendapat peti."
@@ -32730,6 +32828,9 @@
     },
     "crumb-ant": {
      "name": "Langgam ng Mumo"
+    },
+    "drummer-cicada": {
+     "name": "Kuliglig na Tambolero"
     },
     "dumpster-raccoon": {
      "name": "Raccoon ng Basurahan"
@@ -33877,6 +33978,10 @@
      "name": "Bangkang de-sagwan",
      "desc": "Tumayo rito para sumagwan papunta sa kabilang pampang."
     },
+    "trading-post": {
+     "name": "Puwesto ng Palitan",
+     "desc": "Tumayo sa tabi nito para ipagpalit ang isa sa mga armas mo sa isa sa tatlong bago, 2 level na mas mababa."
+    },
     "treasure-map": {
      "name": "Mapa ng Kayamanan",
      "desc": "Basahin ito para markahan ang isang X. Maghukay sa X para sa isang chest."
@@ -34980,6 +35085,9 @@
     },
     "crumb-ant": {
      "name": "चुऱ्याची मुंगी"
+    },
+    "drummer-cicada": {
+     "name": "ढोलवादक रातकिडा"
     },
     "dumpster-raccoon": {
      "name": "कचराकुंडीचा रॅकून"
@@ -36127,6 +36235,10 @@
      "name": "वल्ह्यांची होडी",
      "desc": "पलीकडच्या किनाऱ्यावर वल्हवत जाण्यासाठी तिच्यात उभे राहा."
     },
+    "trading-post": {
+     "name": "व्यापार चौकी",
+     "desc": "जवळ उभे राहा आणि आपले एक शस्त्र तीन नव्या शस्त्रांपैकी एकाशी बदला, 2 लेव्हल कमी."
+    },
     "treasure-map": {
      "name": "खजिन्याचा नकाशा",
      "desc": "X ची खूण करण्यासाठी तो वाचा. पेटीसाठी X वर खणा."
@@ -37230,6 +37342,9 @@
     },
     "crumb-ant": {
      "name": "Kiến Ăn Vụn"
+    },
+    "drummer-cicada": {
+     "name": "Ve Sầu Đánh Trống"
     },
     "dumpster-raccoon": {
      "name": "Gấu Mèo Thùng Rác"
@@ -38377,6 +38492,10 @@
      "name": "Thuyền chèo",
      "desc": "Đứng trong thuyền để chèo sang bờ bên kia."
     },
+    "trading-post": {
+     "name": "Trạm Trao Đổi",
+     "desc": "Đứng cạnh để đổi một vũ khí của bạn lấy một trong ba vũ khí mới, thấp hơn 2 cấp."
+    },
     "treasure-map": {
      "name": "Bản đồ kho báu",
      "desc": "Đọc để đánh dấu một chữ X. Đào ở chữ X để lấy rương."
@@ -39480,6 +39599,9 @@
     },
     "crumb-ant": {
      "name": "ముక్కల చీమ"
+    },
+    "drummer-cicada": {
+     "name": "డప్పు కీచురాయి"
     },
     "dumpster-raccoon": {
      "name": "చెత్తకుండీ రకూన్"
@@ -40627,6 +40749,10 @@
      "name": "తెడ్డు పడవ",
      "desc": "అవతలి ఒడ్డుకు తెడ్డు వేయడానికి దానిలో నిలబడండి."
     },
+    "trading-post": {
+     "name": "వ్యాపార కేంద్రం",
+     "desc": "దాని దగ్గర నిలబడి మీ ఆయుధాల్లో ఒకదాన్ని మూడు కొత్త ఆయుధాల్లో ఒకదానికి మార్చుకోండి, 2 లెవెల్స్ తక్కువగా."
+    },
     "treasure-map": {
      "name": "నిధి పటం",
      "desc": "ఒక X గుర్తు వేయడానికి దాన్ని చదవండి. పెట్టె కోసం X దగ్గర తవ్వండి."
@@ -41730,6 +41856,9 @@
     },
     "crumb-ant": {
      "name": "துகள் எறும்பு"
+    },
+    "drummer-cicada": {
+     "name": "முரசு சிள்வண்டு"
     },
     "dumpster-raccoon": {
      "name": "குப்பை ரக்கூன்"
@@ -42877,6 +43006,10 @@
      "name": "துடுப்புப் படகு",
      "desc": "அக்கரைக்குத் துடுப்புப் போட இதில் நிற்கவும்."
     },
+    "trading-post": {
+     "name": "வணிகச் சாவடி",
+     "desc": "இதன் அருகே நின்று உங்கள் ஆயுதம் ஒன்றை மூன்று புதியவற்றில் ஒன்றுக்கு மாற்றவும், 2 லெவல் குறைவாக."
+    },
     "treasure-map": {
      "name": "புதையல் வரைபடம்",
      "desc": "ஒரு X குறிக்க இதைப் படிக்கவும். பெட்டிக்கு X-இல் தோண்டவும்."
@@ -43980,6 +44113,9 @@
     },
     "crumb-ant": {
      "name": "খুদ পিঁপড়ে"
+    },
+    "drummer-cicada": {
+     "name": "ঢাকি ঝিঁঝিঁ"
     },
     "dumpster-raccoon": {
      "name": "ডাস্টবিনের র‍্যাকুন"
@@ -45127,6 +45263,10 @@
      "name": "দাঁড়ের নৌকা",
      "desc": "ওপারে বেয়ে যেতে এতে দাঁড়ান।"
     },
+    "trading-post": {
+     "name": "বাণিজ্য চৌকি",
+     "desc": "পাশে দাঁড়ান আর আপনার একটা অস্ত্র তিনটে নতুন অস্ত্রের একটার সঙ্গে বদলান, 2 লেভেল কমে।"
+    },
     "treasure-map": {
      "name": "গুপ্তধনের মানচিত্র",
      "desc": "একটা X চিহ্ন দিতে এটা পড়ুন। সিন্দুক পেতে X-এ খুঁড়ুন।"
@@ -46230,6 +46370,9 @@
     },
     "crumb-ant": {
      "name": "มดเศษขนม"
+    },
+    "drummer-cicada": {
+     "name": "จักจั่นมือกลอง"
     },
     "dumpster-raccoon": {
      "name": "แรคคูนถังขยะ"
@@ -47377,6 +47520,10 @@
      "name": "เรือพาย",
      "desc": "ยืนในเรือเพื่อพายไปฝั่งตรงข้าม"
     },
+    "trading-post": {
+     "name": "จุดแลกเปลี่ยน",
+     "desc": "ยืนใกล้ๆ เพื่อแลกอาวุธ 1 ชิ้นกับอาวุธใหม่ 1 ใน 3 ชิ้น เลเวลลดลง 2"
+    },
     "treasure-map": {
      "name": "แผนที่สมบัติ",
      "desc": "อ่านเพื่อปักหมุด X ขุดที่ X เพื่อหาหีบ"
@@ -48480,6 +48627,9 @@
     },
     "crumb-ant": {
      "name": "Tururuwar Ɓarɓashi"
+    },
+    "drummer-cicada": {
+     "name": "Ƙwaron Ganga"
     },
     "dumpster-raccoon": {
      "name": "Rakun na Bola"
@@ -49627,6 +49777,10 @@
      "name": "Kwale-kwale",
      "desc": "Tsaya a ciki don yin tuƙi zuwa ɗaya gaɓar."
     },
+    "trading-post": {
+     "name": "Kasuwar Musaya",
+     "desc": "Tsaya kusa da ita don musanya ɗaya daga cikin makamanka da ɗaya daga cikin sababbi uku, ƙasa da matakai 2."
+    },
     "treasure-map": {
      "name": "Taswirar Dukiya",
      "desc": "Karanta ta don yin alamar X. Tona a wurin X don samun akwati."
@@ -50730,6 +50884,9 @@
     },
     "crumb-ant": {
      "name": "Crumb Ant"
+    },
+    "drummer-cicada": {
+     "name": "Drum Cicada"
     },
     "dumpster-raccoon": {
      "name": "Dustbin Raccoon"
@@ -51877,6 +52034,10 @@
      "name": "Canoe",
      "desc": "Stand inside am to paddle go the other side."
     },
+    "trading-post": {
+     "name": "Trading Post",
+     "desc": "Stand near am to change one of your weapons for one of three new ones, 2 levels lower."
+    },
     "treasure-map": {
      "name": "Treasure Map",
      "desc": "Read am to mark one X. Dig for the X to find box."
@@ -52980,6 +53141,9 @@
     },
     "crumb-ant": {
      "name": "نملة الفتات"
+    },
+    "drummer-cicada": {
+     "name": "زيز الطبّال"
     },
     "dumpster-raccoon": {
      "name": "راكون القمامة"
@@ -54127,6 +54291,10 @@
      "name": "قارب تجديف",
      "desc": "قف فيه لتجدف إلى الضفة الأخرى."
     },
+    "trading-post": {
+     "name": "مركز المقايضة",
+     "desc": "قف بجانبه لتبادل أحد أسلحتك بواحد من ثلاثة أسلحة جديدة، أقل بمستويين."
+    },
     "treasure-map": {
      "name": "خريطة كنز",
      "desc": "اقرأها لتضع علامة X. احفر عند X لتجد صندوقًا."
@@ -55230,6 +55398,9 @@
     },
     "crumb-ant": {
      "name": "مورچه‌ی خرده‌چین"
+    },
+    "drummer-cicada": {
+     "name": "زنجره‌ی طبل‌زن"
     },
     "dumpster-raccoon": {
      "name": "راکون سطل آشغال"
@@ -56377,6 +56548,10 @@
      "name": "قایق پارویی",
      "desc": "داخلش بایستید تا تا ساحل آن طرف پارو بزنید."
     },
+    "trading-post": {
+     "name": "پایگاه مبادله",
+     "desc": "کنارش بایستید تا یکی از سلاح‌هایتان را با یکی از سه سلاح تازه عوض کنید، 2 سطح پایین‌تر."
+    },
     "treasure-map": {
      "name": "نقشه‌ی گنج",
      "desc": "بخوانیدش تا یک X علامت بخورد. سر X را بکنید تا به صندوق برسید."
@@ -57480,6 +57655,9 @@
     },
     "crumb-ant": {
      "name": "נמלת פירורים"
+    },
+    "drummer-cicada": {
+     "name": "ציקדה מתופפת"
     },
     "dumpster-raccoon": {
      "name": "דביבון פחים"
@@ -58627,6 +58805,10 @@
      "name": "סירת משוטים",
      "desc": "עומדים בתוכה כדי לחתור לחוף שממול."
     },
+    "trading-post": {
+     "name": "עמדת סחר",
+     "desc": "עומדים לידה כדי להחליף אחד מהנשקים שלך באחד משלושה חדשים, 2 רמות נמוך יותר."
+    },
     "treasure-map": {
      "name": "מפת אוצר",
      "desc": "קוראים אותה כדי לסמן X. חופרים ב־X כדי למצוא תיבה."
@@ -59730,6 +59912,9 @@
     },
     "crumb-ant": {
      "name": "ٹکڑخور چیونٹی"
+    },
+    "drummer-cicada": {
+     "name": "ڈھولچی جھینگر"
     },
     "dumpster-raccoon": {
      "name": "کوڑے دان کا ریکون"
@@ -60877,6 +61062,10 @@
      "name": "چپو والی کشتی",
      "desc": "دوسرے کنارے تک چپو چلانے کے لیے اس میں کھڑے ہوں۔"
     },
+    "trading-post": {
+     "name": "تجارتی چوکی",
+     "desc": "پاس کھڑے ہو کر اپنا ایک ہتھیار تین نئے ہتھیاروں میں سے ایک سے بدلیں، 2 لیول کم۔"
+    },
     "treasure-map": {
      "name": "خزانے کا نقشہ",
      "desc": "X کا نشان لگانے کے لیے اسے پڑھیں۔ صندوق کے لیے X پر کھودیں۔"
@@ -60951,144 +61140,144 @@
  "sources": {
   "index": {
    "url": "https://tibo.dog/data/v1/index.json",
-   "bytes": 18939,
-   "sha256": "24a3f3fd088972ecc78c159c1d09535b9e998a4e181291333f2c35e9a9275261"
+   "bytes": 18987,
+   "sha256": "619060afa5fa1319fa952b0c90eb86f29eb286bbaac0b1fc7d3143fc3b603b4c"
   },
   "locales": {
    "en": {
     "url": "https://tibo.dog/data/v1/text/en.json",
-    "bytes": 61614,
-    "sha256": "35d56f19d9559726e720c4725e3cce8797abee397fc37ca96feb09f134268012"
+    "bytes": 61789,
+    "sha256": "f0a492f7224c5f7a1d1636ad9c189bb3812115f54ac8f8313f52b6b65c54c7d1"
    },
    "zh-CN": {
     "url": "https://tibo.dog/data/v1/text/zh-CN.json",
-    "bytes": 60750,
-    "sha256": "6d5733f4b9661f07c1412f92321ac29750a822d3bade0f8000e96561842c4c09"
+    "bytes": 60913,
+    "sha256": "6e5247a92db9ba87044fce9cb9aeb18612649fa7fcdd963c27223fcd5fa05d27"
    },
    "zh-TW": {
     "url": "https://tibo.dog/data/v1/text/zh-TW.json",
-    "bytes": 61023,
-    "sha256": "af6f53ee786771a0dd9c843cf44988c67dcee2d57642ccd7d8ff4d71d4cf318b"
+    "bytes": 61186,
+    "sha256": "b9864452d020cf9a12d65cb74b0dbf134fba84899d5fd277c5d4e372452d0205"
    },
    "ja": {
     "url": "https://tibo.dog/data/v1/text/ja.json",
-    "bytes": 74371,
-    "sha256": "b441124bb881ab063390751efe590276ff9adda2bf039f38b11b28ada714edfc"
+    "bytes": 74573,
+    "sha256": "9ebfe152a3206af97e039dda2ffbc547aa30b1fc3446010571a4ba08ad9be623"
    },
    "ko": {
     "url": "https://tibo.dog/data/v1/text/ko.json",
-    "bytes": 74684,
-    "sha256": "f5f9d8ab12e5ad5bff1b55626f7a0e9af15cb4cf6b1af7c8541f525b7aaf10f9"
+    "bytes": 74880,
+    "sha256": "1783aed57eded0052c6fdfc40d95de275284506e445f3b59fa99cb4f14474f95"
    },
    "es": {
     "url": "https://tibo.dog/data/v1/text/es.json",
-    "bytes": 69646,
-    "sha256": "024d328439e7fec0ab8cdf0c797f1ae447ab66d6c8e88ec8d2e3ac873913561b"
+    "bytes": 69837,
+    "sha256": "deaec608fb654f875f32e5da5325fdec393f15cf1b968902d53f9006a6234710"
    },
    "hi": {
     "url": "https://tibo.dog/data/v1/text/hi.json",
-    "bytes": 129060,
-    "sha256": "fe7b8b9923c7357e5ed6f86d6048ba3e53872667cab47527c8b8be416585afc5"
+    "bytes": 129396,
+    "sha256": "ebf594a74776313c3dfafea2552d0475c0315f5cceed25b0503fc6cea50bd0ce"
    },
    "de": {
     "url": "https://tibo.dog/data/v1/text/de.json",
-    "bytes": 68843,
-    "sha256": "fa23db13b1532e9ea087e1e8f45cd32fefa82d87e5c68b6ee60f4308fd989815"
+    "bytes": 69035,
+    "sha256": "16fbb8a3cc878cbe9a9b21832bf82207bbe4339bbde51b34f7e2567a4fae66dc"
    },
    "fr": {
     "url": "https://tibo.dog/data/v1/text/fr.json",
-    "bytes": 72275,
-    "sha256": "2fb1ac923ff9e8fd71a7115bc666df321988c7c328fc554093a98731a18f56a4"
+    "bytes": 72477,
+    "sha256": "be14948a65f2a53cc98dbaeca665f594e43a9d7b22d1a13ce9181882ae4669af"
    },
    "pt": {
     "url": "https://tibo.dog/data/v1/text/pt.json",
-    "bytes": 68179,
-    "sha256": "3def3c8e387588b434520d847184dfce88fcd11747f723933b91f4029d5a0488"
+    "bytes": 68363,
+    "sha256": "02e0c6482d9e48c6c38d4a59509e11cdb29667ef4ce2f24be88a6de5570b2e99"
    },
    "tr": {
     "url": "https://tibo.dog/data/v1/text/tr.json",
-    "bytes": 70739,
-    "sha256": "3138f8ef38ce28da5c01887d21d8a896312b6dce528c06e449e20542ccda6f7f"
+    "bytes": 70941,
+    "sha256": "62cdb17c14cedf0422890aa50d2aed329b55c29c57662127ca2ca499d4e6a98d"
    },
    "id": {
     "url": "https://tibo.dog/data/v1/text/id.json",
-    "bytes": 67924,
-    "sha256": "1f47cd7063f6999f4dbaa17cc9abdb28e333fad9057848c4bde422f3fae66cb4"
+    "bytes": 68129,
+    "sha256": "85f0855405b2079eaf2a1c212cd6fea059cac7636d8ac90f8ad5f31d5e455729"
    },
    "ru": {
     "url": "https://tibo.dog/data/v1/text/ru.json",
-    "bytes": 101383,
-    "sha256": "3c891e7f8664d27cfb030e1ea2907da751c1ae3230f3333ef22c3e1d366dbf4d"
+    "bytes": 101653,
+    "sha256": "95dd1b761dcea68cf0ebcb1b745c5aa7b0e9d2d35588ef662652f5d65ebbec3a"
    },
    "ms": {
     "url": "https://tibo.dog/data/v1/text/ms.json",
-    "bytes": 70223,
-    "sha256": "3fae890608a7228a447f4a54b514cab7b9ccbaf3c99a9595a6bb6ed64ba6ac2a"
+    "bytes": 70437,
+    "sha256": "657f87f226c170703244ab8ed2ba23e2659cd77d9d42e06a532994fb4dfa821f"
    },
    "fil": {
     "url": "https://tibo.dog/data/v1/text/fil.json",
-    "bytes": 74132,
-    "sha256": "6d8cfdefa0a328bf0103abf291d8c6b69663323fc0d6cd710d8f663bc025ced9"
+    "bytes": 74342,
+    "sha256": "4c0f49aa6b8e4920b7907e672b3c075c30dbe8d00f38c0d98ac7ecea439557ff"
    },
    "mr": {
     "url": "https://tibo.dog/data/v1/text/mr.json",
-    "bytes": 133313,
-    "sha256": "419d671a97475a8cdbd893433956c82aea9ccc5785ff7de225262775ae7268f0"
+    "bytes": 133662,
+    "sha256": "52cb80173f701f9a99a1f7323cdcb2b6e6549358cdbc644f96ea36ce1c1e40c0"
    },
    "vi": {
     "url": "https://tibo.dog/data/v1/text/vi.json",
-    "bytes": 74971,
-    "sha256": "828359f7bad07b82db102567a6ba86e6a02486b7910ae77d1eb12589095dc41a"
+    "bytes": 75190,
+    "sha256": "e4331fde570ac648ee0d110ab1fc1533d79ef34a280b37bac61820ac7cf1ac4b"
    },
    "te": {
     "url": "https://tibo.dog/data/v1/text/te.json",
-    "bytes": 140389,
-    "sha256": "ba471ceee141edd2db469cd7b4e4c51b8c2b42abea43ad5dac193db5e5b7c8bd"
+    "bytes": 140815,
+    "sha256": "2e4e89f223bf681b7c0383f4958ac4b096abd991d06b56c81df8688e966e1c3e"
    },
    "ta": {
     "url": "https://tibo.dog/data/v1/text/ta.json",
-    "bytes": 153171,
-    "sha256": "a43d1a54551a5ab60ec2971763d8ec9448c1a89302d72df748a8464d8d873421"
+    "bytes": 153569,
+    "sha256": "e37f3f60c6a6b08aa194ebdb8ff8d7d559cf61930b01798014addc7d79d338ad"
    },
    "bn": {
     "url": "https://tibo.dog/data/v1/text/bn.json",
-    "bytes": 130153,
-    "sha256": "2f50b39b2716eca9431a6fcf9f51fb16feab3de5ac8cbb9f35f1d8172aaeee6a"
+    "bytes": 130507,
+    "sha256": "37bdcb08ba9969197101ce73518127770c7a128df3190dfca1d110c8de1517ba"
    },
    "th": {
     "url": "https://tibo.dog/data/v1/text/th.json",
-    "bytes": 125458,
-    "sha256": "9145e178d3b515eb3fe008613e99a3a23a5af52f4cc07a661896d4f893e093f4"
+    "bytes": 125774,
+    "sha256": "41dd3fd7611c5a255569e4fbc8515af0ebc5e96e05fb7f318cae3d58ae854f8d"
    },
    "ha": {
     "url": "https://tibo.dog/data/v1/text/ha.json",
-    "bytes": 70663,
-    "sha256": "f20a24356342e21ba8b2c3268e5177d5595f557d0aac6e8e825b9895eeaf35bc"
+    "bytes": 70865,
+    "sha256": "606799efa6dc24e3058cffa09535f2cf99406612d0206c4c51943f24c7db894c"
    },
    "pcm": {
     "url": "https://tibo.dog/data/v1/text/pcm.json",
-    "bytes": 64956,
-    "sha256": "8af51fd2706666e304769b06085c600fffb3fc39acffbb4f6c23410e6ed8e693"
+    "bytes": 65131,
+    "sha256": "9048a30641fc87b7642464809335019479f7ec51158dc904db63420c59b1c336"
    },
    "ar": {
     "url": "https://tibo.dog/data/v1/text/ar.json",
-    "bytes": 85267,
-    "sha256": "0b71079623fd5daeafa436fad6ccfd85b6968453958b87267433bc0d86d03360"
+    "bytes": 85505,
+    "sha256": "73cef54fd0f20089d704e8c09b0364ed65588fe5f8b706b62e8b3da519177c75"
    },
    "fa": {
     "url": "https://tibo.dog/data/v1/text/fa.json",
-    "bytes": 100168,
-    "sha256": "aebb43571ea8dc79ab8b4db7be439e5432a3def8748744743956182a37d13fa5"
+    "bytes": 100445,
+    "sha256": "e4d9933e72860b775e6c9853ff41e419c25c0f0f393b2b4b0b9bdc6b960ff3a0"
    },
    "he": {
     "url": "https://tibo.dog/data/v1/text/he.json",
-    "bytes": 84823,
-    "sha256": "912e8a290baacac3b25f2ae8961ffead079e699c0a2883cffae795848b67beee"
+    "bytes": 85061,
+    "sha256": "f19a702fd36a8d723ed3c31f68388d07d49973022820c519fb5fba3cf310f7d6"
    },
    "ur": {
     "url": "https://tibo.dog/data/v1/text/ur.json",
-    "bytes": 96485,
-    "sha256": "62bc7c0e40c04420330e9e9f73a4bfb75737512e9816b0c30a66cdfe5291acd1"
+    "bytes": 96737,
+    "sha256": "9a06e53a632d7d26b6643330f4c43c2cec75b2ecbbdc25275c16a7612253f2d3"
    }
   }
  }

@@ -1,9 +1,10 @@
 {
- "_source": "intro-shared-Bfk6aakw.js: difficulty defaults and per-level overrides",
+ "_source": "intro-shared-CsfUeuqU.js: difficulty defaults and per-level overrides",
  "defaults": {
   "alive": 1,
   "floorShare": 0,
   "shooterCap": 1,
+  "drummers": 0,
   "earlyRamp": 1,
   "earlyRampTime": 1,
   "lateRamp": 1,
@@ -93,6 +94,7 @@
  "hard": {
   "alive": 0.75,
   "floorShare": 0.25,
+  "drummers": 1,
   "crowdRamp": {
    "kind": "own",
    "points": [
@@ -111,7 +113,7 @@
    ]
   },
   "pestHp": 0.65,
-  "damage": 0.5,
+  "damage": 0.58,
   "bossHp": 0.7,
   "earlyBossRaise": 1,
   "eliteHp": 0.65,
@@ -149,6 +151,7 @@
  "nightmare": {
   "alive": 1.05,
   "floorShare": 0.65,
+  "drummers": 1,
   "earlyRamp": 1,
   "earlyRampTime": 0.45,
   "lateRamp": 0.32,
@@ -176,7 +179,7 @@
   },
   "opening": "classic",
   "pestHp": 1.2,
-  "damage": 0.95,
+  "damage": 0.93,
   "bossHp": 0.95,
   "earlyBossRaise": 0.7,
   "earlyBossDamage": 0.25,

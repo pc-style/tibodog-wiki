@@ -701,6 +701,9 @@
  "content.enemy.crumb-ant.name": [
   "Crumb Ant"
  ],
+ "content.enemy.drummer-cicada.name": [
+  "Drummer Cicada"
+ ],
  "content.enemy.dumpster-raccoon.name": [
   "Dumpster Raccoon"
  ],
@@ -2438,6 +2441,12 @@
  ],
  "content.varietyPlace.thiefs-shrine.where": [
   "Rises beside you in the first seconds of a run, and twice more later."
+ ],
+ "content.varietyPlace.trading-post.desc": [
+  "Stand by it to trade one of your weapons for one of three new ones, 2 levels lower."
+ ],
+ "content.varietyPlace.trading-post.name": [
+  "Trading Post"
  ],
  "content.varietyPlace.treasure-map.desc": [
   "Read it to mark an X. Dig at the X for a chest."

@@ -1532,3 +1532,18 @@ The importer checked the live full journal and every expanded panel date in disp
 - Full live journal captured `2026-11-17T23:25:19.182Z`, HTML SHA-256 `a075e8a63f76570080d36e5510511747908bacc0961acd9e10161c974b434d99`.
 
 Reproducible evidence: shadow `2026-11-17T23-25-09-930Z-dbceeb9d`, worker session `ea7a9f2d-20c9-464f-a531-ef4efa3c658e`, event `76f0d986-3a17-48bb-a882-c7dc8fe32c71`. Earlier automatic timeout/retry receipts and failed scratch fixtures remain separate failures, not successful worker timings. No natural acquisition, full-fight, final resolved damage, pixel-equivalence, performance or server claim is made; the monthly media restriction no longer blocks documentation screenshot inspection in this session. Seven sections across five wiki pages were rendered at desktop/390px Chromium widths and inspected, without treating them as gameplay art proof.
+
+## Build 266: ten new notes across five dates after skipped builds
+
+`main-DUpxsGt6.js` → `main-CXYinI0m.js` adds ten notes in five new official groups: **20 November** (f4c3168 `update2-easy-pest-health`, `update2-normal-boss-health`; 73d6611 `weapon-item-tuning`; fa35e12 `gravy-mash-sizes`), **21 November** (83c61f1 `trading-post`, 928bec6 `fry-palace-hot-oil`, 4492ae7 `drummer-cicada`), **23 November** (cc822b2 `long-run-not-forged`, bbb88d1 `nightmare-run-not-forged`) and **24 November** (cd54a19 `oil-pool-art`). No existing note was removed, reworded or regrouped; the older groups are unchanged.
+
+Seven or more intermediate builds went live between these two and were never documented, including `main-qq72jJFz.js`, `main-D95ZlQR1.js`, `main-BXTNT5t1.js`, `main-BCQqJbKA.js`, `main-Cv04scq_.js`, `main-BeHZyiEn.js`, `main-DQIWI3lo.js` and `main-FvRXriQY.js`. This review compares only the two endpoint builds, so it does not say which intermediate build first shipped each change. The official dates are publication groups, not observed introduction times. `main-FvRXriQY.js` and `main-CXYinI0m.js` are identical across the whole build apart from the commit stamp (`tools/same-build.mjs`: 434 files, none changed).
+
+The importer collected the live full journal and every expanded panel date in display order: 391 notes, 22 dates, 183 codes, with full-page and panel records matching.
+
+- Old journal: https://tibo.dog/assets/changelog-panel-BPaglBfp.js — SHA-256 `e8d480c47928b3eff0aba7d46772ca3f78ffaa7af5eb9e3aea2ed8e4c39b66b6`.
+- Current journal: https://tibo.dog/assets/changelog-panel-BcqqHvC1.js — SHA-256 `1626925680efb66f27f7464281eb646dd91c51f2bd8368f98958deef84ac5a4b`.
+- Current archive manifest: https://tibodog-game-detector.pcstyle.workers.dev/archive/main-CXYinI0m.js/manifest.json — SHA-256 `5d85ffa7805ee4e7db4a963a679f3208c51c9b9386058861bb63c5a62897a07c`; archived at `2026-11-26T03:58:18.775Z`.
+- Full live journal captured `2026-11-26T04:03:25.147Z`, HTML SHA-256 `bf94d53ce4b936b7d88b376bd13894900864d6520d7a7275c177e6ac7fc53dd9`.
+
+Reproducible evidence: shadow `2026-11-26T04-03-21-235Z-5c11da12`, worker session `d90e4656-9f42-41c4-ab04-02873df55300`. The superseded `main-FvRXriQY.js` attempt (shadow `2026-11-26T03-43-38-608Z-f3ddd672`, session `1bd9d044-97da-421c-a7e4-a6103e66e044`, closed blocked) is retained as a separate failure, not a delivered build.

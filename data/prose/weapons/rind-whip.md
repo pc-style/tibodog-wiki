@@ -2,13 +2,13 @@
 
 Rind Whip evolves [Peel Lash](/weapons/peel-lash) with [Salt Shaker](/passives/salt-shaker). Open a [chest](/chests) with Peel Lash at level 8 and Salt Shaker at any level.
 
-It starts at 18 raw damage, a 1.2 s cooldown, Pierce 3 and Area 1.15. Its lower individual-hit damage is not a typo: the evolved definition has a faster cooldown, longer reach and more jumps than the base weapon's starting definition.
+It starts at 60 raw damage, a 1.2 s cooldown, Pierce 3 and Area 1.15. Build 266 raised its raw damage from 18; it is still below a maxed Peel Lash's 89.7 per hit, traded for a faster cooldown, longer reach and more jumps.
 
 ## How it works
 
-The first target must be within 72 units of Tibo. Each lash then jumps up to three times at raw Pierce 3, so it can hit four different pests. Each jump reaches 44 × √modified Area units from the previous target; it does not repeatedly hit the same pest in one chain. Extra Pierce adds jumps, capped at 60, and extra Amount adds separate lashes. <small>[sim-CJ88SoyL.js: `HP(e,c,l,r.pierce===-1?60:Math.min(60,r.pierce),n.jump*Math.sqrt(r.area),s)`]</small>
+The first target must be within 72 units of Tibo. Each lash then jumps up to three times at raw Pierce 3, so it can hit four different pests. Each jump reaches 44 × √modified Area units from the previous target; it does not repeatedly hit the same pest in one chain. Extra Pierce adds jumps, capped at 60, and extra Amount adds separate lashes. <small>[sim-0n0rJ5bz.js: `mF(e,c,l,r.pierce===-1?60:Math.min(60,r.pierce),n.jump*Math.sqrt(r.area),s)`]</small>
 
-Like Peel Lash, Rind Whip uses the dedicated peel-arc renderer. <small>[scene-BjEa9odk.js: `` sprite:oR,names:[`arc-peel`] ``]</small>
+Like Peel Lash, Rind Whip uses the dedicated peel-arc renderer. <small>[scene-CXUK-MYl.js: `` sprite:tR,names:[`arc-peel`] ``]</small>
 
 **Controlled checks:** original `main-CAVio-MR.js`, Standard/Normal, seeds `wiki`, `s1`, `s2`, granted weapon and fixed high-HP pests 25 units apart: one emitted lash hit four targets at the supplied damage and left the distant control untouched. Ready level-8/catalyst chest fixtures evolved Peel Lash; level-7 and missing-catalyst controls did not. These are forced-state consumer/recipe checks, not natural acquisition, practical DPS or survival measurements.
 

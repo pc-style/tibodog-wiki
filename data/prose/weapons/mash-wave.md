@@ -1,12 +1,12 @@
 ## Overview
 
-Mash Wave sends rings of mashed potato rolling out from Tibo. Every 3.2 s it releases 2 rings (1 plus Tibo's built-in +1 amount, see [Stats](/stats)), 0.35 s apart. Each ring grows from Tibo's position out to 90 units × Area and hits every pest it passes once, for 15 damage and strong knockback (2). Mash Wave always fires on cooldown, even with no pests nearby.
+Mash Wave sends rings of mashed potato rolling out from Tibo. Every 3.2 s it releases 2 rings (1 plus Tibo's built-in +1 amount, see [Stats](/stats)), 0.35 s apart. Each ring grows from Tibo's position out to 58.5 units × Area (90 before build 266) and hits every pest it passes once, for 15 damage and strong knockback (2). Mash Wave always fires on cooldown, even with no pests nearby.
 
 It is offered as a level-up card, and it is on the list of new weapons [poteto's gift chest](/visitors) can hand out. At level 8, with [Big Bowl](/passives/big-bowl) at any level, the next [chest](/chests) evolves it into [Mashquake](/weapons/mashquake).
 
 ## How it works
 
-- Each ring is centred where Tibo stood when it was released and does not move with him. It starts at a radius of 4 and grows at the weapon's speed (160 units/s, at least 60, scaled by projectile speed), so a level-1 ring reaches its edge in about 0.55 s. <small>[sim-CJ88SoyL.js: `i.maxRadius[a]=n.size*r.area,i.growSpeed[a]=Math.max(60,r.speed)`]</small>
+- Each ring is centred where Tibo stood when it was released and does not move with him. It starts at a radius of 4 and grows at the weapon's speed (160 units/s, at least 60, scaled by projectile speed), so a level-1 ring reaches its edge in about 0.34 s. <small>[sim-0n0rJ5bz.js: `i.maxRadius[a]=n.size*r.area,i.growSpeed[a]=Math.max(60,r.speed)`]</small>
 - The ring's edge is a band `thickness` × √Area + 6 units deep (16 at level 1). A pest is hit when the band reaches it, and each ring hits each pest only once.
 - Area scales the final radius directly, so +15% Area means a 15% wider ring.
 
