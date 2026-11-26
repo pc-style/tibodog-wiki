@@ -1,5 +1,5 @@
 {
- "_source": "intro-shared-CsfUeuqU.js: difficulty defaults and per-level overrides",
+ "_source": "intro-shared-BYS92VL3.js: difficulty defaults and per-level overrides",
  "defaults": {
   "alive": 1,
   "floorShare": 0,
@@ -44,6 +44,7 @@
  },
  "easy": {
   "alive": 0.55,
+  "lateRamp": 0.4,
   "pestHp": 0.5,
   "damage": 0.4,
   "bossHp": 0.5,

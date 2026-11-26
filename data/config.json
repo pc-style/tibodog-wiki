@@ -9415,7 +9415,7 @@
    "drummers": 0,
    "earlyRamp": 1,
    "earlyRampTime": 1,
-   "lateRamp": 1,
+   "lateRamp": 0.4,
    "lateRampTime": 1,
    "crowdRamp": {
     "kind": "normal"

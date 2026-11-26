@@ -1547,3 +1547,16 @@ The importer collected the live full journal and every expanded panel date in di
 - Full live journal captured `2026-11-26T04:03:25.147Z`, HTML SHA-256 `bf94d53ce4b936b7d88b376bd13894900864d6520d7a7275c177e6ac7fc53dd9`.
 
 Reproducible evidence: shadow `2026-11-26T04-03-21-235Z-5c11da12`, worker session `d90e4656-9f42-41c4-ab04-02873df55300`. The superseded `main-FvRXriQY.js` attempt (shadow `2026-11-26T03-43-38-608Z-f3ddd672`, session `1bd9d044-97da-421c-a7e4-a6103e66e044`, closed blocked) is retained as a separate failure, not a delivered build.
+
+## Build 267: Easy late-damage note in the current group
+
+`main-CXYinI0m.js` → `main-BD_dCWo_.js` adds one note, `easy-late-damage` (YgLZJs), to the current undated **next** group. Its source publication timestamp is `2026-11-26T07:40:55Z`. No other note was added, removed, reworded or regrouped. The matching source change is the Easy `lateRamp` 0.4 in `intro-shared`; sim logic is unchanged, and boot changes only its commit stamp.
+
+The importer collected the live full journal and every expanded panel date in display order: 392 notes, 22 dates, 184 codes, with full-page and panel records matching. The first import attempt stopped before writing anything because the archive manifest was not yet ready (typed `ARCHIVE_NOT_READY` 404, deadline expired). The archive arrived at `2026-11-26T09:57:17.840Z`, and the rerun passed.
+
+- Old journal: https://tibo.dog/assets/changelog-panel-BcqqHvC1.js — SHA-256 `1626925680efb66f27f7464281eb646dd91c51f2bd8368f98958deef84ac5a4b`.
+- Current journal: https://tibo.dog/assets/changelog-panel-Bjs28VNt.js — SHA-256 `548da7c14a874adb493685ff9b8d8797830ceb66e568dc5b9faca0c223d4f368`.
+- Current archive manifest: https://tibodog-game-detector.pcstyle.workers.dev/archive/main-BD_dCWo_.js/manifest.json — SHA-256 `41c329885c4c1147a0224293444ecf504f7bfa5b7e4ceeaf612a7286c95584db`; archived at `2026-11-26T09:57:17.840Z`.
+- Full live journal captured `2026-11-26T09:57:41.456Z`, HTML SHA-256 `ebbca66127d8120876b19588650137c952dda6de526d330e5da1b3b6e76c1de4`.
+
+Reproducible evidence: shadow `2026-11-26T09-57-37-479Z-66cb4a0c` (the failed readiness attempt is `2026-11-26T09-54-17-934Z-c9d7128f`), worker session `4059639d-451a-49c8-9843-f107b74baf07`.
