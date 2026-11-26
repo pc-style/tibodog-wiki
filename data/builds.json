@@ -2925,5 +2925,16 @@
   "updated": "2026-11-26T10:03:59Z",
   "changes": "On Easy, enemies and bosses hit softer late in a run: the late damage ramp is ×0.4, so from 11:15 hits grow more slowly, ending 30% softer from 15:00 on. Nothing else plays differently.",
   "evidence": "Session 4059639d (manual dispatch from monitor T-41922f7d, main-BD_dCWo_.js, game commit 99a22e5e737c). First apply hit ARCHIVE_NOT_READY (shadow 2026-11-26T09-54-17-934Z-c9d7128f, no writes); archive landed 09:57:17Z; rerun apply + shadow 2026-11-26T09-57-37-479Z-66cb4a0c complete (full+panel 392 notes, 22 dates, 184 codes; 1 note added: easy-late-damage in next). vs main-CXYinI0m.js: 6 changed files; intro-shared 1 hunk (Easy lateRamp 1 -> 0.4); sim 0 hunks; boot commit stamp only; page-hold 0 hunks; data: difficulty.easy.lateRamp only; icons pixel-identical. Probe (tools/play.mjs, god, warp, seeds s1/s2, Update 2 on/off): Easy damage scale equal at 10:00 and 11:15, ×0.94 at 11:40, ×0.79 at 13:20, ×0.70 at 15:00/20:00/30:00/45:00 (late term capped at win time via Math.min(n/60,win/60)); Normal identical. Prose: enemy-scaling late-ramp text and measurement; modes/enemy-scaling tables regenerate from data. 21 moved quotes rewritten by check-quotes, 1 relabelled by hand (whats-new-BjaTrE7Q.js)."
+ },
+ {
+  "seen": "2026-11-26",
+  "main": "main-DVIkMkxO.js",
+  "boot": "boot-C-836DVi.js",
+  "sim": "sim-BS-gk1Xq.js",
+  "commit": "e24429e34ee8",
+  "status": "reviewed",
+  "updated": "2026-11-26T11:20:49Z",
+  "changes": "Existing journal notes moved into a dated release group; no gameplay or wording changes.",
+  "evidence": "Automatic unchanged next-to-dated proof against main-BD_dCWo_.js; all 434 reachable files checked, full/panel browser and official API validated. Original publication timestamps and prior introduction history retained. Proof: .cache/main-DVIkMkxO/journal-proof.json."
  }
 ]

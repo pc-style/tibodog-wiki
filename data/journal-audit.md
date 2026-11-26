@@ -1560,3 +1560,12 @@ The importer collected the live full journal and every expanded panel date in di
 - Full live journal captured `2026-11-26T09:57:41.456Z`, HTML SHA-256 `ebbca66127d8120876b19588650137c952dda6de526d330e5da1b3b6e76c1de4`.
 
 Reproducible evidence: shadow `2026-11-26T09-57-37-479Z-66cb4a0c` (the failed readiness attempt is `2026-11-26T09-54-17-934Z-c9d7128f`), worker session `4059639d-451a-49c8-9843-f107b74baf07`.
+
+
+## Local journal graduation main-DVIkMkxO.js
+
+Existing journal notes moved from next into a dated release group; no gameplay or note wording changes.
+
+- easy-late-damage (YgLZJs): original publication 2026-11-26T07:40:55Z; now 2026-11-26/99a22e5. Source introduction remains in prior build history.
+
+Sources: https://tibo.dog/assets/changelog-panel-Bjs28VNt.js SHA-256 548da7c14a874adb493685ff9b8d8797830ceb66e568dc5b9faca0c223d4f368; https://tibo.dog/assets/changelog-panel-DO0JbYET.js SHA-256 17d524114f2b027ab54e83a51486aea6442d8620adca5b71637c02af18ed1268. Prior history SHA-256 78388911e3cb468c91b3f0018267231e8a01290c8d6ed550ca241ed2ce5e3cd4.
