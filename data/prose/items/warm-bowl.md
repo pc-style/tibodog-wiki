@@ -4,11 +4,11 @@ Warm Bowl leaves a healing pool when Tibo finishes charging an activation ring. 
 
 ## How it works
 
-- **Finish the activation.** Both world-POI activations and charged pickup activations call the pool hook. The pool stays at the activated ring's position, with its activation radius plus Tibo's radius. <small>[sim-BB0FRU65.js: `Bc().charged(e,n.x[t]??0,n.y[t]??0,r)`]</small>
-- **Stand inside to heal.** The edge counts as inside. Healing can start immediately, then repeats once per second; at exactly 10 seconds the pool is expired. Healing is capped at max HP and does not count as eating a snack for [Second Helping](/items/second-helping). <small>[sim-BB0FRU65.js: `l*l+u*u>r*r||(of(e,i),n.next[t]=c+iD)`]</small>
+- **Finish the activation.** Both world-POI activations and charged pickup activations call the pool hook. The pool stays at the activated ring's position, with its activation radius plus Tibo's radius. <small>[sim-7ohjkTZG.js: `Bc().charged(e,n.x[t]??0,n.y[t]??0,r)`]</small>
+- **Stand inside to heal.** The edge counts as inside. Healing can start immediately, then repeats once per second; at exactly 10 seconds the pool is expired. Healing is capped at max HP and does not count as eating a snack for [Second Helping](/items/second-helping). <small>[sim-7ohjkTZG.js: `l*l+u*u>r*r||(of(e,i),n.next[t]=c+iD)`]</small>
 - **Several pools can coexist.** Each has its own pulse timer. The game stores at most 16, reusing expired slots or replacing the oldest pool when full. Copies increase healing, not duration.
 
-The official **17 November 2026 / 552073a** art note includes Warm Bowl's healing pool among the floor rings now drawn in pixel art. The current renderer uses stepped colored bands and a sweep; this is presentation, not a change to healing amount, pulse interval or lifetime. The older controlled mechanics evidence remains attributed to its original build. <small>[changelog-panel-BIENviFO.js: `The rings under Samir, Andrew and poteto, Warm Bowl's healing pool and the gift chest's shadow are now pixel art.`]</small> <small>[scene-4Fs_z2Si.js: ``eJ.radius=u,eJ.opacity=f,eJ.turn=t.reducedMotion?0:s*i``]</small>
+The official **17 November 2026 / 552073a** art note includes Warm Bowl's healing pool among the floor rings now drawn in pixel art. The current renderer uses stepped colored bands and a sweep; this is presentation, not a change to healing amount, pulse interval or lifetime. The older controlled mechanics evidence remains attributed to its original build. <small>[changelog-panel-BwoglFiK.js: `The rings under Samir, Andrew and poteto, Warm Bowl's healing pool and the gift chest's shadow are now pixel art.`]</small> <small>[scene-CvBDnJg0.js: ``eJ.radius=u,eJ.opacity=f,eJ.turn=t.reducedMotion?0:s*i``]</small>
 
 ## Tips
 
