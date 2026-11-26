@@ -1569,3 +1569,16 @@ Existing journal notes moved from next into a dated release group; no gameplay o
 - easy-late-damage (YgLZJs): original publication 2026-11-26T07:40:55Z; now 2026-11-26/99a22e5. Source introduction remains in prior build history.
 
 Sources: https://tibo.dog/assets/changelog-panel-Bjs28VNt.js SHA-256 548da7c14a874adb493685ff9b8d8797830ceb66e568dc5b9faca0c223d4f368; https://tibo.dog/assets/changelog-panel-DO0JbYET.js SHA-256 17d524114f2b027ab54e83a51486aea6442d8620adca5b71637c02af18ed1268. Prior history SHA-256 78388911e3cb468c91b3f0018267231e8a01290c8d6ed550ca241ed2ce5e3cd4.
+
+## Build 269: two new weapon notes in the current group
+
+`main-DVIkMkxO.js` → `main-DpW_Db0F.js` adds two notes to the current undated **next** group: `spud-squall` (y0BxHc), published `2026-11-25T20:09:10Z`, and `pot-lid` (pr-eUZ), published `2026-11-25T20:09:11Z`. No other note was added, removed, reworded or regrouped. The matching source change adds the experimental Pot Lid, Spud Squall, Dutch Oven and Tater Tempest definitions to `intro-shared`, their pools and consumers to `sim`, and three Update 2 release-card lines to `whats-new`; boot changes only its commit stamp. The publication timestamps predate this build, so they are not proof of when the weapons first shipped.
+
+The importer collected the live full journal and every expanded panel date in display order: 394 notes, 23 dates, 185 codes, with full-page and panel records matching. The first readiness check stopped before writing anything because the archive manifest was not yet ready (typed `ARCHIVE_NOT_READY` 404); the archive arrived at `2026-11-26T19:43:20.724Z`, and the importer's next attempt passed.
+
+- Old journal: https://tibo.dog/assets/changelog-panel-DO0JbYET.js — SHA-256 `17d524114f2b027ab54e83a51486aea6442d8620adca5b71637c02af18ed1268`.
+- Current journal: https://tibo.dog/assets/changelog-panel-BIENviFO.js — SHA-256 `191fb47480bbe7d54a24685c9f0a67afd3a5b0fcc04e0693dccc6ccef74e1b34`.
+- Current archive manifest: https://tibodog-game-detector.pcstyle.workers.dev/archive/main-DpW_Db0F.js/manifest.json — SHA-256 `0109ded7592109a151b69ab5f8cfb76a1600378af08f2d25076b36506697dc22`; archived at `2026-11-26T19:43:20.724Z`.
+- Full live journal captured `2026-11-26T19:43:28.658Z`, HTML SHA-256 `4326bc326b63cb9d20e6744f88414f714df4d922b6ef1c6683d3083bfb584612`.
+
+Reproducible evidence: shadow `2026-11-26T19-43-24-735Z-29003233` (the failed readiness attempt is `2026-11-26T19-41-35-322Z-1dd9e1eb`), worker session `aaef6b40-5f7b-46d6-a122-5b54017bdf52`.

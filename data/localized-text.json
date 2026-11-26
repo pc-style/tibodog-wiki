@@ -1,10 +1,10 @@
 {
  "schema": 1,
  "game": {
-  "version": "e24429e",
-  "commit": "e24429e34ee805ec37e0ceda9e70645a3cb123b1"
+  "version": "9cc4148",
+  "commit": "9cc4148728bf14c1f91d4eae948efcb1f8ddc38a"
  },
- "simVersion": "51a6220560b3fc1a",
+ "simVersion": "f9dbc1fcf63ddf8d",
  "locales": [
   {
    "tag": "en",
@@ -775,10 +775,20 @@
      "name": "Gravy Pack",
      "desc": "Four gravy-glazed tot pups run with Tibo. Each bite heals him 0.05 HP."
     },
+    "dutch-oven": {
+     "name": "Dutch Oven",
+     "desc": "A cast-iron lid splits into three small lids on its first hit, and each ricochets on through the crowd. Each hit adds part of Tibo's armor and thorns.",
+     "where": "A boss chest, from a full Pot Lid and Starch Plating."
+    },
     "hard-frost": {
      "name": "Hard Frost",
      "desc": "Rings of frost roll out from Tibo and freeze the pests they pass. Bosses are only slowed.",
      "where": "A boss chest, from a full Flash Freeze and Thick Skin."
+    },
+    "tater-tempest": {
+     "name": "Tater Tempest",
+     "desc": "Merged peel twisters pull pests in. A twister that has merged all it can bursts when it ends.",
+     "where": "A boss chest, from a full Spud Squall and Chives."
     },
     "walk-the-dog": {
      "name": "Walk the Dog",
@@ -788,6 +798,16 @@
     "flash-freeze": {
      "name": "Flash Freeze",
      "desc": "A ring of frost rolls out from Tibo and slows every pest it passes.",
+     "where": "A level-up card in your first minutes."
+    },
+    "pot-lid": {
+     "name": "Pot Lid",
+     "desc": "Tibo flings a pot lid that ricochets from pest to pest, then clangs back to him. Each hit adds part of Tibo's armor and all of his thorns.",
+     "where": "A level-up card in your first minutes."
+    },
+    "spud-squall": {
+     "name": "Spud Squall",
+     "desc": "Tibo lets go of small peel twisters that drift ahead of him and grind the pests they pass. Two twisters that touch merge into a bigger one.",
      "where": "A level-up card in your first minutes."
     },
     "spud-yo-yo": {
@@ -3032,10 +3052,20 @@
      "name": "肉汁狗群",
      "desc": "四只裹着肉汁的薯球小狗跟着Tibo跑。每咬一口给Tibo恢复0.05生命。"
     },
+    "dutch-oven": {
+     "name": "荷兰锅",
+     "desc": "铸铁锅盖第一次命中时裂成三个小锅盖，各自继续在害虫群里弹射。每次命中都会加上Tibo的部分护甲和部分反伤。",
+     "where": "首领宝箱，由满级锅盖和淀粉装甲进化。"
+    },
     "hard-frost": {
      "name": "严霜",
      "desc": "一圈圈寒霜从Tibo身边滚开，冻住经过的害虫。首领只会减速。",
      "where": "首领宝箱，由满级急冻和厚脸皮进化。"
+    },
+    "tater-tempest": {
+     "name": "土豆飓风",
+     "desc": "合并过的薯皮旋风会把害虫吸进来。合并到上限的旋风结束时会炸开。",
+     "where": "首领宝箱，由满级土豆疾风和香葱进化。"
     },
     "walk-the-dog": {
      "name": "遛狗",
@@ -3045,6 +3075,16 @@
     "flash-freeze": {
      "name": "急冻",
      "desc": "一圈寒霜从Tibo身边滚开，减速经过的每只害虫。",
+     "where": "开局几分钟内的升级卡。"
+    },
+    "pot-lid": {
+     "name": "锅盖",
+     "desc": "Tibo甩出一个锅盖，在害虫之间弹来弹去，然后哐当一声飞回他手里。每次命中都会加上Tibo的部分护甲和全部反伤。",
+     "where": "开局几分钟内的升级卡。"
+    },
+    "spud-squall": {
+     "name": "土豆疾风",
+     "desc": "Tibo放出薯皮小旋风，它们飘在他前方，碾磨路过的害虫。两个旋风相碰会合并成一个更大的。",
      "where": "开局几分钟内的升级卡。"
     },
     "spud-yo-yo": {
@@ -5289,10 +5329,20 @@
      "name": "肉汁狗群",
      "desc": "四隻裹著肉汁的薯球小狗跟著Tibo跑。每咬一口幫Tibo恢復0.05生命值。"
     },
+    "dutch-oven": {
+     "name": "荷蘭鍋",
+     "desc": "鑄鐵鍋蓋第一次命中時裂成三個小鍋蓋，各自繼續在害蟲群裡彈射。每次命中都會加上Tibo的部分護甲和部分反傷。",
+     "where": "頭目寶箱，由滿級鍋蓋和澱粉裝甲進化。"
+    },
     "hard-frost": {
      "name": "嚴霜",
      "desc": "一圈圈寒霜從Tibo身邊滾開，凍住經過的害蟲。頭目只會減速。",
      "where": "頭目寶箱，由滿級急凍和厚臉皮進化。"
+    },
+    "tater-tempest": {
+     "name": "馬鈴薯颶風",
+     "desc": "合併過的薯皮旋風會把害蟲吸進來。合併到上限的旋風結束時會炸開。",
+     "where": "頭目寶箱，由滿級馬鈴薯疾風和香蔥進化。"
     },
     "walk-the-dog": {
      "name": "遛狗",
@@ -5302,6 +5352,16 @@
     "flash-freeze": {
      "name": "急凍",
      "desc": "一圈寒霜從Tibo身邊滾開，讓經過的每隻害蟲減速。",
+     "where": "開局幾分鐘內的升級卡。"
+    },
+    "pot-lid": {
+     "name": "鍋蓋",
+     "desc": "Tibo甩出一個鍋蓋，在害蟲之間彈來彈去，然後哐噹一聲飛回他手裡。每次命中都會加上Tibo的部分護甲和全部反傷。",
+     "where": "開局幾分鐘內的升級卡。"
+    },
+    "spud-squall": {
+     "name": "馬鈴薯疾風",
+     "desc": "Tibo放出薯皮小旋風，它們飄在他前方，碾磨路過的害蟲。兩個旋風相碰會合併成一個更大的。",
      "where": "開局幾分鐘內的升級卡。"
     },
     "spud-yo-yo": {
@@ -7546,10 +7606,20 @@
      "name": "グレービー犬団",
      "desc": "グレービーをまとったミニポテト犬4匹がTiboと走る。噛みつくたびにTiboのHP0.05回復。"
     },
+    "dutch-oven": {
+     "name": "ダッチオーブン",
+     "desc": "鋳鉄のフタが最初の命中で小さなフタ3枚に分かれ、それぞれが群れの中を跳ね返り続ける。当たるたびにTiboの防御とトゲダメージの一部が加わる。",
+     "where": "ボスの宝箱。最大レベルの鍋ぶたとでんぷん装甲から。"
+    },
     "hard-frost": {
      "name": "厳霜",
      "desc": "霜の輪がTiboから転がり出て、通り過ぎた害虫を凍らせる。ボスは鈍るだけ。",
      "where": "ボスの宝箱。最大レベルの瞬間冷凍と厚い皮から。"
+    },
+    "tater-tempest": {
+     "name": "ポテト暴風",
+     "desc": "合体した皮のつむじ風が害虫を吸い寄せる。限界まで合体したつむじ風は、消えるときに弾ける。",
+     "where": "ボスの宝箱。最大レベルのポテト突風とチャイブから。"
     },
     "walk-the-dog": {
      "name": "犬の散歩",
@@ -7559,6 +7629,16 @@
     "flash-freeze": {
      "name": "瞬間冷凍",
      "desc": "霜の輪がTiboから転がり出て、通り過ぎた害虫をすべて鈍らせる。",
+     "where": "序盤のレベルアップカード。"
+    },
+    "pot-lid": {
+     "name": "鍋ぶた",
+     "desc": "Tiboが鍋ぶたを投げる。鍋ぶたは害虫から害虫へ跳ね返り、カーンと音を立ててTiboの手元へ戻る。当たるたびにTiboの防御の一部とトゲダメージのすべてが加わる。",
+     "where": "序盤のレベルアップカード。"
+    },
+    "spud-squall": {
+     "name": "ポテト突風",
+     "desc": "Tiboが小さな皮のつむじ風を放つ。つむじ風はTiboの前を漂い、通り道の害虫をすりつぶす。つむじ風が2つ触れ合うと、合体して大きくなる。",
      "where": "序盤のレベルアップカード。"
     },
     "spud-yo-yo": {
@@ -9803,10 +9883,20 @@
      "name": "그레이비 무리",
      "desc": "그레이비를 두른 알감자 강아지 네 마리가 Tibo와 함께 달립니다. 물 때마다 Tibo가 체력 0.05를 회복합니다."
     },
+    "dutch-oven": {
+     "name": "무쇠솥",
+     "desc": "무쇠 뚜껑이 처음 명중할 때 작은 뚜껑 셋으로 갈라지고, 각각 무리 속을 계속 튕겨 다닙니다. 명중할 때마다 Tibo의 방어력과 가시의 일부가 피해에 더해집니다.",
+     "where": "보스 상자에서, 최대 레벨 냄비 뚜껑과 전분 장갑으로."
+    },
     "hard-frost": {
      "name": "혹한 서리",
      "desc": "서리 고리들이 Tibo에게서 굴러나가며 지나치는 해충을 얼립니다. 보스는 느려지기만 합니다.",
      "where": "보스 상자에서, 최대 레벨 순간 냉동과 두꺼운 껍질로."
+    },
+    "tater-tempest": {
+     "name": "감자 태풍",
+     "desc": "합쳐진 껍질 회오리가 해충을 끌어당깁니다. 최대로 합쳐진 회오리는 끝날 때 터집니다.",
+     "where": "보스 상자에서, 최대 레벨 감자 돌풍과 차이브로."
     },
     "walk-the-dog": {
      "name": "강아지 산책",
@@ -9816,6 +9906,16 @@
     "flash-freeze": {
      "name": "순간 냉동",
      "desc": "서리 고리가 Tibo에게서 굴러나가며 지나치는 해충을 모두 느리게 합니다.",
+     "where": "처음 몇 분 동안 나오는 레벨업 카드."
+    },
+    "pot-lid": {
+     "name": "냄비 뚜껑",
+     "desc": "Tibo가 냄비 뚜껑을 던집니다. 뚜껑은 해충에서 해충으로 튕기다가 쨍그랑 소리와 함께 Tibo에게 돌아옵니다. 명중할 때마다 Tibo의 방어력 일부와 가시 전부가 피해에 더해집니다.",
+     "where": "처음 몇 분 동안 나오는 레벨업 카드."
+    },
+    "spud-squall": {
+     "name": "감자 돌풍",
+     "desc": "Tibo가 작은 껍질 회오리를 풀어놓습니다. 회오리는 Tibo 앞으로 떠다니며 지나가는 해충을 갈아 버립니다. 회오리 둘이 닿으면 합쳐져 더 큰 회오리가 됩니다.",
      "where": "처음 몇 분 동안 나오는 레벨업 카드."
     },
     "spud-yo-yo": {
@@ -12060,10 +12160,20 @@
      "name": "Jauría de salsa",
      "desc": "Cuatro perritos papa bañados en salsa corren con Tibo. Cada mordisco lo cura 0.05 PV."
     },
+    "dutch-oven": {
+     "name": "Olla de hierro",
+     "desc": "Una tapa de hierro fundido se divide en tres tapas pequeñas en su primer golpe, y cada una sigue rebotando entre la multitud. Cada golpe suma parte de la armadura y de las espinas de Tibo.",
+     "where": "Un cofre de jefe, con Tapa de olla al máximo y Placas de almidón."
+    },
     "hard-frost": {
      "name": "Helada dura",
      "desc": "Anillos de escarcha salen rodando desde Tibo y congelan a las plagas por las que pasan. A los jefes solo los frenan.",
      "where": "Un cofre de jefe, con Congelado exprés al máximo y Cáscara gruesa."
+    },
+    "tater-tempest": {
+     "name": "Tempestad de papas",
+     "desc": "Los torbellinos de cáscara fusionados atraen a las plagas. Un torbellino que ya se fusionó todo lo que puede estalla al terminar.",
+     "where": "Un cofre de jefe, con Borrasca de papas al máximo y Cebollín."
     },
     "walk-the-dog": {
      "name": "Pasear al perro",
@@ -12073,6 +12183,16 @@
     "flash-freeze": {
      "name": "Congelado exprés",
      "desc": "Un anillo de escarcha sale rodando desde Tibo y frena a cada plaga por la que pasa.",
+     "where": "Una carta de subida de nivel en tus primeros minutos."
+    },
+    "pot-lid": {
+     "name": "Tapa de olla",
+     "desc": "Tibo lanza una tapa de olla que rebota de plaga en plaga y luego vuelve a él con estruendo. Cada golpe suma parte de la armadura de Tibo y todas sus espinas.",
+     "where": "Una carta de subida de nivel en tus primeros minutos."
+    },
+    "spud-squall": {
+     "name": "Borrasca de papas",
+     "desc": "Tibo suelta pequeños torbellinos de cáscara que flotan delante de él y muelen a las plagas que rozan. Dos torbellinos que se tocan se fusionan en uno más grande.",
      "where": "Una carta de subida de nivel en tus primeros minutos."
     },
     "spud-yo-yo": {
@@ -14317,10 +14437,20 @@
      "name": "ग्रेवी झुंड",
      "desc": "ग्रेवी में लिपटे चार आलू पिल्ले Tibo के साथ दौड़ते हैं। हर काट Tibo का 0.05 HP भरती है।"
     },
+    "dutch-oven": {
+     "name": "डच ओवन",
+     "desc": "कास्ट आयरन का ढक्कन पहले वार पर तीन छोटे ढक्कनों में बंट जाता है, और हर ढक्कन भीड़ में टप्पे खाता चला जाता है। हर वार में Tibo के कवच और कांटों का कुछ हिस्सा जुड़ता है।",
+     "where": "बॉस संदूक, पूरे पतीले के ढक्कन और स्टार्च प्लेटिंग से।"
+    },
     "hard-frost": {
      "name": "कड़ा पाला",
      "desc": "पाले की रिंगें Tibo से बाहर लुढ़कती हैं और जिन कीटों से गुज़रती हैं उन्हें जमा देती हैं। बॉस सिर्फ़ धीमे होते हैं।",
      "where": "बॉस संदूक, पूरे फटाफट फ्रीज़ और मोटे छिलके से।"
+    },
+    "tater-tempest": {
+     "name": "आलू आंधी",
+     "desc": "मिले हुए छिलका बवंडर कीटों को अंदर खींचते हैं। जो बवंडर जितना मिल सकता था मिल चुका हो, वह खत्म होते समय फट जाता है।",
+     "where": "बॉस संदूक, पूरे आलू झोंके और चाइव्स से।"
     },
     "walk-the-dog": {
      "name": "कुत्ते की सैर",
@@ -14330,6 +14460,16 @@
     "flash-freeze": {
      "name": "फटाफट फ्रीज़",
      "desc": "पाले की रिंग Tibo से बाहर लुढ़कती है और जिस कीट से गुज़रती है उसे धीमा करती है।",
+     "where": "शुरुआती मिनटों में लेवल-अप कार्ड।"
+    },
+    "pot-lid": {
+     "name": "पतीले का ढक्कन",
+     "desc": "Tibo पतीले का ढक्कन फेंकता है जो एक कीट से दूसरे कीट पर टप्पा खाता है, फिर टन्न करके उसके पास लौट आता है। हर वार में Tibo के कवच का कुछ हिस्सा और उसके सारे कांटे जुड़ते हैं।",
+     "where": "शुरुआती मिनटों में लेवल-अप कार्ड।"
+    },
+    "spud-squall": {
+     "name": "आलू झोंका",
+     "desc": "Tibo छिलके के छोटे बवंडर छोड़ता है जो उसके आगे बहते हैं और राह में आए कीटों को पीस देते हैं। दो बवंडर छू जाएं तो मिलकर एक बड़ा बवंडर बन जाते हैं।",
      "where": "शुरुआती मिनटों में लेवल-अप कार्ड।"
     },
     "spud-yo-yo": {
@@ -16574,10 +16714,20 @@
      "name": "Soßenrudel",
      "desc": "Vier soßenglasierte Krokettenwelpen laufen mit Tibo. Jeder Biss heilt ihn um 0,05 LP."
     },
+    "dutch-oven": {
+     "name": "Bräter",
+     "desc": "Ein gusseiserner Deckel teilt sich beim ersten Treffer in drei kleine Deckel, und jeder prallt weiter durch die Menge. Jeder Treffer legt einen Teil der Rüstung und der Dornen von Tibo obendrauf.",
+     "where": "Eine Bosstruhe, aus vollem Topfdeckel und Stärkepanzer."
+    },
     "hard-frost": {
      "name": "Dauerfrost",
      "desc": "Frostringe rollen von Tibo aus und frieren die Schädlinge ein, die sie passieren. Bosse werden nur gebremst.",
      "where": "Eine Bosstruhe, aus vollem Schockfrost und Harter Schale."
+    },
+    "tater-tempest": {
+     "name": "Kartoffelorkan",
+     "desc": "Verschmolzene Schalenwirbel ziehen Schädlinge an. Ein Wirbel, der so oft verschmolzen ist, wie er kann, platzt am Ende.",
+     "where": "Eine Bosstruhe, aus voller Knollenböe und Schnittlauch."
     },
     "walk-the-dog": {
      "name": "Gassi gehen",
@@ -16587,6 +16737,16 @@
     "flash-freeze": {
      "name": "Schockfrost",
      "desc": "Ein Frostring rollt von Tibo aus und bremst jeden Schädling, den er passiert.",
+     "where": "Eine Level-up-Karte in deinen ersten Minuten."
+    },
+    "pot-lid": {
+     "name": "Topfdeckel",
+     "desc": "Tibo schleudert einen Topfdeckel, der von Schädling zu Schädling abprallt und dann scheppernd zu ihm zurückkommt. Jeder Treffer legt einen Teil der Rüstung von Tibo und alle seine Dornen obendrauf.",
+     "where": "Eine Level-up-Karte in deinen ersten Minuten."
+    },
+    "spud-squall": {
+     "name": "Knollenböe",
+     "desc": "Tibo lässt kleine Schalenwirbel los, die vor ihm hertreiben und die Schädlinge zermahlen, die sie streifen. Zwei Wirbel, die sich berühren, verschmelzen zu einem größeren.",
      "where": "Eine Level-up-Karte in deinen ersten Minuten."
     },
     "spud-yo-yo": {
@@ -18831,10 +18991,20 @@
      "name": "Meute en sauce",
      "desc": "Quatre chiots-patates nappés de sauce courent avec Tibo. Chaque morsure le soigne de 0,05 PV."
     },
+    "dutch-oven": {
+     "name": "Cocotte en fonte",
+     "desc": "Un couvercle en fonte se divise en trois petits couvercles à son premier coup, et chacun continue de ricocher dans la foule. Chaque coup ajoute une partie de l’armure et des épines de Tibo.",
+     "where": "Un coffre de boss, avec Couvercle au maximum et Plaques d’amidon."
+    },
     "hard-frost": {
      "name": "Gel profond",
      "desc": "Des anneaux de givre roulent depuis Tibo et gèlent les nuisibles qu’ils traversent. Les boss sont seulement ralentis.",
      "where": "Un coffre de boss, avec Surgélation au maximum et Peau épaisse."
+    },
+    "tater-tempest": {
+     "name": "Ouragan patate",
+     "desc": "Les tourbillons d’épluchures fusionnés aspirent les nuisibles. Un tourbillon qui a fusionné autant qu’il peut éclate à la fin.",
+     "where": "Un coffre de boss, avec Bourrasque patate au maximum et Ciboulette."
     },
     "walk-the-dog": {
      "name": "Promener le chien",
@@ -18844,6 +19014,16 @@
     "flash-freeze": {
      "name": "Surgélation",
      "desc": "Un anneau de givre roule depuis Tibo et ralentit chaque nuisible qu’il traverse.",
+     "where": "Une carte de niveau dans tes premières minutes."
+    },
+    "pot-lid": {
+     "name": "Couvercle",
+     "desc": "Tibo lance un couvercle de marmite qui ricoche de nuisible en nuisible, puis revient vers lui dans un grand fracas. Chaque coup ajoute une partie de l’armure de Tibo et toutes ses épines.",
+     "where": "Une carte de niveau dans tes premières minutes."
+    },
+    "spud-squall": {
+     "name": "Bourrasque patate",
+     "desc": "Tibo lâche de petits tourbillons d’épluchures qui dérivent devant lui et broient les nuisibles sur leur passage. Deux tourbillons qui se touchent fusionnent en un tourbillon plus gros.",
      "where": "Une carte de niveau dans tes premières minutes."
     },
     "spud-yo-yo": {
@@ -21088,10 +21268,20 @@
      "name": "Matilha de molho",
      "desc": "Quatro cãozinhos-batata cobertos de molho correm com o Tibo. Cada mordida cura 0,05 HP do Tibo."
     },
+    "dutch-oven": {
+     "name": "Panela de ferro",
+     "desc": "Uma tampa de ferro fundido se divide em três tampas pequenas no primeiro golpe, e cada uma segue ricocheteando pela multidão. Cada golpe soma parte da armadura e dos espinhos do Tibo.",
+     "where": "Um baú de chefe, com Tampa de panela no máximo e Blindagem de amido."
+    },
     "hard-frost": {
      "name": "Geada dura",
      "desc": "Anéis de geada se espalham a partir do Tibo e congelam as pragas por onde passam. Chefes só ficam lentos.",
      "where": "Um baú de chefe, com Congelamento relâmpago no máximo e Casca grossa."
+    },
+    "tater-tempest": {
+     "name": "Temporal de batata",
+     "desc": "Redemoinhos de casca fundidos puxam as pragas. Um redemoinho que já se fundiu o máximo que pode estoura ao acabar.",
+     "where": "Um baú de chefe, com Ventania de batata no máximo e Cebolinha."
     },
     "walk-the-dog": {
      "name": "Passear com o cachorro",
@@ -21101,6 +21291,16 @@
     "flash-freeze": {
      "name": "Congelamento relâmpago",
      "desc": "Um anel de geada se espalha a partir do Tibo e deixa lenta toda praga por onde passa.",
+     "where": "Uma carta de subir de nível nos primeiros minutos."
+    },
+    "pot-lid": {
+     "name": "Tampa de panela",
+     "desc": "Tibo arremessa uma tampa de panela que ricocheteia de praga em praga e depois volta retinindo até ele. Cada golpe soma parte da armadura do Tibo e todos os espinhos dele.",
+     "where": "Uma carta de subir de nível nos primeiros minutos."
+    },
+    "spud-squall": {
+     "name": "Ventania de batata",
+     "desc": "Tibo solta pequenos redemoinhos de casca que flutuam à frente dele e moem as pragas por onde passam. Dois redemoinhos que se encostam se fundem em um maior.",
      "where": "Uma carta de subir de nível nos primeiros minutos."
     },
     "spud-yo-yo": {
@@ -23345,10 +23545,20 @@
      "name": "Sos Sürüsü",
      "desc": "Sosa bulanmış dört kroket yavrusu Tibo'yla koşar. Her ısırık Tibo'ya 0,05 can yeniler."
     },
+    "dutch-oven": {
+     "name": "Döküm Tencere",
+     "desc": "Döküm bir kapak ilk vuruşunda üç küçük kapağa bölünür ve her biri kalabalığın içinde sekmeyi sürdürür. Her vuruş Tibo'nun zırhının ve dikenlerinin bir kısmını ekler.",
+     "where": "Bir boss sandığı, tam Tencere Kapağı ve Nişasta Zırhı'ndan."
+    },
     "hard-frost": {
      "name": "Sert Ayaz",
      "desc": "Tibo'dan dışa doğru kırağı halkaları yayılır ve geçtikleri haşereleri dondurur. Bosslar yalnızca yavaşlar.",
      "where": "Bir boss sandığı, tam Şok Dondurma ve Kalın Kabuk'tan."
+    },
+    "tater-tempest": {
+     "name": "Patates Tayfunu",
+     "desc": "Birleşmiş kabuk hortumları haşereleri içine çeker. Birleşebildiği kadar birleşmiş bir hortum biterken patlar.",
+     "where": "Bir boss sandığı, tam Patates Borası ve Frenk Soğanı'ndan."
     },
     "walk-the-dog": {
      "name": "Köpeği Gezdir",
@@ -23358,6 +23568,16 @@
     "flash-freeze": {
      "name": "Şok Dondurma",
      "desc": "Tibo'dan dışa doğru bir kırağı halkası yayılır ve geçtiği her haşereyi yavaşlatır.",
+     "where": "İlk dakikalarında bir seviye atlama kartı."
+    },
+    "pot-lid": {
+     "name": "Tencere Kapağı",
+     "desc": "Tibo, haşereden haşereye seken ve sonra tangırdayarak ona geri dönen bir tencere kapağı fırlatır. Her vuruş Tibo'nun zırhının bir kısmını ve dikenlerinin tamamını ekler.",
+     "where": "İlk dakikalarında bir seviye atlama kartı."
+    },
+    "spud-squall": {
+     "name": "Patates Borası",
+     "desc": "Tibo, önünde süzülen ve geçtiği haşereleri öğüten küçük kabuk hortumları salar. Birbirine değen iki hortum birleşip daha büyük bir hortum olur.",
      "where": "İlk dakikalarında bir seviye atlama kartı."
     },
     "spud-yo-yo": {
@@ -25602,10 +25822,20 @@
      "name": "Kawanan Saus",
      "desc": "Empat anak anjing kroket berlapis saus berlari bersama Tibo. Tiap gigitan memulihkan 0,05 HP Tibo."
     },
+    "dutch-oven": {
+     "name": "Panci Besi",
+     "desc": "Tutup besi cor terbelah jadi tiga tutup kecil pada serangan pertamanya, dan masing-masing terus memantul menembus kerumunan. Tiap serangan menambah sebagian zirah dan duri Tibo.",
+     "where": "Peti bos, dari Tutup Panci penuh dan Lapisan Pati."
+    },
     "hard-frost": {
      "name": "Beku Keras",
      "desc": "Cincin embun beku bergulir keluar dari Tibo dan membekukan hama yang dilewatinya. Bos hanya diperlambat.",
      "where": "Peti bos, dari Beku Kilat penuh dan Kulit Tebal."
+    },
+    "tater-tempest": {
+     "name": "Prahara Kentang",
+     "desc": "Pusaran kulit yang menyatu menyedot hama. Pusaran yang sudah menyatu sebanyak mungkin meledak saat berakhir.",
+     "where": "Peti bos, dari Beliung Kentang penuh dan Kucai."
     },
     "walk-the-dog": {
      "name": "Ajak Anjing Jalan",
@@ -25615,6 +25845,16 @@
     "flash-freeze": {
      "name": "Beku Kilat",
      "desc": "Cincin embun beku bergulir keluar dari Tibo dan memperlambat setiap hama yang dilewatinya.",
+     "where": "Kartu naik level di menit-menit awal."
+    },
+    "pot-lid": {
+     "name": "Tutup Panci",
+     "desc": "Tibo melempar tutup panci yang memantul dari hama ke hama, lalu berdentang kembali kepadanya. Tiap serangan menambah sebagian zirah Tibo dan seluruh durinya.",
+     "where": "Kartu naik level di menit-menit awal."
+    },
+    "spud-squall": {
+     "name": "Beliung Kentang",
+     "desc": "Tibo melepas pusaran kulit kecil yang melayang di depannya dan menggiling hama yang dilewatinya. Dua pusaran yang bersentuhan menyatu jadi satu yang lebih besar.",
      "where": "Kartu naik level di menit-menit awal."
     },
     "spud-yo-yo": {
@@ -27859,10 +28099,20 @@
      "name": "Стая в подливе",
      "desc": "Четыре щенка-крокеты в подливе бегают за Tibo. Каждый укус лечит Tibo на 0,05 ОЗ."
     },
+    "dutch-oven": {
+     "name": "Казан",
+     "desc": "Чугунная крышка при первом ударе распадается на три маленькие, и каждая рикошетит дальше сквозь толпу. Каждый удар добавляет часть брони и шипов Tibo.",
+     "where": "Сундук босса, из полной Крышки от кастрюли и Крахмальной брони."
+    },
     "hard-frost": {
      "name": "Крепкий мороз",
      "desc": "От Tibo катятся кольца инея и замораживают вредителей на своём пути. Боссы только замедляются.",
      "where": "Сундук босса, из полной Шоковой заморозки и Толстой кожуры."
+    },
+    "tater-tempest": {
+     "name": "Картофельный ураган",
+     "desc": "Слившиеся смерчи из кожуры затягивают вредителей. Смерч, который слился столько раз, сколько мог, в конце взрывается.",
+     "where": "Сундук босса, из полного Картофельного шквала и Зелёного лука."
     },
     "walk-the-dog": {
      "name": "Прогулка с собакой",
@@ -27872,6 +28122,16 @@
     "flash-freeze": {
      "name": "Шоковая заморозка",
      "desc": "От Tibo катится кольцо инея и замедляет каждого вредителя на своём пути.",
+     "where": "Карта уровня в первые минуты."
+    },
+    "pot-lid": {
+     "name": "Крышка от кастрюли",
+     "desc": "Tibo швыряет крышку от кастрюли: она рикошетит от вредителя к вредителю, а потом со звоном возвращается к нему. Каждый удар добавляет часть брони Tibo и все его шипы.",
+     "where": "Карта уровня в первые минуты."
+    },
+    "spud-squall": {
+     "name": "Картофельный шквал",
+     "desc": "Tibo выпускает маленькие смерчи из кожуры, которые плывут перед ним и перемалывают вредителей на пути. Два смерча, коснувшись друг друга, сливаются в один побольше.",
      "where": "Карта уровня в первые минуты."
     },
     "spud-yo-yo": {
@@ -30116,10 +30376,20 @@
      "name": "Kawanan Berkuah",
      "desc": "Empat anak anjing kentang bersalut kuah berlari bersama Tibo. Setiap gigitan memulihkan 0.05 HP Tibo."
     },
+    "dutch-oven": {
+     "name": "Periuk Besi",
+     "desc": "Tudung besi tuang berpecah menjadi tiga tudung kecil pada serangan pertamanya, dan setiap satu terus melantun merentas kumpulan perosak. Setiap serangan menambah sebahagian zirah dan duri Tibo.",
+     "where": "Peti bos, daripada Tudung Periuk penuh dan Saduran Kanji."
+    },
     "hard-frost": {
      "name": "Fros Keras",
      "desc": "Gelang fros bergolek keluar daripada Tibo dan membekukan perosak yang dilaluinya. Bos hanya diperlahankan.",
      "where": "Peti bos, daripada Beku Kilat penuh dan Kulit Tebal."
+    },
+    "tater-tempest": {
+     "name": "Badai Kentang",
+     "desc": "Pusaran kulit yang bergabung menarik perosak masuk. Pusaran yang sudah bergabung sebanyak mungkin meletup apabila tamat.",
+     "where": "Peti bos, daripada Beliung Ubi penuh dan Kucai."
     },
     "walk-the-dog": {
      "name": "Bawa Anjing Berjalan",
@@ -30129,6 +30399,16 @@
     "flash-freeze": {
      "name": "Beku Kilat",
      "desc": "Gelang fros bergolek keluar daripada Tibo dan melambatkan setiap perosak yang dilaluinya.",
+     "where": "Kad naik tahap pada minit-minit awal anda."
+    },
+    "pot-lid": {
+     "name": "Tudung Periuk",
+     "desc": "Tibo membaling tudung periuk yang melantun dari perosak ke perosak, kemudian berdenting kembali kepadanya. Setiap serangan menambah sebahagian zirah Tibo dan semua durinya.",
+     "where": "Kad naik tahap pada minit-minit awal anda."
+    },
+    "spud-squall": {
+     "name": "Beliung Ubi",
+     "desc": "Tibo melepaskan pusaran kulit kecil yang hanyut di hadapannya dan mengisar perosak yang dilaluinya. Dua pusaran yang bersentuhan bergabung menjadi satu yang lebih besar.",
      "where": "Kad naik tahap pada minit-minit awal anda."
     },
     "spud-yo-yo": {
@@ -32373,10 +32653,20 @@
      "name": "Tropang Gravy",
      "desc": "Apat na tutang patatas na may gravy ang tumatakbo kasama ni Tibo. Bawat kagat ay nagpapagaling ng 0.05 HP kay Tibo."
     },
+    "dutch-oven": {
+     "name": "Kalderong Bakal",
+     "desc": "Nahahati ang takip na bakal sa tatlong maliliit na takip sa unang tama nito, at tuloy na tumatalbog ang bawat isa sa gitna ng mga peste. May dagdag ang bawat tama na bahagi ng armor at Tinik ni Tibo.",
+     "where": "Isang boss chest, mula sa naka-max na Takip ng Kaldero at Balutang Almirol."
+    },
     "hard-frost": {
      "name": "Hard Frost",
      "desc": "Gumugulong palabas mula kay Tibo ang mga bilog ng yelo at pinapalamig nito ang mga pesteng madaanan. Pinababagal lang ang mga boss.",
      "where": "Isang boss chest, mula sa buong Flash Freeze at Makapal na Balat."
+    },
+    "tater-tempest": {
+     "name": "Sigwa ng Patatas",
+     "desc": "Hinihigop ng mga nagsanib na ipo-ipo ng balat ang mga peste. Sumasabog sa dulo ang ipo-ipong nagsanib na nang sagad.",
+     "where": "Isang boss chest, mula sa naka-max na Alimpuyong Patatas at Kutsay."
     },
     "walk-the-dog": {
      "name": "Ipasyal ang Aso",
@@ -32386,6 +32676,16 @@
     "flash-freeze": {
      "name": "Flash Freeze",
      "desc": "Gumugulong palabas mula kay Tibo ang isang bilog ng yelo at pinababagal nito ang bawat pesteng madaanan.",
+     "where": "Isang level-up card sa mga unang minuto mo."
+    },
+    "pot-lid": {
+     "name": "Takip ng Kaldero",
+     "desc": "Ibinabato ni Tibo ang takip ng kaldero na tumatalbog mula peste hanggang peste, saka kumakalansing pabalik sa kanya. May dagdag ang bawat tama na bahagi ng armor ni Tibo at lahat ng Tinik niya.",
+     "where": "Isang level-up card sa mga unang minuto mo."
+    },
+    "spud-squall": {
+     "name": "Alimpuyong Patatas",
+     "desc": "Nagpapakawala si Tibo ng maliliit na ipo-ipo ng balat na lumulutang sa unahan niya at dinudurog ang mga pesteng madaanan. Kapag nagdikit ang dalawang ipo-ipo, nagsasanib sila sa mas malaki.",
      "where": "Isang level-up card sa mga unang minuto mo."
     },
     "spud-yo-yo": {
@@ -34630,10 +34930,20 @@
      "name": "रस्सा टोळी",
      "desc": "रश्शात माखलेली चार बटाटा-पिल्ले Tibo सोबत धावतात. प्रत्येक चावा Tibo चे 0.05 HP भरतो."
     },
+    "dutch-oven": {
+     "name": "बिडाचे पातेले",
+     "desc": "बिडाचे झाकण पहिल्या घावात तीन छोट्या झाकणांत फुटते, आणि प्रत्येक झाकण गर्दीतून टप्पे खात पुढे जाते. प्रत्येक घावात Tibo च्या चिलखताचा आणि काट्यांचा काही भाग जोडला जातो.",
+     "where": "बॉसची पेटी, पूर्ण पातेल्याचे झाकण आणि स्टार्चच्या कवचापासून."
+    },
     "hard-frost": {
      "name": "कडक दव",
      "desc": "Tibo कडून दवाची कडी बाहेर लोटतात आणि ज्या किड्यांजवळून जातात त्यांना गोठवतात. बॉस फक्त मंद होतात.",
      "where": "बॉसची पेटी, पूर्ण झटपट गोठण आणि जाड सालीपासून."
+    },
+    "tater-tempest": {
+     "name": "बटाटा झंझावात",
+     "desc": "एकत्र झालेल्या सालीच्या वावटळी किड्यांना आत ओढतात. जमेल तितकी एकत्र झालेली वावटळ संपताना फुटते.",
+     "where": "बॉसची पेटी, पूर्ण बटाटा सोसाटा आणि कांद्याच्या पातीपासून."
     },
     "walk-the-dog": {
      "name": "कुत्र्याला फिरवणे",
@@ -34643,6 +34953,16 @@
     "flash-freeze": {
      "name": "झटपट गोठण",
      "desc": "Tibo कडून दवबिंदूंचे कडे बाहेर लोटते आणि ज्या किड्याजवळून जाते त्याला मंद करते.",
+     "where": "सुरुवातीच्या मिनिटांत लेव्हल-अप कार्ड."
+    },
+    "pot-lid": {
+     "name": "पातेल्याचे झाकण",
+     "desc": "Tibo पातेल्याचे झाकण फेकतो, जे एका किड्यावरून दुसऱ्या किड्यावर टप्पा खाते आणि मग खणखणत त्याच्याकडे परत येते. प्रत्येक घावात Tibo च्या चिलखताचा काही भाग आणि त्याचे सगळे काटे जोडले जातात.",
+     "where": "सुरुवातीच्या मिनिटांत लेव्हल-अप कार्ड."
+    },
+    "spud-squall": {
+     "name": "बटाटा सोसाटा",
+     "desc": "Tibo सालीच्या छोट्या वावटळी सोडतो, ज्या त्याच्या पुढे तरंगत जातात आणि वाटेतल्या किड्यांना दळून काढतात. दोन वावटळी एकमेकींना लागल्या की मिळून एक मोठी वावटळ होते.",
      "where": "सुरुवातीच्या मिनिटांत लेव्हल-अप कार्ड."
     },
     "spud-yo-yo": {
@@ -36887,10 +37207,20 @@
      "name": "Bầy Nước Sốt",
      "desc": "Bốn cún khoai viên phủ nước sốt chạy cùng Tibo. Mỗi cú cắn hồi cho Tibo 0,05 HP."
     },
+    "dutch-oven": {
+     "name": "Nồi Gang",
+     "desc": "Nắp gang tách thành ba nắp nhỏ ở đòn đầu tiên, và mỗi nắp tiếp tục nảy xuyên qua bầy sâu. Mỗi đòn cộng thêm một phần giáp và gai của Tibo.",
+     "where": "Rương boss, từ Nắp Nồi tối đa và Giáp Tinh Bột."
+    },
     "hard-frost": {
      "name": "Băng Giá Cứng",
      "desc": "Những vòng sương giá lăn ra từ Tibo và đóng băng những con sâu chúng đi qua. Boss chỉ bị làm chậm.",
      "where": "Rương boss, từ Đông Chớp Nhoáng tối đa và Vỏ Dày."
+    },
+    "tater-tempest": {
+     "name": "Cuồng Phong Khoai",
+     "desc": "Lốc vỏ đã nhập lại hút sâu bọ vào. Cơn lốc đã nhập hết mức sẽ nổ tung khi tan.",
+     "where": "Rương boss, từ Cơn Dông Khoai tối đa và Lá Hẹ."
     },
     "walk-the-dog": {
      "name": "Dắt Chó Đi Dạo",
@@ -36900,6 +37230,16 @@
     "flash-freeze": {
      "name": "Đông Chớp Nhoáng",
      "desc": "Một vòng sương giá lăn ra từ Tibo và làm chậm mọi con sâu nó đi qua.",
+     "where": "Một thẻ lên cấp trong mấy phút đầu."
+    },
+    "pot-lid": {
+     "name": "Nắp Nồi",
+     "desc": "Tibo ném một chiếc nắp nồi nảy từ con sâu này sang con sâu khác, rồi leng keng bay về với Tibo. Mỗi đòn cộng thêm một phần giáp và toàn bộ gai của Tibo.",
+     "where": "Một thẻ lên cấp trong mấy phút đầu."
+    },
+    "spud-squall": {
+     "name": "Cơn Dông Khoai",
+     "desc": "Tibo thả ra những cơn lốc vỏ nhỏ trôi phía trước và nghiền sâu bọ chúng lướt qua. Hai cơn lốc chạm nhau sẽ nhập thành một cơn lớn hơn.",
      "where": "Một thẻ lên cấp trong mấy phút đầu."
     },
     "spud-yo-yo": {
@@ -39144,10 +39484,20 @@
      "name": "గ్రేవీ గుంపు",
      "desc": "గ్రేవీ పూసిన నాలుగు బోండా కుక్కపిల్లలు Tibo తో పరుగెడతాయి. ప్రతి కాటు Tibo కి 0.05 HP హీల్ చేస్తుంది."
     },
+    "dutch-oven": {
+     "name": "ఇనుప గిన్నె",
+     "desc": "పోత ఇనుము మూత మొదటి దెబ్బకే మూడు చిన్న మూతలుగా విడిపోతుంది, ఒక్కోటి గుంపులో ఎగిరిపడుతూ ముందుకు సాగుతుంది. ప్రతి దెబ్బకి Tibo కవచంలో, ముళ్ళలో కొంత భాగం కలుస్తుంది.",
+     "where": "బాస్ పెట్టె, పూర్తి గిన్నె మూత మరియు గంజి కవచం నుంచి."
+    },
     "hard-frost": {
      "name": "గట్టి మంచు",
      "desc": "Tibo నుంచి మంచు వలయాలు దొర్లుకుంటూ బయటికెళ్లి, దాటిన పురుగులను గడ్డకట్టిస్తాయి. బాసులు నెమ్మదిస్తాయి మాత్రమే.",
      "where": "బాస్ పెట్టె, పూర్తి మెరుపు గడ్డకట్టు, మందపాటి తొక్కల నుంచి."
+    },
+    "tater-tempest": {
+     "name": "ఆలూ పెనుతుఫాను",
+     "desc": "కలిసిన తొక్క సుడిగాలులు పురుగులను లోపలికి లాగుతాయి. కలవగలిగినంత కలిసిన సుడిగాలి ముగిసేటప్పుడు పేలుతుంది.",
+     "where": "బాస్ పెట్టె, పూర్తి ఆలూ ఈదురుగాలి మరియు ఉల్లికాడల నుంచి."
     },
     "walk-the-dog": {
      "name": "కుక్కతో షికారు",
@@ -39157,6 +39507,16 @@
     "flash-freeze": {
      "name": "మెరుపు గడ్డకట్టు",
      "desc": "Tibo నుంచి మంచు వలయం దొర్లుకుంటూ బయటికెళ్లి, దాటిన ప్రతి పురుగునీ నెమ్మదింపజేస్తుంది.",
+     "where": "మొదటి కొన్ని నిమిషాల్లో ఒక లెవల్-అప్ కార్డ్."
+    },
+    "pot-lid": {
+     "name": "గిన్నె మూత",
+     "desc": "Tibo గిన్నె మూతను విసురుతాడు. అది పురుగు నుంచి పురుగుకు ఎగిరిపడుతూ, తర్వాత గణగణమంటూ అతని దగ్గరికి తిరిగొస్తుంది. ప్రతి దెబ్బకి Tibo కవచంలో కొంత భాగం, అతని ముళ్ళు మొత్తం కలుస్తాయి.",
+     "where": "మొదటి కొన్ని నిమిషాల్లో ఒక లెవల్-అప్ కార్డ్."
+    },
+    "spud-squall": {
+     "name": "ఆలూ ఈదురుగాలి",
+     "desc": "Tibo చిన్న తొక్క సుడిగాలులను వదులుతాడు. అవి అతని ముందు తేలుతూ, దారిలోని పురుగులను నూరేస్తాయి. రెండు సుడిగాలులు తాకితే కలిసి పెద్ద సుడిగాలి అవుతాయి.",
      "where": "మొదటి కొన్ని నిమిషాల్లో ఒక లెవల్-అప్ కార్డ్."
     },
     "spud-yo-yo": {
@@ -41401,10 +41761,20 @@
      "name": "குழம்பு கூட்டம்",
      "desc": "குழம்பு பூசிய நான்கு டாட் நாய்க்குட்டிகள் Tibo-வுடன் ஓடும். ஒவ்வொரு கடியும் Tibo-வுக்கு 0.05 HP குணம் தரும்."
     },
+    "dutch-oven": {
+     "name": "இரும்புப் பானை",
+     "desc": "வார்ப்பிரும்பு மூடி முதல் அடியில் மூன்று சிறிய மூடிகளாகப் பிரியும்; ஒவ்வொன்றும் கூட்டத்தினூடே தெறித்துச் செல்லும். ஒவ்வொரு அடியும் Tibo-வின் கவசத்திலும் முட்களிலும் ஒரு பகுதியைச் சேர்க்கும்.",
+     "where": "பாஸ் பெட்டி, முழு பானை மூடி மற்றும் மாவுக் கவசத்திலிருந்து."
+    },
     "hard-frost": {
      "name": "கடும் பனி",
      "desc": "Tibo-விடமிருந்து பனி வளையங்கள் உருண்டு பரவி, கடந்து போகும் பூச்சிகளை உறைய வைக்கும். பாஸ்கள் மெதுவாக மட்டுமே ஆகும்.",
      "where": "பாஸ் பெட்டி, முழு மின்னல் உறைவு மற்றும் தடித்த தோலிலிருந்து."
+    },
+    "tater-tempest": {
+     "name": "உருளைச் சூறாவளி",
+     "desc": "சேர்ந்த தோல் சுழல்கள் பூச்சிகளை உள்ளே இழுக்கும். முடிந்த அளவு சேர்ந்த சுழல் முடியும்போது வெடிக்கும்.",
+     "where": "பாஸ் பெட்டி, முழு உருளைச் சூறை மற்றும் வெங்காயத்தாளிலிருந்து."
     },
     "walk-the-dog": {
      "name": "நாயுடன் நடை",
@@ -41414,6 +41784,16 @@
     "flash-freeze": {
      "name": "மின்னல் உறைவு",
      "desc": "Tibo-விடமிருந்து பனி வளையம் உருண்டு பரவி, கடந்து போகும் ஒவ்வொரு பூச்சியையும் மெதுவாக்கும்.",
+     "where": "முதல் சில நிமிடங்களில் ஒரு லெவல்-அப் கார்டு."
+    },
+    "pot-lid": {
+     "name": "பானை மூடி",
+     "desc": "Tibo பானை மூடியை வீசும். அது பூச்சியிலிருந்து பூச்சிக்குத் தெறித்து, பிறகு கணீரென்று Tibo-விடம் திரும்பும். ஒவ்வொரு அடியும் Tibo-வின் கவசத்தின் ஒரு பகுதியையும் எல்லா முட்களையும் சேர்க்கும்.",
+     "where": "முதல் சில நிமிடங்களில் ஒரு லெவல்-அப் கார்டு."
+    },
+    "spud-squall": {
+     "name": "உருளைச் சூறை",
+     "desc": "Tibo சிறிய தோல் சுழல்களை விடும். அவை Tibo-வுக்கு முன்னே மிதந்து, கடக்கும் பூச்சிகளை அரைக்கும். தொடும் இரண்டு சுழல்கள் சேர்ந்து பெரிய சுழலாகும்.",
      "where": "முதல் சில நிமிடங்களில் ஒரு லெவல்-அப் கார்டு."
     },
     "spud-yo-yo": {
@@ -43658,10 +44038,20 @@
      "name": "ঝোলভরা ছানার দল",
      "desc": "ঝোলে মাখা চারটে আলুবড়া ছানা Tibo-র সঙ্গে ছোটে। প্রতিটা কামড়ে Tibo 0.05 HP সারে।"
     },
+    "dutch-oven": {
+     "name": "লোহার হাঁড়ি",
+     "desc": "ঢালাই লোহার ঢাকনা প্রথম আঘাতেই তিনটি ছোট ঢাকনায় ভাগ হয়, আর প্রতিটা ভিড়ের মধ্যে ঠিকরে চলতে থাকে। প্রতিটা আঘাতে Tibo-র বর্ম আর কাঁটার একটা অংশ যোগ হয়।",
+     "where": "বসের সিন্দুক, পুরো হাঁড়ির ঢাকনা আর স্টার্চের পাত থেকে।"
+    },
     "hard-frost": {
      "name": "কড়া তুষার",
      "desc": "Tibo-র চারপাশ থেকে তুষারের বলয় গড়িয়ে যায়, যে পোকার পাশ দিয়ে যায় তাকে জমিয়ে দেয়। বসরা শুধু ধীর হয়।",
      "where": "বসের সিন্দুক, পুরো ঝটপট বরফ আর মোটা খোসা থেকে।"
+    },
+    "tater-tempest": {
+     "name": "আলুর কালবৈশাখী",
+     "desc": "মিশে যাওয়া খোসার ঘূর্ণি পোকাদের ভেতরে টেনে নেয়। যে ঘূর্ণি যতটা পারে মিশে গেছে, সেটা শেষ হওয়ার সময় ফাটে।",
+     "where": "বসের সিন্দুক, পুরো আলুর দমকা আর পেঁয়াজকলি থেকে।"
     },
     "walk-the-dog": {
      "name": "কুকুর হাঁটানো",
@@ -43671,6 +44061,16 @@
     "flash-freeze": {
      "name": "ঝটপট বরফ",
      "desc": "Tibo-র চারপাশ থেকে তুষারের এক বলয় গড়িয়ে যায়, যে পোকার পাশ দিয়ে যায় তাকেই ধীর করে।",
+     "where": "প্রথম কয়েক মিনিটে একটা লেভেল-আপ কার্ড।"
+    },
+    "pot-lid": {
+     "name": "হাঁড়ির ঢাকনা",
+     "desc": "Tibo হাঁড়ির ঢাকনা ছুড়ে দেয়, সেটা এক পোকা থেকে আরেক পোকায় ঠিকরে যায়, তারপর ঝনঝন করে তার কাছে ফিরে আসে। প্রতিটা আঘাতে Tibo-র বর্মের একটা অংশ আর তার সব কাঁটা যোগ হয়।",
+     "where": "প্রথম কয়েক মিনিটে একটা লেভেল-আপ কার্ড।"
+    },
+    "spud-squall": {
+     "name": "আলুর দমকা",
+     "desc": "Tibo খোসার ছোট ছোট ঘূর্ণি ছাড়ে, যেগুলো তার সামনে ভেসে চলে আর পথের পোকাদের পিষে দেয়। দুটো ঘূর্ণি ছুঁলে মিশে একটা বড় ঘূর্ণি হয়।",
      "where": "প্রথম কয়েক মিনিটে একটা লেভেল-আপ কার্ড।"
     },
     "spud-yo-yo": {
@@ -45915,10 +46315,20 @@
      "name": "ฝูงเกรวี่",
      "desc": "ลูกหมาทอทเคลือบเกรวี่สี่ตัววิ่งไปกับ Tibo กัดแต่ละครั้งฮีล Tibo 0.05 HP"
     },
+    "dutch-oven": {
+     "name": "หม้อเหล็กหล่อ",
+     "desc": "ฝาเหล็กหล่อแตกเป็นฝาเล็ก 3 ใบเมื่อโดนครั้งแรก แต่ละใบกระดอนต่อไปในฝูง ทุกครั้งที่โดนจะบวกเกราะและหนามของ Tibo ส่วนหนึ่ง",
+     "where": "หีบบอส จากฝาหม้อเต็มขั้นกับเกราะแป้งมัน"
+    },
     "hard-frost": {
      "name": "น้ำแข็งเกาะหนัก",
      "desc": "วงน้ำค้างแข็งกลิ้งออกจากตัว Tibo แช่แข็งศัตรูพืชที่ผ่าน บอสแค่ช้าลง",
      "where": "หีบบอส จากแช่แข็งฉับพลันเต็มขั้นกับเปลือกหนา"
+    },
+    "tater-tempest": {
+     "name": "มรสุมมันฝรั่ง",
+     "desc": "ลมหมุนเปลือกมันที่รวมกันแล้วจะดูดศัตรูพืชเข้ามา ลูกที่รวมจนเต็มที่จะระเบิดเมื่อหมดเวลา",
+     "where": "หีบบอส จากลมกรรโชกมันฝรั่งเต็มขั้นกับต้นหอม"
     },
     "walk-the-dog": {
      "name": "พาหมาเดินเล่น",
@@ -45928,6 +46338,16 @@
     "flash-freeze": {
      "name": "แช่แข็งฉับพลัน",
      "desc": "วงน้ำค้างแข็งกลิ้งออกจากตัว Tibo ทำให้ศัตรูพืชทุกตัวที่ผ่านช้าลง",
+     "where": "การ์ดเลเวลอัปในช่วงนาทีแรกๆ"
+    },
+    "pot-lid": {
+     "name": "ฝาหม้อ",
+     "desc": "Tibo เหวี่ยงฝาหม้อให้กระดอนจากศัตรูพืชตัวหนึ่งไปอีกตัว แล้วเด้งเคร้งกลับมาหาเขา ทุกครั้งที่โดนจะบวกเกราะส่วนหนึ่งและหนามทั้งหมดของ Tibo",
+     "where": "การ์ดเลเวลอัปในช่วงนาทีแรกๆ"
+    },
+    "spud-squall": {
+     "name": "ลมกรรโชกมันฝรั่ง",
+     "desc": "Tibo ปล่อยลมหมุนเปลือกมันลูกเล็กให้ลอยไปข้างหน้า บดศัตรูพืชที่ผ่าน ลมหมุน 2 ลูกที่แตะกันจะรวมเป็นลูกใหญ่ขึ้น",
      "where": "การ์ดเลเวลอัปในช่วงนาทีแรกๆ"
     },
     "spud-yo-yo": {
@@ -48172,10 +48592,20 @@
      "name": "Garken Miya",
      "desc": "Kwikwiyon dankali huɗu masu miya suna gudu tare da Tibo. Kowane cizo na warkar da Tibo 0.05 HP."
     },
+    "dutch-oven": {
+     "name": "Tukunyar Ƙarfe",
+     "desc": "Murfin ƙarfe yana rabewa zuwa ƙananan murfi uku a bugunsa na farko, kuma kowanne yana ci gaba da tsalle cikin taron ƙwari. Kowane bugu yana ƙara wani ɓangare na sulken Tibo da na ƙayarsa.",
+     "where": "Akwatin shugaba, daga cikakken Murfin Tukunya da Sulken Sitaci."
+    },
     "hard-frost": {
      "name": "Ƙanƙara Mai Tsanani",
      "desc": "Zoben sanyi na birgima daga Tibo kuma suna daskarar da ƙwarin da suka wuce. Shugabanni kawai ana rage musu gudu.",
      "where": "Akwatin shugaba, daga cikakken Daskarewa Nan Take da Fata Mai Kauri."
+    },
+    "tater-tempest": {
+     "name": "Hadarin Dankali",
+     "desc": "Guguwowin ɓawo da suka haɗe suna jawo ƙwari ciki. Guguwar da ta haɗe iya yadda za ta iya tana fashewa idan ta ƙare.",
+     "where": "Akwatin shugaba, daga cikakkiyar Iskar Dankali da Lawashi."
     },
     "walk-the-dog": {
      "name": "Yawo da Kare",
@@ -48185,6 +48615,16 @@
     "flash-freeze": {
      "name": "Daskarewa Nan Take",
      "desc": "Zoben sanyi na birgima daga Tibo kuma yana rage gudun kowane ƙwaro da ya wuce.",
+     "where": "Katin ƙarin mataki a mintunan farko."
+    },
+    "pot-lid": {
+     "name": "Murfin Tukunya",
+     "desc": "Tibo yana jefa murfin tukunya da ke tsalle daga ƙwaro zuwa ƙwaro, sannan ya dawo wurinsa da ƙara. Kowane bugu yana ƙara wani ɓangare na sulken Tibo da dukkan ƙayarsa.",
+     "where": "Katin ƙarin mataki a mintunan farko."
+    },
+    "spud-squall": {
+     "name": "Iskar Dankali",
+     "desc": "Tibo yana sakin ƙananan guguwowin ɓawo da ke yawo a gabansa suna niƙa ƙwarin da suka wuce. Guguwa biyu da suka taɓa juna suna haɗewa su zama babba ɗaya.",
      "where": "Katin ƙarin mataki a mintunan farko."
     },
     "spud-yo-yo": {
@@ -50429,10 +50869,20 @@
      "name": "Stew Squad",
      "desc": "Four potato puppy wey stew rub body dey run with Tibo. Every bite dey heal Tibo 0.05 HP."
     },
+    "dutch-oven": {
+     "name": "Cast Iron Pot",
+     "desc": "Cast-iron cover dey split into three small covers for im first hit, and each one dey bounce go through di crowd. Every hit dey add part of Tibo armor and thorns.",
+     "where": "Oga box, from full Pot Cover and Starch Armor."
+    },
     "hard-frost": {
      "name": "Hard Frost",
      "desc": "Rings of frost dey roll comot from Tibo and dem dey freeze di pests wey dem pass. Ogas only slow down.",
      "where": "Oga box, from full Quick Freeze and Thick Skin."
+    },
+    "tater-tempest": {
+     "name": "Potato Tempest",
+     "desc": "Peel twisters wey don join dey pull pests enter. Twister wey don join reach im limit go burst when e finish.",
+     "where": "Oga box, from full Potato Harmattan and Spring Onion."
     },
     "walk-the-dog": {
      "name": "Waka di Dog",
@@ -50442,6 +50892,16 @@
     "flash-freeze": {
      "name": "Quick Freeze",
      "desc": "Ring of frost dey roll comot from Tibo and e dey slow every pest wey e pass.",
+     "where": "Level-up card for your first few minutes."
+    },
+    "pot-lid": {
+     "name": "Pot Cover",
+     "desc": "Tibo dey fling pot cover wey dey bounce from pest to pest, then e go clang come back to am. Every hit dey add part of Tibo armor and all im thorns.",
+     "where": "Level-up card for your first few minutes."
+    },
+    "spud-squall": {
+     "name": "Potato Harmattan",
+     "desc": "Tibo dey release small peel twisters wey dey float go front of am, dey grind di pests wey dem pass. Two twisters wey touch go join become bigger one.",
      "where": "Level-up card for your first few minutes."
     },
     "spud-yo-yo": {
@@ -52686,10 +53146,20 @@
      "name": "قطيع المرق",
      "desc": "أربعة جراء بطاطس مغطاة بالمرق تجري مع Tibo. كل عضة تستعيد له 0.05 صحة."
     },
+    "dutch-oven": {
+     "name": "قدر الزهر",
+     "desc": "غطاء من حديد الزهر ينقسم إلى ثلاثة أغطية صغيرة عند أول ضربة، وكل منها يواصل الارتداد بين الحشد. كل ضربة تضيف جزءًا من درع Tibo ومن أشواكه.",
+     "where": "صندوق زعيم، من غطاء القدر في أعلى مستوى وصفائح النشا."
+    },
     "hard-frost": {
      "name": "صقيع قاسٍ",
      "desc": "حلقات صقيع تتدحرج من حول Tibo وتجمّد الآفات التي تمر بها. الزعماء يتباطؤون فقط.",
      "where": "صندوق زعيم، من تجميد خاطف كامل وقشرة سميكة."
+    },
+    "tater-tempest": {
+     "name": "هوجاء البطاطس",
+     "desc": "زوابع القشر المندمجة تسحب الآفات إليها. الزوبعة التي اندمجت قدر ما تستطيع تنفجر عند نهايتها.",
+     "where": "صندوق زعيم، من هبّة البطاطس في أعلى مستوى وكرّاث."
     },
     "walk-the-dog": {
      "name": "تمشية الكلب",
@@ -52699,6 +53169,16 @@
     "flash-freeze": {
      "name": "تجميد خاطف",
      "desc": "حلقة صقيع تتدحرج من حول Tibo وتبطئ كل آفة تمر بها.",
+     "where": "بطاقة ترقية في دقائقك الأولى."
+    },
+    "pot-lid": {
+     "name": "غطاء القدر",
+     "desc": "يقذف Tibo غطاء قدر يرتدّ من آفة إلى آفة، ثم يعود إليه برنين. كل ضربة تضيف جزءًا من درع Tibo وكل أشواكه.",
+     "where": "بطاقة ترقية في دقائقك الأولى."
+    },
+    "spud-squall": {
+     "name": "هبّة البطاطس",
+     "desc": "يطلق Tibo زوابع قشر صغيرة تنجرف أمامه وتطحن الآفات التي تمرّ بها. إذا تلامست زوبعتان اندمجتا في زوبعة أكبر.",
      "where": "بطاقة ترقية في دقائقك الأولى."
     },
     "spud-yo-yo": {
@@ -54943,10 +55423,20 @@
      "name": "گله‌ی گریوی",
      "desc": "چهار توله‌ناگت گریوی‌خورده همراه Tibo می‌دوند. هر گاز 0.05 جان Tibo را درمان می‌کند."
     },
+    "dutch-oven": {
+     "name": "قابلمه‌ی چدنی",
+     "desc": "درِ چدنی با اولین ضربه به سه درِ کوچک تقسیم می‌شود و هر کدام میان جمعیت به کمانه کردن ادامه می‌دهد. هر ضربه بخشی از زره و خار Tibo را اضافه می‌کند.",
+     "where": "صندوق باس، از درِ قابلمه‌ی کامل و زره نشاسته."
+    },
     "hard-frost": {
      "name": "یخبندان سخت",
      "desc": "حلقه‌های یخ‌زدگی از Tibo به بیرون می‌غلتند و آفت‌هایی را که از کنارشان بگذرند منجمد می‌کنند. باس‌ها فقط کند می‌شوند.",
      "where": "صندوق باس، از یخ‌زدگی آنیِ کامل و پوست‌کلفت."
+    },
+    "tater-tempest": {
+     "name": "کولاک سیب‌زمینی",
+     "desc": "گردبادهای پوستِ یکی‌شده آفت‌ها را به درون می‌کشند. گردبادی که تا جای ممکن یکی شده باشد، در پایان می‌ترکد.",
+     "where": "صندوق باس، از تندباد سیب‌زمینیِ کامل و تره."
     },
     "walk-the-dog": {
      "name": "سگ‌گردانی",
@@ -54956,6 +55446,16 @@
     "flash-freeze": {
      "name": "یخ‌زدگی آنی",
      "desc": "حلقه‌ای از یخ‌زدگی از Tibo به بیرون می‌غلتد و هر آفتی را که از کنارش بگذرد کند می‌کند.",
+     "where": "کارت ارتقای سطح در دقیقه‌های اول."
+    },
+    "pot-lid": {
+     "name": "درِ قابلمه",
+     "desc": "Tibo درِ قابلمه‌ای پرتاب می‌کند که از آفتی به آفت دیگر کمانه می‌کند و بعد با سروصدا پیش او برمی‌گردد. هر ضربه بخشی از زره Tibo و همه‌ی خار او را اضافه می‌کند.",
+     "where": "کارت ارتقای سطح در دقیقه‌های اول."
+    },
+    "spud-squall": {
+     "name": "تندباد سیب‌زمینی",
+     "desc": "Tibo گردبادهای کوچکی از پوست رها می‌کند که جلوی او شناور می‌شوند و آفت‌های سر راهشان را می‌سایند. دو گردباد که به هم بخورند یکی می‌شوند و گردبادی بزرگ‌تر می‌سازند.",
      "where": "کارت ارتقای سطح در دقیقه‌های اول."
     },
     "spud-yo-yo": {
@@ -57200,10 +57700,20 @@
      "name": "להקת רוטב",
      "desc": "ארבעה גורי תפודון מזוגגים ברוטב רצים עם Tibo. כל נשיכה מרפאה 0.05 חיים של Tibo."
     },
+    "dutch-oven": {
+     "name": "פויקה",
+     "desc": "מכסה מברזל יצוק מתפצל לשלושה מכסים קטנים בפגיעה הראשונה שלו, וכל אחד ממשיך לנתר בתוך ההמון. כל פגיעה מוסיפה חלק מהשריון ומהקוצים של Tibo.",
+     "where": "תיבת בוס, ממכסה סיר מלא ושריון עמילן."
+    },
     "hard-frost": {
      "name": "כפור קשה",
      "desc": "טבעות כפור מתגלגלות החוצה מ־Tibo ומקפיאות את המזיקים שהן עוברות בהם. בוסים רק מואטים.",
      "where": "תיבת בוס, מהקפאת בזק מלאה וקליפה עבה."
+    },
+    "tater-tempest": {
+     "name": "סערת תפודים",
+     "desc": "מערבולות קליפה שהתמזגו שואבות מזיקים פנימה. מערבולת שהתמזגה כמה שהיא יכולה מתפוצצת בסופה.",
+     "where": "תיבת בוס, ממשב תפודים מלא ועירית."
     },
     "walk-the-dog": {
      "name": "לטייל עם הכלב",
@@ -57213,6 +57723,16 @@
     "flash-freeze": {
      "name": "הקפאת בזק",
      "desc": "טבעת כפור מתגלגלת החוצה מ־Tibo ומאטה כל מזיק שהיא עוברת בו.",
+     "where": "קלף עליית רמה בדקות הראשונות."
+    },
+    "pot-lid": {
+     "name": "מכסה סיר",
+     "desc": "Tibo מעיף מכסה סיר שמנתר ממזיק למזיק, ואז חוזר אליו בצלצול. כל פגיעה מוסיפה חלק מהשריון של Tibo ואת כל הקוצים שלו.",
+     "where": "קלף עליית רמה בדקות הראשונות."
+    },
+    "spud-squall": {
+     "name": "משב תפודים",
+     "desc": "Tibo משחרר מערבולות קליפה קטנות שנסחפות לפניו וטוחנות את המזיקים שבדרכן. שתי מערבולות שנוגעות זו בזו מתמזגות למערבולת גדולה יותר.",
      "where": "קלף עליית רמה בדקות הראשונות."
     },
     "spud-yo-yo": {
@@ -59457,10 +59977,20 @@
      "name": "شوربا ٹولی",
      "desc": "شوربے میں لپٹے چار ٹکی پلے Tibo کے ساتھ دوڑتے ہیں۔ ہر کاٹ پر Tibo کی 0.05 HP بحال۔"
     },
+    "dutch-oven": {
+     "name": "لوہے کی دیگچی",
+     "desc": "ڈھلے لوہے کا ڈھکن پہلے وار پر تین چھوٹے ڈھکنوں میں بٹ جاتا ہے، اور ہر ایک ہجوم میں اچٹتا چلا جاتا ہے۔ ہر وار میں Tibo کی زرہ اور کانٹوں کا کچھ حصہ جڑتا ہے۔",
+     "where": "باس کا صندوق، مکمل دیگچی کے ڈھکن اور نشاستہ زرہ سے۔"
+    },
     "hard-frost": {
      "name": "سخت پالا",
      "desc": "پالے کے گھیرے Tibo سے باہر لڑھکتے ہیں اور جن کیڑوں سے گزریں انہیں جما دیتے ہیں۔ باس صرف سست ہوتے ہیں۔",
      "where": "باس کا صندوق، مکمل فوری جماؤ اور موٹے چھلکے سے۔"
+    },
+    "tater-tempest": {
+     "name": "آلو آندھی",
+     "desc": "ملے ہوئے چھلکا بگولے کیڑوں کو اندر کھینچتے ہیں۔ جو بگولا جتنا مل سکتا تھا مل چکا ہو، وہ ختم ہوتے وقت پھٹ جاتا ہے۔",
+     "where": "باس کا صندوق، مکمل آلو جھکڑ اور ہری پیاز سے۔"
     },
     "walk-the-dog": {
      "name": "کتے کی سیر",
@@ -59470,6 +60000,16 @@
     "flash-freeze": {
      "name": "فوری جماؤ",
      "desc": "پالے کا گھیرا Tibo سے باہر لڑھکتا ہے اور جس کیڑے سے گزرے اسے سست کر دیتا ہے۔",
+     "where": "شروع کے منٹوں میں لیول اپ کارڈ۔"
+    },
+    "pot-lid": {
+     "name": "دیگچی کا ڈھکن",
+     "desc": "Tibo دیگچی کا ڈھکن پھینکتا ہے جو ایک کیڑے سے دوسرے کیڑے پر اچٹتا ہے، پھر ٹن کر کے اس کے پاس لوٹ آتا ہے۔ ہر وار میں Tibo کی زرہ کا کچھ حصہ اور اس کے سارے کانٹے جڑتے ہیں۔",
+     "where": "شروع کے منٹوں میں لیول اپ کارڈ۔"
+    },
+    "spud-squall": {
+     "name": "آلو جھکڑ",
+     "desc": "Tibo چھلکوں کے چھوٹے بگولے چھوڑتا ہے جو اس کے آگے بہتے ہیں اور راہ میں آنے والے کیڑوں کو پیس ڈالتے ہیں۔ دو بگولے چھو جائیں تو مل کر ایک بڑا بگولا بن جاتے ہیں۔",
      "where": "شروع کے منٹوں میں لیول اپ کارڈ۔"
     },
     "spud-yo-yo": {
@@ -61141,143 +61681,143 @@
   "index": {
    "url": "https://tibo.dog/data/v1/index.json",
    "bytes": 18987,
-   "sha256": "7223b0cd6ecc99bd1b75663655992733f6f3a620674d2a1bc7eb837f626472cd"
+   "sha256": "32ce33d16a74a498ec9d3046ee3945f9705a848ae8cfec2da33c0d1d12e1bed9"
   },
   "locales": {
    "en": {
     "url": "https://tibo.dog/data/v1/text/en.json",
-    "bytes": 61789,
-    "sha256": "f0a492f7224c5f7a1d1636ad9c189bb3812115f54ac8f8313f52b6b65c54c7d1"
+    "bytes": 62713,
+    "sha256": "1dce468048ddae773ce8d3fd55369f8bff0a0c12dddd4551a80ed61db240b28a"
    },
    "zh-CN": {
     "url": "https://tibo.dog/data/v1/text/zh-CN.json",
-    "bytes": 60913,
-    "sha256": "6e5247a92db9ba87044fce9cb9aeb18612649fa7fcdd963c27223fcd5fa05d27"
+    "bytes": 61831,
+    "sha256": "077799de0da35b01e1d31a3e4fb0b69bb8b451592be3e7be31f3c1dc7aa00f99"
    },
    "zh-TW": {
     "url": "https://tibo.dog/data/v1/text/zh-TW.json",
-    "bytes": 61186,
-    "sha256": "b9864452d020cf9a12d65cb74b0dbf134fba84899d5fd277c5d4e372452d0205"
+    "bytes": 62113,
+    "sha256": "befcf26184c9c511e162b271073705d50658fda4f6e7b123040b22223afc1893"
    },
    "ja": {
     "url": "https://tibo.dog/data/v1/text/ja.json",
-    "bytes": 74573,
-    "sha256": "9ebfe152a3206af97e039dda2ffbc547aa30b1fc3446010571a4ba08ad9be623"
+    "bytes": 75786,
+    "sha256": "481400449da199da60f21929d24874734e603f92980b769c46c18dc2825618fc"
    },
    "ko": {
     "url": "https://tibo.dog/data/v1/text/ko.json",
-    "bytes": 74880,
-    "sha256": "1783aed57eded0052c6fdfc40d95de275284506e445f3b59fa99cb4f14474f95"
+    "bytes": 76119,
+    "sha256": "f09c49a2809df70b3e062634a6b6fafa242d584cfc4272e516c691d9acbc079b"
    },
    "es": {
     "url": "https://tibo.dog/data/v1/text/es.json",
-    "bytes": 69837,
-    "sha256": "deaec608fb654f875f32e5da5325fdec393f15cf1b968902d53f9006a6234710"
+    "bytes": 70962,
+    "sha256": "e015db5e2a00fdc6dd350722a6157f5b96e65565d6779b0f0a7b826fe64b0c30"
    },
    "hi": {
     "url": "https://tibo.dog/data/v1/text/hi.json",
-    "bytes": 129396,
-    "sha256": "ebf594a74776313c3dfafea2552d0475c0315f5cceed25b0503fc6cea50bd0ce"
+    "bytes": 131608,
+    "sha256": "54ee4174f90f30435744d9ba834ae57b07a35b4016df98b6da247d8ef8f3b028"
    },
    "de": {
     "url": "https://tibo.dog/data/v1/text/de.json",
-    "bytes": 69035,
-    "sha256": "16fbb8a3cc878cbe9a9b21832bf82207bbe4339bbde51b34f7e2567a4fae66dc"
+    "bytes": 70157,
+    "sha256": "dc0daa6a159791152b372d1af8385ee9fd22dac443ce75ff9bdaad0492779d7c"
    },
    "fr": {
     "url": "https://tibo.dog/data/v1/text/fr.json",
-    "bytes": 72477,
-    "sha256": "be14948a65f2a53cc98dbaeca665f594e43a9d7b22d1a13ce9181882ae4669af"
+    "bytes": 73655,
+    "sha256": "4ee1d42df0028df5c9e558965f18d5c12ab58cef68a6fa1322483c4de8376c7a"
    },
    "pt": {
     "url": "https://tibo.dog/data/v1/text/pt.json",
-    "bytes": 68363,
-    "sha256": "02e0c6482d9e48c6c38d4a59509e11cdb29667ef4ce2f24be88a6de5570b2e99"
+    "bytes": 69479,
+    "sha256": "12c1e13919b695d28a76ae032f7b0e25aacaddbbd64006e028e78679bdaa454a"
    },
    "tr": {
     "url": "https://tibo.dog/data/v1/text/tr.json",
-    "bytes": 70941,
-    "sha256": "62cdb17c14cedf0422890aa50d2aed329b55c29c57662127ca2ca499d4e6a98d"
+    "bytes": 72065,
+    "sha256": "6f1b33ca9c38183d1fb2a4120c1d79e6d746620858c961f925fb8e2c860a78c4"
    },
    "id": {
     "url": "https://tibo.dog/data/v1/text/id.json",
-    "bytes": 68129,
-    "sha256": "85f0855405b2079eaf2a1c212cd6fea059cac7636d8ac90f8ad5f31d5e455729"
+    "bytes": 69139,
+    "sha256": "f0278e47dbbf4f4f9ac7b1e56e5e86a264cea5269132e2725c0fed4552ecc816"
    },
    "ru": {
     "url": "https://tibo.dog/data/v1/text/ru.json",
-    "bytes": 101653,
-    "sha256": "95dd1b761dcea68cf0ebcb1b745c5aa7b0e9d2d35588ef662652f5d65ebbec3a"
+    "bytes": 103363,
+    "sha256": "97ff8a34367e9ad6d1e2d05a139bc0f6c0f6f918077643e00c1759ecb19301fc"
    },
    "ms": {
     "url": "https://tibo.dog/data/v1/text/ms.json",
-    "bytes": 70437,
-    "sha256": "657f87f226c170703244ab8ed2ba23e2659cd77d9d42e06a532994fb4dfa821f"
+    "bytes": 71512,
+    "sha256": "7c4a3a81bf2b37ac0307c55e537642b6965dce5bafb2c8f2750baec0f5c717b4"
    },
    "fil": {
     "url": "https://tibo.dog/data/v1/text/fil.json",
-    "bytes": 74342,
-    "sha256": "4c0f49aa6b8e4920b7907e672b3c075c30dbe8d00f38c0d98ac7ecea439557ff"
+    "bytes": 75517,
+    "sha256": "f1c71481b24ac8ec2fcb628048c2ab0194b5d3c0c77326ca9c27b0d3d565047d"
    },
    "mr": {
     "url": "https://tibo.dog/data/v1/text/mr.json",
-    "bytes": 133662,
-    "sha256": "52cb80173f701f9a99a1f7323cdcb2b6e6549358cdbc644f96ea36ce1c1e40c0"
+    "bytes": 136107,
+    "sha256": "856f4ae29ad105573fcfb1b5ce695dd640feffad3541ab3c887720746505d921"
    },
    "vi": {
     "url": "https://tibo.dog/data/v1/text/vi.json",
-    "bytes": 75190,
-    "sha256": "e4331fde570ac648ee0d110ab1fc1533d79ef34a280b37bac61820ac7cf1ac4b"
+    "bytes": 76309,
+    "sha256": "ed465f3f90dfee8f84df55c0abcd73fb2f22603c2fe573c6aca4df8111ea40de"
    },
    "te": {
     "url": "https://tibo.dog/data/v1/text/te.json",
-    "bytes": 140815,
-    "sha256": "2e4e89f223bf681b7c0383f4958ac4b096abd991d06b56c81df8688e966e1c3e"
+    "bytes": 143231,
+    "sha256": "0ff15fb8f682060d56ecdde0321e44c109f0acfc76aa7079c56404a944f4b5bc"
    },
    "ta": {
     "url": "https://tibo.dog/data/v1/text/ta.json",
-    "bytes": 153569,
-    "sha256": "e37f3f60c6a6b08aa194ebdb8ff8d7d559cf61930b01798014addc7d79d338ad"
+    "bytes": 156108,
+    "sha256": "24e49e9e762a49bcf4a879cc2030bbf3a51b7da3a07adcce2dee72559393d521"
    },
    "bn": {
     "url": "https://tibo.dog/data/v1/text/bn.json",
-    "bytes": 130507,
-    "sha256": "37bdcb08ba9969197101ce73518127770c7a128df3190dfca1d110c8de1517ba"
+    "bytes": 132739,
+    "sha256": "c6e6824c9ec212a6f259ef6baf6b37b9510f2724c109be0b7b5f451e993b85e1"
    },
    "th": {
     "url": "https://tibo.dog/data/v1/text/th.json",
-    "bytes": 125774,
-    "sha256": "41dd3fd7611c5a255569e4fbc8515af0ebc5e96e05fb7f318cae3d58ae854f8d"
+    "bytes": 127783,
+    "sha256": "c69c2f9e229a59e431b2accabddea8f1a9f389de78114380584a90febdbe1e71"
    },
    "ha": {
     "url": "https://tibo.dog/data/v1/text/ha.json",
-    "bytes": 70865,
-    "sha256": "606799efa6dc24e3058cffa09535f2cf99406612d0206c4c51943f24c7db894c"
+    "bytes": 71946,
+    "sha256": "1be35b6716cfbb470eb9870666c101b67b21234dd27ac5dd74ae4854f7bee9f9"
    },
    "pcm": {
     "url": "https://tibo.dog/data/v1/text/pcm.json",
-    "bytes": 65131,
-    "sha256": "9048a30641fc87b7642464809335019479f7ec51158dc904db63420c59b1c336"
+    "bytes": 66114,
+    "sha256": "f3c53e22bce2780beb6134760ac73dc4da91e12ca697decedc50c6f65432098f"
    },
    "ar": {
     "url": "https://tibo.dog/data/v1/text/ar.json",
-    "bytes": 85505,
-    "sha256": "73cef54fd0f20089d704e8c09b0364ed65588fe5f8b706b62e8b3da519177c75"
+    "bytes": 86842,
+    "sha256": "842ab96b8db06d5bdf89e9348ef1848e4150f567b01e7ad1e2bf1bc37503b552"
    },
    "fa": {
     "url": "https://tibo.dog/data/v1/text/fa.json",
-    "bytes": 100445,
-    "sha256": "e4d9933e72860b775e6c9853ff41e419c25c0f0f393b2b4b0b9bdc6b960ff3a0"
+    "bytes": 102052,
+    "sha256": "061f23d1bde1d711397caf364625be2808d7c2121395a5ef6c6c3bc51dc08dbd"
    },
    "he": {
     "url": "https://tibo.dog/data/v1/text/he.json",
-    "bytes": 85061,
-    "sha256": "f19a702fd36a8d723ed3c31f68388d07d49973022820c519fb5fba3cf310f7d6"
+    "bytes": 86379,
+    "sha256": "412af5b502290ac383428b4a0a52098d0d033610bad89ff785d37b23ad2eeb39"
    },
    "ur": {
     "url": "https://tibo.dog/data/v1/text/ur.json",
-    "bytes": 96737,
-    "sha256": "9a06e53a632d7d26b6643330f4c43c2cec75b2ecbbdc25275c16a7612253f2d3"
+    "bytes": 98323,
+    "sha256": "606a249ca08d15271a7318c4925986f41cd9a0d2d511a990846176c6e60e1615"
    }
   }
  }

@@ -2544,6 +2544,15 @@
  "content.weapon.deep-fryer.name": [
   "Deep Fryer"
  ],
+ "content.weapon.dutch-oven.desc": [
+  "A cast-iron lid splits into three small lids on its first hit, and each ricochets on through the crowd. Each hit adds part of Tibo's armor and thorns."
+ ],
+ "content.weapon.dutch-oven.name": [
+  "Dutch Oven"
+ ],
+ "content.weapon.dutch-oven.where": [
+  "A boss chest, from a full Pot Lid and Starch Plating."
+ ],
  "content.weapon.dynamo-coil.desc": [
   "The sparks stay out, and a third spark joins them."
  ],
@@ -2970,6 +2979,15 @@
  "content.weapon.pestle-barrage.name": [
   "Pestle Barrage"
  ],
+ "content.weapon.pot-lid.desc": [
+  "Tibo flings a pot lid that ricochets from pest to pest, then clangs back to him. Each hit adds part of Tibo's armor and all of his thorns."
+ ],
+ "content.weapon.pot-lid.name": [
+  "Pot Lid"
+ ],
+ "content.weapon.pot-lid.where": [
+  "A level-up card in your first minutes."
+ ],
  "content.weapon.potato-battery.desc": [
   "Clips a live wire onto a pest. The wire zaps and slows every pest it touches. When the clipped pest dies, the wire jumps to the next one."
  ],
@@ -3186,6 +3204,15 @@
  "content.weapon.spud-lob.name": [
   "Spud Lob"
  ],
+ "content.weapon.spud-squall.desc": [
+  "Tibo lets go of small peel twisters that drift ahead of him and grind the pests they pass. Two twisters that touch merge into a bigger one."
+ ],
+ "content.weapon.spud-squall.name": [
+  "Spud Squall"
+ ],
+ "content.weapon.spud-squall.where": [
+  "A level-up card in your first minutes."
+ ],
  "content.weapon.spud-yo-yo.desc": [
   "Tibo throws a spud on a string at the nearest pest. It hangs there spinning and grinds every pest it touches, then snaps back to him."
  ],
@@ -3278,6 +3305,15 @@
  ],
  "content.weapon.tater-pup.name": [
   "Tater Tot Pup"
+ ],
+ "content.weapon.tater-tempest.desc": [
+  "Merged peel twisters pull pests in. A twister that has merged all it can bursts when it ends."
+ ],
+ "content.weapon.tater-tempest.name": [
+  "Tater Tempest"
+ ],
+ "content.weapon.tater-tempest.where": [
+  "A boss chest, from a full Spud Squall and Chives."
  ],
  "content.weapon.tater-twirl.desc": [
   "Hash-brown wheels circle Tibo, spinning and hitting as fast as he runs. When he stands still they slow to a crawl."

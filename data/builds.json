@@ -2936,5 +2936,16 @@
   "updated": "2026-11-26T11:20:49Z",
   "changes": "Existing journal notes moved into a dated release group; no gameplay or wording changes.",
   "evidence": "Automatic unchanged next-to-dated proof against main-BD_dCWo_.js; all 434 reachable files checked, full/panel browser and official API validated. Original publication timestamps and prior introduction history retained. Proof: .cache/main-DVIkMkxO/journal-proof.json."
+ },
+ {
+  "seen": "2026-11-26",
+  "main": "main-DpW_Db0F.js",
+  "boot": "boot-C7dImW_l.js",
+  "sim": "sim-BB0FRU65.js",
+  "commit": "9cc4148728bf",
+  "status": "reviewed",
+  "updated": "2026-11-26T19:56:06Z",
+  "changes": "Two new Update 2 playtest weapons: Pot Lid, a ricocheting lid that adds armor and thorns to each hit (evolves into Dutch Oven), and Spud Squall, drifting peel twisters that merge (evolves into Tater Tempest).",
+  "evidence": "Journal adds y0BxHc spud-squall and pr-eUZ pot-lid to next (394 notes/23 dates/185 codes, full and panel match). Source: four content-part definitions in intro-shared, potLid/spudSquall pools and consumers in sim, three release-card lines; boot commit stamp only. Current-engine probes (Normal, content on, supplied weapons/stats/clock) measured lid hits 15/35/55 at armor 0/50/200, 25 at 10 thorns, Dutch Oven 60/36, 3 merges and 110 leash; 240 s offer runs seeds of-a..of-i show both only with content on in Standard. Session aaef6b40, shadow 2026-11-26T19-43-24-735Z-29003233."
  }
 ]
