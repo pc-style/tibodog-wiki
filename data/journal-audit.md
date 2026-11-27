@@ -1592,3 +1592,16 @@ Existing journal notes moved from next into a dated release group; no gameplay o
 - pot-lid (pr-eUZ): original publication 2026-11-25T20:09:11Z; now 2026-11-26/9cc4148. Source introduction remains in prior build history.
 
 Sources: https://tibo.dog/assets/changelog-panel-BIENviFO.js SHA-256 191fb47480bbe7d54a24685c9f0a67afd3a5b0fcc04e0693dccc6ccef74e1b34; https://tibo.dog/assets/changelog-panel-BwoglFiK.js SHA-256 e137a0fe0a18c37a12212e6a07315db4313b51d470f3e634459328a410520d7f. Prior history SHA-256 2eca9fb53dc3786db5fff381729e841ce22d8bb818a13651ad389b5acc0420a3.
+
+## Build 271: Hunt pest portrait fix note in the current group
+
+`main-BQQqsCzM.js` → `main-B87IqiZX.js` adds one note to the current undated **next** group: `hunt-pest-portraits` (91eHvs, kind `fix`), published `2026-11-26T23:23:09Z`. No other note was added, removed, reworded or regrouped. The matching source change is in the portrait loader only: `clip-chains` adds an `alpha` fallback clip and a Pack Rat/Hunting Crow/Alley Raccoon → Field Rat/Field Crow/Dumpster Raccoon art alias map, `stats-art` copies the aliased portraits, and `clip-table` and `late-fx-worker` reuse that shared map. Registry, English text, config values, icons and sim/boot logic are unchanged.
+
+The importer collected the live full journal and every expanded panel date in display order: 395 notes, 23 dates, 186 codes, with full-page and panel records matching. Its first readiness check stopped before writing anything because the archive manifest was not yet ready (typed `ARCHIVE_NOT_READY` 404); the archive arrived at `2026-11-27T01:08:18.288Z`, and the importer's next attempt passed.
+
+- Old journal: https://tibo.dog/assets/changelog-panel-BwoglFiK.js — SHA-256 `e137a0fe0a18c37a12212e6a07315db4313b51d470f3e634459328a410520d7f`.
+- Current journal: https://tibo.dog/assets/changelog-panel-ZDaiVihZ.js — SHA-256 `18f7a51e5452c09c56793d1c8853f1e424b660e53538a797d816b63d4bdb2fdd`.
+- Current archive manifest: https://tibodog-game-detector.pcstyle.workers.dev/archive/main-B87IqiZX.js/manifest.json — SHA-256 `399248b60e26b05173243c24d9a1fa80922f72a83db690636b7e2286bff452a6`; archived at `2026-11-27T01:08:18.288Z`.
+- Full live journal captured `2026-11-27T01:08:35.490Z`, HTML SHA-256 `43b161081492d5b5eda46e8748e4cf3c7e493ab62582faeddd46d768011a678a`.
+
+Reproducible evidence: shadow `2026-11-27T01-08-31-562Z-4bb51fce` (the failed readiness attempt is `2026-11-27T01-06-11-773Z-ff2f507e`), worker session `f0637f42-8325-49b2-94c5-7b2301b25625`.

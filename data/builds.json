@@ -2958,5 +2958,16 @@
   "updated": "2026-11-26T20:39:46Z",
   "changes": "Existing journal notes moved into a dated release group; no gameplay or wording changes.",
   "evidence": "Automatic unchanged next-to-dated proof against main-DpW_Db0F.js; all 434 reachable files checked, full/panel browser and official API validated. Original publication timestamps and prior introduction history retained. Proof: .cache/main-BQQqsCzM/journal-proof.json."
+ },
+ {
+  "seen": "2026-11-27",
+  "main": "main-B87IqiZX.js",
+  "boot": "boot-C7QJhXcN.js",
+  "sim": "sim-DvMQ5uig.js",
+  "commit": "33465e3f9934",
+  "status": "reviewed",
+  "updated": "2026-11-27T01:13:41Z",
+  "changes": "The Hunt's seven pests now show their art in the encyclopedia and on the stats screen. No gameplay change.",
+  "evidence": "Journal adds 91eHvs hunt-pest-portraits (fix) to next (395 notes/23 dates/186 codes, full and panel match). Source: portrait loader only; clip-chains adds an alpha fallback clip (the four Hunt leaders' only clip) and pack-rat/hunt-crow/alley-raccoon art aliases, stats-art applies them, clip-table and late-fx-worker share the map. No data, icon or sim/boot logic changes. Session f0637f42, shadow 2026-11-27T01-08-31-562Z-4bb51fce."
  }
 ]
