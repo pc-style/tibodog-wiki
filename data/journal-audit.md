@@ -1605,3 +1605,12 @@ The importer collected the live full journal and every expanded panel date in di
 - Full live journal captured `2026-11-27T01:08:35.490Z`, HTML SHA-256 `43b161081492d5b5eda46e8748e4cf3c7e493ab62582faeddd46d768011a678a`.
 
 Reproducible evidence: shadow `2026-11-27T01-08-31-562Z-4bb51fce` (the failed readiness attempt is `2026-11-27T01-06-11-773Z-ff2f507e`), worker session `f0637f42-8325-49b2-94c5-7b2301b25625`.
+
+
+## Local journal graduation main-GYi1jTfo.js
+
+Existing journal notes moved from next into a dated release group; no gameplay or note wording changes.
+
+- hunt-pest-portraits (91eHvs): original publication 2026-11-26T23:23:09Z; now 2026-11-26/33465e3. Source introduction remains in prior build history.
+
+Sources: https://tibo.dog/assets/changelog-panel-ZDaiVihZ.js SHA-256 18f7a51e5452c09c56793d1c8853f1e424b660e53538a797d816b63d4bdb2fdd; https://tibo.dog/assets/changelog-panel-DL3f6D9L.js SHA-256 45f330a541abc759304c9dfdfc16607a398952622fcb79fb9db6621f5fcd04d1. Prior history SHA-256 f176c0665439de0dfca088466eb54b21e5d7d88932af0fa569a24694e468359d.
